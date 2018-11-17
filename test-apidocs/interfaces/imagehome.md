@@ -2,6 +2,8 @@
 
 # Interface: ImageHome
 
+Manager for `MagickFiles`.
+
 ## Hierarchy
 
 **ImageHome**
@@ -27,7 +29,9 @@
 
 ▸ **addBuiltInImages**(): `Promise`<`void`>
 
-*Defined in [imageHome.ts:11](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/imageHome.ts#L11)*
+*Defined in [imageHome.ts:26](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/imageHome.ts#L26)*
+
+Add ImageMagick built-in images like `rose:`, `logo:`, etc to this execution context so they are present in `getAll()`.
 
 **Returns:** `Promise`<`void`>
 
@@ -38,7 +42,9 @@ ___
 
 ▸ **get**(name: *`string`*): `Promise`<[MagickInputFile](magickinputfile.md)>
 
-*Defined in [imageHome.ts:7](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/imageHome.ts#L7)*
+*Defined in [imageHome.ts:12](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/imageHome.ts#L12)*
+
+Get a file by name.
 
 **Parameters:**
 
@@ -55,7 +61,9 @@ ___
 
 ▸ **getAll**(): `Promise`<[MagickInputFile](magickinputfile.md)[]>
 
-*Defined in [imageHome.ts:10](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/imageHome.ts#L10)*
+*Defined in [imageHome.ts:22](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/imageHome.ts#L22)*
+
+Get all the files currently available in this context.
 
 **Returns:** `Promise`<[MagickInputFile](magickinputfile.md)[]>
 
@@ -66,7 +74,7 @@ ___
 
 ▸ **isRegistered**(name: *`string`*): `boolean`
 
-*Defined in [imageHome.ts:9](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/imageHome.ts#L9)*
+*Defined in [imageHome.ts:18](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/imageHome.ts#L18)*
 
 **Parameters:**
 
@@ -83,7 +91,9 @@ ___
 
 ▸ **register**(file: *[MagickFile](magickfile.md)*, name?: *`string`*): `void`
 
-*Defined in [imageHome.ts:8](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/imageHome.ts#L8)*
+*Defined in [imageHome.ts:17](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/imageHome.ts#L17)*
+
+Programmatically add new files.
 
 **Parameters:**
 
@@ -101,7 +111,9 @@ ___
 
 ▸ **remove**(names: *`string`[]*): [MagickInputFile](magickinputfile.md)[]
 
-*Defined in [imageHome.ts:6](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/imageHome.ts#L6)*
+*Defined in [imageHome.ts:31](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/imageHome.ts#L31)*
+
+Remove files by name.
 
 **Parameters:**
 
@@ -110,6 +122,7 @@ ___
 | names | `string`[] |
 
 **Returns:** [MagickInputFile](magickinputfile.md)[]
+the files actually removed.
 
 ___
 

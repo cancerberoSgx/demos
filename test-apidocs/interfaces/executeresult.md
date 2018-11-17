@@ -12,7 +12,6 @@
 
 ### Properties
 
-* [breakOnError](executeresult.md#breakonerror)
 * [errors](executeresult.md#errors)
 * [exitCode](executeresult.md#exitcode)
 * [outputFiles](executeresult.md#outputfiles)
@@ -24,15 +23,6 @@
 
 ## Properties
 
-<a id="breakonerror"></a>
-
-### `<Optional>` breakOnError
-
-**● breakOnError**: *`boolean`*
-
-*Defined in [execute.ts:95](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/execute.ts#L95)*
-
-___
 <a id="errors"></a>
 
 ###  errors
@@ -41,7 +31,7 @@ ___
 
 *Inherited from [ExecuteResultOne](executeresultone.md).[errors](executeresultone.md#errors)*
 
-*Defined in [execute.ts:18](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/execute.ts#L18)*
+*Defined in [execute.ts:51](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/execute.ts#L51)*
 
 ___
 <a id="exitcode"></a>
@@ -54,7 +44,7 @@ ___
 
 *Overrides [CallResult](callresult.md).[exitCode](callresult.md#exitcode)*
 
-*Defined in [execute.ts:21](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/execute.ts#L21)*
+*Defined in [execute.ts:52](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/execute.ts#L52)*
 
 ___
 <a id="outputfiles"></a>
@@ -65,7 +55,7 @@ ___
 
 *Inherited from [CallResult](callresult.md).[outputFiles](callresult.md#outputfiles)*
 
-*Defined in [magickApi.ts:22](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/magickApi.ts#L22)*
+*Defined in [magickApi.ts:30](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/magickApi.ts#L30)*
 
 ___
 <a id="results"></a>
@@ -74,7 +64,7 @@ ___
 
 **● results**: *[ExecuteResultOne](executeresultone.md)[]*
 
-*Defined in [execute.ts:94](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/execute.ts#L94)*
+*Defined in [execute.ts:129](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/execute.ts#L129)*
 
 ___
 <a id="stderr"></a>
@@ -85,7 +75,7 @@ ___
 
 *Inherited from [CallResult](callresult.md).[stderr](callresult.md#stderr)*
 
-*Defined in [magickApi.ts:24](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/magickApi.ts#L24)*
+*Defined in [magickApi.ts:32](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/magickApi.ts#L32)*
 
 ___
 <a id="stdout"></a>
@@ -96,7 +86,7 @@ ___
 
 *Inherited from [CallResult](callresult.md).[stdout](callresult.md#stdout)*
 
-*Defined in [magickApi.ts:23](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/magickApi.ts#L23)*
+*Defined in [magickApi.ts:31](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/magickApi.ts#L31)*
 
 ___
 

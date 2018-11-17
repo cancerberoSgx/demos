@@ -23,9 +23,7 @@
 
 **● commands**: *[ExecuteCommand](../#executecommand)*
 
-*Defined in [execute.ts:11](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/execute.ts#L11)*
-
-commands could be array form like \[\['convert', 'foo.png', 'bar.gif'\]\] or CLI form like \['convert foo.png bar.gif'\]
+*Defined in [execute.ts:12](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/execute.ts#L12)*
 
 ___
 <a id="inputfiles"></a>

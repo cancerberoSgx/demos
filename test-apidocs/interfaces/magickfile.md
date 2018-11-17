@@ -2,6 +2,8 @@
 
 # Interface: MagickFile
 
+Base class for ImageMagick input and output files.
+
 ## Hierarchy
 
 **MagickFile**
@@ -26,7 +28,7 @@
 
 **● name**: *`string`*
 
-*Defined in [magickApi.ts:2](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/magickApi.ts#L2)*
+*Defined in [magickApi.ts:5](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/magickApi.ts#L5)*
 
 ___
 

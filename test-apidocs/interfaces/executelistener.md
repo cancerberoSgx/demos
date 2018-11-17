@@ -23,7 +23,7 @@
 
 ▸ **afterExecute**(event: *[ExecuteEvent](executeevent.md)*): `void`
 
-*Defined in [execute.ts:83](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/execute.ts#L83)*
+*Defined in [execute.ts:118](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/execute.ts#L118)*
 
 **Parameters:**
 
@@ -40,7 +40,7 @@ ___
 
 ▸ **beforeExecute**(event: *[ExecuteEvent](executeevent.md)*): `void`
 
-*Defined in [execute.ts:84](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/execute.ts#L84)*
+*Defined in [execute.ts:119](https://github.com/KnicKnic/WASM-ImageMagick/blob/7684a1c/src/execute.ts#L119)*
 
 **Parameters:**
 
