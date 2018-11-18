@@ -3,8 +3,13 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const _1 = require(".");
 const p_map_1 = require("p-map");
-/** execute first command in given config */
-async function executeOne(config) {
+const misc_1 = require("./util/misc");
+const util_1 = require("./util");
+/**
+ * Execute first command in given config.
+ */
+async function executeOne(configOrCommand) {
+    const config = asExecuteConfig(configOrCommand);
     let result = {
         stderr: [],
         stdout: [],
@@ -28,6 +33,35 @@ async function executeOne(config) {
     }
 }
 exports.executeOne = executeOne;
+function isExecuteCommand(arg) {
+    return !!arg.commands;
+}
+exports.isExecuteCommand = isExecuteCommand;
+/**
+ * Transform  `configOrCommand: ExecuteConfig | ExecuteCommand` to a valid ExecuteConfig object
+ */
+function asExecuteConfig(arg) {
+    if (isExecuteCommand(arg)) {
+        return arg;
+    }
+    return {
+        inputFiles: [],
+        commands: arg,
+    };
+}
+exports.asExecuteConfig = asExecuteConfig;
+/**
+ * `execute()` shortcut that useful for commands that return only one output file or when only one particular output file is relevant.
+ * @param outputFileName optionally user can give the desired output file name
+ * @returns If `outputFileName` is given the file with that name, the first output file otherwise or undefined
+ * if no file match, or no output files where generated (like in an error).
+ */
+async function executeAndReturnOutputFile(configOrCommand, outputFileName) {
+    const config = asExecuteConfig(configOrCommand);
+    const result = await execute(config);
+    return outputFileName ? result.outputFiles.find(f => f.name === outputFileName) : (result.outputFiles.length && result.outputFiles[0] || undefined);
+}
+exports.executeAndReturnOutputFile = executeAndReturnOutputFile;
 const executeListeners = [];
 function addExecuteListener(l) {
     executeListeners.push(l);
@@ -35,40 +69,30 @@ function addExecuteListener(l) {
 exports.addExecuteListener = addExecuteListener;
 /**
  * Execute all commands in given config serially in order. Output files from a command become available as
- * input files in next commands. The execution result will contain all generated outputFiles. If same file name
- * is used later command output files will override previous ones. Example:
+ * input files in next commands. In the following example we execute two commands. Notice how the second one uses `image2.png` which was the output file of the first one:
  *
  * ```ts
- * const {outputFiles} = await execute({
- *  inputFiles: [await buildInputFile('fn.png', 'image1.png')],
- *  commands: [
- *    ['convert', 'image1.png', "-bordercolor", "#ffee44", "-background", "#eeff55", "+polaroid", "image2.png"],
- *    // heads up: next command uses "image2.png" which was the output of previous command:
- *    ["convert", "image2.png", "-fill", "#997711", "-tint", "55"],
- *  ]
+ * const { outputFiles, exitCode, stderr} = await execute({
+ *   inputFiles: [await buildInputFile('fn.png', 'image1.png')],
+ *   commands: `
+ *     convert image1.png -bordercolor #ffee44 -background #eeff55 +polaroid image2.png
+ *     convert image2.png -fill #997711 -tint 55 image3.jpg
+ * `
  * })
+ * if (exitCode) {
+ *   alert(`There was an error with the command: ${stderr.join('\n')}`)
+ * }
+ * else {
+ *   await loadImageElement(outputFiles.find(f => f.name==='image3.jpg'), document.getElementById('outputImage'))
+ * }
  * ```
  *
- * An alternative syntax with CLI-like strings is also supported:
+ * See {@link ExecuteCommand} for different command syntax supported.
  *
- * ```ts
- * const {outputFiles} = await execute({inputFiles: [], commands: [
- *   'convert rose: -rotate 70 image2.gif',
- *   'convert image2.gif -resize 33 image3.gif'
- * ] })
- * ```
- *
- * Or if it's only one command using just a string:
- *
- * ```ts
- * const {outputFiles} = await execute({inputFiles: [foo], commands: `convert 'my face image.png' \\( +clone -channel R -fx B \\) +swap -channel B -fx v.R bar.gif`})
- * ```
- *
- * Note: in string syntax you must use single quotes for CLI arguments that need so (like 'my face image.png'). no multiline with \ is supported.
- *
- * ```
+ * See {@link ExecuteResult} for details on the object returned
  */
-async function execute(config) {
+async function execute(configOrCommand) {
+    const config = asExecuteConfig(configOrCommand);
     config.inputFiles = config.inputFiles || [];
     const allOutputFiles = {};
     const allInputFiles = {};
@@ -81,7 +105,7 @@ async function execute(config) {
     let allStderr = [];
     async function mapper(c) {
         const thisConfig = {
-            inputFiles: Object.keys(allInputFiles).map(name => allInputFiles[name]),
+            inputFiles: misc_1.values(allInputFiles),
             commands: [c],
         };
         const result = await executeOne(thisConfig);
@@ -91,7 +115,7 @@ async function execute(config) {
         allStderr = allStderr.concat(result.stderr || []);
         await p_map_1.default(result.outputFiles, async (f) => {
             allOutputFiles[f.name] = f;
-            const inputFile = await _1.outputFileToInputFile(f);
+            const inputFile = await util_1.asInputFile(f);
             allInputFiles[inputFile.name] = inputFile;
         });
     }
@@ -99,7 +123,7 @@ async function execute(config) {
     await p_map_1.default(commands, mapper, { concurrency: 1 });
     const resultWithError = results.find(r => r.exitCode !== 0);
     return {
-        outputFiles: Object.keys(allOutputFiles).map(name => allOutputFiles[name]),
+        outputFiles: misc_1.values(allOutputFiles),
         errors: allErrors,
         results,
         stdout: allStdout,
@@ -109,17 +133,17 @@ async function execute(config) {
 }
 exports.execute = execute;
 
-},{".":4,"p-map":81}],2:[function(require,module,exports){
+},{".":4,"./util":80,"./util/misc":81,"p-map":83}],2:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const _1 = require(".");
+const execute_1 = require("./execute");
 class ExecutionContextImpl {
     constructor(imageHome = _1.createImageHome()) {
         this.imageHome = imageHome;
     }
     async execute(configOrCommands) {
-        const config = asConfig(configOrCommands);
-        // debugger
+        const config = execute_1.asExecuteConfig(configOrCommands);
         config.inputFiles.forEach(f => {
             this.imageHome.register(f);
         });
@@ -152,23 +176,17 @@ class ExecutionContextImpl {
         return new ExecutionContextImpl(inheritFrom && inheritFrom.imageHome);
     }
 }
-function asConfig(configOrCommands) {
-    if (typeof configOrCommands === 'string') {
-        return { inputFiles: [], commands: [configOrCommands] };
-    }
-    return configOrCommands.inputFiles ? configOrCommands :
-        { commands: configOrCommands, inputFiles: [] };
-}
 function newExecutionContext(inheritFrom) {
     return ExecutionContextImpl.create(inheritFrom);
 }
 exports.newExecutionContext = newExecutionContext;
 
-},{".":4}],3:[function(require,module,exports){
+},{".":4,"./execute":1}],3:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const _1 = require(".");
 const p_map_1 = require("p-map");
+const misc_1 = require("./util/misc");
 class ImageHomeImpl {
     constructor() {
         this.images = {};
@@ -188,12 +206,12 @@ class ImageHomeImpl {
         return result;
     }
     async getAll() {
-        return await Promise.all(Object.keys(this.images).map(k => this.images[k]));
+        return await Promise.all(misc_1.values(this.images));
     }
     register(file, name = file.name) {
         const promise = _1.asInputFile(file);
         this.images[name] = promise;
-        this.images[name].catch(() => { }).then(() => {
+        this.images[name].then(() => {
             promise.resolved = true;
         });
         return promise;
@@ -211,7 +229,7 @@ class ImageHomeImpl {
 function createImageHome() { return new ImageHomeImpl(); }
 exports.createImageHome = createImageHome;
 
-},{".":4,"p-map":81}],4:[function(require,module,exports){
+},{".":4,"./util/misc":81,"p-map":83}],4:[function(require,module,exports){
 "use strict";
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
@@ -224,7 +242,7 @@ __export(require("./magickApi"));
 __export(require("./util"));
 __export(require("./list"));
 
-},{"./execute":1,"./executionContext":2,"./imageHome":3,"./list":71,"./magickApi":72,"./util":79}],5:[function(require,module,exports){
+},{"./execute":1,"./executionContext":2,"./imageHome":3,"./list":71,"./magickApi":72,"./util":80}],5:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -2266,11 +2284,18 @@ __export(require("./IMWeight"));
 },{"./IMAlign":5,"./IMAlpha":6,"./IMAutoThreshold":7,"./IMBoolean":8,"./IMCache":9,"./IMChannel":10,"./IMClass":11,"./IMClipPath":12,"./IMColorspace":13,"./IMCommand":14,"./IMComplex":15,"./IMCompliance":16,"./IMCompose":17,"./IMCompress":18,"./IMDataType":19,"./IMDebug":20,"./IMDecoration":21,"./IMDirection":22,"./IMDispose":23,"./IMDistort":24,"./IMDither":25,"./IMEndian":26,"./IMEvaluate":27,"./IMFillRule":28,"./IMFilter":29,"./IMFunction":30,"./IMGradient":31,"./IMGravity":32,"./IMIntensity":33,"./IMIntent":34,"./IMInterlace":35,"./IMInterpolate":36,"./IMKernel":37,"./IMLayers":38,"./IMLineCap":39,"./IMLineJoin":40,"./IMList":41,"./IMLog":42,"./IMLogEvent":43,"./IMMethod":44,"./IMMetric":45,"./IMMode":46,"./IMModule":47,"./IMMorphology":48,"./IMNoise":49,"./IMOrientation":50,"./IMPixelChannel":51,"./IMPixelIntensity":52,"./IMPixelMask":53,"./IMPixelTrait":54,"./IMPolicyDomain":55,"./IMPolicyRights":56,"./IMPreview":57,"./IMPrimitive":58,"./IMQuantumFormat":59,"./IMSparseColor":60,"./IMStatistic":61,"./IMStorage":62,"./IMStretch":63,"./IMStyle":64,"./IMTool":65,"./IMType":66,"./IMUnits":67,"./IMValidate":68,"./IMVirtualPixel":69,"./IMWeight":70}],72:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+/**
+ * {@link call} shortcut that only returns the output files.
+ */
 async function Call(inputFiles, command) {
     const result = await call(inputFiles, command);
     return result.outputFiles;
 }
 exports.Call = Call;
+/**
+ * Low level execution function. All the other functions like [execute](https://github.com/KnicKnic/WASM-ImageMagick/tree/sample-sinteractive-/apidocs#execute)
+ * ends up calling this one. It accept only one command and only in the form of array of strings.
+ */
 function call(inputFiles, command) {
     const request = {
         files: inputFiles,
@@ -2315,7 +2340,19 @@ magickWorker.onmessage = e => {
 },{}],73:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-/** generates a valid command line command from given Call/execute Command. Works in a single command  */
+const misc_1 = require("./misc");
+// TODO: store variables from text file output and reuse them. example: 
+// `
+// color=$(convert filename.png -format "%[pixel:p{0,0}]" info:foo.txt)
+// convert filename.png -alpha off -bordercolor $color -border 1 \
+//     \( +clone -fuzz 30% -fill none -floodfill +0+0 $color \
+//        -alpha extract -geometry 200% -blur 0x0.5 \
+//        -morphology erode square:1 -geometry 50% \) \
+//     -compose CopyOpacity -composite -shave 1 outputfilename.png
+// `
+/**
+ * Generates a valid command line command from given `string[]` command. Works with a single command.
+ */
 function arrayToCliOne(command) {
     return command
         .map(c => c + '')
@@ -2325,15 +2362,18 @@ function arrayToCliOne(command) {
         .map(c => c.trim() === '(' ? '\\(' : c.trim() === ')' ? '\\)' : c)
         .join(' ');
 }
-exports.arrayToCliOne = arrayToCliOne;
-/** generates a valid command line command from given Call/execute Command . Works with multiple commands */
+/**
+ * Generates a valid command line string from given `string[]` that is compatible with  {@link call}. Works with multiple
+ * commands by separating  them with new lines and support comand splitting in new lines using `\`.
+ * See {@link ExecuteCommand} for more information.
+ */
 function arrayToCli(command) {
     const cmd = typeof command[0] === 'string' ? [command] : command;
     return cmd.map(arrayToCliOne).join('\n');
 }
 exports.arrayToCli = arrayToCli;
-/** generates a valid Call/execute string[] command from given command line command.
- * This works only for a single command
+/**
+ * Generates a command in the form of array of strings, compatible with {@link call} from given command line string . The string must contain only one command (no newlines).
  */
 function cliToArrayOne(cliCommand) {
     let inString = false;
@@ -2358,10 +2398,10 @@ function cliToArrayOne(cliCommand) {
         .map(s => s === `\\(` ? `(` : s === `\\)` ? `)` : s);
     return command;
 }
-exports.cliToArrayOne = cliToArrayOne;
-/** generates a valid Call/execute string[] command from given command line command.
- * This works for strings containing multiple commands in different lines.
- * TODO: respect '\' character for continue the same command in a new line
+/**
+ * Generates a command in the form of `string[][]` that is compatible with {@link call} from given command line string.
+ * This works for strings containing multiple commands in different lines. and also respect `\` character for continue the same
+ * command in a new line. See {@link ExecuteCommand} for more information.
  */
 function cliToArray(cliCommand) {
     const lines = cliCommand.split('\n')
@@ -2383,6 +2423,9 @@ function cliToArray(cliCommand) {
     return result;
 }
 exports.cliToArray = cliToArray;
+/**
+ * Makes sure that given {@link ExecuteCommand}, in whatever syntax, is transformed to the form `string[][]` that is compatible with {@link call}
+ */
 function asCommand(c) {
     if (typeof c === 'string') {
         return asCommand([c]);
@@ -2391,19 +2434,16 @@ function asCommand(c) {
         return [];
     }
     if (typeof c[0] === 'string') {
-        return flat(c.map((subCommand) => cliToArray(subCommand)));
+        return misc_1.flat(c.map((subCommand) => cliToArray(subCommand)));
     }
     return c;
 }
 exports.asCommand = asCommand;
-function flat(arr) {
-    return arr.reduce((a, b) => a.concat(b));
-}
-exports.flat = flat;
 
-},{}],74:[function(require,module,exports){
+},{"./misc":81}],74:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const execute_1 = require("../execute");
 function blobToUint8Array(blob) {
     return new Promise(resolve => {
         const fileReader = new FileReader();
@@ -2414,7 +2454,6 @@ function blobToUint8Array(blob) {
         fileReader.readAsArrayBuffer(blob);
     });
 }
-exports.blobToUint8Array = blobToUint8Array;
 function blobToString(blb) {
     return new Promise(resolve => {
         const reader = new FileReader();
@@ -2426,6 +2465,38 @@ function blobToString(blb) {
     });
 }
 exports.blobToString = blobToString;
+function isInputFile(file) {
+    return !!file.content;
+}
+exports.isInputFile = isInputFile;
+function isOutputFile(file) {
+    return !!file.blob;
+}
+exports.isOutputFile = isOutputFile;
+function uint8ArrayToString(arr, charset = 'utf-8') {
+    return new TextDecoder(charset).decode(arr);
+}
+/**
+ * Read files as string. Useful when files contains plain text like in the output file info.txt of `convert logo: -format '%[pixel:p{0,0}]' info:info.txt`
+ */
+async function readFileAsText(file) {
+    if (isInputFile(file)) {
+        return uint8ArrayToString(file.content);
+    }
+    if (isOutputFile(file)) {
+        return await blobToString(file.blob);
+    }
+}
+exports.readFileAsText = readFileAsText;
+async function isImage(file) {
+    const { exitCode } = await execute_1.execute({ inputFiles: [await asInputFile(file)], commands: `identify ${file.name}` });
+    return exitCode === 0;
+}
+exports.isImage = isImage;
+/**
+ * Builds a new {@link MagickInputFile} by fetching the content of given url and optionally naming the file using given name
+ * or extracting the file name from the url otherwise.
+ */
 async function buildInputFile(url, name = getFileName(url)) {
     const fetchedSourceImage = await fetch(url);
     const arrayBuffer = await fetchedSourceImage.arrayBuffer();
@@ -2436,33 +2507,40 @@ exports.buildInputFile = buildInputFile;
 function uint8ArrayToBlob(arr) {
     return new Blob([arr]);
 }
-exports.uint8ArrayToBlob = uint8ArrayToBlob;
 async function outputFileToInputFile(file, name = file.name) {
     return {
         name,
         content: await blobToUint8Array(file.blob),
     };
 }
-exports.outputFileToInputFile = outputFileToInputFile;
 function inputFileToOutputFile(file, name = file.name) {
     return {
         name,
         blob: uint8ArrayToBlob(file.content),
     };
 }
-exports.inputFileToOutputFile = inputFileToOutputFile;
-async function asInputFile(f) {
-    if (f.blob) {
-        return await outputFileToInputFile(f);
+async function asInputFile(f, name = f.name) {
+    let inputFile;
+    if (isOutputFile(f)) {
+        inputFile = await outputFileToInputFile(f);
     }
-    return f;
+    else {
+        inputFile = f;
+    }
+    inputFile.name = name;
+    return inputFile;
 }
 exports.asInputFile = asInputFile;
-async function asOutputFile(f) {
-    if (f.content) {
-        return await inputFileToOutputFile(f);
+async function asOutputFile(f, name = f.name) {
+    let outputFile;
+    if (isInputFile(f)) {
+        outputFile = inputFileToOutputFile(f);
     }
-    return f;
+    else {
+        outputFile = f;
+    }
+    outputFile.name = name;
+    return outputFile;
 }
 exports.asOutputFile = asOutputFile;
 function getFileName(url) {
@@ -2477,7 +2555,6 @@ function getFileName(url) {
         catch (error) {
             return url;
         }
-        return url;
     }
 }
 exports.getFileName = getFileName;
@@ -2487,13 +2564,13 @@ function getFileNameExtension(filePathOrUrl) {
 }
 exports.getFileNameExtension = getFileNameExtension;
 
-},{}],75:[function(require,module,exports){
+},{"../execute":1}],75:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("..");
 // utilities related to HTML (img) elements
 /**
- * Will load given html img element src with the inline image content. In case forceBrowserSupport=true
+ * Will load given html img element src with the inline image content.
  * @param image the image to be loaded
  * @param el the html image element in which to load the image
  * @param forceBrowserSupport if true and the image extension is not supported by browsers, it will convert the image to png
@@ -2503,9 +2580,8 @@ async function loadImageElement(image, el, forceBrowserSupport = false) {
     el.src = await buildImageSrc(image, forceBrowserSupport);
 }
 exports.loadImageElement = loadImageElement;
-const browserSupportedImageExtensions = ['gif', 'png', 'jpg', 'webp'];
 /**
- * Return a string with the inline image content, suitable to be used to assign to an html img src attribute. See oadImageElement.
+ * Return a string with the inline image content, suitable to be used to assign to an html img src attribute. See {@link loadImageElement}.
  * @param forceBrowserSupport if true and the image extension is not supported by browsers, it will convert the image to png
  * and return that src so it can be shown in browsers
  */
@@ -2521,6 +2597,15 @@ async function buildImageSrc(image, forceBrowserSupport = false) {
     return URL.createObjectURL(outputFile.blob);
 }
 exports.buildImageSrc = buildImageSrc;
+/**
+ * Build `MagickInputFile[]` from given HTMLInputElement of type=file that user may used to select several files
+ */
+async function getInputFilesFromHtmlInputElement(el) {
+    const files = await inputFileToUint8Array(el);
+    return files.map(f => ({ name: f.file.name, content: f.content }));
+}
+exports.getInputFilesFromHtmlInputElement = getInputFilesFromHtmlInputElement;
+const browserSupportedImageExtensions = ['gif', 'png', 'jpg', 'webp'];
 function inputFileFiles(el) {
     const files = [];
     for (let i = 0; i < el.files.length; i++) {
@@ -2541,20 +2626,28 @@ async function inputFileToUint8Array(el) {
         return { file, content };
     }));
 }
-/** will build MagickInputFile[] from given HTMLInputElement of type=file that user may used to select several files */
-async function getInputFilesFromHtmlInputElement(el) {
-    const files = await inputFileToUint8Array(el);
-    return files.map(f => ({ name: f.file.name, content: f.content }));
-}
-exports.getInputFilesFromHtmlInputElement = getInputFilesFromHtmlInputElement;
 
 },{"..":4}],76:[function(require,module,exports){
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const __1 = require("../");
+const file_1 = require("./file");
+async function getPixelColor(img, x, y) {
+    const file = await __1.executeAndReturnOutputFile({ inputFiles: [await __1.asInputFile(img)], commands: `convert ${img.name} -format '%[pixel:p{${x},${y}}]' info:info.txt` });
+    return await file_1.readFileAsText(file);
+}
+exports.getPixelColor = getPixelColor;
+
+},{"../":4,"./file":74}],77:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const p_map_1 = require("p-map");
 const __1 = require("..");
 let builtInImages;
 exports.builtInImageNames = ['rose:', 'logo:', 'wizard:', 'granite:', 'netscape:'];
+/**
+ * Gets ImageMagick built-in images like `rose:`, `logo:`, etc in the form of {@link MagickInputFile}s
+ */
 async function getBuiltInImages() {
     if (!builtInImages) {
         builtInImages = await p_map_1.default(exports.builtInImageNames, async (name) => {
@@ -2567,14 +2660,25 @@ async function getBuiltInImages() {
     return builtInImages;
 }
 exports.getBuiltInImages = getBuiltInImages;
+/**
+ * shortcut of {@link getBuiltInImages} to get a single image by name
+ */
+async function getBuiltInImage(name) {
+    const images = await getBuiltInImages();
+    return images.find(f => f.name === name);
+}
+exports.getBuiltInImage = getBuiltInImage;
 
-},{"..":4,"p-map":81}],77:[function(require,module,exports){
+},{"..":4,"p-map":83}],78:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("..");
-async function compare(img1, img2, error = 0.01) {
+/**
+ * Compare the two images and return true if they are equal visually. Optionally, a margin of error can be provided using `fuzz`
+ */
+async function compare(img1, img2, fuzz = 0.015) {
     const identical = await compareNumber(img1, img2);
-    return identical <= error;
+    return identical <= fuzz;
 }
 exports.compare = compare;
 async function compareNumber(img1, img2) {
@@ -2603,17 +2707,16 @@ async function compareNumber(img1, img2) {
 }
 exports.compareNumber = compareNumber;
 
-},{"..":4}],78:[function(require,module,exports){
+},{"..":4}],79:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("..");
 /**
  * Execute `convert $IMG info.json` to extract image metadata. Returns the parsed info.json file contents
- *
- * TODO: support several input images - we are already returning an array
  * @param img could be a string in case you want to extract information about built in images like `rose:`
  */
 async function extractInfo(img) {
+    // TODO: support several input images - we are already returning an array
     let name;
     let imgs;
     if (typeof img !== 'string') {
@@ -2634,25 +2737,58 @@ async function extractInfo(img) {
 }
 exports.extractInfo = extractInfo;
 
-},{"..":4}],79:[function(require,module,exports){
+},{"..":4}],80:[function(require,module,exports){
 "use strict";
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(require("./file"));
 __export(require("./cli"));
+__export(require("./file"));
 __export(require("./html"));
+__export(require("./image"));
 __export(require("./imageBuiltIn"));
 __export(require("./imageCompare"));
 __export(require("./imageExtractInfo"));
 __export(require("./support"));
 
-},{"./cli":73,"./file":74,"./html":75,"./imageBuiltIn":76,"./imageCompare":77,"./imageExtractInfo":78,"./support":80}],80:[function(require,module,exports){
+},{"./cli":73,"./file":74,"./html":75,"./image":76,"./imageBuiltIn":77,"./imageCompare":78,"./imageExtractInfo":79,"./support":82}],81:[function(require,module,exports){
 "use strict";
-// has some heuristic information regarding features (not) supported by wasm-imagemagick, for example, image formats
+// internal misc utilities
 Object.defineProperty(exports, "__esModule", { value: true });
-// heads up - all images spec/assets/to_rotate.* where converted using gimp unless explicitly saying otherwhise
+function values(object) {
+    return Object.keys(object).map(name => object[name]);
+}
+exports.values = values;
+function flat(arr) {
+    return arr.reduce((a, b) => a.concat(b));
+}
+exports.flat = flat;
+// export function trimNoNewLines(s: string): string {
+//   return s.replace(/^ +/, '').replace(/ +$/, '')
+// }
+
+},{}],82:[function(require,module,exports){
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const __1 = require("../");
+async function getConfigureFolders() {
+    const result = await __1.execute(`convert -debug configure rose: info:`);
+    const contains = `Searching for configure file:`;
+    const folders = result.stderr
+        .filter(line => line.includes(contains))
+        .map(line => line.substring(line.indexOf(contains) + contains.length, line.length))
+        .map(s => s.replace(/\/\//g, '/'))
+        .map(s => s.substring(0, s.lastIndexOf('/')))
+        .map(s => s.replace(/"/g, '').trim());
+    return folders;
+}
+exports.getConfigureFolders = getConfigureFolders;
+// has some heuristic information regarding features (not) supported by wasm-imagemagick, for example, image formats
+// heads up - all images spec/assets/to_rotate.* where converted using gimp unless explicitly saying otherwise
+/**
+ * list of image formats that are known to be supported by wasm-imagemagick. See `spec/formatSpec.ts`
+ */
 exports.knownSupportedReadWriteImageFormats = [
     'jpg', 'png',
     'psd',
@@ -2670,7 +2806,7 @@ exports.knownSupportedReadWriteImageFormats = [
     'txt',
 ];
 
-},{}],81:[function(require,module,exports){
+},{"../":4}],83:[function(require,module,exports){
 'use strict';
 
 const pMap = (iterable, mapper, options) => new Promise((resolve, reject) => {
@@ -2743,7 +2879,7 @@ const pMap = (iterable, mapper, options) => new Promise((resolve, reject) => {
 module.exports = pMap;
 module.exports.default = pMap;
 
-},{}],82:[function(require,module,exports){
+},{}],84:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const p_map_1 = require("p-map");
@@ -2769,6 +2905,7 @@ class App extends React.Component {
             stderr: '',
             exitCode: 0,
             prettyJSON: false,
+            isImageArray: []
         };
         this.styles = {
             textarea: typestyle_1.style({
@@ -2828,10 +2965,15 @@ class App extends React.Component {
                             React.createElement("td", null, f.name),
                             React.createElement("td", null,
                                 React.createElement("button", { "data-image": f.name, onClick: this.removeImage.bind(this) }, "remove")),
-                            React.createElement("td", null, (this.state.showImagesAndInfo || '') &&
-                                React.createElement("img", { alt: f.name, src: this.state.imgSrcs[i] })),
-                            React.createElement("td", null, (this.state.showImagesAndInfo || '') &&
-                                React.createElement("textarea", { className: this.styles.infoTextarea, value: JSON.stringify(this.state.filesInfo[i][0].image, null, 2) })))))))),
+                            React.createElement("td", null, this.state.showImagesAndInfo && this.state.isImageArray[i] ?
+                                React.createElement("img", { alt: f.name, src: this.state.imgSrcs[i] }) :
+                                this.state.showImagesAndInfo ?
+                                    React.createElement("textarea", { className: this.styles.infoTextarea, value: this.state.imgSrcs[i] }) : ''),
+                            React.createElement("td", null, (this.state.showImagesAndInfo && this.state.isImageArray[i]) ?
+                                React.createElement("textarea", { className: this.styles.infoTextarea, value: JSON.stringify(this.state.filesInfo[i][0].image, null, 2) }) :
+                                this.state.showImagesAndInfo ?
+                                    React.createElement("span", null, "text file") :
+                                    ''))))))),
             React.createElement("div", null,
                 React.createElement("h4", null, "Command"),
                 React.createElement("p", null, "Write a command using one supported syntax type:"),
@@ -2862,7 +3004,9 @@ class App extends React.Component {
                     ") "),
                 (this.state.outputFiles.length || '') && React.createElement("ul", null, this.state.outputFiles.map((f, i) => React.createElement("li", null,
                     React.createElement("div", null, f.name),
-                    React.createElement("img", { src: this.state.outputFileSrcs[i] }))))),
+                    this.state.isImageArray[this.state.files.findIndex(f2 => f2.name === f.name)] ?
+                        React.createElement("img", { src: this.state.outputFileSrcs[i] }) :
+                        React.createElement("textarea", { className: this.styles.infoTextarea, value: this.state.outputFileSrcs[i] }))))),
             React.createElement("h5", { className: this.styles.h5 },
                 React.createElement("span", { className: this.state.exitCode ? this.styles.executionBad : this.styles.executionGood },
                     "Exit code: ",
@@ -2908,7 +3052,13 @@ class App extends React.Component {
         }
     }
     async execute() {
-        const result = await this.props.context.execute(this.state.commandString);
+        // replace the $$IMAGE_N with the n-image in this.state.files
+        const cmd = JSON.parse(this.state.commandArray)
+            .map(c => c.map(arg => arg.startsWith('$$IMAGE_') ?
+            (this.state.files[parseInt(arg.substring('$$IMAGE_'.length, arg.length), 10)] || { name: 'rose:' }).name :
+            arg));
+        const result = await this.props.context.execute(cmd);
+        console.log(cmd, result);
         this.state.outputFiles = result.outputFiles;
         this.state.stderr = result.stderr.join('\n');
         this.state.stdout = result.stdout.join('\n');
@@ -2937,10 +3087,11 @@ class App extends React.Component {
     }
     async updateImages() {
         const files = await this.props.context.getAllFiles();
-        const imgSrcs = this.state.showImagesAndInfo ? await p_map_1.default(files, f => wasm_imagemagick_1.buildImageSrc(f, true)) : this.state.imgSrcs;
-        const filesInfo = this.state.showImagesAndInfo ? await p_map_1.default(files, f => wasm_imagemagick_1.extractInfo(f)) : this.state.filesInfo;
-        const outputFileSrcs = await p_map_1.default(this.state.outputFiles, f => wasm_imagemagick_1.buildImageSrc(f, true));
-        this.setState(Object.assign({}, this.state, { files, imgSrcs, outputFileSrcs, filesInfo }));
+        const isImageArray = await p_map_1.default(files, wasm_imagemagick_1.isImage);
+        const imgSrcs = this.state.showImagesAndInfo ? await p_map_1.default(files, (f, i) => buildFileSrc(f, isImageArray[i])) : this.state.imgSrcs;
+        const filesInfo = this.state.showImagesAndInfo ? await p_map_1.default(files, (f, i) => isImageArray[i] ? wasm_imagemagick_1.extractInfo(f) : undefined) : this.state.filesInfo;
+        const outputFileSrcs = await p_map_1.default(this.state.outputFiles, (f, i) => buildFileSrc(f));
+        this.setState(Object.assign({}, this.state, { files, imgSrcs, outputFileSrcs, filesInfo, isImageArray }));
     }
     async showImagesAndInfoChange(e) {
         this.state.showImagesAndInfo = e.target.checked;
@@ -2959,27 +3110,70 @@ class App extends React.Component {
     }
 }
 exports.App = App;
+async function buildFileSrc(file, isImage_) {
+    if (typeof isImage_ === 'undefined' ? await wasm_imagemagick_1.isImage(file) : isImage_) {
+        return await wasm_imagemagick_1.buildImageSrc(file, true);
+    }
+    else {
+        return await wasm_imagemagick_1.readFileAsText(file);
+    }
+}
 
-},{"./commandExamples":83,"p-map":202,"react":211,"typestyle":218,"wasm-imagemagick":4}],83:[function(require,module,exports){
+},{"./commandExamples":85,"p-map":204,"react":213,"typestyle":220,"wasm-imagemagick":4}],85:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const wasm_imagemagick_1 = require("wasm-imagemagick");
 const imagemagick_browser_1 = require("imagemagick-browser");
 exports.commandExamples = [
     {
+        name: 'identify simple',
+        description: `runs identify program to print to stdout image info`,
+        command: `identify rose:`.trim(),
+    },
+    {
+        name: '-print all image info',
+        description: `prints all properties artifacts and options of the image using -print and formatting the output`,
+        command: `
+convert $$IMAGE_0 \\
+  -print '\\n__Properties__\\n\\n%[*]\\nsesba\\n\\nsa\\n' \\
+  -print '\\n__Artifacts__\\n\\n%[artifact:*]' \\
+  -print '\\n__Options__\\n\\n%[option:*]\\n' \\
+info:
+`.trim(),
+    },
+    {
+        name: 'extract pixel color',
+        description: `extract pixel color at 0,0 and save it to info.txt file`,
+        command: `convert logo: -format '%[pixel:p{0,0}]' info:info.txt  `.trim(),
+    },
+    {
+        name: 'extract image information',
+        description: `extract image information in json format and store it in output file roseinfo.json`,
+        command: `convert rose: roseInfo.json  `.trim(),
+    },
+    {
+        name: 'simple append',
+        description: `simple append+ command that joins two images`,
+        command: `
+convert -size 100x100 xc:red \\
+  \( rose: -rotate -90 \) \\
+  +append output.png
+  `.trim(),
+    },
+    {
         name: 'stars spiral and inwards',
         description: `By Polar Distorting the image we can make the comets flying or spiraling into a point!`,
         command: `
 convert -size 250x100 xc: +noise Random -channel R -threshold .4% \\
   -negate -channel RG -separate +channel \\
-  '(' +clone ')' -compose multiply -flatten \\
+  \( +clone \) -compose multiply -flatten \\
   -virtual-pixel Tile -background Black \\
   -blur 0x.6 -motion-blur 0x15-90 -normalize \\
   +distort Polar 0 +repage  star_inward.gif
 
 convert -size 250x100 xc: +noise Random -channel R -threshold .4% \\
   -negate -channel RG -separate +channel \\
-  '(' +clone ')' -compose multiply -flatten \\
+  \( +clone \) -compose multiply -flatten \\
   -virtual-pixel Tile -background Black \\
   -blur 0x.6 -motion-blur 0x15-60 -normalize \\
   +distort Polar 0 +repage   star_spiral.gif`.trim(),
@@ -2990,7 +3184,7 @@ convert -size 250x100 xc: +noise Random -channel R -threshold .4% \\
         command: `
 convert -size 100x100 xc: +noise Random -channel R -threshold .4% \\
     -negate -channel RG -separate +channel \\
-    '(' +clone ')' -compose multiply -flatten \\
+    \( +clone \) -compose multiply -flatten \\
     -virtual-pixel tile -blur 0x.4 -motion-blur 0x20+45 -normalize \\
     star_fall.gif`.trim(),
     },
@@ -3004,13 +3198,13 @@ convert -size 100x100 xc: +noise Random -channel R -threshold 5% \\
 
 convert -size 100x100 xc: +noise Random -channel R -threshold 1% \\
   -negate -channel RG -separate +channel \\
-  '(' +clone ')' -compose multiply -flatten \\
+  \( +clone \) -compose multiply -flatten \\
   -virtual-pixel tile -blur 0x.4 -contrast-stretch .8% \\
   stars.gif
 
 convert -size 100x100 xc: +noise Random -channel R -threshold 1% \\
   -negate -channel RG -separate +channel \\
-  '(' xc: +noise Random ')' -compose multiply -flatten \\
+  \( xc: +noise Random \) -compose multiply -flatten \\
   -virtual-pixel tile -blur 0x.4 -contrast-stretch .8% \\
   stars_colored.gif
 `.trim(),
@@ -3022,11 +3216,11 @@ convert -size 100x100 xc: +noise Random -channel R -threshold 1% \\
         command: `
 convert -size 100x100 xc: +noise Random -channel R -threshold .2% \\
   -negate -channel RG -separate +channel \\
-  '(' +clone ')' -compose multiply -flatten \\
+  \( +clone \) -compose multiply -flatten \\
   -virtual-pixel tile  -blur 0x.3 \\
-  '(' -clone 0  -motion-blur 0x10+15  -motion-blur 0x10+195 ')' \\
-  '(' -clone 0  -motion-blur 0x10+75  -motion-blur 0x10+255 ')' \\
-  '(' -clone 0  -motion-blur 0x10-45  -motion-blur 0x10+135 ')' \\
+  \( -clone 0  -motion-blur 0x10+15  -motion-blur 0x10+195 \) \\
+  \( -clone 0  -motion-blur 0x10+75  -motion-blur 0x10+255 \) \\
+  \( -clone 0  -motion-blur 0x10-45  -motion-blur 0x10+135 \) \\
   -compose screen -background black -flatten  -normalize \\
     -compose multiply -layers composite \\
     -set delay 30 -loop 0 -layers Optimize    \\
@@ -3038,20 +3232,20 @@ convert -size 100x100 xc: +noise Random -channel R -threshold .2% \\
         command: `
 convert -size 100x100 xc: +noise Random -separate \\
   null: \\
-    '(' xc: +noise Random -separate -threshold 50% -negate ')' \\
+    \( xc: +noise Random -separate -threshold 50% -negate \) \\
     -compose CopyOpacity -layers composite \\
   null: \\
     plasma:red-firebrick plasma:red-firebrick plasma:red-firebrick \\
     -compose Screen -layers composite \\
   null:  \\
-    '(' xc: +noise Random -channel R -threshold .08% \\
+    \( xc: +noise Random -channel R -threshold .08% \\
       -negate -channel RG -separate +channel \\
-      '(' +clone ')' -compose multiply -flatten \\
+      \( +clone \) -compose multiply -flatten \\
       -virtual-pixel tile  -blur 0x.4 \\
-      '(' -clone 0  -motion-blur 0x15+90  -motion-blur 0x15-90 ')' \\
-      '(' -clone 0  -motion-blur 0x15+30  -motion-blur 0x15-150 ')' \\
-      '(' -clone 0  -motion-blur 0x15-30  -motion-blur 0x15+150 ')' \\
-      -compose screen -background black -flatten  -normalize ')' \\
+      \( -clone 0  -motion-blur 0x15+90  -motion-blur 0x15-90 \) \\
+      \( -clone 0  -motion-blur 0x15+30  -motion-blur 0x15-150 \) \\
+      \( -clone 0  -motion-blur 0x15-30  -motion-blur 0x15+150 \) \\
+      -compose screen -background black -flatten  -normalize \) \\
     -compose multiply -layers composite \\
   -set delay 30 -loop 0 -layers Optimize       stars_xmas.gif
 
@@ -3063,7 +3257,7 @@ convert -size 100x100 xc: +noise Random -separate \\
         command: `
     convert -size 100x1 xc: +noise Random -channel G -separate +channel \\
     -scale 100x100!                                +write flare_1a.png \\
-    '(' -size 100x100 gradient:gray(100%) -sigmoidal-contrast 10x50% ')' \\
+    \( -size 100x100 gradient:gray(100%) -sigmoidal-contrast 10x50% \) \\
     -colorspace sRGB -compose hardlight -composite  +write flare_1b.png \\
     -virtual-pixel HorizontalTileEdge -distort Polar -1 \\
     flare_1_final.png
@@ -3075,13 +3269,13 @@ convert -size 100x100 xc: +noise Random -separate \\
         command: `
 convert -size 100x1 xc: +noise Random -channel G -separate +channel \\
     -size 100x99 xc:black -append -motion-blur 0x35-90 \\
-    '(' -size 100x50 gradient:gray(0) \\
+    \( -size 100x50 gradient:gray(0) \\
        -evaluate cos .5 -sigmoidal-contrast 3,100% \\
-       -size 100x50 xc:gray(0) -append ')' \\
-    '(' -size 1x50 xc:gray(0) \\
+       -size 100x50 xc:gray(0) -append \) \\
+    \( -size 1x50 xc:gray(0) \\
        -size 1x1 xc:gray(50%) \\
        -size 1x49 xc:gray(0) \\
-       -append -blur 0x2 -scale 100x100! ')' \\
+       -append -blur 0x2 -scale 100x100! \) \\
     -scene 10 +write flare_2%x.png \\
     -background gray(0) -compose screen -flatten +write flare_2f.png \\
     -virtual-pixel HorizontalTileEdge -distort Polar -1 \\
@@ -3105,14 +3299,14 @@ imagemagick_browser_1.sampleCommandTemplates.forEach(template => {
     exports.commandExamples.push(example);
 });
 
-},{"imagemagick-browser":121,"wasm-imagemagick":4}],84:[function(require,module,exports){
+},{"imagemagick-browser":123,"wasm-imagemagick":4}],86:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const main_1 = require("./main");
 main_1.install();
 main_1.render();
 
-},{"./main":85}],85:[function(require,module,exports){
+},{"./main":87}],87:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = require("react");
@@ -3132,7 +3326,7 @@ function render() {
 }
 exports.render = render;
 
-},{"./app":82,"react":211,"react-dom":208,"wasm-imagemagick":4}],86:[function(require,module,exports){
+},{"./app":84,"react":213,"react-dom":210,"wasm-imagemagick":4}],88:[function(require,module,exports){
 (function (process){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
@@ -3594,7 +3788,7 @@ function create(hash, debug, changes) {
 exports.create = create;
 
 }).call(this,require('_process'))
-},{"_process":203}],87:[function(require,module,exports){
+},{"_process":205}],89:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var FragmentType;
@@ -3603,7 +3797,7 @@ var FragmentType;
     FragmentType["image"] = "image";
 })(FragmentType = exports.FragmentType || (exports.FragmentType = {}));
 
-},{}],88:[function(require,module,exports){
+},{}],90:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const rotateFragment_1 = require("./rotateFragment");
@@ -3647,7 +3841,7 @@ function convert(inputImages) {
 }
 exports.convert = convert;
 
-},{"../execute":120,"./imageFragment":89,"./rotateFragment":91}],89:[function(require,module,exports){
+},{"../execute":122,"./imageFragment":91,"./rotateFragment":93}],91:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const chain_1 = require("./chain");
@@ -3662,7 +3856,7 @@ class ImagesFragmentImpl {
 }
 exports.ImagesFragmentImpl = ImagesFragmentImpl;
 
-},{"./chain":87}],90:[function(require,module,exports){
+},{"./chain":89}],92:[function(require,module,exports){
 "use strict";
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
@@ -3672,7 +3866,7 @@ __export(require("./chain"));
 var chainImpl_1 = require("./chainImpl");
 exports.convert = chainImpl_1.convert;
 
-},{"./chain":87,"./chainImpl":88}],91:[function(require,module,exports){
+},{"./chain":89,"./chainImpl":90}],93:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const chain_1 = require("./chain");
@@ -3687,7 +3881,7 @@ class RotateFragmentImpl {
 }
 exports.RotateFragmentImpl = RotateFragmentImpl;
 
-},{"./chain":87}],92:[function(require,module,exports){
+},{"./chain":89}],94:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var ArgumentType;
@@ -3712,7 +3906,7 @@ var CommandTemplateTag;
     CommandTemplateTag["morphology"] = "morphology";
 })(CommandTemplateTag = exports.CommandTemplateTag || (exports.CommandTemplateTag = {}));
 
-},{}],93:[function(require,module,exports){
+},{}],95:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const colorizeTemplate_1 = require("./templates/colorizeTemplate");
@@ -3770,7 +3964,7 @@ exports.sampleCommandTemplates = [
     rotateGif_1.RotateGif
 ];
 
-},{"./templates/colorizeTemplate":94,"./templates/cropTemplate1":95,"./templates/distortPerspective1":96,"./templates/ditherColorsTemplate1":97,"./templates/frameFeathering1":98,"./templates/frameShape1":99,"./templates/morphologyTemplate1":100,"./templates/oilTemplate":101,"./templates/plasmaFrame1":102,"./templates/polaroid2":103,"./templates/polaroid3":104,"./templates/replaceColorTemplate":105,"./templates/rotateGif":106,"./templates/shadeTemplate":107,"./templates/shadowFrame1":108,"./templates/sharpenBlurTemplate":109,"./templates/shearTemplate":110,"./templates/sketchTemplate":111,"./templates/spreadTemplate":112,"./templates/swirlTemplate":113,"./templates/tintTemplate":114,"./templates/tornPaper1":115,"./templates/tornPaper2":116,"./templates/vignetteTemplate1":117,"./templates/virtualPixel1":118,"./templates/waveTemplate":119}],94:[function(require,module,exports){
+},{"./templates/colorizeTemplate":96,"./templates/cropTemplate1":97,"./templates/distortPerspective1":98,"./templates/ditherColorsTemplate1":99,"./templates/frameFeathering1":100,"./templates/frameShape1":101,"./templates/morphologyTemplate1":102,"./templates/oilTemplate":103,"./templates/plasmaFrame1":104,"./templates/polaroid2":105,"./templates/polaroid3":106,"./templates/replaceColorTemplate":107,"./templates/rotateGif":108,"./templates/shadeTemplate":109,"./templates/shadowFrame1":110,"./templates/sharpenBlurTemplate":111,"./templates/shearTemplate":112,"./templates/sketchTemplate":113,"./templates/spreadTemplate":114,"./templates/swirlTemplate":115,"./templates/tintTemplate":116,"./templates/tornPaper1":117,"./templates/tornPaper2":118,"./templates/vignetteTemplate1":119,"./templates/virtualPixel1":120,"./templates/waveTemplate":121}],96:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -3806,7 +4000,7 @@ image with a comma-delimited list of colorization values (e.g., -colorize 0,0,50
     tags: [commandTemplate_1.CommandTemplateTag.colors]
 };
 
-},{"../..":121,"../commandTemplate":92}],95:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],97:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -3832,7 +4026,7 @@ exports.cropTemplate1 = {
     ]
 };
 
-},{"../..":121}],96:[function(require,module,exports){
+},{"../..":123}],98:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -3896,7 +4090,7 @@ exports.DistortPerspective1 = {
     ]
 };
 
-},{"../..":121}],97:[function(require,module,exports){
+},{"../..":123}],99:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -3928,7 +4122,7 @@ exports.ditherColorsTemplate = {
     ]
 };
 
-},{"../..":121,"../commandTemplate":92}],98:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],100:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -3951,7 +4145,7 @@ exports.frameFeathering1 = {
     ]
 };
 
-},{"../..":121,"../commandTemplate":92}],99:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],101:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -3976,7 +4170,7 @@ exports.frameShape1 = {
     ]
 };
 
-},{"../..":121,"../commandTemplate":92}],100:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],102:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4026,7 +4220,7 @@ exports.morphologyTemplate = {
     ]
 };
 
-},{"../..":121,"../commandTemplate":92}],101:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],103:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4045,7 +4239,7 @@ exports.oilTemplate = {
     ]
 };
 
-},{"../..":121,"../commandTemplate":92}],102:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],104:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4085,7 +4279,7 @@ exports.plasmaFrame1 = {
     ]
 };
 
-},{"../..":121,"../commandTemplate":92}],103:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],105:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4110,7 +4304,7 @@ exports.polaroidTemplate2 = {
     ]
 };
 
-},{"../..":121,"../commandTemplate":92}],104:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],106:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4139,7 +4333,7 @@ exports.polaroidTemplate3 = {
     ]
 };
 
-},{"../..":121,"../commandTemplate":92}],105:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],107:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4180,7 +4374,7 @@ exports.replaceColorTemplate = {
     ]
 };
 
-},{"../..":121,"../commandTemplate":92}],106:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],108:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4224,7 +4418,7 @@ exports.RotateGif = {
     ]
 };
 
-},{"../..":121,"../../util/misc":199}],107:[function(require,module,exports){
+},{"../..":123,"../../util/misc":201}],109:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4258,7 +4452,7 @@ exports.shadeTemplate = {
     ]
 };
 
-},{"../..":121,"../commandTemplate":92}],108:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],110:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4287,7 +4481,7 @@ exports.shadowFrame1 = {
     ]
 };
 
-},{"../..":121,"../commandTemplate":92}],109:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],111:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4334,7 +4528,7 @@ exports.sharpenBlurTemplate = {
     ]
 };
 
-},{"../..":121,"../commandTemplate":92}],110:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],112:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4373,7 +4567,7 @@ exports.shearTemplate = {
     ]
 };
 
-},{"../..":121,"../commandTemplate":92}],111:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],113:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4413,7 +4607,7 @@ Sketch with the given radius, standard deviation (sigma), and angle. The angle g
     ]
 };
 
-},{"../..":121,"../commandTemplate":92}],112:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],114:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4448,7 +4642,7 @@ The lookup is controlled by the -interpolate setting.`,
     ]
 };
 
-},{"../..":121,"../commandTemplate":92}],113:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],115:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4473,7 +4667,7 @@ exports.swirlTemplate = {
     ]
 };
 
-},{"../..":121,"../commandTemplate":92}],114:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],116:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4505,7 +4699,7 @@ exports.tintTemplate = {
     ]
 };
 
-},{"../..":121,"../commandTemplate":92}],115:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],117:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4530,7 +4724,7 @@ exports.tornPaper1 = {
     ]
 };
 
-},{"../..":121,"../commandTemplate":92}],116:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],118:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4560,7 +4754,7 @@ exports.tornPaper2 = {
     ]
 };
 
-},{"../..":121,"../commandTemplate":92}],117:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],119:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4586,7 +4780,7 @@ exports.vignetteTemplate1 = {
     ]
 };
 
-},{"../..":121,"../commandTemplate":92}],118:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],120:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4618,7 +4812,7 @@ exports.virtualPixel1 = {
     ]
 };
 
-},{"../..":121,"../commandTemplate":92}],119:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],121:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4650,7 +4844,7 @@ exports.waveTemplate = {
     ]
 };
 
-},{"../..":121,"../commandTemplate":92}],120:[function(require,module,exports){
+},{"../..":123,"../commandTemplate":94}],122:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const promiseMap = require("p-map");
@@ -4686,7 +4880,7 @@ function addExecuteListener(l) {
 }
 exports.addExecuteListener = addExecuteListener;
 
-},{"./index":121,"./util/image":197,"p-map":200}],121:[function(require,module,exports){
+},{"./index":123,"./util/image":199,"p-map":202}],123:[function(require,module,exports){
 "use strict";
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
@@ -4734,7 +4928,7 @@ __export(require("./commandTemplate/templates"));
 //   Double: DoubleT,
 // }
 
-},{"./chain":90,"./commandTemplate/commandTemplate":92,"./commandTemplate/templates":93,"./execute":120,"./list":193,"./options/filter":194,"./options/virtualPixel":195,"./util/cli":196,"./util/image":197,"./util/info":198,"./util/misc":199,"wasm-imagemagick":4}],122:[function(require,module,exports){
+},{"./chain":92,"./commandTemplate/commandTemplate":94,"./commandTemplate/templates":95,"./execute":122,"./list":195,"./options/filter":196,"./options/virtualPixel":197,"./util/cli":198,"./util/image":199,"./util/info":200,"./util/misc":201,"wasm-imagemagick":4}],124:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -4748,7 +4942,7 @@ var Align;
     Align["Start"] = "Start";
 })(Align = exports.Align || (exports.Align = {}));
 
-},{}],123:[function(require,module,exports){
+},{}],125:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -4771,7 +4965,7 @@ var Alpha;
     Alpha["Transparent"] = "Transparent";
 })(Alpha = exports.Alpha || (exports.Alpha = {}));
 
-},{}],124:[function(require,module,exports){
+},{}],126:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -4782,7 +4976,7 @@ var AutoThreshold;
     AutoThreshold["Triangle"] = "Triangle";
 })(AutoThreshold = exports.AutoThreshold || (exports.AutoThreshold = {}));
 
-},{}],125:[function(require,module,exports){
+},{}],127:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -4794,7 +4988,7 @@ var Boolean;
     Boolean["1_"] = "1";
 })(Boolean = exports.Boolean || (exports.Boolean = {}));
 
-},{}],126:[function(require,module,exports){
+},{}],128:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5002,7 +5196,7 @@ var CLI;
     CLI["  clone"] = "  clone";
 })(CLI = exports.CLI || (exports.CLI = {}));
 
-},{}],127:[function(require,module,exports){
+},{}],129:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5015,7 +5209,7 @@ var Cache;
     Cache["Ping"] = "Ping";
 })(Cache = exports.Cache || (exports.Cache = {}));
 
-},{}],128:[function(require,module,exports){
+},{}],130:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5084,7 +5278,7 @@ var Channel;
     Channel["31_"] = "31";
 })(Channel = exports.Channel || (exports.Channel = {}));
 
-},{}],129:[function(require,module,exports){
+},{}],131:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5094,7 +5288,7 @@ var Class;
     Class["PseudoClass"] = "PseudoClass";
 })(Class = exports.Class || (exports.Class = {}));
 
-},{}],130:[function(require,module,exports){
+},{}],132:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5105,7 +5299,7 @@ var ClipPath;
     ClipPath["UserSpaceOnUse"] = "UserSpaceOnUse";
 })(ClipPath = exports.ClipPath || (exports.ClipPath = {}));
 
-},{}],131:[function(require,module,exports){
+},{}],133:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5147,7 +5341,7 @@ var Colorspace;
     Colorspace["YUV"] = "YUV";
 })(Colorspace = exports.Colorspace || (exports.Colorspace = {}));
 
-},{}],132:[function(require,module,exports){
+},{}],134:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5599,7 +5793,7 @@ var Command;
     Command["-write-mask"] = "-write-mask";
 })(Command = exports.Command || (exports.Command = {}));
 
-},{}],133:[function(require,module,exports){
+},{}],135:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5614,7 +5808,7 @@ var Complex;
     Complex["Subtract"] = "Subtract";
 })(Complex = exports.Complex || (exports.Complex = {}));
 
-},{}],134:[function(require,module,exports){
+},{}],136:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5628,7 +5822,7 @@ var Compliance;
     Compliance["XPM"] = "XPM";
 })(Compliance = exports.Compliance || (exports.Compliance = {}));
 
-},{}],135:[function(require,module,exports){
+},{}],137:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5705,7 +5899,7 @@ var Compose;
     Compose["Xor"] = "Xor";
 })(Compose = exports.Compose || (exports.Compose = {}));
 
-},{}],136:[function(require,module,exports){
+},{}],138:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5736,7 +5930,7 @@ var Compress;
     Compress["ZipS"] = "ZipS";
 })(Compress = exports.Compress || (exports.Compress = {}));
 
-},{}],137:[function(require,module,exports){
+},{}],139:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5748,7 +5942,7 @@ var DataType;
     DataType["String"] = "String";
 })(DataType = exports.DataType || (exports.DataType = {}));
 
-},{}],138:[function(require,module,exports){
+},{}],140:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5778,7 +5972,7 @@ var Debug;
     Debug["X11"] = "X11";
 })(Debug = exports.Debug || (exports.Debug = {}));
 
-},{}],139:[function(require,module,exports){
+},{}],141:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5790,7 +5984,7 @@ var Decoration;
     Decoration["Underline"] = "Underline";
 })(Decoration = exports.Decoration || (exports.Decoration = {}));
 
-},{}],140:[function(require,module,exports){
+},{}],142:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5800,7 +5994,7 @@ var Direction;
     Direction["left-to-right"] = "left-to-right";
 })(Direction = exports.Direction || (exports.Direction = {}));
 
-},{}],141:[function(require,module,exports){
+},{}],143:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5816,7 +6010,7 @@ var Dispose;
     Dispose["3_"] = "3";
 })(Dispose = exports.Dispose || (exports.Dispose = {}));
 
-},{}],142:[function(require,module,exports){
+},{}],144:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5840,7 +6034,7 @@ var Distort;
     Distort["Resize"] = "Resize";
 })(Distort = exports.Distort || (exports.Distort = {}));
 
-},{}],143:[function(require,module,exports){
+},{}],145:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5851,7 +6045,7 @@ var Dither;
     Dither["Riemersma"] = "Riemersma";
 })(Dither = exports.Dither || (exports.Dither = {}));
 
-},{}],144:[function(require,module,exports){
+},{}],146:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5861,7 +6055,7 @@ var Endian;
     Endian["MSB"] = "MSB";
 })(Endian = exports.Endian || (exports.Endian = {}));
 
-},{}],145:[function(require,module,exports){
+},{}],147:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5905,7 +6099,7 @@ var Evaluate;
     Evaluate["Xor"] = "Xor";
 })(Evaluate = exports.Evaluate || (exports.Evaluate = {}));
 
-},{}],146:[function(require,module,exports){
+},{}],148:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5915,7 +6109,7 @@ var FillRule;
     FillRule["NonZero"] = "NonZero";
 })(FillRule = exports.FillRule || (exports.FillRule = {}));
 
-},{}],147:[function(require,module,exports){
+},{}],149:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5954,7 +6148,7 @@ var Filter;
     Filter["Welch"] = "Welch";
 })(Filter = exports.Filter || (exports.Filter = {}));
 
-},{}],148:[function(require,module,exports){
+},{}],150:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6377,7 +6571,7 @@ var Font;
     Font["    glyphs: /usr/share/fonts/mathjax/HTML-CSS/STIX-Web/woff/STIXMathJax_Variants-Regular.woff"] = "    glyphs: /usr/share/fonts/mathjax/HTML-CSS/STIX-Web/woff/STIXMathJax_Variants-Regular.woff";
 })(Font = exports.Font || (exports.Font = {}));
 
-},{}],149:[function(require,module,exports){
+},{}],151:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6389,7 +6583,7 @@ var Function;
     Function["ArcTan"] = "ArcTan";
 })(Function = exports.Function || (exports.Function = {}));
 
-},{}],150:[function(require,module,exports){
+},{}],152:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6399,7 +6593,7 @@ var Gradient;
     Gradient["Radial"] = "Radial";
 })(Gradient = exports.Gradient || (exports.Gradient = {}));
 
-},{}],151:[function(require,module,exports){
+},{}],153:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6418,7 +6612,7 @@ var Gravity;
     Gravity["West"] = "West";
 })(Gravity = exports.Gravity || (exports.Gravity = {}));
 
-},{}],152:[function(require,module,exports){
+},{}],154:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6436,7 +6630,7 @@ var Intensity;
     Intensity["RMS"] = "RMS";
 })(Intensity = exports.Intensity || (exports.Intensity = {}));
 
-},{}],153:[function(require,module,exports){
+},{}],155:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6448,7 +6642,7 @@ var Intent;
     Intent["Saturation"] = "Saturation";
 })(Intent = exports.Intent || (exports.Intent = {}));
 
-},{}],154:[function(require,module,exports){
+},{}],156:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6463,7 +6657,7 @@ var Interlace;
     Interlace["PNG"] = "PNG";
 })(Interlace = exports.Interlace || (exports.Interlace = {}));
 
-},{}],155:[function(require,module,exports){
+},{}],157:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6483,7 +6677,7 @@ var Interpolate;
     Interpolate["Spline"] = "Spline";
 })(Interpolate = exports.Interpolate || (exports.Interpolate = {}));
 
-},{}],156:[function(require,module,exports){
+},{}],158:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6527,7 +6721,7 @@ var Kernel;
     Kernel["Euclidean"] = "Euclidean";
 })(Kernel = exports.Kernel || (exports.Kernel = {}));
 
-},{}],157:[function(require,module,exports){
+},{}],159:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6551,7 +6745,7 @@ var Layers;
     Layers["TrimBounds"] = "TrimBounds";
 })(Layers = exports.Layers || (exports.Layers = {}));
 
-},{}],158:[function(require,module,exports){
+},{}],160:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6562,7 +6756,7 @@ var LineCap;
     LineCap["Square"] = "Square";
 })(LineCap = exports.LineCap || (exports.LineCap = {}));
 
-},{}],159:[function(require,module,exports){
+},{}],161:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6573,7 +6767,7 @@ var LineJoin;
     LineJoin["Round"] = "Round";
 })(LineJoin = exports.LineJoin || (exports.LineJoin = {}));
 
-},{}],160:[function(require,module,exports){
+},{}],162:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6660,7 +6854,7 @@ var List;
     List["Weight"] = "Weight";
 })(List = exports.List || (exports.List = {}));
 
-},{}],161:[function(require,module,exports){
+},{}],163:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7569,7 +7763,7 @@ var Locale;
     Locale["  y shear image"] = "  y shear image";
 })(Locale = exports.Locale || (exports.Locale = {}));
 
-},{}],162:[function(require,module,exports){
+},{}],164:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7583,7 +7777,7 @@ var Log;
     Log["Magick-%g.log            0         0   %t %r %u %v %d %c[%p]: %m/%f/%l/%d\n  %e"] = "Magick-%g.log            0         0   %t %r %u %v %d %c[%p]: %m/%f/%l/%d\n  %e";
 })(Log = exports.Log || (exports.Log = {}));
 
-},{}],163:[function(require,module,exports){
+},{}],165:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7613,7 +7807,7 @@ var LogEvent;
     LogEvent["X11"] = "X11";
 })(LogEvent = exports.LogEvent || (exports.LogEvent = {}));
 
-},{}],164:[function(require,module,exports){
+},{}],166:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7626,7 +7820,7 @@ var Method;
     Method["Reset"] = "Reset";
 })(Method = exports.Method || (exports.Method = {}));
 
-},{}],165:[function(require,module,exports){
+},{}],167:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7646,7 +7840,7 @@ var Metric;
     Metric["SSIM"] = "SSIM";
 })(Metric = exports.Metric || (exports.Metric = {}));
 
-},{}],166:[function(require,module,exports){
+},{}],168:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7657,7 +7851,7 @@ var Mode;
     Mode["Unframe"] = "Unframe";
 })(Mode = exports.Mode || (exports.Mode = {}));
 
-},{}],167:[function(require,module,exports){
+},{}],169:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7792,7 +7986,7 @@ var Module;
     Module["analyze"] = "analyze";
 })(Module = exports.Module || (exports.Module = {}));
 
-},{}],168:[function(require,module,exports){
+},{}],170:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7827,7 +8021,7 @@ var Morphology;
     Morphology["IterativeDistance"] = "IterativeDistance";
 })(Morphology = exports.Morphology || (exports.Morphology = {}));
 
-},{}],169:[function(require,module,exports){
+},{}],171:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7842,7 +8036,7 @@ var Noise;
     Noise["Uniform"] = "Uniform";
 })(Noise = exports.Noise || (exports.Noise = {}));
 
-},{}],170:[function(require,module,exports){
+},{}],172:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7858,7 +8052,7 @@ var Orientation;
     Orientation["LeftBottom"] = "LeftBottom";
 })(Orientation = exports.Orientation || (exports.Orientation = {}));
 
-},{}],171:[function(require,module,exports){
+},{}],173:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7896,7 +8090,7 @@ var PixelChannel;
     PixelChannel["Yellow"] = "Yellow";
 })(PixelChannel = exports.PixelChannel || (exports.PixelChannel = {}));
 
-},{}],172:[function(require,module,exports){
+},{}],174:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7914,7 +8108,7 @@ var PixelIntensity;
     PixelIntensity["RMS"] = "RMS";
 })(PixelIntensity = exports.PixelIntensity || (exports.PixelIntensity = {}));
 
-},{}],173:[function(require,module,exports){
+},{}],175:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7926,7 +8120,7 @@ var PixelMask;
     PixelMask["Write"] = "Write";
 })(PixelMask = exports.PixelMask || (exports.PixelMask = {}));
 
-},{}],174:[function(require,module,exports){
+},{}],176:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7937,7 +8131,7 @@ var PixelTrait;
     PixelTrait["Update"] = "Update";
 })(PixelTrait = exports.PixelTrait || (exports.PixelTrait = {}));
 
-},{}],175:[function(require,module,exports){
+},{}],177:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7948,7 +8142,7 @@ var Policy;
     Policy["    rights: None "] = "    rights: None ";
 })(Policy = exports.Policy || (exports.Policy = {}));
 
-},{}],176:[function(require,module,exports){
+},{}],178:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7964,7 +8158,7 @@ var PolicyDomain;
     PolicyDomain["System"] = "System";
 })(PolicyDomain = exports.PolicyDomain || (exports.PolicyDomain = {}));
 
-},{}],177:[function(require,module,exports){
+},{}],179:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7977,7 +8171,7 @@ var PolicyRights;
     PolicyRights["Write"] = "Write";
 })(PolicyRights = exports.PolicyRights || (exports.PolicyRights = {}));
 
-},{}],178:[function(require,module,exports){
+},{}],180:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8014,7 +8208,7 @@ var Preview;
     Preview["Wave"] = "Wave";
 })(Preview = exports.Preview || (exports.Preview = {}));
 
-},{}],179:[function(require,module,exports){
+},{}],181:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8038,7 +8232,7 @@ var Primitive;
     Primitive["Text"] = "Text";
 })(Primitive = exports.Primitive || (exports.Primitive = {}));
 
-},{}],180:[function(require,module,exports){
+},{}],182:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8049,7 +8243,7 @@ var QuantumFormat;
     QuantumFormat["Unsigned"] = "Unsigned";
 })(QuantumFormat = exports.QuantumFormat || (exports.QuantumFormat = {}));
 
-},{}],181:[function(require,module,exports){
+},{}],183:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8069,7 +8263,7 @@ var Resource;
     Resource["  Time: unlimited"] = "  Time: unlimited";
 })(Resource = exports.Resource || (exports.Resource = {}));
 
-},{}],182:[function(require,module,exports){
+},{}],184:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8083,7 +8277,7 @@ var SparseColor;
     SparseColor["Manhattan"] = "Manhattan";
 })(SparseColor = exports.SparseColor || (exports.SparseColor = {}));
 
-},{}],183:[function(require,module,exports){
+},{}],185:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8101,7 +8295,7 @@ var Statistic;
     Statistic["StandardDeviation"] = "StandardDeviation";
 })(Statistic = exports.Statistic || (exports.Statistic = {}));
 
-},{}],184:[function(require,module,exports){
+},{}],186:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8116,7 +8310,7 @@ var Storage;
     Storage["Short"] = "Short";
 })(Storage = exports.Storage || (exports.Storage = {}));
 
-},{}],185:[function(require,module,exports){
+},{}],187:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8134,7 +8328,7 @@ var Stretch;
     Stretch["UltraExpanded"] = "UltraExpanded";
 })(Stretch = exports.Stretch || (exports.Stretch = {}));
 
-},{}],186:[function(require,module,exports){
+},{}],188:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8147,7 +8341,7 @@ var Style;
     Style["Oblique"] = "Oblique";
 })(Style = exports.Style || (exports.Style = {}));
 
-},{}],187:[function(require,module,exports){
+},{}],189:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8166,7 +8360,7 @@ var Tool;
     Tool["stream"] = "stream";
 })(Tool = exports.Tool || (exports.Tool = {}));
 
-},{}],188:[function(require,module,exports){
+},{}],190:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8190,7 +8384,7 @@ var Type;
     Type["TrueColor"] = "TrueColor";
 })(Type = exports.Type || (exports.Type = {}));
 
-},{}],189:[function(require,module,exports){
+},{}],191:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8203,7 +8397,7 @@ var Units;
     Units["3_"] = "3";
 })(Units = exports.Units || (exports.Units = {}));
 
-},{}],190:[function(require,module,exports){
+},{}],192:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8224,7 +8418,7 @@ var Validate;
     Validate["None"] = "None";
 })(Validate = exports.Validate || (exports.Validate = {}));
 
-},{}],191:[function(require,module,exports){
+},{}],193:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8248,7 +8442,7 @@ var VirtualPixel;
     VirtualPixel["White"] = "White";
 })(VirtualPixel = exports.VirtualPixel || (exports.VirtualPixel = {}));
 
-},{}],192:[function(require,module,exports){
+},{}],194:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8269,7 +8463,7 @@ var Weight;
     Weight["Black"] = "Black";
 })(Weight = exports.Weight || (exports.Weight = {}));
 
-},{}],193:[function(require,module,exports){
+},{}],195:[function(require,module,exports){
 "use strict";
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
@@ -8347,7 +8541,7 @@ __export(require("./Validate"));
 __export(require("./VirtualPixel"));
 __export(require("./Weight"));
 
-},{"./Align":122,"./Alpha":123,"./AutoThreshold":124,"./Boolean":125,"./CLI":126,"./Cache":127,"./Channel":128,"./Class":129,"./ClipPath":130,"./Colorspace":131,"./Command":132,"./Complex":133,"./Compliance":134,"./Compose":135,"./Compress":136,"./DataType":137,"./Debug":138,"./Decoration":139,"./Direction":140,"./Dispose":141,"./Distort":142,"./Dither":143,"./Endian":144,"./Evaluate":145,"./FillRule":146,"./Filter":147,"./Font":148,"./Function":149,"./Gradient":150,"./Gravity":151,"./Intensity":152,"./Intent":153,"./Interlace":154,"./Interpolate":155,"./Kernel":156,"./Layers":157,"./LineCap":158,"./LineJoin":159,"./List":160,"./Locale":161,"./Log":162,"./LogEvent":163,"./Method":164,"./Metric":165,"./Mode":166,"./Module":167,"./Morphology":168,"./Noise":169,"./Orientation":170,"./PixelChannel":171,"./PixelIntensity":172,"./PixelMask":173,"./PixelTrait":174,"./Policy":175,"./PolicyDomain":176,"./PolicyRights":177,"./Preview":178,"./Primitive":179,"./QuantumFormat":180,"./Resource":181,"./SparseColor":182,"./Statistic":183,"./Storage":184,"./Stretch":185,"./Style":186,"./Tool":187,"./Type":188,"./Units":189,"./Validate":190,"./VirtualPixel":191,"./Weight":192}],194:[function(require,module,exports){
+},{"./Align":124,"./Alpha":125,"./AutoThreshold":126,"./Boolean":127,"./CLI":128,"./Cache":129,"./Channel":130,"./Class":131,"./ClipPath":132,"./Colorspace":133,"./Command":134,"./Complex":135,"./Compliance":136,"./Compose":137,"./Compress":138,"./DataType":139,"./Debug":140,"./Decoration":141,"./Direction":142,"./Dispose":143,"./Distort":144,"./Dither":145,"./Endian":146,"./Evaluate":147,"./FillRule":148,"./Filter":149,"./Font":150,"./Function":151,"./Gradient":152,"./Gravity":153,"./Intensity":154,"./Intent":155,"./Interlace":156,"./Interpolate":157,"./Kernel":158,"./Layers":159,"./LineCap":160,"./LineJoin":161,"./List":162,"./Locale":163,"./Log":164,"./LogEvent":165,"./Method":166,"./Metric":167,"./Mode":168,"./Module":169,"./Morphology":170,"./Noise":171,"./Orientation":172,"./PixelChannel":173,"./PixelIntensity":174,"./PixelMask":175,"./PixelTrait":176,"./Policy":177,"./PolicyDomain":178,"./PolicyRights":179,"./Preview":180,"./Primitive":181,"./QuantumFormat":182,"./Resource":183,"./SparseColor":184,"./Statistic":185,"./Storage":186,"./Stretch":187,"./Style":188,"./Tool":189,"./Type":190,"./Units":191,"./Validate":192,"./VirtualPixel":193,"./Weight":194}],196:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.filters = [
@@ -8373,7 +8567,7 @@ exports.filters = [
 //   'CubicSpline' = 'CubicSpline'
 // }
 
-},{}],195:[function(require,module,exports){
+},{}],197:[function(require,module,exports){
 "use strict";
 // TODO: remove everything
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -8422,7 +8616,7 @@ exports.VirtualPixelMethods = [
     'white',
 ];
 
-},{}],196:[function(require,module,exports){
+},{}],198:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 // utilities related to formating IM CLI arguments, command array to and from valid IMPLY arguments
@@ -8438,7 +8632,7 @@ function arrayToIMCommand(command) {
 }
 exports.arrayToIMCommand = arrayToIMCommand;
 
-},{}],197:[function(require,module,exports){
+},{}],199:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 async function readImageUrlToUintArray(url) {
@@ -8578,7 +8772,7 @@ function getOutputImageNameFor(inputImageName, extension = inputImageName.substr
 }
 exports.getOutputImageNameFor = getOutputImageNameFor;
 
-},{}],198:[function(require,module,exports){
+},{}],200:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const execute_1 = require("../execute");
@@ -8618,7 +8812,7 @@ async function info(infoConfig) {
 }
 exports.info = info;
 
-},{"../execute":120,"./image":197}],199:[function(require,module,exports){
+},{"../execute":122,"./image":199}],201:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /** easily list given enum's keys as an array */
@@ -8644,7 +8838,7 @@ function seq(start, step, max) {
 }
 exports.seq = seq;
 
-},{}],200:[function(require,module,exports){
+},{}],202:[function(require,module,exports){
 'use strict';
 module.exports = (iterable, mapper, opts) => new Promise((resolve, reject) => {
 	opts = Object.assign({
@@ -8713,7 +8907,7 @@ module.exports = (iterable, mapper, opts) => new Promise((resolve, reject) => {
 	}
 });
 
-},{}],201:[function(require,module,exports){
+},{}],203:[function(require,module,exports){
 /*
 object-assign
 (c) Sindre Sorhus
@@ -8805,9 +8999,9 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	return to;
 };
 
-},{}],202:[function(require,module,exports){
-arguments[4][81][0].apply(exports,arguments)
-},{"dup":81}],203:[function(require,module,exports){
+},{}],204:[function(require,module,exports){
+arguments[4][83][0].apply(exports,arguments)
+},{"dup":83}],205:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -8993,7 +9187,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],204:[function(require,module,exports){
+},{}],206:[function(require,module,exports){
 (function (process){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -9088,7 +9282,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 module.exports = checkPropTypes;
 
 }).call(this,require('_process'))
-},{"./lib/ReactPropTypesSecret":205,"_process":203}],205:[function(require,module,exports){
+},{"./lib/ReactPropTypesSecret":207,"_process":205}],207:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -9102,7 +9296,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],206:[function(require,module,exports){
+},{}],208:[function(require,module,exports){
 (function (process){
 /** @license React v16.6.1
  * react-dom.development.js
@@ -28833,7 +29027,7 @@ module.exports = reactDom;
 }
 
 }).call(this,require('_process'))
-},{"_process":203,"object-assign":201,"prop-types/checkPropTypes":204,"react":211,"scheduler":216,"scheduler/tracing":217}],207:[function(require,module,exports){
+},{"_process":205,"object-assign":203,"prop-types/checkPropTypes":206,"react":213,"scheduler":218,"scheduler/tracing":219}],209:[function(require,module,exports){
 /** @license React v16.6.1
  * react-dom.production.min.js
  *
@@ -29084,7 +29278,7 @@ void 0:t("40");return a._reactRootContainer?(Oh(function(){$h(null,null,a,!1,fun
 Ka,La,Ca.injectEventPluginsByName,qa,Ra,function(a){za(a,Qa)},Ib,Jb,Jd,Ea]},unstable_createRoot:function(a,b){Yh(a)?void 0:t("299","unstable_createRoot");return new Xh(a,!0,null!=b&&!0===b.hydrate)}};(function(a){var b=a.findFiberByHostInstance;return Ve(n({},a,{findHostInstanceByFiber:function(a){a=nd(a);return null===a?null:a.stateNode},findFiberByHostInstance:function(a){return b?b(a):null}}))})({findFiberByHostInstance:Ia,bundleType:0,version:"16.6.3",rendererPackageName:"react-dom"});
 var ei={default:bi},fi=ei&&bi||ei;module.exports=fi.default||fi;
 
-},{"object-assign":201,"react":211,"scheduler":216}],208:[function(require,module,exports){
+},{"object-assign":203,"react":213,"scheduler":218}],210:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -29126,7 +29320,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 }).call(this,require('_process'))
-},{"./cjs/react-dom.development.js":206,"./cjs/react-dom.production.min.js":207,"_process":203}],209:[function(require,module,exports){
+},{"./cjs/react-dom.development.js":208,"./cjs/react-dom.production.min.js":209,"_process":205}],211:[function(require,module,exports){
 (function (process){
 /** @license React v16.6.1
  * react.development.js
@@ -30970,7 +31164,7 @@ module.exports = react;
 }
 
 }).call(this,require('_process'))
-},{"_process":203,"object-assign":201,"prop-types/checkPropTypes":204}],210:[function(require,module,exports){
+},{"_process":205,"object-assign":203,"prop-types/checkPropTypes":206}],212:[function(require,module,exports){
 /** @license React v16.6.1
  * react.production.min.js
  *
@@ -30996,7 +31190,7 @@ _currentValue:a,_currentValue2:a,_threadCount:0,Provider:null,Consumer:null};a.P
 if(null!=b){void 0!==b.ref&&(h=b.ref,f=K.current);void 0!==b.key&&(g=""+b.key);var l=void 0;a.type&&a.type.defaultProps&&(l=a.type.defaultProps);for(c in b)L.call(b,c)&&!M.hasOwnProperty(c)&&(d[c]=void 0===b[c]&&void 0!==l?l[c]:b[c])}c=arguments.length-2;if(1===c)d.children=e;else if(1<c){l=Array(c);for(var m=0;m<c;m++)l[m]=arguments[m+2];d.children=l}return{$$typeof:p,type:a.type,key:g,ref:h,props:d,_owner:f}},createFactory:function(a){var b=N.bind(null,a);b.type=a;return b},isValidElement:O,version:"16.6.3",
 __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentOwner:K,assign:k}};X.unstable_ConcurrentMode=x;X.unstable_Profiler=u;var Y={default:X},Z=Y&&X||Y;module.exports=Z.default||Z;
 
-},{"object-assign":201}],211:[function(require,module,exports){
+},{"object-assign":203}],213:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -31007,7 +31201,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 }).call(this,require('_process'))
-},{"./cjs/react.development.js":209,"./cjs/react.production.min.js":210,"_process":203}],212:[function(require,module,exports){
+},{"./cjs/react.development.js":211,"./cjs/react.production.min.js":212,"_process":205}],214:[function(require,module,exports){
 (function (process){
 /** @license React v16.6.1
  * scheduler-tracing.development.js
@@ -31431,7 +31625,7 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
 }
 
 }).call(this,require('_process'))
-},{"_process":203}],213:[function(require,module,exports){
+},{"_process":205}],215:[function(require,module,exports){
 /** @license React v16.6.1
  * scheduler-tracing.production.min.js
  *
@@ -31443,7 +31637,7 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
 
 'use strict';Object.defineProperty(exports,"__esModule",{value:!0});var b=0;exports.__interactionsRef=null;exports.__subscriberRef=null;exports.unstable_clear=function(a){return a()};exports.unstable_getCurrent=function(){return null};exports.unstable_getThreadID=function(){return++b};exports.unstable_trace=function(a,d,c){return c()};exports.unstable_wrap=function(a){return a};exports.unstable_subscribe=function(){};exports.unstable_unsubscribe=function(){};
 
-},{}],214:[function(require,module,exports){
+},{}],216:[function(require,module,exports){
 (function (process){
 /** @license React v16.6.1
  * scheduler.development.js
@@ -32086,7 +32280,7 @@ exports.unstable_shouldYield = unstable_shouldYield;
 }
 
 }).call(this,require('_process'))
-},{"_process":203}],215:[function(require,module,exports){
+},{"_process":205}],217:[function(require,module,exports){
 /** @license React v16.6.1
  * scheduler.production.min.js
  *
@@ -32109,7 +32303,7 @@ exports.unstable_scheduleCallback=function(a,b){var c=-1!==k?k:exports.unstable_
 b=c.previous;b.next=c.previous=a;a.next=c;a.previous=b}return a};exports.unstable_cancelCallback=function(a){var b=a.next;if(null!==b){if(b===a)d=null;else{a===d&&(d=b);var c=a.previous;c.next=b;b.previous=c}a.next=a.previous=null}};exports.unstable_wrapCallback=function(a){var b=h;return function(){var c=h,e=k;h=b;k=exports.unstable_now();try{return a.apply(this,arguments)}finally{h=c,k=e,v()}}};exports.unstable_getCurrentPriorityLevel=function(){return h};
 exports.unstable_shouldYield=function(){return!f&&(null!==d&&d.expirationTime<l||w())};
 
-},{}],216:[function(require,module,exports){
+},{}],218:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -32120,7 +32314,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 }).call(this,require('_process'))
-},{"./cjs/scheduler.development.js":214,"./cjs/scheduler.production.min.js":215,"_process":203}],217:[function(require,module,exports){
+},{"./cjs/scheduler.development.js":216,"./cjs/scheduler.production.min.js":217,"_process":205}],219:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -32131,7 +32325,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 }).call(this,require('_process'))
-},{"./cjs/scheduler-tracing.development.js":212,"./cjs/scheduler-tracing.production.min.js":213,"_process":203}],218:[function(require,module,exports){
+},{"./cjs/scheduler-tracing.development.js":214,"./cjs/scheduler-tracing.production.min.js":215,"_process":205}],220:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var typestyle_1 = require("./internal/typestyle");
@@ -32212,7 +32406,7 @@ function createTypeStyle(target) {
 }
 exports.createTypeStyle = createTypeStyle;
 
-},{"./internal/typestyle":220,"./internal/utilities":221,"./types":222}],219:[function(require,module,exports){
+},{"./internal/typestyle":222,"./internal/utilities":223,"./types":224}],221:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var FreeStyle = require("free-style");
@@ -32266,7 +32460,7 @@ function explodeKeyframes(frames) {
 }
 exports.explodeKeyframes = explodeKeyframes;
 
-},{"free-style":86}],220:[function(require,module,exports){
+},{"free-style":88}],222:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var FreeStyle = require("free-style");
@@ -32467,7 +32661,7 @@ var TypeStyle = /** @class */ (function () {
 }());
 exports.TypeStyle = TypeStyle;
 
-},{"./formatting":219,"./utilities":221,"free-style":86}],221:[function(require,module,exports){
+},{"./formatting":221,"./utilities":223,"free-style":88}],223:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /** Raf for node + browser */
@@ -32571,8 +32765,8 @@ var mediaLength = function (value) {
     return typeof value === 'string' ? value : value + "px";
 };
 
-},{}],222:[function(require,module,exports){
+},{}],224:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 
-},{}]},{},[84]);
+},{}]},{},[86]);
