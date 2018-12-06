@@ -1,72 +1,77 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const _1 = require(".");
 const p_map_1 = require("p-map");
-const misc_1 = require("./util/misc");
+const _1 = require(".");
+const VirtualCommand_1 = require("./executeVirtualCommand/VirtualCommand");
 const util_1 = require("./util");
+const misc_1 = require("./util/misc");
+const executeCommandPreprocessor_1 = require("./executeCommandPreprocessor");
 /**
  * Execute first command in given config.
+ *
+ * @see [execute](https://github.com/KnicKnic/WASM-ImageMagick/tree/master/apidocs#execute) for full documentation on accepted signatures
  */
-async function executeOne(configOrCommand) {
-    const config = asExecuteConfig(configOrCommand);
+async function executeOne(configOrCommand, execCommand) {
+    const config = asExecuteConfig(configOrCommand, execCommand);
+    config.inputFiles = config.inputFiles || [];
+    const command = _1.asCommand(config.commands)[0];
     let result = {
         stderr: [],
         stdout: [],
         outputFiles: [],
         exitCode: 1,
+        command: command.map(c => c + ''),
+        inputFiles: config.inputFiles,
     };
     try {
-        config.inputFiles = config.inputFiles || [];
-        const command = _1.asCommand(config.commands)[0];
-        const t0 = performance.now();
-        executeListeners.forEach(listener => listener.beforeExecute({ command, took: performance.now() - t0, id: t0 }));
         result = await _1.call(config.inputFiles, command.map(c => c + ''));
-        executeListeners.forEach(listener => listener.afterExecute({ command, took: performance.now() - t0, id: t0 }));
-        if (result.exitCode) {
-            return Object.assign({}, result, { errors: ['exit code: ' + result.exitCode + ' stderr: ' + result.stderr.join('\n')] });
-        }
-        return Object.assign({}, result, { errors: [undefined] });
+        return Object.assign({}, result);
     }
     catch (error) {
-        return Object.assign({}, result, { errors: [error + ', exit code: ' + result.exitCode + ', stderr: ' + result.stderr.join('\n')] });
+        return Object.assign({}, result);
     }
 }
 exports.executeOne = executeOne;
-function isExecuteCommand(arg) {
+function isExecuteConfig(arg) {
     return !!arg.commands;
 }
-exports.isExecuteCommand = isExecuteCommand;
+exports.isExecuteConfig = isExecuteConfig;
 /**
  * Transform  `configOrCommand: ExecuteConfig | ExecuteCommand` to a valid ExecuteConfig object
  */
-function asExecuteConfig(arg) {
-    if (isExecuteCommand(arg)) {
-        return arg;
+function asExecuteConfig(configOrCommandOrFiles, command) {
+    let result;
+    if (isExecuteConfig(configOrCommandOrFiles)) {
+        result = configOrCommandOrFiles;
     }
-    return {
-        inputFiles: [],
-        commands: arg,
-    };
+    else if (Array.isArray(configOrCommandOrFiles) && util_1.isInputFile(configOrCommandOrFiles[0])) {
+        if (!command) {
+            throw new Error('No command given');
+        }
+        result = {
+            inputFiles: configOrCommandOrFiles,
+            commands: command,
+        };
+    }
+    else {
+        result = {
+            inputFiles: [],
+            commands: configOrCommandOrFiles,
+        };
+    }
+    return result.skipCommandPreprocessors ? result : executeCommandPreprocessor_1._preprocessCommand(result);
 }
 exports.asExecuteConfig = asExecuteConfig;
 /**
- * `execute()` shortcut that useful for commands that return only one output file or when only one particular output file is relevant.
- * @param outputFileName optionally user can give the desired output file name
- * @returns If `outputFileName` is given the file with that name, the first output file otherwise or undefined
- * if no file match, or no output files where generated (like in an error).
+ * `execute()` shortcut that return directly the first output file or undefined if none or error occur
  */
-async function executeAndReturnOutputFile(configOrCommand, outputFileName) {
-    const config = asExecuteConfig(configOrCommand);
+async function executeAndReturnOutputFile(configOrCommand, command) {
+    const config = asExecuteConfig(configOrCommand, command);
     const result = await execute(config);
-    return outputFileName ? result.outputFiles.find(f => f.name === outputFileName) : (result.outputFiles.length && result.outputFiles[0] || undefined);
+    return result.outputFiles.length && result.outputFiles[0] || undefined;
 }
 exports.executeAndReturnOutputFile = executeAndReturnOutputFile;
-const executeListeners = [];
-function addExecuteListener(l) {
-    executeListeners.push(l);
-}
-exports.addExecuteListener = addExecuteListener;
 /**
  * Execute all commands in given config serially in order. Output files from a command become available as
  * input files in next commands. In the following example we execute two commands. Notice how the second one uses `image2.png` which was the output file of the first one:
@@ -86,54 +91,332 @@ exports.addExecuteListener = addExecuteListener;
  *   await loadImageElement(outputFiles.find(f => f.name==='image3.jpg'), document.getElementById('outputImage'))
  * }
  * ```
+ * Another varlid signature is passing input files and commands as parameters:
+ *
+ * ```ts
+ * const { outputFiles, exitCode, stderr} = await execute([await buildInputFile('foo.png'], 'convert foo.png foo.jpg')
+ * ```
+ *
+ * Another valid signature is just providing the command when there there is no need for input files:
+ *
+ * ```ts
+ * const { outputFiles, exitCode, stderr} = await execute('identify rose:')
+ * ```
  *
  * See {@link ExecuteCommand} for different command syntax supported.
  *
  * See {@link ExecuteResult} for details on the object returned
  */
-async function execute(configOrCommand) {
-    const config = asExecuteConfig(configOrCommand);
+async function execute(configOrCommandOrFiles, command) {
+    const config = asExecuteConfig(configOrCommandOrFiles, command);
+    const executionId = config.executionId || ++executionIdCounter;
     config.inputFiles = config.inputFiles || [];
     const allOutputFiles = {};
     const allInputFiles = {};
     config.inputFiles.forEach(f => {
         allInputFiles[f.name] = f;
     });
-    let allErrors = [];
     const results = [];
     let allStdout = [];
     let allStderr = [];
+    const virtualCommandLogs = {};
     async function mapper(c) {
         const thisConfig = {
             inputFiles: misc_1.values(allInputFiles),
             commands: [c],
         };
-        const result = await executeOne(thisConfig);
+        const virtualCommandContext = {
+            command: c,
+            files: allInputFiles,
+            executionId,
+            virtualCommandLogs,
+        };
+        let result;
+        if (!config.skipVirtualCommands && VirtualCommand_1.isVirtualCommand(virtualCommandContext)) {
+            result = await VirtualCommand_1._dispatchVirtualCommand(virtualCommandContext);
+        }
+        else {
+            result = await executeOne(thisConfig);
+        }
         results.push(result);
-        allErrors = allErrors.concat(result.errors || []);
         allStdout = allStdout.concat(result.stdout || []);
         allStderr = allStderr.concat(result.stderr || []);
         await p_map_1.default(result.outputFiles, async (f) => {
             allOutputFiles[f.name] = f;
             const inputFile = await util_1.asInputFile(f);
             allInputFiles[inputFile.name] = inputFile;
-        });
+        }, { concurrency: 1 });
     }
     const commands = _1.asCommand(config.commands);
     await p_map_1.default(commands, mapper, { concurrency: 1 });
     const resultWithError = results.find(r => r.exitCode !== 0);
     return {
         outputFiles: misc_1.values(allOutputFiles),
-        errors: allErrors,
         results,
         stdout: allStdout,
         stderr: allStderr,
         exitCode: resultWithError ? resultWithError.exitCode : 0,
+        command: [],
+        commands,
+        inputFiles: config.inputFiles,
+        virtualCommandLogs,
     };
 }
 exports.execute = execute;
+let executionIdCounter = 1;
 
-},{".":4,"./util":80,"./util/misc":81,"p-map":83}],2:[function(require,module,exports){
+},{".":11,"./executeCommandPreprocessor":2,"./executeVirtualCommand/VirtualCommand":3,"./util":87,"./util/misc":88,"p-map":98}],2:[function(require,module,exports){
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const template = require('lodash.template');
+const commandPreprocessors = [];
+/** internal - executes all registered preprocessors on given config */
+function _preprocessCommand(config) {
+    let cfg = config;
+    commandPreprocessors.forEach(p => {
+        cfg = p.execute(cfg);
+    });
+    return Object.assign({}, cfg);
+}
+exports._preprocessCommand = _preprocessCommand;
+function registerCommandPreprocessor(p) {
+    commandPreprocessors.push(p);
+}
+exports.registerCommandPreprocessor = registerCommandPreprocessor;
+registerCommandPreprocessor({
+    name: 'template',
+    execute(context) {
+        if (typeof (context.commands) === 'string') {
+            const commandTemplate = template(context.commands);
+            const commands = commandTemplate(context);
+            return Object.assign({}, context, { commands });
+        }
+        else {
+            return context;
+        }
+    },
+});
+
+},{"lodash.template":95}],3:[function(require,module,exports){
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const util_1 = require("../util");
+const buildFile_1 = require("./buildFile");
+const cat_1 = require("./cat");
+const ls_1 = require("./ls");
+const uniqueName_1 = require("./uniqueName");
+const substitution_1 = require("./substitution");
+const virtualCommands = [];
+function isVirtualCommand(context) {
+    return !!virtualCommands.find(c => c.predicate(context));
+}
+exports.isVirtualCommand = isVirtualCommand;
+function _dispatchVirtualCommand(context) {
+    const cmd = virtualCommands.find(c => c.predicate(context));
+    context.virtualCommandLogs[cmd.name] = context.virtualCommandLogs[cmd.name] || [];
+    return cmd.execute(context);
+}
+exports._dispatchVirtualCommand = _dispatchVirtualCommand;
+function registerExecuteVirtualCommand(c) {
+    virtualCommands.push(c);
+}
+exports.registerExecuteVirtualCommand = registerExecuteVirtualCommand;
+// registerExecuteVirtualCommand(variableSubstitution)
+registerExecuteVirtualCommand(substitution_1.default);
+// registerExecuteVirtualCommand(variableDeclaration)
+registerExecuteVirtualCommand(ls_1.default);
+registerExecuteVirtualCommand(cat_1.default);
+registerExecuteVirtualCommand(buildFile_1.default);
+registerExecuteVirtualCommand(uniqueName_1.default);
+function _newExecuteResult(c, result = {}) {
+    const r = Object.assign({
+        outputFiles: [],
+        commands: [c.command],
+        command: c.command,
+        exitCode: 0,
+        stderr: [], stdout: [],
+        inputFiles: util_1.values(c.files),
+        results: []
+    }, result);
+    return Object.assign({}, r, { results: [r] });
+}
+exports._newExecuteResult = _newExecuteResult;
+
+},{"../util":87,"./buildFile":4,"./cat":5,"./ls":6,"./substitution":7,"./uniqueName":8}],4:[function(require,module,exports){
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const __1 = require("..");
+const util_1 = require("../util");
+exports.default = {
+    name: 'buildFile',
+    predicate(c) {
+        return c.command[0] === 'buildFile';
+    },
+    async execute(c) {
+        let outputFile;
+        const stderr = [];
+        try {
+            outputFile = Object.assign({}, await util_1.asOutputFile(await util_1.buildInputFile(c.command[1], c.command[2] || undefined)), { ignore: true });
+        }
+        catch (error) {
+            stderr.push(error.errorMessage || error + '');
+        }
+        const result = {
+            outputFiles: [outputFile],
+            commands: [c.command],
+            command: c.command,
+            exitCode: 0,
+            stderr,
+            stdout: outputFile ? [__1.unquote(outputFile.name)] : [],
+            inputFiles: __1.values(c.files),
+            results: [],
+        };
+        return Object.assign({}, result, { results: [result] });
+    },
+};
+
+},{"..":11,"../util":87}],5:[function(require,module,exports){
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const p_map_1 = require("p-map");
+const __1 = require("..");
+const Minimatch = require('minimatch');
+exports.default = {
+    name: 'cat',
+    predicate(c) {
+        return c.command[0] === 'cat';
+    },
+    async execute(c) {
+        const target = __1.unquote(c.command[1]);
+        const stdout = await p_map_1.default(Object.keys(c.files).filter(f => Minimatch(f, target)), f => __1.readFileAsText(c.files[f]));
+        const result = {
+            stderr: target.includes('*') ? [] : stdout.length ? [] : [target + ' not found.'],
+            results: [], commands: [c.command],
+            stdout,
+            exitCode: target.includes('*') ? 0 : stdout.length > 0 ? 0 : 1,
+            outputFiles: [], command: c.command, inputFiles: __1.values(c.files),
+        };
+        result.results = [result];
+        return result;
+    },
+};
+
+},{"..":11,"minimatch":97,"p-map":98}],6:[function(require,module,exports){
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const __1 = require("..");
+const Minimatch = require('minimatch');
+exports.default = {
+    name: 'ls',
+    predicate(c) {
+        return c.command[0] === 'ls';
+    },
+    async execute(c) {
+        const target = __1.unquote(c.command[1]);
+        const stdout = Object.keys(c.files).filter(f => Minimatch(f, target));
+        const result = {
+            stderr: target.includes('*') ? [] : stdout.length ? [] : [target + ' not found.'],
+            stdout,
+            exitCode: target.includes('*') ? 0 : stdout.length > 0 ? 0 : 1, outputFiles: [],
+            command: c.command, commands: [c.command],
+            inputFiles: __1.values(c.files), results: [],
+        };
+        result.results = [result];
+        return result;
+    },
+};
+
+},{"..":11,"minimatch":97}],7:[function(require,module,exports){
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const p_map_1 = require("p-map");
+const __1 = require("..");
+exports.default = {
+    name: 'substitution',
+    predicate(c) {
+        return !!resolveCommandSubstitution(c.command).substitution;
+    },
+    async execute(config) {
+        const { fixedCommand, substitution } = resolveCommandSubstitution(config.command);
+        const files = __1.values(config.files);
+        // console.log(c, substitution);
+        // debugger
+        const result = await __1.execute({
+            inputFiles: files,
+            commands: [substitution.command],
+            executionId: config.executionId
+        });
+        if (result.stdout.length) {
+            result.stdout[result.stdout.length - 1] = substitution.restStart + result.stdout[result.stdout.length - 1] + substitution.restEnd;
+        }
+        fixedCommand.splice(substitution.index, 0, ...result.stdout);
+        const result2 = await __1.execute({
+            inputFiles: files.concat(await p_map_1.default(result.outputFiles, f => __1.asInputFile(f))),
+            commands: [fixedCommand],
+            executionId: config.executionId
+        });
+        config.virtualCommandLogs[this.name].push({ substitutionCommand: substitution.command, substitutionCommandStdout: result.stdout, fixedCommand });
+        return Object.assign({}, result2, { results: [result, result2], stdout: result.stdout.concat(result2.stdout), stderr: result.stderr.concat(result2.stderr), commands: [config.command], exitCode: result.exitCode || result2.exitCode, outputFiles: result.outputFiles.concat(result2.outputFiles) });
+    },
+};
+function resolveCommandSubstitution(command) {
+    const q = '`';
+    const indexes = command.map((c, i) => /* c.startsWith(q) || c.endsWith(q) */ c.includes(q) ? i : undefined).filter(c => typeof c !== 'undefined');
+    if (!indexes.length) {
+        return { fixedCommand: command, substitution: undefined };
+    }
+    if (indexes.length === 1) { // means it's a single argument command
+        indexes.push(indexes[0]);
+    }
+    let restStart = undefined;
+    let restEnd = undefined;
+    // debugger
+    const substitution = command.slice(indexes[0], indexes[1] + 1)
+        .map(c => c.replace(/\'\`/g, '`'))
+        .map(c => {
+        if (!c.includes(q)) {
+            return c;
+        }
+        if (c.indexOf(q) < c.lastIndexOf(q)) { // means it's a single argument command like `foo prefix\`cmd\`postfix`
+            // debugger
+            restStart = c.substring(0, c.indexOf(q)).replace(/`/g, '');
+            restEnd = c.substring(c.lastIndexOf(q), c.length).replace(/`/g, '');
+            return c.substring(c.indexOf(q) + 1, c.lastIndexOf(q)).replace(/`/g, '');
+        }
+        if (restStart === undefined) {
+            restStart = c.substring(0, c.indexOf(q)).replace(/`/g, '');
+            return c.substring(c.indexOf(q), c.length).replace(/`/g, '');
+        }
+        else {
+            restEnd = c.substring(c.indexOf(q), c.length).replace(/`/g, '');
+            return c.substring(0, c.indexOf(q)).replace(/`/g, '');
+        }
+    });
+    const fixedCommand = command.map(s => s);
+    fixedCommand.splice(indexes[0], indexes[1] + 1 - indexes[0]);
+    // debugger
+    // const substitutionCommand = Array.isArray(substitution) && substitution.length===1 && substitution[0].includes(' ') ? cliToArrayOne(substitution[0]).map(s=>s+'') : substitution // so it works in the case of substitution for a quoted variable declaration like  size='\`identify -format %wx%h\\n  rose:\`'
+    // return { fixedCommand, substitution: { index: indexes[0], command: substitutionCommand, restStart, restEnd } }
+    return { fixedCommand, substitution: { index: indexes[0], command: substitution, restStart, restEnd } };
+}
+exports.resolveCommandSubstitution = resolveCommandSubstitution;
+
+},{"..":11,"p-map":98}],8:[function(require,module,exports){
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const VirtualCommand_1 = require("./VirtualCommand");
+exports.default = {
+    name: 'uniqueName',
+    predicate(c) {
+        return c.command[0] === 'uniqueName';
+    },
+    async execute(c) {
+        return VirtualCommand_1._newExecuteResult(c, { stdout: ['unique_' + (uniqueNameCounter++)] });
+    },
+};
+let uniqueNameCounter = 0;
+
+},{"./VirtualCommand":3}],9:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const _1 = require(".");
@@ -181,7 +464,7 @@ function newExecutionContext(inheritFrom) {
 }
 exports.newExecutionContext = newExecutionContext;
 
-},{".":4,"./execute":1}],3:[function(require,module,exports){
+},{".":11,"./execute":1}],10:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const _1 = require(".");
@@ -221,7 +504,7 @@ class ImageHomeImpl {
     }
     async addBuiltInImages() {
         if (!this.builtInImagesAdded) {
-            await p_map_1.default(await _1.getBuiltInImages(), img => this.register(img));
+            await p_map_1.default(await _1.getBuiltInImages(), img => this.register(img), { concurrency: 1 });
             this.builtInImagesAdded = true;
         }
     }
@@ -229,20 +512,21 @@ class ImageHomeImpl {
 function createImageHome() { return new ImageHomeImpl(); }
 exports.createImageHome = createImageHome;
 
-},{".":4,"./util/misc":81,"p-map":83}],4:[function(require,module,exports){
+},{".":11,"./util/misc":88,"p-map":98}],11:[function(require,module,exports){
 "use strict";
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./execute"));
+__export(require("./executeVirtualCommand/VirtualCommand"));
 __export(require("./imageHome"));
 __export(require("./executionContext"));
 __export(require("./magickApi"));
 __export(require("./util"));
 __export(require("./list"));
 
-},{"./execute":1,"./executionContext":2,"./imageHome":3,"./list":71,"./magickApi":72,"./util":80}],5:[function(require,module,exports){
+},{"./execute":1,"./executeVirtualCommand/VirtualCommand":3,"./executionContext":9,"./imageHome":10,"./list":78,"./magickApi":79,"./util":87}],12:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -256,7 +540,7 @@ var IMAlign;
     IMAlign["Start"] = "Start";
 })(IMAlign = exports.IMAlign || (exports.IMAlign = {}));
 
-},{}],6:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -279,7 +563,7 @@ var IMAlpha;
     IMAlpha["Transparent"] = "Transparent";
 })(IMAlpha = exports.IMAlpha || (exports.IMAlpha = {}));
 
-},{}],7:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -290,7 +574,7 @@ var IMAutoThreshold;
     IMAutoThreshold["Triangle"] = "Triangle";
 })(IMAutoThreshold = exports.IMAutoThreshold || (exports.IMAutoThreshold = {}));
 
-},{}],8:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -302,7 +586,7 @@ var IMBoolean;
     IMBoolean["1_"] = "1";
 })(IMBoolean = exports.IMBoolean || (exports.IMBoolean = {}));
 
-},{}],9:[function(require,module,exports){
+},{}],16:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -315,7 +599,7 @@ var IMCache;
     IMCache["Ping"] = "Ping";
 })(IMCache = exports.IMCache || (exports.IMCache = {}));
 
-},{}],10:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -384,7 +668,7 @@ var IMChannel;
     IMChannel["31_"] = "31";
 })(IMChannel = exports.IMChannel || (exports.IMChannel = {}));
 
-},{}],11:[function(require,module,exports){
+},{}],18:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -394,7 +678,7 @@ var IMClass;
     IMClass["PseudoClass"] = "PseudoClass";
 })(IMClass = exports.IMClass || (exports.IMClass = {}));
 
-},{}],12:[function(require,module,exports){
+},{}],19:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -405,7 +689,7 @@ var IMClipPath;
     IMClipPath["UserSpaceOnUse"] = "UserSpaceOnUse";
 })(IMClipPath = exports.IMClipPath || (exports.IMClipPath = {}));
 
-},{}],13:[function(require,module,exports){
+},{}],20:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -447,7 +731,7 @@ var IMColorspace;
     IMColorspace["YUV"] = "YUV";
 })(IMColorspace = exports.IMColorspace || (exports.IMColorspace = {}));
 
-},{}],14:[function(require,module,exports){
+},{}],21:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -899,7 +1183,7 @@ var IMCommand;
     IMCommand["-write-mask"] = "-write-mask";
 })(IMCommand = exports.IMCommand || (exports.IMCommand = {}));
 
-},{}],15:[function(require,module,exports){
+},{}],22:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -914,7 +1198,7 @@ var IMComplex;
     IMComplex["Subtract"] = "Subtract";
 })(IMComplex = exports.IMComplex || (exports.IMComplex = {}));
 
-},{}],16:[function(require,module,exports){
+},{}],23:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -928,7 +1212,7 @@ var IMCompliance;
     IMCompliance["XPM"] = "XPM";
 })(IMCompliance = exports.IMCompliance || (exports.IMCompliance = {}));
 
-},{}],17:[function(require,module,exports){
+},{}],24:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1005,7 +1289,7 @@ var IMCompose;
     IMCompose["Xor"] = "Xor";
 })(IMCompose = exports.IMCompose || (exports.IMCompose = {}));
 
-},{}],18:[function(require,module,exports){
+},{}],25:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1038,7 +1322,7 @@ var IMCompress;
     IMCompress["Zstd"] = "Zstd";
 })(IMCompress = exports.IMCompress || (exports.IMCompress = {}));
 
-},{}],19:[function(require,module,exports){
+},{}],26:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1050,7 +1334,7 @@ var IMDataType;
     IMDataType["String"] = "String";
 })(IMDataType = exports.IMDataType || (exports.IMDataType = {}));
 
-},{}],20:[function(require,module,exports){
+},{}],27:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1080,7 +1364,7 @@ var IMDebug;
     IMDebug["X11"] = "X11";
 })(IMDebug = exports.IMDebug || (exports.IMDebug = {}));
 
-},{}],21:[function(require,module,exports){
+},{}],28:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1092,7 +1376,7 @@ var IMDecoration;
     IMDecoration["Underline"] = "Underline";
 })(IMDecoration = exports.IMDecoration || (exports.IMDecoration = {}));
 
-},{}],22:[function(require,module,exports){
+},{}],29:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1102,7 +1386,7 @@ var IMDirection;
     IMDirection["left-to-right"] = "left-to-right";
 })(IMDirection = exports.IMDirection || (exports.IMDirection = {}));
 
-},{}],23:[function(require,module,exports){
+},{}],30:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1118,7 +1402,7 @@ var IMDispose;
     IMDispose["3_"] = "3";
 })(IMDispose = exports.IMDispose || (exports.IMDispose = {}));
 
-},{}],24:[function(require,module,exports){
+},{}],31:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1142,7 +1426,7 @@ var IMDistort;
     IMDistort["Resize"] = "Resize";
 })(IMDistort = exports.IMDistort || (exports.IMDistort = {}));
 
-},{}],25:[function(require,module,exports){
+},{}],32:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1153,7 +1437,7 @@ var IMDither;
     IMDither["Riemersma"] = "Riemersma";
 })(IMDither = exports.IMDither || (exports.IMDither = {}));
 
-},{}],26:[function(require,module,exports){
+},{}],33:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1163,7 +1447,7 @@ var IMEndian;
     IMEndian["MSB"] = "MSB";
 })(IMEndian = exports.IMEndian || (exports.IMEndian = {}));
 
-},{}],27:[function(require,module,exports){
+},{}],34:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1207,7 +1491,7 @@ var IMEvaluate;
     IMEvaluate["Xor"] = "Xor";
 })(IMEvaluate = exports.IMEvaluate || (exports.IMEvaluate = {}));
 
-},{}],28:[function(require,module,exports){
+},{}],35:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1217,7 +1501,7 @@ var IMFillRule;
     IMFillRule["NonZero"] = "NonZero";
 })(IMFillRule = exports.IMFillRule || (exports.IMFillRule = {}));
 
-},{}],29:[function(require,module,exports){
+},{}],36:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1256,7 +1540,7 @@ var IMFilter;
     IMFilter["Welch"] = "Welch";
 })(IMFilter = exports.IMFilter || (exports.IMFilter = {}));
 
-},{}],30:[function(require,module,exports){
+},{}],37:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1268,7 +1552,7 @@ var IMFunction;
     IMFunction["ArcTan"] = "ArcTan";
 })(IMFunction = exports.IMFunction || (exports.IMFunction = {}));
 
-},{}],31:[function(require,module,exports){
+},{}],38:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1278,7 +1562,7 @@ var IMGradient;
     IMGradient["Radial"] = "Radial";
 })(IMGradient = exports.IMGradient || (exports.IMGradient = {}));
 
-},{}],32:[function(require,module,exports){
+},{}],39:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1297,7 +1581,7 @@ var IMGravity;
     IMGravity["West"] = "West";
 })(IMGravity = exports.IMGravity || (exports.IMGravity = {}));
 
-},{}],33:[function(require,module,exports){
+},{}],40:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1315,7 +1599,7 @@ var IMIntensity;
     IMIntensity["RMS"] = "RMS";
 })(IMIntensity = exports.IMIntensity || (exports.IMIntensity = {}));
 
-},{}],34:[function(require,module,exports){
+},{}],41:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1327,7 +1611,7 @@ var IMIntent;
     IMIntent["Saturation"] = "Saturation";
 })(IMIntent = exports.IMIntent || (exports.IMIntent = {}));
 
-},{}],35:[function(require,module,exports){
+},{}],42:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1342,7 +1626,7 @@ var IMInterlace;
     IMInterlace["PNG"] = "PNG";
 })(IMInterlace = exports.IMInterlace || (exports.IMInterlace = {}));
 
-},{}],36:[function(require,module,exports){
+},{}],43:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1362,7 +1646,7 @@ var IMInterpolate;
     IMInterpolate["Spline"] = "Spline";
 })(IMInterpolate = exports.IMInterpolate || (exports.IMInterpolate = {}));
 
-},{}],37:[function(require,module,exports){
+},{}],44:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1406,7 +1690,7 @@ var IMKernel;
     IMKernel["Euclidean"] = "Euclidean";
 })(IMKernel = exports.IMKernel || (exports.IMKernel = {}));
 
-},{}],38:[function(require,module,exports){
+},{}],45:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1430,7 +1714,7 @@ var IMLayers;
     IMLayers["TrimBounds"] = "TrimBounds";
 })(IMLayers = exports.IMLayers || (exports.IMLayers = {}));
 
-},{}],39:[function(require,module,exports){
+},{}],46:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1441,7 +1725,7 @@ var IMLineCap;
     IMLineCap["Square"] = "Square";
 })(IMLineCap = exports.IMLineCap || (exports.IMLineCap = {}));
 
-},{}],40:[function(require,module,exports){
+},{}],47:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1452,7 +1736,7 @@ var IMLineJoin;
     IMLineJoin["Round"] = "Round";
 })(IMLineJoin = exports.IMLineJoin || (exports.IMLineJoin = {}));
 
-},{}],41:[function(require,module,exports){
+},{}],48:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1539,7 +1823,7 @@ var IMList;
     IMList["Weight"] = "Weight";
 })(IMList = exports.IMList || (exports.IMList = {}));
 
-},{}],42:[function(require,module,exports){
+},{}],49:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1553,7 +1837,7 @@ var IMLog;
     IMLog["Magick-%g.log            0         0   %t %r %u %v %d %c[%p]: %m/%f/%l/%d\n  %e"] = "Magick-%g.log            0         0   %t %r %u %v %d %c[%p]: %m/%f/%l/%d\n  %e";
 })(IMLog = exports.IMLog || (exports.IMLog = {}));
 
-},{}],43:[function(require,module,exports){
+},{}],50:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1583,7 +1867,7 @@ var IMLogEvent;
     IMLogEvent["X11"] = "X11";
 })(IMLogEvent = exports.IMLogEvent || (exports.IMLogEvent = {}));
 
-},{}],44:[function(require,module,exports){
+},{}],51:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1596,7 +1880,7 @@ var IMMethod;
     IMMethod["Reset"] = "Reset";
 })(IMMethod = exports.IMMethod || (exports.IMMethod = {}));
 
-},{}],45:[function(require,module,exports){
+},{}],52:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1616,7 +1900,7 @@ var IMMetric;
     IMMetric["SSIM"] = "SSIM";
 })(IMMetric = exports.IMMetric || (exports.IMMetric = {}));
 
-},{}],46:[function(require,module,exports){
+},{}],53:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1627,7 +1911,7 @@ var IMMode;
     IMMode["Unframe"] = "Unframe";
 })(IMMode = exports.IMMode || (exports.IMMode = {}));
 
-},{}],47:[function(require,module,exports){
+},{}],54:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1762,7 +2046,7 @@ var IMModule;
     IMModule["analyze"] = "analyze";
 })(IMModule = exports.IMModule || (exports.IMModule = {}));
 
-},{}],48:[function(require,module,exports){
+},{}],55:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1797,7 +2081,7 @@ var IMMorphology;
     IMMorphology["IterativeDistance"] = "IterativeDistance";
 })(IMMorphology = exports.IMMorphology || (exports.IMMorphology = {}));
 
-},{}],49:[function(require,module,exports){
+},{}],56:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1812,7 +2096,7 @@ var IMNoise;
     IMNoise["Uniform"] = "Uniform";
 })(IMNoise = exports.IMNoise || (exports.IMNoise = {}));
 
-},{}],50:[function(require,module,exports){
+},{}],57:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1828,7 +2112,7 @@ var IMOrientation;
     IMOrientation["LeftBottom"] = "LeftBottom";
 })(IMOrientation = exports.IMOrientation || (exports.IMOrientation = {}));
 
-},{}],51:[function(require,module,exports){
+},{}],58:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1866,7 +2150,7 @@ var IMPixelChannel;
     IMPixelChannel["Yellow"] = "Yellow";
 })(IMPixelChannel = exports.IMPixelChannel || (exports.IMPixelChannel = {}));
 
-},{}],52:[function(require,module,exports){
+},{}],59:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1884,7 +2168,7 @@ var IMPixelIntensity;
     IMPixelIntensity["RMS"] = "RMS";
 })(IMPixelIntensity = exports.IMPixelIntensity || (exports.IMPixelIntensity = {}));
 
-},{}],53:[function(require,module,exports){
+},{}],60:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1896,7 +2180,7 @@ var IMPixelMask;
     IMPixelMask["Write"] = "Write";
 })(IMPixelMask = exports.IMPixelMask || (exports.IMPixelMask = {}));
 
-},{}],54:[function(require,module,exports){
+},{}],61:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1907,7 +2191,7 @@ var IMPixelTrait;
     IMPixelTrait["Update"] = "Update";
 })(IMPixelTrait = exports.IMPixelTrait || (exports.IMPixelTrait = {}));
 
-},{}],55:[function(require,module,exports){
+},{}],62:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1923,7 +2207,7 @@ var IMPolicyDomain;
     IMPolicyDomain["System"] = "System";
 })(IMPolicyDomain = exports.IMPolicyDomain || (exports.IMPolicyDomain = {}));
 
-},{}],56:[function(require,module,exports){
+},{}],63:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1936,7 +2220,7 @@ var IMPolicyRights;
     IMPolicyRights["Write"] = "Write";
 })(IMPolicyRights = exports.IMPolicyRights || (exports.IMPolicyRights = {}));
 
-},{}],57:[function(require,module,exports){
+},{}],64:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1973,7 +2257,7 @@ var IMPreview;
     IMPreview["Wave"] = "Wave";
 })(IMPreview = exports.IMPreview || (exports.IMPreview = {}));
 
-},{}],58:[function(require,module,exports){
+},{}],65:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -1997,7 +2281,7 @@ var IMPrimitive;
     IMPrimitive["Text"] = "Text";
 })(IMPrimitive = exports.IMPrimitive || (exports.IMPrimitive = {}));
 
-},{}],59:[function(require,module,exports){
+},{}],66:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -2008,7 +2292,7 @@ var IMQuantumFormat;
     IMQuantumFormat["Unsigned"] = "Unsigned";
 })(IMQuantumFormat = exports.IMQuantumFormat || (exports.IMQuantumFormat = {}));
 
-},{}],60:[function(require,module,exports){
+},{}],67:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -2022,7 +2306,7 @@ var IMSparseColor;
     IMSparseColor["Manhattan"] = "Manhattan";
 })(IMSparseColor = exports.IMSparseColor || (exports.IMSparseColor = {}));
 
-},{}],61:[function(require,module,exports){
+},{}],68:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -2040,7 +2324,7 @@ var IMStatistic;
     IMStatistic["StandardDeviation"] = "StandardDeviation";
 })(IMStatistic = exports.IMStatistic || (exports.IMStatistic = {}));
 
-},{}],62:[function(require,module,exports){
+},{}],69:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -2055,7 +2339,7 @@ var IMStorage;
     IMStorage["Short"] = "Short";
 })(IMStorage = exports.IMStorage || (exports.IMStorage = {}));
 
-},{}],63:[function(require,module,exports){
+},{}],70:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -2073,7 +2357,7 @@ var IMStretch;
     IMStretch["UltraExpanded"] = "UltraExpanded";
 })(IMStretch = exports.IMStretch || (exports.IMStretch = {}));
 
-},{}],64:[function(require,module,exports){
+},{}],71:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -2086,7 +2370,7 @@ var IMStyle;
     IMStyle["Oblique"] = "Oblique";
 })(IMStyle = exports.IMStyle || (exports.IMStyle = {}));
 
-},{}],65:[function(require,module,exports){
+},{}],72:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -2105,7 +2389,7 @@ var IMTool;
     IMTool["stream"] = "stream";
 })(IMTool = exports.IMTool || (exports.IMTool = {}));
 
-},{}],66:[function(require,module,exports){
+},{}],73:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -2129,7 +2413,7 @@ var IMType;
     IMType["TrueColor"] = "TrueColor";
 })(IMType = exports.IMType || (exports.IMType = {}));
 
-},{}],67:[function(require,module,exports){
+},{}],74:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -2142,7 +2426,7 @@ var IMUnits;
     IMUnits["3_"] = "3";
 })(IMUnits = exports.IMUnits || (exports.IMUnits = {}));
 
-},{}],68:[function(require,module,exports){
+},{}],75:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -2163,7 +2447,7 @@ var IMValidate;
     IMValidate["None"] = "None";
 })(IMValidate = exports.IMValidate || (exports.IMValidate = {}));
 
-},{}],69:[function(require,module,exports){
+},{}],76:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -2187,7 +2471,7 @@ var IMVirtualPixel;
     IMVirtualPixel["White"] = "White";
 })(IMVirtualPixel = exports.IMVirtualPixel || (exports.IMVirtualPixel = {}));
 
-},{}],70:[function(require,module,exports){
+},{}],77:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* auto-generated file using command `npx ts-node scripts/generateImEnums.ts` */
@@ -2208,7 +2492,7 @@ var IMWeight;
     IMWeight["Black"] = "Black";
 })(IMWeight = exports.IMWeight || (exports.IMWeight = {}));
 
-},{}],71:[function(require,module,exports){
+},{}],78:[function(require,module,exports){
 "use strict";
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
@@ -2281,46 +2565,46 @@ __export(require("./IMValidate"));
 __export(require("./IMVirtualPixel"));
 __export(require("./IMWeight"));
 
-},{"./IMAlign":5,"./IMAlpha":6,"./IMAutoThreshold":7,"./IMBoolean":8,"./IMCache":9,"./IMChannel":10,"./IMClass":11,"./IMClipPath":12,"./IMColorspace":13,"./IMCommand":14,"./IMComplex":15,"./IMCompliance":16,"./IMCompose":17,"./IMCompress":18,"./IMDataType":19,"./IMDebug":20,"./IMDecoration":21,"./IMDirection":22,"./IMDispose":23,"./IMDistort":24,"./IMDither":25,"./IMEndian":26,"./IMEvaluate":27,"./IMFillRule":28,"./IMFilter":29,"./IMFunction":30,"./IMGradient":31,"./IMGravity":32,"./IMIntensity":33,"./IMIntent":34,"./IMInterlace":35,"./IMInterpolate":36,"./IMKernel":37,"./IMLayers":38,"./IMLineCap":39,"./IMLineJoin":40,"./IMList":41,"./IMLog":42,"./IMLogEvent":43,"./IMMethod":44,"./IMMetric":45,"./IMMode":46,"./IMModule":47,"./IMMorphology":48,"./IMNoise":49,"./IMOrientation":50,"./IMPixelChannel":51,"./IMPixelIntensity":52,"./IMPixelMask":53,"./IMPixelTrait":54,"./IMPolicyDomain":55,"./IMPolicyRights":56,"./IMPreview":57,"./IMPrimitive":58,"./IMQuantumFormat":59,"./IMSparseColor":60,"./IMStatistic":61,"./IMStorage":62,"./IMStretch":63,"./IMStyle":64,"./IMTool":65,"./IMType":66,"./IMUnits":67,"./IMValidate":68,"./IMVirtualPixel":69,"./IMWeight":70}],72:[function(require,module,exports){
+},{"./IMAlign":12,"./IMAlpha":13,"./IMAutoThreshold":14,"./IMBoolean":15,"./IMCache":16,"./IMChannel":17,"./IMClass":18,"./IMClipPath":19,"./IMColorspace":20,"./IMCommand":21,"./IMComplex":22,"./IMCompliance":23,"./IMCompose":24,"./IMCompress":25,"./IMDataType":26,"./IMDebug":27,"./IMDecoration":28,"./IMDirection":29,"./IMDispose":30,"./IMDistort":31,"./IMDither":32,"./IMEndian":33,"./IMEvaluate":34,"./IMFillRule":35,"./IMFilter":36,"./IMFunction":37,"./IMGradient":38,"./IMGravity":39,"./IMIntensity":40,"./IMIntent":41,"./IMInterlace":42,"./IMInterpolate":43,"./IMKernel":44,"./IMLayers":45,"./IMLineCap":46,"./IMLineJoin":47,"./IMList":48,"./IMLog":49,"./IMLogEvent":50,"./IMMethod":51,"./IMMetric":52,"./IMMode":53,"./IMModule":54,"./IMMorphology":55,"./IMNoise":56,"./IMOrientation":57,"./IMPixelChannel":58,"./IMPixelIntensity":59,"./IMPixelMask":60,"./IMPixelTrait":61,"./IMPolicyDomain":62,"./IMPolicyRights":63,"./IMPreview":64,"./IMPrimitive":65,"./IMQuantumFormat":66,"./IMSparseColor":67,"./IMStatistic":68,"./IMStorage":69,"./IMStretch":70,"./IMStyle":71,"./IMTool":72,"./IMType":73,"./IMUnits":74,"./IMValidate":75,"./IMVirtualPixel":76,"./IMWeight":77}],79:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-/**
- * {@link call} shortcut that only returns the output files.
- */
-async function Call(inputFiles, command) {
-    const result = await call(inputFiles, command);
-    return result.outputFiles;
-}
-exports.Call = Call;
-/**
- * Low level execution function. All the other functions like [execute](https://github.com/KnicKnic/WASM-ImageMagick/tree/sample-sinteractive-/apidocs#execute)
- * ends up calling this one. It accept only one command and only in the form of array of strings.
- */
-function call(inputFiles, command) {
-    const request = {
-        files: inputFiles,
-        args: command,
-        requestNumber: magickWorkerPromisesKey,
-    };
-    const promise = CreatePromiseEvent();
-    magickWorkerPromises[magickWorkerPromisesKey] = promise;
-    magickWorker.postMessage(request);
-    magickWorkerPromisesKey++;
+const StackTrace = require("stacktrace-js");
+function createCallPromise() {
+    let resolver;
+    const promise = new Promise(resolve => {
+        resolver = resolve;
+    });
+    promise.resolve = resolver;
     return promise;
 }
-exports.call = call;
-function CreatePromiseEvent() {
-    let resolver;
-    let rejecter;
-    const emptyPromise = new Promise((resolve, reject) => {
-        resolver = resolve;
-        rejecter = reject;
-    });
-    emptyPromise.resolve = resolver;
-    emptyPromise.reject = rejecter;
-    return emptyPromise;
+function changeUrl(url, fileName) {
+    const splitUrl = url.split('/');
+    splitUrl[splitUrl.length - 1] = fileName;
+    return splitUrl.join('/');
 }
-const magickWorker = new Worker('magick.js');
+// Heads up : instead of doing the sane code of being able to just use import.meta.url
+// (Edge doesn't work) (safari mobile, chrome, opera, firefox all do) . We use stacktrace-js library to get the current file name
+//
+// try {
+//   // @ts-ignore
+//   let packageUrl = import.meta.url
+//   currentJavascriptURL = packageUrl
+// } catch (error) {
+//   // eat
+// }
+const stacktrace = StackTrace.getSync();
+const currentJavascriptURL = stacktrace && stacktrace[0] && stacktrace[0].fileName || './magickApi.js';
+const magickWorkerUrl = changeUrl(currentJavascriptURL, 'magick.js');
+let magickWorker;
+if (currentJavascriptURL.startsWith('http')) {
+    magickWorker = new Worker(window.URL.createObjectURL(new Blob([`
+  magickJsCurrentPath = '${magickWorkerUrl}'
+  importScripts(magickJsCurrentPath)`
+    ])));
+}
+else {
+    magickWorker = new Worker(magickWorkerUrl);
+}
 const magickWorkerPromises = {};
 let magickWorkerPromisesKey = 1;
 // handle responses as they stream in after being outputFiles by image magick
@@ -2333,23 +2617,72 @@ magickWorker.onmessage = e => {
         stdout: response.stdout,
         stderr: response.stderr,
         exitCode: response.exitCode || 0,
+        command: promise.command,
+        inputFiles: promise.inputFiles,
     };
     promise.resolve(result);
 };
+// call() main operation
+/**
+ * Low level, core, IM command execution function. All the other functions like [execute](https://github.com/KnicKnic/WASM-ImageMagick/tree/master/apidocs#execute)
+ * ends up calling this one. It accept only one command and only in the form of array of strings.
+ */
+function call(inputFiles, command) {
+    const request = {
+        files: inputFiles,
+        args: command,
+        requestNumber: magickWorkerPromisesKey,
+    };
+    const promise = createCallPromise();
+    promise.command = command;
+    promise.inputFiles = inputFiles;
+    magickWorkerPromises[magickWorkerPromisesKey] = promise;
+    const t0 = performance.now();
+    const id = magickWorkerPromisesKey;
+    callListeners.forEach(listener => {
+        if (listener.beforeCall) {
+            listener.beforeCall({ inputFiles, command, id });
+        }
+    });
+    promise.then(async (callResult) => {
+        const took = performance.now() - t0;
+        callListeners.forEach(listener => {
+            if (listener.afterCall) {
+                listener.afterCall({ inputFiles, command, id, callResult, took });
+            }
+        });
+        return callResult;
+    });
+    magickWorker.postMessage(request);
+    magickWorkerPromisesKey++;
+    return promise;
+}
+exports.call = call;
+/**
+ * {@link call} shortcut that only returns the output files.
+ */
+async function Call(inputFiles, command) {
+    const result = await call(inputFiles, command);
+    return result.outputFiles;
+}
+exports.Call = Call;
+const callListeners = [];
+/**
+ * Adds a new call() listener notified before and after call() executes.
+ */
+function addCallListener(l) {
+    callListeners.push(l);
+}
+exports.addCallListener = addCallListener;
+function removeAllCallListeners() {
+    callListeners.splice(0, callListeners.length);
+}
+exports.removeAllCallListeners = removeAllCallListeners;
 
-},{}],73:[function(require,module,exports){
+},{"stacktrace-js":109}],80:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const misc_1 = require("./misc");
-// TODO: store variables from text file output and reuse them. example: 
-// `
-// color=$(convert filename.png -format "%[pixel:p{0,0}]" info:foo.txt)
-// convert filename.png -alpha off -bordercolor $color -border 1 \
-//     \( +clone -fuzz 30% -fill none -floodfill +0+0 $color \
-//        -alpha extract -geometry 200% -blur 0x0.5 \
-//        -morphology erode square:1 -geometry 50% \) \
-//     -compose CopyOpacity -composite -shave 1 outputfilename.png
-// `
 /**
  * Generates a valid command line command from given `string[]` command. Works with a single command.
  */
@@ -2376,11 +2709,14 @@ exports.arrayToCli = arrayToCli;
  * Generates a command in the form of array of strings, compatible with {@link call} from given command line string . The string must contain only one command (no newlines).
  */
 function cliToArrayOne(cliCommand) {
+    if (cliCommand.trim().startsWith('#')) {
+        return undefined;
+    }
     let inString = false;
     const spaceIndexes = [0];
     for (let index = 0; index < cliCommand.length; index++) {
         const c = cliCommand[index];
-        if (c.match(/[\s]/im) && !inString) {
+        if (c.match(/[ ]/im) && !inString) {
             spaceIndexes.push(index);
         }
         if (c === `'`) {
@@ -2389,15 +2725,20 @@ function cliToArrayOne(cliCommand) {
     }
     spaceIndexes.push(cliCommand.length);
     const command = spaceIndexes
-        .map((spaceIndex, i) => cliCommand.substring(i === 0 ? 0 : spaceIndexes[i - 1], spaceIndexes[i]).trim())
+        // .map((spaceIndex, i) => cliCommand.substring(i === 0 ? 0 : spaceIndexes[i - 1], spaceIndexes[i]).trim())
+        .map((spaceIndex, i) => cliCommand.substring(i === 0 ? 0 : spaceIndexes[i - 1], spaceIndexes[i]).replace(/^[ ]+/, '').replace(/[ ]+$/, ''))
         .filter(s => !!s)
         // remove quotes
         .map(s => s.startsWith(`'`) ? s.substring(1, s.length) : s)
         .map(s => s.endsWith(`'`) ? s.substring(0, s.length - 1) : s)
         //  unescape parenthesis
-        .map(s => s === `\\(` ? `(` : s === `\\)` ? `)` : s);
+        .map(s => s === `\\(` ? `(` : s === `\\)` ? `)` : s)
+        .map(s => s.replace(/\\n/g, '\n')); // so `%w\\n` is transformed to `%w\n' - we cant have new lines because of cliToArray split('\n') - so user must escape it and here we unescape
+    // .map(s=>s)
+    // debugger1
     return command;
 }
+exports.cliToArrayOne = cliToArrayOne;
 /**
  * Generates a command in the form of `string[][]` that is compatible with {@link call} from given command line string.
  * This works for strings containing multiple commands in different lines. and also respect `\` character for continue the same
@@ -2405,7 +2746,8 @@ function cliToArrayOne(cliCommand) {
  */
 function cliToArray(cliCommand) {
     const lines = cliCommand.split('\n')
-        .map(s => s.trim()).map(cliToArrayOne)
+        .map(s => s.trim())
+        .map(cliToArrayOne)
         .filter(a => a && a.length);
     const result = [];
     let currentCommand = [];
@@ -2427,20 +2769,31 @@ exports.cliToArray = cliToArray;
  * Makes sure that given {@link ExecuteCommand}, in whatever syntax, is transformed to the form `string[][]` that is compatible with {@link call}
  */
 function asCommand(c) {
+    if (!c) {
+        return [];
+    }
     if (typeof c === 'string') {
         return asCommand([c]);
     }
     if (!c[0]) {
         return [];
     }
-    if (typeof c[0] === 'string') {
-        return misc_1.flat(c.map((subCommand) => cliToArray(subCommand)));
+    if (misc_1.isArrayOfStrings(c)) {
+        return misc_1.flat(c.map(cliToArray));
     }
-    return c;
+    if (misc_1.isArrayOfArrayOfStrings(c)) {
+        // this means that the command is already a valid Command. This means that Execute Commands cannot be [['convert a'], ['convert b']]
+        return c;
+    }
 }
 exports.asCommand = asCommand;
+function unquote(s) {
+    s = s.startsWith('\'') ? s.substring(1, s.length) : s;
+    return s.endsWith('\'') ? s.substring(0, s.length - 1) : s;
+}
+exports.unquote = unquote;
 
-},{"./misc":81}],74:[function(require,module,exports){
+},{"./misc":88}],81:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const execute_1 = require("../execute");
@@ -2466,13 +2819,17 @@ function blobToString(blb) {
 }
 exports.blobToString = blobToString;
 function isInputFile(file) {
-    return !!file.content;
+    return !!(file.content && file.name);
 }
 exports.isInputFile = isInputFile;
 function isOutputFile(file) {
-    return !!file.blob;
+    return !!(file.blob && file.name);
 }
 exports.isOutputFile = isOutputFile;
+function isMagickFile(file) {
+    return isInputFile(file) || isOutputFile(file);
+}
+exports.isMagickFile = isMagickFile;
 function uint8ArrayToString(arr, charset = 'utf-8') {
     return new TextDecoder(charset).decode(arr);
 }
@@ -2489,16 +2846,22 @@ async function readFileAsText(file) {
 }
 exports.readFileAsText = readFileAsText;
 async function isImage(file) {
+    if (getFileNameExtension(file) === 'svg') {
+        return true;
+    }
     const { exitCode } = await execute_1.execute({ inputFiles: [await asInputFile(file)], commands: `identify ${file.name}` });
     return exitCode === 0;
 }
 exports.isImage = isImage;
 /**
  * Builds a new {@link MagickInputFile} by fetching the content of given url and optionally naming the file using given name
- * or extracting the file name from the url otherwise.
+ * or extracting the file name from the url otherwise. It will throw the response object in case there's an error,
  */
 async function buildInputFile(url, name = getFileName(url)) {
     const fetchedSourceImage = await fetch(url);
+    if (!fetchedSourceImage.ok) {
+        throw new Error(fetchedSourceImage.status + ' - ' + fetchedSourceImage.statusText);
+    }
     const arrayBuffer = await fetchedSourceImage.arrayBuffer();
     const content = new Uint8Array(arrayBuffer);
     return { name, content };
@@ -2511,12 +2874,14 @@ async function outputFileToInputFile(file, name = file.name) {
     return {
         name,
         content: await blobToUint8Array(file.blob),
+        ignore: file.ignore
     };
 }
 function inputFileToOutputFile(file, name = file.name) {
     return {
         name,
         blob: uint8ArrayToBlob(file.content),
+        ignore: file.ignore
     };
 }
 async function asInputFile(f, name = f.name) {
@@ -2558,16 +2923,22 @@ function getFileName(url) {
     }
 }
 exports.getFileName = getFileName;
-function getFileNameExtension(filePathOrUrl) {
-    const s = getFileName(filePathOrUrl);
+function getFileNameExtension(filePathOrUrlOrFile) {
+    const s = getFileName(typeof filePathOrUrlOrFile === 'string' ? filePathOrUrlOrFile : filePathOrUrlOrFile.name);
     return s.substring(s.lastIndexOf('.') + 1, s.length);
 }
 exports.getFileNameExtension = getFileNameExtension;
+function getFileNameWithoutExtension(filePathOrUrlOrFile) {
+    const s = getFileName(typeof filePathOrUrlOrFile === 'string' ? filePathOrUrlOrFile : filePathOrUrlOrFile.name);
+    return s.substring(0, s.lastIndexOf('.'));
+}
+exports.getFileNameWithoutExtension = getFileNameWithoutExtension;
 
-},{"../execute":1}],75:[function(require,module,exports){
+},{"../execute":1}],82:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("..");
+const file_1 = require("./file");
 // utilities related to HTML (img) elements
 /**
  * Will load given html img element src with the inline image content.
@@ -2578,6 +2949,7 @@ const __1 = require("..");
  */
 async function loadImageElement(image, el, forceBrowserSupport = false) {
     el.src = await buildImageSrc(image, forceBrowserSupport);
+    return el;
 }
 exports.loadImageElement = loadImageElement;
 /**
@@ -2589,7 +2961,7 @@ async function buildImageSrc(image, forceBrowserSupport = false) {
     let img = image;
     const extension = __1.getFileNameExtension(image.name);
     if (!extension || forceBrowserSupport && browserSupportedImageExtensions.indexOf(extension) === -1) {
-        const { outputFiles } = await __1.execute({ inputFiles: [await __1.asInputFile(image)], commands: `convert ${image.name} output.png` });
+        const { outputFiles } = await __1.execute({ inputFiles: [await __1.asInputFile(image)], commands: `convert ${image.name} ${file_1.getFileNameWithoutExtension(image.name) || 'output'}.png` });
         outputFiles[0].name = image.name;
         img = outputFiles[0];
     }
@@ -2626,19 +2998,21 @@ async function inputFileToUint8Array(el) {
         return { file, content };
     }));
 }
+exports.inputFileToUint8Array = inputFileToUint8Array;
 
-},{"..":4}],76:[function(require,module,exports){
+},{"..":11,"./file":81}],83:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../");
 const file_1 = require("./file");
 async function getPixelColor(img, x, y) {
-    const file = await __1.executeAndReturnOutputFile({ inputFiles: [await __1.asInputFile(img)], commands: `convert ${img.name} -format '%[pixel:p{${x},${y}}]' info:info.txt` });
-    return await file_1.readFileAsText(file);
+    const file = await __1.executeAndReturnOutputFile({ inputFiles: [await __1.asInputFile(img)], commands: `convert ${img.name} -format '%[pixel:p{${x},${y}}]\\n' info:info.txt` });
+    const content = await file_1.readFileAsText(file);
+    return content.trim();
 }
 exports.getPixelColor = getPixelColor;
 
-},{"../":4,"./file":74}],77:[function(require,module,exports){
+},{"../":11,"./file":81}],84:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const p_map_1 = require("p-map");
@@ -2655,7 +3029,7 @@ async function getBuiltInImages() {
             const { outputFiles } = await __1.execute({ commands: `convert ${name} ${`output1.${info[0].image.format.toLowerCase()}`}` });
             outputFiles[0].name = name;
             return await __1.asInputFile(outputFiles[0]);
-        });
+        }, { concurrency: 1 });
     }
     return builtInImages;
 }
@@ -2669,7 +3043,7 @@ async function getBuiltInImage(name) {
 }
 exports.getBuiltInImage = getBuiltInImage;
 
-},{"..":4,"p-map":83}],78:[function(require,module,exports){
+},{"..":11,"p-map":98}],85:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("..");
@@ -2677,6 +3051,10 @@ const __1 = require("..");
  * Compare the two images and return true if they are equal visually. Optionally, a margin of error can be provided using `fuzz`
  */
 async function compare(img1, img2, fuzz = 0.015) {
+    if (Array.isArray(img1)) {
+        img2 = img1[1];
+        img1 = img1[0];
+    }
     const identical = await compareNumber(img1, img2);
     return identical <= fuzz;
 }
@@ -2707,7 +3085,7 @@ async function compareNumber(img1, img2) {
 }
 exports.compareNumber = compareNumber;
 
-},{"..":4}],79:[function(require,module,exports){
+},{"..":11}],86:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("..");
@@ -2737,7 +3115,7 @@ async function extractInfo(img) {
 }
 exports.extractInfo = extractInfo;
 
-},{"..":4}],80:[function(require,module,exports){
+},{"..":11}],87:[function(require,module,exports){
 "use strict";
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
@@ -2751,8 +3129,9 @@ __export(require("./imageBuiltIn"));
 __export(require("./imageCompare"));
 __export(require("./imageExtractInfo"));
 __export(require("./support"));
+__export(require("./misc"));
 
-},{"./cli":73,"./file":74,"./html":75,"./image":76,"./imageBuiltIn":77,"./imageCompare":78,"./imageExtractInfo":79,"./support":82}],81:[function(require,module,exports){
+},{"./cli":80,"./file":81,"./html":82,"./image":83,"./imageBuiltIn":84,"./imageCompare":85,"./imageExtractInfo":86,"./misc":88,"./support":89}],88:[function(require,module,exports){
 "use strict";
 // internal misc utilities
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -2767,8 +3146,30 @@ exports.flat = flat;
 // export function trimNoNewLines(s: string): string {
 //   return s.replace(/^ +/, '').replace(/ +$/, '')
 // }
+function isArrayOfStrings(a) {
+    return Array.isArray(a) && (a.length === 0 || typeof a[0] === 'string');
+}
+exports.isArrayOfStrings = isArrayOfStrings;
+function isArrayOfArrays(a) {
+    return Array.isArray(a) && (a.length === 0 || Array.isArray(a[0]));
+}
+exports.isArrayOfArrays = isArrayOfArrays;
+function isArrayOfArrayOfStrings(a) {
+    return isArrayOfArrays(a) && (a[0][0].length === 0 || typeof a[0][0] === 'string');
+}
+exports.isArrayOfArrayOfStrings = isArrayOfArrayOfStrings;
+function combinations(arr, fn) {
+    const promises = [];
+    arr.forEach(f1 => {
+        arr.
+            filter((f2, i, subarr) => i > subarr.indexOf(f1))
+            .forEach(f2 => promises.push(fn(f1, f2)));
+    });
+    return Promise.all(promises);
+}
+exports.combinations = combinations;
 
-},{}],82:[function(require,module,exports){
+},{}],89:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../");
@@ -2787,15 +3188,13 @@ exports.getConfigureFolders = getConfigureFolders;
 // has some heuristic information regarding features (not) supported by wasm-imagemagick, for example, image formats
 // heads up - all images spec/assets/to_rotate.* where converted using gimp unless explicitly saying otherwise
 /**
- * list of image formats that are known to be supported by wasm-imagemagick. See `spec/formatSpec.ts`
+ * list of image formats that are known to be supported by wasm-imagemagick both for read and write. See `spec/formatSpec.ts`
  */
 exports.knownSupportedReadWriteImageFormats = [
     'jpg', 'png',
     'psd',
     'tiff', 'xcf', 'gif', 'bmp', 'tga', 'miff', 'ico', 'dcm', 'xpm', 'pcx',
-    //  'pix', // gives error
     'fits',
-    // 'djvu', // read only support
     'ppm',
     'pgm',
     'pfm',
@@ -2804,9 +3203,2862 @@ exports.knownSupportedReadWriteImageFormats = [
     'dds',
     'otb',
     'txt',
+    'psb',
+];
+/**
+ * list of image formats that are known to be supported by wasm-imagemagick but only for write operation. See `spec/formatSpec.ts`
+ */
+exports.knownSupportedWriteOnlyImageFormats = [
+    'ps', 'pdf',
+    'epdf',
+    'svg',
+    'djvu',
+];
+/**
+ * list of image formats that are known to be supported by wasm-imagemagick but only for read operation. See `spec/formatSpec.ts`
+ */
+exports.knownSupportedReadOnlyImageFormats = [
+    // 'pix',
+    'mat',
+];
+exports._knownSupportedImageFormatsInFolderForTest = [
+    'mat',
 ];
 
-},{"../":4}],83:[function(require,module,exports){
+},{"../":11}],90:[function(require,module,exports){
+'use strict';
+module.exports = balanced;
+function balanced(a, b, str) {
+  if (a instanceof RegExp) a = maybeMatch(a, str);
+  if (b instanceof RegExp) b = maybeMatch(b, str);
+
+  var r = range(a, b, str);
+
+  return r && {
+    start: r[0],
+    end: r[1],
+    pre: str.slice(0, r[0]),
+    body: str.slice(r[0] + a.length, r[1]),
+    post: str.slice(r[1] + b.length)
+  };
+}
+
+function maybeMatch(reg, str) {
+  var m = str.match(reg);
+  return m ? m[0] : null;
+}
+
+balanced.range = range;
+function range(a, b, str) {
+  var begs, beg, left, right, result;
+  var ai = str.indexOf(a);
+  var bi = str.indexOf(b, ai + 1);
+  var i = ai;
+
+  if (ai >= 0 && bi > 0) {
+    begs = [];
+    left = str.length;
+
+    while (i >= 0 && !result) {
+      if (i == ai) {
+        begs.push(i);
+        ai = str.indexOf(a, i + 1);
+      } else if (begs.length == 1) {
+        result = [ begs.pop(), bi ];
+      } else {
+        beg = begs.pop();
+        if (beg < left) {
+          left = beg;
+          right = bi;
+        }
+
+        bi = str.indexOf(b, i + 1);
+      }
+
+      i = ai < bi && ai >= 0 ? ai : bi;
+    }
+
+    if (begs.length) {
+      result = [ left, right ];
+    }
+  }
+
+  return result;
+}
+
+},{}],91:[function(require,module,exports){
+var concatMap = require('concat-map');
+var balanced = require('balanced-match');
+
+module.exports = expandTop;
+
+var escSlash = '\0SLASH'+Math.random()+'\0';
+var escOpen = '\0OPEN'+Math.random()+'\0';
+var escClose = '\0CLOSE'+Math.random()+'\0';
+var escComma = '\0COMMA'+Math.random()+'\0';
+var escPeriod = '\0PERIOD'+Math.random()+'\0';
+
+function numeric(str) {
+  return parseInt(str, 10) == str
+    ? parseInt(str, 10)
+    : str.charCodeAt(0);
+}
+
+function escapeBraces(str) {
+  return str.split('\\\\').join(escSlash)
+            .split('\\{').join(escOpen)
+            .split('\\}').join(escClose)
+            .split('\\,').join(escComma)
+            .split('\\.').join(escPeriod);
+}
+
+function unescapeBraces(str) {
+  return str.split(escSlash).join('\\')
+            .split(escOpen).join('{')
+            .split(escClose).join('}')
+            .split(escComma).join(',')
+            .split(escPeriod).join('.');
+}
+
+
+// Basically just str.split(","), but handling cases
+// where we have nested braced sections, which should be
+// treated as individual members, like {a,{b,c},d}
+function parseCommaParts(str) {
+  if (!str)
+    return [''];
+
+  var parts = [];
+  var m = balanced('{', '}', str);
+
+  if (!m)
+    return str.split(',');
+
+  var pre = m.pre;
+  var body = m.body;
+  var post = m.post;
+  var p = pre.split(',');
+
+  p[p.length-1] += '{' + body + '}';
+  var postParts = parseCommaParts(post);
+  if (post.length) {
+    p[p.length-1] += postParts.shift();
+    p.push.apply(p, postParts);
+  }
+
+  parts.push.apply(parts, p);
+
+  return parts;
+}
+
+function expandTop(str) {
+  if (!str)
+    return [];
+
+  // I don't know why Bash 4.3 does this, but it does.
+  // Anything starting with {} will have the first two bytes preserved
+  // but *only* at the top level, so {},a}b will not expand to anything,
+  // but a{},b}c will be expanded to [a}c,abc].
+  // One could argue that this is a bug in Bash, but since the goal of
+  // this module is to match Bash's rules, we escape a leading {}
+  if (str.substr(0, 2) === '{}') {
+    str = '\\{\\}' + str.substr(2);
+  }
+
+  return expand(escapeBraces(str), true).map(unescapeBraces);
+}
+
+function identity(e) {
+  return e;
+}
+
+function embrace(str) {
+  return '{' + str + '}';
+}
+function isPadded(el) {
+  return /^-?0\d/.test(el);
+}
+
+function lte(i, y) {
+  return i <= y;
+}
+function gte(i, y) {
+  return i >= y;
+}
+
+function expand(str, isTop) {
+  var expansions = [];
+
+  var m = balanced('{', '}', str);
+  if (!m || /\$$/.test(m.pre)) return [str];
+
+  var isNumericSequence = /^-?\d+\.\.-?\d+(?:\.\.-?\d+)?$/.test(m.body);
+  var isAlphaSequence = /^[a-zA-Z]\.\.[a-zA-Z](?:\.\.-?\d+)?$/.test(m.body);
+  var isSequence = isNumericSequence || isAlphaSequence;
+  var isOptions = m.body.indexOf(',') >= 0;
+  if (!isSequence && !isOptions) {
+    // {a},b}
+    if (m.post.match(/,.*\}/)) {
+      str = m.pre + '{' + m.body + escClose + m.post;
+      return expand(str);
+    }
+    return [str];
+  }
+
+  var n;
+  if (isSequence) {
+    n = m.body.split(/\.\./);
+  } else {
+    n = parseCommaParts(m.body);
+    if (n.length === 1) {
+      // x{{a,b}}y ==> x{a}y x{b}y
+      n = expand(n[0], false).map(embrace);
+      if (n.length === 1) {
+        var post = m.post.length
+          ? expand(m.post, false)
+          : [''];
+        return post.map(function(p) {
+          return m.pre + n[0] + p;
+        });
+      }
+    }
+  }
+
+  // at this point, n is the parts, and we know it's not a comma set
+  // with a single entry.
+
+  // no need to expand pre, since it is guaranteed to be free of brace-sets
+  var pre = m.pre;
+  var post = m.post.length
+    ? expand(m.post, false)
+    : [''];
+
+  var N;
+
+  if (isSequence) {
+    var x = numeric(n[0]);
+    var y = numeric(n[1]);
+    var width = Math.max(n[0].length, n[1].length)
+    var incr = n.length == 3
+      ? Math.abs(numeric(n[2]))
+      : 1;
+    var test = lte;
+    var reverse = y < x;
+    if (reverse) {
+      incr *= -1;
+      test = gte;
+    }
+    var pad = n.some(isPadded);
+
+    N = [];
+
+    for (var i = x; test(i, y); i += incr) {
+      var c;
+      if (isAlphaSequence) {
+        c = String.fromCharCode(i);
+        if (c === '\\')
+          c = '';
+      } else {
+        c = String(i);
+        if (pad) {
+          var need = width - c.length;
+          if (need > 0) {
+            var z = new Array(need + 1).join('0');
+            if (i < 0)
+              c = '-' + z + c.slice(1);
+            else
+              c = z + c;
+          }
+        }
+      }
+      N.push(c);
+    }
+  } else {
+    N = concatMap(n, function(el) { return expand(el, false) });
+  }
+
+  for (var j = 0; j < N.length; j++) {
+    for (var k = 0; k < post.length; k++) {
+      var expansion = pre + N[j] + post[k];
+      if (!isTop || isSequence || expansion)
+        expansions.push(expansion);
+    }
+  }
+
+  return expansions;
+}
+
+
+},{"balanced-match":90,"concat-map":92}],92:[function(require,module,exports){
+module.exports = function (xs, fn) {
+    var res = [];
+    for (var i = 0; i < xs.length; i++) {
+        var x = fn(xs[i], i);
+        if (isArray(x)) res.push.apply(res, x);
+        else res.push(x);
+    }
+    return res;
+};
+
+var isArray = Array.isArray || function (xs) {
+    return Object.prototype.toString.call(xs) === '[object Array]';
+};
+
+},{}],93:[function(require,module,exports){
+(function(root, factory) {
+    'use strict';
+    // Universal Module Definition (UMD) to support AMD, CommonJS/Node.js, Rhino, and browsers.
+
+    /* istanbul ignore next */
+    if (typeof define === 'function' && define.amd) {
+        define('error-stack-parser', ['stackframe'], factory);
+    } else if (typeof exports === 'object') {
+        module.exports = factory(require('stackframe'));
+    } else {
+        root.ErrorStackParser = factory(root.StackFrame);
+    }
+}(this, function ErrorStackParser(StackFrame) {
+    'use strict';
+
+    var FIREFOX_SAFARI_STACK_REGEXP = /(^|@)\S+\:\d+/;
+    var CHROME_IE_STACK_REGEXP = /^\s*at .*(\S+\:\d+|\(native\))/m;
+    var SAFARI_NATIVE_CODE_REGEXP = /^(eval@)?(\[native code\])?$/;
+
+    return {
+        /**
+         * Given an Error object, extract the most information from it.
+         *
+         * @param {Error} error object
+         * @return {Array} of StackFrames
+         */
+        parse: function ErrorStackParser$$parse(error) {
+            if (typeof error.stacktrace !== 'undefined' || typeof error['opera#sourceloc'] !== 'undefined') {
+                return this.parseOpera(error);
+            } else if (error.stack && error.stack.match(CHROME_IE_STACK_REGEXP)) {
+                return this.parseV8OrIE(error);
+            } else if (error.stack) {
+                return this.parseFFOrSafari(error);
+            } else {
+                throw new Error('Cannot parse given Error object');
+            }
+        },
+
+        // Separate line and column numbers from a string of the form: (URI:Line:Column)
+        extractLocation: function ErrorStackParser$$extractLocation(urlLike) {
+            // Fail-fast but return locations like "(native)"
+            if (urlLike.indexOf(':') === -1) {
+                return [urlLike];
+            }
+
+            var regExp = /(.+?)(?:\:(\d+))?(?:\:(\d+))?$/;
+            var parts = regExp.exec(urlLike.replace(/[\(\)]/g, ''));
+            return [parts[1], parts[2] || undefined, parts[3] || undefined];
+        },
+
+        parseV8OrIE: function ErrorStackParser$$parseV8OrIE(error) {
+            var filtered = error.stack.split('\n').filter(function(line) {
+                return !!line.match(CHROME_IE_STACK_REGEXP);
+            }, this);
+
+            return filtered.map(function(line) {
+                if (line.indexOf('(eval ') > -1) {
+                    // Throw away eval information until we implement stacktrace.js/stackframe#8
+                    line = line.replace(/eval code/g, 'eval').replace(/(\(eval at [^\()]*)|(\)\,.*$)/g, '');
+                }
+                var tokens = line.replace(/^\s+/, '').replace(/\(eval code/g, '(').split(/\s+/).slice(1);
+                var locationParts = this.extractLocation(tokens.pop());
+                var functionName = tokens.join(' ') || undefined;
+                var fileName = ['eval', '<anonymous>'].indexOf(locationParts[0]) > -1 ? undefined : locationParts[0];
+
+                return new StackFrame({
+                    functionName: functionName,
+                    fileName: fileName,
+                    lineNumber: locationParts[1],
+                    columnNumber: locationParts[2],
+                    source: line
+                });
+            }, this);
+        },
+
+        parseFFOrSafari: function ErrorStackParser$$parseFFOrSafari(error) {
+            var filtered = error.stack.split('\n').filter(function(line) {
+                return !line.match(SAFARI_NATIVE_CODE_REGEXP);
+            }, this);
+
+            return filtered.map(function(line) {
+                // Throw away eval information until we implement stacktrace.js/stackframe#8
+                if (line.indexOf(' > eval') > -1) {
+                    line = line.replace(/ line (\d+)(?: > eval line \d+)* > eval\:\d+\:\d+/g, ':$1');
+                }
+
+                if (line.indexOf('@') === -1 && line.indexOf(':') === -1) {
+                    // Safari eval frames only have function names and nothing else
+                    return new StackFrame({
+                        functionName: line
+                    });
+                } else {
+                    var functionNameRegex = /((.*".+"[^@]*)?[^@]*)(?:@)/;
+                    var matches = line.match(functionNameRegex);
+                    var functionName = matches && matches[1] ? matches[1] : undefined;
+                    var locationParts = this.extractLocation(line.replace(functionNameRegex, ''));
+
+                    return new StackFrame({
+                        functionName: functionName,
+                        fileName: locationParts[0],
+                        lineNumber: locationParts[1],
+                        columnNumber: locationParts[2],
+                        source: line
+                    });
+                }
+            }, this);
+        },
+
+        parseOpera: function ErrorStackParser$$parseOpera(e) {
+            if (!e.stacktrace || (e.message.indexOf('\n') > -1 &&
+                e.message.split('\n').length > e.stacktrace.split('\n').length)) {
+                return this.parseOpera9(e);
+            } else if (!e.stack) {
+                return this.parseOpera10(e);
+            } else {
+                return this.parseOpera11(e);
+            }
+        },
+
+        parseOpera9: function ErrorStackParser$$parseOpera9(e) {
+            var lineRE = /Line (\d+).*script (?:in )?(\S+)/i;
+            var lines = e.message.split('\n');
+            var result = [];
+
+            for (var i = 2, len = lines.length; i < len; i += 2) {
+                var match = lineRE.exec(lines[i]);
+                if (match) {
+                    result.push(new StackFrame({
+                        fileName: match[2],
+                        lineNumber: match[1],
+                        source: lines[i]
+                    }));
+                }
+            }
+
+            return result;
+        },
+
+        parseOpera10: function ErrorStackParser$$parseOpera10(e) {
+            var lineRE = /Line (\d+).*script (?:in )?(\S+)(?:: In function (\S+))?$/i;
+            var lines = e.stacktrace.split('\n');
+            var result = [];
+
+            for (var i = 0, len = lines.length; i < len; i += 2) {
+                var match = lineRE.exec(lines[i]);
+                if (match) {
+                    result.push(
+                        new StackFrame({
+                            functionName: match[3] || undefined,
+                            fileName: match[2],
+                            lineNumber: match[1],
+                            source: lines[i]
+                        })
+                    );
+                }
+            }
+
+            return result;
+        },
+
+        // Opera 10.65+ Error.stack very similar to FF/Safari
+        parseOpera11: function ErrorStackParser$$parseOpera11(error) {
+            var filtered = error.stack.split('\n').filter(function(line) {
+                return !!line.match(FIREFOX_SAFARI_STACK_REGEXP) && !line.match(/^Error created at/);
+            }, this);
+
+            return filtered.map(function(line) {
+                var tokens = line.split('@');
+                var locationParts = this.extractLocation(tokens.pop());
+                var functionCall = (tokens.shift() || '');
+                var functionName = functionCall
+                        .replace(/<anonymous function(: (\w+))?>/, '$2')
+                        .replace(/\([^\)]*\)/g, '') || undefined;
+                var argsRaw;
+                if (functionCall.match(/\(([^\)]*)\)/)) {
+                    argsRaw = functionCall.replace(/^[^\(]+\(([^\)]*)\)$/, '$1');
+                }
+                var args = (argsRaw === undefined || argsRaw === '[arguments not available]') ?
+                    undefined : argsRaw.split(',');
+
+                return new StackFrame({
+                    functionName: functionName,
+                    args: args,
+                    fileName: locationParts[0],
+                    lineNumber: locationParts[1],
+                    columnNumber: locationParts[2],
+                    source: line
+                });
+            }, this);
+        }
+    };
+}));
+
+},{"stackframe":100}],94:[function(require,module,exports){
+/**
+ * lodash 3.0.0 (Custom Build) <https://lodash.com/>
+ * Build: `lodash modern modularize exports="npm" -o ./`
+ * Copyright 2012-2015 The Dojo Foundation <http://dojofoundation.org/>
+ * Based on Underscore.js 1.7.0 <http://underscorejs.org/LICENSE>
+ * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+ * Available under MIT license <https://lodash.com/license>
+ */
+
+/** Used to match template delimiters. */
+var reInterpolate = /<%=([\s\S]+?)%>/g;
+
+module.exports = reInterpolate;
+
+},{}],95:[function(require,module,exports){
+(function (global){
+/**
+ * lodash (Custom Build) <https://lodash.com/>
+ * Build: `lodash modularize exports="npm" -o ./`
+ * Copyright jQuery Foundation and other contributors <https://jquery.org/>
+ * Released under MIT license <https://lodash.com/license>
+ * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+ * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+ */
+var reInterpolate = require('lodash._reinterpolate'),
+    templateSettings = require('lodash.templatesettings');
+
+/** Used as references for various `Number` constants. */
+var INFINITY = 1 / 0,
+    MAX_SAFE_INTEGER = 9007199254740991;
+
+/** `Object#toString` result references. */
+var argsTag = '[object Arguments]',
+    errorTag = '[object Error]',
+    funcTag = '[object Function]',
+    genTag = '[object GeneratorFunction]',
+    symbolTag = '[object Symbol]';
+
+/** Used to match empty string literals in compiled template source. */
+var reEmptyStringLeading = /\b__p \+= '';/g,
+    reEmptyStringMiddle = /\b(__p \+=) '' \+/g,
+    reEmptyStringTrailing = /(__e\(.*?\)|\b__t\)) \+\n'';/g;
+
+/**
+ * Used to match
+ * [ES template delimiters](http://ecma-international.org/ecma-262/7.0/#sec-template-literal-lexical-components).
+ */
+var reEsTemplate = /\$\{([^\\}]*(?:\\.[^\\}]*)*)\}/g;
+
+/** Used to detect unsigned integer values. */
+var reIsUint = /^(?:0|[1-9]\d*)$/;
+
+/** Used to ensure capturing order of template delimiters. */
+var reNoMatch = /($^)/;
+
+/** Used to match unescaped characters in compiled string literals. */
+var reUnescapedString = /['\n\r\u2028\u2029\\]/g;
+
+/** Used to escape characters for inclusion in compiled string literals. */
+var stringEscapes = {
+  '\\': '\\',
+  "'": "'",
+  '\n': 'n',
+  '\r': 'r',
+  '\u2028': 'u2028',
+  '\u2029': 'u2029'
+};
+
+/** Detect free variable `global` from Node.js. */
+var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
+
+/** Detect free variable `self`. */
+var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+
+/** Used as a reference to the global object. */
+var root = freeGlobal || freeSelf || Function('return this')();
+
+/**
+ * A faster alternative to `Function#apply`, this function invokes `func`
+ * with the `this` binding of `thisArg` and the arguments of `args`.
+ *
+ * @private
+ * @param {Function} func The function to invoke.
+ * @param {*} thisArg The `this` binding of `func`.
+ * @param {Array} args The arguments to invoke `func` with.
+ * @returns {*} Returns the result of `func`.
+ */
+function apply(func, thisArg, args) {
+  switch (args.length) {
+    case 0: return func.call(thisArg);
+    case 1: return func.call(thisArg, args[0]);
+    case 2: return func.call(thisArg, args[0], args[1]);
+    case 3: return func.call(thisArg, args[0], args[1], args[2]);
+  }
+  return func.apply(thisArg, args);
+}
+
+/**
+ * A specialized version of `_.map` for arrays without support for iteratee
+ * shorthands.
+ *
+ * @private
+ * @param {Array} [array] The array to iterate over.
+ * @param {Function} iteratee The function invoked per iteration.
+ * @returns {Array} Returns the new mapped array.
+ */
+function arrayMap(array, iteratee) {
+  var index = -1,
+      length = array ? array.length : 0,
+      result = Array(length);
+
+  while (++index < length) {
+    result[index] = iteratee(array[index], index, array);
+  }
+  return result;
+}
+
+/**
+ * The base implementation of `_.times` without support for iteratee shorthands
+ * or max array length checks.
+ *
+ * @private
+ * @param {number} n The number of times to invoke `iteratee`.
+ * @param {Function} iteratee The function invoked per iteration.
+ * @returns {Array} Returns the array of results.
+ */
+function baseTimes(n, iteratee) {
+  var index = -1,
+      result = Array(n);
+
+  while (++index < n) {
+    result[index] = iteratee(index);
+  }
+  return result;
+}
+
+/**
+ * The base implementation of `_.values` and `_.valuesIn` which creates an
+ * array of `object` property values corresponding to the property names
+ * of `props`.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @param {Array} props The property names to get values for.
+ * @returns {Object} Returns the array of property values.
+ */
+function baseValues(object, props) {
+  return arrayMap(props, function(key) {
+    return object[key];
+  });
+}
+
+/**
+ * Used by `_.template` to escape characters for inclusion in compiled string literals.
+ *
+ * @private
+ * @param {string} chr The matched character to escape.
+ * @returns {string} Returns the escaped character.
+ */
+function escapeStringChar(chr) {
+  return '\\' + stringEscapes[chr];
+}
+
+/**
+ * Creates a unary function that invokes `func` with its argument transformed.
+ *
+ * @private
+ * @param {Function} func The function to wrap.
+ * @param {Function} transform The argument transform.
+ * @returns {Function} Returns the new function.
+ */
+function overArg(func, transform) {
+  return function(arg) {
+    return func(transform(arg));
+  };
+}
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * Used to resolve the
+ * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+var objectToString = objectProto.toString;
+
+/** Built-in value references. */
+var Symbol = root.Symbol,
+    propertyIsEnumerable = objectProto.propertyIsEnumerable;
+
+/* Built-in method references for those with the same name as other `lodash` methods. */
+var nativeKeys = overArg(Object.keys, Object),
+    nativeMax = Math.max;
+
+/** Used to convert symbols to primitives and strings. */
+var symbolProto = Symbol ? Symbol.prototype : undefined,
+    symbolToString = symbolProto ? symbolProto.toString : undefined;
+
+/**
+ * Creates an array of the enumerable property names of the array-like `value`.
+ *
+ * @private
+ * @param {*} value The value to query.
+ * @param {boolean} inherited Specify returning inherited property names.
+ * @returns {Array} Returns the array of property names.
+ */
+function arrayLikeKeys(value, inherited) {
+  // Safari 8.1 makes `arguments.callee` enumerable in strict mode.
+  // Safari 9 makes `arguments.length` enumerable in strict mode.
+  var result = (isArray(value) || isArguments(value))
+    ? baseTimes(value.length, String)
+    : [];
+
+  var length = result.length,
+      skipIndexes = !!length;
+
+  for (var key in value) {
+    if ((inherited || hasOwnProperty.call(value, key)) &&
+        !(skipIndexes && (key == 'length' || isIndex(key, length)))) {
+      result.push(key);
+    }
+  }
+  return result;
+}
+
+/**
+ * Used by `_.defaults` to customize its `_.assignIn` use.
+ *
+ * @private
+ * @param {*} objValue The destination value.
+ * @param {*} srcValue The source value.
+ * @param {string} key The key of the property to assign.
+ * @param {Object} object The parent object of `objValue`.
+ * @returns {*} Returns the value to assign.
+ */
+function assignInDefaults(objValue, srcValue, key, object) {
+  if (objValue === undefined ||
+      (eq(objValue, objectProto[key]) && !hasOwnProperty.call(object, key))) {
+    return srcValue;
+  }
+  return objValue;
+}
+
+/**
+ * Assigns `value` to `key` of `object` if the existing value is not equivalent
+ * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+ * for equality comparisons.
+ *
+ * @private
+ * @param {Object} object The object to modify.
+ * @param {string} key The key of the property to assign.
+ * @param {*} value The value to assign.
+ */
+function assignValue(object, key, value) {
+  var objValue = object[key];
+  if (!(hasOwnProperty.call(object, key) && eq(objValue, value)) ||
+      (value === undefined && !(key in object))) {
+    object[key] = value;
+  }
+}
+
+/**
+ * The base implementation of `_.keys` which doesn't treat sparse arrays as dense.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names.
+ */
+function baseKeys(object) {
+  if (!isPrototype(object)) {
+    return nativeKeys(object);
+  }
+  var result = [];
+  for (var key in Object(object)) {
+    if (hasOwnProperty.call(object, key) && key != 'constructor') {
+      result.push(key);
+    }
+  }
+  return result;
+}
+
+/**
+ * The base implementation of `_.keysIn` which doesn't treat sparse arrays as dense.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names.
+ */
+function baseKeysIn(object) {
+  if (!isObject(object)) {
+    return nativeKeysIn(object);
+  }
+  var isProto = isPrototype(object),
+      result = [];
+
+  for (var key in object) {
+    if (!(key == 'constructor' && (isProto || !hasOwnProperty.call(object, key)))) {
+      result.push(key);
+    }
+  }
+  return result;
+}
+
+/**
+ * The base implementation of `_.rest` which doesn't validate or coerce arguments.
+ *
+ * @private
+ * @param {Function} func The function to apply a rest parameter to.
+ * @param {number} [start=func.length-1] The start position of the rest parameter.
+ * @returns {Function} Returns the new function.
+ */
+function baseRest(func, start) {
+  start = nativeMax(start === undefined ? (func.length - 1) : start, 0);
+  return function() {
+    var args = arguments,
+        index = -1,
+        length = nativeMax(args.length - start, 0),
+        array = Array(length);
+
+    while (++index < length) {
+      array[index] = args[start + index];
+    }
+    index = -1;
+    var otherArgs = Array(start + 1);
+    while (++index < start) {
+      otherArgs[index] = args[index];
+    }
+    otherArgs[start] = array;
+    return apply(func, this, otherArgs);
+  };
+}
+
+/**
+ * The base implementation of `_.toString` which doesn't convert nullish
+ * values to empty strings.
+ *
+ * @private
+ * @param {*} value The value to process.
+ * @returns {string} Returns the string.
+ */
+function baseToString(value) {
+  // Exit early for strings to avoid a performance hit in some environments.
+  if (typeof value == 'string') {
+    return value;
+  }
+  if (isSymbol(value)) {
+    return symbolToString ? symbolToString.call(value) : '';
+  }
+  var result = (value + '');
+  return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
+}
+
+/**
+ * Copies properties of `source` to `object`.
+ *
+ * @private
+ * @param {Object} source The object to copy properties from.
+ * @param {Array} props The property identifiers to copy.
+ * @param {Object} [object={}] The object to copy properties to.
+ * @param {Function} [customizer] The function to customize copied values.
+ * @returns {Object} Returns `object`.
+ */
+function copyObject(source, props, object, customizer) {
+  object || (object = {});
+
+  var index = -1,
+      length = props.length;
+
+  while (++index < length) {
+    var key = props[index];
+
+    var newValue = customizer
+      ? customizer(object[key], source[key], key, object, source)
+      : undefined;
+
+    assignValue(object, key, newValue === undefined ? source[key] : newValue);
+  }
+  return object;
+}
+
+/**
+ * Creates a function like `_.assign`.
+ *
+ * @private
+ * @param {Function} assigner The function to assign values.
+ * @returns {Function} Returns the new assigner function.
+ */
+function createAssigner(assigner) {
+  return baseRest(function(object, sources) {
+    var index = -1,
+        length = sources.length,
+        customizer = length > 1 ? sources[length - 1] : undefined,
+        guard = length > 2 ? sources[2] : undefined;
+
+    customizer = (assigner.length > 3 && typeof customizer == 'function')
+      ? (length--, customizer)
+      : undefined;
+
+    if (guard && isIterateeCall(sources[0], sources[1], guard)) {
+      customizer = length < 3 ? undefined : customizer;
+      length = 1;
+    }
+    object = Object(object);
+    while (++index < length) {
+      var source = sources[index];
+      if (source) {
+        assigner(object, source, index, customizer);
+      }
+    }
+    return object;
+  });
+}
+
+/**
+ * Checks if `value` is a valid array-like index.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @param {number} [length=MAX_SAFE_INTEGER] The upper bounds of a valid index.
+ * @returns {boolean} Returns `true` if `value` is a valid index, else `false`.
+ */
+function isIndex(value, length) {
+  length = length == null ? MAX_SAFE_INTEGER : length;
+  return !!length &&
+    (typeof value == 'number' || reIsUint.test(value)) &&
+    (value > -1 && value % 1 == 0 && value < length);
+}
+
+/**
+ * Checks if the given arguments are from an iteratee call.
+ *
+ * @private
+ * @param {*} value The potential iteratee value argument.
+ * @param {*} index The potential iteratee index or key argument.
+ * @param {*} object The potential iteratee object argument.
+ * @returns {boolean} Returns `true` if the arguments are from an iteratee call,
+ *  else `false`.
+ */
+function isIterateeCall(value, index, object) {
+  if (!isObject(object)) {
+    return false;
+  }
+  var type = typeof index;
+  if (type == 'number'
+        ? (isArrayLike(object) && isIndex(index, object.length))
+        : (type == 'string' && index in object)
+      ) {
+    return eq(object[index], value);
+  }
+  return false;
+}
+
+/**
+ * Checks if `value` is likely a prototype object.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a prototype, else `false`.
+ */
+function isPrototype(value) {
+  var Ctor = value && value.constructor,
+      proto = (typeof Ctor == 'function' && Ctor.prototype) || objectProto;
+
+  return value === proto;
+}
+
+/**
+ * This function is like
+ * [`Object.keys`](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+ * except that it includes inherited enumerable properties.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names.
+ */
+function nativeKeysIn(object) {
+  var result = [];
+  if (object != null) {
+    for (var key in Object(object)) {
+      result.push(key);
+    }
+  }
+  return result;
+}
+
+/**
+ * Performs a
+ * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+ * comparison between two values to determine if they are equivalent.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to compare.
+ * @param {*} other The other value to compare.
+ * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+ * @example
+ *
+ * var object = { 'a': 1 };
+ * var other = { 'a': 1 };
+ *
+ * _.eq(object, object);
+ * // => true
+ *
+ * _.eq(object, other);
+ * // => false
+ *
+ * _.eq('a', 'a');
+ * // => true
+ *
+ * _.eq('a', Object('a'));
+ * // => false
+ *
+ * _.eq(NaN, NaN);
+ * // => true
+ */
+function eq(value, other) {
+  return value === other || (value !== value && other !== other);
+}
+
+/**
+ * Checks if `value` is likely an `arguments` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an `arguments` object,
+ *  else `false`.
+ * @example
+ *
+ * _.isArguments(function() { return arguments; }());
+ * // => true
+ *
+ * _.isArguments([1, 2, 3]);
+ * // => false
+ */
+function isArguments(value) {
+  // Safari 8.1 makes `arguments.callee` enumerable in strict mode.
+  return isArrayLikeObject(value) && hasOwnProperty.call(value, 'callee') &&
+    (!propertyIsEnumerable.call(value, 'callee') || objectToString.call(value) == argsTag);
+}
+
+/**
+ * Checks if `value` is classified as an `Array` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an array, else `false`.
+ * @example
+ *
+ * _.isArray([1, 2, 3]);
+ * // => true
+ *
+ * _.isArray(document.body.children);
+ * // => false
+ *
+ * _.isArray('abc');
+ * // => false
+ *
+ * _.isArray(_.noop);
+ * // => false
+ */
+var isArray = Array.isArray;
+
+/**
+ * Checks if `value` is array-like. A value is considered array-like if it's
+ * not a function and has a `value.length` that's an integer greater than or
+ * equal to `0` and less than or equal to `Number.MAX_SAFE_INTEGER`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is array-like, else `false`.
+ * @example
+ *
+ * _.isArrayLike([1, 2, 3]);
+ * // => true
+ *
+ * _.isArrayLike(document.body.children);
+ * // => true
+ *
+ * _.isArrayLike('abc');
+ * // => true
+ *
+ * _.isArrayLike(_.noop);
+ * // => false
+ */
+function isArrayLike(value) {
+  return value != null && isLength(value.length) && !isFunction(value);
+}
+
+/**
+ * This method is like `_.isArrayLike` except that it also checks if `value`
+ * is an object.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an array-like object,
+ *  else `false`.
+ * @example
+ *
+ * _.isArrayLikeObject([1, 2, 3]);
+ * // => true
+ *
+ * _.isArrayLikeObject(document.body.children);
+ * // => true
+ *
+ * _.isArrayLikeObject('abc');
+ * // => false
+ *
+ * _.isArrayLikeObject(_.noop);
+ * // => false
+ */
+function isArrayLikeObject(value) {
+  return isObjectLike(value) && isArrayLike(value);
+}
+
+/**
+ * Checks if `value` is an `Error`, `EvalError`, `RangeError`, `ReferenceError`,
+ * `SyntaxError`, `TypeError`, or `URIError` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 3.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an error object, else `false`.
+ * @example
+ *
+ * _.isError(new Error);
+ * // => true
+ *
+ * _.isError(Error);
+ * // => false
+ */
+function isError(value) {
+  if (!isObjectLike(value)) {
+    return false;
+  }
+  return (objectToString.call(value) == errorTag) ||
+    (typeof value.message == 'string' && typeof value.name == 'string');
+}
+
+/**
+ * Checks if `value` is classified as a `Function` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a function, else `false`.
+ * @example
+ *
+ * _.isFunction(_);
+ * // => true
+ *
+ * _.isFunction(/abc/);
+ * // => false
+ */
+function isFunction(value) {
+  // The use of `Object#toString` avoids issues with the `typeof` operator
+  // in Safari 8-9 which returns 'object' for typed array and other constructors.
+  var tag = isObject(value) ? objectToString.call(value) : '';
+  return tag == funcTag || tag == genTag;
+}
+
+/**
+ * Checks if `value` is a valid array-like length.
+ *
+ * **Note:** This method is loosely based on
+ * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a valid length, else `false`.
+ * @example
+ *
+ * _.isLength(3);
+ * // => true
+ *
+ * _.isLength(Number.MIN_VALUE);
+ * // => false
+ *
+ * _.isLength(Infinity);
+ * // => false
+ *
+ * _.isLength('3');
+ * // => false
+ */
+function isLength(value) {
+  return typeof value == 'number' &&
+    value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+}
+
+/**
+ * Checks if `value` is the
+ * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+ * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+ * @example
+ *
+ * _.isObject({});
+ * // => true
+ *
+ * _.isObject([1, 2, 3]);
+ * // => true
+ *
+ * _.isObject(_.noop);
+ * // => true
+ *
+ * _.isObject(null);
+ * // => false
+ */
+function isObject(value) {
+  var type = typeof value;
+  return !!value && (type == 'object' || type == 'function');
+}
+
+/**
+ * Checks if `value` is object-like. A value is object-like if it's not `null`
+ * and has a `typeof` result of "object".
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+ * @example
+ *
+ * _.isObjectLike({});
+ * // => true
+ *
+ * _.isObjectLike([1, 2, 3]);
+ * // => true
+ *
+ * _.isObjectLike(_.noop);
+ * // => false
+ *
+ * _.isObjectLike(null);
+ * // => false
+ */
+function isObjectLike(value) {
+  return !!value && typeof value == 'object';
+}
+
+/**
+ * Checks if `value` is classified as a `Symbol` primitive or object.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
+ * @example
+ *
+ * _.isSymbol(Symbol.iterator);
+ * // => true
+ *
+ * _.isSymbol('abc');
+ * // => false
+ */
+function isSymbol(value) {
+  return typeof value == 'symbol' ||
+    (isObjectLike(value) && objectToString.call(value) == symbolTag);
+}
+
+/**
+ * Converts `value` to a string. An empty string is returned for `null`
+ * and `undefined` values. The sign of `-0` is preserved.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to process.
+ * @returns {string} Returns the string.
+ * @example
+ *
+ * _.toString(null);
+ * // => ''
+ *
+ * _.toString(-0);
+ * // => '-0'
+ *
+ * _.toString([1, 2, 3]);
+ * // => '1,2,3'
+ */
+function toString(value) {
+  return value == null ? '' : baseToString(value);
+}
+
+/**
+ * This method is like `_.assignIn` except that it accepts `customizer`
+ * which is invoked to produce the assigned values. If `customizer` returns
+ * `undefined`, assignment is handled by the method instead. The `customizer`
+ * is invoked with five arguments: (objValue, srcValue, key, object, source).
+ *
+ * **Note:** This method mutates `object`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @alias extendWith
+ * @category Object
+ * @param {Object} object The destination object.
+ * @param {...Object} sources The source objects.
+ * @param {Function} [customizer] The function to customize assigned values.
+ * @returns {Object} Returns `object`.
+ * @see _.assignWith
+ * @example
+ *
+ * function customizer(objValue, srcValue) {
+ *   return _.isUndefined(objValue) ? srcValue : objValue;
+ * }
+ *
+ * var defaults = _.partialRight(_.assignInWith, customizer);
+ *
+ * defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
+ * // => { 'a': 1, 'b': 2 }
+ */
+var assignInWith = createAssigner(function(object, source, srcIndex, customizer) {
+  copyObject(source, keysIn(source), object, customizer);
+});
+
+/**
+ * Creates an array of the own enumerable property names of `object`.
+ *
+ * **Note:** Non-object values are coerced to objects. See the
+ * [ES spec](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+ * for more details.
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category Object
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names.
+ * @example
+ *
+ * function Foo() {
+ *   this.a = 1;
+ *   this.b = 2;
+ * }
+ *
+ * Foo.prototype.c = 3;
+ *
+ * _.keys(new Foo);
+ * // => ['a', 'b'] (iteration order is not guaranteed)
+ *
+ * _.keys('hi');
+ * // => ['0', '1']
+ */
+function keys(object) {
+  return isArrayLike(object) ? arrayLikeKeys(object) : baseKeys(object);
+}
+
+/**
+ * Creates an array of the own and inherited enumerable property names of `object`.
+ *
+ * **Note:** Non-object values are coerced to objects.
+ *
+ * @static
+ * @memberOf _
+ * @since 3.0.0
+ * @category Object
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names.
+ * @example
+ *
+ * function Foo() {
+ *   this.a = 1;
+ *   this.b = 2;
+ * }
+ *
+ * Foo.prototype.c = 3;
+ *
+ * _.keysIn(new Foo);
+ * // => ['a', 'b', 'c'] (iteration order is not guaranteed)
+ */
+function keysIn(object) {
+  return isArrayLike(object) ? arrayLikeKeys(object, true) : baseKeysIn(object);
+}
+
+/**
+ * Creates a compiled template function that can interpolate data properties
+ * in "interpolate" delimiters, HTML-escape interpolated data properties in
+ * "escape" delimiters, and execute JavaScript in "evaluate" delimiters. Data
+ * properties may be accessed as free variables in the template. If a setting
+ * object is given, it takes precedence over `_.templateSettings` values.
+ *
+ * **Note:** In the development build `_.template` utilizes
+ * [sourceURLs](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/#toc-sourceurl)
+ * for easier debugging.
+ *
+ * For more information on precompiling templates see
+ * [lodash's custom builds documentation](https://lodash.com/custom-builds).
+ *
+ * For more information on Chrome extension sandboxes see
+ * [Chrome's extensions documentation](https://developer.chrome.com/extensions/sandboxingEval).
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category String
+ * @param {string} [string=''] The template string.
+ * @param {Object} [options={}] The options object.
+ * @param {RegExp} [options.escape=_.templateSettings.escape]
+ *  The HTML "escape" delimiter.
+ * @param {RegExp} [options.evaluate=_.templateSettings.evaluate]
+ *  The "evaluate" delimiter.
+ * @param {Object} [options.imports=_.templateSettings.imports]
+ *  An object to import into the template as free variables.
+ * @param {RegExp} [options.interpolate=_.templateSettings.interpolate]
+ *  The "interpolate" delimiter.
+ * @param {string} [options.sourceURL='templateSources[n]']
+ *  The sourceURL of the compiled template.
+ * @param {string} [options.variable='obj']
+ *  The data object variable name.
+ * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+ * @returns {Function} Returns the compiled template function.
+ * @example
+ *
+ * // Use the "interpolate" delimiter to create a compiled template.
+ * var compiled = _.template('hello <%= user %>!');
+ * compiled({ 'user': 'fred' });
+ * // => 'hello fred!'
+ *
+ * // Use the HTML "escape" delimiter to escape data property values.
+ * var compiled = _.template('<b><%- value %></b>');
+ * compiled({ 'value': '<script>' });
+ * // => '<b>&lt;script&gt;</b>'
+ *
+ * // Use the "evaluate" delimiter to execute JavaScript and generate HTML.
+ * var compiled = _.template('<% _.forEach(users, function(user) { %><li><%- user %></li><% }); %>');
+ * compiled({ 'users': ['fred', 'barney'] });
+ * // => '<li>fred</li><li>barney</li>'
+ *
+ * // Use the internal `print` function in "evaluate" delimiters.
+ * var compiled = _.template('<% print("hello " + user); %>!');
+ * compiled({ 'user': 'barney' });
+ * // => 'hello barney!'
+ *
+ * // Use the ES delimiter as an alternative to the default "interpolate" delimiter.
+ * var compiled = _.template('hello ${ user }!');
+ * compiled({ 'user': 'pebbles' });
+ * // => 'hello pebbles!'
+ *
+ * // Use backslashes to treat delimiters as plain text.
+ * var compiled = _.template('<%= "\\<%- value %\\>" %>');
+ * compiled({ 'value': 'ignored' });
+ * // => '<%- value %>'
+ *
+ * // Use the `imports` option to import `jQuery` as `jq`.
+ * var text = '<% jq.each(users, function(user) { %><li><%- user %></li><% }); %>';
+ * var compiled = _.template(text, { 'imports': { 'jq': jQuery } });
+ * compiled({ 'users': ['fred', 'barney'] });
+ * // => '<li>fred</li><li>barney</li>'
+ *
+ * // Use the `sourceURL` option to specify a custom sourceURL for the template.
+ * var compiled = _.template('hello <%= user %>!', { 'sourceURL': '/basic/greeting.jst' });
+ * compiled(data);
+ * // => Find the source of "greeting.jst" under the Sources tab or Resources panel of the web inspector.
+ *
+ * // Use the `variable` option to ensure a with-statement isn't used in the compiled template.
+ * var compiled = _.template('hi <%= data.user %>!', { 'variable': 'data' });
+ * compiled.source;
+ * // => function(data) {
+ * //   var __t, __p = '';
+ * //   __p += 'hi ' + ((__t = ( data.user )) == null ? '' : __t) + '!';
+ * //   return __p;
+ * // }
+ *
+ * // Use custom template delimiters.
+ * _.templateSettings.interpolate = /{{([\s\S]+?)}}/g;
+ * var compiled = _.template('hello {{ user }}!');
+ * compiled({ 'user': 'mustache' });
+ * // => 'hello mustache!'
+ *
+ * // Use the `source` property to inline compiled templates for meaningful
+ * // line numbers in error messages and stack traces.
+ * fs.writeFileSync(path.join(process.cwd(), 'jst.js'), '\
+ *   var JST = {\
+ *     "main": ' + _.template(mainText).source + '\
+ *   };\
+ * ');
+ */
+function template(string, options, guard) {
+  // Based on John Resig's `tmpl` implementation
+  // (http://ejohn.org/blog/javascript-micro-templating/)
+  // and Laura Doktorova's doT.js (https://github.com/olado/doT).
+  var settings = templateSettings.imports._.templateSettings || templateSettings;
+
+  if (guard && isIterateeCall(string, options, guard)) {
+    options = undefined;
+  }
+  string = toString(string);
+  options = assignInWith({}, options, settings, assignInDefaults);
+
+  var imports = assignInWith({}, options.imports, settings.imports, assignInDefaults),
+      importsKeys = keys(imports),
+      importsValues = baseValues(imports, importsKeys);
+
+  var isEscaping,
+      isEvaluating,
+      index = 0,
+      interpolate = options.interpolate || reNoMatch,
+      source = "__p += '";
+
+  // Compile the regexp to match each delimiter.
+  var reDelimiters = RegExp(
+    (options.escape || reNoMatch).source + '|' +
+    interpolate.source + '|' +
+    (interpolate === reInterpolate ? reEsTemplate : reNoMatch).source + '|' +
+    (options.evaluate || reNoMatch).source + '|$'
+  , 'g');
+
+  // Use a sourceURL for easier debugging.
+  var sourceURL = 'sourceURL' in options ? '//# sourceURL=' + options.sourceURL + '\n' : '';
+
+  string.replace(reDelimiters, function(match, escapeValue, interpolateValue, esTemplateValue, evaluateValue, offset) {
+    interpolateValue || (interpolateValue = esTemplateValue);
+
+    // Escape characters that can't be included in string literals.
+    source += string.slice(index, offset).replace(reUnescapedString, escapeStringChar);
+
+    // Replace delimiters with snippets.
+    if (escapeValue) {
+      isEscaping = true;
+      source += "' +\n__e(" + escapeValue + ") +\n'";
+    }
+    if (evaluateValue) {
+      isEvaluating = true;
+      source += "';\n" + evaluateValue + ";\n__p += '";
+    }
+    if (interpolateValue) {
+      source += "' +\n((__t = (" + interpolateValue + ")) == null ? '' : __t) +\n'";
+    }
+    index = offset + match.length;
+
+    // The JS engine embedded in Adobe products needs `match` returned in
+    // order to produce the correct `offset` value.
+    return match;
+  });
+
+  source += "';\n";
+
+  // If `variable` is not specified wrap a with-statement around the generated
+  // code to add the data object to the top of the scope chain.
+  var variable = options.variable;
+  if (!variable) {
+    source = 'with (obj) {\n' + source + '\n}\n';
+  }
+  // Cleanup code by stripping empty strings.
+  source = (isEvaluating ? source.replace(reEmptyStringLeading, '') : source)
+    .replace(reEmptyStringMiddle, '$1')
+    .replace(reEmptyStringTrailing, '$1;');
+
+  // Frame code as the function body.
+  source = 'function(' + (variable || 'obj') + ') {\n' +
+    (variable
+      ? ''
+      : 'obj || (obj = {});\n'
+    ) +
+    "var __t, __p = ''" +
+    (isEscaping
+       ? ', __e = _.escape'
+       : ''
+    ) +
+    (isEvaluating
+      ? ', __j = Array.prototype.join;\n' +
+        "function print() { __p += __j.call(arguments, '') }\n"
+      : ';\n'
+    ) +
+    source +
+    'return __p\n}';
+
+  var result = attempt(function() {
+    return Function(importsKeys, sourceURL + 'return ' + source)
+      .apply(undefined, importsValues);
+  });
+
+  // Provide the compiled function's source by its `toString` method or
+  // the `source` property as a convenience for inlining compiled templates.
+  result.source = source;
+  if (isError(result)) {
+    throw result;
+  }
+  return result;
+}
+
+/**
+ * Attempts to invoke `func`, returning either the result or the caught error
+ * object. Any additional arguments are provided to `func` when it's invoked.
+ *
+ * @static
+ * @memberOf _
+ * @since 3.0.0
+ * @category Util
+ * @param {Function} func The function to attempt.
+ * @param {...*} [args] The arguments to invoke `func` with.
+ * @returns {*} Returns the `func` result or error object.
+ * @example
+ *
+ * // Avoid throwing errors for invalid selectors.
+ * var elements = _.attempt(function(selector) {
+ *   return document.querySelectorAll(selector);
+ * }, '>_>');
+ *
+ * if (_.isError(elements)) {
+ *   elements = [];
+ * }
+ */
+var attempt = baseRest(function(func, args) {
+  try {
+    return apply(func, undefined, args);
+  } catch (e) {
+    return isError(e) ? e : new Error(e);
+  }
+});
+
+module.exports = template;
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"lodash._reinterpolate":94,"lodash.templatesettings":96}],96:[function(require,module,exports){
+(function (global){
+/**
+ * lodash (Custom Build) <https://lodash.com/>
+ * Build: `lodash modularize exports="npm" -o ./`
+ * Copyright jQuery Foundation and other contributors <https://jquery.org/>
+ * Released under MIT license <https://lodash.com/license>
+ * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+ * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+ */
+var reInterpolate = require('lodash._reinterpolate');
+
+/** Used as references for various `Number` constants. */
+var INFINITY = 1 / 0;
+
+/** `Object#toString` result references. */
+var symbolTag = '[object Symbol]';
+
+/** Used to match HTML entities and HTML characters. */
+var reUnescapedHtml = /[&<>"'`]/g,
+    reHasUnescapedHtml = RegExp(reUnescapedHtml.source);
+
+/** Used to match template delimiters. */
+var reEscape = /<%-([\s\S]+?)%>/g,
+    reEvaluate = /<%([\s\S]+?)%>/g;
+
+/** Used to map characters to HTML entities. */
+var htmlEscapes = {
+  '&': '&amp;',
+  '<': '&lt;',
+  '>': '&gt;',
+  '"': '&quot;',
+  "'": '&#39;',
+  '`': '&#96;'
+};
+
+/** Detect free variable `global` from Node.js. */
+var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
+
+/** Detect free variable `self`. */
+var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+
+/** Used as a reference to the global object. */
+var root = freeGlobal || freeSelf || Function('return this')();
+
+/**
+ * The base implementation of `_.propertyOf` without support for deep paths.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Function} Returns the new accessor function.
+ */
+function basePropertyOf(object) {
+  return function(key) {
+    return object == null ? undefined : object[key];
+  };
+}
+
+/**
+ * Used by `_.escape` to convert characters to HTML entities.
+ *
+ * @private
+ * @param {string} chr The matched character to escape.
+ * @returns {string} Returns the escaped character.
+ */
+var escapeHtmlChar = basePropertyOf(htmlEscapes);
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/**
+ * Used to resolve the
+ * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+var objectToString = objectProto.toString;
+
+/** Built-in value references. */
+var Symbol = root.Symbol;
+
+/** Used to convert symbols to primitives and strings. */
+var symbolProto = Symbol ? Symbol.prototype : undefined,
+    symbolToString = symbolProto ? symbolProto.toString : undefined;
+
+/**
+ * By default, the template delimiters used by lodash are like those in
+ * embedded Ruby (ERB). Change the following template settings to use
+ * alternative delimiters.
+ *
+ * @static
+ * @memberOf _
+ * @type {Object}
+ */
+var templateSettings = {
+
+  /**
+   * Used to detect `data` property values to be HTML-escaped.
+   *
+   * @memberOf _.templateSettings
+   * @type {RegExp}
+   */
+  'escape': reEscape,
+
+  /**
+   * Used to detect code to be evaluated.
+   *
+   * @memberOf _.templateSettings
+   * @type {RegExp}
+   */
+  'evaluate': reEvaluate,
+
+  /**
+   * Used to detect `data` property values to inject.
+   *
+   * @memberOf _.templateSettings
+   * @type {RegExp}
+   */
+  'interpolate': reInterpolate,
+
+  /**
+   * Used to reference the data object in the template text.
+   *
+   * @memberOf _.templateSettings
+   * @type {string}
+   */
+  'variable': '',
+
+  /**
+   * Used to import variables into the compiled template.
+   *
+   * @memberOf _.templateSettings
+   * @type {Object}
+   */
+  'imports': {
+
+    /**
+     * A reference to the `lodash` function.
+     *
+     * @memberOf _.templateSettings.imports
+     * @type {Function}
+     */
+    '_': { 'escape': escape }
+  }
+};
+
+/**
+ * The base implementation of `_.toString` which doesn't convert nullish
+ * values to empty strings.
+ *
+ * @private
+ * @param {*} value The value to process.
+ * @returns {string} Returns the string.
+ */
+function baseToString(value) {
+  // Exit early for strings to avoid a performance hit in some environments.
+  if (typeof value == 'string') {
+    return value;
+  }
+  if (isSymbol(value)) {
+    return symbolToString ? symbolToString.call(value) : '';
+  }
+  var result = (value + '');
+  return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
+}
+
+/**
+ * Checks if `value` is object-like. A value is object-like if it's not `null`
+ * and has a `typeof` result of "object".
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+ * @example
+ *
+ * _.isObjectLike({});
+ * // => true
+ *
+ * _.isObjectLike([1, 2, 3]);
+ * // => true
+ *
+ * _.isObjectLike(_.noop);
+ * // => false
+ *
+ * _.isObjectLike(null);
+ * // => false
+ */
+function isObjectLike(value) {
+  return !!value && typeof value == 'object';
+}
+
+/**
+ * Checks if `value` is classified as a `Symbol` primitive or object.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
+ * @example
+ *
+ * _.isSymbol(Symbol.iterator);
+ * // => true
+ *
+ * _.isSymbol('abc');
+ * // => false
+ */
+function isSymbol(value) {
+  return typeof value == 'symbol' ||
+    (isObjectLike(value) && objectToString.call(value) == symbolTag);
+}
+
+/**
+ * Converts `value` to a string. An empty string is returned for `null`
+ * and `undefined` values. The sign of `-0` is preserved.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to process.
+ * @returns {string} Returns the string.
+ * @example
+ *
+ * _.toString(null);
+ * // => ''
+ *
+ * _.toString(-0);
+ * // => '-0'
+ *
+ * _.toString([1, 2, 3]);
+ * // => '1,2,3'
+ */
+function toString(value) {
+  return value == null ? '' : baseToString(value);
+}
+
+/**
+ * Converts the characters "&", "<", ">", '"', "'", and "\`" in `string` to
+ * their corresponding HTML entities.
+ *
+ * **Note:** No other characters are escaped. To escape additional
+ * characters use a third-party library like [_he_](https://mths.be/he).
+ *
+ * Though the ">" character is escaped for symmetry, characters like
+ * ">" and "/" don't need escaping in HTML and have no special meaning
+ * unless they're part of a tag or unquoted attribute value. See
+ * [Mathias Bynens's article](https://mathiasbynens.be/notes/ambiguous-ampersands)
+ * (under "semi-related fun fact") for more details.
+ *
+ * Backticks are escaped because in IE < 9, they can break out of
+ * attribute values or HTML comments. See [#59](https://html5sec.org/#59),
+ * [#102](https://html5sec.org/#102), [#108](https://html5sec.org/#108), and
+ * [#133](https://html5sec.org/#133) of the
+ * [HTML5 Security Cheatsheet](https://html5sec.org/) for more details.
+ *
+ * When working with HTML you should always
+ * [quote attribute values](http://wonko.com/post/html-escaping) to reduce
+ * XSS vectors.
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category String
+ * @param {string} [string=''] The string to escape.
+ * @returns {string} Returns the escaped string.
+ * @example
+ *
+ * _.escape('fred, barney, & pebbles');
+ * // => 'fred, barney, &amp; pebbles'
+ */
+function escape(string) {
+  string = toString(string);
+  return (string && reHasUnescapedHtml.test(string))
+    ? string.replace(reUnescapedHtml, escapeHtmlChar)
+    : string;
+}
+
+module.exports = templateSettings;
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"lodash._reinterpolate":94}],97:[function(require,module,exports){
+module.exports = minimatch
+minimatch.Minimatch = Minimatch
+
+var path = { sep: '/' }
+try {
+  path = require('path')
+} catch (er) {}
+
+var GLOBSTAR = minimatch.GLOBSTAR = Minimatch.GLOBSTAR = {}
+var expand = require('brace-expansion')
+
+var plTypes = {
+  '!': { open: '(?:(?!(?:', close: '))[^/]*?)'},
+  '?': { open: '(?:', close: ')?' },
+  '+': { open: '(?:', close: ')+' },
+  '*': { open: '(?:', close: ')*' },
+  '@': { open: '(?:', close: ')' }
+}
+
+// any single thing other than /
+// don't need to escape / when using new RegExp()
+var qmark = '[^/]'
+
+// * => any number of characters
+var star = qmark + '*?'
+
+// ** when dots are allowed.  Anything goes, except .. and .
+// not (^ or / followed by one or two dots followed by $ or /),
+// followed by anything, any number of times.
+var twoStarDot = '(?:(?!(?:\\\/|^)(?:\\.{1,2})($|\\\/)).)*?'
+
+// not a ^ or / followed by a dot,
+// followed by anything, any number of times.
+var twoStarNoDot = '(?:(?!(?:\\\/|^)\\.).)*?'
+
+// characters that need to be escaped in RegExp.
+var reSpecials = charSet('().*{}+?[]^$\\!')
+
+// "abc" -> { a:true, b:true, c:true }
+function charSet (s) {
+  return s.split('').reduce(function (set, c) {
+    set[c] = true
+    return set
+  }, {})
+}
+
+// normalizes slashes.
+var slashSplit = /\/+/
+
+minimatch.filter = filter
+function filter (pattern, options) {
+  options = options || {}
+  return function (p, i, list) {
+    return minimatch(p, pattern, options)
+  }
+}
+
+function ext (a, b) {
+  a = a || {}
+  b = b || {}
+  var t = {}
+  Object.keys(b).forEach(function (k) {
+    t[k] = b[k]
+  })
+  Object.keys(a).forEach(function (k) {
+    t[k] = a[k]
+  })
+  return t
+}
+
+minimatch.defaults = function (def) {
+  if (!def || !Object.keys(def).length) return minimatch
+
+  var orig = minimatch
+
+  var m = function minimatch (p, pattern, options) {
+    return orig.minimatch(p, pattern, ext(def, options))
+  }
+
+  m.Minimatch = function Minimatch (pattern, options) {
+    return new orig.Minimatch(pattern, ext(def, options))
+  }
+
+  return m
+}
+
+Minimatch.defaults = function (def) {
+  if (!def || !Object.keys(def).length) return Minimatch
+  return minimatch.defaults(def).Minimatch
+}
+
+function minimatch (p, pattern, options) {
+  if (typeof pattern !== 'string') {
+    throw new TypeError('glob pattern string required')
+  }
+
+  if (!options) options = {}
+
+  // shortcut: comments match nothing.
+  if (!options.nocomment && pattern.charAt(0) === '#') {
+    return false
+  }
+
+  // "" only matches ""
+  if (pattern.trim() === '') return p === ''
+
+  return new Minimatch(pattern, options).match(p)
+}
+
+function Minimatch (pattern, options) {
+  if (!(this instanceof Minimatch)) {
+    return new Minimatch(pattern, options)
+  }
+
+  if (typeof pattern !== 'string') {
+    throw new TypeError('glob pattern string required')
+  }
+
+  if (!options) options = {}
+  pattern = pattern.trim()
+
+  // windows support: need to use /, not \
+  if (path.sep !== '/') {
+    pattern = pattern.split(path.sep).join('/')
+  }
+
+  this.options = options
+  this.set = []
+  this.pattern = pattern
+  this.regexp = null
+  this.negate = false
+  this.comment = false
+  this.empty = false
+
+  // make the set of regexps etc.
+  this.make()
+}
+
+Minimatch.prototype.debug = function () {}
+
+Minimatch.prototype.make = make
+function make () {
+  // don't do it more than once.
+  if (this._made) return
+
+  var pattern = this.pattern
+  var options = this.options
+
+  // empty patterns and comments match nothing.
+  if (!options.nocomment && pattern.charAt(0) === '#') {
+    this.comment = true
+    return
+  }
+  if (!pattern) {
+    this.empty = true
+    return
+  }
+
+  // step 1: figure out negation, etc.
+  this.parseNegate()
+
+  // step 2: expand braces
+  var set = this.globSet = this.braceExpand()
+
+  if (options.debug) this.debug = console.error
+
+  this.debug(this.pattern, set)
+
+  // step 3: now we have a set, so turn each one into a series of path-portion
+  // matching patterns.
+  // These will be regexps, except in the case of "**", which is
+  // set to the GLOBSTAR object for globstar behavior,
+  // and will not contain any / characters
+  set = this.globParts = set.map(function (s) {
+    return s.split(slashSplit)
+  })
+
+  this.debug(this.pattern, set)
+
+  // glob --> regexps
+  set = set.map(function (s, si, set) {
+    return s.map(this.parse, this)
+  }, this)
+
+  this.debug(this.pattern, set)
+
+  // filter out everything that didn't compile properly.
+  set = set.filter(function (s) {
+    return s.indexOf(false) === -1
+  })
+
+  this.debug(this.pattern, set)
+
+  this.set = set
+}
+
+Minimatch.prototype.parseNegate = parseNegate
+function parseNegate () {
+  var pattern = this.pattern
+  var negate = false
+  var options = this.options
+  var negateOffset = 0
+
+  if (options.nonegate) return
+
+  for (var i = 0, l = pattern.length
+    ; i < l && pattern.charAt(i) === '!'
+    ; i++) {
+    negate = !negate
+    negateOffset++
+  }
+
+  if (negateOffset) this.pattern = pattern.substr(negateOffset)
+  this.negate = negate
+}
+
+// Brace expansion:
+// a{b,c}d -> abd acd
+// a{b,}c -> abc ac
+// a{0..3}d -> a0d a1d a2d a3d
+// a{b,c{d,e}f}g -> abg acdfg acefg
+// a{b,c}d{e,f}g -> abdeg acdeg abdeg abdfg
+//
+// Invalid sets are not expanded.
+// a{2..}b -> a{2..}b
+// a{b}c -> a{b}c
+minimatch.braceExpand = function (pattern, options) {
+  return braceExpand(pattern, options)
+}
+
+Minimatch.prototype.braceExpand = braceExpand
+
+function braceExpand (pattern, options) {
+  if (!options) {
+    if (this instanceof Minimatch) {
+      options = this.options
+    } else {
+      options = {}
+    }
+  }
+
+  pattern = typeof pattern === 'undefined'
+    ? this.pattern : pattern
+
+  if (typeof pattern === 'undefined') {
+    throw new TypeError('undefined pattern')
+  }
+
+  if (options.nobrace ||
+    !pattern.match(/\{.*\}/)) {
+    // shortcut. no need to expand.
+    return [pattern]
+  }
+
+  return expand(pattern)
+}
+
+// parse a component of the expanded set.
+// At this point, no pattern may contain "/" in it
+// so we're going to return a 2d array, where each entry is the full
+// pattern, split on '/', and then turned into a regular expression.
+// A regexp is made at the end which joins each array with an
+// escaped /, and another full one which joins each regexp with |.
+//
+// Following the lead of Bash 4.1, note that "**" only has special meaning
+// when it is the *only* thing in a path portion.  Otherwise, any series
+// of * is equivalent to a single *.  Globstar behavior is enabled by
+// default, and can be disabled by setting options.noglobstar.
+Minimatch.prototype.parse = parse
+var SUBPARSE = {}
+function parse (pattern, isSub) {
+  if (pattern.length > 1024 * 64) {
+    throw new TypeError('pattern is too long')
+  }
+
+  var options = this.options
+
+  // shortcuts
+  if (!options.noglobstar && pattern === '**') return GLOBSTAR
+  if (pattern === '') return ''
+
+  var re = ''
+  var hasMagic = !!options.nocase
+  var escaping = false
+  // ? => one single character
+  var patternListStack = []
+  var negativeLists = []
+  var stateChar
+  var inClass = false
+  var reClassStart = -1
+  var classStart = -1
+  // . and .. never match anything that doesn't start with .,
+  // even when options.dot is set.
+  var patternStart = pattern.charAt(0) === '.' ? '' // anything
+  // not (start or / followed by . or .. followed by / or end)
+  : options.dot ? '(?!(?:^|\\\/)\\.{1,2}(?:$|\\\/))'
+  : '(?!\\.)'
+  var self = this
+
+  function clearStateChar () {
+    if (stateChar) {
+      // we had some state-tracking character
+      // that wasn't consumed by this pass.
+      switch (stateChar) {
+        case '*':
+          re += star
+          hasMagic = true
+        break
+        case '?':
+          re += qmark
+          hasMagic = true
+        break
+        default:
+          re += '\\' + stateChar
+        break
+      }
+      self.debug('clearStateChar %j %j', stateChar, re)
+      stateChar = false
+    }
+  }
+
+  for (var i = 0, len = pattern.length, c
+    ; (i < len) && (c = pattern.charAt(i))
+    ; i++) {
+    this.debug('%s\t%s %s %j', pattern, i, re, c)
+
+    // skip over any that are escaped.
+    if (escaping && reSpecials[c]) {
+      re += '\\' + c
+      escaping = false
+      continue
+    }
+
+    switch (c) {
+      case '/':
+        // completely not allowed, even escaped.
+        // Should already be path-split by now.
+        return false
+
+      case '\\':
+        clearStateChar()
+        escaping = true
+      continue
+
+      // the various stateChar values
+      // for the "extglob" stuff.
+      case '?':
+      case '*':
+      case '+':
+      case '@':
+      case '!':
+        this.debug('%s\t%s %s %j <-- stateChar', pattern, i, re, c)
+
+        // all of those are literals inside a class, except that
+        // the glob [!a] means [^a] in regexp
+        if (inClass) {
+          this.debug('  in class')
+          if (c === '!' && i === classStart + 1) c = '^'
+          re += c
+          continue
+        }
+
+        // if we already have a stateChar, then it means
+        // that there was something like ** or +? in there.
+        // Handle the stateChar, then proceed with this one.
+        self.debug('call clearStateChar %j', stateChar)
+        clearStateChar()
+        stateChar = c
+        // if extglob is disabled, then +(asdf|foo) isn't a thing.
+        // just clear the statechar *now*, rather than even diving into
+        // the patternList stuff.
+        if (options.noext) clearStateChar()
+      continue
+
+      case '(':
+        if (inClass) {
+          re += '('
+          continue
+        }
+
+        if (!stateChar) {
+          re += '\\('
+          continue
+        }
+
+        patternListStack.push({
+          type: stateChar,
+          start: i - 1,
+          reStart: re.length,
+          open: plTypes[stateChar].open,
+          close: plTypes[stateChar].close
+        })
+        // negation is (?:(?!js)[^/]*)
+        re += stateChar === '!' ? '(?:(?!(?:' : '(?:'
+        this.debug('plType %j %j', stateChar, re)
+        stateChar = false
+      continue
+
+      case ')':
+        if (inClass || !patternListStack.length) {
+          re += '\\)'
+          continue
+        }
+
+        clearStateChar()
+        hasMagic = true
+        var pl = patternListStack.pop()
+        // negation is (?:(?!js)[^/]*)
+        // The others are (?:<pattern>)<type>
+        re += pl.close
+        if (pl.type === '!') {
+          negativeLists.push(pl)
+        }
+        pl.reEnd = re.length
+      continue
+
+      case '|':
+        if (inClass || !patternListStack.length || escaping) {
+          re += '\\|'
+          escaping = false
+          continue
+        }
+
+        clearStateChar()
+        re += '|'
+      continue
+
+      // these are mostly the same in regexp and glob
+      case '[':
+        // swallow any state-tracking char before the [
+        clearStateChar()
+
+        if (inClass) {
+          re += '\\' + c
+          continue
+        }
+
+        inClass = true
+        classStart = i
+        reClassStart = re.length
+        re += c
+      continue
+
+      case ']':
+        //  a right bracket shall lose its special
+        //  meaning and represent itself in
+        //  a bracket expression if it occurs
+        //  first in the list.  -- POSIX.2 2.8.3.2
+        if (i === classStart + 1 || !inClass) {
+          re += '\\' + c
+          escaping = false
+          continue
+        }
+
+        // handle the case where we left a class open.
+        // "[z-a]" is valid, equivalent to "\[z-a\]"
+        if (inClass) {
+          // split where the last [ was, make sure we don't have
+          // an invalid re. if so, re-walk the contents of the
+          // would-be class to re-translate any characters that
+          // were passed through as-is
+          // TODO: It would probably be faster to determine this
+          // without a try/catch and a new RegExp, but it's tricky
+          // to do safely.  For now, this is safe and works.
+          var cs = pattern.substring(classStart + 1, i)
+          try {
+            RegExp('[' + cs + ']')
+          } catch (er) {
+            // not a valid class!
+            var sp = this.parse(cs, SUBPARSE)
+            re = re.substr(0, reClassStart) + '\\[' + sp[0] + '\\]'
+            hasMagic = hasMagic || sp[1]
+            inClass = false
+            continue
+          }
+        }
+
+        // finish up the class.
+        hasMagic = true
+        inClass = false
+        re += c
+      continue
+
+      default:
+        // swallow any state char that wasn't consumed
+        clearStateChar()
+
+        if (escaping) {
+          // no need
+          escaping = false
+        } else if (reSpecials[c]
+          && !(c === '^' && inClass)) {
+          re += '\\'
+        }
+
+        re += c
+
+    } // switch
+  } // for
+
+  // handle the case where we left a class open.
+  // "[abc" is valid, equivalent to "\[abc"
+  if (inClass) {
+    // split where the last [ was, and escape it
+    // this is a huge pita.  We now have to re-walk
+    // the contents of the would-be class to re-translate
+    // any characters that were passed through as-is
+    cs = pattern.substr(classStart + 1)
+    sp = this.parse(cs, SUBPARSE)
+    re = re.substr(0, reClassStart) + '\\[' + sp[0]
+    hasMagic = hasMagic || sp[1]
+  }
+
+  // handle the case where we had a +( thing at the *end*
+  // of the pattern.
+  // each pattern list stack adds 3 chars, and we need to go through
+  // and escape any | chars that were passed through as-is for the regexp.
+  // Go through and escape them, taking care not to double-escape any
+  // | chars that were already escaped.
+  for (pl = patternListStack.pop(); pl; pl = patternListStack.pop()) {
+    var tail = re.slice(pl.reStart + pl.open.length)
+    this.debug('setting tail', re, pl)
+    // maybe some even number of \, then maybe 1 \, followed by a |
+    tail = tail.replace(/((?:\\{2}){0,64})(\\?)\|/g, function (_, $1, $2) {
+      if (!$2) {
+        // the | isn't already escaped, so escape it.
+        $2 = '\\'
+      }
+
+      // need to escape all those slashes *again*, without escaping the
+      // one that we need for escaping the | character.  As it works out,
+      // escaping an even number of slashes can be done by simply repeating
+      // it exactly after itself.  That's why this trick works.
+      //
+      // I am sorry that you have to see this.
+      return $1 + $1 + $2 + '|'
+    })
+
+    this.debug('tail=%j\n   %s', tail, tail, pl, re)
+    var t = pl.type === '*' ? star
+      : pl.type === '?' ? qmark
+      : '\\' + pl.type
+
+    hasMagic = true
+    re = re.slice(0, pl.reStart) + t + '\\(' + tail
+  }
+
+  // handle trailing things that only matter at the very end.
+  clearStateChar()
+  if (escaping) {
+    // trailing \\
+    re += '\\\\'
+  }
+
+  // only need to apply the nodot start if the re starts with
+  // something that could conceivably capture a dot
+  var addPatternStart = false
+  switch (re.charAt(0)) {
+    case '.':
+    case '[':
+    case '(': addPatternStart = true
+  }
+
+  // Hack to work around lack of negative lookbehind in JS
+  // A pattern like: *.!(x).!(y|z) needs to ensure that a name
+  // like 'a.xyz.yz' doesn't match.  So, the first negative
+  // lookahead, has to look ALL the way ahead, to the end of
+  // the pattern.
+  for (var n = negativeLists.length - 1; n > -1; n--) {
+    var nl = negativeLists[n]
+
+    var nlBefore = re.slice(0, nl.reStart)
+    var nlFirst = re.slice(nl.reStart, nl.reEnd - 8)
+    var nlLast = re.slice(nl.reEnd - 8, nl.reEnd)
+    var nlAfter = re.slice(nl.reEnd)
+
+    nlLast += nlAfter
+
+    // Handle nested stuff like *(*.js|!(*.json)), where open parens
+    // mean that we should *not* include the ) in the bit that is considered
+    // "after" the negated section.
+    var openParensBefore = nlBefore.split('(').length - 1
+    var cleanAfter = nlAfter
+    for (i = 0; i < openParensBefore; i++) {
+      cleanAfter = cleanAfter.replace(/\)[+*?]?/, '')
+    }
+    nlAfter = cleanAfter
+
+    var dollar = ''
+    if (nlAfter === '' && isSub !== SUBPARSE) {
+      dollar = '$'
+    }
+    var newRe = nlBefore + nlFirst + nlAfter + dollar + nlLast
+    re = newRe
+  }
+
+  // if the re is not "" at this point, then we need to make sure
+  // it doesn't match against an empty path part.
+  // Otherwise a/* will match a/, which it should not.
+  if (re !== '' && hasMagic) {
+    re = '(?=.)' + re
+  }
+
+  if (addPatternStart) {
+    re = patternStart + re
+  }
+
+  // parsing just a piece of a larger pattern.
+  if (isSub === SUBPARSE) {
+    return [re, hasMagic]
+  }
+
+  // skip the regexp for non-magical patterns
+  // unescape anything in it, though, so that it'll be
+  // an exact match against a file etc.
+  if (!hasMagic) {
+    return globUnescape(pattern)
+  }
+
+  var flags = options.nocase ? 'i' : ''
+  try {
+    var regExp = new RegExp('^' + re + '$', flags)
+  } catch (er) {
+    // If it was an invalid regular expression, then it can't match
+    // anything.  This trick looks for a character after the end of
+    // the string, which is of course impossible, except in multi-line
+    // mode, but it's not a /m regex.
+    return new RegExp('$.')
+  }
+
+  regExp._glob = pattern
+  regExp._src = re
+
+  return regExp
+}
+
+minimatch.makeRe = function (pattern, options) {
+  return new Minimatch(pattern, options || {}).makeRe()
+}
+
+Minimatch.prototype.makeRe = makeRe
+function makeRe () {
+  if (this.regexp || this.regexp === false) return this.regexp
+
+  // at this point, this.set is a 2d array of partial
+  // pattern strings, or "**".
+  //
+  // It's better to use .match().  This function shouldn't
+  // be used, really, but it's pretty convenient sometimes,
+  // when you just want to work with a regex.
+  var set = this.set
+
+  if (!set.length) {
+    this.regexp = false
+    return this.regexp
+  }
+  var options = this.options
+
+  var twoStar = options.noglobstar ? star
+    : options.dot ? twoStarDot
+    : twoStarNoDot
+  var flags = options.nocase ? 'i' : ''
+
+  var re = set.map(function (pattern) {
+    return pattern.map(function (p) {
+      return (p === GLOBSTAR) ? twoStar
+      : (typeof p === 'string') ? regExpEscape(p)
+      : p._src
+    }).join('\\\/')
+  }).join('|')
+
+  // must match entire pattern
+  // ending in a * or ** will make it less strict.
+  re = '^(?:' + re + ')$'
+
+  // can match anything, as long as it's not this.
+  if (this.negate) re = '^(?!' + re + ').*$'
+
+  try {
+    this.regexp = new RegExp(re, flags)
+  } catch (ex) {
+    this.regexp = false
+  }
+  return this.regexp
+}
+
+minimatch.match = function (list, pattern, options) {
+  options = options || {}
+  var mm = new Minimatch(pattern, options)
+  list = list.filter(function (f) {
+    return mm.match(f)
+  })
+  if (mm.options.nonull && !list.length) {
+    list.push(pattern)
+  }
+  return list
+}
+
+Minimatch.prototype.match = match
+function match (f, partial) {
+  this.debug('match', f, this.pattern)
+  // short-circuit in the case of busted things.
+  // comments, etc.
+  if (this.comment) return false
+  if (this.empty) return f === ''
+
+  if (f === '/' && partial) return true
+
+  var options = this.options
+
+  // windows: need to use /, not \
+  if (path.sep !== '/') {
+    f = f.split(path.sep).join('/')
+  }
+
+  // treat the test path as a set of pathparts.
+  f = f.split(slashSplit)
+  this.debug(this.pattern, 'split', f)
+
+  // just ONE of the pattern sets in this.set needs to match
+  // in order for it to be valid.  If negating, then just one
+  // match means that we have failed.
+  // Either way, return on the first hit.
+
+  var set = this.set
+  this.debug(this.pattern, 'set', set)
+
+  // Find the basename of the path by looking for the last non-empty segment
+  var filename
+  var i
+  for (i = f.length - 1; i >= 0; i--) {
+    filename = f[i]
+    if (filename) break
+  }
+
+  for (i = 0; i < set.length; i++) {
+    var pattern = set[i]
+    var file = f
+    if (options.matchBase && pattern.length === 1) {
+      file = [filename]
+    }
+    var hit = this.matchOne(file, pattern, partial)
+    if (hit) {
+      if (options.flipNegate) return true
+      return !this.negate
+    }
+  }
+
+  // didn't get any hits.  this is success if it's a negative
+  // pattern, failure otherwise.
+  if (options.flipNegate) return false
+  return this.negate
+}
+
+// set partial to true to test if, for example,
+// "/a/b" matches the start of "/*/b/*/d"
+// Partial means, if you run out of file before you run
+// out of pattern, then that's fine, as long as all
+// the parts match.
+Minimatch.prototype.matchOne = function (file, pattern, partial) {
+  var options = this.options
+
+  this.debug('matchOne',
+    { 'this': this, file: file, pattern: pattern })
+
+  this.debug('matchOne', file.length, pattern.length)
+
+  for (var fi = 0,
+      pi = 0,
+      fl = file.length,
+      pl = pattern.length
+      ; (fi < fl) && (pi < pl)
+      ; fi++, pi++) {
+    this.debug('matchOne loop')
+    var p = pattern[pi]
+    var f = file[fi]
+
+    this.debug(pattern, p, f)
+
+    // should be impossible.
+    // some invalid regexp stuff in the set.
+    if (p === false) return false
+
+    if (p === GLOBSTAR) {
+      this.debug('GLOBSTAR', [pattern, p, f])
+
+      // "**"
+      // a/**/b/**/c would match the following:
+      // a/b/x/y/z/c
+      // a/x/y/z/b/c
+      // a/b/x/b/x/c
+      // a/b/c
+      // To do this, take the rest of the pattern after
+      // the **, and see if it would match the file remainder.
+      // If so, return success.
+      // If not, the ** "swallows" a segment, and try again.
+      // This is recursively awful.
+      //
+      // a/**/b/**/c matching a/b/x/y/z/c
+      // - a matches a
+      // - doublestar
+      //   - matchOne(b/x/y/z/c, b/**/c)
+      //     - b matches b
+      //     - doublestar
+      //       - matchOne(x/y/z/c, c) -> no
+      //       - matchOne(y/z/c, c) -> no
+      //       - matchOne(z/c, c) -> no
+      //       - matchOne(c, c) yes, hit
+      var fr = fi
+      var pr = pi + 1
+      if (pr === pl) {
+        this.debug('** at the end')
+        // a ** at the end will just swallow the rest.
+        // We have found a match.
+        // however, it will not swallow /.x, unless
+        // options.dot is set.
+        // . and .. are *never* matched by **, for explosively
+        // exponential reasons.
+        for (; fi < fl; fi++) {
+          if (file[fi] === '.' || file[fi] === '..' ||
+            (!options.dot && file[fi].charAt(0) === '.')) return false
+        }
+        return true
+      }
+
+      // ok, let's see if we can swallow whatever we can.
+      while (fr < fl) {
+        var swallowee = file[fr]
+
+        this.debug('\nglobstar while', file, fr, pattern, pr, swallowee)
+
+        // XXX remove this slice.  Just pass the start index.
+        if (this.matchOne(file.slice(fr), pattern.slice(pr), partial)) {
+          this.debug('globstar found match!', fr, fl, swallowee)
+          // found a match.
+          return true
+        } else {
+          // can't swallow "." or ".." ever.
+          // can only swallow ".foo" when explicitly asked.
+          if (swallowee === '.' || swallowee === '..' ||
+            (!options.dot && swallowee.charAt(0) === '.')) {
+            this.debug('dot detected!', file, fr, pattern, pr)
+            break
+          }
+
+          // ** swallows a segment, and continue.
+          this.debug('globstar swallow a segment, and continue')
+          fr++
+        }
+      }
+
+      // no match was found.
+      // However, in partial mode, we can't say this is necessarily over.
+      // If there's more *pattern* left, then
+      if (partial) {
+        // ran out of file
+        this.debug('\n>>> no match, partial?', file, fr, pattern, pr)
+        if (fr === fl) return true
+      }
+      return false
+    }
+
+    // something other than **
+    // non-magic patterns just have to match exactly
+    // patterns with magic have been turned into regexps.
+    var hit
+    if (typeof p === 'string') {
+      if (options.nocase) {
+        hit = f.toLowerCase() === p.toLowerCase()
+      } else {
+        hit = f === p
+      }
+      this.debug('string match', p, f, hit)
+    } else {
+      hit = f.match(p)
+      this.debug('pattern match', p, f, hit)
+    }
+
+    if (!hit) return false
+  }
+
+  // Note: ending in / means that we'll get a final ""
+  // at the end of the pattern.  This can only match a
+  // corresponding "" at the end of the file.
+  // If the file ends in /, then it can only match a
+  // a pattern that ends in /, unless the pattern just
+  // doesn't have any more for it. But, a/b/ should *not*
+  // match "a/b/*", even though "" matches against the
+  // [^/]*? pattern, except in partial mode, where it might
+  // simply not be reached yet.
+  // However, a/b/ should still satisfy a/*
+
+  // now either we fell off the end of the pattern, or we're done.
+  if (fi === fl && pi === pl) {
+    // ran out of pattern and filename at the same time.
+    // an exact hit!
+    return true
+  } else if (fi === fl) {
+    // ran out of file, but still had pattern left.
+    // this is ok if we're doing the match as part of
+    // a glob fs traversal.
+    return partial
+  } else if (pi === pl) {
+    // ran out of pattern, still have file left.
+    // this is only acceptable if we're on the very last
+    // empty segment of a file with a trailing slash.
+    // a/* should match a/b/
+    var emptyFileEnd = (fi === fl - 1) && (file[fi] === '')
+    return emptyFileEnd
+  }
+
+  // should be unreachable.
+  throw new Error('wtf?')
+}
+
+// replace stuff like \* with *
+function globUnescape (s) {
+  return s.replace(/\\(.)/g, '$1')
+}
+
+function regExpEscape (s) {
+  return s.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&')
+}
+
+},{"brace-expansion":91,"path":232}],98:[function(require,module,exports){
 'use strict';
 
 const pMap = (iterable, mapper, options) => new Promise((resolve, reject) => {
@@ -2879,7 +6131,2787 @@ const pMap = (iterable, mapper, options) => new Promise((resolve, reject) => {
 module.exports = pMap;
 module.exports.default = pMap;
 
-},{}],84:[function(require,module,exports){
+},{}],99:[function(require,module,exports){
+(function(root, factory) {
+    'use strict';
+    // Universal Module Definition (UMD) to support AMD, CommonJS/Node.js, Rhino, and browsers.
+
+    /* istanbul ignore next */
+    if (typeof define === 'function' && define.amd) {
+        define('stack-generator', ['stackframe'], factory);
+    } else if (typeof exports === 'object') {
+        module.exports = factory(require('stackframe'));
+    } else {
+        root.StackGenerator = factory(root.StackFrame);
+    }
+}(this, function(StackFrame) {
+    return {
+        backtrace: function StackGenerator$$backtrace(opts) {
+            var stack = [];
+            var maxStackSize = 10;
+
+            if (typeof opts === 'object' && typeof opts.maxStackSize === 'number') {
+                maxStackSize = opts.maxStackSize;
+            }
+
+            var curr = arguments.callee;
+            while (curr && stack.length < maxStackSize && curr['arguments']) {
+                // Allow V8 optimizations
+                var args = new Array(curr['arguments'].length);
+                for (var i = 0; i < args.length; ++i) {
+                    args[i] = curr['arguments'][i];
+                }
+                if (/function(?:\s+([\w$]+))+\s*\(/.test(curr.toString())) {
+                    stack.push(new StackFrame({functionName: RegExp.$1 || undefined, args: args}));
+                } else {
+                    stack.push(new StackFrame({args: args}));
+                }
+
+                try {
+                    curr = curr.caller;
+                } catch (e) {
+                    break;
+                }
+            }
+            return stack;
+        }
+    };
+}));
+
+},{"stackframe":100}],100:[function(require,module,exports){
+(function(root, factory) {
+    'use strict';
+    // Universal Module Definition (UMD) to support AMD, CommonJS/Node.js, Rhino, and browsers.
+
+    /* istanbul ignore next */
+    if (typeof define === 'function' && define.amd) {
+        define('stackframe', [], factory);
+    } else if (typeof exports === 'object') {
+        module.exports = factory();
+    } else {
+        root.StackFrame = factory();
+    }
+}(this, function() {
+    'use strict';
+    function _isNumber(n) {
+        return !isNaN(parseFloat(n)) && isFinite(n);
+    }
+
+    function _capitalize(str) {
+        return str.charAt(0).toUpperCase() + str.substring(1);
+    }
+
+    function _getter(p) {
+        return function() {
+            return this[p];
+        };
+    }
+
+    var booleanProps = ['isConstructor', 'isEval', 'isNative', 'isToplevel'];
+    var numericProps = ['columnNumber', 'lineNumber'];
+    var stringProps = ['fileName', 'functionName', 'source'];
+    var arrayProps = ['args'];
+
+    var props = booleanProps.concat(numericProps, stringProps, arrayProps);
+
+    function StackFrame(obj) {
+        if (obj instanceof Object) {
+            for (var i = 0; i < props.length; i++) {
+                if (obj.hasOwnProperty(props[i]) && obj[props[i]] !== undefined) {
+                    this['set' + _capitalize(props[i])](obj[props[i]]);
+                }
+            }
+        }
+    }
+
+    StackFrame.prototype = {
+        getArgs: function() {
+            return this.args;
+        },
+        setArgs: function(v) {
+            if (Object.prototype.toString.call(v) !== '[object Array]') {
+                throw new TypeError('Args must be an Array');
+            }
+            this.args = v;
+        },
+
+        getEvalOrigin: function() {
+            return this.evalOrigin;
+        },
+        setEvalOrigin: function(v) {
+            if (v instanceof StackFrame) {
+                this.evalOrigin = v;
+            } else if (v instanceof Object) {
+                this.evalOrigin = new StackFrame(v);
+            } else {
+                throw new TypeError('Eval Origin must be an Object or StackFrame');
+            }
+        },
+
+        toString: function() {
+            var functionName = this.getFunctionName() || '{anonymous}';
+            var args = '(' + (this.getArgs() || []).join(',') + ')';
+            var fileName = this.getFileName() ? ('@' + this.getFileName()) : '';
+            var lineNumber = _isNumber(this.getLineNumber()) ? (':' + this.getLineNumber()) : '';
+            var columnNumber = _isNumber(this.getColumnNumber()) ? (':' + this.getColumnNumber()) : '';
+            return functionName + args + fileName + lineNumber + columnNumber;
+        }
+    };
+
+    for (var i = 0; i < booleanProps.length; i++) {
+        StackFrame.prototype['get' + _capitalize(booleanProps[i])] = _getter(booleanProps[i]);
+        StackFrame.prototype['set' + _capitalize(booleanProps[i])] = (function(p) {
+            return function(v) {
+                this[p] = Boolean(v);
+            };
+        })(booleanProps[i]);
+    }
+
+    for (var j = 0; j < numericProps.length; j++) {
+        StackFrame.prototype['get' + _capitalize(numericProps[j])] = _getter(numericProps[j]);
+        StackFrame.prototype['set' + _capitalize(numericProps[j])] = (function(p) {
+            return function(v) {
+                if (!_isNumber(v)) {
+                    throw new TypeError(p + ' must be a Number');
+                }
+                this[p] = Number(v);
+            };
+        })(numericProps[j]);
+    }
+
+    for (var k = 0; k < stringProps.length; k++) {
+        StackFrame.prototype['get' + _capitalize(stringProps[k])] = _getter(stringProps[k]);
+        StackFrame.prototype['set' + _capitalize(stringProps[k])] = (function(p) {
+            return function(v) {
+                this[p] = String(v);
+            };
+        })(stringProps[k]);
+    }
+
+    return StackFrame;
+}));
+
+},{}],101:[function(require,module,exports){
+/* -*- Mode: js; js-indent-level: 2; -*- */
+/*
+ * Copyright 2011 Mozilla Foundation and contributors
+ * Licensed under the New BSD license. See LICENSE or:
+ * http://opensource.org/licenses/BSD-3-Clause
+ */
+
+var util = require('./util');
+var has = Object.prototype.hasOwnProperty;
+
+/**
+ * A data structure which is a combination of an array and a set. Adding a new
+ * member is O(1), testing for membership is O(1), and finding the index of an
+ * element is O(1). Removing elements from the set is not supported. Only
+ * strings are supported for membership.
+ */
+function ArraySet() {
+  this._array = [];
+  this._set = Object.create(null);
+}
+
+/**
+ * Static method for creating ArraySet instances from an existing array.
+ */
+ArraySet.fromArray = function ArraySet_fromArray(aArray, aAllowDuplicates) {
+  var set = new ArraySet();
+  for (var i = 0, len = aArray.length; i < len; i++) {
+    set.add(aArray[i], aAllowDuplicates);
+  }
+  return set;
+};
+
+/**
+ * Return how many unique items are in this ArraySet. If duplicates have been
+ * added, than those do not count towards the size.
+ *
+ * @returns Number
+ */
+ArraySet.prototype.size = function ArraySet_size() {
+  return Object.getOwnPropertyNames(this._set).length;
+};
+
+/**
+ * Add the given string to this set.
+ *
+ * @param String aStr
+ */
+ArraySet.prototype.add = function ArraySet_add(aStr, aAllowDuplicates) {
+  var sStr = util.toSetString(aStr);
+  var isDuplicate = has.call(this._set, sStr);
+  var idx = this._array.length;
+  if (!isDuplicate || aAllowDuplicates) {
+    this._array.push(aStr);
+  }
+  if (!isDuplicate) {
+    this._set[sStr] = idx;
+  }
+};
+
+/**
+ * Is the given string a member of this set?
+ *
+ * @param String aStr
+ */
+ArraySet.prototype.has = function ArraySet_has(aStr) {
+  var sStr = util.toSetString(aStr);
+  return has.call(this._set, sStr);
+};
+
+/**
+ * What is the index of the given string in the array?
+ *
+ * @param String aStr
+ */
+ArraySet.prototype.indexOf = function ArraySet_indexOf(aStr) {
+  var sStr = util.toSetString(aStr);
+  if (has.call(this._set, sStr)) {
+    return this._set[sStr];
+  }
+  throw new Error('"' + aStr + '" is not in the set.');
+};
+
+/**
+ * What is the element at the given index?
+ *
+ * @param Number aIdx
+ */
+ArraySet.prototype.at = function ArraySet_at(aIdx) {
+  if (aIdx >= 0 && aIdx < this._array.length) {
+    return this._array[aIdx];
+  }
+  throw new Error('No element indexed by ' + aIdx);
+};
+
+/**
+ * Returns the array representation of this set (which has the proper indices
+ * indicated by indexOf). Note that this is a copy of the internal array used
+ * for storing the members so that no one can mess with internal state.
+ */
+ArraySet.prototype.toArray = function ArraySet_toArray() {
+  return this._array.slice();
+};
+
+exports.ArraySet = ArraySet;
+
+},{"./util":107}],102:[function(require,module,exports){
+/* -*- Mode: js; js-indent-level: 2; -*- */
+/*
+ * Copyright 2011 Mozilla Foundation and contributors
+ * Licensed under the New BSD license. See LICENSE or:
+ * http://opensource.org/licenses/BSD-3-Clause
+ *
+ * Based on the Base 64 VLQ implementation in Closure Compiler:
+ * https://code.google.com/p/closure-compiler/source/browse/trunk/src/com/google/debugging/sourcemap/Base64VLQ.java
+ *
+ * Copyright 2011 The Closure Compiler Authors. All rights reserved.
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are
+ * met:
+ *
+ *  * Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ *  * Redistributions in binary form must reproduce the above
+ *    copyright notice, this list of conditions and the following
+ *    disclaimer in the documentation and/or other materials provided
+ *    with the distribution.
+ *  * Neither the name of Google Inc. nor the names of its
+ *    contributors may be used to endorse or promote products derived
+ *    from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ * OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+var base64 = require('./base64');
+
+// A single base 64 digit can contain 6 bits of data. For the base 64 variable
+// length quantities we use in the source map spec, the first bit is the sign,
+// the next four bits are the actual value, and the 6th bit is the
+// continuation bit. The continuation bit tells us whether there are more
+// digits in this value following this digit.
+//
+//   Continuation
+//   |    Sign
+//   |    |
+//   V    V
+//   101011
+
+var VLQ_BASE_SHIFT = 5;
+
+// binary: 100000
+var VLQ_BASE = 1 << VLQ_BASE_SHIFT;
+
+// binary: 011111
+var VLQ_BASE_MASK = VLQ_BASE - 1;
+
+// binary: 100000
+var VLQ_CONTINUATION_BIT = VLQ_BASE;
+
+/**
+ * Converts from a two-complement value to a value where the sign bit is
+ * placed in the least significant bit.  For example, as decimals:
+ *   1 becomes 2 (10 binary), -1 becomes 3 (11 binary)
+ *   2 becomes 4 (100 binary), -2 becomes 5 (101 binary)
+ */
+function toVLQSigned(aValue) {
+  return aValue < 0
+    ? ((-aValue) << 1) + 1
+    : (aValue << 1) + 0;
+}
+
+/**
+ * Converts to a two-complement value from a value where the sign bit is
+ * placed in the least significant bit.  For example, as decimals:
+ *   2 (10 binary) becomes 1, 3 (11 binary) becomes -1
+ *   4 (100 binary) becomes 2, 5 (101 binary) becomes -2
+ */
+function fromVLQSigned(aValue) {
+  var isNegative = (aValue & 1) === 1;
+  var shifted = aValue >> 1;
+  return isNegative
+    ? -shifted
+    : shifted;
+}
+
+/**
+ * Returns the base 64 VLQ encoded value.
+ */
+exports.encode = function base64VLQ_encode(aValue) {
+  var encoded = "";
+  var digit;
+
+  var vlq = toVLQSigned(aValue);
+
+  do {
+    digit = vlq & VLQ_BASE_MASK;
+    vlq >>>= VLQ_BASE_SHIFT;
+    if (vlq > 0) {
+      // There are still more digits in this value, so we must make sure the
+      // continuation bit is marked.
+      digit |= VLQ_CONTINUATION_BIT;
+    }
+    encoded += base64.encode(digit);
+  } while (vlq > 0);
+
+  return encoded;
+};
+
+/**
+ * Decodes the next base 64 VLQ value from the given string and returns the
+ * value and the rest of the string via the out parameter.
+ */
+exports.decode = function base64VLQ_decode(aStr, aIndex, aOutParam) {
+  var strLen = aStr.length;
+  var result = 0;
+  var shift = 0;
+  var continuation, digit;
+
+  do {
+    if (aIndex >= strLen) {
+      throw new Error("Expected more digits in base 64 VLQ value.");
+    }
+
+    digit = base64.decode(aStr.charCodeAt(aIndex++));
+    if (digit === -1) {
+      throw new Error("Invalid base64 digit: " + aStr.charAt(aIndex - 1));
+    }
+
+    continuation = !!(digit & VLQ_CONTINUATION_BIT);
+    digit &= VLQ_BASE_MASK;
+    result = result + (digit << shift);
+    shift += VLQ_BASE_SHIFT;
+  } while (continuation);
+
+  aOutParam.value = fromVLQSigned(result);
+  aOutParam.rest = aIndex;
+};
+
+},{"./base64":103}],103:[function(require,module,exports){
+/* -*- Mode: js; js-indent-level: 2; -*- */
+/*
+ * Copyright 2011 Mozilla Foundation and contributors
+ * Licensed under the New BSD license. See LICENSE or:
+ * http://opensource.org/licenses/BSD-3-Clause
+ */
+
+var intToCharMap = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'.split('');
+
+/**
+ * Encode an integer in the range of 0 to 63 to a single base 64 digit.
+ */
+exports.encode = function (number) {
+  if (0 <= number && number < intToCharMap.length) {
+    return intToCharMap[number];
+  }
+  throw new TypeError("Must be between 0 and 63: " + number);
+};
+
+/**
+ * Decode a single base 64 character code digit to an integer. Returns -1 on
+ * failure.
+ */
+exports.decode = function (charCode) {
+  var bigA = 65;     // 'A'
+  var bigZ = 90;     // 'Z'
+
+  var littleA = 97;  // 'a'
+  var littleZ = 122; // 'z'
+
+  var zero = 48;     // '0'
+  var nine = 57;     // '9'
+
+  var plus = 43;     // '+'
+  var slash = 47;    // '/'
+
+  var littleOffset = 26;
+  var numberOffset = 52;
+
+  // 0 - 25: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+  if (bigA <= charCode && charCode <= bigZ) {
+    return (charCode - bigA);
+  }
+
+  // 26 - 51: abcdefghijklmnopqrstuvwxyz
+  if (littleA <= charCode && charCode <= littleZ) {
+    return (charCode - littleA + littleOffset);
+  }
+
+  // 52 - 61: 0123456789
+  if (zero <= charCode && charCode <= nine) {
+    return (charCode - zero + numberOffset);
+  }
+
+  // 62: +
+  if (charCode == plus) {
+    return 62;
+  }
+
+  // 63: /
+  if (charCode == slash) {
+    return 63;
+  }
+
+  // Invalid base64 digit.
+  return -1;
+};
+
+},{}],104:[function(require,module,exports){
+/* -*- Mode: js; js-indent-level: 2; -*- */
+/*
+ * Copyright 2011 Mozilla Foundation and contributors
+ * Licensed under the New BSD license. See LICENSE or:
+ * http://opensource.org/licenses/BSD-3-Clause
+ */
+
+exports.GREATEST_LOWER_BOUND = 1;
+exports.LEAST_UPPER_BOUND = 2;
+
+/**
+ * Recursive implementation of binary search.
+ *
+ * @param aLow Indices here and lower do not contain the needle.
+ * @param aHigh Indices here and higher do not contain the needle.
+ * @param aNeedle The element being searched for.
+ * @param aHaystack The non-empty array being searched.
+ * @param aCompare Function which takes two elements and returns -1, 0, or 1.
+ * @param aBias Either 'binarySearch.GREATEST_LOWER_BOUND' or
+ *     'binarySearch.LEAST_UPPER_BOUND'. Specifies whether to return the
+ *     closest element that is smaller than or greater than the one we are
+ *     searching for, respectively, if the exact element cannot be found.
+ */
+function recursiveSearch(aLow, aHigh, aNeedle, aHaystack, aCompare, aBias) {
+  // This function terminates when one of the following is true:
+  //
+  //   1. We find the exact element we are looking for.
+  //
+  //   2. We did not find the exact element, but we can return the index of
+  //      the next-closest element.
+  //
+  //   3. We did not find the exact element, and there is no next-closest
+  //      element than the one we are searching for, so we return -1.
+  var mid = Math.floor((aHigh - aLow) / 2) + aLow;
+  var cmp = aCompare(aNeedle, aHaystack[mid], true);
+  if (cmp === 0) {
+    // Found the element we are looking for.
+    return mid;
+  }
+  else if (cmp > 0) {
+    // Our needle is greater than aHaystack[mid].
+    if (aHigh - mid > 1) {
+      // The element is in the upper half.
+      return recursiveSearch(mid, aHigh, aNeedle, aHaystack, aCompare, aBias);
+    }
+
+    // The exact needle element was not found in this haystack. Determine if
+    // we are in termination case (3) or (2) and return the appropriate thing.
+    if (aBias == exports.LEAST_UPPER_BOUND) {
+      return aHigh < aHaystack.length ? aHigh : -1;
+    } else {
+      return mid;
+    }
+  }
+  else {
+    // Our needle is less than aHaystack[mid].
+    if (mid - aLow > 1) {
+      // The element is in the lower half.
+      return recursiveSearch(aLow, mid, aNeedle, aHaystack, aCompare, aBias);
+    }
+
+    // we are in termination case (3) or (2) and return the appropriate thing.
+    if (aBias == exports.LEAST_UPPER_BOUND) {
+      return mid;
+    } else {
+      return aLow < 0 ? -1 : aLow;
+    }
+  }
+}
+
+/**
+ * This is an implementation of binary search which will always try and return
+ * the index of the closest element if there is no exact hit. This is because
+ * mappings between original and generated line/col pairs are single points,
+ * and there is an implicit region between each of them, so a miss just means
+ * that you aren't on the very start of a region.
+ *
+ * @param aNeedle The element you are looking for.
+ * @param aHaystack The array that is being searched.
+ * @param aCompare A function which takes the needle and an element in the
+ *     array and returns -1, 0, or 1 depending on whether the needle is less
+ *     than, equal to, or greater than the element, respectively.
+ * @param aBias Either 'binarySearch.GREATEST_LOWER_BOUND' or
+ *     'binarySearch.LEAST_UPPER_BOUND'. Specifies whether to return the
+ *     closest element that is smaller than or greater than the one we are
+ *     searching for, respectively, if the exact element cannot be found.
+ *     Defaults to 'binarySearch.GREATEST_LOWER_BOUND'.
+ */
+exports.search = function search(aNeedle, aHaystack, aCompare, aBias) {
+  if (aHaystack.length === 0) {
+    return -1;
+  }
+
+  var index = recursiveSearch(-1, aHaystack.length, aNeedle, aHaystack,
+                              aCompare, aBias || exports.GREATEST_LOWER_BOUND);
+  if (index < 0) {
+    return -1;
+  }
+
+  // We have found either the exact element, or the next-closest element than
+  // the one we are searching for. However, there may be more than one such
+  // element. Make sure we always return the smallest of these.
+  while (index - 1 >= 0) {
+    if (aCompare(aHaystack[index], aHaystack[index - 1], true) !== 0) {
+      break;
+    }
+    --index;
+  }
+
+  return index;
+};
+
+},{}],105:[function(require,module,exports){
+/* -*- Mode: js; js-indent-level: 2; -*- */
+/*
+ * Copyright 2011 Mozilla Foundation and contributors
+ * Licensed under the New BSD license. See LICENSE or:
+ * http://opensource.org/licenses/BSD-3-Clause
+ */
+
+// It turns out that some (most?) JavaScript engines don't self-host
+// `Array.prototype.sort`. This makes sense because C++ will likely remain
+// faster than JS when doing raw CPU-intensive sorting. However, when using a
+// custom comparator function, calling back and forth between the VM's C++ and
+// JIT'd JS is rather slow *and* loses JIT type information, resulting in
+// worse generated code for the comparator function than would be optimal. In
+// fact, when sorting with a comparator, these costs outweigh the benefits of
+// sorting in C++. By using our own JS-implemented Quick Sort (below), we get
+// a ~3500ms mean speed-up in `bench/bench.html`.
+
+/**
+ * Swap the elements indexed by `x` and `y` in the array `ary`.
+ *
+ * @param {Array} ary
+ *        The array.
+ * @param {Number} x
+ *        The index of the first item.
+ * @param {Number} y
+ *        The index of the second item.
+ */
+function swap(ary, x, y) {
+  var temp = ary[x];
+  ary[x] = ary[y];
+  ary[y] = temp;
+}
+
+/**
+ * Returns a random integer within the range `low .. high` inclusive.
+ *
+ * @param {Number} low
+ *        The lower bound on the range.
+ * @param {Number} high
+ *        The upper bound on the range.
+ */
+function randomIntInRange(low, high) {
+  return Math.round(low + (Math.random() * (high - low)));
+}
+
+/**
+ * The Quick Sort algorithm.
+ *
+ * @param {Array} ary
+ *        An array to sort.
+ * @param {function} comparator
+ *        Function to use to compare two items.
+ * @param {Number} p
+ *        Start index of the array
+ * @param {Number} r
+ *        End index of the array
+ */
+function doQuickSort(ary, comparator, p, r) {
+  // If our lower bound is less than our upper bound, we (1) partition the
+  // array into two pieces and (2) recurse on each half. If it is not, this is
+  // the empty array and our base case.
+
+  if (p < r) {
+    // (1) Partitioning.
+    //
+    // The partitioning chooses a pivot between `p` and `r` and moves all
+    // elements that are less than or equal to the pivot to the before it, and
+    // all the elements that are greater than it after it. The effect is that
+    // once partition is done, the pivot is in the exact place it will be when
+    // the array is put in sorted order, and it will not need to be moved
+    // again. This runs in O(n) time.
+
+    // Always choose a random pivot so that an input array which is reverse
+    // sorted does not cause O(n^2) running time.
+    var pivotIndex = randomIntInRange(p, r);
+    var i = p - 1;
+
+    swap(ary, pivotIndex, r);
+    var pivot = ary[r];
+
+    // Immediately after `j` is incremented in this loop, the following hold
+    // true:
+    //
+    //   * Every element in `ary[p .. i]` is less than or equal to the pivot.
+    //
+    //   * Every element in `ary[i+1 .. j-1]` is greater than the pivot.
+    for (var j = p; j < r; j++) {
+      if (comparator(ary[j], pivot) <= 0) {
+        i += 1;
+        swap(ary, i, j);
+      }
+    }
+
+    swap(ary, i + 1, j);
+    var q = i + 1;
+
+    // (2) Recurse on each half.
+
+    doQuickSort(ary, comparator, p, q - 1);
+    doQuickSort(ary, comparator, q + 1, r);
+  }
+}
+
+/**
+ * Sort the given array in-place with the given comparator function.
+ *
+ * @param {Array} ary
+ *        An array to sort.
+ * @param {function} comparator
+ *        Function to use to compare two items.
+ */
+exports.quickSort = function (ary, comparator) {
+  doQuickSort(ary, comparator, 0, ary.length - 1);
+};
+
+},{}],106:[function(require,module,exports){
+/* -*- Mode: js; js-indent-level: 2; -*- */
+/*
+ * Copyright 2011 Mozilla Foundation and contributors
+ * Licensed under the New BSD license. See LICENSE or:
+ * http://opensource.org/licenses/BSD-3-Clause
+ */
+
+var util = require('./util');
+var binarySearch = require('./binary-search');
+var ArraySet = require('./array-set').ArraySet;
+var base64VLQ = require('./base64-vlq');
+var quickSort = require('./quick-sort').quickSort;
+
+function SourceMapConsumer(aSourceMap) {
+  var sourceMap = aSourceMap;
+  if (typeof aSourceMap === 'string') {
+    sourceMap = JSON.parse(aSourceMap.replace(/^\)\]\}'/, ''));
+  }
+
+  return sourceMap.sections != null
+    ? new IndexedSourceMapConsumer(sourceMap)
+    : new BasicSourceMapConsumer(sourceMap);
+}
+
+SourceMapConsumer.fromSourceMap = function(aSourceMap) {
+  return BasicSourceMapConsumer.fromSourceMap(aSourceMap);
+}
+
+/**
+ * The version of the source mapping spec that we are consuming.
+ */
+SourceMapConsumer.prototype._version = 3;
+
+// `__generatedMappings` and `__originalMappings` are arrays that hold the
+// parsed mapping coordinates from the source map's "mappings" attribute. They
+// are lazily instantiated, accessed via the `_generatedMappings` and
+// `_originalMappings` getters respectively, and we only parse the mappings
+// and create these arrays once queried for a source location. We jump through
+// these hoops because there can be many thousands of mappings, and parsing
+// them is expensive, so we only want to do it if we must.
+//
+// Each object in the arrays is of the form:
+//
+//     {
+//       generatedLine: The line number in the generated code,
+//       generatedColumn: The column number in the generated code,
+//       source: The path to the original source file that generated this
+//               chunk of code,
+//       originalLine: The line number in the original source that
+//                     corresponds to this chunk of generated code,
+//       originalColumn: The column number in the original source that
+//                       corresponds to this chunk of generated code,
+//       name: The name of the original symbol which generated this chunk of
+//             code.
+//     }
+//
+// All properties except for `generatedLine` and `generatedColumn` can be
+// `null`.
+//
+// `_generatedMappings` is ordered by the generated positions.
+//
+// `_originalMappings` is ordered by the original positions.
+
+SourceMapConsumer.prototype.__generatedMappings = null;
+Object.defineProperty(SourceMapConsumer.prototype, '_generatedMappings', {
+  get: function () {
+    if (!this.__generatedMappings) {
+      this._parseMappings(this._mappings, this.sourceRoot);
+    }
+
+    return this.__generatedMappings;
+  }
+});
+
+SourceMapConsumer.prototype.__originalMappings = null;
+Object.defineProperty(SourceMapConsumer.prototype, '_originalMappings', {
+  get: function () {
+    if (!this.__originalMappings) {
+      this._parseMappings(this._mappings, this.sourceRoot);
+    }
+
+    return this.__originalMappings;
+  }
+});
+
+SourceMapConsumer.prototype._charIsMappingSeparator =
+  function SourceMapConsumer_charIsMappingSeparator(aStr, index) {
+    var c = aStr.charAt(index);
+    return c === ";" || c === ",";
+  };
+
+/**
+ * Parse the mappings in a string in to a data structure which we can easily
+ * query (the ordered arrays in the `this.__generatedMappings` and
+ * `this.__originalMappings` properties).
+ */
+SourceMapConsumer.prototype._parseMappings =
+  function SourceMapConsumer_parseMappings(aStr, aSourceRoot) {
+    throw new Error("Subclasses must implement _parseMappings");
+  };
+
+SourceMapConsumer.GENERATED_ORDER = 1;
+SourceMapConsumer.ORIGINAL_ORDER = 2;
+
+SourceMapConsumer.GREATEST_LOWER_BOUND = 1;
+SourceMapConsumer.LEAST_UPPER_BOUND = 2;
+
+/**
+ * Iterate over each mapping between an original source/line/column and a
+ * generated line/column in this source map.
+ *
+ * @param Function aCallback
+ *        The function that is called with each mapping.
+ * @param Object aContext
+ *        Optional. If specified, this object will be the value of `this` every
+ *        time that `aCallback` is called.
+ * @param aOrder
+ *        Either `SourceMapConsumer.GENERATED_ORDER` or
+ *        `SourceMapConsumer.ORIGINAL_ORDER`. Specifies whether you want to
+ *        iterate over the mappings sorted by the generated file's line/column
+ *        order or the original's source/line/column order, respectively. Defaults to
+ *        `SourceMapConsumer.GENERATED_ORDER`.
+ */
+SourceMapConsumer.prototype.eachMapping =
+  function SourceMapConsumer_eachMapping(aCallback, aContext, aOrder) {
+    var context = aContext || null;
+    var order = aOrder || SourceMapConsumer.GENERATED_ORDER;
+
+    var mappings;
+    switch (order) {
+    case SourceMapConsumer.GENERATED_ORDER:
+      mappings = this._generatedMappings;
+      break;
+    case SourceMapConsumer.ORIGINAL_ORDER:
+      mappings = this._originalMappings;
+      break;
+    default:
+      throw new Error("Unknown order of iteration.");
+    }
+
+    var sourceRoot = this.sourceRoot;
+    mappings.map(function (mapping) {
+      var source = mapping.source === null ? null : this._sources.at(mapping.source);
+      if (source != null && sourceRoot != null) {
+        source = util.join(sourceRoot, source);
+      }
+      return {
+        source: source,
+        generatedLine: mapping.generatedLine,
+        generatedColumn: mapping.generatedColumn,
+        originalLine: mapping.originalLine,
+        originalColumn: mapping.originalColumn,
+        name: mapping.name === null ? null : this._names.at(mapping.name)
+      };
+    }, this).forEach(aCallback, context);
+  };
+
+/**
+ * Returns all generated line and column information for the original source,
+ * line, and column provided. If no column is provided, returns all mappings
+ * corresponding to a either the line we are searching for or the next
+ * closest line that has any mappings. Otherwise, returns all mappings
+ * corresponding to the given line and either the column we are searching for
+ * or the next closest column that has any offsets.
+ *
+ * The only argument is an object with the following properties:
+ *
+ *   - source: The filename of the original source.
+ *   - line: The line number in the original source.
+ *   - column: Optional. the column number in the original source.
+ *
+ * and an array of objects is returned, each with the following properties:
+ *
+ *   - line: The line number in the generated source, or null.
+ *   - column: The column number in the generated source, or null.
+ */
+SourceMapConsumer.prototype.allGeneratedPositionsFor =
+  function SourceMapConsumer_allGeneratedPositionsFor(aArgs) {
+    var line = util.getArg(aArgs, 'line');
+
+    // When there is no exact match, BasicSourceMapConsumer.prototype._findMapping
+    // returns the index of the closest mapping less than the needle. By
+    // setting needle.originalColumn to 0, we thus find the last mapping for
+    // the given line, provided such a mapping exists.
+    var needle = {
+      source: util.getArg(aArgs, 'source'),
+      originalLine: line,
+      originalColumn: util.getArg(aArgs, 'column', 0)
+    };
+
+    if (this.sourceRoot != null) {
+      needle.source = util.relative(this.sourceRoot, needle.source);
+    }
+    if (!this._sources.has(needle.source)) {
+      return [];
+    }
+    needle.source = this._sources.indexOf(needle.source);
+
+    var mappings = [];
+
+    var index = this._findMapping(needle,
+                                  this._originalMappings,
+                                  "originalLine",
+                                  "originalColumn",
+                                  util.compareByOriginalPositions,
+                                  binarySearch.LEAST_UPPER_BOUND);
+    if (index >= 0) {
+      var mapping = this._originalMappings[index];
+
+      if (aArgs.column === undefined) {
+        var originalLine = mapping.originalLine;
+
+        // Iterate until either we run out of mappings, or we run into
+        // a mapping for a different line than the one we found. Since
+        // mappings are sorted, this is guaranteed to find all mappings for
+        // the line we found.
+        while (mapping && mapping.originalLine === originalLine) {
+          mappings.push({
+            line: util.getArg(mapping, 'generatedLine', null),
+            column: util.getArg(mapping, 'generatedColumn', null),
+            lastColumn: util.getArg(mapping, 'lastGeneratedColumn', null)
+          });
+
+          mapping = this._originalMappings[++index];
+        }
+      } else {
+        var originalColumn = mapping.originalColumn;
+
+        // Iterate until either we run out of mappings, or we run into
+        // a mapping for a different line than the one we were searching for.
+        // Since mappings are sorted, this is guaranteed to find all mappings for
+        // the line we are searching for.
+        while (mapping &&
+               mapping.originalLine === line &&
+               mapping.originalColumn == originalColumn) {
+          mappings.push({
+            line: util.getArg(mapping, 'generatedLine', null),
+            column: util.getArg(mapping, 'generatedColumn', null),
+            lastColumn: util.getArg(mapping, 'lastGeneratedColumn', null)
+          });
+
+          mapping = this._originalMappings[++index];
+        }
+      }
+    }
+
+    return mappings;
+  };
+
+exports.SourceMapConsumer = SourceMapConsumer;
+
+/**
+ * A BasicSourceMapConsumer instance represents a parsed source map which we can
+ * query for information about the original file positions by giving it a file
+ * position in the generated source.
+ *
+ * The only parameter is the raw source map (either as a JSON string, or
+ * already parsed to an object). According to the spec, source maps have the
+ * following attributes:
+ *
+ *   - version: Which version of the source map spec this map is following.
+ *   - sources: An array of URLs to the original source files.
+ *   - names: An array of identifiers which can be referrenced by individual mappings.
+ *   - sourceRoot: Optional. The URL root from which all sources are relative.
+ *   - sourcesContent: Optional. An array of contents of the original source files.
+ *   - mappings: A string of base64 VLQs which contain the actual mappings.
+ *   - file: Optional. The generated file this source map is associated with.
+ *
+ * Here is an example source map, taken from the source map spec[0]:
+ *
+ *     {
+ *       version : 3,
+ *       file: "out.js",
+ *       sourceRoot : "",
+ *       sources: ["foo.js", "bar.js"],
+ *       names: ["src", "maps", "are", "fun"],
+ *       mappings: "AA,AB;;ABCDE;"
+ *     }
+ *
+ * [0]: https://docs.google.com/document/d/1U1RGAehQwRypUTovF1KRlpiOFze0b-_2gc6fAH0KY0k/edit?pli=1#
+ */
+function BasicSourceMapConsumer(aSourceMap) {
+  var sourceMap = aSourceMap;
+  if (typeof aSourceMap === 'string') {
+    sourceMap = JSON.parse(aSourceMap.replace(/^\)\]\}'/, ''));
+  }
+
+  var version = util.getArg(sourceMap, 'version');
+  var sources = util.getArg(sourceMap, 'sources');
+  // Sass 3.3 leaves out the 'names' array, so we deviate from the spec (which
+  // requires the array) to play nice here.
+  var names = util.getArg(sourceMap, 'names', []);
+  var sourceRoot = util.getArg(sourceMap, 'sourceRoot', null);
+  var sourcesContent = util.getArg(sourceMap, 'sourcesContent', null);
+  var mappings = util.getArg(sourceMap, 'mappings');
+  var file = util.getArg(sourceMap, 'file', null);
+
+  // Once again, Sass deviates from the spec and supplies the version as a
+  // string rather than a number, so we use loose equality checking here.
+  if (version != this._version) {
+    throw new Error('Unsupported version: ' + version);
+  }
+
+  sources = sources
+    .map(String)
+    // Some source maps produce relative source paths like "./foo.js" instead of
+    // "foo.js".  Normalize these first so that future comparisons will succeed.
+    // See bugzil.la/1090768.
+    .map(util.normalize)
+    // Always ensure that absolute sources are internally stored relative to
+    // the source root, if the source root is absolute. Not doing this would
+    // be particularly problematic when the source root is a prefix of the
+    // source (valid, but why??). See github issue #199 and bugzil.la/1188982.
+    .map(function (source) {
+      return sourceRoot && util.isAbsolute(sourceRoot) && util.isAbsolute(source)
+        ? util.relative(sourceRoot, source)
+        : source;
+    });
+
+  // Pass `true` below to allow duplicate names and sources. While source maps
+  // are intended to be compressed and deduplicated, the TypeScript compiler
+  // sometimes generates source maps with duplicates in them. See Github issue
+  // #72 and bugzil.la/889492.
+  this._names = ArraySet.fromArray(names.map(String), true);
+  this._sources = ArraySet.fromArray(sources, true);
+
+  this.sourceRoot = sourceRoot;
+  this.sourcesContent = sourcesContent;
+  this._mappings = mappings;
+  this.file = file;
+}
+
+BasicSourceMapConsumer.prototype = Object.create(SourceMapConsumer.prototype);
+BasicSourceMapConsumer.prototype.consumer = SourceMapConsumer;
+
+/**
+ * Create a BasicSourceMapConsumer from a SourceMapGenerator.
+ *
+ * @param SourceMapGenerator aSourceMap
+ *        The source map that will be consumed.
+ * @returns BasicSourceMapConsumer
+ */
+BasicSourceMapConsumer.fromSourceMap =
+  function SourceMapConsumer_fromSourceMap(aSourceMap) {
+    var smc = Object.create(BasicSourceMapConsumer.prototype);
+
+    var names = smc._names = ArraySet.fromArray(aSourceMap._names.toArray(), true);
+    var sources = smc._sources = ArraySet.fromArray(aSourceMap._sources.toArray(), true);
+    smc.sourceRoot = aSourceMap._sourceRoot;
+    smc.sourcesContent = aSourceMap._generateSourcesContent(smc._sources.toArray(),
+                                                            smc.sourceRoot);
+    smc.file = aSourceMap._file;
+
+    // Because we are modifying the entries (by converting string sources and
+    // names to indices into the sources and names ArraySets), we have to make
+    // a copy of the entry or else bad things happen. Shared mutable state
+    // strikes again! See github issue #191.
+
+    var generatedMappings = aSourceMap._mappings.toArray().slice();
+    var destGeneratedMappings = smc.__generatedMappings = [];
+    var destOriginalMappings = smc.__originalMappings = [];
+
+    for (var i = 0, length = generatedMappings.length; i < length; i++) {
+      var srcMapping = generatedMappings[i];
+      var destMapping = new Mapping;
+      destMapping.generatedLine = srcMapping.generatedLine;
+      destMapping.generatedColumn = srcMapping.generatedColumn;
+
+      if (srcMapping.source) {
+        destMapping.source = sources.indexOf(srcMapping.source);
+        destMapping.originalLine = srcMapping.originalLine;
+        destMapping.originalColumn = srcMapping.originalColumn;
+
+        if (srcMapping.name) {
+          destMapping.name = names.indexOf(srcMapping.name);
+        }
+
+        destOriginalMappings.push(destMapping);
+      }
+
+      destGeneratedMappings.push(destMapping);
+    }
+
+    quickSort(smc.__originalMappings, util.compareByOriginalPositions);
+
+    return smc;
+  };
+
+/**
+ * The version of the source mapping spec that we are consuming.
+ */
+BasicSourceMapConsumer.prototype._version = 3;
+
+/**
+ * The list of original sources.
+ */
+Object.defineProperty(BasicSourceMapConsumer.prototype, 'sources', {
+  get: function () {
+    return this._sources.toArray().map(function (s) {
+      return this.sourceRoot != null ? util.join(this.sourceRoot, s) : s;
+    }, this);
+  }
+});
+
+/**
+ * Provide the JIT with a nice shape / hidden class.
+ */
+function Mapping() {
+  this.generatedLine = 0;
+  this.generatedColumn = 0;
+  this.source = null;
+  this.originalLine = null;
+  this.originalColumn = null;
+  this.name = null;
+}
+
+/**
+ * Parse the mappings in a string in to a data structure which we can easily
+ * query (the ordered arrays in the `this.__generatedMappings` and
+ * `this.__originalMappings` properties).
+ */
+BasicSourceMapConsumer.prototype._parseMappings =
+  function SourceMapConsumer_parseMappings(aStr, aSourceRoot) {
+    var generatedLine = 1;
+    var previousGeneratedColumn = 0;
+    var previousOriginalLine = 0;
+    var previousOriginalColumn = 0;
+    var previousSource = 0;
+    var previousName = 0;
+    var length = aStr.length;
+    var index = 0;
+    var cachedSegments = {};
+    var temp = {};
+    var originalMappings = [];
+    var generatedMappings = [];
+    var mapping, str, segment, end, value;
+
+    while (index < length) {
+      if (aStr.charAt(index) === ';') {
+        generatedLine++;
+        index++;
+        previousGeneratedColumn = 0;
+      }
+      else if (aStr.charAt(index) === ',') {
+        index++;
+      }
+      else {
+        mapping = new Mapping();
+        mapping.generatedLine = generatedLine;
+
+        // Because each offset is encoded relative to the previous one,
+        // many segments often have the same encoding. We can exploit this
+        // fact by caching the parsed variable length fields of each segment,
+        // allowing us to avoid a second parse if we encounter the same
+        // segment again.
+        for (end = index; end < length; end++) {
+          if (this._charIsMappingSeparator(aStr, end)) {
+            break;
+          }
+        }
+        str = aStr.slice(index, end);
+
+        segment = cachedSegments[str];
+        if (segment) {
+          index += str.length;
+        } else {
+          segment = [];
+          while (index < end) {
+            base64VLQ.decode(aStr, index, temp);
+            value = temp.value;
+            index = temp.rest;
+            segment.push(value);
+          }
+
+          if (segment.length === 2) {
+            throw new Error('Found a source, but no line and column');
+          }
+
+          if (segment.length === 3) {
+            throw new Error('Found a source and line, but no column');
+          }
+
+          cachedSegments[str] = segment;
+        }
+
+        // Generated column.
+        mapping.generatedColumn = previousGeneratedColumn + segment[0];
+        previousGeneratedColumn = mapping.generatedColumn;
+
+        if (segment.length > 1) {
+          // Original source.
+          mapping.source = previousSource + segment[1];
+          previousSource += segment[1];
+
+          // Original line.
+          mapping.originalLine = previousOriginalLine + segment[2];
+          previousOriginalLine = mapping.originalLine;
+          // Lines are stored 0-based
+          mapping.originalLine += 1;
+
+          // Original column.
+          mapping.originalColumn = previousOriginalColumn + segment[3];
+          previousOriginalColumn = mapping.originalColumn;
+
+          if (segment.length > 4) {
+            // Original name.
+            mapping.name = previousName + segment[4];
+            previousName += segment[4];
+          }
+        }
+
+        generatedMappings.push(mapping);
+        if (typeof mapping.originalLine === 'number') {
+          originalMappings.push(mapping);
+        }
+      }
+    }
+
+    quickSort(generatedMappings, util.compareByGeneratedPositionsDeflated);
+    this.__generatedMappings = generatedMappings;
+
+    quickSort(originalMappings, util.compareByOriginalPositions);
+    this.__originalMappings = originalMappings;
+  };
+
+/**
+ * Find the mapping that best matches the hypothetical "needle" mapping that
+ * we are searching for in the given "haystack" of mappings.
+ */
+BasicSourceMapConsumer.prototype._findMapping =
+  function SourceMapConsumer_findMapping(aNeedle, aMappings, aLineName,
+                                         aColumnName, aComparator, aBias) {
+    // To return the position we are searching for, we must first find the
+    // mapping for the given position and then return the opposite position it
+    // points to. Because the mappings are sorted, we can use binary search to
+    // find the best mapping.
+
+    if (aNeedle[aLineName] <= 0) {
+      throw new TypeError('Line must be greater than or equal to 1, got '
+                          + aNeedle[aLineName]);
+    }
+    if (aNeedle[aColumnName] < 0) {
+      throw new TypeError('Column must be greater than or equal to 0, got '
+                          + aNeedle[aColumnName]);
+    }
+
+    return binarySearch.search(aNeedle, aMappings, aComparator, aBias);
+  };
+
+/**
+ * Compute the last column for each generated mapping. The last column is
+ * inclusive.
+ */
+BasicSourceMapConsumer.prototype.computeColumnSpans =
+  function SourceMapConsumer_computeColumnSpans() {
+    for (var index = 0; index < this._generatedMappings.length; ++index) {
+      var mapping = this._generatedMappings[index];
+
+      // Mappings do not contain a field for the last generated columnt. We
+      // can come up with an optimistic estimate, however, by assuming that
+      // mappings are contiguous (i.e. given two consecutive mappings, the
+      // first mapping ends where the second one starts).
+      if (index + 1 < this._generatedMappings.length) {
+        var nextMapping = this._generatedMappings[index + 1];
+
+        if (mapping.generatedLine === nextMapping.generatedLine) {
+          mapping.lastGeneratedColumn = nextMapping.generatedColumn - 1;
+          continue;
+        }
+      }
+
+      // The last mapping for each line spans the entire line.
+      mapping.lastGeneratedColumn = Infinity;
+    }
+  };
+
+/**
+ * Returns the original source, line, and column information for the generated
+ * source's line and column positions provided. The only argument is an object
+ * with the following properties:
+ *
+ *   - line: The line number in the generated source.
+ *   - column: The column number in the generated source.
+ *   - bias: Either 'SourceMapConsumer.GREATEST_LOWER_BOUND' or
+ *     'SourceMapConsumer.LEAST_UPPER_BOUND'. Specifies whether to return the
+ *     closest element that is smaller than or greater than the one we are
+ *     searching for, respectively, if the exact element cannot be found.
+ *     Defaults to 'SourceMapConsumer.GREATEST_LOWER_BOUND'.
+ *
+ * and an object is returned with the following properties:
+ *
+ *   - source: The original source file, or null.
+ *   - line: The line number in the original source, or null.
+ *   - column: The column number in the original source, or null.
+ *   - name: The original identifier, or null.
+ */
+BasicSourceMapConsumer.prototype.originalPositionFor =
+  function SourceMapConsumer_originalPositionFor(aArgs) {
+    var needle = {
+      generatedLine: util.getArg(aArgs, 'line'),
+      generatedColumn: util.getArg(aArgs, 'column')
+    };
+
+    var index = this._findMapping(
+      needle,
+      this._generatedMappings,
+      "generatedLine",
+      "generatedColumn",
+      util.compareByGeneratedPositionsDeflated,
+      util.getArg(aArgs, 'bias', SourceMapConsumer.GREATEST_LOWER_BOUND)
+    );
+
+    if (index >= 0) {
+      var mapping = this._generatedMappings[index];
+
+      if (mapping.generatedLine === needle.generatedLine) {
+        var source = util.getArg(mapping, 'source', null);
+        if (source !== null) {
+          source = this._sources.at(source);
+          if (this.sourceRoot != null) {
+            source = util.join(this.sourceRoot, source);
+          }
+        }
+        var name = util.getArg(mapping, 'name', null);
+        if (name !== null) {
+          name = this._names.at(name);
+        }
+        return {
+          source: source,
+          line: util.getArg(mapping, 'originalLine', null),
+          column: util.getArg(mapping, 'originalColumn', null),
+          name: name
+        };
+      }
+    }
+
+    return {
+      source: null,
+      line: null,
+      column: null,
+      name: null
+    };
+  };
+
+/**
+ * Return true if we have the source content for every source in the source
+ * map, false otherwise.
+ */
+BasicSourceMapConsumer.prototype.hasContentsOfAllSources =
+  function BasicSourceMapConsumer_hasContentsOfAllSources() {
+    if (!this.sourcesContent) {
+      return false;
+    }
+    return this.sourcesContent.length >= this._sources.size() &&
+      !this.sourcesContent.some(function (sc) { return sc == null; });
+  };
+
+/**
+ * Returns the original source content. The only argument is the url of the
+ * original source file. Returns null if no original source content is
+ * available.
+ */
+BasicSourceMapConsumer.prototype.sourceContentFor =
+  function SourceMapConsumer_sourceContentFor(aSource, nullOnMissing) {
+    if (!this.sourcesContent) {
+      return null;
+    }
+
+    if (this.sourceRoot != null) {
+      aSource = util.relative(this.sourceRoot, aSource);
+    }
+
+    if (this._sources.has(aSource)) {
+      return this.sourcesContent[this._sources.indexOf(aSource)];
+    }
+
+    var url;
+    if (this.sourceRoot != null
+        && (url = util.urlParse(this.sourceRoot))) {
+      // XXX: file:// URIs and absolute paths lead to unexpected behavior for
+      // many users. We can help them out when they expect file:// URIs to
+      // behave like it would if they were running a local HTTP server. See
+      // https://bugzilla.mozilla.org/show_bug.cgi?id=885597.
+      var fileUriAbsPath = aSource.replace(/^file:\/\//, "");
+      if (url.scheme == "file"
+          && this._sources.has(fileUriAbsPath)) {
+        return this.sourcesContent[this._sources.indexOf(fileUriAbsPath)]
+      }
+
+      if ((!url.path || url.path == "/")
+          && this._sources.has("/" + aSource)) {
+        return this.sourcesContent[this._sources.indexOf("/" + aSource)];
+      }
+    }
+
+    // This function is used recursively from
+    // IndexedSourceMapConsumer.prototype.sourceContentFor. In that case, we
+    // don't want to throw if we can't find the source - we just want to
+    // return null, so we provide a flag to exit gracefully.
+    if (nullOnMissing) {
+      return null;
+    }
+    else {
+      throw new Error('"' + aSource + '" is not in the SourceMap.');
+    }
+  };
+
+/**
+ * Returns the generated line and column information for the original source,
+ * line, and column positions provided. The only argument is an object with
+ * the following properties:
+ *
+ *   - source: The filename of the original source.
+ *   - line: The line number in the original source.
+ *   - column: The column number in the original source.
+ *   - bias: Either 'SourceMapConsumer.GREATEST_LOWER_BOUND' or
+ *     'SourceMapConsumer.LEAST_UPPER_BOUND'. Specifies whether to return the
+ *     closest element that is smaller than or greater than the one we are
+ *     searching for, respectively, if the exact element cannot be found.
+ *     Defaults to 'SourceMapConsumer.GREATEST_LOWER_BOUND'.
+ *
+ * and an object is returned with the following properties:
+ *
+ *   - line: The line number in the generated source, or null.
+ *   - column: The column number in the generated source, or null.
+ */
+BasicSourceMapConsumer.prototype.generatedPositionFor =
+  function SourceMapConsumer_generatedPositionFor(aArgs) {
+    var source = util.getArg(aArgs, 'source');
+    if (this.sourceRoot != null) {
+      source = util.relative(this.sourceRoot, source);
+    }
+    if (!this._sources.has(source)) {
+      return {
+        line: null,
+        column: null,
+        lastColumn: null
+      };
+    }
+    source = this._sources.indexOf(source);
+
+    var needle = {
+      source: source,
+      originalLine: util.getArg(aArgs, 'line'),
+      originalColumn: util.getArg(aArgs, 'column')
+    };
+
+    var index = this._findMapping(
+      needle,
+      this._originalMappings,
+      "originalLine",
+      "originalColumn",
+      util.compareByOriginalPositions,
+      util.getArg(aArgs, 'bias', SourceMapConsumer.GREATEST_LOWER_BOUND)
+    );
+
+    if (index >= 0) {
+      var mapping = this._originalMappings[index];
+
+      if (mapping.source === needle.source) {
+        return {
+          line: util.getArg(mapping, 'generatedLine', null),
+          column: util.getArg(mapping, 'generatedColumn', null),
+          lastColumn: util.getArg(mapping, 'lastGeneratedColumn', null)
+        };
+      }
+    }
+
+    return {
+      line: null,
+      column: null,
+      lastColumn: null
+    };
+  };
+
+exports.BasicSourceMapConsumer = BasicSourceMapConsumer;
+
+/**
+ * An IndexedSourceMapConsumer instance represents a parsed source map which
+ * we can query for information. It differs from BasicSourceMapConsumer in
+ * that it takes "indexed" source maps (i.e. ones with a "sections" field) as
+ * input.
+ *
+ * The only parameter is a raw source map (either as a JSON string, or already
+ * parsed to an object). According to the spec for indexed source maps, they
+ * have the following attributes:
+ *
+ *   - version: Which version of the source map spec this map is following.
+ *   - file: Optional. The generated file this source map is associated with.
+ *   - sections: A list of section definitions.
+ *
+ * Each value under the "sections" field has two fields:
+ *   - offset: The offset into the original specified at which this section
+ *       begins to apply, defined as an object with a "line" and "column"
+ *       field.
+ *   - map: A source map definition. This source map could also be indexed,
+ *       but doesn't have to be.
+ *
+ * Instead of the "map" field, it's also possible to have a "url" field
+ * specifying a URL to retrieve a source map from, but that's currently
+ * unsupported.
+ *
+ * Here's an example source map, taken from the source map spec[0], but
+ * modified to omit a section which uses the "url" field.
+ *
+ *  {
+ *    version : 3,
+ *    file: "app.js",
+ *    sections: [{
+ *      offset: {line:100, column:10},
+ *      map: {
+ *        version : 3,
+ *        file: "section.js",
+ *        sources: ["foo.js", "bar.js"],
+ *        names: ["src", "maps", "are", "fun"],
+ *        mappings: "AAAA,E;;ABCDE;"
+ *      }
+ *    }],
+ *  }
+ *
+ * [0]: https://docs.google.com/document/d/1U1RGAehQwRypUTovF1KRlpiOFze0b-_2gc6fAH0KY0k/edit#heading=h.535es3xeprgt
+ */
+function IndexedSourceMapConsumer(aSourceMap) {
+  var sourceMap = aSourceMap;
+  if (typeof aSourceMap === 'string') {
+    sourceMap = JSON.parse(aSourceMap.replace(/^\)\]\}'/, ''));
+  }
+
+  var version = util.getArg(sourceMap, 'version');
+  var sections = util.getArg(sourceMap, 'sections');
+
+  if (version != this._version) {
+    throw new Error('Unsupported version: ' + version);
+  }
+
+  this._sources = new ArraySet();
+  this._names = new ArraySet();
+
+  var lastOffset = {
+    line: -1,
+    column: 0
+  };
+  this._sections = sections.map(function (s) {
+    if (s.url) {
+      // The url field will require support for asynchronicity.
+      // See https://github.com/mozilla/source-map/issues/16
+      throw new Error('Support for url field in sections not implemented.');
+    }
+    var offset = util.getArg(s, 'offset');
+    var offsetLine = util.getArg(offset, 'line');
+    var offsetColumn = util.getArg(offset, 'column');
+
+    if (offsetLine < lastOffset.line ||
+        (offsetLine === lastOffset.line && offsetColumn < lastOffset.column)) {
+      throw new Error('Section offsets must be ordered and non-overlapping.');
+    }
+    lastOffset = offset;
+
+    return {
+      generatedOffset: {
+        // The offset fields are 0-based, but we use 1-based indices when
+        // encoding/decoding from VLQ.
+        generatedLine: offsetLine + 1,
+        generatedColumn: offsetColumn + 1
+      },
+      consumer: new SourceMapConsumer(util.getArg(s, 'map'))
+    }
+  });
+}
+
+IndexedSourceMapConsumer.prototype = Object.create(SourceMapConsumer.prototype);
+IndexedSourceMapConsumer.prototype.constructor = SourceMapConsumer;
+
+/**
+ * The version of the source mapping spec that we are consuming.
+ */
+IndexedSourceMapConsumer.prototype._version = 3;
+
+/**
+ * The list of original sources.
+ */
+Object.defineProperty(IndexedSourceMapConsumer.prototype, 'sources', {
+  get: function () {
+    var sources = [];
+    for (var i = 0; i < this._sections.length; i++) {
+      for (var j = 0; j < this._sections[i].consumer.sources.length; j++) {
+        sources.push(this._sections[i].consumer.sources[j]);
+      }
+    }
+    return sources;
+  }
+});
+
+/**
+ * Returns the original source, line, and column information for the generated
+ * source's line and column positions provided. The only argument is an object
+ * with the following properties:
+ *
+ *   - line: The line number in the generated source.
+ *   - column: The column number in the generated source.
+ *
+ * and an object is returned with the following properties:
+ *
+ *   - source: The original source file, or null.
+ *   - line: The line number in the original source, or null.
+ *   - column: The column number in the original source, or null.
+ *   - name: The original identifier, or null.
+ */
+IndexedSourceMapConsumer.prototype.originalPositionFor =
+  function IndexedSourceMapConsumer_originalPositionFor(aArgs) {
+    var needle = {
+      generatedLine: util.getArg(aArgs, 'line'),
+      generatedColumn: util.getArg(aArgs, 'column')
+    };
+
+    // Find the section containing the generated position we're trying to map
+    // to an original position.
+    var sectionIndex = binarySearch.search(needle, this._sections,
+      function(needle, section) {
+        var cmp = needle.generatedLine - section.generatedOffset.generatedLine;
+        if (cmp) {
+          return cmp;
+        }
+
+        return (needle.generatedColumn -
+                section.generatedOffset.generatedColumn);
+      });
+    var section = this._sections[sectionIndex];
+
+    if (!section) {
+      return {
+        source: null,
+        line: null,
+        column: null,
+        name: null
+      };
+    }
+
+    return section.consumer.originalPositionFor({
+      line: needle.generatedLine -
+        (section.generatedOffset.generatedLine - 1),
+      column: needle.generatedColumn -
+        (section.generatedOffset.generatedLine === needle.generatedLine
+         ? section.generatedOffset.generatedColumn - 1
+         : 0),
+      bias: aArgs.bias
+    });
+  };
+
+/**
+ * Return true if we have the source content for every source in the source
+ * map, false otherwise.
+ */
+IndexedSourceMapConsumer.prototype.hasContentsOfAllSources =
+  function IndexedSourceMapConsumer_hasContentsOfAllSources() {
+    return this._sections.every(function (s) {
+      return s.consumer.hasContentsOfAllSources();
+    });
+  };
+
+/**
+ * Returns the original source content. The only argument is the url of the
+ * original source file. Returns null if no original source content is
+ * available.
+ */
+IndexedSourceMapConsumer.prototype.sourceContentFor =
+  function IndexedSourceMapConsumer_sourceContentFor(aSource, nullOnMissing) {
+    for (var i = 0; i < this._sections.length; i++) {
+      var section = this._sections[i];
+
+      var content = section.consumer.sourceContentFor(aSource, true);
+      if (content) {
+        return content;
+      }
+    }
+    if (nullOnMissing) {
+      return null;
+    }
+    else {
+      throw new Error('"' + aSource + '" is not in the SourceMap.');
+    }
+  };
+
+/**
+ * Returns the generated line and column information for the original source,
+ * line, and column positions provided. The only argument is an object with
+ * the following properties:
+ *
+ *   - source: The filename of the original source.
+ *   - line: The line number in the original source.
+ *   - column: The column number in the original source.
+ *
+ * and an object is returned with the following properties:
+ *
+ *   - line: The line number in the generated source, or null.
+ *   - column: The column number in the generated source, or null.
+ */
+IndexedSourceMapConsumer.prototype.generatedPositionFor =
+  function IndexedSourceMapConsumer_generatedPositionFor(aArgs) {
+    for (var i = 0; i < this._sections.length; i++) {
+      var section = this._sections[i];
+
+      // Only consider this section if the requested source is in the list of
+      // sources of the consumer.
+      if (section.consumer.sources.indexOf(util.getArg(aArgs, 'source')) === -1) {
+        continue;
+      }
+      var generatedPosition = section.consumer.generatedPositionFor(aArgs);
+      if (generatedPosition) {
+        var ret = {
+          line: generatedPosition.line +
+            (section.generatedOffset.generatedLine - 1),
+          column: generatedPosition.column +
+            (section.generatedOffset.generatedLine === generatedPosition.line
+             ? section.generatedOffset.generatedColumn - 1
+             : 0)
+        };
+        return ret;
+      }
+    }
+
+    return {
+      line: null,
+      column: null
+    };
+  };
+
+/**
+ * Parse the mappings in a string in to a data structure which we can easily
+ * query (the ordered arrays in the `this.__generatedMappings` and
+ * `this.__originalMappings` properties).
+ */
+IndexedSourceMapConsumer.prototype._parseMappings =
+  function IndexedSourceMapConsumer_parseMappings(aStr, aSourceRoot) {
+    this.__generatedMappings = [];
+    this.__originalMappings = [];
+    for (var i = 0; i < this._sections.length; i++) {
+      var section = this._sections[i];
+      var sectionMappings = section.consumer._generatedMappings;
+      for (var j = 0; j < sectionMappings.length; j++) {
+        var mapping = sectionMappings[j];
+
+        var source = section.consumer._sources.at(mapping.source);
+        if (section.consumer.sourceRoot !== null) {
+          source = util.join(section.consumer.sourceRoot, source);
+        }
+        this._sources.add(source);
+        source = this._sources.indexOf(source);
+
+        var name = section.consumer._names.at(mapping.name);
+        this._names.add(name);
+        name = this._names.indexOf(name);
+
+        // The mappings coming from the consumer for the section have
+        // generated positions relative to the start of the section, so we
+        // need to offset them to be relative to the start of the concatenated
+        // generated file.
+        var adjustedMapping = {
+          source: source,
+          generatedLine: mapping.generatedLine +
+            (section.generatedOffset.generatedLine - 1),
+          generatedColumn: mapping.generatedColumn +
+            (section.generatedOffset.generatedLine === mapping.generatedLine
+            ? section.generatedOffset.generatedColumn - 1
+            : 0),
+          originalLine: mapping.originalLine,
+          originalColumn: mapping.originalColumn,
+          name: name
+        };
+
+        this.__generatedMappings.push(adjustedMapping);
+        if (typeof adjustedMapping.originalLine === 'number') {
+          this.__originalMappings.push(adjustedMapping);
+        }
+      }
+    }
+
+    quickSort(this.__generatedMappings, util.compareByGeneratedPositionsDeflated);
+    quickSort(this.__originalMappings, util.compareByOriginalPositions);
+  };
+
+exports.IndexedSourceMapConsumer = IndexedSourceMapConsumer;
+
+},{"./array-set":101,"./base64-vlq":102,"./binary-search":104,"./quick-sort":105,"./util":107}],107:[function(require,module,exports){
+/* -*- Mode: js; js-indent-level: 2; -*- */
+/*
+ * Copyright 2011 Mozilla Foundation and contributors
+ * Licensed under the New BSD license. See LICENSE or:
+ * http://opensource.org/licenses/BSD-3-Clause
+ */
+
+/**
+ * This is a helper function for getting values from parameter/options
+ * objects.
+ *
+ * @param args The object we are extracting values from
+ * @param name The name of the property we are getting.
+ * @param defaultValue An optional value to return if the property is missing
+ * from the object. If this is not specified and the property is missing, an
+ * error will be thrown.
+ */
+function getArg(aArgs, aName, aDefaultValue) {
+  if (aName in aArgs) {
+    return aArgs[aName];
+  } else if (arguments.length === 3) {
+    return aDefaultValue;
+  } else {
+    throw new Error('"' + aName + '" is a required argument.');
+  }
+}
+exports.getArg = getArg;
+
+var urlRegexp = /^(?:([\w+\-.]+):)?\/\/(?:(\w+:\w+)@)?([\w.]*)(?::(\d+))?(\S*)$/;
+var dataUrlRegexp = /^data:.+\,.+$/;
+
+function urlParse(aUrl) {
+  var match = aUrl.match(urlRegexp);
+  if (!match) {
+    return null;
+  }
+  return {
+    scheme: match[1],
+    auth: match[2],
+    host: match[3],
+    port: match[4],
+    path: match[5]
+  };
+}
+exports.urlParse = urlParse;
+
+function urlGenerate(aParsedUrl) {
+  var url = '';
+  if (aParsedUrl.scheme) {
+    url += aParsedUrl.scheme + ':';
+  }
+  url += '//';
+  if (aParsedUrl.auth) {
+    url += aParsedUrl.auth + '@';
+  }
+  if (aParsedUrl.host) {
+    url += aParsedUrl.host;
+  }
+  if (aParsedUrl.port) {
+    url += ":" + aParsedUrl.port
+  }
+  if (aParsedUrl.path) {
+    url += aParsedUrl.path;
+  }
+  return url;
+}
+exports.urlGenerate = urlGenerate;
+
+/**
+ * Normalizes a path, or the path portion of a URL:
+ *
+ * - Replaces consecutive slashes with one slash.
+ * - Removes unnecessary '.' parts.
+ * - Removes unnecessary '<dir>/..' parts.
+ *
+ * Based on code in the Node.js 'path' core module.
+ *
+ * @param aPath The path or url to normalize.
+ */
+function normalize(aPath) {
+  var path = aPath;
+  var url = urlParse(aPath);
+  if (url) {
+    if (!url.path) {
+      return aPath;
+    }
+    path = url.path;
+  }
+  var isAbsolute = exports.isAbsolute(path);
+
+  var parts = path.split(/\/+/);
+  for (var part, up = 0, i = parts.length - 1; i >= 0; i--) {
+    part = parts[i];
+    if (part === '.') {
+      parts.splice(i, 1);
+    } else if (part === '..') {
+      up++;
+    } else if (up > 0) {
+      if (part === '') {
+        // The first part is blank if the path is absolute. Trying to go
+        // above the root is a no-op. Therefore we can remove all '..' parts
+        // directly after the root.
+        parts.splice(i + 1, up);
+        up = 0;
+      } else {
+        parts.splice(i, 2);
+        up--;
+      }
+    }
+  }
+  path = parts.join('/');
+
+  if (path === '') {
+    path = isAbsolute ? '/' : '.';
+  }
+
+  if (url) {
+    url.path = path;
+    return urlGenerate(url);
+  }
+  return path;
+}
+exports.normalize = normalize;
+
+/**
+ * Joins two paths/URLs.
+ *
+ * @param aRoot The root path or URL.
+ * @param aPath The path or URL to be joined with the root.
+ *
+ * - If aPath is a URL or a data URI, aPath is returned, unless aPath is a
+ *   scheme-relative URL: Then the scheme of aRoot, if any, is prepended
+ *   first.
+ * - Otherwise aPath is a path. If aRoot is a URL, then its path portion
+ *   is updated with the result and aRoot is returned. Otherwise the result
+ *   is returned.
+ *   - If aPath is absolute, the result is aPath.
+ *   - Otherwise the two paths are joined with a slash.
+ * - Joining for example 'http://' and 'www.example.com' is also supported.
+ */
+function join(aRoot, aPath) {
+  if (aRoot === "") {
+    aRoot = ".";
+  }
+  if (aPath === "") {
+    aPath = ".";
+  }
+  var aPathUrl = urlParse(aPath);
+  var aRootUrl = urlParse(aRoot);
+  if (aRootUrl) {
+    aRoot = aRootUrl.path || '/';
+  }
+
+  // `join(foo, '//www.example.org')`
+  if (aPathUrl && !aPathUrl.scheme) {
+    if (aRootUrl) {
+      aPathUrl.scheme = aRootUrl.scheme;
+    }
+    return urlGenerate(aPathUrl);
+  }
+
+  if (aPathUrl || aPath.match(dataUrlRegexp)) {
+    return aPath;
+  }
+
+  // `join('http://', 'www.example.com')`
+  if (aRootUrl && !aRootUrl.host && !aRootUrl.path) {
+    aRootUrl.host = aPath;
+    return urlGenerate(aRootUrl);
+  }
+
+  var joined = aPath.charAt(0) === '/'
+    ? aPath
+    : normalize(aRoot.replace(/\/+$/, '') + '/' + aPath);
+
+  if (aRootUrl) {
+    aRootUrl.path = joined;
+    return urlGenerate(aRootUrl);
+  }
+  return joined;
+}
+exports.join = join;
+
+exports.isAbsolute = function (aPath) {
+  return aPath.charAt(0) === '/' || !!aPath.match(urlRegexp);
+};
+
+/**
+ * Make a path relative to a URL or another path.
+ *
+ * @param aRoot The root path or URL.
+ * @param aPath The path or URL to be made relative to aRoot.
+ */
+function relative(aRoot, aPath) {
+  if (aRoot === "") {
+    aRoot = ".";
+  }
+
+  aRoot = aRoot.replace(/\/$/, '');
+
+  // It is possible for the path to be above the root. In this case, simply
+  // checking whether the root is a prefix of the path won't work. Instead, we
+  // need to remove components from the root one by one, until either we find
+  // a prefix that fits, or we run out of components to remove.
+  var level = 0;
+  while (aPath.indexOf(aRoot + '/') !== 0) {
+    var index = aRoot.lastIndexOf("/");
+    if (index < 0) {
+      return aPath;
+    }
+
+    // If the only part of the root that is left is the scheme (i.e. http://,
+    // file:///, etc.), one or more slashes (/), or simply nothing at all, we
+    // have exhausted all components, so the path is not relative to the root.
+    aRoot = aRoot.slice(0, index);
+    if (aRoot.match(/^([^\/]+:\/)?\/*$/)) {
+      return aPath;
+    }
+
+    ++level;
+  }
+
+  // Make sure we add a "../" for each component we removed from the root.
+  return Array(level + 1).join("../") + aPath.substr(aRoot.length + 1);
+}
+exports.relative = relative;
+
+var supportsNullProto = (function () {
+  var obj = Object.create(null);
+  return !('__proto__' in obj);
+}());
+
+function identity (s) {
+  return s;
+}
+
+/**
+ * Because behavior goes wacky when you set `__proto__` on objects, we
+ * have to prefix all the strings in our set with an arbitrary character.
+ *
+ * See https://github.com/mozilla/source-map/pull/31 and
+ * https://github.com/mozilla/source-map/issues/30
+ *
+ * @param String aStr
+ */
+function toSetString(aStr) {
+  if (isProtoString(aStr)) {
+    return '$' + aStr;
+  }
+
+  return aStr;
+}
+exports.toSetString = supportsNullProto ? identity : toSetString;
+
+function fromSetString(aStr) {
+  if (isProtoString(aStr)) {
+    return aStr.slice(1);
+  }
+
+  return aStr;
+}
+exports.fromSetString = supportsNullProto ? identity : fromSetString;
+
+function isProtoString(s) {
+  if (!s) {
+    return false;
+  }
+
+  var length = s.length;
+
+  if (length < 9 /* "__proto__".length */) {
+    return false;
+  }
+
+  if (s.charCodeAt(length - 1) !== 95  /* '_' */ ||
+      s.charCodeAt(length - 2) !== 95  /* '_' */ ||
+      s.charCodeAt(length - 3) !== 111 /* 'o' */ ||
+      s.charCodeAt(length - 4) !== 116 /* 't' */ ||
+      s.charCodeAt(length - 5) !== 111 /* 'o' */ ||
+      s.charCodeAt(length - 6) !== 114 /* 'r' */ ||
+      s.charCodeAt(length - 7) !== 112 /* 'p' */ ||
+      s.charCodeAt(length - 8) !== 95  /* '_' */ ||
+      s.charCodeAt(length - 9) !== 95  /* '_' */) {
+    return false;
+  }
+
+  for (var i = length - 10; i >= 0; i--) {
+    if (s.charCodeAt(i) !== 36 /* '$' */) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+/**
+ * Comparator between two mappings where the original positions are compared.
+ *
+ * Optionally pass in `true` as `onlyCompareGenerated` to consider two
+ * mappings with the same original source/line/column, but different generated
+ * line and column the same. Useful when searching for a mapping with a
+ * stubbed out mapping.
+ */
+function compareByOriginalPositions(mappingA, mappingB, onlyCompareOriginal) {
+  var cmp = mappingA.source - mappingB.source;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.originalLine - mappingB.originalLine;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.originalColumn - mappingB.originalColumn;
+  if (cmp !== 0 || onlyCompareOriginal) {
+    return cmp;
+  }
+
+  cmp = mappingA.generatedColumn - mappingB.generatedColumn;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.generatedLine - mappingB.generatedLine;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  return mappingA.name - mappingB.name;
+}
+exports.compareByOriginalPositions = compareByOriginalPositions;
+
+/**
+ * Comparator between two mappings with deflated source and name indices where
+ * the generated positions are compared.
+ *
+ * Optionally pass in `true` as `onlyCompareGenerated` to consider two
+ * mappings with the same generated line and column, but different
+ * source/name/original line and column the same. Useful when searching for a
+ * mapping with a stubbed out mapping.
+ */
+function compareByGeneratedPositionsDeflated(mappingA, mappingB, onlyCompareGenerated) {
+  var cmp = mappingA.generatedLine - mappingB.generatedLine;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.generatedColumn - mappingB.generatedColumn;
+  if (cmp !== 0 || onlyCompareGenerated) {
+    return cmp;
+  }
+
+  cmp = mappingA.source - mappingB.source;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.originalLine - mappingB.originalLine;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.originalColumn - mappingB.originalColumn;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  return mappingA.name - mappingB.name;
+}
+exports.compareByGeneratedPositionsDeflated = compareByGeneratedPositionsDeflated;
+
+function strcmp(aStr1, aStr2) {
+  if (aStr1 === aStr2) {
+    return 0;
+  }
+
+  if (aStr1 > aStr2) {
+    return 1;
+  }
+
+  return -1;
+}
+
+/**
+ * Comparator between two mappings with inflated source and name strings where
+ * the generated positions are compared.
+ */
+function compareByGeneratedPositionsInflated(mappingA, mappingB) {
+  var cmp = mappingA.generatedLine - mappingB.generatedLine;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.generatedColumn - mappingB.generatedColumn;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = strcmp(mappingA.source, mappingB.source);
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.originalLine - mappingB.originalLine;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  cmp = mappingA.originalColumn - mappingB.originalColumn;
+  if (cmp !== 0) {
+    return cmp;
+  }
+
+  return strcmp(mappingA.name, mappingB.name);
+}
+exports.compareByGeneratedPositionsInflated = compareByGeneratedPositionsInflated;
+
+},{}],108:[function(require,module,exports){
+(function(root, factory) {
+    'use strict';
+    // Universal Module Definition (UMD) to support AMD, CommonJS/Node.js, Rhino, and browsers.
+
+    /* istanbul ignore next */
+    if (typeof define === 'function' && define.amd) {
+        define('stacktrace-gps', ['source-map', 'stackframe'], factory);
+    } else if (typeof exports === 'object') {
+        module.exports = factory(require('source-map/lib/source-map-consumer'), require('stackframe'));
+    } else {
+        root.StackTraceGPS = factory(root.SourceMap || root.sourceMap, root.StackFrame);
+    }
+}(this, function(SourceMap, StackFrame) {
+    'use strict';
+
+    /**
+     * Make a X-Domain request to url and callback.
+     *
+     * @param {String} url
+     * @returns {Promise} with response text if fulfilled
+     */
+    function _xdr(url) {
+        return new Promise(function(resolve, reject) {
+            var req = new XMLHttpRequest();
+            req.open('get', url);
+            req.onerror = reject;
+            req.onreadystatechange = function onreadystatechange() {
+                if (req.readyState === 4) {
+                    if ((req.status >= 200 && req.status < 300) ||
+                        (url.substr(0, 7) === 'file://' && req.responseText)) {
+                        resolve(req.responseText);
+                    } else {
+                        reject(new Error('HTTP status: ' + req.status + ' retrieving ' + url));
+                    }
+                }
+            };
+            req.send();
+        });
+
+    }
+
+    /**
+     * Convert a Base64-encoded string into its original representation.
+     * Used for inline sourcemaps.
+     *
+     * @param {String} b64str Base-64 encoded string
+     * @returns {String} original representation of the base64-encoded string.
+     */
+    function _atob(b64str) {
+        if (typeof window !== 'undefined' && window.atob) {
+            return window.atob(b64str);
+        } else {
+            throw new Error('You must supply a polyfill for window.atob in this environment');
+        }
+    }
+
+    function _parseJson(string) {
+        if (typeof JSON !== 'undefined' && JSON.parse) {
+            return JSON.parse(string);
+        } else {
+            throw new Error('You must supply a polyfill for JSON.parse in this environment');
+        }
+    }
+
+    function _findFunctionName(source, lineNumber/*, columnNumber*/) {
+        var syntaxes = [
+            // {name} = function ({args}) TODO args capture
+            /['"]?([$_A-Za-z][$_A-Za-z0-9]*)['"]?\s*[:=]\s*function\b/,
+            // function {name}({args}) m[1]=name m[2]=args
+            /function\s+([^('"`]*?)\s*\(([^)]*)\)/,
+            // {name} = eval()
+            /['"]?([$_A-Za-z][$_A-Za-z0-9]*)['"]?\s*[:=]\s*(?:eval|new Function)\b/,
+            // fn_name() {
+            /\b(?!(?:if|for|switch|while|with|catch)\b)(?:(?:static)\s+)?(\S+)\s*\(.*?\)\s*\{/,
+            // {name} = () => {
+            /['"]?([$_A-Za-z][$_A-Za-z0-9]*)['"]?\s*[:=]\s*\(.*?\)\s*=>/
+        ];
+        var lines = source.split('\n');
+
+        // Walk backwards in the source lines until we find the line which matches one of the patterns above
+        var code = '';
+        var maxLines = Math.min(lineNumber, 20);
+        for (var i = 0; i < maxLines; ++i) {
+            // lineNo is 1-based, source[] is 0-based
+            var line = lines[lineNumber - i - 1];
+            var commentPos = line.indexOf('//');
+            if (commentPos >= 0) {
+                line = line.substr(0, commentPos);
+            }
+
+            if (line) {
+                code = line + code;
+                var len = syntaxes.length;
+                for (var index = 0; index < len; index++) {
+                    var m = syntaxes[index].exec(code);
+                    if (m && m[1]) {
+                        return m[1];
+                    }
+                }
+            }
+        }
+        return undefined;
+    }
+
+    function _ensureSupportedEnvironment() {
+        if (typeof Object.defineProperty !== 'function' || typeof Object.create !== 'function') {
+            throw new Error('Unable to consume source maps in older browsers');
+        }
+    }
+
+    function _ensureStackFrameIsLegit(stackframe) {
+        if (typeof stackframe !== 'object') {
+            throw new TypeError('Given StackFrame is not an object');
+        } else if (typeof stackframe.fileName !== 'string') {
+            throw new TypeError('Given file name is not a String');
+        } else if (typeof stackframe.lineNumber !== 'number' ||
+            stackframe.lineNumber % 1 !== 0 ||
+            stackframe.lineNumber < 1) {
+            throw new TypeError('Given line number must be a positive integer');
+        } else if (typeof stackframe.columnNumber !== 'number' ||
+            stackframe.columnNumber % 1 !== 0 ||
+            stackframe.columnNumber < 0) {
+            throw new TypeError('Given column number must be a non-negative integer');
+        }
+        return true;
+    }
+
+    function _findSourceMappingURL(source) {
+        var sourceMappingUrlRegExp = /\/\/[#@] ?sourceMappingURL=([^\s'"]+)\s*$/mg;
+        var lastSourceMappingUrl;
+        var matchSourceMappingUrl;
+        while (matchSourceMappingUrl = sourceMappingUrlRegExp.exec(source)) { // jshint ignore:line
+            lastSourceMappingUrl = matchSourceMappingUrl[1];
+        }
+        if (lastSourceMappingUrl) {
+            return lastSourceMappingUrl;
+        } else {
+            throw new Error('sourceMappingURL not found');
+        }
+    }
+
+    function _extractLocationInfoFromSourceMapSource(stackframe, sourceMapConsumer, sourceCache) {
+        return new Promise(function(resolve, reject) {
+            var loc = sourceMapConsumer.originalPositionFor({
+                line: stackframe.lineNumber,
+                column: stackframe.columnNumber
+            });
+
+            if (loc.source) {
+                // cache mapped sources
+                var mappedSource = sourceMapConsumer.sourceContentFor(loc.source);
+                if (mappedSource) {
+                    sourceCache[loc.source] = mappedSource;
+                }
+
+                resolve(
+                    // given stackframe and source location, update stackframe
+                    new StackFrame({
+                        functionName: loc.name || stackframe.functionName,
+                        args: stackframe.args,
+                        fileName: loc.source,
+                        lineNumber: loc.line,
+                        columnNumber: loc.column
+                    }));
+            } else {
+                reject(new Error('Could not get original source for given stackframe and source map'));
+            }
+        });
+    }
+
+    /**
+     * @constructor
+     * @param {Object} opts
+     *      opts.sourceCache = {url: "Source String"} => preload source cache
+     *      opts.sourceMapConsumerCache = {/path/file.js.map: SourceMapConsumer}
+     *      opts.offline = True to prevent network requests.
+     *              Best effort without sources or source maps.
+     *      opts.ajax = Promise returning function to make X-Domain requests
+     */
+    return function StackTraceGPS(opts) {
+        if (!(this instanceof StackTraceGPS)) {
+            return new StackTraceGPS(opts);
+        }
+        opts = opts || {};
+
+        this.sourceCache = opts.sourceCache || {};
+        this.sourceMapConsumerCache = opts.sourceMapConsumerCache || {};
+
+        this.ajax = opts.ajax || _xdr;
+
+        this._atob = opts.atob || _atob;
+
+        this._get = function _get(location) {
+            return new Promise(function(resolve, reject) {
+                var isDataUrl = location.substr(0, 5) === 'data:';
+                if (this.sourceCache[location]) {
+                    resolve(this.sourceCache[location]);
+                } else if (opts.offline && !isDataUrl) {
+                    reject(new Error('Cannot make network requests in offline mode'));
+                } else {
+                    if (isDataUrl) {
+                        // data URLs can have parameters.
+                        // see http://tools.ietf.org/html/rfc2397
+                        var supportedEncodingRegexp =
+                            /^data:application\/json;([\w=:"-]+;)*base64,/;
+                        var match = location.match(supportedEncodingRegexp);
+                        if (match) {
+                            var sourceMapStart = match[0].length;
+                            var encodedSource = location.substr(sourceMapStart);
+                            var source = this._atob(encodedSource);
+                            this.sourceCache[location] = source;
+                            resolve(source);
+                        } else {
+                            reject(new Error('The encoding of the inline sourcemap is not supported'));
+                        }
+                    } else {
+                        var xhrPromise = this.ajax(location, {method: 'get'});
+                        // Cache the Promise to prevent duplicate in-flight requests
+                        this.sourceCache[location] = xhrPromise;
+                        xhrPromise.then(resolve, reject);
+                    }
+                }
+            }.bind(this));
+        };
+
+        /**
+         * Creating SourceMapConsumers is expensive, so this wraps the creation of a
+         * SourceMapConsumer in a per-instance cache.
+         *
+         * @param {String} sourceMappingURL = URL to fetch source map from
+         * @param {String} defaultSourceRoot = Default source root for source map if undefined
+         * @returns {Promise} that resolves a SourceMapConsumer
+         */
+        this._getSourceMapConsumer = function _getSourceMapConsumer(sourceMappingURL, defaultSourceRoot) {
+            return new Promise(function(resolve, reject) {
+                if (this.sourceMapConsumerCache[sourceMappingURL]) {
+                    resolve(this.sourceMapConsumerCache[sourceMappingURL]);
+                } else {
+                    var sourceMapConsumerPromise = new Promise(function(resolve, reject) {
+                        return this._get(sourceMappingURL).then(function(sourceMapSource) {
+                            if (typeof sourceMapSource === 'string') {
+                                sourceMapSource = _parseJson(sourceMapSource.replace(/^\)\]\}'/, ''));
+                            }
+                            if (typeof sourceMapSource.sourceRoot === 'undefined') {
+                                sourceMapSource.sourceRoot = defaultSourceRoot;
+                            }
+
+                            resolve(new SourceMap.SourceMapConsumer(sourceMapSource));
+                        }, reject);
+                    }.bind(this));
+                    this.sourceMapConsumerCache[sourceMappingURL] = sourceMapConsumerPromise;
+                    resolve(sourceMapConsumerPromise);
+                }
+            }.bind(this));
+        };
+
+        /**
+         * Given a StackFrame, enhance function name and use source maps for a
+         * better StackFrame.
+         *
+         * @param {StackFrame} stackframe object
+         * @returns {Promise} that resolves with with source-mapped StackFrame
+         */
+        this.pinpoint = function StackTraceGPS$$pinpoint(stackframe) {
+            return new Promise(function(resolve, reject) {
+                this.getMappedLocation(stackframe).then(function(mappedStackFrame) {
+                    function resolveMappedStackFrame() {
+                        resolve(mappedStackFrame);
+                    }
+
+                    this.findFunctionName(mappedStackFrame)
+                        .then(resolve, resolveMappedStackFrame)
+                        ['catch'](resolveMappedStackFrame);
+                }.bind(this), reject);
+            }.bind(this));
+        };
+
+        /**
+         * Given a StackFrame, guess function name from location information.
+         *
+         * @param {StackFrame} stackframe
+         * @returns {Promise} that resolves with enhanced StackFrame.
+         */
+        this.findFunctionName = function StackTraceGPS$$findFunctionName(stackframe) {
+            return new Promise(function(resolve, reject) {
+                _ensureStackFrameIsLegit(stackframe);
+                this._get(stackframe.fileName).then(function getSourceCallback(source) {
+                    var lineNumber = stackframe.lineNumber;
+                    var columnNumber = stackframe.columnNumber;
+                    var guessedFunctionName = _findFunctionName(source, lineNumber, columnNumber);
+                    // Only replace functionName if we found something
+                    if (guessedFunctionName) {
+                        resolve(new StackFrame({
+                            functionName: guessedFunctionName,
+                            args: stackframe.args,
+                            fileName: stackframe.fileName,
+                            lineNumber: lineNumber,
+                            columnNumber: columnNumber
+                        }));
+                    } else {
+                        resolve(stackframe);
+                    }
+                }, reject)['catch'](reject);
+            }.bind(this));
+        };
+
+        /**
+         * Given a StackFrame, seek source-mapped location and return new enhanced StackFrame.
+         *
+         * @param {StackFrame} stackframe
+         * @returns {Promise} that resolves with enhanced StackFrame.
+         */
+        this.getMappedLocation = function StackTraceGPS$$getMappedLocation(stackframe) {
+            return new Promise(function(resolve, reject) {
+                _ensureSupportedEnvironment();
+                _ensureStackFrameIsLegit(stackframe);
+
+                var sourceCache = this.sourceCache;
+                var fileName = stackframe.fileName;
+                this._get(fileName).then(function(source) {
+                    var sourceMappingURL = _findSourceMappingURL(source);
+                    var isDataUrl = sourceMappingURL.substr(0, 5) === 'data:';
+                    var defaultSourceRoot = fileName.substring(0, fileName.lastIndexOf('/') + 1);
+
+                    if (sourceMappingURL[0] !== '/' && !isDataUrl && !(/^https?:\/\/|^\/\//i).test(sourceMappingURL)) {
+                        sourceMappingURL = defaultSourceRoot + sourceMappingURL;
+                    }
+
+                    return this._getSourceMapConsumer(sourceMappingURL, defaultSourceRoot)
+                        .then(function(sourceMapConsumer) {
+                            return _extractLocationInfoFromSourceMapSource(stackframe, sourceMapConsumer, sourceCache)
+                                .then(resolve)['catch'](function() {
+                                resolve(stackframe);
+                            });
+                        });
+                }.bind(this), reject)['catch'](reject);
+            }.bind(this));
+        };
+    };
+}));
+
+},{"source-map/lib/source-map-consumer":106,"stackframe":100}],109:[function(require,module,exports){
+(function(root, factory) {
+    'use strict';
+    // Universal Module Definition (UMD) to support AMD, CommonJS/Node.js, Rhino, and browsers.
+
+    /* istanbul ignore next */
+    if (typeof define === 'function' && define.amd) {
+        define('stacktrace', ['error-stack-parser', 'stack-generator', 'stacktrace-gps'], factory);
+    } else if (typeof exports === 'object') {
+        module.exports = factory(require('error-stack-parser'), require('stack-generator'), require('stacktrace-gps'));
+    } else {
+        root.StackTrace = factory(root.ErrorStackParser, root.StackGenerator, root.StackTraceGPS);
+    }
+}(this, function StackTrace(ErrorStackParser, StackGenerator, StackTraceGPS) {
+    var _options = {
+        filter: function(stackframe) {
+            // Filter out stackframes for this library by default
+            return (stackframe.functionName || '').indexOf('StackTrace$$') === -1 &&
+                (stackframe.functionName || '').indexOf('ErrorStackParser$$') === -1 &&
+                (stackframe.functionName || '').indexOf('StackTraceGPS$$') === -1 &&
+                (stackframe.functionName || '').indexOf('StackGenerator$$') === -1;
+        },
+        sourceCache: {}
+    };
+
+    var _generateError = function StackTrace$$GenerateError() {
+        try {
+            // Error must be thrown to get stack in IE
+            throw new Error();
+        } catch (err) {
+            return err;
+        }
+    };
+
+    /**
+     * Merge 2 given Objects. If a conflict occurs the second object wins.
+     * Does not do deep merges.
+     *
+     * @param {Object} first base object
+     * @param {Object} second overrides
+     * @returns {Object} merged first and second
+     * @private
+     */
+    function _merge(first, second) {
+        var target = {};
+
+        [first, second].forEach(function(obj) {
+            for (var prop in obj) {
+                if (obj.hasOwnProperty(prop)) {
+                    target[prop] = obj[prop];
+                }
+            }
+            return target;
+        });
+
+        return target;
+    }
+
+    function _isShapedLikeParsableError(err) {
+        return err.stack || err['opera#sourceloc'];
+    }
+
+    function _filtered(stackframes, filter) {
+        if (typeof filter === 'function') {
+            return stackframes.filter(filter);
+        }
+        return stackframes;
+    }
+
+    return {
+        /**
+         * Get a backtrace from invocation point.
+         *
+         * @param {Object} opts
+         * @returns {Array} of StackFrame
+         */
+        get: function StackTrace$$get(opts) {
+            var err = _generateError();
+            return _isShapedLikeParsableError(err) ? this.fromError(err, opts) : this.generateArtificially(opts);
+        },
+
+        /**
+         * Get a backtrace from invocation point.
+         * IMPORTANT: Does not handle source maps or guess function names!
+         *
+         * @param {Object} opts
+         * @returns {Array} of StackFrame
+         */
+        getSync: function StackTrace$$getSync(opts) {
+            opts = _merge(_options, opts);
+            var err = _generateError();
+            var stack = _isShapedLikeParsableError(err) ? ErrorStackParser.parse(err) : StackGenerator.backtrace(opts);
+            return _filtered(stack, opts.filter);
+        },
+
+        /**
+         * Given an error object, parse it.
+         *
+         * @param {Error} error object
+         * @param {Object} opts
+         * @returns {Promise} for Array[StackFrame}
+         */
+        fromError: function StackTrace$$fromError(error, opts) {
+            opts = _merge(_options, opts);
+            var gps = new StackTraceGPS(opts);
+            return new Promise(function(resolve) {
+                var stackframes = _filtered(ErrorStackParser.parse(error), opts.filter);
+                resolve(Promise.all(stackframes.map(function(sf) {
+                    return new Promise(function(resolve) {
+                        function resolveOriginal() {
+                            resolve(sf);
+                        }
+
+                        gps.pinpoint(sf).then(resolve, resolveOriginal)['catch'](resolveOriginal);
+                    });
+                })));
+            }.bind(this));
+        },
+
+        /**
+         * Use StackGenerator to generate a backtrace.
+         *
+         * @param {Object} opts
+         * @returns {Promise} of Array[StackFrame]
+         */
+        generateArtificially: function StackTrace$$generateArtificially(opts) {
+            opts = _merge(_options, opts);
+            var stackFrames = StackGenerator.backtrace(opts);
+            if (typeof opts.filter === 'function') {
+                stackFrames = stackFrames.filter(opts.filter);
+            }
+            return Promise.resolve(stackFrames);
+        },
+
+        /**
+         * Given a function, wrap it such that invocations trigger a callback that
+         * is called with a stack trace.
+         *
+         * @param {Function} fn to be instrumented
+         * @param {Function} callback function to call with a stack trace on invocation
+         * @param {Function} errback optional function to call with error if unable to get stack trace.
+         * @param {Object} thisArg optional context object (e.g. window)
+         */
+        instrument: function StackTrace$$instrument(fn, callback, errback, thisArg) {
+            if (typeof fn !== 'function') {
+                throw new Error('Cannot instrument non-function object');
+            } else if (typeof fn.__stacktraceOriginalFn === 'function') {
+                // Already instrumented, return given Function
+                return fn;
+            }
+
+            var instrumented = function StackTrace$$instrumented() {
+                try {
+                    this.get().then(callback, errback)['catch'](errback);
+                    return fn.apply(thisArg || this, arguments);
+                } catch (e) {
+                    if (_isShapedLikeParsableError(e)) {
+                        this.fromError(e).then(callback, errback)['catch'](errback);
+                    }
+                    throw e;
+                }
+            }.bind(this);
+            instrumented.__stacktraceOriginalFn = fn;
+
+            return instrumented;
+        },
+
+        /**
+         * Given a function that has been instrumented,
+         * revert the function to it's original (non-instrumented) state.
+         *
+         * @param {Function} fn to de-instrument
+         */
+        deinstrument: function StackTrace$$deinstrument(fn) {
+            if (typeof fn !== 'function') {
+                throw new Error('Cannot de-instrument non-function object');
+            } else if (typeof fn.__stacktraceOriginalFn === 'function') {
+                return fn.__stacktraceOriginalFn;
+            } else {
+                // Function not instrumented, return original
+                return fn;
+            }
+        },
+
+        /**
+         * Given an error message and Array of StackFrames, serialize and POST to given URL.
+         *
+         * @param {Array} stackframes
+         * @param {String} url
+         * @param {String} errorMsg
+         * @param {Object} requestOptions
+         */
+        report: function StackTrace$$report(stackframes, url, errorMsg, requestOptions) {
+            return new Promise(function(resolve, reject) {
+                var req = new XMLHttpRequest();
+                req.onerror = reject;
+                req.onreadystatechange = function onreadystatechange() {
+                    if (req.readyState === 4) {
+                        if (req.status >= 200 && req.status < 400) {
+                            resolve(req.responseText);
+                        } else {
+                            reject(new Error('POST to ' + url + ' failed with status: ' + req.status));
+                        }
+                    }
+                };
+                req.open('post', url);
+
+                // Set request headers
+                req.setRequestHeader('Content-Type', 'application/json');
+                if (requestOptions && typeof requestOptions.headers === 'object') {
+                    var headers = requestOptions.headers;
+                    for (var header in headers) {
+                        if (headers.hasOwnProperty(header)) {
+                            req.setRequestHeader(header, headers[header]);
+                        }
+                    }
+                }
+
+                var reportPayload = {stack: stackframes};
+                if (errorMsg !== undefined && errorMsg !== null) {
+                    reportPayload.message = errorMsg;
+                }
+
+                req.send(JSON.stringify(reportPayload));
+            });
+        }
+    };
+}));
+
+},{"error-stack-parser":93,"stack-generator":99,"stacktrace-gps":108}],110:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const p_map_1 = require("p-map");
@@ -2887,6 +8919,7 @@ const React = require("react");
 const typestyle_1 = require("typestyle");
 const wasm_imagemagick_1 = require("wasm-imagemagick");
 const commandExamples_1 = require("./commandExamples");
+const executeTemplate_1 = require("./executeTemplate");
 class App extends React.Component {
     constructor() {
         super(...arguments);
@@ -2905,7 +8938,10 @@ class App extends React.Component {
             stderr: '',
             exitCode: 0,
             prettyJSON: false,
-            isImageArray: []
+            isImageArray: [],
+            finalCommand: [[]],
+            memory: getMemory(),
+            selectedExampleDescription: ''
         };
         this.styles = {
             textarea: typestyle_1.style({
@@ -2962,7 +8998,8 @@ class App extends React.Component {
                                     React.createElement("th", null, "Image"),
                                     React.createElement("th", null, "Info"))),
                         React.createElement("tbody", null, this.state.files.map((f, i) => React.createElement("tr", null,
-                            React.createElement("td", null, f.name),
+                            React.createElement("td", null,
+                                React.createElement("a", { download: f.name, target: '_blank', href: URL.createObjectURL(new Blob([f.content])) }, f.name)),
                             React.createElement("td", null,
                                 React.createElement("button", { "data-image": f.name, onClick: this.removeImage.bind(this) }, "remove")),
                             React.createElement("td", null, this.state.showImagesAndInfo && this.state.isImageArray[i] ?
@@ -2993,8 +9030,12 @@ class App extends React.Component {
                         "Pretty JSON ? ",
                         React.createElement("input", { type: 'checkbox', onChange: this.prettyJSONChange.bind(this) }))),
                 React.createElement("div", null,
+                    "Final Command:",
+                    React.createElement("textarea", { className: this.styles.textarea, disabled: true, value: JSON.stringify(this.state.finalCommand) })),
+                React.createElement("div", null,
                     "Or select one example",
-                    React.createElement("select", { disabled: this.state.files.length === 0, onChange: this.selectExampleChange.bind(this) }, commandExamples_1.commandExamples.map(t => React.createElement("option", null, t.name))))),
+                    React.createElement("select", { disabled: this.state.files.length === 0, onChange: this.selectExampleChange.bind(this) }, commandExamples_1.commandExamples.map(t => React.createElement("option", null, t.name))),
+                    React.createElement("span", null, this.state.selectedExampleDescription ? 'Description: ' + this.state.selectedExampleDescription : ''))),
             React.createElement("div", null,
                 React.createElement("button", { onClick: this.execute.bind(this) }, "Execute")),
             React.createElement("div", null,
@@ -3021,6 +9062,9 @@ class App extends React.Component {
             await this.addInputFiles([await wasm_imagemagick_1.buildInputFile(this.defaultImage)]);
         }
     }
+    componentWillUpdate() {
+        this.state.memory = getMemory();
+    }
     async prettyJSONChange(e) {
         const arr = JSON.parse(this.state.commandArray);
         const prettyJSON = e.target.checked;
@@ -3042,7 +9086,8 @@ class App extends React.Component {
     commandStringChange(e) {
         const commandArray = this.state.prettyJSON ? JSON.stringify(wasm_imagemagick_1.cliToArray(e.target.value), null, 2) : JSON.stringify(wasm_imagemagick_1.cliToArray(e.target.value));
         // TODO: validate
-        this.setState(Object.assign({}, this.state, { commandString: e.target.value, commandArray }));
+        this.state = Object.assign({}, this.state, { commandString: e.target.value, commandArray });
+        this.setState(Object.assign({}, this.state, { finalCommand: this.buildFinalCommand() }));
     }
     async addBuiltInImages() {
         if (!this.state.builtInImagesAdded) {
@@ -3051,14 +9096,15 @@ class App extends React.Component {
             this.setState(Object.assign({}, this.state, { builtInImagesAdded: true }));
         }
     }
+    buildFinalCommand() {
+        return executeTemplate_1.renderCommand({ commands: JSON.parse(this.state.commandArray), files: this.state.files });
+    }
     async execute() {
-        // replace the $$IMAGE_N with the n-image in this.state.files
-        const cmd = JSON.parse(this.state.commandArray)
-            .map(c => c.map(arg => arg.startsWith('$$IMAGE_') ?
-            (this.state.files[parseInt(arg.substring('$$IMAGE_'.length, arg.length), 10)] || { name: 'rose:' }).name :
-            arg));
+        this.state.finalCommand = this.buildFinalCommand();
+        const cmd = this.state.finalCommand;
+        console.log('Final Command: ' + JSON.stringify(cmd));
         const result = await this.props.context.execute(cmd);
-        console.log(cmd, result);
+        console.log(result);
         this.state.outputFiles = result.outputFiles;
         this.state.stderr = result.stderr.join('\n');
         this.state.stdout = result.stdout.join('\n');
@@ -3075,7 +9121,8 @@ class App extends React.Component {
         catch (error) {
             jsonError = error + '';
         }
-        this.setState(Object.assign({}, this.state, { commandString, commandArray, jsonError }));
+        this.state = Object.assign({}, this.state, { commandString, commandArray, jsonError });
+        this.setState(Object.assign({}, this.state, { finalCommand: this.buildFinalCommand() }));
     }
     async addImagesInputChanged(e) {
         const inputFiles = await wasm_imagemagick_1.getInputFilesFromHtmlInputElement(e.target);
@@ -3086,11 +9133,15 @@ class App extends React.Component {
         await this.updateImages();
     }
     async updateImages() {
-        const files = await this.props.context.getAllFiles();
+        const files = (await this.props.context.getAllFiles()); //.filter(f=>!f.ignore)
         const isImageArray = await p_map_1.default(files, wasm_imagemagick_1.isImage);
         const imgSrcs = this.state.showImagesAndInfo ? await p_map_1.default(files, (f, i) => buildFileSrc(f, isImageArray[i])) : this.state.imgSrcs;
-        const filesInfo = this.state.showImagesAndInfo ? await p_map_1.default(files, (f, i) => isImageArray[i] ? wasm_imagemagick_1.extractInfo(f) : undefined) : this.state.filesInfo;
-        const outputFileSrcs = await p_map_1.default(this.state.outputFiles, (f, i) => buildFileSrc(f));
+        const filesInfo = this.state.showImagesAndInfo ? await p_map_1.default(files, (f, i) => {
+            if (isImageArray[i] && wasm_imagemagick_1.knownSupportedWriteOnlyImageFormats.indexOf(wasm_imagemagick_1.getFileNameExtension(f.name)) === -1) {
+                return wasm_imagemagick_1.extractInfo(f);
+            }
+        }) : this.state.filesInfo;
+        const outputFileSrcs = await p_map_1.default(this.state.outputFiles.filter(f => !f.ignore), f => buildFileSrc(f));
         this.setState(Object.assign({}, this.state, { files, imgSrcs, outputFileSrcs, filesInfo, isImageArray }));
     }
     async showImagesAndInfoChange(e) {
@@ -3100,8 +9151,9 @@ class App extends React.Component {
     async selectExampleChange(e) {
         const example = commandExamples_1.commandExamples[e.currentTarget.selectedIndex];
         const command = await this.commandExampleAsCommand(example);
-        const commandString = typeof example.command === 'string' ? example.command : wasm_imagemagick_1.arrayToCli(command);
-        this.setState(Object.assign({}, this.state, { commandArray: JSON.stringify(command), commandString }));
+        this.state.commandString = typeof example.command === 'string' ? example.command : wasm_imagemagick_1.arrayToCli(command);
+        this.state.commandArray = JSON.stringify(command);
+        this.setState(Object.assign({}, this.state, { finalCommand: this.buildFinalCommand(), selectedExampleDescription: example.description }));
     }
     async commandExampleAsCommand(example) {
         const c = example.command;
@@ -3118,17 +9170,50 @@ async function buildFileSrc(file, isImage_) {
         return await wasm_imagemagick_1.readFileAsText(file);
     }
 }
+function getMemory() {
+    // return ((performance as any).memory.usedJSHeapSize) /(performance as any).memory.totalJSHeapSize
+    return Math.round((performance.memory.usedJSHeapSize) * 100 / performance.memory.totalJSHeapSize);
+}
 
-},{"./commandExamples":85,"p-map":204,"react":213,"typestyle":220,"wasm-imagemagick":4}],85:[function(require,module,exports){
+},{"./commandExamples":111,"./executeTemplate":112,"p-map":231,"react":241,"typestyle":248,"wasm-imagemagick":11}],111:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const wasm_imagemagick_1 = require("wasm-imagemagick");
 const imagemagick_browser_1 = require("imagemagick-browser");
+var ExampleTag;
+(function (ExampleTag) {
+    ExampleTag[ExampleTag["animation"] = 0] = "animation";
+    ExampleTag[ExampleTag["info"] = 1] = "info";
+    ExampleTag[ExampleTag["drawing"] = 2] = "drawing";
+    ExampleTag[ExampleTag["gradient"] = 3] = "gradient";
+    ExampleTag[ExampleTag["morph"] = 4] = "morph";
+    ExampleTag[ExampleTag["color"] = 5] = "color";
+    ExampleTag[ExampleTag["append"] = 6] = "append";
+    ExampleTag[ExampleTag["format"] = 7] = "format";
+    ExampleTag[ExampleTag["distort"] = 8] = "distort";
+    ExampleTag[ExampleTag["text"] = 9] = "text";
+    ExampleTag[ExampleTag["virtualCommand"] = 10] = "virtualCommand";
+})(ExampleTag = exports.ExampleTag || (exports.ExampleTag = {}));
 exports.commandExamples = [
     {
         name: 'identify simple',
         description: `runs identify program to print to stdout image info`,
         command: `identify rose:`.trim(),
+        tags: [ExampleTag.info],
+    },
+    {
+        name: 'text spiral',
+        description: `create text in spiral shape using helvetica ttf font`,
+        command: `# Heads up: we first build the input file of the font 
+\`buildFile helvetica.ttf\`
+
+# and then use it explicitly referencing it by file name:
+convert -font helvetica.ttf -pointsize 132 -background lightblue \\
+  -fill navy  'label:Sebastian Gurin IM Examples in the browser' \\
+  -rotate 12 -virtual-pixel background -distort Arc 270 \\
+  -trim -bordercolor lightblue -border 5x5  \`uniqueName\`.jpg
+  `,
+        tags: [ExampleTag.text, ExampleTag.virtualCommand],
     },
     {
         name: '-print all image info',
@@ -3140,29 +9225,476 @@ convert $$IMAGE_0 \\
   -print '\\n__Options__\\n\\n%[option:*]\\n' \\
 info:
 `.trim(),
+        tags: [ExampleTag.info],
+    },
+    {
+        name: 'animate_granularity',
+        description: `https://imagemagick.org/Usage/canvas/#granularity`,
+        tags: [ExampleTag.animation, ExampleTag.gradient],
+        command: `
+# Generate initial random image (also  granularity=0 image
+convert -size 150x150 xc: +noise random \\
+  # Ensure final image is 'tilable' makes results better too..
+  -virtual-pixel tile \\
+  # to speed things up - lets limit operaqtions to just the 'G' channel.
+  -channel G \\
+  # generate a sequence of images with varying granularity
+  \( -clone 0 -blur 0x0.5 \) \( -clone 0 -blur 0x0.65 \) \( -clone 0 -blur 0x0.845 \) \( -clone 0 -blur 0x1.0985 \) \( -clone 0 -blur 0x1.42805 \) \( -clone 0 -blur 0x1.85647 \) \( -clone 0 -blur 0x2.41341 \) \( -clone 0 -blur 0x3.13743 \) \( -clone 0 -blur 0x4.07866 \) \( -clone 0 -blur 0x5.30226 \) \( -clone 0 -blur 0x6.89294 \) \( -clone 0 -blur 0x8.96082 \) \( -clone 0 -blur 0x11.6491 \) \( -clone 0 -blur 0x15.1438 \) \( -clone 0 -blur 0x19.6869 \) \( -clone 0 -blur 0x25.593 \) \\
+  # normalize and separate a grayscale imag
+  -normalize -separate +channel \\
+  # separate black and white granules in equal divisions of black,gray,white
+  -ordered-dither threshold,3 \\
+  # Set intermedite frame animation delay and infinite loop cycle
+  -set delay 12 \\
+  # give a longer pause for the first image
+  \( -clone 0 -set delay 50 \) -swap 0 +delete \\
+  # give a longer pause for the last image
+  \( +clone -set delay 50 \) +swap +delete \\
+  # make it a patrol cycle (see Animation Modifications)
+  \( -clone -2-1 \) \\
+  # final image save
+  -loop 0 animated_granularity.gif
+`.trim(),
     },
     {
         name: 'extract pixel color',
-        description: `extract pixel color at 0,0 and save it to info.txt file`,
-        command: `convert logo: -format '%[pixel:p{0,0}]' info:info.txt  `.trim(),
+        tags: [ExampleTag.info, ExampleTag.color],
+        description: `extract pixel color at 0,0 and use command substitution to paint a rectangle with that color`,
+        command: `
+convert -size 100x60 xc:skyblue \\
+  -fill \`convert logo: -format '%[pixel:p{0,0}]' info:\` -stroke black \\
+  -draw 'rectangle 20,10 80,50' draw_rect2.gif`.trim(),
     },
     {
         name: 'extract image information',
+        tags: [ExampleTag.info],
         description: `extract image information in json format and store it in output file roseinfo.json`,
-        command: `convert rose: roseInfo.json  `.trim(),
+        command: `convert rose: $$UNIQUE_NAME.json  `.trim(),
+    },
+    {
+        name: 'pulsing animation',
+        description: `generates a radial-gradient image, which is then cloned and adjusted to create a red to brighter red-orange pulse. This is then duplicated to create a reversed Patrol Cycle before creating a 30 second, looped `,
+        command: `
+  convert -size 101x101 radial-gradient: \\
+    \( -clone 0 -level 00,100% +level-colors ,#F00 \) \\
+    \( -clone 0 -level 10,100% +level-colors ,#F12 \) \\
+    \( -clone 0 -level 20,100% +level-colors ,#F24 \) \\
+    \( -clone 0 -level 30,100% +level-colors ,#F36 \) \\
+    \( -clone 0 -level 40,100% +level-colors ,#F46 \) \\
+    -delete 0  -duplicate 1,-2-1 -set delay 1x30 -loop 0 $$UNIQUE_NAME.gif
+    `.trim(),
+        tags: [ExampleTag.animation]
+    },
+    {
+        name: 'color wheels',
+        description: `https://imagemagick.org/Usage/color_basics/`,
+        tags: [ExampleTag.gradient, ExampleTag.color],
+        command: `
+convert -size 100x300 gradient: -rotate 90 \\
+    -distort Arc '360 -90.1 50' +repage \\
+    -gravity center -crop 100x100+0+0 +repage  angular.png
+convert -size 100x100 xc:white                     solid.png
+convert -size 100x100 radial-gradient: -negate     radial.png
+
+convert angular.png solid.png radial.png \\
+    -combine -set colorspace HSL \\
+    -colorspace sRGB colorwheel_HSL.png
+convert angular.png solid.png radial.png \\
+    -combine -set colorspace HSB \\
+    -colorspace sRGB colorwheel_HSB.png
+convert angular.png solid.png radial.png \\
+    -combine -set colorspace HCL \\
+    -colorspace sRGB colorwheel_HCL.png
+convert angular.png solid.png radial.png \\
+    -combine -set colorspace HCLp \\
+    -colorspace sRGB colorwheel_HCLp.png
+
+convert -size 100x100 xc:black \\
+    -fill white  -draw 'circle 49.5,49.5 40,4' \\
+    -fill black  -draw 'circle 49.5,49.5 40,30' \\
+    -alpha copy -channel A -morphology dilate diamond anulus.png
+convert angular.png -size 100x100 xc:white xc:gray50 \\
+    -combine -set colorspace HSL -colorspace RGB \\
+    anulus.png -alpha off -compose Multiply -composite \\
+    anulus.png -alpha on  -compose DstIn -composite \\
+    -colorspace sRGB hues_HSL.png
+
+convert angular.png -size 100x100 xc:white xc:gray50 \\
+    -combine -set colorspace HCL -colorspace RGB \\
+    anulus.png -alpha off -compose Multiply -composite \\
+    anulus.png -alpha on  -compose DstIn -composite \\
+    -colorspace sRGB hues_HCL.png
+
+convert radial.png solid.png angular.png \\
+    -combine -set colorspace LCHab \\
+    -colorspace sRGB colorwheel_LCHab.png
+convert radial.png solid.png angular.png \\
+    -combine -set colorspace LCHuv \\
+    -colorspace sRGB colorwheel_LCHuv.png
+
+
+    `.trim(),
+    },
+    {
+        name: 'warping local region',
+        description: `https://imagemagick.org/Usage/masking/#region_warping`,
+        command: `
+    convert -size 600x70 xc:darkred \\
+    -fill white -draw 'roundrectangle 5,5  595,65 5,5' \\
+    -fill black -draw 'rectangle 5,25 595,31' \\
+    -fill red -draw 'rectangle 5,39 595,45' \\
+    lines.gif
+  convert lines.gif \\
+    -region 90x70+10+0    -swirl  400  \\
+    -region 90x70+100+0   -swirl  400 \\
+    -region 90x70+190+0   -swirl -400 \\
+    -region 120x70+280+0  -implode 1.5 \\
+    -region 100x70+380+0  -implode -7  \\
+    -region 101x70+480+0  -wave 10x50 -crop 0x70+0+10! \\
+    +region lines_regions.gif
+    `.trim(),
+        tags: [ExampleTag.drawing]
+    },
+    {
+        name: 'remove background color',
+        description: `https://imagemagick.org/Usage/masking/#difference`,
+        command: `
+    convert $$IMAGE_0 \( +clone -fx 'p{0,0}' \) \\
+    -compose Difference  -composite  \\
+    -modulate 100,0  -alpha off  difference.png
+convert difference.png  -threshold 15%  boolean_mask.png
+convert $$IMAGE_0  boolean_mask.png \\
+    -alpha off -compose CopyOpacity -composite \\
+    differenceRemoveBackground.png
+    `.trim(),
     },
     {
         name: 'simple append',
         description: `simple append+ command that joins two images`,
         command: `
 convert -size 100x100 xc:red \\
+  $$ALLIMAGES \\
   \( rose: -rotate -90 \) \\
-  +append output.png
+  +append $$UNIQUE_NAME.png
+  `.trim(),
+        tags: [ExampleTag.append]
+    },
+    {
+        name: 'write pdf',
+        description: `append a couple of images and then all images and output a pdf`,
+        tags: [ExampleTag.format],
+        command: `
+montage \\
+  null: \\
+  \( rose: -rotate -90 -resize 66% \) \\
+  null: \\
+  \( logo: -rotate -90 -resize 66% \) \\
+  $$ALLIMAGES \\
+  -page A4 -tile 2x3 -geometry +10+10 -shadow -frame 8   \\
+  $$UNIQUE_NAME.pdf
+  `.trim(),
+    },
+    {
+        name: 'montage polaroid',
+        tags: [ExampleTag.append],
+        description: `https://www.imagemagick.org/Usage/montage/#overlap`,
+        command: `
+montage -size 400x400 null: $$ALLIMAGES null: \\
+  -auto-orient  -thumbnail 200x200 \\
+  -bordercolor Lavender -background black +polaroid -resize 30% \\
+  -gravity center -background none -extent 80x80 \\
+  -background SkyBlue -geometry -10+2  -tile x1  polaroid_overlap.jpg
+  `.trim(),
+    },
+    {
+        name: 'drawing tests 2',
+        description: `https://www.imagemagick.org/Usage/scripts/generate_test`,
+        tags: [ExampleTag.drawing],
+        command: `
+convert -size 100x150 gradient: -rotate 90 \\
+  -sigmoidal-contrast 7x50% test_gradient.png
+
+# Create a semi-transparent rectangle of the gradient and flop it left-right
+convert -size 150x100 xc:black \\
+  -draw 'fill grey50  rectangle  8,8  142,92' +matte \\
+  test_gradient.png +swap -compose CopyOpacity -composite \\
+  -flop test_bgnd.png
+
+# Draw two overlaping circles and fill then with same (non-flopped) gradient.
+convert -size 150x100 xc:black \\
+  -draw 'fill white circle    40,50  40,12' \\
+  -draw 'fill white circle   110,50 110,12' +matte \\
+  test_gradient.png +swap -compose CopyOpacity -composite \\
+  test_fgnd.png
+
+# Create a rainbow gradient
+convert -size 12x100 xc:Lime -colorspace HSB \\
+    gradient:gray66 -compose CopyRed -composite \\
+    -colorspace sRGB -rotate 90  -compose Over \\
+    -bordercolor black -border 0x1 test_hue.png
+
+# Overlay the images and add some extra colors to result.
+convert test_bgnd.png  test_fgnd.png  -composite \\
+    -draw 'fill red   circle    25,80  25,98' \\
+    -draw 'fill green circle    75,80  75,98' \\
+    -draw 'fill blue  circle   125,80 125,98' \\
+    test_hue.png -geometry +25+80 -composite \\
+    test.png
+
+convert test.png \\
+    \( -size 150x100 tile:pattern:hexagons \\
+       +clone +swap -compose overlay -composite \) \\
+    -compose SrcIn -composite  tint_overlay_pattern.png
+         `.trim(),
+    },
+    {
+        name: 'morph resize',
+        description: `https://www.imagemagick.org/Usage/anim_mods/#morph_resize`,
+        tags: [ExampleTag.morph, ExampleTag.animation],
+        command: `
+    convert rose: $$IMAGE_0 -morph 10 \\
+    -layers TrimBounds -set dispose previous -coalesce \\
+    -background black -alpha remove \\
+    -set delay '%[fx:(t>0&&t<n-1)?10:60]' \\
+    -duplicate 1,-2-1  -loop 0  morph_resize.gif
+    
+         `.trim(),
+    },
+    {
+        name: 'morph color',
+        description: `https://www.imagemagick.org/Usage/anim_mods/#morph_color`,
+        tags: [ExampleTag.morph, ExampleTag.animation],
+        command: `
+    convert rose: $$IMAGE_0  -morph 5 \\
+    -set delay '%[fx:(t>0&&t<n-1)?10:240]' \\
+    -duplicate 1,-2-1    rose_flip_anim.gif
+    
+         `.trim(),
+    },
+    {
+        name: 'morph tile',
+        description: `https://www.imagemagick.org/Usage/anim_mods/#morph_color`,
+        tags: [ExampleTag.morph, ExampleTag.animation],
+        command: `
+ convert rose: $$IMAGE_0 \\
+    \( -clone 0 -crop 3x0 \) \\
+    -set delay 10 -loop 0  wipe.gif
+
+    convert -size 100x60 -delay 100 \\
+    gradient:green-yellow gradient:blue-purple \\
+    gradient:orange-white gradient:red-black \\
+    -write mpr:stack -delete 0--1 \\
+    \\
+    mpr:stack'[0]' \( mpr:stack'[1]' -set delay 5 -crop 4x0 \) \\
+    mpr:stack'[1]' \( mpr:stack'[2]' -set delay 5 -crop 0x4 \) \\
+    mpr:stack'[2]' \( mpr:stack'[3]' -set delay 5 -crop 4x0 -reverse \) \\
+    mpr:stack'[3]' \( mpr:stack'[0]' -set delay 5 -crop 0x4 -reverse \) \\
+    -loop 0 wipe_all.gif
+    
+         `.trim(),
+    },
+    {
+        name: 'glitter_tiles tile',
+        description: `https://www.imagemagick.org/Usage/anim_mods/#glitter_tiles`,
+        tags: [ExampleTag.morph, ExampleTag.animation],
+        command: `
+    convert -size 600x600 xc: +noise Random -separate \\
+    null: \( xc: +noise Random -separate -threshold 30% -negate \) \\
+        -compose CopyOpacity -layers composite \\
+    -set dispose background -set delay 20 -loop 0   glitter_overlay.gif
+  
+    convert glitter_overlay.gif \\
+    -compose Screen -bordercolor blue -border 0x0  glitter_plasma.gif
+  
+            convert glitter_plasma.gif -virtual-pixel tile \\
+            -set option:distort:viewport 680x680 -distort SRT 0 \\
+            glitter_plasma_tiled.gif
+  
+            convert logo: -matte -fuzz 33% -transparent blue logo_holed.gif
+            
+            convert logo_holed.gif null: glitter_plasma_tiled.gif \\
+            -compose DstOver -layers composite \\
+            -loop 0 -layers Optimize logo_glittered.gif
+    
+         `.trim(),
+    },
+    {
+        name: 'animated distorts',
+        description: `https://www.imagemagick.org/Usage/anim_mods/#distort`,
+        tags: [ExampleTag.morph, ExampleTag.animation],
+        command: `
+
+    convert $$IMAGE_0  -duplicate 29  -virtual-pixel tile \\
+    -distort SRT '0,0 1, 0, %[fx:w*t/n],%[fx:h*t/n]' \\
+    -set delay 10 -loop 0     rose_diagonal_roll.gif
+
+  convert $$IMAGE_0  -duplicate 29  -virtual-pixel Gray \\
+    -distort SRT '%[fx:360*t/n]' \\
+    -set delay '%[fx:t==0?240:10]' -loop 0     rose_rotate.gif
+  
+    
+         `.trim(),
+    },
+    {
+        name: 'gradient_complex_hues',
+        description: `https://www.imagemagick.org/Usage/canvas/#gradient_complex_hues`,
+        tags: [ExampleTag.drawing, ExampleTag.gradient],
+        command: `
+  convert -size 100x100 xc: +size xc:red xc:blue xc:lime -colorspace HSB \\
+  -fx 'ar=1/max(1,  (i-50)*(i-50)+(j-10)*(j-10)  ); br=1/max(1,  (i-10)*(i-10)+(j-70)*(j-70)  );  cr=1/max(1,  (i-90)*(i-90)+(j-90)*(j-90)  );  ( u[1]*ar + u[2]*br + u[3]*cr )/( ar+br+cr )' \\
+  -colorspace sRGB   gradient_shepards_HSB.gif
+
+    convert -size 100x100 xc: +size xc:red xc:blue xc:lime \\
+    -colorspace HSB -channel R \\
+    -fx 'aa=u[1]*2*pi; ba=u[2]*2*pi; ca=u[3]*2*pi; ar=1/max(1, hypot(i-50,j-10) ); br=1/max(1, hypot(i-10,j-70) ); cr=1/max(1, hypot(i-90,j-90) );nr=ar+br+cr;   mod(atan2( ( sin(aa)*ar + sin(ba)*br + sin(ca)*cr )/nr,  ( cos(aa)*ar + cos(ba)*br + cos(ca)*cr )/nr )/(2*pi)+1, 1)' \\
+    -separate -background white -combine +channel \\
+    -set colorspace HSB -colorspace sRGB  gradient_circular_mean_hue.gif
+
+    convert -size 100x100 xc: -colorspace RGB \\
+    -sparse-color  Inverse '50,10 red  10,70 blue  90,90 lime' \\
+     -colorspace sRGB gradient_inverse_RGB.png
+
+  convert gradient_inverse_RGB.png -colorspace HSB \\
+    -channel GB -evaluate set 100% +channel \\
+    -colorspace sRGB gradient_inverse_RGB_Hue.gif
+         `.trim(),
+    },
+    {
+        name: 'gradient baricentric',
+        description: `https://www.imagemagick.org/Usage/canvas/#barycentric`,
+        tags: [ExampleTag.drawing, ExampleTag.gradient],
+        command: `
+    convert -size 100x100 xc: -colorspace RGB \\
+    -sparse-color  Barycentric '30,10 red   10,80 blue   90,90 lime' \\
+    -colorspace sRGB  -fill white -stroke black \\
+    -draw 'circle 30,10 30,12  circle 10,80 10,82  circle 90,90 90,92' \\
+    sparse_barycentric1.png
+
+    convert -size 100x100 xc: -colorspace RGB \\
+    -sparse-color Barycentric '30,10 red   10,80 blue   90,90 lime' \\
+    -colorspace sRGB  -fill white -stroke black \\
+    \( -size 100x100 xc:black -draw 'polygon 30,10  10,80  90,90' \) \\
+    +matte -compose CopyOpacity -composite \\
+    -draw 'circle 30,10 30,12  circle 10,80 10,82  circle 90,90 90,92' \\
+    sparse_bary_triangle2.png
+
+    convert -size 100x100 xc:none -draw 'polygon 30,10  10,80  90,90' \\
+    -colorspace RGB \\
+    -sparse-color Barycentric '30,10 red   10,80 blue   90,90 lime' \\
+    -colorspace sRGB   sparse_bary_triangle_3.png
+         `.trim(),
+    },
+    {
+        name: 'gradient shepards_power',
+        description: `https://www.imagemagick.org/Usage/canvas/#shepards_power`,
+        tags: [ExampleTag.drawing, ExampleTag.gradient],
+        command: `
+
+    convert -size 100x100 xc: -colorspace RGB -define shepards:power=0.5 \\
+    -sparse-color Shepards '30,10 red  10,80 blue  70,60 lime  80,20 yellow' \\
+    -colorspace sRGB -fill white -stroke black \\
+    -draw 'circle 30,10 30,12  circle 10,80 10,82' \\
+    -draw 'circle 70,60 70,62  circle 80,20 80,22' \\
+    sparse_shepards_pow0.5.png
+ convert -size 100x100 xc: -colorspace RGB -define shepards:power=1 \\
+    -sparse-color Shepards '30,10 red  10,80 blue  70,60 lime  80,20 yellow' \\
+    -colorspace sRGB -fill white -stroke black \\
+    -draw 'circle 30,10 30,12  circle 10,80 10,82' \\
+    -draw 'circle 70,60 70,62  circle 80,20 80,22' \\
+    sparse_shepards_pow1.png
+ convert -size 100x100 xc: -colorspace RGB -define shepards:power=2 \\
+    -sparse-color Shepards '30,10 red  10,80 blue  70,60 lime  80,20 yellow' \\
+    -colorspace sRGB -fill white -stroke black \\
+    -draw 'circle 30,10 30,12  circle 10,80 10,82' \\
+    -draw 'circle 70,60 70,62  circle 80,20 80,22' \\
+    sparse_shepards_pow2.png
+ convert -size 100x100 xc: -colorspace RGB -define shepards:power=3 \\
+    -sparse-color Shepards '30,10 red  10,80 blue  70,60 lime  80,20 yellow' \\
+    -colorspace sRGB -fill white -stroke black \\
+    -draw 'circle 30,10 30,12  circle 10,80 10,82' \\
+    -draw 'circle 70,60 70,62  circle 80,20 80,22' \\
+    sparse_shepards_pow3.png
+convert -size 100x100 xc: -colorspace RGB -define shepards:power=8 \\
+    -sparse-color Shepards '30,10 red  10,80 blue  70,60 lime  80,20 yellow' \\
+    -colorspace sRGB -fill white -stroke black \\
+    -draw 'circle 30,10 30,12  circle 10,80 10,82' \\
+    -draw 'circle 70,60 70,62  circle 80,20 80,22' \\
+    sparse_shepards_pow8.png
+         `.trim(),
+    },
+    {
+        name: 'histogram',
+        description: ``,
+        tags: [ExampleTag.info, ExampleTag.color],
+        command: `
+    convert $$IMAGE_0 histogram:histogram.gi
+
+         `.trim(),
+    },
+    {
+        name: 'gradient sparse_fill',
+        description: `https://www.imagemagick.org/Usage/canvas/#sparse_fill`,
+        tags: [ExampleTag.drawing, ExampleTag.gradient],
+        command: `
+    convert -size 100x100 xc:none +antialias -fill none -strokewidth 0.5 \\
+    -stroke Gold        -draw 'path "M 20,70  A 1,1 0 0,1 80,50"' \\
+    -stroke DodgerBlue  -draw 'line 30,10  50,80' \\
+    -stroke Red         -draw 'circle 80,60  82,60' \\
+    sparse_source.gif
+
+    convert sparse_source.gif \\
+    \( +clone -resize 50% \) \\
+    \( +clone -resize 50% \) \\
+    \( +clone -resize 50% \) \\
+    \( +clone -resize 50% \) \\
+    \( +clone -resize 50% \) \\
+    \( +clone -resize 50% \) \\
+    \( +clone -resize 50% \) \\
+    -layers RemoveDups -filter Gaussian -resize 100x100! -reverse \\
+    -background None -flatten -alpha off    sparse_blur_pyramid.png
+
+         `.trim(),
+    },
+    {
+        name: 'Hourglass Distortion Map',
+        description: `https://imagemagick.org/Usage/mapping/#hourglass`,
+        tags: [ExampleTag.distort],
+        command: `
+convert -size 100x100 xc:  -channel G \\
+    -fx 'sc=.15; (i/w-.5)/(1+sc*cos(j*pi*2/h)-sc)+.5' \\
+    -separate  map_hourglass.png
+
+convert $$IMAGE_0 -alpha set  -virtual-pixel transparent -channel RGBA \\
+    map_hourglass.png  -fx 'p{ v.p{i*v.w/w,j*v.h/h}.g*w, j}' \\
+    distort_hourglass2.png
+
+  `.trim(),
+    },
+    {
+        name: 'Spherical Distortion Map',
+        description: `https://imagemagick.org/Usage/mapping/#spherical`,
+        tags: [ExampleTag.distort],
+        command: `
+convert -size 100x100 xc:  -channel R \\
+    -fx 'yy=(j+.5)/h-.5; (i/w-.5)/(sqrt(1-4*yy^2))+.5' \\
+    -separate  +channel     sphere_lut.png
+convert -size 100x100 xc:black -fill white \\
+    -draw 'circle 49.5,49.5 49.5,0'    sphere_mask.png
+convert sphere_mask.png \\
+    \( +clone -blur 0x20 -shade 110x21.7 -contrast-stretch 0% \\
+       +sigmoidal-contrast 6x50% -fill grey50 -colorize 10%  \) \\
+    -composite sphere_overlay.png
+convert $$IMAGE_0 -resize 100x100!   sphere_lut.png   -fx 'p{ v*w, j }' \\
+    sphere_overlay.png   -compose HardLight  -composite \\
+    sphere_mask.png -alpha off -compose CopyOpacity -composite \\
+    sphere_lena.png
+
   `.trim(),
     },
     {
         name: 'stars spiral and inwards',
         description: `By Polar Distorting the image we can make the comets flying or spiraling into a point!`,
+        tags: [ExampleTag.drawing],
         command: `
 convert -size 250x100 xc: +noise Random -channel R -threshold .4% \\
   -negate -channel RG -separate +channel \\
@@ -3180,106 +9712,73 @@ convert -size 250x100 xc: +noise Random -channel R -threshold .4% \\
     },
     {
         name: 'falling stars',
-        description: `use "-motion-blur" to create a field of falling stars`,
+        description: `use '-motion-blur' to create a field of falling stars`,
         command: `
 convert -size 100x100 xc: +noise Random -channel R -threshold .4% \\
     -negate -channel RG -separate +channel \\
     \( +clone \) -compose multiply -flatten \\
     -virtual-pixel tile -blur 0x.4 -motion-blur 0x20+45 -normalize \\
-    star_fall.gif`.trim(),
-    },
-    {
-        name: 'simple stars',
-        description: `A random noise image is used to thin itself out generate a speckle pattern. Then some effects and colors`,
-        command: `
+    star_fall.gif
+ 
 convert -size 100x100 xc: +noise Random -channel R -threshold 5% \\
-  -negate -channel RG -separate +channel \\
-  -compose multiply -composite   speckles.gif
+-negate -channel RG -separate +channel \\
+-compose multiply -composite   speckles.gif
 
 convert -size 100x100 xc: +noise Random -channel R -threshold 1% \\
-  -negate -channel RG -separate +channel \\
-  \( +clone \) -compose multiply -flatten \\
-  -virtual-pixel tile -blur 0x.4 -contrast-stretch .8% \\
-  stars.gif
+-negate -channel RG -separate +channel \\
+\( +clone \) -compose multiply -flatten \\
+-virtual-pixel tile -blur 0x.4 -contrast-stretch .8% \\
+stars.gif
 
 convert -size 100x100 xc: +noise Random -channel R -threshold 1% \\
-  -negate -channel RG -separate +channel \\
-  \( xc: +noise Random \) -compose multiply -flatten \\
-  -virtual-pixel tile -blur 0x.4 -contrast-stretch .8% \\
-  stars_colored.gif
-`.trim(),
+-negate -channel RG -separate +channel \\
+\( xc: +noise Random \) -compose multiply -flatten \\
+-virtual-pixel tile -blur 0x.4 -contrast-stretch .8% \\
+stars_colored.gif
+
+    `.trim(),
     },
-    // commented - not working : 
-    {
-        name: 'star bursts',
-        description: `Here we motion blur the stars in six directions (in pairs) then merge them together to create a field of 'star bursts', such as you get in a glass lens.`,
-        command: `
-convert -size 100x100 xc: +noise Random -channel R -threshold .2% \\
-  -negate -channel RG -separate +channel \\
-  \( +clone \) -compose multiply -flatten \\
-  -virtual-pixel tile  -blur 0x.3 \\
-  \( -clone 0  -motion-blur 0x10+15  -motion-blur 0x10+195 \) \\
-  \( -clone 0  -motion-blur 0x10+75  -motion-blur 0x10+255 \) \\
-  \( -clone 0  -motion-blur 0x10-45  -motion-blur 0x10+135 \) \\
-  -compose screen -background black -flatten  -normalize \\
-    -compose multiply -layers composite \\
-    -set delay 30 -loop 0 -layers Optimize    \\
-  star_field.gif`.trim(),
-    },
+    //   // commented - not working :
+    //   {
+    //     name: 'star bursts',
+    //     description: `Here we motion blur the stars in six directions (in pairs) then merge them together to create a field of 'star bursts', such as you get in a glass lens.`,
+    //     command: `
+    // convert -size 100x100 xc: +noise Random -channel R -threshold .2% \\
+    //   -negate -channel RG -separate +channel \\
+    //   \( +clone \) -compose multiply -flatten \\
+    //   -virtual-pixel tile  -blur 0x.3 \\
+    //   \( -clone 0  -motion-blur 0x10+15  -motion-blur 0x10+195 \) \\
+    //   \( -clone 0  -motion-blur 0x10+75  -motion-blur 0x10+255 \) \\
+    //   \( -clone 0  -motion-blur 0x10-45  -motion-blur 0x10+135 \) \\
+    //   -compose screen -background black -flatten  -normalize \\
+    //     -compose multiply -layers composite \\
+    //     -set delay 30 -loop 0 -layers Optimize    \\
+    //   star_field.gif`.trim(),
+    //   },
     {
         name: 'stars animation',
         description: `By combining the above with a plasma glitter animation you can make set of stars that look like christmas decorations.`,
+        tags: [ExampleTag.animation],
         command: `
-convert -size 100x100 xc: +noise Random -separate \\
+convert -size 200x200 xc: +noise Random -separate \\
   null: \\
-    \( xc: +noise Random -separate -threshold 50% -negate \) \\
+    ( xc: +noise Random -separate -threshold 50% -negate ) \\
     -compose CopyOpacity -layers composite \\
   null: \\
-    plasma:red-firebrick plasma:red-firebrick plasma:red-firebrick \\
+    plasma:red-firebrick plasma:red-firebrick plasma:red-firebrick plasma:red-firebrick plasma:red-firebrick \\
     -compose Screen -layers composite \\
   null:  \\
-    \( xc: +noise Random -channel R -threshold .08% \\
+    ( xc: +noise Random -channel R -threshold 1% \\
       -negate -channel RG -separate +channel \\
-      \( +clone \) -compose multiply -flatten \\
-      -virtual-pixel tile  -blur 0x.4 \\
-      \( -clone 0  -motion-blur 0x15+90  -motion-blur 0x15-90 \) \\
-      \( -clone 0  -motion-blur 0x15+30  -motion-blur 0x15-150 \) \\
-      \( -clone 0  -motion-blur 0x15-30  -motion-blur 0x15+150 \) \\
-      -compose screen -background black -flatten  -normalize \) \\
+      ( +clone ) -compose multiply -flatten \\
+      -virtual-pixel tile  -blur 1x1 \\
+      ( -clone 0  -motion-blur 111x135+90  -motion-blur 110x35-90 ) \\
+      ( -clone 0  -motion-blur 10x15+30  -motion-blur 10x15-50 ) \\
+      ( -clone 0  -motion-blur 10x15-30  -motion-blur 10x15+150 ) \\
+      -compose screen -background black -flatten  -normalize ) \\
     -compose multiply -layers composite \\
-  -set delay 30 -loop 0 -layers Optimize       stars_xmas.gif
+  -set delay 30 -loop 0 -layers Optimize       $$UNIQUE_NAME.gif
 
-`.trim(),
-    },
-    {
-        name: 'radial flare',
-        description: `the width of the initial image before polar distorting, basically sets the number of rays that will be produced`,
-        command: `
-    convert -size 100x1 xc: +noise Random -channel G -separate +channel \\
-    -scale 100x100!                                +write flare_1a.png \\
-    \( -size 100x100 gradient:gray(100%) -sigmoidal-contrast 10x50% \) \\
-    -colorspace sRGB -compose hardlight -composite  +write flare_1b.png \\
-    -virtual-pixel HorizontalTileEdge -distort Polar -1 \\
-    flare_1_final.png
-`.trim(),
-    },
-    {
-        name: 'radial flare2',
-        description: `another example using multiple overlays to achieve a different looking flare. Note the technique used to generating intermediate debugging and example images showing the steps involved.`,
-        command: `
-convert -size 100x1 xc: +noise Random -channel G -separate +channel \\
-    -size 100x99 xc:black -append -motion-blur 0x35-90 \\
-    \( -size 100x50 gradient:gray(0) \\
-       -evaluate cos .5 -sigmoidal-contrast 3,100% \\
-       -size 100x50 xc:gray(0) -append \) \\
-    \( -size 1x50 xc:gray(0) \\
-       -size 1x1 xc:gray(50%) \\
-       -size 1x49 xc:gray(0) \\
-       -append -blur 0x2 -scale 100x100! \) \\
-    -scene 10 +write flare_2%x.png \\
-    -background gray(0) -compose screen -flatten +write flare_2f.png \\
-    -virtual-pixel HorizontalTileEdge -distort Polar -1 \\
-    -colorspace sRGB flare_2_final.png
 `.trim(),
     },
 ];
@@ -3292,21 +9791,79 @@ imagemagick_browser_1.sampleCommandTemplates.forEach(template => {
             const img = inputFiles[0];
             const info = await wasm_imagemagick_1.extractInfo(img);
             const context = Object.assign({}, template.defaultTemplateContext, { imageWidth: info[0].image.geometry.width, imageHeight: info[0].image.geometry.height });
-            const command = template.template(context)[0].map(s => s === '$INPUT' ? img.name : s === '$OUTPUT' ? `output${selectExampleCounter++}.png` : s);
-            return command;
+            const result = template.template(context);
+            return result.map(r => r.map(s => s === '$INPUT' ? img.name : s === '$OUTPUT' ? `output${selectExampleCounter++}.png` : s));
         },
     };
     exports.commandExamples.push(example);
 });
 
-},{"imagemagick-browser":123,"wasm-imagemagick":4}],86:[function(require,module,exports){
+},{"imagemagick-browser":150,"wasm-imagemagick":11}],112:[function(require,module,exports){
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+/*
+syntax enhancement for the demo - temporary
+*/
+const wasm_imagemagick_1 = require("wasm-imagemagick");
+exports.defaultPlaceholders = {
+    singleImagePrefix: '$$IMAGE_',
+    allImages: '$$ALLIMAGES',
+    imageWidth: '$$IMAGE_WIDTH',
+    imageHeight: '$$IMAGE_HEIGHT',
+    uniqueName: '$$UNIQUE_NAME',
+};
+function renderCommand(config) {
+    const { commands, files, placeholders = exports.defaultPlaceholders, defaultImage = files[0] } = config;
+    const { singleImagePrefix, allImages, uniqueName } = placeholders;
+    // simple string replacement for placeholders singleImagePrefix and uniqueName
+    const cmd = commands.map(c => c.map(arg => {
+        if (arg.startsWith(singleImagePrefix)) {
+            const match = files[parseInt(arg.substring(singleImagePrefix.length, arg.length), 10)] || defaultImage || { name: 'rose:' };
+            return match.name;
+        }
+        if (arg.includes(uniqueName)) {
+            return getUniqueName(config, arg);
+        }
+        return arg;
+    }));
+    // add placeholders.allImageNames
+    const allImageNames = files.map(f => isImage(f) ? f.name : false).filter(a => a);
+    cmd.forEach(c => {
+        const allIndexes = c.map((arg, i) => arg === allImages ? i : undefined).filter(arg => typeof arg !== 'undefined');
+        allIndexes.forEach(i => c.splice(i, 1, ...allImageNames)); // add all image names and remove $$ALLIMAGE arg
+    });
+    return cmd;
+}
+exports.renderCommand = renderCommand;
+const isImageMap = {};
+async function isImage(f) {
+    if (typeof isImageMap[f.name] === 'undefined') {
+        const is = await wasm_imagemagick_1.isImage(f);
+        isImageMap[f.name] = is;
+        return is;
+    }
+    else {
+        isImageMap[f.name];
+    }
+}
+// export async function  renderExecuteConfig(config: ExecuteContext): Promise<ExecuteConfig> {
+//   return {...config}
+// }
+exports.counter = 0;
+function getUniqueName(c, arg) {
+    const { commands, files, placeholders = exports.defaultPlaceholders, defaultImage = files[0] } = c;
+    const { singleImagePrefix, allImages, uniqueName } = placeholders;
+    return arg.substring(0, arg.indexOf(uniqueName)) + 'f1l3_' + (exports.counter++) + arg.substring(arg.indexOf(uniqueName) + uniqueName.length, arg.length);
+}
+
+},{"wasm-imagemagick":11}],113:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const main_1 = require("./main");
 main_1.install();
 main_1.render();
 
-},{"./main":87}],87:[function(require,module,exports){
+},{"./main":114}],114:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = require("react");
@@ -3326,7 +9883,7 @@ function render() {
 }
 exports.render = render;
 
-},{"./app":84,"react":213,"react-dom":210,"wasm-imagemagick":4}],88:[function(require,module,exports){
+},{"./app":110,"react":241,"react-dom":238,"wasm-imagemagick":11}],115:[function(require,module,exports){
 (function (process){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
@@ -3788,7 +10345,7 @@ function create(hash, debug, changes) {
 exports.create = create;
 
 }).call(this,require('_process'))
-},{"_process":205}],89:[function(require,module,exports){
+},{"_process":233}],116:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var FragmentType;
@@ -3797,7 +10354,7 @@ var FragmentType;
     FragmentType["image"] = "image";
 })(FragmentType = exports.FragmentType || (exports.FragmentType = {}));
 
-},{}],90:[function(require,module,exports){
+},{}],117:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const rotateFragment_1 = require("./rotateFragment");
@@ -3841,7 +10398,7 @@ function convert(inputImages) {
 }
 exports.convert = convert;
 
-},{"../execute":122,"./imageFragment":91,"./rotateFragment":93}],91:[function(require,module,exports){
+},{"../execute":149,"./imageFragment":118,"./rotateFragment":120}],118:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const chain_1 = require("./chain");
@@ -3856,7 +10413,7 @@ class ImagesFragmentImpl {
 }
 exports.ImagesFragmentImpl = ImagesFragmentImpl;
 
-},{"./chain":89}],92:[function(require,module,exports){
+},{"./chain":116}],119:[function(require,module,exports){
 "use strict";
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
@@ -3866,7 +10423,7 @@ __export(require("./chain"));
 var chainImpl_1 = require("./chainImpl");
 exports.convert = chainImpl_1.convert;
 
-},{"./chain":89,"./chainImpl":90}],93:[function(require,module,exports){
+},{"./chain":116,"./chainImpl":117}],120:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const chain_1 = require("./chain");
@@ -3881,7 +10438,7 @@ class RotateFragmentImpl {
 }
 exports.RotateFragmentImpl = RotateFragmentImpl;
 
-},{"./chain":89}],94:[function(require,module,exports){
+},{"./chain":116}],121:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var ArgumentType;
@@ -3906,7 +10463,7 @@ var CommandTemplateTag;
     CommandTemplateTag["morphology"] = "morphology";
 })(CommandTemplateTag = exports.CommandTemplateTag || (exports.CommandTemplateTag = {}));
 
-},{}],95:[function(require,module,exports){
+},{}],122:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const colorizeTemplate_1 = require("./templates/colorizeTemplate");
@@ -3964,7 +10521,7 @@ exports.sampleCommandTemplates = [
     rotateGif_1.RotateGif
 ];
 
-},{"./templates/colorizeTemplate":96,"./templates/cropTemplate1":97,"./templates/distortPerspective1":98,"./templates/ditherColorsTemplate1":99,"./templates/frameFeathering1":100,"./templates/frameShape1":101,"./templates/morphologyTemplate1":102,"./templates/oilTemplate":103,"./templates/plasmaFrame1":104,"./templates/polaroid2":105,"./templates/polaroid3":106,"./templates/replaceColorTemplate":107,"./templates/rotateGif":108,"./templates/shadeTemplate":109,"./templates/shadowFrame1":110,"./templates/sharpenBlurTemplate":111,"./templates/shearTemplate":112,"./templates/sketchTemplate":113,"./templates/spreadTemplate":114,"./templates/swirlTemplate":115,"./templates/tintTemplate":116,"./templates/tornPaper1":117,"./templates/tornPaper2":118,"./templates/vignetteTemplate1":119,"./templates/virtualPixel1":120,"./templates/waveTemplate":121}],96:[function(require,module,exports){
+},{"./templates/colorizeTemplate":123,"./templates/cropTemplate1":124,"./templates/distortPerspective1":125,"./templates/ditherColorsTemplate1":126,"./templates/frameFeathering1":127,"./templates/frameShape1":128,"./templates/morphologyTemplate1":129,"./templates/oilTemplate":130,"./templates/plasmaFrame1":131,"./templates/polaroid2":132,"./templates/polaroid3":133,"./templates/replaceColorTemplate":134,"./templates/rotateGif":135,"./templates/shadeTemplate":136,"./templates/shadowFrame1":137,"./templates/sharpenBlurTemplate":138,"./templates/shearTemplate":139,"./templates/sketchTemplate":140,"./templates/spreadTemplate":141,"./templates/swirlTemplate":142,"./templates/tintTemplate":143,"./templates/tornPaper1":144,"./templates/tornPaper2":145,"./templates/vignetteTemplate1":146,"./templates/virtualPixel1":147,"./templates/waveTemplate":148}],123:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4000,7 +10557,7 @@ image with a comma-delimited list of colorization values (e.g., -colorize 0,0,50
     tags: [commandTemplate_1.CommandTemplateTag.colors]
 };
 
-},{"../..":123,"../commandTemplate":94}],97:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],124:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4026,7 +10583,7 @@ exports.cropTemplate1 = {
     ]
 };
 
-},{"../..":123}],98:[function(require,module,exports){
+},{"../..":150}],125:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4090,7 +10647,7 @@ exports.DistortPerspective1 = {
     ]
 };
 
-},{"../..":123}],99:[function(require,module,exports){
+},{"../..":150}],126:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4122,7 +10679,7 @@ exports.ditherColorsTemplate = {
     ]
 };
 
-},{"../..":123,"../commandTemplate":94}],100:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],127:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4145,7 +10702,7 @@ exports.frameFeathering1 = {
     ]
 };
 
-},{"../..":123,"../commandTemplate":94}],101:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],128:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4170,7 +10727,7 @@ exports.frameShape1 = {
     ]
 };
 
-},{"../..":123,"../commandTemplate":94}],102:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],129:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4220,7 +10777,7 @@ exports.morphologyTemplate = {
     ]
 };
 
-},{"../..":123,"../commandTemplate":94}],103:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],130:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4239,7 +10796,7 @@ exports.oilTemplate = {
     ]
 };
 
-},{"../..":123,"../commandTemplate":94}],104:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],131:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4279,7 +10836,7 @@ exports.plasmaFrame1 = {
     ]
 };
 
-},{"../..":123,"../commandTemplate":94}],105:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],132:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4304,7 +10861,7 @@ exports.polaroidTemplate2 = {
     ]
 };
 
-},{"../..":123,"../commandTemplate":94}],106:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],133:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4333,7 +10890,7 @@ exports.polaroidTemplate3 = {
     ]
 };
 
-},{"../..":123,"../commandTemplate":94}],107:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],134:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4374,7 +10931,7 @@ exports.replaceColorTemplate = {
     ]
 };
 
-},{"../..":123,"../commandTemplate":94}],108:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],135:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4418,7 +10975,7 @@ exports.RotateGif = {
     ]
 };
 
-},{"../..":123,"../../util/misc":201}],109:[function(require,module,exports){
+},{"../..":150,"../../util/misc":228}],136:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4452,7 +11009,7 @@ exports.shadeTemplate = {
     ]
 };
 
-},{"../..":123,"../commandTemplate":94}],110:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],137:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4481,7 +11038,7 @@ exports.shadowFrame1 = {
     ]
 };
 
-},{"../..":123,"../commandTemplate":94}],111:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],138:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4528,7 +11085,7 @@ exports.sharpenBlurTemplate = {
     ]
 };
 
-},{"../..":123,"../commandTemplate":94}],112:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],139:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4567,7 +11124,7 @@ exports.shearTemplate = {
     ]
 };
 
-},{"../..":123,"../commandTemplate":94}],113:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],140:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4607,7 +11164,7 @@ Sketch with the given radius, standard deviation (sigma), and angle. The angle g
     ]
 };
 
-},{"../..":123,"../commandTemplate":94}],114:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],141:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4642,7 +11199,7 @@ The lookup is controlled by the -interpolate setting.`,
     ]
 };
 
-},{"../..":123,"../commandTemplate":94}],115:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],142:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4667,7 +11224,7 @@ exports.swirlTemplate = {
     ]
 };
 
-},{"../..":123,"../commandTemplate":94}],116:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],143:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4699,7 +11256,7 @@ exports.tintTemplate = {
     ]
 };
 
-},{"../..":123,"../commandTemplate":94}],117:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],144:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4724,7 +11281,7 @@ exports.tornPaper1 = {
     ]
 };
 
-},{"../..":123,"../commandTemplate":94}],118:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],145:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4754,7 +11311,7 @@ exports.tornPaper2 = {
     ]
 };
 
-},{"../..":123,"../commandTemplate":94}],119:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],146:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4780,7 +11337,7 @@ exports.vignetteTemplate1 = {
     ]
 };
 
-},{"../..":123,"../commandTemplate":94}],120:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],147:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4812,7 +11369,7 @@ exports.virtualPixel1 = {
     ]
 };
 
-},{"../..":123,"../commandTemplate":94}],121:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],148:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
@@ -4844,7 +11401,7 @@ exports.waveTemplate = {
     ]
 };
 
-},{"../..":123,"../commandTemplate":94}],122:[function(require,module,exports){
+},{"../..":150,"../commandTemplate":121}],149:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const promiseMap = require("p-map");
@@ -4880,7 +11437,7 @@ function addExecuteListener(l) {
 }
 exports.addExecuteListener = addExecuteListener;
 
-},{"./index":123,"./util/image":199,"p-map":202}],123:[function(require,module,exports){
+},{"./index":150,"./util/image":226,"p-map":229}],150:[function(require,module,exports){
 "use strict";
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
@@ -4928,7 +11485,7 @@ __export(require("./commandTemplate/templates"));
 //   Double: DoubleT,
 // }
 
-},{"./chain":92,"./commandTemplate/commandTemplate":94,"./commandTemplate/templates":95,"./execute":122,"./list":195,"./options/filter":196,"./options/virtualPixel":197,"./util/cli":198,"./util/image":199,"./util/info":200,"./util/misc":201,"wasm-imagemagick":4}],124:[function(require,module,exports){
+},{"./chain":119,"./commandTemplate/commandTemplate":121,"./commandTemplate/templates":122,"./execute":149,"./list":222,"./options/filter":223,"./options/virtualPixel":224,"./util/cli":225,"./util/image":226,"./util/info":227,"./util/misc":228,"wasm-imagemagick":11}],151:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -4942,7 +11499,7 @@ var Align;
     Align["Start"] = "Start";
 })(Align = exports.Align || (exports.Align = {}));
 
-},{}],125:[function(require,module,exports){
+},{}],152:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -4965,7 +11522,7 @@ var Alpha;
     Alpha["Transparent"] = "Transparent";
 })(Alpha = exports.Alpha || (exports.Alpha = {}));
 
-},{}],126:[function(require,module,exports){
+},{}],153:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -4976,7 +11533,7 @@ var AutoThreshold;
     AutoThreshold["Triangle"] = "Triangle";
 })(AutoThreshold = exports.AutoThreshold || (exports.AutoThreshold = {}));
 
-},{}],127:[function(require,module,exports){
+},{}],154:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -4988,7 +11545,7 @@ var Boolean;
     Boolean["1_"] = "1";
 })(Boolean = exports.Boolean || (exports.Boolean = {}));
 
-},{}],128:[function(require,module,exports){
+},{}],155:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5196,7 +11753,7 @@ var CLI;
     CLI["  clone"] = "  clone";
 })(CLI = exports.CLI || (exports.CLI = {}));
 
-},{}],129:[function(require,module,exports){
+},{}],156:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5209,7 +11766,7 @@ var Cache;
     Cache["Ping"] = "Ping";
 })(Cache = exports.Cache || (exports.Cache = {}));
 
-},{}],130:[function(require,module,exports){
+},{}],157:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5278,7 +11835,7 @@ var Channel;
     Channel["31_"] = "31";
 })(Channel = exports.Channel || (exports.Channel = {}));
 
-},{}],131:[function(require,module,exports){
+},{}],158:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5288,7 +11845,7 @@ var Class;
     Class["PseudoClass"] = "PseudoClass";
 })(Class = exports.Class || (exports.Class = {}));
 
-},{}],132:[function(require,module,exports){
+},{}],159:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5299,7 +11856,7 @@ var ClipPath;
     ClipPath["UserSpaceOnUse"] = "UserSpaceOnUse";
 })(ClipPath = exports.ClipPath || (exports.ClipPath = {}));
 
-},{}],133:[function(require,module,exports){
+},{}],160:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5341,7 +11898,7 @@ var Colorspace;
     Colorspace["YUV"] = "YUV";
 })(Colorspace = exports.Colorspace || (exports.Colorspace = {}));
 
-},{}],134:[function(require,module,exports){
+},{}],161:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5793,7 +12350,7 @@ var Command;
     Command["-write-mask"] = "-write-mask";
 })(Command = exports.Command || (exports.Command = {}));
 
-},{}],135:[function(require,module,exports){
+},{}],162:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5808,7 +12365,7 @@ var Complex;
     Complex["Subtract"] = "Subtract";
 })(Complex = exports.Complex || (exports.Complex = {}));
 
-},{}],136:[function(require,module,exports){
+},{}],163:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5822,7 +12379,7 @@ var Compliance;
     Compliance["XPM"] = "XPM";
 })(Compliance = exports.Compliance || (exports.Compliance = {}));
 
-},{}],137:[function(require,module,exports){
+},{}],164:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5899,7 +12456,7 @@ var Compose;
     Compose["Xor"] = "Xor";
 })(Compose = exports.Compose || (exports.Compose = {}));
 
-},{}],138:[function(require,module,exports){
+},{}],165:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5930,7 +12487,7 @@ var Compress;
     Compress["ZipS"] = "ZipS";
 })(Compress = exports.Compress || (exports.Compress = {}));
 
-},{}],139:[function(require,module,exports){
+},{}],166:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5942,7 +12499,7 @@ var DataType;
     DataType["String"] = "String";
 })(DataType = exports.DataType || (exports.DataType = {}));
 
-},{}],140:[function(require,module,exports){
+},{}],167:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5972,7 +12529,7 @@ var Debug;
     Debug["X11"] = "X11";
 })(Debug = exports.Debug || (exports.Debug = {}));
 
-},{}],141:[function(require,module,exports){
+},{}],168:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5984,7 +12541,7 @@ var Decoration;
     Decoration["Underline"] = "Underline";
 })(Decoration = exports.Decoration || (exports.Decoration = {}));
 
-},{}],142:[function(require,module,exports){
+},{}],169:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -5994,7 +12551,7 @@ var Direction;
     Direction["left-to-right"] = "left-to-right";
 })(Direction = exports.Direction || (exports.Direction = {}));
 
-},{}],143:[function(require,module,exports){
+},{}],170:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6010,7 +12567,7 @@ var Dispose;
     Dispose["3_"] = "3";
 })(Dispose = exports.Dispose || (exports.Dispose = {}));
 
-},{}],144:[function(require,module,exports){
+},{}],171:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6034,7 +12591,7 @@ var Distort;
     Distort["Resize"] = "Resize";
 })(Distort = exports.Distort || (exports.Distort = {}));
 
-},{}],145:[function(require,module,exports){
+},{}],172:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6045,7 +12602,7 @@ var Dither;
     Dither["Riemersma"] = "Riemersma";
 })(Dither = exports.Dither || (exports.Dither = {}));
 
-},{}],146:[function(require,module,exports){
+},{}],173:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6055,7 +12612,7 @@ var Endian;
     Endian["MSB"] = "MSB";
 })(Endian = exports.Endian || (exports.Endian = {}));
 
-},{}],147:[function(require,module,exports){
+},{}],174:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6099,7 +12656,7 @@ var Evaluate;
     Evaluate["Xor"] = "Xor";
 })(Evaluate = exports.Evaluate || (exports.Evaluate = {}));
 
-},{}],148:[function(require,module,exports){
+},{}],175:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6109,7 +12666,7 @@ var FillRule;
     FillRule["NonZero"] = "NonZero";
 })(FillRule = exports.FillRule || (exports.FillRule = {}));
 
-},{}],149:[function(require,module,exports){
+},{}],176:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6148,7 +12705,7 @@ var Filter;
     Filter["Welch"] = "Welch";
 })(Filter = exports.Filter || (exports.Filter = {}));
 
-},{}],150:[function(require,module,exports){
+},{}],177:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6571,7 +13128,7 @@ var Font;
     Font["    glyphs: /usr/share/fonts/mathjax/HTML-CSS/STIX-Web/woff/STIXMathJax_Variants-Regular.woff"] = "    glyphs: /usr/share/fonts/mathjax/HTML-CSS/STIX-Web/woff/STIXMathJax_Variants-Regular.woff";
 })(Font = exports.Font || (exports.Font = {}));
 
-},{}],151:[function(require,module,exports){
+},{}],178:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6583,7 +13140,7 @@ var Function;
     Function["ArcTan"] = "ArcTan";
 })(Function = exports.Function || (exports.Function = {}));
 
-},{}],152:[function(require,module,exports){
+},{}],179:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6593,7 +13150,7 @@ var Gradient;
     Gradient["Radial"] = "Radial";
 })(Gradient = exports.Gradient || (exports.Gradient = {}));
 
-},{}],153:[function(require,module,exports){
+},{}],180:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6612,7 +13169,7 @@ var Gravity;
     Gravity["West"] = "West";
 })(Gravity = exports.Gravity || (exports.Gravity = {}));
 
-},{}],154:[function(require,module,exports){
+},{}],181:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6630,7 +13187,7 @@ var Intensity;
     Intensity["RMS"] = "RMS";
 })(Intensity = exports.Intensity || (exports.Intensity = {}));
 
-},{}],155:[function(require,module,exports){
+},{}],182:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6642,7 +13199,7 @@ var Intent;
     Intent["Saturation"] = "Saturation";
 })(Intent = exports.Intent || (exports.Intent = {}));
 
-},{}],156:[function(require,module,exports){
+},{}],183:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6657,7 +13214,7 @@ var Interlace;
     Interlace["PNG"] = "PNG";
 })(Interlace = exports.Interlace || (exports.Interlace = {}));
 
-},{}],157:[function(require,module,exports){
+},{}],184:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6677,7 +13234,7 @@ var Interpolate;
     Interpolate["Spline"] = "Spline";
 })(Interpolate = exports.Interpolate || (exports.Interpolate = {}));
 
-},{}],158:[function(require,module,exports){
+},{}],185:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6721,7 +13278,7 @@ var Kernel;
     Kernel["Euclidean"] = "Euclidean";
 })(Kernel = exports.Kernel || (exports.Kernel = {}));
 
-},{}],159:[function(require,module,exports){
+},{}],186:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6745,7 +13302,7 @@ var Layers;
     Layers["TrimBounds"] = "TrimBounds";
 })(Layers = exports.Layers || (exports.Layers = {}));
 
-},{}],160:[function(require,module,exports){
+},{}],187:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6756,7 +13313,7 @@ var LineCap;
     LineCap["Square"] = "Square";
 })(LineCap = exports.LineCap || (exports.LineCap = {}));
 
-},{}],161:[function(require,module,exports){
+},{}],188:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6767,7 +13324,7 @@ var LineJoin;
     LineJoin["Round"] = "Round";
 })(LineJoin = exports.LineJoin || (exports.LineJoin = {}));
 
-},{}],162:[function(require,module,exports){
+},{}],189:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -6854,7 +13411,7 @@ var List;
     List["Weight"] = "Weight";
 })(List = exports.List || (exports.List = {}));
 
-},{}],163:[function(require,module,exports){
+},{}],190:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7763,7 +14320,7 @@ var Locale;
     Locale["  y shear image"] = "  y shear image";
 })(Locale = exports.Locale || (exports.Locale = {}));
 
-},{}],164:[function(require,module,exports){
+},{}],191:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7777,7 +14334,7 @@ var Log;
     Log["Magick-%g.log            0         0   %t %r %u %v %d %c[%p]: %m/%f/%l/%d\n  %e"] = "Magick-%g.log            0         0   %t %r %u %v %d %c[%p]: %m/%f/%l/%d\n  %e";
 })(Log = exports.Log || (exports.Log = {}));
 
-},{}],165:[function(require,module,exports){
+},{}],192:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7807,7 +14364,7 @@ var LogEvent;
     LogEvent["X11"] = "X11";
 })(LogEvent = exports.LogEvent || (exports.LogEvent = {}));
 
-},{}],166:[function(require,module,exports){
+},{}],193:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7820,7 +14377,7 @@ var Method;
     Method["Reset"] = "Reset";
 })(Method = exports.Method || (exports.Method = {}));
 
-},{}],167:[function(require,module,exports){
+},{}],194:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7840,7 +14397,7 @@ var Metric;
     Metric["SSIM"] = "SSIM";
 })(Metric = exports.Metric || (exports.Metric = {}));
 
-},{}],168:[function(require,module,exports){
+},{}],195:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7851,7 +14408,7 @@ var Mode;
     Mode["Unframe"] = "Unframe";
 })(Mode = exports.Mode || (exports.Mode = {}));
 
-},{}],169:[function(require,module,exports){
+},{}],196:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -7986,7 +14543,7 @@ var Module;
     Module["analyze"] = "analyze";
 })(Module = exports.Module || (exports.Module = {}));
 
-},{}],170:[function(require,module,exports){
+},{}],197:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8021,7 +14578,7 @@ var Morphology;
     Morphology["IterativeDistance"] = "IterativeDistance";
 })(Morphology = exports.Morphology || (exports.Morphology = {}));
 
-},{}],171:[function(require,module,exports){
+},{}],198:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8036,7 +14593,7 @@ var Noise;
     Noise["Uniform"] = "Uniform";
 })(Noise = exports.Noise || (exports.Noise = {}));
 
-},{}],172:[function(require,module,exports){
+},{}],199:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8052,7 +14609,7 @@ var Orientation;
     Orientation["LeftBottom"] = "LeftBottom";
 })(Orientation = exports.Orientation || (exports.Orientation = {}));
 
-},{}],173:[function(require,module,exports){
+},{}],200:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8090,7 +14647,7 @@ var PixelChannel;
     PixelChannel["Yellow"] = "Yellow";
 })(PixelChannel = exports.PixelChannel || (exports.PixelChannel = {}));
 
-},{}],174:[function(require,module,exports){
+},{}],201:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8108,7 +14665,7 @@ var PixelIntensity;
     PixelIntensity["RMS"] = "RMS";
 })(PixelIntensity = exports.PixelIntensity || (exports.PixelIntensity = {}));
 
-},{}],175:[function(require,module,exports){
+},{}],202:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8120,7 +14677,7 @@ var PixelMask;
     PixelMask["Write"] = "Write";
 })(PixelMask = exports.PixelMask || (exports.PixelMask = {}));
 
-},{}],176:[function(require,module,exports){
+},{}],203:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8131,7 +14688,7 @@ var PixelTrait;
     PixelTrait["Update"] = "Update";
 })(PixelTrait = exports.PixelTrait || (exports.PixelTrait = {}));
 
-},{}],177:[function(require,module,exports){
+},{}],204:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8142,7 +14699,7 @@ var Policy;
     Policy["    rights: None "] = "    rights: None ";
 })(Policy = exports.Policy || (exports.Policy = {}));
 
-},{}],178:[function(require,module,exports){
+},{}],205:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8158,7 +14715,7 @@ var PolicyDomain;
     PolicyDomain["System"] = "System";
 })(PolicyDomain = exports.PolicyDomain || (exports.PolicyDomain = {}));
 
-},{}],179:[function(require,module,exports){
+},{}],206:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8171,7 +14728,7 @@ var PolicyRights;
     PolicyRights["Write"] = "Write";
 })(PolicyRights = exports.PolicyRights || (exports.PolicyRights = {}));
 
-},{}],180:[function(require,module,exports){
+},{}],207:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8208,7 +14765,7 @@ var Preview;
     Preview["Wave"] = "Wave";
 })(Preview = exports.Preview || (exports.Preview = {}));
 
-},{}],181:[function(require,module,exports){
+},{}],208:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8232,7 +14789,7 @@ var Primitive;
     Primitive["Text"] = "Text";
 })(Primitive = exports.Primitive || (exports.Primitive = {}));
 
-},{}],182:[function(require,module,exports){
+},{}],209:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8243,7 +14800,7 @@ var QuantumFormat;
     QuantumFormat["Unsigned"] = "Unsigned";
 })(QuantumFormat = exports.QuantumFormat || (exports.QuantumFormat = {}));
 
-},{}],183:[function(require,module,exports){
+},{}],210:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8263,7 +14820,7 @@ var Resource;
     Resource["  Time: unlimited"] = "  Time: unlimited";
 })(Resource = exports.Resource || (exports.Resource = {}));
 
-},{}],184:[function(require,module,exports){
+},{}],211:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8277,7 +14834,7 @@ var SparseColor;
     SparseColor["Manhattan"] = "Manhattan";
 })(SparseColor = exports.SparseColor || (exports.SparseColor = {}));
 
-},{}],185:[function(require,module,exports){
+},{}],212:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8295,7 +14852,7 @@ var Statistic;
     Statistic["StandardDeviation"] = "StandardDeviation";
 })(Statistic = exports.Statistic || (exports.Statistic = {}));
 
-},{}],186:[function(require,module,exports){
+},{}],213:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8310,7 +14867,7 @@ var Storage;
     Storage["Short"] = "Short";
 })(Storage = exports.Storage || (exports.Storage = {}));
 
-},{}],187:[function(require,module,exports){
+},{}],214:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8328,7 +14885,7 @@ var Stretch;
     Stretch["UltraExpanded"] = "UltraExpanded";
 })(Stretch = exports.Stretch || (exports.Stretch = {}));
 
-},{}],188:[function(require,module,exports){
+},{}],215:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8341,7 +14898,7 @@ var Style;
     Style["Oblique"] = "Oblique";
 })(Style = exports.Style || (exports.Style = {}));
 
-},{}],189:[function(require,module,exports){
+},{}],216:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8360,7 +14917,7 @@ var Tool;
     Tool["stream"] = "stream";
 })(Tool = exports.Tool || (exports.Tool = {}));
 
-},{}],190:[function(require,module,exports){
+},{}],217:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8384,7 +14941,7 @@ var Type;
     Type["TrueColor"] = "TrueColor";
 })(Type = exports.Type || (exports.Type = {}));
 
-},{}],191:[function(require,module,exports){
+},{}],218:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8397,7 +14954,7 @@ var Units;
     Units["3_"] = "3";
 })(Units = exports.Units || (exports.Units = {}));
 
-},{}],192:[function(require,module,exports){
+},{}],219:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8418,7 +14975,7 @@ var Validate;
     Validate["None"] = "None";
 })(Validate = exports.Validate || (exports.Validate = {}));
 
-},{}],193:[function(require,module,exports){
+},{}],220:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8442,7 +14999,7 @@ var VirtualPixel;
     VirtualPixel["White"] = "White";
 })(VirtualPixel = exports.VirtualPixel || (exports.VirtualPixel = {}));
 
-},{}],194:[function(require,module,exports){
+},{}],221:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* autogenerated file using scripts/generateImEnums.ts */
@@ -8463,7 +15020,7 @@ var Weight;
     Weight["Black"] = "Black";
 })(Weight = exports.Weight || (exports.Weight = {}));
 
-},{}],195:[function(require,module,exports){
+},{}],222:[function(require,module,exports){
 "use strict";
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
@@ -8541,7 +15098,7 @@ __export(require("./Validate"));
 __export(require("./VirtualPixel"));
 __export(require("./Weight"));
 
-},{"./Align":124,"./Alpha":125,"./AutoThreshold":126,"./Boolean":127,"./CLI":128,"./Cache":129,"./Channel":130,"./Class":131,"./ClipPath":132,"./Colorspace":133,"./Command":134,"./Complex":135,"./Compliance":136,"./Compose":137,"./Compress":138,"./DataType":139,"./Debug":140,"./Decoration":141,"./Direction":142,"./Dispose":143,"./Distort":144,"./Dither":145,"./Endian":146,"./Evaluate":147,"./FillRule":148,"./Filter":149,"./Font":150,"./Function":151,"./Gradient":152,"./Gravity":153,"./Intensity":154,"./Intent":155,"./Interlace":156,"./Interpolate":157,"./Kernel":158,"./Layers":159,"./LineCap":160,"./LineJoin":161,"./List":162,"./Locale":163,"./Log":164,"./LogEvent":165,"./Method":166,"./Metric":167,"./Mode":168,"./Module":169,"./Morphology":170,"./Noise":171,"./Orientation":172,"./PixelChannel":173,"./PixelIntensity":174,"./PixelMask":175,"./PixelTrait":176,"./Policy":177,"./PolicyDomain":178,"./PolicyRights":179,"./Preview":180,"./Primitive":181,"./QuantumFormat":182,"./Resource":183,"./SparseColor":184,"./Statistic":185,"./Storage":186,"./Stretch":187,"./Style":188,"./Tool":189,"./Type":190,"./Units":191,"./Validate":192,"./VirtualPixel":193,"./Weight":194}],196:[function(require,module,exports){
+},{"./Align":151,"./Alpha":152,"./AutoThreshold":153,"./Boolean":154,"./CLI":155,"./Cache":156,"./Channel":157,"./Class":158,"./ClipPath":159,"./Colorspace":160,"./Command":161,"./Complex":162,"./Compliance":163,"./Compose":164,"./Compress":165,"./DataType":166,"./Debug":167,"./Decoration":168,"./Direction":169,"./Dispose":170,"./Distort":171,"./Dither":172,"./Endian":173,"./Evaluate":174,"./FillRule":175,"./Filter":176,"./Font":177,"./Function":178,"./Gradient":179,"./Gravity":180,"./Intensity":181,"./Intent":182,"./Interlace":183,"./Interpolate":184,"./Kernel":185,"./Layers":186,"./LineCap":187,"./LineJoin":188,"./List":189,"./Locale":190,"./Log":191,"./LogEvent":192,"./Method":193,"./Metric":194,"./Mode":195,"./Module":196,"./Morphology":197,"./Noise":198,"./Orientation":199,"./PixelChannel":200,"./PixelIntensity":201,"./PixelMask":202,"./PixelTrait":203,"./Policy":204,"./PolicyDomain":205,"./PolicyRights":206,"./Preview":207,"./Primitive":208,"./QuantumFormat":209,"./Resource":210,"./SparseColor":211,"./Statistic":212,"./Storage":213,"./Stretch":214,"./Style":215,"./Tool":216,"./Type":217,"./Units":218,"./Validate":219,"./VirtualPixel":220,"./Weight":221}],223:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.filters = [
@@ -8567,7 +15124,7 @@ exports.filters = [
 //   'CubicSpline' = 'CubicSpline'
 // }
 
-},{}],197:[function(require,module,exports){
+},{}],224:[function(require,module,exports){
 "use strict";
 // TODO: remove everything
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -8616,7 +15173,7 @@ exports.VirtualPixelMethods = [
     'white',
 ];
 
-},{}],198:[function(require,module,exports){
+},{}],225:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 // utilities related to formating IM CLI arguments, command array to and from valid IMPLY arguments
@@ -8632,7 +15189,7 @@ function arrayToIMCommand(command) {
 }
 exports.arrayToIMCommand = arrayToIMCommand;
 
-},{}],199:[function(require,module,exports){
+},{}],226:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 async function readImageUrlToUintArray(url) {
@@ -8772,7 +15329,7 @@ function getOutputImageNameFor(inputImageName, extension = inputImageName.substr
 }
 exports.getOutputImageNameFor = getOutputImageNameFor;
 
-},{}],200:[function(require,module,exports){
+},{}],227:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const execute_1 = require("../execute");
@@ -8812,7 +15369,7 @@ async function info(infoConfig) {
 }
 exports.info = info;
 
-},{"../execute":122,"./image":199}],201:[function(require,module,exports){
+},{"../execute":149,"./image":226}],228:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /** easily list given enum's keys as an array */
@@ -8838,7 +15395,7 @@ function seq(start, step, max) {
 }
 exports.seq = seq;
 
-},{}],202:[function(require,module,exports){
+},{}],229:[function(require,module,exports){
 'use strict';
 module.exports = (iterable, mapper, opts) => new Promise((resolve, reject) => {
 	opts = Object.assign({
@@ -8907,7 +15464,7 @@ module.exports = (iterable, mapper, opts) => new Promise((resolve, reject) => {
 	}
 });
 
-},{}],203:[function(require,module,exports){
+},{}],230:[function(require,module,exports){
 /*
 object-assign
 (c) Sindre Sorhus
@@ -8999,9 +15556,315 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	return to;
 };
 
-},{}],204:[function(require,module,exports){
-arguments[4][83][0].apply(exports,arguments)
-},{"dup":83}],205:[function(require,module,exports){
+},{}],231:[function(require,module,exports){
+arguments[4][98][0].apply(exports,arguments)
+},{"dup":98}],232:[function(require,module,exports){
+(function (process){
+// .dirname, .basename, and .extname methods are extracted from Node.js v8.11.1,
+// backported and transplited with Babel, with backwards-compat fixes
+
+// Copyright Joyent, Inc. and other Node contributors.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to permit
+// persons to whom the Software is furnished to do so, subject to the
+// following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+// USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+// resolves . and .. elements in a path array with directory names there
+// must be no slashes, empty elements, or device names (c:\) in the array
+// (so also no leading and trailing slashes - it does not distinguish
+// relative and absolute paths)
+function normalizeArray(parts, allowAboveRoot) {
+  // if the path tries to go above the root, `up` ends up > 0
+  var up = 0;
+  for (var i = parts.length - 1; i >= 0; i--) {
+    var last = parts[i];
+    if (last === '.') {
+      parts.splice(i, 1);
+    } else if (last === '..') {
+      parts.splice(i, 1);
+      up++;
+    } else if (up) {
+      parts.splice(i, 1);
+      up--;
+    }
+  }
+
+  // if the path is allowed to go above the root, restore leading ..s
+  if (allowAboveRoot) {
+    for (; up--; up) {
+      parts.unshift('..');
+    }
+  }
+
+  return parts;
+}
+
+// path.resolve([from ...], to)
+// posix version
+exports.resolve = function() {
+  var resolvedPath = '',
+      resolvedAbsolute = false;
+
+  for (var i = arguments.length - 1; i >= -1 && !resolvedAbsolute; i--) {
+    var path = (i >= 0) ? arguments[i] : process.cwd();
+
+    // Skip empty and invalid entries
+    if (typeof path !== 'string') {
+      throw new TypeError('Arguments to path.resolve must be strings');
+    } else if (!path) {
+      continue;
+    }
+
+    resolvedPath = path + '/' + resolvedPath;
+    resolvedAbsolute = path.charAt(0) === '/';
+  }
+
+  // At this point the path should be resolved to a full absolute path, but
+  // handle relative paths to be safe (might happen when process.cwd() fails)
+
+  // Normalize the path
+  resolvedPath = normalizeArray(filter(resolvedPath.split('/'), function(p) {
+    return !!p;
+  }), !resolvedAbsolute).join('/');
+
+  return ((resolvedAbsolute ? '/' : '') + resolvedPath) || '.';
+};
+
+// path.normalize(path)
+// posix version
+exports.normalize = function(path) {
+  var isAbsolute = exports.isAbsolute(path),
+      trailingSlash = substr(path, -1) === '/';
+
+  // Normalize the path
+  path = normalizeArray(filter(path.split('/'), function(p) {
+    return !!p;
+  }), !isAbsolute).join('/');
+
+  if (!path && !isAbsolute) {
+    path = '.';
+  }
+  if (path && trailingSlash) {
+    path += '/';
+  }
+
+  return (isAbsolute ? '/' : '') + path;
+};
+
+// posix version
+exports.isAbsolute = function(path) {
+  return path.charAt(0) === '/';
+};
+
+// posix version
+exports.join = function() {
+  var paths = Array.prototype.slice.call(arguments, 0);
+  return exports.normalize(filter(paths, function(p, index) {
+    if (typeof p !== 'string') {
+      throw new TypeError('Arguments to path.join must be strings');
+    }
+    return p;
+  }).join('/'));
+};
+
+
+// path.relative(from, to)
+// posix version
+exports.relative = function(from, to) {
+  from = exports.resolve(from).substr(1);
+  to = exports.resolve(to).substr(1);
+
+  function trim(arr) {
+    var start = 0;
+    for (; start < arr.length; start++) {
+      if (arr[start] !== '') break;
+    }
+
+    var end = arr.length - 1;
+    for (; end >= 0; end--) {
+      if (arr[end] !== '') break;
+    }
+
+    if (start > end) return [];
+    return arr.slice(start, end - start + 1);
+  }
+
+  var fromParts = trim(from.split('/'));
+  var toParts = trim(to.split('/'));
+
+  var length = Math.min(fromParts.length, toParts.length);
+  var samePartsLength = length;
+  for (var i = 0; i < length; i++) {
+    if (fromParts[i] !== toParts[i]) {
+      samePartsLength = i;
+      break;
+    }
+  }
+
+  var outputParts = [];
+  for (var i = samePartsLength; i < fromParts.length; i++) {
+    outputParts.push('..');
+  }
+
+  outputParts = outputParts.concat(toParts.slice(samePartsLength));
+
+  return outputParts.join('/');
+};
+
+exports.sep = '/';
+exports.delimiter = ':';
+
+exports.dirname = function (path) {
+  if (typeof path !== 'string') path = path + '';
+  if (path.length === 0) return '.';
+  var code = path.charCodeAt(0);
+  var hasRoot = code === 47 /*/*/;
+  var end = -1;
+  var matchedSlash = true;
+  for (var i = path.length - 1; i >= 1; --i) {
+    code = path.charCodeAt(i);
+    if (code === 47 /*/*/) {
+        if (!matchedSlash) {
+          end = i;
+          break;
+        }
+      } else {
+      // We saw the first non-path separator
+      matchedSlash = false;
+    }
+  }
+
+  if (end === -1) return hasRoot ? '/' : '.';
+  if (hasRoot && end === 1) {
+    // return '//';
+    // Backwards-compat fix:
+    return '/';
+  }
+  return path.slice(0, end);
+};
+
+function basename(path) {
+  if (typeof path !== 'string') path = path + '';
+
+  var start = 0;
+  var end = -1;
+  var matchedSlash = true;
+  var i;
+
+  for (i = path.length - 1; i >= 0; --i) {
+    if (path.charCodeAt(i) === 47 /*/*/) {
+        // If we reached a path separator that was not part of a set of path
+        // separators at the end of the string, stop now
+        if (!matchedSlash) {
+          start = i + 1;
+          break;
+        }
+      } else if (end === -1) {
+      // We saw the first non-path separator, mark this as the end of our
+      // path component
+      matchedSlash = false;
+      end = i + 1;
+    }
+  }
+
+  if (end === -1) return '';
+  return path.slice(start, end);
+}
+
+// Uses a mixed approach for backwards-compatibility, as ext behavior changed
+// in new Node.js versions, so only basename() above is backported here
+exports.basename = function (path, ext) {
+  var f = basename(path);
+  if (ext && f.substr(-1 * ext.length) === ext) {
+    f = f.substr(0, f.length - ext.length);
+  }
+  return f;
+};
+
+exports.extname = function (path) {
+  if (typeof path !== 'string') path = path + '';
+  var startDot = -1;
+  var startPart = 0;
+  var end = -1;
+  var matchedSlash = true;
+  // Track the state of characters (if any) we see before our first dot and
+  // after any path separator we find
+  var preDotState = 0;
+  for (var i = path.length - 1; i >= 0; --i) {
+    var code = path.charCodeAt(i);
+    if (code === 47 /*/*/) {
+        // If we reached a path separator that was not part of a set of path
+        // separators at the end of the string, stop now
+        if (!matchedSlash) {
+          startPart = i + 1;
+          break;
+        }
+        continue;
+      }
+    if (end === -1) {
+      // We saw the first non-path separator, mark this as the end of our
+      // extension
+      matchedSlash = false;
+      end = i + 1;
+    }
+    if (code === 46 /*.*/) {
+        // If this is our first dot, mark it as the start of our extension
+        if (startDot === -1)
+          startDot = i;
+        else if (preDotState !== 1)
+          preDotState = 1;
+    } else if (startDot !== -1) {
+      // We saw a non-dot and non-path separator before our dot, so we should
+      // have a good chance at having a non-empty extension
+      preDotState = -1;
+    }
+  }
+
+  if (startDot === -1 || end === -1 ||
+      // We saw a non-dot character immediately before the dot
+      preDotState === 0 ||
+      // The (right-most) trimmed path component is exactly '..'
+      preDotState === 1 && startDot === end - 1 && startDot === startPart + 1) {
+    return '';
+  }
+  return path.slice(startDot, end);
+};
+
+function filter (xs, f) {
+    if (xs.filter) return xs.filter(f);
+    var res = [];
+    for (var i = 0; i < xs.length; i++) {
+        if (f(xs[i], i, xs)) res.push(xs[i]);
+    }
+    return res;
+}
+
+// String.prototype.substr - negative index don't work in IE8
+var substr = 'ab'.substr(-1) === 'b'
+    ? function (str, start, len) { return str.substr(start, len) }
+    : function (str, start, len) {
+        if (start < 0) start = str.length + start;
+        return str.substr(start, len);
+    }
+;
+
+}).call(this,require('_process'))
+},{"_process":233}],233:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -9187,7 +16050,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],206:[function(require,module,exports){
+},{}],234:[function(require,module,exports){
 (function (process){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -9282,7 +16145,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 module.exports = checkPropTypes;
 
 }).call(this,require('_process'))
-},{"./lib/ReactPropTypesSecret":207,"_process":205}],207:[function(require,module,exports){
+},{"./lib/ReactPropTypesSecret":235,"_process":233}],235:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -9296,7 +16159,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],208:[function(require,module,exports){
+},{}],236:[function(require,module,exports){
 (function (process){
 /** @license React v16.6.1
  * react-dom.development.js
@@ -29027,7 +35890,7 @@ module.exports = reactDom;
 }
 
 }).call(this,require('_process'))
-},{"_process":205,"object-assign":203,"prop-types/checkPropTypes":206,"react":213,"scheduler":218,"scheduler/tracing":219}],209:[function(require,module,exports){
+},{"_process":233,"object-assign":230,"prop-types/checkPropTypes":234,"react":241,"scheduler":246,"scheduler/tracing":247}],237:[function(require,module,exports){
 /** @license React v16.6.1
  * react-dom.production.min.js
  *
@@ -29278,7 +36141,7 @@ void 0:t("40");return a._reactRootContainer?(Oh(function(){$h(null,null,a,!1,fun
 Ka,La,Ca.injectEventPluginsByName,qa,Ra,function(a){za(a,Qa)},Ib,Jb,Jd,Ea]},unstable_createRoot:function(a,b){Yh(a)?void 0:t("299","unstable_createRoot");return new Xh(a,!0,null!=b&&!0===b.hydrate)}};(function(a){var b=a.findFiberByHostInstance;return Ve(n({},a,{findHostInstanceByFiber:function(a){a=nd(a);return null===a?null:a.stateNode},findFiberByHostInstance:function(a){return b?b(a):null}}))})({findFiberByHostInstance:Ia,bundleType:0,version:"16.6.3",rendererPackageName:"react-dom"});
 var ei={default:bi},fi=ei&&bi||ei;module.exports=fi.default||fi;
 
-},{"object-assign":203,"react":213,"scheduler":218}],210:[function(require,module,exports){
+},{"object-assign":230,"react":241,"scheduler":246}],238:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -29320,7 +36183,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 }).call(this,require('_process'))
-},{"./cjs/react-dom.development.js":208,"./cjs/react-dom.production.min.js":209,"_process":205}],211:[function(require,module,exports){
+},{"./cjs/react-dom.development.js":236,"./cjs/react-dom.production.min.js":237,"_process":233}],239:[function(require,module,exports){
 (function (process){
 /** @license React v16.6.1
  * react.development.js
@@ -31164,7 +38027,7 @@ module.exports = react;
 }
 
 }).call(this,require('_process'))
-},{"_process":205,"object-assign":203,"prop-types/checkPropTypes":206}],212:[function(require,module,exports){
+},{"_process":233,"object-assign":230,"prop-types/checkPropTypes":234}],240:[function(require,module,exports){
 /** @license React v16.6.1
  * react.production.min.js
  *
@@ -31190,7 +38053,7 @@ _currentValue:a,_currentValue2:a,_threadCount:0,Provider:null,Consumer:null};a.P
 if(null!=b){void 0!==b.ref&&(h=b.ref,f=K.current);void 0!==b.key&&(g=""+b.key);var l=void 0;a.type&&a.type.defaultProps&&(l=a.type.defaultProps);for(c in b)L.call(b,c)&&!M.hasOwnProperty(c)&&(d[c]=void 0===b[c]&&void 0!==l?l[c]:b[c])}c=arguments.length-2;if(1===c)d.children=e;else if(1<c){l=Array(c);for(var m=0;m<c;m++)l[m]=arguments[m+2];d.children=l}return{$$typeof:p,type:a.type,key:g,ref:h,props:d,_owner:f}},createFactory:function(a){var b=N.bind(null,a);b.type=a;return b},isValidElement:O,version:"16.6.3",
 __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentOwner:K,assign:k}};X.unstable_ConcurrentMode=x;X.unstable_Profiler=u;var Y={default:X},Z=Y&&X||Y;module.exports=Z.default||Z;
 
-},{"object-assign":203}],213:[function(require,module,exports){
+},{"object-assign":230}],241:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -31201,7 +38064,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 }).call(this,require('_process'))
-},{"./cjs/react.development.js":211,"./cjs/react.production.min.js":212,"_process":205}],214:[function(require,module,exports){
+},{"./cjs/react.development.js":239,"./cjs/react.production.min.js":240,"_process":233}],242:[function(require,module,exports){
 (function (process){
 /** @license React v16.6.1
  * scheduler-tracing.development.js
@@ -31625,7 +38488,7 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
 }
 
 }).call(this,require('_process'))
-},{"_process":205}],215:[function(require,module,exports){
+},{"_process":233}],243:[function(require,module,exports){
 /** @license React v16.6.1
  * scheduler-tracing.production.min.js
  *
@@ -31637,7 +38500,7 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
 
 'use strict';Object.defineProperty(exports,"__esModule",{value:!0});var b=0;exports.__interactionsRef=null;exports.__subscriberRef=null;exports.unstable_clear=function(a){return a()};exports.unstable_getCurrent=function(){return null};exports.unstable_getThreadID=function(){return++b};exports.unstable_trace=function(a,d,c){return c()};exports.unstable_wrap=function(a){return a};exports.unstable_subscribe=function(){};exports.unstable_unsubscribe=function(){};
 
-},{}],216:[function(require,module,exports){
+},{}],244:[function(require,module,exports){
 (function (process){
 /** @license React v16.6.1
  * scheduler.development.js
@@ -32280,7 +39143,7 @@ exports.unstable_shouldYield = unstable_shouldYield;
 }
 
 }).call(this,require('_process'))
-},{"_process":205}],217:[function(require,module,exports){
+},{"_process":233}],245:[function(require,module,exports){
 /** @license React v16.6.1
  * scheduler.production.min.js
  *
@@ -32303,7 +39166,7 @@ exports.unstable_scheduleCallback=function(a,b){var c=-1!==k?k:exports.unstable_
 b=c.previous;b.next=c.previous=a;a.next=c;a.previous=b}return a};exports.unstable_cancelCallback=function(a){var b=a.next;if(null!==b){if(b===a)d=null;else{a===d&&(d=b);var c=a.previous;c.next=b;b.previous=c}a.next=a.previous=null}};exports.unstable_wrapCallback=function(a){var b=h;return function(){var c=h,e=k;h=b;k=exports.unstable_now();try{return a.apply(this,arguments)}finally{h=c,k=e,v()}}};exports.unstable_getCurrentPriorityLevel=function(){return h};
 exports.unstable_shouldYield=function(){return!f&&(null!==d&&d.expirationTime<l||w())};
 
-},{}],218:[function(require,module,exports){
+},{}],246:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -32314,7 +39177,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 }).call(this,require('_process'))
-},{"./cjs/scheduler.development.js":216,"./cjs/scheduler.production.min.js":217,"_process":205}],219:[function(require,module,exports){
+},{"./cjs/scheduler.development.js":244,"./cjs/scheduler.production.min.js":245,"_process":233}],247:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -32325,7 +39188,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 }).call(this,require('_process'))
-},{"./cjs/scheduler-tracing.development.js":214,"./cjs/scheduler-tracing.production.min.js":215,"_process":205}],220:[function(require,module,exports){
+},{"./cjs/scheduler-tracing.development.js":242,"./cjs/scheduler-tracing.production.min.js":243,"_process":233}],248:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var typestyle_1 = require("./internal/typestyle");
@@ -32406,7 +39269,7 @@ function createTypeStyle(target) {
 }
 exports.createTypeStyle = createTypeStyle;
 
-},{"./internal/typestyle":222,"./internal/utilities":223,"./types":224}],221:[function(require,module,exports){
+},{"./internal/typestyle":250,"./internal/utilities":251,"./types":252}],249:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var FreeStyle = require("free-style");
@@ -32460,7 +39323,7 @@ function explodeKeyframes(frames) {
 }
 exports.explodeKeyframes = explodeKeyframes;
 
-},{"free-style":88}],222:[function(require,module,exports){
+},{"free-style":115}],250:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var FreeStyle = require("free-style");
@@ -32661,7 +39524,7 @@ var TypeStyle = /** @class */ (function () {
 }());
 exports.TypeStyle = TypeStyle;
 
-},{"./formatting":221,"./utilities":223,"free-style":88}],223:[function(require,module,exports){
+},{"./formatting":249,"./utilities":251,"free-style":115}],251:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /** Raf for node + browser */
@@ -32765,8 +39628,8 @@ var mediaLength = function (value) {
     return typeof value === 'string' ? value : value + "px";
 };
 
-},{}],224:[function(require,module,exports){
+},{}],252:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 
-},{}]},{},[86]);
+},{}]},{},[113]);
