@@ -1,0 +1,521 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>accorsed</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">accorsed</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1> accorsed</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<p><strong>Accursed: <a href="https://github.com/chjj/blessed/">blessed</a></strong></p>
+				<p><a href="https://github.com/chjj/blessed/">blessed</a> contributions, extensions, typings, documentation and apps of mine</p>
+				<p>Summary: I discovered blessed, an awesome library for developing command line UI, but unfortunately is a discontinued project a dn has poor documentation. </p>
+				<p>Instead of cloning the project, here I try to develope missing parts, learn, document, type and find issues, but on top of it. </p>
+				<p>So I&#39;m learning, documenting prototypings and researching. The following is a summary of work done.</p>
+				<!-- toc -->
+				<ul>
+					<li><a href="#jsx">JSX</a><ul>
+							<li><a href="#attributes">Attributes</a></li>
+							<li><a href="#intrinsicelements">IntrinsicElements</a></li>
+							<li><a href="#function-elements">function elements</a></li>
+							<li><a href="#class-elements-and-function-elements">Class Elements (and function elements)</a></li>
+						</ul>
+					</li>
+					<li><a href="#event-handlers---function-attributes">Event handlers - function attributes</a><ul>
+							<li><a href="#built-in-event-related-methods-as-attributes">built-in event-related methods as attributes</a></li>
+							<li><a href="#hight-level-event-handlers">Hight level event handlers</a><ul>
+									<li><a href="#eventcurrenttarget"><strong>event.currentTarget</strong></a></li>
+									<li><a href="#onclick-example">onClick Example</a></li>
+									<li><a href="#onrender-example">onRender example</a></li>
+									<li><a href="#onchange">onChange</a></li>
+									<li><a href="#onselect-for-list-like-elements">onSelect (for list-like elements)</a></li>
+								</ul>
+							</li>
+							<li><a href="#jsx-expressions">JSX Expressions</a><ul>
+									<li><a href="#conditions-with-and-operator">conditions with AND operator</a></li>
+									<li><a href="#array-render-with-map">array render with map()</a></li>
+									<li><a href="#conditions-with-ternary-condition">conditions with ternary condition</a></li>
+								</ul>
+							</li>
+							<li><a href="#react-like-ref-objects">React-like Ref objects</a></li>
+							<li><a href="#jsx-text">JSX Text</a></li>
+							<li><a href="#blessed-contrib">blessed-contrib</a></li>
+							<li><a href="#rendering-component-own-children">Rendering Component own children</a></li>
+							<li><a href="#fragments">Fragments</a><ul>
+									<li><a href="#hooks-into-reactcrateelement">Hooks into React.crateElement</a></li>
+									<li><a href="#virtual-nodes">Virtual Nodes</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#doubts-thouths-told">doubts, thouths, TOLD</a><ul>
+							<li><a href="#doubts--thougths-about-jsx-text-implementation-c">doubts / thougths about JSX Text implementation, ç</a></li>
+						</ul>
+					</li>
+					<li><a href="#specs">specs</a></li>
+					<li><a href="#my-blessed-contrib-widgets-and-utilities">My blessed contrib widgets and utilities:</a></li>
+					<li><a href="#apps">Apps</a></li>
+					<li><a href="#typings">Typings:</a></li>
+					<li><a href="#documentation">Documentation:</a></li>
+					<li><a href="#how-to-bless-documents">How-to bless documents</a><ul>
+							<li><a href="#extending-blessed-elements-with-typescript-and-accursed">Extending blessed Elements with TypeScript and accursed</a></li>
+						</ul>
+					</li>
+					<li><a href="#todo--issues--ideas">TODO &amp; ISSUES &amp; Ideas</a></li>
+				</ul>
+				<!-- tocstop -->
+				<h1 id="jsx">JSX</h1>
+				<ul>
+					<li><p>JSX/TSX support for all blessed components plus some of mine</p>
+						<p>Simple, implementation of React.createElement to render JSX to blessed elements. </p>
+					</li>
+				</ul>
+				<p>Small but well-tested logic based on previous acquired knowledge in project <a href="https://github.com/cancerberoSgx/jsx-alone">https://github.com/cancerberoSgx/jsx-alone</a></p>
+				<h2 id="attributes">Attributes</h2>
+				<p>Tip for JSX new commers, JSX attributes are typed. If a blessed option accept a number or a boolean then the attribute must be also. Example: the following two expressions are equivalent:</p>
+				<pre><code class="language-jsx"><span class="hljs-keyword">const</span> el = blessed.listbar({
+  <span class="hljs-attr">parent</span>: screen, <span class="hljs-attr">mouse</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">width</span>: <span class="hljs-string">'88%'</span>,
+  <span class="hljs-attr">height</span>: <span class="hljs-number">3</span>, <span class="hljs-attr">style</span>: { <span class="hljs-attr">selected</span>: { <span class="hljs-attr">bg</span>: <span class="hljs-string">'magenta'</span> }, }
+})</code></pre>
+				<pre><code class="language-jsx"><span class="hljs-keyword">const</span> el = React.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">blessed</span> <span class="hljs-attr">parent</span>=<span class="hljs-string">{screen}</span> <span class="hljs-attr">mouse</span>=<span class="hljs-string">{true}</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"88%"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">{3}</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{bg:</span> <span class="hljs-attr">colors.green</span>}}})</span></span></code></pre>
+				<p>TIP for JSX newcomers: you can use object like syntax mixed with attribute syntax if more confortable and use spread expressions like this if you want:</p>
+				<pre><code class="language-jsx"><span class="hljs-keyword">const</span> commonOpts = { <span class="hljs-attr">keys</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">mouse</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">clickable</span>: <span class="hljs-literal">true</span>,  <span class="hljs-attr">border</span>: <span class="hljs-string">'line'</span>...
+const el = React.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Div</span> {<span class="hljs-attr">...commonOpts</span>} <span class="hljs-attr">width</span>=<span class="hljs-string">"100%"</span> <span class="hljs-attr">border</span>=<span class="hljs-string">"line"</span> 
+  <span class="hljs-attr">style</span>=<span class="hljs-string">{...commonStyles,</span> {<span class="hljs-attr">border:</span> {<span class="hljs-attr">...</span>}, <span class="hljs-attr">hover:</span> {<span class="hljs-attr">...</span>}})<span class="hljs-attr">...</span></span></span></code></pre>
+				<h2 id="intrinsicelements">IntrinsicElements</h2>
+				<p>Intrinsic elements are the building blocks os a JSX implementation and in thi case those are the blessed build in elements like button, bo, listbar, etc. Their tags **start with lower case. </p>
+				<p><strong>Mostly all blessed element types are supported by this library</strong></p>
+				<h2 id="function-elements">function elements</h2>
+				<pre><code class="language-jsx"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Strong</span>(<span class="hljs-params">props={{ children}  string | string[]; color?: string }</span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">content</span>=<span class="hljs-string">{format(asArray(props.children</span> || [])<span class="hljs-attr">.join</span>(' '), ['<span class="hljs-attr">bold</span>', <span class="hljs-attr">props.color</span>]<span class="hljs-attr">.filter</span>(<span class="hljs-attr">notUndefined</span>))}
+    /&gt;</span>
+  )
+}</span></code></pre>
+				<h2 id="class-elements-and-function-elements-">Class Elements (and function elements)</h2>
+				<h1 id="event-handlers-function-attributes">Event handlers - function attributes</h1>
+				<ul>
+					<li>work 100%</li>
+					<li>are bind() to the element reference</li>
+				</ul>
+				<h2 id="built-in-event-related-methods-as-attributes">built-in event-related methods as attributes</h2>
+				<p>JSX syntax, in event-related methods like like on() or key(), etc are supported via attributes. There is no syntax mapping at all, just straight forward method call, for example: </p>
+				<pre><code class="language-js">textarea.key(<span class="hljs-string">'f'</span>,  (ch, key) =&gt; { ... }]}</code></pre>
+				<p>equivalent to </p>
+				<p>´´ç</p>
+				<pre><code class="language-jsx">&lt;textarea key={[<span class="hljs-string">'f'</span>, (ch, key) =&gt; { ... }]}</code></pre>
+				<p>If you notice some differences here, is ony because typings are insufficient, but there is no mapping/wrapping in these. </p>
+				<h2 id="hight-level-event-handlers">Hight level event handlers</h2>
+				<p>Although these are typed are kind of ugly because must be arrays. this is why also there are supported nicer &quot;artificial&quot; event handlers:. JSX-HTML event handler syntax more practical in the markup:</p>
+				<p>onClick, onChange, onRender, onKeyPressed so attributes are easy to write (just a function). </p>
+				<h3 id="event-currenttarget"><strong>event.currentTarget</strong></h3>
+				<p>Like with HTML - React - the event object of these hight level handlers have <code>currentTarget</code> property that references the element that triggered the event. Is particularly useful for change events in input elements: </p>
+				<pre><code class="language-jsx">&lt;checkbox content=<span class="hljs-string">"Collapsed"</span> checked={<span class="hljs-literal">false</span>}
+  onChange={e =&gt; toggleCollapsed(e.currentTarget.parent <span class="hljs-keyword">as</span> any, <span class="hljs-literal">true</span>)}</code></pre>
+				<h3 id="onclick-example">onClick Example</h3>
+				<pre><code class="language-jsx">&lt;button onClick={e =&gt; <span class="hljs-keyword">this</span>.installCollapsible(e.currentTarget, { <span class="hljs-attr">collapsedHeight</span>: <span class="hljs-number">4</span> })}</code></pre>
+				<h3 id="onrender-example">onRender example</h3>
+				<pre><code class="language-jsx">&lt;layout onRender={e =&gt; <span class="hljs-keyword">this</span>.installCollapsible(e.currentTarget, { <span class="hljs-attr">collapsedHeight</span>: <span class="hljs-number">4</span> })}</code></pre>
+				<h3 id="onchange">onChange</h3>
+				<p>(currently only supported for Checkbox and subclasses)  -WIP define chance semantic and support it on all input elements</p>
+				<pre><code class="language-jsx">&lt;checkbox content=<span class="hljs-string">"Collapsed"</span> checked={<span class="hljs-literal">false</span>}
+  onChange={e =&gt; toggleCollapsed(e.currentTarget.parent <span class="hljs-keyword">as</span> any, <span class="hljs-literal">true</span>)}</code></pre>
+				<h3 id="onselect-for-list-like-elements-">onSelect (for list-like elements)</h3>
+				<pre><code class="language-tsx">export class Categories extends Component&lt;Props&gt; {
+  render() {
+    return &lt;Div&gt;Choose a category, select and emoji and press [ENTER] for details.&lt;Br /&gt;
+      &lt;list {...commonOptions()} height={&#39;20%&#39;}
+        items={getCategoryNames()}
+        onSelect={e =&gt; this.selected(e)}
+        /&gt;
+        ...</code></pre>
+				<h2 id="jsx-expressions">JSX Expressions</h2>
+				<p>Any expression often used to declare conditions aor iterate inside JSX Expressions are supported . </p>
+				<p><strong>Falsy values won&#39;t be rendered so you can write expressions like the following</strong></p>
+				<h3 id="conditions-with-and-operator">conditions with AND operator</h3>
+				<pre><code>{ condition <span class="hljs-meta">&amp;&amp; &lt;box...}</span></code></pre><h3 id="array-render-with-map-">array render with map()</h3>
+				<pre><code>{ arr.map(<span class="hljs-name">a</span> =&gt; &lt;box...)}</code></pre><h3 id="conditions-with-ternary-condition">conditions with ternary condition</h3>
+				<pre><code>{ condition ? &lt;<span class="hljs-built_in">box</span>... : &lt;<span class="hljs-built_in">box</span>...}</code></pre><h2 id="react-like-ref-objects">React-like Ref objects</h2>
+				<p><a href="https://reactjs.org/docs/refs-and-the-dom.html">https://reactjs.org/docs/refs-and-the-dom.html</a></p>
+				<pre><code class="language-jsx"><span class="hljs-keyword">const</span> screen = blessed.screen({ <span class="hljs-attr">smartCSR</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">log</span>: <span class="hljs-string">'log.txt'</span>, <span class="hljs-attr">fullUnicode</span>: <span class="hljs-literal">true</span> })
+...
+<span class="hljs-comment">// create a RefObject before rendering.  use the Type parameter to declare it will reference a button</span>
+<span class="hljs-keyword">const</span> ref1 = React.createRef&lt;Button&gt;()
+<span class="hljs-comment">// append some elements to the screen.has a ref iption and its value is the object we jsut cerwated.)</span>
+<span class="hljs-keyword">const</span> app = &lt;box&gt;&lt;button ref={ref1} content="click" onClick={e =&gt; 
+  expect(!ref1.current).isNotDefined() // before render the variable will be undefined
+// after rendering the screen, we will be able to access the button using the variable without manually searching g for it.
+blessed.screen.render()
+// ... when the button finish rendering
+ref1.current!.content = "'changed3"
+ref1.current!.screen.render()
+...
+ref1.press()
+...</code></pre>
+				<ul>
+					<li>it can be also used without JSX - remember is all the same... </li>
+				</ul>
+				<h2 id="jsx-text">JSX Text</h2>
+				<p>By default, for each JSXText node found, a new <code>blessed.text</code> is created. </p>
+				<p>THis means that JSX like</p>
+				<pre><code class="language-jsx">&lt;box&gt; Hello here I<span class="hljs-string">'m writing &lt;button onClick={this.m}&gt;think this is invalid&lt;/button&gt; some &lt;box&gt;in the middle&lt;/box&gt; and a tail&lt;/box&gt;</span></code></pre>
+				<p>will be actually rendered as something like this </p>
+				<pre><code class="language-jsx">&lt;box&gt;&lt;text content=" Hello here I'm writing"/&gt;&lt;button onClick={this.m}&gt;&lt;text content="think this is invalid"/&gt;&lt;/button&gt;&lt;text content=" some "/&gt;&lt;box&gt;&lt;text content="in the middle"/&gt;&lt;/box&gt;&lt;text content=" and a tail"/&gt;&lt;/box&gt;</code></pre>
+				<p>Think on the TREE of blessed elements that will be generated). Also buttons will end up with a text inside. Below are more details, Probably a second implementaiton using parent&#39;s content attribute will be implemented and both will be available thorough configuration. </p>
+				<h2 id="blessed-contrib">blessed-contrib</h2>
+				<p>**blessed-contrib widgets  should be very easy to suuport, but right now I?m focusing on the framework and my own widgets tools and documentation, and hadent much time. They will be in time, probably in a separate project project. </p>
+				<h2 id="rendering-component-own-children">Rendering Component own children</h2>
+				<ul>
+					<li>In custom components you dorender its childs using an expresion like <code>&lt;MyComp {...this.props.hildren} other=&quot;options&quot;/&gt;</code> as expected</li>
+					<li>Custom comeponents andJSX function elementss are responsible of rendering their children and attributes - unlike intrinsic elements which their children and attributes are rendering automatically</li>
+				</ul>
+				<h2 id="fragments">Fragments</h2>
+				<p> Not supported yet :()</p>
+				<h3 id="hooks-into-react-crateelement">Hooks into React.crateElement</h3>
+				<ul>
+					<li>WIP : api to extend the rendering process</li>
+					<li>React object oprovide with some addLikstener in interesting moments of the rendering tha tusers can use to modify the render process and even interrupt / modify the flow but right now only sketches... working on that... </li>
+				</ul>
+				<h3 id="virtual-nodes">Virtual Nodes</h3>
+				<ul>
+					<li>WIP </li>
+					<li>Currently for each JSX Element a blessed elemtn is created. In many ocations I jsut want to declare information/semantics with the markup that a omponent can interpret at render time without all those blessed elemnts created ..  A special COmponent / tag exist that will provide that feature (WIP)</li>
+				</ul>
+				<h1 id="doubts-thouths-told">doubts, thouths, TOLD</h1>
+				<h3 id="doubts-thougths-about-jsx-text-implementation-">doubts / thougths about JSX Text implementation, ç</h3>
+				<p>....blessing, performance, design ...  need feedback ... </p>
+				<p>Observations on the actual implementation</p>
+				<ul>
+					<li>behaves well  with layout=&quot;inline&quot; </li>
+					<li>respect the JSX code AST structure text is a child node, not an attribtue)</li>
+					<li>more natural to format using tags (<H1>hello <strong>ksksks</strong>asdasd<i>ajlshd</i></li>
+					<li>I think is a limiation that a button dont have children. many children  are hardcoded internally as nodes (border, hover, <ul>
+							<li>label. Maybe that&#39;s good for perfoamnce.. but is a limiatation... </li>
+						</ul>
+					</li>
+				</ul>
+				<p>It can be easily changed, but I&#39;n not sure since that will change the structure....</p>
+				<ul>
+					<li>The implementation is isolated in React.[[createTextNode]] method so is easily customizable.  </li>
+				</ul>
+				<ul>
+					<li>Probably will be configurable* because of performance TODO: performance? use another thing ? use content? join several JSXText in one ?  </li>
+				</ul>
+				<p><strong>TO DECIDE WHILE IM PLAYING WITH IT</strong> *right now it behaves well with layouts.. perhaps content=&#39;&#39; is better. or text?</p>
+				<ul>
+					<li>styles could be adapted from blessed like its options and modeled with classhierarchies, but also try to create a new feature and see how it plays there. For example a new option in ComponentWithOptions called cursor (since all elements should support it and don&#39;t)</li>
+				</ul>
+				<h1 id="specs">specs</h1>
+				<ul>
+					<li><p>blessed has no specs - seems they (did) run them manually. I&#39;m writing specs with my new feaytures. Some I use cli-driver to test the tire flow from the real command line automation, and other, I just render the widgets and assert against the screen content. </p>
+					</li>
+					<li><p>testing blessing APIs alone , even create custom elements: spec/blessedSpec.tsx</p>
+						<ul>
+							<li>jsx related: spec/jsxSpec.tsx</li>
+							<li>using cli-driver to spawn a program and automate it spec/jsxSpec.tsx</li>
+						</ul>
+					</li>
+				</ul>
+				<h1 id="my-blessed-contrib-widgets-and-utilities-">My blessed contrib widgets and utilities:</h1>
+				<ul>
+					<li>focus manager</li>
+					<li>collapsible element</li>
+					<li>node operations</li>
+					<li>modal</li>
+					<li>layout rendererand html like semantics</li>
+					<li><code>&lt;If&gt;</code> conditions with markup - not so useful but interesting....</li>
+					<li>React like refs attribtues</li>
+				</ul>
+				<h1 id="apps">Apps</h1>
+				<ul>
+					<li><p>apps/emojis-search  : a unicode data table explorer. Test blessed performance by letting ht user interactively navigate/search, etc the FULL unicode charset . </p>
+					</li>
+					<li><p>accursed gallery, spec/blessed/gallery/LayoutDemo.tsx I tried to use these tools to build a interactive playground with examplesWIP</p>
+						<ul>
+							<li><a href="https://github.com/cancerberoSgx/demos/tree/master/docs/typescript-ast-explorer">https://github.com/cancerberoSgx/demos/tree/master/docs/typescript-ast-explorer</a> - explore a TypeScripty project AST , visualliszetogether with sources code and even apply refactors. </li>
+						</ul>
+					</li>
+				</ul>
+				<h1 id="typings-">Typings:</h1>
+				<p>Also I think I&#39;ve enhanced a lot the blessed.d.ts (TypeScript type declarations). ALthough the work from Definetely Typed  I started from was very good,  I did some refactoring so option types doesn&#39;t get too restrictive, I added lots of jsdoc comments and snippts to classes and methods and <strong>declared lots of internal methods</strong>. I want this types to be used by users extending the library (class MyElement extends blessing.widget.Box {}) and they need visibility to important methods, no matter if those are not meant to be published. I marked those with @internal tab. Also included typings for blessed-contrib but those I didn&#39;t modify so much.</p>
+				<h1 id="documentation-">Documentation:</h1>
+				<p>the typings already existing in DefinitelyTypes had more or less all the descriptions in blessed README. I added a lot from program.js, snippets and make sure it all blessed/tests.js compile OK with the types (which didn&#39;t). Also using typedoc I&#39;m truing to generate html and markdown output of this so I can share with others. TODO: links</p>
+				<h1 id="how-to-bless-documents">How-to bless documents</h1>
+				<h2 id="extending-blessed-elements-with-typescript-and-accursed">Extending blessed Elements with TypeScript and accursed</h2>
+				<p><a href="guides/blessed-extending-element-typescript.md">How to create a new blessed Element extending blessed classes, with descent type documented type checking and TypeScript using accursed:</a></p>
+				<h1 id="todo-issues-ideas">TODO &amp; ISSUES &amp; Ideas</h1>
+				<p><a href="TODO.md">TODO.md</a></p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/widgets.html">Widgets</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+						<a href="modules/widgets.events.html">Widgets.<wbr>Events</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module">
+						<a href="modules/widgets.types.html">Widgets.<wbr>Types</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/widget.html">widget</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="classes/blessedprogram.html" class="tsd-kind-icon">Blessed<wbr>Program</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-not-exported">
+						<a href="interfaces/gpmclient.html" class="tsd-kind-icon">Gpm<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-not-exported">
+						<a href="interfaces/gpmevent.html" class="tsd-kind-icon">Gpm<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/iblessedprogramoptions.html" class="tsd-kind-icon">IBlessed<wbr>Program<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-not-exported">
+						<a href="interfaces/programoutput.html" class="tsd-kind-icon">Program<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-not-exported">
+						<a href="interfaces/programresponsedata.html" class="tsd-kind-icon">Program<wbr>Response<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-not-exported">
+						<a href="interfaces/unicode.html" class="tsd-kind-icon">Unicode</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-not-exported">
+						<a href="globals.html#colorrgb" class="tsd-kind-icon">Color<wbr>Rgb</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-not-exported">
+						<a href="globals.html#programresponsecallback" class="tsd-kind-icon">Program<wbr>Response<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#colors" class="tsd-kind-icon">colors</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#unicode" class="tsd-kind-icon">unicode</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#bigtext" class="tsd-kind-icon">bigtext</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#box" class="tsd-kind-icon">box</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#button" class="tsd-kind-icon">button</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#checkbox" class="tsd-kind-icon">checkbox</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#escape" class="tsd-kind-icon">escape</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#filemanager" class="tsd-kind-icon">filemanager</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#form" class="tsd-kind-icon">form</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#input" class="tsd-kind-icon">input</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#layout" class="tsd-kind-icon">layout</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#line" class="tsd-kind-icon">line</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#list" class="tsd-kind-icon">list</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#listbar" class="tsd-kind-icon">listbar</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#listtable" class="tsd-kind-icon">listtable</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#loading" class="tsd-kind-icon">loading</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#log" class="tsd-kind-icon">log</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#message" class="tsd-kind-icon">message</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#program" class="tsd-kind-icon">program</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#progressbar" class="tsd-kind-icon">progressbar</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#prompt" class="tsd-kind-icon">prompt</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#question" class="tsd-kind-icon">question</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#radiobutton" class="tsd-kind-icon">radiobutton</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#radioset" class="tsd-kind-icon">radioset</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#screen" class="tsd-kind-icon">screen</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#scrollablebox" class="tsd-kind-icon">scrollablebox</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#scrollabletext" class="tsd-kind-icon">scrollabletext</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#table" class="tsd-kind-icon">table</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#terminal" class="tsd-kind-icon">terminal</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#text" class="tsd-kind-icon">text</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#textarea" class="tsd-kind-icon">textarea</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#textbox" class="tsd-kind-icon">textbox</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
