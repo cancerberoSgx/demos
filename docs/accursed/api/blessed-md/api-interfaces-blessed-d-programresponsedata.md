@@ -29,14 +29,14 @@ In general, each event type will respond with a data object that is mixed into t
 * [cursor](api-interfaces-blessed-d-programresponsedata.md#cursor)
 * [event](api-interfaces-blessed-d-programresponsedata.md#event)
 * [height](api-interfaces-blessed-d-programresponsedata.md#height)
-* [page](api-interfaces-blessed-d-programresponsedata.md#page)
+* [page](api-interfaces-blessed-d-programresponsedata.md#page-1)
 * [size](api-interfaces-blessed-d-programresponsedata.md#size)
 * [status](api-interfaces-blessed-d-programresponsedata.md#status)
 * [textAreaSizeCharacters](api-interfaces-blessed-d-programresponsedata.md#textareasizecharacters)
 * [type](api-interfaces-blessed-d-programresponsedata.md#type)
-* [width](api-interfaces-blessed-d-programresponsedata.md#width)
-* [x](api-interfaces-blessed-d-programresponsedata.md#x)
-* [y](api-interfaces-blessed-d-programresponsedata.md#y)
+* [width](api-interfaces-blessed-d-programresponsedata.md#width-2)
+* [x](api-interfaces-blessed-d-programresponsedata.md#x-2)
+* [y](api-interfaces-blessed-d-programresponsedata.md#y-2)
 
 ---
 
@@ -48,7 +48,7 @@ In general, each event type will respond with a data object that is mixed into t
 
 **● code**: *`string`*
 
-*Defined in [blessed.d.ts:25](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L25)*
+*Defined in [blessed.d.ts:25](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L25)*
 
 example: '', 'DSR'
 
@@ -57,9 +57,17 @@ ___
 
 ### `<Optional>` cursor
 
-**● cursor**: *`undefined` \| `object`*
+**● cursor**: *`object`*
 
-*Defined in [blessed.d.ts:35](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L35)*
+*Defined in [blessed.d.ts:35](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L35)*
+
+#### Type declaration
+
+ page: `undefined`
+
+ x: `1`
+
+ y: `1`
 
 ___
 <a id="event"></a>
@@ -68,7 +76,7 @@ ___
 
 **● event**: *`string`*
 
-*Defined in [blessed.d.ts:23](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L23)*
+*Defined in [blessed.d.ts:23](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L23)*
 
 The event type that was requested / write that caused this response. Example: 'window-manipulation', 'device-attributes', 'device-status',
 
@@ -77,45 +85,65 @@ ___
 
 ### `<Optional>` height
 
-**● height**: *`undefined` \| `number`*
+**● height**: *`number`*
 
-*Defined in [blessed.d.ts:29](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L29)*
+*Defined in [blessed.d.ts:29](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L29)*
 
 ___
-<a id="page"></a>
+<a id="page-1"></a>
 
 ### `<Optional>` page
 
 **● page**: *`any`*
 
-*Defined in [blessed.d.ts:32](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L32)*
+*Defined in [blessed.d.ts:32](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L32)*
 
 ___
 <a id="size"></a>
 
 ### `<Optional>` size
 
-**● size**: *`undefined` \| `object`*
+**● size**: *`object`*
 
-*Defined in [blessed.d.ts:28](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L28)*
+*Defined in [blessed.d.ts:28](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L28)*
+
+#### Type declaration
+
+ height: `number`
+
+ width: `number`
 
 ___
 <a id="status"></a>
 
 ### `<Optional>` status
 
-**● status**: *`undefined` \| `object`*
+**● status**: *`object`*
 
-*Defined in [blessed.d.ts:31](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L31)*
+*Defined in [blessed.d.ts:31](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L31)*
+
+#### Type declaration
+
+`Optional`  page: `number`
+
+`Optional`  x: `number`
+
+ y: `number`
 
 ___
 <a id="textareasizecharacters"></a>
 
 ### `<Optional>` textAreaSizeCharacters
 
-**● textAreaSizeCharacters**: *`undefined` \| `object`*
+**● textAreaSizeCharacters**: *`object`*
 
-*Defined in [blessed.d.ts:36](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L36)*
+*Defined in [blessed.d.ts:36](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L36)*
+
+#### Type declaration
+
+ height: `number`
+
+ width: `number`
 
 ___
 <a id="type"></a>
@@ -124,36 +152,36 @@ ___
 
 **● type**: *`string`*
 
-*Defined in [blessed.d.ts:27](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L27)*
+*Defined in [blessed.d.ts:27](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L27)*
 
 Identifies the request type that caused this response. For example, if a 'window-manipulation' is written the response type could be 'textarea-size', example: 'textarea-size', 'cursor-status',
 
 ___
-<a id="width"></a>
+<a id="width-2"></a>
 
 ### `<Optional>` width
 
-**● width**: *`undefined` \| `number`*
+**● width**: *`number`*
 
-*Defined in [blessed.d.ts:30](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L30)*
+*Defined in [blessed.d.ts:30](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L30)*
 
 ___
-<a id="x"></a>
+<a id="x-2"></a>
 
 ### `<Optional>` x
 
-**● x**: *`undefined` \| `number`*
+**● x**: *`number`*
 
-*Defined in [blessed.d.ts:33](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L33)*
+*Defined in [blessed.d.ts:33](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L33)*
 
 ___
-<a id="y"></a>
+<a id="y-2"></a>
 
 ### `<Optional>` y
 
-**● y**: *`undefined` \| `number`*
+**● y**: *`number`*
 
-*Defined in [blessed.d.ts:34](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L34)*
+*Defined in [blessed.d.ts:34](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L34)*
 
 ___
 

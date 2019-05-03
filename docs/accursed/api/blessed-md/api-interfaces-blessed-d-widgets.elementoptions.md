@@ -25,6 +25,7 @@ sidebar_label: ElementOptions
 * [_data](api-interfaces-blessed-d-widgets.elementoptions.md#_data)
 * [align](api-interfaces-blessed-d-widgets.elementoptions.md#align)
 * [bg](api-interfaces-blessed-d-widgets.elementoptions.md#bg)
+* [blink](api-interfaces-blessed-d-widgets.elementoptions.md#blink)
 * [bold](api-interfaces-blessed-d-widgets.elementoptions.md#bold)
 * [border](api-interfaces-blessed-d-widgets.elementoptions.md#border)
 * [bottom](api-interfaces-blessed-d-widgets.elementoptions.md#bottom)
@@ -32,18 +33,27 @@ sidebar_label: ElementOptions
 * [children](api-interfaces-blessed-d-widgets.elementoptions.md#children)
 * [clickable](api-interfaces-blessed-d-widgets.elementoptions.md#clickable)
 * [content](api-interfaces-blessed-d-widgets.elementoptions.md#content)
+* [dockBorders](api-interfaces-blessed-d-widgets.elementoptions.md#dockborders)
 * [draggable](api-interfaces-blessed-d-widgets.elementoptions.md#draggable)
+* [effects](api-interfaces-blessed-d-widgets.elementoptions.md#effects)
 * [fg](api-interfaces-blessed-d-widgets.elementoptions.md#fg)
+* [fixed](api-interfaces-blessed-d-widgets.elementoptions.md#fixed)
+* [focusEffects](api-interfaces-blessed-d-widgets.elementoptions.md#focuseffects)
 * [focusable](api-interfaces-blessed-d-widgets.elementoptions.md#focusable)
 * [focused](api-interfaces-blessed-d-widgets.elementoptions.md#focused)
 * [height](api-interfaces-blessed-d-widgets.elementoptions.md#height)
 * [hidden](api-interfaces-blessed-d-widgets.elementoptions.md#hidden)
+* [hoverBg](api-interfaces-blessed-d-widgets.elementoptions.md#hoverbg)
+* [hoverEffects](api-interfaces-blessed-d-widgets.elementoptions.md#hovereffects)
 * [hoverText](api-interfaces-blessed-d-widgets.elementoptions.md#hovertext)
 * [input](api-interfaces-blessed-d-widgets.elementoptions.md#input)
+* [inverse](api-interfaces-blessed-d-widgets.elementoptions.md#inverse)
+* [invisible](api-interfaces-blessed-d-widgets.elementoptions.md#invisible)
 * [keyable](api-interfaces-blessed-d-widgets.elementoptions.md#keyable)
 * [label](api-interfaces-blessed-d-widgets.elementoptions.md#label)
 * [left](api-interfaces-blessed-d-widgets.elementoptions.md#left)
 * [name](api-interfaces-blessed-d-widgets.elementoptions.md#name)
+* [noOverflow](api-interfaces-blessed-d-widgets.elementoptions.md#nooverflow)
 * [padding](api-interfaces-blessed-d-widgets.elementoptions.md#padding)
 * [parent](api-interfaces-blessed-d-widgets.elementoptions.md#parent)
 * [position](api-interfaces-blessed-d-widgets.elementoptions.md#position)
@@ -56,9 +66,11 @@ sidebar_label: ElementOptions
 * [style](api-interfaces-blessed-d-widgets.elementoptions.md#style)
 * [tags](api-interfaces-blessed-d-widgets.elementoptions.md#tags)
 * [top](api-interfaces-blessed-d-widgets.elementoptions.md#top)
+* [transparent](api-interfaces-blessed-d-widgets.elementoptions.md#transparent)
 * [underline](api-interfaces-blessed-d-widgets.elementoptions.md#underline)
 * [valign](api-interfaces-blessed-d-widgets.elementoptions.md#valign)
 * [width](api-interfaces-blessed-d-widgets.elementoptions.md#width)
+* [wrap](api-interfaces-blessed-d-widgets.elementoptions.md#wrap)
 
 ---
 
@@ -68,11 +80,15 @@ sidebar_label: ElementOptions
 
 ### `<Optional>` _data
 
-**● _data**: *`undefined` \| `object`*
+**● _data**: *`object`*
 
-*Defined in [blessed.d.ts:2685](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2685)*
+*Defined in [blessed.d.ts:2738](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2738)*
 
 Miscelanus options. Currently JavaScript/Blessed allows to pass anything as option, this is just a bucket for TypeScript and have impact
+
+#### Type declaration
+
+[name: `string`]: `any`
 
 ___
 <a id="align"></a>
@@ -81,7 +97,7 @@ ___
 
 **● align**: *"left" \| "center" \| "right"*
 
-*Defined in [blessed.d.ts:2622](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2622)*
+*Defined in [blessed.d.ts:2675](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2675)*
 
 Text alignment: left, center, or right.
 
@@ -92,16 +108,25 @@ ___
 
 **● bg**: *[Color](api-modules-blessed-d-widgets.md#color)*
 
-*Defined in [blessed.d.ts:2572](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2572)*
+*Defined in [blessed.d.ts:2579](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2579)*
+
+___
+<a id="blink"></a>
+
+### `<Optional>` blink
+
+**● blink**: *`boolean`*
+
+*Defined in [blessed.d.ts:2582](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2582)*
 
 ___
 <a id="bold"></a>
 
 ### `<Optional>` bold
 
-**● bold**: *`undefined` \| `false` \| `true`*
+**● bold**: *`boolean`*
 
-*Defined in [blessed.d.ts:2573](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2573)*
+*Defined in [blessed.d.ts:2580](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2580)*
 
 ___
 <a id="border"></a>
@@ -110,7 +135,7 @@ ___
 
 **● border**: *[TBorder](api-interfaces-blessed-d-widgets.types.tborder.md) \| [BorderType](api-modules-blessed-d-widgets.types.md#bordertype)*
 
-*Defined in [blessed.d.ts:2581](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2581)*
+*Defined in [blessed.d.ts:2592](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2592)*
 
 Border object, see below.
 
@@ -121,16 +146,16 @@ ___
 
 **● bottom**: *[TPosition](api-modules-blessed-d-widgets.types.md#tposition)*
 
-*Defined in [blessed.d.ts:2643](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2643)*
+*Defined in [blessed.d.ts:2696](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2696)*
 
 ___
 <a id="ch"></a>
 
 ### `<Optional>` ch
 
-**● ch**: *`undefined` \| `string`*
+**● ch**: *`string`*
 
-*Defined in [blessed.d.ts:2671](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2671)*
+*Defined in [blessed.d.ts:2724](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2724)*
 
 Background character (default is whitespace ).
 
@@ -143,16 +168,16 @@ ___
 
 *Inherited from [INodeOptions](api-interfaces-blessed-d-widgets.inodeoptions.md).[children](api-interfaces-blessed-d-widgets.inodeoptions.md#children)*
 
-*Defined in [blessed.d.ts:1642](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1642)*
+*Defined in [blessed.d.ts:1630](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1630)*
 
 ___
 <a id="clickable"></a>
 
 ### `<Optional>` clickable
 
-**● clickable**: *`undefined` \| `false` \| `true`*
+**● clickable**: *`boolean`*
 
-*Defined in [blessed.d.ts:2591](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2591)*
+*Defined in [blessed.d.ts:2602](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2602)*
 
 Element is clickable.
 
@@ -161,22 +186,50 @@ ___
 
 ### `<Optional>` content
 
-**● content**: *`undefined` \| `string`*
+**● content**: *`string`*
 
-*Defined in [blessed.d.ts:2586](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2586)*
+*Defined in [blessed.d.ts:2597](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2597)*
 
 Element's text content.
+
+___
+<a id="dockborders"></a>
+
+### `<Optional>` dockBorders
+
+**● dockBorders**: *`boolean`*
+
+*Defined in [blessed.d.ts:2618](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2618)*
+
+Automatically "dock" borders with other elements instead of overlapping, depending on position (experimental).
 
 ___
 <a id="draggable"></a>
 
 ### `<Optional>` draggable
 
-**● draggable**: *`undefined` \| `false` \| `true`*
+**● draggable**: *`boolean`*
 
-*Defined in [blessed.d.ts:2676](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2676)*
+*Defined in [blessed.d.ts:2729](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2729)*
 
 Allow the element to be dragged with the mouse.
+
+___
+<a id="effects"></a>
+
+### `<Optional>` effects
+
+**● effects**: *`object`*
+
+*Defined in [blessed.d.ts:2668](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2668)*
+
+Same as style.focus and style.hover
+
+#### Type declaration
+
+`Optional`  focus: [TStyle](api-interfaces-blessed-d-widgets.types.tstyle.md)
+
+`Optional`  hover: [TStyle](api-interfaces-blessed-d-widgets.types.tstyle.md)
 
 ___
 <a id="fg"></a>
@@ -185,18 +238,38 @@ ___
 
 **● fg**: *[Color](api-modules-blessed-d-widgets.md#color)*
 
-*Defined in [blessed.d.ts:2571](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2571)*
+*Defined in [blessed.d.ts:2578](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2578)*
+
+___
+<a id="fixed"></a>
+
+### `<Optional>` fixed
+
+**● fixed**: *`boolean`*
+
+*Defined in [blessed.d.ts:2625](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2625)*
+
+___
+<a id="focuseffects"></a>
+
+### `<Optional>` focusEffects
+
+**● focusEffects**: *[TStyle](api-interfaces-blessed-d-widgets.types.tstyle.md)*
+
+*Defined in [blessed.d.ts:2664](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2664)*
+
+Same as style.focus
 
 ___
 <a id="focusable"></a>
 
 ### `<Optional>` focusable
 
-**● focusable**: *`undefined` \| `false` \| `true`*
+**● focusable**: *`boolean`*
 
 *Inherited from [INodeOptions](api-interfaces-blessed-d-widgets.inodeoptions.md).[focusable](api-interfaces-blessed-d-widgets.inodeoptions.md#focusable)*
 
-*Defined in [blessed.d.ts:1646](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1646)*
+*Defined in [blessed.d.ts:1634](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1634)*
 
 If true, the node will obtain focus when m
 
@@ -205,9 +278,9 @@ ___
 
 ### `<Optional>` focused
 
-**● focused**: *`undefined` \| `false` \| `true`*
+**● focused**: *`boolean`*
 
-*Defined in [blessed.d.ts:2602](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2602)*
+*Defined in [blessed.d.ts:2635](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2635)*
 
 Element is focused.
 
@@ -218,7 +291,7 @@ ___
 
 **● height**: *`number` \| `string`*
 
-*Defined in [blessed.d.ts:2656](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2656)*
+*Defined in [blessed.d.ts:2709](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2709)*
 
 Offsets of the element relative to its parent. Can be a number, percentage (0-100%), or keyword (center). right and bottom do not accept keywords. Percentages can also have offsets (50%+1, 50%-1).
 
@@ -227,20 +300,42 @@ ___
 
 ### `<Optional>` hidden
 
-**● hidden**: *`undefined` \| `false` \| `true`*
+**● hidden**: *`boolean`*
 
-*Defined in [blessed.d.ts:2607](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2607)*
+*Defined in [blessed.d.ts:2640](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2640)*
 
 Whether the element is hidden.
+
+___
+<a id="hoverbg"></a>
+
+### `<Optional>` hoverBg
+
+**● hoverBg**: *[Color](api-modules-blessed-d-widgets.md#color)*
+
+*Defined in [blessed.d.ts:2655](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2655)*
+
+Same as style.hover.bg
+
+___
+<a id="hovereffects"></a>
+
+### `<Optional>` hoverEffects
+
+**● hoverEffects**: *[TStyle](api-interfaces-blessed-d-widgets.types.tstyle.md)*
+
+*Defined in [blessed.d.ts:2660](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2660)*
+
+Same as style.hover
 
 ___
 <a id="hovertext"></a>
 
 ### `<Optional>` hoverText
 
-**● hoverText**: *`undefined` \| `string`*
+**● hoverText**: *`string`*
 
-*Defined in [blessed.d.ts:2617](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2617)*
+*Defined in [blessed.d.ts:2650](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2650)*
 
 A floating text label for the element which appears on mouseover.
 
@@ -249,29 +344,49 @@ ___
 
 ### `<Optional>` input
 
-**● input**: *`undefined` \| `false` \| `true`*
+**● input**: *`boolean`*
 
-*Defined in [blessed.d.ts:2596](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2596)*
+*Defined in [blessed.d.ts:2607](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2607)*
 
 Element is focusable and can receive key input.
+
+___
+<a id="inverse"></a>
+
+### `<Optional>` inverse
+
+**● inverse**: *`boolean`*
+
+*Defined in [blessed.d.ts:2583](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2583)*
+
+___
+<a id="invisible"></a>
+
+### `<Optional>` invisible
+
+**● invisible**: *`boolean`*
+
+*Defined in [blessed.d.ts:2584](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2584)*
 
 ___
 <a id="keyable"></a>
 
 ### `<Optional>` keyable
 
-**● keyable**: *`undefined` \| `false` \| `true`*
+**● keyable**: *`boolean`*
 
-*Defined in [blessed.d.ts:2597](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2597)*
+*Defined in [blessed.d.ts:2612](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2612)*
+
+Keys enabled for this element.
 
 ___
 <a id="label"></a>
 
 ### `<Optional>` label
 
-**● label**: *`undefined` \| `string`*
+**● label**: *`string`*
 
-*Defined in [blessed.d.ts:2612](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2612)*
+*Defined in [blessed.d.ts:2645](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2645)*
 
 A simple text label for the element.
 
@@ -282,18 +397,29 @@ ___
 
 **● left**: *[TTopLeft](api-modules-blessed-d-widgets.types.md#ttopleft)*
 
-*Defined in [blessed.d.ts:2641](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2641)*
+*Defined in [blessed.d.ts:2694](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2694)*
 
 ___
 <a id="name"></a>
 
 ### `<Optional>` name
 
-**● name**: *`undefined` \| `string`*
+**● name**: *`string`*
 
 *Inherited from [INodeOptions](api-interfaces-blessed-d-widgets.inodeoptions.md).[name](api-interfaces-blessed-d-widgets.inodeoptions.md#name)*
 
-*Defined in [blessed.d.ts:1639](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1639)*
+*Defined in [blessed.d.ts:1627](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1627)*
+
+___
+<a id="nooverflow"></a>
+
+### `<Optional>` noOverflow
+
+**● noOverflow**: *`boolean`*
+
+*Defined in [blessed.d.ts:2623](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2623)*
+
+Hide content or children outside this element's viewport.
 
 ___
 <a id="padding"></a>
@@ -302,7 +428,7 @@ ___
 
 **● padding**: *`number` \| [Padding](api-interfaces-blessed-d-widgets.padding.md)*
 
-*Defined in [blessed.d.ts:2638](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2638)*
+*Defined in [blessed.d.ts:2691](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2691)*
 
 Amount of padding on the inside of the element. Can be a number or an object containing the properties: left, right, top, and bottom.
 
@@ -315,7 +441,7 @@ ___
 
 *Inherited from [INodeOptions](api-interfaces-blessed-d-widgets.inodeoptions.md).[parent](api-interfaces-blessed-d-widgets.inodeoptions.md#parent)*
 
-*Defined in [blessed.d.ts:1641](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1641)*
+*Defined in [blessed.d.ts:1629](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1629)*
 
 ___
 <a id="position"></a>
@@ -324,7 +450,7 @@ ___
 
 **● position**: *[Position](api-interfaces-blessed-d-widgets.position.md)*
 
-*Defined in [blessed.d.ts:2661](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2661)*
+*Defined in [blessed.d.ts:2714](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2714)*
 
 Can contain the above options.
 
@@ -335,7 +461,7 @@ ___
 
 **● ref**: *[RefObject](api-interfaces-blessed-d-widgets.refobject.md)*
 
-*Defined in [blessed.d.ts:2688](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2688)*
+*Defined in [blessed.d.ts:2741](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2741)*
 
 `accursed` library custom support for React-like Refs. Declare the option here so it works out of the box. [https://reactjs.org/docs/refs-and-the-dom.html](https://reactjs.org/docs/refs-and-the-dom.html). TODO: documentation
 
@@ -346,7 +472,7 @@ ___
 
 **● right**: *[TPosition](api-modules-blessed-d-widgets.types.md#tposition)*
 
-*Defined in [blessed.d.ts:2642](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2642)*
+*Defined in [blessed.d.ts:2695](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2695)*
 
 ___
 <a id="screen"></a>
@@ -357,16 +483,16 @@ ___
 
 *Inherited from [INodeOptions](api-interfaces-blessed-d-widgets.inodeoptions.md).[screen](api-interfaces-blessed-d-widgets.inodeoptions.md#screen)*
 
-*Defined in [blessed.d.ts:1640](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1640)*
+*Defined in [blessed.d.ts:1628](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1628)*
 
 ___
 <a id="scrollable"></a>
 
 ### `<Optional>` scrollable
 
-**● scrollable**: *`undefined` \| `false` \| `true`*
+**● scrollable**: *`boolean`*
 
-*Defined in [blessed.d.ts:2666](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2666)*
+*Defined in [blessed.d.ts:2719](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2719)*
 
 Whether the element is scrollable or not.
 
@@ -375,9 +501,9 @@ ___
 
 ### `<Optional>` shadow
 
-**● shadow**: *`undefined` \| `false` \| `true`*
+**● shadow**: *`boolean`*
 
-*Defined in [blessed.d.ts:2681](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2681)*
+*Defined in [blessed.d.ts:2734](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2734)*
 
 Draw a translucent offset shadow behind the element.
 
@@ -386,9 +512,9 @@ ___
 
 ### `<Optional>` shrink
 
-**● shrink**: *`undefined` \| `false` \| `true`*
+**● shrink**: *`boolean`*
 
-*Defined in [blessed.d.ts:2632](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2632)*
+*Defined in [blessed.d.ts:2685](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2685)*
 
 Shrink/flex/grow to content and child elements. Width/height during render.
 
@@ -399,16 +525,16 @@ ___
 
 **● style**: *[TStyle](api-interfaces-blessed-d-widgets.types.tstyle.md)*
 
-*Defined in [blessed.d.ts:2576](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2576)*
+*Defined in [blessed.d.ts:2587](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2587)*
 
 ___
 <a id="tags"></a>
 
 ### `<Optional>` tags
 
-**● tags**: *`undefined` \| `false` \| `true`*
+**● tags**: *`boolean`*
 
-*Defined in [blessed.d.ts:2569](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2569)*
+*Defined in [blessed.d.ts:2576](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2576)*
 
 ___
 <a id="top"></a>
@@ -417,16 +543,25 @@ ___
 
 **● top**: *[TTopLeft](api-modules-blessed-d-widgets.types.md#ttopleft)*
 
-*Defined in [blessed.d.ts:2640](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2640)*
+*Defined in [blessed.d.ts:2693](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2693)*
+
+___
+<a id="transparent"></a>
+
+### `<Optional>` transparent
+
+**● transparent**: *`boolean`*
+
+*Defined in [blessed.d.ts:2585](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2585)*
 
 ___
 <a id="underline"></a>
 
 ### `<Optional>` underline
 
-**● underline**: *`undefined` \| `false` \| `true`*
+**● underline**: *`boolean`*
 
-*Defined in [blessed.d.ts:2574](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2574)*
+*Defined in [blessed.d.ts:2581](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2581)*
 
 ___
 <a id="valign"></a>
@@ -435,7 +570,7 @@ ___
 
 **● valign**: *"top" \| "middle" \| "bottom"*
 
-*Defined in [blessed.d.ts:2627](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2627)*
+*Defined in [blessed.d.ts:2680](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2680)*
 
 Vertical text alignment: top, middle, or bottom.
 
@@ -446,9 +581,20 @@ ___
 
 **● width**: *`number` \| `string`*
 
-*Defined in [blessed.d.ts:2649](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2649)*
+*Defined in [blessed.d.ts:2702](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2702)*
 
 Width/height of the element, can be a number, percentage (0-100%), or keyword (half or shrink). Percentages can also have offsets (50%+1, 50%-1).
+
+___
+<a id="wrap"></a>
+
+### `<Optional>` wrap
+
+**● wrap**: *`boolean`*
+
+*Defined in [blessed.d.ts:2630](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2630)*
+
+Wrap content inside this element viewport.
 
 ___
 

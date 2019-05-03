@@ -72,7 +72,7 @@ sidebar_label: IScreenOptions
 
 **● abottom**: *[TPosition](api-modules-blessed-d-widgets.types.md#tposition)*
 
-*Defined in [blessed.d.ts:2076](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2076)*
+*Defined in [blessed.d.ts:2064](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2064)*
 
 Absolute bottom offset, always zero.
 
@@ -83,7 +83,7 @@ ___
 
 **● aleft**: *[TTopLeft](api-modules-blessed-d-widgets.types.md#ttopleft)*
 
-*Defined in [blessed.d.ts:2066](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2066)*
+*Defined in [blessed.d.ts:2054](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2054)*
 
 Absolute left offset, always zero.
 
@@ -94,7 +94,7 @@ ___
 
 **● aright**: *[TPosition](api-modules-blessed-d-widgets.types.md#tposition)*
 
-*Defined in [blessed.d.ts:2071](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2071)*
+*Defined in [blessed.d.ts:2059](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2059)*
 
 Absolute right offset, always zero.
 
@@ -105,7 +105,7 @@ ___
 
 **● atop**: *[TTopLeft](api-modules-blessed-d-widgets.types.md#ttopleft)*
 
-*Defined in [blessed.d.ts:2061](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2061)*
+*Defined in [blessed.d.ts:2049](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2049)*
 
 Absolute top offset, always zero.
 
@@ -114,9 +114,9 @@ ___
 
 ### `<Optional>` autoPadding
 
-**● autoPadding**: *`undefined` \| `false` \| `true`*
+**● autoPadding**: *`boolean`*
 
-*Defined in [blessed.d.ts:1925](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1925)*
+*Defined in [blessed.d.ts:1913](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1913)*
 
 Automatically position child elements with border and padding in mind (NOTE: this is a recommended option. It may become default in the future).
 
@@ -127,7 +127,7 @@ ___
 
 **● bottom**: *[TPosition](api-modules-blessed-d-widgets.types.md#tposition)*
 
-*Defined in [blessed.d.ts:2056](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2056)*
+*Defined in [blessed.d.ts:2044](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2044)*
 
 Relative bottom offset, always zero.
 
@@ -140,16 +140,16 @@ ___
 
 *Inherited from [INodeOptions](api-interfaces-blessed-d-widgets.inodeoptions.md).[children](api-interfaces-blessed-d-widgets.inodeoptions.md#children)*
 
-*Defined in [blessed.d.ts:1642](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1642)*
+*Defined in [blessed.d.ts:1630](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1630)*
 
 ___
 <a id="cols"></a>
 
 ### `<Optional>` cols
 
-**● cols**: *`undefined` \| `number`*
+**● cols**: *`number`*
 
-*Defined in [blessed.d.ts:2031](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2031)*
+*Defined in [blessed.d.ts:2019](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2019)*
 
 Same as screen.width.
 
@@ -160,16 +160,16 @@ ___
 
 **● cursor**: *[TCursor](api-interfaces-blessed-d-widgets.types.tcursor.md)*
 
-*Defined in [blessed.d.ts:1927](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1927)*
+*Defined in [blessed.d.ts:1915](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1915)*
 
 ___
 <a id="debug"></a>
 
 ### `<Optional>` debug
 
-**● debug**: *`undefined` \| `false` \| `true`*
+**● debug**: *`boolean`*
 
-*Defined in [blessed.d.ts:1943](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1943)*
+*Defined in [blessed.d.ts:1931](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1931)*
 
 Debug mode. Enables usage of the debug method. Also creates a debug console which will display when pressing F12. It will display all log and debug messages.
 
@@ -180,7 +180,7 @@ ___
 
 **● debugLog**: *[Log](api-classes-blessed-d-widgets.log.md)*
 
-*Defined in [blessed.d.ts:1950](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1950)*
+*Defined in [blessed.d.ts:1938](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1938)*
 
 Instance of the debug console that is enabled when calling debug options is actuve and key f12 is pressed. Useful to programmatically access it in case keys don't wonk.
 
@@ -191,9 +191,9 @@ ___
 
 ### `<Optional>` dockBorders
 
-**● dockBorders**: *`undefined` \| `false` \| `true`*
+**● dockBorders**: *`boolean`*
 
-*Defined in [blessed.d.ts:1962](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1962)*
+*Defined in [blessed.d.ts:1950](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1950)*
 
 Automatically "dock" borders with other elements instead of overlapping, depending on position (experimental). For example: These border-overlapped elements:
 
@@ -204,7 +204,7 @@ ___
 
 **● dump**: *`string` \| `boolean`*
 
-*Defined in [blessed.d.ts:1937](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1937)*
+*Defined in [blessed.d.ts:1925](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1925)*
 
 Dump all output and input to desired file. Can be used together with log option if set as a boolean.
 
@@ -213,9 +213,9 @@ ___
 
 ### `<Optional>` fastCSR
 
-**● fastCSR**: *`undefined` \| `false` \| `true`*
+**● fastCSR**: *`boolean`*
 
-*Defined in [blessed.d.ts:1901](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1901)*
+*Defined in [blessed.d.ts:1889](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1889)*
 
 Do CSR on any element within 20 cols of the screen edge on either side. Faster than smartCSR, but may cause flickering depending on what is on each side of the element.
 
@@ -224,11 +224,11 @@ ___
 
 ### `<Optional>` focusable
 
-**● focusable**: *`undefined` \| `false` \| `true`*
+**● focusable**: *`boolean`*
 
 *Inherited from [INodeOptions](api-interfaces-blessed-d-widgets.inodeoptions.md).[focusable](api-interfaces-blessed-d-widgets.inodeoptions.md#focusable)*
 
-*Defined in [blessed.d.ts:1646](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1646)*
+*Defined in [blessed.d.ts:1634](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1634)*
 
 If true, the node will obtain focus when m
 
@@ -239,7 +239,7 @@ ___
 
 **● focused**: *[BlessedElement](api-classes-blessed-d-widgets.blessedelement.md)*
 
-*Defined in [blessed.d.ts:2016](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2016)*
+*Defined in [blessed.d.ts:2004](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2004)*
 
 Top of the focus history stack.
 
@@ -248,9 +248,9 @@ ___
 
 ### `<Optional>` forceUnicode
 
-**● forceUnicode**: *`undefined` \| `false` \| `true`*
+**● forceUnicode**: *`boolean`*
 
-*Defined in [blessed.d.ts:1994](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1994)*
+*Defined in [blessed.d.ts:1982](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1982)*
 
 Force blessed to use unicode even if it is not detected via terminfo, env variables, or windows code page. If value is true unicode is forced. If value is false non-unicode is forced (default: null).
 
@@ -259,9 +259,9 @@ ___
 
 ### `<Optional>` fullUnicode
 
-**● fullUnicode**: *`undefined` \| `false` \| `true`*
+**● fullUnicode**: *`boolean`*
 
-*Defined in [blessed.d.ts:1978](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1978)*
+*Defined in [blessed.d.ts:1966](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1966)*
 
 Allow for rendering of East Asian double-width characters, utf-16 surrogate pairs, and unicode combining characters. This allows you to display text above the basic multilingual plane. This is behind an option because it may affect performance slightly negatively. Without this option enabled, all double-width, surrogate pair, and combining characters will be replaced by '??', '?', '' respectively. (NOTE: iTerm2 cannot display combining characters properly. Blessed simply removes them from an element's content if iTerm2 is detected).
 
@@ -272,7 +272,7 @@ ___
 
 **● grabKeys**: *`any`*
 
-*Defined in [blessed.d.ts:2081](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2081)*
+*Defined in [blessed.d.ts:2069](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2069)*
 
 Whether the focused element grabs all keypresses.
 
@@ -281,9 +281,9 @@ ___
 
 ### `<Optional>` height
 
-**● height**: *[TPosition](api-modules-blessed-d-widgets.types.md#tposition)*
+**● height**: *`number`*
 
-*Defined in [blessed.d.ts:2026](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2026)*
+*Defined in [blessed.d.ts:2014](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2014)*
 
 Height of the screen (same as program.rows).
 
@@ -294,7 +294,7 @@ ___
 
 **● hover**: *`any`*
 
-*Defined in [blessed.d.ts:2091](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2091)*
+*Defined in [blessed.d.ts:2079](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2079)*
 
 The currently hovered element. Only set if mouse events are bound.
 
@@ -303,9 +303,9 @@ ___
 
 ### `<Optional>` ignoreDockContrast
 
-**● ignoreDockContrast**: *`undefined` \| `false` \| `true`*
+**● ignoreDockContrast**: *`boolean`*
 
-*Defined in [blessed.d.ts:1968](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1968)*
+*Defined in [blessed.d.ts:1956](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1956)*
 
 Normally, dockable borders will not dock if the colors or attributes are different. This option will allow them to dock regardless. It may produce some odd looking multi-colored borders though.
 
@@ -314,9 +314,9 @@ ___
 
 ### `<Optional>` ignoreLocked
 
-**● ignoreLocked**: *`undefined` \| `false` \| `true`*
+**● ignoreLocked**: *`boolean`*
 
-*Defined in [blessed.d.ts:1956](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1956)*
+*Defined in [blessed.d.ts:1944](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1944)*
 
 Array of keys in their full format (e.g. C-c) to ignore when keys are locked or grabbed. Useful for creating a key that will always exit no matter whether the keys are locked.
 
@@ -327,7 +327,7 @@ ___
 
 **● input**: *`stream.Writable`*
 
-*Defined in [blessed.d.ts:2000](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2000)*
+*Defined in [blessed.d.ts:1988](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1988)*
 
 Input and output streams. process.stdin/process.stdout by default, however, it could be a net.Socket if you want to make a program that runs over telnet or something of that nature.
 
@@ -338,7 +338,7 @@ ___
 
 **● left**: *[TTopLeft](api-modules-blessed-d-widgets.types.md#ttopleft)*
 
-*Defined in [blessed.d.ts:2046](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2046)*
+*Defined in [blessed.d.ts:2034](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2034)*
 
 Relative left offset, always zero.
 
@@ -347,9 +347,9 @@ ___
 
 ### `<Optional>` lockKeys
 
-**● lockKeys**: *`undefined` \| `false` \| `true`*
+**● lockKeys**: *`boolean`*
 
-*Defined in [blessed.d.ts:2086](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2086)*
+*Defined in [blessed.d.ts:2074](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2074)*
 
 Prevent keypresses from being received by any element.
 
@@ -358,9 +358,9 @@ ___
 
 ### `<Optional>` log
 
-**● log**: *`undefined` \| `string`*
+**● log**: *`string`*
 
-*Defined in [blessed.d.ts:1932](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1932)*
+*Defined in [blessed.d.ts:1920](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1920)*
 
 Create a log file. See log method.
 
@@ -369,11 +369,11 @@ ___
 
 ### `<Optional>` name
 
-**● name**: *`undefined` \| `string`*
+**● name**: *`string`*
 
 *Inherited from [INodeOptions](api-interfaces-blessed-d-widgets.inodeoptions.md).[name](api-interfaces-blessed-d-widgets.inodeoptions.md#name)*
 
-*Defined in [blessed.d.ts:1639](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1639)*
+*Defined in [blessed.d.ts:1627](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1627)*
 
 ___
 <a id="output"></a>
@@ -382,7 +382,7 @@ ___
 
 **● output**: *`stream.Readable`*
 
-*Defined in [blessed.d.ts:2006](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2006)*
+*Defined in [blessed.d.ts:1994](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1994)*
 
 Input and output streams. process.stdin/process.stdout by default, however, it could be a net.Socket if you want to make a program that runs over telnet or something of that nature.
 
@@ -395,7 +395,7 @@ ___
 
 *Inherited from [INodeOptions](api-interfaces-blessed-d-widgets.inodeoptions.md).[parent](api-interfaces-blessed-d-widgets.inodeoptions.md#parent)*
 
-*Defined in [blessed.d.ts:1641](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1641)*
+*Defined in [blessed.d.ts:1629](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1629)*
 
 ___
 <a id="program"></a>
@@ -404,7 +404,7 @@ ___
 
 **● program**: *[BlessedProgram](api-classes-blessed-d-blessedprogram.md)*
 
-*Defined in [blessed.d.ts:1888](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1888)*
+*Defined in [blessed.d.ts:1876](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1876)*
 
 The blessed Program to be associated with. Will be automatically instantiated if none is provided.
 
@@ -413,9 +413,9 @@ ___
 
 ### `<Optional>` resizeTimeout
 
-**● resizeTimeout**: *`undefined` \| `number`*
+**● resizeTimeout**: *`number`*
 
-*Defined in [blessed.d.ts:1914](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1914)*
+*Defined in [blessed.d.ts:1902](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1902)*
 
 Amount of time (in ms) to redraw the screen after the terminal is resized (Default: 300).
 
@@ -426,7 +426,7 @@ ___
 
 **● right**: *[TPosition](api-modules-blessed-d-widgets.types.md#tposition)*
 
-*Defined in [blessed.d.ts:2051](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2051)*
+*Defined in [blessed.d.ts:2039](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2039)*
 
 Relative right offset, always zero.
 
@@ -435,9 +435,9 @@ ___
 
 ### `<Optional>` rows
 
-**● rows**: *`undefined` \| `number`*
+**● rows**: *`number`*
 
-*Defined in [blessed.d.ts:2036](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2036)*
+*Defined in [blessed.d.ts:2024](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2024)*
 
 Same as screen.height.
 
@@ -450,16 +450,16 @@ ___
 
 *Inherited from [INodeOptions](api-interfaces-blessed-d-widgets.inodeoptions.md).[screen](api-interfaces-blessed-d-widgets.inodeoptions.md#screen)*
 
-*Defined in [blessed.d.ts:1640](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1640)*
+*Defined in [blessed.d.ts:1628](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1628)*
 
 ___
 <a id="sendfocus"></a>
 
 ### `<Optional>` sendFocus
 
-**● sendFocus**: *`undefined` \| `false` \| `true`*
+**● sendFocus**: *`boolean`*
 
-*Defined in [blessed.d.ts:1983](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1983)*
+*Defined in [blessed.d.ts:1971](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1971)*
 
 Send focus events after mouse is enabled.
 
@@ -468,9 +468,9 @@ ___
 
 ### `<Optional>` smartCSR
 
-**● smartCSR**: *`undefined` \| `false` \| `true`*
+**● smartCSR**: *`boolean`*
 
-*Defined in [blessed.d.ts:1895](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1895)*
+*Defined in [blessed.d.ts:1883](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1883)*
 
 Attempt to perform CSR optimization on all possible elements (not just full-width ones, elements with uniform cells to their sides). This is known to cause flickering with elements that are not full-width, however, it is more optimal for terminal rendering.
 
@@ -479,9 +479,9 @@ ___
 
 ### `<Optional>` tabSize
 
-**● tabSize**: *`undefined` \| `number`*
+**● tabSize**: *`number`*
 
-*Defined in [blessed.d.ts:1919](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1919)*
+*Defined in [blessed.d.ts:1907](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1907)*
 
 The width of tabs within an element's content.
 
@@ -490,9 +490,9 @@ ___
 
 ### `<Optional>` terminal
 
-**● terminal**: *`undefined` \| `string`*
+**● terminal**: *`string`*
 
-*Defined in [blessed.d.ts:2096](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2096)*
+*Defined in [blessed.d.ts:2084](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2084)*
 
 Set or get terminal name. Set calls screen.setTerminal() internally.
 
@@ -501,9 +501,9 @@ ___
 
 ### `<Optional>` title
 
-**● title**: *`undefined` \| `string`*
+**● title**: *`string`*
 
-*Defined in [blessed.d.ts:2101](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2101)*
+*Defined in [blessed.d.ts:2089](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2089)*
 
 Set or get window title.
 
@@ -514,7 +514,7 @@ ___
 
 **● top**: *[TTopLeft](api-modules-blessed-d-widgets.types.md#ttopleft)*
 
-*Defined in [blessed.d.ts:2041](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2041)*
+*Defined in [blessed.d.ts:2029](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2029)*
 
 Relative top offset, always zero.
 
@@ -523,9 +523,9 @@ ___
 
 ### `<Optional>` tput
 
-**● tput**: *[Tput](api-classes-blessed-d-widgets.tput.md)*
+**● tput**: *[Tput](api-classes-blessed-d-widgets.tput.md) \| `boolean`*
 
-*Defined in [blessed.d.ts:2011](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2011)*
+*Defined in [blessed.d.ts:1999](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1999)*
 
 The blessed Tput object (only available if you passed tput: true to the Program constructor.)
 
@@ -534,9 +534,9 @@ ___
 
 ### `<Optional>` useBCE
 
-**● useBCE**: *`undefined` \| `false` \| `true`*
+**● useBCE**: *`boolean`*
 
-*Defined in [blessed.d.ts:1909](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1909)*
+*Defined in [blessed.d.ts:1897](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1897)*
 
 Attempt to perform back\_color\_erase optimizations for terminals that support it. It will also work with terminals that don't support it, but only on lines with the default background color. As it stands with the current implementation, it's uncertain how much terminal performance this adds at the cost of overhead within node.
 
@@ -545,9 +545,9 @@ ___
 
 ### `<Optional>` warnings
 
-**● warnings**: *`undefined` \| `false` \| `true`*
+**● warnings**: *`boolean`*
 
-*Defined in [blessed.d.ts:1988](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1988)*
+*Defined in [blessed.d.ts:1976](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1976)*
 
 Display warnings (such as the output not being a TTY, similar to ncurses).
 
@@ -556,9 +556,9 @@ ___
 
 ### `<Optional>` width
 
-**● width**: *[TPosition](api-modules-blessed-d-widgets.types.md#tposition)*
+**● width**: *`number`*
 
-*Defined in [blessed.d.ts:2021](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2021)*
+*Defined in [blessed.d.ts:2009](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2009)*
 
 Width of the screen (same as program.cols).
 

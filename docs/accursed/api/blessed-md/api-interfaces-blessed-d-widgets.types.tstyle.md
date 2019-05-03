@@ -33,6 +33,7 @@ sidebar_label: TStyle
 * [invisible](api-interfaces-blessed-d-widgets.types.tstyle.md#invisible)
 * [item](api-interfaces-blessed-d-widgets.types.tstyle.md#item)
 * [label](api-interfaces-blessed-d-widgets.types.tstyle.md#label)
+* [overflow](api-interfaces-blessed-d-widgets.types.tstyle.md#overflow)
 * [scrollbar](api-interfaces-blessed-d-widgets.types.tstyle.md#scrollbar)
 * [selected](api-interfaces-blessed-d-widgets.types.tstyle.md#selected)
 * [shadow](api-interfaces-blessed-d-widgets.types.tstyle.md#shadow)
@@ -50,25 +51,25 @@ sidebar_label: TStyle
 
 **● bg**: *[Color](api-modules-blessed-d-widgets.md#color)*
 
-*Defined in [blessed.d.ts:1423](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1423)*
+*Defined in [blessed.d.ts:1411](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1411)*
 
 ___
 <a id="blink"></a>
 
 ### `<Optional>` blink
 
-**● blink**: *`undefined` \| `false` \| `true`*
+**● blink**: *`boolean`*
 
-*Defined in [blessed.d.ts:1428](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1428)*
+*Defined in [blessed.d.ts:1416](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1416)*
 
 ___
 <a id="bold"></a>
 
 ### `<Optional>` bold
 
-**● bold**: *`undefined` \| `false` \| `true`*
+**● bold**: *`boolean`*
 
-*Defined in [blessed.d.ts:1425](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1425)*
+*Defined in [blessed.d.ts:1413](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1413)*
 
 ___
 <a id="border"></a>
@@ -77,7 +78,7 @@ ___
 
 **● border**: *[TBorder](api-interfaces-blessed-d-widgets.types.tborder.md) \| [BorderType](api-modules-blessed-d-widgets.types.md#bordertype)*
 
-*Defined in [blessed.d.ts:1433](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1433)*
+*Defined in [blessed.d.ts:1421](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1421)*
 
 ___
 <a id="cell"></a>
@@ -86,27 +87,31 @@ ___
 
 **● cell**: *`any`*
 
-*Defined in [blessed.d.ts:1442](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1442)*
+*Defined in [blessed.d.ts:1430](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1430)*
 
 ___
 <a id="ch"></a>
 
 ### `<Optional>` ch
 
-**● ch**: *`undefined` \| `string`*
+**● ch**: *`string`*
 
-*Defined in [blessed.d.ts:1426](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1426)*
+*Defined in [blessed.d.ts:1414](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1414)*
 
 ___
 <a id="custom"></a>
 
 ### `<Optional>` custom
 
-**● custom**: *`undefined` \| `object`*
+**● custom**: *`object`*
 
-*Defined in [blessed.d.ts:1419](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1419)*
+*Defined in [blessed.d.ts:1408](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1408)*
 
 artificial type for user custom data (it doesn't exists just a type)
+
+#### Type declaration
+
+[name: `string`]: `any`
 
 ___
 <a id="fg"></a>
@@ -115,7 +120,7 @@ ___
 
 **● fg**: *[Color](api-modules-blessed-d-widgets.md#color)*
 
-*Defined in [blessed.d.ts:1424](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1424)*
+*Defined in [blessed.d.ts:1412](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1412)*
 
 ___
 <a id="focus"></a>
@@ -124,7 +129,7 @@ ___
 
 **● focus**: *[TStyle](api-interfaces-blessed-d-widgets.types.tstyle.md)*
 
-*Defined in [blessed.d.ts:1437](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1437)*
+*Defined in [blessed.d.ts:1425](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1425)*
 
 ___
 <a id="header"></a>
@@ -133,7 +138,7 @@ ___
 
 **● header**: *`any`*
 
-*Defined in [blessed.d.ts:1441](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1441)*
+*Defined in [blessed.d.ts:1429](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1429)*
 
 ___
 <a id="hover"></a>
@@ -142,25 +147,25 @@ ___
 
 **● hover**: *[TStyle](api-interfaces-blessed-d-widgets.types.tstyle.md)*
 
-*Defined in [blessed.d.ts:1440](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1440)*
+*Defined in [blessed.d.ts:1428](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1428)*
 
 ___
 <a id="inverse"></a>
 
 ### `<Optional>` inverse
 
-**● inverse**: *`undefined` \| `false` \| `true`*
+**● inverse**: *`boolean`*
 
-*Defined in [blessed.d.ts:1429](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1429)*
+*Defined in [blessed.d.ts:1417](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1417)*
 
 ___
 <a id="invisible"></a>
 
 ### `<Optional>` invisible
 
-**● invisible**: *`undefined` \| `false` \| `true`*
+**● invisible**: *`boolean`*
 
-*Defined in [blessed.d.ts:1430](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1430)*
+*Defined in [blessed.d.ts:1418](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1418)*
 
 ___
 <a id="item"></a>
@@ -169,16 +174,25 @@ ___
 
 **● item**: *[TStyle](api-interfaces-blessed-d-widgets.types.tstyle.md)*
 
-*Defined in [blessed.d.ts:1438](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1438)*
+*Defined in [blessed.d.ts:1426](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1426)*
 
 ___
 <a id="label"></a>
 
 ### `<Optional>` label
 
-**● label**: *`undefined` \| `string`*
+**● label**: *[TStyle](api-interfaces-blessed-d-widgets.types.tstyle.md)*
 
-*Defined in [blessed.d.ts:1434](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1434)*
+*Defined in [blessed.d.ts:1422](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1422)*
+
+___
+<a id="overflow"></a>
+
+### `<Optional>` overflow
+
+**● overflow**: *"hidden"*
+
+*Defined in [blessed.d.ts:1409](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1409)*
 
 ___
 <a id="scrollbar"></a>
@@ -187,7 +201,7 @@ ___
 
 **● scrollbar**: *[TStyle](api-interfaces-blessed-d-widgets.types.tstyle.md) & `object` \| `true`*
 
-*Defined in [blessed.d.ts:1436](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1436)*
+*Defined in [blessed.d.ts:1424](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1424)*
 
 ___
 <a id="selected"></a>
@@ -196,16 +210,16 @@ ___
 
 **● selected**: *[TStyle](api-interfaces-blessed-d-widgets.types.tstyle.md)*
 
-*Defined in [blessed.d.ts:1439](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1439)*
+*Defined in [blessed.d.ts:1427](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1427)*
 
 ___
 <a id="shadow"></a>
 
 ### `<Optional>` shadow
 
-**● shadow**: *`undefined` \| `false` \| `true`*
+**● shadow**: *`boolean`*
 
-*Defined in [blessed.d.ts:1432](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1432)*
+*Defined in [blessed.d.ts:1420](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1420)*
 
 ___
 <a id="track"></a>
@@ -214,25 +228,25 @@ ___
 
 **● track**: *[TStyle](api-interfaces-blessed-d-widgets.types.tstyle.md)*
 
-*Defined in [blessed.d.ts:1435](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1435)*
+*Defined in [blessed.d.ts:1423](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1423)*
 
 ___
 <a id="transparent"></a>
 
 ### `<Optional>` transparent
 
-**● transparent**: *`undefined` \| `false` \| `true`*
+**● transparent**: *`boolean`*
 
-*Defined in [blessed.d.ts:1431](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1431)*
+*Defined in [blessed.d.ts:1419](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1419)*
 
 ___
 <a id="underline"></a>
 
 ### `<Optional>` underline
 
-**● underline**: *`undefined` \| `false` \| `true`*
+**● underline**: *`boolean`*
 
-*Defined in [blessed.d.ts:1427](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1427)*
+*Defined in [blessed.d.ts:1415](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1415)*
 
 ___
 

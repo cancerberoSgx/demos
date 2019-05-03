@@ -89,7 +89,7 @@ sidebar_label: Node
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[constructor](api-classes-blessed-d-widgets.node.md#constructor)*
 
-*Defined in [blessed.d.ts:1664](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1664)*
+*Defined in [blessed.d.ts:1652](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1652)*
 
 **Parameters:**
 
@@ -111,7 +111,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[$](api-classes-blessed-d-widgets.node.md#_)*
 
-*Defined in [blessed.d.ts:1690](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1690)*
+*Defined in [blessed.d.ts:1678](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1678)*
 
 An object for any miscellanous user data.
 
@@ -128,7 +128,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[_](api-classes-blessed-d-widgets.node.md#_-1)*
 
-*Defined in [blessed.d.ts:1685](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1685)*
+*Defined in [blessed.d.ts:1673](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1673)*
 
 An object for any miscellanous user data.
 
@@ -145,7 +145,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[children](api-classes-blessed-d-widgets.node.md#children)*
 
-*Defined in [blessed.d.ts:1717](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1717)*
+*Defined in [blessed.d.ts:1705](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1705)*
 
 Array of node's children.
 
@@ -158,7 +158,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[data](api-classes-blessed-d-widgets.node.md#data)*
 
-*Defined in [blessed.d.ts:1680](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1680)*
+*Defined in [blessed.d.ts:1668](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1668)*
 
 An object for any miscellanous user data.
 
@@ -175,7 +175,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[focusable](api-classes-blessed-d-widgets.node.md#focusable)*
 
-*Defined in [blessed.d.ts:1670](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1670)*
+*Defined in [blessed.d.ts:1658](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1658)*
 
 ___
 <a id="index"></a>
@@ -186,7 +186,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[index](api-classes-blessed-d-widgets.node.md#index)*
 
-*Defined in [blessed.d.ts:1702](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1702)*
+*Defined in [blessed.d.ts:1690](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1690)*
 
 Render index (document order index) of the last render call.
 
@@ -199,7 +199,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[lpos](api-classes-blessed-d-widgets.node.md#lpos)*
 
-*Defined in [blessed.d.ts:1692](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1692)*
+*Defined in [blessed.d.ts:1680](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1680)*
 
 ___
 <a id="options"></a>
@@ -212,7 +212,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[options](api-classes-blessed-d-widgets.node.md#options)*
 
-*Defined in [blessed.d.ts:1675](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1675)*
+*Defined in [blessed.d.ts:1663](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1663)*
 
 Original options object.
 
@@ -221,11 +221,11 @@ ___
 
 ### `<Optional>` parent
 
-**● parent**: *[Node](api-classes-blessed-d-widget.node.md)*
+**● parent**: *[Node](api-classes-blessed-d-widgets.node.md)*
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[parent](api-classes-blessed-d-widgets.node.md#parent)*
 
-*Defined in [blessed.d.ts:1712](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1712)*
+*Defined in [blessed.d.ts:1700](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1700)*
 
 Parent node. If null it means the element is not attached to any screen or program, or the node is a Screen.
 
@@ -238,7 +238,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[screen](api-classes-blessed-d-widgets.node.md#screen)*
 
-*Defined in [blessed.d.ts:1707](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1707)*
+*Defined in [blessed.d.ts:1695](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1695)*
 
 Parent screen.
 
@@ -251,7 +251,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[type](api-classes-blessed-d-widgets.node.md#type)*
 
-*Defined in [blessed.d.ts:1697](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1697)*
+*Defined in [blessed.d.ts:1685](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1685)*
 
 Type of the node (e.g. box).
 
@@ -264,7 +264,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[uid](api-classes-blessed-d-widgets.node.md#uid)*
 
-*Defined in [blessed.d.ts:1668](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1668)*
+*Defined in [blessed.d.ts:1656](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1656)*
 
 Unique identifier for Node instances. @internal
 
@@ -277,7 +277,7 @@ ___
 
 *Inherited from EventEmitter.defaultMaxListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:8*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:9*
 
 ___
 
@@ -293,7 +293,7 @@ ___
 
 *Overrides EventEmitter.addListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:10*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:11*
 
 **Parameters:**
 
@@ -313,7 +313,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[append](api-classes-blessed-d-widgets.node.md#append)*
 
-*Defined in [blessed.d.ts:1727](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1727)*
+*Defined in [blessed.d.ts:1715](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1715)*
 
 Append a node to this node's children.
 
@@ -330,17 +330,17 @@ ___
 
 ###  collectAncestors
 
-▸ **collectAncestors**(s?: *`undefined` \| `false` \| `true`*): `void`
+▸ **collectAncestors**(s?: *`boolean`*): `void`
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[collectAncestors](api-classes-blessed-d-widgets.node.md#collectancestors)*
 
-*Defined in [blessed.d.ts:1760](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1760)*
+*Defined in [blessed.d.ts:1748](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1748)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` s | `undefined` \| `false` \| `true` |
+| `Optional` s | `boolean` |
 
 **Returns:** `void`
 
@@ -349,17 +349,17 @@ ___
 
 ###  collectDescendants
 
-▸ **collectDescendants**(s?: *`undefined` \| `false` \| `true`*): `void`
+▸ **collectDescendants**(s?: *`boolean`*): `void`
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[collectDescendants](api-classes-blessed-d-widgets.node.md#collectdescendants)*
 
-*Defined in [blessed.d.ts:1759](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1759)*
+*Defined in [blessed.d.ts:1747](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1747)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` s | `undefined` \| `false` \| `true` |
+| `Optional` s | `boolean` |
 
 **Returns:** `void`
 
@@ -374,7 +374,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[destroy](api-classes-blessed-d-widgets.node.md#destroy)*
 
-*Defined in [blessed.d.ts:1772](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1772)*
+*Defined in [blessed.d.ts:1760](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1760)*
 
 [detach](api-classes-blessed-d-widget.node.md#detach)() this node from its parent, and will also detach and destroy each of its descendant nodes each of them emitting \[\[destory\]\] event also.
 
@@ -389,7 +389,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[detach](api-classes-blessed-d-widgets.node.md#detach)*
 
-*Defined in [blessed.d.ts:1752](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1752)*
+*Defined in [blessed.d.ts:1740](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1740)*
 
 Remove node from its parent.
 
@@ -406,7 +406,7 @@ ___
 
 *Overrides EventEmitter.emit*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:22*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:23*
 
 **Parameters:**
 
@@ -426,7 +426,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[emitAncestors](api-classes-blessed-d-widgets.node.md#emitancestors)*
 
-*Defined in [blessed.d.ts:1766](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1766)*
+*Defined in [blessed.d.ts:1754](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1754)*
 
 **Returns:** `void`
 
@@ -435,11 +435,11 @@ ___
 
 ###  emitDescendants
 
-▸ **emitDescendants**(type?: *`undefined` \| `string`*, ...args: *`any`[]*): `void`
+▸ **emitDescendants**(type?: *`string`*, ...args: *`any`[]*): `void`
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[emitDescendants](api-classes-blessed-d-widgets.node.md#emitdescendants)*
 
-*Defined in [blessed.d.ts:1765](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1765)*
+*Defined in [blessed.d.ts:1753](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1753)*
 
 Emit event for element, and recursively emit same event for all descendants. If `s` is provided it will call \[\[iter\]\] on self first.
 
@@ -447,7 +447,7 @@ Emit event for element, and recursively emit same event for all descendants. If 
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` type | `undefined` \| `string` |
+| `Optional` type | `string` |
 | `Rest` args | `any`[] |
 
 **Returns:** `void`
@@ -463,7 +463,7 @@ ___
 
 *Overrides EventEmitter.eventNames*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:23*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:24*
 
 **Returns:** `Array`<`string` \| `symbol`>
 
@@ -472,18 +472,18 @@ ___
 
 ###  forAncestors
 
-▸ **forAncestors**(iter: *`function`*, s?: *`undefined` \| `false` \| `true`*): `void`
+▸ **forAncestors**(iter: *`function`*, s?: *`boolean`*): `void`
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[forAncestors](api-classes-blessed-d-widgets.node.md#forancestors)*
 
-*Defined in [blessed.d.ts:1758](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1758)*
+*Defined in [blessed.d.ts:1746](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1746)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | iter | `function` |
-| `Optional` s | `undefined` \| `false` \| `true` |
+| `Optional` s | `boolean` |
 
 **Returns:** `void`
 
@@ -492,11 +492,11 @@ ___
 
 ###  forDescendants
 
-▸ **forDescendants**(iter: *`function`*, s?: *`undefined` \| `false` \| `true`*): `void`
+▸ **forDescendants**(iter: *`function`*, s?: *`boolean`*): `void`
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[forDescendants](api-classes-blessed-d-widgets.node.md#fordescendants)*
 
-*Defined in [blessed.d.ts:1757](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1757)*
+*Defined in [blessed.d.ts:1745](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1745)*
 
 Visit each node's descendants, with \[\[iter\]\] function, parents first. If `s` is provided it will call \[\[iter\]\] on self first.
 
@@ -505,7 +505,7 @@ Visit each node's descendants, with \[\[iter\]\] function, parents first. If `s`
 | Name | Type |
 | ------ | ------ |
 | iter | `function` |
-| `Optional` s | `undefined` \| `false` \| `true` |
+| `Optional` s | `boolean` |
 
 **Returns:** `void`
 
@@ -518,7 +518,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[free](api-classes-blessed-d-widgets.node.md#free)*
 
-*Defined in [blessed.d.ts:1753](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1753)*
+*Defined in [blessed.d.ts:1741](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1741)*
 
 **Returns:** `void`
 
@@ -531,7 +531,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[get](api-classes-blessed-d-widgets.node.md#get)*
 
-*Defined in [blessed.d.ts:1777](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1777)*
+*Defined in [blessed.d.ts:1765](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1765)*
 
 Get user property with a potential default value.
 
@@ -558,7 +558,7 @@ ___
 
 *Overrides EventEmitter.getMaxListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:19*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:20*
 
 **Returns:** `number`
 
@@ -571,7 +571,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[hasAncestor](api-classes-blessed-d-widgets.node.md#hasancestor)*
 
-*Defined in [blessed.d.ts:1768](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1768)*
+*Defined in [blessed.d.ts:1756](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1756)*
 
 **Type parameters:**
 
@@ -593,7 +593,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[hasDescendant](api-classes-blessed-d-widgets.node.md#hasdescendant)*
 
-*Defined in [blessed.d.ts:1767](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1767)*
+*Defined in [blessed.d.ts:1755](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1755)*
 
 **Type parameters:**
 
@@ -615,7 +615,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[insert](api-classes-blessed-d-widgets.node.md#insert)*
 
-*Defined in [blessed.d.ts:1737](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1737)*
+*Defined in [blessed.d.ts:1725](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1725)*
 
 Insert a node to this node's children at index i.
 
@@ -637,7 +637,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[insertAfter](api-classes-blessed-d-widgets.node.md#insertafter)*
 
-*Defined in [blessed.d.ts:1747](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1747)*
+*Defined in [blessed.d.ts:1735](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1735)*
 
 Insert a node from node after the reference node.
 
@@ -659,7 +659,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[insertBefore](api-classes-blessed-d-widgets.node.md#insertbefore)*
 
-*Defined in [blessed.d.ts:1742](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1742)*
+*Defined in [blessed.d.ts:1730](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1730)*
 
 Insert a node to this node's children before the reference node.
 
@@ -683,7 +683,7 @@ ___
 
 *Overrides EventEmitter.listenerCount*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:24*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:25*
 
 **Parameters:**
 
@@ -704,7 +704,7 @@ ___
 
 *Overrides EventEmitter.listeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:20*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:21*
 
 **Parameters:**
 
@@ -725,7 +725,7 @@ ___
 
 *Overrides EventEmitter.off*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:16*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:17*
 
 **Parameters:**
 
@@ -757,7 +757,7 @@ ___
 
 *Overrides EventEmitter.on*
 
-*Defined in [blessed.d.ts:1785](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1785)*
+*Defined in [blessed.d.ts:1773](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1773)*
 
 Received when node gains a new parent. If the node was detached from the sreen, newParent will be undefined.
 
@@ -774,7 +774,7 @@ Received when node gains a new parent. If the node was detached from the sreen, 
 
 *Overrides EventEmitter.on*
 
-*Defined in [blessed.d.ts:1787](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1787)*
+*Defined in [blessed.d.ts:1775](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1775)*
 
 emitted by a parent node when adding a new chhild node.
 
@@ -791,7 +791,7 @@ emitted by a parent node when adding a new chhild node.
 
 *Overrides EventEmitter.on*
 
-*Defined in [blessed.d.ts:1788](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1788)*
+*Defined in [blessed.d.ts:1776](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1776)*
 
 **Parameters:**
 
@@ -806,7 +806,7 @@ emitted by a parent node when adding a new chhild node.
 
 *Overrides EventEmitter.on*
 
-*Defined in [blessed.d.ts:1790](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1790)*
+*Defined in [blessed.d.ts:1778](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1778)*
 
 Emitted by a node that is being detached frmo the screen or ancester.
 
@@ -823,7 +823,7 @@ Emitted by a node that is being detached frmo the screen or ancester.
 
 *Overrides EventEmitter.on*
 
-*Defined in [blessed.d.ts:1792](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1792)*
+*Defined in [blessed.d.ts:1780](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1780)*
 
 Triggered by a parent node when removing a child node
 
@@ -840,7 +840,7 @@ Triggered by a parent node when removing a child node
 
 *Overrides EventEmitter.on*
 
-*Defined in [blessed.d.ts:1793](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1793)*
+*Defined in [blessed.d.ts:1781](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1781)*
 
 **Parameters:**
 
@@ -862,7 +862,7 @@ ___
 
 *Overrides EventEmitter.once*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:12*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:13*
 
 **Parameters:**
 
@@ -882,7 +882,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[prepend](api-classes-blessed-d-widgets.node.md#prepend)*
 
-*Defined in [blessed.d.ts:1722](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1722)*
+*Defined in [blessed.d.ts:1710](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1710)*
 
 Prepend a node to this node's children.
 
@@ -905,7 +905,7 @@ ___
 
 *Overrides EventEmitter.prependListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:13*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:14*
 
 **Parameters:**
 
@@ -927,7 +927,7 @@ ___
 
 *Overrides EventEmitter.prependOnceListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:14*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:15*
 
 **Parameters:**
 
@@ -949,7 +949,7 @@ ___
 
 *Overrides EventEmitter.rawListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:21*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:22*
 
 **Parameters:**
 
@@ -968,7 +968,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[remove](api-classes-blessed-d-widgets.node.md#remove)*
 
-*Defined in [blessed.d.ts:1732](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1732)*
+*Defined in [blessed.d.ts:1720](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1720)*
 
 Remove child node from node.
 
@@ -991,7 +991,7 @@ ___
 
 *Overrides EventEmitter.removeAllListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:17*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:18*
 
 **Parameters:**
 
@@ -1012,7 +1012,7 @@ ___
 
 *Overrides EventEmitter.removeListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:15*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:16*
 
 **Parameters:**
 
@@ -1032,7 +1032,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[set](api-classes-blessed-d-widgets.node.md#set)*
 
-*Defined in [blessed.d.ts:1782](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1782)*
+*Defined in [blessed.d.ts:1770](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1770)*
 
 Set user property to value.
 
@@ -1056,7 +1056,7 @@ ___
 
 *Overrides EventEmitter.setMaxListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:18*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:19*
 
 **Parameters:**
 
@@ -1075,7 +1075,7 @@ ___
 
 *Inherited from EventEmitter.listenerCount*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:7*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:8*
 
 *__deprecated__*: since v4.0.0
 

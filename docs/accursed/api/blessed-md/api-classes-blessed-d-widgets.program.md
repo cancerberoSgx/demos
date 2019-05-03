@@ -26,7 +26,7 @@ sidebar_label: Program
 
 ▸ **text**(text: *`string`*, attr: *`string`*): `string`
 
-*Defined in [blessed.d.ts:4529](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4529)*
+*Defined in [blessed.d.ts:4640](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4640)*
 
 Wrap the given text in terminal formatting codes corresponding to the given attribute name. The `attr` string can be of the form `red fg` or `52 bg` where `52` is a 0-255 integer color number.
 

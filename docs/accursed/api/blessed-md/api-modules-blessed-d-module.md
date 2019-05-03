@@ -21,6 +21,7 @@ sidebar_label: blessed.d
 
 * [GpmClient](api-interfaces-blessed-d-gpmclient.md)
 * [GpmEvent](api-interfaces-blessed-d-gpmevent.md)
+* [Helpers](api-interfaces-blessed-d-helpers.md)
 * [IBlessedProgramOptions](api-interfaces-blessed-d-iblessedprogramoptions.md)
 * [ProgramOutput](api-interfaces-blessed-d-programoutput.md)
 * [ProgramResponseData](api-interfaces-blessed-d-programresponsedata.md)
@@ -34,6 +35,7 @@ sidebar_label: blessed.d
 ### Variables
 
 * [colors](api-modules-blessed-d-module.md#colors)
+* [helpers](api-modules-blessed-d-module.md#helpers-1)
 * [unicode](api-modules-blessed-d-module.md#unicode-1)
 
 ### Functions
@@ -79,7 +81,7 @@ sidebar_label: blessed.d
 
 **Ƭ ColorRgb**: *[`number`, `number`, `number`]*
 
-*Defined in [blessed.d.ts:4606](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4606)*
+*Defined in [blessed.d.ts:4710](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4710)*
 
 ___
 <a id="programresponsecallback"></a>
@@ -88,7 +90,7 @@ ___
 
 **Ƭ ProgramResponseCallback**: *`function`*
 
-*Defined in [blessed.d.ts:42](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L42)*
+*Defined in [blessed.d.ts:42](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L42)*
 
 #### Type declaration
 ▸(this: *[BlessedProgram](api-classes-blessed-d-blessedprogram.md)*, err: *`Error`*, data: *[ProgramResponseData](api-interfaces-blessed-d-programresponsedata.md)*): `any`
@@ -113,7 +115,7 @@ ___
 
 **● colors**: *`object`*
 
-*Defined in [blessed.d.ts:4607](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4607)*
+*Defined in [blessed.d.ts:4711](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4711)*
 
 #### Type declaration
 
@@ -184,7 +186,7 @@ ___
 
 ▸ **RGBToHex**(hex: *`string`*): [ColorRgb](api-modules-blessed-d-module.md#colorrgb)
 
-*Defined in [blessed.d.ts:4611](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4611)*
+*Defined in [blessed.d.ts:4719](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4719)*
 
 **Parameters:**
 
@@ -196,7 +198,7 @@ ___
 
 **Returns:** `string`
 
-*Defined in [blessed.d.ts:4612](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4612)*
+*Defined in [blessed.d.ts:4720](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4720)*
 
 **Parameters:**
 
@@ -207,24 +209,42 @@ ___
 **Returns:** [ColorRgb](api-modules-blessed-d-module.md#colorrgb)
 
  blend : function
-▸ **blend**(attr: *`number`*, attr2?: *`undefined` \| `number`*, alpha?: *`undefined` \| `number`*): `number`
+▸ **blend**(attr: *`number`*, attr2?: *`number`*, alpha?: *`number`*): `number`
 
-*Defined in [blessed.d.ts:4613](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4613)*
+*Defined in [blessed.d.ts:4721](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4721)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | attr | `number` |
-| `Optional` attr2 | `undefined` \| `number` |
-| `Optional` alpha | `undefined` \| `number` |
+| `Optional` attr2 | `number` |
+| `Optional` alpha | `number` |
 
 **Returns:** `number`
+
+ ccolors : function
+▸ **ccolors**(): `number`[]
+
+*Defined in [blessed.d.ts:4728](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4728)*
+
+Map higher colors to the first 8 colors. This allows translation of high colors to low colors on 8-color terminals.
+
+**Returns:** `number`[]
+
+ colors : function
+▸ **colors**(): `number`[]
+
+*Defined in [blessed.d.ts:4725](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4725)*
+
+Seed all 256 colors. Assume xterm defaults. Ported from the xterm color generation script.
+
+**Returns:** `number`[]
 
  convert : function
 ▸ **convert**(color: *[Color](api-modules-blessed-d-widgets.md#color)*): `number`
 
-*Defined in [blessed.d.ts:4609](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4609)*
+*Defined in [blessed.d.ts:4717](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4717)*
 
 **Parameters:**
 
@@ -235,24 +255,26 @@ ___
 **Returns:** `number`
 
  match : function
-▸ **match**(r1: *[Color](api-modules-blessed-d-widgets.md#color) \| [ColorRgb](api-modules-blessed-d-module.md#colorrgb)*, g1?: *`undefined` \| `number`*, b1?: *`undefined` \| `number`*): `number`
+▸ **match**(r1: *[Color](api-modules-blessed-d-widgets.md#color) \| [ColorRgb](api-modules-blessed-d-module.md#colorrgb)*, g1?: *`number`*, b1?: *`number`*): `number`
 
-*Defined in [blessed.d.ts:4608](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4608)*
+*Defined in [blessed.d.ts:4716](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4716)*
+
+Match given color in a high level form (like rgb or hex expression) with a terminal color number interpolatingg to a similar color.
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | r1 | [Color](api-modules-blessed-d-widgets.md#color) \| [ColorRgb](api-modules-blessed-d-module.md#colorrgb) |
-| `Optional` g1 | `undefined` \| `number` |
-| `Optional` b1 | `undefined` \| `number` |
+| `Optional` g1 | `number` |
+| `Optional` b1 | `number` |
 
 **Returns:** `number`
 
  mixColors : function
 ▸ **mixColors**(c1: *`number`*, c2: *`number`*, alpha: *`number`*): `number`
 
-*Defined in [blessed.d.ts:4610](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4610)*
+*Defined in [blessed.d.ts:4718](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4718)*
 
 **Parameters:**
 
@@ -265,13 +287,22 @@ ___
 **Returns:** `number`
 
 ___
+<a id="helpers-1"></a>
+
+### `<Const>` helpers
+
+**● helpers**: *[Helpers](api-interfaces-blessed-d-helpers.md)*
+
+*Defined in [blessed.d.ts:4829](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4829)*
+
+___
 <a id="unicode-1"></a>
 
 ### `<Const>` unicode
 
 **● unicode**: *[Unicode](api-interfaces-blessed-d-unicode.md)*
 
-*Defined in [blessed.d.ts:4651](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4651)*
+*Defined in [blessed.d.ts:4767](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4767)*
 
 ___
 
@@ -283,7 +314,7 @@ ___
 
 ▸ **bigtext**(options?: *[BigTextOptions](api-interfaces-blessed-d-widgets.bigtextoptions.md)*): [BigTextElement](api-classes-blessed-d-widgets.bigtextelement.md)
 
-*Defined in [blessed.d.ts:4581](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4581)*
+*Defined in [blessed.d.ts:4685](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4685)*
 
 **Parameters:**
 
@@ -300,7 +331,7 @@ ___
 
 ▸ **box**(options?: *[BoxOptions](api-interfaces-blessed-d-widgets.boxoptions.md)*): [BoxElement](api-classes-blessed-d-widgets.boxelement.md)
 
-*Defined in [blessed.d.ts:4576](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4576)*
+*Defined in [blessed.d.ts:4680](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4680)*
 
 **Parameters:**
 
@@ -317,7 +348,7 @@ ___
 
 ▸ **button**(options?: *[ButtonOptions](api-interfaces-blessed-d-widgets.buttonoptions.md)*): [ButtonElement](api-classes-blessed-d-widgets.buttonelement.md)
 
-*Defined in [blessed.d.ts:4590](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4590)*
+*Defined in [blessed.d.ts:4694](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4694)*
 
 **Parameters:**
 
@@ -334,7 +365,7 @@ ___
 
 ▸ **checkbox**(options?: *[CheckboxOptions](api-interfaces-blessed-d-widgets.checkboxoptions.md)*): [CheckboxElement](api-classes-blessed-d-widgets.checkboxelement.md)
 
-*Defined in [blessed.d.ts:4591](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4591)*
+*Defined in [blessed.d.ts:4695](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4695)*
 
 **Parameters:**
 
@@ -351,7 +382,7 @@ ___
 
 ▸ **escape**(item: *`any`*): `any`
 
-*Defined in [blessed.d.ts:4604](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4604)*
+*Defined in [blessed.d.ts:4708](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4708)*
 
 **Parameters:**
 
@@ -368,7 +399,7 @@ ___
 
 ▸ **filemanager**(options?: *[FileManagerOptions](api-interfaces-blessed-d-widgets.filemanageroptions.md)*): [FileManagerElement](api-classes-blessed-d-widgets.filemanagerelement.md)
 
-*Defined in [blessed.d.ts:4583](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4583)*
+*Defined in [blessed.d.ts:4687](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4687)*
 
 **Parameters:**
 
@@ -385,7 +416,7 @@ ___
 
 ▸ **form**<`TFormData`>(options?: *[FormOptions](api-interfaces-blessed-d-widgets.formoptions.md)*): [FormElement](api-classes-blessed-d-widgets.formelement.md)<`TFormData`>
 
-*Defined in [blessed.d.ts:4586](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4586)*
+*Defined in [blessed.d.ts:4690](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4690)*
 
 **Type parameters:**
 
@@ -405,7 +436,7 @@ ___
 
 ▸ **input**(options?: *[InputOptions](api-interfaces-blessed-d-widgets.inputoptions.md)*): [InputElement](api-classes-blessed-d-widgets.inputelement.md)
 
-*Defined in [blessed.d.ts:4587](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4587)*
+*Defined in [blessed.d.ts:4691](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4691)*
 
 **Parameters:**
 
@@ -422,7 +453,7 @@ ___
 
 ▸ **layout**(options?: *[LayoutOptions](api-interfaces-blessed-d-widgets.layoutoptions.md)*): [LayoutElement](api-classes-blessed-d-widgets.layoutelement.md)
 
-*Defined in [blessed.d.ts:4603](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4603)*
+*Defined in [blessed.d.ts:4707](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4707)*
 
 **Parameters:**
 
@@ -439,7 +470,7 @@ ___
 
 ▸ **line**(options?: *[LineOptions](api-interfaces-blessed-d-widgets.lineoptions.md)*): [LineElement](api-classes-blessed-d-widgets.lineelement.md)
 
-*Defined in [blessed.d.ts:4578](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4578)*
+*Defined in [blessed.d.ts:4682](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4682)*
 
 **Parameters:**
 
@@ -456,7 +487,7 @@ ___
 
 ▸ **list**(options?: *[ListOptions](api-interfaces-blessed-d-widgets.listoptions.md)<[ListElementStyle](api-interfaces-blessed-d-widgets.listelementstyle.md)>*): [ListElement](api-classes-blessed-d-widgets.listelement.md)
 
-*Defined in [blessed.d.ts:4582](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4582)*
+*Defined in [blessed.d.ts:4686](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4686)*
 
 **Parameters:**
 
@@ -473,7 +504,7 @@ ___
 
 ▸ **listbar**(options?: *[ListbarOptions](api-interfaces-blessed-d-widgets.listbaroptions.md)*): [ListbarElement](api-classes-blessed-d-widgets.listbarelement.md)
 
-*Defined in [blessed.d.ts:4585](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4585)*
+*Defined in [blessed.d.ts:4689](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4689)*
 
 **Parameters:**
 
@@ -490,7 +521,7 @@ ___
 
 ▸ **listtable**(options?: *[ListTableOptions](api-interfaces-blessed-d-widgets.listtableoptions.md)*): [ListTableElement](api-classes-blessed-d-widgets.listtableelement.md)
 
-*Defined in [blessed.d.ts:4584](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4584)*
+*Defined in [blessed.d.ts:4688](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4688)*
 
 **Parameters:**
 
@@ -507,7 +538,7 @@ ___
 
 ▸ **loading**(options?: *[LoadingOptions](api-interfaces-blessed-d-widgets.loadingoptions.md)*): [LoadingElement](api-classes-blessed-d-widgets.loadingelement.md)
 
-*Defined in [blessed.d.ts:4598](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4598)*
+*Defined in [blessed.d.ts:4702](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4702)*
 
 **Parameters:**
 
@@ -524,7 +555,7 @@ ___
 
 ▸ **log**(options?: *[LogOptions](api-interfaces-blessed-d-widgets.logoptions.md)*): [Log](api-classes-blessed-d-widgets.log.md)
 
-*Defined in [blessed.d.ts:4599](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4599)*
+*Defined in [blessed.d.ts:4703](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4703)*
 
 **Parameters:**
 
@@ -541,7 +572,7 @@ ___
 
 ▸ **message**(options?: *[MessageOptions](api-interfaces-blessed-d-widgets.messageoptions.md)*): [MessageElement](api-classes-blessed-d-widgets.messageelement.md)
 
-*Defined in [blessed.d.ts:4597](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4597)*
+*Defined in [blessed.d.ts:4701](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4701)*
 
 **Parameters:**
 
@@ -558,7 +589,7 @@ ___
 
 ▸ **program**(options?: *[IScreenOptions](api-interfaces-blessed-d-widgets.iscreenoptions.md)*): [BlessedProgram](api-classes-blessed-d-blessedprogram.md)
 
-*Defined in [blessed.d.ts:4601](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4601)*
+*Defined in [blessed.d.ts:4705](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4705)*
 
 **Parameters:**
 
@@ -575,7 +606,7 @@ ___
 
 ▸ **progressbar**(options?: *[ProgressBarOptions](api-interfaces-blessed-d-widgets.progressbaroptions.md)*): [ProgressBarElement](api-classes-blessed-d-widgets.progressbarelement.md)
 
-*Defined in [blessed.d.ts:4600](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4600)*
+*Defined in [blessed.d.ts:4704](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4704)*
 
 **Parameters:**
 
@@ -592,7 +623,7 @@ ___
 
 ▸ **prompt**(options?: *[PromptOptions](api-interfaces-blessed-d-widgets.promptoptions.md)*): [PromptElement](api-classes-blessed-d-widgets.promptelement.md)
 
-*Defined in [blessed.d.ts:4595](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4595)*
+*Defined in [blessed.d.ts:4699](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4699)*
 
 **Parameters:**
 
@@ -609,7 +640,7 @@ ___
 
 ▸ **question**(options?: *[QuestionOptions](api-interfaces-blessed-d-widgets.questionoptions.md)*): [QuestionElement](api-classes-blessed-d-widgets.questionelement.md)
 
-*Defined in [blessed.d.ts:4596](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4596)*
+*Defined in [blessed.d.ts:4700](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4700)*
 
 **Parameters:**
 
@@ -626,7 +657,7 @@ ___
 
 ▸ **radiobutton**(options?: *[RadioButtonOptions](api-interfaces-blessed-d-widgets.radiobuttonoptions.md)*): [RadioButtonElement](api-classes-blessed-d-widgets.radiobuttonelement.md)
 
-*Defined in [blessed.d.ts:4593](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4593)*
+*Defined in [blessed.d.ts:4697](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4697)*
 
 **Parameters:**
 
@@ -643,7 +674,7 @@ ___
 
 ▸ **radioset**(options?: *[RadioSetOptions](api-interfaces-blessed-d-widgets.radiosetoptions.md)*): [RadioSetElement](api-classes-blessed-d-widgets.radiosetelement.md)
 
-*Defined in [blessed.d.ts:4592](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4592)*
+*Defined in [blessed.d.ts:4696](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4696)*
 
 **Parameters:**
 
@@ -660,7 +691,7 @@ ___
 
 ▸ **screen**(options?: *[IScreenOptions](api-interfaces-blessed-d-widgets.iscreenoptions.md)*): [Screen](api-classes-blessed-d-widgets.screen.md)
 
-*Defined in [blessed.d.ts:4575](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4575)*
+*Defined in [blessed.d.ts:4679](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4679)*
 
 *__inheritdoc__*: 
 
@@ -679,7 +710,7 @@ ___
 
 ▸ **scrollablebox**(options?: *[BoxOptions](api-interfaces-blessed-d-widgets.boxoptions.md)*): [BoxElement](api-classes-blessed-d-widgets.boxelement.md)
 
-*Defined in [blessed.d.ts:4579](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4579)*
+*Defined in [blessed.d.ts:4683](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4683)*
 
 **Parameters:**
 
@@ -696,7 +727,7 @@ ___
 
 ▸ **scrollabletext**(options?: *[BoxOptions](api-interfaces-blessed-d-widgets.boxoptions.md)*): [BoxElement](api-classes-blessed-d-widgets.boxelement.md)
 
-*Defined in [blessed.d.ts:4580](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4580)*
+*Defined in [blessed.d.ts:4684](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4684)*
 
 **Parameters:**
 
@@ -713,7 +744,7 @@ ___
 
 ▸ **table**(options?: *[TableOptions](api-interfaces-blessed-d-widgets.tableoptions.md)*): [TableElement](api-classes-blessed-d-widgets.tableelement.md)
 
-*Defined in [blessed.d.ts:4594](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4594)*
+*Defined in [blessed.d.ts:4698](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4698)*
 
 **Parameters:**
 
@@ -730,7 +761,7 @@ ___
 
 ▸ **terminal**(options?: *[TerminalOptions](api-interfaces-blessed-d-widgets.terminaloptions.md)*): [TerminalElement](api-classes-blessed-d-widgets.terminalelement.md)
 
-*Defined in [blessed.d.ts:4602](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4602)*
+*Defined in [blessed.d.ts:4706](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4706)*
 
 **Parameters:**
 
@@ -747,7 +778,7 @@ ___
 
 ▸ **text**(options?: *[TextOptions](api-interfaces-blessed-d-widgets.textoptions.md)*): [TextElement](api-classes-blessed-d-widgets.textelement.md)
 
-*Defined in [blessed.d.ts:4577](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4577)*
+*Defined in [blessed.d.ts:4681](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4681)*
 
 **Parameters:**
 
@@ -764,7 +795,7 @@ ___
 
 ▸ **textarea**(options?: *[TextareaOptions](api-interfaces-blessed-d-widgets.textareaoptions.md)*): [TextareaElement](api-classes-blessed-d-widgets.textareaelement.md)
 
-*Defined in [blessed.d.ts:4588](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4588)*
+*Defined in [blessed.d.ts:4692](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4692)*
 
 **Parameters:**
 
@@ -781,7 +812,7 @@ ___
 
 ▸ **textbox**(options?: *[TextboxOptions](api-interfaces-blessed-d-widgets.textboxoptions.md)*): [TextboxElement](api-classes-blessed-d-widgets.textboxelement.md)
 
-*Defined in [blessed.d.ts:4589](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4589)*
+*Defined in [blessed.d.ts:4693](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4693)*
 
 **Parameters:**
 

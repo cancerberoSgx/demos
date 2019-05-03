@@ -38,7 +38,7 @@ sidebar_label: IMouseEventArg
 
 **● action**: *[TMouseAction](api-modules-blessed-d-widgets.types.md#tmouseaction)*
 
-*Defined in [blessed.d.ts:1523](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1523)*
+*Defined in [blessed.d.ts:1511](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1511)*
 
 ___
 <a id="bug"></a>
@@ -49,7 +49,7 @@ ___
 
 *Inherited from [IAbstractEventArg](api-interfaces-blessed-d-widgets.events.iabstracteventarg.md).[bug](api-interfaces-blessed-d-widgets.events.iabstracteventarg.md#bug)*
 
-*Defined in [blessed.d.ts:1540](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1540)*
+*Defined in [blessed.d.ts:1528](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1528)*
 
 ___
 <a id="button"></a>
@@ -58,7 +58,7 @@ ___
 
 **● button**: *"left" \| "right" \| "middle" \| "unknown"*
 
-*Defined in [blessed.d.ts:1524](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1524)*
+*Defined in [blessed.d.ts:1512](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1512)*
 
 ___
 <a id="ctrl"></a>
@@ -69,7 +69,7 @@ ___
 
 *Inherited from [IAbstractEventArg](api-interfaces-blessed-d-widgets.events.iabstracteventarg.md).[ctrl](api-interfaces-blessed-d-widgets.events.iabstracteventarg.md#ctrl)*
 
-*Defined in [blessed.d.ts:1536](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1536)*
+*Defined in [blessed.d.ts:1524](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1524)*
 
 ___
 <a id="meta"></a>
@@ -80,7 +80,7 @@ ___
 
 *Inherited from [IAbstractEventArg](api-interfaces-blessed-d-widgets.events.iabstracteventarg.md).[meta](api-interfaces-blessed-d-widgets.events.iabstracteventarg.md#meta)*
 
-*Defined in [blessed.d.ts:1537](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1537)*
+*Defined in [blessed.d.ts:1525](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1525)*
 
 ___
 <a id="name"></a>
@@ -91,7 +91,7 @@ ___
 
 *Overrides [IAbstractEventArg](api-interfaces-blessed-d-widgets.events.iabstracteventarg.md).[name](api-interfaces-blessed-d-widgets.events.iabstracteventarg.md#name)*
 
-*Defined in [blessed.d.ts:1525](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1525)*
+*Defined in [blessed.d.ts:1513](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1513)*
 
 ___
 <a id="raw"></a>
@@ -102,7 +102,7 @@ ___
 
 *Inherited from [IAbstractEventArg](api-interfaces-blessed-d-widgets.events.iabstracteventarg.md).[raw](api-interfaces-blessed-d-widgets.events.iabstracteventarg.md#raw)*
 
-*Defined in [blessed.d.ts:1539](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1539)*
+*Defined in [blessed.d.ts:1527](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1527)*
 
 ___
 <a id="shift"></a>
@@ -113,7 +113,7 @@ ___
 
 *Inherited from [IAbstractEventArg](api-interfaces-blessed-d-widgets.events.iabstracteventarg.md).[shift](api-interfaces-blessed-d-widgets.events.iabstracteventarg.md#shift)*
 
-*Defined in [blessed.d.ts:1535](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1535)*
+*Defined in [blessed.d.ts:1523](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1523)*
 
 ___
 <a id="type"></a>
@@ -124,7 +124,7 @@ ___
 
 *Inherited from [IAbstractEventArg](api-interfaces-blessed-d-widgets.events.iabstracteventarg.md).[type](api-interfaces-blessed-d-widgets.events.iabstracteventarg.md#type)*
 
-*Defined in [blessed.d.ts:1538](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1538)*
+*Defined in [blessed.d.ts:1526](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1526)*
 
 ___
 <a id="x"></a>
@@ -133,7 +133,7 @@ ___
 
 **● x**: *`number`*
 
-*Defined in [blessed.d.ts:1521](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1521)*
+*Defined in [blessed.d.ts:1509](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1509)*
 
 ___
 <a id="y"></a>
@@ -142,7 +142,7 @@ ___
 
 **● y**: *`number`*
 
-*Defined in [blessed.d.ts:1522](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1522)*
+*Defined in [blessed.d.ts:1510](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1510)*
 
 ___
 

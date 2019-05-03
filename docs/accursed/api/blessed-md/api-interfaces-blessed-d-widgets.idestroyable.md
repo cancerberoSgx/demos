@@ -94,11 +94,11 @@ sidebar_label: IDestroyable
 
 ▸ **destroy**(): `void`
 
-*Defined in [blessed.d.ts:1561](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1561)*
+*Defined in [blessed.d.ts:1549](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1549)*
 
 **Returns:** `void`
 
-*Defined in [blessed.d.ts:1635](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1635)*
+*Defined in [blessed.d.ts:1623](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1623)*
 
 **Returns:** `void`
 

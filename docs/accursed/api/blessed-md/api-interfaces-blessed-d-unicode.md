@@ -36,7 +36,7 @@ Unicode utilities, see \[\[Screen#fullUnicode\]\]. Wide, Surrogates, and Combini
 
 **● chars**: *`object`*
 
-*Defined in [blessed.d.ts:4670](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4670)*
+*Defined in [blessed.d.ts:4786](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4786)*
 
 Regexps
 
@@ -65,7 +65,7 @@ ___
 
 **● combiningTable**: *`number`[][]*
 
-*Defined in [blessed.d.ts:4665](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4665)*
+*Defined in [blessed.d.ts:4781](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4781)*
 
 ___
 
@@ -75,16 +75,16 @@ ___
 
 ###  charWidth
 
-▸ **charWidth**(str: *`string`*, i?: *`undefined` \| `number`*): `string`
+▸ **charWidth**(str: *`string`*, i?: *`number`*): `string`
 
-*Defined in [blessed.d.ts:4659](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4659)*
+*Defined in [blessed.d.ts:4775](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4775)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | str | `string` |
-| `Optional` i | `undefined` \| `number` |
+| `Optional` i | `number` |
 
 **Returns:** `string`
 
@@ -95,7 +95,7 @@ ___
 
 ▸ **fromCodePoint**(unicode: *`number`*): `string`
 
-*Defined in [blessed.d.ts:4657](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4657)*
+*Defined in [blessed.d.ts:4773](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4773)*
 
 **Parameters:**
 
@@ -110,16 +110,16 @@ ___
 
 ###  isSurrogate
 
-▸ **isSurrogate**(str: *`string`*, i?: *`undefined` \| `number`*): `boolean`
+▸ **isSurrogate**(str: *`string`*, i?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:4663](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4663)*
+*Defined in [blessed.d.ts:4779](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4779)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | str | `string` |
-| `Optional` i | `undefined` \| `number` |
+| `Optional` i | `number` |
 
 **Returns:** `boolean`
 
@@ -130,7 +130,7 @@ ___
 
 ▸ **strWidth**(str: *`string`*): `number`
 
-*Defined in [blessed.d.ts:4661](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4661)*
+*Defined in [blessed.d.ts:4777](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4777)*
 
 **Parameters:**
 

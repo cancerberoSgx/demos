@@ -28,9 +28,9 @@ sidebar_label: ListbarCommand
 
 ### `<Optional>` key
 
-**● key**: *`undefined` \| `string`*
+**● key**: *`string`*
 
-*Defined in [blessed.d.ts:1470](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1470)*
+*Defined in [blessed.d.ts:1458](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1458)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 ▸ **callback**(): `void`
 
-*Defined in [blessed.d.ts:1471](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1471)*
+*Defined in [blessed.d.ts:1459](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1459)*
 
 **Returns:** `void`
 

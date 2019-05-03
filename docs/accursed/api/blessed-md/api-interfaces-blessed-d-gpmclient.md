@@ -49,7 +49,7 @@ sidebar_label: GpmClient
 
 *Inherited from EventEmitter.defaultMaxListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:8*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:9*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 *Overrides EventEmitter.addListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:10*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:11*
 
 **Parameters:**
 
@@ -87,7 +87,7 @@ ___
 
 *Overrides EventEmitter.emit*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:22*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:23*
 
 **Parameters:**
 
@@ -109,7 +109,7 @@ ___
 
 *Overrides EventEmitter.eventNames*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:23*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:24*
 
 **Returns:** `Array`<`string` \| `symbol`>
 
@@ -124,7 +124,7 @@ ___
 
 *Overrides EventEmitter.getMaxListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:19*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:20*
 
 **Returns:** `number`
 
@@ -139,7 +139,7 @@ ___
 
 *Overrides EventEmitter.listenerCount*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:24*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:25*
 
 **Parameters:**
 
@@ -160,7 +160,7 @@ ___
 
 *Overrides EventEmitter.listeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:20*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:21*
 
 **Parameters:**
 
@@ -181,7 +181,7 @@ ___
 
 *Overrides EventEmitter.off*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:16*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:17*
 
 **Parameters:**
 
@@ -201,7 +201,7 @@ ___
 
 *Overrides EventEmitter.on*
 
-*Defined in [blessed.d.ts:83](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L83)*
+*Defined in [blessed.d.ts:83](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L83)*
 
 **Parameters:**
 
@@ -223,7 +223,7 @@ ___
 
 *Overrides EventEmitter.once*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:12*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:13*
 
 **Parameters:**
 
@@ -245,7 +245,7 @@ ___
 
 *Overrides EventEmitter.prependListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:13*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:14*
 
 **Parameters:**
 
@@ -267,7 +267,7 @@ ___
 
 *Overrides EventEmitter.prependOnceListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:14*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:15*
 
 **Parameters:**
 
@@ -289,7 +289,7 @@ ___
 
 *Overrides EventEmitter.rawListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:21*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:22*
 
 **Parameters:**
 
@@ -310,7 +310,7 @@ ___
 
 *Overrides EventEmitter.removeAllListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:17*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:18*
 
 **Parameters:**
 
@@ -331,7 +331,7 @@ ___
 
 *Overrides EventEmitter.removeListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:15*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:16*
 
 **Parameters:**
 
@@ -353,7 +353,7 @@ ___
 
 *Overrides EventEmitter.setMaxListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:18*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:19*
 
 **Parameters:**
 
@@ -372,7 +372,7 @@ ___
 
 *Inherited from EventEmitter.listenerCount*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:7*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:8*
 
 *__deprecated__*: since v4.0.0
 

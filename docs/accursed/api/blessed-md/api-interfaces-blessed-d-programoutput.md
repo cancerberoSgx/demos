@@ -76,7 +76,7 @@ program.output Writable implementation should implement this interface
 
 *Inherited from Writable.__constructor*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:111*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:115*
 
 **Parameters:**
 
@@ -96,16 +96,16 @@ ___
 
 **● column**: *`number`*
 
-*Defined in [blessed.d.ts:47](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L47)*
+*Defined in [blessed.d.ts:47](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L47)*
 
 ___
 <a id="istty"></a>
 
 ### `<Optional>` isTTY
 
-**● isTTY**: *`undefined` \| `false` \| `true`*
+**● isTTY**: *`boolean`*
 
-*Defined in [blessed.d.ts:46](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L46)*
+*Defined in [blessed.d.ts:46](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L46)*
 
 ___
 <a id="rows"></a>
@@ -114,7 +114,7 @@ ___
 
 **● rows**: *`number`*
 
-*Defined in [blessed.d.ts:48](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L48)*
+*Defined in [blessed.d.ts:48](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L48)*
 
 ___
 <a id="writable"></a>
@@ -125,7 +125,7 @@ ___
 
 *Inherited from Writable.writable*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:109*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:113*
 
 ___
 <a id="writablehighwatermark"></a>
@@ -136,7 +136,7 @@ ___
 
 *Inherited from Writable.writableHighWaterMark*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:110*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:114*
 
 ___
 <a id="writablelength"></a>
@@ -147,7 +147,7 @@ ___
 
 *Inherited from Writable.writableLength*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:111*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:115*
 
 ___
 <a id="defaultmaxlisteners"></a>
@@ -158,7 +158,7 @@ ___
 
 *Inherited from EventEmitter.defaultMaxListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:8*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:9*
 
 ___
 
@@ -172,7 +172,7 @@ ___
 
 *Inherited from Writable._destroy*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:115*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:119*
 
 **Parameters:**
 
@@ -192,7 +192,7 @@ ___
 
 *Inherited from Writable._final*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:116*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:120*
 
 **Parameters:**
 
@@ -211,7 +211,7 @@ ___
 
 *Inherited from Writable._write*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:113*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:117*
 
 **Parameters:**
 
@@ -232,7 +232,7 @@ ___
 
 *Inherited from Writable._writev*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:114*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:118*
 
 **Parameters:**
 
@@ -266,7 +266,7 @@ ___
 
 *Overrides EventEmitter.addListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:137*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:141*
 
 Event emitter The defined events on documents including:
 
@@ -290,7 +290,7 @@ Event emitter The defined events on documents including:
 
 *Overrides EventEmitter.addListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:138*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:142*
 
 **Parameters:**
 
@@ -305,7 +305,7 @@ Event emitter The defined events on documents including:
 
 *Overrides EventEmitter.addListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:139*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:143*
 
 **Parameters:**
 
@@ -320,7 +320,7 @@ Event emitter The defined events on documents including:
 
 *Overrides EventEmitter.addListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:140*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:144*
 
 **Parameters:**
 
@@ -335,7 +335,7 @@ Event emitter The defined events on documents including:
 
 *Overrides EventEmitter.addListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:141*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:145*
 
 **Parameters:**
 
@@ -350,7 +350,7 @@ Event emitter The defined events on documents including:
 
 *Overrides EventEmitter.addListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:142*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:146*
 
 **Parameters:**
 
@@ -365,7 +365,7 @@ Event emitter The defined events on documents including:
 
 *Overrides EventEmitter.addListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:143*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:147*
 
 **Parameters:**
 
@@ -385,7 +385,7 @@ ___
 
 *Inherited from Writable.cork*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:123*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:127*
 
 **Returns:** `void`
 
@@ -398,7 +398,7 @@ ___
 
 *Inherited from Writable.destroy*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:125*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:129*
 
 **Parameters:**
 
@@ -431,7 +431,7 @@ ___
 
 *Overrides EventEmitter.emit*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:145*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:149*
 
 **Parameters:**
 
@@ -445,7 +445,7 @@ ___
 
 *Overrides EventEmitter.emit*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:146*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:150*
 
 **Parameters:**
 
@@ -459,7 +459,7 @@ ___
 
 *Overrides EventEmitter.emit*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:147*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:151*
 
 **Parameters:**
 
@@ -474,7 +474,7 @@ ___
 
 *Overrides EventEmitter.emit*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:148*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:152*
 
 **Parameters:**
 
@@ -488,7 +488,7 @@ ___
 
 *Overrides EventEmitter.emit*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:149*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:153*
 
 **Parameters:**
 
@@ -503,7 +503,7 @@ ___
 
 *Overrides EventEmitter.emit*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:150*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:154*
 
 **Parameters:**
 
@@ -518,7 +518,7 @@ ___
 
 *Overrides EventEmitter.emit*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:151*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:155*
 
 **Parameters:**
 
@@ -534,48 +534,48 @@ ___
 
 ###  end
 
-▸ **end**(cb?: *`undefined` \| `function`*): `void`
+▸ **end**(cb?: *`function`*): `void`
 
-▸ **end**(chunk: *`any`*, cb?: *`undefined` \| `function`*): `void`
+▸ **end**(chunk: *`any`*, cb?: *`function`*): `void`
 
-▸ **end**(chunk: *`any`*, encoding?: *`undefined` \| `string`*, cb?: *`undefined` \| `function`*): `void`
+▸ **end**(chunk: *`any`*, encoding: *`string`*, cb?: *`function`*): `void`
 
 *Inherited from Writable.end*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:120*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:124*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` cb | `undefined` \| `function` |
+| `Optional` cb | `function` |
 
 **Returns:** `void`
 
 *Inherited from Writable.end*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:121*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:125*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | chunk | `any` |
-| `Optional` cb | `undefined` \| `function` |
+| `Optional` cb | `function` |
 
 **Returns:** `void`
 
 *Inherited from Writable.end*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:122*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:126*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | chunk | `any` |
-| `Optional` encoding | `undefined` \| `string` |
-| `Optional` cb | `undefined` \| `function` |
+| encoding | `string` |
+| `Optional` cb | `function` |
 
 **Returns:** `void`
 
@@ -590,7 +590,7 @@ ___
 
 *Overrides EventEmitter.eventNames*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:23*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:24*
 
 **Returns:** `Array`<`string` \| `symbol`>
 
@@ -605,7 +605,7 @@ ___
 
 *Overrides EventEmitter.getMaxListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:19*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:20*
 
 **Returns:** `number`
 
@@ -620,7 +620,7 @@ ___
 
 *Overrides EventEmitter.listenerCount*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:24*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:25*
 
 **Parameters:**
 
@@ -641,7 +641,7 @@ ___
 
 *Overrides EventEmitter.listeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:20*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:21*
 
 **Parameters:**
 
@@ -662,7 +662,7 @@ ___
 
 *Overrides EventEmitter.off*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:16*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:17*
 
 **Parameters:**
 
@@ -696,7 +696,7 @@ ___
 
 *Overrides EventEmitter.on*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:153*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:157*
 
 **Parameters:**
 
@@ -711,7 +711,7 @@ ___
 
 *Overrides EventEmitter.on*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:154*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:158*
 
 **Parameters:**
 
@@ -726,7 +726,7 @@ ___
 
 *Overrides EventEmitter.on*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:155*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:159*
 
 **Parameters:**
 
@@ -741,7 +741,7 @@ ___
 
 *Overrides EventEmitter.on*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:156*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:160*
 
 **Parameters:**
 
@@ -756,7 +756,7 @@ ___
 
 *Overrides EventEmitter.on*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:157*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:161*
 
 **Parameters:**
 
@@ -771,7 +771,7 @@ ___
 
 *Overrides EventEmitter.on*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:158*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:162*
 
 **Parameters:**
 
@@ -786,7 +786,7 @@ ___
 
 *Overrides EventEmitter.on*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:159*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:163*
 
 **Parameters:**
 
@@ -820,7 +820,7 @@ ___
 
 *Overrides EventEmitter.once*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:161*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:165*
 
 **Parameters:**
 
@@ -835,7 +835,7 @@ ___
 
 *Overrides EventEmitter.once*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:162*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:166*
 
 **Parameters:**
 
@@ -850,7 +850,7 @@ ___
 
 *Overrides EventEmitter.once*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:163*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:167*
 
 **Parameters:**
 
@@ -865,7 +865,7 @@ ___
 
 *Overrides EventEmitter.once*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:164*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:168*
 
 **Parameters:**
 
@@ -880,7 +880,7 @@ ___
 
 *Overrides EventEmitter.once*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:165*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:169*
 
 **Parameters:**
 
@@ -895,7 +895,7 @@ ___
 
 *Overrides EventEmitter.once*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:166*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:170*
 
 **Parameters:**
 
@@ -910,7 +910,7 @@ ___
 
 *Overrides EventEmitter.once*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:167*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:171*
 
 **Parameters:**
 
@@ -926,7 +926,7 @@ ___
 
 ###  pipe
 
-▸ **pipe**<`T`>(destination: *`T`*, options?: *`undefined` \| `object`*): `T`
+▸ **pipe**<`T`>(destination: *`T`*, options?: *`object`*): `T`
 
 *Inherited from internal.pipe*
 
@@ -937,10 +937,13 @@ ___
 #### T :  `WritableStream`
 **Parameters:**
 
+**destination: `T`**
+
+**`Optional` options: `object`**
+
 | Name | Type |
 | ------ | ------ |
-| destination | `T` |
-| `Optional` options | `undefined` \| `object` |
+| `Optional` end | `boolean` |
 
 **Returns:** `T`
 
@@ -967,7 +970,7 @@ ___
 
 *Overrides EventEmitter.prependListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:169*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:173*
 
 **Parameters:**
 
@@ -982,7 +985,7 @@ ___
 
 *Overrides EventEmitter.prependListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:170*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:174*
 
 **Parameters:**
 
@@ -997,7 +1000,7 @@ ___
 
 *Overrides EventEmitter.prependListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:171*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:175*
 
 **Parameters:**
 
@@ -1012,7 +1015,7 @@ ___
 
 *Overrides EventEmitter.prependListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:172*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:176*
 
 **Parameters:**
 
@@ -1027,7 +1030,7 @@ ___
 
 *Overrides EventEmitter.prependListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:173*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:177*
 
 **Parameters:**
 
@@ -1042,7 +1045,7 @@ ___
 
 *Overrides EventEmitter.prependListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:174*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:178*
 
 **Parameters:**
 
@@ -1057,7 +1060,7 @@ ___
 
 *Overrides EventEmitter.prependListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:175*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:179*
 
 **Parameters:**
 
@@ -1091,7 +1094,7 @@ ___
 
 *Overrides EventEmitter.prependOnceListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:177*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:181*
 
 **Parameters:**
 
@@ -1106,7 +1109,7 @@ ___
 
 *Overrides EventEmitter.prependOnceListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:178*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:182*
 
 **Parameters:**
 
@@ -1121,7 +1124,7 @@ ___
 
 *Overrides EventEmitter.prependOnceListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:179*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:183*
 
 **Parameters:**
 
@@ -1136,7 +1139,7 @@ ___
 
 *Overrides EventEmitter.prependOnceListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:180*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:184*
 
 **Parameters:**
 
@@ -1151,7 +1154,7 @@ ___
 
 *Overrides EventEmitter.prependOnceListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:181*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:185*
 
 **Parameters:**
 
@@ -1166,7 +1169,7 @@ ___
 
 *Overrides EventEmitter.prependOnceListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:182*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:186*
 
 **Parameters:**
 
@@ -1181,7 +1184,7 @@ ___
 
 *Overrides EventEmitter.prependOnceListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:183*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:187*
 
 **Parameters:**
 
@@ -1203,7 +1206,7 @@ ___
 
 *Overrides EventEmitter.rawListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:21*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:22*
 
 **Parameters:**
 
@@ -1224,7 +1227,7 @@ ___
 
 *Overrides EventEmitter.removeAllListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:17*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:18*
 
 **Parameters:**
 
@@ -1257,7 +1260,7 @@ ___
 
 *Overrides EventEmitter.removeListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:185*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:189*
 
 **Parameters:**
 
@@ -1272,7 +1275,7 @@ ___
 
 *Overrides EventEmitter.removeListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:186*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:190*
 
 **Parameters:**
 
@@ -1287,7 +1290,7 @@ ___
 
 *Overrides EventEmitter.removeListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:187*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:191*
 
 **Parameters:**
 
@@ -1302,7 +1305,7 @@ ___
 
 *Overrides EventEmitter.removeListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:188*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:192*
 
 **Parameters:**
 
@@ -1317,7 +1320,7 @@ ___
 
 *Overrides EventEmitter.removeListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:189*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:193*
 
 **Parameters:**
 
@@ -1332,7 +1335,7 @@ ___
 
 *Overrides EventEmitter.removeListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:190*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:194*
 
 **Parameters:**
 
@@ -1347,7 +1350,7 @@ ___
 
 *Overrides EventEmitter.removeListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:191*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:195*
 
 **Parameters:**
 
@@ -1367,7 +1370,7 @@ ___
 
 *Inherited from Writable.setDefaultEncoding*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:119*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:123*
 
 **Parameters:**
 
@@ -1388,7 +1391,7 @@ ___
 
 *Overrides EventEmitter.setMaxListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:18*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:19*
 
 **Parameters:**
 
@@ -1407,7 +1410,7 @@ ___
 
 *Inherited from Writable.uncork*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:124*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:128*
 
 **Returns:** `void`
 
@@ -1416,34 +1419,34 @@ ___
 
 ###  write
 
-▸ **write**(chunk: *`any`*, cb?: *`undefined` \| `function`*): `boolean`
+▸ **write**(chunk: *`any`*, cb?: *`function`*): `boolean`
 
-▸ **write**(chunk: *`any`*, encoding?: *`undefined` \| `string`*, cb?: *`undefined` \| `function`*): `boolean`
+▸ **write**(chunk: *`any`*, encoding: *`string`*, cb?: *`function`*): `boolean`
 
 *Inherited from Writable.write*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:117*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:121*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | chunk | `any` |
-| `Optional` cb | `undefined` \| `function` |
+| `Optional` cb | `function` |
 
 **Returns:** `boolean`
 
 *Inherited from Writable.write*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:118*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:122*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | chunk | `any` |
-| `Optional` encoding | `undefined` \| `string` |
-| `Optional` cb | `undefined` \| `function` |
+| encoding | `string` |
+| `Optional` cb | `function` |
 
 **Returns:** `boolean`
 
@@ -1456,7 +1459,7 @@ ___
 
 *Inherited from EventEmitter.listenerCount*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:7*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:8*
 
 *__deprecated__*: since v4.0.0
 

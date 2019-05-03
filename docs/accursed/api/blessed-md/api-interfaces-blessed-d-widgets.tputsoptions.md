@@ -32,63 +32,63 @@ sidebar_label: TputsOptions
 
 ### `<Optional>` debug
 
-**● debug**: *`undefined` \| `false` \| `true`*
+**● debug**: *`boolean`*
 
-*Defined in [blessed.d.ts:1573](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1573)*
+*Defined in [blessed.d.ts:1561](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1561)*
 
 ___
 <a id="extended"></a>
 
 ### `<Optional>` extended
 
-**● extended**: *`undefined` \| `false` \| `true`*
+**● extended**: *`boolean`*
 
-*Defined in [blessed.d.ts:1572](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1572)*
+*Defined in [blessed.d.ts:1560](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1560)*
 
 ___
 <a id="termcap"></a>
 
 ### `<Optional>` termcap
 
-**● termcap**: *`undefined` \| `string`*
+**● termcap**: *`string`*
 
-*Defined in [blessed.d.ts:1574](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1574)*
+*Defined in [blessed.d.ts:1562](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1562)*
 
 ___
 <a id="termcapfile"></a>
 
 ### `<Optional>` termcapFile
 
-**● termcapFile**: *`undefined` \| `string`*
+**● termcapFile**: *`string`*
 
-*Defined in [blessed.d.ts:1577](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1577)*
+*Defined in [blessed.d.ts:1565](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1565)*
 
 ___
 <a id="terminal"></a>
 
 ### `<Optional>` terminal
 
-**● terminal**: *`undefined` \| `string`*
+**● terminal**: *`string`*
 
-*Defined in [blessed.d.ts:1571](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1571)*
+*Defined in [blessed.d.ts:1559](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1559)*
 
 ___
 <a id="terminfofile"></a>
 
 ### `<Optional>` terminfoFile
 
-**● terminfoFile**: *`undefined` \| `string`*
+**● terminfoFile**: *`string`*
 
-*Defined in [blessed.d.ts:1575](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1575)*
+*Defined in [blessed.d.ts:1563](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1563)*
 
 ___
 <a id="terminfoprefix"></a>
 
 ### `<Optional>` terminfoPrefix
 
-**● terminfoPrefix**: *`undefined` \| `string`*
+**● terminfoPrefix**: *`string`*
 
-*Defined in [blessed.d.ts:1576](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1576)*
+*Defined in [blessed.d.ts:1564](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1564)*
 
 ___
 

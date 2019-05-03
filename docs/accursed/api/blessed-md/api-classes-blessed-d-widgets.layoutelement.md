@@ -75,13 +75,18 @@ sidebar_label: LayoutElement
 * [type](api-classes-blessed-d-widgets.layoutelement.md#type)
 * [uid](api-classes-blessed-d-widgets.layoutelement.md#uid)
 * [underline](api-classes-blessed-d-widgets.layoutelement.md#underline)
-* [visible](api-classes-blessed-d-widgets.layoutelement.md#visible)
 * [width](api-classes-blessed-d-widgets.layoutelement.md#width)
 * [defaultMaxListeners](api-classes-blessed-d-widgets.layoutelement.md#defaultmaxlisteners)
 
 ### Methods
 
 * [_align](api-classes-blessed-d-widgets.layoutelement.md#_align)
+* [_getCoords](api-classes-blessed-d-widgets.layoutelement.md#_getcoords)
+* [_getHeight](api-classes-blessed-d-widgets.layoutelement.md#_getheight)
+* [_getLeft](api-classes-blessed-d-widgets.layoutelement.md#_getleft)
+* [_getPos](api-classes-blessed-d-widgets.layoutelement.md#_getpos)
+* [_getTop](api-classes-blessed-d-widgets.layoutelement.md#_gettop)
+* [_getWidth](api-classes-blessed-d-widgets.layoutelement.md#_getwidth)
 * [_parseAttr](api-classes-blessed-d-widgets.layoutelement.md#_parseattr)
 * [_parseTags](api-classes-blessed-d-widgets.layoutelement.md#_parsetags)
 * [_wrapContent](api-classes-blessed-d-widgets.layoutelement.md#_wrapcontent)
@@ -187,7 +192,7 @@ sidebar_label: LayoutElement
 
 *Overrides [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[constructor](api-classes-blessed-d-widgets.blessedelement.md#constructor)*
 
-*Defined in [blessed.d.ts:4493](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4493)*
+*Defined in [blessed.d.ts:4604](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4604)*
 
 **Parameters:**
 
@@ -209,7 +214,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[$](api-classes-blessed-d-widgets.node.md#_)*
 
-*Defined in [blessed.d.ts:1690](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1690)*
+*Defined in [blessed.d.ts:1678](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1678)*
 
 An object for any miscellanous user data.
 
@@ -226,7 +231,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[_](api-classes-blessed-d-widgets.node.md#_-1)*
 
-*Defined in [blessed.d.ts:1685](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1685)*
+*Defined in [blessed.d.ts:1673](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1673)*
 
 An object for any miscellanous user data.
 
@@ -243,7 +248,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[_label](api-classes-blessed-d-widgets.blessedelement.md#_label)*
 
-*Defined in [blessed.d.ts:2857](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2857)*
+*Defined in [blessed.d.ts:2919](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2919)*
 
 Get's the child element implementing the current label of this node.
 
@@ -258,7 +263,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[abottom](api-classes-blessed-d-widgets.blessedelement.md#abottom)*
 
-*Defined in [blessed.d.ts:2821](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2821)*
+*Defined in [blessed.d.ts:2883](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2883)*
 
 Calculated absolute bottom offset.
 
@@ -271,7 +276,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[aleft](api-classes-blessed-d-widgets.blessedelement.md#aleft)*
 
-*Defined in [blessed.d.ts:2811](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2811)*
+*Defined in [blessed.d.ts:2873](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2873)*
 
 Calculated absolute left offset.
 
@@ -284,7 +289,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[aright](api-classes-blessed-d-widgets.blessedelement.md#aright)*
 
-*Defined in [blessed.d.ts:2816](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2816)*
+*Defined in [blessed.d.ts:2878](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2878)*
 
 Calculated absolute right offset.
 
@@ -297,7 +302,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[atop](api-classes-blessed-d-widgets.blessedelement.md#atop)*
 
-*Defined in [blessed.d.ts:2806](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2806)*
+*Defined in [blessed.d.ts:2868](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2868)*
 
 Calculated absolute top offset.
 
@@ -310,7 +315,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[bg](api-classes-blessed-d-widgets.blessedelement.md#bg)*
 
-*Defined in [blessed.d.ts:2763](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2763)*
+*Defined in [blessed.d.ts:2825](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2825)*
 
 Border foreground and background, must be numbers (-1 for default).
 
@@ -323,7 +328,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[bold](api-classes-blessed-d-widgets.blessedelement.md#bold)*
 
-*Defined in [blessed.d.ts:2769](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2769)*
+*Defined in [blessed.d.ts:2831](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2831)*
 
 Border attributes.
 
@@ -336,7 +341,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[border](api-classes-blessed-d-widgets.blessedelement.md#border)*
 
-*Defined in [blessed.d.ts:2748](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2748)*
+*Defined in [blessed.d.ts:2810](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2810)*
 
 Border object.
 
@@ -345,11 +350,11 @@ ___
 
 ###  bottom
 
-**● bottom**: *`number`*
+**● bottom**: *`number` \| `string`*
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[bottom](api-classes-blessed-d-widgets.blessedelement.md#bottom)*
 
-*Defined in [blessed.d.ts:2801](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2801)*
+*Defined in [blessed.d.ts:2863](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2863)*
 
 Calculated relative bottom offset.
 
@@ -362,7 +367,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[children](api-classes-blessed-d-widgets.node.md#children)*
 
-*Defined in [blessed.d.ts:1717](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1717)*
+*Defined in [blessed.d.ts:1705](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1705)*
 
 Array of node's children.
 
@@ -375,7 +380,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[content](api-classes-blessed-d-widgets.blessedelement.md#content)*
 
-*Defined in [blessed.d.ts:2755](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2755)*
+*Defined in [blessed.d.ts:2817](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2817)*
 
 ___
 <a id="data"></a>
@@ -386,7 +391,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[data](api-classes-blessed-d-widgets.node.md#data)*
 
-*Defined in [blessed.d.ts:1680](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1680)*
+*Defined in [blessed.d.ts:1668](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1668)*
 
 An object for any miscellanous user data.
 
@@ -403,7 +408,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[detached](api-classes-blessed-d-widgets.blessedelement.md#detached)*
 
-*Defined in [blessed.d.ts:2758](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2758)*
+*Defined in [blessed.d.ts:2820](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2820)*
 
 ___
 <a id="draggable"></a>
@@ -414,7 +419,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[draggable](api-classes-blessed-d-widgets.blessedelement.md#draggable)*
 
-*Defined in [blessed.d.ts:2826](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2826)*
+*Defined in [blessed.d.ts:2888](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2888)*
 
 Whether the element is draggable. Set to true to allow dragging.
 
@@ -427,7 +432,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[fg](api-classes-blessed-d-widgets.blessedelement.md#fg)*
 
-*Defined in [blessed.d.ts:2764](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2764)*
+*Defined in [blessed.d.ts:2826](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2826)*
 
 ___
 <a id="focusable"></a>
@@ -438,18 +443,18 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[focusable](api-classes-blessed-d-widgets.node.md#focusable)*
 
-*Defined in [blessed.d.ts:1670](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1670)*
+*Defined in [blessed.d.ts:1658](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1658)*
 
 ___
 <a id="height"></a>
 
 ###  height
 
-**● height**: *`number`*
+**● height**: *`number` \| `string`*
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[height](api-classes-blessed-d-widgets.blessedelement.md#height)*
 
-*Defined in [blessed.d.ts:2781](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2781)*
+*Defined in [blessed.d.ts:2843](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2843)*
 
 Calculated height.
 
@@ -462,7 +467,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[hidden](api-classes-blessed-d-widgets.blessedelement.md#hidden)*
 
-*Defined in [blessed.d.ts:2756](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2756)*
+*Defined in [blessed.d.ts:2818](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2818)*
 
 ___
 <a id="iheight"></a>
@@ -473,7 +478,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[iheight](api-classes-blessed-d-widgets.blessedelement.md#iheight)*
 
-*Defined in [blessed.d.ts:2830](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2830)*
+*Defined in [blessed.d.ts:2892](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2892)*
 
 ___
 <a id="ileft"></a>
@@ -484,7 +489,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[ileft](api-classes-blessed-d-widgets.blessedelement.md#ileft)*
 
-*Defined in [blessed.d.ts:2829](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2829)*
+*Defined in [blessed.d.ts:2891](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2891)*
 
 ___
 <a id="index"></a>
@@ -495,7 +500,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[index](api-classes-blessed-d-widgets.node.md#index)*
 
-*Defined in [blessed.d.ts:1702](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1702)*
+*Defined in [blessed.d.ts:1690](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1690)*
 
 Render index (document order index) of the last render call.
 
@@ -508,7 +513,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[itop](api-classes-blessed-d-widgets.blessedelement.md#itop)*
 
-*Defined in [blessed.d.ts:2828](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2828)*
+*Defined in [blessed.d.ts:2890](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2890)*
 
 ___
 <a id="iwidth"></a>
@@ -519,18 +524,18 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[iwidth](api-classes-blessed-d-widgets.blessedelement.md#iwidth)*
 
-*Defined in [blessed.d.ts:2831](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2831)*
+*Defined in [blessed.d.ts:2893](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2893)*
 
 ___
 <a id="left"></a>
 
 ###  left
 
-**● left**: *`number`*
+**● left**: *`number` \| `string`*
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[left](api-classes-blessed-d-widgets.blessedelement.md#left)*
 
-*Defined in [blessed.d.ts:2791](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2791)*
+*Defined in [blessed.d.ts:2853](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2853)*
 
 Calculated relative left offset.
 
@@ -543,7 +548,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[lpos](api-classes-blessed-d-widgets.node.md#lpos)*
 
-*Defined in [blessed.d.ts:1692](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1692)*
+*Defined in [blessed.d.ts:1680](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1680)*
 
 ___
 <a id="name"></a>
@@ -554,7 +559,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[name](api-classes-blessed-d-widgets.blessedelement.md#name)*
 
-*Defined in [blessed.d.ts:2743](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2743)*
+*Defined in [blessed.d.ts:2805](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2805)*
 
 Name of the element. Useful for form submission.
 
@@ -569,7 +574,7 @@ ___
 
 *Overrides [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[options](api-classes-blessed-d-widgets.blessedelement.md#options)*
 
-*Defined in [blessed.d.ts:4496](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4496)*
+*Defined in [blessed.d.ts:4607](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4607)*
 
 ___
 <a id="padding"></a>
@@ -580,7 +585,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[padding](api-classes-blessed-d-widgets.blessedelement.md#padding)*
 
-*Defined in [blessed.d.ts:2751](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2751)*
+*Defined in [blessed.d.ts:2813](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2813)*
 
 Current element padding
 
@@ -593,7 +598,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[parent](api-classes-blessed-d-widgets.node.md#parent)*
 
-*Defined in [blessed.d.ts:1712](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1712)*
+*Defined in [blessed.d.ts:1700](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1700)*
 
 Parent node. If null it means the element is not attached to any screen or program, or the node is a Screen.
 
@@ -606,7 +611,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[position](api-classes-blessed-d-widgets.blessedelement.md#position)*
 
-*Defined in [blessed.d.ts:2754](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2754)*
+*Defined in [blessed.d.ts:2816](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2816)*
 
 ___
 <a id="rbottom"></a>
@@ -617,7 +622,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[rbottom](api-classes-blessed-d-widgets.blessedelement.md#rbottom)*
 
-*Defined in [blessed.d.ts:2851](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2851)*
+*Defined in [blessed.d.ts:2913](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2913)*
 
 Calculated relative bottom offset.
 
@@ -626,11 +631,11 @@ ___
 
 ###  right
 
-**● right**: *`number`*
+**● right**: *`number` \| `string`*
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[right](api-classes-blessed-d-widgets.blessedelement.md#right)*
 
-*Defined in [blessed.d.ts:2796](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2796)*
+*Defined in [blessed.d.ts:2858](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2858)*
 
 Calculated relative right offset.
 
@@ -643,7 +648,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[rleft](api-classes-blessed-d-widgets.blessedelement.md#rleft)*
 
-*Defined in [blessed.d.ts:2841](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2841)*
+*Defined in [blessed.d.ts:2903](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2903)*
 
 Calculated relative left offset.
 
@@ -656,7 +661,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[rright](api-classes-blessed-d-widgets.blessedelement.md#rright)*
 
-*Defined in [blessed.d.ts:2846](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2846)*
+*Defined in [blessed.d.ts:2908](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2908)*
 
 Calculated relative right offset.
 
@@ -669,7 +674,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[rtop](api-classes-blessed-d-widgets.blessedelement.md#rtop)*
 
-*Defined in [blessed.d.ts:2836](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2836)*
+*Defined in [blessed.d.ts:2898](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2898)*
 
 Calculated relative top offset.
 
@@ -682,7 +687,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[screen](api-classes-blessed-d-widgets.node.md#screen)*
 
-*Defined in [blessed.d.ts:1707](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1707)*
+*Defined in [blessed.d.ts:1695](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1695)*
 
 Parent screen.
 
@@ -695,7 +700,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[shrink](api-classes-blessed-d-widgets.blessedelement.md#shrink)*
 
-*Defined in [blessed.d.ts:2732](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2732)*
+*Defined in [blessed.d.ts:2794](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2794)*
 
 ___
 <a id="style"></a>
@@ -706,18 +711,18 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[style](api-classes-blessed-d-widgets.blessedelement.md#style)*
 
-*Defined in [blessed.d.ts:2753](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2753)*
+*Defined in [blessed.d.ts:2815](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2815)*
 
 ___
 <a id="top"></a>
 
 ###  top
 
-**● top**: *`number`*
+**● top**: *`number` \| `string`*
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[top](api-classes-blessed-d-widgets.blessedelement.md#top)*
 
-*Defined in [blessed.d.ts:2786](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2786)*
+*Defined in [blessed.d.ts:2848](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2848)*
 
 Calculated relative top offset.
 
@@ -730,7 +735,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[type](api-classes-blessed-d-widgets.node.md#type)*
 
-*Defined in [blessed.d.ts:1697](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1697)*
+*Defined in [blessed.d.ts:1685](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1685)*
 
 Type of the node (e.g. box).
 
@@ -743,7 +748,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[uid](api-classes-blessed-d-widgets.node.md#uid)*
 
-*Defined in [blessed.d.ts:1668](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1668)*
+*Defined in [blessed.d.ts:1656](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1656)*
 
 Unique identifier for Node instances. @internal
 
@@ -756,29 +761,18 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[underline](api-classes-blessed-d-widgets.blessedelement.md#underline)*
 
-*Defined in [blessed.d.ts:2771](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2771)*
-
-___
-<a id="visible"></a>
-
-###  visible
-
-**● visible**: *`boolean`*
-
-*Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[visible](api-classes-blessed-d-widgets.blessedelement.md#visible)*
-
-*Defined in [blessed.d.ts:2757](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2757)*
+*Defined in [blessed.d.ts:2833](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2833)*
 
 ___
 <a id="width"></a>
 
 ###  width
 
-**● width**: *`number`*
+**● width**: *`number` \| `string`*
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[width](api-classes-blessed-d-widgets.blessedelement.md#width)*
 
-*Defined in [blessed.d.ts:2776](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2776)*
+*Defined in [blessed.d.ts:2838](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2838)*
 
 Calculated width.
 
@@ -791,7 +785,7 @@ ___
 
 *Inherited from EventEmitter.defaultMaxListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:8*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:9*
 
 ___
 
@@ -799,15 +793,15 @@ ___
 
 <a id="_align"></a>
 
-### `<Protected>` _align
+###  _align
 
 ▸ **_align**(line: *`string`*, width: *`number`*, align: *`string`*): `void`
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[_align](api-classes-blessed-d-widgets.blessedelement.md#_align)*
 
-*Defined in [blessed.d.ts:2992](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2992)*
+*Defined in [blessed.d.ts:3066](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3066)*
 
-*__internal__*: . Could be overriden by element subclasses.
+*__internal__*: 
 
 **Parameters:**
 
@@ -820,17 +814,126 @@ ___
 **Returns:** `void`
 
 ___
+<a id="_getcoords"></a>
+
+###  _getCoords
+
+▸ **_getCoords**(get?: *`boolean`*, noscroll?: *`boolean`*): [Coords](api-interfaces-blessed-d-widgets.coords.md) \| `undefined`
+
+*Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[_getCoords](api-classes-blessed-d-widgets.blessedelement.md#_getcoords)*
+
+*Defined in [blessed.d.ts:2926](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2926)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| `Optional` get | `boolean` |
+| `Optional` noscroll | `boolean` |
+
+**Returns:** [Coords](api-interfaces-blessed-d-widgets.coords.md) \| `undefined`
+
+___
+<a id="_getheight"></a>
+
+###  _getHeight
+
+▸ **_getHeight**(get?: *`boolean`*): `number`
+
+*Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[_getHeight](api-classes-blessed-d-widgets.blessedelement.md#_getheight)*
+
+*Defined in [blessed.d.ts:2932](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2932)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| `Optional` get | `boolean` |
+
+**Returns:** `number`
+
+___
+<a id="_getleft"></a>
+
+###  _getLeft
+
+▸ **_getLeft**(get?: *`boolean`*): `number`
+
+*Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[_getLeft](api-classes-blessed-d-widgets.blessedelement.md#_getleft)*
+
+*Defined in [blessed.d.ts:2929](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2929)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| `Optional` get | `boolean` |
+
+**Returns:** `number`
+
+___
+<a id="_getpos"></a>
+
+###  _getPos
+
+▸ **_getPos**(): [Pos](api-interfaces-blessed-d-widgets.pos.md)
+
+*Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[_getPos](api-classes-blessed-d-widgets.blessedelement.md#_getpos)*
+
+*Defined in [blessed.d.ts:2927](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2927)*
+
+**Returns:** [Pos](api-interfaces-blessed-d-widgets.pos.md)
+
+___
+<a id="_gettop"></a>
+
+###  _getTop
+
+▸ **_getTop**(get?: *`boolean`*): `number`
+
+*Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[_getTop](api-classes-blessed-d-widgets.blessedelement.md#_gettop)*
+
+*Defined in [blessed.d.ts:2931](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2931)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| `Optional` get | `boolean` |
+
+**Returns:** `number`
+
+___
+<a id="_getwidth"></a>
+
+###  _getWidth
+
+▸ **_getWidth**(get?: *`boolean`*): `number`
+
+*Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[_getWidth](api-classes-blessed-d-widgets.blessedelement.md#_getwidth)*
+
+*Defined in [blessed.d.ts:2930](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2930)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| `Optional` get | `boolean` |
+
+**Returns:** `number`
+
+___
 <a id="_parseattr"></a>
 
-### `<Protected>` _parseAttr
+###  _parseAttr
 
 ▸ **_parseAttr**(ines: *`string`[]*): `string`[]
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[_parseAttr](api-classes-blessed-d-widgets.blessedelement.md#_parseattr)*
 
-*Defined in [blessed.d.ts:2990](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2990)*
+*Defined in [blessed.d.ts:3063](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3063)*
 
-*__internal__*: . Could be overriden by element subclasses.
+*__internal__*: 
 
 **Parameters:**
 
@@ -843,15 +946,15 @@ ___
 ___
 <a id="_parsetags"></a>
 
-### `<Protected>` _parseTags
+###  _parseTags
 
 ▸ **_parseTags**(s: *`string`*): `string`
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[_parseTags](api-classes-blessed-d-widgets.blessedelement.md#_parsetags)*
 
-*Defined in [blessed.d.ts:2988](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2988)*
+*Defined in [blessed.d.ts:3060](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3060)*
 
-Convert `{red-fg}foo{/red-fg}` to `\x1b[31mfoo\x1b[39m` . @internal. Could be overriden by element subclasses.
+Converts `{red-fg}foo{/red-fg}` to `\x1b[31mfoo\x1b[39m`. @internal.
 
 **Parameters:**
 
@@ -864,15 +967,15 @@ Convert `{red-fg}foo{/red-fg}` to `\x1b[31mfoo\x1b[39m` . @internal. Could be ov
 ___
 <a id="_wrapcontent"></a>
 
-### `<Protected>` _wrapContent
+###  _wrapContent
 
 ▸ **_wrapContent**(content: *`string`*, width: *`number`*): `void`
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[_wrapContent](api-classes-blessed-d-widgets.blessedelement.md#_wrapcontent)*
 
-*Defined in [blessed.d.ts:2994](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2994)*
+*Defined in [blessed.d.ts:3069](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3069)*
 
-*__internal__*: . Could be overriden by element subclasses.
+*__internal__*: 
 
 **Parameters:**
 
@@ -894,7 +997,7 @@ ___
 
 *Overrides EventEmitter.addListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:10*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:11*
 
 **Parameters:**
 
@@ -914,7 +1017,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[append](api-classes-blessed-d-widgets.node.md#append)*
 
-*Defined in [blessed.d.ts:1727](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1727)*
+*Defined in [blessed.d.ts:1715](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1715)*
 
 Append a node to this node's children.
 
@@ -935,7 +1038,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[clearBaseLine](api-classes-blessed-d-widgets.blessedelement.md#clearbaseline)*
 
-*Defined in [blessed.d.ts:3059](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3059)*
+*Defined in [blessed.d.ts:3140](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3140)*
 
 Clear a line from the box's content from the visible top.
 
@@ -956,7 +1059,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[clearLine](api-classes-blessed-d-widgets.blessedelement.md#clearline)*
 
-*Defined in [blessed.d.ts:3054](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3054)*
+*Defined in [blessed.d.ts:3135](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3135)*
 
 Clear a line from the box's content.
 
@@ -971,13 +1074,13 @@ Clear a line from the box's content.
 ___
 <a id="clearpos"></a>
 
-### `<Protected>` clearPos
+###  clearPos
 
 ▸ **clearPos**(): `void`
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[clearPos](api-classes-blessed-d-widgets.blessedelement.md#clearpos)*
 
-*Defined in [blessed.d.ts:2998](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2998)*
+*Defined in [blessed.d.ts:3079](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3079)*
 
 Cleans the rectangle of this element on the screen. Useful for subclasses before rendering. @internal
 
@@ -988,17 +1091,17 @@ ___
 
 ###  collectAncestors
 
-▸ **collectAncestors**(s?: *`undefined` \| `false` \| `true`*): `void`
+▸ **collectAncestors**(s?: *`boolean`*): `void`
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[collectAncestors](api-classes-blessed-d-widgets.node.md#collectancestors)*
 
-*Defined in [blessed.d.ts:1760](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1760)*
+*Defined in [blessed.d.ts:1748](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1748)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` s | `undefined` \| `false` \| `true` |
+| `Optional` s | `boolean` |
 
 **Returns:** `void`
 
@@ -1007,17 +1110,17 @@ ___
 
 ###  collectDescendants
 
-▸ **collectDescendants**(s?: *`undefined` \| `false` \| `true`*): `void`
+▸ **collectDescendants**(s?: *`boolean`*): `void`
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[collectDescendants](api-classes-blessed-d-widgets.node.md#collectdescendants)*
 
-*Defined in [blessed.d.ts:1759](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1759)*
+*Defined in [blessed.d.ts:1747](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1747)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` s | `undefined` \| `false` \| `true` |
+| `Optional` s | `boolean` |
 
 **Returns:** `void`
 
@@ -1030,7 +1133,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[deleteBottom](api-classes-blessed-d-widgets.blessedelement.md#deletebottom)*
 
-*Defined in [blessed.d.ts:3079](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3079)*
+*Defined in [blessed.d.ts:3160](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3160)*
 
 Delete a line at the bottom of the box.
 
@@ -1045,7 +1148,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[deleteLine](api-classes-blessed-d-widgets.blessedelement.md#deleteline)*
 
-*Defined in [blessed.d.ts:3029](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3029)*
+*Defined in [blessed.d.ts:3110](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3110)*
 
 Delete a line from the box's content.
 
@@ -1066,7 +1169,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[deleteTop](api-classes-blessed-d-widgets.blessedelement.md#deletetop)*
 
-*Defined in [blessed.d.ts:3074](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3074)*
+*Defined in [blessed.d.ts:3155](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3155)*
 
 Delete a line at the top of the box.
 
@@ -1085,7 +1188,7 @@ ___
 
 *Overrides [Node](api-classes-blessed-d-widgets.node.md).[destroy](api-classes-blessed-d-widgets.node.md#destroy)*
 
-*Defined in [blessed.d.ts:2913](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2913)*
+*Defined in [blessed.d.ts:2983](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2983)*
 
 Same as the detach() method, except this will automatically call free() and unbind any screen events to prevent memory leaks. for use with onScreenEvent(), removeScreenEvent(), and free().
 
@@ -1100,7 +1203,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[detach](api-classes-blessed-d-widgets.node.md#detach)*
 
-*Defined in [blessed.d.ts:1752](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1752)*
+*Defined in [blessed.d.ts:1740](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1740)*
 
 Remove node from its parent.
 
@@ -1115,7 +1218,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[disableDrag](api-classes-blessed-d-widgets.blessedelement.md#disabledrag)*
 
-*Defined in [blessed.d.ts:2974](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2974)*
+*Defined in [blessed.d.ts:3044](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3044)*
 
 Disable dragging of the element.
 
@@ -1132,7 +1235,7 @@ ___
 
 *Overrides EventEmitter.emit*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:22*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:23*
 
 **Parameters:**
 
@@ -1152,7 +1255,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[emitAncestors](api-classes-blessed-d-widgets.node.md#emitancestors)*
 
-*Defined in [blessed.d.ts:1766](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1766)*
+*Defined in [blessed.d.ts:1754](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1754)*
 
 **Returns:** `void`
 
@@ -1161,11 +1264,11 @@ ___
 
 ###  emitDescendants
 
-▸ **emitDescendants**(type?: *`undefined` \| `string`*, ...args: *`any`[]*): `void`
+▸ **emitDescendants**(type?: *`string`*, ...args: *`any`[]*): `void`
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[emitDescendants](api-classes-blessed-d-widgets.node.md#emitdescendants)*
 
-*Defined in [blessed.d.ts:1765](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1765)*
+*Defined in [blessed.d.ts:1753](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1753)*
 
 Emit event for element, and recursively emit same event for all descendants. If `s` is provided it will call \[\[iter\]\] on self first.
 
@@ -1173,7 +1276,7 @@ Emit event for element, and recursively emit same event for all descendants. If 
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` type | `undefined` \| `string` |
+| `Optional` type | `string` |
 | `Rest` args | `any`[] |
 
 **Returns:** `void`
@@ -1187,7 +1290,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[enableDrag](api-classes-blessed-d-widgets.blessedelement.md#enabledrag)*
 
-*Defined in [blessed.d.ts:2969](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2969)*
+*Defined in [blessed.d.ts:3039](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3039)*
 
 Enable dragging of the element.
 
@@ -1202,7 +1305,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[enableInput](api-classes-blessed-d-widgets.blessedelement.md#enableinput)*
 
-*Defined in [blessed.d.ts:2964](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2964)*
+*Defined in [blessed.d.ts:3034](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3034)*
 
 Enable key and mouse events. Calls bot enableMouse and enableKeys.
 
@@ -1217,7 +1320,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[enableKeys](api-classes-blessed-d-widgets.blessedelement.md#enablekeys)*
 
-*Defined in [blessed.d.ts:2959](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2959)*
+*Defined in [blessed.d.ts:3029](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3029)*
 
 Enable keypress events for the element (automatically called when a form of on('keypress') is bound).
 
@@ -1232,7 +1335,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[enableMouse](api-classes-blessed-d-widgets.blessedelement.md#enablemouse)*
 
-*Defined in [blessed.d.ts:2954](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2954)*
+*Defined in [blessed.d.ts:3024](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3024)*
 
 Enable mouse events for the element (automatically called when a form of on('mouse') is bound).
 
@@ -1249,7 +1352,7 @@ ___
 
 *Overrides EventEmitter.eventNames*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:23*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:24*
 
 **Returns:** `Array`<`string` \| `symbol`>
 
@@ -1262,7 +1365,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[focus](api-classes-blessed-d-widgets.blessedelement.md#focus)*
 
-*Defined in [blessed.d.ts:2882](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2882)*
+*Defined in [blessed.d.ts:2952](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2952)*
 
 Focus element.
 
@@ -1273,18 +1376,18 @@ ___
 
 ###  forAncestors
 
-▸ **forAncestors**(iter: *`function`*, s?: *`undefined` \| `false` \| `true`*): `void`
+▸ **forAncestors**(iter: *`function`*, s?: *`boolean`*): `void`
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[forAncestors](api-classes-blessed-d-widgets.node.md#forancestors)*
 
-*Defined in [blessed.d.ts:1758](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1758)*
+*Defined in [blessed.d.ts:1746](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1746)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | iter | `function` |
-| `Optional` s | `undefined` \| `false` \| `true` |
+| `Optional` s | `boolean` |
 
 **Returns:** `void`
 
@@ -1293,11 +1396,11 @@ ___
 
 ###  forDescendants
 
-▸ **forDescendants**(iter: *`function`*, s?: *`undefined` \| `false` \| `true`*): `void`
+▸ **forDescendants**(iter: *`function`*, s?: *`boolean`*): `void`
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[forDescendants](api-classes-blessed-d-widgets.node.md#fordescendants)*
 
-*Defined in [blessed.d.ts:1757](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1757)*
+*Defined in [blessed.d.ts:1745](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1745)*
 
 Visit each node's descendants, with \[\[iter\]\] function, parents first. If `s` is provided it will call \[\[iter\]\] on self first.
 
@@ -1306,7 +1409,7 @@ Visit each node's descendants, with \[\[iter\]\] function, parents first. If `s`
 | Name | Type |
 | ------ | ------ |
 | iter | `function` |
-| `Optional` s | `undefined` \| `false` \| `true` |
+| `Optional` s | `boolean` |
 
 **Returns:** `void`
 
@@ -1321,7 +1424,7 @@ ___
 
 *Overrides [Node](api-classes-blessed-d-widgets.node.md).[free](api-classes-blessed-d-widgets.node.md#free)*
 
-*Defined in [blessed.d.ts:2907](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2907)*
+*Defined in [blessed.d.ts:2977](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2977)*
 
 Free up the element. Automatically unbind all events that may have been bound to the screen object. This prevents memory leaks. For use with onScreenEvent(), removeScreenEvent(), and destroy().
 
@@ -1336,7 +1439,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[get](api-classes-blessed-d-widgets.node.md#get)*
 
-*Defined in [blessed.d.ts:1777](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1777)*
+*Defined in [blessed.d.ts:1765](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1765)*
 
 Get user property with a potential default value.
 
@@ -1361,7 +1464,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[getBaseLine](api-classes-blessed-d-widgets.blessedelement.md#getbaseline)*
 
-*Defined in [blessed.d.ts:3039](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3039)*
+*Defined in [blessed.d.ts:3120](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3120)*
 
 Get a line from the box's content from the visible top.
 
@@ -1382,7 +1485,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[getContent](api-classes-blessed-d-widgets.blessedelement.md#getcontent)*
 
-*Defined in [blessed.d.ts:3009](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3009)*
+*Defined in [blessed.d.ts:3090](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3090)*
 
 Return content, slightly different from el.content. Assume the above formatting.
 
@@ -1395,7 +1498,7 @@ ___
 
 ▸ **getLast**(i: *`number`*): [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md)
 
-*Defined in [blessed.d.ts:4514](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4514)*
+*Defined in [blessed.d.ts:4625](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4625)*
 
 Get the last rendered and visible child element based on an index. This is useful for basing the position of the current child element on the position of the last child element.
 
@@ -1414,7 +1517,7 @@ ___
 
 ▸ **getLastCoords**(i: *`number`*): [PositionCoords](api-classes-blessed-d-widgets.positioncoords.md)
 
-*Defined in [blessed.d.ts:4520](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4520)*
+*Defined in [blessed.d.ts:4631](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4631)*
 
 Get the last rendered and visible child element coords based on an index. This is useful for basing the position of the current child element on the position of the last child element. See the example below.
 
@@ -1435,7 +1538,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[getLine](api-classes-blessed-d-widgets.blessedelement.md#getline)*
 
-*Defined in [blessed.d.ts:3034](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3034)*
+*Defined in [blessed.d.ts:3115](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3115)*
 
 Get a line from the box's content.
 
@@ -1456,7 +1559,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[getLines](api-classes-blessed-d-widgets.blessedelement.md#getlines)*
 
-*Defined in [blessed.d.ts:3104](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3104)*
+*Defined in [blessed.d.ts:3185](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3185)*
 
 An array containing the content lines.
 
@@ -1473,7 +1576,7 @@ ___
 
 *Overrides EventEmitter.getMaxListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:19*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:20*
 
 **Returns:** `number`
 
@@ -1486,7 +1589,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[getScreenLines](api-classes-blessed-d-widgets.blessedelement.md#getscreenlines)*
 
-*Defined in [blessed.d.ts:3109](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3109)*
+*Defined in [blessed.d.ts:3190](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3190)*
 
 An array containing the lines as they are displayed on the screen.
 
@@ -1501,7 +1604,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[getText](api-classes-blessed-d-widgets.blessedelement.md#gettext)*
 
-*Defined in [blessed.d.ts:3019](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3019)*
+*Defined in [blessed.d.ts:3100](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3100)*
 
 Similar to getContent, but return content with tags and escape codes removed.
 
@@ -1516,7 +1619,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[hasAncestor](api-classes-blessed-d-widgets.node.md#hasancestor)*
 
-*Defined in [blessed.d.ts:1768](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1768)*
+*Defined in [blessed.d.ts:1756](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1756)*
 
 **Type parameters:**
 
@@ -1538,7 +1641,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[hasDescendant](api-classes-blessed-d-widgets.node.md#hasdescendant)*
 
-*Defined in [blessed.d.ts:1767](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1767)*
+*Defined in [blessed.d.ts:1755](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1755)*
 
 **Type parameters:**
 
@@ -1560,7 +1663,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[hide](api-classes-blessed-d-widgets.blessedelement.md#hide)*
 
-*Defined in [blessed.d.ts:2867](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2867)*
+*Defined in [blessed.d.ts:2937](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2937)*
 
 Hide element and triggers [hide](api-classes-blessed-d-widgets.layoutelement.md#hide) event
 
@@ -1575,7 +1678,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[insert](api-classes-blessed-d-widgets.node.md#insert)*
 
-*Defined in [blessed.d.ts:1737](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1737)*
+*Defined in [blessed.d.ts:1725](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1725)*
 
 Insert a node to this node's children at index i.
 
@@ -1597,7 +1700,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[insertAfter](api-classes-blessed-d-widgets.node.md#insertafter)*
 
-*Defined in [blessed.d.ts:1747](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1747)*
+*Defined in [blessed.d.ts:1735](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1735)*
 
 Insert a node from node after the reference node.
 
@@ -1619,7 +1722,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[insertBefore](api-classes-blessed-d-widgets.node.md#insertbefore)*
 
-*Defined in [blessed.d.ts:1742](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1742)*
+*Defined in [blessed.d.ts:1730](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1730)*
 
 Insert a node to this node's children before the reference node.
 
@@ -1641,7 +1744,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[insertBottom](api-classes-blessed-d-widgets.blessedelement.md#insertbottom)*
 
-*Defined in [blessed.d.ts:3069](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3069)*
+*Defined in [blessed.d.ts:3150](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3150)*
 
 Insert a line at the bottom of the box.
 
@@ -1662,7 +1765,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[insertLine](api-classes-blessed-d-widgets.blessedelement.md#insertline)*
 
-*Defined in [blessed.d.ts:3024](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3024)*
+*Defined in [blessed.d.ts:3105](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3105)*
 
 Insert a line into the box's content.
 
@@ -1684,7 +1787,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[insertTop](api-classes-blessed-d-widgets.blessedelement.md#inserttop)*
 
-*Defined in [blessed.d.ts:3064](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3064)*
+*Defined in [blessed.d.ts:3145](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3145)*
 
 Insert a line at the top of the box.
 
@@ -1703,7 +1806,7 @@ ___
 
 ▸ **isRendered**(el: *[BlessedElement](api-classes-blessed-d-widgets.blessedelement.md)*): `boolean`
 
-*Defined in [blessed.d.ts:4508](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4508)*
+*Defined in [blessed.d.ts:4619](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4619)*
 
 Check to see if a previous child element has been rendered and is visible on screen. This is only useful for checking child elements that have already been attempted to be rendered! see the example below.
 
@@ -1724,7 +1827,7 @@ ___
 
 *Inherited from [NodeWithEvents](api-classes-blessed-d-widgets.nodewithevents.md).[key](api-classes-blessed-d-widgets.nodewithevents.md#key)*
 
-*Defined in [blessed.d.ts:1859](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1859)*
+*Defined in [blessed.d.ts:1847](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1847)*
 
 Bind a keypress listener for a specific key.
 
@@ -1748,7 +1851,7 @@ ___
 
 *Overrides EventEmitter.listenerCount*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:24*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:25*
 
 **Parameters:**
 
@@ -1769,7 +1872,7 @@ ___
 
 *Overrides EventEmitter.listeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:20*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:21*
 
 **Parameters:**
 
@@ -1790,7 +1893,7 @@ ___
 
 *Overrides EventEmitter.off*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:16*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:17*
 
 **Parameters:**
 
@@ -1822,7 +1925,7 @@ ___
 
 *Overrides [Node](api-classes-blessed-d-widgets.node.md).[on](api-classes-blessed-d-widgets.node.md#on)*
 
-*Defined in [blessed.d.ts:1872](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1872)*
+*Defined in [blessed.d.ts:1860](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1860)*
 
 **Parameters:**
 
@@ -1837,7 +1940,7 @@ ___
 
 *Overrides [Node](api-classes-blessed-d-widgets.node.md).[on](api-classes-blessed-d-widgets.node.md#on)*
 
-*Defined in [blessed.d.ts:1874](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1874)*
+*Defined in [blessed.d.ts:1862](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1862)*
 
 Received on mouse events.
 
@@ -1854,7 +1957,7 @@ Received on mouse events.
 
 *Overrides [Node](api-classes-blessed-d-widgets.node.md).[on](api-classes-blessed-d-widgets.node.md#on)*
 
-*Defined in [blessed.d.ts:1877](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1877)*
+*Defined in [blessed.d.ts:1865](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1865)*
 
 Received on key events.
 
@@ -1871,7 +1974,7 @@ Received on key events.
 
 *Overrides [Node](api-classes-blessed-d-widgets.node.md).[on](api-classes-blessed-d-widgets.node.md#on)*
 
-*Defined in [blessed.d.ts:1878](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1878)*
+*Defined in [blessed.d.ts:1866](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1866)*
 
 **Parameters:**
 
@@ -1886,7 +1989,7 @@ Received on key events.
 
 *Overrides [Node](api-classes-blessed-d-widgets.node.md).[on](api-classes-blessed-d-widgets.node.md#on)*
 
-*Defined in [blessed.d.ts:1880](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1880)*
+*Defined in [blessed.d.ts:1868](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1868)*
 
 Received when blessed notices something untoward (output is not a tty, terminfo not found, etc).
 
@@ -1903,7 +2006,7 @@ Received when blessed notices something untoward (output is not a tty, terminfo 
 
 *Overrides [Node](api-classes-blessed-d-widgets.node.md).[on](api-classes-blessed-d-widgets.node.md#on)*
 
-*Defined in [blessed.d.ts:1881](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1881)*
+*Defined in [blessed.d.ts:1869](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1869)*
 
 **Parameters:**
 
@@ -1923,7 +2026,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[onScreenEvent](api-classes-blessed-d-widgets.blessedelement.md#onscreenevent)*
 
-*Defined in [blessed.d.ts:2893](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2893)*
+*Defined in [blessed.d.ts:2963](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2963)*
 
 Same as el.on('screen', ...) except this will automatically keep track of which listeners are bound to the screen object. For use with removeScreenEvent(), free(), and destroy().
 
@@ -1947,7 +2050,7 @@ ___
 
 *Overrides EventEmitter.once*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:12*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:13*
 
 **Parameters:**
 
@@ -1967,7 +2070,7 @@ ___
 
 *Inherited from [NodeWithEvents](api-classes-blessed-d-widgets.nodewithevents.md).[onceKey](api-classes-blessed-d-widgets.nodewithevents.md#oncekey)*
 
-*Defined in [blessed.d.ts:1864](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1864)*
+*Defined in [blessed.d.ts:1852](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1852)*
 
 Bind a keypress listener for a specific key once.
 
@@ -1989,7 +2092,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[parseContent](api-classes-blessed-d-widgets.blessedelement.md#parsecontent)*
 
-*Defined in [blessed.d.ts:2887](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2887)*
+*Defined in [blessed.d.ts:2957](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2957)*
 
 *__internal__*: parses given content string with no tags before rendering. Removes / transform characters that break the output . For example, double-width chars will eat the next char after render in this case it creates a blank character after it so it doesn't eat the real next char.
 
@@ -2010,7 +2113,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[popLine](api-classes-blessed-d-widgets.blessedelement.md#popline)*
 
-*Defined in [blessed.d.ts:3099](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3099)*
+*Defined in [blessed.d.ts:3180](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3180)*
 
 Pop a line off the bottom of the content.
 
@@ -2031,7 +2134,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[prepend](api-classes-blessed-d-widgets.node.md#prepend)*
 
-*Defined in [blessed.d.ts:1722](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1722)*
+*Defined in [blessed.d.ts:1710](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1710)*
 
 Prepend a node to this node's children.
 
@@ -2054,7 +2157,7 @@ ___
 
 *Overrides EventEmitter.prependListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:13*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:14*
 
 **Parameters:**
 
@@ -2076,7 +2179,7 @@ ___
 
 *Overrides EventEmitter.prependOnceListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:14*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:15*
 
 **Parameters:**
 
@@ -2096,7 +2199,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[pushLine](api-classes-blessed-d-widgets.blessedelement.md#pushline)*
 
-*Defined in [blessed.d.ts:3094](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3094)*
+*Defined in [blessed.d.ts:3175](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3175)*
 
 Push a line onto the bottom of the content.
 
@@ -2119,7 +2222,7 @@ ___
 
 *Overrides EventEmitter.rawListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:21*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:22*
 
 **Parameters:**
 
@@ -2138,7 +2241,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[remove](api-classes-blessed-d-widgets.node.md#remove)*
 
-*Defined in [blessed.d.ts:1732](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1732)*
+*Defined in [blessed.d.ts:1720](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1720)*
 
 Remove child node from node.
 
@@ -2161,7 +2264,7 @@ ___
 
 *Overrides EventEmitter.removeAllListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:17*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:18*
 
 **Parameters:**
 
@@ -2180,7 +2283,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[removeHover](api-classes-blessed-d-widgets.blessedelement.md#removehover)*
 
-*Defined in [blessed.d.ts:2949](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2949)*
+*Defined in [blessed.d.ts:3019](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3019)*
 
 Remove the hover label completely.
 
@@ -2195,7 +2298,7 @@ ___
 
 *Inherited from [NodeWithEvents](api-classes-blessed-d-widgets.nodewithevents.md).[removeKey](api-classes-blessed-d-widgets.nodewithevents.md#removekey)*
 
-*Defined in [blessed.d.ts:1870](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1870)*
+*Defined in [blessed.d.ts:1858](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1858)*
 
 **Parameters:**
 
@@ -2215,7 +2318,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[removeLabel](api-classes-blessed-d-widgets.blessedelement.md#removelabel)*
 
-*Defined in [blessed.d.ts:2938](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2938)*
+*Defined in [blessed.d.ts:3008](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3008)*
 
 Remove the label completely.
 
@@ -2232,7 +2335,7 @@ ___
 
 *Overrides EventEmitter.removeListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:15*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:16*
 
 **Parameters:**
 
@@ -2252,7 +2355,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[removeScreenEvent](api-classes-blessed-d-widgets.blessedelement.md#removescreenevent)*
 
-*Defined in [blessed.d.ts:2899](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2899)*
+*Defined in [blessed.d.ts:2969](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2969)*
 
 Same asel.removeListener('screen', ...) except this will automatically keep track of which listeners are bound to the screen object. For use with onScreenEvent(), free(), and destroy().
 
@@ -2270,15 +2373,15 @@ ___
 
 ###  render
 
-▸ **render**(): [Coords](api-interfaces-blessed-d-widgets.coords.md)
+▸ **render**(): [Coords](api-interfaces-blessed-d-widgets.coords.md) \| `undefined`
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[render](api-classes-blessed-d-widgets.blessedelement.md#render)*
 
-*Defined in [blessed.d.ts:2862](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2862)*
+*Defined in [blessed.d.ts:2924](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2924)*
 
 Write content and children to the screen buffer.
 
-**Returns:** [Coords](api-interfaces-blessed-d-widgets.coords.md)
+**Returns:** [Coords](api-interfaces-blessed-d-widgets.coords.md) \| `undefined`
 
 ___
 <a id="renderer"></a>
@@ -2287,7 +2390,7 @@ ___
 
 ▸ **renderer**(coords: *[PositionCoords](api-classes-blessed-d-widgets.positioncoords.md)*, i: *`number` \| `undefined`*): `void`
 
-*Defined in [blessed.d.ts:4502](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4502)*
+*Defined in [blessed.d.ts:4613](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4613)*
 
 A callback which is called right before the children are iterated over to be rendered. Should return an iterator callback which is called on each child element: iterator(el, i).
 
@@ -2303,13 +2406,13 @@ A callback which is called right before the children are iterated over to be ren
 ___
 <a id="sattr"></a>
 
-### `<Protected>` sattr
+###  sattr
 
-▸ **sattr**(style: *[TStyle](api-interfaces-blessed-d-widgets.types.tstyle.md)*, fg?: *`undefined` \| `string`*, bg?: *`undefined` \| `string`*): `any`
+▸ **sattr**(style: *[TStyle](api-interfaces-blessed-d-widgets.types.tstyle.md)*, fg?: *`string`*, bg?: *`string`*): `any`
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[sattr](api-classes-blessed-d-widgets.blessedelement.md#sattr)*
 
-*Defined in [blessed.d.ts:2996](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2996)*
+*Defined in [blessed.d.ts:3075](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3075)*
 
 calculates the value for `style` (could be substyle like style.bar) to paint in the screen according to the rest of the properties and optionally bg and fg.
 
@@ -2318,8 +2421,8 @@ calculates the value for `style` (could be substyle like style.bar) to paint in 
 | Name | Type |
 | ------ | ------ |
 | style | [TStyle](api-interfaces-blessed-d-widgets.types.tstyle.md) |
-| `Optional` fg | `undefined` \| `string` |
-| `Optional` bg | `undefined` \| `string` |
+| `Optional` fg | `string` |
+| `Optional` bg | `string` |
 
 **Returns:** `any`
 
@@ -2334,7 +2437,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[screenshot](api-classes-blessed-d-widgets.blessedelement.md#screenshot)*
 
-*Defined in [blessed.d.ts:2980](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2980)*
+*Defined in [blessed.d.ts:3050](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3050)*
 
 Take an SGR screenshot of the screen within the region. Returns a string containing only characters and SGR codes. Can be displayed by simply echoing it in a terminal.
 
@@ -2351,7 +2454,7 @@ Take an SGR screenshot of the screen within the region. Returns a string contain
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[screenshot](api-classes-blessed-d-widgets.blessedelement.md#screenshot)*
 
-*Defined in [blessed.d.ts:2985](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2985)*
+*Defined in [blessed.d.ts:3055](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3055)*
 
 Take an SGR screenshot of the whole screen. Returns a string containing only characters and SGR codes. Can be displayed by simply echoing it in a terminal.
 
@@ -2366,7 +2469,7 @@ ___
 
 *Inherited from [Node](api-classes-blessed-d-widgets.node.md).[set](api-classes-blessed-d-widgets.node.md#set)*
 
-*Defined in [blessed.d.ts:1782](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1782)*
+*Defined in [blessed.d.ts:1770](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1770)*
 
 Set user property to value.
 
@@ -2388,7 +2491,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[setBack](api-classes-blessed-d-widgets.blessedelement.md#setback)*
 
-*Defined in [blessed.d.ts:2928](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2928)*
+*Defined in [blessed.d.ts:2998](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2998)*
 
 Put the element in back of its siblings.
 
@@ -2403,7 +2506,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[setBaseLine](api-classes-blessed-d-widgets.blessedelement.md#setbaseline)*
 
-*Defined in [blessed.d.ts:3049](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3049)*
+*Defined in [blessed.d.ts:3130](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3130)*
 
 Set a line in the box's content from the visible top.
 
@@ -2421,11 +2524,11 @@ ___
 
 ###  setContent
 
-▸ **setContent**(text: *`string`*, noClear?: *`undefined` \| `false` \| `true`*, noTags?: *`undefined` \| `false` \| `true`*): `void`
+▸ **setContent**(text: *`string`*, noClear?: *`boolean`*, noTags?: *`boolean`*): `void`
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[setContent](api-classes-blessed-d-widgets.blessedelement.md#setcontent)*
 
-*Defined in [blessed.d.ts:3005](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3005)*
+*Defined in [blessed.d.ts:3086](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3086)*
 
 Set the content. Note: When text is input, it will be stripped of all non-SGR escape codes, tabs will be replaced with 8 spaces, and tags will be replaced with SGR codes (if enabled).
 
@@ -2434,8 +2537,8 @@ Set the content. Note: When text is input, it will be stripped of all non-SGR es
 | Name | Type |
 | ------ | ------ |
 | text | `string` |
-| `Optional` noClear | `undefined` \| `false` \| `true` |
-| `Optional` noTags | `undefined` \| `false` \| `true` |
+| `Optional` noClear | `boolean` |
+| `Optional` noTags | `boolean` |
 
 **Returns:** `void`
 
@@ -2448,9 +2551,9 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[setFront](api-classes-blessed-d-widgets.blessedelement.md#setfront)*
 
-*Defined in [blessed.d.ts:2923](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2923)*
+*Defined in [blessed.d.ts:2993](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2993)*
 
-Put the element in front of its siblings.
+Put the element in front of its siblings. Uses [setIndex](api-classes-blessed-d-widgets.layoutelement.md#setindex)
 
 **Returns:** `void`
 
@@ -2463,7 +2566,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[setHover](api-classes-blessed-d-widgets.blessedelement.md#sethover)*
 
-*Defined in [blessed.d.ts:2944](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2944)*
+*Defined in [blessed.d.ts:3014](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3014)*
 
 text/options - Set a hover text box to follow the cursor. Similar to the "title" DOM attribute in the browser. Example options: {text:'foo'}
 
@@ -2484,9 +2587,9 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[setIndex](api-classes-blessed-d-widgets.blessedelement.md#setindex)*
 
-*Defined in [blessed.d.ts:2918](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2918)*
+*Defined in [blessed.d.ts:2988](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2988)*
 
-Set the z-index of the element (changes rendering order).
+Change this element's index in its parent's children array. This will change the rendering order. If all elements are positioned by their selves then this could be similar to CSS z-index property. But if you are using a layout or relaying somhow in the children order then it will change the position of this element and its siblings.
 
 **Parameters:**
 
@@ -2505,7 +2608,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[setLabel](api-classes-blessed-d-widgets.blessedelement.md#setlabel)*
 
-*Defined in [blessed.d.ts:2933](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2933)*
+*Defined in [blessed.d.ts:3003](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3003)*
 
 text/options - Set the label text for the top-left corner. Example options: {text:'foo',side:'left'}
 
@@ -2526,7 +2629,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[setLine](api-classes-blessed-d-widgets.blessedelement.md#setline)*
 
-*Defined in [blessed.d.ts:3044](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3044)*
+*Defined in [blessed.d.ts:3125](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3125)*
 
 Set a line in the box's content.
 
@@ -2550,7 +2653,7 @@ ___
 
 *Overrides EventEmitter.setMaxListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:18*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:19*
 
 **Parameters:**
 
@@ -2565,11 +2668,11 @@ ___
 
 ###  setText
 
-▸ **setText**(text: *`string`*, noClear?: *`undefined` \| `false` \| `true`*): `void`
+▸ **setText**(text: *`string`*, noClear?: *`boolean`*): `void`
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[setText](api-classes-blessed-d-widgets.blessedelement.md#settext)*
 
-*Defined in [blessed.d.ts:3014](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3014)*
+*Defined in [blessed.d.ts:3095](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3095)*
 
 Similar to setContent, but ignore tags and remove escape codes.
 
@@ -2578,7 +2681,7 @@ Similar to setContent, but ignore tags and remove escape codes.
 | Name | Type |
 | ------ | ------ |
 | text | `string` |
-| `Optional` noClear | `undefined` \| `false` \| `true` |
+| `Optional` noClear | `boolean` |
 
 **Returns:** `void`
 
@@ -2591,7 +2694,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[shiftLine](api-classes-blessed-d-widgets.blessedelement.md#shiftline)*
 
-*Defined in [blessed.d.ts:3089](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3089)*
+*Defined in [blessed.d.ts:3170](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3170)*
 
 Shift a line off the top of the content.
 
@@ -2612,7 +2715,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[show](api-classes-blessed-d-widgets.blessedelement.md#show)*
 
-*Defined in [blessed.d.ts:2872](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2872)*
+*Defined in [blessed.d.ts:2942](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2942)*
 
 Show element.
 
@@ -2627,7 +2730,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[strWidth](api-classes-blessed-d-widgets.blessedelement.md#strwidth)*
 
-*Defined in [blessed.d.ts:3115](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3115)*
+*Defined in [blessed.d.ts:3196](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3196)*
 
 Get a string's displayed width, taking into account double-width, surrogate pairs, combining characters, tags, and SGR escape codes.
 
@@ -2648,7 +2751,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[toggle](api-classes-blessed-d-widgets.blessedelement.md#toggle)*
 
-*Defined in [blessed.d.ts:2877](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2877)*
+*Defined in [blessed.d.ts:2947](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2947)*
 
 Toggle hidden/shown.
 
@@ -2663,7 +2766,7 @@ ___
 
 *Inherited from [NodeWithEvents](api-classes-blessed-d-widgets.nodewithevents.md).[unkey](api-classes-blessed-d-widgets.nodewithevents.md#unkey)*
 
-*Defined in [blessed.d.ts:1869](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1869)*
+*Defined in [blessed.d.ts:1857](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1857)*
 
 Remove a keypress listener for a specific key.
 
@@ -2685,7 +2788,7 @@ ___
 
 *Inherited from [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md).[unshiftLine](api-classes-blessed-d-widgets.blessedelement.md#unshiftline)*
 
-*Defined in [blessed.d.ts:3084](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3084)*
+*Defined in [blessed.d.ts:3165](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3165)*
 
 Unshift a line onto the top of the content.
 
@@ -2706,7 +2809,7 @@ ___
 
 *Inherited from EventEmitter.listenerCount*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:7*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:8*
 
 *__deprecated__*: since v4.0.0
 

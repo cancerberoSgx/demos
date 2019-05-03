@@ -27,7 +27,7 @@ sidebar_label: LabelOptions
 
 **● side**: *[TAlign](api-modules-blessed-d-widgets.types.md#talign)*
 
-*Defined in [blessed.d.ts:2710](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2710)*
+*Defined in [blessed.d.ts:2772](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2772)*
 
 ___
 <a id="text"></a>
@@ -36,7 +36,7 @@ ___
 
 **● text**: *`string`*
 
-*Defined in [blessed.d.ts:2709](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2709)*
+*Defined in [blessed.d.ts:2771](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2771)*
 
 ___
 

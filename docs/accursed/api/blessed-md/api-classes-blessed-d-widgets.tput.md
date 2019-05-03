@@ -51,7 +51,7 @@ sidebar_label: Tput
 
 ⊕ **new Tput**(opts: *[TputsOptions](api-interfaces-blessed-d-widgets.tputsoptions.md)*): [Tput](api-classes-blessed-d-widgets.tput.md)
 
-*Defined in [blessed.d.ts:1580](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1580)*
+*Defined in [blessed.d.ts:1568](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1568)*
 
 **Parameters:**
 
@@ -71,7 +71,7 @@ ___
 
 **● debug**: *`boolean`*
 
-*Defined in [blessed.d.ts:1588](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1588)*
+*Defined in [blessed.d.ts:1576](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1576)*
 
 ___
 <a id="error"></a>
@@ -80,7 +80,7 @@ ___
 
 **● error**: *`Error`*
 
-*Defined in [blessed.d.ts:1596](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1596)*
+*Defined in [blessed.d.ts:1584](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1584)*
 
 ___
 <a id="extended"></a>
@@ -89,7 +89,7 @@ ___
 
 **● extended**: *`boolean`*
 
-*Defined in [blessed.d.ts:1590](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1590)*
+*Defined in [blessed.d.ts:1578](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1578)*
 
 ___
 <a id="options"></a>
@@ -100,7 +100,7 @@ ___
 
 *Implementation of [IHasOptions](api-interfaces-blessed-d-widgets.ihasoptions.md).[options](api-interfaces-blessed-d-widgets.ihasoptions.md#options)*
 
-*Defined in [blessed.d.ts:1586](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1586)*
+*Defined in [blessed.d.ts:1574](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1574)*
 
 Original options object.
 
@@ -111,7 +111,7 @@ ___
 
 **● padding**: *`boolean`*
 
-*Defined in [blessed.d.ts:1589](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1589)*
+*Defined in [blessed.d.ts:1577](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1577)*
 
 ___
 <a id="printf"></a>
@@ -120,7 +120,7 @@ ___
 
 **● printf**: *`boolean`*
 
-*Defined in [blessed.d.ts:1591](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1591)*
+*Defined in [blessed.d.ts:1579](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1579)*
 
 ___
 <a id="termcap"></a>
@@ -129,7 +129,7 @@ ___
 
 **● termcap**: *`string`*
 
-*Defined in [blessed.d.ts:1592](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1592)*
+*Defined in [blessed.d.ts:1580](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1580)*
 
 ___
 <a id="termcapfile"></a>
@@ -138,7 +138,7 @@ ___
 
 **● termcapFile**: *`string`*
 
-*Defined in [blessed.d.ts:1595](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1595)*
+*Defined in [blessed.d.ts:1583](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1583)*
 
 ___
 <a id="terminal"></a>
@@ -147,7 +147,7 @@ ___
 
 **● terminal**: *`string`*
 
-*Defined in [blessed.d.ts:1597](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1597)*
+*Defined in [blessed.d.ts:1585](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1585)*
 
 ___
 <a id="terminfofile"></a>
@@ -156,7 +156,7 @@ ___
 
 **● terminfoFile**: *`string`*
 
-*Defined in [blessed.d.ts:1594](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1594)*
+*Defined in [blessed.d.ts:1582](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1582)*
 
 ___
 <a id="terminfoprefix"></a>
@@ -165,7 +165,7 @@ ___
 
 **● terminfoPrefix**: *`string`*
 
-*Defined in [blessed.d.ts:1593](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1593)*
+*Defined in [blessed.d.ts:1581](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1581)*
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 ▸ **parseTerminfo**(data: *`any`*, file: *`string`*): `object`
 
-*Defined in [blessed.d.ts:1602](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1602)*
+*Defined in [blessed.d.ts:1590](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1590)*
 
 **Parameters:**
 
@@ -195,7 +195,7 @@ ___
 
 ▸ **readTerminfo**(term: *`string`*): `string`
 
-*Defined in [blessed.d.ts:1601](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1601)*
+*Defined in [blessed.d.ts:1589](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1589)*
 
 **Parameters:**
 
@@ -212,7 +212,7 @@ ___
 
 ▸ **setup**(): `void`
 
-*Defined in [blessed.d.ts:1599](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1599)*
+*Defined in [blessed.d.ts:1587](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1587)*
 
 **Returns:** `void`
 
@@ -223,7 +223,7 @@ ___
 
 ▸ **term**(is: *`any`*): `boolean`
 
-*Defined in [blessed.d.ts:1600](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1600)*
+*Defined in [blessed.d.ts:1588](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1588)*
 
 **Parameters:**
 

@@ -35,7 +35,7 @@ sidebar_label: GpmEvent
 
 **● action**: *[TMouseAction](api-modules-blessed-d-widgets.types.md#tmouseaction) \| "mousedown" \| "mouseup" \| "connect" \| "mousewheel" \| "data" \| "move" \| "dragbtndown" \| "dblclick" \| "btnup" \| "click" \| "error"*
 
-*Defined in [blessed.d.ts:60](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L60)*
+*Defined in [blessed.d.ts:60](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L60)*
 
 ___
 <a id="button"></a>
@@ -44,7 +44,7 @@ ___
 
 **● button**: *"left" \| "middle" \| "right"*
 
-*Defined in [blessed.d.ts:73](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L73)*
+*Defined in [blessed.d.ts:73](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L73)*
 
 ___
 <a id="ctrl"></a>
@@ -53,7 +53,7 @@ ___
 
 **● ctrl**: *`boolean`*
 
-*Defined in [blessed.d.ts:79](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L79)*
+*Defined in [blessed.d.ts:79](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L79)*
 
 ___
 <a id="meta"></a>
@@ -62,7 +62,7 @@ ___
 
 **● meta**: *`boolean`*
 
-*Defined in [blessed.d.ts:78](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L78)*
+*Defined in [blessed.d.ts:78](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L78)*
 
 ___
 <a id="name"></a>
@@ -71,7 +71,7 @@ ___
 
 **● name**: *"mouse" \| `""`*
 
-*Defined in [blessed.d.ts:58](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L58)*
+*Defined in [blessed.d.ts:58](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L58)*
 
 ___
 <a id="raw"></a>
@@ -80,7 +80,7 @@ ___
 
 **● raw**: *[`number`, `number`, `number`, `number`]*
 
-*Defined in [blessed.d.ts:74](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L74)*
+*Defined in [blessed.d.ts:74](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L74)*
 
 ___
 <a id="shift"></a>
@@ -89,7 +89,7 @@ ___
 
 **● shift**: *`boolean`*
 
-*Defined in [blessed.d.ts:77](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L77)*
+*Defined in [blessed.d.ts:77](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L77)*
 
 ___
 <a id="type"></a>
@@ -98,7 +98,7 @@ ___
 
 **● type**: *"GPM"*
 
-*Defined in [blessed.d.ts:59](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L59)*
+*Defined in [blessed.d.ts:59](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L59)*
 
 ___
 <a id="x"></a>
@@ -107,7 +107,7 @@ ___
 
 **● x**: *`number`*
 
-*Defined in [blessed.d.ts:75](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L75)*
+*Defined in [blessed.d.ts:75](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L75)*
 
 ___
 <a id="y"></a>
@@ -116,7 +116,7 @@ ___
 
 **● y**: *`number`*
 
-*Defined in [blessed.d.ts:76](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L76)*
+*Defined in [blessed.d.ts:76](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L76)*
 
 ___
 

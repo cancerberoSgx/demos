@@ -33,25 +33,25 @@ sidebar_label: NodeChildProcessExecOptions
 
 **● customFds**: *`any`*
 
-*Defined in [blessed.d.ts:1552](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1552)*
+*Defined in [blessed.d.ts:1540](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1540)*
 
 ___
 <a id="cwd"></a>
 
 ### `<Optional>` cwd
 
-**● cwd**: *`undefined` \| `string`*
+**● cwd**: *`string`*
 
-*Defined in [blessed.d.ts:1550](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1550)*
+*Defined in [blessed.d.ts:1538](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1538)*
 
 ___
 <a id="encoding"></a>
 
 ### `<Optional>` encoding
 
-**● encoding**: *`undefined` \| `string`*
+**● encoding**: *`string`*
 
-*Defined in [blessed.d.ts:1554](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1554)*
+*Defined in [blessed.d.ts:1542](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1542)*
 
 ___
 <a id="env"></a>
@@ -60,25 +60,25 @@ ___
 
 **● env**: *`any`*
 
-*Defined in [blessed.d.ts:1553](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1553)*
+*Defined in [blessed.d.ts:1541](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1541)*
 
 ___
 <a id="killsignal"></a>
 
 ### `<Optional>` killSignal
 
-**● killSignal**: *`undefined` \| `string`*
+**● killSignal**: *`string`*
 
-*Defined in [blessed.d.ts:1557](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1557)*
+*Defined in [blessed.d.ts:1545](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1545)*
 
 ___
 <a id="maxbuffer"></a>
 
 ### `<Optional>` maxBuffer
 
-**● maxBuffer**: *`undefined` \| `number`*
+**● maxBuffer**: *`number`*
 
-*Defined in [blessed.d.ts:1556](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1556)*
+*Defined in [blessed.d.ts:1544](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1544)*
 
 ___
 <a id="stdio"></a>
@@ -87,16 +87,16 @@ ___
 
 **● stdio**: *`any`*
 
-*Defined in [blessed.d.ts:1551](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1551)*
+*Defined in [blessed.d.ts:1539](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1539)*
 
 ___
 <a id="timeout"></a>
 
 ### `<Optional>` timeout
 
-**● timeout**: *`undefined` \| `number`*
+**● timeout**: *`number`*
 
-*Defined in [blessed.d.ts:1555](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1555)*
+*Defined in [blessed.d.ts:1543](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1543)*
 
 ___
 

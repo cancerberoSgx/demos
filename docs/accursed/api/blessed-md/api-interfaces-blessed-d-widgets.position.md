@@ -29,7 +29,7 @@ sidebar_label: Position
 
 **● bottom**: *`number` \| `string`*
 
-*Defined in [blessed.d.ts:2565](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2565)*
+*Defined in [blessed.d.ts:2572](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2572)*
 
 ___
 <a id="left"></a>
@@ -38,7 +38,7 @@ ___
 
 **● left**: *`number` \| `string`*
 
-*Defined in [blessed.d.ts:2562](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2562)*
+*Defined in [blessed.d.ts:2569](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2569)*
 
 ___
 <a id="right"></a>
@@ -47,7 +47,7 @@ ___
 
 **● right**: *`number` \| `string`*
 
-*Defined in [blessed.d.ts:2563](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2563)*
+*Defined in [blessed.d.ts:2570](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2570)*
 
 ___
 <a id="top"></a>
@@ -56,7 +56,7 @@ ___
 
 **● top**: *`number` \| `string`*
 
-*Defined in [blessed.d.ts:2564](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2564)*
+*Defined in [blessed.d.ts:2571](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2571)*
 
 ___
 

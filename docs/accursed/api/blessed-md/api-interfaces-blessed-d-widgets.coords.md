@@ -10,16 +10,24 @@ sidebar_label: Coords
 
 ## Hierarchy
 
-**Coords**
+ [Pos](api-interfaces-blessed-d-widgets.pos.md)
+
+**↳ Coords**
 
 ### Properties
 
 * [_contentEnd](api-interfaces-blessed-d-widgets.coords.md#_contentend)
+* [abottom](api-interfaces-blessed-d-widgets.coords.md#abottom)
+* [aleft](api-interfaces-blessed-d-widgets.coords.md#aleft)
+* [aright](api-interfaces-blessed-d-widgets.coords.md#aright)
+* [atop](api-interfaces-blessed-d-widgets.coords.md#atop)
 * [base](api-interfaces-blessed-d-widgets.coords.md#base)
+* [height](api-interfaces-blessed-d-widgets.coords.md#height)
 * [nobot](api-interfaces-blessed-d-widgets.coords.md#nobot)
 * [noleft](api-interfaces-blessed-d-widgets.coords.md#noleft)
 * [noright](api-interfaces-blessed-d-widgets.coords.md#noright)
 * [notop](api-interfaces-blessed-d-widgets.coords.md#notop)
+* [width](api-interfaces-blessed-d-widgets.coords.md#width)
 * [xi](api-interfaces-blessed-d-widgets.coords.md#xi)
 * [xl](api-interfaces-blessed-d-widgets.coords.md#xl)
 * [yi](api-interfaces-blessed-d-widgets.coords.md#yi)
@@ -33,15 +41,53 @@ sidebar_label: Coords
 
 ###  _contentEnd
 
-**● _contentEnd**: *`object`*
+**● _contentEnd**: *`object` \| `undefined`*
 
-*Defined in [blessed.d.ts:2701](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2701)*
+*Defined in [blessed.d.ts:2763](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2763)*
 
-#### Type declaration
+___
+<a id="abottom"></a>
 
- x: `number`
+###  abottom
 
- y: `number`
+**● abottom**: *`number`*
+
+*Inherited from [Pos](api-interfaces-blessed-d-widgets.pos.md).[abottom](api-interfaces-blessed-d-widgets.pos.md#abottom)*
+
+*Defined in [blessed.d.ts:2752](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2752)*
+
+___
+<a id="aleft"></a>
+
+###  aleft
+
+**● aleft**: *`number`*
+
+*Inherited from [Pos](api-interfaces-blessed-d-widgets.pos.md).[aleft](api-interfaces-blessed-d-widgets.pos.md#aleft)*
+
+*Defined in [blessed.d.ts:2749](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2749)*
+
+___
+<a id="aright"></a>
+
+###  aright
+
+**● aright**: *`number`*
+
+*Inherited from [Pos](api-interfaces-blessed-d-widgets.pos.md).[aright](api-interfaces-blessed-d-widgets.pos.md#aright)*
+
+*Defined in [blessed.d.ts:2751](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2751)*
+
+___
+<a id="atop"></a>
+
+###  atop
+
+**● atop**: *`number`*
+
+*Inherited from [Pos](api-interfaces-blessed-d-widgets.pos.md).[atop](api-interfaces-blessed-d-widgets.pos.md#atop)*
+
+*Defined in [blessed.d.ts:2750](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2750)*
 
 ___
 <a id="base"></a>
@@ -50,43 +96,65 @@ ___
 
 **● base**: *`number`*
 
-*Defined in [blessed.d.ts:2700](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2700)*
+*Defined in [blessed.d.ts:2762](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2762)*
+
+___
+<a id="height"></a>
+
+### `<Optional>` height
+
+**● height**: *`number`*
+
+*Inherited from [Pos](api-interfaces-blessed-d-widgets.pos.md).[height](api-interfaces-blessed-d-widgets.pos.md#height)*
+
+*Defined in [blessed.d.ts:2755](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2755)*
 
 ___
 <a id="nobot"></a>
 
 ###  nobot
 
-**● nobot**: *[TPosition](api-modules-blessed-d-widgets.types.md#tposition)*
+**● nobot**: *[TPosition](api-modules-blessed-d-widgets.types.md#tposition) \| `undefined`*
 
-*Defined in [blessed.d.ts:2705](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2705)*
+*Defined in [blessed.d.ts:2767](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2767)*
 
 ___
 <a id="noleft"></a>
 
 ###  noleft
 
-**● noleft**: *[TTopLeft](api-modules-blessed-d-widgets.types.md#ttopleft)*
+**● noleft**: *[TTopLeft](api-modules-blessed-d-widgets.types.md#ttopleft) \| `undefined`*
 
-*Defined in [blessed.d.ts:2703](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2703)*
+*Defined in [blessed.d.ts:2765](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2765)*
 
 ___
 <a id="noright"></a>
 
 ###  noright
 
-**● noright**: *[TPosition](api-modules-blessed-d-widgets.types.md#tposition)*
+**● noright**: *[TPosition](api-modules-blessed-d-widgets.types.md#tposition) \| `undefined`*
 
-*Defined in [blessed.d.ts:2704](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2704)*
+*Defined in [blessed.d.ts:2766](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2766)*
 
 ___
 <a id="notop"></a>
 
 ###  notop
 
-**● notop**: *[TTopLeft](api-modules-blessed-d-widgets.types.md#ttopleft)*
+**● notop**: *[TTopLeft](api-modules-blessed-d-widgets.types.md#ttopleft) \| `undefined`*
 
-*Defined in [blessed.d.ts:2702](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2702)*
+*Defined in [blessed.d.ts:2764](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2764)*
+
+___
+<a id="width"></a>
+
+### `<Optional>` width
+
+**● width**: *`number`*
+
+*Inherited from [Pos](api-interfaces-blessed-d-widgets.pos.md).[width](api-interfaces-blessed-d-widgets.pos.md#width)*
+
+*Defined in [blessed.d.ts:2754](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2754)*
 
 ___
 <a id="xi"></a>
@@ -95,7 +163,7 @@ ___
 
 **● xi**: *`number`*
 
-*Defined in [blessed.d.ts:2697](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2697)*
+*Defined in [blessed.d.ts:2759](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2759)*
 
 ___
 <a id="xl"></a>
@@ -104,7 +172,7 @@ ___
 
 **● xl**: *`number`*
 
-*Defined in [blessed.d.ts:2696](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2696)*
+*Defined in [blessed.d.ts:2758](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2758)*
 
 ___
 <a id="yi"></a>
@@ -113,7 +181,7 @@ ___
 
 **● yi**: *`number`*
 
-*Defined in [blessed.d.ts:2699](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2699)*
+*Defined in [blessed.d.ts:2761](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2761)*
 
 ___
 <a id="yl"></a>
@@ -122,7 +190,7 @@ ___
 
 **● yl**: *`number`*
 
-*Defined in [blessed.d.ts:2698](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2698)*
+*Defined in [blessed.d.ts:2760](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2760)*
 
 ___
 

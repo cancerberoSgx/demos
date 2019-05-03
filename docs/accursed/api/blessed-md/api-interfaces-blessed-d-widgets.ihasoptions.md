@@ -257,7 +257,7 @@ sidebar_label: IHasOptions
 
 **● options**: *`T`*
 
-*Defined in [blessed.d.ts:1567](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1567)*
+*Defined in [blessed.d.ts:1555](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1555)*
 
 ___
 

@@ -452,7 +452,7 @@ program.log('getWindowSize', data);
 
 ⊕ **new BlessedProgram**(options?: *[IBlessedProgramOptions](api-interfaces-blessed-d-iblessedprogramoptions.md)*): [BlessedProgram](api-classes-blessed-d-blessedprogram.md)
 
-*Defined in [blessed.d.ts:252](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L252)*
+*Defined in [blessed.d.ts:254](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L254)*
 
 **Parameters:**
 
@@ -472,7 +472,7 @@ ___
 
 **● cols**: *`number`*
 
-*Defined in [blessed.d.ts:238](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L238)*
+*Defined in [blessed.d.ts:240](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L240)*
 
 ___
 <a id="gpm"></a>
@@ -481,7 +481,7 @@ ___
 
 **● gpm**: *[GpmClient](api-interfaces-blessed-d-gpmclient.md)*
 
-*Defined in [blessed.d.ts:225](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L225)*
+*Defined in [blessed.d.ts:225](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L225)*
 
 *__internal__*: 
 
@@ -492,7 +492,7 @@ ___
 
 **● input**: *`Readable`*
 
-*Defined in [blessed.d.ts:229](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L229)*
+*Defined in [blessed.d.ts:229](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L229)*
 
 ___
 <a id="isalt"></a>
@@ -501,7 +501,7 @@ ___
 
 **● isAlt**: *`boolean`*
 
-*Defined in [blessed.d.ts:252](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L252)*
+*Defined in [blessed.d.ts:254](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L254)*
 
 ___
 <a id="islxde"></a>
@@ -510,7 +510,7 @@ ___
 
 **● isLXDE**: *`boolean`*
 
-*Defined in [blessed.d.ts:246](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L246)*
+*Defined in [blessed.d.ts:248](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L248)*
 
 ___
 <a id="isosxterm"></a>
@@ -519,7 +519,7 @@ ___
 
 **● isOSXTerm**: *`boolean`*
 
-*Defined in [blessed.d.ts:242](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L242)*
+*Defined in [blessed.d.ts:244](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L244)*
 
 ___
 <a id="isrxvt"></a>
@@ -528,7 +528,7 @@ ___
 
 **● isRxvt**: *`boolean`*
 
-*Defined in [blessed.d.ts:248](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L248)*
+*Defined in [blessed.d.ts:250](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L250)*
 
 ___
 <a id="isterminator"></a>
@@ -537,7 +537,7 @@ ___
 
 **● isTerminator**: *`boolean`*
 
-*Defined in [blessed.d.ts:245](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L245)*
+*Defined in [blessed.d.ts:247](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L247)*
 
 ___
 <a id="isvte"></a>
@@ -546,7 +546,7 @@ ___
 
 **● isVTE**: *`boolean`*
 
-*Defined in [blessed.d.ts:247](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L247)*
+*Defined in [blessed.d.ts:249](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L249)*
 
 ___
 <a id="isxfce"></a>
@@ -555,7 +555,7 @@ ___
 
 **● isXFCE**: *`boolean`*
 
-*Defined in [blessed.d.ts:244](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L244)*
+*Defined in [blessed.d.ts:246](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L246)*
 
 ___
 <a id="isxterm"></a>
@@ -564,7 +564,7 @@ ___
 
 **● isXterm**: *`boolean`*
 
-*Defined in [blessed.d.ts:249](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L249)*
+*Defined in [blessed.d.ts:251](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L251)*
 
 ___
 <a id="isiterm2"></a>
@@ -573,7 +573,7 @@ ___
 
 **● isiTerm2**: *`boolean`*
 
-*Defined in [blessed.d.ts:243](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L243)*
+*Defined in [blessed.d.ts:245](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L245)*
 
 ___
 <a id="options"></a>
@@ -582,7 +582,7 @@ ___
 
 **● options**: *[IBlessedProgramOptions](api-interfaces-blessed-d-iblessedprogramoptions.md)*
 
-*Defined in [blessed.d.ts:228](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L228)*
+*Defined in [blessed.d.ts:228](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L228)*
 
 ___
 <a id="output"></a>
@@ -591,7 +591,7 @@ ___
 
 **● output**: *`Writable`*
 
-*Defined in [blessed.d.ts:230](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L230)*
+*Defined in [blessed.d.ts:230](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L230)*
 
 ___
 <a id="restorereportedcursor"></a>
@@ -600,7 +600,7 @@ ___
 
 **● restoreReportedCursor**: *`function`*
 
-*Defined in [blessed.d.ts:584](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L584)*
+*Defined in [blessed.d.ts:595](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L595)*
 
 #### Type declaration
 ▸(): `boolean`
@@ -614,7 +614,7 @@ ___
 
 **● resume**: *`function`*
 
-*Defined in [blessed.d.ts:1346](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1346)*
+*Defined in [blessed.d.ts:1364](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1364)*
 
 #### Type declaration
 ▸(): `void`
@@ -628,7 +628,7 @@ ___
 
 **● rows**: *`number`*
 
-*Defined in [blessed.d.ts:239](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L239)*
+*Defined in [blessed.d.ts:241](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L241)*
 
 ___
 <a id="savedx"></a>
@@ -637,7 +637,7 @@ ___
 
 **● savedX**: *`number`*
 
-*Defined in [blessed.d.ts:236](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L236)*
+*Defined in [blessed.d.ts:238](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L238)*
 
 ___
 <a id="savedy"></a>
@@ -646,7 +646,7 @@ ___
 
 **● savedY**: *`number`*
 
-*Defined in [blessed.d.ts:237](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L237)*
+*Defined in [blessed.d.ts:239](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L239)*
 
 ___
 <a id="scrollbottom"></a>
@@ -655,7 +655,7 @@ ___
 
 **● scrollBottom**: *`number`*
 
-*Defined in [blessed.d.ts:241](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L241)*
+*Defined in [blessed.d.ts:243](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L243)*
 
 ___
 <a id="scrolltop"></a>
@@ -664,7 +664,7 @@ ___
 
 **● scrollTop**: *`number`*
 
-*Defined in [blessed.d.ts:240](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L240)*
+*Defined in [blessed.d.ts:242](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L242)*
 
 ___
 <a id="tmux"></a>
@@ -673,7 +673,7 @@ ___
 
 **● tmux**: *`boolean`*
 
-*Defined in [blessed.d.ts:250](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L250)*
+*Defined in [blessed.d.ts:252](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L252)*
 
 ___
 <a id="tmuxversion"></a>
@@ -682,7 +682,7 @@ ___
 
 **● tmuxVersion**: *`number`*
 
-*Defined in [blessed.d.ts:251](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L251)*
+*Defined in [blessed.d.ts:253](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L253)*
 
 ___
 <a id="type"></a>
@@ -691,7 +691,7 @@ ___
 
 **● type**: *`string`*
 
-*Defined in [blessed.d.ts:227](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L227)*
+*Defined in [blessed.d.ts:227](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L227)*
 
 ___
 <a id="usebuffer"></a>
@@ -700,7 +700,7 @@ ___
 
 **● useBuffer**: *`boolean`*
 
-*Defined in [blessed.d.ts:233](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L233)*
+*Defined in [blessed.d.ts:235](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L235)*
 
 ___
 <a id="x"></a>
@@ -709,7 +709,7 @@ ___
 
 **● x**: *`number`*
 
-*Defined in [blessed.d.ts:234](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L234)*
+*Defined in [blessed.d.ts:236](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L236)*
 
 ___
 <a id="y"></a>
@@ -718,7 +718,7 @@ ___
 
 **● y**: *`number`*
 
-*Defined in [blessed.d.ts:235](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L235)*
+*Defined in [blessed.d.ts:237](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L237)*
 
 ___
 <a id="zero"></a>
@@ -727,9 +727,9 @@ ___
 
 **● zero**: *`boolean`*
 
-*Defined in [blessed.d.ts:232](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L232)*
+*Defined in [blessed.d.ts:234](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L234)*
 
-zero-based indexes for col, row values
+Is zero-based indexes for col, row values.
 
 ___
 <a id="defaultmaxlisteners"></a>
@@ -740,7 +740,7 @@ ___
 
 *Inherited from EventEmitter.defaultMaxListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:8*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:9*
 
 ___
 <a id="instances"></a>
@@ -749,7 +749,7 @@ ___
 
 **● instances**: *[BlessedProgram](api-classes-blessed-d-blessedprogram.md)[]*
 
-*Defined in [blessed.d.ts:223](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L223)*
+*Defined in [blessed.d.ts:223](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L223)*
 
 *__internal__*: 
 
@@ -761,15 +761,15 @@ ___
 
 ###  HPositionRelative
 
-▸ **HPositionRelative**(param?: *`undefined` \| `number`*): `boolean`
+▸ **HPositionRelative**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:623](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L623)*
+*Defined in [blessed.d.ts:635](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L635)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -778,16 +778,16 @@ ___
 
 ###  HVPosition
 
-▸ **HVPosition**(row?: *`undefined` \| `number`*, col?: *`undefined` \| `number`*): `boolean`
+▸ **HVPosition**(row?: *`number`*, col?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:634](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L634)*
+*Defined in [blessed.d.ts:646](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L646)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` row | `undefined` \| `number` |
-| `Optional` col | `undefined` \| `number` |
+| `Optional` row | `number` |
+| `Optional` col | `number` |
 
 **Returns:** `boolean`
 
@@ -796,15 +796,15 @@ ___
 
 ###  VPositionRelative
 
-▸ **VPositionRelative**(param?: *`undefined` \| `number`*): `boolean`
+▸ **VPositionRelative**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:631](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L631)*
+*Defined in [blessed.d.ts:643](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L643)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -815,7 +815,7 @@ ___
 
 ▸ **_ncoords**(): `void`
 
-*Defined in [blessed.d.ts:345](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L345)*
+*Defined in [blessed.d.ts:349](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L349)*
 
 *__internal__*: 
 
@@ -832,7 +832,7 @@ ___
 
 *Overrides EventEmitter.addListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:10*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:11*
 
 **Parameters:**
 
@@ -850,7 +850,7 @@ ___
 
 ▸ **ae**(): `boolean`
 
-*Defined in [blessed.d.ts:385](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L385)*
+*Defined in [blessed.d.ts:389](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L389)*
 
 **Returns:** `boolean`
 
@@ -861,7 +861,7 @@ ___
 
 ▸ **alternate**(): `boolean`
 
-*Defined in [blessed.d.ts:746](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L746)*
+*Defined in [blessed.d.ts:758](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L758)*
 
 **Returns:** `boolean`
 
@@ -872,7 +872,7 @@ ___
 
 ▸ **alternateBuffer**(): `boolean`
 
-*Defined in [blessed.d.ts:744](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L744)*
+*Defined in [blessed.d.ts:756](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L756)*
 
 **Returns:** `boolean`
 
@@ -883,7 +883,7 @@ ___
 
 ▸ **as**(): `boolean`
 
-*Defined in [blessed.d.ts:381](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L381)*
+*Defined in [blessed.d.ts:385](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L385)*
 
 **Returns:** `boolean`
 
@@ -892,15 +892,15 @@ ___
 
 ###  back
 
-▸ **back**(param?: *`undefined` \| `number`*): `boolean`
+▸ **back**(n?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:418](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L418)*
+*Defined in [blessed.d.ts:427](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L427)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` n | `number` |
 
 **Returns:** `boolean`
 
@@ -911,7 +911,7 @@ ___
 
 ▸ **backspace**(): `boolean`
 
-*Defined in [blessed.d.ts:339](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L339)*
+*Defined in [blessed.d.ts:343](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L343)*
 
 **Returns:** `boolean`
 
@@ -922,7 +922,7 @@ ___
 
 ▸ **bel**(): `boolean`
 
-*Defined in [blessed.d.ts:332](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L332)*
+*Defined in [blessed.d.ts:336](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L336)*
 
 **Returns:** `boolean`
 
@@ -933,7 +933,7 @@ ___
 
 ▸ **bell**(): `boolean`
 
-*Defined in [blessed.d.ts:331](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L331)*
+*Defined in [blessed.d.ts:335](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L335)*
 
 **Returns:** `boolean`
 
@@ -942,18 +942,18 @@ ___
 
 ###  bg
 
-▸ **bg**(color: *`string`*, val?: *`undefined` \| `string`*): `boolean`
+▸ **bg**(color: *`string`*, val?: *`string`*): `boolean`
 
-*Defined in [blessed.d.ts:542](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L542)*
+*Defined in [blessed.d.ts:553](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L553)*
 
-*__see__*: setBackground
+*__see__*: [setBackground](api-classes-blessed-d-blessedprogram.md#setbackground)
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | color | `string` |
-| `Optional` val | `undefined` \| `string` |
+| `Optional` val | `string` |
 
 **Returns:** `boolean`
 
@@ -964,7 +964,7 @@ ___
 
 ▸ **bindMouse**(): `void`
 
-*Defined in [blessed.d.ts:275](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L275)*
+*Defined in [blessed.d.ts:279](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L279)*
 
 **Returns:** `void`
 
@@ -975,7 +975,7 @@ ___
 
 ▸ **bindResponse**(): `void`
 
-*Defined in [blessed.d.ts:278](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L278)*
+*Defined in [blessed.d.ts:282](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L282)*
 
 **Returns:** `void`
 
@@ -984,15 +984,15 @@ ___
 
 ###  cbt
 
-▸ **cbt**(param?: *`undefined` \| `number`*): `boolean`
+▸ **cbt**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:939](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L939)*
+*Defined in [blessed.d.ts:956](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L956)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -1001,15 +1001,15 @@ ___
 
 ###  cha
 
-▸ **cha**(param?: *`undefined` \| `number`*): `boolean`
+▸ **cha**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:606](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L606)*
+*Defined in [blessed.d.ts:618](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L618)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -1018,37 +1018,37 @@ ___
 
 ###  charAttributes
 
-▸ **charAttributes**(param: *`string`*, val?: *`undefined` \| `string`*): `boolean`
+▸ **charAttributes**(param: *`string`*, val?: *`string`*): `boolean`
 
-▸ **charAttributes**(param: *`string`[]*, val?: *`undefined` \| `string`*): `boolean`
+▸ **charAttributes**(param: *`string`[]*, val?: *`string`*): `boolean`
 
-*Defined in [blessed.d.ts:507](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L507)*
+*Defined in [blessed.d.ts:518](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L518)*
 
-CSI Pm m Character Attributes (SGR). Ps = 0 -> Normal (default). Ps = 1 -> Bold. Ps = 4 -> Underlined. Ps = 5 -> Blink (appears as Bold). Ps = 7 -> Inverse. Ps = 8 -> Invisible, i.e., hidden (VT300). Ps = 2 2 -> Normal (neither bold nor faint). Ps = 2 4 -> Not underlined. Ps = 2 5 -> Steady (not blinking). Ps = 2 7 -> Positive (not inverse). Ps = 2 8 -> Visible, i.e., not hidden (VT300). Ps = 3 0 -> Set foreground color to Black. Ps = 3 1 -> Set foreground color to Red. Ps = 3 2 -> Set foreground color to Green. Ps = 3 3 -> Set foreground color to Yellow. Ps = 3 4 -> Set foreground color to Blue. Ps = 3 5 -> Set foreground color to Magenta. Ps = 3 6 -> Set foreground color to Cyan. Ps = 3 7 -> Set foreground color to White. Ps = 3 9 -> Set foreground color to default (original). Ps = 4 0 -> Set background color to Black. Ps = 4 1 -> Set background color to Red. Ps = 4 2 -> Set background color to Green. Ps = 4 3 -> Set background color to Yellow. Ps = 4 4 -> Set background color to Blue. Ps = 4 5 -> Set background color to Magenta. Ps = 4 6 -> Set background color to Cyan. Ps = 4 7 -> Set background color to White. Ps = 4 9 -> Set background color to default (original).
+`` ` `` CSI Pm m Character Attributes (SGR). Ps = 0 -> Normal (default). Ps = 1 -> Bold. Ps = 4 -> Underlined. Ps = 5 -> Blink (appears as Bold). Ps = 7 -> Inverse. Ps = 8 -> Invisible, i.e., hidden (VT300). Ps = 2 2 -> Normal (neither bold nor faint). Ps = 2 4 -> Not underlined. Ps = 2 5 -> Steady (not blinking). Ps = 2 7 -> Positive (not inverse). Ps = 2 8 -> Visible, i.e., not hidden (VT300). Ps = 3 0 -> Set foreground color to Black. Ps = 3 1 -> Set foreground color to Red. Ps = 3 2 -> Set foreground color to Green. Ps = 3 3 -> Set foreground color to Yellow. Ps = 3 4 -> Set foreground color to Blue. Ps = 3 5 -> Set foreground color to Magenta. Ps = 3 6 -> Set foreground color to Cyan. Ps = 3 7 -> Set foreground color to White. Ps = 3 9 -> Set foreground color to default (original). Ps = 4 0 -> Set background color to Black. Ps = 4 1 -> Set background color to Red. Ps = 4 2 -> Set background color to Green. Ps = 4 3 -> Set background color to Yellow. Ps = 4 4 -> Set background color to Blue. Ps = 4 5 -> Set background color to Magenta. Ps = 4 6 -> Set background color to Cyan. Ps = 4 7 -> Set background color to White. Ps = 4 9 -> Set background color to default (original).
 
 If 16-color support is compiled, the following apply. Assume that xterm's resources are set so that the ISO color codes are the first 8 of a set of 16. Then the aixterm colors are the bright versions of the ISO colors: Ps = 9 0 -> Set foreground color to Black. Ps = 9 1 -> Set foreground color to Red. Ps = 9 2 -> Set foreground color to Green. Ps = 9 3 -> Set foreground color to Yellow. Ps = 9 4 -> Set foreground color to Blue. Ps = 9 5 -> Set foreground color to Magenta. Ps = 9 6 -> Set foreground color to Cyan. Ps = 9 7 -> Set foreground color to White. Ps = 1 0 0 -> Set background color to Black. Ps = 1 0 1 -> Set background color to Red. Ps = 1 0 2 -> Set background color to Green. Ps = 1 0 3 -> Set background color to Yellow. Ps = 1 0 4 -> Set background color to Blue. Ps = 1 0 5 -> Set background color to Magenta. Ps = 1 0 6 -> Set background color to Cyan. Ps = 1 0 7 -> Set background color to White.
 
 If xterm is compiled with the 16-color support disabled, it supports the following, from rxvt: Ps = 1 0 0 -> Set foreground and background color to default.
 
-If 88- or 256-color support is compiled, the following apply. Ps = 3 8 ; 5 ; Ps -> Set foreground color to the second Ps. Ps = 4 8 ; 5 ; Ps -> Set background color to the second Ps.
+If 88- or 256-color support is compiled, the following apply. Ps = 3 8 ; 5 ; Ps -> Set foreground color to the second Ps. Ps = 4 8 ; 5 ; Ps -> Set background color to the second Ps. `` ` ``
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | param | `string` |
-| `Optional` val | `undefined` \| `string` |
+| `Optional` val | `string` |
 
 **Returns:** `boolean`
 
-*Defined in [blessed.d.ts:508](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L508)*
+*Defined in [blessed.d.ts:519](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L519)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | param | `string`[] |
-| `Optional` val | `undefined` \| `string` |
+| `Optional` val | `string` |
 
 **Returns:** `boolean`
 
@@ -1057,15 +1057,15 @@ ___
 
 ###  charPosAbsolute
 
-▸ **charPosAbsolute**(param?: *`undefined` \| `number`*): `boolean`
+▸ **charPosAbsolute**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:620](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L620)*
+*Defined in [blessed.d.ts:632](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L632)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -1074,16 +1074,16 @@ ___
 
 ###  charset
 
-▸ **charset**(val?: *`undefined` \| `string`*, level?: *`undefined` \| `number`*): `boolean`
+▸ **charset**(val?: *`string`*, level?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:378](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L378)*
+*Defined in [blessed.d.ts:382](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L382)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` val | `undefined` \| `string` |
-| `Optional` level | `undefined` \| `number` |
+| `Optional` val | `string` |
+| `Optional` level | `number` |
 
 **Returns:** `boolean`
 
@@ -1092,17 +1092,17 @@ ___
 
 ###  cht
 
-▸ **cht**(param?: *`undefined` \| `number`*): `boolean`
+▸ **cht**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:902](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L902)*
+*Defined in [blessed.d.ts:918](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L918)*
 
-*__see__*: cursorForwardTab
+*__see__*: [cursorForwardTab](api-classes-blessed-d-blessedprogram.md#cursorforwardtab)
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -1113,7 +1113,7 @@ ___
 
 ▸ **civis**(): `boolean`
 
-*Defined in [blessed.d.ts:839](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L839)*
+*Defined in [blessed.d.ts:851](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L851)*
 
 **Returns:** `boolean`
 
@@ -1124,7 +1124,7 @@ ___
 
 ▸ **clear**(): `boolean`
 
-*Defined in [blessed.d.ts:438](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L438)*
+*Defined in [blessed.d.ts:447](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L447)*
 
 **Returns:** `boolean`
 
@@ -1133,9 +1133,9 @@ ___
 
 ###  cnl
 
-▸ **cnl**(param?: *`undefined` \| `number`*): `boolean`
+▸ **cnl**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:600](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L600)*
+*Defined in [blessed.d.ts:612](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L612)*
 
 *__cursornextline__*: 
 
@@ -1143,7 +1143,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -1154,17 +1154,9 @@ ___
 
 ▸ **copyRectangle**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1169](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1169)*
+*Defined in [blessed.d.ts:1187](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1187)*
 
-```
-CSI Pt; Pl; Pb; Pr; Pp; Pt; Pl; Pp$ v
-Copy Rectangular Area (DECCRA, VT400 and up).
-Pt; Pl; Pb; Pr denotes the rectangle.
-Pp denotes the source page.
-Pt; Pl denotes the target location.
-Pp denotes the target page.
-NOTE: xterm doesn't enable this code by default.
-```
+`` ` CSI Pt; Pl; Pb; Pr; Pp; Pt; Pl; Pp$ v Copy Rectangular Area (DECCRA, VT400 and up). Pt; Pl; Pb; Pr denotes the rectangle. Pp denotes the source page. Pt; Pl denotes the target location. Pp denotes the target page. NOTE: xterm doesn't enable this code by default.``\`
 
 **Parameters:**
 
@@ -1181,7 +1173,7 @@ ___
 
 ▸ **copyToClipboard**(text: *`string`*): `boolean`
 
-*Defined in [blessed.d.ts:309](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L309)*
+*Defined in [blessed.d.ts:313](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L313)*
 
 **Parameters:**
 
@@ -1196,15 +1188,15 @@ ___
 
 ###  cpl
 
-▸ **cpl**(param?: *`undefined` \| `number`*): `boolean`
+▸ **cpl**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:603](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L603)*
+*Defined in [blessed.d.ts:615](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L615)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -1215,7 +1207,7 @@ ___
 
 ▸ **cr**(): `boolean`
 
-*Defined in [blessed.d.ts:350](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L350)*
+*Defined in [blessed.d.ts:354](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L354)*
 
 **Returns:** `boolean`
 
@@ -1226,9 +1218,9 @@ ___
 
 ▸ **csr**(top: *`number`*, bottom: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:880](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L880)*
+*Defined in [blessed.d.ts:892](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L892)*
 
-*__see__*: setScrollRegion
+*__see__*: [setScrollRegion](api-classes-blessed-d-blessedprogram.md#setscrollregion)
 
 **Parameters:**
 
@@ -1244,15 +1236,15 @@ ___
 
 ###  cub
 
-▸ **cub**(param?: *`undefined` \| `number`*): `boolean`
+▸ **cub**(n?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:416](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L416)*
+*Defined in [blessed.d.ts:425](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L425)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` n | `number` |
 
 **Returns:** `boolean`
 
@@ -1261,15 +1253,17 @@ ___
 
 ###  cud
 
-▸ **cud**(param?: *`undefined` \| `number`*): `boolean`
+▸ **cud**(n?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:407](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L407)*
+*Defined in [blessed.d.ts:415](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L415)*
+
+*__see__*: [cursorDown](api-classes-blessed-d-blessedprogram.md#cursordown)
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` n | `number` |
 
 **Returns:** `boolean`
 
@@ -1278,15 +1272,15 @@ ___
 
 ###  cuf
 
-▸ **cuf**(param?: *`undefined` \| `number`*): `boolean`
+▸ **cuf**(n?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:411](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L411)*
+*Defined in [blessed.d.ts:420](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L420)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` n | `number` |
 
 **Returns:** `boolean`
 
@@ -1295,9 +1289,9 @@ ___
 
 ###  cup
 
-▸ **cup**(row?: *`undefined` \| `number`*, col?: *`undefined` \| `number`*): `boolean`
+▸ **cup**(row?: *`number`*, col?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:428](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L428)*
+*Defined in [blessed.d.ts:437](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L437)*
 
 CSI Ps ; Ps H Cursor Position \[ row;column \] (default = \[ 1,1 \]) (CUP).
 
@@ -1305,8 +1299,8 @@ CSI Ps ; Ps H Cursor Position \[ row;column \] (default = \[ 1,1 \]) (CUP).
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` row | `undefined` \| `number` |
-| `Optional` col | `undefined` \| `number` |
+| `Optional` row | `number` |
+| `Optional` col | `number` |
 
 **Returns:** `boolean`
 
@@ -1315,15 +1309,15 @@ ___
 
 ###  cursorBackward
 
-▸ **cursorBackward**(param?: *`undefined` \| `number`*): `boolean`
+▸ **cursorBackward**(n?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:415](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L415)*
+*Defined in [blessed.d.ts:424](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L424)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` n | `number` |
 
 **Returns:** `boolean`
 
@@ -1332,9 +1326,9 @@ ___
 
 ###  cursorBackwardTab
 
-▸ **cursorBackwardTab**(param?: *`undefined` \| `number`*): `boolean`
+▸ **cursorBackwardTab**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:937](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L937)*
+*Defined in [blessed.d.ts:954](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L954)*
 
 CSI Ps Z Cursor Backward Tabulation Ps tab stops (default = 1) (CBT).
 
@@ -1342,7 +1336,7 @@ CSI Ps Z Cursor Backward Tabulation Ps tab stops (default = 1) (CBT).
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -1353,9 +1347,9 @@ ___
 
 ▸ **cursorCharAbsolute**(x: *`number`*): `number`
 
-▸ **cursorCharAbsolute**(param?: *`undefined` \| `number`*): `boolean`
+▸ **cursorCharAbsolute**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:305](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L305)*
+*Defined in [blessed.d.ts:309](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L309)*
 
 **Parameters:**
 
@@ -1365,13 +1359,13 @@ ___
 
 **Returns:** `number`
 
-*Defined in [blessed.d.ts:605](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L605)*
+*Defined in [blessed.d.ts:617](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L617)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -1382,7 +1376,7 @@ ___
 
 ▸ **cursorColor**(color: *`string`*): `boolean`
 
-*Defined in [blessed.d.ts:312](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L312)*
+*Defined in [blessed.d.ts:316](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L316)*
 
 **Parameters:**
 
@@ -1397,15 +1391,17 @@ ___
 
 ###  cursorDown
 
-▸ **cursorDown**(param?: *`undefined` \| `number`*): `boolean`
+▸ **cursorDown**(n?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:406](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L406)*
+*Defined in [blessed.d.ts:413](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L413)*
+
+Cursor Down `n` times, by default 1.
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` n | `number` |
 
 **Returns:** `boolean`
 
@@ -1414,15 +1410,15 @@ ___
 
 ###  cursorForward
 
-▸ **cursorForward**(param?: *`undefined` \| `number`*): `boolean`
+▸ **cursorForward**(n?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:410](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L410)*
+*Defined in [blessed.d.ts:419](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L419)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` n | `number` |
 
 **Returns:** `boolean`
 
@@ -1431,9 +1427,9 @@ ___
 
 ###  cursorForwardTab
 
-▸ **cursorForwardTab**(param?: *`undefined` \| `number`*): `boolean`
+▸ **cursorForwardTab**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:900](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L900)*
+*Defined in [blessed.d.ts:916](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L916)*
 
 Cursor Forward Tabulation Ps tab stops (default = 1) (CHT).
 
@@ -1441,7 +1437,7 @@ Cursor Forward Tabulation Ps tab stops (default = 1) (CHT).
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -1450,17 +1446,21 @@ ___
 
 ###  cursorNextLine
 
-▸ **cursorNextLine**(param?: *`undefined` \| `number`*): `boolean`
+▸ **cursorNextLine**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:598](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L598)*
+*Defined in [blessed.d.ts:610](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L610)*
 
-CSI Ps E Cursor Next Line Ps Times (default = 1) (CNL). same as CSI Ps B 
+```
+CSI Ps E
+Cursor Next Line Ps Times (default = 1) (CNL).
+same as CSI Ps B ?
+```
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -1469,9 +1469,9 @@ ___
 
 ###  cursorPos
 
-▸ **cursorPos**(row?: *`undefined` \| `number`*, col?: *`undefined` \| `number`*): `boolean`
+▸ **cursorPos**(row?: *`number`*, col?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:423](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L423)*
+*Defined in [blessed.d.ts:432](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L432)*
 
 CSI Ps ; Ps H Cursor Position \[ row;column \] (default = \[ 1,1 \]) (CUP).
 
@@ -1479,8 +1479,8 @@ CSI Ps ; Ps H Cursor Position \[ row;column \] (default = \[ 1,1 \]) (CUP).
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` row | `undefined` \| `number` |
-| `Optional` col | `undefined` \| `number` |
+| `Optional` row | `number` |
+| `Optional` col | `number` |
 
 **Returns:** `boolean`
 
@@ -1489,15 +1489,15 @@ ___
 
 ###  cursorPrecedingLine
 
-▸ **cursorPrecedingLine**(param?: *`undefined` \| `number`*): `boolean`
+▸ **cursorPrecedingLine**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:602](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L602)*
+*Defined in [blessed.d.ts:614](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L614)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -1508,7 +1508,7 @@ ___
 
 ▸ **cursorReset**(): `boolean`
 
-*Defined in [blessed.d.ts:313](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L313)*
+*Defined in [blessed.d.ts:317](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L317)*
 
 **Returns:** `boolean`
 
@@ -1517,16 +1517,16 @@ ___
 
 ###  cursorShape
 
-▸ **cursorShape**(shape: *"block" \| "underline" \| "line"*, blink?: *`undefined` \| `false` \| `true`*): `boolean`
+▸ **cursorShape**(shape: *"block" \| "underline" \| "line"*, blink?: *`boolean`*): `boolean`
 
-*Defined in [blessed.d.ts:311](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L311)*
+*Defined in [blessed.d.ts:315](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L315)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | shape | "block" \| "underline" \| "line" |
-| `Optional` blink | `undefined` \| `false` \| `true` |
+| `Optional` blink | `boolean` |
 
 **Returns:** `boolean`
 
@@ -1535,15 +1535,15 @@ ___
 
 ###  cursorUp
 
-▸ **cursorUp**(param?: *`undefined` \| `number`*): `boolean`
+▸ **cursorUp**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:402](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L402)*
+*Defined in [blessed.d.ts:406](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L406)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -1554,7 +1554,7 @@ ___
 
 ▸ **cursor_invisible**(): `boolean`
 
-*Defined in [blessed.d.ts:841](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L841)*
+*Defined in [blessed.d.ts:853](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L853)*
 
 **Returns:** `boolean`
 
@@ -1563,15 +1563,15 @@ ___
 
 ###  cuu
 
-▸ **cuu**(param?: *`undefined` \| `number`*): `boolean`
+▸ **cuu**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:403](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L403)*
+*Defined in [blessed.d.ts:407](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L407)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -1580,15 +1580,15 @@ ___
 
 ###  da
 
-▸ **da**(param?: *`undefined` \| `number`*, callback?: *`Function`*): `boolean`
+▸ **da**(param?: *`number`*, callback?: *`Function`*): `boolean`
 
-*Defined in [blessed.d.ts:626](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L626)*
+*Defined in [blessed.d.ts:638](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L638)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 | `Optional` callback | `Function` |
 
 **Returns:** `boolean`
@@ -1598,15 +1598,15 @@ ___
 
 ###  dch
 
-▸ **dch**(param?: *`undefined` \| `number`*): `boolean`
+▸ **dch**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:615](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L615)*
+*Defined in [blessed.d.ts:627](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L627)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -1617,7 +1617,7 @@ ___
 
 ▸ **debug**(s: *`string`*): `boolean`
 
-*Defined in [blessed.d.ts:257](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L257)*
+*Defined in [blessed.d.ts:261](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L261)*
 
 **Parameters:**
 
@@ -1634,7 +1634,7 @@ ___
 
 ▸ **deccara**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1066](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1066)*
+*Defined in [blessed.d.ts:1083](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1083)*
 
 *__see__*: [setAttrInRectangle](api-classes-blessed-d-blessedprogram.md#setattrinrectangle)
 
@@ -1653,9 +1653,9 @@ ___
 
 ▸ **deccra**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1171](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1171)*
+*Defined in [blessed.d.ts:1189](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1189)*
 
-*__see__*: copyRectangle
+*__see__*: [copyRectangle](api-classes-blessed-d-blessedprogram.md#copyrectangle)
 
 **Parameters:**
 
@@ -1672,9 +1672,9 @@ ___
 
 ▸ **decdc**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1338](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1338)*
+*Defined in [blessed.d.ts:1356](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1356)*
 
-*__see__*: deleteColumns
+*__see__*: [deleteColumns](api-classes-blessed-d-blessedprogram.md#deletecolumns)
 
 **Parameters:**
 
@@ -1691,9 +1691,9 @@ ___
 
 ▸ **decefr**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1190](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1190)*
+*Defined in [blessed.d.ts:1208](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1208)*
 
-*__see__*: enableFilterRectangle
+*__see__*: [enableFilterRectangle](api-classes-blessed-d-blessedprogram.md#enablefilterrectangle)
 
 **Parameters:**
 
@@ -1710,7 +1710,7 @@ ___
 
 ▸ **decelr**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1255](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1255)*
+*Defined in [blessed.d.ts:1273](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1273)*
 
 **Parameters:**
 
@@ -1727,7 +1727,7 @@ ___
 
 ▸ **decera**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1258](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1258)*
+*Defined in [blessed.d.ts:1276](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1276)*
 
 **Parameters:**
 
@@ -1744,9 +1744,9 @@ ___
 
 ▸ **decfra**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1235](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1235)*
+*Defined in [blessed.d.ts:1253](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1253)*
 
-*__see__*: fillRectangle
+*__see__*: [fillRectangle](api-classes-blessed-d-blessedprogram.md#fillrectangle)
 
 **Parameters:**
 
@@ -1763,9 +1763,9 @@ ___
 
 ▸ **decic**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1327](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1327)*
+*Defined in [blessed.d.ts:1345](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1345)*
 
-*__see__*: insertColumns
+*__see__*: [insertColumns](api-classes-blessed-d-blessedprogram.md#insertcolumns)
 
 **Parameters:**
 
@@ -1780,15 +1780,15 @@ ___
 
 ###  decll
 
-▸ **decll**(param?: *`undefined` \| `number`*): `boolean`
+▸ **decll**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:1000](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1000)*
+*Defined in [blessed.d.ts:1017](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1017)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -1799,7 +1799,7 @@ ___
 
 ▸ **decrara**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1140](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1140)*
+*Defined in [blessed.d.ts:1157](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1157)*
 
 **Parameters:**
 
@@ -1816,9 +1816,9 @@ ___
 
 ▸ **decreqtparm**(param: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:1209](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1209)*
+*Defined in [blessed.d.ts:1227](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1227)*
 
-*__see__*: requestParameters
+*__see__*: [requestParameters](api-classes-blessed-d-blessedprogram.md#requestparameters)
 
 **Parameters:**
 
@@ -1833,17 +1833,17 @@ ___
 
 ###  decrqlp
 
-▸ **decrqlp**(param?: *`undefined` \| `string`*, callback?: *[ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback)*): `boolean`
+▸ **decrqlp**(param?: *`string`*, callback?: *[ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback)*): `boolean`
 
-*Defined in [blessed.d.ts:1316](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1316)*
+*Defined in [blessed.d.ts:1334](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1334)*
 
-*__see__*: requestLocatorPosition
+*__see__*: [requestLocatorPosition](api-classes-blessed-d-blessedprogram.md#requestlocatorposition)
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `string` |
+| `Optional` param | `string` |
 | `Optional` callback | [ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback) |
 
 **Returns:** `boolean`
@@ -1853,15 +1853,15 @@ ___
 
 ###  decrqm
 
-▸ **decrqm**(param?: *`undefined` \| `number`*): `boolean`
+▸ **decrqm**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:991](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L991)*
+*Defined in [blessed.d.ts:1008](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1008)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -1870,15 +1870,15 @@ ___
 
 ###  decrqmp
 
-▸ **decrqmp**(param?: *`undefined` \| `number`*): `boolean`
+▸ **decrqmp**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:994](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L994)*
+*Defined in [blessed.d.ts:1011](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1011)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -1889,7 +1889,7 @@ ___
 
 ▸ **decrst**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:836](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L836)*
+*Defined in [blessed.d.ts:848](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L848)*
 
 **Parameters:**
 
@@ -1904,17 +1904,17 @@ ___
 
 ###  decsace
 
-▸ **decsace**(param?: *`undefined` \| `number`*): `boolean`
+▸ **decsace**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:1221](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1221)*
+*Defined in [blessed.d.ts:1239](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1239)*
 
-*__see__*: selectChangeExtent
+*__see__*: [selectChangeExtent](api-classes-blessed-d-blessedprogram.md#selectchangeextent)
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -1923,9 +1923,9 @@ ___
 
 ###  decsca
 
-▸ **decsca**(param?: *`undefined` \| `number`*): `boolean`
+▸ **decsca**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:1045](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1045)*
+*Defined in [blessed.d.ts:1062](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1062)*
 
 *__see__*: [setCharProtectionAttr](api-classes-blessed-d-blessedprogram.md#setcharprotectionattr)
 
@@ -1933,7 +1933,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -1944,7 +1944,7 @@ ___
 
 ▸ **decscl**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:997](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L997)*
+*Defined in [blessed.d.ts:1014](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1014)*
 
 **Parameters:**
 
@@ -1961,7 +1961,7 @@ ___
 
 ▸ **decscursr**(cursor: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:1031](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1031)*
+*Defined in [blessed.d.ts:1048](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1048)*
 
 see [setCursorStyle](api-classes-blessed-d-blessedprogram.md#setcursorstyle)
 
@@ -1980,7 +1980,7 @@ ___
 
 ▸ **decsera**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1264](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1264)*
+*Defined in [blessed.d.ts:1282](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1282)*
 
 **Parameters:**
 
@@ -1997,7 +1997,7 @@ ___
 
 ▸ **decset**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:737](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L737)*
+*Defined in [blessed.d.ts:749](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L749)*
 
 **Parameters:**
 
@@ -2014,7 +2014,7 @@ ___
 
 ▸ **decsle**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1261](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1261)*
+*Defined in [blessed.d.ts:1279](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1279)*
 
 **Parameters:**
 
@@ -2031,9 +2031,9 @@ ___
 
 ▸ **decstbm**(top: *`number`*, bottom: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:882](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L882)*
+*Defined in [blessed.d.ts:894](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L894)*
 
-*__see__*: setScrollRegion
+*__see__*: [setScrollRegion](api-classes-blessed-d-blessedprogram.md#setscrollregion)
 
 **Parameters:**
 
@@ -2051,7 +2051,7 @@ ___
 
 ▸ **decstr**(): `boolean`
 
-*Defined in [blessed.d.ts:988](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L988)*
+*Defined in [blessed.d.ts:1005](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1005)*
 
 **Returns:** `boolean`
 
@@ -2060,15 +2060,15 @@ ___
 
 ###  decswbv
 
-▸ **decswbv**(param?: *`undefined` \| `number`*): `boolean`
+▸ **decswbv**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:1155](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1155)*
+*Defined in [blessed.d.ts:1173](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1173)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -2079,7 +2079,7 @@ ___
 
 ▸ **dectcemh**(): `boolean`
 
-*Defined in [blessed.d.ts:842](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L842)*
+*Defined in [blessed.d.ts:854](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L854)*
 
 **Returns:** `boolean`
 
@@ -2088,15 +2088,15 @@ ___
 
 ###  deleteChars
 
-▸ **deleteChars**(param?: *`undefined` \| `number`*): `boolean`
+▸ **deleteChars**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:614](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L614)*
+*Defined in [blessed.d.ts:626](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L626)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -2107,7 +2107,7 @@ ___
 
 ▸ **deleteColumns**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1336](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1336)*
+*Defined in [blessed.d.ts:1354](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1354)*
 
 ```
 CSI P m SP ~
@@ -2128,15 +2128,15 @@ ___
 
 ###  deleteLines
 
-▸ **deleteLines**(param?: *`undefined` \| `number`*): `boolean`
+▸ **deleteLines**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:611](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L611)*
+*Defined in [blessed.d.ts:623](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L623)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -2147,7 +2147,7 @@ ___
 
 ▸ **destroy**(): `void`
 
-*Defined in [blessed.d.ts:267](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L267)*
+*Defined in [blessed.d.ts:271](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L271)*
 
 **Returns:** `void`
 
@@ -2156,9 +2156,9 @@ ___
 
 ###  deviceStatus
 
-▸ **deviceStatus**(param?: *`undefined` \| `string`*, callback?: *[ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback)*, dec?: *`undefined` \| `false` \| `true`*, noBypass?: *`undefined` \| `false` \| `true`*): `boolean`
+▸ **deviceStatus**(param?: *`string`*, callback?: *[ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback)*, dec?: *`boolean`*, noBypass?: *`boolean`*): `boolean`
 
-*Defined in [blessed.d.ts:569](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L569)*
+*Defined in [blessed.d.ts:580](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L580)*
 
 ```
 CSI Ps n  Device Status Report (DSR).
@@ -2188,10 +2188,10 @@ CSI ? 5 0  n  No Locator, if not.
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `string` |
+| `Optional` param | `string` |
 | `Optional` callback | [ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback) |
-| `Optional` dec | `undefined` \| `false` \| `true` |
-| `Optional` noBypass | `undefined` \| `false` \| `true` |
+| `Optional` dec | `boolean` |
+| `Optional` noBypass | `boolean` |
 
 **Returns:** `boolean`
 
@@ -2202,7 +2202,7 @@ ___
 
 ▸ **disableGpm**(): `void`
 
-*Defined in [blessed.d.ts:277](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L277)*
+*Defined in [blessed.d.ts:281](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L281)*
 
 **Returns:** `void`
 
@@ -2213,7 +2213,7 @@ ___
 
 ▸ **disableModifieres**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:968](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L968)*
+*Defined in [blessed.d.ts:985](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L985)*
 
 **Parameters:**
 
@@ -2230,7 +2230,7 @@ ___
 
 ▸ **disableMouse**(): `void`
 
-*Defined in [blessed.d.ts:848](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L848)*
+*Defined in [blessed.d.ts:860](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L860)*
 
 **Returns:** `void`
 
@@ -2239,15 +2239,15 @@ ___
 
 ###  dl
 
-▸ **dl**(param?: *`undefined` \| `number`*): `boolean`
+▸ **dl**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:612](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L612)*
+*Defined in [blessed.d.ts:624](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L624)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -2256,15 +2256,17 @@ ___
 
 ###  down
 
-▸ **down**(param?: *`undefined` \| `number`*): `boolean`
+▸ **down**(n?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:408](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L408)*
+*Defined in [blessed.d.ts:417](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L417)*
+
+*__see__*: [cursorDown](api-classes-blessed-d-blessedprogram.md#cursordown)
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` n | `number` |
 
 **Returns:** `boolean`
 
@@ -2273,20 +2275,20 @@ ___
 
 ###  dsr
 
-▸ **dsr**(param?: *`undefined` \| `string`*, callback?: *`Function`*, dec?: *`undefined` \| `false` \| `true`*, noBypass?: *`undefined` \| `false` \| `true`*): `boolean`
+▸ **dsr**(param?: *`string`*, callback?: *`Function`*, dec?: *`boolean`*, noBypass?: *`boolean`*): `boolean`
 
-*Defined in [blessed.d.ts:571](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L571)*
+*Defined in [blessed.d.ts:582](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L582)*
 
-*__see__*: deviceStatus
+*__see__*: [deviceStatus](api-classes-blessed-d-blessedprogram.md#devicestatus)
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `string` |
+| `Optional` param | `string` |
 | `Optional` callback | `Function` |
-| `Optional` dec | `undefined` \| `false` \| `true` |
-| `Optional` noBypass | `undefined` \| `false` \| `true` |
+| `Optional` dec | `boolean` |
+| `Optional` noBypass | `boolean` |
 
 **Returns:** `boolean`
 
@@ -2295,9 +2297,9 @@ ___
 
 ###  dynamicColors
 
-▸ **dynamicColors**(param?: *`undefined` \| `string`*): `boolean`
+▸ **dynamicColors**(param?: *`string`*): `boolean`
 
-*Defined in [blessed.d.ts:399](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L399)*
+*Defined in [blessed.d.ts:403](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L403)*
 
 OSC Ps ; Pt ST OSC Ps ; Pt BEL Change dynamic colors
 
@@ -2305,7 +2307,7 @@ OSC Ps ; Pt ST OSC Ps ; Pt BEL Change dynamic colors
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `string` |
+| `Optional` param | `string` |
 
 **Returns:** `boolean`
 
@@ -2314,15 +2316,15 @@ ___
 
 ###  ech
 
-▸ **ech**(param?: *`undefined` \| `number`*): `boolean`
+▸ **ech**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:618](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L618)*
+*Defined in [blessed.d.ts:630](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L630)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -2331,16 +2333,16 @@ ___
 
 ###  echo
 
-▸ **echo**(text: *`string`*, attr?: *`undefined` \| `false` \| `true`*): `boolean`
+▸ **echo**(text: *`string`*, attr?: *`boolean`*): `boolean`
 
-*Defined in [blessed.d.ts:295](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L295)*
+*Defined in [blessed.d.ts:299](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L299)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | text | `string` |
-| `Optional` attr | `undefined` \| `false` \| `true` |
+| `Optional` attr | `boolean` |
 
 **Returns:** `boolean`
 
@@ -2349,15 +2351,15 @@ ___
 
 ###  ed
 
-▸ **ed**(param?: *`undefined` \| `string`*): `boolean`
+▸ **ed**(param?: *`string`*): `boolean`
 
-*Defined in [blessed.d.ts:436](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L436)*
+*Defined in [blessed.d.ts:445](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L445)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `string` |
+| `Optional` param | `string` |
 
 **Returns:** `boolean`
 
@@ -2366,15 +2368,15 @@ ___
 
 ###  el
 
-▸ **el**(param?: *`undefined` \| `string`*): `boolean`
+▸ **el**(param?: *`string`*): `boolean`
 
-*Defined in [blessed.d.ts:441](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L441)*
+*Defined in [blessed.d.ts:450](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L450)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `string` |
+| `Optional` param | `string` |
 
 **Returns:** `boolean`
 
@@ -2389,7 +2391,7 @@ ___
 
 *Overrides EventEmitter.emit*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:22*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:23*
 
 **Parameters:**
 
@@ -2407,21 +2409,9 @@ ___
 
 ▸ **enableFilterRectangle**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1188](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1188)*
+*Defined in [blessed.d.ts:1206](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1206)*
 
-```
-CSI Pt ; Pl ; Pb ; Pr ' w
-Enable Filter Rectangle (DECEFR), VT420 and up.
-Parameters are [top;left;bottom;right].
-Defines the coordinates of a filter rectangle and activates
-it.  Anytime the locator is detected outside of the filter
-rectangle, an outside rectangle event is generated and the
-rectangle is disabled.  Filter rectangles are always treated
-as "one-shot" events.  Any parameters that are omitted default
-to the current locator position.  If all parameters are omit-
-ted, any locator motion will be reported.  DECELR always can-
-cels any prevous rectangle definition.
-```
+``` CSI Pt ; Pl ; Pb ; Pr ' w Enable Filter Rectangle (DECEFR), VT420 and up. Parameters are [top;left;bottom;right]. Defines the coordinates of a filter rectangle and activates it. Anytime the locator is detected outside of the filter rectangle, an outside rectangle event is generated and the rectangle is disabled. Filter rectangles are always treated as "one-shot" events. Any parameters that are omitted default to the current locator position. If all parameters are omit- ted, any locator motion will be reported. DECELR always can- cels any prevous rectangle definition.``\`
 
 **Parameters:**
 
@@ -2438,7 +2428,7 @@ ___
 
 ▸ **enableGpm**(): `void`
 
-*Defined in [blessed.d.ts:276](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L276)*
+*Defined in [blessed.d.ts:280](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L280)*
 
 **Returns:** `void`
 
@@ -2449,7 +2439,7 @@ ___
 
 ▸ **enableLocatorReporting**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1254](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1254)*
+*Defined in [blessed.d.ts:1272](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1272)*
 
 `` ` ``
 
@@ -2470,7 +2460,7 @@ ___
 
 ▸ **enableMouse**(): `void`
 
-*Defined in [blessed.d.ts:847](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L847)*
+*Defined in [blessed.d.ts:859](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L859)*
 
 **Returns:** `void`
 
@@ -2481,7 +2471,7 @@ ___
 
 ▸ **enter_alt_charset_mode**(): `boolean`
 
-*Defined in [blessed.d.ts:380](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L380)*
+*Defined in [blessed.d.ts:384](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L384)*
 
 **Returns:** `boolean`
 
@@ -2490,15 +2480,15 @@ ___
 
 ###  eraseChars
 
-▸ **eraseChars**(param?: *`undefined` \| `number`*): `boolean`
+▸ **eraseChars**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:617](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L617)*
+*Defined in [blessed.d.ts:629](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L629)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -2507,15 +2497,15 @@ ___
 
 ###  eraseInDisplay
 
-▸ **eraseInDisplay**(param?: *`undefined` \| `string`*): `boolean`
+▸ **eraseInDisplay**(param?: *`string`*): `boolean`
 
-*Defined in [blessed.d.ts:435](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L435)*
+*Defined in [blessed.d.ts:444](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L444)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `string` |
+| `Optional` param | `string` |
 
 **Returns:** `boolean`
 
@@ -2524,15 +2514,15 @@ ___
 
 ###  eraseInLine
 
-▸ **eraseInLine**(param?: *`undefined` \| `string`*): `boolean`
+▸ **eraseInLine**(param?: *`string`*): `boolean`
 
-*Defined in [blessed.d.ts:440](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L440)*
+*Defined in [blessed.d.ts:449](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L449)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `string` |
+| `Optional` param | `string` |
 
 **Returns:** `boolean`
 
@@ -2543,7 +2533,7 @@ ___
 
 ▸ **eraseRectangle**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1257](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1257)*
+*Defined in [blessed.d.ts:1275](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1275)*
 
 **Parameters:**
 
@@ -2564,7 +2554,7 @@ ___
 
 *Overrides EventEmitter.eventNames*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:23*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:24*
 
 **Returns:** `Array`<`string` \| `symbol`>
 
@@ -2575,7 +2565,7 @@ ___
 
 ▸ **exit_alt_charset_mode**(): `boolean`
 
-*Defined in [blessed.d.ts:384](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L384)*
+*Defined in [blessed.d.ts:388](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L388)*
 
 **Returns:** `boolean`
 
@@ -2586,7 +2576,7 @@ ___
 
 ▸ **feed**(): `boolean`
 
-*Defined in [blessed.d.ts:352](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L352)*
+*Defined in [blessed.d.ts:356](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L356)*
 
 **Returns:** `boolean`
 
@@ -2597,7 +2587,7 @@ ___
 
 ▸ **ff**(): `boolean`
 
-*Defined in [blessed.d.ts:337](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L337)*
+*Defined in [blessed.d.ts:341](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L341)*
 
 **Returns:** `boolean`
 
@@ -2606,18 +2596,18 @@ ___
 
 ###  fg
 
-▸ **fg**(color: *`string`*, val?: *`undefined` \| `false` \| `true`*): `string`
+▸ **fg**(color: *`string`*, val?: *`boolean`*): `string`
 
-*Defined in [blessed.d.ts:525](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L525)*
+*Defined in [blessed.d.ts:536](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L536)*
 
-*__see__*: setForeground
+*__see__*: [setForeground](api-classes-blessed-d-blessedprogram.md#setforeground)
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | color | `string` |
-| `Optional` val | `undefined` \| `false` \| `true` |
+| `Optional` val | `boolean` |
 
 **Returns:** `string`
 
@@ -2628,7 +2618,7 @@ ___
 
 ▸ **fillRectangle**(Pc: *`string`*, Pt: *`number`*, pl: *`number`*, pb: *`number`*, pr: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:1232](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1232)*
+*Defined in [blessed.d.ts:1250](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1250)*
 
 ```
 CSI Pc; Pt; Pl; Pb; Pr$ x
@@ -2657,7 +2647,7 @@ ___
 
 ▸ **flush**(): `void`
 
-*Defined in [blessed.d.ts:292](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L292)*
+*Defined in [blessed.d.ts:296](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L296)*
 
 ```
 Flushes the buffer.
@@ -2672,7 +2662,7 @@ ___
 
 ▸ **form**(): `boolean`
 
-*Defined in [blessed.d.ts:336](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L336)*
+*Defined in [blessed.d.ts:340](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L340)*
 
 **Returns:** `boolean`
 
@@ -2681,15 +2671,15 @@ ___
 
 ###  forward
 
-▸ **forward**(param?: *`undefined` \| `number`*): `boolean`
+▸ **forward**(n?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:413](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L413)*
+*Defined in [blessed.d.ts:422](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L422)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` n | `number` |
 
 **Returns:** `boolean`
 
@@ -2700,7 +2690,7 @@ ___
 
 ▸ **getCursor**(callback: *[ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback)*): `boolean`
 
-*Defined in [blessed.d.ts:581](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L581)*
+*Defined in [blessed.d.ts:592](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L592)*
 
 Example Call:
 
@@ -2725,7 +2715,7 @@ ___
 
 ▸ **getCursorColor**(callback: *`Function`*): `boolean`
 
-*Defined in [blessed.d.ts:327](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L327)*
+*Defined in [blessed.d.ts:331](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L331)*
 
 example call:
 
@@ -2755,7 +2745,7 @@ ___
 
 *Overrides EventEmitter.getMaxListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:19*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:20*
 
 **Returns:** `number`
 
@@ -2766,7 +2756,7 @@ ___
 
 ▸ **getTextParams**(param: *`string`*, callback: *`Function`*): `boolean`
 
-*Defined in [blessed.d.ts:316](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L316)*
+*Defined in [blessed.d.ts:320](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L320)*
 
 **Parameters:**
 
@@ -2784,7 +2774,7 @@ ___
 
 ▸ **getWindowSize**(callback?: *[ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback)*): `boolean`
 
-*Defined in [blessed.d.ts:1137](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1137)*
+*Defined in [blessed.d.ts:1154](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1154)*
 
 **Parameters:**
 
@@ -2801,7 +2791,7 @@ ___
 
 ▸ **has**(name: *`string`*): `boolean`
 
-*Defined in [blessed.d.ts:262](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L262)*
+*Defined in [blessed.d.ts:266](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L266)*
 
 Queries whether the terminal has the capability `name`.
 
@@ -2820,7 +2810,7 @@ ___
 
 ▸ **hideCursor**(): `boolean`
 
-*Defined in [blessed.d.ts:838](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L838)*
+*Defined in [blessed.d.ts:850](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L850)*
 
 **Returns:** `boolean`
 
@@ -2829,15 +2819,15 @@ ___
 
 ###  hpa
 
-▸ **hpa**(param?: *`undefined` \| `number`*): `boolean`
+▸ **hpa**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:621](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L621)*
+*Defined in [blessed.d.ts:633](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L633)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -2848,7 +2838,7 @@ ___
 
 ▸ **ht**(): `boolean`
 
-*Defined in [blessed.d.ts:343](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L343)*
+*Defined in [blessed.d.ts:347](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L347)*
 
 **Returns:** `boolean`
 
@@ -2857,16 +2847,16 @@ ___
 
 ###  hvp
 
-▸ **hvp**(row?: *`undefined` \| `number`*, col?: *`undefined` \| `number`*): `boolean`
+▸ **hvp**(row?: *`number`*, col?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:635](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L635)*
+*Defined in [blessed.d.ts:647](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L647)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` row | `undefined` \| `number` |
-| `Optional` col | `undefined` \| `number` |
+| `Optional` row | `number` |
+| `Optional` col | `number` |
 
 **Returns:** `boolean`
 
@@ -2875,17 +2865,17 @@ ___
 
 ###  ich
 
-▸ **ich**(param?: *`undefined` \| `number`*): `boolean`
+▸ **ich**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:590](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L590)*
+*Defined in [blessed.d.ts:601](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L601)*
 
-*__see__*: insertChars
+*__see__*: [insertChars](api-classes-blessed-d-blessedprogram.md#insertchars)
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -2894,15 +2884,15 @@ ___
 
 ###  il
 
-▸ **il**(param?: *`undefined` \| `number`*): `boolean`
+▸ **il**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:609](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L609)*
+*Defined in [blessed.d.ts:621](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L621)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -2913,7 +2903,7 @@ ___
 
 ▸ **ind**(): `boolean`
 
-*Defined in [blessed.d.ts:357](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L357)*
+*Defined in [blessed.d.ts:361](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L361)*
 
 **Returns:** `boolean`
 
@@ -2924,7 +2914,7 @@ ___
 
 ▸ **index**(): `boolean`
 
-*Defined in [blessed.d.ts:356](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L356)*
+*Defined in [blessed.d.ts:360](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L360)*
 
 **Returns:** `boolean`
 
@@ -2935,7 +2925,7 @@ ___
 
 ▸ **initMouseTracking**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:919](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L919)*
+*Defined in [blessed.d.ts:935](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L935)*
 
 ```
 CSI Ps ; Ps ; Ps ; Ps ; Ps T
@@ -2957,9 +2947,9 @@ ___
 
 ###  insertChars
 
-▸ **insertChars**(param?: *`undefined` \| `number`*): `boolean`
+▸ **insertChars**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:588](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L588)*
+*Defined in [blessed.d.ts:599](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L599)*
 
 CSI Ps @ Insert Ps (Blank) Character(s) (default = 1) (ICH).
 
@@ -2967,7 +2957,7 @@ CSI Ps @ Insert Ps (Blank) Character(s) (default = 1) (ICH).
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -2978,7 +2968,7 @@ ___
 
 ▸ **insertColumns**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1325](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1325)*
+*Defined in [blessed.d.ts:1343](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1343)*
 
 ```
 CSI P m SP }
@@ -2999,15 +2989,15 @@ ___
 
 ###  insertLines
 
-▸ **insertLines**(param?: *`undefined` \| `number`*): `boolean`
+▸ **insertLines**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:608](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L608)*
+*Defined in [blessed.d.ts:620](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L620)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -3018,7 +3008,7 @@ ___
 
 ▸ **kbs**(): `boolean`
 
-*Defined in [blessed.d.ts:340](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L340)*
+*Defined in [blessed.d.ts:344](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L344)*
 
 **Returns:** `boolean`
 
@@ -3029,7 +3019,7 @@ ___
 
 ▸ **key**(key: *`string` \| `string`[]*, l: *[KeyEventListener](api-modules-blessed-d-widgets.md#keyeventlistener)*): `void`
 
-*Defined in [blessed.d.ts:269](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L269)*
+*Defined in [blessed.d.ts:273](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L273)*
 
 **Parameters:**
 
@@ -3045,15 +3035,15 @@ ___
 
 ###  left
 
-▸ **left**(param?: *`undefined` \| `number`*): `boolean`
+▸ **left**(n?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:417](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L417)*
+*Defined in [blessed.d.ts:426](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L426)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` n | `number` |
 
 **Returns:** `boolean`
 
@@ -3064,7 +3054,7 @@ ___
 
 ▸ **lineHeight**(): `boolean`
 
-*Defined in [blessed.d.ts:376](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L376)*
+*Defined in [blessed.d.ts:380](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L380)*
 
 **Returns:** `boolean`
 
@@ -3073,15 +3063,15 @@ ___
 
 ###  linePosAbsolute
 
-▸ **linePosAbsolute**(param?: *`undefined` \| `number`*): `boolean`
+▸ **linePosAbsolute**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:628](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L628)*
+*Defined in [blessed.d.ts:640](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L640)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -3092,7 +3082,7 @@ ___
 
 ▸ **listen**(): `void`
 
-*Defined in [blessed.d.ts:266](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L266)*
+*Defined in [blessed.d.ts:270](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L270)*
 
 **Returns:** `void`
 
@@ -3107,7 +3097,7 @@ ___
 
 *Overrides EventEmitter.listenerCount*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:24*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:25*
 
 **Parameters:**
 
@@ -3128,7 +3118,7 @@ ___
 
 *Overrides EventEmitter.listeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:20*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:21*
 
 **Parameters:**
 
@@ -3143,15 +3133,15 @@ ___
 
 ###  loadLEDs
 
-▸ **loadLEDs**(param?: *`undefined` \| `number`*): `boolean`
+▸ **loadLEDs**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:999](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L999)*
+*Defined in [blessed.d.ts:1016](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1016)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -3162,9 +3152,9 @@ ___
 
 ▸ **log**(...args: *`any`[]*): `boolean`
 
-*Defined in [blessed.d.ts:256](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L256)*
+*Defined in [blessed.d.ts:260](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L260)*
 
-writes arguments to [log](api-classes-blessed-d-blessedprogram.md#log) file passed in options
+Writes arguments to [log](api-classes-blessed-d-blessedprogram.md#log) file passed in options.
 
 **Parameters:**
 
@@ -3179,16 +3169,16 @@ ___
 
 ###  lrestoreCursor
 
-▸ **lrestoreCursor**(key?: *`undefined` \| `string`*, hide?: *`undefined` \| `false` \| `true`*): `void`
+▸ **lrestoreCursor**(key?: *`string`*, hide?: *`boolean`*): `void`
 
-*Defined in [blessed.d.ts:374](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L374)*
+*Defined in [blessed.d.ts:378](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L378)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` key | `undefined` \| `string` |
-| `Optional` hide | `undefined` \| `false` \| `true` |
+| `Optional` key | `string` |
+| `Optional` hide | `boolean` |
 
 **Returns:** `void`
 
@@ -3197,15 +3187,15 @@ ___
 
 ###  lsaveCursor
 
-▸ **lsaveCursor**(key?: *`undefined` \| `string`*): `void`
+▸ **lsaveCursor**(key?: *`string`*): `void`
 
-*Defined in [blessed.d.ts:373](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L373)*
+*Defined in [blessed.d.ts:377](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L377)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` key | `undefined` \| `string` |
+| `Optional` key | `string` |
 
 **Returns:** `void`
 
@@ -3218,19 +3208,9 @@ ___
 
 ▸ **manipulateWindow**(data1: *`number`*, c: *[ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback)*): `boolean`
 
-*Defined in [blessed.d.ts:1133](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1133)*
+*Defined in [blessed.d.ts:1150](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1150)*
 
-```
-CSI Ps ; Ps ; Ps t
-Window manipulation (from dtterm, as well as extensions).
-These controls may be disabled using the allowWindowOps
-resource.  Valid values for the first (and any additional
-parameters) are:
-```
-
-Ps = 1 -> De-iconify window. Ps = 2 -> Iconify window. Ps = 3 ; x ; y -> Move window to \[x, y\]. Ps = 4 ; height ; width -> Resize the xterm window to height and width in pixels. Ps = 5 -> Raise the xterm window to the front of the stack- ing order. Ps = 6 -> Lower the xterm window to the bottom of the stacking order. Ps = 7 -> Refresh the xterm window. Ps = 8 ; height ; width -> Resize the text area to \[height;width\] in characters. Ps = 9 ; 0 -> Restore maximized window. Ps = 9 ; 1 -> Maximize window (i.e., resize to screen size). Ps = 1 0 ; 0 -> Undo full-screen mode. Ps = 1 0 ; 1 -> Change to full-screen. Ps = 1 1 -> Report xterm window state. If the xterm window is open (non-iconified), it returns CSI 1 t . If the xterm window is iconified, it returns CSI 2 t . Ps = 1 3 -> Report xterm window position. Result is CSI 3 ; x ; y t Ps = 1 4 -> Report xterm window in pixels. Result is CSI 4 ; height ; width t Ps = 1 8 -> Report the size of the text area in characters. Result is CSI 8 ; height ; width t Ps = 1 9 -> Report the size of the screen in characters. Result is CSI 9 ; height ; width t Ps = 2 0 -> Report xterm window's icon label. Result is OSC L label ST Ps = 2 1 -> Report xterm window's title. Result is OSC l label ST Ps = 2 2 ; 0 -> Save xterm icon and window title on stack. Ps = 2 2 ; 1 -> Save xterm icon title on stack. Ps = 2 2 ; 2 -> Save xterm window title on stack. Ps = 2 3 ; 0 -> Restore xterm icon and window title from stack. Ps = 2 3 ; 1 -> Restore xterm icon title from stack. Ps = 2 3 ; 2 -> Restore xterm window title from stack. Ps >= 2 4 -> Resize to Ps lines (DECSLPP). Ps >= 2 4 -> Resize to Ps lines (DECSLPP).
-
-Example call: `` ` `` program.manipulateWindow(18, function(err:any, data:any) { program.log('manipulateWindow', data); });
+`` ` CSI Ps ; Ps ; Ps t Window manipulation (from dtterm, as well as extensions). These controls may be disabled using the allowWindowOps resource. Valid values for the first (and any additional parameters) are:````Ps = 1 -> De-iconify window. Ps = 2 -> Iconify window. Ps = 3 ; x ; y -> Move window to [x, y]. Ps = 4 ; height ; width -> Resize the xterm window to height and width in pixels. Ps = 5 -> Raise the xterm window to the front of the stack- ing order. Ps = 6 -> Lower the xterm window to the bottom of the stacking order. Ps = 7 -> Refresh the xterm window. Ps = 8 ; height ; width -> Resize the text area to [height;width] in characters. Ps = 9 ; 0 -> Restore maximized window. Ps = 9 ; 1 -> Maximize window (i.e., resize to screen size). Ps = 1 0 ; 0 -> Undo full-screen mode. Ps = 1 0 ; 1 -> Change to full-screen. Ps = 1 1 -> Report xterm window state. If the xterm window is open (non-iconified), it returns CSI 1 t . If the xterm window is iconified, it returns CSI 2 t . Ps = 1 3 -> Report xterm window position. Result is CSI 3 ; x ; y t Ps = 1 4 -> Report xterm window in pixels. Result is CSI 4 ; height ; width t Ps = 1 8 -> Report the size of the text area in characters. Result is CSI 8 ; height ; width t Ps = 1 9 -> Report the size of the screen in characters. Result is CSI 9 ; height ; width t Ps = 2 0 -> Report xterm window's icon label. Result is OSC L label ST Ps = 2 1 -> Report xterm window's title. Result is OSC l label ST Ps = 2 2 ; 0 -> Save xterm icon and window title on stack. Ps = 2 2 ; 1 -> Save xterm icon title on stack. Ps = 2 2 ; 2 -> Save xterm window title on stack. Ps = 2 3 ; 0 -> Restore xterm icon and window title from stack. Ps = 2 3 ; 1 -> Restore xterm icon title from stack. Ps = 2 3 ; 2 -> Restore xterm window title from stack. Ps >= 2 4 -> Resize to Ps lines (DECSLPP). Ps >= 2 4 -> Resize to Ps lines (DECSLPP). ` ```` ` ````Example call: ` ``\` program.manipulateWindow(18, function(err:any, data:any) { program.log('manipulateWindow', data); });
 
 `` ` ``
 
@@ -3244,7 +3224,7 @@ Example call: `` ` `` program.manipulateWindow(18, function(err:any, data:any) {
 
 **Returns:** `boolean`
 
-*Defined in [blessed.d.ts:1135](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1135)*
+*Defined in [blessed.d.ts:1152](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1152)*
 
 **Parameters:**
 
@@ -3262,7 +3242,7 @@ ___
 
 ▸ **mc**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:948](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L948)*
+*Defined in [blessed.d.ts:965](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L965)*
 
 **Parameters:**
 
@@ -3279,7 +3259,7 @@ ___
 
 ▸ **mc0**(): `boolean`
 
-*Defined in [blessed.d.ts:950](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L950)*
+*Defined in [blessed.d.ts:967](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L967)*
 
 **Returns:** `boolean`
 
@@ -3290,7 +3270,7 @@ ___
 
 ▸ **mc4**(): `boolean`
 
-*Defined in [blessed.d.ts:958](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L958)*
+*Defined in [blessed.d.ts:975](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L975)*
 
 **Returns:** `boolean`
 
@@ -3301,7 +3281,7 @@ ___
 
 ▸ **mc5**(): `boolean`
 
-*Defined in [blessed.d.ts:954](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L954)*
+*Defined in [blessed.d.ts:971](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L971)*
 
 **Returns:** `boolean`
 
@@ -3312,7 +3292,7 @@ ___
 
 ▸ **mc5p**(): `boolean`
 
-*Defined in [blessed.d.ts:962](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L962)*
+*Defined in [blessed.d.ts:979](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L979)*
 
 **Returns:** `boolean`
 
@@ -3323,7 +3303,7 @@ ___
 
 ▸ **mediaCopy**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:947](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L947)*
+*Defined in [blessed.d.ts:964](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L964)*
 
 **Parameters:**
 
@@ -3340,7 +3320,7 @@ ___
 
 ▸ **move**(x: *`number`*, y: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:299](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L299)*
+*Defined in [blessed.d.ts:303](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L303)*
 
 **Parameters:**
 
@@ -3358,7 +3338,7 @@ ___
 
 ▸ **newline**(): `boolean`
 
-*Defined in [blessed.d.ts:353](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L353)*
+*Defined in [blessed.d.ts:357](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L357)*
 
 **Returns:** `boolean`
 
@@ -3369,7 +3349,7 @@ ___
 
 ▸ **nextLine**(): `boolean`
 
-*Defined in [blessed.d.ts:363](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L363)*
+*Defined in [blessed.d.ts:367](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L367)*
 
 **Returns:** `boolean`
 
@@ -3380,7 +3360,7 @@ ___
 
 ▸ **nl**(): `boolean`
 
-*Defined in [blessed.d.ts:354](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L354)*
+*Defined in [blessed.d.ts:358](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L358)*
 
 **Returns:** `boolean`
 
@@ -3391,7 +3371,7 @@ ___
 
 ▸ **normalBuffer**(): `boolean`
 
-*Defined in [blessed.d.ts:844](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L844)*
+*Defined in [blessed.d.ts:856](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L856)*
 
 **Returns:** `boolean`
 
@@ -3402,7 +3382,7 @@ ___
 
 ▸ **nul**(): `boolean`
 
-*Defined in [blessed.d.ts:329](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L329)*
+*Defined in [blessed.d.ts:333](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L333)*
 
 **Returns:** `boolean`
 
@@ -3417,7 +3397,7 @@ ___
 
 *Overrides EventEmitter.off*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:16*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:17*
 
 **Parameters:**
 
@@ -3435,7 +3415,7 @@ ___
 
 ▸ **omove**(x: *`number`*, y: *`number`*): `void`
 
-*Defined in [blessed.d.ts:300](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L300)*
+*Defined in [blessed.d.ts:304](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L304)*
 
 **Parameters:**
 
@@ -3467,7 +3447,7 @@ ___
 
 *Overrides EventEmitter.on*
 
-*Defined in [blessed.d.ts:1349](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1349)*
+*Defined in [blessed.d.ts:1367](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1367)*
 
 triggered when native events in the host terminal window
 
@@ -3482,7 +3462,7 @@ triggered when native events in the host terminal window
 
 *Overrides EventEmitter.on*
 
-*Defined in [blessed.d.ts:1352](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1352)*
+*Defined in [blessed.d.ts:1370](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1370)*
 
 triggered when the terminal window is resized.
 
@@ -3497,7 +3477,7 @@ triggered when the terminal window is resized.
 
 *Overrides EventEmitter.on*
 
-*Defined in [blessed.d.ts:1354](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1354)*
+*Defined in [blessed.d.ts:1372](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1372)*
 
 triggered when the terminal window gains focus n the host window manager. For exmmple when the user switchst form another application to the terminal with ctrl-tab. Notice that these are native events, ocurring outside the terminal application.
 
@@ -3512,7 +3492,7 @@ triggered when the terminal window gains focus n the host window manager. For ex
 
 *Overrides EventEmitter.on*
 
-*Defined in [blessed.d.ts:1356](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1356)*
+*Defined in [blessed.d.ts:1374](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1374)*
 
 triggered when the terminal window loose focus host window manager. For exmmple when the user switchs from the shell to another form another application . Notice that these are native events, ocurring outside the terminal application.
 
@@ -3527,7 +3507,7 @@ triggered when the terminal window loose focus host window manager. For exmmple 
 
 *Overrides EventEmitter.on*
 
-*Defined in [blessed.d.ts:1358](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1358)*
+*Defined in [blessed.d.ts:1376](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1376)*
 
 **Parameters:**
 
@@ -3540,7 +3520,7 @@ triggered when the terminal window loose focus host window manager. For exmmple 
 
 *Overrides EventEmitter.on*
 
-*Defined in [blessed.d.ts:1361](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1361)*
+*Defined in [blessed.d.ts:1379](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1379)*
 
 Received when blessed notices something untoward (output is not a tty, terminfo not found, etc).
 
@@ -3555,7 +3535,7 @@ Received when blessed notices something untoward (output is not a tty, terminfo 
 
 *Overrides EventEmitter.on*
 
-*Defined in [blessed.d.ts:1362](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1362)*
+*Defined in [blessed.d.ts:1380](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1380)*
 
 **Parameters:**
 
@@ -3577,7 +3557,7 @@ ___
 
 *Overrides EventEmitter.once*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:12*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:13*
 
 **Parameters:**
 
@@ -3595,7 +3575,7 @@ ___
 
 ▸ **onceKey**(key: *`string` \| `string`[]*, l: *[KeyEventListener](api-modules-blessed-d-widgets.md#keyeventlistener)*): `void`
 
-*Defined in [blessed.d.ts:270](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L270)*
+*Defined in [blessed.d.ts:274](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L274)*
 
 **Parameters:**
 
@@ -3613,7 +3593,7 @@ ___
 
 ▸ **out**(param: *`string`*, ...args: *`any`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1340](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1340)*
+*Defined in [blessed.d.ts:1358](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1358)*
 
 **Parameters:**
 
@@ -3631,7 +3611,7 @@ ___
 
 ▸ **p0**(): `boolean`
 
-*Defined in [blessed.d.ts:964](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L964)*
+*Defined in [blessed.d.ts:981](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L981)*
 
 **Returns:** `boolean`
 
@@ -3642,7 +3622,7 @@ ___
 
 ▸ **pause**(callback?: *[ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback)*): `Function`
 
-*Defined in [blessed.d.ts:1344](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1344)*
+*Defined in [blessed.d.ts:1362](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1362)*
 
 **Parameters:**
 
@@ -3659,7 +3639,7 @@ ___
 
 ▸ **pf**(): `boolean`
 
-*Defined in [blessed.d.ts:960](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L960)*
+*Defined in [blessed.d.ts:977](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L977)*
 
 **Returns:** `boolean`
 
@@ -3670,7 +3650,7 @@ ___
 
 ▸ **po**(): `boolean`
 
-*Defined in [blessed.d.ts:956](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L956)*
+*Defined in [blessed.d.ts:973](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L973)*
 
 **Returns:** `boolean`
 
@@ -3679,9 +3659,9 @@ ___
 
 ###  pos
 
-▸ **pos**(row?: *`undefined` \| `number`*, col?: *`undefined` \| `number`*): `boolean`
+▸ **pos**(row?: *`number`*, col?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:433](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L433)*
+*Defined in [blessed.d.ts:442](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L442)*
 
 CSI Ps ; Ps H Cursor Position \[ row;column \] (default = \[ 1,1 \]) (CUP).
 
@@ -3689,8 +3669,8 @@ CSI Ps ; Ps H Cursor Position \[ row;column \] (default = \[ 1,1 \]) (CUP).
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` row | `undefined` \| `number` |
-| `Optional` col | `undefined` \| `number` |
+| `Optional` row | `number` |
+| `Optional` col | `number` |
 
 **Returns:** `boolean`
 
@@ -3705,7 +3685,7 @@ ___
 
 *Overrides EventEmitter.prependListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:13*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:14*
 
 **Parameters:**
 
@@ -3727,7 +3707,7 @@ ___
 
 *Overrides EventEmitter.prependOnceListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:14*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:15*
 
 **Parameters:**
 
@@ -3743,9 +3723,9 @@ ___
 
 ###  print
 
-▸ **print**(text: *`string`*, attr?: *`undefined` \| `false` \| `true`*): `boolean`
+▸ **print**(text: *`string`*, attr?: *`boolean`*): `boolean`
 
-*Defined in [blessed.d.ts:294](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L294)*
+*Defined in [blessed.d.ts:298](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L298)*
 
 Determines whether to include text attributes when writing.
 
@@ -3754,7 +3734,7 @@ Determines whether to include text attributes when writing.
 | Name | Type |
 | ------ | ------ |
 | text | `string` |
-| `Optional` attr | `undefined` \| `false` \| `true` |
+| `Optional` attr | `boolean` |
 
 **Returns:** `boolean`
 
@@ -3765,7 +3745,7 @@ ___
 
 ▸ **print_screen**(): `boolean`
 
-*Defined in [blessed.d.ts:951](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L951)*
+*Defined in [blessed.d.ts:968](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L968)*
 
 **Returns:** `boolean`
 
@@ -3776,7 +3756,7 @@ ___
 
 ▸ **prtr_non**(): `boolean`
 
-*Defined in [blessed.d.ts:963](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L963)*
+*Defined in [blessed.d.ts:980](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L980)*
 
 **Returns:** `boolean`
 
@@ -3787,7 +3767,7 @@ ___
 
 ▸ **prtr_off**(): `boolean`
 
-*Defined in [blessed.d.ts:959](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L959)*
+*Defined in [blessed.d.ts:976](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L976)*
 
 **Returns:** `boolean`
 
@@ -3798,7 +3778,7 @@ ___
 
 ▸ **prtr_on**(): `boolean`
 
-*Defined in [blessed.d.ts:955](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L955)*
+*Defined in [blessed.d.ts:972](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L972)*
 
 **Returns:** `boolean`
 
@@ -3809,7 +3789,7 @@ ___
 
 ▸ **ps**(): `boolean`
 
-*Defined in [blessed.d.ts:952](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L952)*
+*Defined in [blessed.d.ts:969](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L969)*
 
 **Returns:** `boolean`
 
@@ -3824,7 +3804,7 @@ ___
 
 *Overrides EventEmitter.rawListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:21*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:22*
 
 **Parameters:**
 
@@ -3839,16 +3819,16 @@ ___
 
 ###  rc
 
-▸ **rc**(key?: *`undefined` \| `string`*, hide?: *`undefined` \| `false` \| `true`*): `boolean`
+▸ **rc**(key?: *`string`*, hide?: *`boolean`*): `boolean`
 
-*Defined in [blessed.d.ts:371](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L371)*
+*Defined in [blessed.d.ts:375](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L375)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` key | `undefined` \| `string` |
-| `Optional` hide | `undefined` \| `false` \| `true` |
+| `Optional` key | `string` |
+| `Optional` hide | `boolean` |
 
 **Returns:** `boolean`
 
@@ -3859,9 +3839,9 @@ ___
 
 ▸ **rcA**(): `boolean`
 
-*Defined in [blessed.d.ts:897](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L897)*
+*Defined in [blessed.d.ts:913](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L913)*
 
-*__see__*: restoreCursorA
+*__see__*: [restoreCursorA](api-classes-blessed-d-blessedprogram.md#restorecursora)
 
 **Returns:** `boolean`
 
@@ -3876,7 +3856,7 @@ ___
 
 *Overrides EventEmitter.removeAllListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:17*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:18*
 
 **Parameters:**
 
@@ -3893,7 +3873,7 @@ ___
 
 ▸ **removeKey**(key: *`string` \| `string`[]*, l: *[KeyEventListener](api-modules-blessed-d-widgets.md#keyeventlistener)*): `void`
 
-*Defined in [blessed.d.ts:273](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L273)*
+*Defined in [blessed.d.ts:277](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L277)*
 
 **Parameters:**
 
@@ -3915,7 +3895,7 @@ ___
 
 *Overrides EventEmitter.removeListener*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:15*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:16*
 
 **Parameters:**
 
@@ -3931,15 +3911,15 @@ ___
 
 ###  rep
 
-▸ **rep**(param?: *`undefined` \| `number`*): `boolean`
+▸ **rep**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:942](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L942)*
+*Defined in [blessed.d.ts:959](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L959)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -3948,16 +3928,16 @@ ___
 
 ###  repeat
 
-▸ **repeat**(ch: *`string`*, i?: *`undefined` \| `number`*): `string`
+▸ **repeat**(ch: *`string`*, i?: *`number`*): `string`
 
-*Defined in [blessed.d.ts:308](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L308)*
+*Defined in [blessed.d.ts:312](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L312)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | ch | `string` |
-| `Optional` i | `undefined` \| `number` |
+| `Optional` i | `number` |
 
 **Returns:** `string`
 
@@ -3966,15 +3946,15 @@ ___
 
 ###  repeatPrecedingCharacter
 
-▸ **repeatPrecedingCharacter**(param?: *`undefined` \| `number`*): `boolean`
+▸ **repeatPrecedingCharacter**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:941](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L941)*
+*Defined in [blessed.d.ts:958](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L958)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -3983,17 +3963,17 @@ ___
 
 ###  req_mouse_pos
 
-▸ **req_mouse_pos**(param?: *`undefined` \| `string`*, callback?: *[ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback)*): `boolean`
+▸ **req_mouse_pos**(param?: *`string`*, callback?: *[ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback)*): `boolean`
 
-*Defined in [blessed.d.ts:1314](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1314)*
+*Defined in [blessed.d.ts:1332](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1332)*
 
-*__see__*: requestLocatorPosition
+*__see__*: [requestLocatorPosition](api-classes-blessed-d-blessedprogram.md#requestlocatorposition)
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `string` |
+| `Optional` param | `string` |
 | `Optional` callback | [ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback) |
 
 **Returns:** `boolean`
@@ -4003,17 +3983,17 @@ ___
 
 ###  reqmp
 
-▸ **reqmp**(param?: *`undefined` \| `string`*, callback?: *[ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback)*): `boolean`
+▸ **reqmp**(param?: *`string`*, callback?: *[ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback)*): `boolean`
 
-*Defined in [blessed.d.ts:1312](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1312)*
+*Defined in [blessed.d.ts:1330](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1330)*
 
-*__see__*: requestLocatorPosition
+*__see__*: [requestLocatorPosition](api-classes-blessed-d-blessedprogram.md#requestlocatorposition)
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `string` |
+| `Optional` param | `string` |
 | `Optional` callback | [ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback) |
 
 **Returns:** `boolean`
@@ -4023,15 +4003,15 @@ ___
 
 ###  requestAnsiMode
 
-▸ **requestAnsiMode**(param?: *`undefined` \| `number`*): `boolean`
+▸ **requestAnsiMode**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:990](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L990)*
+*Defined in [blessed.d.ts:1007](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1007)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -4040,9 +4020,9 @@ ___
 
 ###  requestLocatorPosition
 
-▸ **requestLocatorPosition**(param?: *`undefined` \| `string`*, callback?: *[ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback)*): `boolean`
+▸ **requestLocatorPosition**(param?: *`string`*, callback?: *[ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback)*): `boolean`
 
-*Defined in [blessed.d.ts:1310](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1310)*
+*Defined in [blessed.d.ts:1328](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1328)*
 
 `` ` `` CSI Ps ' \| Request Locator Position (DECRQLP). Valid values for the parameter are: Ps = 0 , 1 or omitted -> transmit a single DECLRP locator report.
 
@@ -4050,13 +4030,13 @@ If Locator Reporting has been enabled by a DECELR, xterm will respond with a DEC
 
 \-> CSI Pe ; Pb ; Pr ; Pc ; Pp & w
 
-Parameters are \[event;button;row;column;page\]. Valid values for the event: Pe = 0 -> locator unavailable - no other parameters sent. Pe = 1 -> request - xterm received a DECRQLP. Pe = 2 -> left button down. Pe = 3 -> left button up. Pe = 4 -> middle button down. Pe = 5 -> middle button up. Pe = 6 -> right button down. Pe = 7 -> right button up. Pe = 8 -> M4 button down. Pe = 9 -> M4 button up. Pe = 1 0 -> locator outside filter rectangle. `button'' parameter is a bitmask indicating which buttons are pressed: Pb = 0 <- no buttons down. Pb & 1 <- right button down. Pb & 2 <- middle button down. Pb & 4 <- left button down. Pb & 8 <- M4 button down.`row'' and `column'' parameters are the coordinates of the locator position in the xterm window, encoded as ASCII deci- mal. The`page'' parameter is not used by xterm, and will be omit- ted. `` ` ``
+Parameters are \[event;button;row;column;page\]. Valid values for the event: Pe = 0 -> locator unavailable - no other parameters sent. Pe = 1 -> request - xterm received a DECRQLP. Pe = 2 -> left button down. Pe = 3 -> left button up. Pe = 4 -> middle button down. Pe = 5 -> middle button up. Pe = 6 -> right button down. Pe = 7 -> right button up. Pe = 8 -> M4 button down. Pe = 9 -> M4 button up. Pe = 1 0 -> locator outside filter rectangle. `button'' parameter is a bitmask indicating which buttons are pressed: Pb = 0 <- no buttons down. Pb & 1 <- right button down. Pb & 2 <- middle button down. Pb & 4 <- left button down. Pb & 8 <- M4 button down.`row'' and`column'' parameters are the coordinates of the locator position in the xterm window, encoded as ASCII deci- mal. The`page'' parameter is not used by xterm, and will be omit- ted. `` ` ``
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `string` |
+| `Optional` param | `string` |
 | `Optional` callback | [ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback) |
 
 **Returns:** `boolean`
@@ -4066,9 +4046,9 @@ ___
 
 ###  requestParameters
 
-▸ **requestParameters**(param?: *`undefined` \| `number`*): `boolean`
+▸ **requestParameters**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:1207](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1207)*
+*Defined in [blessed.d.ts:1225](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1225)*
 
 ```
 CSI Ps x  Request Terminal Parameters (DECREQTPARM).
@@ -4088,7 +4068,7 @@ Pn = 0  <- STP flags.
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -4097,15 +4077,15 @@ ___
 
 ###  requestPrivateMode
 
-▸ **requestPrivateMode**(param?: *`undefined` \| `number`*): `boolean`
+▸ **requestPrivateMode**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:993](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L993)*
+*Defined in [blessed.d.ts:1010](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1010)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -4116,7 +4096,7 @@ ___
 
 ▸ **reset**(): `boolean`
 
-*Defined in [blessed.d.ts:364](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L364)*
+*Defined in [blessed.d.ts:368](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L368)*
 
 **Returns:** `boolean`
 
@@ -4125,15 +4105,15 @@ ___
 
 ###  resetColors
 
-▸ **resetColors**(param?: *`undefined` \| `string`*): `boolean`
+▸ **resetColors**(param?: *`string`*): `boolean`
 
-*Defined in [blessed.d.ts:392](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L392)*
+*Defined in [blessed.d.ts:396](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L396)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `string` |
+| `Optional` param | `string` |
 
 **Returns:** `boolean`
 
@@ -4144,7 +4124,7 @@ ___
 
 ▸ **resetCursor**(): `boolean`
 
-*Defined in [blessed.d.ts:314](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L314)*
+*Defined in [blessed.d.ts:318](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L318)*
 
 **Returns:** `boolean`
 
@@ -4155,11 +4135,90 @@ ___
 
 ▸ **resetMode**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:832](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L832)*
+*Defined in [blessed.d.ts:844](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L844)*
 
-`` ` ``
-
-CSI Pm l Reset Mode (RM). Ps = 2 -> Keyboard Action Mode (AM). Ps = 4 -> Replace Mode (IRM). Ps = 1 2 -> Send/receive (SRM). Ps = 2 0 -> Normal Linefeed (LNM). CSI ? Pm l DEC Private Mode Reset (DECRST). Ps = 1 -> Normal Cursor Keys (DECCKM). Ps = 2 -> Designate VT52 mode (DECANM). Ps = 3 -> 80 Column Mode (DECCOLM). Ps = 4 -> Jump (Fast) Scroll (DECSCLM). Ps = 5 -> Normal Video (DECSCNM). Ps = 6 -> Normal Cursor Mode (DECOM). Ps = 7 -> No Wraparound Mode (DECAWM). Ps = 8 -> No Auto-repeat Keys (DECARM). Ps = 9 -> Don't send Mouse X & Y on button press. Ps = 1 0 -> Hide toolbar (rxvt). Ps = 1 2 -> Stop Blinking Cursor (att610). Ps = 1 8 -> Don't print form feed (DECPFF). Ps = 1 9 -> Limit print to scrolling region (DECPEX). Ps = 2 5 -> Hide Cursor (DECTCEM). Ps = 3 0 -> Don't show scrollbar (rxvt). Ps = 3 5 -> Disable font-shifting functions (rxvt). Ps = 4 0 -> Disallow 80 -> 132 Mode. Ps = 4 1 -> No more(1) fix (see curses resource). Ps = 4 2 -> Disable Nation Replacement Character sets (DEC- NRCM). Ps = 4 4 -> Turn Off Margin Bell. Ps = 4 5 -> No Reverse-wraparound Mode. Ps = 4 6 -> Stop Logging. (This is normally disabled by a compile-time option). Ps = 4 7 -> Use Normal Screen Buffer. Ps = 6 6 -> Numeric keypad (DECNKM). Ps = 6 7 -> Backarrow key sends delete (DECBKM). Ps = 1 0 0 0 -> Don't send Mouse X & Y on button press and release. See the section Mouse Tracking. Ps = 1 0 0 1 -> Don't use Hilite Mouse Tracking. Ps = 1 0 0 2 -> Don't use Cell Motion Mouse Tracking. Ps = 1 0 0 3 -> Don't use All Motion Mouse Tracking. Ps = 1 0 0 4 -> Don't send FocusIn/FocusOut events. Ps = 1 0 0 5 -> Disable Extended Mouse Mode. Ps = 1 0 1 0 -> Don't scroll to bottom on tty output (rxvt). Ps = 1 0 1 1 -> Don't scroll to bottom on key press (rxvt). Ps = 1 0 3 4 -> Don't interpret "meta" key. (This disables the eightBitInput resource). Ps = 1 0 3 5 -> Disable special modifiers for Alt and Num- Lock keys. (This disables the numLock resource). Ps = 1 0 3 6 -> Don't send ESC when Meta modifies a key. (This disables the metaSendsEscape resource). Ps = 1 0 3 7 -> Send VT220 Remove from the editing-keypad Delete key. Ps = 1 0 3 9 -> Don't send ESC when Alt modifies a key. (This disables the altSendsEscape resource). Ps = 1 0 4 0 -> Do not keep selection when not highlighted. (This disables the keepSelection resource). Ps = 1 0 4 1 -> Use the PRIMARY selection. (This disables the selectToClipboard resource). Ps = 1 0 4 2 -> Disable Urgency window manager hint when Control-G is received. (This disables the bellIsUrgent resource). Ps = 1 0 4 3 -> Disable raising of the window when Control- G is received. (This disables the popOnBell resource). Ps = 1 0 4 7 -> Use Normal Screen Buffer, clearing screen first if in the Alternate Screen. (This may be disabled by the titeInhibit resource). Ps = 1 0 4 8 -> Restore cursor as in DECRC. (This may be disabled by the titeInhibit resource). Ps = 1 0 4 9 -> Use Normal Screen Buffer and restore cursor as in DECRC. (This may be disabled by the titeInhibit resource). This combines the effects of the 1 0 4 7 and 1 0 4 8 modes. Use this with terminfo-based applications rather than the 4 7 mode. Ps = 1 0 5 0 -> Reset terminfo/termcap function-key mode. Ps = 1 0 5 1 -> Reset Sun function-key mode. Ps = 1 0 5 2 -> Reset HP function-key mode. Ps = 1 0 5 3 -> Reset SCO function-key mode. Ps = 1 0 6 0 -> Reset legacy keyboard emulation (X11R6). Ps = 1 0 6 1 -> Reset keyboard emulation to Sun/PC style. Ps = 2 0 0 4 -> Reset bracketed paste mode. `` ` ``
+```
+CSI Pm l  Reset Mode (RM).
+Ps = 2  -> Keyboard Action Mode (AM).
+Ps = 4  -> Replace Mode (IRM).
+Ps = 1 2  -> Send/receive (SRM).
+Ps = 2 0  -> Normal Linefeed (LNM).
+CSI ? Pm l
+DEC Private Mode Reset (DECRST).
+Ps = 1  -> Normal Cursor Keys (DECCKM).
+Ps = 2  -> Designate VT52 mode (DECANM).
+Ps = 3  -> 80 Column Mode (DECCOLM).
+Ps = 4  -> Jump (Fast) Scroll (DECSCLM).
+Ps = 5  -> Normal Video (DECSCNM).
+Ps = 6  -> Normal Cursor Mode (DECOM).
+Ps = 7  -> No Wraparound Mode (DECAWM).
+Ps = 8  -> No Auto-repeat Keys (DECARM).
+Ps = 9  -> Don't send Mouse X & Y on button press.
+Ps = 1 0  -> Hide toolbar (rxvt).
+Ps = 1 2  -> Stop Blinking Cursor (att610).
+Ps = 1 8  -> Don't print form feed (DECPFF).
+Ps = 1 9  -> Limit print to scrolling region (DECPEX).
+Ps = 2 5  -> Hide Cursor (DECTCEM).
+Ps = 3 0  -> Don't show scrollbar (rxvt).
+Ps = 3 5  -> Disable font-shifting functions (rxvt).
+Ps = 4 0  -> Disallow 80 -> 132 Mode.
+Ps = 4 1  -> No more(1) fix (see curses resource).
+Ps = 4 2  -> Disable Nation Replacement Character sets (DEC-
+NRCM).
+Ps = 4 4  -> Turn Off Margin Bell.
+Ps = 4 5  -> No Reverse-wraparound Mode.
+Ps = 4 6  -> Stop Logging.  (This is normally disabled by a
+compile-time option).
+Ps = 4 7  -> Use Normal Screen Buffer.
+Ps = 6 6  -> Numeric keypad (DECNKM).
+Ps = 6 7  -> Backarrow key sends delete (DECBKM).
+Ps = 1 0 0 0  -> Don't send Mouse X & Y on button press and
+release.  See the section Mouse Tracking.
+Ps = 1 0 0 1  -> Don't use Hilite Mouse Tracking.
+Ps = 1 0 0 2  -> Don't use Cell Motion Mouse Tracking.
+Ps = 1 0 0 3  -> Don't use All Motion Mouse Tracking.
+Ps = 1 0 0 4  -> Don't send FocusIn/FocusOut events.
+Ps = 1 0 0 5  -> Disable Extended Mouse Mode.
+Ps = 1 0 1 0  -> Don't scroll to bottom on tty output
+(rxvt).
+Ps = 1 0 1 1  -> Don't scroll to bottom on key press (rxvt).
+Ps = 1 0 3 4  -> Don't interpret "meta" key.  (This disables
+the eightBitInput resource).
+Ps = 1 0 3 5  -> Disable special modifiers for Alt and Num-
+Lock keys.  (This disables the numLock resource).
+Ps = 1 0 3 6  -> Don't send ESC  when Meta modifies a key.
+(This disables the metaSendsEscape resource).
+Ps = 1 0 3 7  -> Send VT220 Remove from the editing-keypad
+Delete key.
+Ps = 1 0 3 9  -> Don't send ESC  when Alt modifies a key.
+(This disables the altSendsEscape resource).
+Ps = 1 0 4 0  -> Do not keep selection when not highlighted.
+(This disables the keepSelection resource).
+Ps = 1 0 4 1  -> Use the PRIMARY selection.  (This disables
+the selectToClipboard resource).
+Ps = 1 0 4 2  -> Disable Urgency window manager hint when
+Control-G is received.  (This disables the bellIsUrgent
+resource).
+Ps = 1 0 4 3  -> Disable raising of the window when Control-
+G is received.  (This disables the popOnBell resource).
+Ps = 1 0 4 7  -> Use Normal Screen Buffer, clearing screen
+first if in the Alternate Screen.  (This may be disabled by
+the titeInhibit resource).
+Ps = 1 0 4 8  -> Restore cursor as in DECRC.  (This may be
+disabled by the titeInhibit resource).
+Ps = 1 0 4 9  -> Use Normal Screen Buffer and restore cursor
+as in DECRC.  (This may be disabled by the titeInhibit
+resource).  This combines the effects of the 1 0 4 7  and 1 0
+4 8  modes.  Use this with terminfo-based applications rather
+than the 4 7  mode.
+Ps = 1 0 5 0  -> Reset terminfo/termcap function-key mode.
+Ps = 1 0 5 1  -> Reset Sun function-key mode.
+Ps = 1 0 5 2  -> Reset HP function-key mode.
+Ps = 1 0 5 3  -> Reset SCO function-key mode.
+Ps = 1 0 6 0  -> Reset legacy keyboard emulation (X11R6).
+Ps = 1 0 6 1  -> Reset keyboard emulation to Sun/PC style.
+Ps = 2 0 0 4  -> Reset bracketed paste mode.
+```
 
 **Parameters:**
 
@@ -4176,7 +4235,7 @@ ___
 
 ▸ **resetTitleModes**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:934](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L934)*
+*Defined in [blessed.d.ts:951](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L951)*
 
 ```
 CSI > Ps; Ps T
@@ -4205,11 +4264,11 @@ ___
 
 ###  response
 
-▸ **response**(name: *`string`*, text: *`string`*, callback: *`Function`*, noBypass?: *`undefined` \| `false` \| `true`*): `boolean`
+▸ **response**(name: *`string`*, text: *`string`*, callback: *`Function`*, noBypass?: *`boolean`*): `boolean`
 
 ▸ **response**(name: *`string`*, callback?: *`Function`*): `boolean`
 
-*Defined in [blessed.d.ts:280](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L280)*
+*Defined in [blessed.d.ts:284](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L284)*
 
 **Parameters:**
 
@@ -4218,11 +4277,11 @@ ___
 | name | `string` |
 | text | `string` |
 | callback | `Function` |
-| `Optional` noBypass | `undefined` \| `false` \| `true` |
+| `Optional` noBypass | `boolean` |
 
 **Returns:** `boolean`
 
-*Defined in [blessed.d.ts:281](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L281)*
+*Defined in [blessed.d.ts:285](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L285)*
 
 **Parameters:**
 
@@ -4238,16 +4297,16 @@ ___
 
 ###  restoreCursor
 
-▸ **restoreCursor**(key?: *`undefined` \| `string`*, hide?: *`undefined` \| `false` \| `true`*): `boolean`
+▸ **restoreCursor**(key?: *`string`*, hide?: *`boolean`*): `boolean`
 
-*Defined in [blessed.d.ts:370](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L370)*
+*Defined in [blessed.d.ts:374](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L374)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` key | `undefined` \| `string` |
-| `Optional` hide | `undefined` \| `false` \| `true` |
+| `Optional` key | `string` |
+| `Optional` hide | `boolean` |
 
 **Returns:** `boolean`
 
@@ -4258,7 +4317,7 @@ ___
 
 ▸ **restoreCursorA**(): `boolean`
 
-*Defined in [blessed.d.ts:895](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L895)*
+*Defined in [blessed.d.ts:911](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L911)*
 
 ```
 CSI u
@@ -4274,7 +4333,7 @@ ___
 
 ▸ **restorePrivateValues**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1053](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1053)*
+*Defined in [blessed.d.ts:1070](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1070)*
 
 ```
 CSI ? Pm r
@@ -4297,7 +4356,7 @@ ___
 
 ▸ **return**(): `boolean`
 
-*Defined in [blessed.d.ts:349](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L349)*
+*Defined in [blessed.d.ts:353](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L353)*
 
 **Returns:** `boolean`
 
@@ -4308,7 +4367,7 @@ ___
 
 ▸ **reverse**(): `boolean`
 
-*Defined in [blessed.d.ts:360](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L360)*
+*Defined in [blessed.d.ts:364](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L364)*
 
 **Returns:** `boolean`
 
@@ -4319,7 +4378,7 @@ ___
 
 ▸ **reverseAttrInRectangle**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1139](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1139)*
+*Defined in [blessed.d.ts:1156](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1156)*
 
 **Parameters:**
 
@@ -4336,7 +4395,7 @@ ___
 
 ▸ **reverseIndex**(): `boolean`
 
-*Defined in [blessed.d.ts:359](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L359)*
+*Defined in [blessed.d.ts:363](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L363)*
 
 **Returns:** `boolean`
 
@@ -4347,7 +4406,7 @@ ___
 
 ▸ **ri**(): `boolean`
 
-*Defined in [blessed.d.ts:361](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L361)*
+*Defined in [blessed.d.ts:365](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L365)*
 
 **Returns:** `boolean`
 
@@ -4356,15 +4415,15 @@ ___
 
 ###  right
 
-▸ **right**(param?: *`undefined` \| `number`*): `boolean`
+▸ **right**(n?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:412](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L412)*
+*Defined in [blessed.d.ts:421](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L421)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` n | `number` |
 
 **Returns:** `boolean`
 
@@ -4375,9 +4434,9 @@ ___
 
 ▸ **rm**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:834](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L834)*
+*Defined in [blessed.d.ts:846](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L846)*
 
-*__see__*: resetMode
+*__see__*: [resetMode](api-classes-blessed-d-blessedprogram.md#resetmode)
 
 **Parameters:**
 
@@ -4394,7 +4453,7 @@ ___
 
 ▸ **rmacs**(): `boolean`
 
-*Defined in [blessed.d.ts:386](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L386)*
+*Defined in [blessed.d.ts:390](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L390)*
 
 **Returns:** `boolean`
 
@@ -4405,7 +4464,7 @@ ___
 
 ▸ **rmcup**(): `boolean`
 
-*Defined in [blessed.d.ts:845](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L845)*
+*Defined in [blessed.d.ts:857](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L857)*
 
 **Returns:** `boolean`
 
@@ -4416,7 +4475,7 @@ ___
 
 ▸ **rmove**(x: *`number`*, y: *`number`*): `void`
 
-*Defined in [blessed.d.ts:303](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L303)*
+*Defined in [blessed.d.ts:307](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L307)*
 
 **Parameters:**
 
@@ -4434,7 +4493,7 @@ ___
 
 ▸ **rs2**(): `boolean`
 
-*Defined in [blessed.d.ts:987](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L987)*
+*Defined in [blessed.d.ts:1004](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1004)*
 
 **Returns:** `boolean`
 
@@ -4445,7 +4504,7 @@ ___
 
 ▸ **rsetx**(x: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:301](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L301)*
+*Defined in [blessed.d.ts:305](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L305)*
 
 **Parameters:**
 
@@ -4462,7 +4521,7 @@ ___
 
 ▸ **rsety**(y: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:302](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L302)*
+*Defined in [blessed.d.ts:306](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L306)*
 
 **Parameters:**
 
@@ -4479,7 +4538,7 @@ ___
 
 ▸ **saveCursor**(key: *`string`*): `boolean`
 
-*Defined in [blessed.d.ts:367](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L367)*
+*Defined in [blessed.d.ts:371](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L371)*
 
 **Parameters:**
 
@@ -4496,9 +4555,12 @@ ___
 
 ▸ **saveCursorA**(): `boolean`
 
-*Defined in [blessed.d.ts:885](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L885)*
+*Defined in [blessed.d.ts:901](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L901)*
 
-CSI s Save cursor (ANSI.SYS).
+```
+CSI s
+Save cursor (ANSI.SYS).
+```
 
 **Returns:** `boolean`
 
@@ -4509,7 +4571,7 @@ ___
 
 ▸ **savePrivateValues**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1069](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1069)*
+*Defined in [blessed.d.ts:1086](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1086)*
 
 Save DEC Private Mode Values. Ps values are the same as for
 
@@ -4528,7 +4590,7 @@ ___
 
 ▸ **saveReportedCursor**(callback: *[ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback)*): `void`
 
-*Defined in [blessed.d.ts:582](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L582)*
+*Defined in [blessed.d.ts:593](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L593)*
 
 **Parameters:**
 
@@ -4545,7 +4607,7 @@ ___
 
 ▸ **sc**(key: *`string`*): `boolean`
 
-*Defined in [blessed.d.ts:368](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L368)*
+*Defined in [blessed.d.ts:372](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L372)*
 
 **Parameters:**
 
@@ -4562,9 +4624,9 @@ ___
 
 ▸ **scA**(): `boolean`
 
-*Defined in [blessed.d.ts:887](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L887)*
+*Defined in [blessed.d.ts:903](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L903)*
 
-*__see__*: saveCursorA
+*__see__*: [saveCursorA](api-classes-blessed-d-blessedprogram.md#savecursora)
 
 **Returns:** `boolean`
 
@@ -4573,9 +4635,9 @@ ___
 
 ###  scrollDown
 
-▸ **scrollDown**(param?: *`undefined` \| `number`*): `boolean`
+▸ **scrollDown**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:908](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L908)*
+*Defined in [blessed.d.ts:924](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L924)*
 
 CSI Ps T Scroll down Ps lines (default = 1) (SD).
 
@@ -4583,7 +4645,7 @@ CSI Ps T Scroll down Ps lines (default = 1) (SD).
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -4592,9 +4654,9 @@ ___
 
 ###  scrollUp
 
-▸ **scrollUp**(param?: *`undefined` \| `number`*): `boolean`
+▸ **scrollUp**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:904](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L904)*
+*Defined in [blessed.d.ts:920](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L920)*
 
 CSI Ps S Scroll up Ps lines (default = 1) (SU).
 
@@ -4602,7 +4664,7 @@ CSI Ps S Scroll up Ps lines (default = 1) (SU).
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -4611,17 +4673,17 @@ ___
 
 ###  sd
 
-▸ **sd**(param?: *`undefined` \| `number`*): `boolean`
+▸ **sd**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:910](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L910)*
+*Defined in [blessed.d.ts:926](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L926)*
 
-*__see__*: scrollDown
+*__see__*: [scrollDown](api-classes-blessed-d-blessedprogram.md#scrolldown)
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -4632,7 +4694,7 @@ ___
 
 ▸ **selData**(a: *`string`*, b: *`string`*): `boolean`
 
-*Defined in [blessed.d.ts:400](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L400)*
+*Defined in [blessed.d.ts:404](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L404)*
 
 **Parameters:**
 
@@ -4648,9 +4710,9 @@ ___
 
 ###  selectChangeExtent
 
-▸ **selectChangeExtent**(param?: *`undefined` \| `number`*): `boolean`
+▸ **selectChangeExtent**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:1219](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1219)*
+*Defined in [blessed.d.ts:1237](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1237)*
 
 `` ` ``
 
@@ -4660,7 +4722,7 @@ CSI Ps x Select Attribute Change Extent (DECSACE). Ps = 0 -> from start to end p
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -4671,7 +4733,7 @@ ___
 
 ▸ **selectiveEraseRectangle**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1263](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1263)*
+*Defined in [blessed.d.ts:1281](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1281)*
 
 **Parameters:**
 
@@ -4686,15 +4748,15 @@ ___
 
 ###  sendDeviceAttributes
 
-▸ **sendDeviceAttributes**(param?: *`undefined` \| `number`*, callback?: *[ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback)*): `boolean`
+▸ **sendDeviceAttributes**(param?: *`number`*, callback?: *[ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback)*): `boolean`
 
-*Defined in [blessed.d.ts:625](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L625)*
+*Defined in [blessed.d.ts:637](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L637)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 | `Optional` callback | [ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback) |
 
 **Returns:** `boolean`
@@ -4706,7 +4768,7 @@ ___
 
 ▸ **setAttrInRectangle**(Pt: *`number`*, Pl: *`number`*, Pb: *`number`*, Pr: *`number`*, Ps$: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:1064](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1064)*
+*Defined in [blessed.d.ts:1081](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1081)*
 
 ```
 CSI Pt; Pl; Pb; Pr; Ps$ r
@@ -4733,9 +4795,9 @@ ___
 
 ###  setBackground
 
-▸ **setBackground**(color: *`string`*, val?: *`undefined` \| `string`*): `boolean`
+▸ **setBackground**(color: *`string`*, val?: *`string`*): `boolean`
 
-*Defined in [blessed.d.ts:540](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L540)*
+*Defined in [blessed.d.ts:551](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L551)*
 
 set the background color and character for the following writings to the output buffer. Example:
 
@@ -4755,7 +4817,7 @@ program.cup(0, 0);
 | Name | Type |
 | ------ | ------ |
 | color | `string` |
-| `Optional` val | `undefined` \| `string` |
+| `Optional` val | `string` |
 
 **Returns:** `boolean`
 
@@ -4764,9 +4826,9 @@ ___
 
 ###  setCharProtectionAttr
 
-▸ **setCharProtectionAttr**(param?: *`undefined` \| `number`*): `boolean`
+▸ **setCharProtectionAttr**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:1043](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1043)*
+*Defined in [blessed.d.ts:1060](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1060)*
 
 ```
 CSI Ps " q
@@ -4781,7 +4843,7 @@ Ps = 2  -> DECSED and DECSEL can erase.
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -4792,7 +4854,7 @@ ___
 
 ▸ **setConformanceLevel**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:996](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L996)*
+*Defined in [blessed.d.ts:1013](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1013)*
 
 **Parameters:**
 
@@ -4809,17 +4871,9 @@ ___
 
 ▸ **setCursorStyle**(cursor: *`0` \| `1` \| `2` \| `3` \| `4` \| "blinkingblock" \| "block" \| "steady block" \| "blinking underline" \| "underline" \| "steady underline" \| "blinking bar" \| "bar" \| "steady bar"*): `boolean`
 
-*Defined in [blessed.d.ts:1013](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1013)*
+*Defined in [blessed.d.ts:1030](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1030)*
 
-```
-CSI Ps SP q
-Set cursor style (DECSCUSR, VT520).
-Ps = 0  -> blinking block.
-Ps = 1  -> blinking block (default).
-Ps = 2  -> steady block.
-Ps = 3  -> blinking underline.
-Ps = 4  -> steady underline.
-```
+``` CSI Ps SP q Set cursor style (DECSCUSR, VT520). Ps = 0 -> blinking block. Ps = 1 -> blinking block (default). Ps = 2 -> steady block. Ps = 3 -> blinking underline. Ps = 4 -> steady underline. ` ``
 
 **Parameters:**
 
@@ -4834,9 +4888,9 @@ ___
 
 ###  setForeground
 
-▸ **setForeground**(color: *`string`*, val?: *`undefined` \| `string`*): `boolean`
+▸ **setForeground**(color: *`string`*, val?: *`string`*): `boolean`
 
-*Defined in [blessed.d.ts:523](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L523)*
+*Defined in [blessed.d.ts:534](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L534)*
 
 set the foreground color and character for the following writings to the output buffer. Example:
 
@@ -4856,7 +4910,7 @@ program.cup(0, 0);
 | Name | Type |
 | ------ | ------ |
 | color | `string` |
-| `Optional` val | `undefined` \| `string` |
+| `Optional` val | `string` |
 
 **Returns:** `boolean`
 
@@ -4867,7 +4921,7 @@ ___
 
 ▸ **setG**(val: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:388](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L388)*
+*Defined in [blessed.d.ts:392](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L392)*
 
 **Parameters:**
 
@@ -4884,7 +4938,7 @@ ___
 
 ▸ **setLocatorEvents**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1260](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1260)*
+*Defined in [blessed.d.ts:1278](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1278)*
 
 **Parameters:**
 
@@ -4899,15 +4953,15 @@ ___
 
 ###  setMarginBellVolume
 
-▸ **setMarginBellVolume**(param?: *`undefined` \| `number`*): `boolean`
+▸ **setMarginBellVolume**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:1157](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1157)*
+*Defined in [blessed.d.ts:1175](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1175)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -4922,7 +4976,7 @@ ___
 
 *Overrides EventEmitter.setMaxListeners*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:18*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:19*
 
 **Parameters:**
 
@@ -4939,94 +4993,9 @@ ___
 
 ▸ **setMode**(args: *`string`*, callback: *[ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback)*): `boolean`
 
-*Defined in [blessed.d.ts:733](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L733)*
+*Defined in [blessed.d.ts:745](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L745)*
 
-```
-CSI Pm h  Set Mode (SM).
-Ps = 2  -> Keyboard Action Mode (AM).
-Ps = 4  -> Insert Mode (IRM).
-Ps = 1 2  -> Send/receive (SRM).
-Ps = 2 0  -> Automatic Newline (LNM).
-CSI ? Pm h
-DEC Private Mode Set (DECSET).
-Ps = 1  -> Application Cursor Keys (DECCKM).
-Ps = 2  -> Designate USASCII for character sets G0-G3
-(DECANM), and set VT100 mode.
-Ps = 3  -> 132 Column Mode (DECCOLM).
-Ps = 4  -> Smooth (Slow) Scroll (DECSCLM).
-Ps = 5  -> Reverse Video (DECSCNM).
-Ps = 6  -> Origin Mode (DECOM).
-Ps = 7  -> Wraparound Mode (DECAWM).
-Ps = 8  -> Auto-repeat Keys (DECARM).
-Ps = 9  -> Send Mouse X & Y on button press.  See the sec-
-tion Mouse Tracking.
-Ps = 1 0  -> Show toolbar (rxvt).
-Ps = 1 2  -> Start Blinking Cursor (att610).
-Ps = 1 8  -> Print form feed (DECPFF).
-Ps = 1 9  -> Set print extent to full screen (DECPEX).
-Ps = 2 5  -> Show Cursor (DECTCEM).
-Ps = 3 0  -> Show scrollbar (rxvt).
-Ps = 3 5  -> Enable font-shifting functions (rxvt).
-Ps = 3 8  -> Enter Tektronix Mode (DECTEK).
-Ps = 4 0  -> Allow 80 -> 132 Mode.
-Ps = 4 1  -> more(1) fix (see curses resource).
-Ps = 4 2  -> Enable Nation Replacement Character sets (DECN-
-RCM).
-Ps = 4 4  -> Turn On Margin Bell.
-Ps = 4 5  -> Reverse-wraparound Mode.
-Ps = 4 6  -> Start Logging.  This is normally disabled by a
-compile-time option.
-Ps = 4 7  -> Use Alternate Screen Buffer.  (This may be dis-
-abled by the titeInhibit resource).
-Ps = 6 6  -> Application keypad (DECNKM).
-Ps = 6 7  -> Backarrow key sends backspace (DECBKM).
-Ps = 1 0 0 0  -> Send Mouse X & Y on button press and
-release.  See the section Mouse Tracking.
-Ps = 1 0 0 1  -> Use Hilite Mouse Tracking.
-Ps = 1 0 0 2  -> Use Cell Motion Mouse Tracking.
-Ps = 1 0 0 3  -> Use All Motion Mouse Tracking.
-Ps = 1 0 0 4  -> Send FocusIn/FocusOut events.
-Ps = 1 0 0 5  -> Enable Extended Mouse Mode.
-Ps = 1 0 1 0  -> Scroll to bottom on tty output (rxvt).
-Ps = 1 0 1 1  -> Scroll to bottom on key press (rxvt).
-Ps = 1 0 3 4  -> Interpret "meta" key, sets eighth bit.
-(enables the eightBitInput resource).
-Ps = 1 0 3 5  -> Enable special modifiers for Alt and Num-
-Lock keys.  (This enables the numLock resource).
-Ps = 1 0 3 6  -> Send ESC   when Meta modifies a key.  (This
-enables the metaSendsEscape resource).
-Ps = 1 0 3 7  -> Send DEL from the editing-keypad Delete
-key.
-Ps = 1 0 3 9  -> Send ESC  when Alt modifies a key.  (This
-enables the altSendsEscape resource).
-Ps = 1 0 4 0  -> Keep selection even if not highlighted.
-(This enables the keepSelection resource).
-Ps = 1 0 4 1  -> Use the CLIPBOARD selection.  (This enables
-the selectToClipboard resource).
-Ps = 1 0 4 2  -> Enable Urgency window manager hint when
-Control-G is received.  (This enables the bellIsUrgent
-resource).
-Ps = 1 0 4 3  -> Enable raising of the window when Control-G
-is received.  (enables the popOnBell resource).
-Ps = 1 0 4 7  -> Use Alternate Screen Buffer.  (This may be
-disabled by the titeInhibit resource).
-Ps = 1 0 4 8  -> Save cursor as in DECSC.  (This may be dis-
-abled by the titeInhibit resource).
-Ps = 1 0 4 9  -> Save cursor as in DECSC and use Alternate
-Screen Buffer, clearing it first.  (This may be disabled by
-the titeInhibit resource).  This combines the effects of the 1
-0 4 7  and 1 0 4 8  modes.  Use this with terminfo-based
-applications rather than the 4 7  mode.
-Ps = 1 0 5 0  -> Set terminfo/termcap function-key mode.
-Ps = 1 0 5 1  -> Set Sun function-key mode.
-Ps = 1 0 5 2  -> Set HP function-key mode.
-Ps = 1 0 5 3  -> Set SCO function-key mode.
-Ps = 1 0 6 0  -> Set legacy keyboard emulation (X11R6).
-Ps = 1 0 6 1  -> Set VT220 keyboard emulation.
-Ps = 2 0 0 4  -> Set bracketed paste mode.
-Modes:
-http://vt100.net/docs/vt220-rm/chapter4.html
-```
+`` ` CSI Pm h Set Mode (SM). Ps = 2 -> Keyboard Action Mode (AM). Ps = 4 -> Insert Mode (IRM). Ps = 1 2 -> Send/receive (SRM). Ps = 2 0 -> Automatic Newline (LNM). CSI ? Pm h DEC Private Mode Set (DECSET). Ps = 1 -> Application Cursor Keys (DECCKM). Ps = 2 -> Designate USASCII for character sets G0-G3 (DECANM), and set VT100 mode. Ps = 3 -> 132 Column Mode (DECCOLM). Ps = 4 -> Smooth (Slow) Scroll (DECSCLM). Ps = 5 -> Reverse Video (DECSCNM). Ps = 6 -> Origin Mode (DECOM). Ps = 7 -> Wraparound Mode (DECAWM). Ps = 8 -> Auto-repeat Keys (DECARM). Ps = 9 -> Send Mouse X & Y on button press. See the sec- tion Mouse Tracking. Ps = 1 0 -> Show toolbar (rxvt). Ps = 1 2 -> Start Blinking Cursor (att610). Ps = 1 8 -> Print form feed (DECPFF). Ps = 1 9 -> Set print extent to full screen (DECPEX). Ps = 2 5 -> Show Cursor (DECTCEM). Ps = 3 0 -> Show scrollbar (rxvt). Ps = 3 5 -> Enable font-shifting functions (rxvt). Ps = 3 8 -> Enter Tektronix Mode (DECTEK). Ps = 4 0 -> Allow 80 -> 132 Mode. Ps = 4 1 -> more(1) fix (see curses resource). Ps = 4 2 -> Enable Nation Replacement Character sets (DECN- RCM). Ps = 4 4 -> Turn On Margin Bell. Ps = 4 5 -> Reverse-wraparound Mode. Ps = 4 6 -> Start Logging. This is normally disabled by a compile-time option. Ps = 4 7 -> Use Alternate Screen Buffer. (This may be dis- abled by the titeInhibit resource). Ps = 6 6 -> Application keypad (DECNKM). Ps = 6 7 -> Backarrow key sends backspace (DECBKM). Ps = 1 0 0 0 -> Send Mouse X & Y on button press and release. See the section Mouse Tracking. Ps = 1 0 0 1 -> Use Hilite Mouse Tracking. Ps = 1 0 0 2 -> Use Cell Motion Mouse Tracking. Ps = 1 0 0 3 -> Use All Motion Mouse Tracking. Ps = 1 0 0 4 -> Send FocusIn/FocusOut events. Ps = 1 0 0 5 -> Enable Extended Mouse Mode. Ps = 1 0 1 0 -> Scroll to bottom on tty output (rxvt). Ps = 1 0 1 1 -> Scroll to bottom on key press (rxvt). Ps = 1 0 3 4 -> Interpret "meta" key, sets eighth bit. (enables the eightBitInput resource). Ps = 1 0 3 5 -> Enable special modifiers for Alt and Num- Lock keys. (This enables the numLock resource). Ps = 1 0 3 6 -> Send ESC when Meta modifies a key. (This enables the metaSendsEscape resource). Ps = 1 0 3 7 -> Send DEL from the editing-keypad Delete key. Ps = 1 0 3 9 -> Send ESC when Alt modifies a key. (This enables the altSendsEscape resource). Ps = 1 0 4 0 -> Keep selection even if not highlighted. (This enables the keepSelection resource). Ps = 1 0 4 1 -> Use the CLIPBOARD selection. (This enables the selectToClipboard resource). Ps = 1 0 4 2 -> Enable Urgency window manager hint when Control-G is received. (This enables the bellIsUrgent resource). Ps = 1 0 4 3 -> Enable raising of the window when Control-G is received. (enables the popOnBell resource). Ps = 1 0 4 7 -> Use Alternate Screen Buffer. (This may be disabled by the titeInhibit resource). Ps = 1 0 4 8 -> Save cursor as in DECSC. (This may be dis- abled by the titeInhibit resource). Ps = 1 0 4 9 -> Save cursor as in DECSC and use Alternate Screen Buffer, clearing it first. (This may be disabled by the titeInhibit resource). This combines the effects of the 1 0 4 7 and 1 0 4 8 modes. Use this with terminfo-based applications rather than the 4 7 mode. Ps = 1 0 5 0 -> Set terminfo/termcap function-key mode. Ps = 1 0 5 1 -> Set Sun function-key mode. Ps = 1 0 5 2 -> Set HP function-key mode. Ps = 1 0 5 3 -> Set SCO function-key mode. Ps = 1 0 6 0 -> Set legacy keyboard emulation (X11R6). Ps = 1 0 6 1 -> Set VT220 keyboard emulation. Ps = 2 0 0 4 -> Set bracketed paste mode. Modes: http://vt100.net/docs/vt220-rm/chapter4.html``\`
 
 Example: Show cursor:
 
@@ -5051,16 +5020,31 @@ ___
 
 ###  setMouse
 
-▸ **setMouse**(opt?: *`undefined` \| `object`*, enable?: *`undefined` \| `false` \| `true`*): `void`
+▸ **setMouse**(opt?: *`object`*, enable?: *`boolean`*): `void`
 
-*Defined in [blessed.d.ts:850](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L850)*
+*Defined in [blessed.d.ts:862](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L862)*
 
 **Parameters:**
 
+**`Optional` opt: `object`**
+
 | Name | Type |
 | ------ | ------ |
-| `Optional` opt | `undefined` \| `object` |
-| `Optional` enable | `undefined` \| `false` \| `true` |
+| `Optional` allMotion | `boolean` |
+| `Optional` decMouse | `boolean` |
+| `Optional` gpmMouse | `boolean` |
+| `Optional` hiliteTracking | `boolean` |
+| `Optional` jsbtermMouse | `boolean` |
+| `Optional` normalMouse | `boolean` |
+| `Optional` ptermMouse | `boolean` |
+| `Optional` sendFocus | `boolean` |
+| `Optional` sgrMouse | `boolean` |
+| `Optional` urxvtMouse | `boolean` |
+| `Optional` utfMode | `boolean` |
+| `Optional` vt200Mouse | `boolean` |
+| `Optional` x10Mouse | `boolean` |
+
+**`Optional` enable: `boolean`**
 
 **Returns:** `void`
 
@@ -5071,7 +5055,7 @@ ___
 
 ▸ **setPointerMode**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:984](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L984)*
+*Defined in [blessed.d.ts:1001](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1001)*
 
 `` ` `` CSI > Ps p Set resource value pointerMode. This is used by xterm to decide whether to hide the pointer cursor as the user types. Valid values for the parameter: Ps = 0 -> never hide the pointer. Ps = 1 -> hide if the mouse tracking mode is not enabled. Ps = 2 -> always hide the pointer. If no parameter is given, xterm uses the default, which is 1 .
 
@@ -5092,7 +5076,7 @@ ___
 
 ▸ **setResources**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:966](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L966)*
+*Defined in [blessed.d.ts:983](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L983)*
 
 **Parameters:**
 
@@ -5109,7 +5093,7 @@ ___
 
 ▸ **setScrollRegion**(top: *`number`*, bottom: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:878](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L878)*
+*Defined in [blessed.d.ts:890](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L890)*
 
 ```
 CSI Ps ; Ps r
@@ -5134,7 +5118,7 @@ ___
 
 ▸ **setTerminal**(terminal: *`string`*): `void`
 
-*Defined in [blessed.d.ts:260](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L260)*
+*Defined in [blessed.d.ts:264](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L264)*
 
 **Parameters:**
 
@@ -5151,7 +5135,7 @@ ___
 
 ▸ **setTitle**(title: *`string`*): `boolean`
 
-*Defined in [blessed.d.ts:390](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L390)*
+*Defined in [blessed.d.ts:394](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L394)*
 
 **Parameters:**
 
@@ -5168,7 +5152,7 @@ ___
 
 ▸ **setTitleModeFeature**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:1152](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1152)*
+*Defined in [blessed.d.ts:1170](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1170)*
 
 `CSI > Ps; Ps t Set one or more features of the title modes. Each parameter enables a single feature. Ps = 0 -> Set window/icon labels using hexadecimal. Ps = 1 -> Query window/icon labels using hexadecimal. Ps = 2 -> Set window/icon labels using UTF-8. Ps = 3 -> Query window/icon labels using UTF-8. (See dis- cussion of "Title Modes") XXX VTE bizarelly echos this:`
 
@@ -5185,15 +5169,15 @@ ___
 
 ###  setWarningBellVolume
 
-▸ **setWarningBellVolume**(param?: *`undefined` \| `number`*): `boolean`
+▸ **setWarningBellVolume**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:1154](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1154)*
+*Defined in [blessed.d.ts:1172](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1172)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -5204,7 +5188,7 @@ ___
 
 ▸ **setupDump**(): `void`
 
-*Defined in [blessed.d.ts:258](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L258)*
+*Defined in [blessed.d.ts:262](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L262)*
 
 **Returns:** `void`
 
@@ -5215,7 +5199,7 @@ ___
 
 ▸ **setupTput**(): `void`
 
-*Defined in [blessed.d.ts:259](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L259)*
+*Defined in [blessed.d.ts:263](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L263)*
 
 **Returns:** `void`
 
@@ -5226,7 +5210,7 @@ ___
 
 ▸ **setx**(x: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:297](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L297)*
+*Defined in [blessed.d.ts:301](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L301)*
 
 sets cursor
 
@@ -5245,7 +5229,7 @@ ___
 
 ▸ **sety**(y: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:298](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L298)*
+*Defined in [blessed.d.ts:302](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L302)*
 
 **Parameters:**
 
@@ -5262,7 +5246,7 @@ ___
 
 ▸ **shiftIn**(): `boolean`
 
-*Defined in [blessed.d.ts:347](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L347)*
+*Defined in [blessed.d.ts:351](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L351)*
 
 **Returns:** `boolean`
 
@@ -5273,7 +5257,7 @@ ___
 
 ▸ **shiftOut**(): `boolean`
 
-*Defined in [blessed.d.ts:346](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L346)*
+*Defined in [blessed.d.ts:350](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L350)*
 
 **Returns:** `boolean`
 
@@ -5284,7 +5268,7 @@ ___
 
 ▸ **showCursor**(): `boolean`
 
-*Defined in [blessed.d.ts:742](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L742)*
+*Defined in [blessed.d.ts:754](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L754)*
 
 Uses [setMode](api-classes-blessed-d-blessedprogram.md#setmode) 2 5 to show the cursor: NOTE: In xterm terminfo: cnorm stops blinking cursor cvvis starts blinking cursor
 
@@ -5297,7 +5281,7 @@ ___
 
 ▸ **sigtstp**(callback?: *[ProgramResponseCallback](api-modules-blessed-d-module.md#programresponsecallback)*): `boolean`
 
-*Defined in [blessed.d.ts:1342](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1342)*
+*Defined in [blessed.d.ts:1360](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1360)*
 
 **Parameters:**
 
@@ -5312,17 +5296,17 @@ ___
 
 ###  simpleInsert
 
-▸ **simpleInsert**(ch: *`string`*, i?: *`undefined` \| `number`*, attr?: *`undefined` \| `false` \| `true`*): `boolean`
+▸ **simpleInsert**(ch: *`string`*, i?: *`number`*, attr?: *`boolean`*): `boolean`
 
-*Defined in [blessed.d.ts:307](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L307)*
+*Defined in [blessed.d.ts:311](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L311)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | ch | `string` |
-| `Optional` i | `undefined` \| `number` |
-| `Optional` attr | `undefined` \| `false` \| `true` |
+| `Optional` i | `number` |
+| `Optional` attr | `boolean` |
 
 **Returns:** `boolean`
 
@@ -5333,9 +5317,9 @@ ___
 
 ▸ **sm**(...args: *`string`[]*): `boolean`
 
-*Defined in [blessed.d.ts:735](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L735)*
+*Defined in [blessed.d.ts:747](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L747)*
 
-*__see__*: setMode
+*__see__*: [setMode](api-classes-blessed-d-blessedprogram.md#setmode)
 
 **Parameters:**
 
@@ -5352,7 +5336,7 @@ ___
 
 ▸ **smacs**(): `boolean`
 
-*Defined in [blessed.d.ts:382](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L382)*
+*Defined in [blessed.d.ts:386](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L386)*
 
 **Returns:** `boolean`
 
@@ -5363,7 +5347,7 @@ ___
 
 ▸ **smcup**(): `boolean`
 
-*Defined in [blessed.d.ts:745](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L745)*
+*Defined in [blessed.d.ts:757](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L757)*
 
 **Returns:** `boolean`
 
@@ -5374,7 +5358,7 @@ ___
 
 ▸ **softReset**(): `boolean`
 
-*Defined in [blessed.d.ts:986](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L986)*
+*Defined in [blessed.d.ts:1003](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1003)*
 
 **Returns:** `boolean`
 
@@ -5383,17 +5367,17 @@ ___
 
 ###  su
 
-▸ **su**(param?: *`undefined` \| `number`*): `boolean`
+▸ **su**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:906](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L906)*
+*Defined in [blessed.d.ts:922](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L922)*
 
-*__see__*: scrollUp
+*__see__*: [scrollUp](api-classes-blessed-d-blessedprogram.md#scrollup)
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -5404,7 +5388,7 @@ ___
 
 ▸ **tab**(): `boolean`
 
-*Defined in [blessed.d.ts:342](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L342)*
+*Defined in [blessed.d.ts:346](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L346)*
 
 **Returns:** `boolean`
 
@@ -5413,15 +5397,15 @@ ___
 
 ###  tabClear
 
-▸ **tabClear**(param?: *`undefined` \| `number`*): `boolean`
+▸ **tabClear**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:944](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L944)*
+*Defined in [blessed.d.ts:961](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L961)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -5432,7 +5416,7 @@ ___
 
 ▸ **tabSet**(): `boolean`
 
-*Defined in [blessed.d.ts:365](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L365)*
+*Defined in [blessed.d.ts:369](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L369)*
 
 **Returns:** `boolean`
 
@@ -5441,15 +5425,15 @@ ___
 
 ###  tbc
 
-▸ **tbc**(param?: *`undefined` \| `number`*): `boolean`
+▸ **tbc**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:945](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L945)*
+*Defined in [blessed.d.ts:962](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L962)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -5460,7 +5444,7 @@ ___
 
 ▸ **term**(is: *`string`*): `boolean`
 
-*Defined in [blessed.d.ts:264](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L264)*
+*Defined in [blessed.d.ts:268](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L268)*
 
 Queries whether the terminal of the type `is`.
 
@@ -5479,7 +5463,7 @@ ___
 
 ▸ **unKey**(key: *`string` \| `string`[]*, l: *[KeyEventListener](api-modules-blessed-d-widgets.md#keyeventlistener)*): `void`
 
-*Defined in [blessed.d.ts:272](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L272)*
+*Defined in [blessed.d.ts:276](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L276)*
 
 **Parameters:**
 
@@ -5495,15 +5479,15 @@ ___
 
 ###  up
 
-▸ **up**(param?: *`undefined` \| `number`*): `boolean`
+▸ **up**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:404](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L404)*
+*Defined in [blessed.d.ts:408](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L408)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -5514,7 +5498,7 @@ ___
 
 ▸ **vi**(): `boolean`
 
-*Defined in [blessed.d.ts:840](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L840)*
+*Defined in [blessed.d.ts:852](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L852)*
 
 **Returns:** `boolean`
 
@@ -5523,15 +5507,15 @@ ___
 
 ###  vpa
 
-▸ **vpa**(param?: *`undefined` \| `number`*): `boolean`
+▸ **vpa**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:629](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L629)*
+*Defined in [blessed.d.ts:641](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L641)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -5540,15 +5524,15 @@ ___
 
 ###  vpr
 
-▸ **vpr**(param?: *`undefined` \| `number`*): `boolean`
+▸ **vpr**(param?: *`number`*): `boolean`
 
-*Defined in [blessed.d.ts:632](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L632)*
+*Defined in [blessed.d.ts:644](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L644)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` param | `undefined` \| `number` |
+| `Optional` param | `number` |
 
 **Returns:** `boolean`
 
@@ -5559,7 +5543,7 @@ ___
 
 ▸ **vtab**(): `boolean`
 
-*Defined in [blessed.d.ts:334](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L334)*
+*Defined in [blessed.d.ts:338](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L338)*
 
 **Returns:** `boolean`
 
@@ -5572,7 +5556,7 @@ ___
 
 ▸ **write**(text: *`string`*, style: *`string`*): `boolean`
 
-*Defined in [blessed.d.ts:283](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L283)*
+*Defined in [blessed.d.ts:287](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L287)*
 
 **Parameters:**
 
@@ -5582,7 +5566,7 @@ ___
 
 **Returns:** `boolean`
 
-*Defined in [blessed.d.ts:288](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L288)*
+*Defined in [blessed.d.ts:292](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L292)*
 
 Writes to this.output Example: `program.write('Hello world', 'blue fg')`
 
@@ -5604,7 +5588,7 @@ ___
 
 *Inherited from EventEmitter.listenerCount*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:7*
+*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:8*
 
 *__deprecated__*: since v4.0.0
 

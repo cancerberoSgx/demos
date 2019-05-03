@@ -85,6 +85,7 @@ sidebar_label: Widgets
 * [NodeChildProcessExecOptions](api-interfaces-blessed-d-widgets.nodechildprocessexecoptions.md)
 * [OverlayImageOptions](api-interfaces-blessed-d-widgets.overlayimageoptions.md)
 * [Padding](api-interfaces-blessed-d-widgets.padding.md)
+* [Pos](api-interfaces-blessed-d-widgets.pos.md)
 * [Position](api-interfaces-blessed-d-widgets.position.md)
 * [ProgressBarOptions](api-interfaces-blessed-d-widgets.progressbaroptions.md)
 * [PromptOptions](api-interfaces-blessed-d-widgets.promptoptions.md)
@@ -113,6 +114,7 @@ sidebar_label: Widgets
 * [NodeGenericEventType](api-modules-blessed-d-widgets.md#nodegenericeventtype)
 * [NodeMouseEventType](api-modules-blessed-d-widgets.md#nodemouseeventtype)
 * [NodeScreenEventType](api-modules-blessed-d-widgets.md#nodescreeneventtype)
+* [ScreenLine](api-modules-blessed-d-widgets.md#screenline)
 * [TextareaElementEventType](api-modules-blessed-d-widgets.md#textareaelementeventtype)
 
 ---
@@ -125,7 +127,7 @@ sidebar_label: Widgets
 
 **Ƭ Color**: *`number` \| `string`*
 
-*Defined in [blessed.d.ts:2552](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2552)*
+*Defined in [blessed.d.ts:2559](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2559)*
 
 ___
 <a id="keyeventlistener"></a>
@@ -134,7 +136,7 @@ ___
 
 **Ƭ KeyEventListener**: *`function`*
 
-*Defined in [blessed.d.ts:1853](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1853)*
+*Defined in [blessed.d.ts:1841](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1841)*
 
 #### Type declaration
 ▸(ch: *`string`*, key: *[IKeyEventArg](api-interfaces-blessed-d-widgets.events.ikeyeventarg.md)*): `void`
@@ -155,7 +157,7 @@ ___
 
 **Ƭ LayoutIterator**: *`function`*
 
-*Defined in [blessed.d.ts:4475](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L4475)*
+*Defined in [blessed.d.ts:4586](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L4586)*
 
 #### Type declaration
 ▸(el: *`object` & [BlessedElement](api-classes-blessed-d-widgets.blessedelement.md)*, i: *`number`*): `any`
@@ -176,7 +178,7 @@ ___
 
 **Ƭ ListElementEventType**: *"cancel" \| "action" \| "create item" \| "add item" \| "remove item" \| "insert item" \| "set items"*
 
-*Defined in [blessed.d.ts:3359](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3359)*
+*Defined in [blessed.d.ts:3447](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3447)*
 
 ___
 <a id="nodeeventtype"></a>
@@ -185,7 +187,7 @@ ___
 
 **Ƭ NodeEventType**: *"adopt" \| "remove" \| "reparent" \| "attach" \| "detach"*
 
-*Defined in [blessed.d.ts:1649](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1649)*
+*Defined in [blessed.d.ts:1637](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1637)*
 
 ___
 <a id="nodegenericeventtype"></a>
@@ -194,7 +196,7 @@ ___
 
 **Ƭ NodeGenericEventType**: *"resize" \| "prerender" \| "render" \| "destroy" \| "move" \| "show" \| "hide" \| "set content" \| "parsed content"*
 
-*Defined in [blessed.d.ts:1835](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1835)*
+*Defined in [blessed.d.ts:1823](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1823)*
 
 ___
 <a id="nodemouseeventtype"></a>
@@ -203,7 +205,7 @@ ___
 
 **Ƭ NodeMouseEventType**: *"mouse" \| "mouseout" \| "mouseover" \| "mousedown" \| "mouseup" \| "mousewheel" \| "wheeldown" \| "wheelup" \| "mousemove" \| "click"*
 
-*Defined in [blessed.d.ts:1823](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1823)*
+*Defined in [blessed.d.ts:1811](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1811)*
 
 ___
 <a id="nodescreeneventtype"></a>
@@ -212,7 +214,18 @@ ___
 
 **Ƭ NodeScreenEventType**: *"focus" \| "blur" \| "click" \| "element click" \| "element mouseover" \| "element mouseout" \| "element mouseup" \| "element mouse" \| "element mousedown" \| "element mousewheel" \| "element wheeldown" \| "element wheelup" \| "element mousemove"*
 
-*Defined in [blessed.d.ts:1797](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1797)*
+*Defined in [blessed.d.ts:1785](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1785)*
+
+___
+<a id="screenline"></a>
+
+###  ScreenLine
+
+**Ƭ ScreenLine**: *[`number`, `string`]*
+
+*Defined in [blessed.d.ts:2095](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2095)*
+
+A point in the screen. The first element represent the attr (value combining the color, and effects like bold, underline, etc) and the second it the character to paint. See [Element.sattr](api-classes-blessed-d-widget.element.md#sattr)
 
 ___
 <a id="textareaelementeventtype"></a>
@@ -221,7 +234,7 @@ ___
 
 **Ƭ TextareaElementEventType**: *"error" \| "submit" \| "cancel" \| "action"*
 
-*Defined in [blessed.d.ts:3781](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L3781)*
+*Defined in [blessed.d.ts:3874](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L3874)*
 
 ___
 

@@ -35,7 +35,7 @@ sidebar_label: Types
 
 **Ƭ BorderType**: *`string`*
 
-*Defined in [blessed.d.ts:1386](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1386)*
+*Defined in [blessed.d.ts:1404](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1404)*
 
 ___
 <a id="talign"></a>
@@ -44,7 +44,7 @@ ___
 
 **Ƭ TAlign**: *"left" \| "center" \| "right"*
 
-*Defined in [blessed.d.ts:1467](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1467)*
+*Defined in [blessed.d.ts:1455](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1455)*
 
 ___
 <a id="tmouseaction"></a>
@@ -53,7 +53,7 @@ ___
 
 **Ƭ TMouseAction**: *"mousedown" \| "mouseup" \| "mousemove" \| "wheelup" \| "wheeldown"*
 
-*Defined in [blessed.d.ts:1371](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1371)*
+*Defined in [blessed.d.ts:1389](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1389)*
 
 ___
 <a id="tposition"></a>
@@ -62,7 +62,7 @@ ___
 
 **Ƭ TPosition**: *`string` \| `number`*
 
-*Defined in [blessed.d.ts:1369](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1369)*
+*Defined in [blessed.d.ts:1387](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1387)*
 
 ___
 <a id="ttopleft"></a>
@@ -71,7 +71,7 @@ ___
 
 **Ƭ TTopLeft**: *`string` \| `number` \| "center"*
 
-*Defined in [blessed.d.ts:1367](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1367)*
+*Defined in [blessed.d.ts:1385](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1385)*
 
 ___
 

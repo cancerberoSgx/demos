@@ -31,7 +31,7 @@ sidebar_label: PositionCoords
 
 **● xi**: *`number`*
 
-*Defined in [blessed.d.ts:2555](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2555)*
+*Defined in [blessed.d.ts:2562](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2562)*
 
 ___
 <a id="xl"></a>
@@ -40,7 +40,7 @@ ___
 
 **● xl**: *`number`*
 
-*Defined in [blessed.d.ts:2556](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2556)*
+*Defined in [blessed.d.ts:2563](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2563)*
 
 ___
 <a id="yi"></a>
@@ -49,7 +49,7 @@ ___
 
 **● yi**: *`number`*
 
-*Defined in [blessed.d.ts:2557](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2557)*
+*Defined in [blessed.d.ts:2564](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2564)*
 
 ___
 <a id="yl"></a>
@@ -58,7 +58,7 @@ ___
 
 **● yl**: *`number`*
 
-*Defined in [blessed.d.ts:2558](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2558)*
+*Defined in [blessed.d.ts:2565](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2565)*
 
 ___
 

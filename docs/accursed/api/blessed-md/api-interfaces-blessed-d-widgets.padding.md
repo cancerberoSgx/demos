@@ -27,36 +27,36 @@ sidebar_label: Padding
 
 ### `<Optional>` bottom
 
-**● bottom**: *`undefined` \| `number`*
+**● bottom**: *`number`*
 
-*Defined in [blessed.d.ts:2549](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2549)*
+*Defined in [blessed.d.ts:2556](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2556)*
 
 ___
 <a id="left"></a>
 
 ### `<Optional>` left
 
-**● left**: *`undefined` \| `number`*
+**● left**: *`number`*
 
-*Defined in [blessed.d.ts:2546](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2546)*
+*Defined in [blessed.d.ts:2553](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2553)*
 
 ___
 <a id="right"></a>
 
 ### `<Optional>` right
 
-**● right**: *`undefined` \| `number`*
+**● right**: *`number`*
 
-*Defined in [blessed.d.ts:2547](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2547)*
+*Defined in [blessed.d.ts:2554](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2554)*
 
 ___
 <a id="top"></a>
 
 ### `<Optional>` top
 
-**● top**: *`undefined` \| `number`*
+**● top**: *`number`*
 
-*Defined in [blessed.d.ts:2548](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2548)*
+*Defined in [blessed.d.ts:2555](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2555)*
 
 ___
 

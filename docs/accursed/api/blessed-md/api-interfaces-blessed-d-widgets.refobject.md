@@ -28,7 +28,7 @@ sidebar_label: RefObject
 
 **● current**: *`T` \| `undefined`*
 
-*Defined in [blessed.d.ts:2692](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L2692)*
+*Defined in [blessed.d.ts:2745](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L2745)*
 
 ___
 

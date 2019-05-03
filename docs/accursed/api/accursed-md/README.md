@@ -1,5 +1,5 @@
 
-**Accursed: [blessed](https://github.com/chjj/blessed/)**
+**Accursed**
 
 [blessed](https://github.com/chjj/blessed/) contributions, extensions, typings, documentation and apps of mine
 
@@ -7,42 +7,50 @@ Summary: I discovered blessed, an awesome library for developing command line UI
 
 Instead of cloning the project, here I try to develope missing parts, learn, document, type and find issues, but on top of it.
 
-So I'm learning, documenting prototypings and researching. The following is a summary of work done.
+So I'm learning, documenting prototyping and researching. The following is a summary of work done.
 
+*   [Demos](#demos)
 *   [JSX](#jsx)
     *   [Attributes](#attributes)
     *   [IntrinsicElements](#intrinsicelements)
-    *   [function elements](#function-elements)
-    *   [Class Elements (and function elements)](#class-elements-and-function-elements)
-*   [Event handlers - function attributes](#event-handlers---function-attributes)
-    *   [built-in event-related methods as attributes](#built-in-event-related-methods-as-attributes)
+    *   [Class Elements and Function elements](#class-elements-and-function-elements)
+        *   [Class Elements](#class-elements)
+        *   [Function Elements](#function-elements)
+    *   [Event handlers (function attributes)](#event-handlers-function-attributes)
+    *   [blessed events supported 100% as JSXAttribtues](#blessed-events-supported-100%25-as-jsxattribtues)
     *   [Hight level event handlers](#hight-level-event-handlers)
         *   [**event.currentTarget**](#eventcurrenttarget)
         *   [onClick Example](#onclick-example)
         *   [onRender example](#onrender-example)
-        *   [onChange](#onchange)
+        *   [onChange example](#onchange-example)
         *   [onSelect (for list-like elements)](#onselect-for-list-like-elements)
     *   [JSX Expressions](#jsx-expressions)
         *   [conditions with AND operator](#conditions-with-and-operator)
         *   [array render with map()](#array-render-with-map)
         *   [conditions with ternary condition](#conditions-with-ternary-condition)
-    *   [React-like Ref objects](#react-like-ref-objects)
+    *   [Refs](#refs)
+    *   [Virtual Elements](#virtual-elements)
     *   [JSX Text](#jsx-text)
     *   [blessed-contrib](#blessed-contrib)
     *   [Rendering Component own children](#rendering-component-own-children)
     *   [Fragments](#fragments)
-        *   [Hooks into React.crateElement](#hooks-into-reactcrateelement)
-        *   [Virtual Nodes](#virtual-nodes)
-*   [doubts, thouths, TOLD](#doubts-thouths-told)
-    *   [doubts / thougths about JSX Text implementation, ç](#doubts--thougths-about-jsx-text-implementation-c)
+    *   [Hooks into React.crateElement](#hooks-into-reactcrateelement)
 *   [specs](#specs)
-*   [My blessed contrib widgets and utilities:](#my-blessed-contrib-widgets-and-utilities)
+*   [My blessed contrib widgets, utilities and JSX Components:](#my-blessed-contrib-widgets-utilities-and-jsx-components)
+    *   [General tools](#general-tools)
+    *   [JSX components](#jsx-components)
 *   [Apps](#apps)
 *   [Typings:](#typings)
 *   [Documentation:](#documentation)
 *   [How-to bless documents](#how-to-bless-documents)
     *   [Extending blessed Elements with TypeScript and accursed](#extending-blessed-elements-with-typescript-and-accursed)
+    *   [Browserify](#browserify)
 *   [TODO & ISSUES & Ideas](#todo--issues--ideas)
+
+Demos
+=====
+
+*   Gallery: [![asciicast](https://asciinema.org/a/KcOrsgaP3vwhNPAic776MY9yi.svg)](https://asciinema.org/a/KcOrsgaP3vwhNPAic776MY9yi)
 
 JSX
 ===
@@ -85,11 +93,33 @@ Intrinsic elements are the building blocks os a JSX implementation and in thi ca
 
 **Mostly all blessed element types are supported by this library**
 
-function elements
------------------
+Class Elements and Function elements
+------------------------------------
+
+Class elements and function elments for creating custom tags is fully supported. Do it as you would normaly do:
+
+### Class Elements
+
+In the following example we extend Component to create a new Class Element, but you don't have to, just make sure its constructor accepts a props object parameter and it has a render() method that returns the JSX.Element:
 
 ```jsx
-function Strong(props={{ children}  string \| string[]; color?: string }) {
+interface Props {name, colors: string[]}
+class ListTable extends Component<Props> {
+  render() {
+    return <Div>
+      Hello {this.props.name}, so this are the colors: {this.props.colors.map(c=><Color color={c}/>)}
+    </Div>
+}
+}
+```
+
+### Function Elements
+
+In the following example, we create a new Element that will print children text with bold and optionally color styles.
+
+```jsx
+interface Props = { children:  string \| string[]; color?: string }
+function Strong(props: Props) {
   return (
     <text content={format(asArray(props.children \|\| []).join(' '), ['bold', props.color].filter(notUndefined))}
     />
@@ -97,17 +127,14 @@ function Strong(props={{ children}  string \| string[]; color?: string }) {
 }
 ```
 
-Class Elements (and function elements)
---------------------------------------
-
-Event handlers - function attributes
-====================================
+Event handlers (function attributes)
+------------------------------------
 
 *   work 100%
 *   are bind() to the element reference
 
-built-in event-related methods as attributes
---------------------------------------------
+blessed events supported 100% as JSXAttribtues
+----------------------------------------------
 
 JSX syntax, in event-related methods like like on() or key(), etc are supported via attributes. There is no syntax mapping at all, just straight forward method call, for example:
 
@@ -130,7 +157,7 @@ Hight level event handlers
 
 Although these are typed are kind of ugly because must be arrays. this is why also there are supported nicer "artificial" event handlers:. JSX-HTML event handler syntax more practical in the markup:
 
-onClick, onChange, onRender, onKeyPressed so attributes are easy to write (just a function).
+`onClick, onChange, onRender, onKeyPressed` so attributes are easy to write (just a function).
 
 ### **event.currentTarget**
 
@@ -153,9 +180,9 @@ Like with HTML - React - the event object of these hight level handlers have `cu
 <layout onRender={e => this.installCollapsible(e.currentTarget, { collapsedHeight: 4 })}
 ```
 
-### onChange
+### onChange example
 
-(currently only supported for Checkbox and subclasses) -WIP define chance semantic and support it on all input elements
+(currently only supported for Checkbox and subclasses) - WIP
 
 ```jsx
 <checkbox content="Collapsed" checked={false}
@@ -200,10 +227,10 @@ Any expression often used to declare conditions aor iterate inside JSX Expressio
 { condition ? <box... : <box...}
 ```
 
-React-like Ref objects
-----------------------
+Refs
+----
 
-[https://reactjs.org/docs/refs-and-the-dom.html](https://reactjs.org/docs/refs-and-the-dom.html)
+Implements [Reac refs](https://reactjs.org/docs/refs-and-the-dom.html) adding extra features.
 
 ```jsx
 const screen = blessed.screen({ smartCSR: true, log: 'log.txt', fullUnicode: true })
@@ -223,7 +250,31 @@ ref1.press()
 ...
 ```
 
-*   it can be also used without JSX - remember is all the same...
+Also `React.createRef()` accepts a callback that provides the new element:
+
+```tsx
+class App extends Component {
+  protected container: Box
+  render(){
+    return <box ref={React.createRef(current=>this.container = current)}>
+    ...
+    </box>
+  }
+}
+```
+
+Virtual Elements
+----------------
+
+*   Unique feature - not even existent in React
+*   Let component authors declare element's children props that won't be rendered at all.
+*   Useful to define complex component API as markup and then render another thing that implements it.
+*   See [spec](spec/virtualElementRenderingSpec.tsx)
+*   See [guides/virtual-elements.md](guides/virtual-elements.md)
+*   Examples of components that heavily use virtual elements to define their APIs:
+    *   (src/jsx-components/tabPanel.tsx)\[TabPanel\]
+    *   (src/jsx-components/listTable.tsx)\[ListTable\]
+    *   (src/jsx-components/listBar.tsx)\[ListBar\]
 
 JSX Text
 --------
@@ -252,52 +303,18 @@ blessed-contrib
 Rendering Component own children
 --------------------------------
 
-*   In custom components you dorender its childs using an expresion like `<MyComp {...this.props.hildren} other="options"/>` as expected
-*   Custom comeponents andJSX function elementss are responsible of rendering their children and attributes - unlike intrinsic elements which their children and attributes are rendering automatically
+*   In custom components with children must render them using an expression like `<MyComp {this.props.children} other="options"/>`
 
 Fragments
 ---------
 
 Not supported yet :()
 
-### Hooks into React.crateElement
+Hooks into React.crateElement
+-----------------------------
 
 *   WIP : api to extend the rendering process
 *   React object oprovide with some addLikstener in interesting moments of the rendering tha tusers can use to modify the render process and even interrupt / modify the flow but right now only sketches... working on that...
-
-### Virtual Nodes
-
-*   WIP
-*   Currently for each JSX Element a blessed elemtn is created. In many ocations I jsut want to declare information/semantics with the markup that a omponent can interpret at render time without all those blessed elemnts created .. A special COmponent / tag exist that will provide that feature (WIP)
-
-doubts, thouths, TOLD
-=====================
-
-### doubts / thougths about JSX Text implementation, ç
-
-....blessing, performance, design ... need feedback ...
-
-Observations on the actual implementation
-
-*   behaves well with layout="inline"
-*   respect the JSX code AST structure text is a child node, not an attribtue)
-*   more natural to format using tags (
-    
-    hello **ksksks**asdasd_ajlshd_
-    ==============================
-    
-*   I think is a limiation that a button dont have children. many children are hardcoded internally as nodes (border, hover,
-    *   label. Maybe that's good for perfoamnce.. but is a limiatation...
-
-It can be easily changed, but I'n not sure since that will change the structure....
-
-*   The implementation is isolated in React.\[\[createTextNode\]\] method so is easily customizable.
-
-*   Probably will be configurable\* because of performance TODO: performance? use another thing ? use content? join several JSXText in one 
-
-**TO DECIDE WHILE IM PLAYING WITH IT** \*right now it behaves well with layouts.. perhaps content='' is better. or text
-
-*   styles could be adapted from blessed like its options and modeled with classhierarchies, but also try to create a new feature and see how it plays there. For example a new option in ComponentWithOptions called cursor (since all elements should support it and don't)
 
 specs
 =====
@@ -309,25 +326,57 @@ specs
     *   jsx related: spec/jsxSpec.tsx
     *   using cli-driver to spawn a program and automate it spec/jsxSpec.tsx
 
-My blessed contrib widgets and utilities:
-=========================================
+My blessed contrib widgets, utilities and JSX Components:
+=========================================================
+
+General tools
+-------------
 
 *   focus manager
 *   collapsible element
-*   node operations
-*   modal
-*   layout rendererand html like semantics
+*   node operations (ascendants, descendants, siblings, etc)
+*   showInModal()
+*   layout renderer with html like semantics display: block, overflow: hidden
+*   TreeView
+*   Maximize/Restore
+*   BorderBox
+*   EditorWidget from Slapeditor project. I updated dependencies and documented EditorWidget which is great. Made easy to use API that automatically highlights and focus the editor.
+*   `visibleOnAncestorFocus` Automatically shows/hides descendants when ancestors (or any of its descendants) are focused
+*   `screenLogger` simple logger visual logger API
+*   `rowColumnResize`: adds small controls to resize rows or columns, easy to use with the keyboard and non invasive since the¥ only appear when column/row or descendant have focus.
+
+JSX components
+--------------
+
+*   `ListTable`
+*   `TabPanel`
 *   `<If>` conditions with markup - not so useful but interesting....
-*   React like refs attribtues
+*   `Button2`
+*   `ShowIf`
+*   `Collapsible`
+*   `Select`
+*   `Columns`
+*   `Accordion`
+*   `Autocomplete`
+*   `OptionsProvider`
+*   `Maximize` - wrapping an element with it will show a "maximize/restore" buttons floating at top-left
+*   `<editor>` component to easy render editor-component from slap editor project.
+*   `<ListBar>` - listbar semantics with jsx markup
+*   `cicks` to listen for multiple clicks (double click)
 
 Apps
 ====
 
 *   apps/emojis-search : a unicode data table explorer. Test blessed performance by letting ht user interactively navigate/search, etc the FULL unicode charset .
     
-*   accursed gallery, spec/blessed/gallery/LayoutDemo.tsx I tried to use these tools to build a interactive playground with examplesWIP
+*   accursed gallery, spec/blessed/gallery/LayoutDemo.tsx I tried to use these tools to build a interactive playground with examples. WIP
     
-    *   [https://github.com/cancerberoSgx/demos/tree/master/docs/typescript-ast-explorer](https://github.com/cancerberoSgx/demos/tree/master/docs/typescript-ast-explorer) - explore a TypeScripty project AST , visualliszetogether with sources code and even apply refactors.
+*   json-cat: CLI app that render json streams with a tree view. Supports async render when streams are loading, filtering by text or json JSONPath.
+    
+*   editar: CLI text-editor, inspired on vscode, based on editor-widget (independent form slap-editor)
+    
+*   [https://github.com/cancerberoSgx/demos/tree/master/docs/typescript-ast-explorer](https://github.com/cancerberoSgx/demos/tree/master/docs/typescript-ast-explorer) - explore a TypeScript project AST , visualize together with sources code and even apply refactors.
+    
 
 Typings:
 ========
@@ -337,13 +386,22 @@ Also I think I've enhanced a lot the blessed.d.ts (TypeScript type declarations)
 Documentation:
 ==============
 
-the typings already existing in DefinitelyTypes had more or less all the descriptions in blessed README. I added a lot from program.js, snippets and make sure it all blessed/tests.js compile OK with the types (which didn't). Also using typedoc I'm truing to generate html and markdown output of this so I can share with others. TODO: links
+the typings already existing in DefinitelyTypes had more or less all the descriptions in blessed README. I added a lot from program.js, snippets and make sure it all blessed/tests.js compile OK with the types (which didn't). Also using typedoc I'm truing to generate html and markdown output of this so I can share with others.
+
+*   [Blessed API](https://cancerberosgx.github.io/demos/accursed/api/blessed/modules/_blessed_d_.html)
 
 How-to bless documents
 ======================
 
 Extending blessed Elements with TypeScript and accursed
 -------------------------------------------------------
+
+[guides/blessed-extending-element-typescript.md](guides/blessed-extending-element-typescript.md) explain how to extend blessed Element class to create a new Widget type, using TypeScript, in a type checked experience.
+
+Browserify
+----------
+
+[guides/browserify.md](guides/browserify.md) explain how to run blessed programs in the browser using browserify.
 
 [How to create a new blessed Element extending blessed classes, with descent type documented type checking and TypeScript using accursed:](guides/blessed-extending-element-typescript.md)
 
@@ -356,7 +414,61 @@ TODO & ISSUES & Ideas
 
 ### External modules
 
-* ["index_publish"](modules/_index_publish_.md)
+* ["blessed/border"](modules/_blessed_border_.md)
+* ["blessed/borderBox"](modules/_blessed_borderbox_.md)
+* ["blessed/clicks"](modules/_blessed_clicks_.md)
+* ["blessed/collapsible"](modules/_blessed_collapsible_.md)
+* ["blessed/focus"](modules/_blessed_focus_.md)
+* ["blessed/gradient"](modules/_blessed_gradient_.md)
+* ["blessed/index"](modules/_blessed_index_.md)
+* ["blessed/layoutRenderer"](modules/_blessed_layoutrenderer_.md)
+* ["blessed/maximize"](modules/_blessed_maximize_.md)
+* ["blessed/modal"](modules/_blessed_modal_.md)
+* ["blessed/node"](modules/_blessed_node_.md)
+* ["blessed/rowColumnResize"](modules/_blessed_rowcolumnresize_.md)
+* ["blessed/treeView"](modules/_blessed_treeview_.md)
+* ["blessed/util"](modules/_blessed_util_.md)
+* ["blessed/virtualElement"](modules/_blessed_virtualelement_.md)
+* ["blessed/visibleOnAncestorFocus"](modules/_blessed_visibleonancestorfocus_.md)
+* ["blessed/waitFor"](modules/_blessed_waitfor_.md)
+* ["blessedTypes"](modules/_blessedtypes_.md)
+* ["blessesContrib/treeUtil"](modules/_blessescontrib_treeutil_.md)
+* ["declarations/blessed-contrib.d"](modules/_declarations_blessed_contrib_d_.md)
+* ["declarations/blessed.d"](modules/_declarations_blessed_d_.md)
+* ["declarations/blessedProgram.d"](modules/_declarations_blessedprogram_d_.md)
+* ["declarations/blessedTermCap"](modules/_declarations_blessedtermcap_.md)
+* ["editorWidget/editorWidget"](modules/_editorwidget_editorwidget_.md)
+* ["editorWidget/editorWidgetTypes"](modules/_editorwidget_editorwidgettypes_.md)
+* ["editorWidget/index"](modules/_editorwidget_index_.md)
+* ["index"](modules/_index_.md)
+* ["jsx-components/accordion"](modules/_jsx_components_accordion_.md)
+* ["jsx-components/autocomplete"](modules/_jsx_components_autocomplete_.md)
+* ["jsx-components/button"](modules/_jsx_components_button_.md)
+* ["jsx-components/collapsible"](modules/_jsx_components_collapsible_.md)
+* ["jsx-components/columns"](modules/_jsx_components_columns_.md)
+* ["jsx-components/if"](modules/_jsx_components_if_.md)
+* ["jsx-components/index"](modules/_jsx_components_index_.md)
+* ["jsx-components/jsxUtil"](modules/_jsx_components_jsxutil_.md)
+* ["jsx-components/listBar"](modules/_jsx_components_listbar_.md)
+* ["jsx-components/listTable"](modules/_jsx_components_listtable_.md)
+* ["jsx-components/maximize"](modules/_jsx_components_maximize_.md)
+* ["jsx-components/optionsProvider"](modules/_jsx_components_optionsprovider_.md)
+* ["jsx-components/rows"](modules/_jsx_components_rows_.md)
+* ["jsx-components/select"](modules/_jsx_components_select_.md)
+* ["jsx-components/showIf"](modules/_jsx_components_showif_.md)
+* ["jsx-components/tabPanel"](modules/_jsx_components_tabpanel_.md)
+* ["jsx/component"](modules/_jsx_component_.md)
+* ["jsx/createElement"](modules/_jsx_createelement_.md)
+* ["jsx/index"](modules/_jsx_index_.md)
+* ["jsx/types"](modules/_jsx_types_.md)
+* ["util/anim"](modules/_util_anim_.md)
+* ["util/browser"](modules/_util_browser_.md)
+* ["util/data"](modules/_util_data_.md)
+* ["util/debugNode"](modules/_util_debugnode_.md)
+* ["util/index"](modules/_util_index_.md)
+* ["util/logger"](modules/_util_logger_.md)
+* ["util/misc"](modules/_util_misc_.md)
+* ["util/sharedOptions"](modules/_util_sharedoptions_.md)
 
 ---
 

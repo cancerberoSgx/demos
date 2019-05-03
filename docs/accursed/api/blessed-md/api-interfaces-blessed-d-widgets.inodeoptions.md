@@ -36,16 +36,16 @@ sidebar_label: INodeOptions
 
 **● children**: *[Node](api-classes-blessed-d-widgets.node.md)[]*
 
-*Defined in [blessed.d.ts:1642](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1642)*
+*Defined in [blessed.d.ts:1630](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1630)*
 
 ___
 <a id="focusable"></a>
 
 ### `<Optional>` focusable
 
-**● focusable**: *`undefined` \| `false` \| `true`*
+**● focusable**: *`boolean`*
 
-*Defined in [blessed.d.ts:1646](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1646)*
+*Defined in [blessed.d.ts:1634](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1634)*
 
 If true, the node will obtain focus when m
 
@@ -54,9 +54,9 @@ ___
 
 ### `<Optional>` name
 
-**● name**: *`undefined` \| `string`*
+**● name**: *`string`*
 
-*Defined in [blessed.d.ts:1639](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1639)*
+*Defined in [blessed.d.ts:1627](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1627)*
 
 ___
 <a id="parent"></a>
@@ -65,7 +65,7 @@ ___
 
 **● parent**: *[Node](api-classes-blessed-d-widgets.node.md)*
 
-*Defined in [blessed.d.ts:1641](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1641)*
+*Defined in [blessed.d.ts:1629](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1629)*
 
 ___
 <a id="screen"></a>
@@ -74,7 +74,7 @@ ___
 
 **● screen**: *[Screen](api-classes-blessed-d-widgets.screen.md)*
 
-*Defined in [blessed.d.ts:1640](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1640)*
+*Defined in [blessed.d.ts:1628](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1628)*
 
 ___
 

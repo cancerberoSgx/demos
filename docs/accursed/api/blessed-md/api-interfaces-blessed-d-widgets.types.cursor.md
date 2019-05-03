@@ -29,7 +29,7 @@ sidebar_label: Cursor
 
 **● artificial**: *`boolean`*
 
-*Defined in [blessed.d.ts:1500](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1500)*
+*Defined in [blessed.d.ts:1488](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1488)*
 
 Have blessed draw a custom cursor and hide the terminal cursor (experimental).
 
@@ -40,7 +40,7 @@ ___
 
 **● blink**: *`boolean`*
 
-*Defined in [blessed.d.ts:1510](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1510)*
+*Defined in [blessed.d.ts:1498](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1498)*
 
 Whether the cursor blinks.
 
@@ -51,7 +51,7 @@ ___
 
 **● color**: *`string`*
 
-*Defined in [blessed.d.ts:1515](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1515)*
+*Defined in [blessed.d.ts:1503](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1503)*
 
 Color of the color. Accepts any valid color value (null is default).
 
@@ -62,7 +62,7 @@ ___
 
 **● shape**: *`boolean`*
 
-*Defined in [blessed.d.ts:1505](https://github.com/cancerberoSgx/accursed/blob/7a42e78/src/declarations/blessed.d.ts#L1505)*
+*Defined in [blessed.d.ts:1493](https://github.com/cancerberoSgx/accursed/blob/f66c8ce/src/declarations/blessed.d.ts#L1493)*
 
 Shape of the cursor. Can be: block, underline, or line.
 
