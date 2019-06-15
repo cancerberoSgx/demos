@@ -1,0 +1,17 @@
+
+  digraph extern_modifier {
+  
+    rankdir=LR;
+  
+    s753 [label="s753\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s754 [label="s754 STRING\n\"extern\""];
+  s753 -> s754 [];
+  s755 [label="{s755\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s756 [label="s756 SYMBOL\nstring_literal" href="rust-grammar.json.string_literal.dot.svg"];
+  s755:p0 -> s756 [label="string_literal"];
+  s757 [label="s757 \nBLANK"];
+  s755:p1 -> s757 [label=""];
+  s754 -> s755 [];
+  
+  }
+  

@@ -1,0 +1,30 @@
+
+  digraph match_pattern {
+  
+    rankdir=LR;
+  
+    s1206 [label="s1206\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1207 [label="s1207 SYMBOL\n_pattern" href="rust-grammar.json._pattern.dot.svg"];
+  s1206 -> s1207 [];
+  s1208 [label="s1208\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s1209 [label="s1209\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1210 [label="s1210 STRING\n\"|\""];
+  s1209 -> s1210 [];
+  s1211 [label="s1211 SYMBOL\n_pattern" href="rust-grammar.json._pattern.dot.svg"];
+  s1210 -> s1211 [];
+  s1208 -> s1209 [];
+  s1211 -> s1208 [];
+  s1207 -> s1208 [];
+  s1212 [label="{s1212\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1213 [label="s1213\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1214 [label="s1214 STRING\n\"if\""];
+  s1213 -> s1214 [];
+  s1215 [label="s1215 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1214 -> s1215 [];
+  s1212:p0 -> s1213 [label=""];
+  s1216 [label="s1216 \nBLANK"];
+  s1212:p1 -> s1216 [label=""];
+  s1211 -> s1212 [];
+  
+  }
+  

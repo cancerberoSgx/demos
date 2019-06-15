@@ -1,0 +1,20 @@
+
+  digraph generic_type {
+  
+    rankdir=LR;
+  
+    s855 [label="s855\n&rarr; PREC", shape=record, fixedsize=false, peripheries=1];
+  s856 [label="s856\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s857 [label="{s857\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s858 [label="s858 SYMBOL\n_type_identifier" href="rust-grammar.json._type_identifier.dot.svg"];
+  s857:p0 -> s858 [label="_type_identifier"];
+  s859 [label="s859 SYMBOL\nscoped_type_identifier" href="rust-grammar.json.scoped_type_identifier.dot.svg"];
+  s857:p1 -> s859 [label="scoped_type_identifier"];
+  s856 -> s857 [];
+  s860 [label="s860 SYMBOL\ntype_arguments" href="rust-grammar.json.type_arguments.dot.svg"];
+  s858 -> s860 [];
+  s859 -> s860 [];
+  s855 -> s856 [];
+  
+  }
+  

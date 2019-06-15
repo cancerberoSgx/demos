@@ -1,0 +1,35 @@
+
+  digraph extern_crate_declaration {
+  
+    rankdir=LR;
+  
+    s399 [label="s399\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s400 [label="{s400\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s401 [label="s401 SYMBOL\nvisibility_modifier" href="rust-grammar.json.visibility_modifier.dot.svg"];
+  s400:p0 -> s401 [label="visibility_modifier"];
+  s402 [label="s402 \nBLANK"];
+  s400:p1 -> s402 [label=""];
+  s399 -> s400 [];
+  s403 [label="s403 STRING\n\"extern\""];
+  s401 -> s403 [];
+  s402 -> s403 [];
+  s404 [label="s404 SYMBOL\ncrate" href="rust-grammar.json.crate.dot.svg"];
+  s403 -> s404 [];
+  s405 [label="{s405\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s406 [label="s406 SYMBOL\nidentifier" href="rust-grammar.json.identifier.dot.svg"];
+  s405:p0 -> s406 [label="identifier"];
+  s407 [label="s407\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s408 [label="s408 SYMBOL\nidentifier" href="rust-grammar.json.identifier.dot.svg"];
+  s407 -> s408 [];
+  s409 [label="s409 STRING\n\"as\""];
+  s408 -> s409 [];
+  s410 [label="s410 SYMBOL\nidentifier" href="rust-grammar.json.identifier.dot.svg"];
+  s409 -> s410 [];
+  s405:p1 -> s407 [label=""];
+  s404 -> s405 [];
+  s411 [label="s411 STRING\n\";\""];
+  s406 -> s411 [];
+  s410 -> s411 [];
+  
+  }
+  

@@ -1,0 +1,13 @@
+
+  digraph _statement {
+  
+    rankdir=LR;
+  
+    s3 [label="{s3\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s4 [label="s4 SYMBOL\n_expression_statement" href="rust-grammar.json._expression_statement.dot.svg"];
+  s3:p0 -> s4 [label="_expression_statement"];
+  s5 [label="s5 SYMBOL\n_declaration_statement" href="rust-grammar.json._declaration_statement.dot.svg"];
+  s3:p1 -> s5 [label="_declaration_statement"];
+  
+  }
+  

@@ -1,0 +1,26 @@
+
+  digraph variable_declaration {
+  
+    rankdir=LR;
+  
+    s138 [label="s138\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s139 [label="s139 STRING\n\"var\""];
+  s138 -> s139 [];
+  s140 [label="s140\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s141 [label="s141 SYMBOL\nvariable_declarator" href="javascript-grammar.json.variable_declarator.dot.svg"];
+  s140 -> s141 [];
+  s142 [label="s142\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s143 [label="s143\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s144 [label="s144 STRING\n\",\""];
+  s143 -> s144 [];
+  s145 [label="s145 SYMBOL\nvariable_declarator" href="javascript-grammar.json.variable_declarator.dot.svg"];
+  s144 -> s145 [];
+  s142 -> s143 [];
+  s145 -> s142 [];
+  s141 -> s142 [];
+  s139 -> s140 [];
+  s146 [label="s146 SYMBOL\n_semicolon" href="javascript-grammar.json._semicolon.dot.svg"];
+  s142 -> s146 [];
+  
+  }
+  

@@ -1,0 +1,31 @@
+
+  digraph import_clause {
+  
+    rankdir=LR;
+  
+    s78 [label="{s78\n&rarr; CHOICE|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+  s79 [label="s79 SYMBOL\nnamespace_import" href="javascript-grammar.json.namespace_import.dot.svg"];
+  s78:p0 -> s79 [label="namespace_import"];
+  s80 [label="s80 SYMBOL\nnamed_imports" href="javascript-grammar.json.named_imports.dot.svg"];
+  s78:p1 -> s80 [label="named_imports"];
+  s81 [label="s81\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s82 [label="s82 SYMBOL\nidentifier" href="javascript-grammar.json.identifier.dot.svg"];
+  s81 -> s82 [];
+  s83 [label="{s83\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s84 [label="s84\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s85 [label="s85 STRING\n\",\""];
+  s84 -> s85 [];
+  s86 [label="{s86\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s87 [label="s87 SYMBOL\nnamespace_import" href="javascript-grammar.json.namespace_import.dot.svg"];
+  s86:p0 -> s87 [label="namespace_import"];
+  s88 [label="s88 SYMBOL\nnamed_imports" href="javascript-grammar.json.named_imports.dot.svg"];
+  s86:p1 -> s88 [label="named_imports"];
+  s85 -> s86 [];
+  s83:p0 -> s84 [label=""];
+  s89 [label="s89 \nBLANK"];
+  s83:p1 -> s89 [label=""];
+  s82 -> s83 [];
+  s78:p2 -> s81 [label=""];
+  
+  }
+  

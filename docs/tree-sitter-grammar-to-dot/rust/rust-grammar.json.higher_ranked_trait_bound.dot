@@ -1,0 +1,15 @@
+
+  digraph higher_ranked_trait_bound {
+  
+    rankdir=LR;
+  
+    s597 [label="s597\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s598 [label="s598 STRING\n\"for\""];
+  s597 -> s598 [];
+  s599 [label="s599 SYMBOL\ntype_parameters" href="rust-grammar.json.type_parameters.dot.svg"];
+  s598 -> s599 [];
+  s600 [label="s600 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s599 -> s600 [];
+  
+  }
+  

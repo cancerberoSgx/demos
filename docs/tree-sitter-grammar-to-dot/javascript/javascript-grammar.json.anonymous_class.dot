@@ -1,0 +1,25 @@
+
+  digraph anonymous_class {
+  
+    rankdir=LR;
+  
+    s474 [label="s474\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s475 [label="s475\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s476 [label="s476 SYMBOL\ndecorator" href="javascript-grammar.json.decorator.dot.svg"];
+  s475 -> s476 [];
+  s476 -> s475 [];
+  s474 -> s475 [];
+  s477 [label="s477 STRING\n\"class\""];
+  s476 -> s477 [];
+  s478 [label="{s478\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s479 [label="s479 SYMBOL\nclass_heritage" href="javascript-grammar.json.class_heritage.dot.svg"];
+  s478:p0 -> s479 [label="class_heritage"];
+  s480 [label="s480 \nBLANK"];
+  s478:p1 -> s480 [label=""];
+  s477 -> s478 [];
+  s481 [label="s481 SYMBOL\nclass_body" href="javascript-grammar.json.class_body.dot.svg"];
+  s479 -> s481 [];
+  s480 -> s481 [];
+  
+  }
+  

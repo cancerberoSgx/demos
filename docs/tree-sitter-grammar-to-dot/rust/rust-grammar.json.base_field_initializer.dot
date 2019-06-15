@@ -1,0 +1,13 @@
+
+  digraph base_field_initializer {
+  
+    rankdir=LR;
+  
+    s1146 [label="s1146\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1147 [label="s1147 STRING\n\"..\""];
+  s1146 -> s1147 [];
+  s1148 [label="s1148 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1147 -> s1148 [];
+  
+  }
+  

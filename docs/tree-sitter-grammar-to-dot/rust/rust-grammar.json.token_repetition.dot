@@ -1,0 +1,33 @@
+
+  digraph token_repetition {
+  
+    rankdir=LR;
+  
+    s135 [label="s135\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s136 [label="s136 STRING\n\"$\""];
+  s135 -> s136 [];
+  s137 [label="s137 STRING\n\"(\""];
+  s136 -> s137 [];
+  s138 [label="s138\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s139 [label="s139 SYMBOL\n_tokens" href="rust-grammar.json._tokens.dot.svg"];
+  s138 -> s139 [];
+  s139 -> s138 [];
+  s137 -> s138 [];
+  s140 [label="s140 STRING\n\")\""];
+  s139 -> s140 [];
+  s141 [label="{s141\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s142 [label="s142 PATTERN\n\"[^+*]+\""];
+  s141:p0 -> s142 [label="[^+*]+"];
+  s143 [label="s143 \nBLANK"];
+  s141:p1 -> s143 [label=""];
+  s140 -> s141 [];
+  s144 [label="{s144\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s145 [label="s145 STRING\n\"+\""];
+  s144:p0 -> s145 [label="+"];
+  s146 [label="s146 STRING\n\"*\""];
+  s144:p1 -> s146 [label="*"];
+  s142 -> s144 [];
+  s143 -> s144 [];
+  
+  }
+  

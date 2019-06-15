@@ -1,0 +1,19 @@
+
+  digraph _use_clause {
+  
+    rankdir=LR;
+  
+    s665 [label="{s665\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>}}", shape=record, fixedsize=false, peripheries=1];
+  s666 [label="s666 SYMBOL\n_path" href="rust-grammar.json._path.dot.svg"];
+  s665:p0 -> s666 [label="_path"];
+  s667 [label="s667 SYMBOL\nuse_as_clause" href="rust-grammar.json.use_as_clause.dot.svg"];
+  s665:p1 -> s667 [label="use_as_clause"];
+  s668 [label="s668 SYMBOL\nuse_list" href="rust-grammar.json.use_list.dot.svg"];
+  s665:p2 -> s668 [label="use_list"];
+  s669 [label="s669 SYMBOL\nscoped_use_list" href="rust-grammar.json.scoped_use_list.dot.svg"];
+  s665:p3 -> s669 [label="scoped_use_list"];
+  s670 [label="s670 SYMBOL\nuse_wildcard" href="rust-grammar.json.use_wildcard.dot.svg"];
+  s665:p4 -> s670 [label="use_wildcard"];
+  
+  }
+  

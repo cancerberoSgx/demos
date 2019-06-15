@@ -1,0 +1,15 @@
+
+  digraph parenthesized_expression {
+  
+    rankdir=LR;
+  
+    s1091 [label="s1091\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1092 [label="s1092 STRING\n\"(\""];
+  s1091 -> s1092 [];
+  s1093 [label="s1093 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1092 -> s1093 [];
+  s1094 [label="s1094 STRING\n\")\""];
+  s1093 -> s1094 [];
+  
+  }
+  

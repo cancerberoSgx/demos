@@ -1,0 +1,9 @@
+
+  digraph jsx_opening_element {
+  
+    rankdir=LR;
+  
+    s422 [label="s422 PREC_DYNAMIC\n(not-implemented)"];
+  
+  }
+  

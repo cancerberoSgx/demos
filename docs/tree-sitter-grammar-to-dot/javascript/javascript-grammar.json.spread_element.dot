@@ -1,0 +1,13 @@
+
+  digraph spread_element {
+  
+    rankdir=LR;
+  
+    s585 [label="s585\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s586 [label="s586 STRING\n\"...\""];
+  s585 -> s586 [];
+  s587 [label="s587 SYMBOL\n_expression" href="javascript-grammar.json._expression.dot.svg"];
+  s586 -> s587 [];
+  
+  }
+  

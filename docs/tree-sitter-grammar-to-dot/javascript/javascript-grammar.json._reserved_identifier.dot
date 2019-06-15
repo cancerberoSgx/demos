@@ -1,0 +1,15 @@
+
+  digraph _reserved_identifier {
+  
+    rankdir=LR;
+  
+    s909 [label="{s909\n&rarr; CHOICE|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+  s910 [label="s910 STRING\n\"get\""];
+  s909:p0 -> s910 [label="get"];
+  s911 [label="s911 STRING\n\"set\""];
+  s909:p1 -> s911 [label="set"];
+  s912 [label="s912 STRING\n\"async\""];
+  s909:p2 -> s912 [label="async"];
+  
+  }
+  

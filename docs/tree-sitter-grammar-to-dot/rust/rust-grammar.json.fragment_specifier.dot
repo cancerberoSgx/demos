@@ -1,0 +1,29 @@
+
+  digraph fragment_specifier {
+  
+    rankdir=LR;
+  
+    s104 [label="{s104\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>|<p5>|<p6>|<p7>|<p8>|<p9>}}", shape=record, fixedsize=false, peripheries=1];
+  s105 [label="s105 STRING\n\"ident\""];
+  s104:p0 -> s105 [label="ident"];
+  s106 [label="s106 STRING\n\"path\""];
+  s104:p1 -> s106 [label="path"];
+  s107 [label="s107 STRING\n\"expr\""];
+  s104:p2 -> s107 [label="expr"];
+  s108 [label="s108 STRING\n\"ty\""];
+  s104:p3 -> s108 [label="ty"];
+  s109 [label="s109 STRING\n\"pat\""];
+  s104:p4 -> s109 [label="pat"];
+  s110 [label="s110 STRING\n\"stmt\""];
+  s104:p5 -> s110 [label="stmt"];
+  s111 [label="s111 STRING\n\"block\""];
+  s104:p6 -> s111 [label="block"];
+  s112 [label="s112 STRING\n\"item\""];
+  s104:p7 -> s112 [label="item"];
+  s113 [label="s113 STRING\n\"meta\""];
+  s104:p8 -> s113 [label="meta"];
+  s114 [label="s114 STRING\n\"tt\""];
+  s104:p9 -> s114 [label="tt"];
+  
+  }
+  

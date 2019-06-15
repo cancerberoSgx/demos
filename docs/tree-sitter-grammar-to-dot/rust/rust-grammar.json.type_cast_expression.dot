@@ -1,0 +1,15 @@
+
+  digraph type_cast_expression {
+  
+    rankdir=LR;
+  
+    s1045 [label="s1045\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1046 [label="s1046 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1045 -> s1046 [];
+  s1047 [label="s1047 STRING\n\"as\""];
+  s1046 -> s1047 [];
+  s1048 [label="s1048 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s1047 -> s1048 [];
+  
+  }
+  

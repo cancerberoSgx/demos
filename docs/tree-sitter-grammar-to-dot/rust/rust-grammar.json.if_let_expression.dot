@@ -1,0 +1,27 @@
+
+  digraph if_let_expression {
+  
+    rankdir=LR;
+  
+    s1156 [label="s1156\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1157 [label="s1157 STRING\n\"if\""];
+  s1156 -> s1157 [];
+  s1158 [label="s1158 STRING\n\"let\""];
+  s1157 -> s1158 [];
+  s1159 [label="s1159 SYMBOL\n_pattern" href="rust-grammar.json._pattern.dot.svg"];
+  s1158 -> s1159 [];
+  s1160 [label="s1160 STRING\n\"=\""];
+  s1159 -> s1160 [];
+  s1161 [label="s1161 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1160 -> s1161 [];
+  s1162 [label="s1162 SYMBOL\nblock" href="rust-grammar.json.block.dot.svg"];
+  s1161 -> s1162 [];
+  s1163 [label="{s1163\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1164 [label="s1164 SYMBOL\nelse_tail" href="rust-grammar.json.else_tail.dot.svg"];
+  s1163:p0 -> s1164 [label="else_tail"];
+  s1165 [label="s1165 \nBLANK"];
+  s1163:p1 -> s1165 [label=""];
+  s1162 -> s1163 [];
+  
+  }
+  

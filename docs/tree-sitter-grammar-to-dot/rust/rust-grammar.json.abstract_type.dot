@@ -1,0 +1,19 @@
+
+  digraph abstract_type {
+  
+    rankdir=LR;
+  
+    s906 [label="s906\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s907 [label="s907 STRING\n\"impl\""];
+  s906 -> s907 [];
+  s908 [label="{s908\n&rarr; CHOICE|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+  s909 [label="s909 SYMBOL\n_type_identifier" href="rust-grammar.json._type_identifier.dot.svg"];
+  s908:p0 -> s909 [label="_type_identifier"];
+  s910 [label="s910 SYMBOL\nscoped_type_identifier" href="rust-grammar.json.scoped_type_identifier.dot.svg"];
+  s908:p1 -> s910 [label="scoped_type_identifier"];
+  s911 [label="s911 SYMBOL\ngeneric_type" href="rust-grammar.json.generic_type.dot.svg"];
+  s908:p2 -> s911 [label="generic_type"];
+  s907 -> s908 [];
+  
+  }
+  

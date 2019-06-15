@@ -1,0 +1,23 @@
+
+  digraph struct_expression {
+  
+    rankdir=LR;
+  
+    s1111 [label="s1111\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1112 [label="{s1112\n&rarr; CHOICE|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+  s1113 [label="s1113 SYMBOL\n_type_identifier" href="rust-grammar.json._type_identifier.dot.svg"];
+  s1112:p0 -> s1113 [label="_type_identifier"];
+  s1114 [label="s1114\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s1115 [label="s1115 SYMBOL\nscoped_type_identifier_in_expression_position" href="rust-grammar.json.scoped_type_identifier_in_expression_position.dot.svg"];
+  s1114 -> s1115 [];
+  s1112:p1 -> s1114 [label="scoped_type_identifier"];
+  s1116 [label="s1116 SYMBOL\ngeneric_type_with_turbofish" href="rust-grammar.json.generic_type_with_turbofish.dot.svg"];
+  s1112:p2 -> s1116 [label="generic_type_with_turbofish"];
+  s1111 -> s1112 [];
+  s1117 [label="s1117 SYMBOL\nfield_initializer_list" href="rust-grammar.json.field_initializer_list.dot.svg"];
+  s1113 -> s1117 [];
+  s1115 -> s1117 [];
+  s1116 -> s1117 [];
+  
+  }
+  

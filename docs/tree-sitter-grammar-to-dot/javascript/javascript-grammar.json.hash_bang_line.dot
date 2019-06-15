@@ -1,0 +1,9 @@
+
+  digraph hash_bang_line {
+  
+    rankdir=LR;
+  
+    s7 [label="s7 PATTERN\n\"#!.*\""];
+  
+  }
+  

@@ -1,0 +1,26 @@
+
+  digraph try_statement {
+  
+    rankdir=LR;
+  
+    s236 [label="s236\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s237 [label="s237 STRING\n\"try\""];
+  s236 -> s237 [];
+  s238 [label="s238 SYMBOL\nstatement_block" href="javascript-grammar.json.statement_block.dot.svg"];
+  s237 -> s238 [];
+  s239 [label="{s239\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s240 [label="s240 SYMBOL\ncatch_clause" href="javascript-grammar.json.catch_clause.dot.svg"];
+  s239:p0 -> s240 [label="catch_clause"];
+  s241 [label="s241 \nBLANK"];
+  s239:p1 -> s241 [label=""];
+  s238 -> s239 [];
+  s242 [label="{s242\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s243 [label="s243 SYMBOL\nfinally_clause" href="javascript-grammar.json.finally_clause.dot.svg"];
+  s242:p0 -> s243 [label="finally_clause"];
+  s244 [label="s244 \nBLANK"];
+  s242:p1 -> s244 [label=""];
+  s240 -> s242 [];
+  s241 -> s242 [];
+  
+  }
+  

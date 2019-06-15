@@ -1,0 +1,18 @@
+
+  digraph jsx_element {
+  
+    rankdir=LR;
+  
+    s395 [label="s395\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s396 [label="s396 SYMBOL\njsx_opening_element" href="javascript-grammar.json.jsx_opening_element.dot.svg"];
+  s395 -> s396 [];
+  s397 [label="s397\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s398 [label="s398 SYMBOL\n_jsx_child" href="javascript-grammar.json._jsx_child.dot.svg"];
+  s397 -> s398 [];
+  s398 -> s397 [];
+  s396 -> s397 [];
+  s399 [label="s399 SYMBOL\njsx_closing_element" href="javascript-grammar.json.jsx_closing_element.dot.svg"];
+  s398 -> s399 [];
+  
+  }
+  

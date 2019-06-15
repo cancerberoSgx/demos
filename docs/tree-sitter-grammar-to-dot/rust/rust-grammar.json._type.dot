@@ -1,0 +1,77 @@
+
+  digraph _type {
+  
+    rankdir=LR;
+  
+    s759 [label="{s759\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>|<p5>|<p6>|<p7>|<p8>|<p9>|<p10>|<p11>|<p12>|<p13>|<p14>|<p15>}}", shape=record, fixedsize=false, peripheries=1];
+  s760 [label="s760 SYMBOL\nabstract_type" href="rust-grammar.json.abstract_type.dot.svg"];
+  s759:p0 -> s760 [label="abstract_type"];
+  s761 [label="s761 SYMBOL\nreference_type" href="rust-grammar.json.reference_type.dot.svg"];
+  s759:p1 -> s761 [label="reference_type"];
+  s762 [label="s762 SYMBOL\nmetavariable" href="rust-grammar.json.metavariable.dot.svg"];
+  s759:p2 -> s762 [label="metavariable"];
+  s763 [label="s763 SYMBOL\npointer_type" href="rust-grammar.json.pointer_type.dot.svg"];
+  s759:p3 -> s763 [label="pointer_type"];
+  s764 [label="s764 SYMBOL\ngeneric_type" href="rust-grammar.json.generic_type.dot.svg"];
+  s759:p4 -> s764 [label="generic_type"];
+  s765 [label="s765 SYMBOL\nscoped_type_identifier" href="rust-grammar.json.scoped_type_identifier.dot.svg"];
+  s759:p5 -> s765 [label="scoped_type_identifier"];
+  s766 [label="s766 SYMBOL\ntuple_type" href="rust-grammar.json.tuple_type.dot.svg"];
+  s759:p6 -> s766 [label="tuple_type"];
+  s767 [label="s767 SYMBOL\nunit_type" href="rust-grammar.json.unit_type.dot.svg"];
+  s759:p7 -> s767 [label="unit_type"];
+  s768 [label="s768 SYMBOL\narray_type" href="rust-grammar.json.array_type.dot.svg"];
+  s759:p8 -> s768 [label="array_type"];
+  s769 [label="s769 SYMBOL\nfunction_type" href="rust-grammar.json.function_type.dot.svg"];
+  s759:p9 -> s769 [label="function_type"];
+  s770 [label="s770 SYMBOL\n_type_identifier" href="rust-grammar.json._type_identifier.dot.svg"];
+  s759:p10 -> s770 [label="_type_identifier"];
+  s771 [label="s771 SYMBOL\nmacro_invocation" href="rust-grammar.json.macro_invocation.dot.svg"];
+  s759:p11 -> s771 [label="macro_invocation"];
+  s772 [label="s772 SYMBOL\nempty_type" href="rust-grammar.json.empty_type.dot.svg"];
+  s759:p12 -> s772 [label="empty_type"];
+  s773 [label="s773 SYMBOL\ndynamic_type" href="rust-grammar.json.dynamic_type.dot.svg"];
+  s759:p13 -> s773 [label="dynamic_type"];
+  s774 [label="s774 SYMBOL\nbounded_type" href="rust-grammar.json.bounded_type.dot.svg"];
+  s759:p14 -> s774 [label="bounded_type"];
+  s775 [label="s775\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s776 [label="{s776\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>|<p5>|<p6>|<p7>|<p8>|<p9>|<p10>|<p11>|<p12>|<p13>|<p14>|<p15>|<p16>}}", shape=record, fixedsize=false, peripheries=1];
+  s777 [label="s777 STRING\n\"u8\""];
+  s776:p0 -> s777 [label="u8"];
+  s778 [label="s778 STRING\n\"i8\""];
+  s776:p1 -> s778 [label="i8"];
+  s779 [label="s779 STRING\n\"u16\""];
+  s776:p2 -> s779 [label="u16"];
+  s780 [label="s780 STRING\n\"i16\""];
+  s776:p3 -> s780 [label="i16"];
+  s781 [label="s781 STRING\n\"u32\""];
+  s776:p4 -> s781 [label="u32"];
+  s782 [label="s782 STRING\n\"i32\""];
+  s776:p5 -> s782 [label="i32"];
+  s783 [label="s783 STRING\n\"u64\""];
+  s776:p6 -> s783 [label="u64"];
+  s784 [label="s784 STRING\n\"i64\""];
+  s776:p7 -> s784 [label="i64"];
+  s785 [label="s785 STRING\n\"u128\""];
+  s776:p8 -> s785 [label="u128"];
+  s786 [label="s786 STRING\n\"i128\""];
+  s776:p9 -> s786 [label="i128"];
+  s787 [label="s787 STRING\n\"isize\""];
+  s776:p10 -> s787 [label="isize"];
+  s788 [label="s788 STRING\n\"usize\""];
+  s776:p11 -> s788 [label="usize"];
+  s789 [label="s789 STRING\n\"f32\""];
+  s776:p12 -> s789 [label="f32"];
+  s790 [label="s790 STRING\n\"f64\""];
+  s776:p13 -> s790 [label="f64"];
+  s791 [label="s791 STRING\n\"bool\""];
+  s776:p14 -> s791 [label="bool"];
+  s792 [label="s792 STRING\n\"str\""];
+  s776:p15 -> s792 [label="str"];
+  s793 [label="s793 STRING\n\"char\""];
+  s776:p16 -> s793 [label="char"];
+  s775 -> s776 [];
+  s759:p15 -> s775 [label="primitive_type"];
+  
+  }
+  

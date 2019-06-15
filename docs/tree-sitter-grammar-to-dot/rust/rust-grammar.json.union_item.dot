@@ -1,0 +1,40 @@
+
+  digraph union_item {
+  
+    rankdir=LR;
+  
+    s283 [label="s283\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s284 [label="{s284\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s285 [label="s285 SYMBOL\nvisibility_modifier" href="rust-grammar.json.visibility_modifier.dot.svg"];
+  s284:p0 -> s285 [label="visibility_modifier"];
+  s286 [label="s286 \nBLANK"];
+  s284:p1 -> s286 [label=""];
+  s283 -> s284 [];
+  s287 [label="s287 STRING\n\"union\""];
+  s285 -> s287 [];
+  s286 -> s287 [];
+  s288 [label="s288 SYMBOL\n_type_identifier" href="rust-grammar.json._type_identifier.dot.svg"];
+  s287 -> s288 [];
+  s289 [label="{s289\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s290 [label="s290 SYMBOL\ntype_parameters" href="rust-grammar.json.type_parameters.dot.svg"];
+  s289:p0 -> s290 [label="type_parameters"];
+  s291 [label="s291 \nBLANK"];
+  s289:p1 -> s291 [label=""];
+  s288 -> s289 [];
+  s292 [label="{s292\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s293 [label="s293 SYMBOL\nwhere_clause" href="rust-grammar.json.where_clause.dot.svg"];
+  s292:p0 -> s293 [label="where_clause"];
+  s294 [label="s294 \nBLANK"];
+  s292:p1 -> s294 [label=""];
+  s290 -> s292 [];
+  s291 -> s292 [];
+  s295 [label="{s295\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s296 [label="s296 SYMBOL\nfield_declaration_list" href="rust-grammar.json.field_declaration_list.dot.svg"];
+  s295:p0 -> s296 [label="field_declaration_list"];
+  s297 [label="s297 STRING\n\";\""];
+  s295:p1 -> s297 [label=";"];
+  s293 -> s295 [];
+  s294 -> s295 [];
+  
+  }
+  

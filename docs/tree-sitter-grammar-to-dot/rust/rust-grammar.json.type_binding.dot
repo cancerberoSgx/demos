@@ -1,0 +1,15 @@
+
+  digraph type_binding {
+  
+    rankdir=LR;
+  
+    s886 [label="s886\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s887 [label="s887 SYMBOL\n_type_identifier" href="rust-grammar.json._type_identifier.dot.svg"];
+  s886 -> s887 [];
+  s888 [label="s888 STRING\n\"=\""];
+  s887 -> s888 [];
+  s889 [label="s889 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s888 -> s889 [];
+  
+  }
+  

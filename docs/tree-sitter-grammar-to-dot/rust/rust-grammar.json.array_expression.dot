@@ -1,0 +1,50 @@
+
+  digraph array_expression {
+  
+    rankdir=LR;
+  
+    s1071 [label="s1071\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1072 [label="s1072 STRING\n\"[\""];
+  s1071 -> s1072 [];
+  s1073 [label="{s1073\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1074 [label="s1074\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1075 [label="s1075 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1074 -> s1075 [];
+  s1076 [label="s1076 STRING\n\";\""];
+  s1075 -> s1076 [];
+  s1077 [label="s1077 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1076 -> s1077 [];
+  s1073:p0 -> s1074 [label=""];
+  s1078 [label="s1078\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1079 [label="{s1079\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1080 [label="s1080\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1081 [label="s1081 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1080 -> s1081 [];
+  s1082 [label="s1082\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s1083 [label="s1083\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1084 [label="s1084 STRING\n\",\""];
+  s1083 -> s1084 [];
+  s1085 [label="s1085 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1084 -> s1085 [];
+  s1082 -> s1083 [];
+  s1085 -> s1082 [];
+  s1081 -> s1082 [];
+  s1079:p0 -> s1080 [label=""];
+  s1086 [label="s1086 \nBLANK"];
+  s1079:p1 -> s1086 [label=""];
+  s1078 -> s1079 [];
+  s1087 [label="{s1087\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1088 [label="s1088 STRING\n\",\""];
+  s1087:p0 -> s1088 [label=","];
+  s1089 [label="s1089 \nBLANK"];
+  s1087:p1 -> s1089 [label=""];
+  s1082 -> s1087 [];
+  s1086 -> s1087 [];
+  s1073:p1 -> s1078 [label=""];
+  s1072 -> s1073 [];
+  s1090 [label="s1090 STRING\n\"]\""];
+  s1077 -> s1090 [];
+  s1087 -> s1090 [];
+  
+  }
+  

@@ -1,0 +1,59 @@
+
+  digraph _path {
+  
+    rankdir=LR;
+  
+    s1537 [label="{s1537\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>|<p5>|<p6>}}", shape=record, fixedsize=false, peripheries=1];
+  s1538 [label="s1538 SYMBOL\nself" href="rust-grammar.json.self.dot.svg"];
+  s1537:p0 -> s1538 [label="self"];
+  s1539 [label="s1539\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s1540 [label="{s1540\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>|<p5>|<p6>|<p7>|<p8>|<p9>|<p10>|<p11>|<p12>|<p13>|<p14>|<p15>|<p16>}}", shape=record, fixedsize=false, peripheries=1];
+  s1541 [label="s1541 STRING\n\"u8\""];
+  s1540:p0 -> s1541 [label="u8"];
+  s1542 [label="s1542 STRING\n\"i8\""];
+  s1540:p1 -> s1542 [label="i8"];
+  s1543 [label="s1543 STRING\n\"u16\""];
+  s1540:p2 -> s1543 [label="u16"];
+  s1544 [label="s1544 STRING\n\"i16\""];
+  s1540:p3 -> s1544 [label="i16"];
+  s1545 [label="s1545 STRING\n\"u32\""];
+  s1540:p4 -> s1545 [label="u32"];
+  s1546 [label="s1546 STRING\n\"i32\""];
+  s1540:p5 -> s1546 [label="i32"];
+  s1547 [label="s1547 STRING\n\"u64\""];
+  s1540:p6 -> s1547 [label="u64"];
+  s1548 [label="s1548 STRING\n\"i64\""];
+  s1540:p7 -> s1548 [label="i64"];
+  s1549 [label="s1549 STRING\n\"u128\""];
+  s1540:p8 -> s1549 [label="u128"];
+  s1550 [label="s1550 STRING\n\"i128\""];
+  s1540:p9 -> s1550 [label="i128"];
+  s1551 [label="s1551 STRING\n\"isize\""];
+  s1540:p10 -> s1551 [label="isize"];
+  s1552 [label="s1552 STRING\n\"usize\""];
+  s1540:p11 -> s1552 [label="usize"];
+  s1553 [label="s1553 STRING\n\"f32\""];
+  s1540:p12 -> s1553 [label="f32"];
+  s1554 [label="s1554 STRING\n\"f64\""];
+  s1540:p13 -> s1554 [label="f64"];
+  s1555 [label="s1555 STRING\n\"bool\""];
+  s1540:p14 -> s1555 [label="bool"];
+  s1556 [label="s1556 STRING\n\"str\""];
+  s1540:p15 -> s1556 [label="str"];
+  s1557 [label="s1557 STRING\n\"char\""];
+  s1540:p16 -> s1557 [label="char"];
+  s1539 -> s1540 [];
+  s1537:p1 -> s1539 [label="identifier"];
+  s1558 [label="s1558 SYMBOL\nmetavariable" href="rust-grammar.json.metavariable.dot.svg"];
+  s1537:p2 -> s1558 [label="metavariable"];
+  s1559 [label="s1559 SYMBOL\nsuper" href="rust-grammar.json.super.dot.svg"];
+  s1537:p3 -> s1559 [label="super"];
+  s1560 [label="s1560 SYMBOL\ncrate" href="rust-grammar.json.crate.dot.svg"];
+  s1537:p4 -> s1560 [label="crate"];
+  s1561 [label="s1561 SYMBOL\nidentifier" href="rust-grammar.json.identifier.dot.svg"];
+  s1537:p5 -> s1561 [label="identifier"];
+  s1562 [label="s1562 SYMBOL\nscoped_identifier" href="rust-grammar.json.scoped_identifier.dot.svg"];
+  s1537:p6 -> s1562 [label="scoped_identifier"];
+  
+  }
+  

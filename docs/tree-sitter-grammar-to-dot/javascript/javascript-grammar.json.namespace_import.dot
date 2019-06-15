@@ -1,0 +1,15 @@
+
+  digraph namespace_import {
+  
+    rankdir=LR;
+  
+    s93 [label="s93\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s94 [label="s94 STRING\n\"*\""];
+  s93 -> s94 [];
+  s95 [label="s95 STRING\n\"as\""];
+  s94 -> s95 [];
+  s96 [label="s96 SYMBOL\nidentifier" href="javascript-grammar.json.identifier.dot.svg"];
+  s95 -> s96 [];
+  
+  }
+  

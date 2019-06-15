@@ -1,0 +1,46 @@
+
+  digraph char_literal {
+  
+    rankdir=LR;
+  
+    s1508 [label="s1508\n&rarr; TOKEN", shape=record, fixedsize=false, peripheries=1];
+  s1509 [label="s1509\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1510 [label="{s1510\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1511 [label="s1511 STRING\n\"b\""];
+  s1510:p0 -> s1511 [label="b"];
+  s1512 [label="s1512 \nBLANK"];
+  s1510:p1 -> s1512 [label=""];
+  s1509 -> s1510 [];
+  s1513 [label="s1513 STRING\n\"'\""];
+  s1511 -> s1513 [];
+  s1512 -> s1513 [];
+  s1514 [label="{s1514\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1515 [label="{s1515\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1516 [label="s1516\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1517 [label="s1517 STRING\n\"\\""];
+  s1516 -> s1517 [];
+  s1518 [label="{s1518\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>}}", shape=record, fixedsize=false, peripheries=1];
+  s1519 [label="s1519 PATTERN\n\"[^xu]\""];
+  s1518:p0 -> s1519 [label="[^xu]"];
+  s1520 [label="s1520 PATTERN\n\"u[0-9a-fA-F]{4}\""];
+  s1518:p1 -> s1520 [label="u[0-9a-fA-F]{4}"];
+  s1521 [label="s1521 PATTERN\n\"u{[0-9a-fA-F]+}\""];
+  s1518:p2 -> s1521 [label="u{[0-9a-fA-F]+}"];
+  s1522 [label="s1522 PATTERN\n\"x[0-9a-fA-F]{2}\""];
+  s1518:p3 -> s1522 [label="x[0-9a-fA-F]{2}"];
+  s1517 -> s1518 [];
+  s1515:p0 -> s1516 [label=""];
+  s1523 [label="s1523 PATTERN\n\"[^\\']\""];
+  s1515:p1 -> s1523 [label="[^\\']"];
+  s1514:p0 -> s1515 [label=""];
+  s1524 [label="s1524 \nBLANK"];
+  s1514:p1 -> s1524 [label=""];
+  s1513 -> s1514 [];
+  s1525 [label="s1525 STRING\n\"'\""];
+  s1518 -> s1525 [];
+  s1523 -> s1525 [];
+  s1524 -> s1525 [];
+  s1508 -> s1509 [];
+  
+  }
+  

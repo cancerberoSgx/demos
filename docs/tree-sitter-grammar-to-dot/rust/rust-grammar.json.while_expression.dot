@@ -1,0 +1,26 @@
+
+  digraph while_expression {
+  
+    rankdir=LR;
+  
+    s1217 [label="s1217\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1218 [label="{s1218\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1219 [label="s1219\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1220 [label="s1220 SYMBOL\nloop_label" href="rust-grammar.json.loop_label.dot.svg"];
+  s1219 -> s1220 [];
+  s1221 [label="s1221 STRING\n\":\""];
+  s1220 -> s1221 [];
+  s1218:p0 -> s1219 [label=""];
+  s1222 [label="s1222 \nBLANK"];
+  s1218:p1 -> s1222 [label=""];
+  s1217 -> s1218 [];
+  s1223 [label="s1223 STRING\n\"while\""];
+  s1221 -> s1223 [];
+  s1222 -> s1223 [];
+  s1224 [label="s1224 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1223 -> s1224 [];
+  s1225 [label="s1225 SYMBOL\nblock" href="rust-grammar.json.block.dot.svg"];
+  s1224 -> s1225 [];
+  
+  }
+  

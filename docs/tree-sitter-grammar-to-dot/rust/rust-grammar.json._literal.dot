@@ -1,0 +1,21 @@
+
+  digraph _literal {
+  
+    rankdir=LR;
+  
+    s1457 [label="{s1457\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>|<p5>}}", shape=record, fixedsize=false, peripheries=1];
+  s1458 [label="s1458 SYMBOL\nstring_literal" href="rust-grammar.json.string_literal.dot.svg"];
+  s1457:p0 -> s1458 [label="string_literal"];
+  s1459 [label="s1459 SYMBOL\nraw_string_literal" href="rust-grammar.json.raw_string_literal.dot.svg"];
+  s1457:p1 -> s1459 [label="raw_string_literal"];
+  s1460 [label="s1460 SYMBOL\nchar_literal" href="rust-grammar.json.char_literal.dot.svg"];
+  s1457:p2 -> s1460 [label="char_literal"];
+  s1461 [label="s1461 SYMBOL\nboolean_literal" href="rust-grammar.json.boolean_literal.dot.svg"];
+  s1457:p3 -> s1461 [label="boolean_literal"];
+  s1462 [label="s1462 SYMBOL\ninteger_literal" href="rust-grammar.json.integer_literal.dot.svg"];
+  s1457:p4 -> s1462 [label="integer_literal"];
+  s1463 [label="s1463 SYMBOL\nfloat_literal" href="rust-grammar.json.float_literal.dot.svg"];
+  s1457:p5 -> s1463 [label="float_literal"];
+  
+  }
+  

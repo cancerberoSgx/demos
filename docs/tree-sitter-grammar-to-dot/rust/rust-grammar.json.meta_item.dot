@@ -1,0 +1,63 @@
+
+  digraph meta_item {
+  
+    rankdir=LR;
+  
+    s213 [label="s213\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s214 [label="s214 SYMBOL\n_path" href="rust-grammar.json._path.dot.svg"];
+  s213 -> s214 [];
+  s215 [label="{s215\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s216 [label="{s216\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s217 [label="s217\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s218 [label="s218 STRING\n\"=\""];
+  s217 -> s218 [];
+  s219 [label="s219 SYMBOL\n_literal" href="rust-grammar.json._literal.dot.svg"];
+  s218 -> s219 [];
+  s216:p0 -> s217 [label=""];
+  s220 [label="s220\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s221 [label="s221 STRING\n\"(\""];
+  s220 -> s221 [];
+  s222 [label="{s222\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s223 [label="s223\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s224 [label="{s224\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s225 [label="s225 SYMBOL\nmeta_item" href="rust-grammar.json.meta_item.dot.svg"];
+  s224:p0 -> s225 [label="meta_item"];
+  s226 [label="s226 SYMBOL\n_literal" href="rust-grammar.json._literal.dot.svg"];
+  s224:p1 -> s226 [label="_literal"];
+  s223 -> s224 [];
+  s227 [label="s227\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s228 [label="s228\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s229 [label="s229 STRING\n\",\""];
+  s228 -> s229 [];
+  s230 [label="{s230\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s231 [label="s231 SYMBOL\nmeta_item" href="rust-grammar.json.meta_item.dot.svg"];
+  s230:p0 -> s231 [label="meta_item"];
+  s232 [label="s232 SYMBOL\n_literal" href="rust-grammar.json._literal.dot.svg"];
+  s230:p1 -> s232 [label="_literal"];
+  s229 -> s230 [];
+  s227 -> s228 [];
+  s230 -> s227 [];
+  s225 -> s227 [];
+  s226 -> s227 [];
+  s222:p0 -> s223 [label=""];
+  s233 [label="s233 \nBLANK"];
+  s222:p1 -> s233 [label=""];
+  s221 -> s222 [];
+  s234 [label="{s234\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s235 [label="s235 STRING\n\",\""];
+  s234:p0 -> s235 [label=","];
+  s236 [label="s236 \nBLANK"];
+  s234:p1 -> s236 [label=""];
+  s227 -> s234 [];
+  s233 -> s234 [];
+  s237 [label="s237 STRING\n\")\""];
+  s235 -> s237 [];
+  s236 -> s237 [];
+  s216:p1 -> s220 [label=""];
+  s215:p0 -> s216 [label=""];
+  s238 [label="s238 \nBLANK"];
+  s215:p1 -> s238 [label=""];
+  s214 -> s215 [];
+  
+  }
+  

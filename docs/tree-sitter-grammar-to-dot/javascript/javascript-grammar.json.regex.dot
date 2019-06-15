@@ -1,0 +1,21 @@
+
+  digraph regex {
+  
+    rankdir=LR;
+  
+    s669 [label="s669\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s670 [label="s670 STRING\n\"/\""];
+  s669 -> s670 [];
+  s671 [label="s671 SYMBOL\nregex_pattern" href="javascript-grammar.json.regex_pattern.dot.svg"];
+  s670 -> s671 [];
+  s672 [label="s672 IMMEDIATE_TOKEN\n(not-implemented)"];
+  s671 -> s672 [];
+  s673 [label="{s673\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s674 [label="s674 SYMBOL\nregex_flags" href="javascript-grammar.json.regex_flags.dot.svg"];
+  s673:p0 -> s674 [label="regex_flags"];
+  s675 [label="s675 \nBLANK"];
+  s673:p1 -> s675 [label=""];
+  s672 -> s673 [];
+  
+  }
+  

@@ -1,0 +1,15 @@
+
+  digraph with_statement {
+  
+    rankdir=LR;
+  
+    s245 [label="s245\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s246 [label="s246 STRING\n\"with\""];
+  s245 -> s246 [];
+  s247 [label="s247 SYMBOL\nparenthesized_expression" href="javascript-grammar.json.parenthesized_expression.dot.svg"];
+  s246 -> s247 [];
+  s248 [label="s248 SYMBOL\n_statement" href="javascript-grammar.json._statement.dot.svg"];
+  s247 -> s248 [];
+  
+  }
+  

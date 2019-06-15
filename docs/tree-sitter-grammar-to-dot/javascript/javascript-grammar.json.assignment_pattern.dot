@@ -1,0 +1,20 @@
+
+  digraph assignment_pattern {
+  
+    rankdir=LR;
+  
+    s367 [label="s367\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s368 [label="{s368\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s369 [label="s369\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s370 [label="s370 SYMBOL\nidentifier" href="javascript-grammar.json.identifier.dot.svg"];
+  s369 -> s370 [];
+  s368:p0 -> s369 [label="shorthand_property_identifier"];
+  s371 [label="s371 SYMBOL\n_destructuring_pattern" href="javascript-grammar.json._destructuring_pattern.dot.svg"];
+  s368:p1 -> s371 [label="_destructuring_pattern"];
+  s367 -> s368 [];
+  s372 [label="s372 SYMBOL\n_initializer" href="javascript-grammar.json._initializer.dot.svg"];
+  s370 -> s372 [];
+  s371 -> s372 [];
+  
+  }
+  

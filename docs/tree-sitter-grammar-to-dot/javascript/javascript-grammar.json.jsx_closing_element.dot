@@ -1,0 +1,17 @@
+
+  digraph jsx_closing_element {
+  
+    rankdir=LR;
+  
+    s443 [label="s443\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s444 [label="s444 STRING\n\"<\""];
+  s443 -> s444 [];
+  s445 [label="s445 STRING\n\"/\""];
+  s444 -> s445 [];
+  s446 [label="s446 SYMBOL\n_jsx_element_name" href="javascript-grammar.json._jsx_element_name.dot.svg"];
+  s445 -> s446 [];
+  s447 [label="s447 STRING\n\">\""];
+  s446 -> s447 [];
+  
+  }
+  

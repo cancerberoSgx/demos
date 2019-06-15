@@ -1,0 +1,54 @@
+
+  digraph struct_pattern {
+  
+    rankdir=LR;
+  
+    s1400 [label="s1400\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1401 [label="{s1401\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1402 [label="s1402 SYMBOL\n_type_identifier" href="rust-grammar.json._type_identifier.dot.svg"];
+  s1401:p0 -> s1402 [label="_type_identifier"];
+  s1403 [label="s1403 SYMBOL\nscoped_type_identifier" href="rust-grammar.json.scoped_type_identifier.dot.svg"];
+  s1401:p1 -> s1403 [label="scoped_type_identifier"];
+  s1400 -> s1401 [];
+  s1404 [label="s1404 STRING\n\"{\""];
+  s1402 -> s1404 [];
+  s1403 -> s1404 [];
+  s1405 [label="{s1405\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1406 [label="s1406\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1407 [label="{s1407\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1408 [label="s1408 SYMBOL\nfield_pattern" href="rust-grammar.json.field_pattern.dot.svg"];
+  s1407:p0 -> s1408 [label="field_pattern"];
+  s1409 [label="s1409 SYMBOL\nremaining_field_pattern" href="rust-grammar.json.remaining_field_pattern.dot.svg"];
+  s1407:p1 -> s1409 [label="remaining_field_pattern"];
+  s1406 -> s1407 [];
+  s1410 [label="s1410\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s1411 [label="s1411\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1412 [label="s1412 STRING\n\",\""];
+  s1411 -> s1412 [];
+  s1413 [label="{s1413\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1414 [label="s1414 SYMBOL\nfield_pattern" href="rust-grammar.json.field_pattern.dot.svg"];
+  s1413:p0 -> s1414 [label="field_pattern"];
+  s1415 [label="s1415 SYMBOL\nremaining_field_pattern" href="rust-grammar.json.remaining_field_pattern.dot.svg"];
+  s1413:p1 -> s1415 [label="remaining_field_pattern"];
+  s1412 -> s1413 [];
+  s1410 -> s1411 [];
+  s1413 -> s1410 [];
+  s1408 -> s1410 [];
+  s1409 -> s1410 [];
+  s1405:p0 -> s1406 [label=""];
+  s1416 [label="s1416 \nBLANK"];
+  s1405:p1 -> s1416 [label=""];
+  s1404 -> s1405 [];
+  s1417 [label="{s1417\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1418 [label="s1418 STRING\n\",\""];
+  s1417:p0 -> s1418 [label=","];
+  s1419 [label="s1419 \nBLANK"];
+  s1417:p1 -> s1419 [label=""];
+  s1410 -> s1417 [];
+  s1416 -> s1417 [];
+  s1420 [label="s1420 STRING\n\"}\""];
+  s1418 -> s1420 [];
+  s1419 -> s1420 [];
+  
+  }
+  

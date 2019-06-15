@@ -1,0 +1,13 @@
+
+  digraph rest_parameter {
+  
+    rankdir=LR;
+  
+    s877 [label="s877\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s878 [label="s878 STRING\n\"...\""];
+  s877 -> s878 [];
+  s879 [label="s879 SYMBOL\nidentifier" href="javascript-grammar.json.identifier.dot.svg"];
+  s878 -> s879 [];
+  
+  }
+  

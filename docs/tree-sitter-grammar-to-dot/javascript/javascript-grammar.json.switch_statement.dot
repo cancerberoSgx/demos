@@ -1,0 +1,15 @@
+
+  digraph switch_statement {
+  
+    rankdir=LR;
+  
+    s171 [label="s171\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s172 [label="s172 STRING\n\"switch\""];
+  s171 -> s172 [];
+  s173 [label="s173 SYMBOL\nparenthesized_expression" href="javascript-grammar.json.parenthesized_expression.dot.svg"];
+  s172 -> s173 [];
+  s174 [label="s174 SYMBOL\nswitch_body" href="javascript-grammar.json.switch_body.dot.svg"];
+  s173 -> s174 [];
+  
+  }
+  

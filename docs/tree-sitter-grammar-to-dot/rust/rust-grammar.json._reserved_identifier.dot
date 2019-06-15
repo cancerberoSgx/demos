@@ -1,0 +1,15 @@
+
+  digraph _reserved_identifier {
+  
+    rankdir=LR;
+  
+    s1564 [label="s1564\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s1565 [label="{s1565\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1566 [label="s1566 STRING\n\"default\""];
+  s1565:p0 -> s1566 [label="default"];
+  s1567 [label="s1567 STRING\n\"union\""];
+  s1565:p1 -> s1567 [label="union"];
+  s1564 -> s1565 [];
+  
+  }
+  

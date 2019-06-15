@@ -1,0 +1,15 @@
+
+  digraph pair {
+  
+    rankdir=LR;
+  
+    s893 [label="s893\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s894 [label="s894 SYMBOL\n_property_name" href="javascript-grammar.json._property_name.dot.svg"];
+  s893 -> s894 [];
+  s895 [label="s895 STRING\n\":\""];
+  s894 -> s895 [];
+  s896 [label="s896 SYMBOL\n_expression" href="javascript-grammar.json._expression.dot.svg"];
+  s895 -> s896 [];
+  
+  }
+  

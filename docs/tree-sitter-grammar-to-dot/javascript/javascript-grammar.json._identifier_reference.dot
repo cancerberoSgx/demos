@@ -1,0 +1,15 @@
+
+  digraph _identifier_reference {
+  
+    rankdir=LR;
+  
+    s810 [label="{s810\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s811 [label="s811 SYMBOL\nidentifier" href="javascript-grammar.json.identifier.dot.svg"];
+  s810:p0 -> s811 [label="identifier"];
+  s812 [label="s812\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s813 [label="s813 SYMBOL\n_reserved_identifier" href="javascript-grammar.json._reserved_identifier.dot.svg"];
+  s812 -> s813 [];
+  s810:p1 -> s812 [label="identifier"];
+  
+  }
+  

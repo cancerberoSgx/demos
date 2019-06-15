@@ -1,0 +1,22 @@
+
+  digraph variable_declarator {
+  
+    rankdir=LR;
+  
+    s158 [label="s158\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s159 [label="{s159\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s160 [label="s160 SYMBOL\nidentifier" href="javascript-grammar.json.identifier.dot.svg"];
+  s159:p0 -> s160 [label="identifier"];
+  s161 [label="s161 SYMBOL\n_destructuring_pattern" href="javascript-grammar.json._destructuring_pattern.dot.svg"];
+  s159:p1 -> s161 [label="_destructuring_pattern"];
+  s158 -> s159 [];
+  s162 [label="{s162\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s163 [label="s163 SYMBOL\n_initializer" href="javascript-grammar.json._initializer.dot.svg"];
+  s162:p0 -> s163 [label="_initializer"];
+  s164 [label="s164 \nBLANK"];
+  s162:p1 -> s164 [label=""];
+  s160 -> s162 [];
+  s161 -> s162 [];
+  
+  }
+  

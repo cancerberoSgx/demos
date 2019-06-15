@@ -1,0 +1,24 @@
+
+  digraph foreign_mod_item {
+  
+    rankdir=LR;
+  
+    s248 [label="s248\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s249 [label="{s249\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s250 [label="s250 SYMBOL\nvisibility_modifier" href="rust-grammar.json.visibility_modifier.dot.svg"];
+  s249:p0 -> s250 [label="visibility_modifier"];
+  s251 [label="s251 \nBLANK"];
+  s249:p1 -> s251 [label=""];
+  s248 -> s249 [];
+  s252 [label="s252 SYMBOL\nextern_modifier" href="rust-grammar.json.extern_modifier.dot.svg"];
+  s250 -> s252 [];
+  s251 -> s252 [];
+  s253 [label="{s253\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s254 [label="s254 STRING\n\";\""];
+  s253:p0 -> s254 [label=";"];
+  s255 [label="s255 SYMBOL\ndeclaration_list" href="rust-grammar.json.declaration_list.dot.svg"];
+  s253:p1 -> s255 [label="declaration_list"];
+  s252 -> s253 [];
+  
+  }
+  

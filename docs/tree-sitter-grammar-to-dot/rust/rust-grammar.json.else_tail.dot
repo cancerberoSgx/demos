@@ -1,0 +1,19 @@
+
+  digraph else_tail {
+  
+    rankdir=LR;
+  
+    s1166 [label="s1166\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1167 [label="s1167 STRING\n\"else\""];
+  s1166 -> s1167 [];
+  s1168 [label="{s1168\n&rarr; CHOICE|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+  s1169 [label="s1169 SYMBOL\nblock" href="rust-grammar.json.block.dot.svg"];
+  s1168:p0 -> s1169 [label="block"];
+  s1170 [label="s1170 SYMBOL\nif_expression" href="rust-grammar.json.if_expression.dot.svg"];
+  s1168:p1 -> s1170 [label="if_expression"];
+  s1171 [label="s1171 SYMBOL\nif_let_expression" href="rust-grammar.json.if_let_expression.dot.svg"];
+  s1168:p2 -> s1171 [label="if_let_expression"];
+  s1167 -> s1168 [];
+  
+  }
+  

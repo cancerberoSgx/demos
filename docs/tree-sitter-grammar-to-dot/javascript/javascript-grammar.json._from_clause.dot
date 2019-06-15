@@ -1,0 +1,13 @@
+
+  digraph _from_clause {
+  
+    rankdir=LR;
+  
+    s90 [label="s90\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s91 [label="s91 STRING\n\"from\""];
+  s90 -> s91 [];
+  s92 [label="s92 SYMBOL\nstring" href="javascript-grammar.json.string.dot.svg"];
+  s91 -> s92 [];
+  
+  }
+  

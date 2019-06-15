@@ -1,0 +1,9 @@
+
+  digraph remaining_field_pattern {
+  
+    rankdir=LR;
+  
+    s1435 [label="s1435 STRING\n\"..\""];
+  
+  }
+  

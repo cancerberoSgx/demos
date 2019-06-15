@@ -1,0 +1,13 @@
+
+  digraph impl_for_clause {
+  
+    rankdir=LR;
+  
+    s604 [label="s604\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s605 [label="s605 STRING\n\"for\""];
+  s604 -> s605 [];
+  s606 [label="s606 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s605 -> s606 [];
+  
+  }
+  

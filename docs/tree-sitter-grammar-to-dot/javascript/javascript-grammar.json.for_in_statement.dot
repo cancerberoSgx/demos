@@ -1,0 +1,43 @@
+
+  digraph for_in_statement {
+  
+    rankdir=LR;
+  
+    s191 [label="s191\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s192 [label="s192 STRING\n\"for\""];
+  s191 -> s192 [];
+  s193 [label="s193 STRING\n\"(\""];
+  s192 -> s193 [];
+  s194 [label="{s194\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s195 [label="{s195\n&rarr; CHOICE|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+  s196 [label="s196 STRING\n\"var\""];
+  s195:p0 -> s196 [label="var"];
+  s197 [label="s197 STRING\n\"let\""];
+  s195:p1 -> s197 [label="let"];
+  s198 [label="s198 STRING\n\"const\""];
+  s195:p2 -> s198 [label="const"];
+  s194:p0 -> s195 [label=""];
+  s199 [label="s199 \nBLANK"];
+  s194:p1 -> s199 [label=""];
+  s193 -> s194 [];
+  s200 [label="{s200\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s201 [label="s201 SYMBOL\nidentifier" href="javascript-grammar.json.identifier.dot.svg"];
+  s200:p0 -> s201 [label="identifier"];
+  s202 [label="s202 SYMBOL\n_destructuring_pattern" href="javascript-grammar.json._destructuring_pattern.dot.svg"];
+  s200:p1 -> s202 [label="_destructuring_pattern"];
+  s196 -> s200 [];
+  s197 -> s200 [];
+  s198 -> s200 [];
+  s199 -> s200 [];
+  s203 [label="s203 STRING\n\"in\""];
+  s201 -> s203 [];
+  s202 -> s203 [];
+  s204 [label="s204 SYMBOL\n_expressions" href="javascript-grammar.json._expressions.dot.svg"];
+  s203 -> s204 [];
+  s205 [label="s205 STRING\n\")\""];
+  s204 -> s205 [];
+  s206 [label="s206 SYMBOL\n_statement" href="javascript-grammar.json._statement.dot.svg"];
+  s205 -> s206 [];
+  
+  }
+  

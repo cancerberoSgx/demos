@@ -1,0 +1,23 @@
+
+  digraph _property_name {
+  
+    rankdir=LR;
+  
+    s897 [label="{s897\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>}}", shape=record, fixedsize=false, peripheries=1];
+  s898 [label="s898\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s899 [label="{s899\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s900 [label="s900 SYMBOL\nidentifier" href="javascript-grammar.json.identifier.dot.svg"];
+  s899:p0 -> s900 [label="identifier"];
+  s901 [label="s901 SYMBOL\n_reserved_identifier" href="javascript-grammar.json._reserved_identifier.dot.svg"];
+  s899:p1 -> s901 [label="_reserved_identifier"];
+  s898 -> s899 [];
+  s897:p0 -> s898 [label="property_identifier"];
+  s902 [label="s902 SYMBOL\nstring" href="javascript-grammar.json.string.dot.svg"];
+  s897:p1 -> s902 [label="string"];
+  s903 [label="s903 SYMBOL\nnumber" href="javascript-grammar.json.number.dot.svg"];
+  s897:p2 -> s903 [label="number"];
+  s904 [label="s904 SYMBOL\ncomputed_property_name" href="javascript-grammar.json.computed_property_name.dot.svg"];
+  s897:p3 -> s904 [label="computed_property_name"];
+  
+  }
+  

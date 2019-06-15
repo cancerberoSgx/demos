@@ -1,0 +1,42 @@
+
+  digraph token_tree_pattern {
+  
+    rankdir=LR;
+  
+    s71 [label="{s71\n&rarr; CHOICE|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+  s72 [label="s72\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s73 [label="s73 STRING\n\"(\""];
+  s72 -> s73 [];
+  s74 [label="s74\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s75 [label="s75 SYMBOL\n_token_pattern" href="rust-grammar.json._token_pattern.dot.svg"];
+  s74 -> s75 [];
+  s75 -> s74 [];
+  s73 -> s74 [];
+  s76 [label="s76 STRING\n\")\""];
+  s75 -> s76 [];
+  s71:p0 -> s72 [label=""];
+  s77 [label="s77\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s78 [label="s78 STRING\n\"[\""];
+  s77 -> s78 [];
+  s79 [label="s79\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s80 [label="s80 SYMBOL\n_token_pattern" href="rust-grammar.json._token_pattern.dot.svg"];
+  s79 -> s80 [];
+  s80 -> s79 [];
+  s78 -> s79 [];
+  s81 [label="s81 STRING\n\"]\""];
+  s80 -> s81 [];
+  s71:p1 -> s77 [label=""];
+  s82 [label="s82\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s83 [label="s83 STRING\n\"{\""];
+  s82 -> s83 [];
+  s84 [label="s84\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s85 [label="s85 SYMBOL\n_token_pattern" href="rust-grammar.json._token_pattern.dot.svg"];
+  s84 -> s85 [];
+  s85 -> s84 [];
+  s83 -> s84 [];
+  s86 [label="s86 STRING\n\"}\""];
+  s85 -> s86 [];
+  s71:p2 -> s82 [label=""];
+  
+  }
+  

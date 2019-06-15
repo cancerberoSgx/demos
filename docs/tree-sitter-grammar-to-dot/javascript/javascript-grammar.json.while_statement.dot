@@ -1,0 +1,15 @@
+
+  digraph while_statement {
+  
+    rankdir=LR;
+  
+    s226 [label="s226\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s227 [label="s227 STRING\n\"while\""];
+  s226 -> s227 [];
+  s228 [label="s228 SYMBOL\nparenthesized_expression" href="javascript-grammar.json.parenthesized_expression.dot.svg"];
+  s227 -> s228 [];
+  s229 [label="s229 SYMBOL\n_statement" href="javascript-grammar.json._statement.dot.svg"];
+  s228 -> s229 [];
+  
+  }
+  

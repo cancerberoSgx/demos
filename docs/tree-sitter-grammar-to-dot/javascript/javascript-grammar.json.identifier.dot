@@ -1,0 +1,18 @@
+
+  digraph identifier {
+  
+    rankdir=LR;
+  
+    s767 [label="s767\n&rarr; TOKEN", shape=record, fixedsize=false, peripheries=1];
+  s768 [label="s768\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s769 [label="s769 PATTERN\n\"[^\s0-9:;`"'@#.,|^&<=>+\-*\/\\%?!~()\[\]{}\uFEFF\u2060\u200B\u00A0]\""];
+  s768 -> s769 [];
+  s770 [label="s770\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s771 [label="s771 PATTERN\n\"[^\s:;`"'@#.,|^&<=>+\-*\/\\%?!~()\[\]{}\uFEFF\u2060\u200B\u00A0]\""];
+  s770 -> s771 [];
+  s771 -> s770 [];
+  s769 -> s770 [];
+  s767 -> s768 [];
+  
+  }
+  

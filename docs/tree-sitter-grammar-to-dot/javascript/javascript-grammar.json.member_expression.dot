@@ -1,0 +1,32 @@
+
+  digraph member_expression {
+  
+    rankdir=LR;
+  
+    s563 [label="s563\n&rarr; PREC", shape=record, fixedsize=false, peripheries=1];
+  s564 [label="s564\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s565 [label="{s565\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>}}", shape=record, fixedsize=false, peripheries=1];
+  s566 [label="s566 SYMBOL\n_expression" href="javascript-grammar.json._expression.dot.svg"];
+  s565:p0 -> s566 [label="_expression"];
+  s567 [label="s567 SYMBOL\nidentifier" href="javascript-grammar.json.identifier.dot.svg"];
+  s565:p1 -> s567 [label="identifier"];
+  s568 [label="s568 SYMBOL\nsuper" href="javascript-grammar.json.super.dot.svg"];
+  s565:p2 -> s568 [label="super"];
+  s569 [label="s569\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s570 [label="s570 SYMBOL\n_reserved_identifier" href="javascript-grammar.json._reserved_identifier.dot.svg"];
+  s569 -> s570 [];
+  s565:p3 -> s569 [label="identifier"];
+  s564 -> s565 [];
+  s571 [label="s571 STRING\n\".\""];
+  s566 -> s571 [];
+  s567 -> s571 [];
+  s568 -> s571 [];
+  s570 -> s571 [];
+  s572 [label="s572\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s573 [label="s573 SYMBOL\nidentifier" href="javascript-grammar.json.identifier.dot.svg"];
+  s572 -> s573 [];
+  s571 -> s572 [];
+  s563 -> s564 [];
+  
+  }
+  

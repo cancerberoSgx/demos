@@ -1,0 +1,15 @@
+
+  digraph meta_property {
+  
+    rankdir=LR;
+  
+    s772 [label="s772\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s773 [label="s773 STRING\n\"new\""];
+  s772 -> s773 [];
+  s774 [label="s774 STRING\n\".\""];
+  s773 -> s774 [];
+  s775 [label="s775 STRING\n\"target\""];
+  s774 -> s775 [];
+  
+  }
+  

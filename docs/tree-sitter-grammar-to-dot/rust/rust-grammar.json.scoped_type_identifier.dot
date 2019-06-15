@@ -1,0 +1,33 @@
+
+  digraph scoped_type_identifier {
+  
+    rankdir=LR;
+  
+    s1001 [label="s1001\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1002 [label="{s1002\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1003 [label="{s1003\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>}}", shape=record, fixedsize=false, peripheries=1];
+  s1004 [label="s1004 SYMBOL\n_path" href="rust-grammar.json._path.dot.svg"];
+  s1003:p0 -> s1004 [label="_path"];
+  s1005 [label="s1005\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s1006 [label="s1006 SYMBOL\ngeneric_type_with_turbofish" href="rust-grammar.json.generic_type_with_turbofish.dot.svg"];
+  s1005 -> s1006 [];
+  s1003:p1 -> s1005 [label="generic_type"];
+  s1007 [label="s1007 SYMBOL\nbracketed_type" href="rust-grammar.json.bracketed_type.dot.svg"];
+  s1003:p2 -> s1007 [label="bracketed_type"];
+  s1008 [label="s1008 SYMBOL\ngeneric_type" href="rust-grammar.json.generic_type.dot.svg"];
+  s1003:p3 -> s1008 [label="generic_type"];
+  s1002:p0 -> s1003 [label=""];
+  s1009 [label="s1009 \nBLANK"];
+  s1002:p1 -> s1009 [label=""];
+  s1001 -> s1002 [];
+  s1010 [label="s1010 STRING\n\"::\""];
+  s1004 -> s1010 [];
+  s1006 -> s1010 [];
+  s1007 -> s1010 [];
+  s1008 -> s1010 [];
+  s1009 -> s1010 [];
+  s1011 [label="s1011 SYMBOL\n_type_identifier" href="rust-grammar.json._type_identifier.dot.svg"];
+  s1010 -> s1011 [];
+  
+  }
+  

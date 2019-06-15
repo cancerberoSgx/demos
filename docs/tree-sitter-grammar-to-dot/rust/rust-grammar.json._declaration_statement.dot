@@ -1,0 +1,51 @@
+
+  digraph _declaration_statement {
+  
+    rankdir=LR;
+  
+    s13 [label="{s13\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>|<p5>|<p6>|<p7>|<p8>|<p9>|<p10>|<p11>|<p12>|<p13>|<p14>|<p15>|<p16>|<p17>|<p18>|<p19>|<p20>}}", shape=record, fixedsize=false, peripheries=1];
+  s14 [label="s14 SYMBOL\nconst_item" href="rust-grammar.json.const_item.dot.svg"];
+  s13:p0 -> s14 [label="const_item"];
+  s15 [label="s15 SYMBOL\nmacro_invocation" href="rust-grammar.json.macro_invocation.dot.svg"];
+  s13:p1 -> s15 [label="macro_invocation"];
+  s16 [label="s16 SYMBOL\nmacro_definition" href="rust-grammar.json.macro_definition.dot.svg"];
+  s13:p2 -> s16 [label="macro_definition"];
+  s17 [label="s17 SYMBOL\nempty_statement" href="rust-grammar.json.empty_statement.dot.svg"];
+  s13:p3 -> s17 [label="empty_statement"];
+  s18 [label="s18 SYMBOL\nattribute_item" href="rust-grammar.json.attribute_item.dot.svg"];
+  s13:p4 -> s18 [label="attribute_item"];
+  s19 [label="s19 SYMBOL\ninner_attribute_item" href="rust-grammar.json.inner_attribute_item.dot.svg"];
+  s13:p5 -> s19 [label="inner_attribute_item"];
+  s20 [label="s20 SYMBOL\nmod_item" href="rust-grammar.json.mod_item.dot.svg"];
+  s13:p6 -> s20 [label="mod_item"];
+  s21 [label="s21 SYMBOL\nforeign_mod_item" href="rust-grammar.json.foreign_mod_item.dot.svg"];
+  s13:p7 -> s21 [label="foreign_mod_item"];
+  s22 [label="s22 SYMBOL\nstruct_item" href="rust-grammar.json.struct_item.dot.svg"];
+  s13:p8 -> s22 [label="struct_item"];
+  s23 [label="s23 SYMBOL\nunion_item" href="rust-grammar.json.union_item.dot.svg"];
+  s13:p9 -> s23 [label="union_item"];
+  s24 [label="s24 SYMBOL\nenum_item" href="rust-grammar.json.enum_item.dot.svg"];
+  s13:p10 -> s24 [label="enum_item"];
+  s25 [label="s25 SYMBOL\ntype_item" href="rust-grammar.json.type_item.dot.svg"];
+  s13:p11 -> s25 [label="type_item"];
+  s26 [label="s26 SYMBOL\nfunction_item" href="rust-grammar.json.function_item.dot.svg"];
+  s13:p12 -> s26 [label="function_item"];
+  s27 [label="s27 SYMBOL\nfunction_signature_item" href="rust-grammar.json.function_signature_item.dot.svg"];
+  s13:p13 -> s27 [label="function_signature_item"];
+  s28 [label="s28 SYMBOL\nimpl_item" href="rust-grammar.json.impl_item.dot.svg"];
+  s13:p14 -> s28 [label="impl_item"];
+  s29 [label="s29 SYMBOL\ntrait_item" href="rust-grammar.json.trait_item.dot.svg"];
+  s13:p15 -> s29 [label="trait_item"];
+  s30 [label="s30 SYMBOL\nassociated_type" href="rust-grammar.json.associated_type.dot.svg"];
+  s13:p16 -> s30 [label="associated_type"];
+  s31 [label="s31 SYMBOL\nlet_declaration" href="rust-grammar.json.let_declaration.dot.svg"];
+  s13:p17 -> s31 [label="let_declaration"];
+  s32 [label="s32 SYMBOL\nuse_declaration" href="rust-grammar.json.use_declaration.dot.svg"];
+  s13:p18 -> s32 [label="use_declaration"];
+  s33 [label="s33 SYMBOL\nextern_crate_declaration" href="rust-grammar.json.extern_crate_declaration.dot.svg"];
+  s13:p19 -> s33 [label="extern_crate_declaration"];
+  s34 [label="s34 SYMBOL\nstatic_item" href="rust-grammar.json.static_item.dot.svg"];
+  s13:p20 -> s34 [label="static_item"];
+  
+  }
+  

@@ -1,0 +1,50 @@
+
+  digraph for_of_statement {
+  
+    rankdir=LR;
+  
+    s207 [label="s207\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s208 [label="s208 STRING\n\"for\""];
+  s207 -> s208 [];
+  s209 [label="{s209\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s210 [label="s210 STRING\n\"await\""];
+  s209:p0 -> s210 [label="await"];
+  s211 [label="s211 \nBLANK"];
+  s209:p1 -> s211 [label=""];
+  s208 -> s209 [];
+  s212 [label="s212 STRING\n\"(\""];
+  s210 -> s212 [];
+  s211 -> s212 [];
+  s213 [label="{s213\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s214 [label="{s214\n&rarr; CHOICE|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+  s215 [label="s215 STRING\n\"var\""];
+  s214:p0 -> s215 [label="var"];
+  s216 [label="s216 STRING\n\"let\""];
+  s214:p1 -> s216 [label="let"];
+  s217 [label="s217 STRING\n\"const\""];
+  s214:p2 -> s217 [label="const"];
+  s213:p0 -> s214 [label=""];
+  s218 [label="s218 \nBLANK"];
+  s213:p1 -> s218 [label=""];
+  s212 -> s213 [];
+  s219 [label="{s219\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s220 [label="s220 SYMBOL\nidentifier" href="javascript-grammar.json.identifier.dot.svg"];
+  s219:p0 -> s220 [label="identifier"];
+  s221 [label="s221 SYMBOL\n_destructuring_pattern" href="javascript-grammar.json._destructuring_pattern.dot.svg"];
+  s219:p1 -> s221 [label="_destructuring_pattern"];
+  s215 -> s219 [];
+  s216 -> s219 [];
+  s217 -> s219 [];
+  s218 -> s219 [];
+  s222 [label="s222 STRING\n\"of\""];
+  s220 -> s222 [];
+  s221 -> s222 [];
+  s223 [label="s223 SYMBOL\n_expression" href="javascript-grammar.json._expression.dot.svg"];
+  s222 -> s223 [];
+  s224 [label="s224 STRING\n\")\""];
+  s223 -> s224 [];
+  s225 [label="s225 SYMBOL\n_statement" href="javascript-grammar.json._statement.dot.svg"];
+  s224 -> s225 [];
+  
+  }
+  

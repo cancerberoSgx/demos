@@ -1,0 +1,36 @@
+
+  digraph enum_item {
+  
+    rankdir=LR;
+  
+    s298 [label="s298\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s299 [label="{s299\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s300 [label="s300 SYMBOL\nvisibility_modifier" href="rust-grammar.json.visibility_modifier.dot.svg"];
+  s299:p0 -> s300 [label="visibility_modifier"];
+  s301 [label="s301 \nBLANK"];
+  s299:p1 -> s301 [label=""];
+  s298 -> s299 [];
+  s302 [label="s302 STRING\n\"enum\""];
+  s300 -> s302 [];
+  s301 -> s302 [];
+  s303 [label="s303 SYMBOL\n_type_identifier" href="rust-grammar.json._type_identifier.dot.svg"];
+  s302 -> s303 [];
+  s304 [label="{s304\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s305 [label="s305 SYMBOL\ntype_parameters" href="rust-grammar.json.type_parameters.dot.svg"];
+  s304:p0 -> s305 [label="type_parameters"];
+  s306 [label="s306 \nBLANK"];
+  s304:p1 -> s306 [label=""];
+  s303 -> s304 [];
+  s307 [label="{s307\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s308 [label="s308 SYMBOL\nwhere_clause" href="rust-grammar.json.where_clause.dot.svg"];
+  s307:p0 -> s308 [label="where_clause"];
+  s309 [label="s309 \nBLANK"];
+  s307:p1 -> s309 [label=""];
+  s305 -> s307 [];
+  s306 -> s307 [];
+  s310 [label="s310 SYMBOL\nenum_variant_list" href="rust-grammar.json.enum_variant_list.dot.svg"];
+  s308 -> s310 [];
+  s309 -> s310 [];
+  
+  }
+  

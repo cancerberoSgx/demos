@@ -1,0 +1,13 @@
+
+  digraph debugger_statement {
+  
+    rankdir=LR;
+  
+    s263 [label="s263\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s264 [label="s264 STRING\n\"debugger\""];
+  s263 -> s264 [];
+  s265 [label="s265 SYMBOL\n_semicolon" href="javascript-grammar.json._semicolon.dot.svg"];
+  s264 -> s265 [];
+  
+  }
+  

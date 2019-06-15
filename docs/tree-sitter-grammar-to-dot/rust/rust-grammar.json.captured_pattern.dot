@@ -1,0 +1,15 @@
+
+  digraph captured_pattern {
+  
+    rankdir=LR;
+  
+    s1447 [label="s1447\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1448 [label="s1448 SYMBOL\nidentifier" href="rust-grammar.json.identifier.dot.svg"];
+  s1447 -> s1448 [];
+  s1449 [label="s1449 STRING\n\"@\""];
+  s1448 -> s1449 [];
+  s1450 [label="s1450 SYMBOL\n_pattern" href="rust-grammar.json._pattern.dot.svg"];
+  s1449 -> s1450 [];
+  
+  }
+  

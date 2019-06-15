@@ -1,0 +1,21 @@
+
+  digraph _formal_parameter {
+  
+    rankdir=LR;
+  
+    s870 [label="{s870\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>}}", shape=record, fixedsize=false, peripheries=1];
+  s871 [label="s871 SYMBOL\nidentifier" href="javascript-grammar.json.identifier.dot.svg"];
+  s870:p0 -> s871 [label="identifier"];
+  s872 [label="s872\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s873 [label="s873 SYMBOL\n_reserved_identifier" href="javascript-grammar.json._reserved_identifier.dot.svg"];
+  s872 -> s873 [];
+  s870:p1 -> s872 [label="identifier"];
+  s874 [label="s874 SYMBOL\n_destructuring_pattern" href="javascript-grammar.json._destructuring_pattern.dot.svg"];
+  s870:p2 -> s874 [label="_destructuring_pattern"];
+  s875 [label="s875 SYMBOL\nassignment_pattern" href="javascript-grammar.json.assignment_pattern.dot.svg"];
+  s870:p3 -> s875 [label="assignment_pattern"];
+  s876 [label="s876 SYMBOL\nrest_parameter" href="javascript-grammar.json.rest_parameter.dot.svg"];
+  s870:p4 -> s876 [label="rest_parameter"];
+  
+  }
+  

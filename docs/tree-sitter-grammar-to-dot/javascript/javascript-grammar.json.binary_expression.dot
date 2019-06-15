@@ -1,0 +1,59 @@
+
+  digraph binary_expression {
+  
+    rankdir=LR;
+  
+    s589 [label="{s589\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>|<p5>|<p6>|<p7>|<p8>|<p9>|<p10>|<p11>|<p12>|<p13>|<p14>|<p15>|<p16>|<p17>|<p18>|<p19>|<p20>|<p21>|<p22>|<p23>|<p24>}}", shape=record, fixedsize=false, peripheries=1];
+  s590 [label="s590 PREC_LEFT\n(not-implemented)"];
+  s589:p0 -> s590 [label="4"];
+  s591 [label="s591 PREC_LEFT\n(not-implemented)"];
+  s589:p1 -> s591 [label="3"];
+  s592 [label="s592 PREC_LEFT\n(not-implemented)"];
+  s589:p2 -> s592 [label="2"];
+  s593 [label="s593 PREC_LEFT\n(not-implemented)"];
+  s589:p3 -> s593 [label="6"];
+  s594 [label="s594 PREC_LEFT\n(not-implemented)"];
+  s589:p4 -> s594 [label="6"];
+  s595 [label="s595 PREC_LEFT\n(not-implemented)"];
+  s589:p5 -> s595 [label="6"];
+  s596 [label="s596 PREC_LEFT\n(not-implemented)"];
+  s589:p6 -> s596 [label="3"];
+  s597 [label="s597 PREC_LEFT\n(not-implemented)"];
+  s589:p7 -> s597 [label="2"];
+  s598 [label="s598 PREC_LEFT\n(not-implemented)"];
+  s589:p8 -> s598 [label="2"];
+  s599 [label="s599 PREC_LEFT\n(not-implemented)"];
+  s589:p9 -> s599 [label="5"];
+  s600 [label="s600 PREC_LEFT\n(not-implemented)"];
+  s589:p10 -> s600 [label="5"];
+  s601 [label="s601 PREC_LEFT\n(not-implemented)"];
+  s589:p11 -> s601 [label="6"];
+  s602 [label="s602 PREC_LEFT\n(not-implemented)"];
+  s589:p12 -> s602 [label="6"];
+  s603 [label="s603 PREC_LEFT\n(not-implemented)"];
+  s589:p13 -> s603 [label="6"];
+  s604 [label="s604 PREC_LEFT\n(not-implemented)"];
+  s589:p14 -> s604 [label="7"];
+  s605 [label="s605 PREC_LEFT\n(not-implemented)"];
+  s589:p15 -> s605 [label="4"];
+  s606 [label="s606 PREC_LEFT\n(not-implemented)"];
+  s589:p16 -> s606 [label="4"];
+  s607 [label="s607 PREC_LEFT\n(not-implemented)"];
+  s589:p17 -> s607 [label="4"];
+  s608 [label="s608 PREC_LEFT\n(not-implemented)"];
+  s589:p18 -> s608 [label="4"];
+  s609 [label="s609 PREC_LEFT\n(not-implemented)"];
+  s589:p19 -> s609 [label="4"];
+  s610 [label="s610 PREC_LEFT\n(not-implemented)"];
+  s589:p20 -> s610 [label="4"];
+  s611 [label="s611 PREC_LEFT\n(not-implemented)"];
+  s589:p21 -> s611 [label="4"];
+  s612 [label="s612 PREC_LEFT\n(not-implemented)"];
+  s589:p22 -> s612 [label="4"];
+  s613 [label="s613 PREC_LEFT\n(not-implemented)"];
+  s589:p23 -> s613 [label="4"];
+  s614 [label="s614 PREC_LEFT\n(not-implemented)"];
+  s589:p24 -> s614 [label="4"];
+  
+  }
+  

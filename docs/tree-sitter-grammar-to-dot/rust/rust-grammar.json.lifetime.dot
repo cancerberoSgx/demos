@@ -1,0 +1,13 @@
+
+  digraph lifetime {
+  
+    rankdir=LR;
+  
+    s804 [label="s804\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s805 [label="s805 STRING\n\"'\""];
+  s804 -> s805 [];
+  s806 [label="s806 SYMBOL\nidentifier" href="rust-grammar.json.identifier.dot.svg"];
+  s805 -> s806 [];
+  
+  }
+  

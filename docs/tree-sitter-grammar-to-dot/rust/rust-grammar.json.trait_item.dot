@@ -1,0 +1,50 @@
+
+  digraph trait_item {
+  
+    rankdir=LR;
+  
+    s555 [label="s555\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s556 [label="{s556\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s557 [label="s557 SYMBOL\nvisibility_modifier" href="rust-grammar.json.visibility_modifier.dot.svg"];
+  s556:p0 -> s557 [label="visibility_modifier"];
+  s558 [label="s558 \nBLANK"];
+  s556:p1 -> s558 [label=""];
+  s555 -> s556 [];
+  s559 [label="{s559\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s560 [label="s560 STRING\n\"unsafe\""];
+  s559:p0 -> s560 [label="unsafe"];
+  s561 [label="s561 \nBLANK"];
+  s559:p1 -> s561 [label=""];
+  s557 -> s559 [];
+  s558 -> s559 [];
+  s562 [label="s562 STRING\n\"trait\""];
+  s560 -> s562 [];
+  s561 -> s562 [];
+  s563 [label="s563 SYMBOL\n_type_identifier" href="rust-grammar.json._type_identifier.dot.svg"];
+  s562 -> s563 [];
+  s564 [label="{s564\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s565 [label="s565 SYMBOL\ntype_parameters" href="rust-grammar.json.type_parameters.dot.svg"];
+  s564:p0 -> s565 [label="type_parameters"];
+  s566 [label="s566 \nBLANK"];
+  s564:p1 -> s566 [label=""];
+  s563 -> s564 [];
+  s567 [label="{s567\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s568 [label="s568 SYMBOL\ntrait_bounds" href="rust-grammar.json.trait_bounds.dot.svg"];
+  s567:p0 -> s568 [label="trait_bounds"];
+  s569 [label="s569 \nBLANK"];
+  s567:p1 -> s569 [label=""];
+  s565 -> s567 [];
+  s566 -> s567 [];
+  s570 [label="{s570\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s571 [label="s571 SYMBOL\nwhere_clause" href="rust-grammar.json.where_clause.dot.svg"];
+  s570:p0 -> s571 [label="where_clause"];
+  s572 [label="s572 \nBLANK"];
+  s570:p1 -> s572 [label=""];
+  s568 -> s570 [];
+  s569 -> s570 [];
+  s573 [label="s573 SYMBOL\ndeclaration_list" href="rust-grammar.json.declaration_list.dot.svg"];
+  s571 -> s573 [];
+  s572 -> s573 [];
+  
+  }
+  

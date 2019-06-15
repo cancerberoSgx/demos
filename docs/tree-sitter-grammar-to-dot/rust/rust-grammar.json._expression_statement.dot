@@ -1,0 +1,19 @@
+
+  digraph _expression_statement {
+  
+    rankdir=LR;
+  
+    s7 [label="{s7\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s8 [label="s8\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s9 [label="s9 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s8 -> s9 [];
+  s10 [label="s10 STRING\n\";\""];
+  s9 -> s10 [];
+  s7:p0 -> s8 [label=""];
+  s11 [label="s11\n&rarr; PREC", shape=record, fixedsize=false, peripheries=1];
+  s12 [label="s12 SYMBOL\n_expression_ending_with_block" href="rust-grammar.json._expression_ending_with_block.dot.svg"];
+  s11 -> s12 [];
+  s7:p1 -> s11 [label="1"];
+  
+  }
+  

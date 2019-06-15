@@ -1,0 +1,9 @@
+
+  digraph jsx_text {
+  
+    rankdir=LR;
+  
+    s408 [label="s408 PATTERN\n\"[^{}<>]+\""];
+  
+  }
+  

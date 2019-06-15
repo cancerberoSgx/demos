@@ -1,0 +1,17 @@
+
+  digraph token_binding_pattern {
+  
+    rankdir=LR;
+  
+    s87 [label="s87\n&rarr; PREC", shape=record, fixedsize=false, peripheries=1];
+  s88 [label="s88\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s89 [label="s89 SYMBOL\nmetavariable" href="rust-grammar.json.metavariable.dot.svg"];
+  s88 -> s89 [];
+  s90 [label="s90 STRING\n\":\""];
+  s89 -> s90 [];
+  s91 [label="s91 SYMBOL\nfragment_specifier" href="rust-grammar.json.fragment_specifier.dot.svg"];
+  s90 -> s91 [];
+  s87 -> s88 [];
+  
+  }
+  

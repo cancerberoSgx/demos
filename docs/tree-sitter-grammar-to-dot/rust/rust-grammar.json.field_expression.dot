@@ -1,0 +1,21 @@
+
+  digraph field_expression {
+  
+    rankdir=LR;
+  
+    s1303 [label="s1303\n&rarr; PREC", shape=record, fixedsize=false, peripheries=1];
+  s1304 [label="s1304\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1305 [label="s1305 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1304 -> s1305 [];
+  s1306 [label="s1306 STRING\n\".\""];
+  s1305 -> s1306 [];
+  s1307 [label="{s1307\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1308 [label="s1308 SYMBOL\n_field_identifier" href="rust-grammar.json._field_identifier.dot.svg"];
+  s1307:p0 -> s1308 [label="_field_identifier"];
+  s1309 [label="s1309 SYMBOL\ninteger_literal" href="rust-grammar.json.integer_literal.dot.svg"];
+  s1307:p1 -> s1309 [label="integer_literal"];
+  s1306 -> s1307 [];
+  s1303 -> s1304 [];
+  
+  }
+  

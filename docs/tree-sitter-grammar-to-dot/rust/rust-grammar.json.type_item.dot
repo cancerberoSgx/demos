@@ -1,0 +1,33 @@
+
+  digraph type_item {
+  
+    rankdir=LR;
+  
+    s446 [label="s446\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s447 [label="{s447\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s448 [label="s448 SYMBOL\nvisibility_modifier" href="rust-grammar.json.visibility_modifier.dot.svg"];
+  s447:p0 -> s448 [label="visibility_modifier"];
+  s449 [label="s449 \nBLANK"];
+  s447:p1 -> s449 [label=""];
+  s446 -> s447 [];
+  s450 [label="s450 STRING\n\"type\""];
+  s448 -> s450 [];
+  s449 -> s450 [];
+  s451 [label="s451 SYMBOL\n_type_identifier" href="rust-grammar.json._type_identifier.dot.svg"];
+  s450 -> s451 [];
+  s452 [label="{s452\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s453 [label="s453 SYMBOL\ntype_parameters" href="rust-grammar.json.type_parameters.dot.svg"];
+  s452:p0 -> s453 [label="type_parameters"];
+  s454 [label="s454 \nBLANK"];
+  s452:p1 -> s454 [label=""];
+  s451 -> s452 [];
+  s455 [label="s455 STRING\n\"=\""];
+  s453 -> s455 [];
+  s454 -> s455 [];
+  s456 [label="s456 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s455 -> s456 [];
+  s457 [label="s457 STRING\n\";\""];
+  s456 -> s457 [];
+  
+  }
+  

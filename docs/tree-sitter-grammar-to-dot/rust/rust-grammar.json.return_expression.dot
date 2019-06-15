@@ -1,0 +1,15 @@
+
+  digraph return_expression {
+  
+    rankdir=LR;
+  
+    s1049 [label="{s1049\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1050 [label="s1050 PREC_LEFT\n(not-implemented)"];
+  s1049:p0 -> s1050 [label=""];
+  s1051 [label="s1051\n&rarr; PREC", shape=record, fixedsize=false, peripheries=1];
+  s1052 [label="s1052 STRING\n\"return\""];
+  s1051 -> s1052 [];
+  s1049:p1 -> s1051 [label="-1"];
+  
+  }
+  

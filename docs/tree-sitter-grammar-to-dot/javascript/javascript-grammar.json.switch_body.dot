@@ -1,0 +1,24 @@
+
+  digraph switch_body {
+  
+    rankdir=LR;
+  
+    s278 [label="s278\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s279 [label="s279 STRING\n\"{\""];
+  s278 -> s279 [];
+  s280 [label="s280\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s281 [label="{s281\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s282 [label="s282 SYMBOL\nswitch_case" href="javascript-grammar.json.switch_case.dot.svg"];
+  s281:p0 -> s282 [label="switch_case"];
+  s283 [label="s283 SYMBOL\nswitch_default" href="javascript-grammar.json.switch_default.dot.svg"];
+  s281:p1 -> s283 [label="switch_default"];
+  s280 -> s281 [];
+  s282 -> s280 [];
+  s283 -> s280 [];
+  s279 -> s280 [];
+  s284 [label="s284 STRING\n\"}\""];
+  s282 -> s284 [];
+  s283 -> s284 [];
+  
+  }
+  

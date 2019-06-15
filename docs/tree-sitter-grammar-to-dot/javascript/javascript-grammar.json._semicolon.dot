@@ -1,0 +1,13 @@
+
+  digraph _semicolon {
+  
+    rankdir=LR;
+  
+    s913 [label="{s913\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s914 [label="s914 SYMBOL\n_automatic_semicolon" href="javascript-grammar.json._automatic_semicolon.dot.svg"];
+  s913:p0 -> s914 [label="_automatic_semicolon"];
+  s915 [label="s915 STRING\n\";\""];
+  s913:p1 -> s915 [label=";"];
+  
+  }
+  

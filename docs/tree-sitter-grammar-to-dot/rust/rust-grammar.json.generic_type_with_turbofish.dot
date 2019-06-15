@@ -1,0 +1,20 @@
+
+  digraph generic_type_with_turbofish {
+  
+    rankdir=LR;
+  
+    s861 [label="s861\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s862 [label="{s862\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s863 [label="s863 SYMBOL\n_type_identifier" href="rust-grammar.json._type_identifier.dot.svg"];
+  s862:p0 -> s863 [label="_type_identifier"];
+  s864 [label="s864 SYMBOL\nscoped_identifier" href="rust-grammar.json.scoped_identifier.dot.svg"];
+  s862:p1 -> s864 [label="scoped_identifier"];
+  s861 -> s862 [];
+  s865 [label="s865 STRING\n\"::\""];
+  s863 -> s865 [];
+  s864 -> s865 [];
+  s866 [label="s866 SYMBOL\ntype_arguments" href="rust-grammar.json.type_arguments.dot.svg"];
+  s865 -> s866 [];
+  
+  }
+  

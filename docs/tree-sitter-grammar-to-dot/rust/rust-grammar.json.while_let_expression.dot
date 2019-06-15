@@ -1,0 +1,32 @@
+
+  digraph while_let_expression {
+  
+    rankdir=LR;
+  
+    s1226 [label="s1226\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1227 [label="{s1227\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1228 [label="s1228\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1229 [label="s1229 SYMBOL\nloop_label" href="rust-grammar.json.loop_label.dot.svg"];
+  s1228 -> s1229 [];
+  s1230 [label="s1230 STRING\n\":\""];
+  s1229 -> s1230 [];
+  s1227:p0 -> s1228 [label=""];
+  s1231 [label="s1231 \nBLANK"];
+  s1227:p1 -> s1231 [label=""];
+  s1226 -> s1227 [];
+  s1232 [label="s1232 STRING\n\"while\""];
+  s1230 -> s1232 [];
+  s1231 -> s1232 [];
+  s1233 [label="s1233 STRING\n\"let\""];
+  s1232 -> s1233 [];
+  s1234 [label="s1234 SYMBOL\n_pattern" href="rust-grammar.json._pattern.dot.svg"];
+  s1233 -> s1234 [];
+  s1235 [label="s1235 STRING\n\"=\""];
+  s1234 -> s1235 [];
+  s1236 [label="s1236 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1235 -> s1236 [];
+  s1237 [label="s1237 SYMBOL\nblock" href="rust-grammar.json.block.dot.svg"];
+  s1236 -> s1237 [];
+  
+  }
+  

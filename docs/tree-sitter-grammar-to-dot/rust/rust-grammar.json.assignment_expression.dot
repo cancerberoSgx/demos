@@ -1,0 +1,9 @@
+
+  digraph assignment_expression {
+  
+    rankdir=LR;
+  
+    s1043 [label="s1043 PREC_LEFT\n(not-implemented)"];
+  
+  }
+  

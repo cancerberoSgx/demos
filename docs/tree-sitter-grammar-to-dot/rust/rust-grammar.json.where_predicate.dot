@@ -1,0 +1,33 @@
+
+  digraph where_predicate {
+  
+    rankdir=LR;
+  
+    s524 [label="s524\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s525 [label="{s525\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>|<p5>|<p6>}}", shape=record, fixedsize=false, peripheries=1];
+  s526 [label="s526 SYMBOL\nlifetime" href="rust-grammar.json.lifetime.dot.svg"];
+  s525:p0 -> s526 [label="lifetime"];
+  s527 [label="s527 SYMBOL\n_type_identifier" href="rust-grammar.json._type_identifier.dot.svg"];
+  s525:p1 -> s527 [label="_type_identifier"];
+  s528 [label="s528 SYMBOL\nscoped_type_identifier" href="rust-grammar.json.scoped_type_identifier.dot.svg"];
+  s525:p2 -> s528 [label="scoped_type_identifier"];
+  s529 [label="s529 SYMBOL\ngeneric_type" href="rust-grammar.json.generic_type.dot.svg"];
+  s525:p3 -> s529 [label="generic_type"];
+  s530 [label="s530 SYMBOL\nreference_type" href="rust-grammar.json.reference_type.dot.svg"];
+  s525:p4 -> s530 [label="reference_type"];
+  s531 [label="s531 SYMBOL\ntuple_type" href="rust-grammar.json.tuple_type.dot.svg"];
+  s525:p5 -> s531 [label="tuple_type"];
+  s532 [label="s532 SYMBOL\nhigher_ranked_trait_bound" href="rust-grammar.json.higher_ranked_trait_bound.dot.svg"];
+  s525:p6 -> s532 [label="higher_ranked_trait_bound"];
+  s524 -> s525 [];
+  s533 [label="s533 SYMBOL\ntrait_bounds" href="rust-grammar.json.trait_bounds.dot.svg"];
+  s526 -> s533 [];
+  s527 -> s533 [];
+  s528 -> s533 [];
+  s529 -> s533 [];
+  s530 -> s533 [];
+  s531 -> s533 [];
+  s532 -> s533 [];
+  
+  }
+  

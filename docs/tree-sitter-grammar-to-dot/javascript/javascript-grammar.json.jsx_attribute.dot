@@ -1,0 +1,21 @@
+
+  digraph jsx_attribute {
+  
+    rankdir=LR;
+  
+    s462 [label="s462\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s463 [label="s463 SYMBOL\n_jsx_attribute_name" href="javascript-grammar.json._jsx_attribute_name.dot.svg"];
+  s462 -> s463 [];
+  s464 [label="{s464\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s465 [label="s465\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s466 [label="s466 STRING\n\"=\""];
+  s465 -> s466 [];
+  s467 [label="s467 SYMBOL\n_jsx_attribute_value" href="javascript-grammar.json._jsx_attribute_value.dot.svg"];
+  s466 -> s467 [];
+  s464:p0 -> s465 [label=""];
+  s468 [label="s468 \nBLANK"];
+  s464:p1 -> s468 [label=""];
+  s463 -> s464 [];
+  
+  }
+  

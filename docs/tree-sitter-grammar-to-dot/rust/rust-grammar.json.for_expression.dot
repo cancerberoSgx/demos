@@ -1,0 +1,30 @@
+
+  digraph for_expression {
+  
+    rankdir=LR;
+  
+    s1246 [label="s1246\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1247 [label="{s1247\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1248 [label="s1248\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1249 [label="s1249 SYMBOL\nloop_label" href="rust-grammar.json.loop_label.dot.svg"];
+  s1248 -> s1249 [];
+  s1250 [label="s1250 STRING\n\":\""];
+  s1249 -> s1250 [];
+  s1247:p0 -> s1248 [label=""];
+  s1251 [label="s1251 \nBLANK"];
+  s1247:p1 -> s1251 [label=""];
+  s1246 -> s1247 [];
+  s1252 [label="s1252 STRING\n\"for\""];
+  s1250 -> s1252 [];
+  s1251 -> s1252 [];
+  s1253 [label="s1253 SYMBOL\n_pattern" href="rust-grammar.json._pattern.dot.svg"];
+  s1252 -> s1253 [];
+  s1254 [label="s1254 STRING\n\"in\""];
+  s1253 -> s1254 [];
+  s1255 [label="s1255 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1254 -> s1255 [];
+  s1256 [label="s1256 SYMBOL\nblock" href="rust-grammar.json.block.dot.svg"];
+  s1255 -> s1256 [];
+  
+  }
+  

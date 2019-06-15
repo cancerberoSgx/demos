@@ -1,0 +1,26 @@
+
+  digraph array_type {
+  
+    rankdir=LR;
+  
+    s807 [label="s807\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s808 [label="s808 STRING\n\"[\""];
+  s807 -> s808 [];
+  s809 [label="s809 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s808 -> s809 [];
+  s810 [label="{s810\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s811 [label="s811\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s812 [label="s812 STRING\n\";\""];
+  s811 -> s812 [];
+  s813 [label="s813 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s812 -> s813 [];
+  s810:p0 -> s811 [label=""];
+  s814 [label="s814 \nBLANK"];
+  s810:p1 -> s814 [label=""];
+  s809 -> s810 [];
+  s815 [label="s815 STRING\n\"]\""];
+  s813 -> s815 [];
+  s814 -> s815 [];
+  
+  }
+  

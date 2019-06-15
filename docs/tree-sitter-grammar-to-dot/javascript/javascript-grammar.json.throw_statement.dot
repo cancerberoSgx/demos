@@ -1,0 +1,15 @@
+
+  digraph throw_statement {
+  
+    rankdir=LR;
+  
+    s272 [label="s272\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s273 [label="s273 STRING\n\"throw\""];
+  s272 -> s273 [];
+  s274 [label="s274 SYMBOL\n_expressions" href="javascript-grammar.json._expressions.dot.svg"];
+  s273 -> s274 [];
+  s275 [label="s275 SYMBOL\n_semicolon" href="javascript-grammar.json._semicolon.dot.svg"];
+  s274 -> s275 [];
+  
+  }
+  

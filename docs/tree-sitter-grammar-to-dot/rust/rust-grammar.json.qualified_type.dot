@@ -1,0 +1,15 @@
+
+  digraph qualified_type {
+  
+    rankdir=LR;
+  
+    s800 [label="s800\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s801 [label="s801 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s800 -> s801 [];
+  s802 [label="s802 STRING\n\"as\""];
+  s801 -> s802 [];
+  s803 [label="s803 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s802 -> s803 [];
+  
+  }
+  

@@ -1,0 +1,29 @@
+
+  digraph function {
+  
+    rankdir=LR;
+  
+    s494 [label="s494\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s495 [label="{s495\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s496 [label="s496 STRING\n\"async\""];
+  s495:p0 -> s496 [label="async"];
+  s497 [label="s497 \nBLANK"];
+  s495:p1 -> s497 [label=""];
+  s494 -> s495 [];
+  s498 [label="s498 STRING\n\"function\""];
+  s496 -> s498 [];
+  s497 -> s498 [];
+  s499 [label="{s499\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s500 [label="s500 SYMBOL\nidentifier" href="javascript-grammar.json.identifier.dot.svg"];
+  s499:p0 -> s500 [label="identifier"];
+  s501 [label="s501 \nBLANK"];
+  s499:p1 -> s501 [label=""];
+  s498 -> s499 [];
+  s502 [label="s502 SYMBOL\nformal_parameters" href="javascript-grammar.json.formal_parameters.dot.svg"];
+  s500 -> s502 [];
+  s501 -> s502 [];
+  s503 [label="s503 SYMBOL\nstatement_block" href="javascript-grammar.json.statement_block.dot.svg"];
+  s502 -> s503 [];
+  
+  }
+  

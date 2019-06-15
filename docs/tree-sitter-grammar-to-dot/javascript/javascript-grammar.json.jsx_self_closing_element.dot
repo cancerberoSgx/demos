@@ -1,0 +1,22 @@
+
+  digraph jsx_self_closing_element {
+  
+    rankdir=LR;
+  
+    s448 [label="s448\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s449 [label="s449 STRING\n\"<\""];
+  s448 -> s449 [];
+  s450 [label="s450 SYMBOL\n_jsx_element_name" href="javascript-grammar.json._jsx_element_name.dot.svg"];
+  s449 -> s450 [];
+  s451 [label="s451\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s452 [label="s452 SYMBOL\n_jsx_attribute" href="javascript-grammar.json._jsx_attribute.dot.svg"];
+  s451 -> s452 [];
+  s452 -> s451 [];
+  s450 -> s451 [];
+  s453 [label="s453 STRING\n\"/\""];
+  s452 -> s453 [];
+  s454 [label="s454 STRING\n\">\""];
+  s453 -> s454 [];
+  
+  }
+  

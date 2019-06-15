@@ -1,0 +1,27 @@
+
+  digraph class {
+  
+    rankdir=LR;
+  
+    s482 [label="s482\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s483 [label="s483\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s484 [label="s484 SYMBOL\ndecorator" href="javascript-grammar.json.decorator.dot.svg"];
+  s483 -> s484 [];
+  s484 -> s483 [];
+  s482 -> s483 [];
+  s485 [label="s485 STRING\n\"class\""];
+  s484 -> s485 [];
+  s486 [label="s486 SYMBOL\nidentifier" href="javascript-grammar.json.identifier.dot.svg"];
+  s485 -> s486 [];
+  s487 [label="{s487\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s488 [label="s488 SYMBOL\nclass_heritage" href="javascript-grammar.json.class_heritage.dot.svg"];
+  s487:p0 -> s488 [label="class_heritage"];
+  s489 [label="s489 \nBLANK"];
+  s487:p1 -> s489 [label=""];
+  s486 -> s487 [];
+  s490 [label="s490 SYMBOL\nclass_body" href="javascript-grammar.json.class_body.dot.svg"];
+  s488 -> s490 [];
+  s489 -> s490 [];
+  
+  }
+  

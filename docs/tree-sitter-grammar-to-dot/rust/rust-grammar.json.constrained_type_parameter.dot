@@ -1,0 +1,18 @@
+
+  digraph constrained_type_parameter {
+  
+    rankdir=LR;
+  
+    s630 [label="s630\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s631 [label="{s631\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s632 [label="s632 SYMBOL\nlifetime" href="rust-grammar.json.lifetime.dot.svg"];
+  s631:p0 -> s632 [label="lifetime"];
+  s633 [label="s633 SYMBOL\n_type_identifier" href="rust-grammar.json._type_identifier.dot.svg"];
+  s631:p1 -> s633 [label="_type_identifier"];
+  s630 -> s631 [];
+  s634 [label="s634 SYMBOL\ntrait_bounds" href="rust-grammar.json.trait_bounds.dot.svg"];
+  s632 -> s634 [];
+  s633 -> s634 [];
+  
+  }
+  

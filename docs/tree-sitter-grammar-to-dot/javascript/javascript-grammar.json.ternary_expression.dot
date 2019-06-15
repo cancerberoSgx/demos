@@ -1,0 +1,9 @@
+
+  digraph ternary_expression {
+  
+    rankdir=LR;
+  
+    s588 [label="s588 PREC_RIGHT\n(not-implemented)"];
+  
+  }
+  

@@ -1,0 +1,26 @@
+
+  digraph function_modifiers {
+  
+    rankdir=LR;
+  
+    s506 [label="s506\n&rarr; REPEAT1", shape=record, fixedsize=false, peripheries=1];
+  s507 [label="{s507\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>}}", shape=record, fixedsize=false, peripheries=1];
+  s508 [label="s508 STRING\n\"async\""];
+  s507:p0 -> s508 [label="async"];
+  s509 [label="s509 STRING\n\"default\""];
+  s507:p1 -> s509 [label="default"];
+  s510 [label="s510 STRING\n\"const\""];
+  s507:p2 -> s510 [label="const"];
+  s511 [label="s511 STRING\n\"unsafe\""];
+  s507:p3 -> s511 [label="unsafe"];
+  s512 [label="s512 SYMBOL\nextern_modifier" href="rust-grammar.json.extern_modifier.dot.svg"];
+  s507:p4 -> s512 [label="extern_modifier"];
+  s506 -> s507 [];
+  s508 -> s506 [];
+  s509 -> s506 [];
+  s510 -> s506 [];
+  s511 -> s506 [];
+  s512 -> s506 [];
+  
+  }
+  

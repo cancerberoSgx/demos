@@ -1,0 +1,22 @@
+
+  digraph associated_type {
+  
+    rankdir=LR;
+  
+    s574 [label="s574\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s575 [label="s575 STRING\n\"type\""];
+  s574 -> s575 [];
+  s576 [label="s576 SYMBOL\n_type_identifier" href="rust-grammar.json._type_identifier.dot.svg"];
+  s575 -> s576 [];
+  s577 [label="{s577\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s578 [label="s578 SYMBOL\ntrait_bounds" href="rust-grammar.json.trait_bounds.dot.svg"];
+  s577:p0 -> s578 [label="trait_bounds"];
+  s579 [label="s579 \nBLANK"];
+  s577:p1 -> s579 [label=""];
+  s576 -> s577 [];
+  s580 [label="s580 STRING\n\";\""];
+  s578 -> s580 [];
+  s579 -> s580 [];
+  
+  }
+  

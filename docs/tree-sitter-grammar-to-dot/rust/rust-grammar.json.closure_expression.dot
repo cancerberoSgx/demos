@@ -1,0 +1,39 @@
+
+  digraph closure_expression {
+  
+    rankdir=LR;
+  
+    s1257 [label="s1257\n&rarr; PREC", shape=record, fixedsize=false, peripheries=1];
+  s1258 [label="s1258\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1259 [label="{s1259\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1260 [label="s1260 STRING\n\"move\""];
+  s1259:p0 -> s1260 [label="move"];
+  s1261 [label="s1261 \nBLANK"];
+  s1259:p1 -> s1261 [label=""];
+  s1258 -> s1259 [];
+  s1262 [label="s1262 SYMBOL\nclosure_parameters" href="rust-grammar.json.closure_parameters.dot.svg"];
+  s1260 -> s1262 [];
+  s1261 -> s1262 [];
+  s1263 [label="{s1263\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1264 [label="s1264\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1265 [label="{s1265\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1266 [label="s1266\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1267 [label="s1267 STRING\n\"->\""];
+  s1266 -> s1267 [];
+  s1268 [label="s1268 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s1267 -> s1268 [];
+  s1265:p0 -> s1266 [label=""];
+  s1269 [label="s1269 \nBLANK"];
+  s1265:p1 -> s1269 [label=""];
+  s1264 -> s1265 [];
+  s1270 [label="s1270 SYMBOL\nblock" href="rust-grammar.json.block.dot.svg"];
+  s1268 -> s1270 [];
+  s1269 -> s1270 [];
+  s1263:p0 -> s1264 [label=""];
+  s1271 [label="s1271 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1263:p1 -> s1271 [label="_expression"];
+  s1262 -> s1263 [];
+  s1257 -> s1258 [];
+  
+  }
+  

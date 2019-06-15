@@ -1,0 +1,55 @@
+
+  digraph struct_item {
+  
+    rankdir=LR;
+  
+    s261 [label="s261\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s262 [label="{s262\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s263 [label="s263 SYMBOL\nvisibility_modifier" href="rust-grammar.json.visibility_modifier.dot.svg"];
+  s262:p0 -> s263 [label="visibility_modifier"];
+  s264 [label="s264 \nBLANK"];
+  s262:p1 -> s264 [label=""];
+  s261 -> s262 [];
+  s265 [label="s265 STRING\n\"struct\""];
+  s263 -> s265 [];
+  s264 -> s265 [];
+  s266 [label="s266 SYMBOL\n_type_identifier" href="rust-grammar.json._type_identifier.dot.svg"];
+  s265 -> s266 [];
+  s267 [label="{s267\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s268 [label="s268 SYMBOL\ntype_parameters" href="rust-grammar.json.type_parameters.dot.svg"];
+  s267:p0 -> s268 [label="type_parameters"];
+  s269 [label="s269 \nBLANK"];
+  s267:p1 -> s269 [label=""];
+  s266 -> s267 [];
+  s270 [label="{s270\n&rarr; CHOICE|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+  s271 [label="s271\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s272 [label="{s272\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s273 [label="s273 SYMBOL\nwhere_clause" href="rust-grammar.json.where_clause.dot.svg"];
+  s272:p0 -> s273 [label="where_clause"];
+  s274 [label="s274 \nBLANK"];
+  s272:p1 -> s274 [label=""];
+  s271 -> s272 [];
+  s275 [label="s275 SYMBOL\nfield_declaration_list" href="rust-grammar.json.field_declaration_list.dot.svg"];
+  s273 -> s275 [];
+  s274 -> s275 [];
+  s270:p0 -> s271 [label=""];
+  s276 [label="s276\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s277 [label="s277 SYMBOL\nordered_field_declaration_list" href="rust-grammar.json.ordered_field_declaration_list.dot.svg"];
+  s276 -> s277 [];
+  s278 [label="{s278\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s279 [label="s279 SYMBOL\nwhere_clause" href="rust-grammar.json.where_clause.dot.svg"];
+  s278:p0 -> s279 [label="where_clause"];
+  s280 [label="s280 \nBLANK"];
+  s278:p1 -> s280 [label=""];
+  s277 -> s278 [];
+  s281 [label="s281 STRING\n\";\""];
+  s279 -> s281 [];
+  s280 -> s281 [];
+  s270:p1 -> s276 [label=""];
+  s282 [label="s282 STRING\n\";\""];
+  s270:p2 -> s282 [label=";"];
+  s268 -> s270 [];
+  s269 -> s270 [];
+  
+  }
+  

@@ -1,0 +1,12 @@
+
+  digraph source_file {
+  
+    rankdir=LR;
+  
+    s1 [label="s1\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s2 [label="s2 SYMBOL\n_statement" href="rust-grammar.json._statement.dot.svg"];
+  s1 -> s2 [];
+  s2 -> s1 [];
+  
+  }
+  

@@ -1,0 +1,61 @@
+
+  digraph function_signature_item {
+  
+    rankdir=LR;
+  
+    s482 [label="s482\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s483 [label="{s483\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s484 [label="s484 SYMBOL\nvisibility_modifier" href="rust-grammar.json.visibility_modifier.dot.svg"];
+  s483:p0 -> s484 [label="visibility_modifier"];
+  s485 [label="s485 \nBLANK"];
+  s483:p1 -> s485 [label=""];
+  s482 -> s483 [];
+  s486 [label="{s486\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s487 [label="s487 SYMBOL\nfunction_modifiers" href="rust-grammar.json.function_modifiers.dot.svg"];
+  s486:p0 -> s487 [label="function_modifiers"];
+  s488 [label="s488 \nBLANK"];
+  s486:p1 -> s488 [label=""];
+  s484 -> s486 [];
+  s485 -> s486 [];
+  s489 [label="s489 STRING\n\"fn\""];
+  s487 -> s489 [];
+  s488 -> s489 [];
+  s490 [label="{s490\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s491 [label="s491 SYMBOL\nidentifier" href="rust-grammar.json.identifier.dot.svg"];
+  s490:p0 -> s491 [label="identifier"];
+  s492 [label="s492 SYMBOL\nmetavariable" href="rust-grammar.json.metavariable.dot.svg"];
+  s490:p1 -> s492 [label="metavariable"];
+  s489 -> s490 [];
+  s493 [label="{s493\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s494 [label="s494 SYMBOL\ntype_parameters" href="rust-grammar.json.type_parameters.dot.svg"];
+  s493:p0 -> s494 [label="type_parameters"];
+  s495 [label="s495 \nBLANK"];
+  s493:p1 -> s495 [label=""];
+  s491 -> s493 [];
+  s492 -> s493 [];
+  s496 [label="s496 SYMBOL\nparameters" href="rust-grammar.json.parameters.dot.svg"];
+  s494 -> s496 [];
+  s495 -> s496 [];
+  s497 [label="{s497\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s498 [label="s498\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s499 [label="s499 STRING\n\"->\""];
+  s498 -> s499 [];
+  s500 [label="s500 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s499 -> s500 [];
+  s497:p0 -> s498 [label=""];
+  s501 [label="s501 \nBLANK"];
+  s497:p1 -> s501 [label=""];
+  s496 -> s497 [];
+  s502 [label="{s502\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s503 [label="s503 SYMBOL\nwhere_clause" href="rust-grammar.json.where_clause.dot.svg"];
+  s502:p0 -> s503 [label="where_clause"];
+  s504 [label="s504 \nBLANK"];
+  s502:p1 -> s504 [label=""];
+  s500 -> s502 [];
+  s501 -> s502 [];
+  s505 [label="s505 STRING\n\";\""];
+  s503 -> s505 [];
+  s504 -> s505 [];
+  
+  }
+  

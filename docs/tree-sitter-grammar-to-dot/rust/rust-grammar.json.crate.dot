@@ -1,0 +1,9 @@
+
+  digraph crate {
+  
+    rankdir=LR;
+  
+    s1574 [label="s1574 STRING\n\"crate\""];
+  
+  }
+  

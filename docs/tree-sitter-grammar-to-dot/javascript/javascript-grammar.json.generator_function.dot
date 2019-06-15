@@ -1,0 +1,24 @@
+
+  digraph generator_function {
+  
+    rankdir=LR;
+  
+    s517 [label="s517\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s518 [label="s518 STRING\n\"function\""];
+  s517 -> s518 [];
+  s519 [label="s519 STRING\n\"*\""];
+  s518 -> s519 [];
+  s520 [label="{s520\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s521 [label="s521 SYMBOL\nidentifier" href="javascript-grammar.json.identifier.dot.svg"];
+  s520:p0 -> s521 [label="identifier"];
+  s522 [label="s522 \nBLANK"];
+  s520:p1 -> s522 [label=""];
+  s519 -> s520 [];
+  s523 [label="s523 SYMBOL\nformal_parameters" href="javascript-grammar.json.formal_parameters.dot.svg"];
+  s521 -> s523 [];
+  s522 -> s523 [];
+  s524 [label="s524 SYMBOL\nstatement_block" href="javascript-grammar.json.statement_block.dot.svg"];
+  s523 -> s524 [];
+  
+  }
+  

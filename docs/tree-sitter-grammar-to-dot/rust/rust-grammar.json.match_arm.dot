@@ -1,0 +1,35 @@
+
+  digraph match_arm {
+  
+    rankdir=LR;
+  
+    s1184 [label="s1184\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1185 [label="s1185\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s1186 [label="s1186 SYMBOL\nattribute_item" href="rust-grammar.json.attribute_item.dot.svg"];
+  s1185 -> s1186 [];
+  s1186 -> s1185 [];
+  s1184 -> s1185 [];
+  s1187 [label="{s1187\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1188 [label="s1188 SYMBOL\nmacro_invocation" href="rust-grammar.json.macro_invocation.dot.svg"];
+  s1187:p0 -> s1188 [label="macro_invocation"];
+  s1189 [label="s1189 SYMBOL\nmatch_pattern" href="rust-grammar.json.match_pattern.dot.svg"];
+  s1187:p1 -> s1189 [label="match_pattern"];
+  s1186 -> s1187 [];
+  s1190 [label="s1190 STRING\n\"=>\""];
+  s1188 -> s1190 [];
+  s1189 -> s1190 [];
+  s1191 [label="{s1191\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1192 [label="s1192\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1193 [label="s1193 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1192 -> s1193 [];
+  s1194 [label="s1194 STRING\n\",\""];
+  s1193 -> s1194 [];
+  s1191:p0 -> s1192 [label=""];
+  s1195 [label="s1195\n&rarr; PREC", shape=record, fixedsize=false, peripheries=1];
+  s1196 [label="s1196 SYMBOL\n_expression_ending_with_block" href="rust-grammar.json._expression_ending_with_block.dot.svg"];
+  s1195 -> s1196 [];
+  s1191:p1 -> s1195 [label="1"];
+  s1190 -> s1191 [];
+  
+  }
+  

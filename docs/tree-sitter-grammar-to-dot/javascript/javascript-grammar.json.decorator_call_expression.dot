@@ -1,0 +1,22 @@
+
+  digraph decorator_call_expression {
+  
+    rankdir=LR;
+  
+    s824 [label="s824\n&rarr; PREC", shape=record, fixedsize=false, peripheries=1];
+  s825 [label="s825\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s826 [label="{s826\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s827 [label="s827 SYMBOL\n_identifier_reference" href="javascript-grammar.json._identifier_reference.dot.svg"];
+  s826:p0 -> s827 [label="_identifier_reference"];
+  s828 [label="s828\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s829 [label="s829 SYMBOL\ndecorator_member_expression" href="javascript-grammar.json.decorator_member_expression.dot.svg"];
+  s828 -> s829 [];
+  s826:p1 -> s828 [label="member_expression"];
+  s825 -> s826 [];
+  s830 [label="s830 SYMBOL\narguments" href="javascript-grammar.json.arguments.dot.svg"];
+  s827 -> s830 [];
+  s829 -> s830 [];
+  s824 -> s825 [];
+  
+  }
+  

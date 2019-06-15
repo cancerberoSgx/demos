@@ -1,0 +1,11 @@
+
+  digraph _type_identifier {
+  
+    rankdir=LR;
+  
+    s1568 [label="s1568\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s1569 [label="s1569 SYMBOL\nidentifier" href="rust-grammar.json.identifier.dot.svg"];
+  s1568 -> s1569 [];
+  
+  }
+  

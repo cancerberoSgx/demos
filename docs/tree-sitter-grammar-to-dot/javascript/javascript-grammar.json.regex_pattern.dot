@@ -1,0 +1,9 @@
+
+  digraph regex_pattern {
+  
+    rankdir=LR;
+  
+    s676 [label="s676 IMMEDIATE_TOKEN\n(not-implemented)"];
+  
+  }
+  

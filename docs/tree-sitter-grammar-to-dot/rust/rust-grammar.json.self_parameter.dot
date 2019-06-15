@@ -1,0 +1,32 @@
+
+  digraph self_parameter {
+  
+    rankdir=LR;
+  
+    s731 [label="s731\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s732 [label="{s732\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s733 [label="s733 STRING\n\"&\""];
+  s732:p0 -> s733 [label="&"];
+  s734 [label="s734 \nBLANK"];
+  s732:p1 -> s734 [label=""];
+  s731 -> s732 [];
+  s735 [label="{s735\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s736 [label="s736 SYMBOL\nlifetime" href="rust-grammar.json.lifetime.dot.svg"];
+  s735:p0 -> s736 [label="lifetime"];
+  s737 [label="s737 \nBLANK"];
+  s735:p1 -> s737 [label=""];
+  s733 -> s735 [];
+  s734 -> s735 [];
+  s738 [label="{s738\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s739 [label="s739 SYMBOL\nmutable_specifier" href="rust-grammar.json.mutable_specifier.dot.svg"];
+  s738:p0 -> s739 [label="mutable_specifier"];
+  s740 [label="s740 \nBLANK"];
+  s738:p1 -> s740 [label=""];
+  s736 -> s738 [];
+  s737 -> s738 [];
+  s741 [label="s741 SYMBOL\nself" href="rust-grammar.json.self.dot.svg"];
+  s739 -> s741 [];
+  s740 -> s741 [];
+  
+  }
+  

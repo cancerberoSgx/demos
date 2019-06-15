@@ -1,0 +1,21 @@
+
+  digraph program {
+  
+    rankdir=LR;
+  
+    s1 [label="s1\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s2 [label="{s2\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s3 [label="s3 SYMBOL\nhash_bang_line" href="javascript-grammar.json.hash_bang_line.dot.svg"];
+  s2:p0 -> s3 [label="hash_bang_line"];
+  s4 [label="s4 \nBLANK"];
+  s2:p1 -> s4 [label=""];
+  s1 -> s2 [];
+  s5 [label="s5\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s6 [label="s6 SYMBOL\n_statement" href="javascript-grammar.json._statement.dot.svg"];
+  s5 -> s6 [];
+  s6 -> s5 [];
+  s3 -> s5 [];
+  s4 -> s5 [];
+  
+  }
+  

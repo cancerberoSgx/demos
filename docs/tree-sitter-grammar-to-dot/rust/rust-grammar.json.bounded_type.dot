@@ -1,0 +1,9 @@
+
+  digraph bounded_type {
+  
+    rankdir=LR;
+  
+    s867 [label="s867 PREC_LEFT\n(not-implemented)"];
+  
+  }
+  

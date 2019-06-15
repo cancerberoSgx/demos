@@ -1,0 +1,9 @@
+
+  digraph identifier {
+  
+    rankdir=LR;
+  
+    s1563 [label="s1563 PATTERN\n\"[a-zA-Zα-ωΑ-Ωµ_][a-zA-Zα-ωΑ-Ωµ\d_]*\""];
+  
+  }
+  

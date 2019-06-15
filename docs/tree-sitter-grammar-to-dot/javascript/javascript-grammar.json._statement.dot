@@ -1,0 +1,51 @@
+
+  digraph _statement {
+  
+    rankdir=LR;
+  
+    s113 [label="{s113\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>|<p5>|<p6>|<p7>|<p8>|<p9>|<p10>|<p11>|<p12>|<p13>|<p14>|<p15>|<p16>|<p17>|<p18>|<p19>|<p20>}}", shape=record, fixedsize=false, peripheries=1];
+  s114 [label="s114 SYMBOL\nexport_statement" href="javascript-grammar.json.export_statement.dot.svg"];
+  s113:p0 -> s114 [label="export_statement"];
+  s115 [label="s115 SYMBOL\nimport_statement" href="javascript-grammar.json.import_statement.dot.svg"];
+  s113:p1 -> s115 [label="import_statement"];
+  s116 [label="s116 SYMBOL\ndebugger_statement" href="javascript-grammar.json.debugger_statement.dot.svg"];
+  s113:p2 -> s116 [label="debugger_statement"];
+  s117 [label="s117 SYMBOL\nexpression_statement" href="javascript-grammar.json.expression_statement.dot.svg"];
+  s113:p3 -> s117 [label="expression_statement"];
+  s118 [label="s118 SYMBOL\n_declaration" href="javascript-grammar.json._declaration.dot.svg"];
+  s113:p4 -> s118 [label="_declaration"];
+  s119 [label="s119 SYMBOL\nstatement_block" href="javascript-grammar.json.statement_block.dot.svg"];
+  s113:p5 -> s119 [label="statement_block"];
+  s120 [label="s120 SYMBOL\nif_statement" href="javascript-grammar.json.if_statement.dot.svg"];
+  s113:p6 -> s120 [label="if_statement"];
+  s121 [label="s121 SYMBOL\nswitch_statement" href="javascript-grammar.json.switch_statement.dot.svg"];
+  s113:p7 -> s121 [label="switch_statement"];
+  s122 [label="s122 SYMBOL\nfor_statement" href="javascript-grammar.json.for_statement.dot.svg"];
+  s113:p8 -> s122 [label="for_statement"];
+  s123 [label="s123 SYMBOL\nfor_in_statement" href="javascript-grammar.json.for_in_statement.dot.svg"];
+  s113:p9 -> s123 [label="for_in_statement"];
+  s124 [label="s124 SYMBOL\nfor_of_statement" href="javascript-grammar.json.for_of_statement.dot.svg"];
+  s113:p10 -> s124 [label="for_of_statement"];
+  s125 [label="s125 SYMBOL\nwhile_statement" href="javascript-grammar.json.while_statement.dot.svg"];
+  s113:p11 -> s125 [label="while_statement"];
+  s126 [label="s126 SYMBOL\ndo_statement" href="javascript-grammar.json.do_statement.dot.svg"];
+  s113:p12 -> s126 [label="do_statement"];
+  s127 [label="s127 SYMBOL\ntry_statement" href="javascript-grammar.json.try_statement.dot.svg"];
+  s113:p13 -> s127 [label="try_statement"];
+  s128 [label="s128 SYMBOL\nwith_statement" href="javascript-grammar.json.with_statement.dot.svg"];
+  s113:p14 -> s128 [label="with_statement"];
+  s129 [label="s129 SYMBOL\nbreak_statement" href="javascript-grammar.json.break_statement.dot.svg"];
+  s113:p15 -> s129 [label="break_statement"];
+  s130 [label="s130 SYMBOL\ncontinue_statement" href="javascript-grammar.json.continue_statement.dot.svg"];
+  s113:p16 -> s130 [label="continue_statement"];
+  s131 [label="s131 SYMBOL\nreturn_statement" href="javascript-grammar.json.return_statement.dot.svg"];
+  s113:p17 -> s131 [label="return_statement"];
+  s132 [label="s132 SYMBOL\nthrow_statement" href="javascript-grammar.json.throw_statement.dot.svg"];
+  s113:p18 -> s132 [label="throw_statement"];
+  s133 [label="s133 SYMBOL\nempty_statement" href="javascript-grammar.json.empty_statement.dot.svg"];
+  s113:p19 -> s133 [label="empty_statement"];
+  s134 [label="s134 SYMBOL\nlabeled_statement" href="javascript-grammar.json.labeled_statement.dot.svg"];
+  s113:p20 -> s134 [label="labeled_statement"];
+  
+  }
+  

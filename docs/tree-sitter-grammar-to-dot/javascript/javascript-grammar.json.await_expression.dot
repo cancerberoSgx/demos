@@ -1,0 +1,13 @@
+
+  digraph await_expression {
+  
+    rankdir=LR;
+  
+    s560 [label="s560\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s561 [label="s561 STRING\n\"await\""];
+  s560 -> s561 [];
+  s562 [label="s562 SYMBOL\n_expression" href="javascript-grammar.json._expression.dot.svg"];
+  s561 -> s562 [];
+  
+  }
+  

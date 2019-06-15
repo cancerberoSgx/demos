@@ -1,0 +1,33 @@
+
+  digraph tuple_type {
+  
+    rankdir=LR;
+  
+    s832 [label="s832\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s833 [label="s833 STRING\n\"(\""];
+  s832 -> s833 [];
+  s834 [label="s834\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s835 [label="s835 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s834 -> s835 [];
+  s836 [label="s836\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s837 [label="s837\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s838 [label="s838 STRING\n\",\""];
+  s837 -> s838 [];
+  s839 [label="s839 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s838 -> s839 [];
+  s836 -> s837 [];
+  s839 -> s836 [];
+  s835 -> s836 [];
+  s833 -> s834 [];
+  s840 [label="{s840\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s841 [label="s841 STRING\n\",\""];
+  s840:p0 -> s841 [label=","];
+  s842 [label="s842 \nBLANK"];
+  s840:p1 -> s842 [label=""];
+  s836 -> s840 [];
+  s843 [label="s843 STRING\n\")\""];
+  s841 -> s843 [];
+  s842 -> s843 [];
+  
+  }
+  

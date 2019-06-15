@@ -1,0 +1,20 @@
+
+  digraph optional_type_parameter {
+  
+    rankdir=LR;
+  
+    s635 [label="s635\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s636 [label="{s636\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s637 [label="s637 SYMBOL\n_type_identifier" href="rust-grammar.json._type_identifier.dot.svg"];
+  s636:p0 -> s637 [label="_type_identifier"];
+  s638 [label="s638 SYMBOL\nconstrained_type_parameter" href="rust-grammar.json.constrained_type_parameter.dot.svg"];
+  s636:p1 -> s638 [label="constrained_type_parameter"];
+  s635 -> s636 [];
+  s639 [label="s639 STRING\n\"=\""];
+  s637 -> s639 [];
+  s638 -> s639 [];
+  s640 [label="s640 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s639 -> s640 [];
+  
+  }
+  

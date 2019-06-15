@@ -1,0 +1,13 @@
+
+  digraph expression_statement {
+  
+    rankdir=LR;
+  
+    s135 [label="s135\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s136 [label="s136 SYMBOL\n_expressions" href="javascript-grammar.json._expressions.dot.svg"];
+  s135 -> s136 [];
+  s137 [label="s137 SYMBOL\n_semicolon" href="javascript-grammar.json._semicolon.dot.svg"];
+  s136 -> s137 [];
+  
+  }
+  

@@ -1,0 +1,15 @@
+
+  digraph _jsx_identifier {
+  
+    rankdir=LR;
+  
+    s424 [label="{s424\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s425 [label="s425\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s426 [label="s426 SYMBOL\njsx_identifier" href="javascript-grammar.json.jsx_identifier.dot.svg"];
+  s425 -> s426 [];
+  s424:p0 -> s425 [label="identifier"];
+  s427 [label="s427 SYMBOL\nidentifier" href="javascript-grammar.json.identifier.dot.svg"];
+  s424:p1 -> s427 [label="identifier"];
+  
+  }
+  

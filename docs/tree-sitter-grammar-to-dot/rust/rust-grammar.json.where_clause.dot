@@ -1,0 +1,30 @@
+
+  digraph where_clause {
+  
+    rankdir=LR;
+  
+    s513 [label="s513\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s514 [label="s514 STRING\n\"where\""];
+  s513 -> s514 [];
+  s515 [label="s515\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s516 [label="s516 SYMBOL\nwhere_predicate" href="rust-grammar.json.where_predicate.dot.svg"];
+  s515 -> s516 [];
+  s517 [label="s517\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s518 [label="s518\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s519 [label="s519 STRING\n\",\""];
+  s518 -> s519 [];
+  s520 [label="s520 SYMBOL\nwhere_predicate" href="rust-grammar.json.where_predicate.dot.svg"];
+  s519 -> s520 [];
+  s517 -> s518 [];
+  s520 -> s517 [];
+  s516 -> s517 [];
+  s514 -> s515 [];
+  s521 [label="{s521\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s522 [label="s522 STRING\n\",\""];
+  s521:p0 -> s522 [label=","];
+  s523 [label="s523 \nBLANK"];
+  s521:p1 -> s523 [label=""];
+  s517 -> s521 [];
+  
+  }
+  

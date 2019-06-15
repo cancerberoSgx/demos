@@ -1,0 +1,38 @@
+
+  digraph tuple_pattern {
+  
+    rankdir=LR;
+  
+    s1355 [label="s1355\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1356 [label="s1356 STRING\n\"(\""];
+  s1355 -> s1356 [];
+  s1357 [label="{s1357\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1358 [label="s1358\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1359 [label="s1359 SYMBOL\n_pattern" href="rust-grammar.json._pattern.dot.svg"];
+  s1358 -> s1359 [];
+  s1360 [label="s1360\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s1361 [label="s1361\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1362 [label="s1362 STRING\n\",\""];
+  s1361 -> s1362 [];
+  s1363 [label="s1363 SYMBOL\n_pattern" href="rust-grammar.json._pattern.dot.svg"];
+  s1362 -> s1363 [];
+  s1360 -> s1361 [];
+  s1363 -> s1360 [];
+  s1359 -> s1360 [];
+  s1357:p0 -> s1358 [label=""];
+  s1364 [label="s1364 \nBLANK"];
+  s1357:p1 -> s1364 [label=""];
+  s1356 -> s1357 [];
+  s1365 [label="{s1365\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1366 [label="s1366 STRING\n\",\""];
+  s1365:p0 -> s1366 [label=","];
+  s1367 [label="s1367 \nBLANK"];
+  s1365:p1 -> s1367 [label=""];
+  s1360 -> s1365 [];
+  s1364 -> s1365 [];
+  s1368 [label="s1368 STRING\n\")\""];
+  s1366 -> s1368 [];
+  s1367 -> s1368 [];
+  
+  }
+  

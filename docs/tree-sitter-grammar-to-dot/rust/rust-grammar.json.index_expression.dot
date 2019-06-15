@@ -1,0 +1,19 @@
+
+  digraph index_expression {
+  
+    rankdir=LR;
+  
+    s1292 [label="s1292\n&rarr; PREC", shape=record, fixedsize=false, peripheries=1];
+  s1293 [label="s1293\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1294 [label="s1294 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1293 -> s1294 [];
+  s1295 [label="s1295 STRING\n\"[\""];
+  s1294 -> s1295 [];
+  s1296 [label="s1296 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1295 -> s1296 [];
+  s1297 [label="s1297 STRING\n\"]\""];
+  s1296 -> s1297 [];
+  s1292 -> s1293 [];
+  
+  }
+  

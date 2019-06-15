@@ -1,0 +1,40 @@
+
+  digraph enum_variant {
+  
+    rankdir=LR;
+  
+    s331 [label="s331\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s332 [label="{s332\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s333 [label="s333 SYMBOL\nvisibility_modifier" href="rust-grammar.json.visibility_modifier.dot.svg"];
+  s332:p0 -> s333 [label="visibility_modifier"];
+  s334 [label="s334 \nBLANK"];
+  s332:p1 -> s334 [label=""];
+  s331 -> s332 [];
+  s335 [label="s335 SYMBOL\nidentifier" href="rust-grammar.json.identifier.dot.svg"];
+  s333 -> s335 [];
+  s334 -> s335 [];
+  s336 [label="{s336\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s337 [label="{s337\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s338 [label="s338 SYMBOL\nfield_declaration_list" href="rust-grammar.json.field_declaration_list.dot.svg"];
+  s337:p0 -> s338 [label="field_declaration_list"];
+  s339 [label="s339 SYMBOL\nordered_field_declaration_list" href="rust-grammar.json.ordered_field_declaration_list.dot.svg"];
+  s337:p1 -> s339 [label="ordered_field_declaration_list"];
+  s336:p0 -> s337 [label=""];
+  s340 [label="s340 \nBLANK"];
+  s336:p1 -> s340 [label=""];
+  s335 -> s336 [];
+  s341 [label="{s341\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s342 [label="s342\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s343 [label="s343 STRING\n\"=\""];
+  s342 -> s343 [];
+  s344 [label="s344 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s343 -> s344 [];
+  s341:p0 -> s342 [label=""];
+  s345 [label="s345 \nBLANK"];
+  s341:p1 -> s345 [label=""];
+  s338 -> s341 [];
+  s339 -> s341 [];
+  s340 -> s341 [];
+  
+  }
+  

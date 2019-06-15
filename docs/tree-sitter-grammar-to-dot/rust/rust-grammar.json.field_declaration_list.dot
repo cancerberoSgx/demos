@@ -1,0 +1,52 @@
+
+  digraph field_declaration_list {
+  
+    rankdir=LR;
+  
+    s346 [label="s346\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s347 [label="s347 STRING\n\"{\""];
+  s346 -> s347 [];
+  s348 [label="{s348\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s349 [label="s349\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s350 [label="s350\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s351 [label="s351\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s352 [label="s352 SYMBOL\nattribute_item" href="rust-grammar.json.attribute_item.dot.svg"];
+  s351 -> s352 [];
+  s352 -> s351 [];
+  s350 -> s351 [];
+  s353 [label="s353 SYMBOL\nfield_declaration" href="rust-grammar.json.field_declaration.dot.svg"];
+  s352 -> s353 [];
+  s349 -> s350 [];
+  s354 [label="s354\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s355 [label="s355\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s356 [label="s356 STRING\n\",\""];
+  s355 -> s356 [];
+  s357 [label="s357\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s358 [label="s358\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s359 [label="s359 SYMBOL\nattribute_item" href="rust-grammar.json.attribute_item.dot.svg"];
+  s358 -> s359 [];
+  s359 -> s358 [];
+  s357 -> s358 [];
+  s360 [label="s360 SYMBOL\nfield_declaration" href="rust-grammar.json.field_declaration.dot.svg"];
+  s359 -> s360 [];
+  s356 -> s357 [];
+  s354 -> s355 [];
+  s357 -> s354 [];
+  s353 -> s354 [];
+  s348:p0 -> s349 [label=""];
+  s361 [label="s361 \nBLANK"];
+  s348:p1 -> s361 [label=""];
+  s347 -> s348 [];
+  s362 [label="{s362\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s363 [label="s363 STRING\n\",\""];
+  s362:p0 -> s363 [label=","];
+  s364 [label="s364 \nBLANK"];
+  s362:p1 -> s364 [label=""];
+  s354 -> s362 [];
+  s361 -> s362 [];
+  s365 [label="s365 STRING\n\"}\""];
+  s363 -> s365 [];
+  s364 -> s365 [];
+  
+  }
+  

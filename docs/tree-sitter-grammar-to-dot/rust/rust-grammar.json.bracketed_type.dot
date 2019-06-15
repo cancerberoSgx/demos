@@ -1,0 +1,20 @@
+
+  digraph bracketed_type {
+  
+    rankdir=LR;
+  
+    s794 [label="s794\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s795 [label="s795 STRING\n\"<\""];
+  s794 -> s795 [];
+  s796 [label="{s796\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s797 [label="s797 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s796:p0 -> s797 [label="_type"];
+  s798 [label="s798 SYMBOL\nqualified_type" href="rust-grammar.json.qualified_type.dot.svg"];
+  s796:p1 -> s798 [label="qualified_type"];
+  s795 -> s796 [];
+  s799 [label="s799 STRING\n\">\""];
+  s797 -> s799 [];
+  s798 -> s799 [];
+  
+  }
+  

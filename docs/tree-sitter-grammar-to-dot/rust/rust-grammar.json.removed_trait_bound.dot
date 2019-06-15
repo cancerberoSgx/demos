@@ -1,0 +1,13 @@
+
+  digraph removed_trait_bound {
+  
+    rankdir=LR;
+  
+    s601 [label="s601\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s602 [label="s602 STRING\n\"?\""];
+  s601 -> s602 [];
+  s603 [label="s603 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s602 -> s603 [];
+  
+  }
+  

@@ -1,0 +1,13 @@
+
+  digraph ref_pattern {
+  
+    rankdir=LR;
+  
+    s1444 [label="s1444\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1445 [label="s1445 STRING\n\"ref\""];
+  s1444 -> s1445 [];
+  s1446 [label="s1446 SYMBOL\n_pattern" href="rust-grammar.json._pattern.dot.svg"];
+  s1445 -> s1446 [];
+  
+  }
+  

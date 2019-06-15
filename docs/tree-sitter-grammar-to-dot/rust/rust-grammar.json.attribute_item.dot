@@ -1,0 +1,17 @@
+
+  digraph attribute_item {
+  
+    rankdir=LR;
+  
+    s202 [label="s202\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s203 [label="s203 STRING\n\"#\""];
+  s202 -> s203 [];
+  s204 [label="s204 STRING\n\"[\""];
+  s203 -> s204 [];
+  s205 [label="s205 SYMBOL\nmeta_item" href="rust-grammar.json.meta_item.dot.svg"];
+  s204 -> s205 [];
+  s206 [label="s206 STRING\n\"]\""];
+  s205 -> s206 [];
+  
+  }
+  

@@ -1,0 +1,9 @@
+
+  digraph mutable_specifier {
+  
+    rankdir=LR;
+  
+    s918 [label="s918 STRING\n\"mut\""];
+  
+  }
+  

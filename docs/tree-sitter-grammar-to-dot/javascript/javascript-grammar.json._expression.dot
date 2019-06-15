@@ -1,0 +1,33 @@
+
+  digraph _expression {
+  
+    rankdir=LR;
+  
+    s315 [label="{s315\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>|<p5>|<p6>|<p7>|<p8>|<p9>|<p10>|<p11>}}", shape=record, fixedsize=false, peripheries=1];
+  s316 [label="s316 SYMBOL\n_constructable_expression" href="javascript-grammar.json._constructable_expression.dot.svg"];
+  s315:p0 -> s316 [label="_constructable_expression"];
+  s317 [label="s317 SYMBOL\n_jsx_element" href="javascript-grammar.json._jsx_element.dot.svg"];
+  s315:p1 -> s317 [label="_jsx_element"];
+  s318 [label="s318 SYMBOL\njsx_fragment" href="javascript-grammar.json.jsx_fragment.dot.svg"];
+  s315:p2 -> s318 [label="jsx_fragment"];
+  s319 [label="s319 SYMBOL\nassignment_expression" href="javascript-grammar.json.assignment_expression.dot.svg"];
+  s315:p3 -> s319 [label="assignment_expression"];
+  s320 [label="s320 SYMBOL\naugmented_assignment_expression" href="javascript-grammar.json.augmented_assignment_expression.dot.svg"];
+  s315:p4 -> s320 [label="augmented_assignment_expression"];
+  s321 [label="s321 SYMBOL\nawait_expression" href="javascript-grammar.json.await_expression.dot.svg"];
+  s315:p5 -> s321 [label="await_expression"];
+  s322 [label="s322 SYMBOL\nunary_expression" href="javascript-grammar.json.unary_expression.dot.svg"];
+  s315:p6 -> s322 [label="unary_expression"];
+  s323 [label="s323 SYMBOL\nbinary_expression" href="javascript-grammar.json.binary_expression.dot.svg"];
+  s315:p7 -> s323 [label="binary_expression"];
+  s324 [label="s324 SYMBOL\nternary_expression" href="javascript-grammar.json.ternary_expression.dot.svg"];
+  s315:p8 -> s324 [label="ternary_expression"];
+  s325 [label="s325 SYMBOL\nupdate_expression" href="javascript-grammar.json.update_expression.dot.svg"];
+  s315:p9 -> s325 [label="update_expression"];
+  s326 [label="s326 SYMBOL\ncall_expression" href="javascript-grammar.json.call_expression.dot.svg"];
+  s315:p10 -> s326 [label="call_expression"];
+  s327 [label="s327 SYMBOL\nyield_expression" href="javascript-grammar.json.yield_expression.dot.svg"];
+  s315:p11 -> s327 [label="yield_expression"];
+  
+  }
+  

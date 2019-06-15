@@ -1,0 +1,15 @@
+
+  digraph _tokens {
+  
+    rankdir=LR;
+  
+    s115 [label="{s115\n&rarr; CHOICE|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+  s116 [label="s116 SYMBOL\ntoken_tree" href="rust-grammar.json.token_tree.dot.svg"];
+  s115:p0 -> s116 [label="token_tree"];
+  s117 [label="s117 SYMBOL\ntoken_repetition" href="rust-grammar.json.token_repetition.dot.svg"];
+  s115:p1 -> s117 [label="token_repetition"];
+  s118 [label="s118 SYMBOL\n_non_special_token" href="rust-grammar.json._non_special_token.dot.svg"];
+  s115:p2 -> s118 [label="_non_special_token"];
+  
+  }
+  

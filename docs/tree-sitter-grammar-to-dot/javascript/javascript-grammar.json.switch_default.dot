@@ -1,0 +1,18 @@
+
+  digraph switch_default {
+  
+    rankdir=LR;
+  
+    s291 [label="s291\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s292 [label="s292 STRING\n\"default\""];
+  s291 -> s292 [];
+  s293 [label="s293 STRING\n\":\""];
+  s292 -> s293 [];
+  s294 [label="s294\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s295 [label="s295 SYMBOL\n_statement" href="javascript-grammar.json._statement.dot.svg"];
+  s294 -> s295 [];
+  s295 -> s294 [];
+  s293 -> s294 [];
+  
+  }
+  

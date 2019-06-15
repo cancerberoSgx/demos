@@ -1,0 +1,55 @@
+
+  digraph impl_item {
+  
+    rankdir=LR;
+  
+    s534 [label="s534\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s535 [label="{s535\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s536 [label="s536 STRING\n\"unsafe\""];
+  s535:p0 -> s536 [label="unsafe"];
+  s537 [label="s537 \nBLANK"];
+  s535:p1 -> s537 [label=""];
+  s534 -> s535 [];
+  s538 [label="s538 STRING\n\"impl\""];
+  s536 -> s538 [];
+  s537 -> s538 [];
+  s539 [label="{s539\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s540 [label="s540 SYMBOL\ntype_parameters" href="rust-grammar.json.type_parameters.dot.svg"];
+  s539:p0 -> s540 [label="type_parameters"];
+  s541 [label="s541 \nBLANK"];
+  s539:p1 -> s541 [label=""];
+  s538 -> s539 [];
+  s542 [label="{s542\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s543 [label="s543 SYMBOL\n_type_identifier" href="rust-grammar.json._type_identifier.dot.svg"];
+  s542:p0 -> s543 [label="_type_identifier"];
+  s544 [label="s544 SYMBOL\nscoped_type_identifier" href="rust-grammar.json.scoped_type_identifier.dot.svg"];
+  s542:p1 -> s544 [label="scoped_type_identifier"];
+  s540 -> s542 [];
+  s541 -> s542 [];
+  s545 [label="{s545\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s546 [label="s546 SYMBOL\ntype_arguments" href="rust-grammar.json.type_arguments.dot.svg"];
+  s545:p0 -> s546 [label="type_arguments"];
+  s547 [label="s547 \nBLANK"];
+  s545:p1 -> s547 [label=""];
+  s543 -> s545 [];
+  s544 -> s545 [];
+  s548 [label="{s548\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s549 [label="s549 SYMBOL\nimpl_for_clause" href="rust-grammar.json.impl_for_clause.dot.svg"];
+  s548:p0 -> s549 [label="impl_for_clause"];
+  s550 [label="s550 \nBLANK"];
+  s548:p1 -> s550 [label=""];
+  s546 -> s548 [];
+  s547 -> s548 [];
+  s551 [label="{s551\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s552 [label="s552 SYMBOL\nwhere_clause" href="rust-grammar.json.where_clause.dot.svg"];
+  s551:p0 -> s552 [label="where_clause"];
+  s553 [label="s553 \nBLANK"];
+  s551:p1 -> s553 [label=""];
+  s549 -> s551 [];
+  s550 -> s551 [];
+  s554 [label="s554 SYMBOL\ndeclaration_list" href="rust-grammar.json.declaration_list.dot.svg"];
+  s552 -> s554 [];
+  s553 -> s554 [];
+  
+  }
+  

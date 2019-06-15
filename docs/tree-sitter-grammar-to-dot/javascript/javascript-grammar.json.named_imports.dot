@@ -1,0 +1,42 @@
+
+  digraph named_imports {
+  
+    rankdir=LR;
+  
+    s97 [label="s97\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s98 [label="s98 STRING\n\"{\""];
+  s97 -> s98 [];
+  s99 [label="{s99\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s100 [label="s100\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s101 [label="s101\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s102 [label="s102 SYMBOL\n_import_export_specifier" href="javascript-grammar.json._import_export_specifier.dot.svg"];
+  s101 -> s102 [];
+  s100 -> s101 [];
+  s103 [label="s103\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s104 [label="s104\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s105 [label="s105 STRING\n\",\""];
+  s104 -> s105 [];
+  s106 [label="s106\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s107 [label="s107 SYMBOL\n_import_export_specifier" href="javascript-grammar.json._import_export_specifier.dot.svg"];
+  s106 -> s107 [];
+  s105 -> s106 [];
+  s103 -> s104 [];
+  s106 -> s103 [];
+  s102 -> s103 [];
+  s99:p0 -> s100 [label=""];
+  s108 [label="s108 \nBLANK"];
+  s99:p1 -> s108 [label=""];
+  s98 -> s99 [];
+  s109 [label="{s109\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s110 [label="s110 STRING\n\",\""];
+  s109:p0 -> s110 [label=","];
+  s111 [label="s111 \nBLANK"];
+  s109:p1 -> s111 [label=""];
+  s103 -> s109 [];
+  s108 -> s109 [];
+  s112 [label="s112 STRING\n\"}\""];
+  s110 -> s112 [];
+  s111 -> s112 [];
+  
+  }
+  

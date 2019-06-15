@@ -1,0 +1,13 @@
+
+  digraph boolean_literal {
+  
+    rankdir=LR;
+  
+    s1527 [label="{s1527\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1528 [label="s1528 STRING\n\"true\""];
+  s1527:p0 -> s1528 [label="true"];
+  s1529 [label="s1529 STRING\n\"false\""];
+  s1527:p1 -> s1529 [label="false"];
+  
+  }
+  

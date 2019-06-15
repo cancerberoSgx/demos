@@ -1,0 +1,75 @@
+
+  digraph _pattern {
+  
+    rankdir=LR;
+  
+    s1321 [label="{s1321\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>|<p5>|<p6>|<p7>|<p8>|<p9>|<p10>|<p11>|<p12>|<p13>|<p14>}}", shape=record, fixedsize=false, peripheries=1];
+  s1322 [label="s1322 SYMBOL\n_literal_pattern" href="rust-grammar.json._literal_pattern.dot.svg"];
+  s1321:p0 -> s1322 [label="_literal_pattern"];
+  s1323 [label="s1323\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s1324 [label="{s1324\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>|<p5>|<p6>|<p7>|<p8>|<p9>|<p10>|<p11>|<p12>|<p13>|<p14>|<p15>|<p16>}}", shape=record, fixedsize=false, peripheries=1];
+  s1325 [label="s1325 STRING\n\"u8\""];
+  s1324:p0 -> s1325 [label="u8"];
+  s1326 [label="s1326 STRING\n\"i8\""];
+  s1324:p1 -> s1326 [label="i8"];
+  s1327 [label="s1327 STRING\n\"u16\""];
+  s1324:p2 -> s1327 [label="u16"];
+  s1328 [label="s1328 STRING\n\"i16\""];
+  s1324:p3 -> s1328 [label="i16"];
+  s1329 [label="s1329 STRING\n\"u32\""];
+  s1324:p4 -> s1329 [label="u32"];
+  s1330 [label="s1330 STRING\n\"i32\""];
+  s1324:p5 -> s1330 [label="i32"];
+  s1331 [label="s1331 STRING\n\"u64\""];
+  s1324:p6 -> s1331 [label="u64"];
+  s1332 [label="s1332 STRING\n\"i64\""];
+  s1324:p7 -> s1332 [label="i64"];
+  s1333 [label="s1333 STRING\n\"u128\""];
+  s1324:p8 -> s1333 [label="u128"];
+  s1334 [label="s1334 STRING\n\"i128\""];
+  s1324:p9 -> s1334 [label="i128"];
+  s1335 [label="s1335 STRING\n\"isize\""];
+  s1324:p10 -> s1335 [label="isize"];
+  s1336 [label="s1336 STRING\n\"usize\""];
+  s1324:p11 -> s1336 [label="usize"];
+  s1337 [label="s1337 STRING\n\"f32\""];
+  s1324:p12 -> s1337 [label="f32"];
+  s1338 [label="s1338 STRING\n\"f64\""];
+  s1324:p13 -> s1338 [label="f64"];
+  s1339 [label="s1339 STRING\n\"bool\""];
+  s1324:p14 -> s1339 [label="bool"];
+  s1340 [label="s1340 STRING\n\"str\""];
+  s1324:p15 -> s1340 [label="str"];
+  s1341 [label="s1341 STRING\n\"char\""];
+  s1324:p16 -> s1341 [label="char"];
+  s1323 -> s1324 [];
+  s1321:p1 -> s1323 [label="identifier"];
+  s1342 [label="s1342 SYMBOL\nidentifier" href="rust-grammar.json.identifier.dot.svg"];
+  s1321:p2 -> s1342 [label="identifier"];
+  s1343 [label="s1343 SYMBOL\nscoped_identifier" href="rust-grammar.json.scoped_identifier.dot.svg"];
+  s1321:p3 -> s1343 [label="scoped_identifier"];
+  s1344 [label="s1344 SYMBOL\ntuple_pattern" href="rust-grammar.json.tuple_pattern.dot.svg"];
+  s1321:p4 -> s1344 [label="tuple_pattern"];
+  s1345 [label="s1345 SYMBOL\ntuple_struct_pattern" href="rust-grammar.json.tuple_struct_pattern.dot.svg"];
+  s1321:p5 -> s1345 [label="tuple_struct_pattern"];
+  s1346 [label="s1346 SYMBOL\nstruct_pattern" href="rust-grammar.json.struct_pattern.dot.svg"];
+  s1321:p6 -> s1346 [label="struct_pattern"];
+  s1347 [label="s1347 SYMBOL\nref_pattern" href="rust-grammar.json.ref_pattern.dot.svg"];
+  s1321:p7 -> s1347 [label="ref_pattern"];
+  s1348 [label="s1348 SYMBOL\nslice_pattern" href="rust-grammar.json.slice_pattern.dot.svg"];
+  s1321:p8 -> s1348 [label="slice_pattern"];
+  s1349 [label="s1349 SYMBOL\ncaptured_pattern" href="rust-grammar.json.captured_pattern.dot.svg"];
+  s1321:p9 -> s1349 [label="captured_pattern"];
+  s1350 [label="s1350 SYMBOL\nreference_pattern" href="rust-grammar.json.reference_pattern.dot.svg"];
+  s1321:p10 -> s1350 [label="reference_pattern"];
+  s1351 [label="s1351 SYMBOL\nremaining_field_pattern" href="rust-grammar.json.remaining_field_pattern.dot.svg"];
+  s1321:p11 -> s1351 [label="remaining_field_pattern"];
+  s1352 [label="s1352 SYMBOL\nmut_pattern" href="rust-grammar.json.mut_pattern.dot.svg"];
+  s1321:p12 -> s1352 [label="mut_pattern"];
+  s1353 [label="s1353 SYMBOL\nrange_pattern" href="rust-grammar.json.range_pattern.dot.svg"];
+  s1321:p13 -> s1353 [label="range_pattern"];
+  s1354 [label="s1354 STRING\n\"_\""];
+  s1321:p14 -> s1354 [label="_"];
+  
+  }
+  

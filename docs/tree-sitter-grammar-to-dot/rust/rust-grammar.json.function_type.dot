@@ -1,0 +1,42 @@
+
+  digraph function_type {
+  
+    rankdir=LR;
+  
+    s816 [label="s816\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s817 [label="{s817\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s818 [label="s818 SYMBOL\nfunction_modifiers" href="rust-grammar.json.function_modifiers.dot.svg"];
+  s817:p0 -> s818 [label="function_modifiers"];
+  s819 [label="s819 \nBLANK"];
+  s817:p1 -> s819 [label=""];
+  s816 -> s817 [];
+  s820 [label="s820\n&rarr; PREC", shape=record, fixedsize=false, peripheries=1];
+  s821 [label="s821\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s822 [label="{s822\n&rarr; CHOICE|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+  s823 [label="s823 SYMBOL\n_type_identifier" href="rust-grammar.json._type_identifier.dot.svg"];
+  s822:p0 -> s823 [label="_type_identifier"];
+  s824 [label="s824 SYMBOL\nscoped_type_identifier" href="rust-grammar.json.scoped_type_identifier.dot.svg"];
+  s822:p1 -> s824 [label="scoped_type_identifier"];
+  s825 [label="s825 STRING\n\"fn\""];
+  s822:p2 -> s825 [label="fn"];
+  s821 -> s822 [];
+  s826 [label="s826 SYMBOL\nparameters" href="rust-grammar.json.parameters.dot.svg"];
+  s823 -> s826 [];
+  s824 -> s826 [];
+  s825 -> s826 [];
+  s820 -> s821 [];
+  s818 -> s820 [];
+  s819 -> s820 [];
+  s827 [label="{s827\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s828 [label="s828\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s829 [label="s829 STRING\n\"->\""];
+  s828 -> s829 [];
+  s830 [label="s830 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s829 -> s830 [];
+  s827:p0 -> s828 [label=""];
+  s831 [label="s831 \nBLANK"];
+  s827:p1 -> s831 [label=""];
+  s826 -> s827 [];
+  
+  }
+  

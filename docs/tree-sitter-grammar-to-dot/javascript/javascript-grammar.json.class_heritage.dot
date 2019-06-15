@@ -1,0 +1,13 @@
+
+  digraph class_heritage {
+  
+    rankdir=LR;
+  
+    s491 [label="s491\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s492 [label="s492 STRING\n\"extends\""];
+  s491 -> s492 [];
+  s493 [label="s493 SYMBOL\n_expression" href="javascript-grammar.json._expression.dot.svg"];
+  s492 -> s493 [];
+  
+  }
+  

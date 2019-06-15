@@ -1,0 +1,20 @@
+
+  digraph pointer_type {
+  
+    rankdir=LR;
+  
+    s899 [label="s899\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s900 [label="s900 STRING\n\"*\""];
+  s899 -> s900 [];
+  s901 [label="{s901\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s902 [label="s902 STRING\n\"const\""];
+  s901:p0 -> s902 [label="const"];
+  s903 [label="s903 SYMBOL\nmutable_specifier" href="rust-grammar.json.mutable_specifier.dot.svg"];
+  s901:p1 -> s903 [label="mutable_specifier"];
+  s900 -> s901 [];
+  s904 [label="s904 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s902 -> s904 [];
+  s903 -> s904 [];
+  
+  }
+  

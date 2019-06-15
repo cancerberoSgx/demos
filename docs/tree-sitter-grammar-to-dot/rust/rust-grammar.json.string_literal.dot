@@ -1,0 +1,26 @@
+
+  digraph string_literal {
+  
+    rankdir=LR;
+  
+    s1500 [label="s1500\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1501 [label="s1501\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s1502 [label="s1502 PATTERN\n\"b?"\""];
+  s1501 -> s1502 [];
+  s1500 -> s1501 [];
+  s1503 [label="s1503\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s1504 [label="{s1504\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1505 [label="s1505 SYMBOL\nescape_sequence" href="rust-grammar.json.escape_sequence.dot.svg"];
+  s1504:p0 -> s1505 [label="escape_sequence"];
+  s1506 [label="s1506 IMMEDIATE_TOKEN\n(not-implemented)"];
+  s1504:p1 -> s1506 [label=""];
+  s1503 -> s1504 [];
+  s1505 -> s1503 [];
+  s1506 -> s1503 [];
+  s1502 -> s1503 [];
+  s1507 [label="s1507 IMMEDIATE_TOKEN\n(not-implemented)"];
+  s1505 -> s1507 [];
+  s1506 -> s1507 [];
+  
+  }
+  

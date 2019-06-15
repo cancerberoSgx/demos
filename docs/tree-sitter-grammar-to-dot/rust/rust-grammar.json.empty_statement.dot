@@ -1,0 +1,9 @@
+
+  digraph empty_statement {
+  
+    rankdir=LR;
+  
+    s6 [label="s6 STRING\n\";\""];
+  
+  }
+  

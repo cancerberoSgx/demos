@@ -1,0 +1,9 @@
+
+  digraph super {
+  
+    rankdir=LR;
+  
+    s1573 [label="s1573 STRING\n\"super\""];
+  
+  }
+  

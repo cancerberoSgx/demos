@@ -1,0 +1,56 @@
+
+  digraph field_initializer_list {
+  
+    rankdir=LR;
+  
+    s1118 [label="s1118\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1119 [label="s1119 STRING\n\"{\""];
+  s1118 -> s1119 [];
+  s1120 [label="{s1120\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1121 [label="s1121\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1122 [label="{s1122\n&rarr; CHOICE|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+  s1123 [label="s1123\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s1124 [label="s1124 SYMBOL\nidentifier" href="rust-grammar.json.identifier.dot.svg"];
+  s1123 -> s1124 [];
+  s1122:p0 -> s1123 [label="shorthand_field_identifier"];
+  s1125 [label="s1125 SYMBOL\nfield_initializer" href="rust-grammar.json.field_initializer.dot.svg"];
+  s1122:p1 -> s1125 [label="field_initializer"];
+  s1126 [label="s1126 SYMBOL\nbase_field_initializer" href="rust-grammar.json.base_field_initializer.dot.svg"];
+  s1122:p2 -> s1126 [label="base_field_initializer"];
+  s1121 -> s1122 [];
+  s1127 [label="s1127\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s1128 [label="s1128\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1129 [label="s1129 STRING\n\",\""];
+  s1128 -> s1129 [];
+  s1130 [label="{s1130\n&rarr; CHOICE|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+  s1131 [label="s1131\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s1132 [label="s1132 SYMBOL\nidentifier" href="rust-grammar.json.identifier.dot.svg"];
+  s1131 -> s1132 [];
+  s1130:p0 -> s1131 [label="shorthand_field_identifier"];
+  s1133 [label="s1133 SYMBOL\nfield_initializer" href="rust-grammar.json.field_initializer.dot.svg"];
+  s1130:p1 -> s1133 [label="field_initializer"];
+  s1134 [label="s1134 SYMBOL\nbase_field_initializer" href="rust-grammar.json.base_field_initializer.dot.svg"];
+  s1130:p2 -> s1134 [label="base_field_initializer"];
+  s1129 -> s1130 [];
+  s1127 -> s1128 [];
+  s1130 -> s1127 [];
+  s1124 -> s1127 [];
+  s1125 -> s1127 [];
+  s1126 -> s1127 [];
+  s1120:p0 -> s1121 [label=""];
+  s1135 [label="s1135 \nBLANK"];
+  s1120:p1 -> s1135 [label=""];
+  s1119 -> s1120 [];
+  s1136 [label="{s1136\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1137 [label="s1137 STRING\n\",\""];
+  s1136:p0 -> s1137 [label=","];
+  s1138 [label="s1138 \nBLANK"];
+  s1136:p1 -> s1138 [label=""];
+  s1127 -> s1136 [];
+  s1135 -> s1136 [];
+  s1139 [label="s1139 STRING\n\"}\""];
+  s1137 -> s1139 [];
+  s1138 -> s1139 [];
+  
+  }
+  

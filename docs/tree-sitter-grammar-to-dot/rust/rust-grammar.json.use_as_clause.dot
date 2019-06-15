@@ -1,0 +1,15 @@
+
+  digraph use_as_clause {
+  
+    rankdir=LR;
+  
+    s699 [label="s699\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s700 [label="s700 SYMBOL\n_path" href="rust-grammar.json._path.dot.svg"];
+  s699 -> s700 [];
+  s701 [label="s701 STRING\n\"as\""];
+  s700 -> s701 [];
+  s702 [label="s702 SYMBOL\nidentifier" href="rust-grammar.json.identifier.dot.svg"];
+  s701 -> s702 [];
+  
+  }
+  

@@ -1,0 +1,13 @@
+
+  digraph _jsx_attribute {
+  
+    rankdir=LR;
+  
+    s455 [label="{s455\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s456 [label="s456 SYMBOL\njsx_attribute" href="javascript-grammar.json.jsx_attribute.dot.svg"];
+  s455:p0 -> s456 [label="jsx_attribute"];
+  s457 [label="s457 SYMBOL\njsx_expression" href="javascript-grammar.json.jsx_expression.dot.svg"];
+  s455:p1 -> s457 [label="jsx_expression"];
+  
+  }
+  

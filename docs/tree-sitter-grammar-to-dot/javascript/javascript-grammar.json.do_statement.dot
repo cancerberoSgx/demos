@@ -1,0 +1,19 @@
+
+  digraph do_statement {
+  
+    rankdir=LR;
+  
+    s230 [label="s230\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s231 [label="s231 STRING\n\"do\""];
+  s230 -> s231 [];
+  s232 [label="s232 SYMBOL\n_statement" href="javascript-grammar.json._statement.dot.svg"];
+  s231 -> s232 [];
+  s233 [label="s233 STRING\n\"while\""];
+  s232 -> s233 [];
+  s234 [label="s234 SYMBOL\nparenthesized_expression" href="javascript-grammar.json.parenthesized_expression.dot.svg"];
+  s233 -> s234 [];
+  s235 [label="s235 SYMBOL\n_semicolon" href="javascript-grammar.json._semicolon.dot.svg"];
+  s234 -> s235 [];
+  
+  }
+  

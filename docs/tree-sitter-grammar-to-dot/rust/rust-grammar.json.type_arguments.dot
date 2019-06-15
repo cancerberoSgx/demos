@@ -1,0 +1,47 @@
+
+  digraph type_arguments {
+  
+    rankdir=LR;
+  
+    s868 [label="s868\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s869 [label="s869 STRING\n\"<\""];
+  s868 -> s869 [];
+  s870 [label="s870\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s871 [label="{s871\n&rarr; CHOICE|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+  s872 [label="s872 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s871:p0 -> s872 [label="_type"];
+  s873 [label="s873 SYMBOL\ntype_binding" href="rust-grammar.json.type_binding.dot.svg"];
+  s871:p1 -> s873 [label="type_binding"];
+  s874 [label="s874 SYMBOL\nlifetime" href="rust-grammar.json.lifetime.dot.svg"];
+  s871:p2 -> s874 [label="lifetime"];
+  s870 -> s871 [];
+  s875 [label="s875\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s876 [label="s876\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s877 [label="s877 STRING\n\",\""];
+  s876 -> s877 [];
+  s878 [label="{s878\n&rarr; CHOICE|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+  s879 [label="s879 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s878:p0 -> s879 [label="_type"];
+  s880 [label="s880 SYMBOL\ntype_binding" href="rust-grammar.json.type_binding.dot.svg"];
+  s878:p1 -> s880 [label="type_binding"];
+  s881 [label="s881 SYMBOL\nlifetime" href="rust-grammar.json.lifetime.dot.svg"];
+  s878:p2 -> s881 [label="lifetime"];
+  s877 -> s878 [];
+  s875 -> s876 [];
+  s878 -> s875 [];
+  s872 -> s875 [];
+  s873 -> s875 [];
+  s874 -> s875 [];
+  s869 -> s870 [];
+  s882 [label="{s882\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s883 [label="s883 STRING\n\",\""];
+  s882:p0 -> s883 [label=","];
+  s884 [label="s884 \nBLANK"];
+  s882:p1 -> s884 [label=""];
+  s875 -> s882 [];
+  s885 [label="s885 STRING\n\">\""];
+  s883 -> s885 [];
+  s884 -> s885 [];
+  
+  }
+  

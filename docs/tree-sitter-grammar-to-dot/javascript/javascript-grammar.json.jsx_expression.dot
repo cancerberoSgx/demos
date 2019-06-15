@@ -1,0 +1,28 @@
+
+  digraph jsx_expression {
+  
+    rankdir=LR;
+  
+    s409 [label="s409\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s410 [label="s410 STRING\n\"{\""];
+  s409 -> s410 [];
+  s411 [label="{s411\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s412 [label="{s412\n&rarr; CHOICE|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+  s413 [label="s413 SYMBOL\n_expression" href="javascript-grammar.json._expression.dot.svg"];
+  s412:p0 -> s413 [label="_expression"];
+  s414 [label="s414 SYMBOL\nsequence_expression" href="javascript-grammar.json.sequence_expression.dot.svg"];
+  s412:p1 -> s414 [label="sequence_expression"];
+  s415 [label="s415 SYMBOL\nspread_element" href="javascript-grammar.json.spread_element.dot.svg"];
+  s412:p2 -> s415 [label="spread_element"];
+  s411:p0 -> s412 [label=""];
+  s416 [label="s416 \nBLANK"];
+  s411:p1 -> s416 [label=""];
+  s410 -> s411 [];
+  s417 [label="s417 STRING\n\"}\""];
+  s413 -> s417 [];
+  s414 -> s417 [];
+  s415 -> s417 [];
+  s416 -> s417 [];
+  
+  }
+  

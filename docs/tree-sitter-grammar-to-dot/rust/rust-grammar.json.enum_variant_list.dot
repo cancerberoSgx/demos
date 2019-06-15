@@ -1,0 +1,52 @@
+
+  digraph enum_variant_list {
+  
+    rankdir=LR;
+  
+    s311 [label="s311\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s312 [label="s312 STRING\n\"{\""];
+  s311 -> s312 [];
+  s313 [label="{s313\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s314 [label="s314\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s315 [label="s315\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s316 [label="s316\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s317 [label="s317 SYMBOL\nattribute_item" href="rust-grammar.json.attribute_item.dot.svg"];
+  s316 -> s317 [];
+  s317 -> s316 [];
+  s315 -> s316 [];
+  s318 [label="s318 SYMBOL\nenum_variant" href="rust-grammar.json.enum_variant.dot.svg"];
+  s317 -> s318 [];
+  s314 -> s315 [];
+  s319 [label="s319\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s320 [label="s320\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s321 [label="s321 STRING\n\",\""];
+  s320 -> s321 [];
+  s322 [label="s322\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s323 [label="s323\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s324 [label="s324 SYMBOL\nattribute_item" href="rust-grammar.json.attribute_item.dot.svg"];
+  s323 -> s324 [];
+  s324 -> s323 [];
+  s322 -> s323 [];
+  s325 [label="s325 SYMBOL\nenum_variant" href="rust-grammar.json.enum_variant.dot.svg"];
+  s324 -> s325 [];
+  s321 -> s322 [];
+  s319 -> s320 [];
+  s322 -> s319 [];
+  s318 -> s319 [];
+  s313:p0 -> s314 [label=""];
+  s326 [label="s326 \nBLANK"];
+  s313:p1 -> s326 [label=""];
+  s312 -> s313 [];
+  s327 [label="{s327\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s328 [label="s328 STRING\n\",\""];
+  s327:p0 -> s328 [label=","];
+  s329 [label="s329 \nBLANK"];
+  s327:p1 -> s329 [label=""];
+  s319 -> s327 [];
+  s326 -> s327 [];
+  s330 [label="s330 STRING\n\"}\""];
+  s328 -> s330 [];
+  s329 -> s330 [];
+  
+  }
+  

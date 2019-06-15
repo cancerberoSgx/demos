@@ -1,0 +1,15 @@
+
+  digraph macro_invocation {
+  
+    rankdir=LR;
+  
+    s977 [label="s977\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s978 [label="s978 SYMBOL\nidentifier" href="rust-grammar.json.identifier.dot.svg"];
+  s977 -> s978 [];
+  s979 [label="s979 STRING\n\"!\""];
+  s978 -> s979 [];
+  s980 [label="s980 SYMBOL\ntoken_tree" href="rust-grammar.json.token_tree.dot.svg"];
+  s979 -> s980 [];
+  
+  }
+  

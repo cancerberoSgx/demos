@@ -1,0 +1,15 @@
+
+  digraph _jsx_child {
+  
+    rankdir=LR;
+  
+    s418 [label="{s418\n&rarr; CHOICE|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+  s419 [label="s419 SYMBOL\njsx_text" href="javascript-grammar.json.jsx_text.dot.svg"];
+  s418:p0 -> s419 [label="jsx_text"];
+  s420 [label="s420 SYMBOL\n_jsx_element" href="javascript-grammar.json._jsx_element.dot.svg"];
+  s418:p1 -> s420 [label="_jsx_element"];
+  s421 [label="s421 SYMBOL\njsx_expression" href="javascript-grammar.json.jsx_expression.dot.svg"];
+  s418:p2 -> s421 [label="jsx_expression"];
+  
+  }
+  

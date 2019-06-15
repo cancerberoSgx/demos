@@ -1,0 +1,24 @@
+
+  digraph import_statement {
+  
+    rankdir=LR;
+  
+    s70 [label="s70\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s71 [label="s71 STRING\n\"import\""];
+  s70 -> s71 [];
+  s72 [label="{s72\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s73 [label="s73\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s74 [label="s74 SYMBOL\nimport_clause" href="javascript-grammar.json.import_clause.dot.svg"];
+  s73 -> s74 [];
+  s75 [label="s75 SYMBOL\n_from_clause" href="javascript-grammar.json._from_clause.dot.svg"];
+  s74 -> s75 [];
+  s72:p0 -> s73 [label=""];
+  s76 [label="s76 SYMBOL\nstring" href="javascript-grammar.json.string.dot.svg"];
+  s72:p1 -> s76 [label="string"];
+  s71 -> s72 [];
+  s77 [label="s77 SYMBOL\n_semicolon" href="javascript-grammar.json._semicolon.dot.svg"];
+  s75 -> s77 [];
+  s76 -> s77 [];
+  
+  }
+  

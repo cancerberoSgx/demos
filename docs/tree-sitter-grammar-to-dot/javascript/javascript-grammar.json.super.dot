@@ -1,0 +1,9 @@
+
+  digraph super {
+  
+    rankdir=LR;
+  
+    s777 [label="s777 STRING\n\"super\""];
+  
+  }
+  

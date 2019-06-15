@@ -1,0 +1,13 @@
+
+  digraph try_expression {
+  
+    rankdir=LR;
+  
+    s1020 [label="s1020\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1021 [label="s1021 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1020 -> s1021 [];
+  s1022 [label="s1022 STRING\n\"?\""];
+  s1021 -> s1022 [];
+  
+  }
+  

@@ -1,0 +1,20 @@
+
+  digraph switch_case {
+  
+    rankdir=LR;
+  
+    s285 [label="s285\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s286 [label="s286 STRING\n\"case\""];
+  s285 -> s286 [];
+  s287 [label="s287 SYMBOL\n_expressions" href="javascript-grammar.json._expressions.dot.svg"];
+  s286 -> s287 [];
+  s288 [label="s288 STRING\n\":\""];
+  s287 -> s288 [];
+  s289 [label="s289\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s290 [label="s290 SYMBOL\n_statement" href="javascript-grammar.json._statement.dot.svg"];
+  s289 -> s290 [];
+  s290 -> s289 [];
+  s288 -> s289 [];
+  
+  }
+  

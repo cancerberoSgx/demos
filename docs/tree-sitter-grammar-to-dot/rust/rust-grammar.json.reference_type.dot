@@ -1,0 +1,27 @@
+
+  digraph reference_type {
+  
+    rankdir=LR;
+  
+    s890 [label="s890\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s891 [label="s891 STRING\n\"&\""];
+  s890 -> s891 [];
+  s892 [label="{s892\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s893 [label="s893 SYMBOL\nlifetime" href="rust-grammar.json.lifetime.dot.svg"];
+  s892:p0 -> s893 [label="lifetime"];
+  s894 [label="s894 \nBLANK"];
+  s892:p1 -> s894 [label=""];
+  s891 -> s892 [];
+  s895 [label="{s895\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s896 [label="s896 SYMBOL\nmutable_specifier" href="rust-grammar.json.mutable_specifier.dot.svg"];
+  s895:p0 -> s896 [label="mutable_specifier"];
+  s897 [label="s897 \nBLANK"];
+  s895:p1 -> s897 [label=""];
+  s893 -> s895 [];
+  s894 -> s895 [];
+  s898 [label="s898 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s896 -> s898 [];
+  s897 -> s898 [];
+  
+  }
+  

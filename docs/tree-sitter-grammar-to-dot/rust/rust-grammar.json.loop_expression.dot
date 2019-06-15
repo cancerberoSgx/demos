@@ -1,0 +1,24 @@
+
+  digraph loop_expression {
+  
+    rankdir=LR;
+  
+    s1238 [label="s1238\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1239 [label="{s1239\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1240 [label="s1240\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1241 [label="s1241 SYMBOL\nloop_label" href="rust-grammar.json.loop_label.dot.svg"];
+  s1240 -> s1241 [];
+  s1242 [label="s1242 STRING\n\":\""];
+  s1241 -> s1242 [];
+  s1239:p0 -> s1240 [label=""];
+  s1243 [label="s1243 \nBLANK"];
+  s1239:p1 -> s1243 [label=""];
+  s1238 -> s1239 [];
+  s1244 [label="s1244 STRING\n\"loop\""];
+  s1242 -> s1244 [];
+  s1243 -> s1244 [];
+  s1245 [label="s1245 SYMBOL\nblock" href="rust-grammar.json.block.dot.svg"];
+  s1244 -> s1245 [];
+  
+  }
+  

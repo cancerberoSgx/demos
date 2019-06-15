@@ -1,0 +1,9 @@
+
+  digraph self {
+  
+    rankdir=LR;
+  
+    s1572 [label="s1572 STRING\n\"self\""];
+  
+  }
+  

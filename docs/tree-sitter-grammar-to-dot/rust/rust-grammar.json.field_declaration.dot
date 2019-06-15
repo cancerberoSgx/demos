@@ -1,0 +1,22 @@
+
+  digraph field_declaration {
+  
+    rankdir=LR;
+  
+    s366 [label="s366\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s367 [label="{s367\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s368 [label="s368 SYMBOL\nvisibility_modifier" href="rust-grammar.json.visibility_modifier.dot.svg"];
+  s367:p0 -> s368 [label="visibility_modifier"];
+  s369 [label="s369 \nBLANK"];
+  s367:p1 -> s369 [label=""];
+  s366 -> s367 [];
+  s370 [label="s370 SYMBOL\n_field_identifier" href="rust-grammar.json._field_identifier.dot.svg"];
+  s368 -> s370 [];
+  s369 -> s370 [];
+  s371 [label="s371 STRING\n\":\""];
+  s370 -> s371 [];
+  s372 [label="s372 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s371 -> s372 [];
+  
+  }
+  

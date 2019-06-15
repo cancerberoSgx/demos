@@ -1,0 +1,13 @@
+
+  digraph _jsx_element {
+  
+    rankdir=LR;
+  
+    s392 [label="{s392\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s393 [label="s393 SYMBOL\njsx_element" href="javascript-grammar.json.jsx_element.dot.svg"];
+  s392:p0 -> s393 [label="jsx_element"];
+  s394 [label="s394 SYMBOL\njsx_self_closing_element" href="javascript-grammar.json.jsx_self_closing_element.dot.svg"];
+  s392:p1 -> s394 [label="jsx_self_closing_element"];
+  
+  }
+  

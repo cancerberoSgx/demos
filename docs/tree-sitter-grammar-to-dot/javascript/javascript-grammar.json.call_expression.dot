@@ -1,0 +1,27 @@
+
+  digraph call_expression {
+  
+    rankdir=LR;
+  
+    s525 [label="s525\n&rarr; PREC", shape=record, fixedsize=false, peripheries=1];
+  s526 [label="s526\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s527 [label="{s527\n&rarr; CHOICE|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+  s528 [label="s528 SYMBOL\n_expression" href="javascript-grammar.json._expression.dot.svg"];
+  s527:p0 -> s528 [label="_expression"];
+  s529 [label="s529 SYMBOL\nsuper" href="javascript-grammar.json.super.dot.svg"];
+  s527:p1 -> s529 [label="super"];
+  s530 [label="s530 SYMBOL\nfunction" href="javascript-grammar.json.function.dot.svg"];
+  s527:p2 -> s530 [label="function"];
+  s526 -> s527 [];
+  s531 [label="{s531\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s532 [label="s532 SYMBOL\narguments" href="javascript-grammar.json.arguments.dot.svg"];
+  s531:p0 -> s532 [label="arguments"];
+  s533 [label="s533 SYMBOL\ntemplate_string" href="javascript-grammar.json.template_string.dot.svg"];
+  s531:p1 -> s533 [label="template_string"];
+  s528 -> s531 [];
+  s529 -> s531 [];
+  s530 -> s531 [];
+  s525 -> s526 [];
+  
+  }
+  

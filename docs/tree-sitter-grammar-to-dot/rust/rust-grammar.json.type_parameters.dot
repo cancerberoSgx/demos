@@ -1,0 +1,59 @@
+
+  digraph type_parameters {
+  
+    rankdir=LR;
+  
+    s607 [label="s607\n&rarr; PREC", shape=record, fixedsize=false, peripheries=1];
+  s608 [label="s608\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s609 [label="s609 STRING\n\"<\""];
+  s608 -> s609 [];
+  s610 [label="s610\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s611 [label="{s611\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>}}", shape=record, fixedsize=false, peripheries=1];
+  s612 [label="s612 SYMBOL\nlifetime" href="rust-grammar.json.lifetime.dot.svg"];
+  s611:p0 -> s612 [label="lifetime"];
+  s613 [label="s613 SYMBOL\nmetavariable" href="rust-grammar.json.metavariable.dot.svg"];
+  s611:p1 -> s613 [label="metavariable"];
+  s614 [label="s614 SYMBOL\n_type_identifier" href="rust-grammar.json._type_identifier.dot.svg"];
+  s611:p2 -> s614 [label="_type_identifier"];
+  s615 [label="s615 SYMBOL\nconstrained_type_parameter" href="rust-grammar.json.constrained_type_parameter.dot.svg"];
+  s611:p3 -> s615 [label="constrained_type_parameter"];
+  s616 [label="s616 SYMBOL\noptional_type_parameter" href="rust-grammar.json.optional_type_parameter.dot.svg"];
+  s611:p4 -> s616 [label="optional_type_parameter"];
+  s610 -> s611 [];
+  s617 [label="s617\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s618 [label="s618\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s619 [label="s619 STRING\n\",\""];
+  s618 -> s619 [];
+  s620 [label="{s620\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>}}", shape=record, fixedsize=false, peripheries=1];
+  s621 [label="s621 SYMBOL\nlifetime" href="rust-grammar.json.lifetime.dot.svg"];
+  s620:p0 -> s621 [label="lifetime"];
+  s622 [label="s622 SYMBOL\nmetavariable" href="rust-grammar.json.metavariable.dot.svg"];
+  s620:p1 -> s622 [label="metavariable"];
+  s623 [label="s623 SYMBOL\n_type_identifier" href="rust-grammar.json._type_identifier.dot.svg"];
+  s620:p2 -> s623 [label="_type_identifier"];
+  s624 [label="s624 SYMBOL\nconstrained_type_parameter" href="rust-grammar.json.constrained_type_parameter.dot.svg"];
+  s620:p3 -> s624 [label="constrained_type_parameter"];
+  s625 [label="s625 SYMBOL\noptional_type_parameter" href="rust-grammar.json.optional_type_parameter.dot.svg"];
+  s620:p4 -> s625 [label="optional_type_parameter"];
+  s619 -> s620 [];
+  s617 -> s618 [];
+  s620 -> s617 [];
+  s612 -> s617 [];
+  s613 -> s617 [];
+  s614 -> s617 [];
+  s615 -> s617 [];
+  s616 -> s617 [];
+  s609 -> s610 [];
+  s626 [label="{s626\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s627 [label="s627 STRING\n\",\""];
+  s626:p0 -> s627 [label=","];
+  s628 [label="s628 \nBLANK"];
+  s626:p1 -> s628 [label=""];
+  s617 -> s626 [];
+  s629 [label="s629 STRING\n\">\""];
+  s627 -> s629 [];
+  s628 -> s629 [];
+  s607 -> s608 [];
+  
+  }
+  

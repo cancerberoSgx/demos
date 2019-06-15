@@ -1,0 +1,20 @@
+
+  digraph return_statement {
+  
+    rankdir=LR;
+  
+    s266 [label="s266\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s267 [label="s267 STRING\n\"return\""];
+  s266 -> s267 [];
+  s268 [label="{s268\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s269 [label="s269 SYMBOL\n_expressions" href="javascript-grammar.json._expressions.dot.svg"];
+  s268:p0 -> s269 [label="_expressions"];
+  s270 [label="s270 \nBLANK"];
+  s268:p1 -> s270 [label=""];
+  s267 -> s268 [];
+  s271 [label="s271 SYMBOL\n_semicolon" href="javascript-grammar.json._semicolon.dot.svg"];
+  s269 -> s271 [];
+  s270 -> s271 [];
+  
+  }
+  

@@ -1,0 +1,22 @@
+
+  digraph break_statement {
+  
+    rankdir=LR;
+  
+    s249 [label="s249\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s250 [label="s250 STRING\n\"break\""];
+  s249 -> s250 [];
+  s251 [label="{s251\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s252 [label="s252\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s253 [label="s253 SYMBOL\nidentifier" href="javascript-grammar.json.identifier.dot.svg"];
+  s252 -> s253 [];
+  s251:p0 -> s252 [label="statement_identifier"];
+  s254 [label="s254 \nBLANK"];
+  s251:p1 -> s254 [label=""];
+  s250 -> s251 [];
+  s255 [label="s255 SYMBOL\n_semicolon" href="javascript-grammar.json._semicolon.dot.svg"];
+  s253 -> s255 [];
+  s254 -> s255 [];
+  
+  }
+  

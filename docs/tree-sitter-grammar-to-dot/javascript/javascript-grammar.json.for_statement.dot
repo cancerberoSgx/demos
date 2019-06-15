@@ -1,0 +1,44 @@
+
+  digraph for_statement {
+  
+    rankdir=LR;
+  
+    s175 [label="s175\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s176 [label="s176 STRING\n\"for\""];
+  s175 -> s176 [];
+  s177 [label="s177 STRING\n\"(\""];
+  s176 -> s177 [];
+  s178 [label="{s178\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>}}", shape=record, fixedsize=false, peripheries=1];
+  s179 [label="s179 SYMBOL\nlexical_declaration" href="javascript-grammar.json.lexical_declaration.dot.svg"];
+  s178:p0 -> s179 [label="lexical_declaration"];
+  s180 [label="s180 SYMBOL\nvariable_declaration" href="javascript-grammar.json.variable_declaration.dot.svg"];
+  s178:p1 -> s180 [label="variable_declaration"];
+  s181 [label="s181 SYMBOL\nexpression_statement" href="javascript-grammar.json.expression_statement.dot.svg"];
+  s178:p2 -> s181 [label="expression_statement"];
+  s182 [label="s182 SYMBOL\nempty_statement" href="javascript-grammar.json.empty_statement.dot.svg"];
+  s178:p3 -> s182 [label="empty_statement"];
+  s177 -> s178 [];
+  s183 [label="{s183\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s184 [label="s184 SYMBOL\nexpression_statement" href="javascript-grammar.json.expression_statement.dot.svg"];
+  s183:p0 -> s184 [label="expression_statement"];
+  s185 [label="s185 SYMBOL\nempty_statement" href="javascript-grammar.json.empty_statement.dot.svg"];
+  s183:p1 -> s185 [label="empty_statement"];
+  s179 -> s183 [];
+  s180 -> s183 [];
+  s181 -> s183 [];
+  s182 -> s183 [];
+  s186 [label="{s186\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s187 [label="s187 SYMBOL\n_expressions" href="javascript-grammar.json._expressions.dot.svg"];
+  s186:p0 -> s187 [label="_expressions"];
+  s188 [label="s188 \nBLANK"];
+  s186:p1 -> s188 [label=""];
+  s184 -> s186 [];
+  s185 -> s186 [];
+  s189 [label="s189 STRING\n\")\""];
+  s187 -> s189 [];
+  s188 -> s189 [];
+  s190 [label="s190 SYMBOL\n_statement" href="javascript-grammar.json._statement.dot.svg"];
+  s189 -> s190 [];
+  
+  }
+  

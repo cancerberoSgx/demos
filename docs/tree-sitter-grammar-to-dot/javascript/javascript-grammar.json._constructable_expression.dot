@@ -1,0 +1,57 @@
+
+  digraph _constructable_expression {
+  
+    rankdir=LR;
+  
+    s535 [label="{s535\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>|<p5>|<p6>|<p7>|<p8>|<p9>|<p10>|<p11>|<p12>|<p13>|<p14>|<p15>|<p16>|<p17>|<p18>|<p19>|<p20>|<p21>|<p22>}}", shape=record, fixedsize=false, peripheries=1];
+  s536 [label="s536 SYMBOL\nthis" href="javascript-grammar.json.this.dot.svg"];
+  s535:p0 -> s536 [label="this"];
+  s537 [label="s537 SYMBOL\nidentifier" href="javascript-grammar.json.identifier.dot.svg"];
+  s535:p1 -> s537 [label="identifier"];
+  s538 [label="s538\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s539 [label="s539 SYMBOL\n_reserved_identifier" href="javascript-grammar.json._reserved_identifier.dot.svg"];
+  s538 -> s539 [];
+  s535:p2 -> s538 [label="identifier"];
+  s540 [label="s540 SYMBOL\nnumber" href="javascript-grammar.json.number.dot.svg"];
+  s535:p3 -> s540 [label="number"];
+  s541 [label="s541 SYMBOL\nstring" href="javascript-grammar.json.string.dot.svg"];
+  s535:p4 -> s541 [label="string"];
+  s542 [label="s542 SYMBOL\ntemplate_string" href="javascript-grammar.json.template_string.dot.svg"];
+  s535:p5 -> s542 [label="template_string"];
+  s543 [label="s543 SYMBOL\nregex" href="javascript-grammar.json.regex.dot.svg"];
+  s535:p6 -> s543 [label="regex"];
+  s544 [label="s544 SYMBOL\ntrue" href="javascript-grammar.json.true.dot.svg"];
+  s535:p7 -> s544 [label="true"];
+  s545 [label="s545 SYMBOL\nfalse" href="javascript-grammar.json.false.dot.svg"];
+  s535:p8 -> s545 [label="false"];
+  s546 [label="s546 SYMBOL\nnull" href="javascript-grammar.json.null.dot.svg"];
+  s535:p9 -> s546 [label="null"];
+  s547 [label="s547 SYMBOL\nundefined" href="javascript-grammar.json.undefined.dot.svg"];
+  s535:p10 -> s547 [label="undefined"];
+  s548 [label="s548 SYMBOL\nobject" href="javascript-grammar.json.object.dot.svg"];
+  s535:p11 -> s548 [label="object"];
+  s549 [label="s549 SYMBOL\narray" href="javascript-grammar.json.array.dot.svg"];
+  s535:p12 -> s549 [label="array"];
+  s550 [label="s550 SYMBOL\nfunction" href="javascript-grammar.json.function.dot.svg"];
+  s535:p13 -> s550 [label="function"];
+  s551 [label="s551 SYMBOL\narrow_function" href="javascript-grammar.json.arrow_function.dot.svg"];
+  s535:p14 -> s551 [label="arrow_function"];
+  s552 [label="s552 SYMBOL\ngenerator_function" href="javascript-grammar.json.generator_function.dot.svg"];
+  s535:p15 -> s552 [label="generator_function"];
+  s553 [label="s553 SYMBOL\nclass" href="javascript-grammar.json.class.dot.svg"];
+  s535:p16 -> s553 [label="class"];
+  s554 [label="s554 SYMBOL\nanonymous_class" href="javascript-grammar.json.anonymous_class.dot.svg"];
+  s535:p17 -> s554 [label="anonymous_class"];
+  s555 [label="s555 SYMBOL\nparenthesized_expression" href="javascript-grammar.json.parenthesized_expression.dot.svg"];
+  s535:p18 -> s555 [label="parenthesized_expression"];
+  s556 [label="s556 SYMBOL\nsubscript_expression" href="javascript-grammar.json.subscript_expression.dot.svg"];
+  s535:p19 -> s556 [label="subscript_expression"];
+  s557 [label="s557 SYMBOL\nmember_expression" href="javascript-grammar.json.member_expression.dot.svg"];
+  s535:p20 -> s557 [label="member_expression"];
+  s558 [label="s558 SYMBOL\nmeta_property" href="javascript-grammar.json.meta_property.dot.svg"];
+  s535:p21 -> s558 [label="meta_property"];
+  s559 [label="s559 SYMBOL\nnew_expression" href="javascript-grammar.json.new_expression.dot.svg"];
+  s535:p22 -> s559 [label="new_expression"];
+  
+  }
+  

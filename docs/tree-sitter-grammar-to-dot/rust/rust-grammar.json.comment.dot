@@ -1,0 +1,13 @@
+
+  digraph comment {
+  
+    rankdir=LR;
+  
+    s1530 [label="{s1530\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1531 [label="s1531 SYMBOL\nline_comment" href="rust-grammar.json.line_comment.dot.svg"];
+  s1530:p0 -> s1531 [label="line_comment"];
+  s1532 [label="s1532 SYMBOL\nblock_comment" href="rust-grammar.json.block_comment.dot.svg"];
+  s1530:p1 -> s1532 [label="block_comment"];
+  
+  }
+  

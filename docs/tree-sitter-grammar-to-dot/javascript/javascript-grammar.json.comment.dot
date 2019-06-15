@@ -1,0 +1,27 @@
+
+  digraph comment {
+  
+    rankdir=LR;
+  
+    s647 [label="s647\n&rarr; TOKEN", shape=record, fixedsize=false, peripheries=1];
+  s648 [label="s648\n&rarr; PREC", shape=record, fixedsize=false, peripheries=1];
+  s649 [label="{s649\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s650 [label="s650\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s651 [label="s651 STRING\n\"//\""];
+  s650 -> s651 [];
+  s652 [label="s652 PATTERN\n\".*\""];
+  s651 -> s652 [];
+  s649:p0 -> s650 [label=""];
+  s653 [label="s653\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s654 [label="s654 STRING\n\"/*\""];
+  s653 -> s654 [];
+  s655 [label="s655 PATTERN\n\"[^*]*\*+([^\/*][^*]*\*+)*\""];
+  s654 -> s655 [];
+  s656 [label="s656 STRING\n\"/\""];
+  s655 -> s656 [];
+  s649:p1 -> s653 [label=""];
+  s648 -> s649 [];
+  s647 -> s648 [];
+  
+  }
+  

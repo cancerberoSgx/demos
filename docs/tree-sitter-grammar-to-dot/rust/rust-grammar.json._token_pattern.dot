@@ -1,0 +1,17 @@
+
+  digraph _token_pattern {
+  
+    rankdir=LR;
+  
+    s66 [label="{s66\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>}}", shape=record, fixedsize=false, peripheries=1];
+  s67 [label="s67 SYMBOL\ntoken_tree_pattern" href="rust-grammar.json.token_tree_pattern.dot.svg"];
+  s66:p0 -> s67 [label="token_tree_pattern"];
+  s68 [label="s68 SYMBOL\ntoken_repetition_pattern" href="rust-grammar.json.token_repetition_pattern.dot.svg"];
+  s66:p1 -> s68 [label="token_repetition_pattern"];
+  s69 [label="s69 SYMBOL\ntoken_binding_pattern" href="rust-grammar.json.token_binding_pattern.dot.svg"];
+  s66:p2 -> s69 [label="token_binding_pattern"];
+  s70 [label="s70 SYMBOL\n_non_special_token" href="rust-grammar.json._non_special_token.dot.svg"];
+  s66:p3 -> s70 [label="_non_special_token"];
+  
+  }
+  

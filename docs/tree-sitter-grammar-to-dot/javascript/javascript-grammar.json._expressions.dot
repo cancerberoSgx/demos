@@ -1,0 +1,13 @@
+
+  digraph _expressions {
+  
+    rankdir=LR;
+  
+    s312 [label="{s312\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s313 [label="s313 SYMBOL\n_expression" href="javascript-grammar.json._expression.dot.svg"];
+  s312:p0 -> s313 [label="_expression"];
+  s314 [label="s314 SYMBOL\nsequence_expression" href="javascript-grammar.json.sequence_expression.dot.svg"];
+  s312:p1 -> s314 [label="sequence_expression"];
+  
+  }
+  

@@ -1,0 +1,33 @@
+
+  digraph binary_expression {
+  
+    rankdir=LR;
+  
+    s1030 [label="{s1030\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>|<p5>|<p6>|<p7>|<p8>|<p9>|<p10>|<p11>}}", shape=record, fixedsize=false, peripheries=1];
+  s1031 [label="s1031 PREC_LEFT\n(not-implemented)"];
+  s1030:p0 -> s1031 [label="10"];
+  s1032 [label="s1032 PREC_LEFT\n(not-implemented)"];
+  s1030:p1 -> s1032 [label="9"];
+  s1033 [label="s1033 PREC_LEFT\n(not-implemented)"];
+  s1030:p2 -> s1033 [label="4"];
+  s1034 [label="s1034 PREC_LEFT\n(not-implemented)"];
+  s1030:p3 -> s1034 [label="8"];
+  s1035 [label="s1035 PREC_LEFT\n(not-implemented)"];
+  s1030:p4 -> s1035 [label="3"];
+  s1036 [label="s1036 PREC_LEFT\n(not-implemented)"];
+  s1030:p5 -> s1036 [label="2"];
+  s1037 [label="s1037 PREC_LEFT\n(not-implemented)"];
+  s1030:p6 -> s1037 [label="5"];
+  s1038 [label="s1038 PREC_LEFT\n(not-implemented)"];
+  s1030:p7 -> s1038 [label="7"];
+  s1039 [label="s1039 PREC_LEFT\n(not-implemented)"];
+  s1030:p8 -> s1039 [label="6"];
+  s1040 [label="s1040 SYMBOL\nassignment_expression" href="rust-grammar.json.assignment_expression.dot.svg"];
+  s1030:p9 -> s1040 [label="assignment_expression"];
+  s1041 [label="s1041 SYMBOL\ncompound_assignment_expr" href="rust-grammar.json.compound_assignment_expr.dot.svg"];
+  s1030:p10 -> s1041 [label="compound_assignment_expr"];
+  s1042 [label="s1042 SYMBOL\ntype_cast_expression" href="rust-grammar.json.type_cast_expression.dot.svg"];
+  s1030:p11 -> s1042 [label="type_cast_expression"];
+  
+  }
+  

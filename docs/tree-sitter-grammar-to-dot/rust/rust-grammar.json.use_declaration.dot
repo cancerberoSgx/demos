@@ -1,0 +1,22 @@
+
+  digraph use_declaration {
+  
+    rankdir=LR;
+  
+    s658 [label="s658\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s659 [label="{s659\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s660 [label="s660 SYMBOL\nvisibility_modifier" href="rust-grammar.json.visibility_modifier.dot.svg"];
+  s659:p0 -> s660 [label="visibility_modifier"];
+  s661 [label="s661 \nBLANK"];
+  s659:p1 -> s661 [label=""];
+  s658 -> s659 [];
+  s662 [label="s662 STRING\n\"use\""];
+  s660 -> s662 [];
+  s661 -> s662 [];
+  s663 [label="s663 SYMBOL\n_use_clause" href="rust-grammar.json._use_clause.dot.svg"];
+  s662 -> s663 [];
+  s664 [label="s664 STRING\n\";\""];
+  s663 -> s664 [];
+  
+  }
+  

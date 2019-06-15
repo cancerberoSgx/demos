@@ -1,0 +1,15 @@
+
+  digraph _jsx_element_name {
+  
+    rankdir=LR;
+  
+    s439 [label="{s439\n&rarr; CHOICE|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+  s440 [label="s440 SYMBOL\n_jsx_identifier" href="javascript-grammar.json._jsx_identifier.dot.svg"];
+  s439:p0 -> s440 [label="_jsx_identifier"];
+  s441 [label="s441 SYMBOL\nnested_identifier" href="javascript-grammar.json.nested_identifier.dot.svg"];
+  s439:p1 -> s441 [label="nested_identifier"];
+  s442 [label="s442 SYMBOL\njsx_namespace_name" href="javascript-grammar.json.jsx_namespace_name.dot.svg"];
+  s439:p2 -> s442 [label="jsx_namespace_name"];
+  
+  }
+  

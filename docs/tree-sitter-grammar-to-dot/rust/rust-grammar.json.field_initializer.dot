@@ -1,0 +1,20 @@
+
+  digraph field_initializer {
+  
+    rankdir=LR;
+  
+    s1140 [label="s1140\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1141 [label="s1141\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s1142 [label="s1142 SYMBOL\nattribute_item" href="rust-grammar.json.attribute_item.dot.svg"];
+  s1141 -> s1142 [];
+  s1142 -> s1141 [];
+  s1140 -> s1141 [];
+  s1143 [label="s1143 SYMBOL\n_field_identifier" href="rust-grammar.json._field_identifier.dot.svg"];
+  s1142 -> s1143 [];
+  s1144 [label="s1144 STRING\n\":\""];
+  s1143 -> s1144 [];
+  s1145 [label="s1145 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1144 -> s1145 [];
+  
+  }
+  

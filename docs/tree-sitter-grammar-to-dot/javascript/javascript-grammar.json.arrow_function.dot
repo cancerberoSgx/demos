@@ -1,0 +1,36 @@
+
+  digraph arrow_function {
+  
+    rankdir=LR;
+  
+    s504 [label="s504\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s505 [label="{s505\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s506 [label="s506 STRING\n\"async\""];
+  s505:p0 -> s506 [label="async"];
+  s507 [label="s507 \nBLANK"];
+  s505:p1 -> s507 [label=""];
+  s504 -> s505 [];
+  s508 [label="{s508\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s509 [label="{s509\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s510 [label="s510 SYMBOL\nidentifier" href="javascript-grammar.json.identifier.dot.svg"];
+  s509:p0 -> s510 [label="identifier"];
+  s511 [label="s511 \nBLANK"];
+  s509:p1 -> s511 [label=""];
+  s508:p0 -> s509 [label=""];
+  s512 [label="s512 SYMBOL\nformal_parameters" href="javascript-grammar.json.formal_parameters.dot.svg"];
+  s508:p1 -> s512 [label="formal_parameters"];
+  s506 -> s508 [];
+  s507 -> s508 [];
+  s513 [label="s513 STRING\n\"=>\""];
+  s510 -> s513 [];
+  s511 -> s513 [];
+  s512 -> s513 [];
+  s514 [label="{s514\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s515 [label="s515 SYMBOL\n_expression" href="javascript-grammar.json._expression.dot.svg"];
+  s514:p0 -> s515 [label="_expression"];
+  s516 [label="s516 SYMBOL\nstatement_block" href="javascript-grammar.json.statement_block.dot.svg"];
+  s514:p1 -> s516 [label="statement_block"];
+  s513 -> s514 [];
+  
+  }
+  

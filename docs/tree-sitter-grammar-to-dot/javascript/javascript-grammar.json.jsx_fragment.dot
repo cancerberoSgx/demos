@@ -1,0 +1,24 @@
+
+  digraph jsx_fragment {
+  
+    rankdir=LR;
+  
+    s400 [label="s400\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s401 [label="s401 STRING\n\"<\""];
+  s400 -> s401 [];
+  s402 [label="s402 STRING\n\">\""];
+  s401 -> s402 [];
+  s403 [label="s403\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s404 [label="s404 SYMBOL\n_jsx_child" href="javascript-grammar.json._jsx_child.dot.svg"];
+  s403 -> s404 [];
+  s404 -> s403 [];
+  s402 -> s403 [];
+  s405 [label="s405 STRING\n\"<\""];
+  s404 -> s405 [];
+  s406 [label="s406 STRING\n\"/\""];
+  s405 -> s406 [];
+  s407 [label="s407 STRING\n\">\""];
+  s406 -> s407 [];
+  
+  }
+  

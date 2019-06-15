@@ -1,0 +1,15 @@
+
+  digraph mut_pattern {
+  
+    rankdir=LR;
+  
+    s1436 [label="s1436\n&rarr; PREC", shape=record, fixedsize=false, peripheries=1];
+  s1437 [label="s1437\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1438 [label="s1438 SYMBOL\nmutable_specifier" href="rust-grammar.json.mutable_specifier.dot.svg"];
+  s1437 -> s1438 [];
+  s1439 [label="s1439 SYMBOL\n_pattern" href="rust-grammar.json._pattern.dot.svg"];
+  s1438 -> s1439 [];
+  s1436 -> s1437 [];
+  
+  }
+  

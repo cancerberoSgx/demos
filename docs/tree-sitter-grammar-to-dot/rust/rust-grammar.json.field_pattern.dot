@@ -1,0 +1,37 @@
+
+  digraph field_pattern {
+  
+    rankdir=LR;
+  
+    s1421 [label="s1421\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1422 [label="{s1422\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1423 [label="s1423 STRING\n\"ref\""];
+  s1422:p0 -> s1423 [label="ref"];
+  s1424 [label="s1424 \nBLANK"];
+  s1422:p1 -> s1424 [label=""];
+  s1421 -> s1422 [];
+  s1425 [label="{s1425\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1426 [label="s1426 SYMBOL\nmutable_specifier" href="rust-grammar.json.mutable_specifier.dot.svg"];
+  s1425:p0 -> s1426 [label="mutable_specifier"];
+  s1427 [label="s1427 \nBLANK"];
+  s1425:p1 -> s1427 [label=""];
+  s1423 -> s1425 [];
+  s1424 -> s1425 [];
+  s1428 [label="{s1428\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1429 [label="s1429\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s1430 [label="s1430 SYMBOL\nidentifier" href="rust-grammar.json.identifier.dot.svg"];
+  s1429 -> s1430 [];
+  s1428:p0 -> s1429 [label="shorthand_field_identifier"];
+  s1431 [label="s1431\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1432 [label="s1432 SYMBOL\n_field_identifier" href="rust-grammar.json._field_identifier.dot.svg"];
+  s1431 -> s1432 [];
+  s1433 [label="s1433 STRING\n\":\""];
+  s1432 -> s1433 [];
+  s1434 [label="s1434 SYMBOL\n_pattern" href="rust-grammar.json._pattern.dot.svg"];
+  s1433 -> s1434 [];
+  s1428:p1 -> s1431 [label=""];
+  s1426 -> s1428 [];
+  s1427 -> s1428 [];
+  
+  }
+  

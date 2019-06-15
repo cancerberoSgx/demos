@@ -1,0 +1,43 @@
+
+  digraph string {
+  
+    rankdir=LR;
+  
+    s631 [label="{s631\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s632 [label="s632\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s633 [label="s633 STRING\n\""\""];
+  s632 -> s633 [];
+  s634 [label="s634\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s635 [label="{s635\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s636 [label="s636 IMMEDIATE_TOKEN\n(not-implemented)"];
+  s635:p0 -> s636 [label=""];
+  s637 [label="s637 SYMBOL\nescape_sequence" href="javascript-grammar.json.escape_sequence.dot.svg"];
+  s635:p1 -> s637 [label="escape_sequence"];
+  s634 -> s635 [];
+  s636 -> s634 [];
+  s637 -> s634 [];
+  s633 -> s634 [];
+  s638 [label="s638 STRING\n\""\""];
+  s636 -> s638 [];
+  s637 -> s638 [];
+  s631:p0 -> s632 [label=""];
+  s639 [label="s639\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s640 [label="s640 STRING\n\"'\""];
+  s639 -> s640 [];
+  s641 [label="s641\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s642 [label="{s642\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s643 [label="s643 IMMEDIATE_TOKEN\n(not-implemented)"];
+  s642:p0 -> s643 [label=""];
+  s644 [label="s644 SYMBOL\nescape_sequence" href="javascript-grammar.json.escape_sequence.dot.svg"];
+  s642:p1 -> s644 [label="escape_sequence"];
+  s641 -> s642 [];
+  s643 -> s641 [];
+  s644 -> s641 [];
+  s640 -> s641 [];
+  s645 [label="s645 STRING\n\"'\""];
+  s643 -> s645 [];
+  s644 -> s645 [];
+  s631:p1 -> s639 [label=""];
+  
+  }
+  

@@ -1,0 +1,9 @@
+
+  digraph variadic_parameter {
+  
+    rankdir=LR;
+  
+    s742 [label="s742 STRING\n\"...\""];
+  
+  }
+  

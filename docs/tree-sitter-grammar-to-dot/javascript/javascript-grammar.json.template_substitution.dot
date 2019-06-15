@@ -1,0 +1,15 @@
+
+  digraph template_substitution {
+  
+    rankdir=LR;
+  
+    s665 [label="s665\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s666 [label="s666 STRING\n\"${\""];
+  s665 -> s666 [];
+  s667 [label="s667 SYMBOL\n_expressions" href="javascript-grammar.json._expressions.dot.svg"];
+  s666 -> s667 [];
+  s668 [label="s668 STRING\n\"}\""];
+  s667 -> s668 [];
+  
+  }
+  

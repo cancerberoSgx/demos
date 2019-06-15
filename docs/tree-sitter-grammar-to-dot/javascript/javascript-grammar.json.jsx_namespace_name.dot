@@ -1,0 +1,15 @@
+
+  digraph jsx_namespace_name {
+  
+    rankdir=LR;
+  
+    s435 [label="s435\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s436 [label="s436 SYMBOL\n_jsx_identifier" href="javascript-grammar.json._jsx_identifier.dot.svg"];
+  s435 -> s436 [];
+  s437 [label="s437 STRING\n\":\""];
+  s436 -> s437 [];
+  s438 [label="s438 SYMBOL\n_jsx_identifier" href="javascript-grammar.json._jsx_identifier.dot.svg"];
+  s437 -> s438 [];
+  
+  }
+  

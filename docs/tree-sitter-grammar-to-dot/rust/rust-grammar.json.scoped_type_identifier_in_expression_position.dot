@@ -1,0 +1,29 @@
+
+  digraph scoped_type_identifier_in_expression_position {
+  
+    rankdir=LR;
+  
+    s991 [label="s991\n&rarr; PREC", shape=record, fixedsize=false, peripheries=1];
+  s992 [label="s992\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s993 [label="{s993\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s994 [label="{s994\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s995 [label="s995 SYMBOL\n_path" href="rust-grammar.json._path.dot.svg"];
+  s994:p0 -> s995 [label="_path"];
+  s996 [label="s996\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s997 [label="s997 SYMBOL\ngeneric_type_with_turbofish" href="rust-grammar.json.generic_type_with_turbofish.dot.svg"];
+  s996 -> s997 [];
+  s994:p1 -> s996 [label="generic_type"];
+  s993:p0 -> s994 [label=""];
+  s998 [label="s998 \nBLANK"];
+  s993:p1 -> s998 [label=""];
+  s992 -> s993 [];
+  s999 [label="s999 STRING\n\"::\""];
+  s995 -> s999 [];
+  s997 -> s999 [];
+  s998 -> s999 [];
+  s1000 [label="s1000 SYMBOL\n_type_identifier" href="rust-grammar.json._type_identifier.dot.svg"];
+  s999 -> s1000 [];
+  s991 -> s992 [];
+  
+  }
+  

@@ -1,0 +1,13 @@
+
+  digraph unit_type {
+  
+    rankdir=LR;
+  
+    s844 [label="s844\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s845 [label="s845 STRING\n\"(\""];
+  s844 -> s845 [];
+  s846 [label="s846 STRING\n\")\""];
+  s845 -> s846 [];
+  
+  }
+  

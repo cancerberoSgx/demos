@@ -1,0 +1,15 @@
+
+  digraph computed_property_name {
+  
+    rankdir=LR;
+  
+    s905 [label="s905\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s906 [label="s906 STRING\n\"[\""];
+  s905 -> s906 [];
+  s907 [label="s907 SYMBOL\n_expression" href="javascript-grammar.json._expression.dot.svg"];
+  s906 -> s907 [];
+  s908 [label="s908 STRING\n\"]\""];
+  s907 -> s908 [];
+  
+  }
+  

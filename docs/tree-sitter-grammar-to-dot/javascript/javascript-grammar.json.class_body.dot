@@ -1,0 +1,48 @@
+
+  digraph class_body {
+  
+    rankdir=LR;
+  
+    s831 [label="s831\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s832 [label="s832 STRING\n\"{\""];
+  s831 -> s832 [];
+  s833 [label="s833\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s834 [label="s834\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s835 [label="s835\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s836 [label="s836 SYMBOL\ndecorator" href="javascript-grammar.json.decorator.dot.svg"];
+  s835 -> s836 [];
+  s836 -> s835 [];
+  s834 -> s835 [];
+  s837 [label="{s837\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s838 [label="s838 STRING\n\"static\""];
+  s837:p0 -> s838 [label="static"];
+  s839 [label="s839 \nBLANK"];
+  s837:p1 -> s839 [label=""];
+  s836 -> s837 [];
+  s840 [label="{s840\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s841 [label="s841\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s842 [label="s842 SYMBOL\nmethod_definition" href="javascript-grammar.json.method_definition.dot.svg"];
+  s841 -> s842 [];
+  s843 [label="{s843\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s844 [label="s844 STRING\n\";\""];
+  s843:p0 -> s844 [label=";"];
+  s845 [label="s845 \nBLANK"];
+  s843:p1 -> s845 [label=""];
+  s842 -> s843 [];
+  s840:p0 -> s841 [label=""];
+  s846 [label="s846\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s847 [label="s847 SYMBOL\npublic_field_definition" href="javascript-grammar.json.public_field_definition.dot.svg"];
+  s846 -> s847 [];
+  s848 [label="s848 SYMBOL\n_semicolon" href="javascript-grammar.json._semicolon.dot.svg"];
+  s847 -> s848 [];
+  s840:p1 -> s846 [label=""];
+  s838 -> s840 [];
+  s839 -> s840 [];
+  s833 -> s834 [];
+  s840 -> s833 [];
+  s832 -> s833 [];
+  s849 [label="s849 STRING\n\"}\""];
+  s840 -> s849 [];
+  
+  }
+  

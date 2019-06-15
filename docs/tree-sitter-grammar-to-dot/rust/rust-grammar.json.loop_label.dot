@@ -1,0 +1,13 @@
+
+  digraph loop_label {
+  
+    rankdir=LR;
+  
+    s1287 [label="s1287\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1288 [label="s1288 STRING\n\"'\""];
+  s1287 -> s1288 [];
+  s1289 [label="s1289 SYMBOL\nidentifier" href="rust-grammar.json.identifier.dot.svg"];
+  s1288 -> s1289 [];
+  
+  }
+  

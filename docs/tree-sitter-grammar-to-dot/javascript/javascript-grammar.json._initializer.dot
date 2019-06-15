@@ -1,0 +1,13 @@
+
+  digraph _initializer {
+  
+    rankdir=LR;
+  
+    s577 [label="s577\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s578 [label="s578 STRING\n\"=\""];
+  s577 -> s578 [];
+  s579 [label="s579 SYMBOL\n_expression" href="javascript-grammar.json._expression.dot.svg"];
+  s578 -> s579 [];
+  
+  }
+  

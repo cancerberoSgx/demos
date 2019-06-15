@@ -1,0 +1,13 @@
+
+  digraph unsafe_block {
+  
+    rankdir=LR;
+  
+    s1310 [label="s1310\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1311 [label="s1311 STRING\n\"unsafe\""];
+  s1310 -> s1311 [];
+  s1312 [label="s1312 SYMBOL\nblock" href="rust-grammar.json.block.dot.svg"];
+  s1311 -> s1312 [];
+  
+  }
+  

@@ -1,0 +1,9 @@
+
+  digraph metavariable {
+  
+    rankdir=LR;
+  
+    s1575 [label="s1575 PATTERN\n\"\$[a-zA-Z_]\w*\""];
+  
+  }
+  

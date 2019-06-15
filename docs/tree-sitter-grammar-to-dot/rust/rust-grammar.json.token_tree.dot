@@ -1,0 +1,42 @@
+
+  digraph token_tree {
+  
+    rankdir=LR;
+  
+    s119 [label="{s119\n&rarr; CHOICE|{<p0>|<p1>|<p2>}}", shape=record, fixedsize=false, peripheries=1];
+  s120 [label="s120\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s121 [label="s121 STRING\n\"(\""];
+  s120 -> s121 [];
+  s122 [label="s122\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s123 [label="s123 SYMBOL\n_tokens" href="rust-grammar.json._tokens.dot.svg"];
+  s122 -> s123 [];
+  s123 -> s122 [];
+  s121 -> s122 [];
+  s124 [label="s124 STRING\n\")\""];
+  s123 -> s124 [];
+  s119:p0 -> s120 [label=""];
+  s125 [label="s125\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s126 [label="s126 STRING\n\"[\""];
+  s125 -> s126 [];
+  s127 [label="s127\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s128 [label="s128 SYMBOL\n_tokens" href="rust-grammar.json._tokens.dot.svg"];
+  s127 -> s128 [];
+  s128 -> s127 [];
+  s126 -> s127 [];
+  s129 [label="s129 STRING\n\"]\""];
+  s128 -> s129 [];
+  s119:p1 -> s125 [label=""];
+  s130 [label="s130\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s131 [label="s131 STRING\n\"{\""];
+  s130 -> s131 [];
+  s132 [label="s132\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s133 [label="s133 SYMBOL\n_tokens" href="rust-grammar.json._tokens.dot.svg"];
+  s132 -> s133 [];
+  s133 -> s132 [];
+  s131 -> s132 [];
+  s134 [label="s134 STRING\n\"}\""];
+  s133 -> s134 [];
+  s119:p2 -> s130 [label=""];
+  
+  }
+  

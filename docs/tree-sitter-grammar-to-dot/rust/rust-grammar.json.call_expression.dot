@@ -1,0 +1,15 @@
+
+  digraph call_expression {
+  
+    rankdir=LR;
+  
+    s1053 [label="s1053\n&rarr; PREC", shape=record, fixedsize=false, peripheries=1];
+  s1054 [label="s1054\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1055 [label="s1055 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1054 -> s1055 [];
+  s1056 [label="s1056 SYMBOL\narguments" href="rust-grammar.json.arguments.dot.svg"];
+  s1055 -> s1056 [];
+  s1053 -> s1054 [];
+  
+  }
+  

@@ -1,0 +1,17 @@
+
+  digraph _jsx_attribute_value {
+  
+    rankdir=LR;
+  
+    s469 [label="{s469\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>}}", shape=record, fixedsize=false, peripheries=1];
+  s470 [label="s470 SYMBOL\nstring" href="javascript-grammar.json.string.dot.svg"];
+  s469:p0 -> s470 [label="string"];
+  s471 [label="s471 SYMBOL\njsx_expression" href="javascript-grammar.json.jsx_expression.dot.svg"];
+  s469:p1 -> s471 [label="jsx_expression"];
+  s472 [label="s472 SYMBOL\n_jsx_element" href="javascript-grammar.json._jsx_element.dot.svg"];
+  s469:p2 -> s472 [label="_jsx_element"];
+  s473 [label="s473 SYMBOL\njsx_fragment" href="javascript-grammar.json.jsx_fragment.dot.svg"];
+  s469:p3 -> s473 [label="jsx_fragment"];
+  
+  }
+  

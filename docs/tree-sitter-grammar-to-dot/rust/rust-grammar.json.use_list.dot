@@ -1,0 +1,57 @@
+
+  digraph use_list {
+  
+    rankdir=LR;
+  
+    s677 [label="s677\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s678 [label="s678 STRING\n\"{\""];
+  s677 -> s678 [];
+  s679 [label="{s679\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s680 [label="s680\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s681 [label="{s681\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>}}", shape=record, fixedsize=false, peripheries=1];
+  s682 [label="s682 SYMBOL\n_path" href="rust-grammar.json._path.dot.svg"];
+  s681:p0 -> s682 [label="_path"];
+  s683 [label="s683 SYMBOL\nuse_as_clause" href="rust-grammar.json.use_as_clause.dot.svg"];
+  s681:p1 -> s683 [label="use_as_clause"];
+  s684 [label="s684 SYMBOL\nuse_list" href="rust-grammar.json.use_list.dot.svg"];
+  s681:p2 -> s684 [label="use_list"];
+  s685 [label="s685 SYMBOL\nscoped_use_list" href="rust-grammar.json.scoped_use_list.dot.svg"];
+  s681:p3 -> s685 [label="scoped_use_list"];
+  s680 -> s681 [];
+  s686 [label="s686\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s687 [label="s687\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s688 [label="s688 STRING\n\",\""];
+  s687 -> s688 [];
+  s689 [label="{s689\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>}}", shape=record, fixedsize=false, peripheries=1];
+  s690 [label="s690 SYMBOL\n_path" href="rust-grammar.json._path.dot.svg"];
+  s689:p0 -> s690 [label="_path"];
+  s691 [label="s691 SYMBOL\nuse_as_clause" href="rust-grammar.json.use_as_clause.dot.svg"];
+  s689:p1 -> s691 [label="use_as_clause"];
+  s692 [label="s692 SYMBOL\nuse_list" href="rust-grammar.json.use_list.dot.svg"];
+  s689:p2 -> s692 [label="use_list"];
+  s693 [label="s693 SYMBOL\nscoped_use_list" href="rust-grammar.json.scoped_use_list.dot.svg"];
+  s689:p3 -> s693 [label="scoped_use_list"];
+  s688 -> s689 [];
+  s686 -> s687 [];
+  s689 -> s686 [];
+  s682 -> s686 [];
+  s683 -> s686 [];
+  s684 -> s686 [];
+  s685 -> s686 [];
+  s679:p0 -> s680 [label=""];
+  s694 [label="s694 \nBLANK"];
+  s679:p1 -> s694 [label=""];
+  s678 -> s679 [];
+  s695 [label="{s695\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s696 [label="s696 STRING\n\",\""];
+  s695:p0 -> s696 [label=","];
+  s697 [label="s697 \nBLANK"];
+  s695:p1 -> s697 [label=""];
+  s686 -> s695 [];
+  s694 -> s695 [];
+  s698 [label="s698 STRING\n\"}\""];
+  s696 -> s698 [];
+  s697 -> s698 [];
+  
+  }
+  

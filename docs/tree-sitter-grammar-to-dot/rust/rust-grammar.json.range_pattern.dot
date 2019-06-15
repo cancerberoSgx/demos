@@ -1,0 +1,15 @@
+
+  digraph range_pattern {
+  
+    rankdir=LR;
+  
+    s1440 [label="s1440\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1441 [label="s1441 SYMBOL\n_literal_pattern" href="rust-grammar.json._literal_pattern.dot.svg"];
+  s1440 -> s1441 [];
+  s1442 [label="s1442 STRING\n\"...\""];
+  s1441 -> s1442 [];
+  s1443 [label="s1443 SYMBOL\n_literal_pattern" href="rust-grammar.json._literal_pattern.dot.svg"];
+  s1442 -> s1443 [];
+  
+  }
+  

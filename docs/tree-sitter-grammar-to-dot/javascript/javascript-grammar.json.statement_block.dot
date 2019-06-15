@@ -1,0 +1,18 @@
+
+  digraph statement_block {
+  
+    rankdir=LR;
+  
+    s165 [label="s165\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s166 [label="s166 STRING\n\"{\""];
+  s165 -> s166 [];
+  s167 [label="s167\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s168 [label="s168 SYMBOL\n_statement" href="javascript-grammar.json._statement.dot.svg"];
+  s167 -> s168 [];
+  s168 -> s167 [];
+  s166 -> s167 [];
+  s169 [label="s169 STRING\n\"}\""];
+  s168 -> s169 [];
+  
+  }
+  

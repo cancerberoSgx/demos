@@ -1,0 +1,22 @@
+
+  digraph continue_statement {
+  
+    rankdir=LR;
+  
+    s256 [label="s256\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s257 [label="s257 STRING\n\"continue\""];
+  s256 -> s257 [];
+  s258 [label="{s258\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s259 [label="s259\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s260 [label="s260 SYMBOL\nidentifier" href="javascript-grammar.json.identifier.dot.svg"];
+  s259 -> s260 [];
+  s258:p0 -> s259 [label="statement_identifier"];
+  s261 [label="s261 \nBLANK"];
+  s258:p1 -> s261 [label=""];
+  s257 -> s258 [];
+  s262 [label="s262 SYMBOL\n_semicolon" href="javascript-grammar.json._semicolon.dot.svg"];
+  s260 -> s262 [];
+  s261 -> s262 [];
+  
+  }
+  

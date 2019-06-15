@@ -1,0 +1,15 @@
+
+  digraph parenthesized_expression {
+  
+    rankdir=LR;
+  
+    s308 [label="s308\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s309 [label="s309 STRING\n\"(\""];
+  s308 -> s309 [];
+  s310 [label="s310 SYMBOL\n_expressions" href="javascript-grammar.json._expressions.dot.svg"];
+  s309 -> s310 [];
+  s311 [label="s311 STRING\n\")\""];
+  s310 -> s311 [];
+  
+  }
+  

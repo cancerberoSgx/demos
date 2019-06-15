@@ -1,0 +1,13 @@
+
+  digraph finally_clause {
+  
+    rankdir=LR;
+  
+    s305 [label="s305\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s306 [label="s306 STRING\n\"finally\""];
+  s305 -> s306 [];
+  s307 [label="s307 SYMBOL\nstatement_block" href="javascript-grammar.json.statement_block.dot.svg"];
+  s306 -> s307 [];
+  
+  }
+  

@@ -1,0 +1,22 @@
+
+  digraph reference_expression {
+  
+    rankdir=LR;
+  
+    s1023 [label="s1023\n&rarr; PREC", shape=record, fixedsize=false, peripheries=1];
+  s1024 [label="s1024\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1025 [label="s1025 STRING\n\"&\""];
+  s1024 -> s1025 [];
+  s1026 [label="{s1026\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1027 [label="s1027 SYMBOL\nmutable_specifier" href="rust-grammar.json.mutable_specifier.dot.svg"];
+  s1026:p0 -> s1027 [label="mutable_specifier"];
+  s1028 [label="s1028 \nBLANK"];
+  s1026:p1 -> s1028 [label=""];
+  s1025 -> s1026 [];
+  s1029 [label="s1029 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1027 -> s1029 [];
+  s1028 -> s1029 [];
+  s1023 -> s1024 [];
+  
+  }
+  

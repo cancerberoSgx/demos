@@ -1,0 +1,63 @@
+
+  digraph macro_definition {
+  
+    rankdir=LR;
+  
+    s35 [label="s35\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s36 [label="s36 STRING\n\"macro_rules!\""];
+  s35 -> s36 [];
+  s37 [label="s37 SYMBOL\nidentifier" href="rust-grammar.json.identifier.dot.svg"];
+  s36 -> s37 [];
+  s38 [label="{s38\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s39 [label="s39\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s40 [label="s40 STRING\n\"(\""];
+  s39 -> s40 [];
+  s41 [label="s41\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s42 [label="s42\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s43 [label="s43\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s44 [label="s44 SYMBOL\nmacro_rule" href="rust-grammar.json.macro_rule.dot.svg"];
+  s43 -> s44 [];
+  s45 [label="s45 STRING\n\";\""];
+  s44 -> s45 [];
+  s42 -> s43 [];
+  s45 -> s42 [];
+  s41 -> s42 [];
+  s46 [label="{s46\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s47 [label="s47 SYMBOL\nmacro_rule" href="rust-grammar.json.macro_rule.dot.svg"];
+  s46:p0 -> s47 [label="macro_rule"];
+  s48 [label="s48 \nBLANK"];
+  s46:p1 -> s48 [label=""];
+  s45 -> s46 [];
+  s40 -> s41 [];
+  s49 [label="s49 STRING\n\")\""];
+  s46 -> s49 [];
+  s50 [label="s50 STRING\n\";\""];
+  s49 -> s50 [];
+  s38:p0 -> s39 [label=""];
+  s51 [label="s51\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s52 [label="s52 STRING\n\"{\""];
+  s51 -> s52 [];
+  s53 [label="s53\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s54 [label="s54\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s55 [label="s55\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s56 [label="s56 SYMBOL\nmacro_rule" href="rust-grammar.json.macro_rule.dot.svg"];
+  s55 -> s56 [];
+  s57 [label="s57 STRING\n\";\""];
+  s56 -> s57 [];
+  s54 -> s55 [];
+  s57 -> s54 [];
+  s53 -> s54 [];
+  s58 [label="{s58\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s59 [label="s59 SYMBOL\nmacro_rule" href="rust-grammar.json.macro_rule.dot.svg"];
+  s58:p0 -> s59 [label="macro_rule"];
+  s60 [label="s60 \nBLANK"];
+  s58:p1 -> s60 [label=""];
+  s57 -> s58 [];
+  s52 -> s53 [];
+  s61 [label="s61 STRING\n\"}\""];
+  s58 -> s61 [];
+  s38:p1 -> s51 [label=""];
+  s37 -> s38 [];
+  
+  }
+  

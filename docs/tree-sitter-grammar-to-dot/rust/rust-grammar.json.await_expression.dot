@@ -1,0 +1,17 @@
+
+  digraph await_expression {
+  
+    rankdir=LR;
+  
+    s1298 [label="s1298\n&rarr; PREC", shape=record, fixedsize=false, peripheries=1];
+  s1299 [label="s1299\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1300 [label="s1300 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1299 -> s1300 [];
+  s1301 [label="s1301 STRING\n\".\""];
+  s1300 -> s1301 [];
+  s1302 [label="s1302 STRING\n\"await\""];
+  s1301 -> s1302 [];
+  s1298 -> s1299 [];
+  
+  }
+  

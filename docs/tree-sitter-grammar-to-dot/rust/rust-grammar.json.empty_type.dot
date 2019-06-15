@@ -1,0 +1,9 @@
+
+  digraph empty_type {
+  
+    rankdir=LR;
+  
+    s905 [label="s905 STRING\n\"!\""];
+  
+  }
+  

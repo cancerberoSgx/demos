@@ -1,0 +1,15 @@
+
+  digraph line_comment {
+  
+    rankdir=LR;
+  
+    s1533 [label="s1533\n&rarr; TOKEN", shape=record, fixedsize=false, peripheries=1];
+  s1534 [label="s1534\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1535 [label="s1535 STRING\n\"//\""];
+  s1534 -> s1535 [];
+  s1536 [label="s1536 PATTERN\n\".*\""];
+  s1535 -> s1536 [];
+  s1533 -> s1534 [];
+  
+  }
+  

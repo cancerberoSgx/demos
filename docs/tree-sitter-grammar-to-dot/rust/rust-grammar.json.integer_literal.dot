@@ -1,0 +1,58 @@
+
+  digraph integer_literal {
+  
+    rankdir=LR;
+  
+    s1476 [label="s1476\n&rarr; TOKEN", shape=record, fixedsize=false, peripheries=1];
+  s1477 [label="s1477\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1478 [label="{s1478\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>}}", shape=record, fixedsize=false, peripheries=1];
+  s1479 [label="s1479 PATTERN\n\"[0-9][0-9_]*\""];
+  s1478:p0 -> s1479 [label="[0-9][0-9_]*"];
+  s1480 [label="s1480 PATTERN\n\"0x[0-9a-fA-F_]+\""];
+  s1478:p1 -> s1480 [label="0x[0-9a-fA-F_]+"];
+  s1481 [label="s1481 PATTERN\n\"0b[01_]+\""];
+  s1478:p2 -> s1481 [label="0b[01_]+"];
+  s1482 [label="s1482 PATTERN\n\"0o[0-7_]+\""];
+  s1478:p3 -> s1482 [label="0o[0-7_]+"];
+  s1477 -> s1478 [];
+  s1483 [label="{s1483\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1484 [label="{s1484\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>|<p5>|<p6>|<p7>|<p8>|<p9>|<p10>|<p11>|<p12>|<p13>}}", shape=record, fixedsize=false, peripheries=1];
+  s1485 [label="s1485 STRING\n\"u8\""];
+  s1484:p0 -> s1485 [label="u8"];
+  s1486 [label="s1486 STRING\n\"i8\""];
+  s1484:p1 -> s1486 [label="i8"];
+  s1487 [label="s1487 STRING\n\"u16\""];
+  s1484:p2 -> s1487 [label="u16"];
+  s1488 [label="s1488 STRING\n\"i16\""];
+  s1484:p3 -> s1488 [label="i16"];
+  s1489 [label="s1489 STRING\n\"u32\""];
+  s1484:p4 -> s1489 [label="u32"];
+  s1490 [label="s1490 STRING\n\"i32\""];
+  s1484:p5 -> s1490 [label="i32"];
+  s1491 [label="s1491 STRING\n\"u64\""];
+  s1484:p6 -> s1491 [label="u64"];
+  s1492 [label="s1492 STRING\n\"i64\""];
+  s1484:p7 -> s1492 [label="i64"];
+  s1493 [label="s1493 STRING\n\"u128\""];
+  s1484:p8 -> s1493 [label="u128"];
+  s1494 [label="s1494 STRING\n\"i128\""];
+  s1484:p9 -> s1494 [label="i128"];
+  s1495 [label="s1495 STRING\n\"isize\""];
+  s1484:p10 -> s1495 [label="isize"];
+  s1496 [label="s1496 STRING\n\"usize\""];
+  s1484:p11 -> s1496 [label="usize"];
+  s1497 [label="s1497 STRING\n\"f32\""];
+  s1484:p12 -> s1497 [label="f32"];
+  s1498 [label="s1498 STRING\n\"f64\""];
+  s1484:p13 -> s1498 [label="f64"];
+  s1483:p0 -> s1484 [label=""];
+  s1499 [label="s1499 \nBLANK"];
+  s1483:p1 -> s1499 [label=""];
+  s1479 -> s1483 [];
+  s1480 -> s1483 [];
+  s1481 -> s1483 [];
+  s1482 -> s1483 [];
+  s1476 -> s1477 [];
+  
+  }
+  

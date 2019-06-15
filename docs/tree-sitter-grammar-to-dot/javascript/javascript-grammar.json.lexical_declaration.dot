@@ -1,0 +1,31 @@
+
+  digraph lexical_declaration {
+  
+    rankdir=LR;
+  
+    s147 [label="s147\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s148 [label="{s148\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s149 [label="s149 STRING\n\"let\""];
+  s148:p0 -> s149 [label="let"];
+  s150 [label="s150 STRING\n\"const\""];
+  s148:p1 -> s150 [label="const"];
+  s147 -> s148 [];
+  s151 [label="s151\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s152 [label="s152 SYMBOL\nvariable_declarator" href="javascript-grammar.json.variable_declarator.dot.svg"];
+  s151 -> s152 [];
+  s153 [label="s153\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s154 [label="s154\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s155 [label="s155 STRING\n\",\""];
+  s154 -> s155 [];
+  s156 [label="s156 SYMBOL\nvariable_declarator" href="javascript-grammar.json.variable_declarator.dot.svg"];
+  s155 -> s156 [];
+  s153 -> s154 [];
+  s156 -> s153 [];
+  s152 -> s153 [];
+  s149 -> s151 [];
+  s150 -> s151 [];
+  s157 [label="s157 SYMBOL\n_semicolon" href="javascript-grammar.json._semicolon.dot.svg"];
+  s153 -> s157 [];
+  
+  }
+  

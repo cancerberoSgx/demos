@@ -1,0 +1,62 @@
+
+  digraph parameters {
+  
+    rankdir=LR;
+  
+    s707 [label="s707\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s708 [label="s708 STRING\n\"(\""];
+  s707 -> s708 [];
+  s709 [label="{s709\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s710 [label="s710\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s711 [label="{s711\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>}}", shape=record, fixedsize=false, peripheries=1];
+  s712 [label="s712 SYMBOL\nparameter" href="rust-grammar.json.parameter.dot.svg"];
+  s711:p0 -> s712 [label="parameter"];
+  s713 [label="s713 SYMBOL\nself_parameter" href="rust-grammar.json.self_parameter.dot.svg"];
+  s711:p1 -> s713 [label="self_parameter"];
+  s714 [label="s714 SYMBOL\nvariadic_parameter" href="rust-grammar.json.variadic_parameter.dot.svg"];
+  s711:p2 -> s714 [label="variadic_parameter"];
+  s715 [label="s715 STRING\n\"_\""];
+  s711:p3 -> s715 [label="_"];
+  s716 [label="s716 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s711:p4 -> s716 [label="_type"];
+  s710 -> s711 [];
+  s717 [label="s717\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s718 [label="s718\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s719 [label="s719 STRING\n\",\""];
+  s718 -> s719 [];
+  s720 [label="{s720\n&rarr; CHOICE|{<p0>|<p1>|<p2>|<p3>|<p4>}}", shape=record, fixedsize=false, peripheries=1];
+  s721 [label="s721 SYMBOL\nparameter" href="rust-grammar.json.parameter.dot.svg"];
+  s720:p0 -> s721 [label="parameter"];
+  s722 [label="s722 SYMBOL\nself_parameter" href="rust-grammar.json.self_parameter.dot.svg"];
+  s720:p1 -> s722 [label="self_parameter"];
+  s723 [label="s723 SYMBOL\nvariadic_parameter" href="rust-grammar.json.variadic_parameter.dot.svg"];
+  s720:p2 -> s723 [label="variadic_parameter"];
+  s724 [label="s724 STRING\n\"_\""];
+  s720:p3 -> s724 [label="_"];
+  s725 [label="s725 SYMBOL\n_type" href="rust-grammar.json._type.dot.svg"];
+  s720:p4 -> s725 [label="_type"];
+  s719 -> s720 [];
+  s717 -> s718 [];
+  s720 -> s717 [];
+  s712 -> s717 [];
+  s713 -> s717 [];
+  s714 -> s717 [];
+  s715 -> s717 [];
+  s716 -> s717 [];
+  s709:p0 -> s710 [label=""];
+  s726 [label="s726 \nBLANK"];
+  s709:p1 -> s726 [label=""];
+  s708 -> s709 [];
+  s727 [label="{s727\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s728 [label="s728 STRING\n\",\""];
+  s727:p0 -> s728 [label=","];
+  s729 [label="s729 \nBLANK"];
+  s727:p1 -> s729 [label=""];
+  s717 -> s727 [];
+  s726 -> s727 [];
+  s730 [label="s730 STRING\n\")\""];
+  s728 -> s730 [];
+  s729 -> s730 [];
+  
+  }
+  

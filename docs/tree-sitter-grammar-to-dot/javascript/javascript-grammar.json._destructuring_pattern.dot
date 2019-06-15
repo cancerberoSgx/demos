@@ -1,0 +1,17 @@
+
+  digraph _destructuring_pattern {
+  
+    rankdir=LR;
+  
+    s580 [label="{s580\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s581 [label="s581\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s582 [label="s582 SYMBOL\nobject" href="javascript-grammar.json.object.dot.svg"];
+  s581 -> s582 [];
+  s580:p0 -> s581 [label="object_pattern"];
+  s583 [label="s583\n&rarr; ALIAS", shape=record, fixedsize=false, peripheries=1];
+  s584 [label="s584 SYMBOL\narray" href="javascript-grammar.json.array.dot.svg"];
+  s583 -> s584 [];
+  s580:p1 -> s583 [label="array_pattern"];
+  
+  }
+  

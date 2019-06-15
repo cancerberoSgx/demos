@@ -1,0 +1,26 @@
+
+  digraph last_match_arm {
+  
+    rankdir=LR;
+  
+    s1197 [label="s1197\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s1198 [label="s1198\n&rarr; REPEAT", shape=record, fixedsize=false, peripheries=1];
+  s1199 [label="s1199 SYMBOL\nattribute_item" href="rust-grammar.json.attribute_item.dot.svg"];
+  s1198 -> s1199 [];
+  s1199 -> s1198 [];
+  s1197 -> s1198 [];
+  s1200 [label="s1200 SYMBOL\nmatch_pattern" href="rust-grammar.json.match_pattern.dot.svg"];
+  s1199 -> s1200 [];
+  s1201 [label="s1201 STRING\n\"=>\""];
+  s1200 -> s1201 [];
+  s1202 [label="s1202 SYMBOL\n_expression" href="rust-grammar.json._expression.dot.svg"];
+  s1201 -> s1202 [];
+  s1203 [label="{s1203\n&rarr; CHOICE|{<p0>|<p1>}}", shape=record, fixedsize=false, peripheries=1];
+  s1204 [label="s1204 STRING\n\",\""];
+  s1203:p0 -> s1204 [label=","];
+  s1205 [label="s1205 \nBLANK"];
+  s1203:p1 -> s1205 [label=""];
+  s1202 -> s1203 [];
+  
+  }
+  

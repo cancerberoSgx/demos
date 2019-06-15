@@ -1,0 +1,15 @@
+
+  digraph use_wildcard {
+  
+    rankdir=LR;
+  
+    s703 [label="s703\n&rarr; SEQ", shape=record, fixedsize=false, peripheries=1];
+  s704 [label="s704 SYMBOL\n_path" href="rust-grammar.json._path.dot.svg"];
+  s703 -> s704 [];
+  s705 [label="s705 STRING\n\"::\""];
+  s704 -> s705 [];
+  s706 [label="s706 STRING\n\"*\""];
+  s705 -> s706 [];
+  
+  }
+  
