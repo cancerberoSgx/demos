@@ -1,0 +1,1432 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Matx | mirada</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">mirada</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../index.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_types_opencv_matx_.html">&quot;types/opencv/Matx&quot;</a>
+				</li>
+				<li>
+					<a href="_types_opencv_matx_.matx.html">Matx</a>
+				</li>
+			</ul>
+			<h1>Class Matx</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>If you need a more flexible type, use <a href="#d3/d63/classcv_1_1Mat%7D">Mat</a> . The elements of the matrix M
+							are accessible using the M(i,j) notation. Most of the common matrix operations (see also
+							<a href="#d1/d10/classcv_1_1MatExpr_1MatrixExpressions%7D">MatrixExpressions</a> ) are available. To do an
+							operation on <a href="#de/de1/classcv_1_1Matx%7D">Matx</a> that is not implemented, you can easily convert the
+						matrix to <a href="#d3/d63/classcv_1_1Mat%7D">Mat</a> and backwards:</p>
+					</div>
+					<pre><code class="language-cpp"><span class="hljs-function">Matx33f <span class="hljs-title">m</span><span class="hljs-params">(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>,
+          <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>,
+          <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>)</span></span>;
+<span class="hljs-built_in">cout</span> &lt;&lt; sum(Mat(m*m.t())) &lt;&lt; <span class="hljs-built_in">endl</span>;</code></pre>
+					<p> Except of the plain constructor which takes a list of elements, <a href="#de/de1/classcv_1_1Matx%7D">Matx</a>
+					can be initialized from a C-array:</p>
+					<pre><code class="language-cpp"><span class="hljs-keyword">float</span> values[] = { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>};
+<span class="hljs-function">Matx31f <span class="hljs-title">m</span><span class="hljs-params">(values)</span></span>;</code></pre>
+					<p> In case if C++11 features are available, std::initializer_list can be also used to initialize
+					<a href="#de/de1/classcv_1_1Matx%7D">Matx</a>:</p>
+					<pre><code class="language-cpp">Matx31f m = { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>};</code></pre>
+					<p>Source:
+					<a href="https://github.com/opencv/opencv/tree/master/modules/core/include/opencv2/core/matx.hpp#L1185">opencv2/core/matx.hpp</a>.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Matx</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_matx_.matx.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_matx_.matx.html#val" class="tsd-kind-icon">val</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_matx_.matx.html#col" class="tsd-kind-icon">col</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_matx_.matx.html#ddot" class="tsd-kind-icon">ddot</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_matx_.matx.html#diag" class="tsd-kind-icon">diag</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_matx_.matx.html#div" class="tsd-kind-icon">div</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_matx_.matx.html#dot" class="tsd-kind-icon">dot</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_matx_.matx.html#get_minor" class="tsd-kind-icon">get_<wbr>minor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_matx_.matx.html#inv" class="tsd-kind-icon">inv</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_matx_.matx.html#mul" class="tsd-kind-icon">mul</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_matx_.matx.html#reshape" class="tsd-kind-icon">reshape</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_matx_.matx.html#row" class="tsd-kind-icon">row</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_matx_.matx.html#solve" class="tsd-kind-icon">solve</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_matx_.matx.html#t" class="tsd-kind-icon">t</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="_types_opencv_matx_.matx.html#all" class="tsd-kind-icon">all</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="_types_opencv_matx_.matx.html#diag-1" class="tsd-kind-icon">diag</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="_types_opencv_matx_.matx.html#eye" class="tsd-kind-icon">eye</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="_types_opencv_matx_.matx.html#ones" class="tsd-kind-icon">ones</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="_types_opencv_matx_.matx.html#randn" class="tsd-kind-icon">randn</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="_types_opencv_matx_.matx.html#randu" class="tsd-kind-icon">randu</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="_types_opencv_matx_.matx.html#zeros" class="tsd-kind-icon">zeros</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span>v0<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span>v0<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v1<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span>v0<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v1<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v2<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span>v0<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v1<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v2<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v3<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span>v0<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v1<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v2<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v3<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v4<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span>v0<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v1<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v2<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v3<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v4<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v5<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span>v0<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v1<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v2<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v3<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v4<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v5<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v6<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span>v0<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v1<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v2<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v3<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v4<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v5<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v6<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v7<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span>v0<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v1<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v2<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v3<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v4<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v5<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v6<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v7<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v8<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span>v0<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v1<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v2<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v3<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v4<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v5<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v6<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v7<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v8<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v9<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span>v0<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v1<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v2<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v3<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v4<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v5<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v6<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v7<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v8<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v9<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v10<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v11<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span>v0<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v1<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v2<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v3<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v4<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v5<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v6<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v7<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v8<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v9<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v10<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v11<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v12<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v13<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span>v0<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v1<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v2<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v3<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v4<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v5<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v6<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v7<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v8<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v9<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v10<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v11<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v12<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v13<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v14<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, v15<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span>vals<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span>arg334<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a>, b<span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a>, arg335<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#matx_addop" class="tsd-signature-type">Matx_AddOp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a>, b<span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a>, arg336<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#matx_subop" class="tsd-signature-type">Matx_SubOp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span>arg337<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, a<span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a>, alpha<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_t2" class="tsd-signature-type">_T2</a>, arg338<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#matx_scaleop" class="tsd-signature-type">Matx_ScaleOp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a>, b<span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a>, arg339<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#matx_mulop" class="tsd-signature-type">Matx_MulOp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a>, b<span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a>, arg340<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#matx_divop" class="tsd-signature-type">Matx_DivOp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span>l<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a>, a<span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a>, b<span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a>, arg341<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#matx_matmulop" class="tsd-signature-type">Matx_MatMulOp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matx<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a>, arg342<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#matx_top" class="tsd-signature-type">Matx_TOp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L39">types/opencv/Matx.ts:39</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L41">types/opencv/Matx.ts:41</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v0: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L43">types/opencv/Matx.ts:43</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v0: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v1: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L45">types/opencv/Matx.ts:45</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v0: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v1: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v2: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L47">types/opencv/Matx.ts:47</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v0: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v1: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v2: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v3: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L49">types/opencv/Matx.ts:49</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v0: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v1: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v2: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v3: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v4: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L51">types/opencv/Matx.ts:51</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v0: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v1: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v2: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v3: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v4: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v5: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L53">types/opencv/Matx.ts:53</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v0: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v1: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v2: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v3: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v4: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v5: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v6: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L55">types/opencv/Matx.ts:55</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v0: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v1: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v2: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v3: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v4: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v5: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v6: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v7: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L57">types/opencv/Matx.ts:57</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v0: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v1: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v2: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v3: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v4: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v5: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v6: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v7: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v8: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L59">types/opencv/Matx.ts:59</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v0: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v1: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v2: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v3: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v4: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v5: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v6: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v7: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v8: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v9: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L61">types/opencv/Matx.ts:61</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v0: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v1: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v2: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v3: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v4: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v5: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v6: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v7: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v8: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v9: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v10: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v11: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L63">types/opencv/Matx.ts:63</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v0: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v1: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v2: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v3: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v4: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v5: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v6: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v7: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v8: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v9: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v10: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v11: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v12: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v13: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L65">types/opencv/Matx.ts:65</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v0: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v1: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v2: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v3: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v4: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v5: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v6: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v7: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v8: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v9: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v10: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v11: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v12: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v13: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v14: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>v15: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L67">types/opencv/Matx.ts:67</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>vals: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L69">types/opencv/Matx.ts:69</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>arg334: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L71">types/opencv/Matx.ts:71</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h5>
+								</li>
+								<li>
+									<h5>b: <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h5>
+								</li>
+								<li>
+									<h5>arg335: <a href="../modules/_types_opencv__hacks_.html#matx_addop" class="tsd-signature-type">Matx_AddOp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L73">types/opencv/Matx.ts:73</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h5>
+								</li>
+								<li>
+									<h5>b: <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h5>
+								</li>
+								<li>
+									<h5>arg336: <a href="../modules/_types_opencv__hacks_.html#matx_subop" class="tsd-signature-type">Matx_SubOp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L75">types/opencv/Matx.ts:75</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>arg337: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>a: <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h5>
+								</li>
+								<li>
+									<h5>alpha: <a href="../modules/_types_opencv__hacks_.html#_t2" class="tsd-signature-type">_T2</a></h5>
+								</li>
+								<li>
+									<h5>arg338: <a href="../modules/_types_opencv__hacks_.html#matx_scaleop" class="tsd-signature-type">Matx_ScaleOp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L77">types/opencv/Matx.ts:77</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h5>
+								</li>
+								<li>
+									<h5>b: <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h5>
+								</li>
+								<li>
+									<h5>arg339: <a href="../modules/_types_opencv__hacks_.html#matx_mulop" class="tsd-signature-type">Matx_MulOp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L79">types/opencv/Matx.ts:79</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h5>
+								</li>
+								<li>
+									<h5>b: <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h5>
+								</li>
+								<li>
+									<h5>arg340: <a href="../modules/_types_opencv__hacks_.html#matx_divop" class="tsd-signature-type">Matx_DivOp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L81">types/opencv/Matx.ts:81</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>l: <a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>a: <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h5>
+								</li>
+								<li>
+									<h5>b: <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h5>
+								</li>
+								<li>
+									<h5>arg341: <a href="../modules/_types_opencv__hacks_.html#matx_matmulop" class="tsd-signature-type">Matx_MatMulOp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L83">types/opencv/Matx.ts:83</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h5>
+								</li>
+								<li>
+									<h5>arg342: <a href="../modules/_types_opencv__hacks_.html#matx_top" class="tsd-signature-type">Matx_TOp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="val" class="tsd-anchor"></a>
+					<h3>val</h3>
+					<div class="tsd-signature tsd-kind-icon">val<span class="tsd-signature-symbol">:</span> <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L39">types/opencv/Matx.ts:39</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="col" class="tsd-anchor"></a>
+					<h3>col</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">col<span class="tsd-signature-symbol">(</span>i<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L87">types/opencv/Matx.ts:87</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>i: <a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="ddot" class="tsd-anchor"></a>
+					<h3>ddot</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">ddot<span class="tsd-signature-symbol">(</span>v<span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L89">types/opencv/Matx.ts:89</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v: <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="diag" class="tsd-anchor"></a>
+					<h3>diag</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">diag<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#diag_type" class="tsd-signature-type">diag_type</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L91">types/opencv/Matx.ts:91</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_types_opencv__hacks_.html#diag_type" class="tsd-signature-type">diag_type</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="div" class="tsd-anchor"></a>
+					<h3>div</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">div<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L93">types/opencv/Matx.ts:93</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="dot" class="tsd-anchor"></a>
+					<h3>dot</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">dot<span class="tsd-signature-symbol">(</span>v<span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L95">types/opencv/Matx.ts:95</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v: <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="get_minor" class="tsd-anchor"></a>
+					<h3>get_<wbr>minor</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get_<wbr>minor<span class="tsd-signature-symbol">(</span>m1<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a>, n1<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a>, base_row<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a>, base_col<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L97">types/opencv/Matx.ts:97</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>m1: <a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>n1: <a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>base_row: <a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>base_col: <a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="inv" class="tsd-anchor"></a>
+					<h3>inv</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">inv<span class="tsd-signature-symbol">(</span>method<span class="tsd-signature-symbol">?: </span><a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a>, p_is_ok<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L99">types/opencv/Matx.ts:99</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> method: <a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> p_is_ok: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="mul" class="tsd-anchor"></a>
+					<h3>mul</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">mul<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L101">types/opencv/Matx.ts:101</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="reshape" class="tsd-anchor"></a>
+					<h3>reshape</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">reshape<span class="tsd-signature-symbol">(</span>m1<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a>, n1<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L103">types/opencv/Matx.ts:103</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>m1: <a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>n1: <a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="row" class="tsd-anchor"></a>
+					<h3>row</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">row<span class="tsd-signature-symbol">(</span>i<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L105">types/opencv/Matx.ts:105</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>i: <a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="solve" class="tsd-anchor"></a>
+					<h3>solve</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">solve<span class="tsd-signature-symbol">(</span>l<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a>, rhs<span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a>, flags<span class="tsd-signature-symbol">?: </span><a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+						<li class="tsd-signature tsd-kind-icon">solve<span class="tsd-signature-symbol">(</span>rhs<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#vec" class="tsd-signature-type">Vec</a>, method<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#vec" class="tsd-signature-type">Vec</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L107">types/opencv/Matx.ts:107</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>l: <a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>rhs: <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> flags: <a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L109">types/opencv/Matx.ts:109</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>rhs: <a href="../modules/_types_opencv__hacks_.html#vec" class="tsd-signature-type">Vec</a></h5>
+								</li>
+								<li>
+									<h5>method: <a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_types_opencv__hacks_.html#vec" class="tsd-signature-type">Vec</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="t" class="tsd-anchor"></a>
+					<h3>t</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">t<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L111">types/opencv/Matx.ts:111</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="all" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> all</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">all<span class="tsd-signature-symbol">(</span>alpha<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L113">types/opencv/Matx.ts:113</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>alpha: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="diag-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> diag</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">diag<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#diag_type" class="tsd-signature-type">diag_type</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L115">types/opencv/Matx.ts:115</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <a href="../modules/_types_opencv__hacks_.html#diag_type" class="tsd-signature-type">diag_type</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="eye" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> eye</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">eye<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L117">types/opencv/Matx.ts:117</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="ones" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> ones</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">ones<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L119">types/opencv/Matx.ts:119</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="randn" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> randn</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">randn<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, b<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L121">types/opencv/Matx.ts:121</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>b: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="randu" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> randu</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">randu<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a>, b<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L123">types/opencv/Matx.ts:123</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+								<li>
+									<h5>b: <a href="../modules/_types_opencv__hacks_.html#_tp" class="tsd-signature-type">_Tp</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="zeros" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> zeros</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">zeros<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/Matx.ts#L125">types/opencv/Matx.ts:125</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_matx_.matx.html" class="tsd-signature-type">Matx</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../index.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module tsd-is-external">
+						<a href="../modules/_types_opencv_matx_.html">"types/opencv/<wbr>Matx"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="_types_opencv_matx_.matx.html" class="tsd-kind-icon">Matx</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_matx_.matx.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_matx_.matx.html#val" class="tsd-kind-icon">val</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_matx_.matx.html#col" class="tsd-kind-icon">col</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_matx_.matx.html#ddot" class="tsd-kind-icon">ddot</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_matx_.matx.html#diag" class="tsd-kind-icon">diag</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_matx_.matx.html#div" class="tsd-kind-icon">div</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_matx_.matx.html#dot" class="tsd-kind-icon">dot</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_matx_.matx.html#get_minor" class="tsd-kind-icon">get_<wbr>minor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_matx_.matx.html#inv" class="tsd-kind-icon">inv</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_matx_.matx.html#mul" class="tsd-kind-icon">mul</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_matx_.matx.html#reshape" class="tsd-kind-icon">reshape</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_matx_.matx.html#row" class="tsd-kind-icon">row</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_matx_.matx.html#solve" class="tsd-kind-icon">solve</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_matx_.matx.html#t" class="tsd-kind-icon">t</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="_types_opencv_matx_.matx.html#all" class="tsd-kind-icon">all</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="_types_opencv_matx_.matx.html#diag-1" class="tsd-kind-icon">diag</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="_types_opencv_matx_.matx.html#eye" class="tsd-kind-icon">eye</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="_types_opencv_matx_.matx.html#ones" class="tsd-kind-icon">ones</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="_types_opencv_matx_.matx.html#randn" class="tsd-kind-icon">randn</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="_types_opencv_matx_.matx.html#randu" class="tsd-kind-icon">randu</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="_types_opencv_matx_.matx.html#zeros" class="tsd-kind-icon">zeros</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
+						<a href="../modules/_types_opencv_matx_.html#channels" class="tsd-kind-icon">channels</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
+						<a href="../modules/_types_opencv_matx_.html#cols" class="tsd-kind-icon">cols</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
+						<a href="../modules/_types_opencv_matx_.html#rows" class="tsd-kind-icon">rows</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
+						<a href="../modules/_types_opencv_matx_.html#shortdim" class="tsd-kind-icon">shortdim</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

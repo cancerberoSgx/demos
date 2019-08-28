@@ -1,0 +1,669 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>PCA | mirada</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">mirada</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../index.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_types_opencv_pca_.html">&quot;types/opencv/PCA&quot;</a>
+				</li>
+				<li>
+					<a href="_types_opencv_pca_.pca.html">PCA</a>
+				</li>
+			</ul>
+			<h1>Class PCA</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The class is used to calculate a special basis for a set of vectors. The basis will consist of
+							eigenvectors of the covariance matrix calculated from the input set of vectors. The class PCA can
+							also transform vectors to/from the new coordinate space defined by the basis. Usually, in this new
+							coordinate system, each vector from the original set (and any linear combination of such vectors)
+							can be quite accurately approximated by taking its first few components, corresponding to the
+							eigenvectors of the largest eigenvalues of the covariance matrix. Geometrically it means that you
+							calculate a projection of the vector to a subspace formed by a few eigenvectors corresponding to the
+							dominant eigenvalues of the covariance matrix. And usually such a projection is very close to the
+							original vector. So, you can represent the original vector from a high-dimensional space with a much
+							shorter vector consisting of the projected vector&#39;s coordinates in the subspace. Such a
+						transformation is also known as Karhunen-Loeve Transform, or KLT. See</p>
+					</div>
+					<p>The sample below is the function that takes two matrices. The first function stores a set of vectors
+						(a row per vector) that is used to calculate <a href="#d3/d8d/classcv_1_1PCA%7D">PCA</a>. The second function
+						stores another &quot;test&quot; set of vectors (a row per vector). First, these vectors are compressed with
+						<a href="#d3/d8d/classcv_1_1PCA%7D">PCA</a>, then reconstructed back, and then the reconstruction error norm is
+					computed and printed for each vector. :</p>
+					<pre><code class="language-cpp"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> cv;
+
+<span class="hljs-function">PCA <span class="hljs-title">compressPCA</span><span class="hljs-params">(<span class="hljs-keyword">const</span> Mat&amp; pcaset, <span class="hljs-keyword">int</span> maxComponents,
+                <span class="hljs-keyword">const</span> Mat&amp; testset, Mat&amp; compressed)</span>
+</span>{
+    <span class="hljs-function">PCA <span class="hljs-title">pca</span><span class="hljs-params">(pcaset, <span class="hljs-comment">// pass the data</span>
+            Mat(), <span class="hljs-comment">// we do not have a pre-computed mean vector,</span>
+                   <span class="hljs-comment">// so let the PCA engine to compute it</span>
+            PCA::DATA_AS_ROW, <span class="hljs-comment">// indicate that the vectors</span>
+                                <span class="hljs-comment">// are stored as matrix rows</span>
+                                <span class="hljs-comment">// (use PCA::DATA_AS_COL if the vectors are</span>
+                                <span class="hljs-comment">// the matrix columns)</span>
+            maxComponents <span class="hljs-comment">// specify, how many principal components to retain</span>
+            )</span></span>;
+    <span class="hljs-comment">// if there is no test data, just return the computed basis, ready-to-use</span>
+    <span class="hljs-keyword">if</span>( !testset.data )
+        <span class="hljs-keyword">return</span> pca;
+    CV_Assert( testset.cols == pcaset.cols );
+
+    compressed.create(testset.rows, maxComponents, testset.type());
+
+    Mat reconstructed;
+    <span class="hljs-keyword">for</span>( <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; testset.rows; i++ )
+    {
+        Mat vec = testset.row(i), coeffs = compressed.row(i), reconstructed;
+        <span class="hljs-comment">// compress the vector, the result will be stored</span>
+        <span class="hljs-comment">// in the i-th row of the output matrix</span>
+        pca.project(vec, coeffs);
+        <span class="hljs-comment">// and then reconstruct it</span>
+        pca.backProject(coeffs, reconstructed);
+        <span class="hljs-comment">// and measure the error</span>
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d. diff = %g\\n"</span>, i, norm(vec, reconstructed, NORM_L2));
+    }
+    <span class="hljs-keyword">return</span> pca;
+}</code></pre>
+					<p><a href="#d2/de8/group__core__array_1gae6ffa9354633f984246945d52823165d%7D">calcCovarMatrix</a>,
+						<a href="#d2/de8/group__core__array_1gadc4e49f8f7a155044e3be1b9e3b270ab%7D">mulTransposed</a>,
+						<a href="#df/df7/classcv_1_1SVD%7D">SVD</a>,
+						<a href="#d2/de8/group__core__array_1gadd6cf9baf2b8b704a11b5f04aaf4f39d%7D">dft</a>,
+					<a href="#d2/de8/group__core__array_1ga85aad4d668c01fbd64825f589e3696d4%7D">dct</a></p>
+					<p>Source:
+					<a href="https://github.com/opencv/opencv/tree/master/modules/core/include/opencv2/core.hpp#L2393">opencv2/core.hpp</a>.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">PCA</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_pca_.pca.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_pca_.pca.html#eigenvalues" class="tsd-kind-icon">eigenvalues</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_pca_.pca.html#eigenvectors" class="tsd-kind-icon">eigenvectors</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_pca_.pca.html#mean" class="tsd-kind-icon">mean</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_pca_.pca.html#backproject" class="tsd-kind-icon">back<wbr>Project</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_pca_.pca.html#project" class="tsd-kind-icon">project</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_pca_.pca.html#read" class="tsd-kind-icon">read</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_pca_.pca.html#write" class="tsd-kind-icon">write</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">new PCA<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_pca_.pca.html" class="tsd-signature-type">PCA</a></li>
+						<li class="tsd-signature tsd-kind-icon">new PCA<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InputArray</span>, mean<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InputArray</span>, flags<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a>, maxComponents<span class="tsd-signature-symbol">?: </span><a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_pca_.pca.html" class="tsd-signature-type">PCA</a></li>
+						<li class="tsd-signature tsd-kind-icon">new PCA<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InputArray</span>, mean<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InputArray</span>, flags<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a>, retainedVariance<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#double" class="tsd-signature-type">double</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_pca_.pca.html" class="tsd-signature-type">PCA</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/PCA.ts#L77">types/opencv/PCA.ts:77</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>  The default constructor initializes an empty PCA structure. The other constructors initialize the
+									structure and call [PCA::operator()()].</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_pca_.pca.html" class="tsd-signature-type">PCA</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/PCA.ts#L83">types/opencv/PCA.ts:83</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>  This is an overloaded member function, provided for convenience. It differs from the above
+									function only in what argument(s) it accepts.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">InputArray</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>input samples stored as matrix rows or matrix columns.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>mean: <span class="tsd-signature-type">InputArray</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>optional mean value; if the matrix is empty (noArray()), the mean is computed from the
+											data.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>flags: <a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>operation flags; currently the parameter is only used to specify the data layout
+											(PCA::Flags)</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> maxComponents: <a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>maximum number of components that PCA should retain; by default, all the
+											components are retained.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_pca_.pca.html" class="tsd-signature-type">PCA</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/PCA.ts#L100">types/opencv/PCA.ts:100</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>  This is an overloaded member function, provided for convenience. It differs from the above
+									function only in what argument(s) it accepts.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">InputArray</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>input samples stored as matrix rows or matrix columns.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>mean: <span class="tsd-signature-type">InputArray</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>optional mean value; if the matrix is empty (noArray()), the mean is computed from the
+											data.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>flags: <a href="../modules/_types_opencv__hacks_.html#int" class="tsd-signature-type">int</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>operation flags; currently the parameter is only used to specify the data layout
+											(PCA::Flags)</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>retainedVariance: <a href="../modules/_types_opencv__hacks_.html#double" class="tsd-signature-type">double</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Percentage of variance that PCA should retain. Using this parameter will
+											let the PCA decided how many components to retain but it will always keep at least 2.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_pca_.pca.html" class="tsd-signature-type">PCA</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="eigenvalues" class="tsd-anchor"></a>
+					<h3>eigenvalues</h3>
+					<div class="tsd-signature tsd-kind-icon">eigenvalues<span class="tsd-signature-symbol">:</span> <a href="_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/PCA.ts#L73">types/opencv/PCA.ts:73</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="eigenvectors" class="tsd-anchor"></a>
+					<h3>eigenvectors</h3>
+					<div class="tsd-signature tsd-kind-icon">eigenvectors<span class="tsd-signature-symbol">:</span> <a href="_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/PCA.ts#L75">types/opencv/PCA.ts:75</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="mean" class="tsd-anchor"></a>
+					<h3>mean</h3>
+					<div class="tsd-signature tsd-kind-icon">mean<span class="tsd-signature-symbol">:</span> <a href="_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/PCA.ts#L77">types/opencv/PCA.ts:77</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="backproject" class="tsd-anchor"></a>
+					<h3>back<wbr>Project</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">back<wbr>Project<span class="tsd-signature-symbol">(</span>vec<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InputArray</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a></li>
+						<li class="tsd-signature tsd-kind-icon">back<wbr>Project<span class="tsd-signature-symbol">(</span>vec<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InputArray</span>, result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OutputArray</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InputArray</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/PCA.ts#L129">types/opencv/PCA.ts:129</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>  The methods are inverse operations to [PCA::project]. They take PC coordinates of projected
+										vectors and reconstruct the original vectors. Unless all the principal components have been
+										retained, the reconstructed vectors are different from the originals. But typically, the difference
+										is small if the number of components is large enough (but still much smaller than the original
+									vector dimensionality). As a result, [PCA] is used.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>vec: <span class="tsd-signature-type">InputArray</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>coordinates of the vectors in the principal component subspace, the layout and size are
+										the same as of PCA::project output vectors.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/PCA.ts#L141">types/opencv/PCA.ts:141</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>  This is an overloaded member function, provided for convenience. It differs from the above
+									function only in what argument(s) it accepts.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>vec: <span class="tsd-signature-type">InputArray</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>coordinates of the vectors in the principal component subspace, the layout and size are
+										the same as of PCA::project output vectors.</p>
+									</div>
+								</li>
+								<li>
+									<h5>result: <span class="tsd-signature-type">OutputArray</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>reconstructed vectors; the layout and size are the same as of PCA::project input
+										vectors.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">InputArray</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="project" class="tsd-anchor"></a>
+					<h3>project</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">project<span class="tsd-signature-symbol">(</span>vec<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InputArray</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a></li>
+						<li class="tsd-signature tsd-kind-icon">project<span class="tsd-signature-symbol">(</span>vec<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InputArray</span>, result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OutputArray</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InputArray</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/PCA.ts#L154">types/opencv/PCA.ts:154</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>  The methods project one or more vectors to the principal component subspace, where each vector
+										projection is represented by coefficients in the principal component basis. The first form of the
+										method returns the matrix that the second form writes to the result. So the first form can be used
+									as a part of expression while the second form can be more efficient in a processing loop.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>vec: <span class="tsd-signature-type">InputArray</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>input vector(s); must have the same dimensionality and the same layout as the input
+											data used at PCA phase, that is, if DATA_AS_ROW are specified, then vec.cols==data.cols (vector
+											dimensionality) and vec.rows is the number of vectors to project, and the same is true for the
+										PCA::DATA_AS_COL case.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/PCA.ts#L169">types/opencv/PCA.ts:169</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>  This is an overloaded member function, provided for convenience. It differs from the above
+									function only in what argument(s) it accepts.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>vec: <span class="tsd-signature-type">InputArray</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>input vector(s); must have the same dimensionality and the same layout as the input
+											data used at PCA phase, that is, if DATA_AS_ROW are specified, then vec.cols==data.cols (vector
+											dimensionality) and vec.rows is the number of vectors to project, and the same is true for the
+										PCA::DATA_AS_COL case.</p>
+									</div>
+								</li>
+								<li>
+									<h5>result: <span class="tsd-signature-type">OutputArray</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>output vectors; in case of PCA::DATA_AS_COL, the output matrix has as many columns
+											as the number of input vectors, this means that result.cols==vec.cols and the number of rows match
+										the number of principal components (for example, maxComponents parameter passed to the constructor).</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">InputArray</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="read" class="tsd-anchor"></a>
+					<h3>read</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">read<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#filenode" class="tsd-signature-type">FileNode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#filenode" class="tsd-signature-type">FileNode</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/PCA.ts#L174">types/opencv/PCA.ts:174</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>  Loads [eigenvalues] [eigenvectors] and [mean] from specified [FileNode]</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn: <a href="../modules/_types_opencv__hacks_.html#filenode" class="tsd-signature-type">FileNode</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_types_opencv__hacks_.html#filenode" class="tsd-signature-type">FileNode</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="write" class="tsd-anchor"></a>
+					<h3>write</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">write<span class="tsd-signature-symbol">(</span>fs<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#filestorage" class="tsd-signature-type">FileStorage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#filestorage" class="tsd-signature-type">FileStorage</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/PCA.ts#L179">types/opencv/PCA.ts:179</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>  Writes [eigenvalues] [eigenvectors] and [mean] to specified [FileStorage]</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fs: <a href="../modules/_types_opencv__hacks_.html#filestorage" class="tsd-signature-type">FileStorage</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_types_opencv__hacks_.html#filestorage" class="tsd-signature-type">FileStorage</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../index.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module tsd-is-external">
+						<a href="../modules/_types_opencv_pca_.html">"types/opencv/PCA"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="_types_opencv_pca_.pca.html" class="tsd-kind-icon">PCA</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_pca_.pca.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_pca_.pca.html#eigenvalues" class="tsd-kind-icon">eigenvalues</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_pca_.pca.html#eigenvectors" class="tsd-kind-icon">eigenvectors</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_pca_.pca.html#mean" class="tsd-kind-icon">mean</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_pca_.pca.html#backproject" class="tsd-kind-icon">back<wbr>Project</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_pca_.pca.html#project" class="tsd-kind-icon">project</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_pca_.pca.html#read" class="tsd-kind-icon">read</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_pca_.pca.html#write" class="tsd-kind-icon">write</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-external">
+						<a href="../modules/_types_opencv_pca_.html#flags" class="tsd-kind-icon">Flags</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
+						<a href="../modules/_types_opencv_pca_.html#data_as_col" class="tsd-kind-icon">DATA_<wbr>AS_<wbr>COL</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
+						<a href="../modules/_types_opencv_pca_.html#data_as_row" class="tsd-kind-icon">DATA_<wbr>AS_<wbr>ROW</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
+						<a href="../modules/_types_opencv_pca_.html#use_avg" class="tsd-kind-icon">USE_<wbr>AVG</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

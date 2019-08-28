@@ -1,0 +1,451 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>RotatedRect | mirada</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">mirada</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../index.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_types_opencv_rotatedrect_.html">&quot;types/opencv/RotatedRect&quot;</a>
+				</li>
+				<li>
+					<a href="_types_opencv_rotatedrect_.rotatedrect.html">RotatedRect</a>
+				</li>
+			</ul>
+			<h1>Class RotatedRect</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Each rectangle is specified by the center point (mass center), length of each side (represented by
+							<a href="#dc/d84/group__core__basic_1gab34496d2466b5f69930ab74c70f117d4%7D">Size2f</a> structure) and the
+						rotation angle in degrees.</p>
+					</div>
+					<p>The sample below demonstrates how to use <a href="#db/dd6/classcv_1_1RotatedRect%7D">RotatedRect</a>:</p>
+					<pre><code class="language-cpp">    <span class="hljs-function">Mat <span class="hljs-title">test_image</span><span class="hljs-params">(<span class="hljs-number">200</span>, <span class="hljs-number">200</span>, CV_8UC3, Scalar(<span class="hljs-number">0</span>))</span></span>;
+    RotatedRect rRect = RotatedRect(Point2f(<span class="hljs-number">100</span>,<span class="hljs-number">100</span>), Size2f(<span class="hljs-number">100</span>,<span class="hljs-number">50</span>), <span class="hljs-number">30</span>);
+
+    Point2f vertices[<span class="hljs-number">4</span>];
+    rRect.points(vertices);
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">4</span>; i++)
+        line(test_image, vertices[i], vertices[(i+<span class="hljs-number">1</span>)%<span class="hljs-number">4</span>], Scalar(<span class="hljs-number">0</span>,<span class="hljs-number">255</span>,<span class="hljs-number">0</span>), <span class="hljs-number">2</span>);
+
+    Rect brect = rRect.boundingRect();
+    rectangle(test_image, brect, Scalar(<span class="hljs-number">255</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>), <span class="hljs-number">2</span>);
+
+    imshow(<span class="hljs-string">"rectangles"</span>, test_image);
+    waitKey(<span class="hljs-number">0</span>);</code></pre>
+					<p><a href="#dc/d6b/group__video__track_1gaef2bd39c8356f423124f1fe7c44d54a1%7D">CamShift</a>,
+						<a href="#d3/dc0/group__imgproc__shape_1gaf259efaad93098103d6c27b9e4900ffa%7D">fitEllipse</a>,
+					<a href="#d3/dc0/group__imgproc__shape_1ga3d476a3417130ae5154aea421ca7ead9%7D">minAreaRect</a>, CvBox2D</p>
+					<p>Source:
+					<a href="https://github.com/opencv/opencv/tree/master/modules/core/include/opencv2/core/types.hpp#L534">opencv2/core/types.hpp</a>.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">RotatedRect</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_rotatedrect_.rotatedrect.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_rotatedrect_.rotatedrect.html#angle" class="tsd-kind-icon">angle</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_rotatedrect_.rotatedrect.html#center" class="tsd-kind-icon">center</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_rotatedrect_.rotatedrect.html#size" class="tsd-kind-icon">size</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_rotatedrect_.rotatedrect.html#boundingrect" class="tsd-kind-icon">bounding<wbr>Rect</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_rotatedrect_.rotatedrect.html#boundingrect2f" class="tsd-kind-icon">bounding<wbr>Rect2f</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_types_opencv_rotatedrect_.rotatedrect.html#points" class="tsd-kind-icon">points</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Rotated<wbr>Rect<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_rotatedrect_.rotatedrect.html" class="tsd-signature-type">RotatedRect</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Rotated<wbr>Rect<span class="tsd-signature-symbol">(</span>center<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Point2f</span>, size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Size2f</span>, angle<span class="tsd-signature-symbol">: </span><a href="../modules/_types_opencv__hacks_.html#float" class="tsd-signature-type">float</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_rotatedrect_.rotatedrect.html" class="tsd-signature-type">RotatedRect</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Rotated<wbr>Rect<span class="tsd-signature-symbol">(</span>point1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Point2f</span>, point2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Point2f</span>, point3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Point2f</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv_rotatedrect_.rotatedrect.html" class="tsd-signature-type">RotatedRect</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/RotatedRect.ts#L41">types/opencv/RotatedRect.ts:41</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>  full constructor
+										Any 3 end points of the [RotatedRect]. They must be given in order (either clockwise or
+									anticlockwise).</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_rotatedrect_.rotatedrect.html" class="tsd-signature-type">RotatedRect</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/RotatedRect.ts#L43">types/opencv/RotatedRect.ts:43</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>  full constructor</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>center: <span class="tsd-signature-type">Point2f</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The rectangle mass center.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>size: <span class="tsd-signature-type">Size2f</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Width and height of the rectangle.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>angle: <a href="../modules/_types_opencv__hacks_.html#float" class="tsd-signature-type">float</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The rotation angle in a clockwise direction. When the angle is 0, 90, 180, 270 etc.,
+											the rectangle becomes an up-right rectangle.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_rotatedrect_.rotatedrect.html" class="tsd-signature-type">RotatedRect</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/RotatedRect.ts#L55">types/opencv/RotatedRect.ts:55</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>  Any 3 end points of the [RotatedRect]. They must be given in order (either clockwise or
+									anticlockwise).</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>point1: <span class="tsd-signature-type">Point2f</span></h5>
+								</li>
+								<li>
+									<h5>point2: <span class="tsd-signature-type">Point2f</span></h5>
+								</li>
+								<li>
+									<h5>point3: <span class="tsd-signature-type">Point2f</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv_rotatedrect_.rotatedrect.html" class="tsd-signature-type">RotatedRect</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="angle" class="tsd-anchor"></a>
+					<h3>angle</h3>
+					<div class="tsd-signature tsd-kind-icon">angle<span class="tsd-signature-symbol">:</span> <a href="../modules/_types_opencv__hacks_.html#float" class="tsd-signature-type">float</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/RotatedRect.ts#L37">types/opencv/RotatedRect.ts:37</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="center" class="tsd-anchor"></a>
+					<h3>center</h3>
+					<div class="tsd-signature tsd-kind-icon">center<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Point2f</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/RotatedRect.ts#L39">types/opencv/RotatedRect.ts:39</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="size" class="tsd-anchor"></a>
+					<h3>size</h3>
+					<div class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Size2f</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/RotatedRect.ts#L41">types/opencv/RotatedRect.ts:41</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="boundingrect" class="tsd-anchor"></a>
+					<h3>bounding<wbr>Rect</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">bounding<wbr>Rect<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_opencv__hacks_.rect.html" class="tsd-signature-type">Rect</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/RotatedRect.ts#L63">types/opencv/RotatedRect.ts:63</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_types_opencv__hacks_.rect.html" class="tsd-signature-type">Rect</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="boundingrect2f" class="tsd-anchor"></a>
+					<h3>bounding<wbr>Rect2f</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">bounding<wbr>Rect2f<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Rect_</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/RotatedRect.ts#L65">types/opencv/RotatedRect.ts:65</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Rect_</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="points" class="tsd-anchor"></a>
+					<h3>points</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">points<span class="tsd-signature-symbol">(</span>pts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Point2f</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Point2f</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/271c03f/mirada/src/types/opencv/RotatedRect.ts#L73">types/opencv/RotatedRect.ts:73</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>  returns 4 vertices of the rectangle</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pts: <span class="tsd-signature-type">Point2f</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The points array for storing rectangle vertices. The order is bottomLeft, topLeft,
+										topRight, bottomRight.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Point2f</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../index.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module tsd-is-external">
+						<a href="../modules/_types_opencv_rotatedrect_.html">"types/opencv/<wbr>Rotated<wbr>Rect"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="_types_opencv_rotatedrect_.rotatedrect.html" class="tsd-kind-icon">Rotated<wbr>Rect</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_rotatedrect_.rotatedrect.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_rotatedrect_.rotatedrect.html#angle" class="tsd-kind-icon">angle</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_rotatedrect_.rotatedrect.html#center" class="tsd-kind-icon">center</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_rotatedrect_.rotatedrect.html#size" class="tsd-kind-icon">size</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_rotatedrect_.rotatedrect.html#boundingrect" class="tsd-kind-icon">bounding<wbr>Rect</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_rotatedrect_.rotatedrect.html#boundingrect2f" class="tsd-kind-icon">bounding<wbr>Rect2f</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_types_opencv_rotatedrect_.rotatedrect.html#points" class="tsd-kind-icon">points</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
