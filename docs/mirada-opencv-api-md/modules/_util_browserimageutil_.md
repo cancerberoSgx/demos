@@ -6,6 +6,10 @@
 
 ## Index
 
+### Classes
+
+* [CameraHelper](../classes/_util_browserimageutil_.camerahelper.md)
+
 ### Functions
 
 * [fetchImageData](_util_browserimageutil_.md#fetchimagedata)
@@ -19,6 +23,8 @@
 ###  fetchImageData
 
 ▸ **fetchImageData**(`url`: string): *Promise‹ImageData›*
+
+*Defined in [util/browserImageUtil.ts:11](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/util/browserImageUtil.ts#L11)*
 
 **Parameters:**
 
@@ -34,6 +40,8 @@ ___
 
 ▸ **fromInputFileElement**(`a`: HTMLInputElement): *Promise‹[Mat](../classes/_types_opencv_mat_.mat.md)[]›*
 
+*Defined in [util/browserImageUtil.ts:6](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/util/browserImageUtil.ts#L6)*
+
 **Parameters:**
 
 Name | Type |
@@ -48,6 +56,8 @@ ___
 
 ▸ **getHtmlImageData**(`img`: [Mat](../classes/_types_opencv_mat_.mat.md)): *ImageData*
 
+*Defined in [util/browserImageUtil.ts:72](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/util/browserImageUtil.ts#L72)*
+
 **Parameters:**
 
 Name | Type |
@@ -61,6 +71,8 @@ ___
 ###  renderArrayBufferInCanvas
 
 ▸ **renderArrayBufferInCanvas**(`a`: ArrayBuffer, `canvas?`: HTMLCanvasElement, `appendToBody`: boolean): *Promise‹object›*
+
+*Defined in [util/browserImageUtil.ts:36](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/util/browserImageUtil.ts#L36)*
 
 A sub optimal method to load a image array buffer (encoded in jpg, png) whiteouts knowing its format or size.
 1) creates a blob and a url object
@@ -84,6 +96,8 @@ ___
 ###  renderInCanvas
 
 ▸ **renderInCanvas**(`mat`: [Mat](../classes/_types_opencv_mat_.mat.md), `canvas?`: HTMLCanvasElement, `appendToBody`: boolean, `rgba`: boolean): *HTMLCanvasElement*
+
+*Defined in [util/browserImageUtil.ts:56](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/util/browserImageUtil.ts#L56)*
 
 **Parameters:**
 

@@ -25,6 +25,8 @@
 
 \+ **new Size**(`width`: number, `height`: number): *[Size](_types_opencv__hacks_.size.md)*
 
+*Defined in [types/opencv/_hacks.ts:31](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/_hacks.ts#L31)*
+
 **Parameters:**
 
 Name | Type |
@@ -40,8 +42,12 @@ Name | Type |
 
 • **height**: *number*
 
+*Defined in [types/opencv/_hacks.ts:34](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/_hacks.ts#L34)*
+
 ___
 
 ###  width
 
 • **width**: *number*
+
+*Defined in [types/opencv/_hacks.ts:33](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/_hacks.ts#L33)*

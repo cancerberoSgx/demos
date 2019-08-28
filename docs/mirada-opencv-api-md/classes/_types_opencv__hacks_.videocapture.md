@@ -28,6 +28,8 @@
 
 \+ **new VideoCapture**(`videoSource`: HTMLVideoElement | string): *[VideoCapture](_types_opencv__hacks_.videocapture.md)*
 
+*Defined in [types/opencv/_hacks.ts:102](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/_hacks.ts#L102)*
+
 **Parameters:**
 
 Name | Type |
@@ -42,11 +44,15 @@ Name | Type |
 
 • **video**: *HTMLVideoElement*
 
+*Defined in [types/opencv/_hacks.ts:105](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/_hacks.ts#L105)*
+
 ## Methods
 
 ###  read
 
 ▸ **read**(`m`: [Mat](_types_opencv_mat_.mat.md)): *any*
+
+*Defined in [types/opencv/_hacks.ts:104](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/_hacks.ts#L104)*
 
 **Parameters:**
 

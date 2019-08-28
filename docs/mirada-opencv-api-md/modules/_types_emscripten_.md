@@ -31,11 +31,15 @@
 
 Ƭ **EnvironmentType**: *"WEB" | "NODE" | "SHELL" | "WORKER"*
 
+*Defined in [types/emscripten.ts:163](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/emscripten.ts#L163)*
+
 ___
 
 ###  TypeCompatibleWithC
 
 Ƭ **TypeCompatibleWithC**: *number | string | any[] | boolean*
+
+*Defined in [types/emscripten.ts:165](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/emscripten.ts#L165)*
 
 ___
 
@@ -43,14 +47,20 @@ ___
 
 Ƭ **ValueType**: *"number" | "string" | "array" | "boolean"*
 
+*Defined in [types/emscripten.ts:164](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/emscripten.ts#L164)*
+
 ___
 
 ###  WebAssemblyExports
 
 Ƭ **WebAssemblyExports**: *Array‹object›*
 
+*Defined in [types/emscripten.ts:172](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/emscripten.ts#L172)*
+
 ___
 
 ###  WebAssemblyImports
 
 Ƭ **WebAssemblyImports**: *Array‹object›*
+
+*Defined in [types/emscripten.ts:167](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/emscripten.ts#L167)*

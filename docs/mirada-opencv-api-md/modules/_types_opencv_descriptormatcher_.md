@@ -29,11 +29,15 @@
 
 Ƭ **MatcherType**: *any*
 
+*Defined in [types/opencv/DescriptorMatcher.ts:201](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/DescriptorMatcher.ts#L201)*
+
 ## Variables
 
 ### `Const` BRUTEFORCE
 
 • **BRUTEFORCE**: *[MatcherType](_types_opencv_descriptormatcher_.md#matchertype)*
+
+*Defined in [types/opencv/DescriptorMatcher.ts:191](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/DescriptorMatcher.ts#L191)*
 
 ___
 
@@ -41,11 +45,15 @@ ___
 
 • **BRUTEFORCE_HAMMING**: *[MatcherType](_types_opencv_descriptormatcher_.md#matchertype)*
 
+*Defined in [types/opencv/DescriptorMatcher.ts:195](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/DescriptorMatcher.ts#L195)*
+
 ___
 
 ### `Const` BRUTEFORCE_HAMMINGLUT
 
 • **BRUTEFORCE_HAMMINGLUT**: *[MatcherType](_types_opencv_descriptormatcher_.md#matchertype)*
+
+*Defined in [types/opencv/DescriptorMatcher.ts:197](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/DescriptorMatcher.ts#L197)*
 
 ___
 
@@ -53,14 +61,20 @@ ___
 
 • **BRUTEFORCE_L1**: *[MatcherType](_types_opencv_descriptormatcher_.md#matchertype)*
 
+*Defined in [types/opencv/DescriptorMatcher.ts:193](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/DescriptorMatcher.ts#L193)*
+
 ___
 
 ### `Const` BRUTEFORCE_SL2
 
 • **BRUTEFORCE_SL2**: *[MatcherType](_types_opencv_descriptormatcher_.md#matchertype)*
 
+*Defined in [types/opencv/DescriptorMatcher.ts:199](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/DescriptorMatcher.ts#L199)*
+
 ___
 
 ### `Const` FLANNBASED
 
 • **FLANNBASED**: *[MatcherType](_types_opencv_descriptormatcher_.md#matchertype)*
+
+*Defined in [types/opencv/DescriptorMatcher.ts:189](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/DescriptorMatcher.ts#L189)*

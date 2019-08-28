@@ -29,11 +29,15 @@
 
 Ƭ **TemplateMatchModes**: *any*
 
+*Defined in [types/opencv/imgproc_object.ts:53](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_object.ts#L53)*
+
 ## Variables
 
 ### `Const` TM_CCOEFF
 
 • **TM_CCOEFF**: *[TemplateMatchModes](_types_opencv_imgproc_object_.md#templatematchmodes)*
+
+*Defined in [types/opencv/imgproc_object.ts:49](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_object.ts#L49)*
 
 `\\[R(x,y)= \\sum _{x',y'} (T'(x',y') \\cdot I'(x+x',y+y'))\\]` where `\\[\\begin{array}{l}
 T'(x',y')=T(x',y') - 1/(w \\cdot h) \\cdot \\sum _{x'',y''} T(x'',y'') \\\\
@@ -45,11 +49,15 @@ ___
 
 • **TM_CCOEFF_NORMED**: *[TemplateMatchModes](_types_opencv_imgproc_object_.md#templatematchmodes)*
 
+*Defined in [types/opencv/imgproc_object.ts:51](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_object.ts#L51)*
+
 ___
 
 ### `Const` TM_CCORR
 
 • **TM_CCORR**: *[TemplateMatchModes](_types_opencv_imgproc_object_.md#templatematchmodes)*
+
+*Defined in [types/opencv/imgproc_object.ts:39](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_object.ts#L39)*
 
 ___
 
@@ -57,11 +65,15 @@ ___
 
 • **TM_CCORR_NORMED**: *[TemplateMatchModes](_types_opencv_imgproc_object_.md#templatematchmodes)*
 
+*Defined in [types/opencv/imgproc_object.ts:41](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_object.ts#L41)*
+
 ___
 
 ### `Const` TM_SQDIFF
 
 • **TM_SQDIFF**: *[TemplateMatchModes](_types_opencv_imgproc_object_.md#templatematchmodes)*
+
+*Defined in [types/opencv/imgproc_object.ts:35](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_object.ts#L35)*
 
 ___
 
@@ -69,11 +81,15 @@ ___
 
 • **TM_SQDIFF_NORMED**: *[TemplateMatchModes](_types_opencv_imgproc_object_.md#templatematchmodes)*
 
+*Defined in [types/opencv/imgproc_object.ts:37](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_object.ts#L37)*
+
 ## Functions
 
 ###  matchTemplate
 
 ▸ **matchTemplate**(`image`: InputArray, `templ`: InputArray, `result`: OutputArray, `method`: [int](_types_opencv__hacks_.md#int), `mask?`: InputArray): *void*
+
+*Defined in [types/opencv/imgproc_object.ts:33](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_object.ts#L33)*
 
 The function slides through image , compares the overlapped patches of size `$w \\times h$` against
 templ using the specified method and stores the comparison results in result . Here are the formulae

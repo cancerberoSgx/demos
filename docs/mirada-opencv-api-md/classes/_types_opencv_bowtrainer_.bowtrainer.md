@@ -34,6 +34,8 @@ Source:
 
 \+ **new BOWTrainer**(): *[BOWTrainer](_types_opencv_bowtrainer_.bowtrainer.md)*
 
+*Defined in [types/opencv/BOWTrainer.ts:12](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/BOWTrainer.ts#L12)*
+
 **Returns:** *[BOWTrainer](_types_opencv_bowtrainer_.bowtrainer.md)*
 
 ## Methods
@@ -41,6 +43,8 @@ Source:
 ###  add
 
 ▸ **add**(`descriptors`: [Mat](_types_opencv_mat_.mat.md)): *[Mat](_types_opencv_mat_.mat.md)*
+
+*Defined in [types/opencv/BOWTrainer.ts:22](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/BOWTrainer.ts#L22)*
 
   The training set is clustered using clustermethod to construct the vocabulary.
 
@@ -58,6 +62,8 @@ ___
 
 ▸ **clear**(): *void*
 
+*Defined in [types/opencv/BOWTrainer.ts:24](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/BOWTrainer.ts#L24)*
+
 **Returns:** *void*
 
 ___
@@ -66,12 +72,16 @@ ___
 
 ▸ **cluster**(): *[Mat](_types_opencv_mat_.mat.md)*
 
+*Defined in [types/opencv/BOWTrainer.ts:30](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/BOWTrainer.ts#L30)*
+
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
 
 **Returns:** *[Mat](_types_opencv_mat_.mat.md)*
 
 ▸ **cluster**(`descriptors`: [Mat](_types_opencv_mat_.mat.md)): *[Mat](_types_opencv_mat_.mat.md)*
+
+*Defined in [types/opencv/BOWTrainer.ts:40](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/BOWTrainer.ts#L40)*
 
   The vocabulary consists of cluster centers. So, this method returns the vocabulary. In the first
 variant of the method, train descriptors stored in the object are clustered. In the second variant,
@@ -91,6 +101,8 @@ ___
 
 ▸ **descriptorsCount**(): *[int](../modules/_types_opencv__hacks_.md#int)*
 
+*Defined in [types/opencv/BOWTrainer.ts:42](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/BOWTrainer.ts#L42)*
+
 **Returns:** *[int](../modules/_types_opencv__hacks_.md#int)*
 
 ___
@@ -98,5 +110,7 @@ ___
 ###  getDescriptors
 
 ▸ **getDescriptors**(): *[Mat](_types_opencv_mat_.mat.md)*
+
+*Defined in [types/opencv/BOWTrainer.ts:44](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/BOWTrainer.ts#L44)*
 
 **Returns:** *[Mat](_types_opencv_mat_.mat.md)*

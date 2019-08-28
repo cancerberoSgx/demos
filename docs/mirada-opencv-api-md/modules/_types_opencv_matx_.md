@@ -23,11 +23,15 @@
 
 • **channels**: *any*
 
+*Defined in [types/opencv/Matx.ts:132](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/Matx.ts#L132)*
+
 ___
 
 ### `Const` cols
 
 • **cols**: *any*
+
+*Defined in [types/opencv/Matx.ts:130](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/Matx.ts#L130)*
 
 ___
 
@@ -35,8 +39,12 @@ ___
 
 • **rows**: *any*
 
+*Defined in [types/opencv/Matx.ts:128](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/Matx.ts#L128)*
+
 ___
 
 ### `Const` shortdim
 
 • **shortdim**: *any*
+
+*Defined in [types/opencv/Matx.ts:134](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/Matx.ts#L134)*

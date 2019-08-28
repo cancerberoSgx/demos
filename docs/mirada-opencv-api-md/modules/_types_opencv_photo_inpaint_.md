@@ -21,17 +21,23 @@
 
 • **INPAINT_NS**: *any*
 
+*Defined in [types/opencv/photo_inpaint.ts:30](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/photo_inpaint.ts#L30)*
+
 ___
 
 ### `Const` INPAINT_TELEA
 
 • **INPAINT_TELEA**: *any*
 
+*Defined in [types/opencv/photo_inpaint.ts:32](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/photo_inpaint.ts#L32)*
+
 ## Functions
 
 ###  inpaint
 
 ▸ **inpaint**(`src`: InputArray, `inpaintMask`: InputArray, `dst`: OutputArray, `inpaintRadius`: [double](_types_opencv__hacks_.md#double), `flags`: [int](_types_opencv__hacks_.md#int)): *void*
+
+*Defined in [types/opencv/photo_inpaint.ts:28](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/photo_inpaint.ts#L28)*
 
 The function reconstructs the selected image area from the pixel near the area boundary. The
 function may be used to remove dust and scratches from a scanned photo, or to remove undesirable

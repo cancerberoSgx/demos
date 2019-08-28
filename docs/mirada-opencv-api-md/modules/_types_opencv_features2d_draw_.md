@@ -28,11 +28,15 @@
 
 Ƭ **DrawMatchesFlags**: *any*
 
+*Defined in [types/opencv/features2d_draw.ts:87](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/features2d_draw.ts#L87)*
+
 ## Variables
 
 ### `Const` DEFAULT
 
 • **DEFAULT**: *[DrawMatchesFlags](_types_opencv_features2d_draw_.md#drawmatchesflags)*
+
+*Defined in [types/opencv/features2d_draw.ts:70](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/features2d_draw.ts#L70)*
 
 Output image matrix will be created ([Mat::create]), i.e. existing memory of output image may be
 reused. Two source image, matches and single keypoints will be drawn. For each keypoint only the
@@ -44,6 +48,8 @@ ___
 
 • **DRAW_OVER_OUTIMG**: *[DrawMatchesFlags](_types_opencv_features2d_draw_.md#drawmatchesflags)*
 
+*Defined in [types/opencv/features2d_draw.ts:77](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/features2d_draw.ts#L77)*
+
 Output image matrix will not be created ([Mat::create]). Matches will be drawn on existing content
 of output image.
 
@@ -53,6 +59,8 @@ ___
 
 • **DRAW_RICH_KEYPOINTS**: *[DrawMatchesFlags](_types_opencv_features2d_draw_.md#drawmatchesflags)*
 
+*Defined in [types/opencv/features2d_draw.ts:85](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/features2d_draw.ts#L85)*
+
 For each keypoint the circle around keypoint with keypoint size and orientation will be drawn.
 
 ___
@@ -61,11 +69,15 @@ ___
 
 • **NOT_DRAW_SINGLE_POINTS**: *[DrawMatchesFlags](_types_opencv_features2d_draw_.md#drawmatchesflags)*
 
+*Defined in [types/opencv/features2d_draw.ts:79](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/features2d_draw.ts#L79)*
+
 ## Functions
 
 ###  drawKeypoints
 
 ▸ **drawKeypoints**(`image`: InputArray, `keypoints`: any, `outImage`: InputOutputArray, `color?`: any, `flags?`: [DrawMatchesFlags](_types_opencv_features2d_draw_.md#drawmatchesflags)): *void*
+
+*Defined in [types/opencv/features2d_draw.ts:24](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/features2d_draw.ts#L24)*
 
 For Python API, flags are modified as cv.DRAW_MATCHES_FLAGS_DEFAULT,
 cv.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS, cv.DRAW_MATCHES_FLAGS_DRAW_OVER_OUTIMG,
@@ -89,6 +101,8 @@ ___
 
 ▸ **drawMatches**(`img1`: InputArray, `keypoints1`: any, `img2`: InputArray, `keypoints2`: any, `matches1to2`: any, `outImg`: InputOutputArray, `matchColor?`: any, `singlePointColor?`: any, `matchesMask?`: any, `flags?`: [DrawMatchesFlags](_types_opencv_features2d_draw_.md#drawmatchesflags)): *void*
 
+*Defined in [types/opencv/features2d_draw.ts:56](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/features2d_draw.ts#L56)*
+
 This function draws matches of keypoints from two images in the output image. Match is a line
 connecting two keypoints (circles). See [cv::DrawMatchesFlags].
 
@@ -110,6 +124,8 @@ Name | Type | Description |
 **Returns:** *void*
 
 ▸ **drawMatches**(`img1`: InputArray, `keypoints1`: any, `img2`: InputArray, `keypoints2`: any, `matches1to2`: any, `outImg`: InputOutputArray, `matchColor?`: any, `singlePointColor?`: any, `matchesMask?`: any, `flags?`: [DrawMatchesFlags](_types_opencv_features2d_draw_.md#drawmatchesflags)): *void*
+
+*Defined in [types/opencv/features2d_draw.ts:62](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/features2d_draw.ts#L62)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.

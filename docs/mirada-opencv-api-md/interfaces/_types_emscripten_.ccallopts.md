@@ -19,3 +19,5 @@
 ### `Optional` async
 
 • **async**? : *undefined | false | true*
+
+*Defined in [types/emscripten.ts:179](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/emscripten.ts#L179)*

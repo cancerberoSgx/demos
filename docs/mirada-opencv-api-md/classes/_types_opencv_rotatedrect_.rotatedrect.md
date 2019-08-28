@@ -61,6 +61,8 @@ Source:
 
 \+ **new RotatedRect**(): *[RotatedRect](_types_opencv_rotatedrect_.rotatedrect.md)*
 
+*Defined in [types/opencv/RotatedRect.ts:41](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/RotatedRect.ts#L41)*
+
   full constructor
   Any 3 end points of the [RotatedRect]. They must be given in order (either clockwise or
 anticlockwise).
@@ -68,6 +70,8 @@ anticlockwise).
 **Returns:** *[RotatedRect](_types_opencv_rotatedrect_.rotatedrect.md)*
 
 \+ **new RotatedRect**(`center`: Point2f, `size`: Size2f, `angle`: [float](../modules/_types_opencv__hacks_.md#float)): *[RotatedRect](_types_opencv_rotatedrect_.rotatedrect.md)*
+
+*Defined in [types/opencv/RotatedRect.ts:43](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/RotatedRect.ts#L43)*
 
   full constructor
 
@@ -82,6 +86,8 @@ Name | Type | Description |
 **Returns:** *[RotatedRect](_types_opencv_rotatedrect_.rotatedrect.md)*
 
 \+ **new RotatedRect**(`point1`: Point2f, `point2`: Point2f, `point3`: Point2f): *[RotatedRect](_types_opencv_rotatedrect_.rotatedrect.md)*
+
+*Defined in [types/opencv/RotatedRect.ts:55](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/RotatedRect.ts#L55)*
 
   Any 3 end points of the [RotatedRect]. They must be given in order (either clockwise or
 anticlockwise).
@@ -102,11 +108,15 @@ Name | Type |
 
 • **angle**: *[float](../modules/_types_opencv__hacks_.md#float)*
 
+*Defined in [types/opencv/RotatedRect.ts:37](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/RotatedRect.ts#L37)*
+
 ___
 
 ###  center
 
 • **center**: *Point2f*
+
+*Defined in [types/opencv/RotatedRect.ts:39](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/RotatedRect.ts#L39)*
 
 ___
 
@@ -114,11 +124,15 @@ ___
 
 • **size**: *Size2f*
 
+*Defined in [types/opencv/RotatedRect.ts:41](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/RotatedRect.ts#L41)*
+
 ## Methods
 
 ###  boundingRect
 
 ▸ **boundingRect**(): *[Rect](_types_opencv__hacks_.rect.md)*
+
+*Defined in [types/opencv/RotatedRect.ts:63](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/RotatedRect.ts#L63)*
 
 **Returns:** *[Rect](_types_opencv__hacks_.rect.md)*
 
@@ -128,6 +142,8 @@ ___
 
 ▸ **boundingRect2f**(): *Rect_*
 
+*Defined in [types/opencv/RotatedRect.ts:65](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/RotatedRect.ts#L65)*
+
 **Returns:** *Rect_*
 
 ___
@@ -135,6 +151,8 @@ ___
 ###  points
 
 ▸ **points**(`pts`: Point2f): *Point2f*
+
+*Defined in [types/opencv/RotatedRect.ts:73](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/RotatedRect.ts#L73)*
 
   returns 4 vertices of the rectangle
 

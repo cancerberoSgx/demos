@@ -26,11 +26,15 @@
 
 • **AUTO_STEP**: *any*
 
+*Defined in [types/opencv/Mat.ts:1834](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/Mat.ts#L1834)*
+
 ___
 
 ### `Const` CONTINUOUS_FLAG
 
 • **CONTINUOUS_FLAG**: *any*
+
+*Defined in [types/opencv/Mat.ts:1836](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/Mat.ts#L1836)*
 
 ___
 
@@ -38,11 +42,15 @@ ___
 
 • **DEPTH_MASK**: *any*
 
+*Defined in [types/opencv/Mat.ts:1844](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/Mat.ts#L1844)*
+
 ___
 
 ### `Const` MAGIC_MASK
 
 • **MAGIC_MASK**: *any*
+
+*Defined in [types/opencv/Mat.ts:1840](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/Mat.ts#L1840)*
 
 ___
 
@@ -50,14 +58,20 @@ ___
 
 • **MAGIC_VAL**: *any*
 
+*Defined in [types/opencv/Mat.ts:1832](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/Mat.ts#L1832)*
+
 ___
 
 ### `Const` SUBMATRIX_FLAG
 
 • **SUBMATRIX_FLAG**: *any*
 
+*Defined in [types/opencv/Mat.ts:1838](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/Mat.ts#L1838)*
+
 ___
 
 ### `Const` TYPE_MASK
 
 • **TYPE_MASK**: *any*
+
+*Defined in [types/opencv/Mat.ts:1842](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/Mat.ts#L1842)*

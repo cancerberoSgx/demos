@@ -41,6 +41,8 @@ Source:
 
 \+ **new FlannBasedMatcher**(`indexParams?`: [Ptr](../modules/_types_opencv__hacks_.md#ptr), `searchParams?`: [Ptr](../modules/_types_opencv__hacks_.md#ptr)): *[FlannBasedMatcher](_types_opencv_flannbasedmatcher_.flannbasedmatcher.md)*
 
+*Defined in [types/opencv/FlannBasedMatcher.ts:16](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/FlannBasedMatcher.ts#L16)*
+
 **Parameters:**
 
 Name | Type |
@@ -55,6 +57,8 @@ Name | Type |
 ###  add
 
 ▸ **add**(`descriptors`: InputArrayOfArrays): *InputArrayOfArrays*
+
+*Defined in [types/opencv/FlannBasedMatcher.ts:26](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/FlannBasedMatcher.ts#L26)*
 
   If the collection is not empty, the new descriptors are added to existing train descriptors.
 
@@ -72,6 +76,8 @@ ___
 
 ▸ **clear**(): *void*
 
+*Defined in [types/opencv/FlannBasedMatcher.ts:28](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/FlannBasedMatcher.ts#L28)*
+
 **Returns:** *void*
 
 ___
@@ -79,6 +85,8 @@ ___
 ###  clone
 
 ▸ **clone**(`emptyTrainData?`: [bool](../modules/_types_opencv__hacks_.md#bool)): *[Ptr](../modules/_types_opencv__hacks_.md#ptr)*
+
+*Defined in [types/opencv/FlannBasedMatcher.ts:35](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/FlannBasedMatcher.ts#L35)*
 
 **Parameters:**
 
@@ -94,6 +102,8 @@ ___
 
 ▸ **isMaskSupported**(): *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
+*Defined in [types/opencv/FlannBasedMatcher.ts:37](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/FlannBasedMatcher.ts#L37)*
+
 **Returns:** *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
 ___
@@ -101,6 +111,8 @@ ___
 ###  read
 
 ▸ **read**(`fn`: [FileNode](../modules/_types_opencv__hacks_.md#filenode)): *[FileNode](../modules/_types_opencv__hacks_.md#filenode)*
+
+*Defined in [types/opencv/FlannBasedMatcher.ts:39](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/FlannBasedMatcher.ts#L39)*
 
 **Parameters:**
 
@@ -116,6 +128,8 @@ ___
 
 ▸ **train**(): *void*
 
+*Defined in [types/opencv/FlannBasedMatcher.ts:47](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/FlannBasedMatcher.ts#L47)*
+
   Trains a descriptor matcher (for example, the flann index). In all methods to match, the method
 [train()] is run every time before matching. Some descriptor matchers (for example,
 BruteForceMatcher) have an empty implementation of this method. Other matchers really train their
@@ -128,6 +142,8 @@ ___
 ###  write
 
 ▸ **write**(`fs`: [FileStorage](../modules/_types_opencv__hacks_.md#filestorage)): *[FileStorage](../modules/_types_opencv__hacks_.md#filestorage)*
+
+*Defined in [types/opencv/FlannBasedMatcher.ts:49](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/FlannBasedMatcher.ts#L49)*
 
 **Parameters:**
 
@@ -142,5 +158,7 @@ ___
 ### `Static` create
 
 ▸ **create**(): *[Ptr](../modules/_types_opencv__hacks_.md#ptr)*
+
+*Defined in [types/opencv/FlannBasedMatcher.ts:51](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/FlannBasedMatcher.ts#L51)*
 
 **Returns:** *[Ptr](../modules/_types_opencv__hacks_.md#ptr)*

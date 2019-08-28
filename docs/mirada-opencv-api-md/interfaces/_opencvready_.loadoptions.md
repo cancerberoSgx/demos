@@ -22,6 +22,8 @@
 
 • **cwd**? : *undefined | string*
 
+*Defined in [opencvReady.ts:24](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/opencvReady.ts#L24)*
+
 node.js : current working dir. By default is '.'
 
 ___
@@ -30,8 +32,12 @@ ___
 
 • **onloadCallback**? : *undefined | function*
 
+*Defined in [opencvReady.ts:19](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/opencvReady.ts#L19)*
+
 ___
 
 ### `Optional` opencvUrl
 
 • **opencvUrl**? : *undefined | string*
+
+*Defined in [opencvReady.ts:20](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/opencvReady.ts#L20)*

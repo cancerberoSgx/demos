@@ -17,6 +17,8 @@
 
 ▸ **buildError**(`e`: any): *Error*
 
+*Defined in [util/misc.ts:4](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/util/misc.ts#L4)*
+
 **Parameters:**
 
 Name | Type |
@@ -30,6 +32,8 @@ ___
 ###  resolveNodeModule
 
 ▸ **resolveNodeModule**(`p`: string): *string*
+
+*Defined in [util/misc.ts:12](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/util/misc.ts#L12)*
 
 **Parameters:**
 

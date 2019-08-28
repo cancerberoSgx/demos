@@ -26,6 +26,8 @@
 
 Ƭ **SpeedLevel**: *any*
 
+*Defined in [types/opencv/LshTable.ts:83](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/LshTable.ts#L83)*
+
 defines the speed fo the implementation kArray uses a vector for storing data kBitsetHash uses a
 hash map but checks for the validity of a key with a bitset kHash uses a hash map only
 
@@ -35,14 +37,20 @@ hash map but checks for the validity of a key with a bitset kHash uses a hash ma
 
 • **kArray**: *[SpeedLevel](_types_opencv_lshtable_.md#speedlevel)*
 
+*Defined in [types/opencv/LshTable.ts:72](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/LshTable.ts#L72)*
+
 ___
 
 ### `Const` kBitsetHash
 
 • **kBitsetHash**: *[SpeedLevel](_types_opencv_lshtable_.md#speedlevel)*
 
+*Defined in [types/opencv/LshTable.ts:74](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/LshTable.ts#L74)*
+
 ___
 
 ### `Const` kHash
 
 • **kHash**: *[SpeedLevel](_types_opencv_lshtable_.md#speedlevel)*
+
+*Defined in [types/opencv/LshTable.ts:76](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/LshTable.ts#L76)*

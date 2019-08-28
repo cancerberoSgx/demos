@@ -28,11 +28,15 @@
 
 Ƭ **DescriptorStorageFormat**: *any*
 
+*Defined in [types/opencv/HOGDescriptor.ts:310](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L310)*
+
 ___
 
 ###  HistogramNormType
 
 Ƭ **HistogramNormType**: *any*
+
+*Defined in [types/opencv/HOGDescriptor.ts:312](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L312)*
 
 ## Variables
 
@@ -40,11 +44,15 @@ ___
 
 • **DEFAULT_NLEVELS**: *any*
 
+*Defined in [types/opencv/HOGDescriptor.ts:302](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L302)*
+
 ___
 
 ### `Const` DESCR_FORMAT_COL_BY_COL
 
 • **DESCR_FORMAT_COL_BY_COL**: *[DescriptorStorageFormat](_types_opencv_hogdescriptor_.md#descriptorstorageformat)*
+
+*Defined in [types/opencv/HOGDescriptor.ts:304](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L304)*
 
 ___
 
@@ -52,8 +60,12 @@ ___
 
 • **DESCR_FORMAT_ROW_BY_ROW**: *[DescriptorStorageFormat](_types_opencv_hogdescriptor_.md#descriptorstorageformat)*
 
+*Defined in [types/opencv/HOGDescriptor.ts:306](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L306)*
+
 ___
 
 ### `Const` L2Hys
 
 • **L2Hys**: *[HistogramNormType](_types_opencv_hogdescriptor_.md#histogramnormtype)*
+
+*Defined in [types/opencv/HOGDescriptor.ts:308](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L308)*

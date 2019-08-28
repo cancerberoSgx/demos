@@ -21,6 +21,8 @@
 
 Ƭ **AnyConstructor**: *object*
 
+*Defined in [format/jimpCodec.ts:4](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/format/jimpCodec.ts#L4)*
+
 #### Type declaration:
 
 * \[ **a**: *string*\]: any
@@ -32,3 +34,5 @@ ___
 ###  Jimp
 
 Ƭ **Jimp**: *[AnyConstructor](_format_jimpcodec_.md#anyconstructor)*
+
+*Defined in [format/jimpCodec.ts:8](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/format/jimpCodec.ts#L8)*

@@ -59,6 +59,8 @@
 
 Ƭ **HersheyFonts**: *any*
 
+*Defined in [types/opencv/imgproc_draw.ts:550](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L550)*
+
 Only a subset of Hershey fonts  are supported
 
 ___
@@ -66,6 +68,8 @@ ___
 ###  LineTypes
 
 Ƭ **LineTypes**: *any*
+
+*Defined in [types/opencv/imgproc_draw.ts:556](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L556)*
 
 Only a subset of Hershey fonts  are supported
 
@@ -75,6 +79,8 @@ ___
 
 Ƭ **MarkerTypes**: *any*
 
+*Defined in [types/opencv/imgproc_draw.ts:562](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L562)*
+
 Only a subset of Hershey fonts  are supported
 
 ## Variables
@@ -83,11 +89,15 @@ Only a subset of Hershey fonts  are supported
 
 • **FILLED**: *[LineTypes](_types_opencv_imgproc_draw_.md#linetypes)*
 
+*Defined in [types/opencv/imgproc_draw.ts:524](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L524)*
+
 ___
 
 ### `Const` FONT_HERSHEY_COMPLEX
 
 • **FONT_HERSHEY_COMPLEX**: *[HersheyFonts](_types_opencv_imgproc_draw_.md#hersheyfonts)*
+
+*Defined in [types/opencv/imgproc_draw.ts:512](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L512)*
 
 ___
 
@@ -95,11 +105,15 @@ ___
 
 • **FONT_HERSHEY_COMPLEX_SMALL**: *[HersheyFonts](_types_opencv_imgproc_draw_.md#hersheyfonts)*
 
+*Defined in [types/opencv/imgproc_draw.ts:516](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L516)*
+
 ___
 
 ### `Const` FONT_HERSHEY_DUPLEX
 
 • **FONT_HERSHEY_DUPLEX**: *[HersheyFonts](_types_opencv_imgproc_draw_.md#hersheyfonts)*
+
+*Defined in [types/opencv/imgproc_draw.ts:510](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L510)*
 
 ___
 
@@ -107,11 +121,15 @@ ___
 
 • **FONT_HERSHEY_PLAIN**: *[HersheyFonts](_types_opencv_imgproc_draw_.md#hersheyfonts)*
 
+*Defined in [types/opencv/imgproc_draw.ts:508](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L508)*
+
 ___
 
 ### `Const` FONT_HERSHEY_SCRIPT_COMPLEX
 
 • **FONT_HERSHEY_SCRIPT_COMPLEX**: *[HersheyFonts](_types_opencv_imgproc_draw_.md#hersheyfonts)*
+
+*Defined in [types/opencv/imgproc_draw.ts:520](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L520)*
 
 ___
 
@@ -119,11 +137,15 @@ ___
 
 • **FONT_HERSHEY_SCRIPT_SIMPLEX**: *[HersheyFonts](_types_opencv_imgproc_draw_.md#hersheyfonts)*
 
+*Defined in [types/opencv/imgproc_draw.ts:518](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L518)*
+
 ___
 
 ### `Const` FONT_HERSHEY_SIMPLEX
 
 • **FONT_HERSHEY_SIMPLEX**: *[HersheyFonts](_types_opencv_imgproc_draw_.md#hersheyfonts)*
+
+*Defined in [types/opencv/imgproc_draw.ts:506](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L506)*
 
 ___
 
@@ -131,11 +153,15 @@ ___
 
 • **FONT_HERSHEY_TRIPLEX**: *[HersheyFonts](_types_opencv_imgproc_draw_.md#hersheyfonts)*
 
+*Defined in [types/opencv/imgproc_draw.ts:514](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L514)*
+
 ___
 
 ### `Const` FONT_ITALIC
 
 • **FONT_ITALIC**: *[HersheyFonts](_types_opencv_imgproc_draw_.md#hersheyfonts)*
+
+*Defined in [types/opencv/imgproc_draw.ts:522](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L522)*
 
 ___
 
@@ -143,11 +169,15 @@ ___
 
 • **LINE_4**: *[LineTypes](_types_opencv_imgproc_draw_.md#linetypes)*
 
+*Defined in [types/opencv/imgproc_draw.ts:526](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L526)*
+
 ___
 
 ### `Const` LINE_8
 
 • **LINE_8**: *[LineTypes](_types_opencv_imgproc_draw_.md#linetypes)*
+
+*Defined in [types/opencv/imgproc_draw.ts:528](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L528)*
 
 ___
 
@@ -155,11 +185,15 @@ ___
 
 • **LINE_AA**: *[LineTypes](_types_opencv_imgproc_draw_.md#linetypes)*
 
+*Defined in [types/opencv/imgproc_draw.ts:530](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L530)*
+
 ___
 
 ### `Const` MARKER_CROSS
 
 • **MARKER_CROSS**: *[MarkerTypes](_types_opencv_imgproc_draw_.md#markertypes)*
+
+*Defined in [types/opencv/imgproc_draw.ts:532](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L532)*
 
 ___
 
@@ -167,11 +201,15 @@ ___
 
 • **MARKER_DIAMOND**: *[MarkerTypes](_types_opencv_imgproc_draw_.md#markertypes)*
 
+*Defined in [types/opencv/imgproc_draw.ts:538](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L538)*
+
 ___
 
 ### `Const` MARKER_SQUARE
 
 • **MARKER_SQUARE**: *[MarkerTypes](_types_opencv_imgproc_draw_.md#markertypes)*
+
+*Defined in [types/opencv/imgproc_draw.ts:540](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L540)*
 
 ___
 
@@ -179,11 +217,15 @@ ___
 
 • **MARKER_STAR**: *[MarkerTypes](_types_opencv_imgproc_draw_.md#markertypes)*
 
+*Defined in [types/opencv/imgproc_draw.ts:536](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L536)*
+
 ___
 
 ### `Const` MARKER_TILTED_CROSS
 
 • **MARKER_TILTED_CROSS**: *[MarkerTypes](_types_opencv_imgproc_draw_.md#markertypes)*
+
+*Defined in [types/opencv/imgproc_draw.ts:534](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L534)*
 
 ___
 
@@ -191,17 +233,23 @@ ___
 
 • **MARKER_TRIANGLE_DOWN**: *[MarkerTypes](_types_opencv_imgproc_draw_.md#markertypes)*
 
+*Defined in [types/opencv/imgproc_draw.ts:544](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L544)*
+
 ___
 
 ### `Const` MARKER_TRIANGLE_UP
 
 • **MARKER_TRIANGLE_UP**: *[MarkerTypes](_types_opencv_imgproc_draw_.md#markertypes)*
 
+*Defined in [types/opencv/imgproc_draw.ts:542](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L542)*
+
 ## Functions
 
 ###  arrowedLine
 
 ▸ **arrowedLine**(`img`: InputOutputArray, `pt1`: [Point](../classes/_types_opencv__hacks_.point.md), `pt2`: [Point](../classes/_types_opencv__hacks_.point.md), `color`: any, `thickness?`: [int](_types_opencv__hacks_.md#int), `line_type?`: [int](_types_opencv__hacks_.md#int), `shift?`: [int](_types_opencv__hacks_.md#int), `tipLength?`: [double](_types_opencv__hacks_.md#double)): *void*
+
+*Defined in [types/opencv/imgproc_draw.ts:37](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L37)*
 
 The function [cv::arrowedLine] draws an arrow between pt1 and pt2 points in the image. See also
 [line].
@@ -227,6 +275,8 @@ ___
 
 ▸ **circle**(`img`: InputOutputArray, `center`: [Point](../classes/_types_opencv__hacks_.point.md), `radius`: [int](_types_opencv__hacks_.md#int), `color`: any, `thickness?`: [int](_types_opencv__hacks_.md#int), `lineType?`: [int](_types_opencv__hacks_.md#int), `shift?`: [int](_types_opencv__hacks_.md#int)): *void*
 
+*Defined in [types/opencv/imgproc_draw.ts:57](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L57)*
+
 The function [cv::circle] draws a simple or filled circle with a given center and radius.
 
 **Parameters:**
@@ -249,6 +299,8 @@ ___
 
 ▸ **clipLine**(`imgSize`: [Size](../classes/_types_opencv__hacks_.size.md), `pt1`: any, `pt2`: any): *[bool](_types_opencv__hacks_.md#bool)*
 
+*Defined in [types/opencv/imgproc_draw.ts:70](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L70)*
+
 The function [cv::clipLine] calculates a part of the line segment that is entirely within the
 specified rectangle. it returns false if the line segment is completely outside the rectangle.
 Otherwise, it returns true .
@@ -265,6 +317,8 @@ Name | Type | Description |
 
 ▸ **clipLine**(`imgSize`: Size2l, `pt1`: any, `pt2`: any): *[bool](_types_opencv__hacks_.md#bool)*
 
+*Defined in [types/opencv/imgproc_draw.ts:82](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L82)*
+
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
 
@@ -279,6 +333,8 @@ Name | Type | Description |
 **Returns:** *[bool](_types_opencv__hacks_.md#bool)*
 
 ▸ **clipLine**(`imgRect`: [Rect](../classes/_types_opencv__hacks_.rect.md), `pt1`: any, `pt2`: any): *[bool](_types_opencv__hacks_.md#bool)*
+
+*Defined in [types/opencv/imgproc_draw.ts:94](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L94)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -298,6 +354,8 @@ ___
 ###  drawContours
 
 ▸ **drawContours**(`image`: InputOutputArray, `contours`: InputArrayOfArrays, `contourIdx`: [int](_types_opencv__hacks_.md#int), `color`: any, `thickness?`: [int](_types_opencv__hacks_.md#int), `lineType?`: [int](_types_opencv__hacks_.md#int), `hierarchy?`: InputArray, `maxLevel?`: [int](_types_opencv__hacks_.md#int), `offset?`: [Point](../classes/_types_opencv__hacks_.point.md)): *void*
+
+*Defined in [types/opencv/imgproc_draw.ts:175](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L175)*
 
 The function draws contour outlines in the image if `$\\texttt{thickness} \\ge 0$` or fills the area
 bounded by the contours if `$\\texttt{thickness}<0$` . The example below shows how to retrieve
@@ -374,6 +432,8 @@ ___
 
 ▸ **drawMarker**(`img`: InputOutputArray, `position`: [Point](../classes/_types_opencv__hacks_.point.md), `color`: any, `markerType?`: [int](_types_opencv__hacks_.md#int), `markerSize?`: [int](_types_opencv__hacks_.md#int), `thickness?`: [int](_types_opencv__hacks_.md#int), `line_type?`: [int](_types_opencv__hacks_.md#int)): *void*
 
+*Defined in [types/opencv/imgproc_draw.ts:195](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L195)*
+
 The function [cv::drawMarker] draws a marker on a given position in the image. For the moment
 several marker types are supported, see [MarkerTypes] for more information.
 
@@ -396,6 +456,8 @@ ___
 ###  ellipse
 
 ▸ **ellipse**(`img`: InputOutputArray, `center`: [Point](../classes/_types_opencv__hacks_.point.md), `axes`: [Size](../classes/_types_opencv__hacks_.size.md), `angle`: [double](_types_opencv__hacks_.md#double), `startAngle`: [double](_types_opencv__hacks_.md#double), `endAngle`: [double](_types_opencv__hacks_.md#double), `color`: any, `thickness?`: [int](_types_opencv__hacks_.md#int), `lineType?`: [int](_types_opencv__hacks_.md#int), `shift?`: [int](_types_opencv__hacks_.md#int)): *void*
+
+*Defined in [types/opencv/imgproc_draw.ts:228](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L228)*
 
 The function [cv::ellipse] with more parameters draws an ellipse outline, a filled ellipse, an
 elliptic arc, or a filled ellipse sector. The drawing code uses general parametric form. A
@@ -425,6 +487,8 @@ Name | Type | Description |
 
 ▸ **ellipse**(`img`: InputOutputArray, `box`: any, `color`: any, `thickness?`: [int](_types_opencv__hacks_.md#int), `lineType?`: [int](_types_opencv__hacks_.md#int)): *void*
 
+*Defined in [types/opencv/imgproc_draw.ts:246](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L246)*
+
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
 
@@ -446,6 +510,8 @@ ___
 
 ▸ **ellipse2Poly**(`center`: [Point](../classes/_types_opencv__hacks_.point.md), `axes`: [Size](../classes/_types_opencv__hacks_.size.md), `angle`: [int](_types_opencv__hacks_.md#int), `arcStart`: [int](_types_opencv__hacks_.md#int), `arcEnd`: [int](_types_opencv__hacks_.md#int), `delta`: [int](_types_opencv__hacks_.md#int), `pts`: any): *void*
 
+*Defined in [types/opencv/imgproc_draw.ts:266](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L266)*
+
 The function ellipse2Poly computes the vertices of a polyline that approximates the specified
 elliptic arc. It is used by [ellipse]. If `arcStart` is greater than `arcEnd`, they are swapped.
 
@@ -464,6 +530,8 @@ Name | Type | Description |
 **Returns:** *void*
 
 ▸ **ellipse2Poly**(`center`: Point2d, `axes`: Size2d, `angle`: [int](_types_opencv__hacks_.md#int), `arcStart`: [int](_types_opencv__hacks_.md#int), `arcEnd`: [int](_types_opencv__hacks_.md#int), `delta`: [int](_types_opencv__hacks_.md#int), `pts`: any): *void*
+
+*Defined in [types/opencv/imgproc_draw.ts:286](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L286)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -488,6 +556,8 @@ ___
 
 ▸ **fillConvexPoly**(`img`: InputOutputArray, `pts`: any, `npts`: [int](_types_opencv__hacks_.md#int), `color`: any, `lineType?`: [int](_types_opencv__hacks_.md#int), `shift?`: [int](_types_opencv__hacks_.md#int)): *void*
 
+*Defined in [types/opencv/imgproc_draw.ts:292](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L292)*
+
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
 
@@ -505,6 +575,8 @@ Name | Type |
 **Returns:** *void*
 
 ▸ **fillConvexPoly**(`img`: InputOutputArray, `points`: InputArray, `color`: any, `lineType?`: [int](_types_opencv__hacks_.md#int), `shift?`: [int](_types_opencv__hacks_.md#int)): *void*
+
+*Defined in [types/opencv/imgproc_draw.ts:310](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L310)*
 
 The function [cv::fillConvexPoly] draws a filled convex polygon. This function is much faster than
 the function [fillPoly] . It can fill not only convex polygons but any monotonic polygon without
@@ -529,6 +601,8 @@ ___
 
 ▸ **fillPoly**(`img`: InputOutputArray, `pts`: any, `npts`: any, `ncontours`: [int](_types_opencv__hacks_.md#int), `color`: any, `lineType?`: [int](_types_opencv__hacks_.md#int), `shift?`: [int](_types_opencv__hacks_.md#int), `offset?`: [Point](../classes/_types_opencv__hacks_.point.md)): *void*
 
+*Defined in [types/opencv/imgproc_draw.ts:316](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L316)*
+
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
 
@@ -548,6 +622,8 @@ Name | Type |
 **Returns:** *void*
 
 ▸ **fillPoly**(`img`: InputOutputArray, `pts`: InputArrayOfArrays, `color`: any, `lineType?`: [int](_types_opencv__hacks_.md#int), `shift?`: [int](_types_opencv__hacks_.md#int), `offset?`: [Point](../classes/_types_opencv__hacks_.point.md)): *void*
+
+*Defined in [types/opencv/imgproc_draw.ts:335](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L335)*
 
 The function [cv::fillPoly] fills an area bounded by several polygonal contours. The function can
 fill complex areas, for example, areas with holes, contours with self-intersections (some of their
@@ -572,6 +648,8 @@ ___
 
 ▸ **getFontScaleFromHeight**(`fontFace`: any, `pixelHeight`: any, `thickness?`: any): *[double](_types_opencv__hacks_.md#double)*
 
+*Defined in [types/opencv/imgproc_draw.ts:348](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L348)*
+
 The fontSize to use for [cv::putText]
 
 [cv::putText]
@@ -591,6 +669,8 @@ ___
 ###  getTextSize
 
 ▸ **getTextSize**(`text`: any, `fontFace`: [int](_types_opencv__hacks_.md#int), `fontScale`: [double](_types_opencv__hacks_.md#double), `thickness`: [int](_types_opencv__hacks_.md#int), `baseLine`: any): *[Size](../classes/_types_opencv__hacks_.size.md)*
+
+*Defined in [types/opencv/imgproc_draw.ts:400](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L400)*
 
 The function [cv::getTextSize] calculates and returns the size of a box that contains the specified
 text. That is, the following code renders some text, the tight box surrounding it, and the baseline:
@@ -649,6 +729,8 @@ ___
 
 ▸ **line**(`img`: InputOutputArray, `pt1`: [Point](../classes/_types_opencv__hacks_.point.md), `pt2`: [Point](../classes/_types_opencv__hacks_.point.md), `color`: any, `thickness?`: [int](_types_opencv__hacks_.md#int), `lineType?`: [int](_types_opencv__hacks_.md#int), `shift?`: [int](_types_opencv__hacks_.md#int)): *void*
 
+*Defined in [types/opencv/imgproc_draw.ts:422](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L422)*
+
 The function line draws the line segment between pt1 and pt2 points in the image. The line is
 clipped by the image boundaries. For non-antialiased lines with integer coordinates, the 8-connected
 or 4-connected Bresenham algorithm is used. Thick lines are drawn with rounding endings. Antialiased
@@ -674,6 +756,8 @@ ___
 
 ▸ **polylines**(`img`: InputOutputArray, `pts`: any, `npts`: any, `ncontours`: [int](_types_opencv__hacks_.md#int), `isClosed`: [bool](_types_opencv__hacks_.md#bool), `color`: any, `thickness?`: [int](_types_opencv__hacks_.md#int), `lineType?`: [int](_types_opencv__hacks_.md#int), `shift?`: [int](_types_opencv__hacks_.md#int)): *void*
 
+*Defined in [types/opencv/imgproc_draw.ts:428](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L428)*
+
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
 
@@ -694,6 +778,8 @@ Name | Type |
 **Returns:** *void*
 
 ▸ **polylines**(`img`: InputOutputArray, `pts`: InputArrayOfArrays, `isClosed`: [bool](_types_opencv__hacks_.md#bool), `color`: any, `thickness?`: [int](_types_opencv__hacks_.md#int), `lineType?`: [int](_types_opencv__hacks_.md#int), `shift?`: [int](_types_opencv__hacks_.md#int)): *void*
+
+*Defined in [types/opencv/imgproc_draw.ts:448](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L448)*
 
 The function [cv::polylines] draws one or more polygonal curves.
 
@@ -716,6 +802,8 @@ ___
 ###  putText
 
 ▸ **putText**(`img`: InputOutputArray, `text`: any, `org`: [Point](../classes/_types_opencv__hacks_.point.md), `fontFace`: [int](_types_opencv__hacks_.md#int), `fontScale`: [double](_types_opencv__hacks_.md#double), `color`: [Scalar](../classes/_types_opencv__hacks_.scalar.md), `thickness?`: [int](_types_opencv__hacks_.md#int), `lineType?`: [int](_types_opencv__hacks_.md#int), `bottomLeftOrigin?`: [bool](_types_opencv__hacks_.md#bool)): *void*
+
+*Defined in [types/opencv/imgproc_draw.ts:474](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L474)*
 
 The function [cv::putText] renders the specified text string in the image. Symbols that cannot be
 rendered using the specified font are replaced by question marks. See [getTextSize] for a text
@@ -743,6 +831,8 @@ ___
 
 ▸ **rectangle**(`img`: InputOutputArray, `pt1`: [Point](../classes/_types_opencv__hacks_.point.md), `pt2`: [Point](../classes/_types_opencv__hacks_.point.md), `color`: any, `thickness?`: [int](_types_opencv__hacks_.md#int), `lineType?`: [int](_types_opencv__hacks_.md#int), `shift?`: [int](_types_opencv__hacks_.md#int)): *void*
 
+*Defined in [types/opencv/imgproc_draw.ts:495](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L495)*
+
 The function [cv::rectangle] draws a rectangle outline or a filled rectangle whose two opposite
 corners are pt1 and pt2.
 
@@ -761,6 +851,8 @@ Name | Type | Description |
 **Returns:** *void*
 
 ▸ **rectangle**(`img`: InputOutputArray, `rec`: [Rect](../classes/_types_opencv__hacks_.rect.md), `color`: any, `thickness?`: [int](_types_opencv__hacks_.md#int), `lineType?`: [int](_types_opencv__hacks_.md#int), `shift?`: [int](_types_opencv__hacks_.md#int)): *void*
+
+*Defined in [types/opencv/imgproc_draw.ts:504](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/imgproc_draw.ts#L504)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.

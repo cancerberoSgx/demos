@@ -44,11 +44,15 @@
 
 *Inherited from [Rect](_types_opencv__hacks_.rect.md).[constructor](_types_opencv__hacks_.rect.md#constructor)*
 
+*Defined in [types/opencv/_hacks.ts:38](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/_hacks.ts#L38)*
+
 **Returns:** *[RectVector](_types_opencv__hacks_.rectvector.md)*
 
 \+ **new RectVector**(`point`: [Point](_types_opencv__hacks_.point.md), `size`: [Size](_types_opencv__hacks_.size.md)): *[RectVector](_types_opencv__hacks_.rectvector.md)*
 
 *Inherited from [Rect](_types_opencv__hacks_.rect.md).[constructor](_types_opencv__hacks_.rect.md#constructor)*
+
+*Defined in [types/opencv/_hacks.ts:39](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/_hacks.ts#L39)*
 
 **Parameters:**
 
@@ -62,6 +66,8 @@ Name | Type |
 \+ **new RectVector**(`x`: number, `y`: number, `width`: number, `height`: number): *[RectVector](_types_opencv__hacks_.rectvector.md)*
 
 *Inherited from [Rect](_types_opencv__hacks_.rect.md).[constructor](_types_opencv__hacks_.rect.md#constructor)*
+
+*Defined in [types/opencv/_hacks.ts:40](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/_hacks.ts#L40)*
 
 **Parameters:**
 
@@ -82,6 +88,8 @@ Name | Type |
 
 *Inherited from [Rect](_types_opencv__hacks_.rect.md).[height](_types_opencv__hacks_.rect.md#height)*
 
+*Defined in [types/opencv/_hacks.ts:45](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/_hacks.ts#L45)*
+
 ___
 
 ###  width
@@ -89,6 +97,8 @@ ___
 • **width**: *number*
 
 *Inherited from [Rect](_types_opencv__hacks_.rect.md).[width](_types_opencv__hacks_.rect.md#width)*
+
+*Defined in [types/opencv/_hacks.ts:44](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/_hacks.ts#L44)*
 
 ___
 
@@ -98,6 +108,8 @@ ___
 
 *Inherited from [Rect](_types_opencv__hacks_.rect.md).[x](_types_opencv__hacks_.rect.md#x)*
 
+*Defined in [types/opencv/_hacks.ts:42](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/_hacks.ts#L42)*
+
 ___
 
 ###  y
@@ -106,11 +118,15 @@ ___
 
 *Inherited from [Rect](_types_opencv__hacks_.rect.md).[y](_types_opencv__hacks_.rect.md#y)*
 
+*Defined in [types/opencv/_hacks.ts:43](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/_hacks.ts#L43)*
+
 ## Methods
 
 ###  delete
 
 ▸ **delete**(): *void*
+
+*Defined in [types/opencv/_hacks.ts:99](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/_hacks.ts#L99)*
 
 **Returns:** *void*
 
@@ -119,6 +135,8 @@ ___
 ###  get
 
 ▸ **get**(`i`: number): *[Rect](_types_opencv__hacks_.rect.md)*
+
+*Defined in [types/opencv/_hacks.ts:94](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/_hacks.ts#L94)*
 
 **Parameters:**
 
@@ -134,6 +152,8 @@ ___
 
 ▸ **push_back**(`n`: [Rect](_types_opencv__hacks_.rect.md)): *void*
 
+*Defined in [types/opencv/_hacks.ts:97](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/_hacks.ts#L97)*
+
 **Parameters:**
 
 Name | Type |
@@ -147,6 +167,8 @@ ___
 ###  resize
 
 ▸ **resize**(`count`: number, `value?`: [Rect](_types_opencv__hacks_.rect.md) | undefined): *void*
+
+*Defined in [types/opencv/_hacks.ts:98](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/_hacks.ts#L98)*
 
 **Parameters:**
 
@@ -163,6 +185,8 @@ ___
 
 ▸ **set**(`i`: number, `t`: [Rect](_types_opencv__hacks_.rect.md)): *void*
 
+*Defined in [types/opencv/_hacks.ts:95](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/_hacks.ts#L95)*
+
 **Parameters:**
 
 Name | Type |
@@ -177,5 +201,7 @@ ___
 ###  size
 
 ▸ **size**(): *number*
+
+*Defined in [types/opencv/_hacks.ts:96](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/_hacks.ts#L96)*
 
 **Returns:** *number*

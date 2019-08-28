@@ -21,6 +21,8 @@
 
 Ƭ **FormatProxy**: *[FormatProxyClass](../interfaces/_types_mirada_.formatproxyclass.md) | function | function*
 
+*Defined in [types/mirada.ts:12](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/mirada.ts#L12)*
+
 User provided image formats encode/decode implementation. The proxy is responsible of creating codec instances
 
 This is particularly useful in this library so it can actually contain the implementation of concrete Codecs (see [JimpCodec]) without actually being responsible of loading / instantiating the library which will have to be handled by a JimpProxy provided by a third party (test, playground/user) . In other words, mirada provides codecs implementations for several libraries and at the while keeping agnostic/independent
