@@ -1,6 +1,6 @@
 **[mirada](../README.md)**
 
-[Globals](../README.md) › ["file"](../modules/_file_.md) › [File](_file_.file.md)
+[Globals](../README.md) › ["File"](../modules/_file_.md) › [File](_file_.file.md)
 
 # Class: File
 
@@ -18,8 +18,14 @@ A thin layer on top of cv.Mat with lots of utilities to load, write, encode, etc
 
 ### Properties
 
-* [mat](_file_.file.md#protected-mat)
+* [_mat](_file_.file.md#protected-_mat)
 * [name](_file_.file.md#name)
+
+### Accessors
+
+* [height](_file_.file.md#height)
+* [mat](_file_.file.md#mat)
+* [width](_file_.file.md#width)
 
 ### Methods
 
@@ -56,26 +62,26 @@ A thin layer on top of cv.Mat with lots of utilities to load, write, encode, etc
 
 ###  constructor
 
-\+ **new File**(`name`: string, `mat`: [Mat](_types_opencv_mat_.mat.md)): *[File](_file_.file.md)*
+\+ **new File**(`name`: string, `_mat`: [Mat](_types_opencv_mat_.mat.md)): *[File](_file_.file.md)*
 
-*Defined in [file.ts:14](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L14)*
+Defined in File.ts:14
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `name` | string |
-`mat` | [Mat](_types_opencv_mat_.mat.md) |
+`_mat` | [Mat](_types_opencv_mat_.mat.md) |
 
 **Returns:** *[File](_file_.file.md)*
 
 ## Properties
 
-### `Protected` mat
+### `Protected` _mat
 
-• **mat**: *[Mat](_types_opencv_mat_.mat.md)*
+• **_mat**: *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [file.ts:15](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L15)*
+Defined in File.ts:15
 
 ___
 
@@ -83,7 +89,37 @@ ___
 
 • **name**: *string*
 
-*Defined in [file.ts:15](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L15)*
+Defined in File.ts:15
+
+## Accessors
+
+###  height
+
+• **get height**(): *any*
+
+Defined in File.ts:50
+
+**Returns:** *any*
+
+___
+
+###  mat
+
+• **get mat**(): *[Mat](_types_opencv_mat_.mat.md)*
+
+Defined in File.ts:54
+
+**Returns:** *[Mat](_types_opencv_mat_.mat.md)*
+
+___
+
+###  width
+
+• **get width**(): *any*
+
+Defined in File.ts:46
+
+**Returns:** *any*
 
 ## Methods
 
@@ -91,7 +127,7 @@ ___
 
 ▸ **asArrayBuffer**(`format`: string): *Promise‹ArrayBuffer›*
 
-*Defined in [file.ts:49](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L49)*
+Defined in File.ts:61
 
 Returns an array buffer containing the image encoded in given format or inferring format from its name.
 
@@ -109,7 +145,7 @@ ___
 
 ▸ **asBase64**(`format`: string): *Promise‹string›*
 
-*Defined in [file.ts:71](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L71)*
+Defined in File.ts:80
 
 **Parameters:**
 
@@ -125,7 +161,7 @@ ___
 
 ▸ **asDataUrl**(): *string*
 
-*Defined in [file.ts:42](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L42)*
+Defined in File.ts:42
 
 **Returns:** *string*
 
@@ -135,7 +171,7 @@ ___
 
 ▸ **asImageData**(): *[ImageData](_types_opencv__hacks_.imagedata.md)*
 
-*Defined in [file.ts:38](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L38)*
+Defined in File.ts:38
 
 **Returns:** *[ImageData](_types_opencv__hacks_.imagedata.md)*
 
@@ -145,7 +181,7 @@ ___
 
 ▸ **asMat**(): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [file.ts:34](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L34)*
+Defined in File.ts:34
 
 **Returns:** *[Mat](_types_opencv_mat_.mat.md)*
 
@@ -155,7 +191,7 @@ ___
 
 ▸ **delete**(): *any*
 
-*Defined in [file.ts:76](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L76)*
+Defined in File.ts:85
 
 **Returns:** *any*
 
@@ -165,7 +201,7 @@ ___
 
 ▸ **getExtension**(): *string*
 
-*Defined in [file.ts:30](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L30)*
+Defined in File.ts:30
 
 **Returns:** *string*
 
@@ -175,7 +211,7 @@ ___
 
 ▸ **getMimeType**(): *undefined | string*
 
-*Defined in [file.ts:26](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L26)*
+Defined in File.ts:26
 
 **Returns:** *undefined | string*
 
@@ -185,7 +221,7 @@ ___
 
 ▸ **show**(`el`: HTMLElement): *void*
 
-*Defined in [file.ts:64](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L64)*
+Defined in File.ts:76
 
 Shows this image in given HTML canvas or image element.
 
@@ -203,13 +239,13 @@ ___
 
 ▸ **size**(): *object*
 
-*Defined in [file.ts:19](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L19)*
+Defined in File.ts:19
 
 **Returns:** *object*
 
-* **height**: *any* =  this.mat.rows
+* **height**: *any* =  this._mat.rows
 
-* **width**: *any* =  this.mat.cols
+* **width**: *any* =  this._mat.cols
 
 ___
 
@@ -217,7 +253,7 @@ ___
 
 ▸ **write**(`path`: string, `format`: string): *Promise‹void›*
 
-*Defined in [file.ts:56](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L56)*
+Defined in File.ts:68
 
 Writes this image on given file path, encoded in given format (or inferred form current name).
 
@@ -236,7 +272,7 @@ ___
 
 ▸ **_buildName**(`name`: string | undefined): *string*
 
-*Defined in [file.ts:190](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L190)*
+Defined in File.ts:206
 
 **Parameters:**
 
@@ -252,7 +288,7 @@ ___
 
 ▸ **asPath**(`f`: string | [File](_file_.file.md)): *string*
 
-*Defined in [file.ts:182](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L182)*
+Defined in File.ts:198
 
 **Parameters:**
 
@@ -268,7 +304,7 @@ ___
 
 ▸ **fromArrayBuffer**(`buffer`: ArrayBuffer, `name?`: undefined | string): *Promise‹[File](_file_.file.md)›*
 
-*Defined in [file.ts:91](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L91)*
+Defined in File.ts:100
 
 Loads file from given array buffer containing an encoded image.
 
@@ -287,7 +323,7 @@ ___
 
 ▸ **fromArrayBufferView**(`a`: ArrayBufferView, `name?`: undefined | string): *Promise‹[File](_file_.file.md)›*
 
-*Defined in [file.ts:99](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L99)*
+Defined in File.ts:115
 
 Loads file from given array buffer view containing an encoded image.
 
@@ -306,7 +342,7 @@ ___
 
 ▸ **fromBase64**(`base64`: string, `name?`: undefined | string): *Promise‹[File](_file_.file.md)›*
 
-*Defined in [file.ts:83](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L83)*
+Defined in File.ts:92
 
 Loads file from given base64 string containing an encoded image.
 
@@ -325,7 +361,7 @@ ___
 
 ▸ **fromCanvas**(`el`: HTMLElement | string): *[File](_file_.file.md)*
 
-*Defined in [file.ts:140](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L140)*
+Defined in File.ts:156
 
 Loads file form existing HTMLElement or HTMLImageElement
 
@@ -343,7 +379,7 @@ ___
 
 ▸ **fromData**(`data`: [ImageData](_types_opencv__hacks_.imagedata.md), `name?`: undefined | string): *[File](_file_.file.md)*
 
-*Defined in [file.ts:186](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L186)*
+Defined in File.ts:202
 
 **Parameters:**
 
@@ -360,7 +396,7 @@ ___
 
 ▸ **fromDataUrl**(`dataUrl`: string, `name?`: undefined | string): *Promise‹[File](_file_.file.md)›*
 
-*Defined in [file.ts:119](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L119)*
+Defined in File.ts:135
 
 Loads file from given data url string containing an encoded image.
 
@@ -379,7 +415,7 @@ ___
 
 ▸ **fromFile**(`path`: string, `o`: [FileOptions](../interfaces/_file_.fileoptions.md)): *Promise‹[File](_file_.file.md)›*
 
-*Defined in [file.ts:206](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L206)*
+Defined in File.ts:222
 
 **Parameters:**
 
@@ -396,7 +432,7 @@ ___
 
 ▸ **fromHtmlFileInputElement**(`el`: HTMLInputElement): *Promise‹[File](_file_.file.md)[]›*
 
-*Defined in [file.ts:126](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L126)*
+Defined in File.ts:142
 
 Loads files from files in html input element of type "file".
 
@@ -414,7 +450,7 @@ ___
 
 ▸ **fromMat**(`mat`: [Mat](_types_opencv_mat_.mat.md), `name?`: undefined | string): *[File](_file_.file.md)*
 
-*Defined in [file.ts:194](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L194)*
+Defined in File.ts:210
 
 **Parameters:**
 
@@ -431,7 +467,7 @@ ___
 
 ▸ **fromUrl**(`url`: string, `o`: RequestInit & [FileOptions](../interfaces/_file_.fileoptions.md)): *Promise‹[File](_file_.file.md)›*
 
-*Defined in [file.ts:198](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L198)*
+Defined in File.ts:214
 
 **Parameters:**
 
@@ -448,7 +484,7 @@ ___
 
 ▸ **getBufferFileName**(`a`: ArrayBuffer): *string*
 
-*Defined in [file.ts:111](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L111)*
+Defined in File.ts:127
 
 **Parameters:**
 
@@ -464,7 +500,7 @@ ___
 
 ▸ **getBufferFileType**(`a`: ArrayBuffer): *FileTypeResult*
 
-*Defined in [file.ts:103](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L103)*
+Defined in File.ts:119
 
 **Parameters:**
 
@@ -480,7 +516,7 @@ ___
 
 ▸ **isFile**(`f`: any): *boolean*
 
-*Defined in [file.ts:177](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L177)*
+Defined in File.ts:193
 
 **Parameters:**
 
@@ -496,7 +532,7 @@ ___
 
 ▸ **resolve**(`files`: string | [File](_file_.file.md) | undefined | undefined | string | [File](_file_.file.md)[]): *Promise‹[File](_file_.file.md)[]›*
 
-*Defined in [file.ts:158](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L158)*
+Defined in File.ts:174
 
 Given paths, urls or files it will try to load them all and return a list of File for those succeed.
 
@@ -514,7 +550,7 @@ ___
 
 ▸ **resolveOne**(`files`: string | [File](_file_.file.md) | undefined | undefined | string | [File](_file_.file.md)[]): *Promise‹undefined | [File](_file_.file.md)›*
 
-*Defined in [file.ts:150](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/file.ts#L150)*
+Defined in File.ts:166
 
 Shortcut for [resolve] that returns the first result.
 

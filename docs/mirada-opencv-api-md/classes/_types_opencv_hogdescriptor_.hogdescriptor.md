@@ -66,7 +66,7 @@ Source:
 
 \+ **new HOGDescriptor**(): *[HOGDescriptor](_types_opencv_hogdescriptor_.hogdescriptor.md)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:43](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L43)*
+*Defined in [types/opencv/HOGDescriptor.ts:43](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L43)*
 
   aqual to [HOGDescriptor](Size(64,128), Size(16,16), Size(8,8), Size(8,8), 9 )
 
@@ -74,7 +74,7 @@ Source:
 
 \+ **new HOGDescriptor**(`_winSize`: [Size](_types_opencv__hacks_.size.md), `_blockSize`: [Size](_types_opencv__hacks_.size.md), `_blockStride`: [Size](_types_opencv__hacks_.size.md), `_cellSize`: [Size](_types_opencv__hacks_.size.md), `_nbins`: [int](../modules/_types_opencv__hacks_.md#int), `_derivAperture?`: [int](../modules/_types_opencv__hacks_.md#int), `_winSigma?`: [double](../modules/_types_opencv__hacks_.md#double), `_histogramNormType?`: any, `_L2HysThreshold?`: [double](../modules/_types_opencv__hacks_.md#double), `_gammaCorrection?`: [bool](../modules/_types_opencv__hacks_.md#bool), `_nlevels?`: [int](../modules/_types_opencv__hacks_.md#int), `_signedGradient?`: [bool](../modules/_types_opencv__hacks_.md#bool)): *[HOGDescriptor](_types_opencv_hogdescriptor_.hogdescriptor.md)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:48](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L48)*
+*Defined in [types/opencv/HOGDescriptor.ts:48](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L48)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -100,7 +100,7 @@ Name | Type | Description |
 
 \+ **new HOGDescriptor**(`filename`: String): *[HOGDescriptor](_types_opencv_hogdescriptor_.hogdescriptor.md)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:78](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L78)*
+*Defined in [types/opencv/HOGDescriptor.ts:78](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L78)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -115,7 +115,7 @@ Name | Type | Description |
 
 \+ **new HOGDescriptor**(`d`: [HOGDescriptor](_types_opencv_hogdescriptor_.hogdescriptor.md)): *[HOGDescriptor](_types_opencv_hogdescriptor_.hogdescriptor.md)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:87](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L87)*
+*Defined in [types/opencv/HOGDescriptor.ts:87](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L87)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -134,7 +134,7 @@ Name | Type | Description |
 
 • **L2HysThreshold**: *[double](../modules/_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:29](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L29)*
+*Defined in [types/opencv/HOGDescriptor.ts:29](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L29)*
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 • **blockSize**: *[Size](_types_opencv__hacks_.size.md)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:15](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L15)*
+*Defined in [types/opencv/HOGDescriptor.ts:15](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L15)*
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 • **blockStride**: *[Size](_types_opencv__hacks_.size.md)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:17](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L17)*
+*Defined in [types/opencv/HOGDescriptor.ts:17](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L17)*
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 • **cellSize**: *[Size](_types_opencv__hacks_.size.md)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:19](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L19)*
+*Defined in [types/opencv/HOGDescriptor.ts:19](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L19)*
 
 ___
 
@@ -166,7 +166,7 @@ ___
 
 • **derivAperture**: *[int](../modules/_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:21](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L21)*
+*Defined in [types/opencv/HOGDescriptor.ts:21](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L21)*
 
 ___
 
@@ -174,7 +174,7 @@ ___
 
 • **free_coef**: *[float](../modules/_types_opencv__hacks_.md#float)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:23](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L23)*
+*Defined in [types/opencv/HOGDescriptor.ts:23](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L23)*
 
 ___
 
@@ -182,7 +182,7 @@ ___
 
 • **gammaCorrection**: *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:25](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L25)*
+*Defined in [types/opencv/HOGDescriptor.ts:25](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L25)*
 
 ___
 
@@ -190,7 +190,7 @@ ___
 
 • **histogramNormType**: *any*
 
-*Defined in [types/opencv/HOGDescriptor.ts:27](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L27)*
+*Defined in [types/opencv/HOGDescriptor.ts:27](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L27)*
 
 ___
 
@@ -198,7 +198,7 @@ ___
 
 • **nbins**: *[int](../modules/_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:31](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L31)*
+*Defined in [types/opencv/HOGDescriptor.ts:31](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L31)*
 
 ___
 
@@ -206,7 +206,7 @@ ___
 
 • **nlevels**: *[int](../modules/_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:33](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L33)*
+*Defined in [types/opencv/HOGDescriptor.ts:33](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L33)*
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 • **oclSvmDetector**: *[UMat](../modules/_types_opencv__hacks_.md#umat)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:35](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L35)*
+*Defined in [types/opencv/HOGDescriptor.ts:35](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L35)*
 
 ___
 
@@ -222,7 +222,7 @@ ___
 
 • **signedGradient**: *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:37](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L37)*
+*Defined in [types/opencv/HOGDescriptor.ts:37](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L37)*
 
 ___
 
@@ -230,7 +230,7 @@ ___
 
 • **svmDetector**: *any*
 
-*Defined in [types/opencv/HOGDescriptor.ts:39](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L39)*
+*Defined in [types/opencv/HOGDescriptor.ts:39](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L39)*
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 • **winSigma**: *[double](../modules/_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:41](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L41)*
+*Defined in [types/opencv/HOGDescriptor.ts:41](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L41)*
 
 ___
 
@@ -246,7 +246,7 @@ ___
 
 • **winSize**: *[Size](_types_opencv__hacks_.size.md)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:43](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L43)*
+*Defined in [types/opencv/HOGDescriptor.ts:43](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L43)*
 
 ## Methods
 
@@ -254,7 +254,7 @@ ___
 
 ▸ **checkDetectorSize**(): *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:97](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L97)*
+*Defined in [types/opencv/HOGDescriptor.ts:97](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L97)*
 
 **Returns:** *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
@@ -264,7 +264,7 @@ ___
 
 ▸ **compute**(`img`: InputArray, `descriptors`: any, `winStride?`: [Size](_types_opencv__hacks_.size.md), `padding?`: [Size](_types_opencv__hacks_.size.md), `locations?`: [Point](_types_opencv__hacks_.point.md)): *InputArray*
 
-*Defined in [types/opencv/HOGDescriptor.ts:110](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L110)*
+*Defined in [types/opencv/HOGDescriptor.ts:110](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L110)*
 
 **Parameters:**
 
@@ -284,7 +284,7 @@ ___
 
 ▸ **computeGradient**(`img`: InputArray, `grad`: InputOutputArray, `angleOfs`: InputOutputArray, `paddingTL?`: [Size](_types_opencv__hacks_.size.md), `paddingBR?`: [Size](_types_opencv__hacks_.size.md)): *InputArray*
 
-*Defined in [types/opencv/HOGDescriptor.ts:123](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L123)*
+*Defined in [types/opencv/HOGDescriptor.ts:123](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L123)*
 
 **Parameters:**
 
@@ -304,7 +304,7 @@ ___
 
 ▸ **copyTo**(`c`: [HOGDescriptor](_types_opencv_hogdescriptor_.hogdescriptor.md)): *[HOGDescriptor](_types_opencv_hogdescriptor_.hogdescriptor.md)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:128](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L128)*
+*Defined in [types/opencv/HOGDescriptor.ts:128](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L128)*
 
 **Parameters:**
 
@@ -320,7 +320,7 @@ ___
 
 ▸ **detect**(`img`: InputArray, `foundLocations`: [Point](_types_opencv__hacks_.point.md), `weights`: any, `hitThreshold?`: [double](../modules/_types_opencv__hacks_.md#double), `winStride?`: [Size](_types_opencv__hacks_.size.md), `padding?`: [Size](_types_opencv__hacks_.size.md), `searchLocations?`: [Point](_types_opencv__hacks_.point.md)): *InputArray*
 
-*Defined in [types/opencv/HOGDescriptor.ts:148](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L148)*
+*Defined in [types/opencv/HOGDescriptor.ts:148](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L148)*
 
 **Parameters:**
 
@@ -338,7 +338,7 @@ Name | Type | Description |
 
 ▸ **detect**(`img`: InputArray, `foundLocations`: [Point](_types_opencv__hacks_.point.md), `hitThreshold?`: [double](../modules/_types_opencv__hacks_.md#double), `winStride?`: [Size](_types_opencv__hacks_.size.md), `padding?`: [Size](_types_opencv__hacks_.size.md), `searchLocations?`: [Point](_types_opencv__hacks_.point.md)): *InputArray*
 
-*Defined in [types/opencv/HOGDescriptor.ts:166](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L166)*
+*Defined in [types/opencv/HOGDescriptor.ts:166](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L166)*
 
 **Parameters:**
 
@@ -359,7 +359,7 @@ ___
 
 ▸ **detectMultiScale**(`img`: InputArray, `foundLocations`: [Rect](_types_opencv__hacks_.rect.md), `foundWeights`: any, `hitThreshold?`: [double](../modules/_types_opencv__hacks_.md#double), `winStride?`: [Size](_types_opencv__hacks_.size.md), `padding?`: [Size](_types_opencv__hacks_.size.md), `scale?`: [double](../modules/_types_opencv__hacks_.md#double), `finalThreshold?`: [double](../modules/_types_opencv__hacks_.md#double), `useMeanshiftGrouping?`: [bool](../modules/_types_opencv__hacks_.md#bool)): *InputArray*
 
-*Defined in [types/opencv/HOGDescriptor.ts:189](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L189)*
+*Defined in [types/opencv/HOGDescriptor.ts:189](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L189)*
 
 **Parameters:**
 
@@ -379,7 +379,7 @@ Name | Type | Description |
 
 ▸ **detectMultiScale**(`img`: InputArray, `foundLocations`: [Rect](_types_opencv__hacks_.rect.md), `hitThreshold?`: [double](../modules/_types_opencv__hacks_.md#double), `winStride?`: [Size](_types_opencv__hacks_.size.md), `padding?`: [Size](_types_opencv__hacks_.size.md), `scale?`: [double](../modules/_types_opencv__hacks_.md#double), `finalThreshold?`: [double](../modules/_types_opencv__hacks_.md#double), `useMeanshiftGrouping?`: [bool](../modules/_types_opencv__hacks_.md#bool)): *InputArray*
 
-*Defined in [types/opencv/HOGDescriptor.ts:210](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L210)*
+*Defined in [types/opencv/HOGDescriptor.ts:210](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L210)*
 
 **Parameters:**
 
@@ -402,7 +402,7 @@ ___
 
 ▸ **detectMultiScaleROI**(`img`: InputArray, `foundLocations`: any, `locations`: [DetectionROI](../modules/_types_opencv__hacks_.md#detectionroi), `hitThreshold?`: [double](../modules/_types_opencv__hacks_.md#double), `groupThreshold?`: [int](../modules/_types_opencv__hacks_.md#int)): *InputArray*
 
-*Defined in [types/opencv/HOGDescriptor.ts:226](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L226)*
+*Defined in [types/opencv/HOGDescriptor.ts:226](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L226)*
 
 **Parameters:**
 
@@ -422,7 +422,7 @@ ___
 
 ▸ **detectROI**(`img`: InputArray, `locations`: any, `foundLocations`: any, `confidences`: any, `hitThreshold?`: [double](../modules/_types_opencv__hacks_.md#double), `winStride?`: any, `padding?`: any): *InputArray*
 
-*Defined in [types/opencv/HOGDescriptor.ts:245](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L245)*
+*Defined in [types/opencv/HOGDescriptor.ts:245](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L245)*
 
 **Parameters:**
 
@@ -444,7 +444,7 @@ ___
 
 ▸ **getDescriptorSize**(): *[size_t](../modules/_types_opencv__hacks_.md#size_t)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:247](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L247)*
+*Defined in [types/opencv/HOGDescriptor.ts:247](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L247)*
 
 **Returns:** *[size_t](../modules/_types_opencv__hacks_.md#size_t)*
 
@@ -454,7 +454,7 @@ ___
 
 ▸ **getWinSigma**(): *[double](../modules/_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:249](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L249)*
+*Defined in [types/opencv/HOGDescriptor.ts:249](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L249)*
 
 **Returns:** *[double](../modules/_types_opencv__hacks_.md#double)*
 
@@ -464,7 +464,7 @@ ___
 
 ▸ **groupRectangles**(`rectList`: any, `weights`: any, `groupThreshold`: [int](../modules/_types_opencv__hacks_.md#int), `eps`: [double](../modules/_types_opencv__hacks_.md#double)): *any*
 
-*Defined in [types/opencv/HOGDescriptor.ts:263](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L263)*
+*Defined in [types/opencv/HOGDescriptor.ts:263](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L263)*
 
 **Parameters:**
 
@@ -483,7 +483,7 @@ ___
 
 ▸ **load**(`filename`: String, `objname?`: String): *String*
 
-*Defined in [types/opencv/HOGDescriptor.ts:271](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L271)*
+*Defined in [types/opencv/HOGDescriptor.ts:271](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L271)*
 
 **Parameters:**
 
@@ -500,7 +500,7 @@ ___
 
 ▸ **read**(`fn`: [FileNode](../modules/_types_opencv__hacks_.md#filenode)): *[FileNode](../modules/_types_opencv__hacks_.md#filenode)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:276](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L276)*
+*Defined in [types/opencv/HOGDescriptor.ts:276](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L276)*
 
 **Parameters:**
 
@@ -516,7 +516,7 @@ ___
 
 ▸ **save**(`filename`: String, `objname?`: String): *String*
 
-*Defined in [types/opencv/HOGDescriptor.ts:283](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L283)*
+*Defined in [types/opencv/HOGDescriptor.ts:283](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L283)*
 
 **Parameters:**
 
@@ -533,7 +533,7 @@ ___
 
 ▸ **setSVMDetector**(`svmdetector`: InputArray): *InputArray*
 
-*Defined in [types/opencv/HOGDescriptor.ts:288](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L288)*
+*Defined in [types/opencv/HOGDescriptor.ts:288](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L288)*
 
 **Parameters:**
 
@@ -549,7 +549,7 @@ ___
 
 ▸ **write**(`fs`: [FileStorage](../modules/_types_opencv__hacks_.md#filestorage), `objname`: String): *[FileStorage](../modules/_types_opencv__hacks_.md#filestorage)*
 
-*Defined in [types/opencv/HOGDescriptor.ts:295](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L295)*
+*Defined in [types/opencv/HOGDescriptor.ts:295](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L295)*
 
 **Parameters:**
 
@@ -566,7 +566,7 @@ ___
 
 ▸ **getDaimlerPeopleDetector**(): *any*
 
-*Defined in [types/opencv/HOGDescriptor.ts:297](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L297)*
+*Defined in [types/opencv/HOGDescriptor.ts:297](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L297)*
 
 **Returns:** *any*
 
@@ -576,6 +576,6 @@ ___
 
 ▸ **getDefaultPeopleDetector**(): *any*
 
-*Defined in [types/opencv/HOGDescriptor.ts:299](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/HOGDescriptor.ts#L299)*
+*Defined in [types/opencv/HOGDescriptor.ts:299](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/HOGDescriptor.ts#L299)*
 
 **Returns:** *any*

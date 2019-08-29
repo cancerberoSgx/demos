@@ -40,7 +40,7 @@ return new JimpFormatCodec(Jimp)
 
 \+ **new CanvasCodec**(): *[CanvasCodec](_format_canvascodec_.canvascodec.md)*
 
-*Defined in [format/canvasCodec.ts:17](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/format/canvasCodec.ts#L17)*
+*Defined in [format/canvasCodec.ts:18](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/format/canvasCodec.ts#L18)*
 
 **Returns:** *[CanvasCodec](_format_canvascodec_.canvascodec.md)*
 
@@ -48,15 +48,18 @@ return new JimpFormatCodec(Jimp)
 
 ###  decode
 
-▸ **decode**(`buffer`: ArrayBuffer): *Promise‹ImageData | undefined›*
+▸ **decode**(`buffer`: ArrayBuffer, `format?`: undefined | string): *Promise‹ImageData | undefined›*
 
-*Defined in [format/canvasCodec.ts:20](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/format/canvasCodec.ts#L20)*
+*Implementation of [FormatCodec](../interfaces/_types_mirada_.formatcodec.md)*
+
+*Defined in [format/canvasCodec.ts:22](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/format/canvasCodec.ts#L22)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `buffer` | ArrayBuffer |
+`format?` | undefined \| string |
 
 **Returns:** *Promise‹ImageData | undefined›*
 
@@ -66,7 +69,7 @@ ___
 
 ▸ **encode**(`data`: ImageData, `format`: string, `quality?`: undefined | number): *Promise‹ArrayBuffer | undefined›*
 
-*Defined in [format/canvasCodec.ts:29](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/format/canvasCodec.ts#L29)*
+*Defined in [format/canvasCodec.ts:33](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/format/canvasCodec.ts#L33)*
 
 **Parameters:**
 

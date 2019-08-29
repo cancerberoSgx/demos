@@ -21,7 +21,7 @@
 
 Ƭ **AnyConstructor**: *object*
 
-*Defined in [format/jimpCodec.ts:4](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/format/jimpCodec.ts#L4)*
+*Defined in [format/jimpCodec.ts:4](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/format/jimpCodec.ts#L4)*
 
 #### Type declaration:
 
@@ -35,4 +35,4 @@ ___
 
 Ƭ **Jimp**: *[AnyConstructor](_format_jimpcodec_.md#anyconstructor)*
 
-*Defined in [format/jimpCodec.ts:8](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/format/jimpCodec.ts#L8)*
+*Defined in [format/jimpCodec.ts:9](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/format/jimpCodec.ts#L9)*

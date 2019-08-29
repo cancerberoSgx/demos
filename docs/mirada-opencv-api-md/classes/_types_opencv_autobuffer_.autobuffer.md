@@ -55,13 +55,13 @@ Source:
 
 \+ **new AutoBuffer**(): *[AutoBuffer](_types_opencv_autobuffer_.autobuffer.md)*
 
-*Defined in [types/opencv/AutoBuffer.ts:33](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/AutoBuffer.ts#L33)*
+*Defined in [types/opencv/AutoBuffer.ts:33](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/AutoBuffer.ts#L33)*
 
 **Returns:** *[AutoBuffer](_types_opencv_autobuffer_.autobuffer.md)*
 
 \+ **new AutoBuffer**(`_size`: [size_t](../modules/_types_opencv__hacks_.md#size_t)): *[AutoBuffer](_types_opencv_autobuffer_.autobuffer.md)*
 
-*Defined in [types/opencv/AutoBuffer.ts:35](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/AutoBuffer.ts#L35)*
+*Defined in [types/opencv/AutoBuffer.ts:35](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/AutoBuffer.ts#L35)*
 
 **Parameters:**
 
@@ -73,7 +73,7 @@ Name | Type |
 
 \+ **new AutoBuffer**(`buf`: [AutoBuffer](_types_opencv_autobuffer_.autobuffer.md)): *[AutoBuffer](_types_opencv_autobuffer_.autobuffer.md)*
 
-*Defined in [types/opencv/AutoBuffer.ts:37](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/AutoBuffer.ts#L37)*
+*Defined in [types/opencv/AutoBuffer.ts:37](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/AutoBuffer.ts#L37)*
 
 **Parameters:**
 
@@ -89,7 +89,7 @@ Name | Type |
 
 ▸ **allocate**(`_size`: [size_t](../modules/_types_opencv__hacks_.md#size_t)): *void*
 
-*Defined in [types/opencv/AutoBuffer.ts:41](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/AutoBuffer.ts#L41)*
+*Defined in [types/opencv/AutoBuffer.ts:41](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/AutoBuffer.ts#L41)*
 
 **Parameters:**
 
@@ -105,13 +105,13 @@ ___
 
 ▸ **data**(): *any*
 
-*Defined in [types/opencv/AutoBuffer.ts:43](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/AutoBuffer.ts#L43)*
+*Defined in [types/opencv/AutoBuffer.ts:43](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/AutoBuffer.ts#L43)*
 
 **Returns:** *any*
 
 ▸ **data**(): *any*
 
-*Defined in [types/opencv/AutoBuffer.ts:45](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/AutoBuffer.ts#L45)*
+*Defined in [types/opencv/AutoBuffer.ts:45](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/AutoBuffer.ts#L45)*
 
 **Returns:** *any*
 
@@ -121,7 +121,7 @@ ___
 
 ▸ **deallocate**(): *void*
 
-*Defined in [types/opencv/AutoBuffer.ts:47](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/AutoBuffer.ts#L47)*
+*Defined in [types/opencv/AutoBuffer.ts:47](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/AutoBuffer.ts#L47)*
 
 **Returns:** *void*
 
@@ -131,7 +131,7 @@ ___
 
 ▸ **resize**(`_size`: [size_t](../modules/_types_opencv__hacks_.md#size_t)): *void*
 
-*Defined in [types/opencv/AutoBuffer.ts:49](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/AutoBuffer.ts#L49)*
+*Defined in [types/opencv/AutoBuffer.ts:49](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/AutoBuffer.ts#L49)*
 
 **Parameters:**
 
@@ -147,6 +147,6 @@ ___
 
 ▸ **size**(): *[size_t](../modules/_types_opencv__hacks_.md#size_t)*
 
-*Defined in [types/opencv/AutoBuffer.ts:51](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/AutoBuffer.ts#L51)*
+*Defined in [types/opencv/AutoBuffer.ts:51](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/AutoBuffer.ts#L51)*
 
 **Returns:** *[size_t](../modules/_types_opencv__hacks_.md#size_t)*

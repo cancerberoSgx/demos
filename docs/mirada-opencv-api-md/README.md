@@ -6,7 +6,11 @@
 
 ### External modules
 
-* ["file"](modules/_file_.md)
+* ["File"](modules/_file_.md)
+* ["browser/cameraHelper"](modules/_browser_camerahelper_.md)
+* ["browser/canvasRender"](modules/_browser_canvasrender_.md)
+* ["browser/imageCreation"](modules/_browser_imagecreation_.md)
+* ["browser/index"](modules/_browser_index_.md)
 * ["format/canvasCodec"](modules/_format_canvascodec_.md)
 * ["format/format"](modules/_format_format_.md)
 * ["format/index"](modules/_format_index_.md)
@@ -63,7 +67,6 @@
 * ["types/opencv/softfloat"](modules/_types_opencv_softfloat_.md)
 * ["types/opencv/video_track"](modules/_types_opencv_video_track_.md)
 * ["util/base64"](modules/_util_base64_.md)
-* ["util/browserImageUtil"](modules/_util_browserimageutil_.md)
 * ["util/fileUtil"](modules/_util_fileutil_.md)
 * ["util/imageUtil"](modules/_util_imageutil_.md)
 * ["util/index"](modules/_util_index_.md)

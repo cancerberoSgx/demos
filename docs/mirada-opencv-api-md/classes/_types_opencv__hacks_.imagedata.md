@@ -22,7 +22,7 @@
 
 • **data**: *ArrayBufferView*
 
-*Defined in [types/opencv/_hacks.ts:133](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/_hacks.ts#L133)*
+*Defined in [types/opencv/_hacks.ts:133](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/_hacks.ts#L133)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **height**: *number*
 
-*Defined in [types/opencv/_hacks.ts:135](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/_hacks.ts#L135)*
+*Defined in [types/opencv/_hacks.ts:135](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/_hacks.ts#L135)*
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 • **width**: *number*
 
-*Defined in [types/opencv/_hacks.ts:134](https://github.com/cancerberoSgx/mirada/blob/170e57c/mirada/src/types/opencv/_hacks.ts#L134)*
+*Defined in [types/opencv/_hacks.ts:134](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/_hacks.ts#L134)*
