@@ -26,7 +26,7 @@
 
 ▸ **error**(`fmt`: any, `arg121`: any): *[int](../modules/_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/Logger.ts:6](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/Logger.ts#L6)*
+*Defined in [types/opencv/Logger.ts:6](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/Logger.ts#L6)*
 
 **Parameters:**
 
@@ -43,7 +43,7 @@ ___
 
 ▸ **fatal**(`fmt`: any, `arg122`: any): *[int](../modules/_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/Logger.ts:8](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/Logger.ts#L8)*
+*Defined in [types/opencv/Logger.ts:8](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/Logger.ts#L8)*
 
 **Parameters:**
 
@@ -60,7 +60,7 @@ ___
 
 ▸ **info**(`fmt`: any, `arg123`: any): *[int](../modules/_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/Logger.ts:10](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/Logger.ts#L10)*
+*Defined in [types/opencv/Logger.ts:10](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/Logger.ts#L10)*
 
 **Parameters:**
 
@@ -77,7 +77,7 @@ ___
 
 ▸ **log**(`level`: [int](../modules/_types_opencv__hacks_.md#int), `fmt`: any, `arg124`: any): *[int](../modules/_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/Logger.ts:19](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/Logger.ts#L19)*
+*Defined in [types/opencv/Logger.ts:19](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/Logger.ts#L19)*
 
   Print log message
 
@@ -97,7 +97,7 @@ ___
 
 ▸ **setDestination**(`name`: any): *void*
 
-*Defined in [types/opencv/Logger.ts:26](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/Logger.ts#L26)*
+*Defined in [types/opencv/Logger.ts:26](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/Logger.ts#L26)*
 
   Sets the logging destination
 
@@ -115,7 +115,7 @@ ___
 
 ▸ **setLevel**(`level`: [int](../modules/_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/Logger.ts:33](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/Logger.ts#L33)*
+*Defined in [types/opencv/Logger.ts:33](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/Logger.ts#L33)*
 
   Sets the logging level. All messages with lower priority will be ignored.
 
@@ -133,7 +133,7 @@ ___
 
 ▸ **warn**(`fmt`: any, `arg125`: any): *[int](../modules/_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/Logger.ts:35](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/Logger.ts#L35)*
+*Defined in [types/opencv/Logger.ts:35](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/Logger.ts#L35)*
 
 **Parameters:**
 

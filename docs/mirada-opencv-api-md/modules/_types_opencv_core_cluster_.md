@@ -17,7 +17,7 @@
 
 ▸ **kmeans**(`data`: InputArray, `K`: [int](_types_opencv__hacks_.md#int), `bestLabels`: InputOutputArray, `criteria`: [TermCriteria](../classes/_types_opencv__hacks_.termcriteria.md), `attempts`: [int](_types_opencv__hacks_.md#int), `flags`: [int](_types_opencv__hacks_.md#int), `centers?`: OutputArray): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/core_cluster.ts:43](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/core_cluster.ts#L43)*
+*Defined in [types/opencv/core_cluster.ts:43](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/core_cluster.ts#L43)*
 
 The function kmeans implements a k-means algorithm that finds the centers of cluster_count clusters
 and groups the input samples around the clusters. As an output, `$\\texttt{bestLabels}_i$` contains
@@ -53,7 +53,7 @@ ___
 
 ▸ **partition**(`arg119`: any, `arg120`: any, `_vec`: any, `labels`: any, `predicate?`: [_EqPredicate](_types_opencv__hacks_.md#_eqpredicate)): *any*
 
-*Defined in [types/opencv/core_cluster.ts:60](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/core_cluster.ts#L60)*
+*Defined in [types/opencv/core_cluster.ts:60](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/core_cluster.ts#L60)*
 
 The generic function partition implements an `$O(N^2)$` algorithm for splitting a set of `$N$`
 elements into one or more equivalency classes, as described in  . The function returns the number of

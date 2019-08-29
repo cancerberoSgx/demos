@@ -17,7 +17,6 @@
 * [clear](_browser_canvasrender_.options.md#optional-clear)
 * [forceSameSize](_browser_canvasrender_.options.md#optional-forcesamesize)
 * [region](_browser_canvasrender_.options.md#optional-region)
-* [regionDirtyPosition](_browser_canvasrender_.options.md#optional-regiondirtyposition)
 * [rgba](_browser_canvasrender_.options.md#optional-rgba)
 
 ## Properties
@@ -26,7 +25,7 @@
 
 • **appendToBody**? : *undefined | false | true*
 
-Defined in browser/canvasRender.ts:49
+*Defined in [browser/canvasRender.ts:49](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/browser/canvasRender.ts#L49)*
 
 ___
 
@@ -34,7 +33,7 @@ ___
 
 • **canvas**? : *HTMLCanvasElement*
 
-Defined in browser/canvasRender.ts:51
+*Defined in [browser/canvasRender.ts:51](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/browser/canvasRender.ts#L51)*
 
 ___
 
@@ -42,7 +41,7 @@ ___
 
 • **clear**? : *undefined | false | true*
 
-Defined in browser/canvasRender.ts:54
+*Defined in [browser/canvasRender.ts:54](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/browser/canvasRender.ts#L54)*
 
 ___
 
@@ -50,7 +49,7 @@ ___
 
 • **forceSameSize**? : *undefined | false | true*
 
-Defined in browser/canvasRender.ts:55
+*Defined in [browser/canvasRender.ts:55](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/browser/canvasRender.ts#L55)*
 
 ___
 
@@ -58,15 +57,7 @@ ___
 
 • **region**? : *[Rect](../classes/_types_opencv__hacks_.rect.md)*
 
-Defined in browser/canvasRender.ts:52
-
-___
-
-### `Optional` regionDirtyPosition
-
-• **regionDirtyPosition**? : *[Point](../classes/_types_opencv__hacks_.point.md)*
-
-Defined in browser/canvasRender.ts:53
+*Defined in [browser/canvasRender.ts:52](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/browser/canvasRender.ts#L52)*
 
 ___
 
@@ -74,4 +65,4 @@ ___
 
 • **rgba**? : *undefined | false | true*
 
-Defined in browser/canvasRender.ts:50
+*Defined in [browser/canvasRender.ts:50](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/browser/canvasRender.ts#L50)*

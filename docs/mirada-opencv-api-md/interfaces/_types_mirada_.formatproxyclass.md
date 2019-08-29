@@ -22,7 +22,7 @@ a class-like representation for format proxy instead functions
 
 ▸ **create**(): *Promise‹[FormatCodec](_types_mirada_.formatcodec.md)›*
 
-*Defined in [types/mirada.ts:25](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/mirada.ts#L25)*
+*Defined in [types/mirada.ts:25](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/mirada.ts#L25)*
 
 This is probably called only once and after obtaining a codec the same instance is used by the manager.
 

@@ -16,4 +16,4 @@
 
 ### ▪ **tool**: *object*
 
-*Defined in [tool/index.ts:3](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/tool/index.ts#L3)*
+*Defined in [tool/index.ts:3](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/tool/index.ts#L3)*

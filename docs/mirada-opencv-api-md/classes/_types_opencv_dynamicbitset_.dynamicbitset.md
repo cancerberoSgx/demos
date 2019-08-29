@@ -37,7 +37,7 @@ Source:
 
 \+ **new DynamicBitset**(): *[DynamicBitset](_types_opencv_dynamicbitset_.dynamicbitset.md)*
 
-*Defined in [types/opencv/DynamicBitset.ts:12](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/DynamicBitset.ts#L12)*
+*Defined in [types/opencv/DynamicBitset.ts:12](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/DynamicBitset.ts#L12)*
 
   default constructor
 
@@ -45,7 +45,7 @@ Source:
 
 \+ **new DynamicBitset**(`sz`: [size_t](../modules/_types_opencv__hacks_.md#size_t)): *[DynamicBitset](_types_opencv_dynamicbitset_.dynamicbitset.md)*
 
-*Defined in [types/opencv/DynamicBitset.ts:17](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/DynamicBitset.ts#L17)*
+*Defined in [types/opencv/DynamicBitset.ts:17](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/DynamicBitset.ts#L17)*
 
   only constructor we use in our code
 
@@ -63,7 +63,7 @@ Name | Type | Description |
 
 ▸ **clear**(): *void*
 
-*Defined in [types/opencv/DynamicBitset.ts:29](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/DynamicBitset.ts#L29)*
+*Defined in [types/opencv/DynamicBitset.ts:29](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/DynamicBitset.ts#L29)*
 
   Sets all the bits to 0
 
@@ -75,7 +75,7 @@ ___
 
 ▸ **empty**(): *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/DynamicBitset.ts:34](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/DynamicBitset.ts#L34)*
+*Defined in [types/opencv/DynamicBitset.ts:34](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/DynamicBitset.ts#L34)*
 
   true if the bitset is empty
 
@@ -87,7 +87,7 @@ ___
 
 ▸ **reset**(): *void*
 
-*Defined in [types/opencv/DynamicBitset.ts:39](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/DynamicBitset.ts#L39)*
+*Defined in [types/opencv/DynamicBitset.ts:39](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/DynamicBitset.ts#L39)*
 
   set all the bits to 0
 
@@ -95,7 +95,7 @@ ___
 
 ▸ **reset**(`index`: [size_t](../modules/_types_opencv__hacks_.md#size_t)): *void*
 
-*Defined in [types/opencv/DynamicBitset.ts:41](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/DynamicBitset.ts#L41)*
+*Defined in [types/opencv/DynamicBitset.ts:41](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/DynamicBitset.ts#L41)*
 
 **Parameters:**
 
@@ -111,7 +111,7 @@ ___
 
 ▸ **reset_block**(`index`: [size_t](../modules/_types_opencv__hacks_.md#size_t)): *void*
 
-*Defined in [types/opencv/DynamicBitset.ts:43](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/DynamicBitset.ts#L43)*
+*Defined in [types/opencv/DynamicBitset.ts:43](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/DynamicBitset.ts#L43)*
 
 **Parameters:**
 
@@ -127,7 +127,7 @@ ___
 
 ▸ **resize**(`sz`: [size_t](../modules/_types_opencv__hacks_.md#size_t)): *void*
 
-*Defined in [types/opencv/DynamicBitset.ts:48](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/DynamicBitset.ts#L48)*
+*Defined in [types/opencv/DynamicBitset.ts:48](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/DynamicBitset.ts#L48)*
 
   resize the bitset so that it contains at least sz bits
 
@@ -145,7 +145,7 @@ ___
 
 ▸ **set**(`index`: [size_t](../modules/_types_opencv__hacks_.md#size_t)): *void*
 
-*Defined in [types/opencv/DynamicBitset.ts:55](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/DynamicBitset.ts#L55)*
+*Defined in [types/opencv/DynamicBitset.ts:55](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/DynamicBitset.ts#L55)*
 
   set a bit to true
 
@@ -163,7 +163,7 @@ ___
 
 ▸ **size**(): *[size_t](../modules/_types_opencv__hacks_.md#size_t)*
 
-*Defined in [types/opencv/DynamicBitset.ts:60](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/DynamicBitset.ts#L60)*
+*Defined in [types/opencv/DynamicBitset.ts:60](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/DynamicBitset.ts#L60)*
 
   gives the number of contained bits
 
@@ -175,7 +175,7 @@ ___
 
 ▸ **test**(`index`: [size_t](../modules/_types_opencv__hacks_.md#size_t)): *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/DynamicBitset.ts:69](https://github.com/cancerberoSgx/mirada/blob/dd33d35/mirada/src/types/opencv/DynamicBitset.ts#L69)*
+*Defined in [types/opencv/DynamicBitset.ts:69](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/DynamicBitset.ts#L69)*
 
   check if a bit is set
 

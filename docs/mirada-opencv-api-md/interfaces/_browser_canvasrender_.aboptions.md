@@ -22,7 +22,7 @@
 
 • **appendToBody**? : *undefined | false | true*
 
-Defined in browser/canvasRender.ts:9
+*Defined in [browser/canvasRender.ts:9](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/browser/canvasRender.ts#L9)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **canvas**? : *HTMLCanvasElement*
 
-Defined in browser/canvasRender.ts:8
+*Defined in [browser/canvasRender.ts:8](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/browser/canvasRender.ts#L8)*
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 • **name**? : *undefined | string*
 
-Defined in browser/canvasRender.ts:7
+*Defined in [browser/canvasRender.ts:7](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/browser/canvasRender.ts#L7)*
