@@ -20,4 +20,4 @@
 
 • **name**? : *undefined | string*
 
-Defined in File.ts:229
+Defined in File.ts:271

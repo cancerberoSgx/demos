@@ -39,7 +39,7 @@
 
 \+ **new CameraHelper**(`videoInput`: HTMLVideoElement, `outputCanvas`: HTMLCanvasElement, `callback`: function): *[CameraHelper](_browser_camerahelper_.camerahelper.md)*
 
-*Defined in [browser/cameraHelper.ts:4](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/browser/cameraHelper.ts#L4)*
+*Defined in [browser/cameraHelper.ts:4](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/cameraHelper.ts#L4)*
 
 **Parameters:**
 
@@ -59,7 +59,7 @@
 
 • **callback**: *function*
 
-*Defined in [browser/cameraHelper.ts:5](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/browser/cameraHelper.ts#L5)*
+*Defined in [browser/cameraHelper.ts:5](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/cameraHelper.ts#L5)*
 
 #### Type declaration:
 
@@ -71,7 +71,7 @@ ___
 
 • **onCameraStartedCallback**: *function | undefined*
 
-*Defined in [browser/cameraHelper.ts:4](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/browser/cameraHelper.ts#L4)*
+*Defined in [browser/cameraHelper.ts:4](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/cameraHelper.ts#L4)*
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 • **outputCanvas**: *HTMLCanvasElement*
 
-*Defined in [browser/cameraHelper.ts:5](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/browser/cameraHelper.ts#L5)*
+*Defined in [browser/cameraHelper.ts:5](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/cameraHelper.ts#L5)*
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 • **stream**: *MediaStream | undefined*
 
-*Defined in [browser/cameraHelper.ts:3](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/browser/cameraHelper.ts#L3)*
+*Defined in [browser/cameraHelper.ts:3](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/cameraHelper.ts#L3)*
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 • **streaming**: *boolean* = false
 
-*Defined in [browser/cameraHelper.ts:2](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/browser/cameraHelper.ts#L2)*
+*Defined in [browser/cameraHelper.ts:2](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/cameraHelper.ts#L2)*
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 • **videoInput**: *HTMLVideoElement*
 
-*Defined in [browser/cameraHelper.ts:5](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/browser/cameraHelper.ts#L5)*
+*Defined in [browser/cameraHelper.ts:5](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/cameraHelper.ts#L5)*
 
 ## Methods
 
@@ -111,7 +111,7 @@ ___
 
 ▸ **onVideoCanPlay**(): *void*
 
-*Defined in [browser/cameraHelper.ts:65](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/browser/cameraHelper.ts#L65)*
+*Defined in [browser/cameraHelper.ts:65](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/cameraHelper.ts#L65)*
 
 **Returns:** *void*
 
@@ -121,7 +121,7 @@ ___
 
 ▸ **onVideoStarted**(): *void*
 
-*Defined in [browser/cameraHelper.ts:54](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/browser/cameraHelper.ts#L54)*
+*Defined in [browser/cameraHelper.ts:54](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/cameraHelper.ts#L54)*
 
 **Returns:** *void*
 
@@ -131,7 +131,7 @@ ___
 
 ▸ **onVideoStopped**(): *void*
 
-*Defined in [browser/cameraHelper.ts:60](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/browser/cameraHelper.ts#L60)*
+*Defined in [browser/cameraHelper.ts:60](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/cameraHelper.ts#L60)*
 
 **Returns:** *void*
 
@@ -141,7 +141,7 @@ ___
 
 ▸ **start**(): *void*
 
-*Defined in [browser/cameraHelper.ts:10](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/browser/cameraHelper.ts#L10)*
+*Defined in [browser/cameraHelper.ts:10](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/cameraHelper.ts#L10)*
 
 **Returns:** *void*
 
@@ -151,7 +151,7 @@ ___
 
 ▸ **startCamera**(`resolution`: "qvga" | "vga", `callback`: function, `video`: HTMLVideoElement): *void*
 
-*Defined in [browser/cameraHelper.ts:21](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/browser/cameraHelper.ts#L21)*
+*Defined in [browser/cameraHelper.ts:21](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/cameraHelper.ts#L21)*
 
 **Parameters:**
 
@@ -177,7 +177,7 @@ ___
 
 ▸ **stop**(): *void*
 
-*Defined in [browser/cameraHelper.ts:15](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/browser/cameraHelper.ts#L15)*
+*Defined in [browser/cameraHelper.ts:15](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/cameraHelper.ts#L15)*
 
 **Returns:** *void*
 
@@ -187,6 +187,6 @@ ___
 
 ▸ **stopCamera**(): *void*
 
-*Defined in [browser/cameraHelper.ts:44](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/browser/cameraHelper.ts#L44)*
+*Defined in [browser/cameraHelper.ts:44](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/cameraHelper.ts#L44)*
 
 **Returns:** *void*

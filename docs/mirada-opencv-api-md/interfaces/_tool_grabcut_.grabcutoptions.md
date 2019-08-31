@@ -33,7 +33,7 @@
 
 *Inherited from [Rect](../classes/_types_opencv__hacks_.rect.md).[constructor](../classes/_types_opencv__hacks_.rect.md#constructor)*
 
-*Defined in [types/opencv/_hacks.ts:36](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/_hacks.ts#L36)*
+*Defined in [types/opencv/_hacks.ts:36](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/_hacks.ts#L36)*
 
 **Returns:** *[GrabCutOptions](_tool_grabcut_.grabcutoptions.md)*
 
@@ -41,7 +41,7 @@
 
 *Inherited from [Rect](../classes/_types_opencv__hacks_.rect.md).[constructor](../classes/_types_opencv__hacks_.rect.md#constructor)*
 
-*Defined in [types/opencv/_hacks.ts:37](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/_hacks.ts#L37)*
+*Defined in [types/opencv/_hacks.ts:37](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/_hacks.ts#L37)*
 
 **Parameters:**
 
@@ -56,7 +56,7 @@ Name | Type |
 
 *Inherited from [Rect](../classes/_types_opencv__hacks_.rect.md).[constructor](../classes/_types_opencv__hacks_.rect.md#constructor)*
 
-*Defined in [types/opencv/_hacks.ts:38](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/_hacks.ts#L38)*
+*Defined in [types/opencv/_hacks.ts:38](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/_hacks.ts#L38)*
 
 **Parameters:**
 
@@ -75,7 +75,7 @@ Name | Type |
 
 • **frameColor**? : *[Scalar](../classes/_types_opencv__hacks_.scalar.md)*
 
-*Defined in [tool/grabCut.ts:11](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/tool/grabCut.ts#L11)*
+*Defined in [tool/grabCut.ts:11](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/tool/grabCut.ts#L11)*
 
 If given a rectangle frame will be drawn on given coordinates with that color.
 
@@ -87,7 +87,7 @@ ___
 
 *Inherited from [Rect](../classes/_types_opencv__hacks_.rect.md).[height](../classes/_types_opencv__hacks_.rect.md#height)*
 
-*Defined in [types/opencv/_hacks.ts:43](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/_hacks.ts#L43)*
+*Defined in [types/opencv/_hacks.ts:43](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/_hacks.ts#L43)*
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 • **image**: *[File](../classes/_file_.file.md)*
 
-*Defined in [tool/grabCut.ts:7](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/tool/grabCut.ts#L7)*
+*Defined in [tool/grabCut.ts:7](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/tool/grabCut.ts#L7)*
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 *Inherited from [Rect](../classes/_types_opencv__hacks_.rect.md).[width](../classes/_types_opencv__hacks_.rect.md#width)*
 
-*Defined in [types/opencv/_hacks.ts:42](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/_hacks.ts#L42)*
+*Defined in [types/opencv/_hacks.ts:42](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/_hacks.ts#L42)*
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 *Inherited from [Rect](../classes/_types_opencv__hacks_.rect.md).[x](../classes/_types_opencv__hacks_.rect.md#x)*
 
-*Defined in [types/opencv/_hacks.ts:40](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/_hacks.ts#L40)*
+*Defined in [types/opencv/_hacks.ts:40](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/_hacks.ts#L40)*
 
 ___
 
@@ -125,4 +125,4 @@ ___
 
 *Inherited from [Rect](../classes/_types_opencv__hacks_.rect.md).[y](../classes/_types_opencv__hacks_.rect.md#y)*
 
-*Defined in [types/opencv/_hacks.ts:41](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/_hacks.ts#L41)*
+*Defined in [types/opencv/_hacks.ts:41](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/_hacks.ts#L41)*

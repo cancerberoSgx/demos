@@ -35,7 +35,7 @@
 
 • **MOTION_AFFINE**: *any*
 
-*Defined in [types/opencv/video_track.ts:296](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/video_track.ts#L296)*
+*Defined in [types/opencv/video_track.ts:296](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/video_track.ts#L296)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **MOTION_EUCLIDEAN**: *any*
 
-*Defined in [types/opencv/video_track.ts:294](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/video_track.ts#L294)*
+*Defined in [types/opencv/video_track.ts:294](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/video_track.ts#L294)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **MOTION_HOMOGRAPHY**: *any*
 
-*Defined in [types/opencv/video_track.ts:298](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/video_track.ts#L298)*
+*Defined in [types/opencv/video_track.ts:298](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/video_track.ts#L298)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 • **MOTION_TRANSLATION**: *any*
 
-*Defined in [types/opencv/video_track.ts:292](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/video_track.ts#L292)*
+*Defined in [types/opencv/video_track.ts:292](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/video_track.ts#L292)*
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 • **OPTFLOW_FARNEBACK_GAUSSIAN**: *any*
 
-*Defined in [types/opencv/video_track.ts:290](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/video_track.ts#L290)*
+*Defined in [types/opencv/video_track.ts:290](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/video_track.ts#L290)*
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 • **OPTFLOW_LK_GET_MIN_EIGENVALS**: *any*
 
-*Defined in [types/opencv/video_track.ts:288](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/video_track.ts#L288)*
+*Defined in [types/opencv/video_track.ts:288](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/video_track.ts#L288)*
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 • **OPTFLOW_USE_INITIAL_FLOW**: *any*
 
-*Defined in [types/opencv/video_track.ts:286](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/video_track.ts#L286)*
+*Defined in [types/opencv/video_track.ts:286](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/video_track.ts#L286)*
 
 ## Functions
 
@@ -91,7 +91,7 @@ ___
 
 ▸ **CamShift**(`probImage`: InputArray, `window`: any, `criteria`: [TermCriteria](../classes/_types_opencv__hacks_.termcriteria.md)): *[RotatedRect](../classes/_types_opencv_rotatedrect_.rotatedrect.md)*
 
-*Defined in [types/opencv/video_track.ts:148](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/video_track.ts#L148)*
+*Defined in [types/opencv/video_track.ts:148](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/video_track.ts#L148)*
 
 See the OpenCV sample camshiftdemo.c that tracks colored objects.
 
@@ -114,7 +114,7 @@ ___
 
 ▸ **buildOpticalFlowPyramid**(`img`: InputArray, `pyramid`: OutputArrayOfArrays, `winSize`: [Size](../classes/_types_opencv__hacks_.size.md), `maxLevel`: [int](_types_opencv__hacks_.md#int), `withDerivatives?`: [bool](_types_opencv__hacks_.md#bool), `pyrBorder?`: [int](_types_opencv__hacks_.md#int), `derivBorder?`: [int](_types_opencv__hacks_.md#int), `tryReuseInputImage?`: [bool](_types_opencv__hacks_.md#bool)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/video_track.ts:29](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/video_track.ts#L29)*
+*Defined in [types/opencv/video_track.ts:29](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/video_track.ts#L29)*
 
 number of levels in constructed pyramid. Can be less than maxLevel.
 
@@ -139,7 +139,7 @@ ___
 
 ▸ **calcOpticalFlowFarneback**(`prev`: InputArray, `next`: InputArray, `flow`: InputOutputArray, `pyr_scale`: [double](_types_opencv__hacks_.md#double), `levels`: [int](_types_opencv__hacks_.md#int), `winsize`: [int](_types_opencv__hacks_.md#int), `iterations`: [int](_types_opencv__hacks_.md#int), `poly_n`: [int](_types_opencv__hacks_.md#int), `poly_sigma`: [double](_types_opencv__hacks_.md#double), `flags`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/video_track.ts:75](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/video_track.ts#L75)*
+*Defined in [types/opencv/video_track.ts:75](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/video_track.ts#L75)*
 
 The function finds an optical flow for each prev pixel using the Farneback2003 algorithm so that
 
@@ -174,7 +174,7 @@ ___
 
 ▸ **calcOpticalFlowPyrLK**(`prevImg`: InputArray, `nextImg`: InputArray, `prevPts`: InputArray, `nextPts`: InputOutputArray, `status`: OutputArray, `err`: OutputArray, `winSize?`: [Size](../classes/_types_opencv__hacks_.size.md), `maxLevel?`: [int](_types_opencv__hacks_.md#int), `criteria?`: [TermCriteria](../classes/_types_opencv__hacks_.termcriteria.md), `flags?`: [int](_types_opencv__hacks_.md#int), `minEigThreshold?`: [double](_types_opencv__hacks_.md#double)): *void*
 
-*Defined in [types/opencv/video_track.ts:129](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/video_track.ts#L129)*
+*Defined in [types/opencv/video_track.ts:129](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/video_track.ts#L129)*
 
 The function implements a sparse iterative version of the Lucas-Kanade optical flow in pyramids. See
 Bouguet00 . The function is parallelized with the TBB library.
@@ -210,7 +210,7 @@ ___
 
 ▸ **computeECC**(`templateImage`: InputArray, `inputImage`: InputArray, `inputMask?`: InputArray): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/video_track.ts:160](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/video_track.ts#L160)*
+*Defined in [types/opencv/video_track.ts:160](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/video_track.ts#L160)*
 
 [findTransformECC]
 
@@ -230,7 +230,7 @@ ___
 
 ▸ **estimateRigidTransform**(`src`: InputArray, `dst`: InputArray, `fullAffine`: [bool](_types_opencv__hacks_.md#bool)): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/video_track.ts:183](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/video_track.ts#L183)*
+*Defined in [types/opencv/video_track.ts:183](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/video_track.ts#L183)*
 
 The function finds an optimal affine transform *[A|b]* (a 2 x 3 floating-point matrix) that
 approximates best the affine transformation between:  In case of point sets, the problem is
@@ -260,7 +260,7 @@ ___
 
 ▸ **findTransformECC**(`templateImage`: InputArray, `inputImage`: InputArray, `warpMatrix`: InputOutputArray, `motionType`: [int](_types_opencv__hacks_.md#int), `criteria`: [TermCriteria](../classes/_types_opencv__hacks_.termcriteria.md), `inputMask`: InputArray, `gaussFiltSize`: [int](_types_opencv__hacks_.md#int)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/video_track.ts:239](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/video_track.ts#L239)*
+*Defined in [types/opencv/video_track.ts:239](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/video_track.ts#L239)*
 
 The function estimates the optimum transformation (warpMatrix) with respect to ECC criterion (EP08),
 that is
@@ -307,7 +307,7 @@ Name | Type | Description |
 
 ▸ **findTransformECC**(`templateImage`: InputArray, `inputImage`: InputArray, `warpMatrix`: InputOutputArray, `motionType?`: [int](_types_opencv__hacks_.md#int), `criteria?`: [TermCriteria](../classes/_types_opencv__hacks_.termcriteria.md), `inputMask?`: InputArray): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/video_track.ts:245](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/video_track.ts#L245)*
+*Defined in [types/opencv/video_track.ts:245](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/video_track.ts#L245)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -331,7 +331,7 @@ ___
 
 ▸ **meanShift**(`probImage`: InputArray, `window`: any, `criteria`: [TermCriteria](../classes/_types_opencv__hacks_.termcriteria.md)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/video_track.ts:264](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/video_track.ts#L264)*
+*Defined in [types/opencv/video_track.ts:264](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/video_track.ts#L264)*
 
 **Parameters:**
 
@@ -349,7 +349,7 @@ ___
 
 ▸ **readOpticalFlow**(`path`: any): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/video_track.ts:273](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/video_track.ts#L273)*
+*Defined in [types/opencv/video_track.ts:273](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/video_track.ts#L273)*
 
 The function readOpticalFlow loads a flow field from a file and returns it as a single matrix.
 Resulting [Mat] has a type CV_32FC2 - floating-point, 2-channel. First channel corresponds to the
@@ -369,7 +369,7 @@ ___
 
 ▸ **writeOpticalFlow**(`path`: any, `flow`: InputArray): *[bool](_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/video_track.ts:284](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/video_track.ts#L284)*
+*Defined in [types/opencv/video_track.ts:284](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/video_track.ts#L284)*
 
 The function stores a flow field in a file, returns true on success, false otherwise. The flow field
 must be a 2-channel, floating-point matrix (CV_32FC2). First channel corresponds to the flow in the

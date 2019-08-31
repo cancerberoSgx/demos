@@ -30,7 +30,7 @@
 
 • **defaultABOptions**: *[ABOptions](../interfaces/_browser_canvasrender_.aboptions.md)*
 
-*Defined in [browser/canvasRender.ts:12](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/browser/canvasRender.ts#L12)*
+*Defined in [browser/canvasRender.ts:12](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/canvasRender.ts#L12)*
 
 ## Functions
 
@@ -38,7 +38,7 @@
 
 ▸ **renderArrayBufferInCanvas**(`a`: ArrayBuffer, `mime`: string, `options`: [ABOptions](../interfaces/_browser_canvasrender_.aboptions.md)): *Promise‹object›*
 
-*Defined in [browser/canvasRender.ts:22](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/browser/canvasRender.ts#L22)*
+*Defined in [browser/canvasRender.ts:22](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/canvasRender.ts#L22)*
 
 A sub optimal method to load a image array buffer (encoded in jpg, png) whiteouts knowing its format or size.
 1) creates a blob and a url object
@@ -63,7 +63,7 @@ ___
 
 ▸ **renderInCanvas**(`mat`: [Mat](../classes/_types_opencv_mat_.mat.md), `options?`: [Options](../interfaces/_browser_canvasrender_.options.md)): *HTMLCanvasElement*
 
-*Defined in [browser/canvasRender.ts:63](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/browser/canvasRender.ts#L63)*
+*Defined in [browser/canvasRender.ts:63](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/canvasRender.ts#L63)*
 
 **Parameters:**
 
@@ -80,16 +80,16 @@ Name | Type |
 
 ### ▪ **defaultOptions**: *object*
 
-*Defined in [browser/canvasRender.ts:58](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/browser/canvasRender.ts#L58)*
+*Defined in [browser/canvasRender.ts:58](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/canvasRender.ts#L58)*
 
 ###  forceSameSize
 
 • **forceSameSize**: *boolean* = true
 
-*Defined in [browser/canvasRender.ts:60](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/browser/canvasRender.ts#L60)*
+*Defined in [browser/canvasRender.ts:60](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/canvasRender.ts#L60)*
 
 ###  rgba
 
 • **rgba**: *boolean* = true
 
-*Defined in [browser/canvasRender.ts:59](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/browser/canvasRender.ts#L59)*
+*Defined in [browser/canvasRender.ts:59](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/canvasRender.ts#L59)*

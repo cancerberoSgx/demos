@@ -99,7 +99,7 @@ Source:
 
 \+ **new Affine3**(): *[Affine3](_types_opencv_affine3_.affine3.md)*
 
-*Defined in [types/opencv/Affine3.ts:70](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L70)*
+*Defined in [types/opencv/Affine3.ts:70](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L70)*
 
   The resulting 4x4 matrix is
   Rodrigues vector.
@@ -115,7 +115,7 @@ Source:
 
 \+ **new Affine3**(`affine`: [Mat4](../modules/_types_opencv__hacks_.md#mat4)): *[Affine3](_types_opencv_affine3_.affine3.md)*
 
-*Defined in [types/opencv/Affine3.ts:72](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L72)*
+*Defined in [types/opencv/Affine3.ts:72](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L72)*
 
   The resulting 4x4 matrix is
   Rodrigues vector.
@@ -137,7 +137,7 @@ Name | Type |
 
 \+ **new Affine3**(`R`: [Mat3](../modules/_types_opencv__hacks_.md#mat3), `t?`: [Vec3](../modules/_types_opencv__hacks_.md#vec3)): *[Affine3](_types_opencv_affine3_.affine3.md)*
 
-*Defined in [types/opencv/Affine3.ts:74](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L74)*
+*Defined in [types/opencv/Affine3.ts:74](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L74)*
 
   The resulting 4x4 matrix is
 
@@ -154,7 +154,7 @@ Name | Type | Description |
 
 \+ **new Affine3**(`rvec`: [Vec3](../modules/_types_opencv__hacks_.md#vec3), `t?`: [Vec3](../modules/_types_opencv__hacks_.md#vec3)): *[Affine3](_types_opencv_affine3_.affine3.md)*
 
-*Defined in [types/opencv/Affine3.ts:85](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L85)*
+*Defined in [types/opencv/Affine3.ts:85](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L85)*
 
   Rodrigues vector.
 
@@ -171,7 +171,7 @@ Name | Type | Description |
 
 \+ **new Affine3**(`data`: [Mat](_types_opencv_mat_.mat.md), `t?`: [Vec3](../modules/_types_opencv__hacks_.md#vec3)): *[Affine3](_types_opencv_affine3_.affine3.md)*
 
-*Defined in [types/opencv/Affine3.ts:97](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L97)*
+*Defined in [types/opencv/Affine3.ts:97](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L97)*
 
   Combines all constructors above. Supports 4x4, 3x4, 3x3, 1x3, 3x1 sizes of data matrix.
 
@@ -188,7 +188,7 @@ Name | Type | Description |
 
 \+ **new Affine3**(`vals`: [float_type](../modules/_types_opencv__hacks_.md#float_type)): *[Affine3](_types_opencv_affine3_.affine3.md)*
 
-*Defined in [types/opencv/Affine3.ts:112](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L112)*
+*Defined in [types/opencv/Affine3.ts:112](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L112)*
 
   The resulting 4x4 matrix is
   Rodrigues vector.
@@ -214,7 +214,7 @@ Name | Type |
 
 • **matrix**: *[Mat4](../modules/_types_opencv__hacks_.md#mat4)*
 
-*Defined in [types/opencv/Affine3.ts:70](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L70)*
+*Defined in [types/opencv/Affine3.ts:70](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L70)*
 
 ## Methods
 
@@ -222,7 +222,7 @@ Name | Type |
 
 ▸ **cast**(`arg401`: any): *[Affine3](_types_opencv_affine3_.affine3.md)*
 
-*Defined in [types/opencv/Affine3.ts:116](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L116)*
+*Defined in [types/opencv/Affine3.ts:116](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L116)*
 
 **Parameters:**
 
@@ -238,7 +238,7 @@ ___
 
 ▸ **concatenate**(`affine`: [Affine3](_types_opencv_affine3_.affine3.md)): *[Affine3](_types_opencv_affine3_.affine3.md)*
 
-*Defined in [types/opencv/Affine3.ts:118](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L118)*
+*Defined in [types/opencv/Affine3.ts:118](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L118)*
 
 **Parameters:**
 
@@ -254,7 +254,7 @@ ___
 
 ▸ **inv**(`method?`: [int](../modules/_types_opencv__hacks_.md#int)): *[Affine3](_types_opencv_affine3_.affine3.md)*
 
-*Defined in [types/opencv/Affine3.ts:123](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L123)*
+*Defined in [types/opencv/Affine3.ts:123](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L123)*
 
   the inverse of the current matrix.
 
@@ -272,7 +272,7 @@ ___
 
 ▸ **linear**(`L`: [Mat3](../modules/_types_opencv__hacks_.md#mat3)): *[Mat3](../modules/_types_opencv__hacks_.md#mat3)*
 
-*Defined in [types/opencv/Affine3.ts:132](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L132)*
+*Defined in [types/opencv/Affine3.ts:132](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L132)*
 
   Copy the 3x3 matrix L to the upper left part of the current matrix
 
@@ -288,7 +288,7 @@ Name | Type | Description |
 
 ▸ **linear**(): *[Mat3](../modules/_types_opencv__hacks_.md#mat3)*
 
-*Defined in [types/opencv/Affine3.ts:137](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L137)*
+*Defined in [types/opencv/Affine3.ts:137](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L137)*
 
   the upper left 3x3 part
 
@@ -300,7 +300,7 @@ ___
 
 ▸ **rotate**(`R`: [Mat3](../modules/_types_opencv__hacks_.md#mat3)): *[Affine3](_types_opencv_affine3_.affine3.md)*
 
-*Defined in [types/opencv/Affine3.ts:139](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L139)*
+*Defined in [types/opencv/Affine3.ts:139](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L139)*
 
 **Parameters:**
 
@@ -312,7 +312,7 @@ Name | Type |
 
 ▸ **rotate**(`rvec`: [Vec3](../modules/_types_opencv__hacks_.md#vec3)): *[Affine3](_types_opencv_affine3_.affine3.md)*
 
-*Defined in [types/opencv/Affine3.ts:141](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L141)*
+*Defined in [types/opencv/Affine3.ts:141](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L141)*
 
 **Parameters:**
 
@@ -328,7 +328,7 @@ ___
 
 ▸ **rotation**(`R`: [Mat3](../modules/_types_opencv__hacks_.md#mat3)): *[Mat3](../modules/_types_opencv__hacks_.md#mat3)*
 
-*Defined in [types/opencv/Affine3.ts:151](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L151)*
+*Defined in [types/opencv/Affine3.ts:151](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L151)*
 
   Rotation matrix.
 
@@ -345,7 +345,7 @@ Name | Type | Description |
 
 ▸ **rotation**(`rvec`: [Vec3](../modules/_types_opencv__hacks_.md#vec3)): *[Vec3](../modules/_types_opencv__hacks_.md#vec3)*
 
-*Defined in [types/opencv/Affine3.ts:161](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L161)*
+*Defined in [types/opencv/Affine3.ts:161](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L161)*
 
   Rodrigues vector.
 
@@ -361,7 +361,7 @@ Name | Type | Description |
 
 ▸ **rotation**(`data`: [Mat](_types_opencv_mat_.mat.md)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Affine3.ts:173](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L173)*
+*Defined in [types/opencv/Affine3.ts:173](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L173)*
 
   Combines rotation methods above. Supports 3x3, 1x3, 3x1 sizes of data matrix.
 
@@ -377,7 +377,7 @@ Name | Type | Description |
 
 ▸ **rotation**(): *[Mat3](../modules/_types_opencv__hacks_.md#mat3)*
 
-*Defined in [types/opencv/Affine3.ts:178](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L178)*
+*Defined in [types/opencv/Affine3.ts:178](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L178)*
 
   the upper left 3x3 part
 
@@ -389,7 +389,7 @@ ___
 
 ▸ **rvec**(): *[Vec3](../modules/_types_opencv__hacks_.md#vec3)*
 
-*Defined in [types/opencv/Affine3.ts:189](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L189)*
+*Defined in [types/opencv/Affine3.ts:189](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L189)*
 
   Rodrigues vector.
 
@@ -407,7 +407,7 @@ ___
 
 ▸ **translate**(`t`: [Vec3](../modules/_types_opencv__hacks_.md#vec3)): *[Affine3](_types_opencv_affine3_.affine3.md)*
 
-*Defined in [types/opencv/Affine3.ts:191](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L191)*
+*Defined in [types/opencv/Affine3.ts:191](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L191)*
 
 **Parameters:**
 
@@ -423,7 +423,7 @@ ___
 
 ▸ **translation**(`t`: [Vec3](../modules/_types_opencv__hacks_.md#vec3)): *[Vec3](../modules/_types_opencv__hacks_.md#vec3)*
 
-*Defined in [types/opencv/Affine3.ts:200](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L200)*
+*Defined in [types/opencv/Affine3.ts:200](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L200)*
 
   Copy t to the first three elements of the last column of the current matrix
 
@@ -439,7 +439,7 @@ Name | Type | Description |
 
 ▸ **translation**(): *[Vec3](../modules/_types_opencv__hacks_.md#vec3)*
 
-*Defined in [types/opencv/Affine3.ts:205](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L205)*
+*Defined in [types/opencv/Affine3.ts:205](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L205)*
 
   the upper right 3x1 part
 
@@ -451,6 +451,6 @@ ___
 
 ▸ **Identity**(): *[Affine3](_types_opencv_affine3_.affine3.md)*
 
-*Defined in [types/opencv/Affine3.ts:207](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/Affine3.ts#L207)*
+*Defined in [types/opencv/Affine3.ts:207](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Affine3.ts#L207)*
 
 **Returns:** *[Affine3](_types_opencv_affine3_.affine3.md)*

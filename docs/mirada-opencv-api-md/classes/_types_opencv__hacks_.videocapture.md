@@ -28,7 +28,7 @@
 
 \+ **new VideoCapture**(`videoSource`: HTMLVideoElement | string): *[VideoCapture](_types_opencv__hacks_.videocapture.md)*
 
-*Defined in [types/opencv/_hacks.ts:102](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/_hacks.ts#L102)*
+*Defined in [types/opencv/_hacks.ts:103](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/_hacks.ts#L103)*
 
 **Parameters:**
 
@@ -44,7 +44,7 @@ Name | Type |
 
 • **video**: *HTMLVideoElement*
 
-*Defined in [types/opencv/_hacks.ts:105](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/_hacks.ts#L105)*
+*Defined in [types/opencv/_hacks.ts:106](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/_hacks.ts#L106)*
 
 ## Methods
 
@@ -52,7 +52,7 @@ Name | Type |
 
 ▸ **read**(`m`: [Mat](_types_opencv_mat_.mat.md)): *any*
 
-*Defined in [types/opencv/_hacks.ts:104](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/_hacks.ts#L104)*
+*Defined in [types/opencv/_hacks.ts:105](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/_hacks.ts#L105)*
 
 **Parameters:**
 

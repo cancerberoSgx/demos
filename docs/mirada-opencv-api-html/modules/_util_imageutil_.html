@@ -73,6 +73,8 @@
 						<section class="tsd-index-section tsd-is-external">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="_util_imageutil_.html#asmat" class="tsd-kind-icon">as<wbr>Mat</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="_util_imageutil_.html#comparel2" class="tsd-kind-icon">compare<wbr>L2</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="_util_imageutil_.html#fromarraybuffer" class="tsd-kind-icon">from<wbr>Array<wbr>Buffer</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="_util_imageutil_.html#fromfile" class="tsd-kind-icon">from<wbr>File</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="_util_imageutil_.html#fromurl" class="tsd-kind-icon">from<wbr>Url</a></li>
@@ -86,6 +88,60 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="asmat" class="tsd-anchor"></a>
+					<h3>as<wbr>Mat</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">as<wbr>Mat<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><a href="../classes/_file_.file.html" class="tsd-signature-type">File</a><span class="tsd-signature-symbol"> | </span><a href="../classes/_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/util/imageUtil.ts#L69">util/imageUtil.ts:69</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>f: <a href="../classes/_file_.file.html" class="tsd-signature-type">File</a><span class="tsd-signature-symbol"> | </span><a href="../classes/_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="comparel2" class="tsd-anchor"></a>
+					<h3>compare<wbr>L2</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">compare<wbr>L2<span class="tsd-signature-symbol">(</span>f1<span class="tsd-signature-symbol">: </span><a href="../classes/_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a><span class="tsd-signature-symbol"> | </span><a href="../classes/_file_.file.html" class="tsd-signature-type">File</a>, f2<span class="tsd-signature-symbol">: </span><a href="../classes/_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a><span class="tsd-signature-symbol"> | </span><a href="../classes/_file_.file.html" class="tsd-signature-type">File</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/util/imageUtil.ts#L55">util/imageUtil.ts:55</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Compare two images by getting the L2 error (square-root of sum of squared error). The lower the result the more similar are the images.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>f1: <a href="../classes/_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a><span class="tsd-signature-symbol"> | </span><a href="../classes/_file_.file.html" class="tsd-signature-type">File</a></h5>
+								</li>
+								<li>
+									<h5>f2: <a href="../classes/_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a><span class="tsd-signature-symbol"> | </span><a href="../classes/_file_.file.html" class="tsd-signature-type">File</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
 					<a name="fromarraybuffer" class="tsd-anchor"></a>
 					<h3>from<wbr>Array<wbr>Buffer</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
@@ -95,7 +151,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/util/imageUtil.ts#L45">util/imageUtil.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/util/imageUtil.ts#L44">util/imageUtil.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -118,7 +174,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/util/imageUtil.ts#L40">util/imageUtil.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/util/imageUtil.ts#L39">util/imageUtil.ts:39</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -141,7 +197,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/util/imageUtil.ts#L50">util/imageUtil.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/util/imageUtil.ts#L49">util/imageUtil.ts:49</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -164,7 +220,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/util/imageUtil.ts#L7">util/imageUtil.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/util/imageUtil.ts#L7">util/imageUtil.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -197,13 +253,13 @@
 					<a name="torgba" class="tsd-anchor"></a>
 					<h3>to<wbr>Rgba</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Rgba<span class="tsd-signature-symbol">(</span>mat<span class="tsd-signature-symbol">: </span><a href="../classes/_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a></li>
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Rgba<span class="tsd-signature-symbol">(</span>mat<span class="tsd-signature-symbol">: </span><a href="../classes/_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a>, dst<span class="tsd-signature-symbol">?: </span><a href="../classes/_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/util/imageUtil.ts#L19">util/imageUtil.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/util/imageUtil.ts#L19">util/imageUtil.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -216,6 +272,9 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>mat: <a href="../classes/_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> dst: <a href="../classes/_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a><span class="tsd-signature-symbol"> =&nbsp;new cv.Mat()</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../classes/_types_opencv_mat_.mat.html" class="tsd-signature-type">Mat</a></h4>
@@ -237,6 +296,12 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="_util_imageutil_.html#asmat" class="tsd-kind-icon">as<wbr>Mat</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="_util_imageutil_.html#comparel2" class="tsd-kind-icon">compare<wbr>L2</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
 						<a href="_util_imageutil_.html#fromarraybuffer" class="tsd-kind-icon">from<wbr>Array<wbr>Buffer</a>
 					</li>
