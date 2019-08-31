@@ -34,7 +34,7 @@ Source:
 
 \+ **new LshTable**(): *[LshTable](_types_opencv_lshtable_.lshtable.md)*
 
-*Defined in [types/opencv/LshTable.ts:13](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/LshTable.ts#L13)*
+*Defined in [types/opencv/LshTable.ts:13](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/LshTable.ts#L13)*
 
   Default constructor
 
@@ -42,7 +42,7 @@ Source:
 
 \+ **new LshTable**(`feature_size`: any, `key_size`: any): *[LshTable](_types_opencv_lshtable_.lshtable.md)*
 
-*Defined in [types/opencv/LshTable.ts:18](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/LshTable.ts#L18)*
+*Defined in [types/opencv/LshTable.ts:18](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/LshTable.ts#L18)*
 
   Default constructor Create the mask and allocate the memory
 
@@ -57,7 +57,7 @@ Name | Type | Description |
 
 \+ **new LshTable**(`feature_size`: any, `subsignature_size`: any): *[LshTable](_types_opencv_lshtable_.lshtable.md)*
 
-*Defined in [types/opencv/LshTable.ts:27](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/LshTable.ts#L27)*
+*Defined in [types/opencv/LshTable.ts:27](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/LshTable.ts#L27)*
 
   Default constructor
   Default constructor Create the mask and allocate the memory
@@ -77,7 +77,7 @@ Name | Type | Description |
 
 ▸ **add**(`value`: any, `feature`: any): *void*
 
-*Defined in [types/opencv/LshTable.ts:38](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/LshTable.ts#L38)*
+*Defined in [types/opencv/LshTable.ts:38](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/LshTable.ts#L38)*
 
   Add a feature to the table
 
@@ -92,7 +92,7 @@ Name | Type | Description |
 
 ▸ **add**(`dataset`: [Matrix](../modules/_types_opencv__hacks_.md#matrix)): *[Matrix](../modules/_types_opencv__hacks_.md#matrix)*
 
-*Defined in [types/opencv/LshTable.ts:45](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/LshTable.ts#L45)*
+*Defined in [types/opencv/LshTable.ts:45](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/LshTable.ts#L45)*
 
   Add a set of features to the table
 
@@ -110,7 +110,7 @@ ___
 
 ▸ **getBucketFromKey**(`key`: [BucketKey](../modules/_types_opencv__hacks_.md#bucketkey)): *[Bucket](../modules/_types_opencv__hacks_.md#bucket)*
 
-*Defined in [types/opencv/LshTable.ts:50](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/LshTable.ts#L50)*
+*Defined in [types/opencv/LshTable.ts:50](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/LshTable.ts#L50)*
 
   Get a bucket given the key
 
@@ -128,7 +128,7 @@ ___
 
 ▸ **getKey**(`arg50`: any): *[size_t](../modules/_types_opencv__hacks_.md#size_t)*
 
-*Defined in [types/opencv/LshTable.ts:55](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/LshTable.ts#L55)*
+*Defined in [types/opencv/LshTable.ts:55](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/LshTable.ts#L55)*
 
   Compute the sub-signature of a feature
 
@@ -142,7 +142,7 @@ Name | Type |
 
 ▸ **getKey**(`feature`: any): *[size_t](../modules/_types_opencv__hacks_.md#size_t)*
 
-*Defined in [types/opencv/LshTable.ts:62](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/LshTable.ts#L62)*
+*Defined in [types/opencv/LshTable.ts:62](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/LshTable.ts#L62)*
 
   Return the Subsignature of a feature
 
@@ -160,7 +160,7 @@ ___
 
 ▸ **getStats**(): *[LshStats](../modules/_types_opencv__hacks_.md#lshstats)*
 
-*Defined in [types/opencv/LshTable.ts:67](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/LshTable.ts#L67)*
+*Defined in [types/opencv/LshTable.ts:67](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/LshTable.ts#L67)*
 
   Get statistics about the table
 
@@ -168,6 +168,6 @@ ___
 
 ▸ **getStats**(): *[LshStats](../modules/_types_opencv__hacks_.md#lshstats)*
 
-*Defined in [types/opencv/LshTable.ts:69](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/LshTable.ts#L69)*
+*Defined in [types/opencv/LshTable.ts:69](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/LshTable.ts#L69)*
 
 **Returns:** *[LshStats](../modules/_types_opencv__hacks_.md#lshstats)*

@@ -20,4 +20,4 @@
 
 • **image**: *[ImageData](../classes/_types_opencv__hacks_.imagedata.md)*
 
-*Defined in [tool/grabCut.ts:15](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/tool/grabCut.ts#L15)*
+*Defined in [tool/grabCut.ts:15](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/tool/grabCut.ts#L15)*

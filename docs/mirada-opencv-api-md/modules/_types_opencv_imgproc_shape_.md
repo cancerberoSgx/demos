@@ -77,7 +77,7 @@
 
 Ƭ **ConnectedComponentsAlgorithmsTypes**: *any*
 
-*Defined in [types/opencv/imgproc_shape.ts:624](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L624)*
+*Defined in [types/opencv/imgproc_shape.ts:624](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L624)*
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 Ƭ **ConnectedComponentsTypes**: *any*
 
-*Defined in [types/opencv/imgproc_shape.ts:626](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L626)*
+*Defined in [types/opencv/imgproc_shape.ts:626](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L626)*
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 Ƭ **ContourApproximationModes**: *any*
 
-*Defined in [types/opencv/imgproc_shape.ts:628](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L628)*
+*Defined in [types/opencv/imgproc_shape.ts:628](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L628)*
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 Ƭ **RectanglesIntersectTypes**: *any*
 
-*Defined in [types/opencv/imgproc_shape.ts:630](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L630)*
+*Defined in [types/opencv/imgproc_shape.ts:630](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L630)*
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 Ƭ **RetrievalModes**: *any*
 
-*Defined in [types/opencv/imgproc_shape.ts:632](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L632)*
+*Defined in [types/opencv/imgproc_shape.ts:632](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L632)*
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 Ƭ **ShapeMatchModes**: *any*
 
-*Defined in [types/opencv/imgproc_shape.ts:634](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L634)*
+*Defined in [types/opencv/imgproc_shape.ts:634](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L634)*
 
 ## Variables
 
@@ -125,7 +125,7 @@ ___
 
 • **CCL_DEFAULT**: *[ConnectedComponentsAlgorithmsTypes](_types_opencv_imgproc_shape_.md#connectedcomponentsalgorithmstypes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:529](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L529)*
+*Defined in [types/opencv/imgproc_shape.ts:529](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L529)*
 
 ___
 
@@ -133,7 +133,7 @@ ___
 
 • **CCL_GRANA**: *[ConnectedComponentsAlgorithmsTypes](_types_opencv_imgproc_shape_.md#connectedcomponentsalgorithmstypes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:531](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L531)*
+*Defined in [types/opencv/imgproc_shape.ts:531](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L531)*
 
 ___
 
@@ -141,7 +141,7 @@ ___
 
 • **CCL_WU**: *[ConnectedComponentsAlgorithmsTypes](_types_opencv_imgproc_shape_.md#connectedcomponentsalgorithmstypes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:527](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L527)*
+*Defined in [types/opencv/imgproc_shape.ts:527](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L527)*
 
 ___
 
@@ -149,7 +149,7 @@ ___
 
 • **CC_STAT_AREA**: *[ConnectedComponentsTypes](_types_opencv_imgproc_shape_.md#connectedcomponentstypes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:551](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L551)*
+*Defined in [types/opencv/imgproc_shape.ts:551](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L551)*
 
 ___
 
@@ -157,7 +157,7 @@ ___
 
 • **CC_STAT_HEIGHT**: *[ConnectedComponentsTypes](_types_opencv_imgproc_shape_.md#connectedcomponentstypes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:549](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L549)*
+*Defined in [types/opencv/imgproc_shape.ts:549](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L549)*
 
 ___
 
@@ -165,7 +165,7 @@ ___
 
 • **CC_STAT_LEFT**: *[ConnectedComponentsTypes](_types_opencv_imgproc_shape_.md#connectedcomponentstypes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:538](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L538)*
+*Defined in [types/opencv/imgproc_shape.ts:538](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L538)*
 
 The leftmost (x) coordinate which is the inclusive start of the bounding box in the horizontal
 direction.
@@ -176,7 +176,7 @@ ___
 
 • **CC_STAT_MAX**: *[ConnectedComponentsTypes](_types_opencv_imgproc_shape_.md#connectedcomponentstypes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:553](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L553)*
+*Defined in [types/opencv/imgproc_shape.ts:553](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L553)*
 
 ___
 
@@ -184,7 +184,7 @@ ___
 
 • **CC_STAT_TOP**: *[ConnectedComponentsTypes](_types_opencv_imgproc_shape_.md#connectedcomponentstypes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:545](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L545)*
+*Defined in [types/opencv/imgproc_shape.ts:545](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L545)*
 
 The topmost (y) coordinate which is the inclusive start of the bounding box in the vertical
 direction.
@@ -195,7 +195,7 @@ ___
 
 • **CC_STAT_WIDTH**: *[ConnectedComponentsTypes](_types_opencv_imgproc_shape_.md#connectedcomponentstypes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:547](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L547)*
+*Defined in [types/opencv/imgproc_shape.ts:547](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L547)*
 
 ___
 
@@ -203,7 +203,7 @@ ___
 
 • **CHAIN_APPROX_NONE**: *[ContourApproximationModes](_types_opencv_imgproc_shape_.md#contourapproximationmodes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:561](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L561)*
+*Defined in [types/opencv/imgproc_shape.ts:561](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L561)*
 
 stores absolutely all the contour points. That is, any 2 subsequent points (x1,y1) and (x2,y2) of
 the contour will be either horizontal, vertical or diagonal neighbors, that is,
@@ -215,7 +215,7 @@ ___
 
 • **CHAIN_APPROX_SIMPLE**: *[ContourApproximationModes](_types_opencv_imgproc_shape_.md#contourapproximationmodes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:568](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L568)*
+*Defined in [types/opencv/imgproc_shape.ts:568](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L568)*
 
 compresses horizontal, vertical, and diagonal segments and leaves only their end points. For
 example, an up-right rectangular contour is encoded with 4 points.
@@ -226,7 +226,7 @@ ___
 
 • **CHAIN_APPROX_TC89_KCOS**: *[ContourApproximationModes](_types_opencv_imgproc_shape_.md#contourapproximationmodes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:580](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L580)*
+*Defined in [types/opencv/imgproc_shape.ts:580](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L580)*
 
 applies one of the flavors of the Teh-Chin chain approximation algorithm TehChin89
 
@@ -236,7 +236,7 @@ ___
 
 • **CHAIN_APPROX_TC89_L1**: *[ContourApproximationModes](_types_opencv_imgproc_shape_.md#contourapproximationmodes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:574](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L574)*
+*Defined in [types/opencv/imgproc_shape.ts:574](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L574)*
 
 applies one of the flavors of the Teh-Chin chain approximation algorithm TehChin89
 
@@ -246,7 +246,7 @@ ___
 
 • **CONTOURS_MATCH_I1**: *[ShapeMatchModes](_types_opencv_imgproc_shape_.md#shapematchmodes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:618](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L618)*
+*Defined in [types/opencv/imgproc_shape.ts:618](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L618)*
 
 ___
 
@@ -254,7 +254,7 @@ ___
 
 • **CONTOURS_MATCH_I2**: *[ShapeMatchModes](_types_opencv_imgproc_shape_.md#shapematchmodes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:620](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L620)*
+*Defined in [types/opencv/imgproc_shape.ts:620](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L620)*
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 • **CONTOURS_MATCH_I3**: *[ShapeMatchModes](_types_opencv_imgproc_shape_.md#shapematchmodes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:622](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L622)*
+*Defined in [types/opencv/imgproc_shape.ts:622](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L622)*
 
 ___
 
@@ -270,7 +270,7 @@ ___
 
 • **INTERSECT_FULL**: *[RectanglesIntersectTypes](_types_opencv_imgproc_shape_.md#rectanglesintersecttypes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:586](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L586)*
+*Defined in [types/opencv/imgproc_shape.ts:586](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L586)*
 
 ___
 
@@ -278,7 +278,7 @@ ___
 
 • **INTERSECT_NONE**: *[RectanglesIntersectTypes](_types_opencv_imgproc_shape_.md#rectanglesintersecttypes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:582](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L582)*
+*Defined in [types/opencv/imgproc_shape.ts:582](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L582)*
 
 ___
 
@@ -286,7 +286,7 @@ ___
 
 • **INTERSECT_PARTIAL**: *[RectanglesIntersectTypes](_types_opencv_imgproc_shape_.md#rectanglesintersecttypes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:584](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L584)*
+*Defined in [types/opencv/imgproc_shape.ts:584](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L584)*
 
 ___
 
@@ -294,7 +294,7 @@ ___
 
 • **RETR_CCOMP**: *[RetrievalModes](_types_opencv_imgproc_shape_.md#retrievalmodes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:608](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L608)*
+*Defined in [types/opencv/imgproc_shape.ts:608](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L608)*
 
 retrieves all of the contours and organizes them into a two-level hierarchy. At the top level, there
 are external boundaries of the components. At the second level, there are boundaries of the holes.
@@ -307,7 +307,7 @@ ___
 
 • **RETR_EXTERNAL**: *[RetrievalModes](_types_opencv_imgproc_shape_.md#retrievalmodes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:593](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L593)*
+*Defined in [types/opencv/imgproc_shape.ts:593](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L593)*
 
 retrieves only the extreme outer contours. It sets `hierarchy[i][2]=hierarchy[i][3]=-1` for all the
 contours.
@@ -318,7 +318,7 @@ ___
 
 • **RETR_FLOODFILL**: *[RetrievalModes](_types_opencv_imgproc_shape_.md#retrievalmodes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:616](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L616)*
+*Defined in [types/opencv/imgproc_shape.ts:616](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L616)*
 
 ___
 
@@ -326,7 +326,7 @@ ___
 
 • **RETR_LIST**: *[RetrievalModes](_types_opencv_imgproc_shape_.md#retrievalmodes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:599](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L599)*
+*Defined in [types/opencv/imgproc_shape.ts:599](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L599)*
 
 retrieves all of the contours without establishing any hierarchical relationships.
 
@@ -336,7 +336,7 @@ ___
 
 • **RETR_TREE**: *[RetrievalModes](_types_opencv_imgproc_shape_.md#retrievalmodes)*
 
-*Defined in [types/opencv/imgproc_shape.ts:614](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L614)*
+*Defined in [types/opencv/imgproc_shape.ts:614](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L614)*
 
 retrieves all of the contours and reconstructs a full hierarchy of nested contours.
 
@@ -346,7 +346,7 @@ retrieves all of the contours and reconstructs a full hierarchy of nested contou
 
 ▸ **HuMoments**(`moments`: any, `hu`: [double](_types_opencv__hacks_.md#double)): *void*
 
-*Defined in [types/opencv/imgproc_shape.ts:403](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L403)*
+*Defined in [types/opencv/imgproc_shape.ts:403](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L403)*
 
 The function calculates seven Hu invariants (introduced in Hu62; see also ) defined as:
 
@@ -381,7 +381,7 @@ Name | Type | Description |
 
 ▸ **HuMoments**(`m`: any, `hu`: OutputArray): *void*
 
-*Defined in [types/opencv/imgproc_shape.ts:409](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L409)*
+*Defined in [types/opencv/imgproc_shape.ts:409](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L409)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -401,7 +401,7 @@ ___
 
 ▸ **approxPolyDP**(`curve`: InputArray, `approxCurve`: OutputArray, `epsilon`: [double](_types_opencv__hacks_.md#double), `closed`: [bool](_types_opencv__hacks_.md#bool)): *void*
 
-*Defined in [types/opencv/imgproc_shape.ts:22](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L22)*
+*Defined in [types/opencv/imgproc_shape.ts:22](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L22)*
 
 The function [cv::approxPolyDP] approximates a curve or a polygon with another curve/polygon with
 less vertices so that the distance between them is less or equal to the specified precision. It uses
@@ -424,7 +424,7 @@ ___
 
 ▸ **arcLength**(`curve`: InputArray, `closed`: [bool](_types_opencv__hacks_.md#bool)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/imgproc_shape.ts:31](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L31)*
+*Defined in [types/opencv/imgproc_shape.ts:31](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L31)*
 
 The function computes a curve length or a closed contour perimeter.
 
@@ -443,7 +443,7 @@ ___
 
 ▸ **boundingRect**(`array`: InputArray): *[Rect](../classes/_types_opencv__hacks_.rect.md)*
 
-*Defined in [types/opencv/imgproc_shape.ts:39](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L39)*
+*Defined in [types/opencv/imgproc_shape.ts:39](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L39)*
 
 The function calculates and returns the minimal up-right bounding rectangle for the specified point
 set or non-zero pixels of gray-scale image.
@@ -462,7 +462,7 @@ ___
 
 ▸ **boxPoints**(`box`: [RotatedRect](../classes/_types_opencv_rotatedrect_.rotatedrect.md), `points`: OutputArray): *void*
 
-*Defined in [types/opencv/imgproc_shape.ts:51](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L51)*
+*Defined in [types/opencv/imgproc_shape.ts:51](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L51)*
 
 The function finds the four vertices of a rotated rectangle. This function is useful to draw the
 rectangle. In C++, instead of using this function, you can directly use [RotatedRect::points]
@@ -484,7 +484,7 @@ ___
 
 ▸ **connectedComponents**(`image`: InputArray, `labels`: OutputArray, `connectivity`: [int](_types_opencv__hacks_.md#int), `ltype`: [int](_types_opencv__hacks_.md#int), `ccltype`: [int](_types_opencv__hacks_.md#int)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/imgproc_shape.ts:74](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L74)*
+*Defined in [types/opencv/imgproc_shape.ts:74](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L74)*
 
 image with 4 or 8 way connectivity - returns N, the total number of labels [0, N-1] where 0
 represents the background label. ltype specifies the output label image type, an important
@@ -510,7 +510,7 @@ Name | Type | Description |
 
 ▸ **connectedComponents**(`image`: InputArray, `labels`: OutputArray, `connectivity?`: [int](_types_opencv__hacks_.md#int), `ltype?`: [int](_types_opencv__hacks_.md#int)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/imgproc_shape.ts:88](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L88)*
+*Defined in [types/opencv/imgproc_shape.ts:88](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L88)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -532,7 +532,7 @@ ___
 
 ▸ **connectedComponentsWithStats**(`image`: InputArray, `labels`: OutputArray, `stats`: OutputArray, `centroids`: OutputArray, `connectivity`: [int](_types_opencv__hacks_.md#int), `ltype`: [int](_types_opencv__hacks_.md#int), `ccltype`: [int](_types_opencv__hacks_.md#int)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/imgproc_shape.ts:118](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L118)*
+*Defined in [types/opencv/imgproc_shape.ts:118](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L118)*
 
 image with 4 or 8 way connectivity - returns N, the total number of labels [0, N-1] where 0
 represents the background label. ltype specifies the output label image type, an important
@@ -560,7 +560,7 @@ Name | Type | Description |
 
 ▸ **connectedComponentsWithStats**(`image`: InputArray, `labels`: OutputArray, `stats`: OutputArray, `centroids`: OutputArray, `connectivity?`: [int](_types_opencv__hacks_.md#int), `ltype?`: [int](_types_opencv__hacks_.md#int)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/imgproc_shape.ts:139](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L139)*
+*Defined in [types/opencv/imgproc_shape.ts:139](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L139)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -584,7 +584,7 @@ ___
 
 ▸ **contourArea**(`contour`: InputArray, `oriented?`: [bool](_types_opencv__hacks_.md#bool)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/imgproc_shape.ts:173](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L173)*
+*Defined in [types/opencv/imgproc_shape.ts:173](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L173)*
 
 The function computes a contour area. Similarly to moments , the area is computed using the Green
 formula. Thus, the returned area and the number of non-zero pixels, if you draw the contour using
@@ -625,7 +625,7 @@ ___
 
 ▸ **convexHull**(`points`: InputArray, `hull`: OutputArray, `clockwise?`: [bool](_types_opencv__hacks_.md#bool), `returnPoints?`: [bool](_types_opencv__hacks_.md#bool)): *void*
 
-*Defined in [types/opencv/imgproc_shape.ts:200](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L200)*
+*Defined in [types/opencv/imgproc_shape.ts:200](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L200)*
 
 The function [cv::convexHull] finds the convex hull of a 2D point set using the Sklansky's algorithm
 Sklansky82 that has *O(N logN)* complexity in the current implementation.
@@ -652,7 +652,7 @@ ___
 
 ▸ **convexityDefects**(`contour`: InputArray, `convexhull`: InputArray, `convexityDefects`: OutputArray): *void*
 
-*Defined in [types/opencv/imgproc_shape.ts:217](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L217)*
+*Defined in [types/opencv/imgproc_shape.ts:217](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L217)*
 
 The figure below displays convexity defects of a hand contour:
 
@@ -672,7 +672,7 @@ ___
 
 ▸ **createGeneralizedHoughBallard**(): *any*
 
-*Defined in [types/opencv/imgproc_shape.ts:219](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L219)*
+*Defined in [types/opencv/imgproc_shape.ts:219](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L219)*
 
 **Returns:** *any*
 
@@ -682,7 +682,7 @@ ___
 
 ▸ **createGeneralizedHoughGuil**(): *any*
 
-*Defined in [types/opencv/imgproc_shape.ts:221](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L221)*
+*Defined in [types/opencv/imgproc_shape.ts:221](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L221)*
 
 **Returns:** *any*
 
@@ -692,7 +692,7 @@ ___
 
 ▸ **findContours**(`image`: InputArray, `contours`: OutputArrayOfArrays, `hierarchy`: OutputArray, `mode`: [int](_types_opencv__hacks_.md#int), `method`: [int](_types_opencv__hacks_.md#int), `offset?`: [Point](../classes/_types_opencv__hacks_.point.md)): *void*
 
-*Defined in [types/opencv/imgproc_shape.ts:255](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L255)*
+*Defined in [types/opencv/imgproc_shape.ts:255](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L255)*
 
 The function retrieves contours from the binary image using the algorithm Suzuki85 . The contours
 are a useful tool for shape analysis and object detection and recognition. See squares.cpp in the
@@ -715,7 +715,7 @@ Name | Type | Description |
 
 ▸ **findContours**(`image`: InputArray, `contours`: OutputArrayOfArrays, `mode`: [int](_types_opencv__hacks_.md#int), `method`: [int](_types_opencv__hacks_.md#int), `offset?`: [Point](../classes/_types_opencv__hacks_.point.md)): *void*
 
-*Defined in [types/opencv/imgproc_shape.ts:261](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L261)*
+*Defined in [types/opencv/imgproc_shape.ts:261](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L261)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -738,7 +738,7 @@ ___
 
 ▸ **fitEllipse**(`points`: InputArray): *[RotatedRect](../classes/_types_opencv_rotatedrect_.rotatedrect.md)*
 
-*Defined in [types/opencv/imgproc_shape.ts:272](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L272)*
+*Defined in [types/opencv/imgproc_shape.ts:272](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L272)*
 
 The function calculates the ellipse that fits (in a least-squares sense) a set of 2D points best of
 all. It returns the rotated rectangle in which the ellipse is inscribed. The first algorithm
@@ -760,7 +760,7 @@ ___
 
 ▸ **fitEllipseAMS**(`points`: InputArray): *[RotatedRect](../classes/_types_opencv_rotatedrect_.rotatedrect.md)*
 
-*Defined in [types/opencv/imgproc_shape.ts:300](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L300)*
+*Defined in [types/opencv/imgproc_shape.ts:300](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L300)*
 
 The function calculates the ellipse that fits a set of 2D points. It returns the rotated rectangle
 in which the ellipse is inscribed. The Approximate Mean Square (AMS) proposed by Taubin1991 is used.
@@ -799,7 +799,7 @@ ___
 
 ▸ **fitEllipseDirect**(`points`: InputArray): *[RotatedRect](../classes/_types_opencv_rotatedrect_.rotatedrect.md)*
 
-*Defined in [types/opencv/imgproc_shape.ts:334](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L334)*
+*Defined in [types/opencv/imgproc_shape.ts:334](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L334)*
 
 The function calculates the ellipse that fits a set of 2D points. It returns the rotated rectangle
 in which the ellipse is inscribed. The Direct least square (Direct) method by Fitzgibbon1999 is
@@ -844,7 +844,7 @@ ___
 
 ▸ **fitLine**(`points`: InputArray, `line`: OutputArray, `distType`: [int](_types_opencv__hacks_.md#int), `param`: [double](_types_opencv__hacks_.md#double), `reps`: [double](_types_opencv__hacks_.md#double), `aeps`: [double](_types_opencv__hacks_.md#double)): *void*
 
-*Defined in [types/opencv/imgproc_shape.ts:374](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L374)*
+*Defined in [types/opencv/imgproc_shape.ts:374](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L374)*
 
 The function fitLine fits a line to a 2D or 3D point set by minimizing `$\\sum_i \\rho(r_i)$` where
 `$r_i$` is a distance between the `$i^{th}$` point, the line and `$\\rho(r)$` is a distance
@@ -884,7 +884,7 @@ ___
 
 ▸ **intersectConvexConvex**(`_p1`: InputArray, `_p2`: InputArray, `_p12`: OutputArray, `handleNested?`: [bool](_types_opencv__hacks_.md#bool)): *[float](_types_opencv__hacks_.md#float)*
 
-*Defined in [types/opencv/imgproc_shape.ts:411](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L411)*
+*Defined in [types/opencv/imgproc_shape.ts:411](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L411)*
 
 **Parameters:**
 
@@ -903,7 +903,7 @@ ___
 
 ▸ **isContourConvex**(`contour`: InputArray): *[bool](_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/imgproc_shape.ts:419](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L419)*
+*Defined in [types/opencv/imgproc_shape.ts:419](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L419)*
 
 The function tests whether the input contour is convex or not. The contour must be simple, that is,
 without self-intersections. Otherwise, the function output is undefined.
@@ -922,7 +922,7 @@ ___
 
 ▸ **matchShapes**(`contour1`: InputArray, `contour2`: InputArray, `method`: [int](_types_opencv__hacks_.md#int), `parameter`: [double](_types_opencv__hacks_.md#double)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/imgproc_shape.ts:433](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L433)*
+*Defined in [types/opencv/imgproc_shape.ts:433](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L433)*
 
 The function compares two shapes. All three implemented methods use the Hu invariants (see
 [HuMoments])
@@ -944,7 +944,7 @@ ___
 
 ▸ **minAreaRect**(`points`: InputArray): *[RotatedRect](../classes/_types_opencv_rotatedrect_.rotatedrect.md)*
 
-*Defined in [types/opencv/imgproc_shape.ts:442](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L442)*
+*Defined in [types/opencv/imgproc_shape.ts:442](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L442)*
 
 The function calculates and returns the minimum-area bounding rectangle (possibly rotated) for a
 specified point set. Developer should keep in mind that the returned [RotatedRect] can contain
@@ -964,7 +964,7 @@ ___
 
 ▸ **minEnclosingCircle**(`points`: InputArray, `center`: any, `radius`: any): *void*
 
-*Defined in [types/opencv/imgproc_shape.ts:453](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L453)*
+*Defined in [types/opencv/imgproc_shape.ts:453](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L453)*
 
 The function finds the minimal enclosing circle of a 2D point set using an iterative algorithm.
 
@@ -984,7 +984,7 @@ ___
 
 ▸ **minEnclosingTriangle**(`points`: InputArray, `triangle`: OutputArray): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/imgproc_shape.ts:472](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L472)*
+*Defined in [types/opencv/imgproc_shape.ts:472](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L472)*
 
 The function finds a triangle of minimum area enclosing the given set of 2D points and returns its
 area. The output for a given 2D point set is shown in the image below. 2D points are depicted in
@@ -1012,7 +1012,7 @@ ___
 
 ▸ **moments**(`array`: InputArray, `binaryImage?`: [bool](_types_opencv__hacks_.md#bool)): *[Moments](_types_opencv__hacks_.md#moments)*
 
-*Defined in [types/opencv/imgproc_shape.ts:491](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L491)*
+*Defined in [types/opencv/imgproc_shape.ts:491](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L491)*
 
 The function computes moments, up to the 3rd order, of a vector shape or a rasterized shape. The
 results are returned in the structure [cv::Moments].
@@ -1039,7 +1039,7 @@ ___
 
 ▸ **pointPolygonTest**(`contour`: InputArray, `pt`: Point2f, `measureDist`: [bool](_types_opencv__hacks_.md#bool)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/imgproc_shape.ts:508](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L508)*
+*Defined in [types/opencv/imgproc_shape.ts:508](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L508)*
 
 The function determines whether the point is inside a contour, outside, or lies on an edge (or
 coincides with a vertex). It returns positive (inside), negative (outside), or zero (on an edge)
@@ -1064,7 +1064,7 @@ ___
 
 ▸ **rotatedRectangleIntersection**(`rect1`: any, `rect2`: any, `intersectingRegion`: OutputArray): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/imgproc_shape.ts:525](https://github.com/cancerberoSgx/mirada/blob/ff42750/mirada/src/types/opencv/imgproc_shape.ts#L525)*
+*Defined in [types/opencv/imgproc_shape.ts:525](https://github.com/cancerberoSgx/mirada/blob/1c5d3d0/mirada/src/types/opencv/imgproc_shape.ts#L525)*
 
 If there is then the vertices of the intersecting region are returned as well.
 
