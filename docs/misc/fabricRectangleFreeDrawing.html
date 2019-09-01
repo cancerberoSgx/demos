@@ -93,6 +93,7 @@
         rect.dirty = true
         fabricCanvas.requestRenderAllBound()
       }
+      rect.setCoords() // important! 
       options.onlyOne && uninstall()
     }
     function install() {
