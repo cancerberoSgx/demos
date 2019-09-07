@@ -22,7 +22,7 @@
 
 • **constraints**? : *MediaStreamConstraints*
 
-*Defined in [browser/videoReader.ts:6](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/browser/videoReader.ts#L6)*
+*Defined in [browser/videoReader.ts:6](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L6)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **noMatCheck**? : *undefined | false | true*
 
-*Defined in [browser/videoReader.ts:5](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/browser/videoReader.ts#L5)*
+*Defined in [browser/videoReader.ts:5](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L5)*
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 • **size**? : *"videoSize" | "video" | "canvas"*
 
-*Defined in [browser/videoReader.ts:4](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/browser/videoReader.ts#L4)*
+*Defined in [browser/videoReader.ts:4](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L4)*

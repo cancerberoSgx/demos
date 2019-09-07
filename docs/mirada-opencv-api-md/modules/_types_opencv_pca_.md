@@ -26,7 +26,7 @@
 
 Ƭ **Flags**: *any*
 
-*Defined in [types/opencv/PCA.ts:188](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/PCA.ts#L188)*
+*Defined in [types/opencv/PCA.ts:188](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/PCA.ts#L188)*
 
 ## Variables
 
@@ -34,7 +34,7 @@
 
 • **DATA_AS_COL**: *[Flags](_types_opencv_pca_.md#flags)*
 
-*Defined in [types/opencv/PCA.ts:184](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/PCA.ts#L184)*
+*Defined in [types/opencv/PCA.ts:184](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/PCA.ts#L184)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **DATA_AS_ROW**: *[Flags](_types_opencv_pca_.md#flags)*
 
-*Defined in [types/opencv/PCA.ts:182](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/PCA.ts#L182)*
+*Defined in [types/opencv/PCA.ts:182](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/PCA.ts#L182)*
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 • **USE_AVG**: *[Flags](_types_opencv_pca_.md#flags)*
 
-*Defined in [types/opencv/PCA.ts:186](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/PCA.ts#L186)*
+*Defined in [types/opencv/PCA.ts:186](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/PCA.ts#L186)*

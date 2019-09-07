@@ -1,0 +1,62 @@
+**[ojos](../README.md)**
+
+[Globals](../README.md) › ["command/impl/roi"](../modules/_command_impl_roi_.md) › [Command_roiImpl](_command_impl_roi_.command_roiimpl.md)
+
+# Class: Command_roiImpl
+
+## Hierarchy
+
+* [AbstractCommandHandler](_command_abstractcommand_.abstractcommandhandler.md)‹[roi](../enums/_command_types_.commandname.md#roi)›
+
+  * **Command_roiImpl**
+
+## Implements
+
+* [CommandHandler](../interfaces/_command_types_.commandhandler.md)‹[roi](../enums/_command_types_.commandname.md#roi)›
+
+## Index
+
+### Methods
+
+* [run](_command_impl_roi_.command_roiimpl.md#run)
+* [validate](_command_impl_roi_.command_roiimpl.md#validate)
+
+## Methods
+
+###  run
+
+▸ **run**(`o`: [Options1](../interfaces/_command_types_.options1.md)‹[roi](../enums/_command_types_.commandname.md#roi)›): *Promise‹object | object›*
+
+*Implementation of [CommandHandler](../interfaces/_command_types_.commandhandler.md)*
+
+*Overrides [AbstractCommandHandler](_command_abstractcommand_.abstractcommandhandler.md).[run](_command_abstractcommand_.abstractcommandhandler.md#abstract-run)*
+
+*Defined in [command/impl/roi.ts:16](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/impl/roi.ts#L16)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`o` | [Options1](../interfaces/_command_types_.options1.md)‹[roi](../enums/_command_types_.commandname.md#roi)› |
+
+**Returns:** *Promise‹object | object›*
+
+___
+
+###  validate
+
+▸ **validate**(`c`: Partial‹[Command_roi](../interfaces/_command_impl_roi_.command_roi.md)›): *Promise‹undefined | "expr is mandatory"›*
+
+*Implementation of [CommandHandler](../interfaces/_command_types_.commandhandler.md)*
+
+*Overrides [AbstractCommandHandler](_command_abstractcommand_.abstractcommandhandler.md).[validate](_command_abstractcommand_.abstractcommandhandler.md#abstract-validate)*
+
+*Defined in [command/impl/roi.ts:30](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/impl/roi.ts#L30)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`c` | Partial‹[Command_roi](../interfaces/_command_impl_roi_.command_roi.md)› |
+
+**Returns:** *Promise‹undefined | "expr is mandatory"›*

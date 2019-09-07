@@ -48,6 +48,7 @@ console.trace(error)
 * [mat](_browser_videoreader_.videoreader.md#mat)
 * [o](_browser_videoreader_.videoreader.md#protected-o)
 * [size](_browser_videoreader_.videoreader.md#protected-size)
+* [stream](_browser_videoreader_.videoreader.md#protected-stream)
 * [streaming](_browser_videoreader_.videoreader.md#streaming)
 * [video](_browser_videoreader_.videoreader.md#protected-video)
 
@@ -57,10 +58,11 @@ console.trace(error)
 * [getSize](_browser_videoreader_.videoreader.md#protected-getsize)
 * [matCheck](_browser_videoreader_.videoreader.md#private-matcheck)
 * [read](_browser_videoreader_.videoreader.md#read)
+* [stop](_browser_videoreader_.videoreader.md#stop)
 
 ### Object literals
 
-* [defaultOptions](_browser_videoreader_.videoreader.md#static-defaultoptions)
+* [defaultOptions](_browser_videoreader_.videoreader.md#static-protected-defaultoptions)
 
 ## Constructors
 
@@ -68,7 +70,7 @@ console.trace(error)
 
 \+ **new VideoReader**(`video`: HTMLVideoElement, `canvas`: HTMLCanvasElement, `o`: [Options](../interfaces/_browser_videoreader_.options.md)): *[VideoReader](_browser_videoreader_.videoreader.md)*
 
-*Defined in [browser/videoReader.ts:49](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/browser/videoReader.ts#L49)*
+*Defined in [browser/videoReader.ts:55](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L55)*
 
 **Parameters:**
 
@@ -86,7 +88,7 @@ Name | Type | Default |
 
 • **canvas**: *HTMLCanvasElement*
 
-*Defined in [browser/videoReader.ts:51](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/browser/videoReader.ts#L51)*
+*Defined in [browser/videoReader.ts:57](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L57)*
 
 ___
 
@@ -94,7 +96,7 @@ ___
 
 • **ctx**: *CanvasRenderingContext2D*
 
-*Defined in [browser/videoReader.ts:39](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/browser/videoReader.ts#L39)*
+*Defined in [browser/videoReader.ts:39](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L39)*
 
 ___
 
@@ -102,7 +104,7 @@ ___
 
 • **mat**: *[Mat](_types_opencv_mat_.mat.md)* =  null as any
 
-*Defined in [browser/videoReader.ts:40](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/browser/videoReader.ts#L40)*
+*Defined in [browser/videoReader.ts:40](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L40)*
 
 ___
 
@@ -110,7 +112,7 @@ ___
 
 • **o**: *[Options](../interfaces/_browser_videoreader_.options.md)*
 
-*Defined in [browser/videoReader.ts:51](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/browser/videoReader.ts#L51)*
+*Defined in [browser/videoReader.ts:57](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L57)*
 
 ___
 
@@ -118,7 +120,15 @@ ___
 
 • **size**: *[Size](_types_opencv__hacks_.size.md)*
 
-*Defined in [browser/videoReader.ts:49](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/browser/videoReader.ts#L49)*
+*Defined in [browser/videoReader.ts:41](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L41)*
+
+___
+
+### `Protected` stream
+
+• **stream**: *MediaStream | undefined*
+
+*Defined in [browser/videoReader.ts:55](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L55)*
 
 ___
 
@@ -126,7 +136,9 @@ ___
 
 • **streaming**: *boolean* = false
 
-*Defined in [browser/videoReader.ts:41](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/browser/videoReader.ts#L41)*
+*Defined in [browser/videoReader.ts:46](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L46)*
+
+Indicates if the video is currently being processed
 
 ___
 
@@ -134,7 +146,7 @@ ___
 
 • **video**: *HTMLVideoElement*
 
-*Defined in [browser/videoReader.ts:51](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/browser/videoReader.ts#L51)*
+*Defined in [browser/videoReader.ts:57](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L57)*
 
 ## Methods
 
@@ -142,7 +154,7 @@ ___
 
 ▸ **canPlay**(): *Promise‹unknown›*
 
-*Defined in [browser/videoReader.ts:57](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/browser/videoReader.ts#L57)*
+*Defined in [browser/videoReader.ts:72](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L72)*
 
 **Returns:** *Promise‹unknown›*
 
@@ -152,7 +164,7 @@ ___
 
 ▸ **getSize**(): *[Size](_types_opencv__hacks_.size.md)*
 
-*Defined in [browser/videoReader.ts:77](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/browser/videoReader.ts#L77)*
+*Defined in [browser/videoReader.ts:100](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L100)*
 
 **Returns:** *[Size](_types_opencv__hacks_.size.md)*
 
@@ -162,7 +174,7 @@ ___
 
 ▸ **matCheck**(): *void*
 
-*Defined in [browser/videoReader.ts:99](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/browser/videoReader.ts#L99)*
+*Defined in [browser/videoReader.ts:116](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L116)*
 
 **Returns:** *void*
 
@@ -172,27 +184,39 @@ ___
 
 ▸ **read**(): *void*
 
-*Defined in [browser/videoReader.ts:93](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/browser/videoReader.ts#L93)*
+*Defined in [browser/videoReader.ts:66](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L66)*
+
+reads current video frame into [mat]
+
+**Returns:** *void*
+
+___
+
+###  stop
+
+▸ **stop**(): *void*
+
+*Defined in [browser/videoReader.ts:92](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L92)*
 
 **Returns:** *void*
 
 ## Object literals
 
-### `Static` defaultOptions
+### `Static` `Protected` defaultOptions
 
 ### ▪ **defaultOptions**: *object*
 
-*Defined in [browser/videoReader.ts:42](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/browser/videoReader.ts#L42)*
+*Defined in [browser/videoReader.ts:48](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L48)*
 
 ###  size
 
 • **size**: *"canvas"* = "canvas"
 
-*Defined in [browser/videoReader.ts:43](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/browser/videoReader.ts#L43)*
+*Defined in [browser/videoReader.ts:49](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L49)*
 
 ▪ **constraints**: *object*
 
-*Defined in [browser/videoReader.ts:44](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/browser/videoReader.ts#L44)*
+*Defined in [browser/videoReader.ts:50](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L50)*
 
 * **audio**: *false* = false
 

@@ -8,6 +8,7 @@
 
 ### Variables
 
+* [_noArray](_util_imageutil_.md#let-_noarray)
 * [asImageData](_util_imageutil_.md#const-asimagedata)
 
 ### Functions
@@ -20,17 +21,27 @@
 * [fromUrl](_util_imageutil_.md#fromurl)
 * [get](_util_imageutil_.md#get)
 * [isMat](_util_imageutil_.md#ismat)
+* [map](_util_imageutil_.md#map)
+* [noArray](_util_imageutil_.md#noarray)
 * [set](_util_imageutil_.md#set)
 * [toImageData](_util_imageutil_.md#toimagedata)
 * [toRgba](_util_imageutil_.md#torgba)
 
 ## Variables
 
+### `Let` _noArray
+
+• **_noArray**: *[Mat](../classes/_types_opencv_mat_.mat.md)*
+
+*Defined in [util/imageUtil.ts:117](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/util/imageUtil.ts#L117)*
+
+___
+
 ### `Const` asImageData
 
 • **asImageData**: *[toImageData](_util_imageutil_.md#toimagedata)* =  toImageData
 
-*Defined in [util/imageUtil.ts:14](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/util/imageUtil.ts#L14)*
+*Defined in [util/imageUtil.ts:14](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/util/imageUtil.ts#L14)*
 
 ## Functions
 
@@ -38,7 +49,7 @@
 
 ▸ **asMat**(`f`: [File](../classes/_file_.file.md) | [Mat](../classes/_types_opencv_mat_.mat.md)): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [util/imageUtil.ts:77](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/util/imageUtil.ts#L77)*
+*Defined in [util/imageUtil.ts:77](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/util/imageUtil.ts#L77)*
 
 **Parameters:**
 
@@ -54,7 +65,7 @@ ___
 
 ▸ **compareL2**(`f1`: [Mat](../classes/_types_opencv_mat_.mat.md) | [File](../classes/_file_.file.md), `f2`: [Mat](../classes/_types_opencv_mat_.mat.md) | [File](../classes/_file_.file.md), `destroyBoth`: boolean): *number*
 
-*Defined in [util/imageUtil.ts:61](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/util/imageUtil.ts#L61)*
+*Defined in [util/imageUtil.ts:61](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/util/imageUtil.ts#L61)*
 
 Compare two images by getting the L2 error (square-root of sum of squared error). The lower the result the more similar are the images.
 
@@ -74,7 +85,7 @@ ___
 
 ▸ **del**(...`m`: [Mat](../classes/_types_opencv_mat_.mat.md)[]): *void*
 
-*Defined in [util/imageUtil.ts:81](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/util/imageUtil.ts#L81)*
+*Defined in [util/imageUtil.ts:81](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/util/imageUtil.ts#L81)*
 
 **Parameters:**
 
@@ -90,7 +101,7 @@ ___
 
 ▸ **fromArrayBuffer**(`a`: ArrayBuffer): *Promise‹[Mat](../classes/_types_opencv_mat_.mat.md)›*
 
-*Defined in [util/imageUtil.ts:48](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/util/imageUtil.ts#L48)*
+*Defined in [util/imageUtil.ts:48](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/util/imageUtil.ts#L48)*
 
 **Parameters:**
 
@@ -106,7 +117,7 @@ ___
 
 ▸ **fromFile**(`f`: string): *Promise‹[Mat](../classes/_types_opencv_mat_.mat.md)›*
 
-*Defined in [util/imageUtil.ts:43](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/util/imageUtil.ts#L43)*
+*Defined in [util/imageUtil.ts:43](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/util/imageUtil.ts#L43)*
 
 **Parameters:**
 
@@ -122,7 +133,7 @@ ___
 
 ▸ **fromUrl**(`f`: string): *Promise‹[Mat](../classes/_types_opencv_mat_.mat.md)›*
 
-*Defined in [util/imageUtil.ts:53](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/util/imageUtil.ts#L53)*
+*Defined in [util/imageUtil.ts:53](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/util/imageUtil.ts#L53)*
 
 **Parameters:**
 
@@ -138,7 +149,7 @@ ___
 
 ▸ **get**(`m`: [Mat](../classes/_types_opencv_mat_.mat.md), `x`: number, `y`: number): *any[]*
 
-*Defined in [util/imageUtil.ts:98](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/util/imageUtil.ts#L98)*
+*Defined in [util/imageUtil.ts:98](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/util/imageUtil.ts#L98)*
 
 gets the color of pixel at coords (x,y)
 
@@ -158,7 +169,7 @@ ___
 
 ▸ **isMat**(`m`: any): *boolean*
 
-*Defined in [util/imageUtil.ts:16](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/util/imageUtil.ts#L16)*
+*Defined in [util/imageUtil.ts:16](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/util/imageUtil.ts#L16)*
 
 **Parameters:**
 
@@ -170,11 +181,51 @@ Name | Type |
 
 ___
 
+###  map
+
+▸ **map**(`mat`: [Mat](../classes/_types_opencv_mat_.mat.md), `dst`: [Mat](../classes/_types_opencv_mat_.mat.md), `fn`: function): *void*
+
+*Defined in [util/imageUtil.ts:108](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/util/imageUtil.ts#L108)*
+
+**Parameters:**
+
+▪ **mat**: *[Mat](../classes/_types_opencv_mat_.mat.md)*
+
+▪ **dst**: *[Mat](../classes/_types_opencv_mat_.mat.md)*
+
+▪ **fn**: *function*
+
+▸ (`p`: [Scalar](../classes/_types_opencv__hacks_.scalar.md), `x`: number, `y`: number): *[Scalar](../classes/_types_opencv__hacks_.scalar.md)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`p` | [Scalar](../classes/_types_opencv__hacks_.scalar.md) |
+`x` | number |
+`y` | number |
+
+**Returns:** *void*
+
+___
+
+###  noArray
+
+▸ **noArray**(): *[Mat](../classes/_types_opencv_mat_.mat.md)*
+
+*Defined in [util/imageUtil.ts:121](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/util/imageUtil.ts#L121)*
+
+for overload methods that won't accept undefined as argument, like 'mask' cv.add()
+
+**Returns:** *[Mat](../classes/_types_opencv_mat_.mat.md)*
+
+___
+
 ###  set
 
 ▸ **set**(`m`: [Mat](../classes/_types_opencv_mat_.mat.md), `x`: number, `y`: number, `val`: [Scalar](../classes/_types_opencv__hacks_.scalar.md)): *void*
 
-*Defined in [util/imageUtil.ts:88](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/util/imageUtil.ts#L88)*
+*Defined in [util/imageUtil.ts:88](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/util/imageUtil.ts#L88)*
 
 sets the color of pixel at coords (x,y)
 
@@ -195,7 +246,7 @@ ___
 
 ▸ **toImageData**(`img`: [Mat](../classes/_types_opencv_mat_.mat.md)): *object*
 
-*Defined in [util/imageUtil.ts:7](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/util/imageUtil.ts#L7)*
+*Defined in [util/imageUtil.ts:7](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/util/imageUtil.ts#L7)*
 
 Creates an CV ImageData object from given image.
 
@@ -219,7 +270,7 @@ ___
 
 ▸ **toRgba**(`mat`: [Mat](../classes/_types_opencv_mat_.mat.md), `dst`: [Mat](../classes/_types_opencv_mat_.mat.md)): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [util/imageUtil.ts:23](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/util/imageUtil.ts#L23)*
+*Defined in [util/imageUtil.ts:23](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/util/imageUtil.ts#L23)*
 
 Returns a new image that is identical to given (1, 3 or 4 channels) but has 4 RGBA channels.
 
