@@ -43,7 +43,7 @@ Source:
 
 \+ **new Exception**(): *[Exception](_types_opencv_exception_.exception.md)*
 
-*Defined in [types/opencv/Exception.ts:31](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Exception.ts#L31)*
+*Defined in [types/opencv/Exception.ts:31](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/Exception.ts#L31)*
 
   Default constructor
 
@@ -51,7 +51,7 @@ Source:
 
 \+ **new Exception**(`_code`: [int](../modules/_types_opencv__hacks_.md#int), `_err`: String, `_func`: String, `_file`: String, `_line`: [int](../modules/_types_opencv__hacks_.md#int)): *[Exception](_types_opencv_exception_.exception.md)*
 
-*Defined in [types/opencv/Exception.ts:36](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Exception.ts#L36)*
+*Defined in [types/opencv/Exception.ts:36](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/Exception.ts#L36)*
 
   Full constructor. Normally the constructor is not called explicitly. Instead, the macros
 [CV_Error()], [CV_Error_()] and [CV_Assert()] are used.
@@ -74,7 +74,7 @@ Name | Type |
 
 • **code**: *[int](../modules/_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/Exception.ts:21](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Exception.ts#L21)*
+*Defined in [types/opencv/Exception.ts:21](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/Exception.ts#L21)*
 
   CVStatus
 
@@ -84,7 +84,7 @@ ___
 
 • **err**: *String*
 
-*Defined in [types/opencv/Exception.ts:23](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Exception.ts#L23)*
+*Defined in [types/opencv/Exception.ts:23](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/Exception.ts#L23)*
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 • **file**: *String*
 
-*Defined in [types/opencv/Exception.ts:25](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Exception.ts#L25)*
+*Defined in [types/opencv/Exception.ts:25](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/Exception.ts#L25)*
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 • **func**: *String*
 
-*Defined in [types/opencv/Exception.ts:27](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Exception.ts#L27)*
+*Defined in [types/opencv/Exception.ts:27](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/Exception.ts#L27)*
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 • **line**: *[int](../modules/_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/Exception.ts:29](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Exception.ts#L29)*
+*Defined in [types/opencv/Exception.ts:29](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/Exception.ts#L29)*
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 • **msg**: *String*
 
-*Defined in [types/opencv/Exception.ts:31](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Exception.ts#L31)*
+*Defined in [types/opencv/Exception.ts:31](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/Exception.ts#L31)*
 
 ## Methods
 
@@ -124,7 +124,7 @@ ___
 
 ▸ **formatMessage**(): *void*
 
-*Defined in [types/opencv/Exception.ts:44](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Exception.ts#L44)*
+*Defined in [types/opencv/Exception.ts:44](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/Exception.ts#L44)*
 
 **Returns:** *void*
 
@@ -134,7 +134,7 @@ ___
 
 ▸ **what**(): *any*
 
-*Defined in [types/opencv/Exception.ts:49](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/Exception.ts#L49)*
+*Defined in [types/opencv/Exception.ts:49](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/Exception.ts#L49)*
 
   the error description and the context as a text string.
 

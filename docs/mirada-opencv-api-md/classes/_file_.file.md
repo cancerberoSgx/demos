@@ -31,8 +31,8 @@ A thin layer on top of cv.Mat with lots of utilities to load, write, encode, etc
 
 * [asArrayBuffer](_file_.file.md#asarraybuffer)
 * [asBase64](_file_.file.md#asbase64)
-* [asChain](_file_.file.md#aschain)
 * [asDataUrl](_file_.file.md#asdataurl)
+* [asHTMLImageData](_file_.file.md#ashtmlimagedata)
 * [asImageData](_file_.file.md#asimagedata)
 * [asMat](_file_.file.md#asmat)
 * [clone](_file_.file.md#clone)
@@ -103,7 +103,7 @@ Defined in File.ts:16
 
 • **get height**(): *any*
 
-Defined in File.ts:51
+Defined in File.ts:55
 
 **Returns:** *any*
 
@@ -113,7 +113,7 @@ ___
 
 • **get mat**(): *[Mat](_types_opencv_mat_.mat.md)*
 
-Defined in File.ts:55
+Defined in File.ts:59
 
 **Returns:** *[Mat](_types_opencv_mat_.mat.md)*
 
@@ -123,7 +123,7 @@ ___
 
 • **get width**(): *any*
 
-Defined in File.ts:47
+Defined in File.ts:51
 
 **Returns:** *any*
 
@@ -133,7 +133,7 @@ Defined in File.ts:47
 
 ▸ **asArrayBuffer**(`format`: string): *Promise‹ArrayBuffer›*
 
-Defined in File.ts:70
+Defined in File.ts:74
 
 Returns an array buffer containing the image encoded in given format or inferring format from its name.
 
@@ -151,7 +151,7 @@ ___
 
 ▸ **asBase64**(`format`: string): *Promise‹string›*
 
-Defined in File.ts:97
+Defined in File.ts:101
 
 **Parameters:**
 
@@ -163,39 +163,33 @@ Name | Type | Default |
 
 ___
 
-###  asChain
-
-▸ **asChain**(`clone`: boolean): *[Chain](_tool_chain_.chain.md)*
-
-Defined in File.ts:119
-
-**Parameters:**
-
-Name | Type | Default |
------- | ------ | ------ |
-`clone` | boolean | false |
-
-**Returns:** *[Chain](_tool_chain_.chain.md)*
-
-___
-
 ###  asDataUrl
 
 ▸ **asDataUrl**(): *string*
 
-Defined in File.ts:43
+Defined in File.ts:47
 
 **Returns:** *string*
 
 ___
 
+###  asHTMLImageData
+
+▸ **asHTMLImageData**(): *ImageData*
+
+Defined in File.ts:43
+
+**Returns:** *ImageData*
+
+___
+
 ###  asImageData
 
-▸ **asImageData**(): *[ImageData](_types_opencv__hacks_.imagedata.md)*
+▸ **asImageData**(): *CVImageData*
 
 Defined in File.ts:39
 
-**Returns:** *[ImageData](_types_opencv__hacks_.imagedata.md)*
+**Returns:** *CVImageData*
 
 ___
 
@@ -229,7 +223,7 @@ ___
 
 ▸ **delete**(): *void*
 
-Defined in File.ts:102
+Defined in File.ts:106
 
 **Returns:** *void*
 
@@ -259,7 +253,7 @@ ___
 
 ▸ **remove**(`deleteMat`: boolean): *this*
 
-Defined in File.ts:62
+Defined in File.ts:66
 
 It removes the the file from file system and also delete() this file's Mat
 
@@ -277,7 +271,7 @@ ___
 
 ▸ **setMat**(`mat`: [Mat](_types_opencv_mat_.mat.md)): *this*
 
-Defined in File.ts:83
+Defined in File.ts:87
 
 **Parameters:**
 
@@ -293,7 +287,7 @@ ___
 
 ▸ **show**(`el`: HTMLElement): *this*
 
-Defined in File.ts:92
+Defined in File.ts:96
 
 Shows this image in given HTML canvas or image element.
 
@@ -325,7 +319,7 @@ ___
 
 ▸ **toRgba**(): *this*
 
-Defined in File.ts:112
+Defined in File.ts:116
 
 Converts the Mat of this file to RGBA channel type. It will replace the current mat and delete the original.
 
@@ -347,7 +341,7 @@ ___
 
 ▸ **write**(`path`: string, `format`: string): *Promise‹this›*
 
-Defined in File.ts:77
+Defined in File.ts:81
 
 Writes this image on given file path, encoded in given format (or inferred form current name).
 
@@ -471,7 +465,7 @@ ___
 
 ### `Static` fromData
 
-▸ **fromData**(`data`: [ImageData](_types_opencv__hacks_.imagedata.md), `name?`: undefined | string): *[File](_file_.file.md)*
+▸ **fromData**(`data`: CVImageData, `name?`: undefined | string): *[File](_file_.file.md)*
 
 Defined in File.ts:240
 
@@ -479,7 +473,7 @@ Defined in File.ts:240
 
 Name | Type |
 ------ | ------ |
-`data` | [ImageData](_types_opencv__hacks_.imagedata.md) |
+`data` | CVImageData |
 `name?` | undefined \| string |
 
 **Returns:** *[File](_file_.file.md)*

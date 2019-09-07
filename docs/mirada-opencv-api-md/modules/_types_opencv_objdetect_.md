@@ -25,7 +25,7 @@
 
 • **CASCADE_DO_CANNY_PRUNING**: *any*
 
-*Defined in [types/opencv/objdetect.ts:71](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/objdetect.ts#L71)*
+*Defined in [types/opencv/objdetect.ts:71](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/objdetect.ts#L71)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **CASCADE_DO_ROUGH_SEARCH**: *any*
 
-*Defined in [types/opencv/objdetect.ts:77](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/objdetect.ts#L77)*
+*Defined in [types/opencv/objdetect.ts:77](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/objdetect.ts#L77)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **CASCADE_FIND_BIGGEST_OBJECT**: *any*
 
-*Defined in [types/opencv/objdetect.ts:75](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/objdetect.ts#L75)*
+*Defined in [types/opencv/objdetect.ts:75](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/objdetect.ts#L75)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 • **CASCADE_SCALE_IMAGE**: *any*
 
-*Defined in [types/opencv/objdetect.ts:73](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/objdetect.ts#L73)*
+*Defined in [types/opencv/objdetect.ts:73](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/objdetect.ts#L73)*
 
 ## Functions
 
@@ -57,7 +57,7 @@ ___
 
 ▸ **createFaceDetectionMaskGenerator**(): *any*
 
-*Defined in [types/opencv/objdetect.ts:27](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/objdetect.ts#L27)*
+*Defined in [types/opencv/objdetect.ts:27](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/objdetect.ts#L27)*
 
 **Returns:** *any*
 
@@ -67,7 +67,7 @@ ___
 
 ▸ **groupRectangles**(`rectList`: any, `groupThreshold`: [int](_types_opencv__hacks_.md#int), `eps?`: [double](_types_opencv__hacks_.md#double)): *void*
 
-*Defined in [types/opencv/objdetect.ts:45](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/objdetect.ts#L45)*
+*Defined in [types/opencv/objdetect.ts:45](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/objdetect.ts#L45)*
 
 The function is a wrapper for the generic function partition . It clusters all the input rectangles
 using the rectangle equivalence criteria that combines rectangles with similar sizes and similar
@@ -88,7 +88,7 @@ Name | Type | Description |
 
 ▸ **groupRectangles**(`rectList`: any, `weights`: any, `groupThreshold`: [int](_types_opencv__hacks_.md#int), `eps?`: [double](_types_opencv__hacks_.md#double)): *void*
 
-*Defined in [types/opencv/objdetect.ts:51](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/objdetect.ts#L51)*
+*Defined in [types/opencv/objdetect.ts:51](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/objdetect.ts#L51)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -106,7 +106,7 @@ Name | Type |
 
 ▸ **groupRectangles**(`rectList`: any, `groupThreshold`: [int](_types_opencv__hacks_.md#int), `eps`: [double](_types_opencv__hacks_.md#double), `weights`: any, `levelWeights`: any): *void*
 
-*Defined in [types/opencv/objdetect.ts:57](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/objdetect.ts#L57)*
+*Defined in [types/opencv/objdetect.ts:57](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/objdetect.ts#L57)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -125,7 +125,7 @@ Name | Type |
 
 ▸ **groupRectangles**(`rectList`: any, `rejectLevels`: any, `levelWeights`: any, `groupThreshold`: [int](_types_opencv__hacks_.md#int), `eps?`: [double](_types_opencv__hacks_.md#double)): *void*
 
-*Defined in [types/opencv/objdetect.ts:63](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/objdetect.ts#L63)*
+*Defined in [types/opencv/objdetect.ts:63](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/objdetect.ts#L63)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -148,7 +148,7 @@ ___
 
 ▸ **groupRectangles_meanshift**(`rectList`: any, `foundWeights`: any, `foundScales`: any, `detectThreshold?`: [double](_types_opencv__hacks_.md#double), `winDetSize?`: [Size](../classes/_types_opencv__hacks_.size.md)): *void*
 
-*Defined in [types/opencv/objdetect.ts:69](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/objdetect.ts#L69)*
+*Defined in [types/opencv/objdetect.ts:69](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/objdetect.ts#L69)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.

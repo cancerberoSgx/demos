@@ -16,4 +16,4 @@
 
 ### ▪ **browser**: *object*
 
-*Defined in [browser/index.ts:10](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/index.ts#L10)*
+*Defined in [browser/index.ts:11](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/browser/index.ts#L11)*

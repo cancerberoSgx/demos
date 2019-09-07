@@ -29,7 +29,7 @@
 
 • **_proxyLoaded**: *boolean* = false
 
-*Defined in [format/format.ts:24](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/format/format.ts#L24)*
+*Defined in [format/format.ts:24](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/format/format.ts#L24)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **codecs**: *[FormatCodec](../interfaces/_types_mirada_.formatcodec.md)[]* =  []
 
-*Defined in [format/format.ts:22](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/format/format.ts#L22)*
+*Defined in [format/format.ts:22](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/format/format.ts#L22)*
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 • **proxies**: *[FormatProxy](_types_mirada_.md#formatproxy)[]* =  []
 
-*Defined in [format/format.ts:20](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/format/format.ts#L20)*
+*Defined in [format/format.ts:20](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/format/format.ts#L20)*
 
 ## Functions
 
@@ -53,7 +53,7 @@ ___
 
 ▸ **createCodec**(`proxy`: [FormatProxy](_types_mirada_.md#formatproxy)): *Promise‹[FormatCodec](../interfaces/_types_mirada_.formatcodec.md)›*
 
-*Defined in [format/format.ts:26](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/format/format.ts#L26)*
+*Defined in [format/format.ts:26](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/format/format.ts#L26)*
 
 **Parameters:**
 
@@ -69,7 +69,7 @@ ___
 
 ▸ **decodeOrThrow**(`buffer`: ArrayBuffer, `format?`: undefined | string): *Promise‹[ImageData](../classes/_types_opencv__hacks_.imagedata.md)›*
 
-*Defined in [format/format.ts:56](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/format/format.ts#L56)*
+*Defined in [format/format.ts:56](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/format/format.ts#L56)*
 
 **Parameters:**
 
@@ -86,7 +86,7 @@ ___
 
 ▸ **encodeOrThrow**(`data`: [ImageData](../classes/_types_opencv__hacks_.imagedata.md), `format`: string, `quality?`: undefined | number): *Promise‹ArrayBuffer›*
 
-*Defined in [format/format.ts:64](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/format/format.ts#L64)*
+*Defined in [format/format.ts:64](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/format/format.ts#L64)*
 
 **Parameters:**
 
@@ -104,7 +104,7 @@ ___
 
 ▸ **getDefaultCodec**(): *[FormatCodec](../interfaces/_types_mirada_.formatcodec.md)*
 
-*Defined in [format/format.ts:48](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/format/format.ts#L48)*
+*Defined in [format/format.ts:48](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/format/format.ts#L48)*
 
 **Returns:** *[FormatCodec](../interfaces/_types_mirada_.formatcodec.md)*
 
@@ -114,7 +114,7 @@ ___
 
 ▸ **installFormatProxy**(`proxy`: [FormatProxy](_types_mirada_.md#formatproxy)): *Promise‹void›*
 
-*Defined in [format/format.ts:12](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/format/format.ts#L12)*
+*Defined in [format/format.ts:12](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/format/format.ts#L12)*
 
 Nor or opencv.js or this library implement any image format so users are
 responsible of providing a FormatProxy using some library.
@@ -133,7 +133,7 @@ ___
 
 ▸ **loadFormatProxies**(): *Promise‹void›*
 
-*Defined in [format/format.ts:33](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/format/format.ts#L33)*
+*Defined in [format/format.ts:33](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/format/format.ts#L33)*
 
 **`internal`** 
 
@@ -145,7 +145,7 @@ ___
 
 ▸ **unInstallFormatProxies**(): *Promise‹void›*
 
-*Defined in [format/format.ts:16](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/format/format.ts#L16)*
+*Defined in [format/format.ts:16](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/format/format.ts#L16)*
 
 **Returns:** *Promise‹void›*
 
@@ -155,6 +155,6 @@ ___
 
 ▸ **unloadFormatProxies**(): *void*
 
-*Defined in [format/format.ts:44](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/format/format.ts#L44)*
+*Defined in [format/format.ts:44](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/format/format.ts#L44)*
 
 **Returns:** *void*

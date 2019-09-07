@@ -20,4 +20,4 @@
 
 • **async**? : *undefined | false | true*
 
-*Defined in [types/emscripten.ts:179](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/emscripten.ts#L179)*
+*Defined in [types/emscripten.ts:179](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/emscripten.ts#L179)*

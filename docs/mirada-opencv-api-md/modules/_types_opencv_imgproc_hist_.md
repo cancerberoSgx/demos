@@ -36,7 +36,7 @@
 
 Ƭ **HistCompMethods**: *any*
 
-*Defined in [types/opencv/imgproc_hist.ts:315](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/imgproc_hist.ts#L315)*
+*Defined in [types/opencv/imgproc_hist.ts:315](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/imgproc_hist.ts#L315)*
 
 Histogram comparison methods
 
@@ -46,7 +46,7 @@ Histogram comparison methods
 
 • **HISTCMP_BHATTACHARYYA**: *[HistCompMethods](_types_opencv_imgproc_hist_.md#histcompmethods)*
 
-*Defined in [types/opencv/imgproc_hist.ts:292](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/imgproc_hist.ts#L292)*
+*Defined in [types/opencv/imgproc_hist.ts:292](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/imgproc_hist.ts#L292)*
 
 Bhattacharyya distance (In fact, OpenCV computes Hellinger distance, which is related to
 Bhattacharyya coefficient.) `\\[d(H_1,H_2) = \\sqrt{1 - \\frac{1}{\\sqrt{\\bar{H_1} \\bar{H_2} N^2}}
@@ -58,7 +58,7 @@ ___
 
 • **HISTCMP_CHISQR**: *[HistCompMethods](_types_opencv_imgproc_hist_.md#histcompmethods)*
 
-*Defined in [types/opencv/imgproc_hist.ts:278](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/imgproc_hist.ts#L278)*
+*Defined in [types/opencv/imgproc_hist.ts:278](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/imgproc_hist.ts#L278)*
 
 Chi-Square `\\[d(H_1,H_2) = \\sum _I \\frac{\\left(H_1(I)-H_2(I)\\right)^2}{H_1(I)}\\]`
 
@@ -68,7 +68,7 @@ ___
 
 • **HISTCMP_CHISQR_ALT**: *[HistCompMethods](_types_opencv_imgproc_hist_.md#histcompmethods)*
 
-*Defined in [types/opencv/imgproc_hist.ts:302](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/imgproc_hist.ts#L302)*
+*Defined in [types/opencv/imgproc_hist.ts:302](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/imgproc_hist.ts#L302)*
 
 Alternative Chi-Square `\\[d(H_1,H_2) = 2 * \\sum _I
 \\frac{\\left(H_1(I)-H_2(I)\\right)^2}{H_1(I)+H_2(I)}\\]` This alternative formula is regularly used
@@ -80,7 +80,7 @@ ___
 
 • **HISTCMP_CORREL**: *[HistCompMethods](_types_opencv_imgproc_hist_.md#histcompmethods)*
 
-*Defined in [types/opencv/imgproc_hist.ts:272](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/imgproc_hist.ts#L272)*
+*Defined in [types/opencv/imgproc_hist.ts:272](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/imgproc_hist.ts#L272)*
 
 Correlation `\\[d(H_1,H_2) = \\frac{\\sum_I (H_1(I) - \\bar{H_1}) (H_2(I) -
 \\bar{H_2})}{\\sqrt{\\sum_I(H_1(I) - \\bar{H_1})^2 \\sum_I(H_2(I) - \\bar{H_2})^2}}\\]` where
@@ -92,7 +92,7 @@ ___
 
 • **HISTCMP_HELLINGER**: *[HistCompMethods](_types_opencv_imgproc_hist_.md#histcompmethods)*
 
-*Defined in [types/opencv/imgproc_hist.ts:294](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/imgproc_hist.ts#L294)*
+*Defined in [types/opencv/imgproc_hist.ts:294](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/imgproc_hist.ts#L294)*
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 • **HISTCMP_INTERSECT**: *[HistCompMethods](_types_opencv_imgproc_hist_.md#histcompmethods)*
 
-*Defined in [types/opencv/imgproc_hist.ts:284](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/imgproc_hist.ts#L284)*
+*Defined in [types/opencv/imgproc_hist.ts:284](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/imgproc_hist.ts#L284)*
 
 Intersection `\\[d(H_1,H_2) = \\sum _I \\min (H_1(I), H_2(I))\\]`
 
@@ -110,7 +110,7 @@ ___
 
 • **HISTCMP_KL_DIV**: *[HistCompMethods](_types_opencv_imgproc_hist_.md#histcompmethods)*
 
-*Defined in [types/opencv/imgproc_hist.ts:309](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/imgproc_hist.ts#L309)*
+*Defined in [types/opencv/imgproc_hist.ts:309](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/imgproc_hist.ts#L309)*
 
 Kullback-Leibler divergence `\\[d(H_1,H_2) = \\sum _I H_1(I) \\log
 \\left(\\frac{H_1(I)}{H_2(I)}\\right)\\]`
@@ -121,7 +121,7 @@ Kullback-Leibler divergence `\\[d(H_1,H_2) = \\sum _I H_1(I) \\log
 
 ▸ **EMD**(`signature1`: InputArray, `signature2`: InputArray, `distType`: [int](_types_opencv__hacks_.md#int), `cost?`: InputArray, `lowerBound?`: any, `flow?`: OutputArray): *[float](_types_opencv__hacks_.md#float)*
 
-*Defined in [types/opencv/imgproc_hist.ts:246](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/imgproc_hist.ts#L246)*
+*Defined in [types/opencv/imgproc_hist.ts:246](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/imgproc_hist.ts#L246)*
 
 The function computes the earth mover distance and/or a lower boundary of the distance between the
 two weighted point configurations. One of the applications described in RubnerSept98, Rubner2000 is
@@ -150,7 +150,7 @@ ___
 
 ▸ **calcBackProject**(`images`: any, `nimages`: [int](_types_opencv__hacks_.md#int), `channels`: any, `hist`: InputArray, `backProject`: OutputArray, `ranges`: any, `scale?`: [double](_types_opencv__hacks_.md#double), `uniform?`: [bool](_types_opencv__hacks_.md#bool)): *void*
 
-*Defined in [types/opencv/imgproc_hist.ts:49](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/imgproc_hist.ts#L49)*
+*Defined in [types/opencv/imgproc_hist.ts:49](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/imgproc_hist.ts#L49)*
 
 The function [cv::calcBackProject] calculates the back project of the histogram. That is, similarly
 to [calcHist] , at each location (x, y) the function collects the values from the selected channels
@@ -189,7 +189,7 @@ Name | Type | Description |
 
 ▸ **calcBackProject**(`images`: any, `nimages`: [int](_types_opencv__hacks_.md#int), `channels`: any, `hist`: any, `backProject`: OutputArray, `ranges`: any, `scale?`: [double](_types_opencv__hacks_.md#double), `uniform?`: [bool](_types_opencv__hacks_.md#bool)): *void*
 
-*Defined in [types/opencv/imgproc_hist.ts:55](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/imgproc_hist.ts#L55)*
+*Defined in [types/opencv/imgproc_hist.ts:55](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/imgproc_hist.ts#L55)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -211,7 +211,7 @@ Name | Type |
 
 ▸ **calcBackProject**(`images`: InputArrayOfArrays, `channels`: any, `hist`: InputArray, `dst`: OutputArray, `ranges`: any, `scale`: [double](_types_opencv__hacks_.md#double)): *void*
 
-*Defined in [types/opencv/imgproc_hist.ts:61](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/imgproc_hist.ts#L61)*
+*Defined in [types/opencv/imgproc_hist.ts:61](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/imgproc_hist.ts#L61)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -235,7 +235,7 @@ ___
 
 ▸ **calcHist**(`images`: any, `nimages`: [int](_types_opencv__hacks_.md#int), `channels`: any, `mask`: InputArray, `hist`: OutputArray, `dims`: [int](_types_opencv__hacks_.md#int), `histSize`: any, `ranges`: any, `uniform?`: [bool](_types_opencv__hacks_.md#bool), `accumulate?`: [bool](_types_opencv__hacks_.md#bool)): *void*
 
-*Defined in [types/opencv/imgproc_hist.ts:161](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/imgproc_hist.ts#L161)*
+*Defined in [types/opencv/imgproc_hist.ts:161](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/imgproc_hist.ts#L161)*
 
 The function [cv::calcHist] calculates the histogram of one or more arrays. The elements of a tuple
 used to increment a histogram bin are taken from the corresponding input arrays at the same
@@ -318,7 +318,7 @@ Name | Type | Description |
 
 ▸ **calcHist**(`images`: any, `nimages`: [int](_types_opencv__hacks_.md#int), `channels`: any, `mask`: InputArray, `hist`: any, `dims`: [int](_types_opencv__hacks_.md#int), `histSize`: any, `ranges`: any, `uniform?`: [bool](_types_opencv__hacks_.md#bool), `accumulate?`: [bool](_types_opencv__hacks_.md#bool)): *void*
 
-*Defined in [types/opencv/imgproc_hist.ts:169](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/imgproc_hist.ts#L169)*
+*Defined in [types/opencv/imgproc_hist.ts:169](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/imgproc_hist.ts#L169)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -344,7 +344,7 @@ Name | Type |
 
 ▸ **calcHist**(`images`: InputArrayOfArrays, `channels`: any, `mask`: InputArray, `hist`: OutputArray, `histSize`: any, `ranges`: any, `accumulate?`: [bool](_types_opencv__hacks_.md#bool)): *void*
 
-*Defined in [types/opencv/imgproc_hist.ts:175](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/imgproc_hist.ts#L175)*
+*Defined in [types/opencv/imgproc_hist.ts:175](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/imgproc_hist.ts#L175)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -369,7 +369,7 @@ ___
 
 ▸ **compareHist**(`H1`: InputArray, `H2`: InputArray, `method`: [int](_types_opencv__hacks_.md#int)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/imgproc_hist.ts:194](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/imgproc_hist.ts#L194)*
+*Defined in [types/opencv/imgproc_hist.ts:194](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/imgproc_hist.ts#L194)*
 
 The function [cv::compareHist] compares two dense or two sparse histograms using the specified
 method.
@@ -393,7 +393,7 @@ Name | Type | Description |
 
 ▸ **compareHist**(`H1`: any, `H2`: any, `method`: [int](_types_opencv__hacks_.md#int)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/imgproc_hist.ts:200](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/imgproc_hist.ts#L200)*
+*Defined in [types/opencv/imgproc_hist.ts:200](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/imgproc_hist.ts#L200)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -414,7 +414,7 @@ ___
 
 ▸ **createCLAHE**(`clipLimit?`: [double](_types_opencv__hacks_.md#double), `tileGridSize?`: [Size](../classes/_types_opencv__hacks_.size.md)): *any*
 
-*Defined in [types/opencv/imgproc_hist.ts:208](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/imgproc_hist.ts#L208)*
+*Defined in [types/opencv/imgproc_hist.ts:208](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/imgproc_hist.ts#L208)*
 
 **Parameters:**
 
@@ -431,7 +431,7 @@ ___
 
 ▸ **equalizeHist**(`src`: InputArray, `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/imgproc_hist.ts:262](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/imgproc_hist.ts#L262)*
+*Defined in [types/opencv/imgproc_hist.ts:262](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/imgproc_hist.ts#L262)*
 
 The function equalizes the histogram of the input image using the following algorithm:
 
@@ -457,7 +457,7 @@ ___
 
 ▸ **wrapperEMD**(`signature1`: InputArray, `signature2`: InputArray, `distType`: [int](_types_opencv__hacks_.md#int), `cost?`: InputArray, `lowerBound?`: any, `flow?`: OutputArray): *[float](_types_opencv__hacks_.md#float)*
 
-*Defined in [types/opencv/imgproc_hist.ts:264](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/imgproc_hist.ts#L264)*
+*Defined in [types/opencv/imgproc_hist.ts:264](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/imgproc_hist.ts#L264)*
 
 **Parameters:**
 

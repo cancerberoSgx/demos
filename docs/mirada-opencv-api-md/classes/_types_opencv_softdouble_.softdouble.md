@@ -45,13 +45,13 @@
 
 \+ **new softdouble**(): *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
-*Defined in [types/opencv/softdouble.ts:6](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L6)*
+*Defined in [types/opencv/softdouble.ts:6](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L6)*
 
 **Returns:** *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
 \+ **new softdouble**(`c`: [softdouble](_types_opencv_softdouble_.softdouble.md)): *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
-*Defined in [types/opencv/softdouble.ts:8](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L8)*
+*Defined in [types/opencv/softdouble.ts:8](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L8)*
 
 **Parameters:**
 
@@ -63,7 +63,7 @@ Name | Type |
 
 \+ **new softdouble**(`arg159`: [uint32_t](../modules/_types_opencv__hacks_.md#uint32_t)): *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
-*Defined in [types/opencv/softdouble.ts:10](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L10)*
+*Defined in [types/opencv/softdouble.ts:10](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L10)*
 
 **Parameters:**
 
@@ -75,7 +75,7 @@ Name | Type |
 
 \+ **new softdouble**(`arg160`: [uint64_t](../modules/_types_opencv__hacks_.md#uint64_t)): *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
-*Defined in [types/opencv/softdouble.ts:12](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L12)*
+*Defined in [types/opencv/softdouble.ts:12](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L12)*
 
 **Parameters:**
 
@@ -87,7 +87,7 @@ Name | Type |
 
 \+ **new softdouble**(`arg161`: [int32_t](../modules/_types_opencv__hacks_.md#int32_t)): *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
-*Defined in [types/opencv/softdouble.ts:14](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L14)*
+*Defined in [types/opencv/softdouble.ts:14](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L14)*
 
 **Parameters:**
 
@@ -99,7 +99,7 @@ Name | Type |
 
 \+ **new softdouble**(`arg162`: [int64_t](../modules/_types_opencv__hacks_.md#int64_t)): *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
-*Defined in [types/opencv/softdouble.ts:16](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L16)*
+*Defined in [types/opencv/softdouble.ts:16](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L16)*
 
 **Parameters:**
 
@@ -111,7 +111,7 @@ Name | Type |
 
 \+ **new softdouble**(`a`: any): *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
-*Defined in [types/opencv/softdouble.ts:18](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L18)*
+*Defined in [types/opencv/softdouble.ts:18](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L18)*
 
 **Parameters:**
 
@@ -127,7 +127,7 @@ Name | Type |
 
 • **v**: *[uint64_t](../modules/_types_opencv__hacks_.md#uint64_t)*
 
-*Defined in [types/opencv/softdouble.ts:6](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L6)*
+*Defined in [types/opencv/softdouble.ts:6](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L6)*
 
 ## Methods
 
@@ -135,7 +135,7 @@ Name | Type |
 
 ▸ **getExp**(): *[int](../modules/_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/softdouble.ts:22](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L22)*
+*Defined in [types/opencv/softdouble.ts:22](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L22)*
 
 **Returns:** *[int](../modules/_types_opencv__hacks_.md#int)*
 
@@ -145,7 +145,7 @@ ___
 
 ▸ **getFrac**(): *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
-*Defined in [types/opencv/softdouble.ts:27](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L27)*
+*Defined in [types/opencv/softdouble.ts:27](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L27)*
 
   Returns a number 1 <= x < 2 with the same significand
 
@@ -157,7 +157,7 @@ ___
 
 ▸ **getSign**(): *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/softdouble.ts:29](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L29)*
+*Defined in [types/opencv/softdouble.ts:29](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L29)*
 
 **Returns:** *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
@@ -167,7 +167,7 @@ ___
 
 ▸ **isInf**(): *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/softdouble.ts:31](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L31)*
+*Defined in [types/opencv/softdouble.ts:31](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L31)*
 
 **Returns:** *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
@@ -177,7 +177,7 @@ ___
 
 ▸ **isNaN**(): *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/softdouble.ts:33](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L33)*
+*Defined in [types/opencv/softdouble.ts:33](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L33)*
 
 **Returns:** *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
@@ -187,7 +187,7 @@ ___
 
 ▸ **isSubnormal**(): *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/softdouble.ts:35](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L35)*
+*Defined in [types/opencv/softdouble.ts:35](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L35)*
 
 **Returns:** *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
@@ -197,7 +197,7 @@ ___
 
 ▸ **setExp**(`e`: [int](../modules/_types_opencv__hacks_.md#int)): *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
-*Defined in [types/opencv/softdouble.ts:37](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L37)*
+*Defined in [types/opencv/softdouble.ts:37](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L37)*
 
 **Parameters:**
 
@@ -213,7 +213,7 @@ ___
 
 ▸ **setFrac**(`s`: [softdouble](_types_opencv_softdouble_.softdouble.md)): *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
-*Defined in [types/opencv/softdouble.ts:42](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L42)*
+*Defined in [types/opencv/softdouble.ts:42](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L42)*
 
   Constructs a copy of a number with significand taken from parameter
 
@@ -231,7 +231,7 @@ ___
 
 ▸ **setSign**(`sign`: [bool](../modules/_types_opencv__hacks_.md#bool)): *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
-*Defined in [types/opencv/softdouble.ts:44](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L44)*
+*Defined in [types/opencv/softdouble.ts:44](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L44)*
 
 **Parameters:**
 
@@ -247,7 +247,7 @@ ___
 
 ▸ **eps**(): *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
-*Defined in [types/opencv/softdouble.ts:46](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L46)*
+*Defined in [types/opencv/softdouble.ts:46](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L46)*
 
 **Returns:** *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
@@ -257,7 +257,7 @@ ___
 
 ▸ **fromRaw**(`a`: [uint64_t](../modules/_types_opencv__hacks_.md#uint64_t)): *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
-*Defined in [types/opencv/softdouble.ts:51](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L51)*
+*Defined in [types/opencv/softdouble.ts:51](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L51)*
 
   Builds new value from raw binary representation
 
@@ -275,7 +275,7 @@ ___
 
 ▸ **inf**(): *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
-*Defined in [types/opencv/softdouble.ts:53](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L53)*
+*Defined in [types/opencv/softdouble.ts:53](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L53)*
 
 **Returns:** *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
@@ -285,7 +285,7 @@ ___
 
 ▸ **max**(): *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
-*Defined in [types/opencv/softdouble.ts:55](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L55)*
+*Defined in [types/opencv/softdouble.ts:55](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L55)*
 
 **Returns:** *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
@@ -295,7 +295,7 @@ ___
 
 ▸ **min**(): *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
-*Defined in [types/opencv/softdouble.ts:57](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L57)*
+*Defined in [types/opencv/softdouble.ts:57](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L57)*
 
 **Returns:** *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
@@ -305,7 +305,7 @@ ___
 
 ▸ **nan**(): *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
-*Defined in [types/opencv/softdouble.ts:59](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L59)*
+*Defined in [types/opencv/softdouble.ts:59](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L59)*
 
 **Returns:** *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
@@ -315,7 +315,7 @@ ___
 
 ▸ **one**(): *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
-*Defined in [types/opencv/softdouble.ts:61](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L61)*
+*Defined in [types/opencv/softdouble.ts:61](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L61)*
 
 **Returns:** *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
@@ -325,7 +325,7 @@ ___
 
 ▸ **pi**(): *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
-*Defined in [types/opencv/softdouble.ts:63](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L63)*
+*Defined in [types/opencv/softdouble.ts:63](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L63)*
 
 **Returns:** *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
@@ -335,6 +335,6 @@ ___
 
 ▸ **zero**(): *[softdouble](_types_opencv_softdouble_.softdouble.md)*
 
-*Defined in [types/opencv/softdouble.ts:65](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/types/opencv/softdouble.ts#L65)*
+*Defined in [types/opencv/softdouble.ts:65](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/types/opencv/softdouble.ts#L65)*
 
 **Returns:** *[softdouble](_types_opencv_softdouble_.softdouble.md)*

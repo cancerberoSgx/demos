@@ -8,17 +8,33 @@
 
 ### Functions
 
+* [asHtmlImageData](_browser_imagecreation_.md#ashtmlimagedata)
 * [fetchImageData](_browser_imagecreation_.md#fetchimagedata)
 * [fromInputFileElement](_browser_imagecreation_.md#frominputfileelement)
-* [getHtmlImageData](_browser_imagecreation_.md#gethtmlimagedata)
 
 ## Functions
+
+###  asHtmlImageData
+
+▸ **asHtmlImageData**(`img`: [Mat](../classes/_types_opencv_mat_.mat.md)): *ImageData*
+
+*Defined in [browser/imageCreation.ts:27](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/browser/imageCreation.ts#L27)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`img` | [Mat](../classes/_types_opencv_mat_.mat.md) |
+
+**Returns:** *ImageData*
+
+___
 
 ###  fetchImageData
 
 ▸ **fetchImageData**(`url`: string): *Promise‹ImageData›*
 
-*Defined in [browser/imageCreation.ts:10](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/imageCreation.ts#L10)*
+*Defined in [browser/imageCreation.ts:10](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/browser/imageCreation.ts#L10)*
 
 **Parameters:**
 
@@ -34,7 +50,7 @@ ___
 
 ▸ **fromInputFileElement**(`a`: HTMLInputElement): *Promise‹[Mat](../classes/_types_opencv_mat_.mat.md)[]›*
 
-*Defined in [browser/imageCreation.ts:5](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/imageCreation.ts#L5)*
+*Defined in [browser/imageCreation.ts:5](https://github.com/cancerberoSgx/mirada/blob/cd60774/mirada/src/browser/imageCreation.ts#L5)*
 
 **Parameters:**
 
@@ -43,19 +59,3 @@ Name | Type |
 `a` | HTMLInputElement |
 
 **Returns:** *Promise‹[Mat](../classes/_types_opencv_mat_.mat.md)[]›*
-
-___
-
-###  getHtmlImageData
-
-▸ **getHtmlImageData**(`img`: [Mat](../classes/_types_opencv_mat_.mat.md)): *ImageData*
-
-*Defined in [browser/imageCreation.ts:27](https://github.com/cancerberoSgx/mirada/blob/eecc091/mirada/src/browser/imageCreation.ts#L27)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`img` | [Mat](../classes/_types_opencv_mat_.mat.md) |
-
-**Returns:** *ImageData*
