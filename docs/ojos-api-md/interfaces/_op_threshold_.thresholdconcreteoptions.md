@@ -24,7 +24,7 @@
 
 • **maxval**: *number*
 
-*Defined in [op/threshold.ts:10](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/threshold.ts#L10)*
+*Defined in [op/threshold.ts:10](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/threshold.ts#L10)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **thresh**: *number*
 
-*Defined in [op/threshold.ts:9](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/threshold.ts#L9)*
+*Defined in [op/threshold.ts:9](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/threshold.ts#L9)*
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 • **type**: *ThresholdTypes*
 
-*Defined in [op/threshold.ts:11](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/threshold.ts#L11)*
+*Defined in [op/threshold.ts:11](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/threshold.ts#L11)*

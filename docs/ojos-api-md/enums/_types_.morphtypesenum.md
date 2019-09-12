@@ -22,7 +22,7 @@
 
 • **MORPH_BLACKHAT**: = "MORPH_BLACKHAT"
 
-*Defined in [types.ts:35](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L35)*
+*Defined in [types.ts:35](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L35)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **MORPH_CLOSE**: = "MORPH_CLOSE"
 
-*Defined in [types.ts:32](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L32)*
+*Defined in [types.ts:32](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L32)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **MORPH_DILATE**: = "MORPH_DILATE"
 
-*Defined in [types.ts:30](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L30)*
+*Defined in [types.ts:30](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L30)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **MORPH_ERODE**: = "MORPH_ERODE"
 
-*Defined in [types.ts:29](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L29)*
+*Defined in [types.ts:29](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L29)*
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 • **MORPH_GRADIENT**: = "MORPH_GRADIENT"
 
-*Defined in [types.ts:33](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L33)*
+*Defined in [types.ts:33](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L33)*
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 • **MORPH_OPEN**: = "MORPH_OPEN"
 
-*Defined in [types.ts:31](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L31)*
+*Defined in [types.ts:31](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L31)*
 
 ___
 
@@ -70,4 +70,4 @@ ___
 
 • **MORPH_TOPHAT**: = "MORPH_TOPHAT"
 
-*Defined in [types.ts:34](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L34)*
+*Defined in [types.ts:34](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L34)*

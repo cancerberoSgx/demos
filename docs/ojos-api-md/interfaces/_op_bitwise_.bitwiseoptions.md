@@ -30,7 +30,7 @@
 
 *Inherited from [OperationExecBaseOptions](_op_types_.operationexecbaseoptions.md).[dst](_op_types_.operationexecbaseoptions.md#optional-dst)*
 
-*Defined in [op/types.ts:27](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L27)*
+*Defined in [op/types.ts:27](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L27)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 *Inherited from [BitwiseConcreteOptions](_op_bitwise_.bitwiseconcreteoptions.md).[mask](_op_bitwise_.bitwiseconcreteoptions.md#optional-mask)*
 
-*Defined in [op/bitwise.ts:12](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/bitwise.ts#L12)*
+*Defined in [op/bitwise.ts:11](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/bitwise.ts#L11)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 *Inherited from [OperationExecBaseOptions](_op_types_.operationexecbaseoptions.md).[src](_op_types_.operationexecbaseoptions.md#src)*
 
-*Defined in [op/types.ts:26](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L26)*
+*Defined in [op/types.ts:26](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L26)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 *Inherited from [BitwiseConcreteOptions](_op_bitwise_.bitwiseconcreteoptions.md).[src2](_op_bitwise_.bitwiseconcreteoptions.md#optional-src2)*
 
-*Defined in [op/bitwise.ts:11](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/bitwise.ts#L11)*
+*Defined in [op/bitwise.ts:10](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/bitwise.ts#L10)*
 
 ___
 
@@ -70,4 +70,4 @@ ___
 
 *Inherited from [BitwiseConcreteOptions](_op_bitwise_.bitwiseconcreteoptions.md).[type](_op_bitwise_.bitwiseconcreteoptions.md#type)*
 
-*Defined in [op/bitwise.ts:10](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/bitwise.ts#L10)*
+*Defined in [op/bitwise.ts:9](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/bitwise.ts#L9)*

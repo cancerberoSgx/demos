@@ -29,14 +29,20 @@
 * [noInPlace](_op_math_.math.md#noinplace)
 * [sameSizeAndType](_op_math_.math.md#samesizeandtype)
 * [validChannels](_op_math_.math.md#validchannels)
+* [validateEachExec](_op_math_.math.md#protected-validateeachexec)
+* [validated](_op_math_.math.md#protected-validated)
 
 ### Methods
 
 * [_exec](_op_math_.math.md#protected-_exec)
+* [afterExec](_op_math_.math.md#protected-afterexec)
+* [allChannels](_op_math_.math.md#protected-allchannels)
 * [checkInPlaceAfter](_op_math_.math.md#protected-checkinplaceafter)
 * [checkInPlaceBefore](_op_math_.math.md#protected-checkinplacebefore)
+* [checkInputImage](_op_math_.math.md#protected-checkinputimage)
 * [checkOptions](_op_math_.math.md#protected-checkoptions)
 * [exec](_op_math_.math.md#exec)
+* [validate](_op_math_.math.md#protected-validate)
 
 ## Constructors
 
@@ -46,7 +52,7 @@
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[constructor](_op_abstractoperation_.abstractoperation.md#constructor)*
 
-*Defined in [op/abstractOperation.ts:14](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/abstractOperation.ts#L14)*
+*Defined in [op/abstractOperation.ts:16](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L16)*
 
 **Parameters:**
 
@@ -64,7 +70,7 @@ Name | Type |
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[defaultOptions](_op_abstractoperation_.abstractoperation.md#protected-optional-defaultoptions)*
 
-*Defined in [op/abstractOperation.ts:16](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/abstractOperation.ts#L16)*
+*Defined in [op/abstractOperation.ts:18](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L18)*
 
 ___
 
@@ -76,7 +82,7 @@ ___
 
 *Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[description](_op_abstractoperation_.abstractoperation.md#description)*
 
-*Defined in [op/math.ts:30](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/math.ts#L30)*
+*Defined in [op/math.ts:45](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/math.ts#L45)*
 
 ___
 
@@ -86,7 +92,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[isInPlace](_op_abstractoperation_.abstractoperation.md#protected-isinplace)*
 
-*Defined in [op/abstractOperation.ts:13](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/abstractOperation.ts#L13)*
+*Defined in [op/abstractOperation.ts:12](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L12)*
 
 ___
 
@@ -98,7 +104,7 @@ ___
 
 *Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[name](_op_abstractoperation_.abstractoperation.md#abstract-name)*
 
-*Defined in [op/math.ts:29](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/math.ts#L29)*
+*Defined in [op/math.ts:44](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/math.ts#L44)*
 
 ___
 
@@ -110,7 +116,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[noInPlace](_op_abstractoperation_.abstractoperation.md#noinplace)*
 
-*Defined in [op/abstractOperation.ts:11](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/abstractOperation.ts#L11)*
+*Defined in [op/abstractOperation.ts:10](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L10)*
 
 ___
 
@@ -122,7 +128,7 @@ ___
 
 *Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[sameSizeAndType](_op_abstractoperation_.abstractoperation.md#samesizeandtype)*
 
-*Defined in [op/math.ts:31](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/math.ts#L31)*
+*Defined in [op/math.ts:46](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/math.ts#L46)*
 
 ___
 
@@ -134,17 +140,37 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[validChannels](_op_abstractoperation_.abstractoperation.md#validchannels)*
 
-*Defined in [op/abstractOperation.ts:14](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/abstractOperation.ts#L14)*
+*Defined in [op/abstractOperation.ts:16](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L16)*
+
+___
+
+### `Protected` validateEachExec
+
+• **validateEachExec**: *boolean* = false
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[validateEachExec](_op_abstractoperation_.abstractoperation.md#protected-validateeachexec)*
+
+*Defined in [op/abstractOperation.ts:13](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L13)*
+
+___
+
+### `Protected` validated
+
+• **validated**: *boolean* = false
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[validated](_op_abstractoperation_.abstractoperation.md#protected-validated)*
+
+*Defined in [op/abstractOperation.ts:14](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L14)*
 
 ## Methods
 
 ### `Protected` _exec
 
-▸ **_exec**(`o`: [MathOptions](../interfaces/_op_math_.mathoptions.md)): *Promise‹void›*
+▸ **_exec**(`o`: [MathOptions](../interfaces/_op_math_.mathoptions.md)): *void*
 
 *Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[_exec](_op_abstractoperation_.abstractoperation.md#protected-abstract-_exec)*
 
-*Defined in [op/math.ts:32](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/math.ts#L32)*
+*Defined in [op/math.ts:54](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/math.ts#L54)*
 
 **Parameters:**
 
@@ -152,7 +178,51 @@ Name | Type |
 ------ | ------ |
 `o` | [MathOptions](../interfaces/_op_math_.mathoptions.md) |
 
-**Returns:** *Promise‹void›*
+**Returns:** *void*
+
+___
+
+### `Protected` afterExec
+
+▸ **afterExec**(`options`: [MandatoryDst](../modules/_op_abstractoperation_.md#mandatorydst)‹[MathOptions](../interfaces/_op_math_.mathoptions.md)›): *void*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[afterExec](_op_abstractoperation_.abstractoperation.md#protected-afterexec)*
+
+*Defined in [op/abstractOperation.ts:41](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L41)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`options` | [MandatoryDst](../modules/_op_abstractoperation_.md#mandatorydst)‹[MathOptions](../interfaces/_op_math_.mathoptions.md)› |
+
+**Returns:** *void*
+
+___
+
+### `Protected` allChannels
+
+▸ **allChannels**(`o`: [MathOptions](../interfaces/_op_math_.mathoptions.md) & [WithChannels](../interfaces/_op_types_.withchannels.md), `op`: function): *void*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[allChannels](_op_abstractoperation_.abstractoperation.md#protected-allchannels)*
+
+*Defined in [op/abstractOperation.ts:89](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L89)*
+
+**Parameters:**
+
+▪ **o**: *[MathOptions](../interfaces/_op_math_.mathoptions.md) & [WithChannels](../interfaces/_op_types_.withchannels.md)*
+
+▪ **op**: *function*
+
+▸ (`o`: [MathOptions](../interfaces/_op_math_.mathoptions.md)): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`o` | [MathOptions](../interfaces/_op_math_.mathoptions.md) |
+
+**Returns:** *void*
 
 ___
 
@@ -162,7 +232,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkInPlaceAfter](_op_abstractoperation_.abstractoperation.md#protected-checkinplaceafter)*
 
-*Defined in [op/abstractOperation.ts:60](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/abstractOperation.ts#L60)*
+*Defined in [op/abstractOperation.ts:79](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L79)*
 
 **Parameters:**
 
@@ -180,7 +250,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkInPlaceBefore](_op_abstractoperation_.abstractoperation.md#protected-checkinplacebefore)*
 
-*Defined in [op/abstractOperation.ts:53](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/abstractOperation.ts#L53)*
+*Defined in [op/abstractOperation.ts:70](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L70)*
 
 **Parameters:**
 
@@ -192,13 +262,31 @@ Name | Type |
 
 ___
 
+### `Protected` checkInputImage
+
+▸ **checkInputImage**(`o`: [MathOptions](../interfaces/_op_math_.mathoptions.md)): *void*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkInputImage](_op_abstractoperation_.abstractoperation.md#protected-checkinputimage)*
+
+*Defined in [op/abstractOperation.ts:43](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L43)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`o` | [MathOptions](../interfaces/_op_math_.mathoptions.md) |
+
+**Returns:** *void*
+
+___
+
 ### `Protected` checkOptions
 
 ▸ **checkOptions**(`o?`: [T](undefined)): *object & object*
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkOptions](_op_abstractoperation_.abstractoperation.md#protected-checkoptions)*
 
-*Defined in [op/abstractOperation.ts:30](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/abstractOperation.ts#L30)*
+*Defined in [op/abstractOperation.ts:45](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L45)*
 
 **Parameters:**
 
@@ -212,13 +300,13 @@ ___
 
 ###  exec
 
-▸ **exec**(`o?`: [T](undefined)): *Promise‹Mat›*
+▸ **exec**(`o?`: [T](undefined)): *Mat*
 
 *Implementation of [ImageOperation](../interfaces/_op_types_.imageoperation.md)*
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[exec](_op_abstractoperation_.abstractoperation.md#exec)*
 
-*Defined in [op/abstractOperation.ts:22](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/abstractOperation.ts#L22)*
+*Defined in [op/abstractOperation.ts:26](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L26)*
 
 **Parameters:**
 
@@ -226,4 +314,22 @@ Name | Type |
 ------ | ------ |
 `o?` | [T](undefined) |
 
-**Returns:** *Promise‹Mat›*
+**Returns:** *Mat*
+
+___
+
+### `Protected` validate
+
+▸ **validate**(`o`: [MathOptions](../interfaces/_op_math_.mathoptions.md)): *undefined | "alpha, beta, gamma and src2 must be defined"*
+
+*Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[validate](_op_abstractoperation_.abstractoperation.md#protected-validate)*
+
+*Defined in [op/math.ts:48](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/math.ts#L48)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`o` | [MathOptions](../interfaces/_op_math_.mathoptions.md) |
+
+**Returns:** *undefined | "alpha, beta, gamma and src2 must be defined"*

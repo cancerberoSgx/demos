@@ -26,7 +26,7 @@
 
 • **C**: *number*
 
-*Defined in [op/adaptiveThreshold.ts:14](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/adaptiveThreshold.ts#L14)*
+*Defined in [op/adaptiveThreshold.ts:14](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/adaptiveThreshold.ts#L14)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **adaptiveMethod**: *AdaptiveThresholdTypes*
 
-*Defined in [op/adaptiveThreshold.ts:12](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/adaptiveThreshold.ts#L12)*
+*Defined in [op/adaptiveThreshold.ts:12](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/adaptiveThreshold.ts#L12)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **blockSize**: *number*
 
-*Defined in [op/adaptiveThreshold.ts:13](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/adaptiveThreshold.ts#L13)*
+*Defined in [op/adaptiveThreshold.ts:13](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/adaptiveThreshold.ts#L13)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **maxval**: *number*
 
-*Defined in [op/adaptiveThreshold.ts:10](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/adaptiveThreshold.ts#L10)*
+*Defined in [op/adaptiveThreshold.ts:10](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/adaptiveThreshold.ts#L10)*
 
 ___
 
@@ -58,4 +58,4 @@ ___
 
 • **thresholdType**: *ThresholdTypes*
 
-*Defined in [op/adaptiveThreshold.ts:11](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/adaptiveThreshold.ts#L11)*
+*Defined in [op/adaptiveThreshold.ts:11](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/adaptiveThreshold.ts#L11)*

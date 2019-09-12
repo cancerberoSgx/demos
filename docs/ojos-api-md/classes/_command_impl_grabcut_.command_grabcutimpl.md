@@ -31,7 +31,7 @@
 
 *Overrides [AbstractCommandHandler](_command_abstractcommand_.abstractcommandhandler.md).[run](_command_abstractcommand_.abstractcommandhandler.md#abstract-run)*
 
-*Defined in [command/impl/grabCut.ts:21](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/impl/grabCut.ts#L21)*
+*Defined in [command/impl/grabCut.ts:21](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/impl/grabCut.ts#L21)*
 
 **Parameters:**
 
@@ -51,7 +51,7 @@ ___
 
 *Overrides [AbstractCommandHandler](_command_abstractcommand_.abstractcommandhandler.md).[validate](_command_abstractcommand_.abstractcommandhandler.md#abstract-validate)*
 
-*Defined in [command/impl/grabCut.ts:63](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/impl/grabCut.ts#L63)*
+*Defined in [command/impl/grabCut.ts:63](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/impl/grabCut.ts#L63)*
 
 **Parameters:**
 

@@ -60,7 +60,7 @@
 
 Ƭ **MorphShapes**: *any*
 
-*Defined in [types/opencv/imgproc_filter.ts:742](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L742)*
+*Defined in [types/opencv/imgproc_filter.ts:742](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L742)*
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 Ƭ **MorphTypes**: *any*
 
-*Defined in [types/opencv/imgproc_filter.ts:744](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L744)*
+*Defined in [types/opencv/imgproc_filter.ts:744](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L744)*
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 Ƭ **SpecialFilter**: *any*
 
-*Defined in [types/opencv/imgproc_filter.ts:746](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L746)*
+*Defined in [types/opencv/imgproc_filter.ts:746](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L746)*
 
 ## Variables
 
@@ -84,7 +84,7 @@ ___
 
 • **FILTER_SCHARR**: *[SpecialFilter](_types_opencv_imgproc_filter_.md#specialfilter)*
 
-*Defined in [types/opencv/imgproc_filter.ts:740](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L740)*
+*Defined in [types/opencv/imgproc_filter.ts:740](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L740)*
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 • **MORPH_BLACKHAT**: *[MorphTypes](_types_opencv_imgproc_filter_.md#morphtypes)*
 
-*Defined in [types/opencv/imgproc_filter.ts:731](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L731)*
+*Defined in [types/opencv/imgproc_filter.ts:731](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L731)*
 
 "black hat" `\\[\\texttt{dst} = \\mathrm{blackhat} ( \\texttt{src} , \\texttt{element} )=
 \\mathrm{close} ( \\texttt{src} , \\texttt{element} )- \\texttt{src}\\]`
@@ -103,7 +103,7 @@ ___
 
 • **MORPH_CLOSE**: *[MorphTypes](_types_opencv_imgproc_filter_.md#morphtypes)*
 
-*Defined in [types/opencv/imgproc_filter.ts:709](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L709)*
+*Defined in [types/opencv/imgproc_filter.ts:709](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L709)*
 
 a closing operation `\\[\\texttt{dst} = \\mathrm{close} ( \\texttt{src} , \\texttt{element} )=
 \\mathrm{erode} ( \\mathrm{dilate} ( \\texttt{src} , \\texttt{element} ))\\]`
@@ -114,7 +114,7 @@ ___
 
 • **MORPH_CROSS**: *[MorphShapes](_types_opencv_imgproc_filter_.md#morphshapes)*
 
-*Defined in [types/opencv/imgproc_filter.ts:684](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L684)*
+*Defined in [types/opencv/imgproc_filter.ts:684](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L684)*
 
 a cross-shaped structuring element: `\\[E_{ij} = \\fork{1}{if i=\\texttt{anchor.y} or
 j=\\texttt{anchor.x}}{0}{otherwise}\\]`
@@ -125,7 +125,7 @@ ___
 
 • **MORPH_DILATE**: *[MorphTypes](_types_opencv_imgproc_filter_.md#morphtypes)*
 
-*Defined in [types/opencv/imgproc_filter.ts:695](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L695)*
+*Defined in [types/opencv/imgproc_filter.ts:695](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L695)*
 
 ___
 
@@ -133,7 +133,7 @@ ___
 
 • **MORPH_ELLIPSE**: *[MorphShapes](_types_opencv_imgproc_filter_.md#morphshapes)*
 
-*Defined in [types/opencv/imgproc_filter.ts:691](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L691)*
+*Defined in [types/opencv/imgproc_filter.ts:691](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L691)*
 
 an elliptic structuring element, that is, a filled ellipse inscribed into the rectangle Rect(0, 0,
 esize.width, 0.esize.height)
@@ -144,7 +144,7 @@ ___
 
 • **MORPH_ERODE**: *[MorphTypes](_types_opencv_imgproc_filter_.md#morphtypes)*
 
-*Defined in [types/opencv/imgproc_filter.ts:693](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L693)*
+*Defined in [types/opencv/imgproc_filter.ts:693](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L693)*
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 • **MORPH_GRADIENT**: *[MorphTypes](_types_opencv_imgproc_filter_.md#morphtypes)*
 
-*Defined in [types/opencv/imgproc_filter.ts:717](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L717)*
+*Defined in [types/opencv/imgproc_filter.ts:717](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L717)*
 
 a morphological gradient `\\[\\texttt{dst} = \\mathrm{morph\\_grad} ( \\texttt{src} ,
 \\texttt{element} )= \\mathrm{dilate} ( \\texttt{src} , \\texttt{element} )- \\mathrm{erode} (
@@ -164,7 +164,7 @@ ___
 
 • **MORPH_HITMISS**: *[MorphTypes](_types_opencv_imgproc_filter_.md#morphtypes)*
 
-*Defined in [types/opencv/imgproc_filter.ts:738](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L738)*
+*Defined in [types/opencv/imgproc_filter.ts:738](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L738)*
 
 "hit or miss" .- Only supported for CV_8UC1 binary images. A tutorial can be found in the
 documentation
@@ -175,7 +175,7 @@ ___
 
 • **MORPH_OPEN**: *[MorphTypes](_types_opencv_imgproc_filter_.md#morphtypes)*
 
-*Defined in [types/opencv/imgproc_filter.ts:702](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L702)*
+*Defined in [types/opencv/imgproc_filter.ts:702](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L702)*
 
 an opening operation `\\[\\texttt{dst} = \\mathrm{open} ( \\texttt{src} , \\texttt{element} )=
 \\mathrm{dilate} ( \\mathrm{erode} ( \\texttt{src} , \\texttt{element} ))\\]`
@@ -186,7 +186,7 @@ ___
 
 • **MORPH_RECT**: *[MorphShapes](_types_opencv_imgproc_filter_.md#morphshapes)*
 
-*Defined in [types/opencv/imgproc_filter.ts:677](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L677)*
+*Defined in [types/opencv/imgproc_filter.ts:677](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L677)*
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 • **MORPH_TOPHAT**: *[MorphTypes](_types_opencv_imgproc_filter_.md#morphtypes)*
 
-*Defined in [types/opencv/imgproc_filter.ts:724](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L724)*
+*Defined in [types/opencv/imgproc_filter.ts:724](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L724)*
 
 "top hat" `\\[\\texttt{dst} = \\mathrm{tophat} ( \\texttt{src} , \\texttt{element} )= \\texttt{src}
 - \\mathrm{open} ( \\texttt{src} , \\texttt{element} )\\]`
@@ -205,7 +205,7 @@ ___
 
 ▸ **GaussianBlur**(`src`: InputArray, `dst`: OutputArray, `ksize`: [Size](../classes/_types_opencv__hacks_.size.md), `sigmaX`: [double](_types_opencv__hacks_.md#double), `sigmaY?`: [double](_types_opencv__hacks_.md#double), `borderType?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_filter.ts:255](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L255)*
+*Defined in [types/opencv/imgproc_filter.ts:255](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L255)*
 
 The function convolves the source image with the specified Gaussian kernel. In-place filtering is
 supported.
@@ -231,7 +231,7 @@ ___
 
 ▸ **Laplacian**(`src`: InputArray, `dst`: OutputArray, `ddepth`: [int](_types_opencv__hacks_.md#int), `ksize?`: [int](_types_opencv__hacks_.md#int), `scale?`: [double](_types_opencv__hacks_.md#double), `delta?`: [double](_types_opencv__hacks_.md#double), `borderType?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_filter.ts:371](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L371)*
+*Defined in [types/opencv/imgproc_filter.ts:371](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L371)*
 
 The function calculates the Laplacian of the source image by adding up the second x and y
 derivatives calculated using the Sobel operator:
@@ -266,7 +266,7 @@ ___
 
 ▸ **Scharr**(`src`: InputArray, `dst`: OutputArray, `ddepth`: [int](_types_opencv__hacks_.md#int), `dx`: [int](_types_opencv__hacks_.md#int), `dy`: [int](_types_opencv__hacks_.md#int), `scale?`: [double](_types_opencv__hacks_.md#double), `delta?`: [double](_types_opencv__hacks_.md#double), `borderType?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_filter.ts:547](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L547)*
+*Defined in [types/opencv/imgproc_filter.ts:547](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L547)*
 
 The function computes the first x- or y- spatial image derivative using the Scharr operator. The
 call
@@ -300,7 +300,7 @@ ___
 
 ▸ **Sobel**(`src`: InputArray, `dst`: OutputArray, `ddepth`: [int](_types_opencv__hacks_.md#int), `dx`: [int](_types_opencv__hacks_.md#int), `dy`: [int](_types_opencv__hacks_.md#int), `ksize?`: [int](_types_opencv__hacks_.md#int), `scale?`: [double](_types_opencv__hacks_.md#double), `delta?`: [double](_types_opencv__hacks_.md#double), `borderType?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_filter.ts:627](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L627)*
+*Defined in [types/opencv/imgproc_filter.ts:627](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L627)*
 
 In all cases except one, the `$\\texttt{ksize} \\times \\texttt{ksize}$` separable kernel is used to
 calculate the derivative. When `$\\texttt{ksize = 1}$`, the `$3 \\times 1$` or `$1 \\times 3$`
@@ -355,7 +355,7 @@ ___
 
 ▸ **bilateralFilter**(`src`: InputArray, `dst`: OutputArray, `d`: [int](_types_opencv__hacks_.md#int), `sigmaColor`: [double](_types_opencv__hacks_.md#double), `sigmaSpace`: [double](_types_opencv__hacks_.md#double), `borderType?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_filter.ts:53](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L53)*
+*Defined in [types/opencv/imgproc_filter.ts:53](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L53)*
 
 The function applies bilateral filtering to the input image, as described in  bilateralFilter can
 reduce unwanted noise very well while keeping edges fairly sharp. However, it is very slow compared
@@ -389,7 +389,7 @@ ___
 
 ▸ **blur**(`src`: InputArray, `dst`: OutputArray, `ksize`: [Size](../classes/_types_opencv__hacks_.size.md), `anchor?`: [Point](../classes/_types_opencv__hacks_.point.md), `borderType?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_filter.ts:79](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L79)*
+*Defined in [types/opencv/imgproc_filter.ts:79](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L79)*
 
 The function smooths an image using the kernel:
 
@@ -420,7 +420,7 @@ ___
 
 ▸ **boxFilter**(`src`: InputArray, `dst`: OutputArray, `ddepth`: [int](_types_opencv__hacks_.md#int), `ksize`: [Size](../classes/_types_opencv__hacks_.size.md), `anchor?`: [Point](../classes/_types_opencv__hacks_.point.md), `normalize?`: [bool](_types_opencv__hacks_.md#bool), `borderType?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_filter.ts:114](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L114)*
+*Defined in [types/opencv/imgproc_filter.ts:114](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L114)*
 
 The function smooths an image using the kernel:
 
@@ -459,7 +459,7 @@ ___
 
 ▸ **buildPyramid**(`src`: InputArray, `dst`: OutputArrayOfArrays, `maxlevel`: [int](_types_opencv__hacks_.md#int), `borderType?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_filter.ts:129](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L129)*
+*Defined in [types/opencv/imgproc_filter.ts:129](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L129)*
 
 The function constructs a vector of images and builds the Gaussian pyramid by recursively applying
 pyrDown to the previously built pyramid layers, starting from `dst[0]==src`.
@@ -481,7 +481,7 @@ ___
 
 ▸ **dilate**(`src`: InputArray, `dst`: OutputArray, `kernel`: InputArray, `anchor?`: [Point](../classes/_types_opencv__hacks_.point.md), `iterations?`: [int](_types_opencv__hacks_.md#int), `borderType?`: [int](_types_opencv__hacks_.md#int), `borderValue?`: any): *void*
 
-*Defined in [types/opencv/imgproc_filter.ts:158](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L158)*
+*Defined in [types/opencv/imgproc_filter.ts:158](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L158)*
 
 The function dilates the source image using the specified structuring element that determines the
 shape of a pixel neighborhood over which the maximum is taken: `\\[\\texttt{dst} (x,y) = \\max
@@ -512,7 +512,7 @@ ___
 
 ▸ **erode**(`src`: InputArray, `dst`: OutputArray, `kernel`: InputArray, `anchor?`: [Point](../classes/_types_opencv__hacks_.point.md), `iterations?`: [int](_types_opencv__hacks_.md#int), `borderType?`: [int](_types_opencv__hacks_.md#int), `borderValue?`: any): *void*
 
-*Defined in [types/opencv/imgproc_filter.ts:189](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L189)*
+*Defined in [types/opencv/imgproc_filter.ts:189](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L189)*
 
 The function erodes the source image using the specified structuring element that determines the
 shape of a pixel neighborhood over which the minimum is taken:
@@ -545,7 +545,7 @@ ___
 
 ▸ **filter2D**(`src`: InputArray, `dst`: OutputArray, `ddepth`: [int](_types_opencv__hacks_.md#int), `kernel`: InputArray, `anchor?`: [Point](../classes/_types_opencv__hacks_.point.md), `delta?`: [double](_types_opencv__hacks_.md#double), `borderType?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_filter.ts:229](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L229)*
+*Defined in [types/opencv/imgproc_filter.ts:229](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L229)*
 
 The function applies an arbitrary linear filter to an image. In-place operation is supported. When
 the aperture is partially outside the image, the function interpolates outlier pixel values
@@ -586,7 +586,7 @@ ___
 
 ▸ **getDerivKernels**(`kx`: OutputArray, `ky`: OutputArray, `dx`: [int](_types_opencv__hacks_.md#int), `dy`: [int](_types_opencv__hacks_.md#int), `ksize`: [int](_types_opencv__hacks_.md#int), `normalize?`: [bool](_types_opencv__hacks_.md#bool), `ktype?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_filter.ts:280](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L280)*
+*Defined in [types/opencv/imgproc_filter.ts:280](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L280)*
 
 The function computes and returns the filter coefficients for spatial image derivatives. When
 `ksize=FILTER_SCHARR`, the Scharr `$3 \\times 3$` kernels are generated (see [Scharr]). Otherwise,
@@ -612,7 +612,7 @@ ___
 
 ▸ **getGaborKernel**(`ksize`: [Size](../classes/_types_opencv__hacks_.size.md), `sigma`: [double](_types_opencv__hacks_.md#double), `theta`: [double](_types_opencv__hacks_.md#double), `lambd`: [double](_types_opencv__hacks_.md#double), `gamma`: [double](_types_opencv__hacks_.md#double), `psi?`: [double](_types_opencv__hacks_.md#double), `ktype?`: [int](_types_opencv__hacks_.md#int)): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/imgproc_filter.ts:299](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L299)*
+*Defined in [types/opencv/imgproc_filter.ts:299](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L299)*
 
 For more details about gabor filter equations and parameters, see: .
 
@@ -636,7 +636,7 @@ ___
 
 ▸ **getGaussianKernel**(`ksize`: [int](_types_opencv__hacks_.md#int), `sigma`: [double](_types_opencv__hacks_.md#double), `ktype?`: [int](_types_opencv__hacks_.md#int)): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/imgproc_filter.ts:323](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L323)*
+*Defined in [types/opencv/imgproc_filter.ts:323](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L323)*
 
 The function computes and returns the `$\\texttt{ksize} \\times 1$` matrix of Gaussian filter
 coefficients:
@@ -668,7 +668,7 @@ ___
 
 ▸ **getStructuringElement**(`shape`: [int](_types_opencv__hacks_.md#int), `ksize`: [Size](../classes/_types_opencv__hacks_.size.md), `anchor?`: [Point](../classes/_types_opencv__hacks_.point.md)): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/imgproc_filter.ts:339](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L339)*
+*Defined in [types/opencv/imgproc_filter.ts:339](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L339)*
 
 The function constructs and returns the structuring element that can be further passed to [erode],
 [dilate] or [morphologyEx]. But you can also construct an arbitrary binary mask yourself and use it
@@ -690,7 +690,7 @@ ___
 
 ▸ **medianBlur**(`src`: InputArray, `dst`: OutputArray, `ksize`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_filter.ts:389](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L389)*
+*Defined in [types/opencv/imgproc_filter.ts:389](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L389)*
 
 The function smoothes an image using the median filter with the `$\\texttt{ksize} \\times
 \\texttt{ksize}$` aperture. Each channel of a multi-channel image is processed independently.
@@ -716,7 +716,7 @@ ___
 
 ▸ **morphologyDefaultBorderValue**(): *[Scalar](../classes/_types_opencv__hacks_.scalar.md)*
 
-*Defined in [types/opencv/imgproc_filter.ts:391](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L391)*
+*Defined in [types/opencv/imgproc_filter.ts:391](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L391)*
 
 **Returns:** *[Scalar](../classes/_types_opencv__hacks_.scalar.md)*
 
@@ -726,7 +726,7 @@ ___
 
 ▸ **morphologyEx**(`src`: InputArray, `dst`: OutputArray, `op`: [int](_types_opencv__hacks_.md#int), `kernel`: InputArray, `anchor?`: [Point](../classes/_types_opencv__hacks_.point.md), `iterations?`: [int](_types_opencv__hacks_.md#int), `borderType?`: [int](_types_opencv__hacks_.md#int), `borderValue?`: any): *void*
 
-*Defined in [types/opencv/imgproc_filter.ts:425](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L425)*
+*Defined in [types/opencv/imgproc_filter.ts:425](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L425)*
 
 The function [cv::morphologyEx] can perform advanced morphological transformations using an erosion
 and dilation as basic operations.
@@ -761,7 +761,7 @@ ___
 
 ▸ **pyrDown**(`src`: InputArray, `dst`: OutputArray, `dstsize?`: any, `borderType?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_filter.ts:450](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L450)*
+*Defined in [types/opencv/imgproc_filter.ts:450](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L450)*
 
 By default, size of the output image is computed as `Size((src.cols+1)/2, (src.rows+1)/2)`, but in
 any case, the following conditions should be satisfied:
@@ -794,7 +794,7 @@ ___
 
 ▸ **pyrMeanShiftFiltering**(`src`: InputArray, `dst`: OutputArray, `sp`: [double](_types_opencv__hacks_.md#double), `sr`: [double](_types_opencv__hacks_.md#double), `maxLevel?`: [int](_types_opencv__hacks_.md#int), `termcrit?`: [TermCriteria](../classes/_types_opencv__hacks_.termcriteria.md)): *void*
 
-*Defined in [types/opencv/imgproc_filter.ts:493](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L493)*
+*Defined in [types/opencv/imgproc_filter.ts:493](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L493)*
 
 The function implements the filtering stage of meanshift segmentation, that is, the output of the
 function is the filtered "posterized" image with color gradients and fine-grain texture flattened.
@@ -843,7 +843,7 @@ ___
 
 ▸ **pyrUp**(`src`: InputArray, `dst`: OutputArray, `dstsize?`: any, `borderType?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_filter.ts:516](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L516)*
+*Defined in [types/opencv/imgproc_filter.ts:516](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L516)*
 
 By default, size of the output image is computed as `Size(src.cols\\*2, (src.rows\\*2)`, but in any
 case, the following conditions should be satisfied:
@@ -874,7 +874,7 @@ ___
 
 ▸ **sepFilter2D**(`src`: InputArray, `dst`: OutputArray, `ddepth`: [int](_types_opencv__hacks_.md#int), `kernelX`: InputArray, `kernelY`: InputArray, `anchor?`: [Point](../classes/_types_opencv__hacks_.point.md), `delta?`: [double](_types_opencv__hacks_.md#double), `borderType?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_filter.ts:573](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L573)*
+*Defined in [types/opencv/imgproc_filter.ts:573](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L573)*
 
 The function applies a separable linear filter to the image. That is, first, every row of src is
 filtered with the 1D kernel kernelX. Then, every column of the result is filtered with the 1D kernel
@@ -903,7 +903,7 @@ ___
 
 ▸ **spatialGradient**(`src`: InputArray, `dx`: OutputArray, `dy`: OutputArray, `ksize?`: [int](_types_opencv__hacks_.md#int), `borderType?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_filter.ts:649](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L649)*
+*Defined in [types/opencv/imgproc_filter.ts:649](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L649)*
 
 Equivalent to calling:
 
@@ -932,7 +932,7 @@ ___
 
 ▸ **sqrBoxFilter**(`src`: InputArray, `dst`: OutputArray, `ddepth`: [int](_types_opencv__hacks_.md#int), `ksize`: [Size](../classes/_types_opencv__hacks_.size.md), `anchor?`: [Point](../classes/_types_opencv__hacks_.point.md), `normalize?`: [bool](_types_opencv__hacks_.md#bool), `borderType?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_filter.ts:675](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/imgproc_filter.ts#L675)*
+*Defined in [types/opencv/imgproc_filter.ts:675](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_filter.ts#L675)*
 
 For every pixel `$ (x, y) $` in the source image, the function calculates the sum of squares of
 those neighboring pixel values which overlap the filter placed over the pixel `$ (x, y) $`.

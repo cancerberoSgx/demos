@@ -23,7 +23,7 @@
 
 • **THRESH_BINARY**: = "THRESH_BINARY"
 
-*Defined in [types.ts:13](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L13)*
+*Defined in [types.ts:13](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L13)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **THRESH_BINARY_INV**: = "THRESH_BINARY_INV"
 
-*Defined in [types.ts:14](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L14)*
+*Defined in [types.ts:14](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L14)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **THRESH_MASK**: = "THRESH_MASK"
 
-*Defined in [types.ts:18](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L18)*
+*Defined in [types.ts:18](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L18)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **THRESH_OTSU**: = "THRESH_OTSU"
 
-*Defined in [types.ts:19](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L19)*
+*Defined in [types.ts:19](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L19)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **THRESH_TOZERO**: = "THRESH_TOZERO"
 
-*Defined in [types.ts:16](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L16)*
+*Defined in [types.ts:16](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L16)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 • **THRESH_TOZERO_INV**: = "THRESH_TOZERO_INV"
 
-*Defined in [types.ts:17](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L17)*
+*Defined in [types.ts:17](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L17)*
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 • **THRESH_TRIANGLE**: = "THRESH_TRIANGLE"
 
-*Defined in [types.ts:20](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L20)*
+*Defined in [types.ts:20](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L20)*
 
 ___
 
@@ -79,4 +79,4 @@ ___
 
 • **THRESH_TRUNC**: = "THRESH_TRUNC"
 
-*Defined in [types.ts:15](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L15)*
+*Defined in [types.ts:15](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L15)*

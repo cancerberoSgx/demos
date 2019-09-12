@@ -6,7 +6,11 @@
 
 ## Hierarchy
 
-* **MathConcreteOptions**
+* [MathBaseOptions](_op_math_.mathbaseoptions.md)
+
+* object
+
+  * **MathConcreteOptions**
 
   * [MathOptions](_op_math_.mathoptions.md)
 
@@ -26,7 +30,9 @@
 
 • **dtype**? : *CVDataType*
 
-*Defined in [op/math.ts:25](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/math.ts#L25)*
+*Inherited from [MathBaseOptions](_op_math_.mathbaseoptions.md).[dtype](_op_math_.mathbaseoptions.md#optional-dtype)*
+
+*Defined in [op/math.ts:18](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/math.ts#L18)*
 
 optional depth of the output array
 
@@ -36,7 +42,7 @@ ___
 
 • **mask**? : *Mat*
 
-*Defined in [op/math.ts:17](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/math.ts#L17)*
+*Defined in [op/math.ts:36](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/math.ts#L36)*
 
 only applies to 'add' and 'subtract'
 
@@ -46,7 +52,7 @@ ___
 
 • **scale**? : *undefined | number*
 
-*Defined in [op/math.ts:21](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/math.ts#L21)*
+*Defined in [op/math.ts:40](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/math.ts#L40)*
 
 only applies to 'multiply' and 'divide'
 
@@ -56,7 +62,9 @@ ___
 
 • **src2**: *Mat*
 
-*Defined in [op/math.ts:13](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/math.ts#L13)*
+*Inherited from [MathBaseOptions](_op_math_.mathbaseoptions.md).[src2](_op_math_.mathbaseoptions.md#src2)*
+
+*Defined in [op/math.ts:14](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/math.ts#L14)*
 
 	second input array of the same size and the same type as src
 
@@ -64,6 +72,6 @@ ___
 
 ###  type
 
-• **type**: *"add" | "subtract" | "divide" | "multiply"*
+• **type**: *"add" | "subtract" | "divide" | "multiply" | "addWeighted"*
 
-*Defined in [op/math.ts:9](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/math.ts#L9)*
+*Defined in [op/math.ts:32](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/math.ts#L32)*

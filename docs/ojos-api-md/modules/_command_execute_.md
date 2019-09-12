@@ -18,7 +18,7 @@
 
 ▸ **deleteResult**(`r`: [Result](../interfaces/_command_types_.result.md)): *void*
 
-*Defined in [command/execute.ts:47](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/execute.ts#L47)*
+*Defined in [command/execute.ts:47](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/execute.ts#L47)*
 
 **Parameters:**
 
@@ -34,7 +34,7 @@ ___
 
 ▸ **execute**(`options`: [Options](../interfaces/_command_types_.options.md) | [Command](../interfaces/_command_types_.command.md)‹[CommandName](../enums/_command_types_.commandname.md)›[]): *Promise‹object›*
 
-*Defined in [command/execute.ts:17](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/execute.ts#L17)*
+*Defined in [command/execute.ts:17](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/execute.ts#L17)*
 
 Declarative opencv operations. the idea is to be able to represent opencv operations as commands (json
 serializable objects) so we can execute them as scripts. This provides with a declarative language which
@@ -60,7 +60,7 @@ ___
 
 ▸ **execute1**<**T**>(`options`: [Options1](../interfaces/_command_types_.options1.md)‹T› | [Command](../interfaces/_command_types_.command.md)‹T›): *Promise‹[Result1](../interfaces/_command_types_.result1.md)›*
 
-*Defined in [command/execute.ts:37](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/execute.ts#L37)*
+*Defined in [command/execute.ts:37](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/execute.ts#L37)*
 
 **Type parameters:**
 

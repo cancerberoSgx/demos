@@ -24,6 +24,6 @@
 
 • **ksize**: *Size*
 
-*Defined in [op/types.ts:45](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L45)*
+*Defined in [op/types.ts:45](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L45)*
 
 blurring kernel size. In general only odd numbers greater than 2 are accepted

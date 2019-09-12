@@ -22,7 +22,7 @@
 
 Ƭ **FormatProxy**: *[FormatProxyClass](../interfaces/_types_mirada_.formatproxyclass.md) | function | function*
 
-*Defined in [types/mirada.ts:52](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/mirada.ts#L52)*
+*Defined in [types/mirada.ts:52](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/mirada.ts#L52)*
 
 User provided image formats encode/decode implementation. The proxy is responsible of creating codec
 instances

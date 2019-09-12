@@ -23,7 +23,7 @@
 
 • **SOLVEPNP_AP3P**: = "SOLVEPNP_AP3P"
 
-*Defined in [types.ts:7](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L7)*
+*Defined in [types.ts:7](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L7)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **SOLVEPNP_DLS**: = "SOLVEPNP_DLS"
 
-*Defined in [types.ts:5](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L5)*
+*Defined in [types.ts:5](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L5)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **SOLVEPNP_EPNP**: = "SOLVEPNP_EPNP"
 
-*Defined in [types.ts:3](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L3)*
+*Defined in [types.ts:3](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L3)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **SOLVEPNP_IPPE**: = "SOLVEPNP_IPPE"
 
-*Defined in [types.ts:8](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L8)*
+*Defined in [types.ts:8](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L8)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **SOLVEPNP_IPPE_SQUARE**: = "SOLVEPNP_IPPE_SQUARE"
 
-*Defined in [types.ts:9](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L9)*
+*Defined in [types.ts:9](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L9)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 • **SOLVEPNP_ITERATIVE**: = "SOLVEPNP_ITERATIVE"
 
-*Defined in [types.ts:2](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L2)*
+*Defined in [types.ts:2](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L2)*
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 • **SOLVEPNP_P3P**: = "SOLVEPNP_P3P"
 
-*Defined in [types.ts:4](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L4)*
+*Defined in [types.ts:4](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L4)*
 
 ___
 
@@ -79,4 +79,4 @@ ___
 
 • **SOLVEPNP_UPNP**: = "SOLVEPNP_UPNP"
 
-*Defined in [types.ts:6](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/types.ts#L6)*
+*Defined in [types.ts:6](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L6)*

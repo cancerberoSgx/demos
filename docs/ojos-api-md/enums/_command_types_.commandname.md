@@ -19,7 +19,7 @@
 
 • **asRgba**: = "asRgba"
 
-*Defined in [command/types.ts:8](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L8)*
+*Defined in [command/types.ts:8](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L8)*
 
 ___
 
@@ -27,7 +27,7 @@ ___
 
 • **floodFill**: = "floodFill"
 
-*Defined in [command/types.ts:11](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L11)*
+*Defined in [command/types.ts:11](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L11)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **grabCut**: = "grabCut"
 
-*Defined in [command/types.ts:10](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L10)*
+*Defined in [command/types.ts:10](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L10)*
 
 ___
 
@@ -43,4 +43,4 @@ ___
 
 • **roi**: = "roi"
 
-*Defined in [command/types.ts:9](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L9)*
+*Defined in [command/types.ts:9](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L9)*

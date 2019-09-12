@@ -25,7 +25,7 @@
 
 • **debug**? : *undefined | false | true*
 
-*Defined in [command/types.ts:31](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L31)*
+*Defined in [command/types.ts:31](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L31)*
 
 ___
 
@@ -33,6 +33,6 @@ ___
 
 • **files**? : *File[]*
 
-*Defined in [command/types.ts:30](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L30)*
+*Defined in [command/types.ts:30](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L30)*
 
 initial files

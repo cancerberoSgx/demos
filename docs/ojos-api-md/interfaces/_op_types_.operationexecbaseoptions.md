@@ -20,9 +20,17 @@
 
   * [ConvertToOptions](_op_convertto_.converttooptions.md)
 
+  * [EdgeOptions](_op_edge_.edgeoptions.md)
+
   * [FloodFillOptions](_op_floodfill_.floodfilloptions.md)
 
   * [GaussianBlurOptions](_op_gaussianblur_.gaussianbluroptions.md)
+
+  * [HistEqualizationOptions](_op_histequalization_.histequalizationoptions.md)
+
+  * [MathOptions](_op_math_.mathoptions.md)
+
+  * [AddWeightOptions](_op_math_.addweightoptions.md)
 
   * [MedianBlurOptions](_op_medianblur_.medianbluroptions.md)
 
@@ -33,8 +41,6 @@
   * [ThresholdOptions](_op_threshold_.thresholdoptions.md)
 
   * [WarpPerspectiveOptions](_op_warpperspective_.warpperspectiveoptions.md)
-
-  * [MathOptions](_op_math_.mathoptions.md)
 
 ## Index
 
@@ -49,7 +55,7 @@
 
 • **dst**? : *Mat*
 
-*Defined in [op/types.ts:27](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L27)*
+*Defined in [op/types.ts:27](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L27)*
 
 ___
 
@@ -57,4 +63,4 @@ ___
 
 • **src**: *Mat*
 
-*Defined in [op/types.ts:26](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L26)*
+*Defined in [op/types.ts:26](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L26)*

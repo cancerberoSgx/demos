@@ -35,14 +35,20 @@ Filter size*: Large filters (d > 5) are very slow, so it is recommended to use d
 * [noInPlace](_op_bilateralfilter_.bilateralfilter.md#noinplace)
 * [sameSizeAndType](_op_bilateralfilter_.bilateralfilter.md#samesizeandtype)
 * [validChannels](_op_bilateralfilter_.bilateralfilter.md#validchannels)
+* [validateEachExec](_op_bilateralfilter_.bilateralfilter.md#protected-validateeachexec)
+* [validated](_op_bilateralfilter_.bilateralfilter.md#protected-validated)
 
 ### Methods
 
 * [_exec](_op_bilateralfilter_.bilateralfilter.md#protected-_exec)
+* [afterExec](_op_bilateralfilter_.bilateralfilter.md#protected-afterexec)
+* [allChannels](_op_bilateralfilter_.bilateralfilter.md#protected-allchannels)
 * [checkInPlaceAfter](_op_bilateralfilter_.bilateralfilter.md#protected-checkinplaceafter)
 * [checkInPlaceBefore](_op_bilateralfilter_.bilateralfilter.md#protected-checkinplacebefore)
+* [checkInputImage](_op_bilateralfilter_.bilateralfilter.md#protected-checkinputimage)
 * [checkOptions](_op_bilateralfilter_.bilateralfilter.md#protected-checkoptions)
 * [exec](_op_bilateralfilter_.bilateralfilter.md#exec)
+* [validate](_op_bilateralfilter_.bilateralfilter.md#protected-validate)
 
 ## Constructors
 
@@ -52,7 +58,7 @@ Filter size*: Large filters (d > 5) are very slow, so it is recommended to use d
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[constructor](_op_abstractoperation_.abstractoperation.md#constructor)*
 
-*Defined in [op/abstractOperation.ts:14](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/abstractOperation.ts#L14)*
+*Defined in [op/abstractOperation.ts:16](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L16)*
 
 **Parameters:**
 
@@ -70,7 +76,7 @@ Name | Type |
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[defaultOptions](_op_abstractoperation_.abstractoperation.md#protected-optional-defaultoptions)*
 
-*Defined in [op/abstractOperation.ts:16](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/abstractOperation.ts#L16)*
+*Defined in [op/abstractOperation.ts:18](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L18)*
 
 ___
 
@@ -82,7 +88,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[description](_op_abstractoperation_.abstractoperation.md#description)*
 
-*Defined in [op/abstractOperation.ts:10](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/abstractOperation.ts#L10)*
+*Defined in [op/abstractOperation.ts:9](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L9)*
 
 ___
 
@@ -92,7 +98,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[isInPlace](_op_abstractoperation_.abstractoperation.md#protected-isinplace)*
 
-*Defined in [op/abstractOperation.ts:13](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/abstractOperation.ts#L13)*
+*Defined in [op/abstractOperation.ts:12](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L12)*
 
 ___
 
@@ -104,7 +110,7 @@ ___
 
 *Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[name](_op_abstractoperation_.abstractoperation.md#abstract-name)*
 
-*Defined in [op/bilateralFilter.ts:30](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/bilateralFilter.ts#L30)*
+*Defined in [op/bilateralFilter.ts:30](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/bilateralFilter.ts#L30)*
 
 ___
 
@@ -116,7 +122,7 @@ ___
 
 *Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[noInPlace](_op_abstractoperation_.abstractoperation.md#noinplace)*
 
-*Defined in [op/bilateralFilter.ts:31](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/bilateralFilter.ts#L31)*
+*Defined in [op/bilateralFilter.ts:31](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/bilateralFilter.ts#L31)*
 
 ___
 
@@ -128,7 +134,7 @@ ___
 
 *Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[sameSizeAndType](_op_abstractoperation_.abstractoperation.md#samesizeandtype)*
 
-*Defined in [op/bilateralFilter.ts:32](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/bilateralFilter.ts#L32)*
+*Defined in [op/bilateralFilter.ts:32](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/bilateralFilter.ts#L32)*
 
 ___
 
@@ -140,17 +146,37 @@ ___
 
 *Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[validChannels](_op_abstractoperation_.abstractoperation.md#validchannels)*
 
-*Defined in [op/bilateralFilter.ts:33](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/bilateralFilter.ts#L33)*
+*Defined in [op/bilateralFilter.ts:33](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/bilateralFilter.ts#L33)*
+
+___
+
+### `Protected` validateEachExec
+
+• **validateEachExec**: *boolean* = false
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[validateEachExec](_op_abstractoperation_.abstractoperation.md#protected-validateeachexec)*
+
+*Defined in [op/abstractOperation.ts:13](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L13)*
+
+___
+
+### `Protected` validated
+
+• **validated**: *boolean* = false
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[validated](_op_abstractoperation_.abstractoperation.md#protected-validated)*
+
+*Defined in [op/abstractOperation.ts:14](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L14)*
 
 ## Methods
 
 ### `Protected` _exec
 
-▸ **_exec**(`o`: [BilateralFilterOptions](../interfaces/_op_bilateralfilter_.bilateralfilteroptions.md)): *Promise‹void›*
+▸ **_exec**(`o`: [BilateralFilterOptions](../interfaces/_op_bilateralfilter_.bilateralfilteroptions.md)): *void*
 
 *Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[_exec](_op_abstractoperation_.abstractoperation.md#protected-abstract-_exec)*
 
-*Defined in [op/bilateralFilter.ts:34](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/bilateralFilter.ts#L34)*
+*Defined in [op/bilateralFilter.ts:34](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/bilateralFilter.ts#L34)*
 
 **Parameters:**
 
@@ -158,7 +184,51 @@ Name | Type |
 ------ | ------ |
 `o` | [BilateralFilterOptions](../interfaces/_op_bilateralfilter_.bilateralfilteroptions.md) |
 
-**Returns:** *Promise‹void›*
+**Returns:** *void*
+
+___
+
+### `Protected` afterExec
+
+▸ **afterExec**(`options`: [MandatoryDst](../modules/_op_abstractoperation_.md#mandatorydst)‹[BilateralFilterOptions](../interfaces/_op_bilateralfilter_.bilateralfilteroptions.md)›): *void*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[afterExec](_op_abstractoperation_.abstractoperation.md#protected-afterexec)*
+
+*Defined in [op/abstractOperation.ts:41](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L41)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`options` | [MandatoryDst](../modules/_op_abstractoperation_.md#mandatorydst)‹[BilateralFilterOptions](../interfaces/_op_bilateralfilter_.bilateralfilteroptions.md)› |
+
+**Returns:** *void*
+
+___
+
+### `Protected` allChannels
+
+▸ **allChannels**(`o`: [BilateralFilterOptions](../interfaces/_op_bilateralfilter_.bilateralfilteroptions.md) & [WithChannels](../interfaces/_op_types_.withchannels.md), `op`: function): *void*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[allChannels](_op_abstractoperation_.abstractoperation.md#protected-allchannels)*
+
+*Defined in [op/abstractOperation.ts:89](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L89)*
+
+**Parameters:**
+
+▪ **o**: *[BilateralFilterOptions](../interfaces/_op_bilateralfilter_.bilateralfilteroptions.md) & [WithChannels](../interfaces/_op_types_.withchannels.md)*
+
+▪ **op**: *function*
+
+▸ (`o`: [BilateralFilterOptions](../interfaces/_op_bilateralfilter_.bilateralfilteroptions.md)): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`o` | [BilateralFilterOptions](../interfaces/_op_bilateralfilter_.bilateralfilteroptions.md) |
+
+**Returns:** *void*
 
 ___
 
@@ -168,7 +238,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkInPlaceAfter](_op_abstractoperation_.abstractoperation.md#protected-checkinplaceafter)*
 
-*Defined in [op/abstractOperation.ts:60](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/abstractOperation.ts#L60)*
+*Defined in [op/abstractOperation.ts:79](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L79)*
 
 **Parameters:**
 
@@ -186,7 +256,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkInPlaceBefore](_op_abstractoperation_.abstractoperation.md#protected-checkinplacebefore)*
 
-*Defined in [op/abstractOperation.ts:53](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/abstractOperation.ts#L53)*
+*Defined in [op/abstractOperation.ts:70](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L70)*
 
 **Parameters:**
 
@@ -198,13 +268,31 @@ Name | Type |
 
 ___
 
+### `Protected` checkInputImage
+
+▸ **checkInputImage**(`o`: [BilateralFilterOptions](../interfaces/_op_bilateralfilter_.bilateralfilteroptions.md)): *void*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkInputImage](_op_abstractoperation_.abstractoperation.md#protected-checkinputimage)*
+
+*Defined in [op/abstractOperation.ts:43](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L43)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`o` | [BilateralFilterOptions](../interfaces/_op_bilateralfilter_.bilateralfilteroptions.md) |
+
+**Returns:** *void*
+
+___
+
 ### `Protected` checkOptions
 
 ▸ **checkOptions**(`o?`: [T](undefined)): *object & object*
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkOptions](_op_abstractoperation_.abstractoperation.md#protected-checkoptions)*
 
-*Defined in [op/abstractOperation.ts:30](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/abstractOperation.ts#L30)*
+*Defined in [op/abstractOperation.ts:45](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L45)*
 
 **Parameters:**
 
@@ -218,13 +306,13 @@ ___
 
 ###  exec
 
-▸ **exec**(`o?`: [T](undefined)): *Promise‹Mat›*
+▸ **exec**(`o?`: [T](undefined)): *Mat*
 
 *Implementation of [ImageOperation](../interfaces/_op_types_.imageoperation.md)*
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[exec](_op_abstractoperation_.abstractoperation.md#exec)*
 
-*Defined in [op/abstractOperation.ts:22](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/abstractOperation.ts#L22)*
+*Defined in [op/abstractOperation.ts:26](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L26)*
 
 **Parameters:**
 
@@ -232,4 +320,22 @@ Name | Type |
 ------ | ------ |
 `o?` | [T](undefined) |
 
-**Returns:** *Promise‹Mat›*
+**Returns:** *Mat*
+
+___
+
+### `Protected` validate
+
+▸ **validate**(`o`: [BilateralFilterOptions](../interfaces/_op_bilateralfilter_.bilateralfilteroptions.md)): *string | undefined*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[validate](_op_abstractoperation_.abstractoperation.md#protected-validate)*
+
+*Defined in [op/abstractOperation.ts:21](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L21)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`o` | [BilateralFilterOptions](../interfaces/_op_bilateralfilter_.bilateralfilteroptions.md) |
+
+**Returns:** *string | undefined*

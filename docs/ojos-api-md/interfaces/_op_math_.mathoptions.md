@@ -8,7 +8,7 @@
 
 * [OperationExecBaseOptions](_op_types_.operationexecbaseoptions.md)
 
-* [MathConcreteOptions](_op_math_.mathconcreteoptions.md)
+  * [MathConcreteOptions](_op_math_.mathconcreteoptions.md)
 
   * **MathOptions**
 
@@ -32,7 +32,7 @@
 
 *Inherited from [OperationExecBaseOptions](_op_types_.operationexecbaseoptions.md).[dst](_op_types_.operationexecbaseoptions.md#optional-dst)*
 
-*Defined in [op/types.ts:27](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L27)*
+*Defined in [op/types.ts:27](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L27)*
 
 ___
 
@@ -40,9 +40,9 @@ ___
 
 • **dtype**? : *CVDataType*
 
-*Inherited from [MathConcreteOptions](_op_math_.mathconcreteoptions.md).[dtype](_op_math_.mathconcreteoptions.md#optional-dtype)*
+*Inherited from [MathBaseOptions](_op_math_.mathbaseoptions.md).[dtype](_op_math_.mathbaseoptions.md#optional-dtype)*
 
-*Defined in [op/math.ts:25](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/math.ts#L25)*
+*Defined in [op/math.ts:18](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/math.ts#L18)*
 
 optional depth of the output array
 
@@ -54,7 +54,7 @@ ___
 
 *Inherited from [MathConcreteOptions](_op_math_.mathconcreteoptions.md).[mask](_op_math_.mathconcreteoptions.md#optional-mask)*
 
-*Defined in [op/math.ts:17](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/math.ts#L17)*
+*Defined in [op/math.ts:36](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/math.ts#L36)*
 
 only applies to 'add' and 'subtract'
 
@@ -66,7 +66,7 @@ ___
 
 *Inherited from [MathConcreteOptions](_op_math_.mathconcreteoptions.md).[scale](_op_math_.mathconcreteoptions.md#optional-scale)*
 
-*Defined in [op/math.ts:21](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/math.ts#L21)*
+*Defined in [op/math.ts:40](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/math.ts#L40)*
 
 only applies to 'multiply' and 'divide'
 
@@ -78,7 +78,7 @@ ___
 
 *Inherited from [OperationExecBaseOptions](_op_types_.operationexecbaseoptions.md).[src](_op_types_.operationexecbaseoptions.md#src)*
 
-*Defined in [op/types.ts:26](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L26)*
+*Defined in [op/types.ts:26](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L26)*
 
 ___
 
@@ -86,9 +86,9 @@ ___
 
 • **src2**: *Mat*
 
-*Inherited from [MathConcreteOptions](_op_math_.mathconcreteoptions.md).[src2](_op_math_.mathconcreteoptions.md#src2)*
+*Inherited from [MathBaseOptions](_op_math_.mathbaseoptions.md).[src2](_op_math_.mathbaseoptions.md#src2)*
 
-*Defined in [op/math.ts:13](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/math.ts#L13)*
+*Defined in [op/math.ts:14](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/math.ts#L14)*
 
 	second input array of the same size and the same type as src
 
@@ -96,8 +96,8 @@ ___
 
 ###  type
 
-• **type**: *"add" | "subtract" | "divide" | "multiply"*
+• **type**: *"add" | "subtract" | "divide" | "multiply" | "addWeighted"*
 
 *Inherited from [MathConcreteOptions](_op_math_.mathconcreteoptions.md).[type](_op_math_.mathconcreteoptions.md#type)*
 
-*Defined in [op/math.ts:9](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/math.ts#L9)*
+*Defined in [op/math.ts:32](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/math.ts#L32)*

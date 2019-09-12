@@ -24,7 +24,7 @@
 
 • **mask**? : *Mat*
 
-*Defined in [op/bitwise.ts:12](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/bitwise.ts#L12)*
+*Defined in [op/bitwise.ts:11](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/bitwise.ts#L11)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **src2**? : *Mat*
 
-*Defined in [op/bitwise.ts:11](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/bitwise.ts#L11)*
+*Defined in [op/bitwise.ts:10](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/bitwise.ts#L10)*
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 • **type**: *"and" | "or" | "not" | "xor"*
 
-*Defined in [op/bitwise.ts:10](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/bitwise.ts#L10)*
+*Defined in [op/bitwise.ts:9](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/bitwise.ts#L9)*

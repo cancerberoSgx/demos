@@ -69,14 +69,26 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The function finds edges in the input image and marks them in the output map edges using the Canny algorithm. The smallest value between threshold1 and threshold2 is used for edge linking. The largest value is used to find initial segments of strong edges.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">CannyConcreteOptions</span>
+						<a href="_op_types_.withchannels.html" class="tsd-signature-type">WithChannels</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<a href="_op_canny_.cannyoptions.html" class="tsd-signature-type">CannyOptions</a>
+								<span class="target">CannyConcreteOptions</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="_op_canny_.cannyoptions.html" class="tsd-signature-type">CannyOptions</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>
@@ -91,6 +103,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_op_canny_.cannyconcreteoptions.html#l2gradient" class="tsd-kind-icon">L2gradient</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_op_canny_.cannyconcreteoptions.html#aperturesize" class="tsd-kind-icon">aperture<wbr>Size</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="_op_canny_.cannyconcreteoptions.html#channels" class="tsd-kind-icon">channels</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_op_canny_.cannyconcreteoptions.html#threshold1" class="tsd-kind-icon">threshold1</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_op_canny_.cannyconcreteoptions.html#threshold2" class="tsd-kind-icon">threshold2</a></li>
 							</ul>
@@ -106,9 +119,14 @@
 					<div class="tsd-signature tsd-kind-icon">L2gradient<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/canny.ts#L15">op/canny.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/canny.ts#L25">op/canny.ts:25</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>if true a more accurate L2 norm will be used to calculate the image gradient magnitude</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
 					<a name="aperturesize" class="tsd-anchor"></a>
@@ -116,9 +134,30 @@
 					<div class="tsd-signature tsd-kind-icon">aperture<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/canny.ts#L14">op/canny.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/canny.ts#L21">op/canny.ts:21</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>aperture size for the Sobel operator.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+					<a name="channels" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> channels</h3>
+					<div class="tsd-signature tsd-kind-icon">channels<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_op_types_.withchannels.html">WithChannels</a>.<a href="_op_types_.withchannels.html#channels">channels</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L52">op/types.ts:52</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>If true then all channels will be processed independently and then joined to build the result. The only exception is when there are 4 channels and in this case, if channels===true, the last 4th channel will be omitted (alpha). If an array of numbers is given then those channels will be processed only. If not given then the operation will behave normally, processing as single channle image.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
 					<a name="threshold1" class="tsd-anchor"></a>
@@ -126,9 +165,14 @@
 					<div class="tsd-signature tsd-kind-icon">threshold1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/canny.ts#L9">op/canny.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/canny.ts#L13">op/canny.ts:13</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>first threshold for the hysteresis procedure.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
 					<a name="threshold2" class="tsd-anchor"></a>
@@ -136,7 +180,7 @@
 					<div class="tsd-signature tsd-kind-icon">threshold2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/canny.ts#L13">op/canny.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/canny.ts#L17">op/canny.ts:17</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -160,6 +204,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="../classes/_op_canny_.canny.html" class="tsd-kind-icon">Canny</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
@@ -170,6 +217,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
 								<a href="_op_canny_.cannyconcreteoptions.html#aperturesize" class="tsd-kind-icon">aperture<wbr>Size</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+								<a href="_op_canny_.cannyconcreteoptions.html#channels" class="tsd-kind-icon">channels</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
 								<a href="_op_canny_.cannyconcreteoptions.html#threshold1" class="tsd-kind-icon">threshold1</a>
@@ -183,9 +233,6 @@
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
 						<a href="_op_canny_.cannyoptions.html" class="tsd-kind-icon">Canny<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
-						<a href="../modules/_op_canny_.html#canny" class="tsd-kind-icon">canny</a>
 					</li>
 				</ul>
 			</nav>

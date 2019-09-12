@@ -24,7 +24,7 @@
 
 • **alpha**? : *undefined | number*
 
-*Defined in [op/convertTo.ts:11](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/convertTo.ts#L11)*
+*Defined in [op/convertTo.ts:11](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/convertTo.ts#L11)*
 
  Color scale factor.
 
@@ -34,7 +34,7 @@ ___
 
 • **beta**? : *undefined | number*
 
-*Defined in [op/convertTo.ts:15](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/convertTo.ts#L15)*
+*Defined in [op/convertTo.ts:15](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/convertTo.ts#L15)*
 
 Delta added to the scaled values.
 
@@ -44,6 +44,6 @@ ___
 
 • **dtype**? : *undefined | number*
 
-*Defined in [op/convertTo.ts:19](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/convertTo.ts#L19)*
+*Defined in [op/convertTo.ts:19](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/convertTo.ts#L19)*
 
 Output image depth, for example, cv.CV_8U

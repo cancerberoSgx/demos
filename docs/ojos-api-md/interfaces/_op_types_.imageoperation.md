@@ -19,12 +19,16 @@
 * [BilateralFilter](../classes/_op_bilateralfilter_.bilateralfilter.md)
 * [Bitwise](../classes/_op_bitwise_.bitwise.md)
 * [BoxFilter](../classes/_op_boxfilter_.boxfilter.md)
+* [Canny](../classes/_op_canny_.canny.md)
 * [ConvertTo](../classes/_op_convertto_.convertto.md)
+* [Edge](../classes/_op_edge_.edge.md)
 * [FloodFill](../classes/_op_floodfill_.floodfill.md)
 * [GaussianBlur](../classes/_op_gaussianblur_.gaussianblur.md)
+* [HistEqualization](../classes/_op_histequalization_.histequalization.md)
 * [Math](../classes/_op_math_.math.md)
 * [MedianBlur](../classes/_op_medianblur_.medianblur.md)
 * [MorphologyEx](../classes/_op_morphologyex_.morphologyex.md)
+* [ReplaceColor](../classes/_op_replacecolor_.replacecolor.md)
 * [Threshold](../classes/_op_threshold_.threshold.md)
 * [WarpPerspective](../classes/_op_warpperspective_.warpperspective.md)
 
@@ -48,7 +52,7 @@
 
 • **description**: *string*
 
-*Defined in [op/types.ts:6](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L6)*
+*Defined in [op/types.ts:6](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L6)*
 
 ___
 
@@ -56,7 +60,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [op/types.ts:5](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L5)*
+*Defined in [op/types.ts:5](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L5)*
 
 ___
 
@@ -64,7 +68,7 @@ ___
 
 • **noInPlace**: *boolean*
 
-*Defined in [op/types.ts:10](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L10)*
+*Defined in [op/types.ts:10](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L10)*
 
 The operation doesn't support "in-place" modifications. (passing the same mat as src and dst)
 
@@ -74,7 +78,7 @@ ___
 
 • **sameSizeAndType**: *boolean*
 
-*Defined in [op/types.ts:14](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L14)*
+*Defined in [op/types.ts:14](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L14)*
 
 Does the dst mat need to be of the same size and type as src?
 
@@ -84,7 +88,7 @@ ___
 
 • **validChannels**: *number[] | undefined*
 
-*Defined in [op/types.ts:18](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L18)*
+*Defined in [op/types.ts:18](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L18)*
 
 valid channel numbers of input images
 
@@ -92,9 +96,9 @@ valid channel numbers of input images
 
 ###  exec
 
-▸ **exec**(`o?`: [T](undefined)): *Promise‹Mat›*
+▸ **exec**(`o?`: [T](undefined)): *Mat*
 
-*Defined in [op/types.ts:19](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L19)*
+*Defined in [op/types.ts:19](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L19)*
 
 **Parameters:**
 
@@ -102,4 +106,4 @@ Name | Type |
 ------ | ------ |
 `o?` | [T](undefined) |
 
-**Returns:** *Promise‹Mat›*
+**Returns:** *Mat*

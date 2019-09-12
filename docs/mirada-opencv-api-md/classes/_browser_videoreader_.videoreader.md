@@ -70,7 +70,7 @@ console.trace(error)
 
 \+ **new VideoReader**(`video`: HTMLVideoElement, `canvas`: HTMLCanvasElement, `o`: [Options](../interfaces/_browser_videoreader_.options.md)): *[VideoReader](_browser_videoreader_.videoreader.md)*
 
-*Defined in [browser/videoReader.ts:55](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L55)*
+*Defined in [browser/videoReader.ts:55](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/videoReader.ts#L55)*
 
 **Parameters:**
 
@@ -88,7 +88,7 @@ Name | Type | Default |
 
 • **canvas**: *HTMLCanvasElement*
 
-*Defined in [browser/videoReader.ts:57](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L57)*
+*Defined in [browser/videoReader.ts:57](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/videoReader.ts#L57)*
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 • **ctx**: *CanvasRenderingContext2D*
 
-*Defined in [browser/videoReader.ts:39](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L39)*
+*Defined in [browser/videoReader.ts:39](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/videoReader.ts#L39)*
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 • **mat**: *[Mat](_types_opencv_mat_.mat.md)* =  null as any
 
-*Defined in [browser/videoReader.ts:40](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L40)*
+*Defined in [browser/videoReader.ts:40](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/videoReader.ts#L40)*
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 • **o**: *[Options](../interfaces/_browser_videoreader_.options.md)*
 
-*Defined in [browser/videoReader.ts:57](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L57)*
+*Defined in [browser/videoReader.ts:57](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/videoReader.ts#L57)*
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 • **size**: *[Size](_types_opencv__hacks_.size.md)*
 
-*Defined in [browser/videoReader.ts:41](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L41)*
+*Defined in [browser/videoReader.ts:41](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/videoReader.ts#L41)*
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 • **stream**: *MediaStream | undefined*
 
-*Defined in [browser/videoReader.ts:55](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L55)*
+*Defined in [browser/videoReader.ts:55](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/videoReader.ts#L55)*
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 • **streaming**: *boolean* = false
 
-*Defined in [browser/videoReader.ts:46](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L46)*
+*Defined in [browser/videoReader.ts:46](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/videoReader.ts#L46)*
 
 Indicates if the video is currently being processed
 
@@ -146,7 +146,7 @@ ___
 
 • **video**: *HTMLVideoElement*
 
-*Defined in [browser/videoReader.ts:57](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L57)*
+*Defined in [browser/videoReader.ts:57](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/videoReader.ts#L57)*
 
 ## Methods
 
@@ -154,7 +154,7 @@ ___
 
 ▸ **canPlay**(): *Promise‹unknown›*
 
-*Defined in [browser/videoReader.ts:72](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L72)*
+*Defined in [browser/videoReader.ts:72](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/videoReader.ts#L72)*
 
 **Returns:** *Promise‹unknown›*
 
@@ -164,7 +164,7 @@ ___
 
 ▸ **getSize**(): *[Size](_types_opencv__hacks_.size.md)*
 
-*Defined in [browser/videoReader.ts:100](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L100)*
+*Defined in [browser/videoReader.ts:100](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/videoReader.ts#L100)*
 
 **Returns:** *[Size](_types_opencv__hacks_.size.md)*
 
@@ -174,7 +174,7 @@ ___
 
 ▸ **matCheck**(): *void*
 
-*Defined in [browser/videoReader.ts:116](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L116)*
+*Defined in [browser/videoReader.ts:116](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/videoReader.ts#L116)*
 
 **Returns:** *void*
 
@@ -184,7 +184,7 @@ ___
 
 ▸ **read**(): *void*
 
-*Defined in [browser/videoReader.ts:66](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L66)*
+*Defined in [browser/videoReader.ts:66](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/videoReader.ts#L66)*
 
 reads current video frame into [mat]
 
@@ -196,7 +196,7 @@ ___
 
 ▸ **stop**(): *void*
 
-*Defined in [browser/videoReader.ts:92](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L92)*
+*Defined in [browser/videoReader.ts:92](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/videoReader.ts#L92)*
 
 **Returns:** *void*
 
@@ -206,17 +206,17 @@ ___
 
 ### ▪ **defaultOptions**: *object*
 
-*Defined in [browser/videoReader.ts:48](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L48)*
+*Defined in [browser/videoReader.ts:48](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/videoReader.ts#L48)*
 
 ###  size
 
 • **size**: *"canvas"* = "canvas"
 
-*Defined in [browser/videoReader.ts:49](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L49)*
+*Defined in [browser/videoReader.ts:49](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/videoReader.ts#L49)*
 
 ▪ **constraints**: *object*
 
-*Defined in [browser/videoReader.ts:50](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/browser/videoReader.ts#L50)*
+*Defined in [browser/videoReader.ts:50](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/videoReader.ts#L50)*
 
 * **audio**: *false* = false
 

@@ -28,7 +28,7 @@
 
 *Inherited from [Command](_command_types_.command.md).[in](_command_types_.command.md#in)*
 
-*Defined in [command/types.ts:19](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L19)*
+*Defined in [command/types.ts:19](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L19)*
 
 Input file name.
 
@@ -40,7 +40,7 @@ ___
 
 *Inherited from [Command](_command_types_.command.md).[name](_command_types_.command.md#name)*
 
-*Defined in [command/types.ts:15](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L15)*
+*Defined in [command/types.ts:15](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L15)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **newVal**: *Scalar*
 
-*Defined in [command/impl/floodfill.ts:8](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/impl/floodfill.ts#L8)*
+*Defined in [command/impl/floodfill.ts:8](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/impl/floodfill.ts#L8)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 *Inherited from [Command](_command_types_.command.md).[out](_command_types_.command.md#optional-out)*
 
-*Defined in [command/types.ts:23](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L23)*
+*Defined in [command/types.ts:23](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L23)*
 
 Output file names. If not given the input file will be replaced.
 
@@ -68,4 +68,4 @@ ___
 
 • **seed**: *Point*
 
-*Defined in [command/impl/floodfill.ts:7](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/impl/floodfill.ts#L7)*
+*Defined in [command/impl/floodfill.ts:7](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/impl/floodfill.ts#L7)*

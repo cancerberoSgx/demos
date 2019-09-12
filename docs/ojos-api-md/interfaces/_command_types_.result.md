@@ -24,7 +24,7 @@
 
 • **commands**: *[Result1](_command_types_.result1.md)[]*
 
-*Defined in [command/types.ts:60](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L60)*
+*Defined in [command/types.ts:60](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L60)*
 
 Per command results.
 
@@ -36,7 +36,7 @@ ___
 
 *Inherited from [Result1](_command_types_.result1.md).[error](_command_types_.result1.md#optional-error)*
 
-*Defined in [command/types.ts:53](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L53)*
+*Defined in [command/types.ts:53](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L53)*
 
 ___
 
@@ -46,4 +46,4 @@ ___
 
 *Inherited from [Result1](_command_types_.result1.md).[out](_command_types_.result1.md#out)*
 
-*Defined in [command/types.ts:52](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L52)*
+*Defined in [command/types.ts:52](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L52)*

@@ -16,4 +16,4 @@
 
 ### ▪ **command**: *object*
 
-*Defined in [command/index.ts:5](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/index.ts#L5)*
+*Defined in [command/index.ts:5](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/index.ts#L5)*

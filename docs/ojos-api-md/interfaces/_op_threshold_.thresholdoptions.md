@@ -30,7 +30,7 @@
 
 *Inherited from [OperationExecBaseOptions](_op_types_.operationexecbaseoptions.md).[dst](_op_types_.operationexecbaseoptions.md#optional-dst)*
 
-*Defined in [op/types.ts:27](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L27)*
+*Defined in [op/types.ts:27](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L27)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 *Inherited from [ThresholdConcreteOptions](_op_threshold_.thresholdconcreteoptions.md).[maxval](_op_threshold_.thresholdconcreteoptions.md#maxval)*
 
-*Defined in [op/threshold.ts:10](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/threshold.ts#L10)*
+*Defined in [op/threshold.ts:10](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/threshold.ts#L10)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 *Inherited from [OperationExecBaseOptions](_op_types_.operationexecbaseoptions.md).[src](_op_types_.operationexecbaseoptions.md#src)*
 
-*Defined in [op/types.ts:26](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L26)*
+*Defined in [op/types.ts:26](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L26)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 *Inherited from [ThresholdConcreteOptions](_op_threshold_.thresholdconcreteoptions.md).[thresh](_op_threshold_.thresholdconcreteoptions.md#thresh)*
 
-*Defined in [op/threshold.ts:9](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/threshold.ts#L9)*
+*Defined in [op/threshold.ts:9](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/threshold.ts#L9)*
 
 ___
 
@@ -70,4 +70,4 @@ ___
 
 *Inherited from [ThresholdConcreteOptions](_op_threshold_.thresholdconcreteoptions.md).[type](_op_threshold_.thresholdconcreteoptions.md#type)*
 
-*Defined in [op/threshold.ts:11](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/threshold.ts#L11)*
+*Defined in [op/threshold.ts:11](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/threshold.ts#L11)*

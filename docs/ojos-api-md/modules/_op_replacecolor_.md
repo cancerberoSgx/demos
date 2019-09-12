@@ -6,26 +6,10 @@
 
 ## Index
 
+### Classes
+
+* [ReplaceColor](../classes/_op_replacecolor_.replacecolor.md)
+
 ### Interfaces
 
 * [ReplaceColorOptions](../interfaces/_op_replacecolor_.replacecoloroptions.md)
-
-### Functions
-
-* [replaceColor](_op_replacecolor_.md#replacecolor)
-
-## Functions
-
-###  replaceColor
-
-▸ **replaceColor**(`o`: [ReplaceColorOptions](../interfaces/_op_replacecolor_.replacecoloroptions.md)): *Mat*
-
-*Defined in [op/replaceColor.ts:10](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/replaceColor.ts#L10)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`o` | [ReplaceColorOptions](../interfaces/_op_replacecolor_.replacecoloroptions.md) |
-
-**Returns:** *Mat*

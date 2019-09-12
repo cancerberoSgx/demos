@@ -23,7 +23,7 @@
 
 • **error**? : *undefined | string*
 
-*Defined in [command/types.ts:53](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L53)*
+*Defined in [command/types.ts:53](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L53)*
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 • **out**: *File[]*
 
-*Defined in [command/types.ts:52](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L52)*
+*Defined in [command/types.ts:52](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L52)*

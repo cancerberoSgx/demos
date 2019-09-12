@@ -12,6 +12,8 @@
 
   * [BoxFilterConcreteOptions](_op_boxfilter_.boxfilterconcreteoptions.md)
 
+  * [EdgeConcreteOptions](_op_edge_.edgeconcreteoptions.md)
+
   * [GaussianBlurConcreteOptions](_op_gaussianblur_.gaussianblurconcreteoptions.md)
 
   * [MedianBlurConcreteOptions](_op_medianblur_.medianblurconcreteoptions.md)
@@ -32,6 +34,6 @@
 
 • **borderType**? : *BorderTypes*
 
-*Defined in [op/types.ts:34](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L34)*
+*Defined in [op/types.ts:34](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L34)*
 
 border mode used to extrapolate pixels outside of the image, see [BorderTypes]

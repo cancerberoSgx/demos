@@ -27,7 +27,7 @@
 
 *Inherited from [WithBorderType](_op_types_.withbordertype.md).[borderType](_op_types_.withbordertype.md#optional-bordertype)*
 
-*Defined in [op/types.ts:34](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L34)*
+*Defined in [op/types.ts:34](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L34)*
 
 border mode used to extrapolate pixels outside of the image, see [BorderTypes]
 
@@ -37,4 +37,4 @@ ___
 
 • **ksize**: *number*
 
-*Defined in [op/medianBlur.ts:9](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/medianBlur.ts#L9)*
+*Defined in [op/medianBlur.ts:9](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/medianBlur.ts#L9)*

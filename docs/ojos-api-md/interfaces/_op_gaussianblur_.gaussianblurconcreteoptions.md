@@ -31,7 +31,7 @@
 
 *Inherited from [WithBorderType](_op_types_.withbordertype.md).[borderType](_op_types_.withbordertype.md#optional-bordertype)*
 
-*Defined in [op/types.ts:34](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L34)*
+*Defined in [op/types.ts:34](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L34)*
 
 border mode used to extrapolate pixels outside of the image, see [BorderTypes]
 
@@ -43,7 +43,7 @@ ___
 
 *Inherited from [WithKSize](_op_types_.withksize.md).[ksize](_op_types_.withksize.md#ksize)*
 
-*Defined in [op/types.ts:45](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L45)*
+*Defined in [op/types.ts:45](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L45)*
 
 blurring kernel size. In general only odd numbers greater than 2 are accepted
 
@@ -53,7 +53,7 @@ ___
 
 • **sigmaX**: *number*
 
-*Defined in [op/gaussianBlur.ts:8](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/gaussianBlur.ts#L8)*
+*Defined in [op/gaussianBlur.ts:8](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/gaussianBlur.ts#L8)*
 
 ___
 
@@ -61,4 +61,4 @@ ___
 
 • **sigmaY**? : *undefined | number*
 
-*Defined in [op/gaussianBlur.ts:9](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/gaussianBlur.ts#L9)*
+*Defined in [op/gaussianBlur.ts:9](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/gaussianBlur.ts#L9)*

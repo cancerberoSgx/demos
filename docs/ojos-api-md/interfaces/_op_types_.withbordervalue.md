@@ -24,4 +24,4 @@
 
 • **borderValue**? : *Scalar*
 
-*Defined in [op/types.ts:38](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L38)*
+*Defined in [op/types.ts:38](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L38)*

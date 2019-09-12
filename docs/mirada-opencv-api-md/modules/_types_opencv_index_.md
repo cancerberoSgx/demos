@@ -16,4 +16,4 @@
 
 Ƭ **CV**: *["types/opencv/_types"](_types_opencv__types_.md)*
 
-*Defined in [types/opencv/index.ts:2](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/types/opencv/index.ts#L2)*
+*Defined in [types/opencv/index.ts:2](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/index.ts#L2)*

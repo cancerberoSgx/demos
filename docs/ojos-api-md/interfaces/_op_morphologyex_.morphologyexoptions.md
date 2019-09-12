@@ -33,7 +33,7 @@
 
 *Inherited from [MorphologyExConcreteOptions](_op_morphologyex_.morphologyexconcreteoptions.md).[anchor](_op_morphologyex_.morphologyexconcreteoptions.md#optional-anchor)*
 
-*Defined in [op/morphologyEx.ts:11](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/morphologyEx.ts#L11)*
+*Defined in [op/morphologyEx.ts:11](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/morphologyEx.ts#L11)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 *Inherited from [WithBorderType](_op_types_.withbordertype.md).[borderType](_op_types_.withbordertype.md#optional-bordertype)*
 
-*Defined in [op/types.ts:34](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L34)*
+*Defined in [op/types.ts:34](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L34)*
 
 border mode used to extrapolate pixels outside of the image, see [BorderTypes]
 
@@ -55,7 +55,7 @@ ___
 
 *Inherited from [WithBorderValue](_op_types_.withbordervalue.md).[borderValue](_op_types_.withbordervalue.md#optional-bordervalue)*
 
-*Defined in [op/types.ts:38](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L38)*
+*Defined in [op/types.ts:38](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L38)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 *Inherited from [OperationExecBaseOptions](_op_types_.operationexecbaseoptions.md).[dst](_op_types_.operationexecbaseoptions.md#optional-dst)*
 
-*Defined in [op/types.ts:27](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L27)*
+*Defined in [op/types.ts:27](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L27)*
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 *Inherited from [MorphologyExConcreteOptions](_op_morphologyex_.morphologyexconcreteoptions.md).[iterations](_op_morphologyex_.morphologyexconcreteoptions.md#optional-iterations)*
 
-*Defined in [op/morphologyEx.ts:12](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/morphologyEx.ts#L12)*
+*Defined in [op/morphologyEx.ts:12](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/morphologyEx.ts#L12)*
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 *Inherited from [MorphologyExConcreteOptions](_op_morphologyex_.morphologyexconcreteoptions.md).[kernel](_op_morphologyex_.morphologyexconcreteoptions.md#kernel)*
 
-*Defined in [op/morphologyEx.ts:10](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/morphologyEx.ts#L10)*
+*Defined in [op/morphologyEx.ts:10](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/morphologyEx.ts#L10)*
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 *Inherited from [MorphologyExConcreteOptions](_op_morphologyex_.morphologyexconcreteoptions.md).[op](_op_morphologyex_.morphologyexconcreteoptions.md#op)*
 
-*Defined in [op/morphologyEx.ts:9](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/morphologyEx.ts#L9)*
+*Defined in [op/morphologyEx.ts:9](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/morphologyEx.ts#L9)*
 
 ___
 
@@ -105,4 +105,4 @@ ___
 
 *Inherited from [OperationExecBaseOptions](_op_types_.operationexecbaseoptions.md).[src](_op_types_.operationexecbaseoptions.md#src)*
 
-*Defined in [op/types.ts:26](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L26)*
+*Defined in [op/types.ts:26](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L26)*

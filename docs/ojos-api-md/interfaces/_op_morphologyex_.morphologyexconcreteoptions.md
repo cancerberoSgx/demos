@@ -31,7 +31,7 @@
 
 • **anchor**? : *Point*
 
-*Defined in [op/morphologyEx.ts:11](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/morphologyEx.ts#L11)*
+*Defined in [op/morphologyEx.ts:11](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/morphologyEx.ts#L11)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 *Inherited from [WithBorderType](_op_types_.withbordertype.md).[borderType](_op_types_.withbordertype.md#optional-bordertype)*
 
-*Defined in [op/types.ts:34](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L34)*
+*Defined in [op/types.ts:34](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L34)*
 
 border mode used to extrapolate pixels outside of the image, see [BorderTypes]
 
@@ -53,7 +53,7 @@ ___
 
 *Inherited from [WithBorderValue](_op_types_.withbordervalue.md).[borderValue](_op_types_.withbordervalue.md#optional-bordervalue)*
 
-*Defined in [op/types.ts:38](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/types.ts#L38)*
+*Defined in [op/types.ts:38](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L38)*
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 • **iterations**? : *undefined | number*
 
-*Defined in [op/morphologyEx.ts:12](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/morphologyEx.ts#L12)*
+*Defined in [op/morphologyEx.ts:12](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/morphologyEx.ts#L12)*
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 • **kernel**: *Mat*
 
-*Defined in [op/morphologyEx.ts:10](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/morphologyEx.ts#L10)*
+*Defined in [op/morphologyEx.ts:10](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/morphologyEx.ts#L10)*
 
 ___
 
@@ -77,4 +77,4 @@ ___
 
 • **op**: *MorphTypes*
 
-*Defined in [op/morphologyEx.ts:9](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/morphologyEx.ts#L9)*
+*Defined in [op/morphologyEx.ts:9](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/morphologyEx.ts#L9)*

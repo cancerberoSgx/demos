@@ -27,7 +27,7 @@
 
 • **frameColor**? : *undefined | string*
 
-*Defined in [command/impl/grabCut.ts:17](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/impl/grabCut.ts#L17)*
+*Defined in [command/impl/grabCut.ts:17](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/impl/grabCut.ts#L17)*
 
 If given a rectangle of given color will be drawn (requires `rect`)
 
@@ -39,7 +39,7 @@ ___
 
 *Inherited from [Command](_command_types_.command.md).[in](_command_types_.command.md#in)*
 
-*Defined in [command/types.ts:19](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L19)*
+*Defined in [command/types.ts:19](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L19)*
 
 Input file name.
 
@@ -49,7 +49,7 @@ ___
 
 • **mask**? : *undefined | string*
 
-*Defined in [command/impl/grabCut.ts:13](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/impl/grabCut.ts#L13)*
+*Defined in [command/impl/grabCut.ts:13](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/impl/grabCut.ts#L13)*
 
 If given (and rect is not) its the name of an image used as a mask where its elements may have one of the GrabCutClasses to declare background and foreground regions.
 
@@ -61,7 +61,7 @@ ___
 
 *Inherited from [Command](_command_types_.command.md).[name](_command_types_.command.md#name)*
 
-*Defined in [command/types.ts:15](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L15)*
+*Defined in [command/types.ts:15](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L15)*
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 *Inherited from [Command](_command_types_.command.md).[out](_command_types_.command.md#optional-out)*
 
-*Defined in [command/types.ts:23](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L23)*
+*Defined in [command/types.ts:23](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L23)*
 
 Output file names. If not given the input file will be replaced.
 
@@ -81,6 +81,6 @@ ___
 
 • **rect**? : *Rect*
 
-*Defined in [command/impl/grabCut.ts:9](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/impl/grabCut.ts#L9)*
+*Defined in [command/impl/grabCut.ts:9](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/impl/grabCut.ts#L9)*
 
 If given the region outside rect will be considered the background to remove (uses cv.GC_INIT_WITH_RECT).

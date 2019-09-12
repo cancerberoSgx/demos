@@ -24,7 +24,7 @@
 
 • **isBrowser**: *boolean* =  typeof performance !== 'undefined' && typeof performance.now === 'function'
 
-*Defined in [util/misc.ts:30](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/util/misc.ts#L30)*
+*Defined in [util/misc.ts:31](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/misc.ts#L31)*
 
 ## Functions
 
@@ -32,7 +32,7 @@
 
 ▸ **buildError**(`e`: any): *Error*
 
-*Defined in [util/misc.ts:4](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/util/misc.ts#L4)*
+*Defined in [util/misc.ts:4](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/misc.ts#L4)*
 
 **Parameters:**
 
@@ -48,7 +48,7 @@ ___
 
 ▸ **msFrom**(`t0`: number): *number*
 
-*Defined in [util/misc.ts:23](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/util/misc.ts#L23)*
+*Defined in [util/misc.ts:23](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/misc.ts#L23)*
 
 **Parameters:**
 
@@ -64,7 +64,7 @@ ___
 
 ▸ **now**(): *number*
 
-*Defined in [util/misc.ts:31](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/util/misc.ts#L31)*
+*Defined in [util/misc.ts:32](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/misc.ts#L32)*
 
 **Returns:** *number*
 
@@ -74,7 +74,7 @@ ___
 
 ▸ **resolveNodeModule**(`p`: string): *string*
 
-*Defined in [util/misc.ts:12](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/util/misc.ts#L12)*
+*Defined in [util/misc.ts:12](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/misc.ts#L12)*
 
 **Parameters:**
 
@@ -90,7 +90,7 @@ ___
 
 ▸ **timeFrom**(`t0`: number): *string*
 
-*Defined in [util/misc.ts:26](https://github.com/cancerberoSgx/mirada/blob/9d9803d/mirada/src/util/misc.ts#L26)*
+*Defined in [util/misc.ts:27](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/misc.ts#L27)*
 
 **Parameters:**
 

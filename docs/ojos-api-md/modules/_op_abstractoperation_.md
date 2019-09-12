@@ -20,4 +20,4 @@
 
 Ƭ **MandatoryDst**: *RemoveProperties‹T, "dst"› & object*
 
-*Defined in [op/abstractOperation.ts:6](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/op/abstractOperation.ts#L6)*
+*Defined in [op/abstractOperation.ts:5](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L5)*

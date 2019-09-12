@@ -34,7 +34,7 @@
 
 • **in**: *string*
 
-*Defined in [command/types.ts:19](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L19)*
+*Defined in [command/types.ts:19](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L19)*
 
 Input file name.
 
@@ -44,7 +44,7 @@ ___
 
 • **name**: *T*
 
-*Defined in [command/types.ts:15](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L15)*
+*Defined in [command/types.ts:15](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L15)*
 
 ___
 
@@ -52,6 +52,6 @@ ___
 
 • **out**? : *undefined | string*
 
-*Defined in [command/types.ts:23](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L23)*
+*Defined in [command/types.ts:23](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L23)*
 
 Output file names. If not given the input file will be replaced.

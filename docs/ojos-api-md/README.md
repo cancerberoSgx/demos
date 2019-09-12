@@ -6,6 +6,7 @@
 
 ### External modules
 
+* ["color"](modules/_color_.md)
 * ["command/abstractCommand"](modules/_command_abstractcommand_.md)
 * ["command/execute"](modules/_command_execute_.md)
 * ["command/impl/asRgba"](modules/_command_impl_asrgba_.md)
@@ -23,8 +24,10 @@
 * ["op/boxFilter"](modules/_op_boxfilter_.md)
 * ["op/canny"](modules/_op_canny_.md)
 * ["op/convertTo"](modules/_op_convertto_.md)
+* ["op/edge"](modules/_op_edge_.md)
 * ["op/floodFill"](modules/_op_floodfill_.md)
 * ["op/gaussianBlur"](modules/_op_gaussianblur_.md)
+* ["op/histEqualization"](modules/_op_histequalization_.md)
 * ["op/index"](modules/_op_index_.md)
 * ["op/math"](modules/_op_math_.md)
 * ["op/medianBlur"](modules/_op_medianblur_.md)

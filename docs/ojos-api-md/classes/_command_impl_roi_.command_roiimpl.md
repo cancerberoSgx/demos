@@ -31,7 +31,7 @@
 
 *Overrides [AbstractCommandHandler](_command_abstractcommand_.abstractcommandhandler.md).[run](_command_abstractcommand_.abstractcommandhandler.md#abstract-run)*
 
-*Defined in [command/impl/roi.ts:16](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/impl/roi.ts#L16)*
+*Defined in [command/impl/roi.ts:16](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/impl/roi.ts#L16)*
 
 **Parameters:**
 
@@ -51,7 +51,7 @@ ___
 
 *Overrides [AbstractCommandHandler](_command_abstractcommand_.abstractcommandhandler.md).[validate](_command_abstractcommand_.abstractcommandhandler.md#abstract-validate)*
 
-*Defined in [command/impl/roi.ts:30](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/impl/roi.ts#L30)*
+*Defined in [command/impl/roi.ts:30](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/impl/roi.ts#L30)*
 
 **Parameters:**
 

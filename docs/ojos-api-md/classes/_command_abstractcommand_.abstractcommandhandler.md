@@ -39,7 +39,7 @@
 
 *Implementation of [CommandHandler](../interfaces/_command_types_.commandhandler.md)*
 
-*Defined in [command/abstractCommand.ts:5](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/abstractCommand.ts#L5)*
+*Defined in [command/abstractCommand.ts:5](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/abstractCommand.ts#L5)*
 
 **Parameters:**
 
@@ -57,7 +57,7 @@ ___
 
 *Implementation of [CommandHandler](../interfaces/_command_types_.commandhandler.md)*
 
-*Defined in [command/abstractCommand.ts:6](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/abstractCommand.ts#L6)*
+*Defined in [command/abstractCommand.ts:6](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/abstractCommand.ts#L6)*
 
 **Parameters:**
 

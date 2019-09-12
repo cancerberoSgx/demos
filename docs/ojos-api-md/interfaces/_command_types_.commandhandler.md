@@ -33,7 +33,7 @@
 
 ▸ **run**(`c`: [Options1](_command_types_.options1.md)‹N›): *Promise‹[Result1](_command_types_.result1.md)›*
 
-*Defined in [command/types.ts:65](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L65)*
+*Defined in [command/types.ts:65](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L65)*
 
 **Parameters:**
 
@@ -49,7 +49,7 @@ ___
 
 ▸ **validate**(`c`: Partial‹CommandsByName[N]›): *Promise‹undefined | string›*
 
-*Defined in [command/types.ts:64](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L64)*
+*Defined in [command/types.ts:64](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L64)*
 
 **Parameters:**
 

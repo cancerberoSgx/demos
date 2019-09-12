@@ -20,10 +20,10 @@
 
 • **__computed**: *[Command_floodFill](_command_impl_floodfill_.command_floodfill.md)*
 
-*Defined in [command/types.ts:69](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L69)*
+*Defined in [command/types.ts:69](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L69)*
 
-*Defined in [command/types.ts:70](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L70)*
+*Defined in [command/types.ts:70](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L70)*
 
-*Defined in [command/types.ts:71](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L71)*
+*Defined in [command/types.ts:71](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L71)*
 
-*Defined in [command/types.ts:72](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L72)*
+*Defined in [command/types.ts:72](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L72)*

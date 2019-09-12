@@ -27,7 +27,7 @@ Region of interest - Bounding box selection.
 
 • **expr**: *Rect*
 
-*Defined in [command/impl/roi.ts:12](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/impl/roi.ts#L12)*
+*Defined in [command/impl/roi.ts:12](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/impl/roi.ts#L12)*
 
 The rectangle containing the region of interest.
 
@@ -39,7 +39,7 @@ ___
 
 *Inherited from [Command](_command_types_.command.md).[in](_command_types_.command.md#in)*
 
-*Defined in [command/types.ts:19](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L19)*
+*Defined in [command/types.ts:19](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L19)*
 
 Input file name.
 
@@ -51,7 +51,7 @@ ___
 
 *Inherited from [Command](_command_types_.command.md).[name](_command_types_.command.md#name)*
 
-*Defined in [command/types.ts:15](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L15)*
+*Defined in [command/types.ts:15](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L15)*
 
 ___
 
@@ -61,6 +61,6 @@ ___
 
 *Inherited from [Command](_command_types_.command.md).[out](_command_types_.command.md#optional-out)*
 
-*Defined in [command/types.ts:23](https://github.com/cancerberoSgx/mirada/blob/d83d69e/ojos/src/command/types.ts#L23)*
+*Defined in [command/types.ts:23](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/command/types.ts#L23)*
 
 Output file names. If not given the input file will be replaced.
