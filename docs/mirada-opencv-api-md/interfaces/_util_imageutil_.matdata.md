@@ -24,7 +24,7 @@ a serializable (as in JSON.stringify) representation of Mat instances
 
 • **cols**: *number*
 
-*Defined in [util/imageUtil.ts:147](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/util/imageUtil.ts#L147)*
+*Defined in [util/imageUtil.ts:147](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/imageUtil.ts#L147)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **data**: *string*
 
-*Defined in [util/imageUtil.ts:149](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/util/imageUtil.ts#L149)*
+*Defined in [util/imageUtil.ts:149](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/imageUtil.ts#L149)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **rows**: *number*
 
-*Defined in [util/imageUtil.ts:148](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/util/imageUtil.ts#L148)*
+*Defined in [util/imageUtil.ts:148](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/imageUtil.ts#L148)*
 
 ___
 
@@ -48,4 +48,4 @@ ___
 
 • **type**: *any*
 
-*Defined in [util/imageUtil.ts:150](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/util/imageUtil.ts#L150)*
+*Defined in [util/imageUtil.ts:150](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/imageUtil.ts#L150)*

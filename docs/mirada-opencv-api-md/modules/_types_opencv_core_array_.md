@@ -159,7 +159,7 @@
 
 Ƭ **BorderTypes**: *any*
 
-*Defined in [types/opencv/core_array.ts:2630](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2630)*
+*Defined in [types/opencv/core_array.ts:2630](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2630)*
 
 Various border types, image boundaries are denoted with `|`
 
@@ -171,7 +171,7 @@ ___
 
 Ƭ **CmpTypes**: *any*
 
-*Defined in [types/opencv/core_array.ts:2638](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2638)*
+*Defined in [types/opencv/core_array.ts:2638](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2638)*
 
 Various border types, image boundaries are denoted with `|`
 
@@ -183,7 +183,7 @@ ___
 
 Ƭ **DecompTypes**: *any*
 
-*Defined in [types/opencv/core_array.ts:2646](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2646)*
+*Defined in [types/opencv/core_array.ts:2646](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2646)*
 
 Various border types, image boundaries are denoted with `|`
 
@@ -195,7 +195,7 @@ ___
 
 Ƭ **DftFlags**: *any*
 
-*Defined in [types/opencv/core_array.ts:2654](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2654)*
+*Defined in [types/opencv/core_array.ts:2654](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2654)*
 
 Various border types, image boundaries are denoted with `|`
 
@@ -207,7 +207,7 @@ ___
 
 Ƭ **GemmFlags**: *any*
 
-*Defined in [types/opencv/core_array.ts:2662](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2662)*
+*Defined in [types/opencv/core_array.ts:2662](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2662)*
 
 Various border types, image boundaries are denoted with `|`
 
@@ -219,7 +219,7 @@ ___
 
 Ƭ **NormTypes**: *any*
 
-*Defined in [types/opencv/core_array.ts:2670](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2670)*
+*Defined in [types/opencv/core_array.ts:2670](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2670)*
 
 Various border types, image boundaries are denoted with `|`
 
@@ -231,7 +231,7 @@ ___
 
 Ƭ **RotateFlags**: *any*
 
-*Defined in [types/opencv/core_array.ts:2678](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2678)*
+*Defined in [types/opencv/core_array.ts:2678](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2678)*
 
 Various border types, image boundaries are denoted with `|`
 
@@ -243,7 +243,7 @@ Various border types, image boundaries are denoted with `|`
 
 • **BORDER_CONSTANT**: *[BorderTypes](_types_opencv_core_array_.md#bordertypes)*
 
-*Defined in [types/opencv/core_array.ts:2410](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2410)*
+*Defined in [types/opencv/core_array.ts:2410](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2410)*
 
 ___
 
@@ -251,7 +251,7 @@ ___
 
 • **BORDER_DEFAULT**: *[BorderTypes](_types_opencv_core_array_.md#bordertypes)*
 
-*Defined in [types/opencv/core_array.ts:2424](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2424)*
+*Defined in [types/opencv/core_array.ts:2424](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2424)*
 
 ___
 
@@ -259,7 +259,7 @@ ___
 
 • **BORDER_ISOLATED**: *[BorderTypes](_types_opencv_core_array_.md#bordertypes)*
 
-*Defined in [types/opencv/core_array.ts:2426](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2426)*
+*Defined in [types/opencv/core_array.ts:2426](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2426)*
 
 ___
 
@@ -267,7 +267,7 @@ ___
 
 • **BORDER_REFLECT**: *[BorderTypes](_types_opencv_core_array_.md#bordertypes)*
 
-*Defined in [types/opencv/core_array.ts:2414](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2414)*
+*Defined in [types/opencv/core_array.ts:2414](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2414)*
 
 ___
 
@@ -275,7 +275,7 @@ ___
 
 • **BORDER_REFLECT101**: *[BorderTypes](_types_opencv_core_array_.md#bordertypes)*
 
-*Defined in [types/opencv/core_array.ts:2422](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2422)*
+*Defined in [types/opencv/core_array.ts:2422](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2422)*
 
 ___
 
@@ -283,7 +283,7 @@ ___
 
 • **BORDER_REFLECT_101**: *[BorderTypes](_types_opencv_core_array_.md#bordertypes)*
 
-*Defined in [types/opencv/core_array.ts:2418](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2418)*
+*Defined in [types/opencv/core_array.ts:2418](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2418)*
 
 ___
 
@@ -291,7 +291,7 @@ ___
 
 • **BORDER_REPLICATE**: *[BorderTypes](_types_opencv_core_array_.md#bordertypes)*
 
-*Defined in [types/opencv/core_array.ts:2412](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2412)*
+*Defined in [types/opencv/core_array.ts:2412](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2412)*
 
 ___
 
@@ -299,7 +299,7 @@ ___
 
 • **BORDER_TRANSPARENT**: *[BorderTypes](_types_opencv_core_array_.md#bordertypes)*
 
-*Defined in [types/opencv/core_array.ts:2420](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2420)*
+*Defined in [types/opencv/core_array.ts:2420](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2420)*
 
 ___
 
@@ -307,7 +307,7 @@ ___
 
 • **BORDER_WRAP**: *[BorderTypes](_types_opencv_core_array_.md#bordertypes)*
 
-*Defined in [types/opencv/core_array.ts:2416](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2416)*
+*Defined in [types/opencv/core_array.ts:2416](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2416)*
 
 ___
 
@@ -315,7 +315,7 @@ ___
 
 • **CMP_EQ**: *[CmpTypes](_types_opencv_core_array_.md#cmptypes)*
 
-*Defined in [types/opencv/core_array.ts:2428](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2428)*
+*Defined in [types/opencv/core_array.ts:2428](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2428)*
 
 ___
 
@@ -323,7 +323,7 @@ ___
 
 • **CMP_GE**: *[CmpTypes](_types_opencv_core_array_.md#cmptypes)*
 
-*Defined in [types/opencv/core_array.ts:2432](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2432)*
+*Defined in [types/opencv/core_array.ts:2432](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2432)*
 
 ___
 
@@ -331,7 +331,7 @@ ___
 
 • **CMP_GT**: *[CmpTypes](_types_opencv_core_array_.md#cmptypes)*
 
-*Defined in [types/opencv/core_array.ts:2430](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2430)*
+*Defined in [types/opencv/core_array.ts:2430](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2430)*
 
 ___
 
@@ -339,7 +339,7 @@ ___
 
 • **CMP_LE**: *[CmpTypes](_types_opencv_core_array_.md#cmptypes)*
 
-*Defined in [types/opencv/core_array.ts:2436](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2436)*
+*Defined in [types/opencv/core_array.ts:2436](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2436)*
 
 ___
 
@@ -347,7 +347,7 @@ ___
 
 • **CMP_LT**: *[CmpTypes](_types_opencv_core_array_.md#cmptypes)*
 
-*Defined in [types/opencv/core_array.ts:2434](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2434)*
+*Defined in [types/opencv/core_array.ts:2434](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2434)*
 
 ___
 
@@ -355,7 +355,7 @@ ___
 
 • **CMP_NE**: *[CmpTypes](_types_opencv_core_array_.md#cmptypes)*
 
-*Defined in [types/opencv/core_array.ts:2438](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2438)*
+*Defined in [types/opencv/core_array.ts:2438](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2438)*
 
 ___
 
@@ -363,7 +363,7 @@ ___
 
 • **DCT_INVERSE**: *[DftFlags](_types_opencv_core_array_.md#dftflags)*
 
-*Defined in [types/opencv/core_array.ts:2538](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2538)*
+*Defined in [types/opencv/core_array.ts:2538](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2538)*
 
 performs an inverse 1D or 2D transform instead of the default forward transform.
 
@@ -373,7 +373,7 @@ ___
 
 • **DCT_ROWS**: *[DftFlags](_types_opencv_core_array_.md#dftflags)*
 
-*Defined in [types/opencv/core_array.ts:2547](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2547)*
+*Defined in [types/opencv/core_array.ts:2547](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2547)*
 
 performs a forward or inverse transform of every individual row of the input matrix. This flag
 enables you to transform multiple vectors simultaneously and can be used to decrease the overhead
@@ -386,7 +386,7 @@ ___
 
 • **DECOMP_CHOLESKY**: *[DecompTypes](_types_opencv_core_array_.md#decomptypes)*
 
-*Defined in [types/opencv/core_array.ts:2463](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2463)*
+*Defined in [types/opencv/core_array.ts:2463](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2463)*
 
 Cholesky `$LL^T$` factorization; the matrix src1 must be symmetrical and positively defined
 
@@ -396,7 +396,7 @@ ___
 
 • **DECOMP_EIG**: *[DecompTypes](_types_opencv_core_array_.md#decomptypes)*
 
-*Defined in [types/opencv/core_array.ts:2457](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2457)*
+*Defined in [types/opencv/core_array.ts:2457](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2457)*
 
 eigenvalue decomposition; the matrix src1 must be symmetrical
 
@@ -406,7 +406,7 @@ ___
 
 • **DECOMP_LU**: *[DecompTypes](_types_opencv_core_array_.md#decomptypes)*
 
-*Defined in [types/opencv/core_array.ts:2444](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2444)*
+*Defined in [types/opencv/core_array.ts:2444](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2444)*
 
 Gaussian elimination with the optimal pivot element chosen.
 
@@ -416,7 +416,7 @@ ___
 
 • **DECOMP_NORMAL**: *[DecompTypes](_types_opencv_core_array_.md#decomptypes)*
 
-*Defined in [types/opencv/core_array.ts:2478](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2478)*
+*Defined in [types/opencv/core_array.ts:2478](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2478)*
 
 while all the previous flags are mutually exclusive, this flag can be used together with any of the
 previous; it means that the normal equations
@@ -429,7 +429,7 @@ ___
 
 • **DECOMP_QR**: *[DecompTypes](_types_opencv_core_array_.md#decomptypes)*
 
-*Defined in [types/opencv/core_array.ts:2469](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2469)*
+*Defined in [types/opencv/core_array.ts:2469](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2469)*
 
 QR factorization; the system can be over-defined and/or the matrix src1 can be singular
 
@@ -439,7 +439,7 @@ ___
 
 • **DECOMP_SVD**: *[DecompTypes](_types_opencv_core_array_.md#decomptypes)*
 
-*Defined in [types/opencv/core_array.ts:2451](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2451)*
+*Defined in [types/opencv/core_array.ts:2451](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2451)*
 
 singular value decomposition ([SVD]) method; the system can be over-defined and/or the matrix src1
 can be singular
@@ -450,7 +450,7 @@ ___
 
 • **DFT_COMPLEX_INPUT**: *[DftFlags](_types_opencv_core_array_.md#dftflags)*
 
-*Defined in [types/opencv/core_array.ts:2532](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2532)*
+*Defined in [types/opencv/core_array.ts:2532](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2532)*
 
 specifies that input is complex input. If this flag is set, the input must have 2 channels. On the
 other hand, for backwards compatibility reason, if input has 2 channels, input is already considered
@@ -462,7 +462,7 @@ ___
 
 • **DFT_COMPLEX_OUTPUT**: *[DftFlags](_types_opencv_core_array_.md#dftflags)*
 
-*Defined in [types/opencv/core_array.ts:2511](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2511)*
+*Defined in [types/opencv/core_array.ts:2511](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2511)*
 
 performs a forward transformation of 1D or 2D real array; the result, though being a complex array,
 has complex-conjugate symmetry (*CCS*, see the function description below for details), and such an
@@ -477,7 +477,7 @@ ___
 
 • **DFT_INVERSE**: *[DftFlags](_types_opencv_core_array_.md#dftflags)*
 
-*Defined in [types/opencv/core_array.ts:2484](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2484)*
+*Defined in [types/opencv/core_array.ts:2484](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2484)*
 
 performs an inverse 1D or 2D transform instead of the default forward transform.
 
@@ -487,7 +487,7 @@ ___
 
 • **DFT_REAL_OUTPUT**: *[DftFlags](_types_opencv_core_array_.md#dftflags)*
 
-*Defined in [types/opencv/core_array.ts:2524](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2524)*
+*Defined in [types/opencv/core_array.ts:2524](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2524)*
 
 performs an inverse transformation of a 1D or 2D complex array; the result is normally a complex
 array of the same size, however, if the input array has conjugate-complex symmetry (for example, it
@@ -504,7 +504,7 @@ ___
 
 • **DFT_ROWS**: *[DftFlags](_types_opencv_core_array_.md#dftflags)*
 
-*Defined in [types/opencv/core_array.ts:2500](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2500)*
+*Defined in [types/opencv/core_array.ts:2500](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2500)*
 
 performs a forward or inverse transform of every individual row of the input matrix; this flag
 enables you to transform multiple vectors simultaneously and can be used to decrease the overhead
@@ -517,7 +517,7 @@ ___
 
 • **DFT_SCALE**: *[DftFlags](_types_opencv_core_array_.md#dftflags)*
 
-*Defined in [types/opencv/core_array.ts:2491](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2491)*
+*Defined in [types/opencv/core_array.ts:2491](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2491)*
 
 scales the result: divide it by the number of array elements. Normally, it is combined with
 DFT_INVERSE.
@@ -528,7 +528,7 @@ ___
 
 • **GEMM_1_T**: *[GemmFlags](_types_opencv_core_array_.md#gemmflags)*
 
-*Defined in [types/opencv/core_array.ts:2549](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2549)*
+*Defined in [types/opencv/core_array.ts:2549](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2549)*
 
 ___
 
@@ -536,7 +536,7 @@ ___
 
 • **GEMM_2_T**: *[GemmFlags](_types_opencv_core_array_.md#gemmflags)*
 
-*Defined in [types/opencv/core_array.ts:2551](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2551)*
+*Defined in [types/opencv/core_array.ts:2551](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2551)*
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 • **GEMM_3_T**: *[GemmFlags](_types_opencv_core_array_.md#gemmflags)*
 
-*Defined in [types/opencv/core_array.ts:2553](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2553)*
+*Defined in [types/opencv/core_array.ts:2553](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2553)*
 
 ___
 
@@ -552,7 +552,7 @@ ___
 
 • **NORM_HAMMING**: *[NormTypes](_types_opencv_core_array_.md#normtypes)*
 
-*Defined in [types/opencv/core_array.ts:2603](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2603)*
+*Defined in [types/opencv/core_array.ts:2603](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2603)*
 
 In the case of one input array, calculates the [Hamming] distance of the array from zero, In the
 case of two input arrays, calculates the [Hamming] distance between the arrays.
@@ -563,7 +563,7 @@ ___
 
 • **NORM_HAMMING2**: *[NormTypes](_types_opencv_core_array_.md#normtypes)*
 
-*Defined in [types/opencv/core_array.ts:2610](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2610)*
+*Defined in [types/opencv/core_array.ts:2610](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2610)*
 
 Similar to NORM_HAMMING, but in the calculation, each two bits of the input sequence will be added
 and treated as a single bit to be used in the same calculation as NORM_HAMMING.
@@ -574,7 +574,7 @@ ___
 
 • **NORM_INF**: *[NormTypes](_types_opencv_core_array_.md#normtypes)*
 
-*Defined in [types/opencv/core_array.ts:2564](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2564)*
+*Defined in [types/opencv/core_array.ts:2564](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2564)*
 
 `\\[ norm = \\forkthree {\\|\\texttt{src1}\\|_{L_{\\infty}} = \\max _I | \\texttt{src1} (I)|}{if
 \\(\\texttt{normType} = \\texttt{NORM_INF}\\) } {\\|\\texttt{src1}-\\texttt{src2}\\|_{L_{\\infty}} =
@@ -589,7 +589,7 @@ ___
 
 • **NORM_L1**: *[NormTypes](_types_opencv_core_array_.md#normtypes)*
 
-*Defined in [types/opencv/core_array.ts:2574](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2574)*
+*Defined in [types/opencv/core_array.ts:2574](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2574)*
 
 `\\[ norm = \\forkthree {\\| \\texttt{src1} \\| _{L_1} = \\sum _I | \\texttt{src1} (I)|}{if
 \\(\\texttt{normType} = \\texttt{NORM_L1}\\)} { \\| \\texttt{src1} - \\texttt{src2} \\| _{L_1} =
@@ -603,7 +603,7 @@ ___
 
 • **NORM_L2**: *[NormTypes](_types_opencv_core_array_.md#normtypes)*
 
-*Defined in [types/opencv/core_array.ts:2585](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2585)*
+*Defined in [types/opencv/core_array.ts:2585](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2585)*
 
 `\\[ norm = \\forkthree { \\| \\texttt{src1} \\| _{L_2} = \\sqrt{\\sum_I \\texttt{src1}(I)^2} }{if
 \\(\\texttt{normType} = \\texttt{NORM_L2}\\) } { \\| \\texttt{src1} - \\texttt{src2} \\| _{L_2} =
@@ -618,7 +618,7 @@ ___
 
 • **NORM_L2SQR**: *[NormTypes](_types_opencv_core_array_.md#normtypes)*
 
-*Defined in [types/opencv/core_array.ts:2596](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2596)*
+*Defined in [types/opencv/core_array.ts:2596](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2596)*
 
 `\\[ norm = \\forkthree { \\| \\texttt{src1} \\| _{L_2} ^{2} = \\sum_I \\texttt{src1}(I)^2} {if
 \\(\\texttt{normType} = \\texttt{NORM_L2SQR}\\)} { \\| \\texttt{src1} - \\texttt{src2} \\| _{L_2}
@@ -633,7 +633,7 @@ ___
 
 • **NORM_MINMAX**: *[NormTypes](_types_opencv_core_array_.md#normtypes)*
 
-*Defined in [types/opencv/core_array.ts:2616](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2616)*
+*Defined in [types/opencv/core_array.ts:2616](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2616)*
 
 ___
 
@@ -641,7 +641,7 @@ ___
 
 • **NORM_RELATIVE**: *[NormTypes](_types_opencv_core_array_.md#normtypes)*
 
-*Defined in [types/opencv/core_array.ts:2614](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2614)*
+*Defined in [types/opencv/core_array.ts:2614](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2614)*
 
 ___
 
@@ -649,7 +649,7 @@ ___
 
 • **NORM_TYPE_MASK**: *[NormTypes](_types_opencv_core_array_.md#normtypes)*
 
-*Defined in [types/opencv/core_array.ts:2612](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2612)*
+*Defined in [types/opencv/core_array.ts:2612](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2612)*
 
 ___
 
@@ -657,7 +657,7 @@ ___
 
 • **ROTATE_180**: *[RotateFlags](_types_opencv_core_array_.md#rotateflags)*
 
-*Defined in [types/opencv/core_array.ts:2620](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2620)*
+*Defined in [types/opencv/core_array.ts:2620](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2620)*
 
 ___
 
@@ -665,7 +665,7 @@ ___
 
 • **ROTATE_90_CLOCKWISE**: *[RotateFlags](_types_opencv_core_array_.md#rotateflags)*
 
-*Defined in [types/opencv/core_array.ts:2618](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2618)*
+*Defined in [types/opencv/core_array.ts:2618](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2618)*
 
 ___
 
@@ -673,7 +673,7 @@ ___
 
 • **ROTATE_90_COUNTERCLOCKWISE**: *[RotateFlags](_types_opencv_core_array_.md#rotateflags)*
 
-*Defined in [types/opencv/core_array.ts:2622](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2622)*
+*Defined in [types/opencv/core_array.ts:2622](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2622)*
 
 ## Functions
 
@@ -681,7 +681,7 @@ ___
 
 ▸ **LUT**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `lut`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:1123](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1123)*
+*Defined in [types/opencv/core_array.ts:1123](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1123)*
 
 The function LUT fills the output array with values from the look-up table. Indices of the entries
 are taken from the input array. That is, the function processes each element of src as follows:
@@ -707,7 +707,7 @@ ___
 
 ▸ **Mahalanobis**(`v1`: [InputArray](_types_opencv__hacks_.md#inputarray), `v2`: [InputArray](_types_opencv__hacks_.md#inputarray), `icovar`: [InputArray](_types_opencv__hacks_.md#inputarray)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/core_array.ts:1152](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1152)*
+*Defined in [types/opencv/core_array.ts:1152](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1152)*
 
 The function [cv::Mahalanobis] calculates and returns the weighted distance between two vectors:
 `\\[d( \\texttt{vec1} , \\texttt{vec2} )=
@@ -731,7 +731,7 @@ ___
 
 ▸ **PCABackProject**(`data`: [InputArray](_types_opencv__hacks_.md#inputarray), `mean`: [InputArray](_types_opencv__hacks_.md#inputarray), `eigenvectors`: [InputArray](_types_opencv__hacks_.md#inputarray), `result`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:1699](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1699)*
+*Defined in [types/opencv/core_array.ts:1699](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1699)*
 
 wrap [PCA::backProject]
 
@@ -752,7 +752,7 @@ ___
 
 ▸ **PCACompute**(`data`: [InputArray](_types_opencv__hacks_.md#inputarray), `mean`: InputOutputArray, `eigenvectors`: OutputArray, `maxComponents?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:1704](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1704)*
+*Defined in [types/opencv/core_array.ts:1704](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1704)*
 
 wrap PCA::operator()
 
@@ -769,7 +769,7 @@ Name | Type |
 
 ▸ **PCACompute**(`data`: [InputArray](_types_opencv__hacks_.md#inputarray), `mean`: InputOutputArray, `eigenvectors`: OutputArray, `eigenvalues`: OutputArray, `maxComponents?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:1709](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1709)*
+*Defined in [types/opencv/core_array.ts:1709](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1709)*
 
 wrap PCA::operator() and add eigenvalues output parameter
 
@@ -787,7 +787,7 @@ Name | Type |
 
 ▸ **PCACompute**(`data`: [InputArray](_types_opencv__hacks_.md#inputarray), `mean`: InputOutputArray, `eigenvectors`: OutputArray, `retainedVariance`: [double](_types_opencv__hacks_.md#double)): *void*
 
-*Defined in [types/opencv/core_array.ts:1714](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1714)*
+*Defined in [types/opencv/core_array.ts:1714](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1714)*
 
 wrap PCA::operator()
 
@@ -804,7 +804,7 @@ Name | Type |
 
 ▸ **PCACompute**(`data`: [InputArray](_types_opencv__hacks_.md#inputarray), `mean`: InputOutputArray, `eigenvectors`: OutputArray, `eigenvalues`: OutputArray, `retainedVariance`: [double](_types_opencv__hacks_.md#double)): *void*
 
-*Defined in [types/opencv/core_array.ts:1719](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1719)*
+*Defined in [types/opencv/core_array.ts:1719](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1719)*
 
 wrap PCA::operator() and add eigenvalues output parameter
 
@@ -826,7 +826,7 @@ ___
 
 ▸ **PCAProject**(`data`: [InputArray](_types_opencv__hacks_.md#inputarray), `mean`: [InputArray](_types_opencv__hacks_.md#inputarray), `eigenvectors`: [InputArray](_types_opencv__hacks_.md#inputarray), `result`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:1724](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1724)*
+*Defined in [types/opencv/core_array.ts:1724](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1724)*
 
 wrap [PCA::project]
 
@@ -847,7 +847,7 @@ ___
 
 ▸ **PSNR**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `R?`: [double](_types_opencv__hacks_.md#double)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/core_array.ts:1843](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1843)*
+*Defined in [types/opencv/core_array.ts:1843](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1843)*
 
 This function calculates the Peak Signal-to-Noise Ratio (PSNR) image quality metric in decibels
 (dB), between two input arrays src1 and src2. The arrays must have the same type.
@@ -875,7 +875,7 @@ ___
 
 ▸ **SVBackSubst**(`w`: [InputArray](_types_opencv__hacks_.md#inputarray), `u`: [InputArray](_types_opencv__hacks_.md#inputarray), `vt`: [InputArray](_types_opencv__hacks_.md#inputarray), `rhs`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:2259](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2259)*
+*Defined in [types/opencv/core_array.ts:2259](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2259)*
 
 wrap [SVD::backSubst]
 
@@ -897,7 +897,7 @@ ___
 
 ▸ **SVDecomp**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `w`: OutputArray, `u`: OutputArray, `vt`: OutputArray, `flags?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:2264](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2264)*
+*Defined in [types/opencv/core_array.ts:2264](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2264)*
 
 wrap [SVD::compute]
 
@@ -919,7 +919,7 @@ ___
 
 ▸ **absdiff**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:29](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L29)*
+*Defined in [types/opencv/core_array.ts:29](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L29)*
 
 The function [cv::absdiff] calculates: Absolute difference between two arrays when they have the
 same size and type: `\\[\\texttt{dst}(I) = \\texttt{saturate} (| \\texttt{src1}(I) -
@@ -952,7 +952,7 @@ ___
 
 ▸ **add**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `mask?`: [InputArray](_types_opencv__hacks_.md#inputarray), `dtype?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:76](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L76)*
+*Defined in [types/opencv/core_array.ts:76](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L76)*
 
 The function add calculates:
 
@@ -1004,7 +1004,7 @@ ___
 
 ▸ **addWeighted**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `alpha`: [double](_types_opencv__hacks_.md#double), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `beta`: [double](_types_opencv__hacks_.md#double), `gamma`: [double](_types_opencv__hacks_.md#double), `dst`: OutputArray, `dtype?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:109](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L109)*
+*Defined in [types/opencv/core_array.ts:109](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L109)*
 
 The function addWeighted calculates the weighted sum of two arrays as follows: `\\[\\texttt{dst}
 (I)= \\texttt{saturate} ( \\texttt{src1} (I)* \\texttt{alpha} + \\texttt{src2} (I)* \\texttt{beta} +
@@ -1041,7 +1041,7 @@ ___
 
 ▸ **batchDistance**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `dist`: OutputArray, `dtype`: [int](_types_opencv__hacks_.md#int), `nidx`: OutputArray, `normType?`: [int](_types_opencv__hacks_.md#int), `K?`: [int](_types_opencv__hacks_.md#int), `mask?`: [InputArray](_types_opencv__hacks_.md#inputarray), `update?`: [int](_types_opencv__hacks_.md#int), `crosscheck?`: [bool](_types_opencv__hacks_.md#bool)): *void*
 
-*Defined in [types/opencv/core_array.ts:114](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L114)*
+*Defined in [types/opencv/core_array.ts:114](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L114)*
 
 see
 
@@ -1068,7 +1068,7 @@ ___
 
 ▸ **bitwise_and**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `mask?`: [InputArray](_types_opencv__hacks_.md#inputarray)): *void*
 
-*Defined in [types/opencv/core_array.ts:138](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L138)*
+*Defined in [types/opencv/core_array.ts:138](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L138)*
 
 The function [cv::bitwise_and] calculates the per-element bit-wise logical conjunction for: Two
 arrays when src1 and src2 have the same size: `\\[\\texttt{dst} (I) = \\texttt{src1} (I) \\wedge
@@ -1099,7 +1099,7 @@ ___
 
 ▸ **bitwise_not**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `mask?`: [InputArray](_types_opencv__hacks_.md#inputarray)): *void*
 
-*Defined in [types/opencv/core_array.ts:153](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L153)*
+*Defined in [types/opencv/core_array.ts:153](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L153)*
 
 The function [cv::bitwise_not] calculates per-element bit-wise inversion of the input array:
 `\\[\\texttt{dst} (I) = \\neg \\texttt{src} (I)\\]` In case of a floating-point input array, its
@@ -1122,7 +1122,7 @@ ___
 
 ▸ **bitwise_or**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `mask?`: [InputArray](_types_opencv__hacks_.md#inputarray)): *void*
 
-*Defined in [types/opencv/core_array.ts:177](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L177)*
+*Defined in [types/opencv/core_array.ts:177](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L177)*
 
 The function [cv::bitwise_or] calculates the per-element bit-wise logical disjunction for: Two
 arrays when src1 and src2 have the same size: `\\[\\texttt{dst} (I) = \\texttt{src1} (I) \\vee
@@ -1153,7 +1153,7 @@ ___
 
 ▸ **bitwise_xor**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `mask?`: [InputArray](_types_opencv__hacks_.md#inputarray)): *void*
 
-*Defined in [types/opencv/core_array.ts:201](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L201)*
+*Defined in [types/opencv/core_array.ts:201](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L201)*
 
 The function [cv::bitwise_xor] calculates the per-element bit-wise logical "exclusive-or" operation
 for: Two arrays when src1 and src2 have the same size: `\\[\\texttt{dst} (I) = \\texttt{src1} (I)
@@ -1184,7 +1184,7 @@ ___
 
 ▸ **borderInterpolate**(`p`: [int](_types_opencv__hacks_.md#int), `len`: [int](_types_opencv__hacks_.md#int), `borderType`: [int](_types_opencv__hacks_.md#int)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_array.ts:228](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L228)*
+*Defined in [types/opencv/core_array.ts:228](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L228)*
 
 The function computes and returns the coordinate of a donor pixel corresponding to the specified
 extrapolated pixel when using the specified extrapolation border mode. For example, if you use
@@ -1218,7 +1218,7 @@ ___
 
 ▸ **calcCovarMatrix**(`samples`: any, `nsamples`: [int](_types_opencv__hacks_.md#int), `covar`: any, `mean`: any, `flags`: [int](_types_opencv__hacks_.md#int), `ctype?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:249](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L249)*
+*Defined in [types/opencv/core_array.ts:249](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L249)*
 
 The function [cv::calcCovarMatrix] calculates the covariance matrix and, optionally, the mean vector
 of the set of input vectors.
@@ -1240,7 +1240,7 @@ Name | Type | Description |
 
 ▸ **calcCovarMatrix**(`samples`: [InputArray](_types_opencv__hacks_.md#inputarray), `covar`: OutputArray, `mean`: InputOutputArray, `flags`: [int](_types_opencv__hacks_.md#int), `ctype?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:268](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L268)*
+*Defined in [types/opencv/core_array.ts:268](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L268)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -1265,7 +1265,7 @@ ___
 
 ▸ **cartToPolar**(`x`: [InputArray](_types_opencv__hacks_.md#inputarray), `y`: [InputArray](_types_opencv__hacks_.md#inputarray), `magnitude`: OutputArray, `angle`: OutputArray, `angleInDegrees?`: [bool](_types_opencv__hacks_.md#bool)): *void*
 
-*Defined in [types/opencv/core_array.ts:294](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L294)*
+*Defined in [types/opencv/core_array.ts:294](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L294)*
 
 The function [cv::cartToPolar] calculates either the magnitude, angle, or both for every 2D vector
 (x(I),y(I)): `\\[\\begin{array}{l} \\texttt{magnitude} (I)=
@@ -1295,7 +1295,7 @@ ___
 
 ▸ **checkRange**(`a`: [InputArray](_types_opencv__hacks_.md#inputarray), `quiet?`: [bool](_types_opencv__hacks_.md#bool), `pos?`: any, `minVal?`: [double](_types_opencv__hacks_.md#double), `maxVal?`: [double](_types_opencv__hacks_.md#double)): *[bool](_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/core_array.ts:315](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L315)*
+*Defined in [types/opencv/core_array.ts:315](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L315)*
 
 The function [cv::checkRange] checks that every array element is neither NaN nor infinite. When
 minVal > -DBL_MAX and maxVal < DBL_MAX, the function also checks that each value is between minVal
@@ -1321,7 +1321,7 @@ ___
 
 ▸ **compare**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `cmpop`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:344](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L344)*
+*Defined in [types/opencv/core_array.ts:344](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L344)*
 
 The function compares: Elements of two arrays when src1 and src2 have the same size:
 `\\[\\texttt{dst} (I) = \\texttt{src1} (I) \\,\\texttt{cmpop}\\, \\texttt{src2} (I)\\]` Elements of
@@ -1357,7 +1357,7 @@ ___
 
 ▸ **completeSymm**(`m`: InputOutputArray, `lowerToUpper?`: [bool](_types_opencv__hacks_.md#bool)): *void*
 
-*Defined in [types/opencv/core_array.ts:360](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L360)*
+*Defined in [types/opencv/core_array.ts:360](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L360)*
 
 The function [cv::completeSymm] copies the lower or the upper half of a square matrix to its another
 half. The matrix diagonal remains unchanged:
@@ -1382,7 +1382,7 @@ ___
 
 ▸ **convertFp16**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:373](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L373)*
+*Defined in [types/opencv/core_array.ts:373](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L373)*
 
 This function converts FP32 (single precision floating point) from/to FP16 (half precision floating
 point). CV_16S format is used to represent FP16 data. There are two use modes (src -> dst): CV_32F
@@ -1405,7 +1405,7 @@ ___
 
 ▸ **convertScaleAbs**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `alpha?`: [double](_types_opencv__hacks_.md#double), `beta?`: [double](_types_opencv__hacks_.md#double)): *void*
 
-*Defined in [types/opencv/core_array.ts:403](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L403)*
+*Defined in [types/opencv/core_array.ts:403](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L403)*
 
 On each element of the input array, the function convertScaleAbs performs three operations
 sequentially: scaling, taking an absolute value, conversion to an unsigned 8-bit type:
@@ -1443,7 +1443,7 @@ ___
 
 ▸ **copyMakeBorder**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `top`: [int](_types_opencv__hacks_.md#int), `bottom`: [int](_types_opencv__hacks_.md#int), `left`: [int](_types_opencv__hacks_.md#int), `right`: [int](_types_opencv__hacks_.md#int), `borderType`: [int](_types_opencv__hacks_.md#int), `value?`: any): *void*
 
-*Defined in [types/opencv/core_array.ts:455](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L455)*
+*Defined in [types/opencv/core_array.ts:455](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L455)*
 
 The function copies the source image into the middle of the destination image. The areas to the
 left, to the right, above and below the copied source image will be filled with extrapolated pixels.
@@ -1496,7 +1496,7 @@ ___
 
 ▸ **copyTo**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `mask`: [InputArray](_types_opencv__hacks_.md#inputarray)): *void*
 
-*Defined in [types/opencv/core_array.ts:466](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L466)*
+*Defined in [types/opencv/core_array.ts:466](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L466)*
 
 **Parameters:**
 
@@ -1514,7 +1514,7 @@ ___
 
 ▸ **countNonZero**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_array.ts:476](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L476)*
+*Defined in [types/opencv/core_array.ts:476](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L476)*
 
 The function returns the number of non-zero elements in src : `\\[\\sum _{I: \\; \\texttt{src} (I)
 \\ne0 } 1\\]`
@@ -1535,7 +1535,7 @@ ___
 
 ▸ **dct**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `flags?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:520](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L520)*
+*Defined in [types/opencv/core_array.ts:520](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L520)*
 
 The function [cv::dct] performs a forward or inverse discrete Cosine transform (DCT) of a 1D or 2D
 floating-point array:
@@ -1588,7 +1588,7 @@ ___
 
 ▸ **determinant**(`mtx`: [InputArray](_types_opencv__hacks_.md#inputarray)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/core_array.ts:534](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L534)*
+*Defined in [types/opencv/core_array.ts:534](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L534)*
 
 The function [cv::determinant] calculates and returns the determinant of the specified matrix. For
 small matrices ( mtx.cols=mtx.rows<=3 ), the direct method is used. For larger matrices, the
@@ -1613,7 +1613,7 @@ ___
 
 ▸ **dft**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `flags?`: [int](_types_opencv__hacks_.md#int), `nonzeroRows?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:682](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L682)*
+*Defined in [types/opencv/core_array.ts:682](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L682)*
 
 The function [cv::dft] performs one of the following:
 
@@ -1765,7 +1765,7 @@ ___
 
 ▸ **divide**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `scale?`: [double](_types_opencv__hacks_.md#double), `dtype?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:713](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L713)*
+*Defined in [types/opencv/core_array.ts:713](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L713)*
 
 The function [cv::divide] divides one array by another: `\\[\\texttt{dst(I) =
 saturate(src1(I)*scale/src2(I))}\\]` or a scalar by an array when there is no src1 :
@@ -1798,7 +1798,7 @@ Name | Type | Description |
 
 ▸ **divide**(`scale`: [double](_types_opencv__hacks_.md#double), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `dtype?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:719](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L719)*
+*Defined in [types/opencv/core_array.ts:719](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L719)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -1820,7 +1820,7 @@ ___
 
 ▸ **eigen**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `eigenvalues`: OutputArray, `eigenvectors?`: OutputArray): *[bool](_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/core_array.ts:744](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L744)*
+*Defined in [types/opencv/core_array.ts:744](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L744)*
 
 The function [cv::eigen] calculates just eigenvalues, or eigenvalues and eigenvectors of the
 symmetric matrix src:
@@ -1850,7 +1850,7 @@ ___
 
 ▸ **eigenNonSymmetric**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `eigenvalues`: OutputArray, `eigenvectors`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:763](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L763)*
+*Defined in [types/opencv/core_array.ts:763](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L763)*
 
 Assumes real eigenvalues.
 The function calculates eigenvalues and eigenvectors (optional) of the square matrix src:
@@ -1877,7 +1877,7 @@ ___
 
 ▸ **exp**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:779](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L779)*
+*Defined in [types/opencv/core_array.ts:779](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L779)*
 
 The function [cv::exp] calculates the exponent of every element of the input array:
 `\\[\\texttt{dst} [I] = e^{ src(I) }\\]`
@@ -1903,7 +1903,7 @@ ___
 
 ▸ **extractChannel**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `coi`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:790](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L790)*
+*Defined in [types/opencv/core_array.ts:790](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L790)*
 
 [mixChannels], [split]
 
@@ -1923,7 +1923,7 @@ ___
 
 ▸ **findNonZero**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `idx`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:821](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L821)*
+*Defined in [types/opencv/core_array.ts:821](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L821)*
 
 Given a binary matrix (likely returned from an operation such as [threshold()], [compare()], >, ==,
 etc, return all of the non-zero indices as a [cv::Mat] or std::vector<cv::Point> (x,y) For example:
@@ -1963,7 +1963,7 @@ ___
 
 ▸ **flip**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `flipCode`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:847](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L847)*
+*Defined in [types/opencv/core_array.ts:847](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L847)*
 
 The function [cv::flip] flips the array in one of three different ways (row and column indices are
 0-based): `\\[\\texttt{dst} _{ij} = \\left\\{ \\begin{array}{l l} \\texttt{src}
@@ -1996,7 +1996,7 @@ ___
 
 ▸ **gemm**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `alpha`: [double](_types_opencv__hacks_.md#double), `src3`: [InputArray](_types_opencv__hacks_.md#inputarray), `beta`: [double](_types_opencv__hacks_.md#double), `dst`: OutputArray, `flags?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:882](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L882)*
+*Defined in [types/opencv/core_array.ts:882](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L882)*
 
 The function [cv::gemm] performs generalized matrix multiplication similar to the gemm functions in
 BLAS level 3. For example, `gemm(src1, src2, alpha, src3, beta, dst, GEMM_1_T + GEMM_3_T)`
@@ -2034,7 +2034,7 @@ ___
 
 ▸ **getOptimalDFTSize**(`vecsize`: [int](_types_opencv__hacks_.md#int)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_array.ts:906](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L906)*
+*Defined in [types/opencv/core_array.ts:906](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L906)*
 
 DFT performance is not a monotonic function of a vector size. Therefore, when you calculate
 convolution of two arrays or perform the spectral analysis of an array, it usually makes sense to
@@ -2069,7 +2069,7 @@ ___
 
 ▸ **hconcat**(`src`: any, `nsrc`: [size_t](_types_opencv__hacks_.md#size_t), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:940](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L940)*
+*Defined in [types/opencv/core_array.ts:940](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L940)*
 
 The function horizontally concatenates two or more [cv::Mat] matrices (with the same number of
 rows).
@@ -2106,7 +2106,7 @@ Name | Type | Description |
 
 ▸ **hconcat**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:969](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L969)*
+*Defined in [types/opencv/core_array.ts:969](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L969)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -2139,7 +2139,7 @@ Name | Type | Description |
 
 ▸ **hconcat**(`src`: InputArrayOfArrays, `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:995](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L995)*
+*Defined in [types/opencv/core_array.ts:995](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L995)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -2173,7 +2173,7 @@ ___
 
 ▸ **idct**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `flags?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:1008](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1008)*
+*Defined in [types/opencv/core_array.ts:1008](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1008)*
 
 idct(src, dst, flags) is equivalent to dct(src, dst, flags | DCT_INVERSE).
 
@@ -2195,7 +2195,7 @@ ___
 
 ▸ **idft**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `flags?`: [int](_types_opencv__hacks_.md#int), `nonzeroRows?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:1027](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1027)*
+*Defined in [types/opencv/core_array.ts:1027](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1027)*
 
 idft(src, dst, flags) is equivalent to dft(src, dst, flags | [DFT_INVERSE]) .
 
@@ -2221,7 +2221,7 @@ ___
 
 ▸ **inRange**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `lowerb`: [InputArray](_types_opencv__hacks_.md#inputarray), `upperb`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:1053](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1053)*
+*Defined in [types/opencv/core_array.ts:1053](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1053)*
 
 The function checks the range as follows:
 
@@ -2255,7 +2255,7 @@ ___
 
 ▸ **insertChannel**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: InputOutputArray, `coi`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:1064](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1064)*
+*Defined in [types/opencv/core_array.ts:1064](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1064)*
 
 [mixChannels], [merge]
 
@@ -2275,7 +2275,7 @@ ___
 
 ▸ **invert**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `flags?`: [int](_types_opencv__hacks_.md#int)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/core_array.ts:1090](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1090)*
+*Defined in [types/opencv/core_array.ts:1090](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1090)*
 
 The function [cv::invert] inverts the matrix src and stores the result in dst . When the matrix src
 is singular or non-square, the function calculates the pseudo-inverse matrix (the dst matrix) so
@@ -2310,7 +2310,7 @@ ___
 
 ▸ **log**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:1104](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1104)*
+*Defined in [types/opencv/core_array.ts:1104](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1104)*
 
 The function [cv::log] calculates the natural logarithm of every element of the input array:
 `\\[\\texttt{dst} (I) = \\log (\\texttt{src}(I)) \\]`
@@ -2334,7 +2334,7 @@ ___
 
 ▸ **magnitude**(`x`: [InputArray](_types_opencv__hacks_.md#inputarray), `y`: [InputArray](_types_opencv__hacks_.md#inputarray), `magnitude`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:1137](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1137)*
+*Defined in [types/opencv/core_array.ts:1137](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1137)*
 
 The function [cv::magnitude] calculates the magnitude of 2D vectors formed from the corresponding
 elements of x and y arrays: `\\[\\texttt{dst} (I) = \\sqrt{\\texttt{x}(I)^2 + \\texttt{y}(I)^2}\\]`
@@ -2357,7 +2357,7 @@ ___
 
 ▸ **max**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:1167](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1167)*
+*Defined in [types/opencv/core_array.ts:1167](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1167)*
 
 The function [cv::max] calculates the per-element maximum of two arrays: `\\[\\texttt{dst} (I)=
 \\max ( \\texttt{src1} (I), \\texttt{src2} (I))\\]` or array and a scalar: `\\[\\texttt{dst} (I)=
@@ -2377,7 +2377,7 @@ Name | Type | Description |
 
 ▸ **max**(`src1`: any, `src2`: any, `dst`: any): *void*
 
-*Defined in [types/opencv/core_array.ts:1174](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1174)*
+*Defined in [types/opencv/core_array.ts:1174](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1174)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts. needed to avoid conflicts with const _Tp& std::min(const _Tp&,
@@ -2395,7 +2395,7 @@ Name | Type |
 
 ▸ **max**(`src1`: any, `src2`: any, `dst`: any): *void*
 
-*Defined in [types/opencv/core_array.ts:1181](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1181)*
+*Defined in [types/opencv/core_array.ts:1181](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1181)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts. needed to avoid conflicts with const _Tp& std::min(const _Tp&,
@@ -2417,7 +2417,7 @@ ___
 
 ▸ **mean**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `mask?`: [InputArray](_types_opencv__hacks_.md#inputarray)): *[Scalar](../classes/_types_opencv__hacks_.scalar.md)*
 
-*Defined in [types/opencv/core_array.ts:1196](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1196)*
+*Defined in [types/opencv/core_array.ts:1196](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1196)*
 
 The function [cv::mean] calculates the mean value M of array elements, independently for each
 channel, and return it: `\\[\\begin{array}{l} N = \\sum _{I: \\; \\texttt{mask} (I) \\ne 0} 1 \\\\
@@ -2441,7 +2441,7 @@ ___
 
 ▸ **meanStdDev**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `mean`: OutputArray, `stddev`: OutputArray, `mask?`: [InputArray](_types_opencv__hacks_.md#inputarray)): *void*
 
-*Defined in [types/opencv/core_array.ts:1225](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1225)*
+*Defined in [types/opencv/core_array.ts:1225](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1225)*
 
 Calculates a mean and standard deviation of array elements.
 
@@ -2477,7 +2477,7 @@ ___
 
 ▸ **merge**(`mv`: any, `count`: [size_t](_types_opencv__hacks_.md#size_t), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:1263](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1263)*
+*Defined in [types/opencv/core_array.ts:1263](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1263)*
 
 The function [cv::merge] merges several arrays to make a single multi-channel array. That is, each
 element of the output array will be a concatenation of the elements of the input arrays, where
@@ -2518,7 +2518,7 @@ Name | Type | Description |
 
 ▸ **merge**(`mv`: InputArrayOfArrays, `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:1275](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1275)*
+*Defined in [types/opencv/core_array.ts:1275](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1275)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -2538,7 +2538,7 @@ ___
 
 ▸ **min**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:1290](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1290)*
+*Defined in [types/opencv/core_array.ts:1290](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1290)*
 
 The function [cv::min] calculates the per-element minimum of two arrays: `\\[\\texttt{dst} (I)=
 \\min ( \\texttt{src1} (I), \\texttt{src2} (I))\\]` or array and a scalar: `\\[\\texttt{dst} (I)=
@@ -2558,7 +2558,7 @@ Name | Type | Description |
 
 ▸ **min**(`src1`: any, `src2`: any, `dst`: any): *void*
 
-*Defined in [types/opencv/core_array.ts:1297](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1297)*
+*Defined in [types/opencv/core_array.ts:1297](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1297)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts. needed to avoid conflicts with const _Tp& std::min(const _Tp&,
@@ -2576,7 +2576,7 @@ Name | Type |
 
 ▸ **min**(`src1`: any, `src2`: any, `dst`: any): *void*
 
-*Defined in [types/opencv/core_array.ts:1304](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1304)*
+*Defined in [types/opencv/core_array.ts:1304](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1304)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts. needed to avoid conflicts with const _Tp& std::min(const _Tp&,
@@ -2598,7 +2598,7 @@ ___
 
 ▸ **minMaxIdx**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `minVal`: any, `maxVal?`: any, `minIdx?`: any, `maxIdx?`: any, `mask?`: [InputArray](_types_opencv__hacks_.md#inputarray)): *void*
 
-*Defined in [types/opencv/core_array.ts:1335](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1335)*
+*Defined in [types/opencv/core_array.ts:1335](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1335)*
 
 The function [cv::minMaxIdx] finds the minimum and maximum element values and their positions. The
 extremums are searched across the whole array or, if mask is not an empty array, in the specified
@@ -2633,7 +2633,7 @@ ___
 
 ▸ **minMaxLoc**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `minVal`: any, `maxVal?`: any, `minLoc?`: any, `maxLoc?`: any, `mask?`: [InputArray](_types_opencv__hacks_.md#inputarray)): *void*
 
-*Defined in [types/opencv/core_array.ts:1360](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1360)*
+*Defined in [types/opencv/core_array.ts:1360](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1360)*
 
 The function [cv::minMaxLoc] finds the minimum and maximum element values and their positions. The
 extremums are searched across the whole array or, if mask is not an empty array, in the specified
@@ -2660,7 +2660,7 @@ Name | Type | Description |
 
 ▸ **minMaxLoc**(`a`: any, `minVal`: any, `maxVal`: any, `minIdx?`: any, `maxIdx?`: any): *void*
 
-*Defined in [types/opencv/core_array.ts:1378](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1378)*
+*Defined in [types/opencv/core_array.ts:1378](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1378)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -2683,7 +2683,7 @@ ___
 
 ▸ **mixChannels**(`src`: any, `nsrcs`: [size_t](_types_opencv__hacks_.md#size_t), `dst`: any, `ndsts`: [size_t](_types_opencv__hacks_.md#size_t), `fromTo`: any, `npairs`: [size_t](_types_opencv__hacks_.md#size_t)): *void*
 
-*Defined in [types/opencv/core_array.ts:1428](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1428)*
+*Defined in [types/opencv/core_array.ts:1428](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1428)*
 
 The function [cv::mixChannels] provides an advanced mechanism for shuffling image channels.
 
@@ -2727,7 +2727,7 @@ Name | Type | Description |
 
 ▸ **mixChannels**(`src`: InputArrayOfArrays, `dst`: InputOutputArrayOfArrays, `fromTo`: any, `npairs`: [size_t](_types_opencv__hacks_.md#size_t)): *void*
 
-*Defined in [types/opencv/core_array.ts:1450](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1450)*
+*Defined in [types/opencv/core_array.ts:1450](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1450)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -2745,7 +2745,7 @@ Name | Type | Description |
 
 ▸ **mixChannels**(`src`: InputArrayOfArrays, `dst`: InputOutputArrayOfArrays, `fromTo`: any): *void*
 
-*Defined in [types/opencv/core_array.ts:1470](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1470)*
+*Defined in [types/opencv/core_array.ts:1470](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1470)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -2766,7 +2766,7 @@ ___
 
 ▸ **mulSpectrums**(`a`: [InputArray](_types_opencv__hacks_.md#inputarray), `b`: [InputArray](_types_opencv__hacks_.md#inputarray), `c`: OutputArray, `flags`: [int](_types_opencv__hacks_.md#int), `conjB?`: [bool](_types_opencv__hacks_.md#bool)): *void*
 
-*Defined in [types/opencv/core_array.ts:1494](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1494)*
+*Defined in [types/opencv/core_array.ts:1494](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1494)*
 
 The function [cv::mulSpectrums] performs the per-element multiplication of the two CCS-packed or
 complex matrices that are results of a real or complex Fourier transform.
@@ -2794,7 +2794,7 @@ ___
 
 ▸ **mulTransposed**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `aTa`: [bool](_types_opencv__hacks_.md#bool), `delta?`: [InputArray](_types_opencv__hacks_.md#inputarray), `scale?`: [double](_types_opencv__hacks_.md#double), `dtype?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:1553](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1553)*
+*Defined in [types/opencv/core_array.ts:1553](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1553)*
 
 The function [cv::mulTransposed] calculates the product of src and its transposition:
 `\\[\\texttt{dst} = \\texttt{scale} ( \\texttt{src} - \\texttt{delta} )^T ( \\texttt{src} -
@@ -2824,7 +2824,7 @@ ___
 
 ▸ **multiply**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `scale?`: [double](_types_opencv__hacks_.md#double), `dtype?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:1522](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1522)*
+*Defined in [types/opencv/core_array.ts:1522](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1522)*
 
 The function multiply calculates the per-element product of two arrays:
 
@@ -2859,7 +2859,7 @@ ___
 
 ▸ **norm**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `normType?`: [int](_types_opencv__hacks_.md#int), `mask?`: [InputArray](_types_opencv__hacks_.md#inputarray)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/core_array.ts:1586](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1586)*
+*Defined in [types/opencv/core_array.ts:1586](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1586)*
 
 This version of [norm] calculates the absolute norm of src1. The type of norm to calculate is
 specified using [NormTypes].
@@ -2897,7 +2897,7 @@ Name | Type | Description |
 
 ▸ **norm**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `normType?`: [int](_types_opencv__hacks_.md#int), `mask?`: [InputArray](_types_opencv__hacks_.md#inputarray)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/core_array.ts:1600](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1600)*
+*Defined in [types/opencv/core_array.ts:1600](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1600)*
 
 This version of [cv::norm] calculates the absolute difference norm or the relative difference norm
 of arrays src1 and src2. The type of norm to calculate is specified using [NormTypes].
@@ -2915,7 +2915,7 @@ Name | Type | Description |
 
 ▸ **norm**(`src`: any, `normType`: [int](_types_opencv__hacks_.md#int)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/core_array.ts:1610](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1610)*
+*Defined in [types/opencv/core_array.ts:1610](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1610)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -2935,7 +2935,7 @@ ___
 
 ▸ **normalize**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: InputOutputArray, `alpha?`: [double](_types_opencv__hacks_.md#double), `beta?`: [double](_types_opencv__hacks_.md#double), `norm_type?`: [int](_types_opencv__hacks_.md#int), `dtype?`: [int](_types_opencv__hacks_.md#int), `mask?`: [InputArray](_types_opencv__hacks_.md#inputarray)): *void*
 
-*Defined in [types/opencv/core_array.ts:1677](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1677)*
+*Defined in [types/opencv/core_array.ts:1677](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1677)*
 
 The function [cv::normalize] normalizes scale and shift the input array elements so that `\\[\\|
 \\texttt{dst} \\| _{L_p}= \\texttt{alpha}\\]` (where p=Inf, 1 or 2) when normType=NORM_INF, NORM_L1,
@@ -3000,7 +3000,7 @@ Name | Type | Description |
 
 ▸ **normalize**(`src`: any, `dst`: any, `alpha`: [double](_types_opencv__hacks_.md#double), `normType`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:1692](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1692)*
+*Defined in [types/opencv/core_array.ts:1692](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1692)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -3022,7 +3022,7 @@ ___
 
 ▸ **patchNaNs**(`a`: InputOutputArray, `val?`: [double](_types_opencv__hacks_.md#double)): *void*
 
-*Defined in [types/opencv/core_array.ts:1694](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1694)*
+*Defined in [types/opencv/core_array.ts:1694](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1694)*
 
 **Parameters:**
 
@@ -3039,7 +3039,7 @@ ___
 
 ▸ **perspectiveTransform**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `m`: [InputArray](_types_opencv__hacks_.md#inputarray)): *void*
 
-*Defined in [types/opencv/core_array.ts:1749](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1749)*
+*Defined in [types/opencv/core_array.ts:1749](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1749)*
 
 The function [cv::perspectiveTransform] transforms every element of src by treating it as a 2D or 3D
 vector, in the following way: `\\[(x, y, z) \\rightarrow (x'/w, y'/w, z'/w)\\]` where `\\[(x', y',
@@ -3072,7 +3072,7 @@ ___
 
 ▸ **phase**(`x`: [InputArray](_types_opencv__hacks_.md#inputarray), `y`: [InputArray](_types_opencv__hacks_.md#inputarray), `angle`: OutputArray, `angleInDegrees?`: [bool](_types_opencv__hacks_.md#bool)): *void*
 
-*Defined in [types/opencv/core_array.ts:1769](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1769)*
+*Defined in [types/opencv/core_array.ts:1769](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1769)*
 
 The function [cv::phase] calculates the rotation angle of each 2D vector that is formed from the
 corresponding elements of x and y : `\\[\\texttt{angle} (I) = \\texttt{atan2} ( \\texttt{y} (I),
@@ -3098,7 +3098,7 @@ ___
 
 ▸ **polarToCart**(`magnitude`: [InputArray](_types_opencv__hacks_.md#inputarray), `angle`: [InputArray](_types_opencv__hacks_.md#inputarray), `x`: OutputArray, `y`: OutputArray, `angleInDegrees?`: [bool](_types_opencv__hacks_.md#bool)): *void*
 
-*Defined in [types/opencv/core_array.ts:1794](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1794)*
+*Defined in [types/opencv/core_array.ts:1794](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1794)*
 
 The function [cv::polarToCart] calculates the Cartesian coordinates of each 2D vector represented by
 the corresponding elements of magnitude and angle: `\\[\\begin{array}{l} \\texttt{x} (I) =
@@ -3127,7 +3127,7 @@ ___
 
 ▸ **pow**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `power`: [double](_types_opencv__hacks_.md#double), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:1824](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1824)*
+*Defined in [types/opencv/core_array.ts:1824](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1824)*
 
 The function [cv::pow] raises every element of the input array to power : `\\[\\texttt{dst} (I) =
 \\fork{\\texttt{src}(I)^{power}}{if \\(\\texttt{power}\\) is
@@ -3166,7 +3166,7 @@ ___
 
 ▸ **randShuffle**(`dst`: InputOutputArray, `iterFactor?`: [double](_types_opencv__hacks_.md#double), `rng?`: any): *void*
 
-*Defined in [types/opencv/core_array.ts:1876](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1876)*
+*Defined in [types/opencv/core_array.ts:1876](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1876)*
 
 The function [cv::randShuffle] shuffles the specified 1D array by randomly choosing pairs of
 elements and swapping them. The number of such swap operations will be dst.rows*dst.cols*iterFactor
@@ -3190,7 +3190,7 @@ ___
 
 ▸ **randn**(`dst`: InputOutputArray, `mean`: [InputArray](_types_opencv__hacks_.md#inputarray), `stddev`: [InputArray](_types_opencv__hacks_.md#inputarray)): *void*
 
-*Defined in [types/opencv/core_array.ts:1859](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1859)*
+*Defined in [types/opencv/core_array.ts:1859](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1859)*
 
 The function [cv::randn] fills the matrix dst with normally distributed random numbers with the
 specified mean vector and the standard deviation matrix. The generated random numbers are clipped to
@@ -3214,7 +3214,7 @@ ___
 
 ▸ **randu**(`dst`: InputOutputArray, `low`: [InputArray](_types_opencv__hacks_.md#inputarray), `high`: [InputArray](_types_opencv__hacks_.md#inputarray)): *void*
 
-*Defined in [types/opencv/core_array.ts:1890](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1890)*
+*Defined in [types/opencv/core_array.ts:1890](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1890)*
 
 Non-template variant of the function fills the matrix dst with uniformly-distributed random numbers
 from the specified range: `\\[\\texttt{low} _c \\leq \\texttt{dst} (I)_c < \\texttt{high} _c\\]`
@@ -3237,7 +3237,7 @@ ___
 
 ▸ **reduce**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `dim`: [int](_types_opencv__hacks_.md#int), `rtype`: [int](_types_opencv__hacks_.md#int), `dtype?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:1951](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1951)*
+*Defined in [types/opencv/core_array.ts:1951](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1951)*
 
 The function [reduce] reduces the matrix to a vector by treating the matrix rows/columns as a set of
 1D vectors and performing the specified operation on the vectors until a single row/column is
@@ -3303,7 +3303,7 @@ ___
 
 ▸ **repeat**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `ny`: [int](_types_opencv__hacks_.md#int), `nx`: [int](_types_opencv__hacks_.md#int), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:1968](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1968)*
+*Defined in [types/opencv/core_array.ts:1968](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1968)*
 
 The function [cv::repeat] duplicates the input array one or more times along each of the two axes:
 `\\[\\texttt{dst} _{ij}= \\texttt{src} _{i\\mod src.rows, \\; j\\mod src.cols }\\]` The second
@@ -3324,7 +3324,7 @@ Name | Type | Description |
 
 ▸ **repeat**(`src`: any, `ny`: [int](_types_opencv__hacks_.md#int), `nx`: [int](_types_opencv__hacks_.md#int)): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/core_array.ts:1980](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1980)*
+*Defined in [types/opencv/core_array.ts:1980](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1980)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -3345,7 +3345,7 @@ ___
 
 ▸ **rotate**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `rotateCode`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:1992](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L1992)*
+*Defined in [types/opencv/core_array.ts:1992](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L1992)*
 
 [transpose] , [repeat] , [completeSymm], [flip], [RotateFlags]
 
@@ -3365,7 +3365,7 @@ ___
 
 ▸ **scaleAdd**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `alpha`: [double](_types_opencv__hacks_.md#double), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:2016](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2016)*
+*Defined in [types/opencv/core_array.ts:2016](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2016)*
 
 The function scaleAdd is one of the classical primitive linear algebra operations, known as DAXPY or
 SAXPY in . It calculates the sum of a scaled array and another array: `\\[\\texttt{dst} (I)=
@@ -3397,7 +3397,7 @@ ___
 
 ▸ **setIdentity**(`mtx`: InputOutputArray, `s?`: any): *void*
 
-*Defined in [types/opencv/core_array.ts:2035](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2035)*
+*Defined in [types/opencv/core_array.ts:2035](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2035)*
 
 The function [cv::setIdentity] initializes a scaled identity matrix: `\\[\\texttt{mtx} (i,j)=
 \\fork{\\texttt{value}}{ if \\(i=j\\)}{0}{otherwise}\\]`
@@ -3426,7 +3426,7 @@ ___
 
 ▸ **setRNGSeed**(`seed`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:2044](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2044)*
+*Defined in [types/opencv/core_array.ts:2044](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2044)*
 
 The function [cv::setRNGSeed] sets state of default random number generator to custom value.
 
@@ -3446,7 +3446,7 @@ ___
 
 ▸ **solve**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `flags?`: [int](_types_opencv__hacks_.md#int)): *[bool](_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/core_array.ts:2069](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2069)*
+*Defined in [types/opencv/core_array.ts:2069](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2069)*
 
 The function [cv::solve] solves a linear system or least-squares problem (the latter is possible
 with [SVD] or QR methods, or by specifying the flag [DECOMP_NORMAL] ): `\\[\\texttt{dst} = \\arg
@@ -3479,7 +3479,7 @@ ___
 
 ▸ **solveCubic**(`coeffs`: [InputArray](_types_opencv__hacks_.md#inputarray), `roots`: OutputArray): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_array.ts:2087](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2087)*
+*Defined in [types/opencv/core_array.ts:2087](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2087)*
 
 The function solveCubic finds the real roots of a cubic equation:
 
@@ -3507,7 +3507,7 @@ ___
 
 ▸ **solvePoly**(`coeffs`: [InputArray](_types_opencv__hacks_.md#inputarray), `roots`: OutputArray, `maxIters?`: [int](_types_opencv__hacks_.md#int)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/core_array.ts:2100](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2100)*
+*Defined in [types/opencv/core_array.ts:2100](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2100)*
 
 The function [cv::solvePoly] finds real and complex roots of a polynomial equation:
 `\\[\\texttt{coeffs} [n] x^{n} + \\texttt{coeffs} [n-1] x^{n-1} + ... + \\texttt{coeffs} [1] x +
@@ -3529,7 +3529,7 @@ ___
 
 ▸ **sort**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `flags`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:2116](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2116)*
+*Defined in [types/opencv/core_array.ts:2116](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2116)*
 
 The function [cv::sort] sorts each matrix row or each matrix column in ascending or descending
 order. So you should pass two operation flags to get desired behaviour. If you want to sort matrix
@@ -3554,7 +3554,7 @@ ___
 
 ▸ **sortIdx**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `flags`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:2140](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2140)*
+*Defined in [types/opencv/core_array.ts:2140](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2140)*
 
 The function [cv::sortIdx] sorts each matrix row or each matrix column in the ascending or
 descending order. So you should pass two operation flags to get desired behaviour. Instead of
@@ -3587,7 +3587,7 @@ ___
 
 ▸ **split**(`src`: any, `mvbegin`: any): *void*
 
-*Defined in [types/opencv/core_array.ts:2175](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2175)*
+*Defined in [types/opencv/core_array.ts:2175](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2175)*
 
 The function [cv::split] splits a multi-channel array into separate single-channel arrays:
 `\\[\\texttt{mv} [c](I) = \\texttt{src} (I)_c\\]` If you need to extract a single channel or do some
@@ -3627,7 +3627,7 @@ Name | Type | Description |
 
 ▸ **split**(`m`: [InputArray](_types_opencv__hacks_.md#inputarray), `mv`: OutputArrayOfArrays): *void*
 
-*Defined in [types/opencv/core_array.ts:2185](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2185)*
+*Defined in [types/opencv/core_array.ts:2185](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2185)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -3647,7 +3647,7 @@ ___
 
 ▸ **sqrt**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:2196](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2196)*
+*Defined in [types/opencv/core_array.ts:2196](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2196)*
 
 The function [cv::sqrt] calculates a square root of each input array element. In case of
 multi-channel arrays, each channel is processed independently. The accuracy is approximately the
@@ -3668,7 +3668,7 @@ ___
 
 ▸ **subtract**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `mask?`: [InputArray](_types_opencv__hacks_.md#inputarray), `dtype?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_array.ts:2244](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2244)*
+*Defined in [types/opencv/core_array.ts:2244](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2244)*
 
 The function subtract calculates:
 
@@ -3722,7 +3722,7 @@ ___
 
 ▸ **sum**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray)): *[Scalar](../classes/_types_opencv__hacks_.scalar.md)*
 
-*Defined in [types/opencv/core_array.ts:2254](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2254)*
+*Defined in [types/opencv/core_array.ts:2254](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2254)*
 
 The function [cv::sum] calculates and returns the sum of array elements, independently for each
 channel.
@@ -3743,7 +3743,7 @@ ___
 
 ▸ **theRNG**(): *any*
 
-*Defined in [types/opencv/core_array.ts:2275](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2275)*
+*Defined in [types/opencv/core_array.ts:2275](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2275)*
 
 The function [cv::theRNG] returns the default random number generator. For each thread, there is a
 separate random number generator, so you can use the function safely in multi-thread environments.
@@ -3761,7 +3761,7 @@ ___
 
 ▸ **trace**(`mtx`: [InputArray](_types_opencv__hacks_.md#inputarray)): *[Scalar](../classes/_types_opencv__hacks_.scalar.md)*
 
-*Defined in [types/opencv/core_array.ts:2283](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2283)*
+*Defined in [types/opencv/core_array.ts:2283](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2283)*
 
 The function [cv::trace] returns the sum of the diagonal elements of the matrix mtx .
 `\\[\\mathrm{tr} ( \\texttt{mtx} ) = \\sum _i \\texttt{mtx} (i,i)\\]`
@@ -3780,7 +3780,7 @@ ___
 
 ▸ **transform**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `m`: [InputArray](_types_opencv__hacks_.md#inputarray)): *void*
 
-*Defined in [types/opencv/core_array.ts:2307](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2307)*
+*Defined in [types/opencv/core_array.ts:2307](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2307)*
 
 The function [cv::transform] performs the matrix transformation of every element of the array src
 and stores the results in dst : `\\[\\texttt{dst} (I) = \\texttt{m} \\cdot \\texttt{src} (I)\\]`
@@ -3813,7 +3813,7 @@ ___
 
 ▸ **transpose**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:2319](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2319)*
+*Defined in [types/opencv/core_array.ts:2319](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2319)*
 
 The function [cv::transpose] transposes the matrix src : `\\[\\texttt{dst} (i,j) = \\texttt{src}
 (j,i)\\]`
@@ -3835,7 +3835,7 @@ ___
 
 ▸ **vconcat**(`src`: any, `nsrc`: [size_t](_types_opencv__hacks_.md#size_t), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:2351](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2351)*
+*Defined in [types/opencv/core_array.ts:2351](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2351)*
 
 The function vertically concatenates two or more [cv::Mat] matrices (with the same number of cols).
 
@@ -3870,7 +3870,7 @@ Name | Type | Description |
 
 ▸ **vconcat**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:2383](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2383)*
+*Defined in [types/opencv/core_array.ts:2383](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2383)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -3906,7 +3906,7 @@ Name | Type | Description |
 
 ▸ **vconcat**(`src`: InputArrayOfArrays, `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/core_array.ts:2408](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_array.ts#L2408)*
+*Defined in [types/opencv/core_array.ts:2408](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_array.ts#L2408)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.

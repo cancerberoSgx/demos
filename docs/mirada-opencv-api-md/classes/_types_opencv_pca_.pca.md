@@ -97,7 +97,7 @@ Source:
 
 \+ **new PCA**(): *[PCA](_types_opencv_pca_.pca.md)*
 
-*Defined in [types/opencv/PCA.ts:77](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/PCA.ts#L77)*
+*Defined in [types/opencv/PCA.ts:77](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/PCA.ts#L77)*
 
   The default constructor initializes an empty PCA structure. The other constructors initialize the
 structure and call [PCA::operator()()].
@@ -106,7 +106,7 @@ structure and call [PCA::operator()()].
 
 \+ **new PCA**(`data`: [InputArray](../modules/_types_opencv__hacks_.md#inputarray), `mean`: [InputArray](../modules/_types_opencv__hacks_.md#inputarray), `flags`: [int](../modules/_types_opencv__hacks_.md#int), `maxComponents?`: [int](../modules/_types_opencv__hacks_.md#int)): *[PCA](_types_opencv_pca_.pca.md)*
 
-*Defined in [types/opencv/PCA.ts:83](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/PCA.ts#L83)*
+*Defined in [types/opencv/PCA.ts:83](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/PCA.ts#L83)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -124,7 +124,7 @@ Name | Type | Description |
 
 \+ **new PCA**(`data`: [InputArray](../modules/_types_opencv__hacks_.md#inputarray), `mean`: [InputArray](../modules/_types_opencv__hacks_.md#inputarray), `flags`: [int](../modules/_types_opencv__hacks_.md#int), `retainedVariance`: [double](../modules/_types_opencv__hacks_.md#double)): *[PCA](_types_opencv_pca_.pca.md)*
 
-*Defined in [types/opencv/PCA.ts:100](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/PCA.ts#L100)*
+*Defined in [types/opencv/PCA.ts:100](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/PCA.ts#L100)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -146,7 +146,7 @@ Name | Type | Description |
 
 • **eigenvalues**: *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/PCA.ts:73](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/PCA.ts#L73)*
+*Defined in [types/opencv/PCA.ts:73](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/PCA.ts#L73)*
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 • **eigenvectors**: *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/PCA.ts:75](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/PCA.ts#L75)*
+*Defined in [types/opencv/PCA.ts:75](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/PCA.ts#L75)*
 
 ___
 
@@ -162,7 +162,7 @@ ___
 
 • **mean**: *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/PCA.ts:77](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/PCA.ts#L77)*
+*Defined in [types/opencv/PCA.ts:77](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/PCA.ts#L77)*
 
 ## Methods
 
@@ -170,7 +170,7 @@ ___
 
 ▸ **backProject**(`vec`: [InputArray](../modules/_types_opencv__hacks_.md#inputarray)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/PCA.ts:129](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/PCA.ts#L129)*
+*Defined in [types/opencv/PCA.ts:129](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/PCA.ts#L129)*
 
   The methods are inverse operations to [PCA::project]. They take PC coordinates of projected
 vectors and reconstruct the original vectors. Unless all the principal components have been
@@ -188,7 +188,7 @@ Name | Type | Description |
 
 ▸ **backProject**(`vec`: [InputArray](../modules/_types_opencv__hacks_.md#inputarray), `result`: OutputArray): *[InputArray](../modules/_types_opencv__hacks_.md#inputarray)*
 
-*Defined in [types/opencv/PCA.ts:141](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/PCA.ts#L141)*
+*Defined in [types/opencv/PCA.ts:141](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/PCA.ts#L141)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -208,7 +208,7 @@ ___
 
 ▸ **project**(`vec`: [InputArray](../modules/_types_opencv__hacks_.md#inputarray)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/PCA.ts:154](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/PCA.ts#L154)*
+*Defined in [types/opencv/PCA.ts:154](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/PCA.ts#L154)*
 
   The methods project one or more vectors to the principal component subspace, where each vector
 projection is represented by coefficients in the principal component basis. The first form of the
@@ -225,7 +225,7 @@ Name | Type | Description |
 
 ▸ **project**(`vec`: [InputArray](../modules/_types_opencv__hacks_.md#inputarray), `result`: OutputArray): *[InputArray](../modules/_types_opencv__hacks_.md#inputarray)*
 
-*Defined in [types/opencv/PCA.ts:169](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/PCA.ts#L169)*
+*Defined in [types/opencv/PCA.ts:169](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/PCA.ts#L169)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -245,7 +245,7 @@ ___
 
 ▸ **read**(`fn`: [FileNode](../modules/_types_opencv__hacks_.md#filenode)): *[FileNode](../modules/_types_opencv__hacks_.md#filenode)*
 
-*Defined in [types/opencv/PCA.ts:174](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/PCA.ts#L174)*
+*Defined in [types/opencv/PCA.ts:174](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/PCA.ts#L174)*
 
   Loads [eigenvalues] [eigenvectors] and [mean] from specified [FileNode]
 
@@ -263,7 +263,7 @@ ___
 
 ▸ **write**(`fs`: [FileStorage](../modules/_types_opencv__hacks_.md#filestorage)): *[FileStorage](../modules/_types_opencv__hacks_.md#filestorage)*
 
-*Defined in [types/opencv/PCA.ts:179](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/PCA.ts#L179)*
+*Defined in [types/opencv/PCA.ts:179](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/PCA.ts#L179)*
 
   Writes [eigenvalues] [eigenvectors] and [mean] to specified [FileStorage]
 

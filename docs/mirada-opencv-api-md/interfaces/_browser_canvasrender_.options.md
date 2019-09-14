@@ -24,7 +24,7 @@
 
 • **appendToBody**? : *undefined | false | true*
 
-*Defined in [browser/canvasRender.ts:49](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/browser/canvasRender.ts#L49)*
+*Defined in [browser/canvasRender.ts:49](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/browser/canvasRender.ts#L49)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **canvas**? : *HTMLCanvasElement*
 
-*Defined in [browser/canvasRender.ts:51](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/browser/canvasRender.ts#L51)*
+*Defined in [browser/canvasRender.ts:51](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/browser/canvasRender.ts#L51)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **clear**? : *undefined | false | true*
 
-*Defined in [browser/canvasRender.ts:53](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/browser/canvasRender.ts#L53)*
+*Defined in [browser/canvasRender.ts:53](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/browser/canvasRender.ts#L53)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **forceSameSize**? : *undefined | false | true*
 
-*Defined in [browser/canvasRender.ts:54](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/browser/canvasRender.ts#L54)*
+*Defined in [browser/canvasRender.ts:54](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/browser/canvasRender.ts#L54)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **region**? : *[Rect](../classes/_types_opencv__hacks_.rect.md)*
 
-*Defined in [browser/canvasRender.ts:52](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/browser/canvasRender.ts#L52)*
+*Defined in [browser/canvasRender.ts:52](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/browser/canvasRender.ts#L52)*
 
 ___
 
@@ -64,4 +64,4 @@ ___
 
 • **rgba**? : *undefined | false | true*
 
-*Defined in [browser/canvasRender.ts:50](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/browser/canvasRender.ts#L50)*
+*Defined in [browser/canvasRender.ts:50](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/browser/canvasRender.ts#L50)*

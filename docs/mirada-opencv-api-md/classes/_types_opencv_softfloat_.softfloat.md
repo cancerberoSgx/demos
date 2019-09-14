@@ -44,13 +44,13 @@
 
 \+ **new softfloat**(): *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
-*Defined in [types/opencv/softfloat.ts:6](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L6)*
+*Defined in [types/opencv/softfloat.ts:6](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L6)*
 
 **Returns:** *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
 \+ **new softfloat**(`c`: [softfloat](_types_opencv_softfloat_.softfloat.md)): *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
-*Defined in [types/opencv/softfloat.ts:8](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L8)*
+*Defined in [types/opencv/softfloat.ts:8](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L8)*
 
 **Parameters:**
 
@@ -62,7 +62,7 @@ Name | Type |
 
 \+ **new softfloat**(`arg174`: [uint32_t](../modules/_types_opencv__hacks_.md#uint32_t)): *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
-*Defined in [types/opencv/softfloat.ts:10](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L10)*
+*Defined in [types/opencv/softfloat.ts:10](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L10)*
 
 **Parameters:**
 
@@ -74,7 +74,7 @@ Name | Type |
 
 \+ **new softfloat**(`arg175`: [uint64_t](../modules/_types_opencv__hacks_.md#uint64_t)): *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
-*Defined in [types/opencv/softfloat.ts:12](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L12)*
+*Defined in [types/opencv/softfloat.ts:12](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L12)*
 
 **Parameters:**
 
@@ -86,7 +86,7 @@ Name | Type |
 
 \+ **new softfloat**(`arg176`: [int32_t](../modules/_types_opencv__hacks_.md#int32_t)): *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
-*Defined in [types/opencv/softfloat.ts:14](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L14)*
+*Defined in [types/opencv/softfloat.ts:14](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L14)*
 
 **Parameters:**
 
@@ -98,7 +98,7 @@ Name | Type |
 
 \+ **new softfloat**(`arg177`: [int64_t](../modules/_types_opencv__hacks_.md#int64_t)): *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
-*Defined in [types/opencv/softfloat.ts:16](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L16)*
+*Defined in [types/opencv/softfloat.ts:16](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L16)*
 
 **Parameters:**
 
@@ -110,7 +110,7 @@ Name | Type |
 
 \+ **new softfloat**(`a`: any): *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
-*Defined in [types/opencv/softfloat.ts:18](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L18)*
+*Defined in [types/opencv/softfloat.ts:18](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L18)*
 
 **Parameters:**
 
@@ -126,7 +126,7 @@ Name | Type |
 
 • **v**: *[uint32_t](../modules/_types_opencv__hacks_.md#uint32_t)*
 
-*Defined in [types/opencv/softfloat.ts:6](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L6)*
+*Defined in [types/opencv/softfloat.ts:6](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L6)*
 
 ## Methods
 
@@ -134,7 +134,7 @@ Name | Type |
 
 ▸ **getExp**(): *[int](../modules/_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/softfloat.ts:22](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L22)*
+*Defined in [types/opencv/softfloat.ts:22](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L22)*
 
 **Returns:** *[int](../modules/_types_opencv__hacks_.md#int)*
 
@@ -144,7 +144,7 @@ ___
 
 ▸ **getFrac**(): *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
-*Defined in [types/opencv/softfloat.ts:27](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L27)*
+*Defined in [types/opencv/softfloat.ts:27](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L27)*
 
   Returns a number 1 <= x < 2 with the same significand
 
@@ -156,7 +156,7 @@ ___
 
 ▸ **getSign**(): *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/softfloat.ts:29](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L29)*
+*Defined in [types/opencv/softfloat.ts:29](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L29)*
 
 **Returns:** *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
@@ -166,7 +166,7 @@ ___
 
 ▸ **isInf**(): *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/softfloat.ts:31](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L31)*
+*Defined in [types/opencv/softfloat.ts:31](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L31)*
 
 **Returns:** *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
@@ -176,7 +176,7 @@ ___
 
 ▸ **isNaN**(): *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/softfloat.ts:33](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L33)*
+*Defined in [types/opencv/softfloat.ts:33](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L33)*
 
 **Returns:** *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
@@ -186,7 +186,7 @@ ___
 
 ▸ **isSubnormal**(): *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/softfloat.ts:35](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L35)*
+*Defined in [types/opencv/softfloat.ts:35](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L35)*
 
 **Returns:** *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
@@ -196,7 +196,7 @@ ___
 
 ▸ **setExp**(`e`: [int](../modules/_types_opencv__hacks_.md#int)): *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
-*Defined in [types/opencv/softfloat.ts:37](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L37)*
+*Defined in [types/opencv/softfloat.ts:37](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L37)*
 
 **Parameters:**
 
@@ -212,7 +212,7 @@ ___
 
 ▸ **setFrac**(`s`: [softfloat](_types_opencv_softfloat_.softfloat.md)): *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
-*Defined in [types/opencv/softfloat.ts:42](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L42)*
+*Defined in [types/opencv/softfloat.ts:42](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L42)*
 
   Constructs a copy of a number with significand taken from parameter
 
@@ -230,7 +230,7 @@ ___
 
 ▸ **setSign**(`sign`: [bool](../modules/_types_opencv__hacks_.md#bool)): *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
-*Defined in [types/opencv/softfloat.ts:44](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L44)*
+*Defined in [types/opencv/softfloat.ts:44](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L44)*
 
 **Parameters:**
 
@@ -246,7 +246,7 @@ ___
 
 ▸ **eps**(): *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
-*Defined in [types/opencv/softfloat.ts:46](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L46)*
+*Defined in [types/opencv/softfloat.ts:46](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L46)*
 
 **Returns:** *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
@@ -256,7 +256,7 @@ ___
 
 ▸ **fromRaw**(`a`: [uint32_t](../modules/_types_opencv__hacks_.md#uint32_t)): *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
-*Defined in [types/opencv/softfloat.ts:51](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L51)*
+*Defined in [types/opencv/softfloat.ts:51](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L51)*
 
   Builds new value from raw binary representation
 
@@ -274,7 +274,7 @@ ___
 
 ▸ **inf**(): *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
-*Defined in [types/opencv/softfloat.ts:53](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L53)*
+*Defined in [types/opencv/softfloat.ts:53](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L53)*
 
 **Returns:** *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
@@ -284,7 +284,7 @@ ___
 
 ▸ **max**(): *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
-*Defined in [types/opencv/softfloat.ts:55](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L55)*
+*Defined in [types/opencv/softfloat.ts:55](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L55)*
 
 **Returns:** *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
@@ -294,7 +294,7 @@ ___
 
 ▸ **min**(): *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
-*Defined in [types/opencv/softfloat.ts:57](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L57)*
+*Defined in [types/opencv/softfloat.ts:57](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L57)*
 
 **Returns:** *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
@@ -304,7 +304,7 @@ ___
 
 ▸ **nan**(): *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
-*Defined in [types/opencv/softfloat.ts:59](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L59)*
+*Defined in [types/opencv/softfloat.ts:59](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L59)*
 
 **Returns:** *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
@@ -314,7 +314,7 @@ ___
 
 ▸ **one**(): *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
-*Defined in [types/opencv/softfloat.ts:61](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L61)*
+*Defined in [types/opencv/softfloat.ts:61](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L61)*
 
 **Returns:** *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
@@ -324,7 +324,7 @@ ___
 
 ▸ **pi**(): *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
-*Defined in [types/opencv/softfloat.ts:63](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L63)*
+*Defined in [types/opencv/softfloat.ts:63](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L63)*
 
 **Returns:** *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
@@ -334,6 +334,6 @@ ___
 
 ▸ **zero**(): *[softfloat](_types_opencv_softfloat_.softfloat.md)*
 
-*Defined in [types/opencv/softfloat.ts:65](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/softfloat.ts#L65)*
+*Defined in [types/opencv/softfloat.ts:65](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/softfloat.ts#L65)*
 
 **Returns:** *[softfloat](_types_opencv_softfloat_.softfloat.md)*

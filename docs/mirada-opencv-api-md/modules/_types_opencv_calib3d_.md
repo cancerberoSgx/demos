@@ -133,7 +133,7 @@
 
 Ƭ **HandEyeCalibrationMethod**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2381](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2381)*
+*Defined in [types/opencv/calib3d.ts:2381](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2381)*
 
 ___
 
@@ -141,7 +141,7 @@ ___
 
 Ƭ **SolvePnPMethod**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2383](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2383)*
+*Defined in [types/opencv/calib3d.ts:2383](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2383)*
 
 ___
 
@@ -149,7 +149,7 @@ ___
 
 Ƭ **UndistortTypes**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2385](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2385)*
+*Defined in [types/opencv/calib3d.ts:2385](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2385)*
 
 ## Variables
 
@@ -157,7 +157,7 @@ ___
 
 • **CALIB_CB_ACCURACY**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2271](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2271)*
+*Defined in [types/opencv/calib3d.ts:2271](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2271)*
 
 ___
 
@@ -165,7 +165,7 @@ ___
 
 • **CALIB_CB_ADAPTIVE_THRESH**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2261](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2261)*
+*Defined in [types/opencv/calib3d.ts:2261](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2261)*
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 • **CALIB_CB_ASYMMETRIC_GRID**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2275](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2275)*
+*Defined in [types/opencv/calib3d.ts:2275](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2275)*
 
 ___
 
@@ -181,7 +181,7 @@ ___
 
 • **CALIB_CB_CLUSTERING**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2277](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2277)*
+*Defined in [types/opencv/calib3d.ts:2277](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2277)*
 
 ___
 
@@ -189,7 +189,7 @@ ___
 
 • **CALIB_CB_EXHAUSTIVE**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2269](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2269)*
+*Defined in [types/opencv/calib3d.ts:2269](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2269)*
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 • **CALIB_CB_FAST_CHECK**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2267](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2267)*
+*Defined in [types/opencv/calib3d.ts:2267](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2267)*
 
 ___
 
@@ -205,7 +205,7 @@ ___
 
 • **CALIB_CB_FILTER_QUADS**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2265](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2265)*
+*Defined in [types/opencv/calib3d.ts:2265](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2265)*
 
 ___
 
@@ -213,7 +213,7 @@ ___
 
 • **CALIB_CB_NORMALIZE_IMAGE**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2263](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2263)*
+*Defined in [types/opencv/calib3d.ts:2263](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2263)*
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 • **CALIB_CB_SYMMETRIC_GRID**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2273](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2273)*
+*Defined in [types/opencv/calib3d.ts:2273](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2273)*
 
 ___
 
@@ -229,7 +229,7 @@ ___
 
 • **CALIB_FIX_ASPECT_RATIO**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2283](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2283)*
+*Defined in [types/opencv/calib3d.ts:2283](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2283)*
 
 ___
 
@@ -237,7 +237,7 @@ ___
 
 • **CALIB_FIX_FOCAL_LENGTH**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2289](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2289)*
+*Defined in [types/opencv/calib3d.ts:2289](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2289)*
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 • **CALIB_FIX_INTRINSIC**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2317](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2317)*
+*Defined in [types/opencv/calib3d.ts:2317](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2317)*
 
 ___
 
@@ -253,7 +253,7 @@ ___
 
 • **CALIB_FIX_K1**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2291](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2291)*
+*Defined in [types/opencv/calib3d.ts:2291](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2291)*
 
 ___
 
@@ -261,7 +261,7 @@ ___
 
 • **CALIB_FIX_K2**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2293](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2293)*
+*Defined in [types/opencv/calib3d.ts:2293](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2293)*
 
 ___
 
@@ -269,7 +269,7 @@ ___
 
 • **CALIB_FIX_K3**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2295](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2295)*
+*Defined in [types/opencv/calib3d.ts:2295](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2295)*
 
 ___
 
@@ -277,7 +277,7 @@ ___
 
 • **CALIB_FIX_K4**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2297](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2297)*
+*Defined in [types/opencv/calib3d.ts:2297](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2297)*
 
 ___
 
@@ -285,7 +285,7 @@ ___
 
 • **CALIB_FIX_K5**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2299](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2299)*
+*Defined in [types/opencv/calib3d.ts:2299](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2299)*
 
 ___
 
@@ -293,7 +293,7 @@ ___
 
 • **CALIB_FIX_K6**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2301](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2301)*
+*Defined in [types/opencv/calib3d.ts:2301](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2301)*
 
 ___
 
@@ -301,7 +301,7 @@ ___
 
 • **CALIB_FIX_PRINCIPAL_POINT**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2285](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2285)*
+*Defined in [types/opencv/calib3d.ts:2285](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2285)*
 
 ___
 
@@ -309,7 +309,7 @@ ___
 
 • **CALIB_FIX_S1_S2_S3_S4**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2307](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2307)*
+*Defined in [types/opencv/calib3d.ts:2307](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2307)*
 
 ___
 
@@ -317,7 +317,7 @@ ___
 
 • **CALIB_FIX_TANGENT_DIST**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2315](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2315)*
+*Defined in [types/opencv/calib3d.ts:2315](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2315)*
 
 ___
 
@@ -325,7 +325,7 @@ ___
 
 • **CALIB_FIX_TAUX_TAUY**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2311](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2311)*
+*Defined in [types/opencv/calib3d.ts:2311](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2311)*
 
 ___
 
@@ -333,7 +333,7 @@ ___
 
 • **CALIB_HAND_EYE_ANDREFF**: *[HandEyeCalibrationMethod](_types_opencv_calib3d_.md#handeyecalibrationmethod)*
 
-*Defined in [types/opencv/calib3d.ts:2341](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2341)*
+*Defined in [types/opencv/calib3d.ts:2341](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2341)*
 
 ___
 
@@ -341,7 +341,7 @@ ___
 
 • **CALIB_HAND_EYE_DANIILIDIS**: *[HandEyeCalibrationMethod](_types_opencv_calib3d_.md#handeyecalibrationmethod)*
 
-*Defined in [types/opencv/calib3d.ts:2343](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2343)*
+*Defined in [types/opencv/calib3d.ts:2343](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2343)*
 
 ___
 
@@ -349,7 +349,7 @@ ___
 
 • **CALIB_HAND_EYE_HORAUD**: *[HandEyeCalibrationMethod](_types_opencv_calib3d_.md#handeyecalibrationmethod)*
 
-*Defined in [types/opencv/calib3d.ts:2339](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2339)*
+*Defined in [types/opencv/calib3d.ts:2339](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2339)*
 
 ___
 
@@ -357,7 +357,7 @@ ___
 
 • **CALIB_HAND_EYE_PARK**: *[HandEyeCalibrationMethod](_types_opencv_calib3d_.md#handeyecalibrationmethod)*
 
-*Defined in [types/opencv/calib3d.ts:2337](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2337)*
+*Defined in [types/opencv/calib3d.ts:2337](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2337)*
 
 ___
 
@@ -365,7 +365,7 @@ ___
 
 • **CALIB_HAND_EYE_TSAI**: *[HandEyeCalibrationMethod](_types_opencv_calib3d_.md#handeyecalibrationmethod)*
 
-*Defined in [types/opencv/calib3d.ts:2335](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2335)*
+*Defined in [types/opencv/calib3d.ts:2335](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2335)*
 
 ___
 
@@ -373,7 +373,7 @@ ___
 
 • **CALIB_NINTRINSIC**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2279](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2279)*
+*Defined in [types/opencv/calib3d.ts:2279](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2279)*
 
 ___
 
@@ -381,7 +381,7 @@ ___
 
 • **CALIB_RATIONAL_MODEL**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2303](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2303)*
+*Defined in [types/opencv/calib3d.ts:2303](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2303)*
 
 ___
 
@@ -389,7 +389,7 @@ ___
 
 • **CALIB_SAME_FOCAL_LENGTH**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2319](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2319)*
+*Defined in [types/opencv/calib3d.ts:2319](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2319)*
 
 ___
 
@@ -397,7 +397,7 @@ ___
 
 • **CALIB_THIN_PRISM_MODEL**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2305](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2305)*
+*Defined in [types/opencv/calib3d.ts:2305](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2305)*
 
 ___
 
@@ -405,7 +405,7 @@ ___
 
 • **CALIB_TILTED_MODEL**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2309](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2309)*
+*Defined in [types/opencv/calib3d.ts:2309](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2309)*
 
 ___
 
@@ -413,7 +413,7 @@ ___
 
 • **CALIB_USE_EXTRINSIC_GUESS**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2325](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2325)*
+*Defined in [types/opencv/calib3d.ts:2325](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2325)*
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 • **CALIB_USE_INTRINSIC_GUESS**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2281](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2281)*
+*Defined in [types/opencv/calib3d.ts:2281](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2281)*
 
 ___
 
@@ -429,7 +429,7 @@ ___
 
 • **CALIB_USE_LU**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2323](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2323)*
+*Defined in [types/opencv/calib3d.ts:2323](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2323)*
 
 ___
 
@@ -437,7 +437,7 @@ ___
 
 • **CALIB_USE_QR**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2313](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2313)*
+*Defined in [types/opencv/calib3d.ts:2313](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2313)*
 
 ___
 
@@ -445,7 +445,7 @@ ___
 
 • **CALIB_ZERO_DISPARITY**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2321](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2321)*
+*Defined in [types/opencv/calib3d.ts:2321](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2321)*
 
 ___
 
@@ -453,7 +453,7 @@ ___
 
 • **CALIB_ZERO_TANGENT_DIST**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2287](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2287)*
+*Defined in [types/opencv/calib3d.ts:2287](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2287)*
 
 ___
 
@@ -461,7 +461,7 @@ ___
 
 • **FM_7POINT**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2327](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2327)*
+*Defined in [types/opencv/calib3d.ts:2327](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2327)*
 
 ___
 
@@ -469,7 +469,7 @@ ___
 
 • **FM_8POINT**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2329](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2329)*
+*Defined in [types/opencv/calib3d.ts:2329](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2329)*
 
 ___
 
@@ -477,7 +477,7 @@ ___
 
 • **FM_LMEDS**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2331](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2331)*
+*Defined in [types/opencv/calib3d.ts:2331](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2331)*
 
 ___
 
@@ -485,7 +485,7 @@ ___
 
 • **FM_RANSAC**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2333](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2333)*
+*Defined in [types/opencv/calib3d.ts:2333](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2333)*
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 • **LMEDS**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2255](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2255)*
+*Defined in [types/opencv/calib3d.ts:2255](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2255)*
 
 ___
 
@@ -501,7 +501,7 @@ ___
 
 • **PROJ_SPHERICAL_EQRECT**: *[UndistortTypes](_types_opencv_calib3d_.md#undistorttypes)*
 
-*Defined in [types/opencv/calib3d.ts:2379](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2379)*
+*Defined in [types/opencv/calib3d.ts:2379](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2379)*
 
 ___
 
@@ -509,7 +509,7 @@ ___
 
 • **PROJ_SPHERICAL_ORTHO**: *[UndistortTypes](_types_opencv_calib3d_.md#undistorttypes)*
 
-*Defined in [types/opencv/calib3d.ts:2377](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2377)*
+*Defined in [types/opencv/calib3d.ts:2377](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2377)*
 
 ___
 
@@ -517,7 +517,7 @@ ___
 
 • **RANSAC**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2257](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2257)*
+*Defined in [types/opencv/calib3d.ts:2257](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2257)*
 
 ___
 
@@ -525,7 +525,7 @@ ___
 
 • **RHO**: *any*
 
-*Defined in [types/opencv/calib3d.ts:2259](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2259)*
+*Defined in [types/opencv/calib3d.ts:2259](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2259)*
 
 ___
 
@@ -533,7 +533,7 @@ ___
 
 • **SOLVEPNP_AP3P**: *[SolvePnPMethod](_types_opencv_calib3d_.md#solvepnpmethod)*
 
-*Defined in [types/opencv/calib3d.ts:2355](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2355)*
+*Defined in [types/opencv/calib3d.ts:2355](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2355)*
 
 ___
 
@@ -541,7 +541,7 @@ ___
 
 • **SOLVEPNP_DLS**: *[SolvePnPMethod](_types_opencv_calib3d_.md#solvepnpmethod)*
 
-*Defined in [types/opencv/calib3d.ts:2351](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2351)*
+*Defined in [types/opencv/calib3d.ts:2351](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2351)*
 
 ___
 
@@ -549,7 +549,7 @@ ___
 
 • **SOLVEPNP_EPNP**: *[SolvePnPMethod](_types_opencv_calib3d_.md#solvepnpmethod)*
 
-*Defined in [types/opencv/calib3d.ts:2347](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2347)*
+*Defined in [types/opencv/calib3d.ts:2347](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2347)*
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 • **SOLVEPNP_IPPE**: *[SolvePnPMethod](_types_opencv_calib3d_.md#solvepnpmethod)*
 
-*Defined in [types/opencv/calib3d.ts:2362](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2362)*
+*Defined in [types/opencv/calib3d.ts:2362](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2362)*
 
 Infinitesimal Plane-Based Pose Estimation Collins14
  Object points must be coplanar.
@@ -568,7 +568,7 @@ ___
 
 • **SOLVEPNP_IPPE_SQUARE**: *[SolvePnPMethod](_types_opencv_calib3d_.md#solvepnpmethod)*
 
-*Defined in [types/opencv/calib3d.ts:2375](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2375)*
+*Defined in [types/opencv/calib3d.ts:2375](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2375)*
 
 Infinitesimal Plane-Based Pose Estimation Collins14
  This is a special case suitable for marker pose estimation.
@@ -585,7 +585,7 @@ ___
 
 • **SOLVEPNP_ITERATIVE**: *[SolvePnPMethod](_types_opencv_calib3d_.md#solvepnpmethod)*
 
-*Defined in [types/opencv/calib3d.ts:2345](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2345)*
+*Defined in [types/opencv/calib3d.ts:2345](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2345)*
 
 ___
 
@@ -593,7 +593,7 @@ ___
 
 • **SOLVEPNP_P3P**: *[SolvePnPMethod](_types_opencv_calib3d_.md#solvepnpmethod)*
 
-*Defined in [types/opencv/calib3d.ts:2349](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2349)*
+*Defined in [types/opencv/calib3d.ts:2349](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2349)*
 
 ___
 
@@ -601,7 +601,7 @@ ___
 
 • **SOLVEPNP_UPNP**: *[SolvePnPMethod](_types_opencv_calib3d_.md#solvepnpmethod)*
 
-*Defined in [types/opencv/calib3d.ts:2353](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2353)*
+*Defined in [types/opencv/calib3d.ts:2353](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2353)*
 
 ## Functions
 
@@ -609,7 +609,7 @@ ___
 
 ▸ **RQDecomp3x3**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `mtxR`: OutputArray, `mtxQ`: OutputArray, `Qx?`: OutputArray, `Qy?`: OutputArray, `Qz?`: OutputArray): *[Vec3d](../classes/_types_opencv__hacks_.vec3d.md)*
 
-*Defined in [types/opencv/calib3d.ts:1501](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1501)*
+*Defined in [types/opencv/calib3d.ts:1501](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1501)*
 
 The function computes a RQ decomposition using the given rotations. This function is used in
 decomposeProjectionMatrix to decompose the left 3x3 submatrix of a projection matrix into a camera
@@ -640,7 +640,7 @@ ___
 
 ▸ **Rodrigues**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `jacobian?`: OutputArray): *void*
 
-*Defined in [types/opencv/calib3d.ts:1476](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1476)*
+*Defined in [types/opencv/calib3d.ts:1476](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1476)*
 
 `\\[\\begin{array}{l} \\theta \\leftarrow norm(r) \\\\ r \\leftarrow r/ \\theta \\\\ R =
 \\cos{\\theta} I + (1- \\cos{\\theta} ) r r^T + \\sin{\\theta}
@@ -671,7 +671,7 @@ ___
 
 ▸ **calibrateCamera**(`objectPoints`: InputArrayOfArrays, `imagePoints`: InputArrayOfArrays, `imageSize`: [Size](../classes/_types_opencv__hacks_.size.md), `cameraMatrix`: InputOutputArray, `distCoeffs`: InputOutputArray, `rvecs`: OutputArrayOfArrays, `tvecs`: OutputArrayOfArrays, `stdDeviationsIntrinsics`: OutputArray, `stdDeviationsExtrinsics`: OutputArray, `perViewErrors`: OutputArray, `flags?`: [int](_types_opencv__hacks_.md#int), `criteria?`: [TermCriteria](../classes/_types_opencv__hacks_.termcriteria.md)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/calib3d.ts:193](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L193)*
+*Defined in [types/opencv/calib3d.ts:193](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L193)*
 
 the overall RMS re-projection error.
 The function estimates the intrinsic camera parameters and extrinsic parameters for each of the
@@ -726,7 +726,7 @@ Name | Type | Description |
 
 ▸ **calibrateCamera**(`objectPoints`: InputArrayOfArrays, `imagePoints`: InputArrayOfArrays, `imageSize`: [Size](../classes/_types_opencv__hacks_.size.md), `cameraMatrix`: InputOutputArray, `distCoeffs`: InputOutputArray, `rvecs`: OutputArrayOfArrays, `tvecs`: OutputArrayOfArrays, `flags?`: [int](_types_opencv__hacks_.md#int), `criteria?`: [TermCriteria](../classes/_types_opencv__hacks_.termcriteria.md)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/calib3d.ts:199](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L199)*
+*Defined in [types/opencv/calib3d.ts:199](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L199)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -753,7 +753,7 @@ ___
 
 ▸ **calibrateCameraRO**(`objectPoints`: InputArrayOfArrays, `imagePoints`: InputArrayOfArrays, `imageSize`: [Size](../classes/_types_opencv__hacks_.size.md), `iFixedPoint`: [int](_types_opencv__hacks_.md#int), `cameraMatrix`: InputOutputArray, `distCoeffs`: InputOutputArray, `rvecs`: OutputArrayOfArrays, `tvecs`: OutputArrayOfArrays, `newObjPoints`: OutputArray, `stdDeviationsIntrinsics`: OutputArray, `stdDeviationsExtrinsics`: OutputArray, `stdDeviationsObjPoints`: OutputArray, `perViewErrors`: OutputArray, `flags?`: [int](_types_opencv__hacks_.md#int), `criteria?`: [TermCriteria](../classes/_types_opencv__hacks_.termcriteria.md)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/calib3d.ts:271](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L271)*
+*Defined in [types/opencv/calib3d.ts:271](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L271)*
 
 This function is an extension of [calibrateCamera()] with the method of releasing object which was
 proposed in strobl2011iccv. In many common cases with inaccurate, unmeasured, roughly planar targets
@@ -794,7 +794,7 @@ Name | Type | Description |
 
 ▸ **calibrateCameraRO**(`objectPoints`: InputArrayOfArrays, `imagePoints`: InputArrayOfArrays, `imageSize`: [Size](../classes/_types_opencv__hacks_.size.md), `iFixedPoint`: [int](_types_opencv__hacks_.md#int), `cameraMatrix`: InputOutputArray, `distCoeffs`: InputOutputArray, `rvecs`: OutputArrayOfArrays, `tvecs`: OutputArrayOfArrays, `newObjPoints`: OutputArray, `flags?`: [int](_types_opencv__hacks_.md#int), `criteria?`: [TermCriteria](../classes/_types_opencv__hacks_.termcriteria.md)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/calib3d.ts:277](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L277)*
+*Defined in [types/opencv/calib3d.ts:277](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L277)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -823,7 +823,7 @@ ___
 
 ▸ **calibrateHandEye**(`R_gripper2base`: InputArrayOfArrays, `t_gripper2base`: InputArrayOfArrays, `R_target2cam`: InputArrayOfArrays, `t_target2cam`: InputArrayOfArrays, `R_cam2gripper`: OutputArray, `t_cam2gripper`: OutputArray, `method?`: [HandEyeCalibrationMethod](_types_opencv_calib3d_.md#handeyecalibrationmethod)): *void*
 
-*Defined in [types/opencv/calib3d.ts:361](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L361)*
+*Defined in [types/opencv/calib3d.ts:361](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L361)*
 
 The function performs the Hand-Eye calibration using various methods. One approach consists in
 estimating the rotation then the translation (separable solutions) and the following methods are
@@ -898,7 +898,7 @@ ___
 
 ▸ **calibrationMatrixValues**(`cameraMatrix`: [InputArray](_types_opencv__hacks_.md#inputarray), `imageSize`: [Size](../classes/_types_opencv__hacks_.size.md), `apertureWidth`: [double](_types_opencv__hacks_.md#double), `apertureHeight`: [double](_types_opencv__hacks_.md#double), `fovx`: any, `fovy`: any, `focalLength`: any, `principalPoint`: any, `aspectRatio`: any): *void*
 
-*Defined in [types/opencv/calib3d.ts:389](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L389)*
+*Defined in [types/opencv/calib3d.ts:389](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L389)*
 
 The function computes various useful camera characteristics from the previously estimated camera
 matrix.
@@ -928,7 +928,7 @@ ___
 
 ▸ **checkChessboard**(`img`: [InputArray](_types_opencv__hacks_.md#inputarray), `size`: [Size](../classes/_types_opencv__hacks_.size.md)): *[bool](_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/calib3d.ts:391](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L391)*
+*Defined in [types/opencv/calib3d.ts:391](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L391)*
 
 **Parameters:**
 
@@ -945,7 +945,7 @@ ___
 
 ▸ **composeRT**(`rvec1`: [InputArray](_types_opencv__hacks_.md#inputarray), `tvec1`: [InputArray](_types_opencv__hacks_.md#inputarray), `rvec2`: [InputArray](_types_opencv__hacks_.md#inputarray), `tvec2`: [InputArray](_types_opencv__hacks_.md#inputarray), `rvec3`: OutputArray, `tvec3`: OutputArray, `dr3dr1?`: OutputArray, `dr3dt1?`: OutputArray, `dr3dr2?`: OutputArray, `dr3dt2?`: OutputArray, `dt3dr1?`: OutputArray, `dt3dt1?`: OutputArray, `dt3dr2?`: OutputArray, `dt3dt2?`: OutputArray): *void*
 
-*Defined in [types/opencv/calib3d.ts:436](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L436)*
+*Defined in [types/opencv/calib3d.ts:436](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L436)*
 
 The functions compute:
 
@@ -988,7 +988,7 @@ ___
 
 ▸ **computeCorrespondEpilines**(`points`: [InputArray](_types_opencv__hacks_.md#inputarray), `whichImage`: [int](_types_opencv__hacks_.md#int), `F`: [InputArray](_types_opencv__hacks_.md#inputarray), `lines`: OutputArray): *void*
 
-*Defined in [types/opencv/calib3d.ts:463](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L463)*
+*Defined in [types/opencv/calib3d.ts:463](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L463)*
 
 For every point in one of the two images of a stereo pair, the function finds the equation of the
 corresponding epipolar line in the other image.
@@ -1021,7 +1021,7 @@ ___
 
 ▸ **convertPointsFromHomogeneous**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/calib3d.ts:474](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L474)*
+*Defined in [types/opencv/calib3d.ts:474](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L474)*
 
 The function converts points homogeneous to Euclidean space using perspective projection. That is,
 each point (x1, x2, ... x(n-1), xn) is converted to (x1/xn, x2/xn, ..., x(n-1)/xn). When xn=0, the
@@ -1042,7 +1042,7 @@ ___
 
 ▸ **convertPointsHomogeneous**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/calib3d.ts:486](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L486)*
+*Defined in [types/opencv/calib3d.ts:486](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L486)*
 
 The function converts 2D or 3D points from/to homogeneous coordinates by calling either
 convertPointsToHomogeneous or convertPointsFromHomogeneous.
@@ -1064,7 +1064,7 @@ ___
 
 ▸ **convertPointsToHomogeneous**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/calib3d.ts:496](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L496)*
+*Defined in [types/opencv/calib3d.ts:496](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L496)*
 
 The function converts points from Euclidean to homogeneous space by appending 1's to the tuple of
 point coordinates. That is, each point (x1, x2, ..., xn) is converted to (x1, x2, ..., xn, 1).
@@ -1084,7 +1084,7 @@ ___
 
 ▸ **correctMatches**(`F`: [InputArray](_types_opencv__hacks_.md#inputarray), `points1`: [InputArray](_types_opencv__hacks_.md#inputarray), `points2`: [InputArray](_types_opencv__hacks_.md#inputarray), `newPoints1`: OutputArray, `newPoints2`: OutputArray): *void*
 
-*Defined in [types/opencv/calib3d.ts:516](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L516)*
+*Defined in [types/opencv/calib3d.ts:516](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L516)*
 
 The function implements the Optimal Triangulation Method (see Multiple View Geometry for details).
 For each given point correspondence points1[i] <-> points2[i], and a fundamental matrix F, it
@@ -1111,7 +1111,7 @@ ___
 
 ▸ **decomposeEssentialMat**(`E`: [InputArray](_types_opencv__hacks_.md#inputarray), `R1`: OutputArray, `R2`: OutputArray, `t`: OutputArray): *void*
 
-*Defined in [types/opencv/calib3d.ts:532](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L532)*
+*Defined in [types/opencv/calib3d.ts:532](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L532)*
 
 This function decompose an essential matrix E using svd decomposition HartleyZ00 . Generally 4
 possible poses exists for a given E. They are `$[R_1, t]$`, `$[R_1, -t]$`, `$[R_2, t]$`, `$[R_2,
@@ -1135,7 +1135,7 @@ ___
 
 ▸ **decomposeHomographyMat**(`H`: [InputArray](_types_opencv__hacks_.md#inputarray), `K`: [InputArray](_types_opencv__hacks_.md#inputarray), `rotations`: OutputArrayOfArrays, `translations`: OutputArrayOfArrays, `normals`: OutputArrayOfArrays): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/calib3d.ts:551](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L551)*
+*Defined in [types/opencv/calib3d.ts:551](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L551)*
 
 This function extracts relative camera motion between two views observing a planar object from the
 homography H induced by the plane. The intrinsic camera matrix K must also be provided. The function
@@ -1161,7 +1161,7 @@ ___
 
 ▸ **decomposeProjectionMatrix**(`projMatrix`: [InputArray](_types_opencv__hacks_.md#inputarray), `cameraMatrix`: OutputArray, `rotMatrix`: OutputArray, `transVect`: OutputArray, `rotMatrixX?`: OutputArray, `rotMatrixY?`: OutputArray, `rotMatrixZ?`: OutputArray, `eulerAngles?`: OutputArray): *void*
 
-*Defined in [types/opencv/calib3d.ts:581](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L581)*
+*Defined in [types/opencv/calib3d.ts:581](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L581)*
 
 The function computes a decomposition of a projection matrix into a calibration and a rotation
 matrix and the position of a camera.
@@ -1194,7 +1194,7 @@ ___
 
 ▸ **drawChessboardCorners**(`image`: InputOutputArray, `patternSize`: [Size](../classes/_types_opencv__hacks_.size.md), `corners`: [InputArray](_types_opencv__hacks_.md#inputarray), `patternWasFound`: [bool](_types_opencv__hacks_.md#bool)): *void*
 
-*Defined in [types/opencv/calib3d.ts:597](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L597)*
+*Defined in [types/opencv/calib3d.ts:597](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L597)*
 
 The function draws individual chessboard corners detected either as red circles if the board was not
 found, or as colored corners connected with lines if the board was found.
@@ -1216,7 +1216,7 @@ ___
 
 ▸ **drawFrameAxes**(`image`: InputOutputArray, `cameraMatrix`: [InputArray](_types_opencv__hacks_.md#inputarray), `distCoeffs`: [InputArray](_types_opencv__hacks_.md#inputarray), `rvec`: [InputArray](_types_opencv__hacks_.md#inputarray), `tvec`: [InputArray](_types_opencv__hacks_.md#inputarray), `length`: [float](_types_opencv__hacks_.md#float), `thickness?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/calib3d.ts:624](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L624)*
+*Defined in [types/opencv/calib3d.ts:624](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L624)*
 
 [solvePnP]
 
@@ -1243,7 +1243,7 @@ ___
 
 ▸ **estimateAffine2D**(`from`: [InputArray](_types_opencv__hacks_.md#inputarray), `to`: [InputArray](_types_opencv__hacks_.md#inputarray), `inliers?`: OutputArray, `method?`: [int](_types_opencv__hacks_.md#int), `ransacReprojThreshold?`: [double](_types_opencv__hacks_.md#double), `maxIters?`: [size_t](_types_opencv__hacks_.md#size_t), `confidence?`: [double](_types_opencv__hacks_.md#double), `refineIters?`: [size_t](_types_opencv__hacks_.md#size_t)): *any*
 
-*Defined in [types/opencv/calib3d.ts:668](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L668)*
+*Defined in [types/opencv/calib3d.ts:668](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L668)*
 
 It computes `\\[ \\begin{bmatrix} x\\\\ y\\\\ \\end{bmatrix} = \\begin{bmatrix} a_{11} & a_{12}\\\\
 a_{21} & a_{22}\\\\ \\end{bmatrix} \\begin{bmatrix} X\\\\ Y\\\\ \\end{bmatrix} + \\begin{bmatrix}
@@ -1285,7 +1285,7 @@ ___
 
 ▸ **estimateAffine3D**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: [InputArray](_types_opencv__hacks_.md#inputarray), `out`: OutputArray, `inliers`: OutputArray, `ransacThreshold?`: [double](_types_opencv__hacks_.md#double), `confidence?`: [double](_types_opencv__hacks_.md#double)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/calib3d.ts:696](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L696)*
+*Defined in [types/opencv/calib3d.ts:696](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L696)*
 
 It computes `\\[ \\begin{bmatrix} x\\\\ y\\\\ z\\\\ \\end{bmatrix} = \\begin{bmatrix} a_{11} &
 a_{12} & a_{13}\\\\ a_{21} & a_{22} & a_{23}\\\\ a_{31} & a_{32} & a_{33}\\\\ \\end{bmatrix}
@@ -1314,7 +1314,7 @@ ___
 
 ▸ **estimateAffinePartial2D**(`from`: [InputArray](_types_opencv__hacks_.md#inputarray), `to`: [InputArray](_types_opencv__hacks_.md#inputarray), `inliers?`: OutputArray, `method?`: [int](_types_opencv__hacks_.md#int), `ransacReprojThreshold?`: [double](_types_opencv__hacks_.md#double), `maxIters?`: [size_t](_types_opencv__hacks_.md#size_t), `confidence?`: [double](_types_opencv__hacks_.md#double), `refineIters?`: [size_t](_types_opencv__hacks_.md#size_t)): *any*
 
-*Defined in [types/opencv/calib3d.ts:741](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L741)*
+*Defined in [types/opencv/calib3d.ts:741](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L741)*
 
 Output 2D affine transformation (4 degrees of freedom) matrix `$2 \\times 3$` or empty matrix if
 transformation could not be estimated.
@@ -1357,7 +1357,7 @@ ___
 
 ▸ **filterHomographyDecompByVisibleRefpoints**(`rotations`: InputArrayOfArrays, `normals`: InputArrayOfArrays, `beforePoints`: [InputArray](_types_opencv__hacks_.md#inputarray), `afterPoints`: [InputArray](_types_opencv__hacks_.md#inputarray), `possibleSolutions`: OutputArray, `pointsMask?`: [InputArray](_types_opencv__hacks_.md#inputarray)): *void*
 
-*Defined in [types/opencv/calib3d.ts:766](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L766)*
+*Defined in [types/opencv/calib3d.ts:766](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L766)*
 
 This function is intended to filter the output of the decomposeHomographyMat based on additional
 information as described in Malis . The summary of the method: the decomposeHomographyMat function
@@ -1387,7 +1387,7 @@ ___
 
 ▸ **filterSpeckles**(`img`: InputOutputArray, `newVal`: [double](_types_opencv__hacks_.md#double), `maxSpeckleSize`: [int](_types_opencv__hacks_.md#int), `maxDiff`: [double](_types_opencv__hacks_.md#double), `buf?`: InputOutputArray): *void*
 
-*Defined in [types/opencv/calib3d.ts:783](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L783)*
+*Defined in [types/opencv/calib3d.ts:783](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L783)*
 
 **Parameters:**
 
@@ -1407,7 +1407,7 @@ ___
 
 ▸ **find4QuadCornerSubpix**(`img`: [InputArray](_types_opencv__hacks_.md#inputarray), `corners`: InputOutputArray, `region_size`: [Size](../classes/_types_opencv__hacks_.size.md)): *[bool](_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/calib3d.ts:785](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L785)*
+*Defined in [types/opencv/calib3d.ts:785](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L785)*
 
 **Parameters:**
 
@@ -1425,7 +1425,7 @@ ___
 
 ▸ **findChessboardCorners**(`image`: [InputArray](_types_opencv__hacks_.md#inputarray), `patternSize`: [Size](../classes/_types_opencv__hacks_.size.md), `corners`: OutputArray, `flags?`: [int](_types_opencv__hacks_.md#int)): *[bool](_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/calib3d.ts:839](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L839)*
+*Defined in [types/opencv/calib3d.ts:839](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L839)*
 
 The function attempts to determine whether the input image is a view of the chessboard pattern and
 locate the internal chessboard corners. The function returns a non-zero value if all of the corners
@@ -1478,7 +1478,7 @@ ___
 
 ▸ **findChessboardCornersSB**(`image`: [InputArray](_types_opencv__hacks_.md#inputarray), `patternSize`: [Size](../classes/_types_opencv__hacks_.size.md), `corners`: OutputArray, `flags?`: [int](_types_opencv__hacks_.md#int)): *[bool](_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/calib3d.ts:868](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L868)*
+*Defined in [types/opencv/calib3d.ts:868](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L868)*
 
 The function is analog to findchessboardCorners but uses a localized radon transformation
 approximated by box filters being more robust to all sort of noise, faster on larger images and is
@@ -1510,7 +1510,7 @@ ___
 
 ▸ **findCirclesGrid**(`image`: [InputArray](_types_opencv__hacks_.md#inputarray), `patternSize`: [Size](../classes/_types_opencv__hacks_.size.md), `centers`: OutputArray, `flags`: [int](_types_opencv__hacks_.md#int), `blobDetector`: any, `parameters`: any): *[bool](_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/calib3d.ts:907](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L907)*
+*Defined in [types/opencv/calib3d.ts:907](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L907)*
 
 The function attempts to determine whether the input image contains a grid of circles. If it is, the
 function locates centers of the circles. The function returns a non-zero value if all of the centers
@@ -1547,7 +1547,7 @@ Name | Type | Description |
 
 ▸ **findCirclesGrid**(`image`: [InputArray](_types_opencv__hacks_.md#inputarray), `patternSize`: [Size](../classes/_types_opencv__hacks_.size.md), `centers`: OutputArray, `flags?`: [int](_types_opencv__hacks_.md#int), `blobDetector?`: any): *[bool](_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/calib3d.ts:913](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L913)*
+*Defined in [types/opencv/calib3d.ts:913](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L913)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -1570,7 +1570,7 @@ ___
 
 ▸ **findEssentialMat**(`points1`: [InputArray](_types_opencv__hacks_.md#inputarray), `points2`: [InputArray](_types_opencv__hacks_.md#inputarray), `cameraMatrix`: [InputArray](_types_opencv__hacks_.md#inputarray), `method?`: [int](_types_opencv__hacks_.md#int), `prob?`: [double](_types_opencv__hacks_.md#double), `threshold?`: [double](_types_opencv__hacks_.md#double), `mask?`: OutputArray): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/calib3d.ts:948](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L948)*
+*Defined in [types/opencv/calib3d.ts:948](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L948)*
 
 This function estimates essential matrix based on the five-point algorithm solver in Nister03 .
 SteweniusCFS is also a related. The epipolar geometry is described by the following equation:
@@ -1597,7 +1597,7 @@ Name | Type | Description |
 
 ▸ **findEssentialMat**(`points1`: [InputArray](_types_opencv__hacks_.md#inputarray), `points2`: [InputArray](_types_opencv__hacks_.md#inputarray), `focal?`: [double](_types_opencv__hacks_.md#double), `pp?`: Point2d, `method?`: [int](_types_opencv__hacks_.md#int), `prob?`: [double](_types_opencv__hacks_.md#double), `threshold?`: [double](_types_opencv__hacks_.md#double), `mask?`: OutputArray): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/calib3d.ts:982](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L982)*
+*Defined in [types/opencv/calib3d.ts:982](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L982)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -1627,7 +1627,7 @@ ___
 
 ▸ **findFundamentalMat**(`points1`: [InputArray](_types_opencv__hacks_.md#inputarray), `points2`: [InputArray](_types_opencv__hacks_.md#inputarray), `method?`: [int](_types_opencv__hacks_.md#int), `ransacReprojThreshold?`: [double](_types_opencv__hacks_.md#double), `confidence?`: [double](_types_opencv__hacks_.md#double), `mask?`: OutputArray): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/calib3d.ts:1035](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1035)*
+*Defined in [types/opencv/calib3d.ts:1035](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1035)*
 
 `\\[[p_2; 1]^T F [p_1; 1] = 0\\]`
 
@@ -1675,7 +1675,7 @@ Name | Type | Description |
 
 ▸ **findFundamentalMat**(`points1`: [InputArray](_types_opencv__hacks_.md#inputarray), `points2`: [InputArray](_types_opencv__hacks_.md#inputarray), `mask`: OutputArray, `method?`: [int](_types_opencv__hacks_.md#int), `ransacReprojThreshold?`: [double](_types_opencv__hacks_.md#double), `confidence?`: [double](_types_opencv__hacks_.md#double)): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/calib3d.ts:1041](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1041)*
+*Defined in [types/opencv/calib3d.ts:1041](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1041)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -1699,7 +1699,7 @@ ___
 
 ▸ **findHomography**(`srcPoints`: [InputArray](_types_opencv__hacks_.md#inputarray), `dstPoints`: [InputArray](_types_opencv__hacks_.md#inputarray), `method?`: [int](_types_opencv__hacks_.md#int), `ransacReprojThreshold?`: [double](_types_opencv__hacks_.md#double), `mask?`: OutputArray, `maxIters?`: any, `confidence?`: any): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/calib3d.ts:1107](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1107)*
+*Defined in [types/opencv/calib3d.ts:1107](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1107)*
 
 The function finds and returns the perspective transformation `$H$` between the source and the
 destination planes:
@@ -1756,7 +1756,7 @@ Name | Type | Description |
 
 ▸ **findHomography**(`srcPoints`: [InputArray](_types_opencv__hacks_.md#inputarray), `dstPoints`: [InputArray](_types_opencv__hacks_.md#inputarray), `mask`: OutputArray, `method?`: [int](_types_opencv__hacks_.md#int), `ransacReprojThreshold?`: [double](_types_opencv__hacks_.md#double)): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/calib3d.ts:1113](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1113)*
+*Defined in [types/opencv/calib3d.ts:1113](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1113)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -1779,7 +1779,7 @@ ___
 
 ▸ **getDefaultNewCameraMatrix**(`cameraMatrix`: [InputArray](_types_opencv__hacks_.md#inputarray), `imgsize?`: [Size](../classes/_types_opencv__hacks_.size.md), `centerPrincipalPoint?`: [bool](_types_opencv__hacks_.md#bool)): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/calib3d.ts:1139](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1139)*
+*Defined in [types/opencv/calib3d.ts:1139](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1139)*
 
 The function returns the camera matrix that is either an exact copy of the input cameraMatrix (when
 centerPrinicipalPoint=false ), or the modified one (when centerPrincipalPoint=true).
@@ -1813,7 +1813,7 @@ ___
 
 ▸ **getOptimalNewCameraMatrix**(`cameraMatrix`: [InputArray](_types_opencv__hacks_.md#inputarray), `distCoeffs`: [InputArray](_types_opencv__hacks_.md#inputarray), `imageSize`: [Size](../classes/_types_opencv__hacks_.size.md), `alpha`: [double](_types_opencv__hacks_.md#double), `newImgSize?`: [Size](../classes/_types_opencv__hacks_.size.md), `validPixROI?`: any, `centerPrincipalPoint?`: [bool](_types_opencv__hacks_.md#bool)): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/calib3d.ts:1172](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1172)*
+*Defined in [types/opencv/calib3d.ts:1172](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1172)*
 
 new_camera_matrix Output new camera matrix.
 The function computes and returns the optimal new camera matrix based on the free scaling parameter.
@@ -1844,7 +1844,7 @@ ___
 
 ▸ **getValidDisparityROI**(`roi1`: [Rect](../classes/_types_opencv__hacks_.rect.md), `roi2`: [Rect](../classes/_types_opencv__hacks_.rect.md), `minDisparity`: [int](_types_opencv__hacks_.md#int), `numberOfDisparities`: [int](_types_opencv__hacks_.md#int), `SADWindowSize`: [int](_types_opencv__hacks_.md#int)): *[Rect](../classes/_types_opencv__hacks_.rect.md)*
 
-*Defined in [types/opencv/calib3d.ts:1174](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1174)*
+*Defined in [types/opencv/calib3d.ts:1174](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1174)*
 
 **Parameters:**
 
@@ -1864,7 +1864,7 @@ ___
 
 ▸ **initCameraMatrix2D**(`objectPoints`: InputArrayOfArrays, `imagePoints`: InputArrayOfArrays, `imageSize`: [Size](../classes/_types_opencv__hacks_.size.md), `aspectRatio?`: [double](_types_opencv__hacks_.md#double)): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/calib3d.ts:1193](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1193)*
+*Defined in [types/opencv/calib3d.ts:1193](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1193)*
 
 The function estimates and returns an initial camera matrix for the camera calibration process.
 Currently, the function only supports planar calibration patterns, which are patterns where each
@@ -1887,7 +1887,7 @@ ___
 
 ▸ **initUndistortRectifyMap**(`cameraMatrix`: [InputArray](_types_opencv__hacks_.md#inputarray), `distCoeffs`: [InputArray](_types_opencv__hacks_.md#inputarray), `R`: [InputArray](_types_opencv__hacks_.md#inputarray), `newCameraMatrix`: [InputArray](_types_opencv__hacks_.md#inputarray), `size`: [Size](../classes/_types_opencv__hacks_.size.md), `m1type`: [int](_types_opencv__hacks_.md#int), `map1`: OutputArray, `map2`: OutputArray): *void*
 
-*Defined in [types/opencv/calib3d.ts:1251](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1251)*
+*Defined in [types/opencv/calib3d.ts:1251](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1251)*
 
 The function computes the joint undistortion and rectification transformation and represents the
 result in the form of maps for remap. The undistorted image looks like original, as if it is
@@ -1944,7 +1944,7 @@ ___
 
 ▸ **initWideAngleProjMap**(`cameraMatrix`: [InputArray](_types_opencv__hacks_.md#inputarray), `distCoeffs`: [InputArray](_types_opencv__hacks_.md#inputarray), `imageSize`: [Size](../classes/_types_opencv__hacks_.size.md), `destImageWidth`: [int](_types_opencv__hacks_.md#int), `m1type`: [int](_types_opencv__hacks_.md#int), `map1`: OutputArray, `map2`: OutputArray, `projType?`: any, `alpha?`: [double](_types_opencv__hacks_.md#double)): *[float](_types_opencv__hacks_.md#float)*
 
-*Defined in [types/opencv/calib3d.ts:1253](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1253)*
+*Defined in [types/opencv/calib3d.ts:1253](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1253)*
 
 **Parameters:**
 
@@ -1964,7 +1964,7 @@ Name | Type |
 
 ▸ **initWideAngleProjMap**(`cameraMatrix`: [InputArray](_types_opencv__hacks_.md#inputarray), `distCoeffs`: [InputArray](_types_opencv__hacks_.md#inputarray), `imageSize`: [Size](../classes/_types_opencv__hacks_.size.md), `destImageWidth`: [int](_types_opencv__hacks_.md#int), `m1type`: [int](_types_opencv__hacks_.md#int), `map1`: OutputArray, `map2`: OutputArray, `projType`: [int](_types_opencv__hacks_.md#int), `alpha?`: [double](_types_opencv__hacks_.md#double)): *[float](_types_opencv__hacks_.md#float)*
 
-*Defined in [types/opencv/calib3d.ts:1255](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1255)*
+*Defined in [types/opencv/calib3d.ts:1255](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1255)*
 
 **Parameters:**
 
@@ -1988,7 +1988,7 @@ ___
 
 ▸ **matMulDeriv**(`A`: [InputArray](_types_opencv__hacks_.md#inputarray), `B`: [InputArray](_types_opencv__hacks_.md#inputarray), `dABdA`: OutputArray, `dABdB`: OutputArray): *void*
 
-*Defined in [types/opencv/calib3d.ts:1272](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1272)*
+*Defined in [types/opencv/calib3d.ts:1272](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1272)*
 
 The function computes partial derivatives of the elements of the matrix product `$A*B$` with regard
 to the elements of each of the two input matrices. The function is used to compute the Jacobian
@@ -2011,7 +2011,7 @@ ___
 
 ▸ **projectPoints**(`objectPoints`: [InputArray](_types_opencv__hacks_.md#inputarray), `rvec`: [InputArray](_types_opencv__hacks_.md#inputarray), `tvec`: [InputArray](_types_opencv__hacks_.md#inputarray), `cameraMatrix`: [InputArray](_types_opencv__hacks_.md#inputarray), `distCoeffs`: [InputArray](_types_opencv__hacks_.md#inputarray), `imagePoints`: OutputArray, `jacobian?`: OutputArray, `aspectRatio?`: [double](_types_opencv__hacks_.md#double)): *void*
 
-*Defined in [types/opencv/calib3d.ts:1310](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1310)*
+*Defined in [types/opencv/calib3d.ts:1310](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1310)*
 
 The function computes projections of 3D points to the image plane given intrinsic and extrinsic
 camera parameters. Optionally, the function computes Jacobians - matrices of partial derivatives of
@@ -2046,7 +2046,7 @@ ___
 
 ▸ **recoverPose**(`E`: [InputArray](_types_opencv__hacks_.md#inputarray), `points1`: [InputArray](_types_opencv__hacks_.md#inputarray), `points2`: [InputArray](_types_opencv__hacks_.md#inputarray), `cameraMatrix`: [InputArray](_types_opencv__hacks_.md#inputarray), `R`: OutputArray, `t`: OutputArray, `mask?`: InputOutputArray): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/calib3d.ts:1360](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1360)*
+*Defined in [types/opencv/calib3d.ts:1360](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1360)*
 
 This function can be used to process output E and mask from findEssentialMat. In this scenario,
 points1 and points2 are the same input for findEssentialMat. :
@@ -2089,7 +2089,7 @@ Name | Type | Description |
 
 ▸ **recoverPose**(`E`: [InputArray](_types_opencv__hacks_.md#inputarray), `points1`: [InputArray](_types_opencv__hacks_.md#inputarray), `points2`: [InputArray](_types_opencv__hacks_.md#inputarray), `R`: OutputArray, `t`: OutputArray, `focal?`: [double](_types_opencv__hacks_.md#double), `pp?`: Point2d, `mask?`: InputOutputArray): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/calib3d.ts:1390](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1390)*
+*Defined in [types/opencv/calib3d.ts:1390](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1390)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -2115,7 +2115,7 @@ Name | Type | Description |
 
 ▸ **recoverPose**(`E`: [InputArray](_types_opencv__hacks_.md#inputarray), `points1`: [InputArray](_types_opencv__hacks_.md#inputarray), `points2`: [InputArray](_types_opencv__hacks_.md#inputarray), `cameraMatrix`: [InputArray](_types_opencv__hacks_.md#inputarray), `R`: OutputArray, `t`: OutputArray, `distanceThresh`: [double](_types_opencv__hacks_.md#double), `mask?`: InputOutputArray, `triangulatedPoints?`: OutputArray): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/calib3d.ts:1420](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1420)*
+*Defined in [types/opencv/calib3d.ts:1420](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1420)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -2142,7 +2142,7 @@ ___
 
 ▸ **rectify3Collinear**(`cameraMatrix1`: [InputArray](_types_opencv__hacks_.md#inputarray), `distCoeffs1`: [InputArray](_types_opencv__hacks_.md#inputarray), `cameraMatrix2`: [InputArray](_types_opencv__hacks_.md#inputarray), `distCoeffs2`: [InputArray](_types_opencv__hacks_.md#inputarray), `cameraMatrix3`: [InputArray](_types_opencv__hacks_.md#inputarray), `distCoeffs3`: [InputArray](_types_opencv__hacks_.md#inputarray), `imgpt1`: InputArrayOfArrays, `imgpt3`: InputArrayOfArrays, `imageSize`: [Size](../classes/_types_opencv__hacks_.size.md), `R12`: [InputArray](_types_opencv__hacks_.md#inputarray), `T12`: [InputArray](_types_opencv__hacks_.md#inputarray), `R13`: [InputArray](_types_opencv__hacks_.md#inputarray), `T13`: [InputArray](_types_opencv__hacks_.md#inputarray), `R1`: OutputArray, `R2`: OutputArray, `R3`: OutputArray, `P1`: OutputArray, `P2`: OutputArray, `P3`: OutputArray, `Q`: OutputArray, `alpha`: [double](_types_opencv__hacks_.md#double), `newImgSize`: [Size](../classes/_types_opencv__hacks_.size.md), `roi1`: any, `roi2`: any, `flags`: [int](_types_opencv__hacks_.md#int)): *[float](_types_opencv__hacks_.md#float)*
 
-*Defined in [types/opencv/calib3d.ts:1422](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1422)*
+*Defined in [types/opencv/calib3d.ts:1422](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1422)*
 
 **Parameters:**
 
@@ -2182,7 +2182,7 @@ ___
 
 ▸ **reprojectImageTo3D**(`disparity`: [InputArray](_types_opencv__hacks_.md#inputarray), `_3dImage`: OutputArray, `Q`: [InputArray](_types_opencv__hacks_.md#inputarray), `handleMissingValues?`: [bool](_types_opencv__hacks_.md#bool), `ddepth?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/calib3d.ts:1453](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1453)*
+*Defined in [types/opencv/calib3d.ts:1453](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1453)*
 
 The function transforms a single-channel disparity map to a 3-channel image representing a 3D
 surface. That is, for each pixel (x,y) and the corresponding disparity d=disparity(x,y) , it
@@ -2213,7 +2213,7 @@ ___
 
 ▸ **sampsonDistance**(`pt1`: [InputArray](_types_opencv__hacks_.md#inputarray), `pt2`: [InputArray](_types_opencv__hacks_.md#inputarray), `F`: [InputArray](_types_opencv__hacks_.md#inputarray)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/calib3d.ts:1519](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1519)*
+*Defined in [types/opencv/calib3d.ts:1519](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1519)*
 
 The function [cv::sampsonDistance] calculates and returns the first order approximation of the
 geometric error as: `\\[ sd( \\texttt{pt1} , \\texttt{pt2} )= \\frac{(\\texttt{pt2}^t \\cdot
@@ -2240,7 +2240,7 @@ ___
 
 ▸ **solveP3P**(`objectPoints`: [InputArray](_types_opencv__hacks_.md#inputarray), `imagePoints`: [InputArray](_types_opencv__hacks_.md#inputarray), `cameraMatrix`: [InputArray](_types_opencv__hacks_.md#inputarray), `distCoeffs`: [InputArray](_types_opencv__hacks_.md#inputarray), `rvecs`: OutputArrayOfArrays, `tvecs`: OutputArrayOfArrays, `flags`: [int](_types_opencv__hacks_.md#int)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/calib3d.ts:1550](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1550)*
+*Defined in [types/opencv/calib3d.ts:1550](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1550)*
 
 The function estimates the object pose given 3 object points, their corresponding image projections,
 as well as the camera matrix and the distortion coefficients.
@@ -2267,7 +2267,7 @@ ___
 
 ▸ **solvePnP**(`objectPoints`: [InputArray](_types_opencv__hacks_.md#inputarray), `imagePoints`: [InputArray](_types_opencv__hacks_.md#inputarray), `cameraMatrix`: [InputArray](_types_opencv__hacks_.md#inputarray), `distCoeffs`: [InputArray](_types_opencv__hacks_.md#inputarray), `rvec`: OutputArray, `tvec`: OutputArray, `useExtrinsicGuess?`: [bool](_types_opencv__hacks_.md#bool), `flags?`: [int](_types_opencv__hacks_.md#int)): *[bool](_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/calib3d.ts:1672](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1672)*
+*Defined in [types/opencv/calib3d.ts:1672](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1672)*
 
 P3P methods ([SOLVEPNP_P3P], [SOLVEPNP_AP3P]): need 4 input points to return a unique solution.
 [SOLVEPNP_IPPE] Input points must be >= 4 and object points must be coplanar.
@@ -2363,7 +2363,7 @@ ___
 
 ▸ **solvePnPGeneric**(`objectPoints`: [InputArray](_types_opencv__hacks_.md#inputarray), `imagePoints`: [InputArray](_types_opencv__hacks_.md#inputarray), `cameraMatrix`: [InputArray](_types_opencv__hacks_.md#inputarray), `distCoeffs`: [InputArray](_types_opencv__hacks_.md#inputarray), `rvecs`: OutputArrayOfArrays, `tvecs`: OutputArrayOfArrays, `useExtrinsicGuess?`: [bool](_types_opencv__hacks_.md#bool), `flags?`: [SolvePnPMethod](_types_opencv_calib3d_.md#solvepnpmethod), `rvec?`: [InputArray](_types_opencv__hacks_.md#inputarray), `tvec?`: [InputArray](_types_opencv__hacks_.md#inputarray), `reprojectionError?`: OutputArray): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/calib3d.ts:1805](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1805)*
+*Defined in [types/opencv/calib3d.ts:1805](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1805)*
 
 P3P methods ([SOLVEPNP_P3P], [SOLVEPNP_AP3P]): 3 or 4 input points. Number of returned solutions can
 be between 0 and 4 with 3 input points.
@@ -2463,7 +2463,7 @@ ___
 
 ▸ **solvePnPRansac**(`objectPoints`: [InputArray](_types_opencv__hacks_.md#inputarray), `imagePoints`: [InputArray](_types_opencv__hacks_.md#inputarray), `cameraMatrix`: [InputArray](_types_opencv__hacks_.md#inputarray), `distCoeffs`: [InputArray](_types_opencv__hacks_.md#inputarray), `rvec`: OutputArray, `tvec`: OutputArray, `useExtrinsicGuess?`: [bool](_types_opencv__hacks_.md#bool), `iterationsCount?`: [int](_types_opencv__hacks_.md#int), `reprojectionError?`: [float](_types_opencv__hacks_.md#float), `confidence?`: [double](_types_opencv__hacks_.md#double), `inliers?`: OutputArray, `flags?`: [int](_types_opencv__hacks_.md#int)): *[bool](_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/calib3d.ts:1859](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1859)*
+*Defined in [types/opencv/calib3d.ts:1859](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1859)*
 
 The function estimates an object pose given a set of object points, their corresponding image
 projections, as well as the camera matrix and the distortion coefficients. This function finds such
@@ -2508,7 +2508,7 @@ ___
 
 ▸ **solvePnPRefineLM**(`objectPoints`: [InputArray](_types_opencv__hacks_.md#inputarray), `imagePoints`: [InputArray](_types_opencv__hacks_.md#inputarray), `cameraMatrix`: [InputArray](_types_opencv__hacks_.md#inputarray), `distCoeffs`: [InputArray](_types_opencv__hacks_.md#inputarray), `rvec`: InputOutputArray, `tvec`: InputOutputArray, `criteria?`: [TermCriteria](../classes/_types_opencv__hacks_.termcriteria.md)): *void*
 
-*Defined in [types/opencv/calib3d.ts:1888](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1888)*
+*Defined in [types/opencv/calib3d.ts:1888](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1888)*
 
 The function refines the object pose given at least 3 object points, their corresponding image
 projections, an initial solution for the rotation and translation vector, as well as the camera
@@ -2536,7 +2536,7 @@ ___
 
 ▸ **solvePnPRefineVVS**(`objectPoints`: [InputArray](_types_opencv__hacks_.md#inputarray), `imagePoints`: [InputArray](_types_opencv__hacks_.md#inputarray), `cameraMatrix`: [InputArray](_types_opencv__hacks_.md#inputarray), `distCoeffs`: [InputArray](_types_opencv__hacks_.md#inputarray), `rvec`: InputOutputArray, `tvec`: InputOutputArray, `criteria?`: [TermCriteria](../classes/_types_opencv__hacks_.termcriteria.md), `VVSlambda?`: [double](_types_opencv__hacks_.md#double)): *void*
 
-*Defined in [types/opencv/calib3d.ts:1920](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L1920)*
+*Defined in [types/opencv/calib3d.ts:1920](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L1920)*
 
 The function refines the object pose given at least 3 object points, their corresponding image
 projections, an initial solution for the rotation and translation vector, as well as the camera
@@ -2565,7 +2565,7 @@ ___
 
 ▸ **stereoCalibrate**(`objectPoints`: InputArrayOfArrays, `imagePoints1`: InputArrayOfArrays, `imagePoints2`: InputArrayOfArrays, `cameraMatrix1`: InputOutputArray, `distCoeffs1`: InputOutputArray, `cameraMatrix2`: InputOutputArray, `distCoeffs2`: InputOutputArray, `imageSize`: [Size](../classes/_types_opencv__hacks_.size.md), `R`: InputOutputArray, `T`: InputOutputArray, `E`: OutputArray, `F`: OutputArray, `perViewErrors`: OutputArray, `flags?`: [int](_types_opencv__hacks_.md#int), `criteria?`: [TermCriteria](../classes/_types_opencv__hacks_.termcriteria.md)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/calib3d.ts:2022](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2022)*
+*Defined in [types/opencv/calib3d.ts:2022](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2022)*
 
 The function estimates transformation between two cameras making a stereo pair. If you have a stereo
 camera where the relative position and orientation of two cameras is fixed, and if you computed
@@ -2623,7 +2623,7 @@ Name | Type | Description |
 
 ▸ **stereoCalibrate**(`objectPoints`: InputArrayOfArrays, `imagePoints1`: InputArrayOfArrays, `imagePoints2`: InputArrayOfArrays, `cameraMatrix1`: InputOutputArray, `distCoeffs1`: InputOutputArray, `cameraMatrix2`: InputOutputArray, `distCoeffs2`: InputOutputArray, `imageSize`: [Size](../classes/_types_opencv__hacks_.size.md), `R`: OutputArray, `T`: OutputArray, `E`: OutputArray, `F`: OutputArray, `flags?`: [int](_types_opencv__hacks_.md#int), `criteria?`: [TermCriteria](../classes/_types_opencv__hacks_.termcriteria.md)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/calib3d.ts:2028](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2028)*
+*Defined in [types/opencv/calib3d.ts:2028](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2028)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -2655,7 +2655,7 @@ ___
 
 ▸ **stereoRectify**(`cameraMatrix1`: [InputArray](_types_opencv__hacks_.md#inputarray), `distCoeffs1`: [InputArray](_types_opencv__hacks_.md#inputarray), `cameraMatrix2`: [InputArray](_types_opencv__hacks_.md#inputarray), `distCoeffs2`: [InputArray](_types_opencv__hacks_.md#inputarray), `imageSize`: [Size](../classes/_types_opencv__hacks_.size.md), `R`: [InputArray](_types_opencv__hacks_.md#inputarray), `T`: [InputArray](_types_opencv__hacks_.md#inputarray), `R1`: OutputArray, `R2`: OutputArray, `P1`: OutputArray, `P2`: OutputArray, `Q`: OutputArray, `flags?`: [int](_types_opencv__hacks_.md#int), `alpha?`: [double](_types_opencv__hacks_.md#double), `newImageSize?`: [Size](../classes/_types_opencv__hacks_.size.md), `validPixROI1?`: any, `validPixROI2?`: any): *void*
 
-*Defined in [types/opencv/calib3d.ts:2114](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2114)*
+*Defined in [types/opencv/calib3d.ts:2114](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2114)*
 
 The function computes the rotation matrices for each camera that (virtually) make both camera image
 planes the same plane. Consequently, this makes all the epipolar lines parallel and thus simplifies
@@ -2717,7 +2717,7 @@ ___
 
 ▸ **stereoRectifyUncalibrated**(`points1`: [InputArray](_types_opencv__hacks_.md#inputarray), `points2`: [InputArray](_types_opencv__hacks_.md#inputarray), `F`: [InputArray](_types_opencv__hacks_.md#inputarray), `imgSize`: [Size](../classes/_types_opencv__hacks_.size.md), `H1`: OutputArray, `H2`: OutputArray, `threshold?`: [double](_types_opencv__hacks_.md#double)): *[bool](_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/calib3d.ts:2149](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2149)*
+*Defined in [types/opencv/calib3d.ts:2149](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2149)*
 
 The function computes the rectification transformations without knowing intrinsic parameters of the
 cameras and their relative position in the space, which explains the suffix "uncalibrated". Another
@@ -2752,7 +2752,7 @@ ___
 
 ▸ **triangulatePoints**(`projMatr1`: [InputArray](_types_opencv__hacks_.md#inputarray), `projMatr2`: [InputArray](_types_opencv__hacks_.md#inputarray), `projPoints1`: [InputArray](_types_opencv__hacks_.md#inputarray), `projPoints2`: [InputArray](_types_opencv__hacks_.md#inputarray), `points4D`: OutputArray): *void*
 
-*Defined in [types/opencv/calib3d.ts:2171](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2171)*
+*Defined in [types/opencv/calib3d.ts:2171](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2171)*
 
 The function reconstructs 3-dimensional points (in homogeneous coordinates) by using their
 observations with a stereo camera. Projections matrices can be obtained from stereoRectify.
@@ -2779,7 +2779,7 @@ ___
 
 ▸ **undistort**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `cameraMatrix`: [InputArray](_types_opencv__hacks_.md#inputarray), `distCoeffs`: [InputArray](_types_opencv__hacks_.md#inputarray), `newCameraMatrix?`: [InputArray](_types_opencv__hacks_.md#inputarray)): *void*
 
-*Defined in [types/opencv/calib3d.ts:2203](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2203)*
+*Defined in [types/opencv/calib3d.ts:2203](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2203)*
 
 The function transforms an image to compensate radial and tangential lens distortion.
 
@@ -2815,7 +2815,7 @@ ___
 
 ▸ **undistortPoints**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `cameraMatrix`: [InputArray](_types_opencv__hacks_.md#inputarray), `distCoeffs`: [InputArray](_types_opencv__hacks_.md#inputarray), `R?`: [InputArray](_types_opencv__hacks_.md#inputarray), `P?`: [InputArray](_types_opencv__hacks_.md#inputarray)): *void*
 
-*Defined in [types/opencv/calib3d.ts:2243](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2243)*
+*Defined in [types/opencv/calib3d.ts:2243](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2243)*
 
 The function is similar to [undistort] and [initUndistortRectifyMap] but it operates on a sparse set
 of points instead of a raster image. Also the function performs a reverse transformation to
@@ -2849,7 +2849,7 @@ Name | Type | Description |
 
 ▸ **undistortPoints**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `cameraMatrix`: [InputArray](_types_opencv__hacks_.md#inputarray), `distCoeffs`: [InputArray](_types_opencv__hacks_.md#inputarray), `R`: [InputArray](_types_opencv__hacks_.md#inputarray), `P`: [InputArray](_types_opencv__hacks_.md#inputarray), `criteria`: [TermCriteria](../classes/_types_opencv__hacks_.termcriteria.md)): *void*
 
-*Defined in [types/opencv/calib3d.ts:2251](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2251)*
+*Defined in [types/opencv/calib3d.ts:2251](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2251)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -2876,7 +2876,7 @@ ___
 
 ▸ **validateDisparity**(`disparity`: InputOutputArray, `cost`: [InputArray](_types_opencv__hacks_.md#inputarray), `minDisparity`: [int](_types_opencv__hacks_.md#int), `numberOfDisparities`: [int](_types_opencv__hacks_.md#int), `disp12MaxDisp?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/calib3d.ts:2253](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/calib3d.ts#L2253)*
+*Defined in [types/opencv/calib3d.ts:2253](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/calib3d.ts#L2253)*
 
 **Parameters:**
 

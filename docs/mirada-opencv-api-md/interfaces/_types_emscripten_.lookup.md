@@ -20,7 +20,7 @@
 
 • **node**: *[FSNode](_types_emscripten_.fsnode.md)*
 
-*Defined in [types/emscripten.ts:3](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/emscripten.ts#L3)*
+*Defined in [types/emscripten.ts:3](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/emscripten.ts#L3)*
 
 ___
 
@@ -28,4 +28,4 @@ ___
 
 • **path**: *string*
 
-*Defined in [types/emscripten.ts:2](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/emscripten.ts#L2)*
+*Defined in [types/emscripten.ts:2](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/emscripten.ts#L2)*
