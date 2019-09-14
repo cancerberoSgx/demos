@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["browser/imageCreation"](_browser_imagecreation_.md)
+[mirada](../README.md) › ["browser/imageCreation"](_browser_imagecreation_.md)
 
 # External module: "browser/imageCreation"
+
 
 ## Index
 
@@ -18,7 +17,7 @@
 
 ▸ **asHtmlImageData**(`img`: [Mat](../classes/_types_opencv_mat_.mat.md)): *ImageData*
 
-*Defined in [browser/imageCreation.ts:27](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/imageCreation.ts#L27)*
+*Defined in [browser/imageCreation.ts:27](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/browser/imageCreation.ts#L27)*
 
 **Parameters:**
 
@@ -34,7 +33,7 @@ ___
 
 ▸ **fetchImageData**(`url`: string): *Promise‹ImageData›*
 
-*Defined in [browser/imageCreation.ts:10](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/imageCreation.ts#L10)*
+*Defined in [browser/imageCreation.ts:10](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/browser/imageCreation.ts#L10)*
 
 **Parameters:**
 
@@ -50,7 +49,7 @@ ___
 
 ▸ **fromInputFileElement**(`a`: HTMLInputElement): *Promise‹[Mat](../classes/_types_opencv_mat_.mat.md)[]›*
 
-*Defined in [browser/imageCreation.ts:5](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/imageCreation.ts#L5)*
+*Defined in [browser/imageCreation.ts:5](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/browser/imageCreation.ts#L5)*
 
 **Parameters:**
 

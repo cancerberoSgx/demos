@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["util/base64"](_util_base64_.md)
+[mirada](../README.md) › ["util/base64"](_util_base64_.md)
 
 # External module: "util/base64"
+
 
 ## Index
 
@@ -15,9 +14,7 @@
 * [dataToBase64](_util_base64_.md#datatobase64)
 * [dataToUrl](_util_base64_.md#datatourl)
 * [getDataUrlFileName](_util_base64_.md#getdataurlfilename)
-* [isBase64](_util_base64_.md#isbase64)
 * [urlToBase64](_util_base64_.md#urltobase64)
-* [urlToData](_util_base64_.md#urltodata)
 
 ## Functions
 
@@ -25,7 +22,7 @@
 
 ▸ **arrayBufferToBase64**(`buffer`: ArrayBuffer): *string*
 
-*Defined in [util/base64.ts:45](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/base64.ts#L45)*
+*Defined in [util/base64.ts:45](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/util/base64.ts#L45)*
 
 **Parameters:**
 
@@ -41,7 +38,7 @@ ___
 
 ▸ **arrayBufferToString**(`buffer`: ArrayBuffer): *string*
 
-*Defined in [util/base64.ts:55](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/base64.ts#L55)*
+*Defined in [util/base64.ts:56](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/util/base64.ts#L56)*
 
 **Parameters:**
 
@@ -57,7 +54,7 @@ ___
 
 ▸ **arrayBufferToUrl**(`buffer`: ArrayBuffer, `mime`: string, `name?`: undefined | string): *string*
 
-*Defined in [util/base64.ts:50](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/base64.ts#L50)*
+*Defined in [util/base64.ts:51](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/util/base64.ts#L51)*
 
 **Parameters:**
 
@@ -65,7 +62,7 @@ Name | Type |
 ------ | ------ |
 `buffer` | ArrayBuffer |
 `mime` | string |
-`name?` | undefined \| string |
+`name?` | undefined &#124; string |
 
 **Returns:** *string*
 
@@ -75,7 +72,7 @@ ___
 
 ▸ **base64ToUrl**(`base64`: string, `mimeType`: string, `fileName?`: undefined | string): *string*
 
-*Defined in [util/base64.ts:14](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/base64.ts#L14)*
+*Defined in [util/base64.ts:14](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/util/base64.ts#L14)*
 
 Creates a DataUrl like `data:image/jpeg;name=hindenburg.jpg;base64,` using given base64 content, mimeType and fileName.
 
@@ -85,7 +82,7 @@ Name | Type |
 ------ | ------ |
 `base64` | string |
 `mimeType` | string |
-`fileName?` | undefined \| string |
+`fileName?` | undefined &#124; string |
 
 **Returns:** *string*
 
@@ -95,7 +92,7 @@ ___
 
 ▸ **dataToBase64**(`data`: string): *string*
 
-*Defined in [util/base64.ts:7](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/base64.ts#L7)*
+*Defined in [util/base64.ts:7](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/util/base64.ts#L7)*
 
 **Parameters:**
 
@@ -111,7 +108,7 @@ ___
 
 ▸ **dataToUrl**(`data`: string, `mimeType`: string, `fileName?`: undefined | string): *string*
 
-*Defined in [util/base64.ts:3](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/base64.ts#L3)*
+*Defined in [util/base64.ts:3](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/util/base64.ts#L3)*
 
 **Parameters:**
 
@@ -119,7 +116,7 @@ Name | Type |
 ------ | ------ |
 `data` | string |
 `mimeType` | string |
-`fileName?` | undefined \| string |
+`fileName?` | undefined &#124; string |
 
 **Returns:** *string*
 
@@ -129,7 +126,7 @@ ___
 
 ▸ **getDataUrlFileName**(`url`: string): *string*
 
-*Defined in [util/base64.ts:38](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/base64.ts#L38)*
+*Defined in [util/base64.ts:38](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/util/base64.ts#L38)*
 
 Extracts the name of a data url like `data:image/jpeg;name=hindenburg.jpg;base64,`..., if any.
 
@@ -143,43 +140,11 @@ Name | Type |
 
 ___
 
-###  isBase64
-
-▸ **isBase64**(`str`: string): *boolean*
-
-*Defined in [util/base64.ts:26](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/base64.ts#L26)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`str` | string |
-
-**Returns:** *boolean*
-
-___
-
 ###  urlToBase64
 
 ▸ **urlToBase64**(`s`: string): *string*
 
-*Defined in [util/base64.ts:18](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/base64.ts#L18)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`s` | string |
-
-**Returns:** *string*
-
-___
-
-###  urlToData
-
-▸ **urlToData**(`s`: string): *string*
-
-*Defined in [util/base64.ts:22](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/base64.ts#L22)*
+*Defined in [util/base64.ts:18](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/util/base64.ts#L18)*
 
 **Parameters:**
 

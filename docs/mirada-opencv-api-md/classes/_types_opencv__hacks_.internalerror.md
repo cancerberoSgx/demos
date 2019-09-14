@@ -1,14 +1,13 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/opencv/_hacks"](../modules/_types_opencv__hacks_.md) › [InternalError](_types_opencv__hacks_.internalerror.md)
+[mirada](../README.md) › ["types/opencv/_hacks"](../modules/_types_opencv__hacks_.md) › [InternalError](_types_opencv__hacks_.internalerror.md)
 
 # Class: InternalError
+
 
 ## Hierarchy
 
 * Error
 
-  * **InternalError**
+  ↳ **InternalError**
 
 ## Index
 

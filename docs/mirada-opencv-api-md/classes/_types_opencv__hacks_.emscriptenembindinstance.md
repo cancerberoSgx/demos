@@ -1,14 +1,15 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/opencv/_hacks"](../modules/_types_opencv__hacks_.md) › [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md)
+[mirada](../README.md) › ["types/opencv/_hacks"](../modules/_types_opencv__hacks_.md) › [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md)
 
 # Class: EmscriptenEmbindInstance
+
 
 ## Hierarchy
 
 * **EmscriptenEmbindInstance**
 
-  * [Vector](_types_opencv__hacks_.vector.md)
+  ↳ [Vector](_types_opencv__hacks_.vector.md)
+
+  ↳ [Algorithm](_types_opencv_algorithm_.algorithm.md)
 
 ## Index
 
@@ -26,7 +27,7 @@
 
 ▸ **clone**(...`a`: any[]): *any*
 
-*Defined in [types/opencv/_hacks.ts:119](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L119)*
+*Defined in [types/opencv/_hacks.ts:120](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L120)*
 
 **Parameters:**
 
@@ -42,7 +43,7 @@ ___
 
 ▸ **delete**(...`a`: any[]): *any*
 
-*Defined in [types/opencv/_hacks.ts:120](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L120)*
+*Defined in [types/opencv/_hacks.ts:121](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L121)*
 
 **Parameters:**
 
@@ -58,7 +59,7 @@ ___
 
 ▸ **deleteLater**(...`a`: any[]): *any*
 
-*Defined in [types/opencv/_hacks.ts:122](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L122)*
+*Defined in [types/opencv/_hacks.ts:123](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L123)*
 
 **Parameters:**
 
@@ -74,7 +75,7 @@ ___
 
 ▸ **isAliasOf**(...`a`: any[]): *any*
 
-*Defined in [types/opencv/_hacks.ts:118](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L118)*
+*Defined in [types/opencv/_hacks.ts:119](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L119)*
 
 **Parameters:**
 
@@ -90,7 +91,7 @@ ___
 
 ▸ **isDeleted**(...`a`: any[]): *any*
 
-*Defined in [types/opencv/_hacks.ts:121](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L121)*
+*Defined in [types/opencv/_hacks.ts:122](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L122)*
 
 **Parameters:**
 

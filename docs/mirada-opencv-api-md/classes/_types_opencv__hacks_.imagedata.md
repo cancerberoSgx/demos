@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/opencv/_hacks"](../modules/_types_opencv__hacks_.md) › [ImageData](_types_opencv__hacks_.imagedata.md)
+[mirada](../README.md) › ["types/opencv/_hacks"](../modules/_types_opencv__hacks_.md) › [ImageData](_types_opencv__hacks_.imagedata.md)
 
 # Class: ImageData
+
 
 ## Hierarchy
 
@@ -22,7 +21,7 @@
 
 • **data**: *ArrayBufferView*
 
-*Defined in [types/opencv/_hacks.ts:203](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L203)*
+*Defined in [types/opencv/_hacks.ts:204](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L204)*
 
 ___
 
@@ -30,7 +29,7 @@ ___
 
 • **height**: *number*
 
-*Defined in [types/opencv/_hacks.ts:205](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L205)*
+*Defined in [types/opencv/_hacks.ts:206](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L206)*
 
 ___
 
@@ -38,4 +37,4 @@ ___
 
 • **width**: *number*
 
-*Defined in [types/opencv/_hacks.ts:204](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L204)*
+*Defined in [types/opencv/_hacks.ts:205](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L205)*

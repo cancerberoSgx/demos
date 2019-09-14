@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["browser/cameraHelper"](_browser_camerahelper_.md)
+[mirada](../README.md) › ["browser/cameraHelper"](_browser_camerahelper_.md)
 
 # External module: "browser/cameraHelper"
+
 
 ## Index
 

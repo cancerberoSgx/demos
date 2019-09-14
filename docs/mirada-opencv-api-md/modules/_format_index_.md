@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["format/index"](_format_index_.md)
+[mirada](../README.md) › ["format/index"](_format_index_.md)
 
 # External module: "format/index"
+
 
 ## Index
 
@@ -16,4 +15,4 @@
 
 ### ▪ **format**: *object*
 
-*Defined in [format/index.ts:7](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/format/index.ts#L7)*
+*Defined in [format/index.ts:7](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/format/index.ts#L7)*

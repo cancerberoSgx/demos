@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/opencv/RotatedRect"](_types_opencv_rotatedrect_.md)
+[mirada](../README.md) › ["types/opencv/RotatedRect"](_types_opencv_rotatedrect_.md)
 
 # External module: "types/opencv/RotatedRect"
+
 
 ## Index
 

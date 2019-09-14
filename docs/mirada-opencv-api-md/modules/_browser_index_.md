@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["browser/index"](_browser_index_.md)
+[mirada](../README.md) › ["browser/index"](_browser_index_.md)
 
 # External module: "browser/index"
+
 
 ## Index
 
@@ -16,4 +15,4 @@
 
 ### ▪ **browser**: *object*
 
-*Defined in [browser/index.ts:11](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/index.ts#L11)*
+*Defined in [browser/index.ts:11](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/browser/index.ts#L11)*

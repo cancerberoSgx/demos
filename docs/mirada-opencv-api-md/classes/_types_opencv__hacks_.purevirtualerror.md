@@ -1,14 +1,13 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/opencv/_hacks"](../modules/_types_opencv__hacks_.md) › [PureVirtualError](_types_opencv__hacks_.purevirtualerror.md)
+[mirada](../README.md) › ["types/opencv/_hacks"](../modules/_types_opencv__hacks_.md) › [PureVirtualError](_types_opencv__hacks_.purevirtualerror.md)
 
 # Class: PureVirtualError
+
 
 ## Hierarchy
 
 * Error
 
-  * **PureVirtualError**
+  ↳ **PureVirtualError**
 
 ## Index
 

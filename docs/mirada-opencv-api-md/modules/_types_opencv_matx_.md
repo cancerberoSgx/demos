@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/opencv/Matx"](_types_opencv_matx_.md)
+[mirada](../README.md) › ["types/opencv/Matx"](_types_opencv_matx_.md)
 
 # External module: "types/opencv/Matx"
+
 
 ## Index
 
@@ -23,7 +22,7 @@
 
 • **channels**: *any*
 
-*Defined in [types/opencv/Matx.ts:132](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Matx.ts#L132)*
+*Defined in [types/opencv/Matx.ts:132](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Matx.ts#L132)*
 
 ___
 
@@ -31,7 +30,7 @@ ___
 
 • **cols**: *any*
 
-*Defined in [types/opencv/Matx.ts:130](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Matx.ts#L130)*
+*Defined in [types/opencv/Matx.ts:130](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Matx.ts#L130)*
 
 ___
 
@@ -39,7 +38,7 @@ ___
 
 • **rows**: *any*
 
-*Defined in [types/opencv/Matx.ts:128](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Matx.ts#L128)*
+*Defined in [types/opencv/Matx.ts:128](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Matx.ts#L128)*
 
 ___
 
@@ -47,4 +46,4 @@ ___
 
 • **shortdim**: *any*
 
-*Defined in [types/opencv/Matx.ts:134](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Matx.ts#L134)*
+*Defined in [types/opencv/Matx.ts:134](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Matx.ts#L134)*

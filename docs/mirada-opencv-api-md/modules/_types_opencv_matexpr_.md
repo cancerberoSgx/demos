@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/opencv/MatExpr"](_types_opencv_matexpr_.md)
+[mirada](../README.md) › ["types/opencv/MatExpr"](_types_opencv_matexpr_.md)
 
 # External module: "types/opencv/MatExpr"
+
 
 ## Index
 

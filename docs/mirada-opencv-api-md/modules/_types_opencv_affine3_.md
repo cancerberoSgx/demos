@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/opencv/Affine3"](_types_opencv_affine3_.md)
+[mirada](../README.md) › ["types/opencv/Affine3"](_types_opencv_affine3_.md)
 
 # External module: "types/opencv/Affine3"
+
 
 ## Index
 

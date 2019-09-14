@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/opencv/Algorithm"](../modules/_types_opencv_algorithm_.md) › [Algorithm](_types_opencv_algorithm_.algorithm.md)
+[mirada](../README.md) › ["types/opencv/Algorithm"](../modules/_types_opencv_algorithm_.md) › [Algorithm](_types_opencv_algorithm_.algorithm.md)
 
 # Class: Algorithm
+
 
 especially for classes of algorithms, for which there can be multiple implementations. The examples
 are stereo correspondence (for which there are algorithms like block matching, semi-global block
@@ -48,9 +47,11 @@ Source:
 
 ## Hierarchy
 
-* **Algorithm**
+* [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md)
 
-  * [CLAHE](_types_opencv__hacks_.clahe.md)
+  ↳ **Algorithm**
+
+  ↳ [CLAHE](_types_opencv__hacks_.clahe.md)
 
 ## Index
 
@@ -61,8 +62,13 @@ Source:
 ### Methods
 
 * [clear](_types_opencv_algorithm_.algorithm.md#clear)
+* [clone](_types_opencv_algorithm_.algorithm.md#clone)
+* [delete](_types_opencv_algorithm_.algorithm.md#delete)
+* [deleteLater](_types_opencv_algorithm_.algorithm.md#deletelater)
 * [empty](_types_opencv_algorithm_.algorithm.md#empty)
 * [getDefaultName](_types_opencv_algorithm_.algorithm.md#getdefaultname)
+* [isAliasOf](_types_opencv_algorithm_.algorithm.md#isaliasof)
+* [isDeleted](_types_opencv_algorithm_.algorithm.md#isdeleted)
 * [read](_types_opencv_algorithm_.algorithm.md#read)
 * [save](_types_opencv_algorithm_.algorithm.md#save)
 * [write](_types_opencv_algorithm_.algorithm.md#write)
@@ -76,7 +82,7 @@ Source:
 
 \+ **new Algorithm**(): *[Algorithm](_types_opencv_algorithm_.algorithm.md)*
 
-*Defined in [types/opencv/Algorithm.ts:48](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Algorithm.ts#L48)*
+*Defined in [types/opencv/Algorithm.ts:49](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Algorithm.ts#L49)*
 
 **Returns:** *[Algorithm](_types_opencv_algorithm_.algorithm.md)*
 
@@ -86,9 +92,63 @@ Source:
 
 ▸ **clear**(): *void*
 
-*Defined in [types/opencv/Algorithm.ts:52](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Algorithm.ts#L52)*
+*Defined in [types/opencv/Algorithm.ts:53](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Algorithm.ts#L53)*
 
 **Returns:** *void*
+
+___
+
+###  clone
+
+▸ **clone**(...`a`: any[]): *any*
+
+*Inherited from [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md).[clone](_types_opencv__hacks_.emscriptenembindinstance.md#clone)*
+
+*Defined in [types/opencv/_hacks.ts:120](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L120)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...a` | any[] |
+
+**Returns:** *any*
+
+___
+
+###  delete
+
+▸ **delete**(...`a`: any[]): *any*
+
+*Inherited from [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md).[delete](_types_opencv__hacks_.emscriptenembindinstance.md#delete)*
+
+*Defined in [types/opencv/_hacks.ts:121](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L121)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...a` | any[] |
+
+**Returns:** *any*
+
+___
+
+###  deleteLater
+
+▸ **deleteLater**(...`a`: any[]): *any*
+
+*Inherited from [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md).[deleteLater](_types_opencv__hacks_.emscriptenembindinstance.md#deletelater)*
+
+*Defined in [types/opencv/_hacks.ts:123](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L123)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...a` | any[] |
+
+**Returns:** *any*
 
 ___
 
@@ -96,7 +156,7 @@ ___
 
 ▸ **empty**(): *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/Algorithm.ts:54](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Algorithm.ts#L54)*
+*Defined in [types/opencv/Algorithm.ts:55](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Algorithm.ts#L55)*
 
 **Returns:** *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
@@ -106,7 +166,7 @@ ___
 
 ▸ **getDefaultName**(): *String*
 
-*Defined in [types/opencv/Algorithm.ts:60](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Algorithm.ts#L60)*
+*Defined in [types/opencv/Algorithm.ts:61](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Algorithm.ts#L61)*
 
   Returns the algorithm string identifier. This string is used as top level xml/yml node tag when
 the object is saved to a file or string.
@@ -115,11 +175,47 @@ the object is saved to a file or string.
 
 ___
 
+###  isAliasOf
+
+▸ **isAliasOf**(...`a`: any[]): *any*
+
+*Inherited from [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md).[isAliasOf](_types_opencv__hacks_.emscriptenembindinstance.md#isaliasof)*
+
+*Defined in [types/opencv/_hacks.ts:119](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L119)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...a` | any[] |
+
+**Returns:** *any*
+
+___
+
+###  isDeleted
+
+▸ **isDeleted**(...`a`: any[]): *any*
+
+*Inherited from [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md).[isDeleted](_types_opencv__hacks_.emscriptenembindinstance.md#isdeleted)*
+
+*Defined in [types/opencv/_hacks.ts:122](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L122)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...a` | any[] |
+
+**Returns:** *any*
+
+___
+
 ###  read
 
 ▸ **read**(`fn`: [FileNode](../modules/_types_opencv__hacks_.md#filenode)): *[FileNode](../modules/_types_opencv__hacks_.md#filenode)*
 
-*Defined in [types/opencv/Algorithm.ts:62](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Algorithm.ts#L62)*
+*Defined in [types/opencv/Algorithm.ts:63](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Algorithm.ts#L63)*
 
 **Parameters:**
 
@@ -135,7 +231,7 @@ ___
 
 ▸ **save**(`filename`: String): *String*
 
-*Defined in [types/opencv/Algorithm.ts:68](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Algorithm.ts#L68)*
+*Defined in [types/opencv/Algorithm.ts:69](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Algorithm.ts#L69)*
 
   Saves the algorithm to a file. In order to make this method work, the derived class must implement
 Algorithm::write(FileStorage& fs).
@@ -154,7 +250,7 @@ ___
 
 ▸ **write**(`fs`: [FileStorage](../modules/_types_opencv__hacks_.md#filestorage)): *[FileStorage](../modules/_types_opencv__hacks_.md#filestorage)*
 
-*Defined in [types/opencv/Algorithm.ts:70](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Algorithm.ts#L70)*
+*Defined in [types/opencv/Algorithm.ts:71](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Algorithm.ts#L71)*
 
 **Parameters:**
 
@@ -166,7 +262,7 @@ Name | Type |
 
 ▸ **write**(`fs`: [Ptr](../modules/_types_opencv__hacks_.md#ptr), `name?`: String): *[Ptr](../modules/_types_opencv__hacks_.md#ptr)*
 
-*Defined in [types/opencv/Algorithm.ts:72](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Algorithm.ts#L72)*
+*Defined in [types/opencv/Algorithm.ts:73](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Algorithm.ts#L73)*
 
 **Parameters:**
 
@@ -183,7 +279,7 @@ ___
 
 ▸ **load**(`arg0`: any, `filename`: String, `objname?`: String): *[Ptr](../modules/_types_opencv__hacks_.md#ptr)*
 
-*Defined in [types/opencv/Algorithm.ts:89](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Algorithm.ts#L89)*
+*Defined in [types/opencv/Algorithm.ts:90](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Algorithm.ts#L90)*
 
   This is static template method of [Algorithm]. It's usage is following (in the case of SVM):
 
@@ -210,7 +306,7 @@ ___
 
 ▸ **loadFromString**(`arg1`: any, `strModel`: String, `objname?`: String): *[Ptr](../modules/_types_opencv__hacks_.md#ptr)*
 
-*Defined in [types/opencv/Algorithm.ts:103](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Algorithm.ts#L103)*
+*Defined in [types/opencv/Algorithm.ts:104](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Algorithm.ts#L104)*
 
   This is static template method of [Algorithm]. It's usage is following (in the case of SVM):
 
@@ -234,7 +330,7 @@ ___
 
 ▸ **read**(`arg2`: any, `fn`: [FileNode](../modules/_types_opencv__hacks_.md#filenode)): *[Ptr](../modules/_types_opencv__hacks_.md#ptr)*
 
-*Defined in [types/opencv/Algorithm.ts:117](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Algorithm.ts#L117)*
+*Defined in [types/opencv/Algorithm.ts:118](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Algorithm.ts#L118)*
 
   This is static template method of [Algorithm]. It's usage is following (in the case of SVM):
 

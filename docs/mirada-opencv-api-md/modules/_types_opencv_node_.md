@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/opencv/Node"](_types_opencv_node_.md)
+[mirada](../README.md) › ["types/opencv/Node"](_types_opencv_node_.md)
 
 # External module: "types/opencv/Node"
+
 
 ## Index
 

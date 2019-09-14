@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/emscripten"](../modules/_types_emscripten_.md) › [CCallOpts](_types_emscripten_.ccallopts.md)
+[mirada](../README.md) › ["types/emscripten"](../modules/_types_emscripten_.md) › [CCallOpts](_types_emscripten_.ccallopts.md)
 
 # Interface: CCallOpts
+
 
 ## Hierarchy
 
@@ -20,4 +19,4 @@
 
 • **async**? : *undefined | false | true*
 
-*Defined in [types/emscripten.ts:179](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L179)*
+*Defined in [types/emscripten.ts:179](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L179)*

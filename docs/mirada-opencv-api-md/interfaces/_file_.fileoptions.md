@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["File"](../modules/_file_.md) › [FileOptions](_file_.fileoptions.md)
+[mirada](../README.md) › ["file"](../modules/_file_.md) › [FileOptions](_file_.fileoptions.md)
 
 # Interface: FileOptions
+
 
 ## Hierarchy
 
@@ -20,4 +19,4 @@
 
 • **name**? : *undefined | string*
 
-Defined in File.ts:271
+*Defined in [file.ts:271](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/file.ts#L271)*

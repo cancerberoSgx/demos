@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/opencv/softdouble"](_types_opencv_softdouble_.md)
+[mirada](../README.md) › ["types/opencv/softdouble"](_types_opencv_softdouble_.md)
 
 # External module: "types/opencv/softdouble"
+
 
 ## Index
 

@@ -1,14 +1,13 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/opencv/_hacks"](../modules/_types_opencv__hacks_.md) › [UnboundTypeError](_types_opencv__hacks_.unboundtypeerror.md)
+[mirada](../README.md) › ["types/opencv/_hacks"](../modules/_types_opencv__hacks_.md) › [UnboundTypeError](_types_opencv__hacks_.unboundtypeerror.md)
 
 # Class: UnboundTypeError
+
 
 ## Hierarchy
 
 * Error
 
-  * **UnboundTypeError**
+  ↳ **UnboundTypeError**
 
 ## Index
 

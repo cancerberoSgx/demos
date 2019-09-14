@@ -1,14 +1,13 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/opencv/_hacks"](../modules/_types_opencv__hacks_.md) › [BindingError](_types_opencv__hacks_.bindingerror.md)
+[mirada](../README.md) › ["types/opencv/_hacks"](../modules/_types_opencv__hacks_.md) › [BindingError](_types_opencv__hacks_.bindingerror.md)
 
 # Class: BindingError
+
 
 ## Hierarchy
 
 * Error
 
-  * **BindingError**
+  ↳ **BindingError**
 
 ## Index
 

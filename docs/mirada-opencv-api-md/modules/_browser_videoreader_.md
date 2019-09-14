@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["browser/videoReader"](_browser_videoreader_.md)
+[mirada](../README.md) › ["browser/videoReader"](_browser_videoreader_.md)
 
 # External module: "browser/videoReader"
+
 
 ## Index
 

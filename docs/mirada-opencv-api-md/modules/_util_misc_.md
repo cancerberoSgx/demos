@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["util/misc"](_util_misc_.md)
+[mirada](../README.md) › ["util/misc"](_util_misc_.md)
 
 # External module: "util/misc"
+
 
 ## Index
 
@@ -24,7 +23,7 @@
 
 • **isBrowser**: *boolean* =  typeof performance !== 'undefined' && typeof performance.now === 'function'
 
-*Defined in [util/misc.ts:31](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/misc.ts#L31)*
+*Defined in [util/misc.ts:31](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/util/misc.ts#L31)*
 
 ## Functions
 
@@ -32,7 +31,7 @@
 
 ▸ **buildError**(`e`: any): *Error*
 
-*Defined in [util/misc.ts:4](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/misc.ts#L4)*
+*Defined in [util/misc.ts:4](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/util/misc.ts#L4)*
 
 **Parameters:**
 
@@ -48,7 +47,7 @@ ___
 
 ▸ **msFrom**(`t0`: number): *number*
 
-*Defined in [util/misc.ts:23](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/misc.ts#L23)*
+*Defined in [util/misc.ts:23](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/util/misc.ts#L23)*
 
 **Parameters:**
 
@@ -64,7 +63,7 @@ ___
 
 ▸ **now**(): *number*
 
-*Defined in [util/misc.ts:32](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/misc.ts#L32)*
+*Defined in [util/misc.ts:32](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/util/misc.ts#L32)*
 
 **Returns:** *number*
 
@@ -74,7 +73,7 @@ ___
 
 ▸ **resolveNodeModule**(`p`: string): *string*
 
-*Defined in [util/misc.ts:12](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/misc.ts#L12)*
+*Defined in [util/misc.ts:12](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/util/misc.ts#L12)*
 
 **Parameters:**
 
@@ -90,7 +89,7 @@ ___
 
 ▸ **timeFrom**(`t0`: number): *string*
 
-*Defined in [util/misc.ts:27](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/misc.ts#L27)*
+*Defined in [util/misc.ts:27](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/util/misc.ts#L27)*
 
 **Parameters:**
 

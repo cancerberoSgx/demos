@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["browser/canvasRender"](_browser_canvasrender_.md)
+[mirada](../README.md) › ["browser/canvasRender"](_browser_canvasrender_.md)
 
 # External module: "browser/canvasRender"
+
 
 ## Index
 
@@ -30,7 +29,7 @@
 
 • **defaultABOptions**: *[ABOptions](../interfaces/_browser_canvasrender_.aboptions.md)*
 
-*Defined in [browser/canvasRender.ts:12](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/canvasRender.ts#L12)*
+*Defined in [browser/canvasRender.ts:12](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/browser/canvasRender.ts#L12)*
 
 ## Functions
 
@@ -38,7 +37,7 @@
 
 ▸ **renderArrayBufferInCanvas**(`a`: ArrayBuffer, `mime`: string, `options`: [ABOptions](../interfaces/_browser_canvasrender_.aboptions.md)): *Promise‹object›*
 
-*Defined in [browser/canvasRender.ts:22](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/canvasRender.ts#L22)*
+*Defined in [browser/canvasRender.ts:22](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/browser/canvasRender.ts#L22)*
 
 A sub optimal method to load a image array buffer (encoded in jpg, png) whiteouts knowing its format or size.
 1) creates a blob and a url object
@@ -63,7 +62,7 @@ ___
 
 ▸ **renderInCanvas**(`mat`: [Mat](../classes/_types_opencv_mat_.mat.md), `options?`: [Options](../interfaces/_browser_canvasrender_.options.md)): *HTMLCanvasElement*
 
-*Defined in [browser/canvasRender.ts:62](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/canvasRender.ts#L62)*
+*Defined in [browser/canvasRender.ts:62](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/browser/canvasRender.ts#L62)*
 
 **Parameters:**
 
@@ -80,16 +79,16 @@ Name | Type |
 
 ### ▪ **defaultOptions**: *object*
 
-*Defined in [browser/canvasRender.ts:57](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/canvasRender.ts#L57)*
+*Defined in [browser/canvasRender.ts:57](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/browser/canvasRender.ts#L57)*
 
 ###  forceSameSize
 
 • **forceSameSize**: *boolean* = true
 
-*Defined in [browser/canvasRender.ts:59](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/canvasRender.ts#L59)*
+*Defined in [browser/canvasRender.ts:59](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/browser/canvasRender.ts#L59)*
 
 ###  rgba
 
 • **rgba**: *boolean* = true
 
-*Defined in [browser/canvasRender.ts:58](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/canvasRender.ts#L58)*
+*Defined in [browser/canvasRender.ts:58](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/browser/canvasRender.ts#L58)*

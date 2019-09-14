@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["util/grabCut"](../modules/_util_grabcut_.md) › [GrabCutOsoleteResult](_util_grabcut_.grabcutosoleteresult.md)
+[mirada](../README.md) › ["util/grabCut"](../modules/_util_grabcut_.md) › [GrabCutOsoleteResult](_util_grabcut_.grabcutosoleteresult.md)
 
 # Interface: GrabCutOsoleteResult
+
 
 ## Hierarchy
 
@@ -20,4 +19,4 @@
 
 • **image**: *ImageData*
 
-*Defined in [util/grabCut.ts:55](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/util/grabCut.ts#L55)*
+*Defined in [util/grabCut.ts:55](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/util/grabCut.ts#L55)*

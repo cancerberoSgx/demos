@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/emscripten"](../modules/_types_emscripten_.md) › [EmscriptenModule](_types_emscripten_.emscriptenmodule.md)
+[mirada](../README.md) › ["types/emscripten"](../modules/_types_emscripten_.md) › [EmscriptenModule](_types_emscripten_.emscriptenmodule.md)
 
 # Interface: EmscriptenModule
+
 
 ## Hierarchy
 
@@ -83,7 +82,7 @@
 
 • **ALLOC_DYNAMIC**: *number*
 
-*Defined in [types/emscripten.ts:113](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L113)*
+*Defined in [types/emscripten.ts:113](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L113)*
 
 ___
 
@@ -91,7 +90,7 @@ ___
 
 • **ALLOC_NONE**: *number*
 
-*Defined in [types/emscripten.ts:114](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L114)*
+*Defined in [types/emscripten.ts:114](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L114)*
 
 ___
 
@@ -99,7 +98,7 @@ ___
 
 • **ALLOC_NORMAL**: *number*
 
-*Defined in [types/emscripten.ts:110](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L110)*
+*Defined in [types/emscripten.ts:110](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L110)*
 
 ___
 
@@ -107,7 +106,7 @@ ___
 
 • **ALLOC_STACK**: *number*
 
-*Defined in [types/emscripten.ts:111](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L111)*
+*Defined in [types/emscripten.ts:111](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L111)*
 
 ___
 
@@ -115,7 +114,7 @@ ___
 
 • **ALLOC_STATIC**: *number*
 
-*Defined in [types/emscripten.ts:112](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L112)*
+*Defined in [types/emscripten.ts:112](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L112)*
 
 ___
 
@@ -123,7 +122,7 @@ ___
 
 • **FAST_MEMORY**: *number*
 
-*Defined in [types/emscripten.ts:135](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L135)*
+*Defined in [types/emscripten.ts:135](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L135)*
 
 ___
 
@@ -131,7 +130,7 @@ ___
 
 • **FHEAP**: *Float64Array*
 
-*Defined in [types/emscripten.ts:121](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L121)*
+*Defined in [types/emscripten.ts:121](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L121)*
 
 ___
 
@@ -139,7 +138,7 @@ ___
 
 • **HEAP**: *Int32Array*
 
-*Defined in [types/emscripten.ts:119](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L119)*
+*Defined in [types/emscripten.ts:119](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L119)*
 
 ___
 
@@ -147,7 +146,7 @@ ___
 
 • **HEAP16**: *Int16Array*
 
-*Defined in [types/emscripten.ts:125](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L125)*
+*Defined in [types/emscripten.ts:125](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L125)*
 
 ___
 
@@ -155,7 +154,7 @@ ___
 
 • **HEAP32**: *Int32Array*
 
-*Defined in [types/emscripten.ts:126](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L126)*
+*Defined in [types/emscripten.ts:126](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L126)*
 
 ___
 
@@ -163,7 +162,7 @@ ___
 
 • **HEAP8**: *Int8Array*
 
-*Defined in [types/emscripten.ts:124](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L124)*
+*Defined in [types/emscripten.ts:124](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L124)*
 
 ___
 
@@ -171,7 +170,7 @@ ___
 
 • **HEAPF32**: *Float32Array*
 
-*Defined in [types/emscripten.ts:130](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L130)*
+*Defined in [types/emscripten.ts:130](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L130)*
 
 ___
 
@@ -179,7 +178,7 @@ ___
 
 • **HEAPF64**: *Float64Array*
 
-*Defined in [types/emscripten.ts:131](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L131)*
+*Defined in [types/emscripten.ts:131](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L131)*
 
 ___
 
@@ -187,7 +186,7 @@ ___
 
 • **HEAPU16**: *Uint16Array*
 
-*Defined in [types/emscripten.ts:128](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L128)*
+*Defined in [types/emscripten.ts:128](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L128)*
 
 ___
 
@@ -195,7 +194,7 @@ ___
 
 • **HEAPU32**: *Uint32Array*
 
-*Defined in [types/emscripten.ts:129](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L129)*
+*Defined in [types/emscripten.ts:129](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L129)*
 
 ___
 
@@ -203,7 +202,7 @@ ___
 
 • **HEAPU8**: *Uint8Array*
 
-*Defined in [types/emscripten.ts:127](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L127)*
+*Defined in [types/emscripten.ts:127](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L127)*
 
 ___
 
@@ -211,7 +210,7 @@ ___
 
 • **IHEAP**: *Int32Array*
 
-*Defined in [types/emscripten.ts:120](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L120)*
+*Defined in [types/emscripten.ts:120](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L120)*
 
 ___
 
@@ -219,7 +218,7 @@ ___
 
 • **Runtime**: *any*
 
-*Defined in [types/emscripten.ts:102](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L102)*
+*Defined in [types/emscripten.ts:102](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L102)*
 
 ___
 
@@ -227,7 +226,7 @@ ___
 
 • **TOTAL_MEMORY**: *number*
 
-*Defined in [types/emscripten.ts:134](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L134)*
+*Defined in [types/emscripten.ts:134](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L134)*
 
 ___
 
@@ -235,7 +234,7 @@ ___
 
 • **TOTAL_STACK**: *number*
 
-*Defined in [types/emscripten.ts:133](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L133)*
+*Defined in [types/emscripten.ts:133](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L133)*
 
 ___
 
@@ -243,7 +242,7 @@ ___
 
 • **arguments**: *string[]*
 
-*Defined in [types/emscripten.ts:79](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L79)*
+*Defined in [types/emscripten.ts:79](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L79)*
 
 ___
 
@@ -251,7 +250,7 @@ ___
 
 • **environment**: *[EnvironmentType](../modules/_types_emscripten_.md#environmenttype)*
 
-*Defined in [types/emscripten.ts:80](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L80)*
+*Defined in [types/emscripten.ts:80](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L80)*
 
 ___
 
@@ -259,7 +258,7 @@ ___
 
 • **filePackagePrefixURL**: *string*
 
-*Defined in [types/emscripten.ts:90](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L90)*
+*Defined in [types/emscripten.ts:90](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L90)*
 
 ___
 
@@ -267,7 +266,7 @@ ___
 
 • **logReadFiles**: *boolean*
 
-*Defined in [types/emscripten.ts:89](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L89)*
+*Defined in [types/emscripten.ts:89](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L89)*
 
 ___
 
@@ -275,7 +274,7 @@ ___
 
 • **noExitRuntime**: *boolean*
 
-*Defined in [types/emscripten.ts:88](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L88)*
+*Defined in [types/emscripten.ts:88](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L88)*
 
 ___
 
@@ -283,7 +282,7 @@ ___
 
 • **noInitialRun**: *boolean*
 
-*Defined in [types/emscripten.ts:87](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L87)*
+*Defined in [types/emscripten.ts:87](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L87)*
 
 ___
 
@@ -291,7 +290,7 @@ ___
 
 • **onAbort**: *function*
 
-*Defined in [types/emscripten.ts:84](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L84)*
+*Defined in [types/emscripten.ts:84](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L84)*
 
 #### Type declaration:
 
@@ -309,7 +308,7 @@ ___
 
 • **onRuntimeInitialized**: *function*
 
-*Defined in [types/emscripten.ts:85](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L85)*
+*Defined in [types/emscripten.ts:85](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L85)*
 
 #### Type declaration:
 
@@ -321,7 +320,7 @@ ___
 
 • **postRun**: *Array‹function›*
 
-*Defined in [types/emscripten.ts:83](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L83)*
+*Defined in [types/emscripten.ts:83](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L83)*
 
 ___
 
@@ -329,7 +328,7 @@ ___
 
 • **preInit**: *Array‹function›*
 
-*Defined in [types/emscripten.ts:81](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L81)*
+*Defined in [types/emscripten.ts:81](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L81)*
 
 ___
 
@@ -337,7 +336,7 @@ ___
 
 • **preRun**: *Array‹function›*
 
-*Defined in [types/emscripten.ts:82](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L82)*
+*Defined in [types/emscripten.ts:82](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L82)*
 
 ___
 
@@ -345,7 +344,7 @@ ___
 
 • **preinitializedWebGLContext**: *WebGLRenderingContext*
 
-*Defined in [types/emscripten.ts:86](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L86)*
+*Defined in [types/emscripten.ts:86](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L86)*
 
 ___
 
@@ -353,7 +352,7 @@ ___
 
 • **preloadedAudios**: *any*
 
-*Defined in [types/emscripten.ts:154](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L154)*
+*Defined in [types/emscripten.ts:154](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L154)*
 
 ___
 
@@ -361,7 +360,7 @@ ___
 
 • **preloadedImages**: *any*
 
-*Defined in [types/emscripten.ts:153](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L153)*
+*Defined in [types/emscripten.ts:153](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L153)*
 
 ___
 
@@ -369,7 +368,7 @@ ___
 
 • **wasmBinary**: *ArrayBuffer*
 
-*Defined in [types/emscripten.ts:91](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L91)*
+*Defined in [types/emscripten.ts:91](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L91)*
 
 ## Methods
 
@@ -377,7 +376,7 @@ ___
 
 ▸ **_free**(`ptr`: number): *void*
 
-*Defined in [types/emscripten.ts:157](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L157)*
+*Defined in [types/emscripten.ts:157](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L157)*
 
 **Parameters:**
 
@@ -393,7 +392,7 @@ ___
 
 ▸ **_malloc**(`size`: number): *number*
 
-*Defined in [types/emscripten.ts:156](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L156)*
+*Defined in [types/emscripten.ts:156](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L156)*
 
 **Parameters:**
 
@@ -409,7 +408,7 @@ ___
 
 ▸ **addOnExit**(`cb`: function): *void*
 
-*Defined in [types/emscripten.ts:140](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L140)*
+*Defined in [types/emscripten.ts:140](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L140)*
 
 **Parameters:**
 
@@ -425,7 +424,7 @@ ___
 
 ▸ **addOnInit**(`cb`: function): *void*
 
-*Defined in [types/emscripten.ts:138](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L138)*
+*Defined in [types/emscripten.ts:138](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L138)*
 
 **Parameters:**
 
@@ -441,7 +440,7 @@ ___
 
 ▸ **addOnPostRun**(`cb`: function): *void*
 
-*Defined in [types/emscripten.ts:141](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L141)*
+*Defined in [types/emscripten.ts:141](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L141)*
 
 **Parameters:**
 
@@ -457,7 +456,7 @@ ___
 
 ▸ **addOnPreMain**(`cb`: function): *void*
 
-*Defined in [types/emscripten.ts:139](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L139)*
+*Defined in [types/emscripten.ts:139](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L139)*
 
 **Parameters:**
 
@@ -473,7 +472,7 @@ ___
 
 ▸ **addOnPreRun**(`cb`: function): *void*
 
-*Defined in [types/emscripten.ts:137](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L137)*
+*Defined in [types/emscripten.ts:137](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L137)*
 
 **Parameters:**
 
@@ -489,7 +488,7 @@ ___
 
 ▸ **addRunDependency**(`id`: any): *void*
 
-*Defined in [types/emscripten.ts:150](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L150)*
+*Defined in [types/emscripten.ts:150](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L150)*
 
 **Parameters:**
 
@@ -505,14 +504,14 @@ ___
 
 ▸ **allocate**(`slab`: any, `types`: string | string[], `allocator`: number, `ptr`: number): *number*
 
-*Defined in [types/emscripten.ts:116](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L116)*
+*Defined in [types/emscripten.ts:116](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L116)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `slab` | any |
-`types` | string \| string[] |
+`types` | string &#124; string[] |
 `allocator` | number |
 `ptr` | number |
 
@@ -524,14 +523,14 @@ ___
 
 ▸ **ccall**(`ident`: string, `returnType`: [ValueType](../modules/_types_emscripten_.md#valuetype) | null, `argTypes`: [ValueType](../modules/_types_emscripten_.md#valuetype)[], `args`: [TypeCompatibleWithC](../modules/_types_emscripten_.md#typecompatiblewithc)[], `opts?`: [CCallOpts](_types_emscripten_.ccallopts.md)): *any*
 
-*Defined in [types/emscripten.ts:104](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L104)*
+*Defined in [types/emscripten.ts:104](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L104)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `ident` | string |
-`returnType` | [ValueType](../modules/_types_emscripten_.md#valuetype) \| null |
+`returnType` | [ValueType](../modules/_types_emscripten_.md#valuetype) &#124; null |
 `argTypes` | [ValueType](../modules/_types_emscripten_.md#valuetype)[] |
 `args` | [TypeCompatibleWithC](../modules/_types_emscripten_.md#typecompatiblewithc)[] |
 `opts?` | [CCallOpts](_types_emscripten_.ccallopts.md) |
@@ -544,14 +543,14 @@ ___
 
 ▸ **cwrap**(`ident`: string, `returnType`: [ValueType](../modules/_types_emscripten_.md#valuetype) | null, `argTypes`: [ValueType](../modules/_types_emscripten_.md#valuetype)[], `opts?`: [CCallOpts](_types_emscripten_.ccallopts.md)): *function*
 
-*Defined in [types/emscripten.ts:105](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L105)*
+*Defined in [types/emscripten.ts:105](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L105)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `ident` | string |
-`returnType` | [ValueType](../modules/_types_emscripten_.md#valuetype) \| null |
+`returnType` | [ValueType](../modules/_types_emscripten_.md#valuetype) &#124; null |
 `argTypes` | [ValueType](../modules/_types_emscripten_.md#valuetype)[] |
 `opts?` | [CCallOpts](_types_emscripten_.ccallopts.md) |
 
@@ -571,7 +570,7 @@ ___
 
 ▸ **destroy**(`object`: object): *void*
 
-*Defined in [types/emscripten.ts:93](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L93)*
+*Defined in [types/emscripten.ts:93](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L93)*
 
 **Parameters:**
 
@@ -587,7 +586,7 @@ ___
 
 ▸ **getPreloadedPackage**(`remotePackageName`: string, `remotePackageSize`: number): *ArrayBuffer*
 
-*Defined in [types/emscripten.ts:94](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L94)*
+*Defined in [types/emscripten.ts:94](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L94)*
 
 **Parameters:**
 
@@ -604,7 +603,7 @@ ___
 
 ▸ **getValue**(`ptr`: number, `type`: string, `noSafe?`: undefined | false | true): *number*
 
-*Defined in [types/emscripten.ts:108](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L108)*
+*Defined in [types/emscripten.ts:108](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L108)*
 
 **Parameters:**
 
@@ -612,7 +611,7 @@ Name | Type |
 ------ | ------ |
 `ptr` | number |
 `type` | string |
-`noSafe?` | undefined \| false \| true |
+`noSafe?` | undefined &#124; false &#124; true |
 
 **Returns:** *number*
 
@@ -622,7 +621,7 @@ ___
 
 ▸ **instantiateWasm**(`imports`: [WebAssemblyImports](../modules/_types_emscripten_.md#webassemblyimports), `successCallback`: function): *[WebAssemblyExports](../modules/_types_emscripten_.md#webassemblyexports)*
 
-*Defined in [types/emscripten.ts:95](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L95)*
+*Defined in [types/emscripten.ts:95](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L95)*
 
 **Parameters:**
 
@@ -646,15 +645,15 @@ ___
 
 ▸ **intArrayFromString**(`stringy`: string, `dontAddNull?`: undefined | false | true, `length?`: undefined | number): *number[]*
 
-*Defined in [types/emscripten.ts:144](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L144)*
+*Defined in [types/emscripten.ts:144](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L144)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `stringy` | string |
-`dontAddNull?` | undefined \| false \| true |
-`length?` | undefined \| number |
+`dontAddNull?` | undefined &#124; false &#124; true |
+`length?` | undefined &#124; number |
 
 **Returns:** *number[]*
 
@@ -664,7 +663,7 @@ ___
 
 ▸ **intArrayToString**(`array`: number[]): *string*
 
-*Defined in [types/emscripten.ts:145](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L145)*
+*Defined in [types/emscripten.ts:145](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L145)*
 
 **Parameters:**
 
@@ -680,7 +679,7 @@ ___
 
 ▸ **locateFile**(`url`: string): *string*
 
-*Defined in [types/emscripten.ts:99](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L99)*
+*Defined in [types/emscripten.ts:99](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L99)*
 
 **Parameters:**
 
@@ -696,7 +695,7 @@ ___
 
 ▸ **onCustomMessage**(`event`: MessageEvent): *void*
 
-*Defined in [types/emscripten.ts:100](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L100)*
+*Defined in [types/emscripten.ts:100](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L100)*
 
 **Parameters:**
 
@@ -712,7 +711,7 @@ ___
 
 ▸ **print**(`str`: string): *void*
 
-*Defined in [types/emscripten.ts:77](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L77)*
+*Defined in [types/emscripten.ts:77](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L77)*
 
 **Parameters:**
 
@@ -728,7 +727,7 @@ ___
 
 ▸ **printErr**(`str`: string): *void*
 
-*Defined in [types/emscripten.ts:78](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L78)*
+*Defined in [types/emscripten.ts:78](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L78)*
 
 **Parameters:**
 
@@ -744,7 +743,7 @@ ___
 
 ▸ **removeRunDependency**(`id`: any): *void*
 
-*Defined in [types/emscripten.ts:151](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L151)*
+*Defined in [types/emscripten.ts:151](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L151)*
 
 **Parameters:**
 
@@ -760,7 +759,7 @@ ___
 
 ▸ **setValue**(`ptr`: number, `value`: any, `type`: string, `noSafe?`: undefined | false | true): *void*
 
-*Defined in [types/emscripten.ts:107](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L107)*
+*Defined in [types/emscripten.ts:107](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L107)*
 
 **Parameters:**
 
@@ -769,7 +768,7 @@ Name | Type |
 `ptr` | number |
 `value` | any |
 `type` | string |
-`noSafe?` | undefined \| false \| true |
+`noSafe?` | undefined &#124; false &#124; true |
 
 **Returns:** *void*
 
@@ -779,7 +778,7 @@ ___
 
 ▸ **writeArrayToMemory**(`array`: number[], `buffer`: number): *void*
 
-*Defined in [types/emscripten.ts:147](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L147)*
+*Defined in [types/emscripten.ts:147](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L147)*
 
 **Parameters:**
 
@@ -796,7 +795,7 @@ ___
 
 ▸ **writeAsciiToMemory**(`str`: string, `buffer`: number, `dontAddNull`: boolean): *void*
 
-*Defined in [types/emscripten.ts:148](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L148)*
+*Defined in [types/emscripten.ts:148](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L148)*
 
 **Parameters:**
 
@@ -814,7 +813,7 @@ ___
 
 ▸ **writeStringToMemory**(`str`: string, `buffer`: number, `dontAddNull`: boolean): *void*
 
-*Defined in [types/emscripten.ts:146](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L146)*
+*Defined in [types/emscripten.ts:146](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L146)*
 
 **Parameters:**
 

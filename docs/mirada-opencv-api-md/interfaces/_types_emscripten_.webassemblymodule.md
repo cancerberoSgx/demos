@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/emscripten"](../modules/_types_emscripten_.md) › [WebAssemblyModule](_types_emscripten_.webassemblymodule.md)
+[mirada](../README.md) › ["types/emscripten"](../modules/_types_emscripten_.md) › [WebAssemblyModule](_types_emscripten_.webassemblymodule.md)
 
 # Interface: WebAssemblyModule
+
 
 ## Hierarchy
 

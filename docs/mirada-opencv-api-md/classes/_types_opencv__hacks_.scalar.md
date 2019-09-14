@@ -1,14 +1,13 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/opencv/_hacks"](../modules/_types_opencv__hacks_.md) › [Scalar](_types_opencv__hacks_.scalar.md)
+[mirada](../README.md) › ["types/opencv/_hacks"](../modules/_types_opencv__hacks_.md) › [Scalar](_types_opencv__hacks_.scalar.md)
 
 # Class: Scalar
+
 
 ## Hierarchy
 
 * Array‹number›
 
-  * **Scalar**
+  ↳ **Scalar**
 
 ## Indexable
 
@@ -153,7 +152,7 @@ Combines two or more arrays.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`...items` | T \| ConcatArray‹T›[] | Additional items to add to the end of array1.  |
+`...items` | T &#124; ConcatArray‹T›[] | Additional items to add to the end of array1.  |
 
 **Returns:** *number[]*
 
@@ -176,7 +175,7 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `target` | number | If target is negative, it is treated as length+target where length is the length of the array. |
 `start` | number | If start is negative, it is treated as length+start. If end is negative, it is treated as length+end. |
-`end?` | undefined \| number | If not specified, length of the this object is used as its default value.  |
+`end?` | undefined &#124; number | If not specified, length of the this object is used as its default value.  |
 
 **Returns:** *this*
 
@@ -245,8 +244,8 @@ Returns the this object after filling the section identified by start and end wi
 Name | Type | Description |
 ------ | ------ | ------ |
 `value` | number | value to fill array section with |
-`start?` | undefined \| number | index to start filling the array at. If start is negative, it is treated as length+start where length is the length of the array. |
-`end?` | undefined \| number | index to stop filling the array at. If end is negative, it is treated as length+end.  |
+`start?` | undefined &#124; number | index to start filling the array at. If start is negative, it is treated as length+start where length is the length of the array. |
+`end?` | undefined &#124; number | index to stop filling the array at. If end is negative, it is treated as length+end.  |
 
 **Returns:** *this*
 
@@ -577,7 +576,7 @@ specified depth.
 Name | Type | Description |
 ------ | ------ | ------ |
 `this` | U[][] | - |
-`depth?` | undefined \| 1 | The maximum recursion depth  |
+`depth?` | undefined &#124; 1 | The maximum recursion depth  |
 
 **Returns:** *U[]*
 
@@ -620,7 +619,7 @@ specified depth. If no depth is provided, flat method defaults to the depth of 1
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`depth?` | undefined \| number | The maximum recursion depth  |
+`depth?` | undefined &#124; number | The maximum recursion depth  |
 
 **Returns:** *any[]*
 
@@ -628,7 +627,7 @@ ___
 
 ###  flatMap
 
-▸ **flatMap**<**U**, **This**>(`callback`: function, `thisArg?`: [This]()): *U[]*
+▸ **flatMap**<**U**, **This**>(`callback`: function, `thisArg?`: [This](undefined)): *U[]*
 
 *Inherited from void*
 
@@ -662,7 +661,7 @@ Name | Type |
 `index` | number |
 `array` | number[] |
 
-▪`Optional`  **thisArg**: *[This]()*
+▪`Optional`  **thisArg**: *[This](undefined)*
 
 An object to which the this keyword can refer in the callback function. If
 thisArg is omitted, undefined is used as the this value.
@@ -720,7 +719,7 @@ Determines whether an array includes a certain element, returning true or false 
 Name | Type | Description |
 ------ | ------ | ------ |
 `searchElement` | number | The element to search for. |
-`fromIndex?` | undefined \| number | The position in this array at which to begin searching for searchElement.  |
+`fromIndex?` | undefined &#124; number | The position in this array at which to begin searching for searchElement.  |
 
 **Returns:** *boolean*
 
@@ -741,7 +740,7 @@ Returns the index of the first occurrence of a value in an array.
 Name | Type | Description |
 ------ | ------ | ------ |
 `searchElement` | number | The value to locate in the array. |
-`fromIndex?` | undefined \| number | The array index at which to begin the search. If fromIndex is omitted, the search starts at index 0.  |
+`fromIndex?` | undefined &#124; number | The array index at which to begin the search. If fromIndex is omitted, the search starts at index 0.  |
 
 **Returns:** *number*
 
@@ -761,7 +760,7 @@ Adds all the elements of an array separated by the specified separator string.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`separator?` | undefined \| string | A string used to separate one element of an array from the next in the resulting String. If omitted, the array elements are separated with a comma.  |
+`separator?` | undefined &#124; string | A string used to separate one element of an array from the next in the resulting String. If omitted, the array elements are separated with a comma.  |
 
 **Returns:** *string*
 
@@ -796,7 +795,7 @@ Returns the index of the last occurrence of a specified value in an array.
 Name | Type | Description |
 ------ | ------ | ------ |
 `searchElement` | number | The value to locate in the array. |
-`fromIndex?` | undefined \| number | The array index at which to begin the search. If fromIndex is omitted, the search starts at the last index in the array.  |
+`fromIndex?` | undefined &#124; number | The array index at which to begin the search. If fromIndex is omitted, the search starts at the last index in the array.  |
 
 **Returns:** *number*
 
@@ -1098,8 +1097,8 @@ Returns a section of an array.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`start?` | undefined \| number | The beginning of the specified portion of the array. |
-`end?` | undefined \| number | The end of the specified portion of the array.  |
+`start?` | undefined &#124; number | The beginning of the specified portion of the array. |
+`end?` | undefined &#124; number | The end of the specified portion of the array.  |
 
 **Returns:** *number[]*
 
@@ -1153,7 +1152,7 @@ Sorts an array.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`compareFn?` | undefined \| function | The name of the function used to determine the order of the elements. If omitted, the elements are sorted in ascending, ASCII character order.  |
+`compareFn?` | undefined &#124; function | The name of the function used to determine the order of the elements. If omitted, the elements are sorted in ascending, ASCII character order.  |
 
 **Returns:** *this*
 
@@ -1174,7 +1173,7 @@ Removes elements from an array and, if necessary, inserts new elements in their 
 Name | Type | Description |
 ------ | ------ | ------ |
 `start` | number | The zero-based location in the array from which to start removing elements. |
-`deleteCount?` | undefined \| number | The number of elements to remove.  |
+`deleteCount?` | undefined &#124; number | The number of elements to remove.  |
 
 **Returns:** *number[]*
 
@@ -1264,7 +1263,7 @@ ___
 
 ▸ **all**(...`v`: number[]): *[Scalar](_types_opencv__hacks_.scalar.md)*
 
-*Defined in [types/opencv/_hacks.ts:10](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L10)*
+*Defined in [types/opencv/_hacks.ts:10](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L10)*
 
 **Parameters:**
 

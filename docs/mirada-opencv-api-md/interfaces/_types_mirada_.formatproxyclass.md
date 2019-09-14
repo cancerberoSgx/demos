@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/mirada"](../modules/_types_mirada_.md) › [FormatProxyClass](_types_mirada_.formatproxyclass.md)
+[mirada](../README.md) › ["types/mirada"](../modules/_types_mirada_.md) › [FormatProxyClass](_types_mirada_.formatproxyclass.md)
 
 # Interface: FormatProxyClass
+
 
 a class-like representation for format proxy instead functions
 
@@ -22,7 +21,7 @@ a class-like representation for format proxy instead functions
 
 ▸ **create**(): *Promise‹[FormatCodec](_types_mirada_.formatcodec.md)›*
 
-*Defined in [types/mirada.ts:61](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/mirada.ts#L61)*
+*Defined in [types/mirada.ts:61](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/mirada.ts#L61)*
 
 This is probably called only once and after obtaining a codec the same instance is used by the manager.
 

@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/opencv/BFMatcher"](../modules/_types_opencv_bfmatcher_.md) › [BFMatcher](_types_opencv_bfmatcher_.bfmatcher.md)
+[mirada](../README.md) › ["types/opencv/BFMatcher"](../modules/_types_opencv_bfmatcher_.md) › [BFMatcher](_types_opencv_bfmatcher_.bfmatcher.md)
 
 # Class: BFMatcher
+
 
 For each descriptor in the first set, this matcher finds the closest descriptor in the second set by
 trying each one. This descriptor matcher supports masking permissible matches of descriptor sets.
@@ -32,7 +31,7 @@ Source:
 
 \+ **new BFMatcher**(`normType?`: [int](../modules/_types_opencv__hacks_.md#int), `crossCheck?`: [bool](../modules/_types_opencv__hacks_.md#bool)): *[BFMatcher](_types_opencv_bfmatcher_.bfmatcher.md)*
 
-*Defined in [types/opencv/BFMatcher.ts:12](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/BFMatcher.ts#L12)*
+*Defined in [types/opencv/BFMatcher.ts:12](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/BFMatcher.ts#L12)*
 
 **Parameters:**
 
@@ -49,7 +48,7 @@ Name | Type |
 
 ▸ **clone**(`emptyTrainData?`: [bool](../modules/_types_opencv__hacks_.md#bool)): *[Ptr](../modules/_types_opencv__hacks_.md#ptr)*
 
-*Defined in [types/opencv/BFMatcher.ts:21](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/BFMatcher.ts#L21)*
+*Defined in [types/opencv/BFMatcher.ts:21](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/BFMatcher.ts#L21)*
 
 **Parameters:**
 
@@ -65,7 +64,7 @@ ___
 
 ▸ **isMaskSupported**(): *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/BFMatcher.ts:23](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/BFMatcher.ts#L23)*
+*Defined in [types/opencv/BFMatcher.ts:23](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/BFMatcher.ts#L23)*
 
 **Returns:** *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
@@ -75,7 +74,7 @@ ___
 
 ▸ **create**(`normType?`: [int](../modules/_types_opencv__hacks_.md#int), `crossCheck?`: [bool](../modules/_types_opencv__hacks_.md#bool)): *[Ptr](../modules/_types_opencv__hacks_.md#ptr)*
 
-*Defined in [types/opencv/BFMatcher.ts:38](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/BFMatcher.ts#L38)*
+*Defined in [types/opencv/BFMatcher.ts:38](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/BFMatcher.ts#L38)*
 
 **Parameters:**
 

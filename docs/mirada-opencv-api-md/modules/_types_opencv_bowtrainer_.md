@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/opencv/BOWTrainer"](_types_opencv_bowtrainer_.md)
+[mirada](../README.md) › ["types/opencv/BOWTrainer"](_types_opencv_bowtrainer_.md)
 
 # External module: "types/opencv/BOWTrainer"
+
 
 ## Index
 

@@ -1,16 +1,15 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/opencv/_hacks"](../modules/_types_opencv__hacks_.md) › [CLAHE](_types_opencv__hacks_.clahe.md)
+[mirada](../README.md) › ["types/opencv/_hacks"](../modules/_types_opencv__hacks_.md) › [CLAHE](_types_opencv__hacks_.clahe.md)
 
 # Class: CLAHE
+
 
 Base class for Contrast Limited Adaptive Histogram Equalization.
 
 ## Hierarchy
 
-* [Algorithm](_types_opencv_algorithm_.algorithm.md)
+  ↳ [Algorithm](_types_opencv_algorithm_.algorithm.md)
 
-  * **CLAHE**
+  ↳ **CLAHE**
 
 ## Index
 
@@ -22,11 +21,16 @@ Base class for Contrast Limited Adaptive Histogram Equalization.
 
 * [apply](_types_opencv__hacks_.clahe.md#apply)
 * [clear](_types_opencv__hacks_.clahe.md#clear)
+* [clone](_types_opencv__hacks_.clahe.md#clone)
 * [collectGarbage](_types_opencv__hacks_.clahe.md#collectgarbage)
+* [delete](_types_opencv__hacks_.clahe.md#delete)
+* [deleteLater](_types_opencv__hacks_.clahe.md#deletelater)
 * [empty](_types_opencv__hacks_.clahe.md#empty)
 * [getClipLimit](_types_opencv__hacks_.clahe.md#getcliplimit)
 * [getDefaultName](_types_opencv__hacks_.clahe.md#getdefaultname)
 * [getTilesGridSize](_types_opencv__hacks_.clahe.md#gettilesgridsize)
+* [isAliasOf](_types_opencv__hacks_.clahe.md#isaliasof)
+* [isDeleted](_types_opencv__hacks_.clahe.md#isdeleted)
 * [read](_types_opencv__hacks_.clahe.md#read)
 * [save](_types_opencv__hacks_.clahe.md#save)
 * [setClipLimit](_types_opencv__hacks_.clahe.md#setcliplimit)
@@ -44,7 +48,7 @@ Base class for Contrast Limited Adaptive Histogram Equalization.
 
 *Overrides [Algorithm](_types_opencv_algorithm_.algorithm.md).[constructor](_types_opencv_algorithm_.algorithm.md#constructor)*
 
-*Defined in [types/opencv/_hacks.ts:78](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L78)*
+*Defined in [types/opencv/_hacks.ts:79](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L79)*
 
 **Parameters:**
 
@@ -61,7 +65,7 @@ Name | Type | Description |
 
 ▸ **apply**(`src`: [Mat](_types_opencv_mat_.mat.md), `dst`: [Mat](_types_opencv_mat_.mat.md)): *void*
 
-*Defined in [types/opencv/_hacks.ts:89](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L89)*
+*Defined in [types/opencv/_hacks.ts:90](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L90)*
 
 Equalizes the histogram of a grayscale image using Contrast Limited Adaptive Histogram Equalization.
 
@@ -82,9 +86,27 @@ ___
 
 *Inherited from [Algorithm](_types_opencv_algorithm_.algorithm.md).[clear](_types_opencv_algorithm_.algorithm.md#clear)*
 
-*Defined in [types/opencv/Algorithm.ts:52](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Algorithm.ts#L52)*
+*Defined in [types/opencv/Algorithm.ts:53](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Algorithm.ts#L53)*
 
 **Returns:** *void*
+
+___
+
+###  clone
+
+▸ **clone**(...`a`: any[]): *any*
+
+*Inherited from [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md).[clone](_types_opencv__hacks_.emscriptenembindinstance.md#clone)*
+
+*Defined in [types/opencv/_hacks.ts:120](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L120)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...a` | any[] |
+
+**Returns:** *any*
 
 ___
 
@@ -92,9 +114,45 @@ ___
 
 ▸ **collectGarbage**(): *void*
 
-*Defined in [types/opencv/_hacks.ts:90](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L90)*
+*Defined in [types/opencv/_hacks.ts:91](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L91)*
 
 **Returns:** *void*
+
+___
+
+###  delete
+
+▸ **delete**(...`a`: any[]): *any*
+
+*Inherited from [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md).[delete](_types_opencv__hacks_.emscriptenembindinstance.md#delete)*
+
+*Defined in [types/opencv/_hacks.ts:121](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L121)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...a` | any[] |
+
+**Returns:** *any*
+
+___
+
+###  deleteLater
+
+▸ **deleteLater**(...`a`: any[]): *any*
+
+*Inherited from [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md).[deleteLater](_types_opencv__hacks_.emscriptenembindinstance.md#deletelater)*
+
+*Defined in [types/opencv/_hacks.ts:123](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L123)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...a` | any[] |
+
+**Returns:** *any*
 
 ___
 
@@ -104,7 +162,7 @@ ___
 
 *Inherited from [Algorithm](_types_opencv_algorithm_.algorithm.md).[empty](_types_opencv_algorithm_.algorithm.md#empty)*
 
-*Defined in [types/opencv/Algorithm.ts:54](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Algorithm.ts#L54)*
+*Defined in [types/opencv/Algorithm.ts:55](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Algorithm.ts#L55)*
 
 **Returns:** *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
@@ -114,7 +172,7 @@ ___
 
 ▸ **getClipLimit**(): *[double](../modules/_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/_hacks.ts:94](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L94)*
+*Defined in [types/opencv/_hacks.ts:95](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L95)*
 
 Returns threshold value for contrast limiting.
 
@@ -128,7 +186,7 @@ ___
 
 *Inherited from [Algorithm](_types_opencv_algorithm_.algorithm.md).[getDefaultName](_types_opencv_algorithm_.algorithm.md#getdefaultname)*
 
-*Defined in [types/opencv/Algorithm.ts:60](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Algorithm.ts#L60)*
+*Defined in [types/opencv/Algorithm.ts:61](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Algorithm.ts#L61)*
 
   Returns the algorithm string identifier. This string is used as top level xml/yml node tag when
 the object is saved to a file or string.
@@ -141,11 +199,47 @@ ___
 
 ▸ **getTilesGridSize**(): *[Size](_types_opencv__hacks_.size.md)*
 
-*Defined in [types/opencv/_hacks.ts:98](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L98)*
+*Defined in [types/opencv/_hacks.ts:99](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L99)*
 
 Returns Size defines the number of tiles in row and column.
 
 **Returns:** *[Size](_types_opencv__hacks_.size.md)*
+
+___
+
+###  isAliasOf
+
+▸ **isAliasOf**(...`a`: any[]): *any*
+
+*Inherited from [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md).[isAliasOf](_types_opencv__hacks_.emscriptenembindinstance.md#isaliasof)*
+
+*Defined in [types/opencv/_hacks.ts:119](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L119)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...a` | any[] |
+
+**Returns:** *any*
+
+___
+
+###  isDeleted
+
+▸ **isDeleted**(...`a`: any[]): *any*
+
+*Inherited from [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md).[isDeleted](_types_opencv__hacks_.emscriptenembindinstance.md#isdeleted)*
+
+*Defined in [types/opencv/_hacks.ts:122](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L122)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...a` | any[] |
+
+**Returns:** *any*
 
 ___
 
@@ -155,7 +249,7 @@ ___
 
 *Inherited from [Algorithm](_types_opencv_algorithm_.algorithm.md).[read](_types_opencv_algorithm_.algorithm.md#read)*
 
-*Defined in [types/opencv/Algorithm.ts:62](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Algorithm.ts#L62)*
+*Defined in [types/opencv/Algorithm.ts:63](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Algorithm.ts#L63)*
 
 **Parameters:**
 
@@ -173,7 +267,7 @@ ___
 
 *Inherited from [Algorithm](_types_opencv_algorithm_.algorithm.md).[save](_types_opencv_algorithm_.algorithm.md#save)*
 
-*Defined in [types/opencv/Algorithm.ts:68](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Algorithm.ts#L68)*
+*Defined in [types/opencv/Algorithm.ts:69](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Algorithm.ts#L69)*
 
   Saves the algorithm to a file. In order to make this method work, the derived class must implement
 Algorithm::write(FileStorage& fs).
@@ -192,7 +286,7 @@ ___
 
 ▸ **setClipLimit**(`clipLimit`: [double](../modules/_types_opencv__hacks_.md#double)): *void*
 
-*Defined in [types/opencv/_hacks.ts:102](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L102)*
+*Defined in [types/opencv/_hacks.ts:103](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L103)*
 
 Sets threshold for contrast limiting.
 
@@ -210,7 +304,7 @@ ___
 
 ▸ **setTilesGridSize**(`tileGridSize`: [Size](_types_opencv__hacks_.size.md)): *void*
 
-*Defined in [types/opencv/_hacks.ts:107](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L107)*
+*Defined in [types/opencv/_hacks.ts:108](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L108)*
 
 Sets size of grid for histogram equalization. Input image will be divided into equally sized rectangular tiles.
 
@@ -230,7 +324,7 @@ ___
 
 *Inherited from [Algorithm](_types_opencv_algorithm_.algorithm.md).[write](_types_opencv_algorithm_.algorithm.md#write)*
 
-*Defined in [types/opencv/Algorithm.ts:70](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Algorithm.ts#L70)*
+*Defined in [types/opencv/Algorithm.ts:71](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Algorithm.ts#L71)*
 
 **Parameters:**
 
@@ -244,7 +338,7 @@ Name | Type |
 
 *Inherited from [Algorithm](_types_opencv_algorithm_.algorithm.md).[write](_types_opencv_algorithm_.algorithm.md#write)*
 
-*Defined in [types/opencv/Algorithm.ts:72](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Algorithm.ts#L72)*
+*Defined in [types/opencv/Algorithm.ts:73](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Algorithm.ts#L73)*
 
 **Parameters:**
 
@@ -263,7 +357,7 @@ ___
 
 *Inherited from [Algorithm](_types_opencv_algorithm_.algorithm.md).[load](_types_opencv_algorithm_.algorithm.md#static-load)*
 
-*Defined in [types/opencv/Algorithm.ts:89](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Algorithm.ts#L89)*
+*Defined in [types/opencv/Algorithm.ts:90](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Algorithm.ts#L90)*
 
   This is static template method of [Algorithm]. It's usage is following (in the case of SVM):
 
@@ -292,7 +386,7 @@ ___
 
 *Inherited from [Algorithm](_types_opencv_algorithm_.algorithm.md).[loadFromString](_types_opencv_algorithm_.algorithm.md#static-loadfromstring)*
 
-*Defined in [types/opencv/Algorithm.ts:103](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Algorithm.ts#L103)*
+*Defined in [types/opencv/Algorithm.ts:104](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Algorithm.ts#L104)*
 
   This is static template method of [Algorithm]. It's usage is following (in the case of SVM):
 
@@ -318,7 +412,7 @@ ___
 
 *Inherited from [Algorithm](_types_opencv_algorithm_.algorithm.md).[read](_types_opencv_algorithm_.algorithm.md#static-read)*
 
-*Defined in [types/opencv/Algorithm.ts:117](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Algorithm.ts#L117)*
+*Defined in [types/opencv/Algorithm.ts:118](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Algorithm.ts#L118)*
 
   This is static template method of [Algorithm]. It's usage is following (in the case of SVM):
 

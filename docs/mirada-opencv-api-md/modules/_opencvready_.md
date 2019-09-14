@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["opencvReady"](_opencvready_.md)
+[mirada](../README.md) › ["opencvReady"](_opencvready_.md)
 
 # External module: "opencvReady"
+
 
 ## Index
 
@@ -26,7 +25,7 @@
 
 • **FS_**: *[FS](../interfaces/_types_emscripten_.fs.md) | undefined*
 
-*Defined in [opencvReady.ts:10](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/opencvReady.ts#L10)*
+*Defined in [opencvReady.ts:10](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/opencvReady.ts#L10)*
 
 ___
 
@@ -34,7 +33,7 @@ ___
 
 • **FS_ROOT**: *"/work"* = "/work"
 
-*Defined in [opencvReady.ts:8](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/opencvReady.ts#L8)*
+*Defined in [opencvReady.ts:8](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/opencvReady.ts#L8)*
 
 ___
 
@@ -42,7 +41,7 @@ ___
 
 • **opencvLoaded**: *boolean* = false
 
-*Defined in [opencvReady.ts:46](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/opencvReady.ts#L46)*
+*Defined in [opencvReady.ts:46](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/opencvReady.ts#L46)*
 
 ## Functions
 
@@ -50,7 +49,7 @@ ___
 
 ▸ **finishSetup**(`o`: [LoadOptions](../interfaces/_types_mirada_.loadoptions.md)): *Promise‹void›*
 
-*Defined in [opencvReady.ts:85](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/opencvReady.ts#L85)*
+*Defined in [opencvReady.ts:85](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/opencvReady.ts#L85)*
 
 **Parameters:**
 
@@ -66,7 +65,7 @@ ___
 
 ▸ **getFS**(): *[FS](../interfaces/_types_emscripten_.fs.md)*
 
-*Defined in [opencvReady.ts:15](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/opencvReady.ts#L15)*
+*Defined in [opencvReady.ts:15](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/opencvReady.ts#L15)*
 
 gets the emscripten FS API
 
@@ -78,7 +77,7 @@ ___
 
 ▸ **loadOpencv**(`options`: [LoadOptions](../interfaces/_types_mirada_.loadoptions.md)): *Promise‹void› | Promise‹[FS](../interfaces/_types_emscripten_.fs.md)›*
 
-*Defined in [opencvReady.ts:29](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/opencvReady.ts#L29)*
+*Defined in [opencvReady.ts:29](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/opencvReady.ts#L29)*
 
 Loads opencv.js file. It will do it only once no matter if called multiple times.
 In the browser a new script element is created to load the file while in Node.js
@@ -103,7 +102,7 @@ ___
 
 ▸ **loadOpencvBrowser**(`o`: [LoadOptions](../interfaces/_types_mirada_.loadoptions.md)): *Promise‹[FS](../interfaces/_types_emscripten_.fs.md)›*
 
-*Defined in [opencvReady.ts:94](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/opencvReady.ts#L94)*
+*Defined in [opencvReady.ts:94](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/opencvReady.ts#L94)*
 
 **Parameters:**
 
@@ -119,7 +118,7 @@ ___
 
 ▸ **loadOpencvNode**(`o`: [LoadOptions](../interfaces/_types_mirada_.loadoptions.md)): *Promise‹[FS](../interfaces/_types_emscripten_.fs.md)›*
 
-*Defined in [opencvReady.ts:48](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/opencvReady.ts#L48)*
+*Defined in [opencvReady.ts:48](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/opencvReady.ts#L48)*
 
 **Parameters:**
 

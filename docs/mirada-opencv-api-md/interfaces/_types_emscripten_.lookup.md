@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/emscripten"](../modules/_types_emscripten_.md) › [Lookup](_types_emscripten_.lookup.md)
+[mirada](../README.md) › ["types/emscripten"](../modules/_types_emscripten_.md) › [Lookup](_types_emscripten_.lookup.md)
 
 # Interface: Lookup
+
 
 ## Hierarchy
 
@@ -21,7 +20,7 @@
 
 • **node**: *[FSNode](_types_emscripten_.fsnode.md)*
 
-*Defined in [types/emscripten.ts:3](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L3)*
+*Defined in [types/emscripten.ts:3](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L3)*
 
 ___
 
@@ -29,4 +28,4 @@ ___
 
 • **path**: *string*
 
-*Defined in [types/emscripten.ts:2](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/emscripten.ts#L2)*
+*Defined in [types/emscripten.ts:2](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/emscripten.ts#L2)*

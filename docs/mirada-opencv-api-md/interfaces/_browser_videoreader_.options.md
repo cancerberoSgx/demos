@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["browser/videoReader"](../modules/_browser_videoreader_.md) › [Options](_browser_videoreader_.options.md)
+[mirada](../README.md) › ["browser/videoReader"](../modules/_browser_videoreader_.md) › [Options](_browser_videoreader_.options.md)
 
 # Interface: Options
+
 
 ## Hierarchy
 
@@ -22,7 +21,7 @@
 
 • **constraints**? : *MediaStreamConstraints*
 
-*Defined in [browser/videoReader.ts:6](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/videoReader.ts#L6)*
+*Defined in [browser/videoReader.ts:7](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/browser/videoReader.ts#L7)*
 
 ___
 
@@ -30,7 +29,7 @@ ___
 
 • **noMatCheck**? : *undefined | false | true*
 
-*Defined in [browser/videoReader.ts:5](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/videoReader.ts#L5)*
+*Defined in [browser/videoReader.ts:6](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/browser/videoReader.ts#L6)*
 
 ___
 
@@ -38,4 +37,4 @@ ___
 
 • **size**? : *"videoSize" | "video" | "canvas"*
 
-*Defined in [browser/videoReader.ts:4](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/browser/videoReader.ts#L4)*
+*Defined in [browser/videoReader.ts:5](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/browser/videoReader.ts#L5)*

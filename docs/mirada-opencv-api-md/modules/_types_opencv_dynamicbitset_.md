@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/opencv/DynamicBitset"](_types_opencv_dynamicbitset_.md)
+[mirada](../README.md) › ["types/opencv/DynamicBitset"](_types_opencv_dynamicbitset_.md)
 
 # External module: "types/opencv/DynamicBitset"
+
 
 ## Index
 

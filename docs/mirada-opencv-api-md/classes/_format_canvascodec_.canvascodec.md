@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["format/canvasCodec"](../modules/_format_canvascodec_.md) › [CanvasCodec](_format_canvascodec_.canvascodec.md)
+[mirada](../README.md) › ["format/canvasCodec"](../modules/_format_canvascodec_.md) › [CanvasCodec](_format_canvascodec_.canvascodec.md)
 
 # Class: CanvasCodec
+
 
 Example of declaring a format codec that uses DOM canvas instance which must be provided by the user.
 
@@ -40,7 +39,7 @@ return new JimpFormatCodec(Jimp)
 
 \+ **new CanvasCodec**(): *[CanvasCodec](_format_canvascodec_.canvascodec.md)*
 
-*Defined in [format/canvasCodec.ts:18](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/format/canvasCodec.ts#L18)*
+*Defined in [format/canvasCodec.ts:18](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/format/canvasCodec.ts#L18)*
 
 **Returns:** *[CanvasCodec](_format_canvascodec_.canvascodec.md)*
 
@@ -52,14 +51,14 @@ return new JimpFormatCodec(Jimp)
 
 *Implementation of [FormatCodec](../interfaces/_types_mirada_.formatcodec.md)*
 
-*Defined in [format/canvasCodec.ts:22](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/format/canvasCodec.ts#L22)*
+*Defined in [format/canvasCodec.ts:22](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/format/canvasCodec.ts#L22)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `buffer` | ArrayBuffer |
-`format?` | undefined \| string |
+`format?` | undefined &#124; string |
 
 **Returns:** *Promise‹ImageData | undefined›*
 
@@ -69,7 +68,7 @@ ___
 
 ▸ **encode**(`data`: ImageData, `format`: string, `quality?`: undefined | number): *Promise‹ArrayBuffer | undefined›*
 
-*Defined in [format/canvasCodec.ts:33](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/format/canvasCodec.ts#L33)*
+*Defined in [format/canvasCodec.ts:33](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/format/canvasCodec.ts#L33)*
 
 **Parameters:**
 
@@ -77,6 +76,6 @@ Name | Type |
 ------ | ------ |
 `data` | ImageData |
 `format` | string |
-`quality?` | undefined \| number |
+`quality?` | undefined &#124; number |
 
 **Returns:** *Promise‹ArrayBuffer | undefined›*

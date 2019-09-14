@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/opencv/imgproc_transform"](_types_opencv_imgproc_transform_.md)
+[mirada](../README.md) › ["types/opencv/imgproc_transform"](_types_opencv_imgproc_transform_.md)
 
 # External module: "types/opencv/imgproc_transform"
+
 
 ## Index
 
@@ -52,7 +51,7 @@
 
 Ƭ **InterpolationFlags**: *any*
 
-*Defined in [types/opencv/imgproc_transform.ts:481](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L481)*
+*Defined in [types/opencv/imgproc_transform.ts:481](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L481)*
 
 ___
 
@@ -60,7 +59,7 @@ ___
 
 Ƭ **InterpolationMasks**: *any*
 
-*Defined in [types/opencv/imgproc_transform.ts:483](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L483)*
+*Defined in [types/opencv/imgproc_transform.ts:483](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L483)*
 
 ___
 
@@ -68,7 +67,7 @@ ___
 
 Ƭ **WarpPolarMode**: *any*
 
-*Defined in [types/opencv/imgproc_transform.ts:485](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L485)*
+*Defined in [types/opencv/imgproc_transform.ts:485](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L485)*
 
 ## Variables
 
@@ -76,7 +75,7 @@ ___
 
 • **INTER_AREA**: *[InterpolationFlags](_types_opencv_imgproc_transform_.md#interpolationflags)*
 
-*Defined in [types/opencv/imgproc_transform.ts:431](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L431)*
+*Defined in [types/opencv/imgproc_transform.ts:431](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L431)*
 
 resampling using pixel area relation. It may be a preferred method for image decimation, as it gives
 moire'-free results. But when the image is zoomed, it is similar to the INTER_NEAREST method.
@@ -87,7 +86,7 @@ ___
 
 • **INTER_BITS**: *[InterpolationMasks](_types_opencv_imgproc_transform_.md#interpolationmasks)*
 
-*Defined in [types/opencv/imgproc_transform.ts:469](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L469)*
+*Defined in [types/opencv/imgproc_transform.ts:469](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L469)*
 
 ___
 
@@ -95,7 +94,7 @@ ___
 
 • **INTER_BITS2**: *[InterpolationMasks](_types_opencv_imgproc_transform_.md#interpolationmasks)*
 
-*Defined in [types/opencv/imgproc_transform.ts:471](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L471)*
+*Defined in [types/opencv/imgproc_transform.ts:471](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L471)*
 
 ___
 
@@ -103,7 +102,7 @@ ___
 
 • **INTER_CUBIC**: *[InterpolationFlags](_types_opencv_imgproc_transform_.md#interpolationflags)*
 
-*Defined in [types/opencv/imgproc_transform.ts:424](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L424)*
+*Defined in [types/opencv/imgproc_transform.ts:424](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L424)*
 
 bicubic interpolation
 
@@ -113,7 +112,7 @@ ___
 
 • **INTER_LANCZOS4**: *[InterpolationFlags](_types_opencv_imgproc_transform_.md#interpolationflags)*
 
-*Defined in [types/opencv/imgproc_transform.ts:437](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L437)*
+*Defined in [types/opencv/imgproc_transform.ts:437](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L437)*
 
 Lanczos interpolation over 8x8 neighborhood
 
@@ -123,7 +122,7 @@ ___
 
 • **INTER_LINEAR**: *[InterpolationFlags](_types_opencv_imgproc_transform_.md#interpolationflags)*
 
-*Defined in [types/opencv/imgproc_transform.ts:418](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L418)*
+*Defined in [types/opencv/imgproc_transform.ts:418](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L418)*
 
 bilinear interpolation
 
@@ -133,7 +132,7 @@ ___
 
 • **INTER_LINEAR_EXACT**: *[InterpolationFlags](_types_opencv_imgproc_transform_.md#interpolationflags)*
 
-*Defined in [types/opencv/imgproc_transform.ts:443](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L443)*
+*Defined in [types/opencv/imgproc_transform.ts:443](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L443)*
 
 Bit exact bilinear interpolation
 
@@ -143,7 +142,7 @@ ___
 
 • **INTER_MAX**: *[InterpolationFlags](_types_opencv_imgproc_transform_.md#interpolationflags)*
 
-*Defined in [types/opencv/imgproc_transform.ts:449](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L449)*
+*Defined in [types/opencv/imgproc_transform.ts:449](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L449)*
 
 mask for interpolation codes
 
@@ -153,7 +152,7 @@ ___
 
 • **INTER_NEAREST**: *[InterpolationFlags](_types_opencv_imgproc_transform_.md#interpolationflags)*
 
-*Defined in [types/opencv/imgproc_transform.ts:412](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L412)*
+*Defined in [types/opencv/imgproc_transform.ts:412](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L412)*
 
 nearest neighbor interpolation
 
@@ -163,7 +162,7 @@ ___
 
 • **INTER_TAB_SIZE**: *[InterpolationMasks](_types_opencv_imgproc_transform_.md#interpolationmasks)*
 
-*Defined in [types/opencv/imgproc_transform.ts:473](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L473)*
+*Defined in [types/opencv/imgproc_transform.ts:473](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L473)*
 
 ___
 
@@ -171,7 +170,7 @@ ___
 
 • **INTER_TAB_SIZE2**: *[InterpolationMasks](_types_opencv_imgproc_transform_.md#interpolationmasks)*
 
-*Defined in [types/opencv/imgproc_transform.ts:475](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L475)*
+*Defined in [types/opencv/imgproc_transform.ts:475](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L475)*
 
 ___
 
@@ -179,7 +178,7 @@ ___
 
 • **WARP_FILL_OUTLIERS**: *[InterpolationFlags](_types_opencv_imgproc_transform_.md#interpolationflags)*
 
-*Defined in [types/opencv/imgproc_transform.ts:456](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L456)*
+*Defined in [types/opencv/imgproc_transform.ts:456](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L456)*
 
 flag, fills all of the destination image pixels. If some of them correspond to outliers in the
 source image, they are set to zero
@@ -190,7 +189,7 @@ ___
 
 • **WARP_INVERSE_MAP**: *[InterpolationFlags](_types_opencv_imgproc_transform_.md#interpolationflags)*
 
-*Defined in [types/opencv/imgproc_transform.ts:467](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L467)*
+*Defined in [types/opencv/imgproc_transform.ts:467](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L467)*
 
 flag, inverse transformation
 
@@ -205,7 +204,7 @@ ___
 
 • **WARP_POLAR_LINEAR**: *[WarpPolarMode](_types_opencv_imgproc_transform_.md#warppolarmode)*
 
-*Defined in [types/opencv/imgproc_transform.ts:477](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L477)*
+*Defined in [types/opencv/imgproc_transform.ts:477](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L477)*
 
 ___
 
@@ -213,15 +212,15 @@ ___
 
 • **WARP_POLAR_LOG**: *[WarpPolarMode](_types_opencv_imgproc_transform_.md#warppolarmode)*
 
-*Defined in [types/opencv/imgproc_transform.ts:479](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L479)*
+*Defined in [types/opencv/imgproc_transform.ts:479](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L479)*
 
 ## Functions
 
 ###  convertMaps
 
-▸ **convertMaps**(`map1`: InputArray, `map2`: InputArray, `dstmap1`: OutputArray, `dstmap2`: OutputArray, `dstmap1type`: [int](_types_opencv__hacks_.md#int), `nninterpolation?`: [bool](_types_opencv__hacks_.md#bool)): *void*
+▸ **convertMaps**(`map1`: [InputArray](_types_opencv__hacks_.md#inputarray), `map2`: [InputArray](_types_opencv__hacks_.md#inputarray), `dstmap1`: OutputArray, `dstmap2`: OutputArray, `dstmap1type`: [int](_types_opencv__hacks_.md#int), `nninterpolation?`: [bool](_types_opencv__hacks_.md#bool)): *void*
 
-*Defined in [types/opencv/imgproc_transform.ts:55](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L55)*
+*Defined in [types/opencv/imgproc_transform.ts:55](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L55)*
 
 The function converts a pair of maps for remap from one representation to another. The following
 options ( (map1.type(), map2.type()) `$\\rightarrow$` (dstmap1.type(), dstmap2.type()) ) are
@@ -243,8 +242,8 @@ the originals.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`map1` | InputArray | The first input map of type CV_16SC2, CV_32FC1, or CV_32FC2 .  |
-`map2` | InputArray | The second input map of type CV_16UC1, CV_32FC1, or none (empty matrix), respectively.  |
+`map1` | [InputArray](_types_opencv__hacks_.md#inputarray) | The first input map of type CV_16SC2, CV_32FC1, or CV_32FC2 .  |
+`map2` | [InputArray](_types_opencv__hacks_.md#inputarray) | The second input map of type CV_16UC1, CV_32FC1, or none (empty matrix), respectively.  |
 `dstmap1` | OutputArray | The first output map that has the type dstmap1type and the same size as src .  |
 `dstmap2` | OutputArray | The second output map.  |
 `dstmap1type` | [int](_types_opencv__hacks_.md#int) | Type of the first output map that should be CV_16SC2, CV_32FC1, or CV_32FC2 .  |
@@ -258,7 +257,7 @@ ___
 
 ▸ **getAffineTransform**(`src`: any, `dst`: any): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/imgproc_transform.ts:73](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L73)*
+*Defined in [types/opencv/imgproc_transform.ts:73](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L73)*
 
 The function calculates the `$2 \\times 3$` matrix of an affine transform so that:
 
@@ -280,16 +279,16 @@ Name | Type | Description |
 
 **Returns:** *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-▸ **getAffineTransform**(`src`: InputArray, `dst`: InputArray): *[Mat](../classes/_types_opencv_mat_.mat.md)*
+▸ **getAffineTransform**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: [InputArray](_types_opencv__hacks_.md#inputarray)): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/imgproc_transform.ts:75](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L75)*
+*Defined in [types/opencv/imgproc_transform.ts:75](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L75)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`src` | InputArray |
-`dst` | InputArray |
+`src` | [InputArray](_types_opencv__hacks_.md#inputarray) |
+`dst` | [InputArray](_types_opencv__hacks_.md#inputarray) |
 
 **Returns:** *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
@@ -297,9 +296,9 @@ ___
 
 ###  getPerspectiveTransform
 
-▸ **getPerspectiveTransform**(`src`: InputArray, `dst`: InputArray, `solveMethod?`: [int](_types_opencv__hacks_.md#int)): *[Mat](../classes/_types_opencv_mat_.mat.md)*
+▸ **getPerspectiveTransform**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: [InputArray](_types_opencv__hacks_.md#inputarray), `solveMethod?`: [int](_types_opencv__hacks_.md#int)): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/imgproc_transform.ts:95](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L95)*
+*Defined in [types/opencv/imgproc_transform.ts:95](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L95)*
 
 The function calculates the `$3 \\times 3$` matrix of a perspective transform so that:
 
@@ -316,15 +315,15 @@ where
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`src` | InputArray | Coordinates of quadrangle vertices in the source image.  |
-`dst` | InputArray | Coordinates of the corresponding quadrangle vertices in the destination image.  |
+`src` | [InputArray](_types_opencv__hacks_.md#inputarray) | Coordinates of quadrangle vertices in the source image.  |
+`dst` | [InputArray](_types_opencv__hacks_.md#inputarray) | Coordinates of the corresponding quadrangle vertices in the destination image.  |
 `solveMethod?` | [int](_types_opencv__hacks_.md#int) | method passed to cv::solve (DecompTypes)  |
 
 **Returns:** *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
 ▸ **getPerspectiveTransform**(`src`: any, `dst`: any, `solveMethod?`: [int](_types_opencv__hacks_.md#int)): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/imgproc_transform.ts:101](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L101)*
+*Defined in [types/opencv/imgproc_transform.ts:101](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L101)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -343,9 +342,9 @@ ___
 
 ###  getRectSubPix
 
-▸ **getRectSubPix**(`image`: InputArray, `patchSize`: [Size](../classes/_types_opencv__hacks_.size.md), `center`: Point2f, `patch`: OutputArray, `patchType?`: [int](_types_opencv__hacks_.md#int)): *void*
+▸ **getRectSubPix**(`image`: [InputArray](_types_opencv__hacks_.md#inputarray), `patchSize`: [Size](../classes/_types_opencv__hacks_.size.md), `center`: Point2f, `patch`: OutputArray, `patchType?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_transform.ts:127](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L127)*
+*Defined in [types/opencv/imgproc_transform.ts:127](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L127)*
 
 The function getRectSubPix extracts pixels from src:
 
@@ -363,7 +362,7 @@ the image, parts of the rectangle may be outside.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`image` | InputArray | Source image.  |
+`image` | [InputArray](_types_opencv__hacks_.md#inputarray) | Source image.  |
 `patchSize` | [Size](../classes/_types_opencv__hacks_.size.md) | Size of the extracted patch.  |
 `center` | Point2f | Floating point coordinates of the center of the extracted rectangle within the source image. The center must be inside the image.  |
 `patch` | OutputArray | Extracted patch that has the size patchSize and the same number of channels as src .  |
@@ -377,7 +376,7 @@ ___
 
 ▸ **getRotationMatrix2D**(`center`: Point2f, `angle`: [double](_types_opencv__hacks_.md#double), `scale`: [double](_types_opencv__hacks_.md#double)): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/imgproc_transform.ts:152](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L152)*
+*Defined in [types/opencv/imgproc_transform.ts:152](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L152)*
 
 The function calculates the following matrix:
 
@@ -408,9 +407,9 @@ ___
 
 ###  invertAffineTransform
 
-▸ **invertAffineTransform**(`M`: InputArray, `iM`: OutputArray): *void*
+▸ **invertAffineTransform**(`M`: [InputArray](_types_opencv__hacks_.md#inputarray), `iM`: OutputArray): *void*
 
-*Defined in [types/opencv/imgproc_transform.ts:165](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L165)*
+*Defined in [types/opencv/imgproc_transform.ts:165](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L165)*
 
 The function computes an inverse affine transformation represented by `$2 \\times 3$` matrix M:
 
@@ -422,7 +421,7 @@ The result is also a `$2 \\times 3$` matrix of the same type as M.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`M` | InputArray | Original affine transformation.  |
+`M` | [InputArray](_types_opencv__hacks_.md#inputarray) | Original affine transformation.  |
 `iM` | OutputArray | Output reverse affine transformation.  |
 
 **Returns:** *void*
@@ -431,15 +430,15 @@ ___
 
 ###  linearPolar
 
-▸ **linearPolar**(`src`: InputArray, `dst`: OutputArray, `center`: Point2f, `maxRadius`: [double](_types_opencv__hacks_.md#double), `flags`: [int](_types_opencv__hacks_.md#int)): *void*
+▸ **linearPolar**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `center`: Point2f, `maxRadius`: [double](_types_opencv__hacks_.md#double), `flags`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_transform.ts:167](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L167)*
+*Defined in [types/opencv/imgproc_transform.ts:167](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L167)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`src` | InputArray |
+`src` | [InputArray](_types_opencv__hacks_.md#inputarray) |
 `dst` | OutputArray |
 `center` | Point2f |
 `maxRadius` | [double](_types_opencv__hacks_.md#double) |
@@ -451,15 +450,15 @@ ___
 
 ###  logPolar
 
-▸ **logPolar**(`src`: InputArray, `dst`: OutputArray, `center`: Point2f, `M`: [double](_types_opencv__hacks_.md#double), `flags`: [int](_types_opencv__hacks_.md#int)): *void*
+▸ **logPolar**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `center`: Point2f, `M`: [double](_types_opencv__hacks_.md#double), `flags`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_transform.ts:169](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L169)*
+*Defined in [types/opencv/imgproc_transform.ts:169](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L169)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`src` | InputArray |
+`src` | [InputArray](_types_opencv__hacks_.md#inputarray) |
 `dst` | OutputArray |
 `center` | Point2f |
 `M` | [double](_types_opencv__hacks_.md#double) |
@@ -471,9 +470,9 @@ ___
 
 ###  remap
 
-▸ **remap**(`src`: InputArray, `dst`: OutputArray, `map1`: InputArray, `map2`: InputArray, `interpolation`: [int](_types_opencv__hacks_.md#int), `borderMode?`: [int](_types_opencv__hacks_.md#int), `borderValue?`: any): *void*
+▸ **remap**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `map1`: [InputArray](_types_opencv__hacks_.md#inputarray), `map2`: [InputArray](_types_opencv__hacks_.md#inputarray), `interpolation`: [int](_types_opencv__hacks_.md#int), `borderMode?`: [int](_types_opencv__hacks_.md#int), `borderValue?`: any): *void*
 
-*Defined in [types/opencv/imgproc_transform.ts:209](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L209)*
+*Defined in [types/opencv/imgproc_transform.ts:209](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L209)*
 
 The function remap transforms the source image using the specified map:
 
@@ -496,10 +495,10 @@ Due to current implementation limitations the size of an input and output images
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`src` | InputArray | Source image.  |
+`src` | [InputArray](_types_opencv__hacks_.md#inputarray) | Source image.  |
 `dst` | OutputArray | Destination image. It has the same size as map1 and the same type as src .  |
-`map1` | InputArray | The first map of either (x,y) points or just x values having the type CV_16SC2 , CV_32FC1, or CV_32FC2. See convertMaps for details on converting a floating point representation to fixed-point for speed.  |
-`map2` | InputArray | The second map of y values having the type CV_16UC1, CV_32FC1, or none (empty map if map1 is (x,y) points), respectively.  |
+`map1` | [InputArray](_types_opencv__hacks_.md#inputarray) | The first map of either (x,y) points or just x values having the type CV_16SC2 , CV_32FC1, or CV_32FC2. See convertMaps for details on converting a floating point representation to fixed-point for speed.  |
+`map2` | [InputArray](_types_opencv__hacks_.md#inputarray) | The second map of y values having the type CV_16UC1, CV_32FC1, or none (empty map if map1 is (x,y) points), respectively.  |
 `interpolation` | [int](_types_opencv__hacks_.md#int) | Interpolation method (see InterpolationFlags). The method INTER_AREA is not supported by this function.  |
 `borderMode?` | [int](_types_opencv__hacks_.md#int) | Pixel extrapolation method (see BorderTypes). When borderMode=BORDER_TRANSPARENT, it means that the pixels in the destination image that corresponds to the "outliers" in the source image are not modified by the function.  |
 `borderValue?` | any | Value used in case of a constant border. By default, it is 0.  |
@@ -510,9 +509,9 @@ ___
 
 ###  resize
 
-▸ **resize**(`src`: InputArray, `dst`: OutputArray, `dsize`: [Size](../classes/_types_opencv__hacks_.size.md), `fx?`: [double](_types_opencv__hacks_.md#double), `fy?`: [double](_types_opencv__hacks_.md#double), `interpolation?`: [int](_types_opencv__hacks_.md#int)): *void*
+▸ **resize**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `dsize`: [Size](../classes/_types_opencv__hacks_.size.md), `fx?`: [double](_types_opencv__hacks_.md#double), `fy?`: [double](_types_opencv__hacks_.md#double), `interpolation?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_transform.ts:252](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L252)*
+*Defined in [types/opencv/imgproc_transform.ts:252](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L252)*
 
 The function resize resizes the image src down to or up to the specified size. Note that the initial
 dst type or size are not taken into account. Instead, the size and type are derived from the
@@ -542,7 +541,7 @@ looks OK).
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`src` | InputArray | input image.  |
+`src` | [InputArray](_types_opencv__hacks_.md#inputarray) | input image.  |
 `dst` | OutputArray | output image; it has the size dsize (when it is non-zero) or the size computed from src.size(), fx, and fy; the type of dst is the same as of src.  |
 `dsize` | [Size](../classes/_types_opencv__hacks_.size.md) | output image size; if it equals zero, it is computed as: \[\texttt{dsize = Size(round(fx*src.cols), round(fy*src.rows))}\] Either dsize or both fx and fy must be non-zero.  |
 `fx?` | [double](_types_opencv__hacks_.md#double) | scale factor along the horizontal axis; when it equals 0, it is computed as \[\texttt{(double)dsize.width/src.cols}\]  |
@@ -555,9 +554,9 @@ ___
 
 ###  warpAffine
 
-▸ **warpAffine**(`src`: InputArray, `dst`: OutputArray, `M`: InputArray, `dsize`: [Size](../classes/_types_opencv__hacks_.size.md), `flags?`: [int](_types_opencv__hacks_.md#int), `borderMode?`: [int](_types_opencv__hacks_.md#int), `borderValue?`: any): *void*
+▸ **warpAffine**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `M`: [InputArray](_types_opencv__hacks_.md#inputarray), `dsize`: [Size](../classes/_types_opencv__hacks_.size.md), `flags?`: [int](_types_opencv__hacks_.md#int), `borderMode?`: [int](_types_opencv__hacks_.md#int), `borderValue?`: any): *void*
 
-*Defined in [types/opencv/imgproc_transform.ts:284](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L284)*
+*Defined in [types/opencv/imgproc_transform.ts:284](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L284)*
 
 The function warpAffine transforms the source image using the specified matrix:
 
@@ -574,9 +573,9 @@ in-place.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`src` | InputArray | input image.  |
+`src` | [InputArray](_types_opencv__hacks_.md#inputarray) | input image.  |
 `dst` | OutputArray | output image that has the size dsize and the same type as src .  |
-`M` | InputArray | $2\times 3$ transformation matrix.  |
+`M` | [InputArray](_types_opencv__hacks_.md#inputarray) | $2\times 3$ transformation matrix.  |
 `dsize` | [Size](../classes/_types_opencv__hacks_.size.md) | size of the output image.  |
 `flags?` | [int](_types_opencv__hacks_.md#int) | combination of interpolation methods (see InterpolationFlags) and the optional flag WARP_INVERSE_MAP that means that M is the inverse transformation ( $\texttt{dst}\rightarrow\texttt{src}$ ).  |
 `borderMode?` | [int](_types_opencv__hacks_.md#int) | pixel extrapolation method (see BorderTypes); when borderMode=BORDER_TRANSPARENT, it means that the pixels in the destination image corresponding to the "outliers" in the source image are not modified by the function.  |
@@ -588,9 +587,9 @@ ___
 
 ###  warpPerspective
 
-▸ **warpPerspective**(`src`: InputArray, `dst`: OutputArray, `M`: InputArray, `dsize`: [Size](../classes/_types_opencv__hacks_.size.md), `flags?`: [int](_types_opencv__hacks_.md#int), `borderMode?`: [int](_types_opencv__hacks_.md#int), `borderValue?`: any): *void*
+▸ **warpPerspective**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `M`: [InputArray](_types_opencv__hacks_.md#inputarray), `dsize`: [Size](../classes/_types_opencv__hacks_.size.md), `flags?`: [int](_types_opencv__hacks_.md#int), `borderMode?`: [int](_types_opencv__hacks_.md#int), `borderValue?`: any): *void*
 
-*Defined in [types/opencv/imgproc_transform.ts:314](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L314)*
+*Defined in [types/opencv/imgproc_transform.ts:314](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L314)*
 
 The function warpPerspective transforms the source image using the specified matrix:
 
@@ -607,9 +606,9 @@ and then put in the formula above instead of M. The function cannot operate in-p
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`src` | InputArray | input image.  |
+`src` | [InputArray](_types_opencv__hacks_.md#inputarray) | input image.  |
 `dst` | OutputArray | output image that has the size dsize and the same type as src .  |
-`M` | InputArray | $3\times 3$ transformation matrix.  |
+`M` | [InputArray](_types_opencv__hacks_.md#inputarray) | $3\times 3$ transformation matrix.  |
 `dsize` | [Size](../classes/_types_opencv__hacks_.size.md) | size of the output image.  |
 `flags?` | [int](_types_opencv__hacks_.md#int) | combination of interpolation methods (INTER_LINEAR or INTER_NEAREST) and the optional flag WARP_INVERSE_MAP, that sets M as the inverse transformation ( $\texttt{dst}\rightarrow\texttt{src}$ ).  |
 `borderMode?` | [int](_types_opencv__hacks_.md#int) | pixel extrapolation method (BORDER_CONSTANT or BORDER_REPLICATE).  |
@@ -621,9 +620,9 @@ ___
 
 ###  warpPolar
 
-▸ **warpPolar**(`src`: InputArray, `dst`: OutputArray, `dsize`: [Size](../classes/_types_opencv__hacks_.size.md), `center`: Point2f, `maxRadius`: [double](_types_opencv__hacks_.md#double), `flags`: [int](_types_opencv__hacks_.md#int)): *void*
+▸ **warpPolar**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `dsize`: [Size](../classes/_types_opencv__hacks_.size.md), `center`: Point2f, `maxRadius`: [double](_types_opencv__hacks_.md#double), `flags`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_transform.ts:406](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_transform.ts#L406)*
+*Defined in [types/opencv/imgproc_transform.ts:406](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_transform.ts#L406)*
 
 <a name="da/d54/group__imgproc__transform_1polar_remaps_reference_image"></a>
  Transform the source image using the following transformation: `\\[ dst(\\rho , \\phi ) = src(x,y)
@@ -703,7 +702,7 @@ output images should be less than 32767x32767.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`src` | InputArray | Source image.  |
+`src` | [InputArray](_types_opencv__hacks_.md#inputarray) | Source image.  |
 `dst` | OutputArray | Destination image. It will have same type as src.  |
 `dsize` | [Size](../classes/_types_opencv__hacks_.size.md) | The destination image size (see description for valid options).  |
 `center` | Point2f | The transformation center.  |

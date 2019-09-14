@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/opencv/Mat"](../modules/_types_opencv_mat_.md) › [Mat](_types_opencv_mat_.mat.md)
+[mirada](../README.md) › ["types/opencv/Mat"](../modules/_types_opencv_mat_.md) › [Mat](_types_opencv_mat_.mat.md)
 
 # Class: Mat
+
 
 <a name="d3/d63/classcv_1_1Mat_1CVMat_Details"></a> The class [Mat](#d3/d63/classcv_1_1Mat})
 represents an n-dimensional dense numerical single-channel or multi-channel array. It can be used to
@@ -223,13 +222,13 @@ Source:
 
 ## Hierarchy
 
-  * [Mat_](_types_opencv__hacks_.mat_.md)
+  ↳ [Mat_](_types_opencv__hacks_.mat_.md)
 
-  * **Mat**
+  ↳ **Mat**
 
-  * [CascadeClassifier](_types_opencv_cascadeclassifier_.cascadeclassifier.md)
+  ↳ [CascadeClassifier](_types_opencv_cascadeclassifier_.cascadeclassifier.md)
 
-  * [MatExpr](_types_opencv_matexpr_.matexpr.md)
+  ↳ [MatExpr](_types_opencv_matexpr_.matexpr.md)
 
 ## Index
 
@@ -338,7 +337,7 @@ Source:
 
 \+ **new Mat**(): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:256](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L256)*
+*Defined in [types/opencv/Mat.ts:256](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L256)*
 
   These are various constructors that form a matrix. As noted in the AutomaticAllocation, often the
 default constructor is enough, and the proper matrix will be allocated by an OpenCV function. The
@@ -349,7 +348,7 @@ allocated with [Mat::create] . In the former case, the old content is de-referen
 
 \+ **new Mat**(`rows`: [int](../modules/_types_opencv__hacks_.md#int), `cols`: [int](../modules/_types_opencv__hacks_.md#int), `type`: [int](../modules/_types_opencv__hacks_.md#int)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:264](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L264)*
+*Defined in [types/opencv/Mat.ts:264](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L264)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -366,7 +365,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`size`: [Size](_types_opencv__hacks_.size.md), `type`: [int](../modules/_types_opencv__hacks_.md#int)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:277](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L277)*
+*Defined in [types/opencv/Mat.ts:277](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L277)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -382,7 +381,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`rows`: [int](../modules/_types_opencv__hacks_.md#int), `cols`: [int](../modules/_types_opencv__hacks_.md#int), `type`: [int](../modules/_types_opencv__hacks_.md#int), `s`: [Scalar](_types_opencv__hacks_.scalar.md)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:289](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L289)*
+*Defined in [types/opencv/Mat.ts:289](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L289)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -400,7 +399,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`size`: [Size](_types_opencv__hacks_.size.md), `type`: [int](../modules/_types_opencv__hacks_.md#int), `s`: [Scalar](_types_opencv__hacks_.scalar.md)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:306](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L306)*
+*Defined in [types/opencv/Mat.ts:306](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L306)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -417,7 +416,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`ndims`: [int](../modules/_types_opencv__hacks_.md#int), `sizes`: any, `type`: [int](../modules/_types_opencv__hacks_.md#int)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:322](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L322)*
+*Defined in [types/opencv/Mat.ts:322](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L322)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -434,7 +433,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`sizes`: any, `type`: [int](../modules/_types_opencv__hacks_.md#int)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:335](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L335)*
+*Defined in [types/opencv/Mat.ts:335](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L335)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -450,7 +449,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`ndims`: [int](../modules/_types_opencv__hacks_.md#int), `sizes`: any, `type`: [int](../modules/_types_opencv__hacks_.md#int), `s`: [Scalar](_types_opencv__hacks_.scalar.md)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:346](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L346)*
+*Defined in [types/opencv/Mat.ts:346](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L346)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -468,7 +467,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`sizes`: any, `type`: [int](../modules/_types_opencv__hacks_.md#int), `s`: [Scalar](_types_opencv__hacks_.scalar.md)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:363](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L363)*
+*Defined in [types/opencv/Mat.ts:363](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L363)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -485,7 +484,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`m`: [Mat](_types_opencv_mat_.mat.md)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:378](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L378)*
+*Defined in [types/opencv/Mat.ts:378](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L378)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -500,7 +499,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`rows`: [int](../modules/_types_opencv__hacks_.md#int), `cols`: [int](../modules/_types_opencv__hacks_.md#int), `type`: [int](../modules/_types_opencv__hacks_.md#int), `data`: any, `step?`: [size_t](../modules/_types_opencv__hacks_.md#size_t)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:390](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L390)*
+*Defined in [types/opencv/Mat.ts:390](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L390)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -519,7 +518,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`size`: [Size](_types_opencv__hacks_.size.md), `type`: [int](../modules/_types_opencv__hacks_.md#int), `data`: any, `step?`: [size_t](../modules/_types_opencv__hacks_.md#size_t)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:413](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L413)*
+*Defined in [types/opencv/Mat.ts:413](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L413)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -537,7 +536,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`ndims`: [int](../modules/_types_opencv__hacks_.md#int), `sizes`: any, `type`: [int](../modules/_types_opencv__hacks_.md#int), `data`: any, `steps?`: any): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:435](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L435)*
+*Defined in [types/opencv/Mat.ts:435](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L435)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -556,7 +555,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`sizes`: any, `type`: [int](../modules/_types_opencv__hacks_.md#int), `data`: any, `steps?`: any): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:457](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L457)*
+*Defined in [types/opencv/Mat.ts:457](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L457)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -574,7 +573,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`m`: [Mat](_types_opencv_mat_.mat.md), `rowRange`: Range, `colRange?`: [Range](_types_opencv__hacks_.range.md)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:477](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L477)*
+*Defined in [types/opencv/Mat.ts:477](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L477)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -591,7 +590,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`m`: [Mat](_types_opencv_mat_.mat.md), `roi`: [Rect](_types_opencv__hacks_.rect.md)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:494](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L494)*
+*Defined in [types/opencv/Mat.ts:494](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L494)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -607,7 +606,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`m`: [Mat](_types_opencv_mat_.mat.md), `ranges`: Range): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:508](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L508)*
+*Defined in [types/opencv/Mat.ts:508](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L508)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -623,7 +622,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`m`: [Mat](_types_opencv_mat_.mat.md), `ranges`: Range): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:522](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L522)*
+*Defined in [types/opencv/Mat.ts:522](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L522)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -639,7 +638,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`arg3`: any, `vec`: any, `copyData?`: [bool](../modules/_types_opencv__hacks_.md#bool)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:536](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L536)*
+*Defined in [types/opencv/Mat.ts:536](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L536)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -656,7 +655,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`arg4`: any, `arg5?`: [typename](../modules/_types_opencv__hacks_.md#typename), `list?`: any): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:557](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L557)*
+*Defined in [types/opencv/Mat.ts:557](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L557)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -673,7 +672,7 @@ Name | Type |
 
 \+ **new Mat**(`arg6`: any, `sizes`: any, `list`: any): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:563](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L563)*
+*Defined in [types/opencv/Mat.ts:563](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L563)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -690,7 +689,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`arg7`: any, `_Nm`: [size_t](../modules/_types_opencv__hacks_.md#size_t), `arr`: any, `copyData?`: [bool](../modules/_types_opencv__hacks_.md#bool)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:569](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L569)*
+*Defined in [types/opencv/Mat.ts:569](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L569)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -708,7 +707,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`arg8`: any, `n`: [int](../modules/_types_opencv__hacks_.md#int), `vec`: [Vec](../modules/_types_opencv__hacks_.md#vec), `copyData?`: [bool](../modules/_types_opencv__hacks_.md#bool)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:575](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L575)*
+*Defined in [types/opencv/Mat.ts:575](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L575)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -726,7 +725,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`arg9`: any, `m`: [int](../modules/_types_opencv__hacks_.md#int), `n`: [int](../modules/_types_opencv__hacks_.md#int), `mtx`: [Matx](_types_opencv_matx_.matx.md), `copyData?`: [bool](../modules/_types_opencv__hacks_.md#bool)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:581](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L581)*
+*Defined in [types/opencv/Mat.ts:581](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L581)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -745,7 +744,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`arg10`: any, `pt`: [Point_](../modules/_types_opencv__hacks_.md#point_), `copyData?`: [bool](../modules/_types_opencv__hacks_.md#bool)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:587](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L587)*
+*Defined in [types/opencv/Mat.ts:587](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L587)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -762,7 +761,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`arg11`: any, `pt`: [Point3_](../modules/_types_opencv__hacks_.md#point3_), `copyData?`: [bool](../modules/_types_opencv__hacks_.md#bool)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:593](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L593)*
+*Defined in [types/opencv/Mat.ts:593](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L593)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -779,7 +778,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`arg12`: any, `commaInitializer`: [MatCommaInitializer_](../modules/_types_opencv__hacks_.md#matcommainitializer_)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:599](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L599)*
+*Defined in [types/opencv/Mat.ts:599](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L599)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -795,7 +794,7 @@ Name | Type |
 
 \+ **new Mat**(`m`: any): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:605](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L605)*
+*Defined in [types/opencv/Mat.ts:605](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L605)*
 
   These are various constructors that form a matrix. As noted in the AutomaticAllocation, often the
 default constructor is enough, and the proper matrix will be allocated by an OpenCV function. The
@@ -864,7 +863,7 @@ Name | Type | Description |
 
 \+ **new Mat**(`m`: [Mat](_types_opencv_mat_.mat.md)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:607](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L607)*
+*Defined in [types/opencv/Mat.ts:607](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L607)*
 
   These are various constructors that form a matrix. As noted in the AutomaticAllocation, often the
 default constructor is enough, and the proper matrix will be allocated by an OpenCV function. The
@@ -937,7 +936,7 @@ Name | Type | Description |
 
 • **allocator**: *[MatAllocator](../modules/_types_opencv__hacks_.md#matallocator)*
 
-*Defined in [types/opencv/Mat.ts:225](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L225)*
+*Defined in [types/opencv/Mat.ts:225](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L225)*
 
 ___
 
@@ -945,7 +944,7 @@ ___
 
 • **cols**: *[int](../modules/_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/Mat.ts:227](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L227)*
+*Defined in [types/opencv/Mat.ts:227](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L227)*
 
 ___
 
@@ -955,7 +954,7 @@ ___
 
 *Overrides [Mat_](_types_opencv__hacks_.mat_.md).[data](_types_opencv__hacks_.mat_.md#data)*
 
-*Defined in [types/opencv/Mat.ts:229](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L229)*
+*Defined in [types/opencv/Mat.ts:229](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L229)*
 
 ___
 
@@ -965,7 +964,7 @@ ___
 
 *Inherited from [Mat_](_types_opencv__hacks_.mat_.md).[data16S](_types_opencv__hacks_.mat_.md#data16s)*
 
-*Defined in [types/opencv/_hacks.ts:181](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L181)*
+*Defined in [types/opencv/_hacks.ts:182](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L182)*
 
 ___
 
@@ -975,7 +974,7 @@ ___
 
 *Inherited from [Mat_](_types_opencv__hacks_.mat_.md).[data16U](_types_opencv__hacks_.mat_.md#data16u)*
 
-*Defined in [types/opencv/_hacks.ts:180](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L180)*
+*Defined in [types/opencv/_hacks.ts:181](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L181)*
 
 ___
 
@@ -985,7 +984,7 @@ ___
 
 *Inherited from [Mat_](_types_opencv__hacks_.mat_.md).[data32F](_types_opencv__hacks_.mat_.md#data32f)*
 
-*Defined in [types/opencv/_hacks.ts:185](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L185)*
+*Defined in [types/opencv/_hacks.ts:186](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L186)*
 
 ___
 
@@ -995,7 +994,7 @@ ___
 
 *Inherited from [Mat_](_types_opencv__hacks_.mat_.md).[data32S](_types_opencv__hacks_.mat_.md#data32s)*
 
-*Defined in [types/opencv/_hacks.ts:183](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L183)*
+*Defined in [types/opencv/_hacks.ts:184](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L184)*
 
 ___
 
@@ -1005,7 +1004,7 @@ ___
 
 *Inherited from [Mat_](_types_opencv__hacks_.mat_.md).[data32U](_types_opencv__hacks_.mat_.md#data32u)*
 
-*Defined in [types/opencv/_hacks.ts:182](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L182)*
+*Defined in [types/opencv/_hacks.ts:183](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L183)*
 
 ___
 
@@ -1015,7 +1014,7 @@ ___
 
 *Inherited from [Mat_](_types_opencv__hacks_.mat_.md).[data64F](_types_opencv__hacks_.mat_.md#data64f)*
 
-*Defined in [types/opencv/_hacks.ts:184](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L184)*
+*Defined in [types/opencv/_hacks.ts:185](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L185)*
 
 ___
 
@@ -1025,7 +1024,7 @@ ___
 
 *Inherited from [Mat_](_types_opencv__hacks_.mat_.md).[data8S](_types_opencv__hacks_.mat_.md#data8s)*
 
-*Defined in [types/opencv/_hacks.ts:178](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L178)*
+*Defined in [types/opencv/_hacks.ts:179](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L179)*
 
 ___
 
@@ -1035,7 +1034,7 @@ ___
 
 *Inherited from [Mat_](_types_opencv__hacks_.mat_.md).[data8U](_types_opencv__hacks_.mat_.md#data8u)*
 
-*Defined in [types/opencv/_hacks.ts:179](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L179)*
+*Defined in [types/opencv/_hacks.ts:180](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L180)*
 
 ___
 
@@ -1043,7 +1042,7 @@ ___
 
 • **dataend**: *[uchar](../modules/_types_opencv__hacks_.md#uchar)*
 
-*Defined in [types/opencv/Mat.ts:231](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L231)*
+*Defined in [types/opencv/Mat.ts:231](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L231)*
 
 ___
 
@@ -1051,7 +1050,7 @@ ___
 
 • **datalimit**: *[uchar](../modules/_types_opencv__hacks_.md#uchar)*
 
-*Defined in [types/opencv/Mat.ts:233](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L233)*
+*Defined in [types/opencv/Mat.ts:233](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L233)*
 
 ___
 
@@ -1059,7 +1058,7 @@ ___
 
 • **datastart**: *[uchar](../modules/_types_opencv__hacks_.md#uchar)*
 
-*Defined in [types/opencv/Mat.ts:235](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L235)*
+*Defined in [types/opencv/Mat.ts:235](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L235)*
 
 ___
 
@@ -1067,7 +1066,7 @@ ___
 
 • **dims**: *[int](../modules/_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/Mat.ts:237](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L237)*
+*Defined in [types/opencv/Mat.ts:237](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L237)*
 
 ___
 
@@ -1075,7 +1074,7 @@ ___
 
 • **flags**: *[int](../modules/_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/Mat.ts:248](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L248)*
+*Defined in [types/opencv/Mat.ts:248](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L248)*
 
   includes several bit-fields:
 
@@ -1090,7 +1089,7 @@ ___
 
 • **rows**: *[int](../modules/_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/Mat.ts:250](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L250)*
+*Defined in [types/opencv/Mat.ts:250](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L250)*
 
 ___
 
@@ -1098,7 +1097,7 @@ ___
 
 • **size**: *[MatSize](../modules/_types_opencv__hacks_.md#matsize)*
 
-*Defined in [types/opencv/Mat.ts:252](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L252)*
+*Defined in [types/opencv/Mat.ts:252](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L252)*
 
 ___
 
@@ -1106,7 +1105,7 @@ ___
 
 • **step**: *[MatStep](../modules/_types_opencv__hacks_.md#matstep)*
 
-*Defined in [types/opencv/Mat.ts:254](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L254)*
+*Defined in [types/opencv/Mat.ts:254](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L254)*
 
 ___
 
@@ -1114,7 +1113,7 @@ ___
 
 • **u**: *[UMatData](../modules/_types_opencv__hacks_.md#umatdata)*
 
-*Defined in [types/opencv/Mat.ts:256](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L256)*
+*Defined in [types/opencv/Mat.ts:256](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L256)*
 
 ## Methods
 
@@ -1122,7 +1121,7 @@ ___
 
 ▸ **addref**(): *void*
 
-*Defined in [types/opencv/Mat.ts:619](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L619)*
+*Defined in [types/opencv/Mat.ts:619](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L619)*
 
   The method increments the reference counter associated with the matrix data. If the matrix header
 points to an external data set (see [Mat::Mat] ), the reference counter is NULL, and the method has
@@ -1139,7 +1138,7 @@ ___
 
 ▸ **adjustROI**(`dtop`: [int](../modules/_types_opencv__hacks_.md#int), `dbottom`: [int](../modules/_types_opencv__hacks_.md#int), `dleft`: [int](../modules/_types_opencv__hacks_.md#int), `dright`: [int](../modules/_types_opencv__hacks_.md#int)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:654](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L654)*
+*Defined in [types/opencv/Mat.ts:654](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L654)*
 
   The method is complimentary to [Mat::locateROI] . The typical use of these functions is to
 determine the submatrix position within the parent matrix and then shift the position somehow.
@@ -1182,7 +1181,7 @@ ___
 
 ▸ **assignTo**(`m`: [Mat](_types_opencv_mat_.mat.md), `type?`: [int](../modules/_types_opencv__hacks_.md#int)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:663](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L663)*
+*Defined in [types/opencv/Mat.ts:663](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L663)*
 
   This is an internally used method called by the [MatrixExpressions] engine.
 
@@ -1201,7 +1200,7 @@ ___
 
 ▸ **at**(`arg13`: any, `i0?`: [int](../modules/_types_opencv__hacks_.md#int)): *any*
 
-*Defined in [types/opencv/Mat.ts:697](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L697)*
+*Defined in [types/opencv/Mat.ts:697](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L697)*
 
   The template methods return a reference to the specified array element. For the sake of higher
 performance, the index range checks are only performed in the Debug configuration.
@@ -1243,7 +1242,7 @@ Name | Type | Description |
 
 ▸ **at**(`arg14`: any, `i0?`: [int](../modules/_types_opencv__hacks_.md#int)): *any*
 
-*Defined in [types/opencv/Mat.ts:705](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L705)*
+*Defined in [types/opencv/Mat.ts:705](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L705)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -1259,7 +1258,7 @@ Name | Type | Description |
 
 ▸ **at**(`arg15`: any, `row`: [int](../modules/_types_opencv__hacks_.md#int), `col`: [int](../modules/_types_opencv__hacks_.md#int)): *any*
 
-*Defined in [types/opencv/Mat.ts:715](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L715)*
+*Defined in [types/opencv/Mat.ts:715](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L715)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -1276,7 +1275,7 @@ Name | Type | Description |
 
 ▸ **at**(`arg16`: any, `row`: [int](../modules/_types_opencv__hacks_.md#int), `col`: [int](../modules/_types_opencv__hacks_.md#int)): *any*
 
-*Defined in [types/opencv/Mat.ts:725](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L725)*
+*Defined in [types/opencv/Mat.ts:725](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L725)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -1293,7 +1292,7 @@ Name | Type | Description |
 
 ▸ **at**(`arg17`: any, `i0`: [int](../modules/_types_opencv__hacks_.md#int), `i1`: [int](../modules/_types_opencv__hacks_.md#int), `i2`: [int](../modules/_types_opencv__hacks_.md#int)): *any*
 
-*Defined in [types/opencv/Mat.ts:737](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L737)*
+*Defined in [types/opencv/Mat.ts:737](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L737)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -1311,7 +1310,7 @@ Name | Type | Description |
 
 ▸ **at**(`arg18`: any, `i0`: [int](../modules/_types_opencv__hacks_.md#int), `i1`: [int](../modules/_types_opencv__hacks_.md#int), `i2`: [int](../modules/_types_opencv__hacks_.md#int)): *any*
 
-*Defined in [types/opencv/Mat.ts:749](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L749)*
+*Defined in [types/opencv/Mat.ts:749](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L749)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -1329,7 +1328,7 @@ Name | Type | Description |
 
 ▸ **at**(`arg19`: any, `idx`: any): *any*
 
-*Defined in [types/opencv/Mat.ts:757](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L757)*
+*Defined in [types/opencv/Mat.ts:757](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L757)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -1345,7 +1344,7 @@ Name | Type | Description |
 
 ▸ **at**(`arg20`: any, `idx`: any): *any*
 
-*Defined in [types/opencv/Mat.ts:765](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L765)*
+*Defined in [types/opencv/Mat.ts:765](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L765)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -1361,7 +1360,7 @@ Name | Type | Description |
 
 ▸ **at**(`arg21`: any, `n`: [int](../modules/_types_opencv__hacks_.md#int), `idx`: [Vec](../modules/_types_opencv__hacks_.md#vec)): *[Vec](../modules/_types_opencv__hacks_.md#vec)*
 
-*Defined in [types/opencv/Mat.ts:771](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L771)*
+*Defined in [types/opencv/Mat.ts:771](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L771)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -1378,7 +1377,7 @@ Name | Type |
 
 ▸ **at**(`arg22`: any, `n`: [int](../modules/_types_opencv__hacks_.md#int), `idx`: [Vec](../modules/_types_opencv__hacks_.md#vec)): *[Vec](../modules/_types_opencv__hacks_.md#vec)*
 
-*Defined in [types/opencv/Mat.ts:777](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L777)*
+*Defined in [types/opencv/Mat.ts:777](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L777)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -1395,7 +1394,7 @@ Name | Type |
 
 ▸ **at**(`arg23`: any, `pt`: [Point](_types_opencv__hacks_.point.md)): *[Point](_types_opencv__hacks_.point.md)*
 
-*Defined in [types/opencv/Mat.ts:786](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L786)*
+*Defined in [types/opencv/Mat.ts:786](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L786)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts. special versions for 2D arrays (especially convenient
@@ -1412,7 +1411,7 @@ Name | Type | Description |
 
 ▸ **at**(`arg24`: any, `pt`: [Point](_types_opencv__hacks_.point.md)): *[Point](_types_opencv__hacks_.point.md)*
 
-*Defined in [types/opencv/Mat.ts:795](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L795)*
+*Defined in [types/opencv/Mat.ts:795](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L795)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts. special versions for 2D arrays (especially convenient
@@ -1433,7 +1432,7 @@ ___
 
 ▸ **begin**(`arg25`: any): *[MatIterator_](../modules/_types_opencv__hacks_.md#matiterator_)*
 
-*Defined in [types/opencv/Mat.ts:833](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L833)*
+*Defined in [types/opencv/Mat.ts:833](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L833)*
 
   The methods return the matrix read-only or read-write iterators. The use of matrix iterators is
 very similar to the use of bi-directional STL iterators. In the example below, the alpha blending
@@ -1480,7 +1479,7 @@ Name | Type |
 
 ▸ **begin**(`arg26`: any): *[MatConstIterator_](../modules/_types_opencv__hacks_.md#matconstiterator_)*
 
-*Defined in [types/opencv/Mat.ts:835](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L835)*
+*Defined in [types/opencv/Mat.ts:835](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L835)*
 
 **Parameters:**
 
@@ -1496,7 +1495,7 @@ ___
 
 ▸ **channels**(): *[int](../modules/_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/Mat.ts:840](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L840)*
+*Defined in [types/opencv/Mat.ts:840](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L840)*
 
   The method returns the number of matrix channels.
 
@@ -1510,7 +1509,7 @@ ___
 
 *Inherited from [Mat_](_types_opencv__hacks_.mat_.md).[charPtr](_types_opencv__hacks_.mat_.md#charptr)*
 
-*Defined in [types/opencv/_hacks.ts:187](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L187)*
+*Defined in [types/opencv/_hacks.ts:188](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L188)*
 
 **Parameters:**
 
@@ -1527,7 +1526,7 @@ ___
 
 ▸ **checkVector**(`elemChannels`: [int](../modules/_types_opencv__hacks_.md#int), `depth?`: [int](../modules/_types_opencv__hacks_.md#int), `requireContinuous?`: [bool](../modules/_types_opencv__hacks_.md#bool)): *[int](../modules/_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/Mat.ts:885](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L885)*
+*Defined in [types/opencv/Mat.ts:885](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L885)*
 
   -1 if the requirement is not satisfied. Otherwise, it returns the number of elements in the
 matrix. Note that an element may have multiple channels.
@@ -1578,7 +1577,7 @@ ___
 
 *Overrides [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md).[clone](_types_opencv__hacks_.emscriptenembindinstance.md#clone)*
 
-*Defined in [types/opencv/Mat.ts:891](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L891)*
+*Defined in [types/opencv/Mat.ts:891](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L891)*
 
   The method creates a full copy of the array. The original step[] is not taken into account. So,
 the array copy is a continuous array occupying [total()]*elemSize() bytes.
@@ -1591,7 +1590,7 @@ ___
 
 ▸ **col**(`x`: [int](../modules/_types_opencv__hacks_.md#int)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:900](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L900)*
+*Defined in [types/opencv/Mat.ts:900](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L900)*
 
   The method makes a new header for the specified matrix column and returns it. This is an O(1)
 operation, regardless of the matrix size. The underlying data of the new matrix is shared with the
@@ -1611,7 +1610,7 @@ ___
 
 ▸ **colRange**(`startcol`: [int](../modules/_types_opencv__hacks_.md#int), `endcol`: [int](../modules/_types_opencv__hacks_.md#int)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:910](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L910)*
+*Defined in [types/opencv/Mat.ts:910](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L910)*
 
   The method makes a new header for the specified column span of the matrix. Similarly to [Mat::row]
 and [Mat::col] , this is an O(1) operation.
@@ -1627,7 +1626,7 @@ Name | Type | Description |
 
 ▸ **colRange**(`r`: Range): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:918](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L918)*
+*Defined in [types/opencv/Mat.ts:918](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L918)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -1646,7 +1645,7 @@ ___
 
 ▸ **convertTo**(`m`: OutputArray, `rtype`: [int](../modules/_types_opencv__hacks_.md#int), `alpha?`: [double](../modules/_types_opencv__hacks_.md#double), `beta?`: [double](../modules/_types_opencv__hacks_.md#double)): *OutputArray*
 
-*Defined in [types/opencv/Mat.ts:936](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L936)*
+*Defined in [types/opencv/Mat.ts:936](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L936)*
 
   The method converts source pixel values to the target data type. saturate_cast<> is applied at the
 end to avoid possible overflows:
@@ -1670,7 +1669,7 @@ ___
 
 ▸ **copySize**(`m`: [Mat](_types_opencv_mat_.mat.md)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:938](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L938)*
+*Defined in [types/opencv/Mat.ts:938](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L938)*
 
 **Parameters:**
 
@@ -1686,7 +1685,7 @@ ___
 
 ▸ **copyTo**(`m`: OutputArray): *OutputArray*
 
-*Defined in [types/opencv/Mat.ts:958](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L958)*
+*Defined in [types/opencv/Mat.ts:958](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L958)*
 
   The method copies the matrix data to another matrix. Before copying the data, the method invokes :
 
@@ -1709,9 +1708,9 @@ Name | Type | Description |
 
 **Returns:** *OutputArray*
 
-▸ **copyTo**(`m`: OutputArray, `mask`: InputArray): *OutputArray*
+▸ **copyTo**(`m`: OutputArray, `mask`: [InputArray](../modules/_types_opencv__hacks_.md#inputarray)): *OutputArray*
 
-*Defined in [types/opencv/Mat.ts:970](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L970)*
+*Defined in [types/opencv/Mat.ts:970](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L970)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -1721,7 +1720,7 @@ function only in what argument(s) it accepts.
 Name | Type | Description |
 ------ | ------ | ------ |
 `m` | OutputArray | Destination matrix. If it does not have a proper size or type before the operation, it is reallocated.  |
-`mask` | InputArray | Operation mask of the same size as *this. Its non-zero elements indicate which matrix elements need to be copied. The mask has to be of type CV_8U and can have 1 or multiple channels.  |
+`mask` | [InputArray](../modules/_types_opencv__hacks_.md#inputarray) | Operation mask of the same size as *this. Its non-zero elements indicate which matrix elements need to be copied. The mask has to be of type CV_8U and can have 1 or multiple channels.  |
 
 **Returns:** *OutputArray*
 
@@ -1731,7 +1730,7 @@ ___
 
 ▸ **create**(`rows`: [int](../modules/_types_opencv__hacks_.md#int), `cols`: [int](../modules/_types_opencv__hacks_.md#int), `type`: [int](../modules/_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/Mat.ts:1011](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1011)*
+*Defined in [types/opencv/Mat.ts:1011](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1011)*
 
   This is one of the key [Mat] methods. Most new-style OpenCV functions and methods that produce
 arrays call this method for each output array. The method uses the following algorithm:
@@ -1777,7 +1776,7 @@ Name | Type | Description |
 
 ▸ **create**(`size`: [Size](_types_opencv__hacks_.size.md), `type`: [int](../modules/_types_opencv__hacks_.md#int)): *[Size](_types_opencv__hacks_.size.md)*
 
-*Defined in [types/opencv/Mat.ts:1021](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1021)*
+*Defined in [types/opencv/Mat.ts:1021](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1021)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -1793,7 +1792,7 @@ Name | Type | Description |
 
 ▸ **create**(`ndims`: [int](../modules/_types_opencv__hacks_.md#int), `sizes`: any, `type`: [int](../modules/_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/Mat.ts:1033](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1033)*
+*Defined in [types/opencv/Mat.ts:1033](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1033)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -1810,7 +1809,7 @@ Name | Type | Description |
 
 ▸ **create**(`sizes`: any, `type`: [int](../modules/_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/Mat.ts:1043](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1043)*
+*Defined in [types/opencv/Mat.ts:1043](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1043)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -1828,9 +1827,9 @@ ___
 
 ###  cross
 
-▸ **cross**(`m`: InputArray): *[Mat](_types_opencv_mat_.mat.md)*
+▸ **cross**(`m`: [InputArray](../modules/_types_opencv__hacks_.md#inputarray)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:1052](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1052)*
+*Defined in [types/opencv/Mat.ts:1052](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1052)*
 
   The method computes a cross-product of two 3-element vectors. The vectors must be 3-element
 floating-point vectors of the same shape and size. The result is another 3-element vector of the
@@ -1840,7 +1839,7 @@ same shape and type as operands.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`m` | InputArray | Another cross-product operand.  |
+`m` | [InputArray](../modules/_types_opencv__hacks_.md#inputarray) | Another cross-product operand.  |
 
 **Returns:** *[Mat](_types_opencv_mat_.mat.md)*
 
@@ -1850,7 +1849,7 @@ ___
 
 ▸ **deallocate**(): *void*
 
-*Defined in [types/opencv/Mat.ts:1054](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1054)*
+*Defined in [types/opencv/Mat.ts:1054](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1054)*
 
 **Returns:** *void*
 
@@ -1864,7 +1863,7 @@ ___
 
 *Overrides [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md).[delete](_types_opencv__hacks_.emscriptenembindinstance.md#delete)*
 
-*Defined in [types/opencv/_hacks.ts:129](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L129)*
+*Defined in [types/opencv/_hacks.ts:130](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L130)*
 
 **Returns:** *void*
 
@@ -1874,7 +1873,7 @@ ___
 
 *Overrides [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md).[delete](_types_opencv__hacks_.emscriptenembindinstance.md#delete)*
 
-*Defined in [types/opencv/_hacks.ts:137](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L137)*
+*Defined in [types/opencv/_hacks.ts:138](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L138)*
 
 **Returns:** *void*
 
@@ -1886,7 +1885,7 @@ ___
 
 *Inherited from [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md).[deleteLater](_types_opencv__hacks_.emscriptenembindinstance.md#deletelater)*
 
-*Defined in [types/opencv/_hacks.ts:122](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L122)*
+*Defined in [types/opencv/_hacks.ts:123](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L123)*
 
 **Parameters:**
 
@@ -1902,7 +1901,7 @@ ___
 
 ▸ **depth**(): *[int](../modules/_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/Mat.ts:1069](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1069)*
+*Defined in [types/opencv/Mat.ts:1069](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1069)*
 
   The method returns the identifier of the matrix element depth (the type of each individual
 channel). For example, for a 16-bit signed element array, the method returns CV_16S . A complete
@@ -1924,7 +1923,7 @@ ___
 
 ▸ **diag**(`d?`: [int](../modules/_types_opencv__hacks_.md#int)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:1096](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1096)*
+*Defined in [types/opencv/Mat.ts:1096](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1096)*
 
   The method makes a new header for the specified matrix diagonal. The new matrix is represented as
 a single-column matrix. Similarly to [Mat::row] and [Mat::col], this is an O(1) operation.
@@ -1941,9 +1940,9 @@ ___
 
 ###  dot
 
-▸ **dot**(`m`: InputArray): *InputArray*
+▸ **dot**(`m`: [InputArray](../modules/_types_opencv__hacks_.md#inputarray)): *[InputArray](../modules/_types_opencv__hacks_.md#inputarray)*
 
-*Defined in [types/opencv/Mat.ts:1106](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1106)*
+*Defined in [types/opencv/Mat.ts:1106](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1106)*
 
   The method computes a dot-product of two matrices. If the matrices are not single-column or
 single-row vectors, the top-to-bottom left-to-right scan ordering is used to treat them as 1D
@@ -1954,9 +1953,9 @@ the dot products from all the channels are summed together.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`m` | InputArray | another dot-product operand.  |
+`m` | [InputArray](../modules/_types_opencv__hacks_.md#inputarray) | another dot-product operand.  |
 
-**Returns:** *InputArray*
+**Returns:** *[InputArray](../modules/_types_opencv__hacks_.md#inputarray)*
 
 ___
 
@@ -1966,7 +1965,7 @@ ___
 
 *Inherited from [Mat_](_types_opencv__hacks_.mat_.md).[doublePtr](_types_opencv__hacks_.mat_.md#doubleptr)*
 
-*Defined in [types/opencv/_hacks.ts:192](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L192)*
+*Defined in [types/opencv/_hacks.ts:193](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L193)*
 
 **Parameters:**
 
@@ -1983,7 +1982,7 @@ ___
 
 ▸ **elemSize**(): *[size_t](../modules/_types_opencv__hacks_.md#size_t)*
 
-*Defined in [types/opencv/Mat.ts:1112](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1112)*
+*Defined in [types/opencv/Mat.ts:1112](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1112)*
 
   The method returns the matrix element size in bytes. For example, if the matrix type is CV_16SC3 ,
 the method returns 3*sizeof(short) or 6.
@@ -1996,7 +1995,7 @@ ___
 
 ▸ **elemSize1**(): *[size_t](../modules/_types_opencv__hacks_.md#size_t)*
 
-*Defined in [types/opencv/Mat.ts:1118](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1118)*
+*Defined in [types/opencv/Mat.ts:1118](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1118)*
 
   The method returns the matrix element channel size in bytes, that is, it ignores the number of
 channels. For example, if the matrix type is CV_16SC3 , the method returns sizeof(short) or 2.
@@ -2009,7 +2008,7 @@ ___
 
 ▸ **empty**(): *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/Mat.ts:1124](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1124)*
+*Defined in [types/opencv/Mat.ts:1124](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1124)*
 
   The method returns true if [Mat::total()] is 0 or if [Mat::data] is NULL. Because of [pop_back()]
 and [resize()] methods `[M.total()] == 0` does not imply that `M.data == NULL`.
@@ -2022,7 +2021,7 @@ ___
 
 ▸ **end**(`arg27`: any): *[MatIterator_](../modules/_types_opencv__hacks_.md#matiterator_)*
 
-*Defined in [types/opencv/Mat.ts:1130](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1130)*
+*Defined in [types/opencv/Mat.ts:1130](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1130)*
 
   The methods return the matrix read-only or read-write iterators, set to the point following the
 last matrix element.
@@ -2037,7 +2036,7 @@ Name | Type |
 
 ▸ **end**(`arg28`: any): *[MatConstIterator_](../modules/_types_opencv__hacks_.md#matconstiterator_)*
 
-*Defined in [types/opencv/Mat.ts:1132](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1132)*
+*Defined in [types/opencv/Mat.ts:1132](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1132)*
 
 **Parameters:**
 
@@ -2055,7 +2054,7 @@ ___
 
 *Inherited from [Mat_](_types_opencv__hacks_.mat_.md).[floatPtr](_types_opencv__hacks_.mat_.md#floatptr)*
 
-*Defined in [types/opencv/_hacks.ts:191](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L191)*
+*Defined in [types/opencv/_hacks.ts:192](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L192)*
 
 **Parameters:**
 
@@ -2072,7 +2071,7 @@ ___
 
 ▸ **forEach**(`arg29`: any, `arg30`: any, `operation`: any): *any*
 
-*Defined in [types/opencv/Mat.ts:1191](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1191)*
+*Defined in [types/opencv/Mat.ts:1191](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1191)*
 
   The operation passed as argument has to be a function pointer, a function object or a
 lambda(C++11).
@@ -2142,7 +2141,7 @@ Name | Type |
 
 ▸ **forEach**(`arg31`: any, `arg32`: any, `operation`: any): *any*
 
-*Defined in [types/opencv/Mat.ts:1197](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1197)*
+*Defined in [types/opencv/Mat.ts:1197](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1197)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2165,7 +2164,7 @@ ___
 
 *Inherited from [Vector](_types_opencv__hacks_.vector.md).[get](_types_opencv__hacks_.vector.md#get)*
 
-*Defined in [types/opencv/_hacks.ts:130](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L130)*
+*Defined in [types/opencv/_hacks.ts:131](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L131)*
 
 **Parameters:**
 
@@ -2179,7 +2178,7 @@ Name | Type |
 
 *Inherited from [Vector](_types_opencv__hacks_.vector.md).[get](_types_opencv__hacks_.vector.md#get)*
 
-*Defined in [types/opencv/_hacks.ts:131](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L131)*
+*Defined in [types/opencv/_hacks.ts:132](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L132)*
 
 **Parameters:**
 
@@ -2197,7 +2196,7 @@ ___
 
 ▸ **getUMat**(`accessFlags`: [AccessFlag](../modules/_types_opencv__hacks_.md#accessflag), `usageFlags?`: [UMatUsageFlags](../modules/_types_opencv__hacks_.md#umatusageflags)): *[UMat](../modules/_types_opencv__hacks_.md#umat)*
 
-*Defined in [types/opencv/Mat.ts:1199](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1199)*
+*Defined in [types/opencv/Mat.ts:1199](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1199)*
 
 **Parameters:**
 
@@ -2216,7 +2215,7 @@ ___
 
 *Inherited from [Mat_](_types_opencv__hacks_.mat_.md).[intPtr](_types_opencv__hacks_.mat_.md#intptr)*
 
-*Defined in [types/opencv/_hacks.ts:190](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L190)*
+*Defined in [types/opencv/_hacks.ts:191](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L191)*
 
 **Parameters:**
 
@@ -2231,7 +2230,7 @@ Name | Type |
 
 *Inherited from [Mat_](_types_opencv__hacks_.mat_.md).[intPtr](_types_opencv__hacks_.mat_.md#intptr)*
 
-*Defined in [types/opencv/_hacks.ts:193](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L193)*
+*Defined in [types/opencv/_hacks.ts:194](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L194)*
 
 **Parameters:**
 
@@ -2248,7 +2247,7 @@ ___
 
 ▸ **inv**(`method?`: [int](../modules/_types_opencv__hacks_.md#int)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/Mat.ts:1208](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1208)*
+*Defined in [types/opencv/Mat.ts:1208](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1208)*
 
   The method performs a matrix inversion by means of matrix expressions. This means that a temporary
 matrix inversion object is returned by the method and can be used further as a part of more complex
@@ -2270,7 +2269,7 @@ ___
 
 *Inherited from [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md).[isAliasOf](_types_opencv__hacks_.emscriptenembindinstance.md#isaliasof)*
 
-*Defined in [types/opencv/_hacks.ts:118](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L118)*
+*Defined in [types/opencv/_hacks.ts:119](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L119)*
 
 **Parameters:**
 
@@ -2286,7 +2285,7 @@ ___
 
 ▸ **isContinuous**(): *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/Mat.ts:1287](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1287)*
+*Defined in [types/opencv/Mat.ts:1287](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1287)*
 
   The method returns true if the matrix elements are stored continuously without gaps at the end of
 each row. Otherwise, it returns false. Obviously, 1x1 or 1xN matrices are always continuous.
@@ -2374,7 +2373,7 @@ ___
 
 *Inherited from [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md).[isDeleted](_types_opencv__hacks_.emscriptenembindinstance.md#isdeleted)*
 
-*Defined in [types/opencv/_hacks.ts:121](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L121)*
+*Defined in [types/opencv/_hacks.ts:122](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L122)*
 
 **Parameters:**
 
@@ -2390,7 +2389,7 @@ ___
 
 ▸ **isSubmatrix**(): *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/Mat.ts:1289](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1289)*
+*Defined in [types/opencv/Mat.ts:1289](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1289)*
 
 **Returns:** *[bool](../modules/_types_opencv__hacks_.md#bool)*
 
@@ -2400,7 +2399,7 @@ ___
 
 ▸ **locateROI**(`wholeSize`: [Size](_types_opencv__hacks_.size.md), `ofs`: [Point](_types_opencv__hacks_.point.md)): *[Size](_types_opencv__hacks_.size.md)*
 
-*Defined in [types/opencv/Mat.ts:1303](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1303)*
+*Defined in [types/opencv/Mat.ts:1303](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1303)*
 
   After you extracted a submatrix from a matrix using [Mat::row], [Mat::col], [Mat::rowRange],
 [Mat::colRange], and others, the resultant submatrix points just to the part of the original big
@@ -2421,9 +2420,9 @@ ___
 
 ###  mul
 
-▸ **mul**(`m`: InputArray, `scale?`: [double](../modules/_types_opencv__hacks_.md#double)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
+▸ **mul**(`m`: [InputArray](../modules/_types_opencv__hacks_.md#inputarray), `scale?`: [double](../modules/_types_opencv__hacks_.md#double)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/Mat.ts:1319](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1319)*
+*Defined in [types/opencv/Mat.ts:1319](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1319)*
 
   The method returns a temporary object encoding per-element array multiplication, with optional
 scale. Note that this is not a matrix multiplication that corresponds to a simpler "\\*" operator.
@@ -2438,7 +2437,7 @@ scale. Note that this is not a matrix multiplication that corresponds to a simpl
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`m` | InputArray | Another array of the same type and the same size as *this, or a matrix expression.  |
+`m` | [InputArray](../modules/_types_opencv__hacks_.md#inputarray) | Another array of the same type and the same size as *this, or a matrix expression.  |
 `scale?` | [double](../modules/_types_opencv__hacks_.md#double) | Optional scale factor.  |
 
 **Returns:** *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
@@ -2449,7 +2448,7 @@ ___
 
 ▸ **pop_back**(`nelems?`: [size_t](../modules/_types_opencv__hacks_.md#size_t)): *void*
 
-*Defined in [types/opencv/Mat.ts:1327](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1327)*
+*Defined in [types/opencv/Mat.ts:1327](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1327)*
 
   The method removes one or more rows from the bottom of the matrix.
 
@@ -2467,7 +2466,7 @@ ___
 
 ▸ **ptr**(`i0?`: [int](../modules/_types_opencv__hacks_.md#int)): *[uchar](../modules/_types_opencv__hacks_.md#uchar)*
 
-*Defined in [types/opencv/Mat.ts:1335](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1335)*
+*Defined in [types/opencv/Mat.ts:1335](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1335)*
 
   The methods return `uchar*` or typed pointer to the specified matrix row. See the sample in
 [Mat::isContinuous] to know how to use these methods.
@@ -2482,7 +2481,7 @@ Name | Type | Description |
 
 ▸ **ptr**(`i0?`: [int](../modules/_types_opencv__hacks_.md#int)): *[uchar](../modules/_types_opencv__hacks_.md#uchar)*
 
-*Defined in [types/opencv/Mat.ts:1341](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1341)*
+*Defined in [types/opencv/Mat.ts:1341](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1341)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2497,7 +2496,7 @@ Name | Type |
 
 ▸ **ptr**(`row`: [int](../modules/_types_opencv__hacks_.md#int), `col`: [int](../modules/_types_opencv__hacks_.md#int)): *[uchar](../modules/_types_opencv__hacks_.md#uchar)*
 
-*Defined in [types/opencv/Mat.ts:1351](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1351)*
+*Defined in [types/opencv/Mat.ts:1351](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1351)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2513,7 +2512,7 @@ Name | Type | Description |
 
 ▸ **ptr**(`row`: [int](../modules/_types_opencv__hacks_.md#int), `col`: [int](../modules/_types_opencv__hacks_.md#int)): *[uchar](../modules/_types_opencv__hacks_.md#uchar)*
 
-*Defined in [types/opencv/Mat.ts:1361](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1361)*
+*Defined in [types/opencv/Mat.ts:1361](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1361)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2529,7 +2528,7 @@ Name | Type | Description |
 
 ▸ **ptr**(`i0`: [int](../modules/_types_opencv__hacks_.md#int), `i1`: [int](../modules/_types_opencv__hacks_.md#int), `i2`: [int](../modules/_types_opencv__hacks_.md#int)): *[uchar](../modules/_types_opencv__hacks_.md#uchar)*
 
-*Defined in [types/opencv/Mat.ts:1367](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1367)*
+*Defined in [types/opencv/Mat.ts:1367](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1367)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2546,7 +2545,7 @@ Name | Type |
 
 ▸ **ptr**(`i0`: [int](../modules/_types_opencv__hacks_.md#int), `i1`: [int](../modules/_types_opencv__hacks_.md#int), `i2`: [int](../modules/_types_opencv__hacks_.md#int)): *[uchar](../modules/_types_opencv__hacks_.md#uchar)*
 
-*Defined in [types/opencv/Mat.ts:1373](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1373)*
+*Defined in [types/opencv/Mat.ts:1373](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1373)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2563,7 +2562,7 @@ Name | Type |
 
 ▸ **ptr**(`idx`: any): *[uchar](../modules/_types_opencv__hacks_.md#uchar)*
 
-*Defined in [types/opencv/Mat.ts:1379](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1379)*
+*Defined in [types/opencv/Mat.ts:1379](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1379)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2578,7 +2577,7 @@ Name | Type |
 
 ▸ **ptr**(`idx`: any): *[uchar](../modules/_types_opencv__hacks_.md#uchar)*
 
-*Defined in [types/opencv/Mat.ts:1385](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1385)*
+*Defined in [types/opencv/Mat.ts:1385](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1385)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2593,7 +2592,7 @@ Name | Type |
 
 ▸ **ptr**(`n`: [int](../modules/_types_opencv__hacks_.md#int), `idx`: [Vec](../modules/_types_opencv__hacks_.md#vec)): *[uchar](../modules/_types_opencv__hacks_.md#uchar)*
 
-*Defined in [types/opencv/Mat.ts:1391](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1391)*
+*Defined in [types/opencv/Mat.ts:1391](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1391)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2609,7 +2608,7 @@ Name | Type |
 
 ▸ **ptr**(`n`: [int](../modules/_types_opencv__hacks_.md#int), `idx`: [Vec](../modules/_types_opencv__hacks_.md#vec)): *[uchar](../modules/_types_opencv__hacks_.md#uchar)*
 
-*Defined in [types/opencv/Mat.ts:1397](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1397)*
+*Defined in [types/opencv/Mat.ts:1397](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1397)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2625,7 +2624,7 @@ Name | Type |
 
 ▸ **ptr**(`arg37`: any, `i0?`: [int](../modules/_types_opencv__hacks_.md#int)): *any*
 
-*Defined in [types/opencv/Mat.ts:1403](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1403)*
+*Defined in [types/opencv/Mat.ts:1403](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1403)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2641,7 +2640,7 @@ Name | Type |
 
 ▸ **ptr**(`arg38`: any, `i0?`: [int](../modules/_types_opencv__hacks_.md#int)): *any*
 
-*Defined in [types/opencv/Mat.ts:1409](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1409)*
+*Defined in [types/opencv/Mat.ts:1409](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1409)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2657,7 +2656,7 @@ Name | Type |
 
 ▸ **ptr**(`arg39`: any, `row`: [int](../modules/_types_opencv__hacks_.md#int), `col`: [int](../modules/_types_opencv__hacks_.md#int)): *any*
 
-*Defined in [types/opencv/Mat.ts:1419](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1419)*
+*Defined in [types/opencv/Mat.ts:1419](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1419)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2674,7 +2673,7 @@ Name | Type | Description |
 
 ▸ **ptr**(`arg40`: any, `row`: [int](../modules/_types_opencv__hacks_.md#int), `col`: [int](../modules/_types_opencv__hacks_.md#int)): *any*
 
-*Defined in [types/opencv/Mat.ts:1429](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1429)*
+*Defined in [types/opencv/Mat.ts:1429](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1429)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2691,7 +2690,7 @@ Name | Type | Description |
 
 ▸ **ptr**(`arg41`: any, `i0`: [int](../modules/_types_opencv__hacks_.md#int), `i1`: [int](../modules/_types_opencv__hacks_.md#int), `i2`: [int](../modules/_types_opencv__hacks_.md#int)): *any*
 
-*Defined in [types/opencv/Mat.ts:1435](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1435)*
+*Defined in [types/opencv/Mat.ts:1435](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1435)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2709,7 +2708,7 @@ Name | Type |
 
 ▸ **ptr**(`arg42`: any, `i0`: [int](../modules/_types_opencv__hacks_.md#int), `i1`: [int](../modules/_types_opencv__hacks_.md#int), `i2`: [int](../modules/_types_opencv__hacks_.md#int)): *any*
 
-*Defined in [types/opencv/Mat.ts:1441](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1441)*
+*Defined in [types/opencv/Mat.ts:1441](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1441)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2727,7 +2726,7 @@ Name | Type |
 
 ▸ **ptr**(`arg43`: any, `idx`: any): *any*
 
-*Defined in [types/opencv/Mat.ts:1447](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1447)*
+*Defined in [types/opencv/Mat.ts:1447](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1447)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2743,7 +2742,7 @@ Name | Type |
 
 ▸ **ptr**(`arg44`: any, `idx`: any): *any*
 
-*Defined in [types/opencv/Mat.ts:1453](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1453)*
+*Defined in [types/opencv/Mat.ts:1453](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1453)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2759,7 +2758,7 @@ Name | Type |
 
 ▸ **ptr**(`arg45`: any, `n`: [int](../modules/_types_opencv__hacks_.md#int), `idx`: [Vec](../modules/_types_opencv__hacks_.md#vec)): *[Vec](../modules/_types_opencv__hacks_.md#vec)*
 
-*Defined in [types/opencv/Mat.ts:1459](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1459)*
+*Defined in [types/opencv/Mat.ts:1459](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1459)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2776,7 +2775,7 @@ Name | Type |
 
 ▸ **ptr**(`arg46`: any, `n`: [int](../modules/_types_opencv__hacks_.md#int), `idx`: [Vec](../modules/_types_opencv__hacks_.md#vec)): *[Vec](../modules/_types_opencv__hacks_.md#vec)*
 
-*Defined in [types/opencv/Mat.ts:1465](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1465)*
+*Defined in [types/opencv/Mat.ts:1465](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1465)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2799,7 +2798,7 @@ ___
 
 *Overrides [Vector](_types_opencv__hacks_.vector.md).[push_back](_types_opencv__hacks_.vector.md#push_back)*
 
-*Defined in [types/opencv/Mat.ts:1474](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1474)*
+*Defined in [types/opencv/Mat.ts:1474](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1474)*
 
   The methods add one or more elements to the bottom of the matrix. They emulate the corresponding
 method of the STL vector class. When elem is [Mat] , its type and the number of columns must be the
@@ -2818,7 +2817,7 @@ Name | Type | Description |
 
 *Overrides [Vector](_types_opencv__hacks_.vector.md).[push_back](_types_opencv__hacks_.vector.md#push_back)*
 
-*Defined in [types/opencv/Mat.ts:1482](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1482)*
+*Defined in [types/opencv/Mat.ts:1482](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1482)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2836,7 +2835,7 @@ Name | Type | Description |
 
 *Overrides [Vector](_types_opencv__hacks_.vector.md).[push_back](_types_opencv__hacks_.vector.md#push_back)*
 
-*Defined in [types/opencv/Mat.ts:1490](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1490)*
+*Defined in [types/opencv/Mat.ts:1490](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1490)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2854,7 +2853,7 @@ Name | Type | Description |
 
 *Overrides [Vector](_types_opencv__hacks_.vector.md).[push_back](_types_opencv__hacks_.vector.md#push_back)*
 
-*Defined in [types/opencv/Mat.ts:1498](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1498)*
+*Defined in [types/opencv/Mat.ts:1498](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1498)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -2873,7 +2872,7 @@ ___
 
 ▸ **push_back_**(`elem`: any): *void*
 
-*Defined in [types/opencv/Mat.ts:1500](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1500)*
+*Defined in [types/opencv/Mat.ts:1500](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1500)*
 
 **Parameters:**
 
@@ -2891,7 +2890,7 @@ ___
 
 *Inherited from [Vector](_types_opencv__hacks_.vector.md).[put](_types_opencv__hacks_.vector.md#put)*
 
-*Defined in [types/opencv/_hacks.ts:133](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L133)*
+*Defined in [types/opencv/_hacks.ts:134](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L134)*
 
 **Parameters:**
 
@@ -2909,7 +2908,7 @@ ___
 
 ▸ **release**(): *void*
 
-*Defined in [types/opencv/Mat.ts:1514](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1514)*
+*Defined in [types/opencv/Mat.ts:1514](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1514)*
 
   The method decrements the reference counter associated with the matrix data. When the reference
 counter reaches 0, the matrix data is deallocated and the data and the reference counter pointers
@@ -2930,7 +2929,7 @@ ___
 
 ▸ **reserve**(`sz`: [size_t](../modules/_types_opencv__hacks_.md#size_t)): *void*
 
-*Defined in [types/opencv/Mat.ts:1523](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1523)*
+*Defined in [types/opencv/Mat.ts:1523](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1523)*
 
   The method reserves space for sz rows. If the matrix already has enough space to store sz rows,
 nothing happens. If the matrix is reallocated, the first [Mat::rows] rows are preserved. The method
@@ -2950,7 +2949,7 @@ ___
 
 ▸ **reserveBuffer**(`sz`: [size_t](../modules/_types_opencv__hacks_.md#size_t)): *void*
 
-*Defined in [types/opencv/Mat.ts:1531](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1531)*
+*Defined in [types/opencv/Mat.ts:1531](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1531)*
 
   The method reserves space for sz bytes. If the matrix already has enough space to store sz bytes,
 nothing happens. If matrix has to be reallocated its previous content could be lost.
@@ -2969,7 +2968,7 @@ ___
 
 ▸ **reshape**(`cn`: [int](../modules/_types_opencv__hacks_.md#int), `rows?`: [int](../modules/_types_opencv__hacks_.md#int)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:1560](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1560)*
+*Defined in [types/opencv/Mat.ts:1560](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1560)*
 
   The method makes a new matrix header for *this elements. The new matrix may have a different size
 and/or different number of channels. Any combination is possible if:
@@ -3004,7 +3003,7 @@ Name | Type | Description |
 
 ▸ **reshape**(`cn`: [int](../modules/_types_opencv__hacks_.md#int), `newndims`: [int](../modules/_types_opencv__hacks_.md#int), `newsz`: any): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:1566](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1566)*
+*Defined in [types/opencv/Mat.ts:1566](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1566)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -3021,7 +3020,7 @@ Name | Type |
 
 ▸ **reshape**(`cn`: [int](../modules/_types_opencv__hacks_.md#int), `newshape`: any): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:1572](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1572)*
+*Defined in [types/opencv/Mat.ts:1572](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1572)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -3043,7 +3042,7 @@ ___
 
 *Overrides [Vector](_types_opencv__hacks_.vector.md).[resize](_types_opencv__hacks_.vector.md#resize)*
 
-*Defined in [types/opencv/Mat.ts:1581](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1581)*
+*Defined in [types/opencv/Mat.ts:1581](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1581)*
 
   The methods change the number of matrix rows. If the matrix is reallocated, the first
 min(Mat::rows, sz) rows are preserved. The methods emulate the corresponding methods of the STL
@@ -3061,7 +3060,7 @@ Name | Type | Description |
 
 *Overrides [Vector](_types_opencv__hacks_.vector.md).[resize](_types_opencv__hacks_.vector.md#resize)*
 
-*Defined in [types/opencv/Mat.ts:1591](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1591)*
+*Defined in [types/opencv/Mat.ts:1591](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1591)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -3083,7 +3082,7 @@ ___
 
 *Inherited from [Mat_](_types_opencv__hacks_.mat_.md).[roi](_types_opencv__hacks_.mat_.md#roi)*
 
-*Defined in [types/opencv/_hacks.ts:199](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L199)*
+*Defined in [types/opencv/_hacks.ts:200](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L200)*
 
 Sometimes, you will have to play with certain region of images. For eye detection in images, first face detection is done all over the image and when face is obtained, we select the face region alone and search for eyes inside it instead of searching whole image. It improves accuracy (because eyes are always on faces) and performance (because we search for a small area).
 
@@ -3093,7 +3092,7 @@ Heads up : in JS seems only one argument is expected
 
 Name | Type |
 ------ | ------ |
-`expr` | [Rect](_types_opencv__hacks_.rect.md) \| [Mat_](_types_opencv__hacks_.mat_.md) |
+`expr` | [Rect](_types_opencv__hacks_.rect.md) &#124; [Mat_](_types_opencv__hacks_.mat_.md) |
 
 **Returns:** *[Mat](_types_opencv_mat_.mat.md)*
 
@@ -3103,7 +3102,7 @@ ___
 
 ▸ **row**(`y`: [int](../modules/_types_opencv__hacks_.md#int)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:1631](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1631)*
+*Defined in [types/opencv/Mat.ts:1631](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1631)*
 
   The method makes a new header for the specified matrix row and returns it. This is an O(1)
 operation, regardless of the matrix size. The underlying data of the new matrix is shared with the
@@ -3154,7 +3153,7 @@ ___
 
 ▸ **rowRange**(`startrow`: [int](../modules/_types_opencv__hacks_.md#int), `endrow`: [int](../modules/_types_opencv__hacks_.md#int)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:1641](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1641)*
+*Defined in [types/opencv/Mat.ts:1641](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1641)*
 
   The method makes a new header for the specified row span of the matrix. Similarly to [Mat::row]
 and [Mat::col] , this is an O(1) operation.
@@ -3170,7 +3169,7 @@ Name | Type | Description |
 
 ▸ **rowRange**(`r`: Range): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:1649](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1649)*
+*Defined in [types/opencv/Mat.ts:1649](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1649)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -3191,7 +3190,7 @@ ___
 
 *Inherited from [Vector](_types_opencv__hacks_.vector.md).[set](_types_opencv__hacks_.vector.md#set)*
 
-*Defined in [types/opencv/_hacks.ts:132](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L132)*
+*Defined in [types/opencv/_hacks.ts:133](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L133)*
 
 **Parameters:**
 
@@ -3206,9 +3205,9 @@ ___
 
 ###  setTo
 
-▸ **setTo**(`value`: InputArray, `mask?`: InputArray): *[Mat](_types_opencv_mat_.mat.md)*
+▸ **setTo**(`value`: [InputArray](../modules/_types_opencv__hacks_.md#inputarray), `mask?`: [InputArray](../modules/_types_opencv__hacks_.md#inputarray)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:1659](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1659)*
+*Defined in [types/opencv/Mat.ts:1659](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1659)*
 
   This is an advanced variant of the [Mat::operator=(const Scalar& s)] operator.
 
@@ -3216,8 +3215,8 @@ ___
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`value` | InputArray | Assigned scalar converted to the actual array type.  |
-`mask?` | InputArray | Operation mask of the same size as *this. Its non-zero elements indicate which matrix elements need to be copied. The mask has to be of type CV_8U and can have 1 or multiple channels  |
+`value` | [InputArray](../modules/_types_opencv__hacks_.md#inputarray) | Assigned scalar converted to the actual array type.  |
+`mask?` | [InputArray](../modules/_types_opencv__hacks_.md#inputarray) | Operation mask of the same size as *this. Its non-zero elements indicate which matrix elements need to be copied. The mask has to be of type CV_8U and can have 1 or multiple channels  |
 
 **Returns:** *[Mat](_types_opencv_mat_.mat.md)*
 
@@ -3229,7 +3228,7 @@ ___
 
 *Inherited from [Mat_](_types_opencv__hacks_.mat_.md).[shortPtr](_types_opencv__hacks_.mat_.md#shortptr)*
 
-*Defined in [types/opencv/_hacks.ts:188](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L188)*
+*Defined in [types/opencv/_hacks.ts:189](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L189)*
 
 **Parameters:**
 
@@ -3246,7 +3245,7 @@ ___
 
 ▸ **step1**(`i?`: [int](../modules/_types_opencv__hacks_.md#int)): *[size_t](../modules/_types_opencv__hacks_.md#size_t)*
 
-*Defined in [types/opencv/Mat.ts:1665](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1665)*
+*Defined in [types/opencv/Mat.ts:1665](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1665)*
 
   The method returns a matrix step divided by [Mat::elemSize1()] . It can be useful to quickly
 access an arbitrary matrix element.
@@ -3265,7 +3264,7 @@ ___
 
 ▸ **t**(): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/Mat.ts:1677](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1677)*
+*Defined in [types/opencv/Mat.ts:1677](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1677)*
 
   The method performs matrix transposition by means of matrix expressions. It does not perform the
 actual transposition but returns a temporary matrix transposition object that can be further used as
@@ -3284,7 +3283,7 @@ ___
 
 ▸ **total**(): *[size_t](../modules/_types_opencv__hacks_.md#size_t)*
 
-*Defined in [types/opencv/Mat.ts:1683](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1683)*
+*Defined in [types/opencv/Mat.ts:1683](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1683)*
 
   The method returns the number of array elements (a number of pixels if the array represents an
 image).
@@ -3293,7 +3292,7 @@ image).
 
 ▸ **total**(`startDim`: [int](../modules/_types_opencv__hacks_.md#int), `endDim?`: [int](../modules/_types_opencv__hacks_.md#int)): *[size_t](../modules/_types_opencv__hacks_.md#size_t)*
 
-*Defined in [types/opencv/Mat.ts:1689](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1689)*
+*Defined in [types/opencv/Mat.ts:1689](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1689)*
 
   The method returns the number of elements within a certain sub-array slice with startDim <= dim <
 endDim
@@ -3313,7 +3312,7 @@ ___
 
 ▸ **type**(): *[int](../modules/_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/Mat.ts:1695](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1695)*
+*Defined in [types/opencv/Mat.ts:1695](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1695)*
 
   The method returns a matrix element type. This is an identifier compatible with the CvMat type
 system, like CV_16SC3 or 16-bit signed 3-channel array, and so on.
@@ -3328,7 +3327,7 @@ ___
 
 *Inherited from [Mat_](_types_opencv__hacks_.mat_.md).[ucharPtr](_types_opencv__hacks_.mat_.md#ucharptr)*
 
-*Defined in [types/opencv/_hacks.ts:186](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L186)*
+*Defined in [types/opencv/_hacks.ts:187](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L187)*
 
 **Parameters:**
 
@@ -3345,7 +3344,7 @@ ___
 
 ▸ **updateContinuityFlag**(): *void*
 
-*Defined in [types/opencv/Mat.ts:1697](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1697)*
+*Defined in [types/opencv/Mat.ts:1697](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1697)*
 
 **Returns:** *void*
 
@@ -3357,7 +3356,7 @@ ___
 
 *Inherited from [Mat_](_types_opencv__hacks_.mat_.md).[ushortPtr](_types_opencv__hacks_.mat_.md#ushortptr)*
 
-*Defined in [types/opencv/_hacks.ts:189](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/_hacks.ts#L189)*
+*Defined in [types/opencv/_hacks.ts:190](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L190)*
 
 **Parameters:**
 
@@ -3374,7 +3373,7 @@ ___
 
 ▸ **diag**(`d`: [Mat](_types_opencv_mat_.mat.md)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/Mat.ts:1704](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1704)*
+*Defined in [types/opencv/Mat.ts:1704](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1704)*
 
   The method creates a square diagonal matrix from specified main diagonal.
 
@@ -3392,7 +3391,7 @@ ___
 
 ▸ **eye**(`rows`: [int](../modules/_types_opencv__hacks_.md#int), `cols`: [int](../modules/_types_opencv__hacks_.md#int), `type`: [int](../modules/_types_opencv__hacks_.md#int)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/Mat.ts:1725](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1725)*
+*Defined in [types/opencv/Mat.ts:1725](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1725)*
 
   The method returns a Matlab-style identity matrix initializer, similarly to [Mat::zeros].
 Similarly to [Mat::ones], you can use a scale operation to create a scaled identity matrix
@@ -3418,7 +3417,7 @@ Name | Type | Description |
 
 ▸ **eye**(`size`: [Size](_types_opencv__hacks_.size.md), `type`: [int](../modules/_types_opencv__hacks_.md#int)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/Mat.ts:1735](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1735)*
+*Defined in [types/opencv/Mat.ts:1735](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1735)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -3438,7 +3437,7 @@ ___
 
 ▸ **getDefaultAllocator**(): *[MatAllocator](../modules/_types_opencv__hacks_.md#matallocator)*
 
-*Defined in [types/opencv/Mat.ts:1737](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1737)*
+*Defined in [types/opencv/Mat.ts:1737](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1737)*
 
 **Returns:** *[MatAllocator](../modules/_types_opencv__hacks_.md#matallocator)*
 
@@ -3448,7 +3447,7 @@ ___
 
 ▸ **getStdAllocator**(): *[MatAllocator](../modules/_types_opencv__hacks_.md#matallocator)*
 
-*Defined in [types/opencv/Mat.ts:1739](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1739)*
+*Defined in [types/opencv/Mat.ts:1739](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1739)*
 
 **Returns:** *[MatAllocator](../modules/_types_opencv__hacks_.md#matallocator)*
 
@@ -3458,7 +3457,7 @@ ___
 
 ▸ **ones**(`rows`: [int](../modules/_types_opencv__hacks_.md#int), `cols`: [int](../modules/_types_opencv__hacks_.md#int), `type`: [int](../modules/_types_opencv__hacks_.md#int)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/Mat.ts:1763](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1763)*
+*Defined in [types/opencv/Mat.ts:1763](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1763)*
 
   The method returns a Matlab-style 1's array initializer, similarly to [Mat::zeros]. Note that
 using this method you can initialize an array with an arbitrary value, using the following Matlab
@@ -3487,7 +3486,7 @@ Name | Type | Description |
 
 ▸ **ones**(`size`: [Size](_types_opencv__hacks_.size.md), `type`: [int](../modules/_types_opencv__hacks_.md#int)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/Mat.ts:1773](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1773)*
+*Defined in [types/opencv/Mat.ts:1773](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1773)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -3503,7 +3502,7 @@ Name | Type | Description |
 
 ▸ **ones**(`ndims`: [int](../modules/_types_opencv__hacks_.md#int), `sz`: any, `type`: [int](../modules/_types_opencv__hacks_.md#int)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/Mat.ts:1785](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1785)*
+*Defined in [types/opencv/Mat.ts:1785](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1785)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -3524,7 +3523,7 @@ ___
 
 ▸ **setDefaultAllocator**(`allocator`: [MatAllocator](../modules/_types_opencv__hacks_.md#matallocator)): *[MatAllocator](../modules/_types_opencv__hacks_.md#matallocator)*
 
-*Defined in [types/opencv/Mat.ts:1787](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1787)*
+*Defined in [types/opencv/Mat.ts:1787](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1787)*
 
 **Parameters:**
 
@@ -3540,7 +3539,7 @@ ___
 
 ▸ **zeros**(`rows`: [int](../modules/_types_opencv__hacks_.md#int), `cols`: [int](../modules/_types_opencv__hacks_.md#int), `type`: [int](../modules/_types_opencv__hacks_.md#int)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/Mat.ts:1807](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1807)*
+*Defined in [types/opencv/Mat.ts:1807](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1807)*
 
   The method returns a Matlab-style zero array initializer. It can be used to quickly form a
 constant array as a function parameter, part of a matrix expression, or as a matrix initializer:
@@ -3565,7 +3564,7 @@ Name | Type | Description |
 
 ▸ **zeros**(`size`: [Size](_types_opencv__hacks_.size.md), `type`: [int](../modules/_types_opencv__hacks_.md#int)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/Mat.ts:1817](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1817)*
+*Defined in [types/opencv/Mat.ts:1817](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1817)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -3581,7 +3580,7 @@ Name | Type | Description |
 
 ▸ **zeros**(`ndims`: [int](../modules/_types_opencv__hacks_.md#int), `sz`: any, `type`: [int](../modules/_types_opencv__hacks_.md#int)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/Mat.ts:1829](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/Mat.ts#L1829)*
+*Defined in [types/opencv/Mat.ts:1829](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/Mat.ts#L1829)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.

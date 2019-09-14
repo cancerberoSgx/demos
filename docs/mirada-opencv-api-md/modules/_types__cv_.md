@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/_cv"](_types__cv_.md)
+[mirada](../README.md) › ["types/_cv"](_types__cv_.md)
 
 # External module: "types/_cv"
+
 
 ## Index
 

@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/opencv/imgproc_object"](_types_opencv_imgproc_object_.md)
+[mirada](../README.md) › ["types/opencv/imgproc_object"](_types_opencv_imgproc_object_.md)
 
 # External module: "types/opencv/imgproc_object"
+
 
 ## Index
 
@@ -29,7 +28,7 @@
 
 Ƭ **TemplateMatchModes**: *any*
 
-*Defined in [types/opencv/imgproc_object.ts:53](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_object.ts#L53)*
+*Defined in [types/opencv/imgproc_object.ts:53](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_object.ts#L53)*
 
 ## Variables
 
@@ -37,7 +36,7 @@
 
 • **TM_CCOEFF**: *[TemplateMatchModes](_types_opencv_imgproc_object_.md#templatematchmodes)*
 
-*Defined in [types/opencv/imgproc_object.ts:49](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_object.ts#L49)*
+*Defined in [types/opencv/imgproc_object.ts:49](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_object.ts#L49)*
 
 `\\[R(x,y)= \\sum _{x',y'} (T'(x',y') \\cdot I'(x+x',y+y'))\\]` where `\\[\\begin{array}{l}
 T'(x',y')=T(x',y') - 1/(w \\cdot h) \\cdot \\sum _{x'',y''} T(x'',y'') \\\\
@@ -49,7 +48,7 @@ ___
 
 • **TM_CCOEFF_NORMED**: *[TemplateMatchModes](_types_opencv_imgproc_object_.md#templatematchmodes)*
 
-*Defined in [types/opencv/imgproc_object.ts:51](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_object.ts#L51)*
+*Defined in [types/opencv/imgproc_object.ts:51](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_object.ts#L51)*
 
 ___
 
@@ -57,7 +56,7 @@ ___
 
 • **TM_CCORR**: *[TemplateMatchModes](_types_opencv_imgproc_object_.md#templatematchmodes)*
 
-*Defined in [types/opencv/imgproc_object.ts:39](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_object.ts#L39)*
+*Defined in [types/opencv/imgproc_object.ts:39](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_object.ts#L39)*
 
 ___
 
@@ -65,7 +64,7 @@ ___
 
 • **TM_CCORR_NORMED**: *[TemplateMatchModes](_types_opencv_imgproc_object_.md#templatematchmodes)*
 
-*Defined in [types/opencv/imgproc_object.ts:41](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_object.ts#L41)*
+*Defined in [types/opencv/imgproc_object.ts:41](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_object.ts#L41)*
 
 ___
 
@@ -73,7 +72,7 @@ ___
 
 • **TM_SQDIFF**: *[TemplateMatchModes](_types_opencv_imgproc_object_.md#templatematchmodes)*
 
-*Defined in [types/opencv/imgproc_object.ts:35](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_object.ts#L35)*
+*Defined in [types/opencv/imgproc_object.ts:35](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_object.ts#L35)*
 
 ___
 
@@ -81,15 +80,15 @@ ___
 
 • **TM_SQDIFF_NORMED**: *[TemplateMatchModes](_types_opencv_imgproc_object_.md#templatematchmodes)*
 
-*Defined in [types/opencv/imgproc_object.ts:37](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_object.ts#L37)*
+*Defined in [types/opencv/imgproc_object.ts:37](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_object.ts#L37)*
 
 ## Functions
 
 ###  matchTemplate
 
-▸ **matchTemplate**(`image`: InputArray, `templ`: InputArray, `result`: OutputArray, `method`: [int](_types_opencv__hacks_.md#int), `mask?`: InputArray): *void*
+▸ **matchTemplate**(`image`: [InputArray](_types_opencv__hacks_.md#inputarray), `templ`: [InputArray](_types_opencv__hacks_.md#inputarray), `result`: OutputArray, `method`: [int](_types_opencv__hacks_.md#int), `mask?`: [InputArray](_types_opencv__hacks_.md#inputarray)): *void*
 
-*Defined in [types/opencv/imgproc_object.ts:33](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/imgproc_object.ts#L33)*
+*Defined in [types/opencv/imgproc_object.ts:33](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_object.ts#L33)*
 
 The function slides through image , compares the overlapped patches of size `$w \\times h$` against
 templ using the specified method and stores the comparison results in result . Here are the formulae
@@ -107,10 +106,10 @@ single-channel image, which is easier to analyze.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`image` | InputArray | Image where the search is running. It must be 8-bit or 32-bit floating-point.  |
-`templ` | InputArray | Searched template. It must be not greater than the source image and have the same data type.  |
+`image` | [InputArray](_types_opencv__hacks_.md#inputarray) | Image where the search is running. It must be 8-bit or 32-bit floating-point.  |
+`templ` | [InputArray](_types_opencv__hacks_.md#inputarray) | Searched template. It must be not greater than the source image and have the same data type.  |
 `result` | OutputArray | Map of comparison results. It must be single-channel 32-bit floating-point. If image is $W \times H$ and templ is $w \times h$ , then result is $(W-w+1) \times (H-h+1)$ .  |
 `method` | [int](_types_opencv__hacks_.md#int) | Parameter specifying the comparison method, see TemplateMatchModes  |
-`mask?` | InputArray | Mask of searched template. It must have the same datatype and size with templ. It is not set by default. Currently, only the TM_SQDIFF and TM_CCORR_NORMED methods are supported.  |
+`mask?` | [InputArray](_types_opencv__hacks_.md#inputarray) | Mask of searched template. It must have the same datatype and size with templ. It is not set by default. Currently, only the TM_SQDIFF and TM_CCORR_NORMED methods are supported.  |
 
 **Returns:** *void*

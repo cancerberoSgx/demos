@@ -1,17 +1,18 @@
-**[mirada](README.md)**
+[mirada](README.md)
 
-[Globals](README.md)
+# mirada
+
 
 ## Index
 
 ### External modules
 
-* ["File"](modules/_file_.md)
 * ["browser/cameraHelper"](modules/_browser_camerahelper_.md)
 * ["browser/canvasRender"](modules/_browser_canvasrender_.md)
 * ["browser/imageCreation"](modules/_browser_imagecreation_.md)
 * ["browser/index"](modules/_browser_index_.md)
 * ["browser/videoReader"](modules/_browser_videoreader_.md)
+* ["file"](modules/_file_.md)
 * ["format/canvasCodec"](modules/_format_canvascodec_.md)
 * ["format/format"](modules/_format_format_.md)
 * ["format/index"](modules/_format_index_.md)

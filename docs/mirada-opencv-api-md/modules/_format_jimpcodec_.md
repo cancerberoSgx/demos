@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["format/jimpCodec"](_format_jimpcodec_.md)
+[mirada](../README.md) › ["format/jimpCodec"](_format_jimpcodec_.md)
 
 # External module: "format/jimpCodec"
+
 
 ## Index
 
@@ -21,7 +20,7 @@
 
 Ƭ **AnyConstructor**: *object*
 
-*Defined in [format/jimpCodec.ts:4](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/format/jimpCodec.ts#L4)*
+*Defined in [format/jimpCodec.ts:4](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/format/jimpCodec.ts#L4)*
 
 #### Type declaration:
 
@@ -35,4 +34,4 @@ ___
 
 Ƭ **Jimp**: *[AnyConstructor](_format_jimpcodec_.md#anyconstructor)*
 
-*Defined in [format/jimpCodec.ts:9](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/format/jimpCodec.ts#L9)*
+*Defined in [format/jimpCodec.ts:9](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/format/jimpCodec.ts#L9)*

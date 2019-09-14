@@ -1,8 +1,7 @@
-**[mirada](../README.md)**
-
-[Globals](../README.md) › ["types/opencv/PCA"](../modules/_types_opencv_pca_.md) › [PCA](_types_opencv_pca_.pca.md)
+[mirada](../README.md) › ["types/opencv/PCA"](../modules/_types_opencv_pca_.md) › [PCA](_types_opencv_pca_.pca.md)
 
 # Class: PCA
+
 
 The class is used to calculate a special basis for a set of vectors. The basis will consist of
 eigenvectors of the covariance matrix calculated from the input set of vectors. The class PCA can
@@ -98,16 +97,16 @@ Source:
 
 \+ **new PCA**(): *[PCA](_types_opencv_pca_.pca.md)*
 
-*Defined in [types/opencv/PCA.ts:77](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/PCA.ts#L77)*
+*Defined in [types/opencv/PCA.ts:77](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/PCA.ts#L77)*
 
   The default constructor initializes an empty PCA structure. The other constructors initialize the
 structure and call [PCA::operator()()].
 
 **Returns:** *[PCA](_types_opencv_pca_.pca.md)*
 
-\+ **new PCA**(`data`: InputArray, `mean`: InputArray, `flags`: [int](../modules/_types_opencv__hacks_.md#int), `maxComponents?`: [int](../modules/_types_opencv__hacks_.md#int)): *[PCA](_types_opencv_pca_.pca.md)*
+\+ **new PCA**(`data`: [InputArray](../modules/_types_opencv__hacks_.md#inputarray), `mean`: [InputArray](../modules/_types_opencv__hacks_.md#inputarray), `flags`: [int](../modules/_types_opencv__hacks_.md#int), `maxComponents?`: [int](../modules/_types_opencv__hacks_.md#int)): *[PCA](_types_opencv_pca_.pca.md)*
 
-*Defined in [types/opencv/PCA.ts:83](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/PCA.ts#L83)*
+*Defined in [types/opencv/PCA.ts:83](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/PCA.ts#L83)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -116,16 +115,16 @@ function only in what argument(s) it accepts.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`data` | InputArray | input samples stored as matrix rows or matrix columns.  |
-`mean` | InputArray | optional mean value; if the matrix is empty (noArray()), the mean is computed from the data.  |
+`data` | [InputArray](../modules/_types_opencv__hacks_.md#inputarray) | input samples stored as matrix rows or matrix columns.  |
+`mean` | [InputArray](../modules/_types_opencv__hacks_.md#inputarray) | optional mean value; if the matrix is empty (noArray()), the mean is computed from the data.  |
 `flags` | [int](../modules/_types_opencv__hacks_.md#int) | operation flags; currently the parameter is only used to specify the data layout (PCA::Flags)  |
 `maxComponents?` | [int](../modules/_types_opencv__hacks_.md#int) | maximum number of components that PCA should retain; by default, all the components are retained.  |
 
 **Returns:** *[PCA](_types_opencv_pca_.pca.md)*
 
-\+ **new PCA**(`data`: InputArray, `mean`: InputArray, `flags`: [int](../modules/_types_opencv__hacks_.md#int), `retainedVariance`: [double](../modules/_types_opencv__hacks_.md#double)): *[PCA](_types_opencv_pca_.pca.md)*
+\+ **new PCA**(`data`: [InputArray](../modules/_types_opencv__hacks_.md#inputarray), `mean`: [InputArray](../modules/_types_opencv__hacks_.md#inputarray), `flags`: [int](../modules/_types_opencv__hacks_.md#int), `retainedVariance`: [double](../modules/_types_opencv__hacks_.md#double)): *[PCA](_types_opencv_pca_.pca.md)*
 
-*Defined in [types/opencv/PCA.ts:100](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/PCA.ts#L100)*
+*Defined in [types/opencv/PCA.ts:100](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/PCA.ts#L100)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -134,8 +133,8 @@ function only in what argument(s) it accepts.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`data` | InputArray | input samples stored as matrix rows or matrix columns.  |
-`mean` | InputArray | optional mean value; if the matrix is empty (noArray()), the mean is computed from the data.  |
+`data` | [InputArray](../modules/_types_opencv__hacks_.md#inputarray) | input samples stored as matrix rows or matrix columns.  |
+`mean` | [InputArray](../modules/_types_opencv__hacks_.md#inputarray) | optional mean value; if the matrix is empty (noArray()), the mean is computed from the data.  |
 `flags` | [int](../modules/_types_opencv__hacks_.md#int) | operation flags; currently the parameter is only used to specify the data layout (PCA::Flags)  |
 `retainedVariance` | [double](../modules/_types_opencv__hacks_.md#double) | Percentage of variance that PCA should retain. Using this parameter will let the PCA decided how many components to retain but it will always keep at least 2.  |
 
@@ -147,7 +146,7 @@ Name | Type | Description |
 
 • **eigenvalues**: *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/PCA.ts:73](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/PCA.ts#L73)*
+*Defined in [types/opencv/PCA.ts:73](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/PCA.ts#L73)*
 
 ___
 
@@ -155,7 +154,7 @@ ___
 
 • **eigenvectors**: *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/PCA.ts:75](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/PCA.ts#L75)*
+*Defined in [types/opencv/PCA.ts:75](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/PCA.ts#L75)*
 
 ___
 
@@ -163,15 +162,15 @@ ___
 
 • **mean**: *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/PCA.ts:77](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/PCA.ts#L77)*
+*Defined in [types/opencv/PCA.ts:77](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/PCA.ts#L77)*
 
 ## Methods
 
 ###  backProject
 
-▸ **backProject**(`vec`: InputArray): *[Mat](_types_opencv_mat_.mat.md)*
+▸ **backProject**(`vec`: [InputArray](../modules/_types_opencv__hacks_.md#inputarray)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/PCA.ts:129](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/PCA.ts#L129)*
+*Defined in [types/opencv/PCA.ts:129](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/PCA.ts#L129)*
 
   The methods are inverse operations to [PCA::project]. They take PC coordinates of projected
 vectors and reconstruct the original vectors. Unless all the principal components have been
@@ -183,13 +182,13 @@ vector dimensionality). As a result, [PCA] is used.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`vec` | InputArray | coordinates of the vectors in the principal component subspace, the layout and size are the same as of PCA::project output vectors.  |
+`vec` | [InputArray](../modules/_types_opencv__hacks_.md#inputarray) | coordinates of the vectors in the principal component subspace, the layout and size are the same as of PCA::project output vectors.  |
 
 **Returns:** *[Mat](_types_opencv_mat_.mat.md)*
 
-▸ **backProject**(`vec`: InputArray, `result`: OutputArray): *InputArray*
+▸ **backProject**(`vec`: [InputArray](../modules/_types_opencv__hacks_.md#inputarray), `result`: OutputArray): *[InputArray](../modules/_types_opencv__hacks_.md#inputarray)*
 
-*Defined in [types/opencv/PCA.ts:141](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/PCA.ts#L141)*
+*Defined in [types/opencv/PCA.ts:141](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/PCA.ts#L141)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -198,18 +197,18 @@ function only in what argument(s) it accepts.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`vec` | InputArray | coordinates of the vectors in the principal component subspace, the layout and size are the same as of PCA::project output vectors.  |
+`vec` | [InputArray](../modules/_types_opencv__hacks_.md#inputarray) | coordinates of the vectors in the principal component subspace, the layout and size are the same as of PCA::project output vectors.  |
 `result` | OutputArray | reconstructed vectors; the layout and size are the same as of PCA::project input vectors.  |
 
-**Returns:** *InputArray*
+**Returns:** *[InputArray](../modules/_types_opencv__hacks_.md#inputarray)*
 
 ___
 
 ###  project
 
-▸ **project**(`vec`: InputArray): *[Mat](_types_opencv_mat_.mat.md)*
+▸ **project**(`vec`: [InputArray](../modules/_types_opencv__hacks_.md#inputarray)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/PCA.ts:154](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/PCA.ts#L154)*
+*Defined in [types/opencv/PCA.ts:154](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/PCA.ts#L154)*
 
   The methods project one or more vectors to the principal component subspace, where each vector
 projection is represented by coefficients in the principal component basis. The first form of the
@@ -220,13 +219,13 @@ as a part of expression while the second form can be more efficient in a process
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`vec` | InputArray | input vector(s); must have the same dimensionality and the same layout as the input data used at PCA phase, that is, if DATA_AS_ROW are specified, then vec.cols==data.cols (vector dimensionality) and vec.rows is the number of vectors to project, and the same is true for the PCA::DATA_AS_COL case.  |
+`vec` | [InputArray](../modules/_types_opencv__hacks_.md#inputarray) | input vector(s); must have the same dimensionality and the same layout as the input data used at PCA phase, that is, if DATA_AS_ROW are specified, then vec.cols==data.cols (vector dimensionality) and vec.rows is the number of vectors to project, and the same is true for the PCA::DATA_AS_COL case.  |
 
 **Returns:** *[Mat](_types_opencv_mat_.mat.md)*
 
-▸ **project**(`vec`: InputArray, `result`: OutputArray): *InputArray*
+▸ **project**(`vec`: [InputArray](../modules/_types_opencv__hacks_.md#inputarray), `result`: OutputArray): *[InputArray](../modules/_types_opencv__hacks_.md#inputarray)*
 
-*Defined in [types/opencv/PCA.ts:169](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/PCA.ts#L169)*
+*Defined in [types/opencv/PCA.ts:169](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/PCA.ts#L169)*
 
   This is an overloaded member function, provided for convenience. It differs from the above
 function only in what argument(s) it accepts.
@@ -235,10 +234,10 @@ function only in what argument(s) it accepts.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`vec` | InputArray | input vector(s); must have the same dimensionality and the same layout as the input data used at PCA phase, that is, if DATA_AS_ROW are specified, then vec.cols==data.cols (vector dimensionality) and vec.rows is the number of vectors to project, and the same is true for the PCA::DATA_AS_COL case.  |
+`vec` | [InputArray](../modules/_types_opencv__hacks_.md#inputarray) | input vector(s); must have the same dimensionality and the same layout as the input data used at PCA phase, that is, if DATA_AS_ROW are specified, then vec.cols==data.cols (vector dimensionality) and vec.rows is the number of vectors to project, and the same is true for the PCA::DATA_AS_COL case.  |
 `result` | OutputArray | output vectors; in case of PCA::DATA_AS_COL, the output matrix has as many columns as the number of input vectors, this means that result.cols==vec.cols and the number of rows match the number of principal components (for example, maxComponents parameter passed to the constructor).  |
 
-**Returns:** *InputArray*
+**Returns:** *[InputArray](../modules/_types_opencv__hacks_.md#inputarray)*
 
 ___
 
@@ -246,7 +245,7 @@ ___
 
 ▸ **read**(`fn`: [FileNode](../modules/_types_opencv__hacks_.md#filenode)): *[FileNode](../modules/_types_opencv__hacks_.md#filenode)*
 
-*Defined in [types/opencv/PCA.ts:174](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/PCA.ts#L174)*
+*Defined in [types/opencv/PCA.ts:174](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/PCA.ts#L174)*
 
   Loads [eigenvalues] [eigenvectors] and [mean] from specified [FileNode]
 
@@ -264,7 +263,7 @@ ___
 
 ▸ **write**(`fs`: [FileStorage](../modules/_types_opencv__hacks_.md#filestorage)): *[FileStorage](../modules/_types_opencv__hacks_.md#filestorage)*
 
-*Defined in [types/opencv/PCA.ts:179](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/mirada/src/types/opencv/PCA.ts#L179)*
+*Defined in [types/opencv/PCA.ts:179](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/PCA.ts#L179)*
 
   Writes [eigenvalues] [eigenvectors] and [mean] to specified [FileStorage]
 
