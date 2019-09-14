@@ -19,4 +19,4 @@
 
 • **name**? : *undefined | string*
 
-*Defined in [file.ts:271](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/file.ts#L271)*
+*Defined in [file.ts:271](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/file.ts#L271)*

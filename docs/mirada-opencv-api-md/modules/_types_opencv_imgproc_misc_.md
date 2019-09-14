@@ -69,7 +69,7 @@
 
 Ƭ **AdaptiveThresholdTypes**: *any*
 
-*Defined in [types/opencv/imgproc_misc.ts:474](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L474)*
+*Defined in [types/opencv/imgproc_misc.ts:474](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L474)*
 
 adaptive threshold algorithm
 
@@ -81,7 +81,7 @@ ___
 
 Ƭ **DistanceTransformLabelTypes**: *any*
 
-*Defined in [types/opencv/imgproc_misc.ts:482](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L482)*
+*Defined in [types/opencv/imgproc_misc.ts:482](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L482)*
 
 adaptive threshold algorithm
 
@@ -93,7 +93,7 @@ ___
 
 Ƭ **DistanceTransformMasks**: *any*
 
-*Defined in [types/opencv/imgproc_misc.ts:490](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L490)*
+*Defined in [types/opencv/imgproc_misc.ts:490](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L490)*
 
 adaptive threshold algorithm
 
@@ -105,7 +105,7 @@ ___
 
 Ƭ **DistanceTypes**: *any*
 
-*Defined in [types/opencv/imgproc_misc.ts:498](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L498)*
+*Defined in [types/opencv/imgproc_misc.ts:498](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L498)*
 
 adaptive threshold algorithm
 
@@ -117,7 +117,7 @@ ___
 
 Ƭ **FloodFillFlags**: *any*
 
-*Defined in [types/opencv/imgproc_misc.ts:506](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L506)*
+*Defined in [types/opencv/imgproc_misc.ts:506](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L506)*
 
 adaptive threshold algorithm
 
@@ -129,7 +129,7 @@ ___
 
 Ƭ **GrabCutClasses**: *any*
 
-*Defined in [types/opencv/imgproc_misc.ts:514](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L514)*
+*Defined in [types/opencv/imgproc_misc.ts:514](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L514)*
 
 adaptive threshold algorithm
 
@@ -141,7 +141,7 @@ ___
 
 Ƭ **GrabCutModes**: *any*
 
-*Defined in [types/opencv/imgproc_misc.ts:522](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L522)*
+*Defined in [types/opencv/imgproc_misc.ts:522](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L522)*
 
 adaptive threshold algorithm
 
@@ -153,7 +153,7 @@ ___
 
 Ƭ **ThresholdTypes**: *any*
 
-*Defined in [types/opencv/imgproc_misc.ts:530](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L530)*
+*Defined in [types/opencv/imgproc_misc.ts:530](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L530)*
 
 adaptive threshold algorithm
 
@@ -165,7 +165,7 @@ adaptive threshold algorithm
 
 • **ADAPTIVE_THRESH_GAUSSIAN_C**: *[AdaptiveThresholdTypes](_types_opencv_imgproc_misc_.md#adaptivethresholdtypes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:364](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L364)*
+*Defined in [types/opencv/imgproc_misc.ts:364](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L364)*
 
 the threshold value `$T(x, y)$` is a weighted sum (cross-correlation with a Gaussian window) of the
 `$\\texttt{blockSize} \\times \\texttt{blockSize}$` neighborhood of `$(x, y)$` minus C . The default
@@ -177,7 +177,7 @@ ___
 
 • **ADAPTIVE_THRESH_MEAN_C**: *[AdaptiveThresholdTypes](_types_opencv_imgproc_misc_.md#adaptivethresholdtypes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:356](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L356)*
+*Defined in [types/opencv/imgproc_misc.ts:356](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L356)*
 
 the threshold value `$T(x,y)$` is a mean of the `$\\texttt{blockSize} \\times \\texttt{blockSize}$`
 neighborhood of `$(x, y)$` minus C
@@ -188,7 +188,7 @@ ___
 
 • **DIST_C**: *[DistanceTypes](_types_opencv_imgproc_misc_.md#distancetypes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:391](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L391)*
+*Defined in [types/opencv/imgproc_misc.ts:391](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L391)*
 
 ___
 
@@ -196,7 +196,7 @@ ___
 
 • **DIST_FAIR**: *[DistanceTypes](_types_opencv_imgproc_misc_.md#distancetypes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:395](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L395)*
+*Defined in [types/opencv/imgproc_misc.ts:395](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L395)*
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 • **DIST_HUBER**: *[DistanceTypes](_types_opencv_imgproc_misc_.md#distancetypes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:399](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L399)*
+*Defined in [types/opencv/imgproc_misc.ts:399](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L399)*
 
 ___
 
@@ -212,7 +212,7 @@ ___
 
 • **DIST_L1**: *[DistanceTypes](_types_opencv_imgproc_misc_.md#distancetypes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:387](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L387)*
+*Defined in [types/opencv/imgproc_misc.ts:387](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L387)*
 
 ___
 
@@ -220,7 +220,7 @@ ___
 
 • **DIST_L12**: *[DistanceTypes](_types_opencv_imgproc_misc_.md#distancetypes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:393](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L393)*
+*Defined in [types/opencv/imgproc_misc.ts:393](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L393)*
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 • **DIST_L2**: *[DistanceTypes](_types_opencv_imgproc_misc_.md#distancetypes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:389](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L389)*
+*Defined in [types/opencv/imgproc_misc.ts:389](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L389)*
 
 ___
 
@@ -236,7 +236,7 @@ ___
 
 • **DIST_LABEL_CCOMP**: *[DistanceTransformLabelTypes](_types_opencv_imgproc_misc_.md#distancetransformlabeltypes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:371](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L371)*
+*Defined in [types/opencv/imgproc_misc.ts:371](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L371)*
 
 each connected component of zeros in src (as well as all the non-zero pixels closest to the
 connected component) will be assigned the same label
@@ -247,7 +247,7 @@ ___
 
 • **DIST_LABEL_PIXEL**: *[DistanceTransformLabelTypes](_types_opencv_imgproc_misc_.md#distancetransformlabeltypes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:377](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L377)*
+*Defined in [types/opencv/imgproc_misc.ts:377](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L377)*
 
 each zero pixel (and all the non-zero pixels closest to it) gets its own label.
 
@@ -257,7 +257,7 @@ ___
 
 • **DIST_MASK_3**: *[DistanceTransformMasks](_types_opencv_imgproc_misc_.md#distancetransformmasks)*
 
-*Defined in [types/opencv/imgproc_misc.ts:379](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L379)*
+*Defined in [types/opencv/imgproc_misc.ts:379](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L379)*
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 • **DIST_MASK_5**: *[DistanceTransformMasks](_types_opencv_imgproc_misc_.md#distancetransformmasks)*
 
-*Defined in [types/opencv/imgproc_misc.ts:381](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L381)*
+*Defined in [types/opencv/imgproc_misc.ts:381](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L381)*
 
 ___
 
@@ -273,7 +273,7 @@ ___
 
 • **DIST_MASK_PRECISE**: *[DistanceTransformMasks](_types_opencv_imgproc_misc_.md#distancetransformmasks)*
 
-*Defined in [types/opencv/imgproc_misc.ts:383](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L383)*
+*Defined in [types/opencv/imgproc_misc.ts:383](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L383)*
 
 ___
 
@@ -281,7 +281,7 @@ ___
 
 • **DIST_USER**: *[DistanceTypes](_types_opencv_imgproc_misc_.md#distancetypes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:385](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L385)*
+*Defined in [types/opencv/imgproc_misc.ts:385](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L385)*
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 • **DIST_WELSCH**: *[DistanceTypes](_types_opencv_imgproc_misc_.md#distancetypes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:397](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L397)*
+*Defined in [types/opencv/imgproc_misc.ts:397](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L397)*
 
 ___
 
@@ -297,7 +297,7 @@ ___
 
 • **FLOODFILL_FIXED_RANGE**: *[FloodFillFlags](_types_opencv_imgproc_misc_.md#floodfillflags)*
 
-*Defined in [types/opencv/imgproc_misc.ts:406](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L406)*
+*Defined in [types/opencv/imgproc_misc.ts:406](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L406)*
 
 If set, the difference between the current pixel and seed pixel is considered. Otherwise, the
 difference between neighbor pixels is considered (that is, the range is floating).
@@ -308,7 +308,7 @@ ___
 
 • **FLOODFILL_MASK_ONLY**: *[FloodFillFlags](_types_opencv_imgproc_misc_.md#floodfillflags)*
 
-*Defined in [types/opencv/imgproc_misc.ts:414](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L414)*
+*Defined in [types/opencv/imgproc_misc.ts:414](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L414)*
 
 If set, the function does not change the image ( newVal is ignored), and only fills the mask with
 the value specified in bits 8-16 of flags as described above. This option only make sense in
@@ -320,7 +320,7 @@ ___
 
 • **GC_BGD**: *[GrabCutClasses](_types_opencv_imgproc_misc_.md#grabcutclasses)*
 
-*Defined in [types/opencv/imgproc_misc.ts:416](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L416)*
+*Defined in [types/opencv/imgproc_misc.ts:416](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L416)*
 
 ___
 
@@ -328,7 +328,7 @@ ___
 
 • **GC_EVAL**: *[GrabCutModes](_types_opencv_imgproc_misc_.md#grabcutmodes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:443](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L443)*
+*Defined in [types/opencv/imgproc_misc.ts:443](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L443)*
 
 The value means that the algorithm should just resume.
 
@@ -338,7 +338,7 @@ ___
 
 • **GC_EVAL_FREEZE_MODEL**: *[GrabCutModes](_types_opencv_imgproc_misc_.md#grabcutmodes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:450](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L450)*
+*Defined in [types/opencv/imgproc_misc.ts:450](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L450)*
 
 The value means that the algorithm should just run the grabCut algorithm (a single iteration) with
 the fixed model
@@ -349,7 +349,7 @@ ___
 
 • **GC_FGD**: *[GrabCutClasses](_types_opencv_imgproc_misc_.md#grabcutclasses)*
 
-*Defined in [types/opencv/imgproc_misc.ts:418](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L418)*
+*Defined in [types/opencv/imgproc_misc.ts:418](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L418)*
 
 ___
 
@@ -357,7 +357,7 @@ ___
 
 • **GC_INIT_WITH_MASK**: *[GrabCutModes](_types_opencv_imgproc_misc_.md#grabcutmodes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:437](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L437)*
+*Defined in [types/opencv/imgproc_misc.ts:437](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L437)*
 
 The function initializes the state using the provided mask. Note that GC_INIT_WITH_RECT and
 GC_INIT_WITH_MASK can be combined. Then, all the pixels outside of the ROI are automatically
@@ -369,7 +369,7 @@ ___
 
 • **GC_INIT_WITH_RECT**: *[GrabCutModes](_types_opencv_imgproc_misc_.md#grabcutmodes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:429](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L429)*
+*Defined in [types/opencv/imgproc_misc.ts:429](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L429)*
 
 The function initializes the state and the mask using the provided rectangle. After that it runs
 iterCount iterations of the algorithm.
@@ -380,7 +380,7 @@ ___
 
 • **GC_PR_BGD**: *[GrabCutClasses](_types_opencv_imgproc_misc_.md#grabcutclasses)*
 
-*Defined in [types/opencv/imgproc_misc.ts:420](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L420)*
+*Defined in [types/opencv/imgproc_misc.ts:420](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L420)*
 
 ___
 
@@ -388,7 +388,7 @@ ___
 
 • **GC_PR_FGD**: *[GrabCutClasses](_types_opencv_imgproc_misc_.md#grabcutclasses)*
 
-*Defined in [types/opencv/imgproc_misc.ts:422](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L422)*
+*Defined in [types/opencv/imgproc_misc.ts:422](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L422)*
 
 ___
 
@@ -396,7 +396,7 @@ ___
 
 • **THRESH_BINARY**: *[ThresholdTypes](_types_opencv_imgproc_misc_.md#thresholdtypes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:452](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L452)*
+*Defined in [types/opencv/imgproc_misc.ts:452](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L452)*
 
 ___
 
@@ -404,7 +404,7 @@ ___
 
 • **THRESH_BINARY_INV**: *[ThresholdTypes](_types_opencv_imgproc_misc_.md#thresholdtypes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:454](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L454)*
+*Defined in [types/opencv/imgproc_misc.ts:454](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L454)*
 
 ___
 
@@ -412,7 +412,7 @@ ___
 
 • **THRESH_MASK**: *[ThresholdTypes](_types_opencv_imgproc_misc_.md#thresholdtypes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:462](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L462)*
+*Defined in [types/opencv/imgproc_misc.ts:462](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L462)*
 
 ___
 
@@ -420,7 +420,7 @@ ___
 
 • **THRESH_OTSU**: *[ThresholdTypes](_types_opencv_imgproc_misc_.md#thresholdtypes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:464](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L464)*
+*Defined in [types/opencv/imgproc_misc.ts:464](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L464)*
 
 ___
 
@@ -428,7 +428,7 @@ ___
 
 • **THRESH_TOZERO**: *[ThresholdTypes](_types_opencv_imgproc_misc_.md#thresholdtypes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:458](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L458)*
+*Defined in [types/opencv/imgproc_misc.ts:458](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L458)*
 
 ___
 
@@ -436,7 +436,7 @@ ___
 
 • **THRESH_TOZERO_INV**: *[ThresholdTypes](_types_opencv_imgproc_misc_.md#thresholdtypes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:460](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L460)*
+*Defined in [types/opencv/imgproc_misc.ts:460](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L460)*
 
 ___
 
@@ -444,7 +444,7 @@ ___
 
 • **THRESH_TRIANGLE**: *[ThresholdTypes](_types_opencv_imgproc_misc_.md#thresholdtypes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:466](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L466)*
+*Defined in [types/opencv/imgproc_misc.ts:466](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L466)*
 
 ___
 
@@ -452,7 +452,7 @@ ___
 
 • **THRESH_TRUNC**: *[ThresholdTypes](_types_opencv_imgproc_misc_.md#thresholdtypes)*
 
-*Defined in [types/opencv/imgproc_misc.ts:456](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L456)*
+*Defined in [types/opencv/imgproc_misc.ts:456](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L456)*
 
 ## Functions
 
@@ -460,7 +460,7 @@ ___
 
 ▸ **adaptiveThreshold**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `maxValue`: [double](_types_opencv__hacks_.md#double), `adaptiveMethod`: [int](_types_opencv__hacks_.md#int), `thresholdType`: [int](_types_opencv__hacks_.md#int), `blockSize`: [int](_types_opencv__hacks_.md#int), `C`: [double](_types_opencv__hacks_.md#double)): *void*
 
-*Defined in [types/opencv/imgproc_misc.ts:38](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L38)*
+*Defined in [types/opencv/imgproc_misc.ts:38](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L38)*
 
 The function transforms a grayscale image to a binary image according to the formulae:
 
@@ -494,7 +494,7 @@ ___
 
 ▸ **blendLinear**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `weights1`: [InputArray](_types_opencv__hacks_.md#inputarray), `weights2`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray): *void*
 
-*Defined in [types/opencv/imgproc_misc.ts:54](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L54)*
+*Defined in [types/opencv/imgproc_misc.ts:54](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L54)*
 
 Performs linear blending of two images: `\\[ \\texttt{dst}(i,j) =
 \\texttt{weights1}(i,j)*\\texttt{src1}(i,j) + \\texttt{weights2}(i,j)*\\texttt{src2}(i,j) \\]`
@@ -517,7 +517,7 @@ ___
 
 ▸ **distanceTransform**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `labels`: OutputArray, `distanceType`: [int](_types_opencv__hacks_.md#int), `maskSize`: [int](_types_opencv__hacks_.md#int), `labelType?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_misc.ts:115](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L115)*
+*Defined in [types/opencv/imgproc_misc.ts:115](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L115)*
 
 The function [cv::distanceTransform] calculates the approximate or precise distance from every
 binary image pixel to the nearest zero pixel. For zero image pixels, the distance will obviously be
@@ -576,7 +576,7 @@ Name | Type | Description |
 
 ▸ **distanceTransform**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `distanceType`: [int](_types_opencv__hacks_.md#int), `maskSize`: [int](_types_opencv__hacks_.md#int), `dstType?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_misc.ts:135](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L135)*
+*Defined in [types/opencv/imgproc_misc.ts:135](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L135)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -599,7 +599,7 @@ ___
 
 ▸ **floodFill**(`image`: InputOutputArray, `seedPoint`: [Point](../classes/_types_opencv__hacks_.point.md), `newVal`: [Scalar](../classes/_types_opencv__hacks_.scalar.md), `rect?`: any, `loDiff?`: [Scalar](../classes/_types_opencv__hacks_.scalar.md), `upDiff?`: [Scalar](../classes/_types_opencv__hacks_.scalar.md), `flags?`: [int](_types_opencv__hacks_.md#int)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/imgproc_misc.ts:143](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L143)*
+*Defined in [types/opencv/imgproc_misc.ts:143](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L143)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -622,7 +622,7 @@ Name | Type |
 
 ▸ **floodFill**(`image`: InputOutputArray, `mask`: InputOutputArray, `seedPoint`: [Point](../classes/_types_opencv__hacks_.point.md), `newVal`: [Scalar](../classes/_types_opencv__hacks_.scalar.md), `rect?`: any, `loDiff?`: [Scalar](../classes/_types_opencv__hacks_.scalar.md), `upDiff?`: [Scalar](../classes/_types_opencv__hacks_.scalar.md), `flags?`: [int](_types_opencv__hacks_.md#int)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/imgproc_misc.ts:220](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L220)*
+*Defined in [types/opencv/imgproc_misc.ts:220](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L220)*
 
 The function [cv::floodFill] fills a connected component starting from the seed point with the
 specified color. The connectivity is determined by the color/brightness closeness of the neighbor
@@ -684,7 +684,7 @@ ___
 
 ▸ **grabCut**(`img`: [InputArray](_types_opencv__hacks_.md#inputarray), `mask`: InputOutputArray, `rect`: [Rect](../classes/_types_opencv__hacks_.rect.md), `bgdModel`: InputOutputArray, `fgdModel`: InputOutputArray, `iterCount`: [int](_types_opencv__hacks_.md#int), `mode?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_misc.ts:244](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L244)*
+*Defined in [types/opencv/imgproc_misc.ts:244](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L244)*
 
 The function implements the .
 
@@ -708,7 +708,7 @@ ___
 
 ▸ **integral**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `sum`: OutputArray, `sdepth?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_misc.ts:250](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L250)*
+*Defined in [types/opencv/imgproc_misc.ts:250](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L250)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -725,7 +725,7 @@ Name | Type |
 
 ▸ **integral**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `sum`: OutputArray, `sqsum`: OutputArray, `sdepth?`: [int](_types_opencv__hacks_.md#int), `sqdepth?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_misc.ts:256](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L256)*
+*Defined in [types/opencv/imgproc_misc.ts:256](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L256)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -744,7 +744,7 @@ Name | Type |
 
 ▸ **integral**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `sum`: OutputArray, `sqsum`: OutputArray, `tilted`: OutputArray, `sdepth?`: [int](_types_opencv__hacks_.md#int), `sqdepth?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_misc.ts:295](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L295)*
+*Defined in [types/opencv/imgproc_misc.ts:295](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L295)*
 
 The function calculates one or more integral images for the source image as follows:
 
@@ -786,7 +786,7 @@ ___
 
 ▸ **threshold**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `thresh`: [double](_types_opencv__hacks_.md#double), `maxval`: [double](_types_opencv__hacks_.md#double), `type`: [int](_types_opencv__hacks_.md#int)): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/imgproc_misc.ts:324](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L324)*
+*Defined in [types/opencv/imgproc_misc.ts:324](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L324)*
 
 The function applies fixed-level thresholding to a multiple-channel array. The function is typically
 used to get a bi-level (binary) image out of a grayscale image ( [compare] could be also used for
@@ -822,7 +822,7 @@ ___
 
 ▸ **watershed**(`image`: [InputArray](_types_opencv__hacks_.md#inputarray), `markers`: InputOutputArray): *void*
 
-*Defined in [types/opencv/imgproc_misc.ts:349](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/imgproc_misc.ts#L349)*
+*Defined in [types/opencv/imgproc_misc.ts:349](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/imgproc_misc.ts#L349)*
 
 The function implements one of the variants of watershed, non-parametric marker-based segmentation
 algorithm, described in Meyer92 .

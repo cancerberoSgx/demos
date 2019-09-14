@@ -24,7 +24,7 @@
 
 ▸ **hal_ni_dct2D**(`context`: [cvhalDFT](_types_opencv__hacks_.md#cvhaldft), `src_data`: [uchar](_types_opencv__hacks_.md#uchar), `src_step`: [size_t](_types_opencv__hacks_.md#size_t), `dst_data`: [uchar](_types_opencv__hacks_.md#uchar), `dst_step`: [size_t](_types_opencv__hacks_.md#size_t)): *[cvhalDFT](_types_opencv__hacks_.md#cvhaldft)*
 
-*Defined in [types/opencv/core_hal_interface.ts:19](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/core_hal_interface.ts#L19)*
+*Defined in [types/opencv/core_hal_interface.ts:19](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_hal_interface.ts#L19)*
 
 **Parameters:**
 
@@ -44,7 +44,7 @@ ___
 
 ▸ **hal_ni_dctFree2D**(`context`: [cvhalDFT](_types_opencv__hacks_.md#cvhaldft)): *[cvhalDFT](_types_opencv__hacks_.md#cvhaldft)*
 
-*Defined in [types/opencv/core_hal_interface.ts:24](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/core_hal_interface.ts#L24)*
+*Defined in [types/opencv/core_hal_interface.ts:24](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_hal_interface.ts#L24)*
 
 **Parameters:**
 
@@ -60,7 +60,7 @@ ___
 
 ▸ **hal_ni_dctInit2D**(`context`: [cvhalDFT](_types_opencv__hacks_.md#cvhaldft), `width`: [int](_types_opencv__hacks_.md#int), `height`: [int](_types_opencv__hacks_.md#int), `depth`: [int](_types_opencv__hacks_.md#int), `flags`: [int](_types_opencv__hacks_.md#int)): *[cvhalDFT](_types_opencv__hacks_.md#cvhaldft)*
 
-*Defined in [types/opencv/core_hal_interface.ts:35](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/core_hal_interface.ts#L35)*
+*Defined in [types/opencv/core_hal_interface.ts:35](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_hal_interface.ts#L35)*
 
 **Parameters:**
 
@@ -80,7 +80,7 @@ ___
 
 ▸ **hal_ni_dft1D**(`context`: [cvhalDFT](_types_opencv__hacks_.md#cvhaldft), `src`: [uchar](_types_opencv__hacks_.md#uchar), `dst`: [uchar](_types_opencv__hacks_.md#uchar)): *[cvhalDFT](_types_opencv__hacks_.md#cvhaldft)*
 
-*Defined in [types/opencv/core_hal_interface.ts:44](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/core_hal_interface.ts#L44)*
+*Defined in [types/opencv/core_hal_interface.ts:44](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_hal_interface.ts#L44)*
 
 **Parameters:**
 
@@ -98,7 +98,7 @@ ___
 
 ▸ **hal_ni_dft2D**(`context`: [cvhalDFT](_types_opencv__hacks_.md#cvhaldft), `src_data`: [uchar](_types_opencv__hacks_.md#uchar), `src_step`: [size_t](_types_opencv__hacks_.md#size_t), `dst_data`: [uchar](_types_opencv__hacks_.md#uchar), `dst_step`: [size_t](_types_opencv__hacks_.md#size_t)): *[cvhalDFT](_types_opencv__hacks_.md#cvhaldft)*
 
-*Defined in [types/opencv/core_hal_interface.ts:53](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/core_hal_interface.ts#L53)*
+*Defined in [types/opencv/core_hal_interface.ts:53](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_hal_interface.ts#L53)*
 
 **Parameters:**
 
@@ -118,7 +118,7 @@ ___
 
 ▸ **hal_ni_dftFree1D**(`context`: [cvhalDFT](_types_opencv__hacks_.md#cvhaldft)): *[cvhalDFT](_types_opencv__hacks_.md#cvhaldft)*
 
-*Defined in [types/opencv/core_hal_interface.ts:58](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/core_hal_interface.ts#L58)*
+*Defined in [types/opencv/core_hal_interface.ts:58](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_hal_interface.ts#L58)*
 
 **Parameters:**
 
@@ -134,7 +134,7 @@ ___
 
 ▸ **hal_ni_dftFree2D**(`context`: [cvhalDFT](_types_opencv__hacks_.md#cvhaldft)): *[cvhalDFT](_types_opencv__hacks_.md#cvhaldft)*
 
-*Defined in [types/opencv/core_hal_interface.ts:63](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/core_hal_interface.ts#L63)*
+*Defined in [types/opencv/core_hal_interface.ts:63](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_hal_interface.ts#L63)*
 
 **Parameters:**
 
@@ -150,7 +150,7 @@ ___
 
 ▸ **hal_ni_dftInit1D**(`context`: [cvhalDFT](_types_opencv__hacks_.md#cvhaldft), `len`: [int](_types_opencv__hacks_.md#int), `count`: [int](_types_opencv__hacks_.md#int), `depth`: [int](_types_opencv__hacks_.md#int), `flags`: [int](_types_opencv__hacks_.md#int), `needBuffer`: any): *[cvhalDFT](_types_opencv__hacks_.md#cvhaldft)*
 
-*Defined in [types/opencv/core_hal_interface.ts:79](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/core_hal_interface.ts#L79)*
+*Defined in [types/opencv/core_hal_interface.ts:79](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_hal_interface.ts#L79)*
 
 **Parameters:**
 
@@ -171,7 +171,7 @@ ___
 
 ▸ **hal_ni_dftInit2D**(`context`: [cvhalDFT](_types_opencv__hacks_.md#cvhaldft), `width`: [int](_types_opencv__hacks_.md#int), `height`: [int](_types_opencv__hacks_.md#int), `depth`: [int](_types_opencv__hacks_.md#int), `src_channels`: [int](_types_opencv__hacks_.md#int), `dst_channels`: [int](_types_opencv__hacks_.md#int), `flags`: [int](_types_opencv__hacks_.md#int), `nonzero_rows`: [int](_types_opencv__hacks_.md#int)): *[cvhalDFT](_types_opencv__hacks_.md#cvhaldft)*
 
-*Defined in [types/opencv/core_hal_interface.ts:96](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/core_hal_interface.ts#L96)*
+*Defined in [types/opencv/core_hal_interface.ts:96](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_hal_interface.ts#L96)*
 
 **Parameters:**
 
@@ -194,7 +194,7 @@ ___
 
 ▸ **hal_ni_minMaxIdx**(`src_data`: [uchar](_types_opencv__hacks_.md#uchar), `src_step`: [size_t](_types_opencv__hacks_.md#size_t), `width`: [int](_types_opencv__hacks_.md#int), `height`: [int](_types_opencv__hacks_.md#int), `depth`: [int](_types_opencv__hacks_.md#int), `minVal`: any, `maxVal`: any, `minIdx`: any, `maxIdx`: any, `mask`: [uchar](_types_opencv__hacks_.md#uchar)): *[uchar](_types_opencv__hacks_.md#uchar)*
 
-*Defined in [types/opencv/core_hal_interface.ts:111](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/core_hal_interface.ts#L111)*
+*Defined in [types/opencv/core_hal_interface.ts:111](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/core_hal_interface.ts#L111)*
 
 **Parameters:**
 

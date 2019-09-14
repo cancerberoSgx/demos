@@ -19,4 +19,4 @@
 
 • **image**: *ImageData*
 
-*Defined in [util/grabCut.ts:55](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/util/grabCut.ts#L55)*
+*Defined in [util/grabCut.ts:55](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/util/grabCut.ts#L55)*

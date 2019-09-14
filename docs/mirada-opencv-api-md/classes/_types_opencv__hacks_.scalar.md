@@ -1263,7 +1263,7 @@ ___
 
 ▸ **all**(...`v`: number[]): *[Scalar](_types_opencv__hacks_.scalar.md)*
 
-*Defined in [types/opencv/_hacks.ts:10](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L10)*
+*Defined in [types/opencv/_hacks.ts:10](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/_hacks.ts#L10)*
 
 **Parameters:**
 

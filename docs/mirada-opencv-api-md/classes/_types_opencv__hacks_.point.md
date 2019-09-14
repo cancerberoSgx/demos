@@ -24,7 +24,7 @@
 
 \+ **new Point**(`x`: number, `y`: number): *[Point](_types_opencv__hacks_.point.md)*
 
-*Defined in [types/opencv/_hacks.ts:25](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L25)*
+*Defined in [types/opencv/_hacks.ts:25](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/_hacks.ts#L25)*
 
 **Parameters:**
 
@@ -41,7 +41,7 @@ Name | Type |
 
 • **x**: *number*
 
-*Defined in [types/opencv/_hacks.ts:27](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L27)*
+*Defined in [types/opencv/_hacks.ts:27](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/_hacks.ts#L27)*
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 • **y**: *number*
 
-*Defined in [types/opencv/_hacks.ts:28](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L28)*
+*Defined in [types/opencv/_hacks.ts:28](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/_hacks.ts#L28)*

@@ -50,7 +50,7 @@
 
 Ƭ **Backend**: *any*
 
-*Defined in [types/opencv/dnn.ts:387](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L387)*
+*Defined in [types/opencv/dnn.ts:387](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L387)*
 
 [Net::setPreferableBackend]
 
@@ -60,7 +60,7 @@ ___
 
 Ƭ **Target**: *any*
 
-*Defined in [types/opencv/dnn.ts:393](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L393)*
+*Defined in [types/opencv/dnn.ts:393](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L393)*
 
 [Net::setPreferableBackend]
 
@@ -70,7 +70,7 @@ ___
 
 • **DNN_BACKEND_DEFAULT**: *[Backend](_types_opencv_dnn_.md#backend)*
 
-*Defined in [types/opencv/dnn.ts:361](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L361)*
+*Defined in [types/opencv/dnn.ts:361](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L361)*
 
 DNN_BACKEND_DEFAULT equals to DNN_BACKEND_INFERENCE_ENGINE if OpenCV is built with Intel's Inference
 Engine library or DNN_BACKEND_OPENCV otherwise.
@@ -81,7 +81,7 @@ ___
 
 • **DNN_BACKEND_HALIDE**: *[Backend](_types_opencv_dnn_.md#backend)*
 
-*Defined in [types/opencv/dnn.ts:363](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L363)*
+*Defined in [types/opencv/dnn.ts:363](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L363)*
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 • **DNN_BACKEND_INFERENCE_ENGINE**: *[Backend](_types_opencv_dnn_.md#backend)*
 
-*Defined in [types/opencv/dnn.ts:365](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L365)*
+*Defined in [types/opencv/dnn.ts:365](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L365)*
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 • **DNN_BACKEND_OPENCV**: *[Backend](_types_opencv_dnn_.md#backend)*
 
-*Defined in [types/opencv/dnn.ts:367](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L367)*
+*Defined in [types/opencv/dnn.ts:367](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L367)*
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 • **DNN_BACKEND_VKCOM**: *[Backend](_types_opencv_dnn_.md#backend)*
 
-*Defined in [types/opencv/dnn.ts:369](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L369)*
+*Defined in [types/opencv/dnn.ts:369](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L369)*
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 • **DNN_TARGET_CPU**: *[Target](_types_opencv_dnn_.md#target)*
 
-*Defined in [types/opencv/dnn.ts:371](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L371)*
+*Defined in [types/opencv/dnn.ts:371](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L371)*
 
 ___
 
@@ -121,7 +121,7 @@ ___
 
 • **DNN_TARGET_FPGA**: *[Target](_types_opencv_dnn_.md#target)*
 
-*Defined in [types/opencv/dnn.ts:381](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L381)*
+*Defined in [types/opencv/dnn.ts:381](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L381)*
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 • **DNN_TARGET_MYRIAD**: *[Target](_types_opencv_dnn_.md#target)*
 
-*Defined in [types/opencv/dnn.ts:377](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L377)*
+*Defined in [types/opencv/dnn.ts:377](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L377)*
 
 ___
 
@@ -137,7 +137,7 @@ ___
 
 • **DNN_TARGET_OPENCL**: *[Target](_types_opencv_dnn_.md#target)*
 
-*Defined in [types/opencv/dnn.ts:373](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L373)*
+*Defined in [types/opencv/dnn.ts:373](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L373)*
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 • **DNN_TARGET_OPENCL_FP16**: *[Target](_types_opencv_dnn_.md#target)*
 
-*Defined in [types/opencv/dnn.ts:375](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L375)*
+*Defined in [types/opencv/dnn.ts:375](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L375)*
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 • **DNN_TARGET_VULKAN**: *[Target](_types_opencv_dnn_.md#target)*
 
-*Defined in [types/opencv/dnn.ts:379](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L379)*
+*Defined in [types/opencv/dnn.ts:379](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L379)*
 
 ## Functions
 
@@ -161,7 +161,7 @@ ___
 
 ▸ **NMSBoxes**(`bboxes`: any, `scores`: any, `score_threshold`: any, `nms_threshold`: any, `indices`: any, `eta?`: any, `top_k?`: any): *void*
 
-*Defined in [types/opencv/dnn.ts:110](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L110)*
+*Defined in [types/opencv/dnn.ts:110](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L110)*
 
 **Parameters:**
 
@@ -179,7 +179,7 @@ Name | Type | Description |
 
 ▸ **NMSBoxes**(`bboxes`: any, `scores`: any, `score_threshold`: any, `nms_threshold`: any, `indices`: any, `eta?`: any, `top_k?`: any): *void*
 
-*Defined in [types/opencv/dnn.ts:112](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L112)*
+*Defined in [types/opencv/dnn.ts:112](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L112)*
 
 **Parameters:**
 
@@ -197,7 +197,7 @@ Name | Type |
 
 ▸ **NMSBoxes**(`bboxes`: any, `scores`: any, `score_threshold`: any, `nms_threshold`: any, `indices`: any, `eta?`: any, `top_k?`: any): *void*
 
-*Defined in [types/opencv/dnn.ts:114](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L114)*
+*Defined in [types/opencv/dnn.ts:114](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L114)*
 
 **Parameters:**
 
@@ -219,7 +219,7 @@ ___
 
 ▸ **blobFromImage**(`image`: [InputArray](_types_opencv__hacks_.md#inputarray), `scalefactor?`: [double](_types_opencv__hacks_.md#double), `size?`: any, `mean?`: any, `swapRB?`: [bool](_types_opencv__hacks_.md#bool), `crop?`: [bool](_types_opencv__hacks_.md#bool), `ddepth?`: [int](_types_opencv__hacks_.md#int)): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/dnn.ts:40](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L40)*
+*Defined in [types/opencv/dnn.ts:40](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L40)*
 
 if `crop` is true, input image is resized so one side after resize is equal to corresponding
 dimension in `size` and another one is equal or larger. Then, crop from the center is performed. If
@@ -243,7 +243,7 @@ Name | Type | Description |
 
 ▸ **blobFromImage**(`image`: [InputArray](_types_opencv__hacks_.md#inputarray), `blob`: OutputArray, `scalefactor?`: [double](_types_opencv__hacks_.md#double), `size?`: any, `mean?`: any, `swapRB?`: [bool](_types_opencv__hacks_.md#bool), `crop?`: [bool](_types_opencv__hacks_.md#bool), `ddepth?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/dnn.ts:46](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L46)*
+*Defined in [types/opencv/dnn.ts:46](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L46)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -269,7 +269,7 @@ ___
 
 ▸ **blobFromImages**(`images`: InputArrayOfArrays, `scalefactor?`: [double](_types_opencv__hacks_.md#double), `size?`: [Size](../classes/_types_opencv__hacks_.size.md), `mean?`: any, `swapRB?`: [bool](_types_opencv__hacks_.md#bool), `crop?`: [bool](_types_opencv__hacks_.md#bool), `ddepth?`: [int](_types_opencv__hacks_.md#int)): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/dnn.ts:71](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L71)*
+*Defined in [types/opencv/dnn.ts:71](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L71)*
 
 if `crop` is true, input image is resized so one side after resize is equal to corresponding
 dimension in `size` and another one is equal or larger. Then, crop from the center is performed. If
@@ -293,7 +293,7 @@ Name | Type | Description |
 
 ▸ **blobFromImages**(`images`: InputArrayOfArrays, `blob`: OutputArray, `scalefactor?`: [double](_types_opencv__hacks_.md#double), `size?`: [Size](../classes/_types_opencv__hacks_.size.md), `mean?`: any, `swapRB?`: [bool](_types_opencv__hacks_.md#bool), `crop?`: [bool](_types_opencv__hacks_.md#bool), `ddepth?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/dnn.ts:77](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L77)*
+*Defined in [types/opencv/dnn.ts:77](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L77)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -319,7 +319,7 @@ ___
 
 ▸ **getAvailableBackends**(): *any*
 
-*Defined in [types/opencv/dnn.ts:79](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L79)*
+*Defined in [types/opencv/dnn.ts:79](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L79)*
 
 **Returns:** *any*
 
@@ -329,7 +329,7 @@ ___
 
 ▸ **getAvailableTargets**(`be`: [Backend](_types_opencv_dnn_.md#backend)): *any*
 
-*Defined in [types/opencv/dnn.ts:81](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L81)*
+*Defined in [types/opencv/dnn.ts:81](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L81)*
 
 **Parameters:**
 
@@ -345,7 +345,7 @@ ___
 
 ▸ **imagesFromBlob**(`blob_`: any, `images_`: OutputArrayOfArrays): *any*
 
-*Defined in [types/opencv/dnn.ts:92](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L92)*
+*Defined in [types/opencv/dnn.ts:92](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L92)*
 
 **Parameters:**
 
@@ -362,7 +362,7 @@ ___
 
 ▸ **readNet**(`model`: any, `config?`: any, `framework?`: any): *[Net](_types_opencv__hacks_.md#net)*
 
-*Defined in [types/opencv/dnn.ts:137](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L137)*
+*Defined in [types/opencv/dnn.ts:137](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L137)*
 
 [Net] object.
 This function automatically detects an origin framework of trained model and calls an appropriate
@@ -381,7 +381,7 @@ Name | Type | Description |
 
 ▸ **readNet**(`framework`: any, `bufferModel`: [uchar](_types_opencv__hacks_.md#uchar), `bufferConfig?`: [uchar](_types_opencv__hacks_.md#uchar)): *[uchar](_types_opencv__hacks_.md#uchar)*
 
-*Defined in [types/opencv/dnn.ts:151](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L151)*
+*Defined in [types/opencv/dnn.ts:151](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L151)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -404,7 +404,7 @@ ___
 
 ▸ **readNetFromCaffe**(`prototxt`: any, `caffeModel?`: any): *[Net](_types_opencv__hacks_.md#net)*
 
-*Defined in [types/opencv/dnn.ts:160](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L160)*
+*Defined in [types/opencv/dnn.ts:160](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L160)*
 
 [Net] object.
 
@@ -419,7 +419,7 @@ Name | Type | Description |
 
 ▸ **readNetFromCaffe**(`bufferProto`: [uchar](_types_opencv__hacks_.md#uchar), `bufferModel?`: [uchar](_types_opencv__hacks_.md#uchar)): *[uchar](_types_opencv__hacks_.md#uchar)*
 
-*Defined in [types/opencv/dnn.ts:169](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L169)*
+*Defined in [types/opencv/dnn.ts:169](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L169)*
 
 [Net] object.
 
@@ -434,7 +434,7 @@ Name | Type | Description |
 
 ▸ **readNetFromCaffe**(`bufferProto`: any, `lenProto`: [size_t](_types_opencv__hacks_.md#size_t), `bufferModel?`: any, `lenModel?`: [size_t](_types_opencv__hacks_.md#size_t)): *[Net](_types_opencv__hacks_.md#net)*
 
-*Defined in [types/opencv/dnn.ts:185](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L185)*
+*Defined in [types/opencv/dnn.ts:185](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L185)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -458,7 +458,7 @@ ___
 
 ▸ **readNetFromDarknet**(`cfgFile`: any, `darknetModel?`: any): *[Net](_types_opencv__hacks_.md#net)*
 
-*Defined in [types/opencv/dnn.ts:196](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L196)*
+*Defined in [types/opencv/dnn.ts:196](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L196)*
 
 Network object that ready to do forward, throw an exception in failure cases.
 
@@ -475,7 +475,7 @@ Name | Type | Description |
 
 ▸ **readNetFromDarknet**(`bufferCfg`: [uchar](_types_opencv__hacks_.md#uchar), `bufferModel?`: [uchar](_types_opencv__hacks_.md#uchar)): *[uchar](_types_opencv__hacks_.md#uchar)*
 
-*Defined in [types/opencv/dnn.ts:206](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L206)*
+*Defined in [types/opencv/dnn.ts:206](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L206)*
 
 [Net] object.
 
@@ -490,7 +490,7 @@ Name | Type | Description |
 
 ▸ **readNetFromDarknet**(`bufferCfg`: any, `lenCfg`: [size_t](_types_opencv__hacks_.md#size_t), `bufferModel?`: any, `lenModel?`: [size_t](_types_opencv__hacks_.md#size_t)): *[Net](_types_opencv__hacks_.md#net)*
 
-*Defined in [types/opencv/dnn.ts:220](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L220)*
+*Defined in [types/opencv/dnn.ts:220](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L220)*
 
 [Net] object.
 
@@ -511,7 +511,7 @@ ___
 
 ▸ **readNetFromModelOptimizer**(`xml`: any, `bin`: any): *[Net](_types_opencv__hacks_.md#net)*
 
-*Defined in [types/opencv/dnn.ts:230](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L230)*
+*Defined in [types/opencv/dnn.ts:230](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L230)*
 
 [Net] object. Networks imported from Intel's [Model] Optimizer are launched in Intel's Inference
 Engine backend.
@@ -531,7 +531,7 @@ ___
 
 ▸ **readNetFromONNX**(`onnxFile`: any): *[Net](_types_opencv__hacks_.md#net)*
 
-*Defined in [types/opencv/dnn.ts:237](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L237)*
+*Defined in [types/opencv/dnn.ts:237](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L237)*
 
 Network object that ready to do forward, throw an exception in failure cases.
 
@@ -545,7 +545,7 @@ Name | Type | Description |
 
 ▸ **readNetFromONNX**(`buffer`: any, `sizeBuffer`: [size_t](_types_opencv__hacks_.md#size_t)): *[Net](_types_opencv__hacks_.md#net)*
 
-*Defined in [types/opencv/dnn.ts:246](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L246)*
+*Defined in [types/opencv/dnn.ts:246](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L246)*
 
 Network object that ready to do forward, throw an exception in failure cases.
 
@@ -560,7 +560,7 @@ Name | Type | Description |
 
 ▸ **readNetFromONNX**(`buffer`: [uchar](_types_opencv__hacks_.md#uchar)): *[uchar](_types_opencv__hacks_.md#uchar)*
 
-*Defined in [types/opencv/dnn.ts:253](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L253)*
+*Defined in [types/opencv/dnn.ts:253](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L253)*
 
 Network object that ready to do forward, throw an exception in failure cases.
 
@@ -578,7 +578,7 @@ ___
 
 ▸ **readNetFromTensorflow**(`model`: any, `config?`: any): *[Net](_types_opencv__hacks_.md#net)*
 
-*Defined in [types/opencv/dnn.ts:264](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L264)*
+*Defined in [types/opencv/dnn.ts:264](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L264)*
 
 [Net] object.
 
@@ -593,7 +593,7 @@ Name | Type | Description |
 
 ▸ **readNetFromTensorflow**(`bufferModel`: [uchar](_types_opencv__hacks_.md#uchar), `bufferConfig?`: [uchar](_types_opencv__hacks_.md#uchar)): *[uchar](_types_opencv__hacks_.md#uchar)*
 
-*Defined in [types/opencv/dnn.ts:273](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L273)*
+*Defined in [types/opencv/dnn.ts:273](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L273)*
 
 [Net] object.
 
@@ -608,7 +608,7 @@ Name | Type | Description |
 
 ▸ **readNetFromTensorflow**(`bufferModel`: any, `lenModel`: [size_t](_types_opencv__hacks_.md#size_t), `bufferConfig?`: any, `lenConfig?`: [size_t](_types_opencv__hacks_.md#size_t)): *[Net](_types_opencv__hacks_.md#net)*
 
-*Defined in [types/opencv/dnn.ts:287](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L287)*
+*Defined in [types/opencv/dnn.ts:287](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L287)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -630,7 +630,7 @@ ___
 
 ▸ **readNetFromTorch**(`model`: any, `isBinary?`: [bool](_types_opencv__hacks_.md#bool), `evaluate?`: [bool](_types_opencv__hacks_.md#bool)): *[Net](_types_opencv__hacks_.md#net)*
 
-*Defined in [types/opencv/dnn.ts:318](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L318)*
+*Defined in [types/opencv/dnn.ts:318](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L318)*
 
 [Net] object.
 
@@ -669,7 +669,7 @@ ___
 
 ▸ **readTensorFromONNX**(`path`: any): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/dnn.ts:325](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L325)*
+*Defined in [types/opencv/dnn.ts:325](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L325)*
 
 [Mat].
 
@@ -687,7 +687,7 @@ ___
 
 ▸ **readTorchBlob**(`filename`: any, `isBinary?`: [bool](_types_opencv__hacks_.md#bool)): *[Mat](../classes/_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/dnn.ts:330](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L330)*
+*Defined in [types/opencv/dnn.ts:330](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L330)*
 
 This function has the same limitations as [readNetFromTorch()].
 
@@ -706,7 +706,7 @@ ___
 
 ▸ **shrinkCaffeModel**(`src`: any, `dst`: any, `layersTypes?`: any): *void*
 
-*Defined in [types/opencv/dnn.ts:345](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L345)*
+*Defined in [types/opencv/dnn.ts:345](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L345)*
 
 Shrinked model has no origin float32 weights so it can't be used in origin Caffe framework anymore.
 However the structure of data is taken from NVidia's Caffe fork: . So the resulting model may be
@@ -728,7 +728,7 @@ ___
 
 ▸ **writeTextGraph**(`model`: any, `output`: any): *void*
 
-*Defined in [types/opencv/dnn.ts:354](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/dnn.ts#L354)*
+*Defined in [types/opencv/dnn.ts:354](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/dnn.ts#L354)*
 
 To reduce output file size, trained weights are not included.
 

@@ -26,13 +26,13 @@
 
 \+ **new MinMaxLoc**(): *[MinMaxLoc](_types_opencv__hacks_.minmaxloc.md)*
 
-*Defined in [types/opencv/_hacks.ts:62](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L62)*
+*Defined in [types/opencv/_hacks.ts:62](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/_hacks.ts#L62)*
 
 **Returns:** *[MinMaxLoc](_types_opencv__hacks_.minmaxloc.md)*
 
 \+ **new MinMaxLoc**(`minVal`: number, `maxVal`: number, `minLoc`: [Point](_types_opencv__hacks_.point.md), `maxLoc`: [Point](_types_opencv__hacks_.point.md)): *[MinMaxLoc](_types_opencv__hacks_.minmaxloc.md)*
 
-*Defined in [types/opencv/_hacks.ts:63](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L63)*
+*Defined in [types/opencv/_hacks.ts:63](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/_hacks.ts#L63)*
 
 **Parameters:**
 
@@ -51,7 +51,7 @@ Name | Type |
 
 • **maxLoc**: *[Point](_types_opencv__hacks_.point.md)*
 
-*Defined in [types/opencv/_hacks.ts:62](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L62)*
+*Defined in [types/opencv/_hacks.ts:62](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/_hacks.ts#L62)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 • **maxVal**: *number*
 
-*Defined in [types/opencv/_hacks.ts:60](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L60)*
+*Defined in [types/opencv/_hacks.ts:60](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/_hacks.ts#L60)*
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 • **minLoc**: *[Point](_types_opencv__hacks_.point.md)*
 
-*Defined in [types/opencv/_hacks.ts:61](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L61)*
+*Defined in [types/opencv/_hacks.ts:61](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/_hacks.ts#L61)*
 
 ___
 
@@ -75,4 +75,4 @@ ___
 
 • **minVal**: *number*
 
-*Defined in [types/opencv/_hacks.ts:59](https://github.com/cancerberoSgx/mirada/blob/2aa7cf1/mirada/src/types/opencv/_hacks.ts#L59)*
+*Defined in [types/opencv/_hacks.ts:59](https://github.com/cancerberoSgx/mirada/blob/f0c0267/mirada/src/types/opencv/_hacks.ts#L59)*
