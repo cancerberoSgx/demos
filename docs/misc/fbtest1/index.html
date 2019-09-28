@@ -12,7 +12,17 @@
   
 <h1>A test</h1>
 <div id="log"></div>
+<fb:login-button 
+  scope="public_profile,email"
+  onlogin="checkLoginState();">
+</fb:login-button>
 <script>
+  function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
+
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '2246202458836277',
