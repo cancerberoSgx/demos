@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/bilateralFilter"](_op_bilateralfilter_.md)
+[ojos](../README.md) › ["op/bilateralFilter"](_op_bilateralfilter_.md)
 
 # External module: "op/bilateralFilter"
 

@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/types"](../modules/_op_types_.md) › [WithBorderType](_op_types_.withbordertype.md)
+[ojos](../README.md) › ["op/types"](../modules/_op_types_.md) › [WithBorderType](_op_types_.withbordertype.md)
 
 # Interface: WithBorderType
 
@@ -8,19 +6,25 @@
 
 * **WithBorderType**
 
-  * [BilateralFilterConcreteOptions](_op_bilateralfilter_.bilateralfilterconcreteoptions.md)
+  ↳ [BilateralFilterConcreteOptions](_op_bilateralfilter_.bilateralfilterconcreteoptions.md)
 
-  * [BoxFilterConcreteOptions](_op_boxfilter_.boxfilterconcreteoptions.md)
+  ↳ [BoxFilterConcreteOptions](_op_boxfilter_.boxfilterconcreteoptions.md)
 
-  * [EdgeConcreteOptions](_op_edge_.edgeconcreteoptions.md)
+  ↳ [EdgeConcreteOptions](_op_edge_.edgeconcreteoptions.md)
 
-  * [GaussianBlurConcreteOptions](_op_gaussianblur_.gaussianblurconcreteoptions.md)
+  ↳ [Filter2DConcreteOptions](_op_filter2d_.filter2dconcreteoptions.md)
 
-  * [MedianBlurConcreteOptions](_op_medianblur_.medianblurconcreteoptions.md)
+  ↳ [GaussianBlurConcreteOptions](_op_gaussianblur_.gaussianblurconcreteoptions.md)
 
-  * [MorphologyExConcreteOptions](_op_morphologyex_.morphologyexconcreteoptions.md)
+  ↳ [MedianBlurConcreteOptions](_op_medianblur_.medianblurconcreteoptions.md)
 
-  * [WarpPerspectiveOptions](_op_warpperspective_.warpperspectiveoptions.md)
+  ↳ [MorphologyExConcreteOptions](_op_morphologyex_.morphologyexconcreteoptions.md)
+
+  ↳ [PyrConcreteOptions](_op_pyr_.pyrconcreteoptions.md)
+
+  ↳ [WarpAffineOptions](_op_warpaffine_.warpaffineoptions.md)
+
+  ↳ [WarpPerspectiveOptions](_op_warpperspective_.warpperspectiveoptions.md)
 
 ## Index
 
@@ -34,6 +38,6 @@
 
 • **borderType**? : *BorderTypes*
 
-*Defined in [op/types.ts:34](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L34)*
+*Defined in [op/types.ts:57](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L57)*
 
-border mode used to extrapolate pixels outside of the image, see [BorderTypes]
+border mode used to extrapolate pixels outside of the image, see [BorderTypes].

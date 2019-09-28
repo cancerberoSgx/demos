@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/morphologyEx"](../modules/_op_morphologyex_.md) › [MorphologyExConcreteOptions](_op_morphologyex_.morphologyexconcreteoptions.md)
+[ojos](../README.md) › ["op/morphologyEx"](../modules/_op_morphologyex_.md) › [MorphologyExConcreteOptions](_op_morphologyex_.morphologyexconcreteoptions.md)
 
 # Interface: MorphologyExConcreteOptions
 
@@ -10,9 +8,11 @@
 
 * [WithBorderValue](_op_types_.withbordervalue.md)
 
-  * **MorphologyExConcreteOptions**
+  ↳ [WithKernel](_op_types_.withkernel.md)
 
-  * [MorphologyExOptions](_op_morphologyex_.morphologyexoptions.md)
+  ↳ **MorphologyExConcreteOptions**
+
+  ↳ [MorphologyExOptions](_op_morphologyex_.morphologyexoptions.md)
 
 ## Index
 
@@ -31,7 +31,11 @@
 
 • **anchor**? : *Point*
 
-*Defined in [op/morphologyEx.ts:11](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/morphologyEx.ts#L11)*
+*Inherited from [WithKernelAnchor](_op_types_.withkernelanchor.md).[anchor](_op_types_.withkernelanchor.md#optional-anchor)*
+
+*Defined in [op/types.ts:92](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L92)*
+
+Anchor position with the kernel. Negative values mean that the anchor is at the kernel center
 
 ___
 
@@ -41,9 +45,9 @@ ___
 
 *Inherited from [WithBorderType](_op_types_.withbordertype.md).[borderType](_op_types_.withbordertype.md#optional-bordertype)*
 
-*Defined in [op/types.ts:34](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L34)*
+*Defined in [op/types.ts:57](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L57)*
 
-border mode used to extrapolate pixels outside of the image, see [BorderTypes]
+border mode used to extrapolate pixels outside of the image, see [BorderTypes].
 
 ___
 
@@ -53,7 +57,9 @@ ___
 
 *Inherited from [WithBorderValue](_op_types_.withbordervalue.md).[borderValue](_op_types_.withbordervalue.md#optional-bordervalue)*
 
-*Defined in [op/types.ts:38](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L38)*
+*Defined in [op/types.ts:64](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L64)*
+
+The color of the border.
 
 ___
 
@@ -61,7 +67,9 @@ ___
 
 • **iterations**? : *undefined | number*
 
-*Defined in [op/morphologyEx.ts:12](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/morphologyEx.ts#L12)*
+*Defined in [op/morphologyEx.ts:16](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/morphologyEx.ts#L16)*
+
+The number of iterations is the number of times erosion or dilatation operation will be applied. For instance, an opening operation ([MORPH_OPEN]) with two iterations is equivalent to apply successively: erode -> erode -> dilate -> dilate (and not erode -> dilate -> erode -> dilate). By default 1.
 
 ___
 
@@ -69,7 +77,11 @@ ___
 
 • **kernel**: *Mat*
 
-*Defined in [op/morphologyEx.ts:10](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/morphologyEx.ts#L10)*
+*Inherited from [WithKernel](_op_types_.withkernel.md).[kernel](_op_types_.withkernel.md#kernel)*
+
+*Defined in [op/types.ts:85](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L85)*
+
+Structuring element. It can be created using getStructuringElement.
 
 ___
 
@@ -77,4 +89,6 @@ ___
 
 • **op**: *MorphTypes*
 
-*Defined in [op/morphologyEx.ts:9](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/morphologyEx.ts#L9)*
+*Defined in [op/morphologyEx.ts:12](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/morphologyEx.ts#L12)*
+
+Type of a morphological operation.

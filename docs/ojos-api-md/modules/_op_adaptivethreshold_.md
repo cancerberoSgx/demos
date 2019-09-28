@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/adaptiveThreshold"](_op_adaptivethreshold_.md)
+[ojos](../README.md) › ["op/adaptiveThreshold"](_op_adaptivethreshold_.md)
 
 # External module: "op/adaptiveThreshold"
 

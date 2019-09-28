@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/bitwise"](_op_bitwise_.md)
+[ojos](../README.md) › ["op/bitwise"](_op_bitwise_.md)
 
 # External module: "op/bitwise"
 

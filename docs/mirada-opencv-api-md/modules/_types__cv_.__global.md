@@ -15,4 +15,4 @@
 
 • **cv**: *[CV](_types_opencv_index_.md#cv) & object*
 
-*Defined in [types/_cv.ts:5](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/_cv.ts#L5)*
+*Defined in [types/_cv.ts:5](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/_cv.ts#L5)*

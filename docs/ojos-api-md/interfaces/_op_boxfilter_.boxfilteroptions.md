@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/boxFilter"](../modules/_op_boxfilter_.md) › [BoxFilterOptions](_op_boxfilter_.boxfilteroptions.md)
+[ojos](../README.md) › ["op/boxFilter"](../modules/_op_boxfilter_.md) › [BoxFilterOptions](_op_boxfilter_.boxfilteroptions.md)
 
 # Interface: BoxFilterOptions
 
@@ -8,9 +6,9 @@
 
 * [OperationExecBaseOptions](_op_types_.operationexecbaseoptions.md)
 
-  * [BoxFilterConcreteOptions](_op_boxfilter_.boxfilterconcreteoptions.md)
+  ↳ [BoxFilterConcreteOptions](_op_boxfilter_.boxfilterconcreteoptions.md)
 
-  * **BoxFilterOptions**
+  ↳ **BoxFilterOptions**
 
 ## Index
 
@@ -30,11 +28,11 @@
 
 • **anchor**? : *Point*
 
-*Inherited from [BoxFilterConcreteOptions](_op_boxfilter_.boxfilterconcreteoptions.md).[anchor](_op_boxfilter_.boxfilterconcreteoptions.md#optional-anchor)*
+*Inherited from [WithKernelAnchor](_op_types_.withkernelanchor.md).[anchor](_op_types_.withkernelanchor.md#optional-anchor)*
 
-*Defined in [op/boxFilter.ts:16](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/boxFilter.ts#L16)*
+*Defined in [op/types.ts:92](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L92)*
 
-anchor point; default value Point(-1,-1) means that the anchor is at the kernel center
+Anchor position with the kernel. Negative values mean that the anchor is at the kernel center
 
 ___
 
@@ -44,9 +42,9 @@ ___
 
 *Inherited from [WithBorderType](_op_types_.withbordertype.md).[borderType](_op_types_.withbordertype.md#optional-bordertype)*
 
-*Defined in [op/types.ts:34](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L34)*
+*Defined in [op/types.ts:57](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L57)*
 
-border mode used to extrapolate pixels outside of the image, see [BorderTypes]
+border mode used to extrapolate pixels outside of the image, see [BorderTypes].
 
 ___
 
@@ -54,9 +52,9 @@ ___
 
 • **ddepth**? : *undefined | number*
 
-*Inherited from [BoxFilterConcreteOptions](_op_boxfilter_.boxfilterconcreteoptions.md).[ddepth](_op_boxfilter_.boxfilterconcreteoptions.md#optional-ddepth)*
+*Inherited from [WithDDepth](_op_types_.withddepth.md).[ddepth](_op_types_.withddepth.md#optional-ddepth)*
 
-*Defined in [op/boxFilter.ts:12](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/boxFilter.ts#L12)*
+*Defined in [op/types.ts:99](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L99)*
 
 the output image dept. (-1 to use src.depth()).
 
@@ -68,19 +66,21 @@ ___
 
 *Inherited from [OperationExecBaseOptions](_op_types_.operationexecbaseoptions.md).[dst](_op_types_.operationexecbaseoptions.md#optional-dst)*
 
-*Defined in [op/types.ts:27](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L27)*
+*Defined in [op/types.ts:50](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L50)*
+
+Output image. If not given it will be created. Note that you can give [src] as output image in which case the input image will be written.
 
 ___
 
 ###  ksize
 
-• **ksize**: *Size*
+• **ksize**: *[SizeRepresentation](../modules/_util_util_.md#sizerepresentation)*
 
 *Inherited from [WithKSize](_op_types_.withksize.md).[ksize](_op_types_.withksize.md#ksize)*
 
-*Defined in [op/types.ts:45](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L45)*
+*Defined in [op/types.ts:78](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L78)*
 
-blurring kernel size. In general only odd numbers greater than 2 are accepted
+Transformation (blurring) kernel size. In general only odd numbers greater than 2 are accepted.
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 *Inherited from [BoxFilterConcreteOptions](_op_boxfilter_.boxfilterconcreteoptions.md).[normalize](_op_boxfilter_.boxfilterconcreteoptions.md#optional-normalize)*
 
-*Defined in [op/boxFilter.ts:20](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/boxFilter.ts#L20)*
+*Defined in [op/boxFilter.ts:12](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/boxFilter.ts#L12)*
 
 	flag, specifying whether the kernel is normalized by its area or not.
 
@@ -102,4 +102,6 @@ ___
 
 *Inherited from [OperationExecBaseOptions](_op_types_.operationexecbaseoptions.md).[src](_op_types_.operationexecbaseoptions.md#src)*
 
-*Defined in [op/types.ts:26](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L26)*
+*Defined in [op/types.ts:46](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L46)*
+
+Input image.

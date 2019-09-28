@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/edge"](_op_edge_.md)
+[ojos](../README.md) › ["op/edge"](_op_edge_.md)
 
 # External module: "op/edge"
 

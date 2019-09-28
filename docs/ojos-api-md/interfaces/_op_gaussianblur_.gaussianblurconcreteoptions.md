@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/gaussianBlur"](../modules/_op_gaussianblur_.md) › [GaussianBlurConcreteOptions](_op_gaussianblur_.gaussianblurconcreteoptions.md)
+[ojos](../README.md) › ["op/gaussianBlur"](../modules/_op_gaussianblur_.md) › [GaussianBlurConcreteOptions](_op_gaussianblur_.gaussianblurconcreteoptions.md)
 
 # Interface: GaussianBlurConcreteOptions
 
@@ -10,9 +8,9 @@
 
 * [WithKSize](_op_types_.withksize.md)
 
-  * **GaussianBlurConcreteOptions**
+  ↳ **GaussianBlurConcreteOptions**
 
-  * [GaussianBlurOptions](_op_gaussianblur_.gaussianbluroptions.md)
+  ↳ [GaussianBlurOptions](_op_gaussianblur_.gaussianbluroptions.md)
 
 ## Index
 
@@ -31,21 +29,21 @@
 
 *Inherited from [WithBorderType](_op_types_.withbordertype.md).[borderType](_op_types_.withbordertype.md#optional-bordertype)*
 
-*Defined in [op/types.ts:34](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L34)*
+*Defined in [op/types.ts:57](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L57)*
 
-border mode used to extrapolate pixels outside of the image, see [BorderTypes]
+border mode used to extrapolate pixels outside of the image, see [BorderTypes].
 
 ___
 
 ###  ksize
 
-• **ksize**: *Size*
+• **ksize**: *[SizeRepresentation](../modules/_util_util_.md#sizerepresentation)*
 
 *Inherited from [WithKSize](_op_types_.withksize.md).[ksize](_op_types_.withksize.md#ksize)*
 
-*Defined in [op/types.ts:45](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L45)*
+*Defined in [op/types.ts:78](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L78)*
 
-blurring kernel size. In general only odd numbers greater than 2 are accepted
+Transformation (blurring) kernel size. In general only odd numbers greater than 2 are accepted.
 
 ___
 
@@ -53,7 +51,7 @@ ___
 
 • **sigmaX**: *number*
 
-*Defined in [op/gaussianBlur.ts:8](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/gaussianBlur.ts#L8)*
+*Defined in [op/gaussianBlur.ts:9](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/gaussianBlur.ts#L9)*
 
 ___
 
@@ -61,4 +59,4 @@ ___
 
 • **sigmaY**? : *undefined | number*
 
-*Defined in [op/gaussianBlur.ts:9](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/gaussianBlur.ts#L9)*
+*Defined in [op/gaussianBlur.ts:10](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/gaussianBlur.ts#L10)*

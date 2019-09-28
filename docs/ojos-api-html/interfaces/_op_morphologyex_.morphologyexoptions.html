@@ -112,11 +112,16 @@
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> anchor</h3>
 					<div class="tsd-signature tsd-kind-icon">anchor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Point</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_op_morphologyex_.morphologyexconcreteoptions.html">MorphologyExConcreteOptions</a>.<a href="_op_morphologyex_.morphologyexconcreteoptions.html#anchor">anchor</a></p>
+						<p>Inherited from <a href="_op_types_.withkernelanchor.html">WithKernelAnchor</a>.<a href="_op_types_.withkernelanchor.html#anchor">anchor</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/morphologyEx.ts#L11">op/morphologyEx.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L92">op/types.ts:92</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Anchor position with the kernel. Negative values mean that the anchor is at the kernel center</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
 					<a name="bordertype" class="tsd-anchor"></a>
@@ -125,12 +130,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_op_types_.withbordertype.html">WithBorderType</a>.<a href="_op_types_.withbordertype.html#bordertype">borderType</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L34">op/types.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L57">op/types.ts:57</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>border mode used to extrapolate pixels outside of the image, see [BorderTypes]</p>
+							<p>border mode used to extrapolate pixels outside of the image, see [BorderTypes].</p>
 						</div>
 					</div>
 				</section>
@@ -141,9 +146,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_op_types_.withbordervalue.html">WithBorderValue</a>.<a href="_op_types_.withbordervalue.html#bordervalue">borderValue</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L38">op/types.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L64">op/types.ts:64</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The color of the border.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
 					<a name="dst" class="tsd-anchor"></a>
@@ -152,9 +162,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_op_types_.operationexecbaseoptions.html">OperationExecBaseOptions</a>.<a href="_op_types_.operationexecbaseoptions.html#dst">dst</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L27">op/types.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L50">op/types.ts:50</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Output image. If not given it will be created. Note that you can give [src] as output image in which case the input image will be written.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
 					<a name="iterations" class="tsd-anchor"></a>
@@ -163,20 +178,30 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_op_morphologyex_.morphologyexconcreteoptions.html">MorphologyExConcreteOptions</a>.<a href="_op_morphologyex_.morphologyexconcreteoptions.html#iterations">iterations</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/morphologyEx.ts#L12">op/morphologyEx.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/morphologyEx.ts#L16">op/morphologyEx.ts:16</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The number of iterations is the number of times erosion or dilatation operation will be applied. For instance, an opening operation ([MORPH_OPEN]) with two iterations is equivalent to apply successively: erode -&gt; erode -&gt; dilate -&gt; dilate (and not erode -&gt; dilate -&gt; erode -&gt; dilate). By default 1.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
 					<a name="kernel" class="tsd-anchor"></a>
 					<h3>kernel</h3>
 					<div class="tsd-signature tsd-kind-icon">kernel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Mat</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_op_morphologyex_.morphologyexconcreteoptions.html">MorphologyExConcreteOptions</a>.<a href="_op_morphologyex_.morphologyexconcreteoptions.html#kernel">kernel</a></p>
+						<p>Inherited from <a href="_op_types_.withkernel.html">WithKernel</a>.<a href="_op_types_.withkernel.html#kernel">kernel</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/morphologyEx.ts#L10">op/morphologyEx.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L85">op/types.ts:85</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Structuring element. It can be created using getStructuringElement.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
 					<a name="op" class="tsd-anchor"></a>
@@ -185,9 +210,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_op_morphologyex_.morphologyexconcreteoptions.html">MorphologyExConcreteOptions</a>.<a href="_op_morphologyex_.morphologyexconcreteoptions.html#op">op</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/morphologyEx.ts#L9">op/morphologyEx.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/morphologyEx.ts#L12">op/morphologyEx.ts:12</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Type of a morphological operation.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
 					<a name="src" class="tsd-anchor"></a>
@@ -196,9 +226,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_op_types_.operationexecbaseoptions.html">OperationExecBaseOptions</a>.<a href="_op_types_.operationexecbaseoptions.html#src">src</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L26">op/types.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L46">op/types.ts:46</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Input image.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>

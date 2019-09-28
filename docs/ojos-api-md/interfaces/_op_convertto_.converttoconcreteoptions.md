@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/convertTo"](../modules/_op_convertto_.md) › [ConvertToConcreteOptions](_op_convertto_.converttoconcreteoptions.md)
+[ojos](../README.md) › ["op/convertTo"](../modules/_op_convertto_.md) › [ConvertToConcreteOptions](_op_convertto_.converttoconcreteoptions.md)
 
 # Interface: ConvertToConcreteOptions
 
@@ -8,7 +6,7 @@
 
 * **ConvertToConcreteOptions**
 
-  * [ConvertToOptions](_op_convertto_.converttooptions.md)
+  ↳ [ConvertToOptions](_op_convertto_.converttooptions.md)
 
 ## Index
 
@@ -24,7 +22,7 @@
 
 • **alpha**? : *undefined | number*
 
-*Defined in [op/convertTo.ts:11](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/convertTo.ts#L11)*
+*Defined in [op/convertTo.ts:11](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/convertTo.ts#L11)*
 
  Color scale factor.
 
@@ -34,7 +32,7 @@ ___
 
 • **beta**? : *undefined | number*
 
-*Defined in [op/convertTo.ts:15](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/convertTo.ts#L15)*
+*Defined in [op/convertTo.ts:15](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/convertTo.ts#L15)*
 
 Delta added to the scaled values.
 
@@ -44,6 +42,6 @@ ___
 
 • **dtype**? : *undefined | number*
 
-*Defined in [op/convertTo.ts:19](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/convertTo.ts#L19)*
+*Defined in [op/convertTo.ts:19](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/convertTo.ts#L19)*
 
 Output image depth, for example, cv.CV_8U

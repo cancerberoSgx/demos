@@ -111,14 +111,14 @@
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> anchor</h3>
 					<div class="tsd-signature tsd-kind-icon">anchor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Point</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_op_boxfilter_.boxfilterconcreteoptions.html">BoxFilterConcreteOptions</a>.<a href="_op_boxfilter_.boxfilterconcreteoptions.html#anchor">anchor</a></p>
+						<p>Inherited from <a href="_op_types_.withkernelanchor.html">WithKernelAnchor</a>.<a href="_op_types_.withkernelanchor.html#anchor">anchor</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/boxFilter.ts#L16">op/boxFilter.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L92">op/types.ts:92</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>anchor point; default value Point(-1,-1) means that the anchor is at the kernel center</p>
+							<p>Anchor position with the kernel. Negative values mean that the anchor is at the kernel center</p>
 						</div>
 					</div>
 				</section>
@@ -129,12 +129,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_op_types_.withbordertype.html">WithBorderType</a>.<a href="_op_types_.withbordertype.html#bordertype">borderType</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L34">op/types.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L57">op/types.ts:57</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>border mode used to extrapolate pixels outside of the image, see [BorderTypes]</p>
+							<p>border mode used to extrapolate pixels outside of the image, see [BorderTypes].</p>
 						</div>
 					</div>
 				</section>
@@ -143,9 +143,9 @@
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ddepth</h3>
 					<div class="tsd-signature tsd-kind-icon">ddepth<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_op_boxfilter_.boxfilterconcreteoptions.html">BoxFilterConcreteOptions</a>.<a href="_op_boxfilter_.boxfilterconcreteoptions.html#ddepth">ddepth</a></p>
+						<p>Inherited from <a href="_op_types_.withddepth.html">WithDDepth</a>.<a href="_op_types_.withddepth.html#ddepth">ddepth</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/boxFilter.ts#L12">op/boxFilter.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L99">op/types.ts:99</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -161,23 +161,28 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_op_types_.operationexecbaseoptions.html">OperationExecBaseOptions</a>.<a href="_op_types_.operationexecbaseoptions.html#dst">dst</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L27">op/types.ts:27</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
-					<a name="ksize" class="tsd-anchor"></a>
-					<h3>ksize</h3>
-					<div class="tsd-signature tsd-kind-icon">ksize<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Size</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_op_types_.withksize.html">WithKSize</a>.<a href="_op_types_.withksize.html#ksize">ksize</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L45">op/types.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L50">op/types.ts:50</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>blurring kernel size. In general only odd numbers greater than 2 are accepted</p>
+							<p>Output image. If not given it will be created. Note that you can give [src] as output image in which case the input image will be written.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+					<a name="ksize" class="tsd-anchor"></a>
+					<h3>ksize</h3>
+					<div class="tsd-signature tsd-kind-icon">ksize<span class="tsd-signature-symbol">:</span> <a href="../modules/_util_util_.html#sizerepresentation" class="tsd-signature-type">SizeRepresentation</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_op_types_.withksize.html">WithKSize</a>.<a href="_op_types_.withksize.html#ksize">ksize</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L78">op/types.ts:78</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Transformation (blurring) kernel size. In general only odd numbers greater than 2 are accepted.</p>
 						</div>
 					</div>
 				</section>
@@ -188,7 +193,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_op_boxfilter_.boxfilterconcreteoptions.html">BoxFilterConcreteOptions</a>.<a href="_op_boxfilter_.boxfilterconcreteoptions.html#normalize">normalize</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/boxFilter.ts#L20">op/boxFilter.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/boxFilter.ts#L12">op/boxFilter.ts:12</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -204,9 +209,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_op_types_.operationexecbaseoptions.html">OperationExecBaseOptions</a>.<a href="_op_types_.operationexecbaseoptions.html#src">src</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L26">op/types.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L46">op/types.ts:46</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Input image.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>

@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/threshold"](_op_threshold_.md)
+[ojos](../README.md) › ["op/threshold"](_op_threshold_.md)
 
 # External module: "op/threshold"
 

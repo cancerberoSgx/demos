@@ -29,6 +29,7 @@ since we don't support inheritance yet we force Mat to extend Mat_ which type de
 
 ### Methods
 
+* [charAt](_types_opencv__hacks_.mat_.md#charat)
 * [charPtr](_types_opencv__hacks_.mat_.md#charptr)
 * [clone](_types_opencv__hacks_.mat_.md#clone)
 * [delete](_types_opencv__hacks_.mat_.md#delete)
@@ -44,7 +45,9 @@ since we don't support inheritance yet we force Mat to extend Mat_ which type de
 * [resize](_types_opencv__hacks_.mat_.md#resize)
 * [roi](_types_opencv__hacks_.mat_.md#roi)
 * [set](_types_opencv__hacks_.mat_.md#set)
+* [setTo](_types_opencv__hacks_.mat_.md#setto)
 * [shortPtr](_types_opencv__hacks_.mat_.md#shortptr)
+* [ucharAt](_types_opencv__hacks_.mat_.md#ucharat)
 * [ucharPtr](_types_opencv__hacks_.mat_.md#ucharptr)
 * [ushortPtr](_types_opencv__hacks_.mat_.md#ushortptr)
 
@@ -54,7 +57,7 @@ since we don't support inheritance yet we force Mat to extend Mat_ which type de
 
 • **data**: *Uint8Array*
 
-*Defined in [types/opencv/_hacks.ts:178](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L178)*
+*Defined in [types/opencv/_hacks.ts:183](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L183)*
 
 ___
 
@@ -62,7 +65,7 @@ ___
 
 • **data16S**: *Int16Array*
 
-*Defined in [types/opencv/_hacks.ts:182](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L182)*
+*Defined in [types/opencv/_hacks.ts:187](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L187)*
 
 ___
 
@@ -70,7 +73,7 @@ ___
 
 • **data16U**: *Uint16Array*
 
-*Defined in [types/opencv/_hacks.ts:181](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L181)*
+*Defined in [types/opencv/_hacks.ts:186](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L186)*
 
 ___
 
@@ -78,7 +81,7 @@ ___
 
 • **data32F**: *Float32Array*
 
-*Defined in [types/opencv/_hacks.ts:186](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L186)*
+*Defined in [types/opencv/_hacks.ts:190](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L190)*
 
 ___
 
@@ -86,7 +89,7 @@ ___
 
 • **data32S**: *Int32Array*
 
-*Defined in [types/opencv/_hacks.ts:184](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L184)*
+*Defined in [types/opencv/_hacks.ts:189](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L189)*
 
 ___
 
@@ -94,7 +97,7 @@ ___
 
 • **data32U**: *Uint32Array*
 
-*Defined in [types/opencv/_hacks.ts:183](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L183)*
+*Defined in [types/opencv/_hacks.ts:188](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L188)*
 
 ___
 
@@ -102,7 +105,7 @@ ___
 
 • **data64F**: *Float64Array*
 
-*Defined in [types/opencv/_hacks.ts:185](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L185)*
+*Defined in [types/opencv/_hacks.ts:191](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L191)*
 
 ___
 
@@ -110,7 +113,7 @@ ___
 
 • **data8S**: *Int8Array*
 
-*Defined in [types/opencv/_hacks.ts:179](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L179)*
+*Defined in [types/opencv/_hacks.ts:184](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L184)*
 
 ___
 
@@ -118,15 +121,31 @@ ___
 
 • **data8U**: *Uint8Array*
 
-*Defined in [types/opencv/_hacks.ts:180](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L180)*
+*Defined in [types/opencv/_hacks.ts:185](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L185)*
 
 ## Methods
+
+###  charAt
+
+▸ **charAt**(`i`: any): *any*
+
+*Defined in [types/opencv/_hacks.ts:198](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L198)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`i` | any |
+
+**Returns:** *any*
+
+___
 
 ###  charPtr
 
 ▸ **charPtr**(`i`: any, `j`: any): *any*
 
-*Defined in [types/opencv/_hacks.ts:188](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L188)*
+*Defined in [types/opencv/_hacks.ts:193](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L193)*
 
 **Parameters:**
 
@@ -145,7 +164,7 @@ ___
 
 *Inherited from [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md).[clone](_types_opencv__hacks_.emscriptenembindinstance.md#clone)*
 
-*Defined in [types/opencv/_hacks.ts:120](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L120)*
+*Defined in [types/opencv/_hacks.ts:121](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L121)*
 
 **Parameters:**
 
@@ -165,7 +184,7 @@ ___
 
 *Overrides [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md).[delete](_types_opencv__hacks_.emscriptenembindinstance.md#delete)*
 
-*Defined in [types/opencv/_hacks.ts:130](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L130)*
+*Defined in [types/opencv/_hacks.ts:131](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L131)*
 
 **Returns:** *void*
 
@@ -175,7 +194,7 @@ ___
 
 *Overrides [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md).[delete](_types_opencv__hacks_.emscriptenembindinstance.md#delete)*
 
-*Defined in [types/opencv/_hacks.ts:138](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L138)*
+*Defined in [types/opencv/_hacks.ts:139](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L139)*
 
 **Returns:** *void*
 
@@ -187,7 +206,7 @@ ___
 
 *Inherited from [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md).[deleteLater](_types_opencv__hacks_.emscriptenembindinstance.md#deletelater)*
 
-*Defined in [types/opencv/_hacks.ts:123](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L123)*
+*Defined in [types/opencv/_hacks.ts:124](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L124)*
 
 **Parameters:**
 
@@ -203,7 +222,7 @@ ___
 
 ▸ **doublePtr**(`i`: any, `j`: any): *any*
 
-*Defined in [types/opencv/_hacks.ts:193](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L193)*
+*Defined in [types/opencv/_hacks.ts:200](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L200)*
 
 **Parameters:**
 
@@ -220,7 +239,7 @@ ___
 
 ▸ **floatPtr**(`i`: any, `j`: any): *any*
 
-*Defined in [types/opencv/_hacks.ts:192](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L192)*
+*Defined in [types/opencv/_hacks.ts:199](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L199)*
 
 **Parameters:**
 
@@ -239,7 +258,7 @@ ___
 
 *Inherited from [Vector](_types_opencv__hacks_.vector.md).[get](_types_opencv__hacks_.vector.md#get)*
 
-*Defined in [types/opencv/_hacks.ts:131](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L131)*
+*Defined in [types/opencv/_hacks.ts:132](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L132)*
 
 **Parameters:**
 
@@ -253,7 +272,7 @@ Name | Type |
 
 *Inherited from [Vector](_types_opencv__hacks_.vector.md).[get](_types_opencv__hacks_.vector.md#get)*
 
-*Defined in [types/opencv/_hacks.ts:132](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L132)*
+*Defined in [types/opencv/_hacks.ts:133](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L133)*
 
 **Parameters:**
 
@@ -271,7 +290,7 @@ ___
 
 ▸ **intPtr**(`i`: any, `j`: any): *any*
 
-*Defined in [types/opencv/_hacks.ts:191](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L191)*
+*Defined in [types/opencv/_hacks.ts:196](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L196)*
 
 **Parameters:**
 
@@ -284,7 +303,7 @@ Name | Type |
 
 ▸ **intPtr**(`i`: any, `j`: any): *any*
 
-*Defined in [types/opencv/_hacks.ts:194](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L194)*
+*Defined in [types/opencv/_hacks.ts:201](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L201)*
 
 **Parameters:**
 
@@ -303,7 +322,7 @@ ___
 
 *Inherited from [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md).[isAliasOf](_types_opencv__hacks_.emscriptenembindinstance.md#isaliasof)*
 
-*Defined in [types/opencv/_hacks.ts:119](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L119)*
+*Defined in [types/opencv/_hacks.ts:120](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L120)*
 
 **Parameters:**
 
@@ -321,7 +340,7 @@ ___
 
 *Inherited from [EmscriptenEmbindInstance](_types_opencv__hacks_.emscriptenembindinstance.md).[isDeleted](_types_opencv__hacks_.emscriptenembindinstance.md#isdeleted)*
 
-*Defined in [types/opencv/_hacks.ts:122](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L122)*
+*Defined in [types/opencv/_hacks.ts:123](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L123)*
 
 **Parameters:**
 
@@ -339,7 +358,7 @@ ___
 
 *Inherited from [Vector](_types_opencv__hacks_.vector.md).[push_back](_types_opencv__hacks_.vector.md#push_back)*
 
-*Defined in [types/opencv/_hacks.ts:136](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L136)*
+*Defined in [types/opencv/_hacks.ts:137](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L137)*
 
 **Parameters:**
 
@@ -357,7 +376,7 @@ ___
 
 *Inherited from [Vector](_types_opencv__hacks_.vector.md).[put](_types_opencv__hacks_.vector.md#put)*
 
-*Defined in [types/opencv/_hacks.ts:134](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L134)*
+*Defined in [types/opencv/_hacks.ts:135](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L135)*
 
 **Parameters:**
 
@@ -377,7 +396,7 @@ ___
 
 *Inherited from [Vector](_types_opencv__hacks_.vector.md).[resize](_types_opencv__hacks_.vector.md#resize)*
 
-*Defined in [types/opencv/_hacks.ts:137](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L137)*
+*Defined in [types/opencv/_hacks.ts:138](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L138)*
 
 **Parameters:**
 
@@ -394,11 +413,14 @@ ___
 
 ▸ **roi**(`expr`: [Rect](_types_opencv__hacks_.rect.md) | [Mat_](_types_opencv__hacks_.mat_.md)): *[Mat](_types_opencv_mat_.mat.md)*
 
-*Defined in [types/opencv/_hacks.ts:200](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L200)*
+*Defined in [types/opencv/_hacks.ts:211](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L211)*
 
-Sometimes, you will have to play with certain region of images. For eye detection in images, first face detection is done all over the image and when face is obtained, we select the face region alone and search for eyes inside it instead of searching whole image. It improves accuracy (because eyes are always on faces) and performance (because we search for a small area).
+Sometimes, you will have to play with certain region of images.
+For eye detection in images, first face detection is done all
+over the image and when face is obtained, we select the face region alone and search for eyes inside it instead of searching whole image.
+It improves accuracy (because eyes are always on faces) and performance (because we search for a small area).
 
-Heads up : in JS seems only one argument is expected
+Heads up : in JS seems only one argument is expected.
 
 **Parameters:**
 
@@ -416,7 +438,7 @@ ___
 
 *Inherited from [Vector](_types_opencv__hacks_.vector.md).[set](_types_opencv__hacks_.vector.md#set)*
 
-*Defined in [types/opencv/_hacks.ts:133](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L133)*
+*Defined in [types/opencv/_hacks.ts:134](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L134)*
 
 **Parameters:**
 
@@ -429,11 +451,28 @@ Name | Type |
 
 ___
 
+###  setTo
+
+▸ **setTo**(`value`: [Mat_](_types_opencv__hacks_.mat_.md) | [Scalar](_types_opencv__hacks_.scalar.md), `mask?`: [Mat_](_types_opencv__hacks_.mat_.md)): *[Mat_](_types_opencv__hacks_.mat_.md)*
+
+*Defined in [types/opencv/_hacks.ts:202](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L202)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`value` | [Mat_](_types_opencv__hacks_.mat_.md) &#124; [Scalar](_types_opencv__hacks_.scalar.md) |
+`mask?` | [Mat_](_types_opencv__hacks_.mat_.md) |
+
+**Returns:** *[Mat_](_types_opencv__hacks_.mat_.md)*
+
+___
+
 ###  shortPtr
 
 ▸ **shortPtr**(`i`: any, `j`: any): *any*
 
-*Defined in [types/opencv/_hacks.ts:189](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L189)*
+*Defined in [types/opencv/_hacks.ts:194](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L194)*
 
 **Parameters:**
 
@@ -446,11 +485,27 @@ Name | Type |
 
 ___
 
+###  ucharAt
+
+▸ **ucharAt**(`i`: any): *any*
+
+*Defined in [types/opencv/_hacks.ts:197](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L197)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`i` | any |
+
+**Returns:** *any*
+
+___
+
 ###  ucharPtr
 
 ▸ **ucharPtr**(`i`: any, `j`: any): *any*
 
-*Defined in [types/opencv/_hacks.ts:187](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L187)*
+*Defined in [types/opencv/_hacks.ts:192](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L192)*
 
 **Parameters:**
 
@@ -467,7 +522,7 @@ ___
 
 ▸ **ushortPtr**(`i`: any, `j`: any): *any*
 
-*Defined in [types/opencv/_hacks.ts:190](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/_hacks.ts#L190)*
+*Defined in [types/opencv/_hacks.ts:195](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/_hacks.ts#L195)*
 
 **Parameters:**
 

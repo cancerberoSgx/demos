@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/morphologyEx"](_op_morphologyex_.md)
+[ojos](../README.md) › ["op/morphologyEx"](_op_morphologyex_.md)
 
 # External module: "op/morphologyEx"
 

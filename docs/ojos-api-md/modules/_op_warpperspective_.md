@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/warpPerspective"](_op_warpperspective_.md)
+[ojos](../README.md) › ["op/warpPerspective"](_op_warpperspective_.md)
 
 # External module: "op/warpPerspective"
 

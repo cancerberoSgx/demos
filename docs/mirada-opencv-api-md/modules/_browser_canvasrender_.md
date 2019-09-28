@@ -9,6 +9,7 @@
 
 * [ABOptions](../interfaces/_browser_canvasrender_.aboptions.md)
 * [Options](../interfaces/_browser_canvasrender_.options.md)
+* [Result](../interfaces/_browser_canvasrender_.result.md)
 
 ### Variables
 
@@ -18,6 +19,7 @@
 
 * [renderArrayBufferInCanvas](_browser_canvasrender_.md#renderarraybufferincanvas)
 * [renderInCanvas](_browser_canvasrender_.md#renderincanvas)
+* [renderSvgInCanvas](_browser_canvasrender_.md#rendersvgincanvas)
 
 ### Object literals
 
@@ -29,15 +31,15 @@
 
 • **defaultABOptions**: *[ABOptions](../interfaces/_browser_canvasrender_.aboptions.md)*
 
-*Defined in [browser/canvasRender.ts:12](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/browser/canvasRender.ts#L12)*
+*Defined in [browser/canvasRender.ts:12](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/browser/canvasRender.ts#L12)*
 
 ## Functions
 
 ###  renderArrayBufferInCanvas
 
-▸ **renderArrayBufferInCanvas**(`a`: ArrayBuffer, `mime`: string, `options`: [ABOptions](../interfaces/_browser_canvasrender_.aboptions.md)): *Promise‹object›*
+▸ **renderArrayBufferInCanvas**(`a`: ArrayBuffer, `mime`: string, `options`: [ABOptions](../interfaces/_browser_canvasrender_.aboptions.md)): *Promise‹[Result](../interfaces/_browser_canvasrender_.result.md)›*
 
-*Defined in [browser/canvasRender.ts:22](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/browser/canvasRender.ts#L22)*
+*Defined in [browser/canvasRender.ts:28](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/browser/canvasRender.ts#L28)*
 
 A sub optimal method to load a image array buffer (encoded in jpg, png) whiteouts knowing its format or size.
 1) creates a blob and a url object
@@ -54,7 +56,7 @@ Name | Type | Default |
 `mime` | string | - |
 `options` | [ABOptions](../interfaces/_browser_canvasrender_.aboptions.md) |  defaultABOptions |
 
-**Returns:** *Promise‹object›*
+**Returns:** *Promise‹[Result](../interfaces/_browser_canvasrender_.result.md)›*
 
 ___
 
@@ -62,7 +64,7 @@ ___
 
 ▸ **renderInCanvas**(`mat`: [Mat](../classes/_types_opencv_mat_.mat.md), `options?`: [Options](../interfaces/_browser_canvasrender_.options.md)): *HTMLCanvasElement*
 
-*Defined in [browser/canvasRender.ts:62](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/browser/canvasRender.ts#L62)*
+*Defined in [browser/canvasRender.ts:88](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/browser/canvasRender.ts#L88)*
 
 **Parameters:**
 
@@ -73,22 +75,39 @@ Name | Type |
 
 **Returns:** *HTMLCanvasElement*
 
+___
+
+###  renderSvgInCanvas
+
+▸ **renderSvgInCanvas**(`svg`: string, `options`: [ABOptions](../interfaces/_browser_canvasrender_.aboptions.md)): *Promise‹[Result](../interfaces/_browser_canvasrender_.result.md)›*
+
+*Defined in [browser/canvasRender.ts:50](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/browser/canvasRender.ts#L50)*
+
+**Parameters:**
+
+Name | Type | Default |
+------ | ------ | ------ |
+`svg` | string | - |
+`options` | [ABOptions](../interfaces/_browser_canvasrender_.aboptions.md) |  defaultABOptions |
+
+**Returns:** *Promise‹[Result](../interfaces/_browser_canvasrender_.result.md)›*
+
 ## Object literals
 
 ### `Const` defaultOptions
 
 ### ▪ **defaultOptions**: *object*
 
-*Defined in [browser/canvasRender.ts:57](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/browser/canvasRender.ts#L57)*
+*Defined in [browser/canvasRender.ts:83](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/browser/canvasRender.ts#L83)*
 
 ###  forceSameSize
 
 • **forceSameSize**: *boolean* = true
 
-*Defined in [browser/canvasRender.ts:59](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/browser/canvasRender.ts#L59)*
+*Defined in [browser/canvasRender.ts:85](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/browser/canvasRender.ts#L85)*
 
 ###  rgba
 
 • **rgba**: *boolean* = true
 
-*Defined in [browser/canvasRender.ts:58](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/browser/canvasRender.ts#L58)*
+*Defined in [browser/canvasRender.ts:84](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/browser/canvasRender.ts#L84)*

@@ -1,0 +1,401 @@
+[ojos](../README.md) › ["op/rectangle"](../modules/_op_rectangle_.md) › [Rectangle](_op_rectangle_.rectangle.md)
+
+# Class: Rectangle
+
+draws a rectangle outline or a filled rectangle whose two opposite corners are [pt1] and [pt2].
+
+## Hierarchy
+
+* [AbstractOperation](_op_abstractoperation_.abstractoperation.md)‹[RectangleOptions](../interfaces/_op_rectangle_.rectangleoptions.md)›
+
+  ↳ **Rectangle**
+
+## Implements
+
+* [ImageOperation](../interfaces/_op_types_.imageoperation.md)‹[RectangleOptions](../interfaces/_op_rectangle_.rectangleoptions.md)›
+
+## Index
+
+### Constructors
+
+* [constructor](_op_rectangle_.rectangle.md#constructor)
+
+### Properties
+
+* [defaultOptions](_op_rectangle_.rectangle.md#protected-optional-defaultoptions)
+* [description](_op_rectangle_.rectangle.md#description)
+* [isInPlace](_op_rectangle_.rectangle.md#isinplace)
+* [name](_op_rectangle_.rectangle.md#name)
+* [noDst](_op_rectangle_.rectangle.md#nodst)
+* [noInPlace](_op_rectangle_.rectangle.md#noinplace)
+* [optionsOrder](_op_rectangle_.rectangle.md#optionsorder)
+* [sameSizeAndType](_op_rectangle_.rectangle.md#samesizeandtype)
+* [validChannels](_op_rectangle_.rectangle.md#validchannels)
+* [validateEachExec](_op_rectangle_.rectangle.md#protected-validateeachexec)
+* [validated](_op_rectangle_.rectangle.md#protected-validated)
+
+### Methods
+
+* [_exec](_op_rectangle_.rectangle.md#protected-_exec)
+* [afterExec](_op_rectangle_.rectangle.md#protected-afterexec)
+* [allChannels](_op_rectangle_.rectangle.md#protected-allchannels)
+* [checkDst](_op_rectangle_.rectangle.md#protected-checkdst)
+* [checkInPlaceAfter](_op_rectangle_.rectangle.md#protected-checkinplaceafter)
+* [checkInPlaceBefore](_op_rectangle_.rectangle.md#protected-checkinplacebefore)
+* [checkInputImage](_op_rectangle_.rectangle.md#protected-checkinputimage)
+* [checkOptions](_op_rectangle_.rectangle.md#protected-checkoptions)
+* [exec](_op_rectangle_.rectangle.md#exec)
+* [resolveOptionsObject](_op_rectangle_.rectangle.md#resolveoptionsobject)
+* [validate](_op_rectangle_.rectangle.md#protected-validate)
+
+## Constructors
+
+###  constructor
+
+\+ **new Rectangle**(`defaultOptions?`: [T](undefined)): *[Rectangle](_op_rectangle_.rectangle.md)*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[constructor](_op_abstractoperation_.abstractoperation.md#constructor)*
+
+*Defined in [op/abstractOperation.ts:18](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L18)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`defaultOptions?` | [T](undefined) |
+
+**Returns:** *[Rectangle](_op_rectangle_.rectangle.md)*
+
+## Properties
+
+### `Protected` `Optional` defaultOptions
+
+• **defaultOptions**? : *[T](undefined)*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[defaultOptions](_op_abstractoperation_.abstractoperation.md#protected-optional-defaultoptions)*
+
+*Defined in [op/abstractOperation.ts:20](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L20)*
+
+___
+
+###  description
+
+• **description**: *string* =  `Draws the Rectangle segment between pt1 and pt2 points in the image.`
+
+*Implementation of [ImageOperation](../interfaces/_op_types_.imageoperation.md).[description](../interfaces/_op_types_.imageoperation.md#description)*
+
+*Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[description](_op_abstractoperation_.abstractoperation.md#description)*
+
+*Defined in [op/rectangle.ts:25](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/rectangle.ts#L25)*
+
+___
+
+###  isInPlace
+
+• **isInPlace**: *boolean* = false
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[isInPlace](_op_abstractoperation_.abstractoperation.md#isinplace)*
+
+*Defined in [op/abstractOperation.ts:13](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L13)*
+
+___
+
+###  name
+
+• **name**: *string* = "Rectangle"
+
+*Implementation of [ImageOperation](../interfaces/_op_types_.imageoperation.md).[name](../interfaces/_op_types_.imageoperation.md#name)*
+
+*Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[name](_op_abstractoperation_.abstractoperation.md#abstract-name)*
+
+*Defined in [op/rectangle.ts:24](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/rectangle.ts#L24)*
+
+___
+
+###  noDst
+
+• **noDst**: *boolean* = true
+
+*Implementation of [ImageOperation](../interfaces/_op_types_.imageoperation.md).[noDst](../interfaces/_op_types_.imageoperation.md#nodst)*
+
+*Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[noDst](_op_abstractoperation_.abstractoperation.md#nodst)*
+
+*Defined in [op/rectangle.ts:27](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/rectangle.ts#L27)*
+
+___
+
+###  noInPlace
+
+• **noInPlace**: *boolean* = false
+
+*Implementation of [ImageOperation](../interfaces/_op_types_.imageoperation.md).[noInPlace](../interfaces/_op_types_.imageoperation.md#noinplace)*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[noInPlace](_op_abstractoperation_.abstractoperation.md#noinplace)*
+
+*Defined in [op/abstractOperation.ts:11](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L11)*
+
+___
+
+###  optionsOrder
+
+• **optionsOrder**: *"dst" | "src" | "lineType" | "thickness" | "shift" | "color" | "pt1" | "pt2"[]* =  ['src', 'dst', 'pt1', 'pt2', 'color', 'thickness', 'lineType', 'shift'] as (keyof RectangleOptions)[]
+
+*Implementation of [ImageOperation](../interfaces/_op_types_.imageoperation.md).[optionsOrder](../interfaces/_op_types_.imageoperation.md#optional-optionsorder)*
+
+*Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[optionsOrder](_op_abstractoperation_.abstractoperation.md#optional-optionsorder)*
+
+*Defined in [op/rectangle.ts:26](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/rectangle.ts#L26)*
+
+___
+
+###  sameSizeAndType
+
+• **sameSizeAndType**: *boolean* = false
+
+*Implementation of [ImageOperation](../interfaces/_op_types_.imageoperation.md).[sameSizeAndType](../interfaces/_op_types_.imageoperation.md#samesizeandtype)*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[sameSizeAndType](_op_abstractoperation_.abstractoperation.md#samesizeandtype)*
+
+*Defined in [op/abstractOperation.ts:12](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L12)*
+
+___
+
+###  validChannels
+
+• **validChannels**: *number[] | undefined* =  undefined
+
+*Implementation of [ImageOperation](../interfaces/_op_types_.imageoperation.md).[validChannels](../interfaces/_op_types_.imageoperation.md#validchannels)*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[validChannels](_op_abstractoperation_.abstractoperation.md#validchannels)*
+
+*Defined in [op/abstractOperation.ts:18](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L18)*
+
+___
+
+### `Protected` validateEachExec
+
+• **validateEachExec**: *boolean* = false
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[validateEachExec](_op_abstractoperation_.abstractoperation.md#protected-validateeachexec)*
+
+*Defined in [op/abstractOperation.ts:15](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L15)*
+
+___
+
+### `Protected` validated
+
+• **validated**: *boolean* = false
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[validated](_op_abstractoperation_.abstractoperation.md#protected-validated)*
+
+*Defined in [op/abstractOperation.ts:16](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L16)*
+
+## Methods
+
+### `Protected` _exec
+
+▸ **_exec**(`o`: [RectangleOptions](../interfaces/_op_rectangle_.rectangleoptions.md)): *void*
+
+*Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[_exec](_op_abstractoperation_.abstractoperation.md#protected-abstract-_exec)*
+
+*Defined in [op/rectangle.ts:28](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/rectangle.ts#L28)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`o` | [RectangleOptions](../interfaces/_op_rectangle_.rectangleoptions.md) |
+
+**Returns:** *void*
+
+___
+
+### `Protected` afterExec
+
+▸ **afterExec**(`options`: [MandatoryDst](../modules/_op_abstractoperation_.md#mandatorydst)‹[RectangleOptions](../interfaces/_op_rectangle_.rectangleoptions.md)›): *void*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[afterExec](_op_abstractoperation_.abstractoperation.md#protected-afterexec)*
+
+*Defined in [op/abstractOperation.ts:64](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L64)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`options` | [MandatoryDst](../modules/_op_abstractoperation_.md#mandatorydst)‹[RectangleOptions](../interfaces/_op_rectangle_.rectangleoptions.md)› |
+
+**Returns:** *void*
+
+___
+
+### `Protected` allChannels
+
+▸ **allChannels**(`o`: [RectangleOptions](../interfaces/_op_rectangle_.rectangleoptions.md) & [WithChannels](../interfaces/_op_types_.withchannels.md), `op`: function): *void*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[allChannels](_op_abstractoperation_.abstractoperation.md#protected-allchannels)*
+
+*Defined in [op/abstractOperation.ts:127](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L127)*
+
+**Parameters:**
+
+▪ **o**: *[RectangleOptions](../interfaces/_op_rectangle_.rectangleoptions.md) & [WithChannels](../interfaces/_op_types_.withchannels.md)*
+
+▪ **op**: *function*
+
+▸ (`o`: [RectangleOptions](../interfaces/_op_rectangle_.rectangleoptions.md)): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`o` | [RectangleOptions](../interfaces/_op_rectangle_.rectangleoptions.md) |
+
+**Returns:** *void*
+
+___
+
+### `Protected` checkDst
+
+▸ **checkDst**(`options`: [RectangleOptions](../interfaces/_op_rectangle_.rectangleoptions.md)): *void*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkDst](_op_abstractoperation_.abstractoperation.md#protected-checkdst)*
+
+*Defined in [op/abstractOperation.ts:89](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L89)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`options` | [RectangleOptions](../interfaces/_op_rectangle_.rectangleoptions.md) |
+
+**Returns:** *void*
+
+___
+
+### `Protected` checkInPlaceAfter
+
+▸ **checkInPlaceAfter**(`o`: [OperationExecBaseOptions](../interfaces/_op_types_.operationexecbaseoptions.md)): *void*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkInPlaceAfter](_op_abstractoperation_.abstractoperation.md#protected-checkinplaceafter)*
+
+*Defined in [op/abstractOperation.ts:117](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L117)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`o` | [OperationExecBaseOptions](../interfaces/_op_types_.operationexecbaseoptions.md) |
+
+**Returns:** *void*
+
+___
+
+### `Protected` checkInPlaceBefore
+
+▸ **checkInPlaceBefore**(`o`: [OperationExecBaseOptions](../interfaces/_op_types_.operationexecbaseoptions.md)): *void*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkInPlaceBefore](_op_abstractoperation_.abstractoperation.md#protected-checkinplacebefore)*
+
+*Defined in [op/abstractOperation.ts:108](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L108)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`o` | [OperationExecBaseOptions](../interfaces/_op_types_.operationexecbaseoptions.md) |
+
+**Returns:** *void*
+
+___
+
+### `Protected` checkInputImage
+
+▸ **checkInputImage**(`o`: [RectangleOptions](../interfaces/_op_rectangle_.rectangleoptions.md)): *void*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkInputImage](_op_abstractoperation_.abstractoperation.md#protected-checkinputimage)*
+
+*Defined in [op/abstractOperation.ts:67](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L67)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`o` | [RectangleOptions](../interfaces/_op_rectangle_.rectangleoptions.md) |
+
+**Returns:** *void*
+
+___
+
+### `Protected` checkOptions
+
+▸ **checkOptions**(`o?`: [T](undefined)): *T*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkOptions](_op_abstractoperation_.abstractoperation.md#protected-checkoptions)*
+
+*Defined in [op/abstractOperation.ts:70](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L70)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`o?` | [T](undefined) |
+
+**Returns:** *T*
+
+___
+
+###  exec
+
+▸ **exec**(...`o_`: [OperationExecParams](../modules/_op_types_.md#operationexecparams)‹[RectangleOptions](../interfaces/_op_rectangle_.rectangleoptions.md)›): *Mat*
+
+*Implementation of [ImageOperation](../interfaces/_op_types_.imageoperation.md)*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[exec](_op_abstractoperation_.abstractoperation.md#exec)*
+
+*Defined in [op/abstractOperation.ts:30](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L30)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...o_` | [OperationExecParams](../modules/_op_types_.md#operationexecparams)‹[RectangleOptions](../interfaces/_op_rectangle_.rectangleoptions.md)› |
+
+**Returns:** *Mat*
+
+___
+
+###  resolveOptionsObject
+
+▸ **resolveOptionsObject**(...`o`: [OperationExecParams](../modules/_op_types_.md#operationexecparams)‹[RectangleOptions](../interfaces/_op_rectangle_.rectangleoptions.md)›): *[RectangleOptions](../interfaces/_op_rectangle_.rectangleoptions.md) | undefined*
+
+*Implementation of [ImageOperation](../interfaces/_op_types_.imageoperation.md)*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[resolveOptionsObject](_op_abstractoperation_.abstractoperation.md#resolveoptionsobject)*
+
+*Defined in [op/abstractOperation.ts:47](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L47)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...o` | [OperationExecParams](../modules/_op_types_.md#operationexecparams)‹[RectangleOptions](../interfaces/_op_rectangle_.rectangleoptions.md)› |
+
+**Returns:** *[RectangleOptions](../interfaces/_op_rectangle_.rectangleoptions.md) | undefined*
+
+___
+
+### `Protected` validate
+
+▸ **validate**(`o`: [RectangleOptions](../interfaces/_op_rectangle_.rectangleoptions.md)): *string | undefined*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[validate](_op_abstractoperation_.abstractoperation.md#protected-validate)*
+
+*Defined in [op/abstractOperation.ts:24](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L24)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`o` | [RectangleOptions](../interfaces/_op_rectangle_.rectangleoptions.md) |
+
+**Returns:** *string | undefined*

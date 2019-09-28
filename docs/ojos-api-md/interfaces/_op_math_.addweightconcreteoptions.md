@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/math"](../modules/_op_math_.md) › [AddWeightConcreteOptions](_op_math_.addweightconcreteoptions.md)
+[ojos](../README.md) › ["op/math"](../modules/_op_math_.md) › [AddWeightConcreteOptions](_op_math_.addweightconcreteoptions.md)
 
 # Interface: AddWeightConcreteOptions
 
@@ -8,7 +6,7 @@
 
 * **AddWeightConcreteOptions**
 
-  * [AddWeightOptions](_op_math_.addweightoptions.md)
+  ↳ [AddWeightOptions](_op_math_.addweightoptions.md)
 
 ## Index
 
@@ -24,7 +22,7 @@
 
 • **alpha**: *number*
 
-*Defined in [op/math.ts:22](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/math.ts#L22)*
+*Defined in [op/math.ts:22](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/math.ts#L22)*
 
 ___
 
@@ -32,7 +30,7 @@ ___
 
 • **beta**: *number*
 
-*Defined in [op/math.ts:23](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/math.ts#L23)*
+*Defined in [op/math.ts:23](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/math.ts#L23)*
 
 ___
 
@@ -40,4 +38,4 @@ ___
 
 • **gamma**: *number*
 
-*Defined in [op/math.ts:24](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/math.ts#L24)*
+*Defined in [op/math.ts:24](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/math.ts#L24)*

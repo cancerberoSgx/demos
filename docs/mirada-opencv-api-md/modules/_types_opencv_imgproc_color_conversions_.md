@@ -230,7 +230,7 @@
 
 Ƭ **ColorConversionCodes**: *any*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:513](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L513)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:513](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L513)*
 
 the color conversion codes
 
@@ -242,7 +242,7 @@ the color conversion codes
 
 • **COLOR_BGR2BGR555**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:155](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L155)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:155](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L155)*
 
 ___
 
@@ -250,7 +250,7 @@ ___
 
 • **COLOR_BGR2BGR565**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:135](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L135)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:135](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L135)*
 
 ___
 
@@ -258,7 +258,7 @@ ___
 
 • **COLOR_BGR2BGRA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:95](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L95)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:95](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L95)*
 
 ___
 
@@ -266,7 +266,7 @@ ___
 
 • **COLOR_BGR2GRAY**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:119](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L119)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:119](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L119)*
 
 ___
 
@@ -274,7 +274,7 @@ ___
 
 • **COLOR_BGR2HLS**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:203](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L203)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:203](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L203)*
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 • **COLOR_BGR2HLS_FULL**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:227](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L227)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:227](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L227)*
 
 ___
 
@@ -290,7 +290,7 @@ ___
 
 • **COLOR_BGR2HSV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:191](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L191)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:191](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L191)*
 
 ___
 
@@ -298,7 +298,7 @@ ___
 
 • **COLOR_BGR2HSV_FULL**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:223](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L223)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:223](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L223)*
 
 ___
 
@@ -306,7 +306,7 @@ ___
 
 • **COLOR_BGR2Lab**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:195](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L195)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:195](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L195)*
 
 ___
 
@@ -314,7 +314,7 @@ ___
 
 • **COLOR_BGR2Luv**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:199](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L199)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:199](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L199)*
 
 ___
 
@@ -322,7 +322,7 @@ ___
 
 • **COLOR_BGR2RGB**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:111](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L111)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:111](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L111)*
 
 ___
 
@@ -330,7 +330,7 @@ ___
 
 • **COLOR_BGR2RGBA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:103](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L103)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:103](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L103)*
 
 ___
 
@@ -338,7 +338,7 @@ ___
 
 • **COLOR_BGR2XYZ**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:175](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L175)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:175](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L175)*
 
 ___
 
@@ -346,7 +346,7 @@ ___
 
 • **COLOR_BGR2YCrCb**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:183](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L183)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:183](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L183)*
 
 ___
 
@@ -354,7 +354,7 @@ ___
 
 • **COLOR_BGR2YUV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:255](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L255)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:255](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L255)*
 
 ___
 
@@ -362,7 +362,7 @@ ___
 
 • **COLOR_BGR2YUV_I420**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:411](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L411)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:411](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L411)*
 
 ___
 
@@ -370,7 +370,7 @@ ___
 
 • **COLOR_BGR2YUV_IYUV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:415](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L415)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:415](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L415)*
 
 ___
 
@@ -378,7 +378,7 @@ ___
 
 • **COLOR_BGR2YUV_YV12**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:427](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L427)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:427](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L427)*
 
 ___
 
@@ -386,7 +386,7 @@ ___
 
 • **COLOR_BGR5552BGR**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:159](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L159)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:159](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L159)*
 
 ___
 
@@ -394,7 +394,7 @@ ___
 
 • **COLOR_BGR5552BGRA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:167](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L167)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:167](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L167)*
 
 ___
 
@@ -402,7 +402,7 @@ ___
 
 • **COLOR_BGR5552GRAY**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:173](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L173)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:173](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L173)*
 
 ___
 
@@ -410,7 +410,7 @@ ___
 
 • **COLOR_BGR5552RGB**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:161](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L161)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:161](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L161)*
 
 ___
 
@@ -418,7 +418,7 @@ ___
 
 • **COLOR_BGR5552RGBA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:169](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L169)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:169](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L169)*
 
 ___
 
@@ -426,7 +426,7 @@ ___
 
 • **COLOR_BGR5652BGR**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:139](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L139)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:139](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L139)*
 
 ___
 
@@ -434,7 +434,7 @@ ___
 
 • **COLOR_BGR5652BGRA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:147](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L147)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:147](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L147)*
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 • **COLOR_BGR5652GRAY**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:153](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L153)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:153](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L153)*
 
 ___
 
@@ -450,7 +450,7 @@ ___
 
 • **COLOR_BGR5652RGB**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:141](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L141)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:141](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L141)*
 
 ___
 
@@ -458,7 +458,7 @@ ___
 
 • **COLOR_BGR5652RGBA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:149](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L149)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:149](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L149)*
 
 ___
 
@@ -466,7 +466,7 @@ ___
 
 • **COLOR_BGRA2BGR**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:99](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L99)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:99](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L99)*
 
 ___
 
@@ -474,7 +474,7 @@ ___
 
 • **COLOR_BGRA2BGR555**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:163](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L163)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:163](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L163)*
 
 ___
 
@@ -482,7 +482,7 @@ ___
 
 • **COLOR_BGRA2BGR565**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:143](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L143)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:143](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L143)*
 
 ___
 
@@ -490,7 +490,7 @@ ___
 
 • **COLOR_BGRA2GRAY**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:131](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L131)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:131](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L131)*
 
 ___
 
@@ -498,7 +498,7 @@ ___
 
 • **COLOR_BGRA2RGB**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:109](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L109)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:109](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L109)*
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 • **COLOR_BGRA2RGBA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:115](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L115)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:115](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L115)*
 
 ___
 
@@ -514,7 +514,7 @@ ___
 
 • **COLOR_BGRA2YUV_I420**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:419](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L419)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:419](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L419)*
 
 ___
 
@@ -522,7 +522,7 @@ ___
 
 • **COLOR_BGRA2YUV_IYUV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:423](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L423)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:423](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L423)*
 
 ___
 
@@ -530,7 +530,7 @@ ___
 
 • **COLOR_BGRA2YUV_YV12**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:431](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L431)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:431](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L431)*
 
 ___
 
@@ -538,7 +538,7 @@ ___
 
 • **COLOR_BayerBG2BGR**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:433](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L433)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:433](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L433)*
 
 ___
 
@@ -546,7 +546,7 @@ ___
 
 • **COLOR_BayerBG2BGRA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:489](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L489)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:489](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L489)*
 
 ___
 
@@ -554,7 +554,7 @@ ___
 
 • **COLOR_BayerBG2BGR_EA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:473](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L473)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:473](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L473)*
 
 ___
 
@@ -562,7 +562,7 @@ ___
 
 • **COLOR_BayerBG2BGR_VNG**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:457](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L457)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:457](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L457)*
 
 ___
 
@@ -570,7 +570,7 @@ ___
 
 • **COLOR_BayerBG2GRAY**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:449](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L449)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:449](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L449)*
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 • **COLOR_BayerBG2RGB**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:441](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L441)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:441](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L441)*
 
 ___
 
@@ -586,7 +586,7 @@ ___
 
 • **COLOR_BayerBG2RGBA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:497](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L497)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:497](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L497)*
 
 ___
 
@@ -594,7 +594,7 @@ ___
 
 • **COLOR_BayerBG2RGB_EA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:481](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L481)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:481](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L481)*
 
 ___
 
@@ -602,7 +602,7 @@ ___
 
 • **COLOR_BayerBG2RGB_VNG**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:465](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L465)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:465](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L465)*
 
 ___
 
@@ -610,7 +610,7 @@ ___
 
 • **COLOR_BayerGB2BGR**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:435](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L435)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:435](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L435)*
 
 ___
 
@@ -618,7 +618,7 @@ ___
 
 • **COLOR_BayerGB2BGRA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:491](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L491)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:491](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L491)*
 
 ___
 
@@ -626,7 +626,7 @@ ___
 
 • **COLOR_BayerGB2BGR_EA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:475](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L475)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:475](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L475)*
 
 ___
 
@@ -634,7 +634,7 @@ ___
 
 • **COLOR_BayerGB2BGR_VNG**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:459](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L459)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:459](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L459)*
 
 ___
 
@@ -642,7 +642,7 @@ ___
 
 • **COLOR_BayerGB2GRAY**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:451](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L451)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:451](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L451)*
 
 ___
 
@@ -650,7 +650,7 @@ ___
 
 • **COLOR_BayerGB2RGB**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:443](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L443)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:443](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L443)*
 
 ___
 
@@ -658,7 +658,7 @@ ___
 
 • **COLOR_BayerGB2RGBA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:499](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L499)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:499](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L499)*
 
 ___
 
@@ -666,7 +666,7 @@ ___
 
 • **COLOR_BayerGB2RGB_EA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:483](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L483)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:483](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L483)*
 
 ___
 
@@ -674,7 +674,7 @@ ___
 
 • **COLOR_BayerGB2RGB_VNG**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:467](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L467)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:467](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L467)*
 
 ___
 
@@ -682,7 +682,7 @@ ___
 
 • **COLOR_BayerGR2BGR**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:439](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L439)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:439](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L439)*
 
 ___
 
@@ -690,7 +690,7 @@ ___
 
 • **COLOR_BayerGR2BGRA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:495](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L495)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:495](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L495)*
 
 ___
 
@@ -698,7 +698,7 @@ ___
 
 • **COLOR_BayerGR2BGR_EA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:479](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L479)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:479](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L479)*
 
 ___
 
@@ -706,7 +706,7 @@ ___
 
 • **COLOR_BayerGR2BGR_VNG**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:463](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L463)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:463](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L463)*
 
 ___
 
@@ -714,7 +714,7 @@ ___
 
 • **COLOR_BayerGR2GRAY**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:455](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L455)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:455](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L455)*
 
 ___
 
@@ -722,7 +722,7 @@ ___
 
 • **COLOR_BayerGR2RGB**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:447](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L447)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:447](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L447)*
 
 ___
 
@@ -730,7 +730,7 @@ ___
 
 • **COLOR_BayerGR2RGBA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:503](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L503)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:503](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L503)*
 
 ___
 
@@ -738,7 +738,7 @@ ___
 
 • **COLOR_BayerGR2RGB_EA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:487](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L487)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:487](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L487)*
 
 ___
 
@@ -746,7 +746,7 @@ ___
 
 • **COLOR_BayerGR2RGB_VNG**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:471](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L471)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:471](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L471)*
 
 ___
 
@@ -754,7 +754,7 @@ ___
 
 • **COLOR_BayerRG2BGR**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:437](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L437)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:437](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L437)*
 
 ___
 
@@ -762,7 +762,7 @@ ___
 
 • **COLOR_BayerRG2BGRA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:493](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L493)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:493](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L493)*
 
 ___
 
@@ -770,7 +770,7 @@ ___
 
 • **COLOR_BayerRG2BGR_EA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:477](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L477)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:477](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L477)*
 
 ___
 
@@ -778,7 +778,7 @@ ___
 
 • **COLOR_BayerRG2BGR_VNG**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:461](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L461)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:461](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L461)*
 
 ___
 
@@ -786,7 +786,7 @@ ___
 
 • **COLOR_BayerRG2GRAY**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:453](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L453)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:453](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L453)*
 
 ___
 
@@ -794,7 +794,7 @@ ___
 
 • **COLOR_BayerRG2RGB**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:445](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L445)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:445](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L445)*
 
 ___
 
@@ -802,7 +802,7 @@ ___
 
 • **COLOR_BayerRG2RGBA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:501](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L501)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:501](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L501)*
 
 ___
 
@@ -810,7 +810,7 @@ ___
 
 • **COLOR_BayerRG2RGB_EA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:485](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L485)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:485](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L485)*
 
 ___
 
@@ -818,7 +818,7 @@ ___
 
 • **COLOR_BayerRG2RGB_VNG**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:469](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L469)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:469](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L469)*
 
 ___
 
@@ -826,7 +826,7 @@ ___
 
 • **COLOR_COLORCVT_MAX**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:505](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L505)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:505](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L505)*
 
 ___
 
@@ -834,7 +834,7 @@ ___
 
 • **COLOR_GRAY2BGR**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:123](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L123)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:123](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L123)*
 
 ___
 
@@ -842,7 +842,7 @@ ___
 
 • **COLOR_GRAY2BGR555**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:171](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L171)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:171](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L171)*
 
 ___
 
@@ -850,7 +850,7 @@ ___
 
 • **COLOR_GRAY2BGR565**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:151](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L151)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:151](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L151)*
 
 ___
 
@@ -858,7 +858,7 @@ ___
 
 • **COLOR_GRAY2BGRA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:127](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L127)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:127](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L127)*
 
 ___
 
@@ -866,7 +866,7 @@ ___
 
 • **COLOR_GRAY2RGB**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:125](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L125)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:125](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L125)*
 
 ___
 
@@ -874,7 +874,7 @@ ___
 
 • **COLOR_GRAY2RGBA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:129](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L129)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:129](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L129)*
 
 ___
 
@@ -882,7 +882,7 @@ ___
 
 • **COLOR_HLS2BGR**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:219](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L219)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:219](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L219)*
 
 ___
 
@@ -890,7 +890,7 @@ ___
 
 • **COLOR_HLS2BGR_FULL**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:235](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L235)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:235](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L235)*
 
 ___
 
@@ -898,7 +898,7 @@ ___
 
 • **COLOR_HLS2RGB**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:221](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L221)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:221](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L221)*
 
 ___
 
@@ -906,7 +906,7 @@ ___
 
 • **COLOR_HLS2RGB_FULL**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:237](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L237)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:237](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L237)*
 
 ___
 
@@ -914,7 +914,7 @@ ___
 
 • **COLOR_HSV2BGR**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:207](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L207)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:207](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L207)*
 
 ___
 
@@ -922,7 +922,7 @@ ___
 
 • **COLOR_HSV2BGR_FULL**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:231](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L231)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:231](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L231)*
 
 ___
 
@@ -930,7 +930,7 @@ ___
 
 • **COLOR_HSV2RGB**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:209](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L209)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:209](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L209)*
 
 ___
 
@@ -938,7 +938,7 @@ ___
 
 • **COLOR_HSV2RGB_FULL**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:233](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L233)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:233](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L233)*
 
 ___
 
@@ -946,7 +946,7 @@ ___
 
 • **COLOR_LBGR2Lab**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:239](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L239)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:239](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L239)*
 
 ___
 
@@ -954,7 +954,7 @@ ___
 
 • **COLOR_LBGR2Luv**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:243](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L243)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:243](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L243)*
 
 ___
 
@@ -962,7 +962,7 @@ ___
 
 • **COLOR_LRGB2Lab**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:241](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L241)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:241](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L241)*
 
 ___
 
@@ -970,7 +970,7 @@ ___
 
 • **COLOR_LRGB2Luv**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:245](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L245)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:245](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L245)*
 
 ___
 
@@ -978,7 +978,7 @@ ___
 
 • **COLOR_Lab2BGR**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:211](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L211)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:211](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L211)*
 
 ___
 
@@ -986,7 +986,7 @@ ___
 
 • **COLOR_Lab2LBGR**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:247](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L247)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:247](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L247)*
 
 ___
 
@@ -994,7 +994,7 @@ ___
 
 • **COLOR_Lab2LRGB**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:249](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L249)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:249](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L249)*
 
 ___
 
@@ -1002,7 +1002,7 @@ ___
 
 • **COLOR_Lab2RGB**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:213](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L213)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:213](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L213)*
 
 ___
 
@@ -1010,7 +1010,7 @@ ___
 
 • **COLOR_Luv2BGR**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:215](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L215)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:215](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L215)*
 
 ___
 
@@ -1018,7 +1018,7 @@ ___
 
 • **COLOR_Luv2LBGR**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:251](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L251)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:251](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L251)*
 
 ___
 
@@ -1026,7 +1026,7 @@ ___
 
 • **COLOR_Luv2LRGB**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:253](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L253)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:253](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L253)*
 
 ___
 
@@ -1034,7 +1034,7 @@ ___
 
 • **COLOR_Luv2RGB**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:217](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L217)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:217](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L217)*
 
 ___
 
@@ -1042,7 +1042,7 @@ ___
 
 • **COLOR_RGB2BGR**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:113](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L113)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:113](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L113)*
 
 ___
 
@@ -1050,7 +1050,7 @@ ___
 
 • **COLOR_RGB2BGR555**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:157](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L157)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:157](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L157)*
 
 ___
 
@@ -1058,7 +1058,7 @@ ___
 
 • **COLOR_RGB2BGR565**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:137](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L137)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:137](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L137)*
 
 ___
 
@@ -1066,7 +1066,7 @@ ___
 
 • **COLOR_RGB2BGRA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:105](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L105)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:105](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L105)*
 
 ___
 
@@ -1074,7 +1074,7 @@ ___
 
 • **COLOR_RGB2GRAY**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:121](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L121)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:121](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L121)*
 
 ___
 
@@ -1082,7 +1082,7 @@ ___
 
 • **COLOR_RGB2HLS**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:205](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L205)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:205](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L205)*
 
 ___
 
@@ -1090,7 +1090,7 @@ ___
 
 • **COLOR_RGB2HLS_FULL**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:229](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L229)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:229](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L229)*
 
 ___
 
@@ -1098,7 +1098,7 @@ ___
 
 • **COLOR_RGB2HSV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:193](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L193)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:193](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L193)*
 
 ___
 
@@ -1106,7 +1106,7 @@ ___
 
 • **COLOR_RGB2HSV_FULL**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:225](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L225)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:225](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L225)*
 
 ___
 
@@ -1114,7 +1114,7 @@ ___
 
 • **COLOR_RGB2Lab**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:197](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L197)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:197](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L197)*
 
 ___
 
@@ -1122,7 +1122,7 @@ ___
 
 • **COLOR_RGB2Luv**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:201](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L201)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:201](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L201)*
 
 ___
 
@@ -1130,7 +1130,7 @@ ___
 
 • **COLOR_RGB2RGBA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:97](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L97)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:97](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L97)*
 
 ___
 
@@ -1138,7 +1138,7 @@ ___
 
 • **COLOR_RGB2XYZ**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:177](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L177)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:177](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L177)*
 
 ___
 
@@ -1146,7 +1146,7 @@ ___
 
 • **COLOR_RGB2YCrCb**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:185](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L185)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:185](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L185)*
 
 ___
 
@@ -1154,7 +1154,7 @@ ___
 
 • **COLOR_RGB2YUV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:257](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L257)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:257](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L257)*
 
 ___
 
@@ -1162,7 +1162,7 @@ ___
 
 • **COLOR_RGB2YUV_I420**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:409](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L409)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:409](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L409)*
 
 ___
 
@@ -1170,7 +1170,7 @@ ___
 
 • **COLOR_RGB2YUV_IYUV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:413](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L413)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:413](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L413)*
 
 ___
 
@@ -1178,7 +1178,7 @@ ___
 
 • **COLOR_RGB2YUV_YV12**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:425](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L425)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:425](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L425)*
 
 ___
 
@@ -1186,7 +1186,7 @@ ___
 
 • **COLOR_RGBA2BGR**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:107](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L107)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:107](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L107)*
 
 ___
 
@@ -1194,7 +1194,7 @@ ___
 
 • **COLOR_RGBA2BGR555**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:165](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L165)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:165](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L165)*
 
 ___
 
@@ -1202,7 +1202,7 @@ ___
 
 • **COLOR_RGBA2BGR565**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:145](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L145)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:145](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L145)*
 
 ___
 
@@ -1210,7 +1210,7 @@ ___
 
 • **COLOR_RGBA2BGRA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:117](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L117)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:117](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L117)*
 
 ___
 
@@ -1218,7 +1218,7 @@ ___
 
 • **COLOR_RGBA2GRAY**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:133](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L133)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:133](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L133)*
 
 ___
 
@@ -1226,7 +1226,7 @@ ___
 
 • **COLOR_RGBA2RGB**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:101](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L101)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:101](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L101)*
 
 ___
 
@@ -1234,7 +1234,7 @@ ___
 
 • **COLOR_RGBA2YUV_I420**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:417](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L417)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:417](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L417)*
 
 ___
 
@@ -1242,7 +1242,7 @@ ___
 
 • **COLOR_RGBA2YUV_IYUV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:421](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L421)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:421](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L421)*
 
 ___
 
@@ -1250,7 +1250,7 @@ ___
 
 • **COLOR_RGBA2YUV_YV12**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:429](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L429)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:429](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L429)*
 
 ___
 
@@ -1258,7 +1258,7 @@ ___
 
 • **COLOR_RGBA2mRGBA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:405](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L405)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:405](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L405)*
 
 ___
 
@@ -1266,7 +1266,7 @@ ___
 
 • **COLOR_XYZ2BGR**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:179](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L179)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:179](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L179)*
 
 ___
 
@@ -1274,7 +1274,7 @@ ___
 
 • **COLOR_XYZ2RGB**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:181](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L181)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:181](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L181)*
 
 ___
 
@@ -1282,7 +1282,7 @@ ___
 
 • **COLOR_YCrCb2BGR**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:187](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L187)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:187](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L187)*
 
 ___
 
@@ -1290,7 +1290,7 @@ ___
 
 • **COLOR_YCrCb2RGB**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:189](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L189)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:189](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L189)*
 
 ___
 
@@ -1298,7 +1298,7 @@ ___
 
 • **COLOR_YUV2BGR**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:259](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L259)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:259](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L259)*
 
 ___
 
@@ -1306,7 +1306,7 @@ ___
 
 • **COLOR_YUV2BGRA_I420**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:313](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L313)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:313](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L313)*
 
 ___
 
@@ -1314,7 +1314,7 @@ ___
 
 • **COLOR_YUV2BGRA_IYUV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:309](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L309)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:309](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L309)*
 
 ___
 
@@ -1322,7 +1322,7 @@ ___
 
 • **COLOR_YUV2BGRA_NV12**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:277](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L277)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:277](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L277)*
 
 ___
 
@@ -1330,7 +1330,7 @@ ___
 
 • **COLOR_YUV2BGRA_NV21**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:281](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L281)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:281](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L281)*
 
 ___
 
@@ -1338,7 +1338,7 @@ ___
 
 • **COLOR_YUV2BGRA_UYNV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:357](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L357)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:357](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L357)*
 
 ___
 
@@ -1346,7 +1346,7 @@ ___
 
 • **COLOR_YUV2BGRA_UYVY**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:349](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L349)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:349](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L349)*
 
 ___
 
@@ -1354,7 +1354,7 @@ ___
 
 • **COLOR_YUV2BGRA_Y422**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:353](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L353)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:353](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L353)*
 
 ___
 
@@ -1362,7 +1362,7 @@ ___
 
 • **COLOR_YUV2BGRA_YUNV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:389](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L389)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:389](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L389)*
 
 ___
 
@@ -1370,7 +1370,7 @@ ___
 
 • **COLOR_YUV2BGRA_YUY2**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:377](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L377)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:377](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L377)*
 
 ___
 
@@ -1378,7 +1378,7 @@ ___
 
 • **COLOR_YUV2BGRA_YUYV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:385](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L385)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:385](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L385)*
 
 ___
 
@@ -1386,7 +1386,7 @@ ___
 
 • **COLOR_YUV2BGRA_YV12**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:305](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L305)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:305](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L305)*
 
 ___
 
@@ -1394,7 +1394,7 @@ ___
 
 • **COLOR_YUV2BGRA_YVYU**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:381](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L381)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:381](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L381)*
 
 ___
 
@@ -1402,7 +1402,7 @@ ___
 
 • **COLOR_YUV2BGR_I420**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:297](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L297)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:297](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L297)*
 
 ___
 
@@ -1410,7 +1410,7 @@ ___
 
 • **COLOR_YUV2BGR_IYUV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:293](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L293)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:293](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L293)*
 
 ___
 
@@ -1418,7 +1418,7 @@ ___
 
 • **COLOR_YUV2BGR_NV12**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:265](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L265)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:265](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L265)*
 
 ___
 
@@ -1426,7 +1426,7 @@ ___
 
 • **COLOR_YUV2BGR_NV21**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:269](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L269)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:269](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L269)*
 
 ___
 
@@ -1434,7 +1434,7 @@ ___
 
 • **COLOR_YUV2BGR_UYNV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:345](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L345)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:345](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L345)*
 
 ___
 
@@ -1442,7 +1442,7 @@ ___
 
 • **COLOR_YUV2BGR_UYVY**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:337](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L337)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:337](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L337)*
 
 ___
 
@@ -1450,7 +1450,7 @@ ___
 
 • **COLOR_YUV2BGR_Y422**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:341](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L341)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:341](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L341)*
 
 ___
 
@@ -1458,7 +1458,7 @@ ___
 
 • **COLOR_YUV2BGR_YUNV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:373](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L373)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:373](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L373)*
 
 ___
 
@@ -1466,7 +1466,7 @@ ___
 
 • **COLOR_YUV2BGR_YUY2**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:361](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L361)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:361](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L361)*
 
 ___
 
@@ -1474,7 +1474,7 @@ ___
 
 • **COLOR_YUV2BGR_YUYV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:369](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L369)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:369](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L369)*
 
 ___
 
@@ -1482,7 +1482,7 @@ ___
 
 • **COLOR_YUV2BGR_YV12**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:289](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L289)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:289](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L289)*
 
 ___
 
@@ -1490,7 +1490,7 @@ ___
 
 • **COLOR_YUV2BGR_YVYU**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:365](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L365)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:365](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L365)*
 
 ___
 
@@ -1498,7 +1498,7 @@ ___
 
 • **COLOR_YUV2GRAY_420**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:319](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L319)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:319](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L319)*
 
 ___
 
@@ -1506,7 +1506,7 @@ ___
 
 • **COLOR_YUV2GRAY_I420**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:329](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L329)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:329](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L329)*
 
 ___
 
@@ -1514,7 +1514,7 @@ ___
 
 • **COLOR_YUV2GRAY_IYUV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:327](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L327)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:327](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L327)*
 
 ___
 
@@ -1522,7 +1522,7 @@ ___
 
 • **COLOR_YUV2GRAY_NV12**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:323](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L323)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:323](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L323)*
 
 ___
 
@@ -1530,7 +1530,7 @@ ___
 
 • **COLOR_YUV2GRAY_NV21**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:321](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L321)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:321](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L321)*
 
 ___
 
@@ -1538,7 +1538,7 @@ ___
 
 • **COLOR_YUV2GRAY_UYNV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:397](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L397)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:397](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L397)*
 
 ___
 
@@ -1546,7 +1546,7 @@ ___
 
 • **COLOR_YUV2GRAY_UYVY**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:391](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L391)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:391](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L391)*
 
 ___
 
@@ -1554,7 +1554,7 @@ ___
 
 • **COLOR_YUV2GRAY_Y422**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:395](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L395)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:395](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L395)*
 
 ___
 
@@ -1562,7 +1562,7 @@ ___
 
 • **COLOR_YUV2GRAY_YUNV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:403](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L403)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:403](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L403)*
 
 ___
 
@@ -1570,7 +1570,7 @@ ___
 
 • **COLOR_YUV2GRAY_YUY2**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:393](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L393)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:393](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L393)*
 
 ___
 
@@ -1578,7 +1578,7 @@ ___
 
 • **COLOR_YUV2GRAY_YUYV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:401](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L401)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:401](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L401)*
 
 ___
 
@@ -1586,7 +1586,7 @@ ___
 
 • **COLOR_YUV2GRAY_YV12**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:325](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L325)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:325](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L325)*
 
 ___
 
@@ -1594,7 +1594,7 @@ ___
 
 • **COLOR_YUV2GRAY_YVYU**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:399](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L399)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:399](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L399)*
 
 ___
 
@@ -1602,7 +1602,7 @@ ___
 
 • **COLOR_YUV2RGB**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:261](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L261)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:261](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L261)*
 
 ___
 
@@ -1610,7 +1610,7 @@ ___
 
 • **COLOR_YUV2RGBA_I420**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:311](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L311)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:311](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L311)*
 
 ___
 
@@ -1618,7 +1618,7 @@ ___
 
 • **COLOR_YUV2RGBA_IYUV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:307](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L307)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:307](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L307)*
 
 ___
 
@@ -1626,7 +1626,7 @@ ___
 
 • **COLOR_YUV2RGBA_NV12**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:275](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L275)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:275](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L275)*
 
 ___
 
@@ -1634,7 +1634,7 @@ ___
 
 • **COLOR_YUV2RGBA_NV21**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:279](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L279)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:279](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L279)*
 
 ___
 
@@ -1642,7 +1642,7 @@ ___
 
 • **COLOR_YUV2RGBA_UYNV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:355](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L355)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:355](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L355)*
 
 ___
 
@@ -1650,7 +1650,7 @@ ___
 
 • **COLOR_YUV2RGBA_UYVY**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:347](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L347)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:347](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L347)*
 
 ___
 
@@ -1658,7 +1658,7 @@ ___
 
 • **COLOR_YUV2RGBA_Y422**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:351](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L351)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:351](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L351)*
 
 ___
 
@@ -1666,7 +1666,7 @@ ___
 
 • **COLOR_YUV2RGBA_YUNV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:387](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L387)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:387](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L387)*
 
 ___
 
@@ -1674,7 +1674,7 @@ ___
 
 • **COLOR_YUV2RGBA_YUY2**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:375](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L375)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:375](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L375)*
 
 ___
 
@@ -1682,7 +1682,7 @@ ___
 
 • **COLOR_YUV2RGBA_YUYV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:383](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L383)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:383](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L383)*
 
 ___
 
@@ -1690,7 +1690,7 @@ ___
 
 • **COLOR_YUV2RGBA_YV12**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:303](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L303)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:303](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L303)*
 
 ___
 
@@ -1698,7 +1698,7 @@ ___
 
 • **COLOR_YUV2RGBA_YVYU**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:379](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L379)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:379](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L379)*
 
 ___
 
@@ -1706,7 +1706,7 @@ ___
 
 • **COLOR_YUV2RGB_I420**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:295](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L295)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:295](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L295)*
 
 ___
 
@@ -1714,7 +1714,7 @@ ___
 
 • **COLOR_YUV2RGB_IYUV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:291](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L291)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:291](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L291)*
 
 ___
 
@@ -1722,7 +1722,7 @@ ___
 
 • **COLOR_YUV2RGB_NV12**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:263](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L263)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:263](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L263)*
 
 ___
 
@@ -1730,7 +1730,7 @@ ___
 
 • **COLOR_YUV2RGB_NV21**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:267](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L267)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:267](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L267)*
 
 ___
 
@@ -1738,7 +1738,7 @@ ___
 
 • **COLOR_YUV2RGB_UYNV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:343](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L343)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:343](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L343)*
 
 ___
 
@@ -1746,7 +1746,7 @@ ___
 
 • **COLOR_YUV2RGB_UYVY**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:335](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L335)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:335](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L335)*
 
 ___
 
@@ -1754,7 +1754,7 @@ ___
 
 • **COLOR_YUV2RGB_Y422**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:339](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L339)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:339](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L339)*
 
 ___
 
@@ -1762,7 +1762,7 @@ ___
 
 • **COLOR_YUV2RGB_YUNV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:371](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L371)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:371](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L371)*
 
 ___
 
@@ -1770,7 +1770,7 @@ ___
 
 • **COLOR_YUV2RGB_YUY2**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:359](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L359)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:359](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L359)*
 
 ___
 
@@ -1778,7 +1778,7 @@ ___
 
 • **COLOR_YUV2RGB_YUYV**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:367](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L367)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:367](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L367)*
 
 ___
 
@@ -1786,7 +1786,7 @@ ___
 
 • **COLOR_YUV2RGB_YV12**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:287](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L287)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:287](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L287)*
 
 ___
 
@@ -1794,7 +1794,7 @@ ___
 
 • **COLOR_YUV2RGB_YVYU**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:363](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L363)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:363](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L363)*
 
 ___
 
@@ -1802,7 +1802,7 @@ ___
 
 • **COLOR_YUV420p2BGR**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:301](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L301)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:301](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L301)*
 
 ___
 
@@ -1810,7 +1810,7 @@ ___
 
 • **COLOR_YUV420p2BGRA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:317](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L317)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:317](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L317)*
 
 ___
 
@@ -1818,7 +1818,7 @@ ___
 
 • **COLOR_YUV420p2GRAY**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:333](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L333)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:333](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L333)*
 
 ___
 
@@ -1826,7 +1826,7 @@ ___
 
 • **COLOR_YUV420p2RGB**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:299](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L299)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:299](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L299)*
 
 ___
 
@@ -1834,7 +1834,7 @@ ___
 
 • **COLOR_YUV420p2RGBA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:315](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L315)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:315](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L315)*
 
 ___
 
@@ -1842,7 +1842,7 @@ ___
 
 • **COLOR_YUV420sp2BGR**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:273](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L273)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:273](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L273)*
 
 ___
 
@@ -1850,7 +1850,7 @@ ___
 
 • **COLOR_YUV420sp2BGRA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:285](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L285)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:285](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L285)*
 
 ___
 
@@ -1858,7 +1858,7 @@ ___
 
 • **COLOR_YUV420sp2GRAY**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:331](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L331)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:331](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L331)*
 
 ___
 
@@ -1866,7 +1866,7 @@ ___
 
 • **COLOR_YUV420sp2RGB**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:271](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L271)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:271](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L271)*
 
 ___
 
@@ -1874,7 +1874,7 @@ ___
 
 • **COLOR_YUV420sp2RGBA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:283](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L283)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:283](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L283)*
 
 ___
 
@@ -1882,15 +1882,15 @@ ___
 
 • **COLOR_mRGBA2RGBA**: *[ColorConversionCodes](_types_opencv_imgproc_color_conversions_.md#colorconversioncodes)*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:407](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L407)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:407](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L407)*
 
 ## Functions
 
 ###  cvtColor
 
-▸ **cvtColor**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `code`: [int](_types_opencv__hacks_.md#int), `dstCn?`: [int](_types_opencv__hacks_.md#int)): *void*
+▸ **cvtColor**(`src`: InputArray, `dst`: OutputArray, `code`: [int](_types_opencv__hacks_.md#int), `dstCn?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:53](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L53)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:53](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L53)*
 
 The function converts an input image from one color space to another. In case of a transformation
 to-from RGB color space, the order of the channels should be specified explicitly (RGB or BGR). Note
@@ -1931,7 +1931,7 @@ range: 255 for CV_8U, 65535 for CV_16U, 1 for CV_32F.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`src` | [InputArray](_types_opencv__hacks_.md#inputarray) | input image: 8-bit unsigned, 16-bit unsigned ( CV_16UC... ), or single-precision floating-point.  |
+`src` | InputArray | input image: 8-bit unsigned, 16-bit unsigned ( CV_16UC... ), or single-precision floating-point.  |
 `dst` | OutputArray | output image of the same size and depth as src.  |
 `code` | [int](_types_opencv__hacks_.md#int) | color space conversion code (see ColorConversionCodes).  |
 `dstCn?` | [int](_types_opencv__hacks_.md#int) | number of channels in the destination image; if the parameter is 0, the number of the channels is derived automatically from src and code.  |
@@ -1942,9 +1942,9 @@ ___
 
 ###  cvtColorTwoPlane
 
-▸ **cvtColorTwoPlane**(`src1`: [InputArray](_types_opencv__hacks_.md#inputarray), `src2`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `code`: [int](_types_opencv__hacks_.md#int)): *void*
+▸ **cvtColorTwoPlane**(`src1`: InputArray, `src2`: InputArray, `dst`: OutputArray, `code`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:67](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L67)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:67](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L67)*
 
 This function only supports YUV420 to RGB conversion as of now.
 
@@ -1952,8 +1952,8 @@ This function only supports YUV420 to RGB conversion as of now.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`src1` | [InputArray](_types_opencv__hacks_.md#inputarray) | 8-bit image (CV_8U) of the Y plane.  |
-`src2` | [InputArray](_types_opencv__hacks_.md#inputarray) | image containing interleaved U/V plane.  |
+`src1` | InputArray | 8-bit image (CV_8U) of the Y plane.  |
+`src2` | InputArray | image containing interleaved U/V plane.  |
 `dst` | OutputArray | output image.  |
 `code` | [int](_types_opencv__hacks_.md#int) | Specifies the type of conversion. It can take any of the following values: COLOR_YUV2BGR_NV12COLOR_YUV2RGB_NV12COLOR_YUV2BGRA_NV12COLOR_YUV2RGBA_NV12COLOR_YUV2BGR_NV21COLOR_YUV2RGB_NV21COLOR_YUV2BGRA_NV21COLOR_YUV2RGBA_NV21  |
 
@@ -1963,9 +1963,9 @@ ___
 
 ###  demosaicing
 
-▸ **demosaicing**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `code`: [int](_types_opencv__hacks_.md#int), `dstCn?`: [int](_types_opencv__hacks_.md#int)): *void*
+▸ **demosaicing**(`src`: InputArray, `dst`: OutputArray, `code`: [int](_types_opencv__hacks_.md#int), `dstCn?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_color_conversions.ts:93](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_color_conversions.ts#L93)*
+*Defined in [types/opencv/imgproc_color_conversions.ts:93](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_color_conversions.ts#L93)*
 
 The function can do the following transformations:
 
@@ -1985,7 +1985,7 @@ Demosaicing with alpha channel[COLOR_BayerBG2BGRA] , [COLOR_BayerGB2BGRA] , [COL
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`src` | [InputArray](_types_opencv__hacks_.md#inputarray) | input image: 8-bit unsigned or 16-bit unsigned.  |
+`src` | InputArray | input image: 8-bit unsigned or 16-bit unsigned.  |
 `dst` | OutputArray | output image of the same size and depth as src.  |
 `code` | [int](_types_opencv__hacks_.md#int) | Color space conversion code (see the description below).  |
 `dstCn?` | [int](_types_opencv__hacks_.md#int) | number of channels in the destination image; if the parameter is 0, the number of the channels is derived automatically from src and code.  |

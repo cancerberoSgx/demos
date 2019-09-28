@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/histEqualization"](_op_histequalization_.md)
+[ojos](../README.md) › ["op/histEqualization"](_op_histequalization_.md)
 
 # External module: "op/histEqualization"
 

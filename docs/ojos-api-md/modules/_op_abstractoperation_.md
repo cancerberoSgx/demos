@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/abstractOperation"](_op_abstractoperation_.md)
+[ojos](../README.md) › ["op/abstractOperation"](_op_abstractoperation_.md)
 
 # External module: "op/abstractOperation"
 
@@ -20,4 +18,4 @@
 
 Ƭ **MandatoryDst**: *RemoveProperties‹T, "dst"› & object*
 
-*Defined in [op/abstractOperation.ts:5](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L5)*
+*Defined in [op/abstractOperation.ts:6](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L6)*

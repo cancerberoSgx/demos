@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/gaussianBlur"](_op_gaussianblur_.md)
+[ojos](../README.md) › ["op/gaussianBlur"](_op_gaussianblur_.md)
 
 # External module: "op/gaussianBlur"
 

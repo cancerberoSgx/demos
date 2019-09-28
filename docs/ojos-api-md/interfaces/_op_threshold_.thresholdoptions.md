@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/threshold"](../modules/_op_threshold_.md) › [ThresholdOptions](_op_threshold_.thresholdoptions.md)
+[ojos](../README.md) › ["op/threshold"](../modules/_op_threshold_.md) › [ThresholdOptions](_op_threshold_.thresholdoptions.md)
 
 # Interface: ThresholdOptions
 
@@ -10,7 +8,7 @@
 
 * [ThresholdConcreteOptions](_op_threshold_.thresholdconcreteoptions.md)
 
-  * **ThresholdOptions**
+  ↳ **ThresholdOptions**
 
 ## Index
 
@@ -20,7 +18,7 @@
 * [maxval](_op_threshold_.thresholdoptions.md#maxval)
 * [src](_op_threshold_.thresholdoptions.md#src)
 * [thresh](_op_threshold_.thresholdoptions.md#thresh)
-* [type](_op_threshold_.thresholdoptions.md#type)
+* [thresholdType](_op_threshold_.thresholdoptions.md#thresholdtype)
 
 ## Properties
 
@@ -30,7 +28,9 @@
 
 *Inherited from [OperationExecBaseOptions](_op_types_.operationexecbaseoptions.md).[dst](_op_types_.operationexecbaseoptions.md#optional-dst)*
 
-*Defined in [op/types.ts:27](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L27)*
+*Defined in [op/types.ts:50](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L50)*
+
+Output image. If not given it will be created. Note that you can give [src] as output image in which case the input image will be written.
 
 ___
 
@@ -40,7 +40,9 @@ ___
 
 *Inherited from [ThresholdConcreteOptions](_op_threshold_.thresholdconcreteoptions.md).[maxval](_op_threshold_.thresholdconcreteoptions.md#maxval)*
 
-*Defined in [op/threshold.ts:10](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/threshold.ts#L10)*
+*Defined in [op/threshold.ts:16](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/threshold.ts#L16)*
+
+ maximum value to use with the THRESH_BINARY and THRESH_BINARY_INV thresholding types.
 
 ___
 
@@ -50,7 +52,9 @@ ___
 
 *Inherited from [OperationExecBaseOptions](_op_types_.operationexecbaseoptions.md).[src](_op_types_.operationexecbaseoptions.md#src)*
 
-*Defined in [op/types.ts:26](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L26)*
+*Defined in [op/types.ts:46](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L46)*
+
+Input image.
 
 ___
 
@@ -60,14 +64,18 @@ ___
 
 *Inherited from [ThresholdConcreteOptions](_op_threshold_.thresholdconcreteoptions.md).[thresh](_op_threshold_.thresholdconcreteoptions.md#thresh)*
 
-*Defined in [op/threshold.ts:9](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/threshold.ts#L9)*
+*Defined in [op/threshold.ts:12](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/threshold.ts#L12)*
+
+threshold value
 
 ___
 
-###  type
+###  thresholdType
 
-• **type**: *ThresholdTypes*
+• **thresholdType**: *ThresholdTypes*
 
-*Inherited from [ThresholdConcreteOptions](_op_threshold_.thresholdconcreteoptions.md).[type](_op_threshold_.thresholdconcreteoptions.md#type)*
+*Inherited from [ThresholdConcreteOptions](_op_threshold_.thresholdconcreteoptions.md).[thresholdType](_op_threshold_.thresholdconcreteoptions.md#thresholdtype)*
 
-*Defined in [op/threshold.ts:11](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/threshold.ts#L11)*
+*Defined in [op/threshold.ts:20](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/threshold.ts#L20)*
+
+thresholding type (see ThresholdTypes).

@@ -41,7 +41,7 @@
 
 Ƭ **HoughModes**: *any*
 
-*Defined in [types/opencv/imgproc_feature.ts:558](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L558)*
+*Defined in [types/opencv/imgproc_feature.ts:558](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L558)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 Ƭ **LineSegmentDetectorModes**: *any*
 
-*Defined in [types/opencv/imgproc_feature.ts:560](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L560)*
+*Defined in [types/opencv/imgproc_feature.ts:560](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L560)*
 
 ## Variables
 
@@ -57,7 +57,7 @@ ___
 
 • **HOUGH_GRADIENT**: *[HoughModes](_types_opencv_imgproc_feature_.md#houghmodes)*
 
-*Defined in [types/opencv/imgproc_feature.ts:545](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L545)*
+*Defined in [types/opencv/imgproc_feature.ts:545](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L545)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 • **HOUGH_MULTI_SCALE**: *[HoughModes](_types_opencv_imgproc_feature_.md#houghmodes)*
 
-*Defined in [types/opencv/imgproc_feature.ts:543](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L543)*
+*Defined in [types/opencv/imgproc_feature.ts:543](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L543)*
 
 multi-scale variant of the classical Hough transform. The lines are encoded the same way as
 HOUGH_STANDARD.
@@ -76,7 +76,7 @@ ___
 
 • **HOUGH_PROBABILISTIC**: *[HoughModes](_types_opencv_imgproc_feature_.md#houghmodes)*
 
-*Defined in [types/opencv/imgproc_feature.ts:536](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L536)*
+*Defined in [types/opencv/imgproc_feature.ts:536](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L536)*
 
 probabilistic Hough transform (more efficient in case if the picture contains a few long linear
 segments). It returns line segments rather than the whole line. Each segment is represented by
@@ -89,7 +89,7 @@ ___
 
 • **HOUGH_STANDARD**: *[HoughModes](_types_opencv_imgproc_feature_.md#houghmodes)*
 
-*Defined in [types/opencv/imgproc_feature.ts:527](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L527)*
+*Defined in [types/opencv/imgproc_feature.ts:527](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L527)*
 
 classical or standard Hough transform. Every line is represented by two floating-point numbers
 `$(\\rho, \\theta)$` , where `$\\rho$` is a distance between (0,0) point and the line, and
@@ -102,7 +102,7 @@ ___
 
 • **LSD_REFINE_ADV**: *[LineSegmentDetectorModes](_types_opencv_imgproc_feature_.md#linesegmentdetectormodes)*
 
-*Defined in [types/opencv/imgproc_feature.ts:556](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L556)*
+*Defined in [types/opencv/imgproc_feature.ts:556](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L556)*
 
 Advanced refinement. Number of false alarms is calculated, lines are refined through increase of
 precision, decrement in size, etc.
@@ -113,7 +113,7 @@ ___
 
 • **LSD_REFINE_NONE**: *[LineSegmentDetectorModes](_types_opencv_imgproc_feature_.md#linesegmentdetectormodes)*
 
-*Defined in [types/opencv/imgproc_feature.ts:547](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L547)*
+*Defined in [types/opencv/imgproc_feature.ts:547](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L547)*
 
 ___
 
@@ -121,15 +121,15 @@ ___
 
 • **LSD_REFINE_STD**: *[LineSegmentDetectorModes](_types_opencv_imgproc_feature_.md#linesegmentdetectormodes)*
 
-*Defined in [types/opencv/imgproc_feature.ts:549](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L549)*
+*Defined in [types/opencv/imgproc_feature.ts:549](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L549)*
 
 ## Functions
 
 ###  Canny
 
-▸ **Canny**(`image`: [InputArray](_types_opencv__hacks_.md#inputarray), `edges`: OutputArray, `threshold1`: [double](_types_opencv__hacks_.md#double), `threshold2`: [double](_types_opencv__hacks_.md#double), `apertureSize?`: [int](_types_opencv__hacks_.md#int), `L2gradient?`: [bool](_types_opencv__hacks_.md#bool)): *void*
+▸ **Canny**(`image`: InputArray, `edges`: OutputArray, `threshold1`: [double](_types_opencv__hacks_.md#double), `threshold2`: [double](_types_opencv__hacks_.md#double), `apertureSize?`: [int](_types_opencv__hacks_.md#int), `L2gradient?`: [bool](_types_opencv__hacks_.md#bool)): *void*
 
-*Defined in [types/opencv/imgproc_feature.ts:26](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L26)*
+*Defined in [types/opencv/imgproc_feature.ts:26](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L26)*
 
 The function finds edges in the input image and marks them in the output map edges using the Canny
 algorithm. The smallest value between threshold1 and threshold2 is used for edge linking. The
@@ -139,7 +139,7 @@ largest value is used to find initial segments of strong edges. See
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`image` | [InputArray](_types_opencv__hacks_.md#inputarray) | 8-bit input image.  |
+`image` | InputArray | 8-bit input image.  |
 `edges` | OutputArray | output edge map; single channels 8-bit image, which has the same size as image .  |
 `threshold1` | [double](_types_opencv__hacks_.md#double) | first threshold for the hysteresis procedure.  |
 `threshold2` | [double](_types_opencv__hacks_.md#double) | second threshold for the hysteresis procedure.  |
@@ -148,9 +148,9 @@ Name | Type | Description |
 
 **Returns:** *void*
 
-▸ **Canny**(`dx`: [InputArray](_types_opencv__hacks_.md#inputarray), `dy`: [InputArray](_types_opencv__hacks_.md#inputarray), `edges`: OutputArray, `threshold1`: [double](_types_opencv__hacks_.md#double), `threshold2`: [double](_types_opencv__hacks_.md#double), `L2gradient?`: [bool](_types_opencv__hacks_.md#bool)): *void*
+▸ **Canny**(`dx`: InputArray, `dy`: InputArray, `edges`: OutputArray, `threshold1`: [double](_types_opencv__hacks_.md#double), `threshold2`: [double](_types_opencv__hacks_.md#double), `L2gradient?`: [bool](_types_opencv__hacks_.md#bool)): *void*
 
-*Defined in [types/opencv/imgproc_feature.ts:48](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L48)*
+*Defined in [types/opencv/imgproc_feature.ts:48](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L48)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -161,8 +161,8 @@ Finds edges in an image using the Canny algorithm with custom image gradient.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`dx` | [InputArray](_types_opencv__hacks_.md#inputarray) | 16-bit x derivative of input image (CV_16SC1 or CV_16SC3).  |
-`dy` | [InputArray](_types_opencv__hacks_.md#inputarray) | 16-bit y derivative of input image (same type as dx).  |
+`dx` | InputArray | 16-bit x derivative of input image (CV_16SC1 or CV_16SC3).  |
+`dy` | InputArray | 16-bit y derivative of input image (same type as dx).  |
 `edges` | OutputArray | output edge map; single channels 8-bit image, which has the same size as image .  |
 `threshold1` | [double](_types_opencv__hacks_.md#double) | first threshold for the hysteresis procedure.  |
 `threshold2` | [double](_types_opencv__hacks_.md#double) | second threshold for the hysteresis procedure.  |
@@ -174,9 +174,9 @@ ___
 
 ###  HoughCircles
 
-▸ **HoughCircles**(`image`: [InputArray](_types_opencv__hacks_.md#inputarray), `circles`: OutputArray, `method`: [int](_types_opencv__hacks_.md#int), `dp`: [double](_types_opencv__hacks_.md#double), `minDist`: [double](_types_opencv__hacks_.md#double), `param1?`: [double](_types_opencv__hacks_.md#double), `param2?`: [double](_types_opencv__hacks_.md#double), `minRadius?`: [int](_types_opencv__hacks_.md#int), `maxRadius?`: [int](_types_opencv__hacks_.md#int)): *void*
+▸ **HoughCircles**(`image`: InputArray, `circles`: OutputArray, `method`: [int](_types_opencv__hacks_.md#int), `dp`: [double](_types_opencv__hacks_.md#double), `minDist`: [double](_types_opencv__hacks_.md#double), `param1?`: [double](_types_opencv__hacks_.md#double), `param2?`: [double](_types_opencv__hacks_.md#double), `minRadius?`: [int](_types_opencv__hacks_.md#int), `maxRadius?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_feature.ts:324](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L324)*
+*Defined in [types/opencv/imgproc_feature.ts:324](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L324)*
 
 The function finds circles in a grayscale image using a modification of the Hough transform.
 
@@ -229,7 +229,7 @@ search, and find the correct radius using an additional procedure.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`image` | [InputArray](_types_opencv__hacks_.md#inputarray) | 8-bit, single-channel, grayscale input image.  |
+`image` | InputArray | 8-bit, single-channel, grayscale input image.  |
 `circles` | OutputArray | Output vector of found circles. Each vector is encoded as 3 or 4 element floating-point vector $(x, y, radius)$ or $(x, y, radius, votes)$ .  |
 `method` | [int](_types_opencv__hacks_.md#int) | Detection method, see HoughModes. Currently, the only implemented method is HOUGH_GRADIENT  |
 `dp` | [double](_types_opencv__hacks_.md#double) | Inverse ratio of the accumulator resolution to the image resolution. For example, if dp=1 , the accumulator has the same resolution as the input image. If dp=2 , the accumulator has half as big width and height.  |
@@ -245,9 +245,9 @@ ___
 
 ###  HoughLines
 
-▸ **HoughLines**(`image`: [InputArray](_types_opencv__hacks_.md#inputarray), `lines`: OutputArray, `rho`: [double](_types_opencv__hacks_.md#double), `theta`: [double](_types_opencv__hacks_.md#double), `threshold`: [int](_types_opencv__hacks_.md#int), `srn?`: [double](_types_opencv__hacks_.md#double), `stn?`: [double](_types_opencv__hacks_.md#double), `min_theta?`: [double](_types_opencv__hacks_.md#double), `max_theta?`: [double](_types_opencv__hacks_.md#double)): *void*
+▸ **HoughLines**(`image`: InputArray, `lines`: OutputArray, `rho`: [double](_types_opencv__hacks_.md#double), `theta`: [double](_types_opencv__hacks_.md#double), `threshold`: [int](_types_opencv__hacks_.md#int), `srn?`: [double](_types_opencv__hacks_.md#double), `stn?`: [double](_types_opencv__hacks_.md#double), `min_theta?`: [double](_types_opencv__hacks_.md#double), `max_theta?`: [double](_types_opencv__hacks_.md#double)): *void*
 
-*Defined in [types/opencv/imgproc_feature.ts:358](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L358)*
+*Defined in [types/opencv/imgproc_feature.ts:358](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L358)*
 
 The function implements the standard or standard multi-scale Hough transform algorithm for line
 detection. See  for a good explanation of Hough transform.
@@ -256,7 +256,7 @@ detection. See  for a good explanation of Hough transform.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`image` | [InputArray](_types_opencv__hacks_.md#inputarray) | 8-bit, single-channel binary source image. The image may be modified by the function.  |
+`image` | InputArray | 8-bit, single-channel binary source image. The image may be modified by the function.  |
 `lines` | OutputArray | Output vector of lines. Each line is represented by a 2 or 3 element vector $(\rho, \theta)$ or $(\rho, \theta, \textrm{votes})$ . $\rho$ is the distance from the coordinate origin $(0,0)$ (top-left corner of the image). $\theta$ is the line rotation angle in radians ( $0 \sim \textrm{vertical line}, \pi/2 \sim \textrm{horizontal line}$ ). $\textrm{votes}$ is the value of accumulator.  |
 `rho` | [double](_types_opencv__hacks_.md#double) | Distance resolution of the accumulator in pixels.  |
 `theta` | [double](_types_opencv__hacks_.md#double) | Angle resolution of the accumulator in radians.  |
@@ -272,9 +272,9 @@ ___
 
 ###  HoughLinesP
 
-▸ **HoughLinesP**(`image`: [InputArray](_types_opencv__hacks_.md#inputarray), `lines`: OutputArray, `rho`: [double](_types_opencv__hacks_.md#double), `theta`: [double](_types_opencv__hacks_.md#double), `threshold`: [int](_types_opencv__hacks_.md#int), `minLineLength?`: [double](_types_opencv__hacks_.md#double), `maxLineGap?`: [double](_types_opencv__hacks_.md#double)): *void*
+▸ **HoughLinesP**(`image`: InputArray, `lines`: OutputArray, `rho`: [double](_types_opencv__hacks_.md#double), `theta`: [double](_types_opencv__hacks_.md#double), `threshold`: [int](_types_opencv__hacks_.md#int), `minLineLength?`: [double](_types_opencv__hacks_.md#double), `maxLineGap?`: [double](_types_opencv__hacks_.md#double)): *void*
 
-*Defined in [types/opencv/imgproc_feature.ts:422](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L422)*
+*Defined in [types/opencv/imgproc_feature.ts:422](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L422)*
 
 The function implements the probabilistic Hough transform algorithm for line detection, described in
 Matas00
@@ -325,7 +325,7 @@ int main(int argc, char** argv)
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`image` | [InputArray](_types_opencv__hacks_.md#inputarray) | 8-bit, single-channel binary source image. The image may be modified by the function.  |
+`image` | InputArray | 8-bit, single-channel binary source image. The image may be modified by the function.  |
 `lines` | OutputArray | Output vector of lines. Each line is represented by a 4-element vector $(x_1, y_1, x_2, y_2)$ , where $(x_1,y_1)$ and $(x_2, y_2)$ are the ending points of each detected line segment.  |
 `rho` | [double](_types_opencv__hacks_.md#double) | Distance resolution of the accumulator in pixels.  |
 `theta` | [double](_types_opencv__hacks_.md#double) | Angle resolution of the accumulator in radians.  |
@@ -339,9 +339,9 @@ ___
 
 ###  HoughLinesPointSet
 
-▸ **HoughLinesPointSet**(`_point`: [InputArray](_types_opencv__hacks_.md#inputarray), `_lines`: OutputArray, `lines_max`: [int](_types_opencv__hacks_.md#int), `threshold`: [int](_types_opencv__hacks_.md#int), `min_rho`: [double](_types_opencv__hacks_.md#double), `max_rho`: [double](_types_opencv__hacks_.md#double), `rho_step`: [double](_types_opencv__hacks_.md#double), `min_theta`: [double](_types_opencv__hacks_.md#double), `max_theta`: [double](_types_opencv__hacks_.md#double), `theta_step`: [double](_types_opencv__hacks_.md#double)): *void*
+▸ **HoughLinesPointSet**(`_point`: InputArray, `_lines`: OutputArray, `lines_max`: [int](_types_opencv__hacks_.md#int), `threshold`: [int](_types_opencv__hacks_.md#int), `min_rho`: [double](_types_opencv__hacks_.md#double), `max_rho`: [double](_types_opencv__hacks_.md#double), `rho_step`: [double](_types_opencv__hacks_.md#double), `min_theta`: [double](_types_opencv__hacks_.md#double), `max_theta`: [double](_types_opencv__hacks_.md#double), `theta_step`: [double](_types_opencv__hacks_.md#double)): *void*
 
-*Defined in [types/opencv/imgproc_feature.ts:488](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L488)*
+*Defined in [types/opencv/imgproc_feature.ts:488](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L488)*
 
 The function finds lines in a set of points using a modification of the Hough transform.
 
@@ -387,7 +387,7 @@ line3d.at(0).val[2]);
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`_point` | [InputArray](_types_opencv__hacks_.md#inputarray) | Input vector of points. Each vector must be encoded as a Point vector $(x,y)$. Type must be CV_32FC2 or CV_32SC2.  |
+`_point` | InputArray | Input vector of points. Each vector must be encoded as a Point vector $(x,y)$. Type must be CV_32FC2 or CV_32SC2.  |
 `_lines` | OutputArray | Output vector of found lines. Each vector is encoded as a vector<Vec3d> $(votes, rho, theta)$. The larger the value of 'votes', the higher the reliability of the Hough line.  |
 `lines_max` | [int](_types_opencv__hacks_.md#int) | Max count of hough lines.  |
 `threshold` | [int](_types_opencv__hacks_.md#int) | Accumulator threshold parameter. Only those lines are returned that get enough votes ( $>\texttt{threshold}$ )  |
@@ -404,9 +404,9 @@ ___
 
 ###  cornerEigenValsAndVecs
 
-▸ **cornerEigenValsAndVecs**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `blockSize`: [int](_types_opencv__hacks_.md#int), `ksize`: [int](_types_opencv__hacks_.md#int), `borderType?`: [int](_types_opencv__hacks_.md#int)): *void*
+▸ **cornerEigenValsAndVecs**(`src`: InputArray, `dst`: OutputArray, `blockSize`: [int](_types_opencv__hacks_.md#int), `ksize`: [int](_types_opencv__hacks_.md#int), `borderType?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_feature.ts:81](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L81)*
+*Defined in [types/opencv/imgproc_feature.ts:81](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L81)*
 
 For every pixel `$p$` , the function cornerEigenValsAndVecs considers a blockSize `$\\times$`
 blockSize neighborhood `$S(p)$` . It calculates the covariation matrix of derivatives over the
@@ -432,7 +432,7 @@ The output of the function can be used for robust edge or corner detection.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`src` | [InputArray](_types_opencv__hacks_.md#inputarray) | Input single-channel 8-bit or floating-point image.  |
+`src` | InputArray | Input single-channel 8-bit or floating-point image.  |
 `dst` | OutputArray | Image to store the results. It has the same size as src and the type CV_32FC(6) .  |
 `blockSize` | [int](_types_opencv__hacks_.md#int) | Neighborhood size (see details below).  |
 `ksize` | [int](_types_opencv__hacks_.md#int) | Aperture parameter for the Sobel operator.  |
@@ -444,9 +444,9 @@ ___
 
 ###  cornerHarris
 
-▸ **cornerHarris**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `blockSize`: [int](_types_opencv__hacks_.md#int), `ksize`: [int](_types_opencv__hacks_.md#int), `k`: [double](_types_opencv__hacks_.md#double), `borderType?`: [int](_types_opencv__hacks_.md#int)): *void*
+▸ **cornerHarris**(`src`: InputArray, `dst`: OutputArray, `blockSize`: [int](_types_opencv__hacks_.md#int), `ksize`: [int](_types_opencv__hacks_.md#int), `k`: [double](_types_opencv__hacks_.md#double), `borderType?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_feature.ts:107](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L107)*
+*Defined in [types/opencv/imgproc_feature.ts:107](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L107)*
 
 The function runs the Harris corner detector on the image. Similarly to cornerMinEigenVal and
 cornerEigenValsAndVecs , for each pixel `$(x, y)$` it calculates a `$2\\times2$` gradient covariance
@@ -462,7 +462,7 @@ Corners in the image can be found as the local maxima of this response map.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`src` | [InputArray](_types_opencv__hacks_.md#inputarray) | Input single-channel 8-bit or floating-point image.  |
+`src` | InputArray | Input single-channel 8-bit or floating-point image.  |
 `dst` | OutputArray | Image to store the Harris detector responses. It has the type CV_32FC1 and the same size as src .  |
 `blockSize` | [int](_types_opencv__hacks_.md#int) | Neighborhood size (see the details on cornerEigenValsAndVecs ).  |
 `ksize` | [int](_types_opencv__hacks_.md#int) | Aperture parameter for the Sobel operator.  |
@@ -475,9 +475,9 @@ ___
 
 ###  cornerMinEigenVal
 
-▸ **cornerMinEigenVal**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `blockSize`: [int](_types_opencv__hacks_.md#int), `ksize?`: [int](_types_opencv__hacks_.md#int), `borderType?`: [int](_types_opencv__hacks_.md#int)): *void*
+▸ **cornerMinEigenVal**(`src`: InputArray, `dst`: OutputArray, `blockSize`: [int](_types_opencv__hacks_.md#int), `ksize?`: [int](_types_opencv__hacks_.md#int), `borderType?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_feature.ts:125](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L125)*
+*Defined in [types/opencv/imgproc_feature.ts:125](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L125)*
 
 The function is similar to cornerEigenValsAndVecs but it calculates and stores only the minimal
 eigenvalue of the covariance matrix of derivatives, that is, `$\\min(\\lambda_1, \\lambda_2)$` in
@@ -487,7 +487,7 @@ terms of the formulae in the cornerEigenValsAndVecs description.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`src` | [InputArray](_types_opencv__hacks_.md#inputarray) | Input single-channel 8-bit or floating-point image.  |
+`src` | InputArray | Input single-channel 8-bit or floating-point image.  |
 `dst` | OutputArray | Image to store the minimal eigenvalues. It has the type CV_32FC1 and the same size as src .  |
 `blockSize` | [int](_types_opencv__hacks_.md#int) | Neighborhood size (see the details on cornerEigenValsAndVecs ).  |
 `ksize?` | [int](_types_opencv__hacks_.md#int) | Aperture parameter for the Sobel operator.  |
@@ -499,9 +499,9 @@ ___
 
 ###  cornerSubPix
 
-▸ **cornerSubPix**(`image`: [InputArray](_types_opencv__hacks_.md#inputarray), `corners`: InputOutputArray, `winSize`: [Size](../classes/_types_opencv__hacks_.size.md), `zeroZone`: [Size](../classes/_types_opencv__hacks_.size.md), `criteria`: [TermCriteria](../classes/_types_opencv__hacks_.termcriteria.md)): *void*
+▸ **cornerSubPix**(`image`: InputArray, `corners`: InputOutputArray, `winSize`: [Size](../classes/_types_opencv__hacks_.size.md), `zeroZone`: [Size](../classes/_types_opencv__hacks_.size.md), `criteria`: [TermCriteria](../classes/_types_opencv__hacks_.termcriteria.md)): *void*
 
-*Defined in [types/opencv/imgproc_feature.ts:167](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L167)*
+*Defined in [types/opencv/imgproc_feature.ts:167](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L167)*
 
 The function iterates to find the sub-pixel accurate location of corners or radial saddle points, as
 shown on the figure below.
@@ -531,7 +531,7 @@ until the center stays within a set threshold.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`image` | [InputArray](_types_opencv__hacks_.md#inputarray) | Input single-channel, 8-bit or float image.  |
+`image` | InputArray | Input single-channel, 8-bit or float image.  |
 `corners` | InputOutputArray | Initial coordinates of the input corners and refined coordinates provided for output.  |
 `winSize` | [Size](../classes/_types_opencv__hacks_.size.md) | Half of the side length of the search window. For example, if winSize=Size(5,5) , then a $(5*2+1) \times (5*2+1) = 11 \times 11$ search window is used.  |
 `zeroZone` | [Size](../classes/_types_opencv__hacks_.size.md) | Half of the size of the dead region in the middle of the search zone over which the summation in the formula below is not done. It is used sometimes to avoid possible singularities of the autocorrelation matrix. The value of (-1,-1) indicates that there is no such a size.  |
@@ -545,7 +545,7 @@ ___
 
 ▸ **createLineSegmentDetector**(`_refine?`: [int](_types_opencv__hacks_.md#int), `_scale?`: [double](_types_opencv__hacks_.md#double), `_sigma_scale?`: [double](_types_opencv__hacks_.md#double), `_quant?`: [double](_types_opencv__hacks_.md#double), `_ang_th?`: [double](_types_opencv__hacks_.md#double), `_log_eps?`: [double](_types_opencv__hacks_.md#double), `_density_th?`: [double](_types_opencv__hacks_.md#double), `_n_bins?`: [int](_types_opencv__hacks_.md#int)): *any*
 
-*Defined in [types/opencv/imgproc_feature.ts:192](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L192)*
+*Defined in [types/opencv/imgproc_feature.ts:192](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L192)*
 
 The [LineSegmentDetector] algorithm is defined using the standard values. Only advanced users may
 want to edit those, as to tailor it for their own application.
@@ -571,9 +571,9 @@ ___
 
 ###  goodFeaturesToTrack
 
-▸ **goodFeaturesToTrack**(`image`: [InputArray](_types_opencv__hacks_.md#inputarray), `corners`: OutputArray, `maxCorners`: [int](_types_opencv__hacks_.md#int), `qualityLevel`: [double](_types_opencv__hacks_.md#double), `minDistance`: [double](_types_opencv__hacks_.md#double), `mask?`: [InputArray](_types_opencv__hacks_.md#inputarray), `blockSize?`: [int](_types_opencv__hacks_.md#int), `useHarrisDetector?`: [bool](_types_opencv__hacks_.md#bool), `k?`: [double](_types_opencv__hacks_.md#double)): *void*
+▸ **goodFeaturesToTrack**(`image`: InputArray, `corners`: OutputArray, `maxCorners`: [int](_types_opencv__hacks_.md#int), `qualityLevel`: [double](_types_opencv__hacks_.md#double), `minDistance`: [double](_types_opencv__hacks_.md#double), `mask?`: InputArray, `blockSize?`: [int](_types_opencv__hacks_.md#int), `useHarrisDetector?`: [bool](_types_opencv__hacks_.md#bool), `k?`: [double](_types_opencv__hacks_.md#double)): *void*
 
-*Defined in [types/opencv/imgproc_feature.ts:244](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L244)*
+*Defined in [types/opencv/imgproc_feature.ts:244](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L244)*
 
 The function finds the most prominent corners in the image or in the specified image region, as
 described in Shi94
@@ -600,32 +600,32 @@ qualityLevel=B .
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`image` | [InputArray](_types_opencv__hacks_.md#inputarray) | Input 8-bit or floating-point 32-bit, single-channel image.  |
+`image` | InputArray | Input 8-bit or floating-point 32-bit, single-channel image.  |
 `corners` | OutputArray | Output vector of detected corners.  |
 `maxCorners` | [int](_types_opencv__hacks_.md#int) | Maximum number of corners to return. If there are more corners than are found, the strongest of them is returned. maxCorners <= 0 implies that no limit on the maximum is set and all detected corners are returned.  |
 `qualityLevel` | [double](_types_opencv__hacks_.md#double) | Parameter characterizing the minimal accepted quality of image corners. The parameter value is multiplied by the best corner quality measure, which is the minimal eigenvalue (see cornerMinEigenVal ) or the Harris function response (see cornerHarris ). The corners with the quality measure less than the product are rejected. For example, if the best corner has the quality measure = 1500, and the qualityLevel=0.01 , then all the corners with the quality measure less than 15 are rejected.  |
 `minDistance` | [double](_types_opencv__hacks_.md#double) | Minimum possible Euclidean distance between the returned corners.  |
-`mask?` | [InputArray](_types_opencv__hacks_.md#inputarray) | Optional region of interest. If the image is not empty (it needs to have the type CV_8UC1 and the same size as image ), it specifies the region in which the corners are detected.  |
+`mask?` | InputArray | Optional region of interest. If the image is not empty (it needs to have the type CV_8UC1 and the same size as image ), it specifies the region in which the corners are detected.  |
 `blockSize?` | [int](_types_opencv__hacks_.md#int) | Size of an average block for computing a derivative covariation matrix over each pixel neighborhood. See cornerEigenValsAndVecs .  |
 `useHarrisDetector?` | [bool](_types_opencv__hacks_.md#bool) | Parameter indicating whether to use a Harris detector (see cornerHarris) or cornerMinEigenVal.  |
 `k?` | [double](_types_opencv__hacks_.md#double) | Free parameter of the Harris detector.  |
 
 **Returns:** *void*
 
-▸ **goodFeaturesToTrack**(`image`: [InputArray](_types_opencv__hacks_.md#inputarray), `corners`: OutputArray, `maxCorners`: [int](_types_opencv__hacks_.md#int), `qualityLevel`: [double](_types_opencv__hacks_.md#double), `minDistance`: [double](_types_opencv__hacks_.md#double), `mask`: [InputArray](_types_opencv__hacks_.md#inputarray), `blockSize`: [int](_types_opencv__hacks_.md#int), `gradientSize`: [int](_types_opencv__hacks_.md#int), `useHarrisDetector?`: [bool](_types_opencv__hacks_.md#bool), `k?`: [double](_types_opencv__hacks_.md#double)): *void*
+▸ **goodFeaturesToTrack**(`image`: InputArray, `corners`: OutputArray, `maxCorners`: [int](_types_opencv__hacks_.md#int), `qualityLevel`: [double](_types_opencv__hacks_.md#double), `minDistance`: [double](_types_opencv__hacks_.md#double), `mask`: InputArray, `blockSize`: [int](_types_opencv__hacks_.md#int), `gradientSize`: [int](_types_opencv__hacks_.md#int), `useHarrisDetector?`: [bool](_types_opencv__hacks_.md#bool), `k?`: [double](_types_opencv__hacks_.md#double)): *void*
 
-*Defined in [types/opencv/imgproc_feature.ts:246](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L246)*
+*Defined in [types/opencv/imgproc_feature.ts:246](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L246)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`image` | [InputArray](_types_opencv__hacks_.md#inputarray) |
+`image` | InputArray |
 `corners` | OutputArray |
 `maxCorners` | [int](_types_opencv__hacks_.md#int) |
 `qualityLevel` | [double](_types_opencv__hacks_.md#double) |
 `minDistance` | [double](_types_opencv__hacks_.md#double) |
-`mask` | [InputArray](_types_opencv__hacks_.md#inputarray) |
+`mask` | InputArray |
 `blockSize` | [int](_types_opencv__hacks_.md#int) |
 `gradientSize` | [int](_types_opencv__hacks_.md#int) |
 `useHarrisDetector?` | [bool](_types_opencv__hacks_.md#bool) |
@@ -637,9 +637,9 @@ ___
 
 ###  preCornerDetect
 
-▸ **preCornerDetect**(`src`: [InputArray](_types_opencv__hacks_.md#inputarray), `dst`: OutputArray, `ksize`: [int](_types_opencv__hacks_.md#int), `borderType?`: [int](_types_opencv__hacks_.md#int)): *void*
+▸ **preCornerDetect**(`src`: InputArray, `dst`: OutputArray, `ksize`: [int](_types_opencv__hacks_.md#int), `borderType?`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/imgproc_feature.ts:518](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/imgproc_feature.ts#L518)*
+*Defined in [types/opencv/imgproc_feature.ts:518](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/imgproc_feature.ts#L518)*
 
 The function calculates the complex spatial derivative-based function of the source image
 
@@ -664,7 +664,7 @@ Mat corner_mask = corners == dilated_corners;
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`src` | [InputArray](_types_opencv__hacks_.md#inputarray) | Source single-channel 8-bit of floating-point image.  |
+`src` | InputArray | Source single-channel 8-bit of floating-point image.  |
 `dst` | OutputArray | Output image that has the type CV_32F and the same size as src .  |
 `ksize` | [int](_types_opencv__hacks_.md#int) | Aperture size of the Sobel .  |
 `borderType?` | [int](_types_opencv__hacks_.md#int) | Pixel extrapolation method. See BorderTypes.  |

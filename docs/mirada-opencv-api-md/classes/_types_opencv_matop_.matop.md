@@ -43,7 +43,7 @@
 
 \+ **new MatOp**(): *[MatOp](_types_opencv_matop_.matop.md)*
 
-*Defined in [types/opencv/MatOp.ts:4](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L4)*
+*Defined in [types/opencv/MatOp.ts:4](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L4)*
 
 **Returns:** *[MatOp](_types_opencv_matop_.matop.md)*
 
@@ -53,7 +53,7 @@
 
 ▸ **abs**(`expr`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `res`: [MatExpr](_types_opencv_matexpr_.matexpr.md)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:8](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L8)*
+*Defined in [types/opencv/MatOp.ts:8](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L8)*
 
 **Parameters:**
 
@@ -70,7 +70,7 @@ ___
 
 ▸ **add**(`expr1`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `expr2`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `res`: [MatExpr](_types_opencv_matexpr_.matexpr.md)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:10](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L10)*
+*Defined in [types/opencv/MatOp.ts:10](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L10)*
 
 **Parameters:**
 
@@ -84,7 +84,7 @@ Name | Type |
 
 ▸ **add**(`expr1`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `s`: [Scalar](_types_opencv__hacks_.scalar.md), `res`: [MatExpr](_types_opencv_matexpr_.matexpr.md)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:12](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L12)*
+*Defined in [types/opencv/MatOp.ts:12](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L12)*
 
 **Parameters:**
 
@@ -102,7 +102,7 @@ ___
 
 ▸ **assign**(`expr`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `m`: [Mat](_types_opencv_mat_.mat.md), `type?`: [int](../modules/_types_opencv__hacks_.md#int)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:14](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L14)*
+*Defined in [types/opencv/MatOp.ts:14](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L14)*
 
 **Parameters:**
 
@@ -120,7 +120,7 @@ ___
 
 ▸ **augAssignAdd**(`expr`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `m`: [Mat](_types_opencv_mat_.mat.md)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:16](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L16)*
+*Defined in [types/opencv/MatOp.ts:16](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L16)*
 
 **Parameters:**
 
@@ -137,7 +137,7 @@ ___
 
 ▸ **augAssignAnd**(`expr`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `m`: [Mat](_types_opencv_mat_.mat.md)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:18](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L18)*
+*Defined in [types/opencv/MatOp.ts:18](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L18)*
 
 **Parameters:**
 
@@ -154,7 +154,7 @@ ___
 
 ▸ **augAssignDivide**(`expr`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `m`: [Mat](_types_opencv_mat_.mat.md)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:20](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L20)*
+*Defined in [types/opencv/MatOp.ts:20](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L20)*
 
 **Parameters:**
 
@@ -171,7 +171,7 @@ ___
 
 ▸ **augAssignMultiply**(`expr`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `m`: [Mat](_types_opencv_mat_.mat.md)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:22](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L22)*
+*Defined in [types/opencv/MatOp.ts:22](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L22)*
 
 **Parameters:**
 
@@ -188,7 +188,7 @@ ___
 
 ▸ **augAssignOr**(`expr`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `m`: [Mat](_types_opencv_mat_.mat.md)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:24](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L24)*
+*Defined in [types/opencv/MatOp.ts:24](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L24)*
 
 **Parameters:**
 
@@ -205,7 +205,7 @@ ___
 
 ▸ **augAssignSubtract**(`expr`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `m`: [Mat](_types_opencv_mat_.mat.md)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:26](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L26)*
+*Defined in [types/opencv/MatOp.ts:26](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L26)*
 
 **Parameters:**
 
@@ -222,7 +222,7 @@ ___
 
 ▸ **augAssignXor**(`expr`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `m`: [Mat](_types_opencv_mat_.mat.md)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:28](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L28)*
+*Defined in [types/opencv/MatOp.ts:28](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L28)*
 
 **Parameters:**
 
@@ -239,7 +239,7 @@ ___
 
 ▸ **diag**(`expr`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `d`: [int](../modules/_types_opencv__hacks_.md#int), `res`: [MatExpr](_types_opencv_matexpr_.matexpr.md)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:30](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L30)*
+*Defined in [types/opencv/MatOp.ts:30](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L30)*
 
 **Parameters:**
 
@@ -257,7 +257,7 @@ ___
 
 ▸ **divide**(`expr1`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `expr2`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `res`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `scale?`: [double](../modules/_types_opencv__hacks_.md#double)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:32](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L32)*
+*Defined in [types/opencv/MatOp.ts:32](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L32)*
 
 **Parameters:**
 
@@ -272,7 +272,7 @@ Name | Type |
 
 ▸ **divide**(`s`: [double](../modules/_types_opencv__hacks_.md#double), `expr`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `res`: [MatExpr](_types_opencv_matexpr_.matexpr.md)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:34](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L34)*
+*Defined in [types/opencv/MatOp.ts:34](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L34)*
 
 **Parameters:**
 
@@ -290,7 +290,7 @@ ___
 
 ▸ **elementWise**(`expr`: [MatExpr](_types_opencv_matexpr_.matexpr.md)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:36](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L36)*
+*Defined in [types/opencv/MatOp.ts:36](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L36)*
 
 **Parameters:**
 
@@ -306,7 +306,7 @@ ___
 
 ▸ **invert**(`expr`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `method`: [int](../modules/_types_opencv__hacks_.md#int), `res`: [MatExpr](_types_opencv_matexpr_.matexpr.md)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:38](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L38)*
+*Defined in [types/opencv/MatOp.ts:38](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L38)*
 
 **Parameters:**
 
@@ -324,7 +324,7 @@ ___
 
 ▸ **matmul**(`expr1`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `expr2`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `res`: [MatExpr](_types_opencv_matexpr_.matexpr.md)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:40](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L40)*
+*Defined in [types/opencv/MatOp.ts:40](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L40)*
 
 **Parameters:**
 
@@ -342,7 +342,7 @@ ___
 
 ▸ **multiply**(`expr1`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `expr2`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `res`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `scale?`: [double](../modules/_types_opencv__hacks_.md#double)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:42](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L42)*
+*Defined in [types/opencv/MatOp.ts:42](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L42)*
 
 **Parameters:**
 
@@ -357,7 +357,7 @@ Name | Type |
 
 ▸ **multiply**(`expr1`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `s`: [double](../modules/_types_opencv__hacks_.md#double), `res`: [MatExpr](_types_opencv_matexpr_.matexpr.md)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:44](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L44)*
+*Defined in [types/opencv/MatOp.ts:44](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L44)*
 
 **Parameters:**
 
@@ -375,7 +375,7 @@ ___
 
 ▸ **roi**(`expr`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `rowRange`: Range, `colRange`: Range, `res`: [MatExpr](_types_opencv_matexpr_.matexpr.md)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:46](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L46)*
+*Defined in [types/opencv/MatOp.ts:46](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L46)*
 
 **Parameters:**
 
@@ -394,7 +394,7 @@ ___
 
 ▸ **size**(`expr`: [MatExpr](_types_opencv_matexpr_.matexpr.md)): *[Size](_types_opencv__hacks_.size.md)*
 
-*Defined in [types/opencv/MatOp.ts:48](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L48)*
+*Defined in [types/opencv/MatOp.ts:48](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L48)*
 
 **Parameters:**
 
@@ -410,7 +410,7 @@ ___
 
 ▸ **subtract**(`expr1`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `expr2`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `res`: [MatExpr](_types_opencv_matexpr_.matexpr.md)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:50](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L50)*
+*Defined in [types/opencv/MatOp.ts:50](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L50)*
 
 **Parameters:**
 
@@ -424,7 +424,7 @@ Name | Type |
 
 ▸ **subtract**(`s`: [Scalar](_types_opencv__hacks_.scalar.md), `expr`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `res`: [MatExpr](_types_opencv_matexpr_.matexpr.md)): *[Scalar](_types_opencv__hacks_.scalar.md)*
 
-*Defined in [types/opencv/MatOp.ts:52](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L52)*
+*Defined in [types/opencv/MatOp.ts:52](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L52)*
 
 **Parameters:**
 
@@ -442,7 +442,7 @@ ___
 
 ▸ **transpose**(`expr`: [MatExpr](_types_opencv_matexpr_.matexpr.md), `res`: [MatExpr](_types_opencv_matexpr_.matexpr.md)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:54](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L54)*
+*Defined in [types/opencv/MatOp.ts:54](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L54)*
 
 **Parameters:**
 
@@ -459,7 +459,7 @@ ___
 
 ▸ **type**(`expr`: [MatExpr](_types_opencv_matexpr_.matexpr.md)): *[MatExpr](_types_opencv_matexpr_.matexpr.md)*
 
-*Defined in [types/opencv/MatOp.ts:56](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/MatOp.ts#L56)*
+*Defined in [types/opencv/MatOp.ts:56](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/MatOp.ts#L56)*
 
 **Parameters:**
 

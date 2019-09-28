@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/medianBlur"](_op_medianblur_.md)
+[ojos](../README.md) › ["op/medianBlur"](_op_medianblur_.md)
 
 # External module: "op/medianBlur"
 

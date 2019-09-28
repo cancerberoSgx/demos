@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/edge"](../modules/_op_edge_.md) › [EdgeConcreteOptions](_op_edge_.edgeconcreteoptions.md)
+[ojos](../README.md) › ["op/edge"](../modules/_op_edge_.md) › [EdgeConcreteOptions](_op_edge_.edgeconcreteoptions.md)
 
 # Interface: EdgeConcreteOptions
 
@@ -8,11 +6,15 @@
 
 * [WithBorderType](_op_types_.withbordertype.md)
 
+* [WithKSize](_op_types_.withksize.md)
+
 * [WithChannels](_op_types_.withchannels.md)
 
-  * **EdgeConcreteOptions**
+* [WithDDepth](_op_types_.withddepth.md)
 
-  * [EdgeOptions](_op_edge_.edgeoptions.md)
+  ↳ **EdgeConcreteOptions**
+
+  ↳ [EdgeOptions](_op_edge_.edgeoptions.md)
 
 ## Index
 
@@ -24,7 +26,7 @@
 * [delta](_op_edge_.edgeconcreteoptions.md#optional-delta)
 * [dx](_op_edge_.edgeconcreteoptions.md#optional-dx)
 * [dy](_op_edge_.edgeconcreteoptions.md#optional-dy)
-* [ksize](_op_edge_.edgeconcreteoptions.md#optional-ksize)
+* [ksize](_op_edge_.edgeconcreteoptions.md#ksize)
 * [scale](_op_edge_.edgeconcreteoptions.md#optional-scale)
 * [type](_op_edge_.edgeconcreteoptions.md#type)
 
@@ -36,9 +38,9 @@
 
 *Inherited from [WithBorderType](_op_types_.withbordertype.md).[borderType](_op_types_.withbordertype.md#optional-bordertype)*
 
-*Defined in [op/types.ts:34](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L34)*
+*Defined in [op/types.ts:57](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L57)*
 
-border mode used to extrapolate pixels outside of the image, see [BorderTypes]
+border mode used to extrapolate pixels outside of the image, see [BorderTypes].
 
 ___
 
@@ -48,9 +50,12 @@ ___
 
 *Inherited from [WithChannels](_op_types_.withchannels.md).[channels](_op_types_.withchannels.md#optional-channels)*
 
-*Defined in [op/types.ts:52](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L52)*
+*Defined in [op/types.ts:109](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L109)*
 
-If true then all channels will be processed independently and then joined to build the result. The only exception is when there are 4 channels and in this case, if channels===true, the last 4th channel will be omitted (alpha). If an array of numbers is given then those channels will be processed only. If not given then the operation will behave normally, processing as single channle image.
+If true then all channels will be processed independently and then joined to build the result. The only
+exception is when there are 4 channels and in this case, if channels===true, the last 4th channel will be
+omitted (alpha). If an array of numbers is given then those channels will be processed only. If not given
+then the operation will behave normally, processing as single channel image.
 
 ___
 
@@ -58,15 +63,11 @@ ___
 
 • **ddepth**? : *undefined | number*
 
-*Defined in [op/edge.ts:18](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/edge.ts#L18)*
+*Inherited from [WithDDepth](_op_types_.withddepth.md).[ddepth](_op_types_.withddepth.md#optional-ddepth)*
 
-Desired depth of the destination image. Combinations:
-```
-input           output
-CV_8U	          -1/CV_16S/CV_32F/CV_64F
-CV_16U/CV_16S	  -1/CV_32F/CV_64F
-CV_32F	        -1/CV_32F/CV_64F
-CV_64F	        -1/CV_64F
+*Defined in [op/types.ts:99](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L99)*
+
+the output image dept. (-1 to use src.depth()).
 
 ___
 
@@ -74,7 +75,7 @@ ___
 
 • **delta**? : *undefined | number*
 
-*Defined in [op/edge.ts:34](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/edge.ts#L34)*
+*Defined in [op/edge.ts:21](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/edge.ts#L21)*
 
 Optional delta value that is added to the results prior to storing them in dst .
 
@@ -84,7 +85,7 @@ ___
 
 • **dx**? : *undefined | number*
 
-*Defined in [op/edge.ts:22](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/edge.ts#L22)*
+*Defined in [op/edge.ts:13](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/edge.ts#L13)*
 
 Applies only for Scharr and Sobel (and are mandatory in that case). Also must less than 3
 
@@ -94,19 +95,21 @@ ___
 
 • **dy**? : *undefined | number*
 
-*Defined in [op/edge.ts:26](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/edge.ts#L26)*
+*Defined in [op/edge.ts:17](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/edge.ts#L17)*
 
 Applies only for Scharr and Sobel (and are mandatory in that case)
 
 ___
 
-### `Optional` ksize
+###  ksize
 
-• **ksize**? : *undefined | number*
+• **ksize**: *[SizeRepresentation](../modules/_util_util_.md#sizerepresentation)*
 
-*Defined in [op/edge.ts:30](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/edge.ts#L30)*
+*Inherited from [WithKSize](_op_types_.withksize.md).[ksize](_op_types_.withksize.md#ksize)*
 
-Aperture size used to compute the second-derivative filters. See getDerivKernels for details. The size must be positive and odd. applies only for Sobel and Laplacian
+*Defined in [op/types.ts:78](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L78)*
+
+Transformation (blurring) kernel size. In general only odd numbers greater than 2 are accepted.
 
 ___
 
@@ -114,7 +117,7 @@ ___
 
 • **scale**? : *undefined | number*
 
-*Defined in [op/edge.ts:38](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/edge.ts#L38)*
+*Defined in [op/edge.ts:25](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/edge.ts#L25)*
 
 Optional scale factor for the computed Laplacian values. By default, no scaling is applied. See getDerivKernels for details.
 
@@ -124,4 +127,4 @@ ___
 
 • **type**: *"sobel" | "scharr" | "laplacian"*
 
-*Defined in [op/edge.ts:8](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/edge.ts#L8)*
+*Defined in [op/edge.ts:9](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/edge.ts#L9)*

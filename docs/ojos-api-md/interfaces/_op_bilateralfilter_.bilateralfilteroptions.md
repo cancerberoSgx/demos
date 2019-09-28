@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/bilateralFilter"](../modules/_op_bilateralfilter_.md) › [BilateralFilterOptions](_op_bilateralfilter_.bilateralfilteroptions.md)
+[ojos](../README.md) › ["op/bilateralFilter"](../modules/_op_bilateralfilter_.md) › [BilateralFilterOptions](_op_bilateralfilter_.bilateralfilteroptions.md)
 
 # Interface: BilateralFilterOptions
 
@@ -8,9 +6,9 @@
 
 * [OperationExecBaseOptions](_op_types_.operationexecbaseoptions.md)
 
-  * [BilateralFilterConcreteOptions](_op_bilateralfilter_.bilateralfilterconcreteoptions.md)
+  ↳ [BilateralFilterConcreteOptions](_op_bilateralfilter_.bilateralfilterconcreteoptions.md)
 
-  * **BilateralFilterOptions**
+  ↳ **BilateralFilterOptions**
 
 ## Index
 
@@ -31,9 +29,9 @@
 
 *Inherited from [WithBorderType](_op_types_.withbordertype.md).[borderType](_op_types_.withbordertype.md#optional-bordertype)*
 
-*Defined in [op/types.ts:34](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L34)*
+*Defined in [op/types.ts:57](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L57)*
 
-border mode used to extrapolate pixels outside of the image, see [BorderTypes]
+border mode used to extrapolate pixels outside of the image, see [BorderTypes].
 
 ___
 
@@ -43,7 +41,7 @@ ___
 
 *Inherited from [BilateralFilterConcreteOptions](_op_bilateralfilter_.bilateralfilterconcreteoptions.md).[d](_op_bilateralfilter_.bilateralfilterconcreteoptions.md#optional-d)*
 
-*Defined in [op/bilateralFilter.ts:11](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/bilateralFilter.ts#L11)*
+*Defined in [op/bilateralFilter.ts:11](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/bilateralFilter.ts#L11)*
 
 Diameter of each pixel neighborhood that is used during filtering. If it is non-positive, it is computed from sigmaSpace.
 
@@ -55,7 +53,9 @@ ___
 
 *Inherited from [OperationExecBaseOptions](_op_types_.operationexecbaseoptions.md).[dst](_op_types_.operationexecbaseoptions.md#optional-dst)*
 
-*Defined in [op/types.ts:27](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L27)*
+*Defined in [op/types.ts:50](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L50)*
+
+Output image. If not given it will be created. Note that you can give [src] as output image in which case the input image will be written.
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 *Inherited from [BilateralFilterConcreteOptions](_op_bilateralfilter_.bilateralfilterconcreteoptions.md).[sigmaColor](_op_bilateralfilter_.bilateralfilterconcreteoptions.md#sigmacolor)*
 
-*Defined in [op/bilateralFilter.ts:15](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/bilateralFilter.ts#L15)*
+*Defined in [op/bilateralFilter.ts:15](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/bilateralFilter.ts#L15)*
 
 Filter sigma in the color space. A larger value of the parameter means that farther colors within the pixel neighborhood (see sigmaSpace) will be mixed together, resulting in larger areas of semi-equal color.
 
@@ -77,7 +77,7 @@ ___
 
 *Inherited from [BilateralFilterConcreteOptions](_op_bilateralfilter_.bilateralfilterconcreteoptions.md).[sigmaSpace](_op_bilateralfilter_.bilateralfilterconcreteoptions.md#sigmaspace)*
 
-*Defined in [op/bilateralFilter.ts:19](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/bilateralFilter.ts#L19)*
+*Defined in [op/bilateralFilter.ts:19](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/bilateralFilter.ts#L19)*
 
 Filter sigma in the coordinate space. A larger value of the parameter means that farther pixels will influence each other as long as their colors are close enough (see sigmaColor ). When d>0, it specifies the neighborhood size regardless of sigmaSpace. Otherwise, d is proportional to sigmaSpace.
 
@@ -89,4 +89,6 @@ ___
 
 *Inherited from [OperationExecBaseOptions](_op_types_.operationexecbaseoptions.md).[src](_op_types_.operationexecbaseoptions.md#src)*
 
-*Defined in [op/types.ts:26](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L26)*
+*Defined in [op/types.ts:46](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L46)*
+
+Input image.

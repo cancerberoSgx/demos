@@ -15,4 +15,4 @@
 
 ### ▪ **format**: *object*
 
-*Defined in [format/index.ts:7](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/format/index.ts#L7)*
+*Defined in [format/index.ts:7](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/format/index.ts#L7)*

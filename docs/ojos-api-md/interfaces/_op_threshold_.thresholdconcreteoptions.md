@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/threshold"](../modules/_op_threshold_.md) › [ThresholdConcreteOptions](_op_threshold_.thresholdconcreteoptions.md)
+[ojos](../README.md) › ["op/threshold"](../modules/_op_threshold_.md) › [ThresholdConcreteOptions](_op_threshold_.thresholdconcreteoptions.md)
 
 # Interface: ThresholdConcreteOptions
 
@@ -8,7 +6,7 @@
 
 * **ThresholdConcreteOptions**
 
-  * [ThresholdOptions](_op_threshold_.thresholdoptions.md)
+  ↳ [ThresholdOptions](_op_threshold_.thresholdoptions.md)
 
 ## Index
 
@@ -16,7 +14,7 @@
 
 * [maxval](_op_threshold_.thresholdconcreteoptions.md#maxval)
 * [thresh](_op_threshold_.thresholdconcreteoptions.md#thresh)
-* [type](_op_threshold_.thresholdconcreteoptions.md#type)
+* [thresholdType](_op_threshold_.thresholdconcreteoptions.md#thresholdtype)
 
 ## Properties
 
@@ -24,7 +22,9 @@
 
 • **maxval**: *number*
 
-*Defined in [op/threshold.ts:10](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/threshold.ts#L10)*
+*Defined in [op/threshold.ts:16](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/threshold.ts#L16)*
+
+ maximum value to use with the THRESH_BINARY and THRESH_BINARY_INV thresholding types.
 
 ___
 
@@ -32,12 +32,16 @@ ___
 
 • **thresh**: *number*
 
-*Defined in [op/threshold.ts:9](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/threshold.ts#L9)*
+*Defined in [op/threshold.ts:12](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/threshold.ts#L12)*
+
+threshold value
 
 ___
 
-###  type
+###  thresholdType
 
-• **type**: *ThresholdTypes*
+• **thresholdType**: *ThresholdTypes*
 
-*Defined in [op/threshold.ts:11](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/threshold.ts#L11)*
+*Defined in [op/threshold.ts:20](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/threshold.ts#L20)*
+
+thresholding type (see ThresholdTypes).

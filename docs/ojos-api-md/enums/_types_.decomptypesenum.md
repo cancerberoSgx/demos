@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["types"](../modules/_types_.md) › [DecompTypesEnum](_types_.decomptypesenum.md)
+[ojos](../README.md) › ["types"](../modules/_types_.md) › [DecompTypesEnum](_types_.decomptypesenum.md)
 
 # Enumeration: DecompTypesEnum
 
@@ -21,7 +19,7 @@
 
 • **DECOMP_CHOLESKY**: = "DECOMP_CHOLESKY"
 
-*Defined in [types.ts:42](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L42)*
+*Defined in [types.ts:62](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/types.ts#L62)*
 
 ___
 
@@ -29,7 +27,7 @@ ___
 
 • **DECOMP_EIG**: = "DECOMP_EIG"
 
-*Defined in [types.ts:41](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L41)*
+*Defined in [types.ts:61](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/types.ts#L61)*
 
 ___
 
@@ -37,7 +35,7 @@ ___
 
 • **DECOMP_LU**: = "DECOMP_LU"
 
-*Defined in [types.ts:39](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L39)*
+*Defined in [types.ts:59](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/types.ts#L59)*
 
 ___
 
@@ -45,7 +43,7 @@ ___
 
 • **DECOMP_NORMAL**: = "DECOMP_NORMAL"
 
-*Defined in [types.ts:44](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L44)*
+*Defined in [types.ts:64](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/types.ts#L64)*
 
 ___
 
@@ -53,7 +51,7 @@ ___
 
 • **DECOMP_QR**: = "DECOMP_QR"
 
-*Defined in [types.ts:43](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L43)*
+*Defined in [types.ts:63](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/types.ts#L63)*
 
 ___
 
@@ -61,4 +59,4 @@ ___
 
 • **DECOMP_SVD**: = "DECOMP_SVD"
 
-*Defined in [types.ts:40](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L40)*
+*Defined in [types.ts:60](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/types.ts#L60)*

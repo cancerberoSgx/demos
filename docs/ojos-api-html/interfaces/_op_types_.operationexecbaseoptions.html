@@ -91,10 +91,25 @@
 								<a href="_op_canny_.cannyoptions.html" class="tsd-signature-type">CannyOptions</a>
 							</li>
 							<li>
+								<a href="_op_cartoonize_.cartoonizeoptions.html" class="tsd-signature-type">CartoonizeOptions</a>
+							</li>
+							<li>
+								<a href="_op_circle_.circleoptions.html" class="tsd-signature-type">CircleOptions</a>
+							</li>
+							<li>
 								<a href="_op_convertto_.converttooptions.html" class="tsd-signature-type">ConvertToOptions</a>
 							</li>
 							<li>
+								<a href="_op_cvtcolor_.cvtcoloroptions.html" class="tsd-signature-type">CvtColorOptions</a>
+							</li>
+							<li>
 								<a href="_op_edge_.edgeoptions.html" class="tsd-signature-type">EdgeOptions</a>
+							</li>
+							<li>
+								<a href="_op_ellipse_.ellipseoptions.html" class="tsd-signature-type">EllipseOptions</a>
+							</li>
+							<li>
+								<a href="_op_filter2d_.filter2doptions.html" class="tsd-signature-type">Filter2DOptions</a>
 							</li>
 							<li>
 								<a href="_op_floodfill_.floodfilloptions.html" class="tsd-signature-type">FloodFillOptions</a>
@@ -104,6 +119,15 @@
 							</li>
 							<li>
 								<a href="_op_histequalization_.histequalizationoptions.html" class="tsd-signature-type">HistEqualizationOptions</a>
+							</li>
+							<li>
+								<a href="_op_houghlinesp_.houghlinespoptions.html" class="tsd-signature-type">HoughLinesPOptions</a>
+							</li>
+							<li>
+								<a href="_op_inrange_.inrangeoptions.html" class="tsd-signature-type">InRangeOptions</a>
+							</li>
+							<li>
+								<a href="_op_line_.lineoptions.html" class="tsd-signature-type">LineOptions</a>
 							</li>
 							<li>
 								<a href="_op_math_.mathoptions.html" class="tsd-signature-type">MathOptions</a>
@@ -118,13 +142,31 @@
 								<a href="_op_morphologyex_.morphologyexoptions.html" class="tsd-signature-type">MorphologyExOptions</a>
 							</li>
 							<li>
+								<a href="_op_pyr_.pyroptions.html" class="tsd-signature-type">PyrOptions</a>
+							</li>
+							<li>
+								<a href="_op_rectangle_.rectangleoptions.html" class="tsd-signature-type">RectangleOptions</a>
+							</li>
+							<li>
 								<a href="_op_replacecolor_.replacecoloroptions.html" class="tsd-signature-type">ReplaceColorOptions</a>
+							</li>
+							<li>
+								<a href="_op_roi_.roioptions.html" class="tsd-signature-type">RoiOptions</a>
 							</li>
 							<li>
 								<a href="_op_threshold_.thresholdoptions.html" class="tsd-signature-type">ThresholdOptions</a>
 							</li>
 							<li>
+								<a href="_op_torgba_.torgbaoptions.html" class="tsd-signature-type">ToRgbaOptions</a>
+							</li>
+							<li>
+								<a href="_op_warpaffine_.warpaffineoptions.html" class="tsd-signature-type">WarpAffineOptions</a>
+							</li>
+							<li>
 								<a href="_op_warpperspective_.warpperspectiveoptions.html" class="tsd-signature-type">WarpPerspectiveOptions</a>
+							</li>
+							<li>
+								<a href="_op_wave_.waveoptions.html" class="tsd-signature-type">WaveOptions</a>
 							</li>
 						</ul>
 					</li>
@@ -152,9 +194,14 @@
 					<div class="tsd-signature tsd-kind-icon">dst<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Mat</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L27">op/types.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L50">op/types.ts:50</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Output image. If not given it will be created. Note that you can give [src] as output image in which case the input image will be written.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
 					<a name="src" class="tsd-anchor"></a>
@@ -162,9 +209,14 @@
 					<div class="tsd-signature tsd-kind-icon">src<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Mat</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L26">op/types.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L46">op/types.ts:46</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Input image.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -183,6 +235,9 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-external">
 						<a href="_op_types_.imageoperation.html" class="tsd-kind-icon">Image<wbr>Operation</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="_op_types_.linesegment.html" class="tsd-kind-icon">Line<wbr>Segment</a>
 					</li>
 				</ul>
 				<ul class="current">
@@ -206,10 +261,40 @@
 						<a href="_op_types_.withbordervalue.html" class="tsd-kind-icon">With<wbr>Border<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="_op_types_.withcenter.html" class="tsd-kind-icon">With<wbr>Center</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
 						<a href="_op_types_.withchannels.html" class="tsd-kind-icon">With<wbr>Channels</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="_op_types_.withcolor.html" class="tsd-kind-icon">With<wbr>Color</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="_op_types_.withddepth.html" class="tsd-kind-icon">WithDDepth</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
 						<a href="_op_types_.withksize.html" class="tsd-kind-icon">WithKSize</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="_op_types_.withkernel.html" class="tsd-kind-icon">With<wbr>Kernel</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="_op_types_.withkernelanchor.html" class="tsd-kind-icon">With<wbr>Kernel<wbr>Anchor</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="_op_types_.withlinetype.html" class="tsd-kind-icon">With<wbr>Line<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="_op_types_.withshift.html" class="tsd-kind-icon">With<wbr>Shift</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="_op_types_.withsize.html" class="tsd-kind-icon">With<wbr>Size</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="_op_types_.withthickness.html" class="tsd-kind-icon">With<wbr>Thickness</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-external">
+						<a href="../modules/_op_types_.html#operationexecparams" class="tsd-kind-icon">Operation<wbr>Exec<wbr>Params</a>
 					</li>
 				</ul>
 			</nav>

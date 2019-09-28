@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/math"](_op_math_.md)
+[ojos](../README.md) › ["op/math"](_op_math_.md)
 
 # External module: "op/math"
 

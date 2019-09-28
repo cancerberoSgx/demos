@@ -22,7 +22,7 @@
 
 ▸ **arrayBufferToBase64**(`buffer`: ArrayBuffer): *string*
 
-*Defined in [util/base64.ts:30](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/base64.ts#L30)*
+*Defined in [util/base64.ts:32](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/base64.ts#L32)*
 
 **Parameters:**
 
@@ -38,7 +38,7 @@ ___
 
 ▸ **arrayBufferToString**(`buffer`: ArrayBuffer): *string*
 
-*Defined in [util/base64.ts:39](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/base64.ts#L39)*
+*Defined in [util/base64.ts:41](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/base64.ts#L41)*
 
 **Parameters:**
 
@@ -54,7 +54,7 @@ ___
 
 ▸ **arrayBufferToUrl**(`buffer`: ArrayBuffer, `mime`: string, `name?`: undefined | string): *string*
 
-*Defined in [util/base64.ts:34](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/base64.ts#L34)*
+*Defined in [util/base64.ts:36](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/base64.ts#L36)*
 
 **Parameters:**
 
@@ -72,7 +72,7 @@ ___
 
 ▸ **base64ToUrl**(`base64`: string, `mimeType`: string, `fileName?`: undefined | string): *string*
 
-*Defined in [util/base64.ts:12](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/base64.ts#L12)*
+*Defined in [util/base64.ts:14](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/base64.ts#L14)*
 
 Creates a DataUrl like `data:image/jpeg;name=hindenburg.jpg;base64,` using given base64 content, mimeType and fileName.
 
@@ -92,7 +92,7 @@ ___
 
 ▸ **dataToBase64**(`data`: string): *string*
 
-*Defined in [util/base64.ts:5](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/base64.ts#L5)*
+*Defined in [util/base64.ts:7](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/base64.ts#L7)*
 
 **Parameters:**
 
@@ -108,7 +108,7 @@ ___
 
 ▸ **dataToUrl**(`data`: string, `mimeType`: string, `fileName?`: undefined | string): *string*
 
-*Defined in [util/base64.ts:1](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/base64.ts#L1)*
+*Defined in [util/base64.ts:3](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/base64.ts#L3)*
 
 **Parameters:**
 
@@ -126,7 +126,7 @@ ___
 
 ▸ **getDataUrlFileName**(`url`: string): *string*
 
-*Defined in [util/base64.ts:23](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/base64.ts#L23)*
+*Defined in [util/base64.ts:25](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/base64.ts#L25)*
 
 Extracts the name of a data url like `data:image/jpeg;name=hindenburg.jpg;base64,`..., if any.
 
@@ -144,7 +144,7 @@ ___
 
 ▸ **urlToBase64**(`s`: string): *string*
 
-*Defined in [util/base64.ts:16](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/base64.ts#L16)*
+*Defined in [util/base64.ts:18](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/base64.ts#L18)*
 
 **Parameters:**
 

@@ -1,18 +1,14 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/canny"](../modules/_op_canny_.md) › [CannyConcreteOptions](_op_canny_.cannyconcreteoptions.md)
+[ojos](../README.md) › ["op/canny"](../modules/_op_canny_.md) › [CannyConcreteOptions](_op_canny_.cannyconcreteoptions.md)
 
 # Interface: CannyConcreteOptions
-
-The function finds edges in the input image and marks them in the output map edges using the Canny algorithm. The smallest value between threshold1 and threshold2 is used for edge linking. The largest value is used to find initial segments of strong edges.
 
 ## Hierarchy
 
 * [WithChannels](_op_types_.withchannels.md)
 
-  * **CannyConcreteOptions**
+  ↳ **CannyConcreteOptions**
 
-  * [CannyOptions](_op_canny_.cannyoptions.md)
+  ↳ [CannyOptions](_op_canny_.cannyoptions.md)
 
 ## Index
 
@@ -30,7 +26,7 @@ The function finds edges in the input image and marks them in the output map edg
 
 • **L2gradient**? : *undefined | false | true*
 
-*Defined in [op/canny.ts:25](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/canny.ts#L25)*
+*Defined in [op/canny.ts:23](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/canny.ts#L23)*
 
 if true a more accurate L2 norm will be used to calculate the image gradient magnitude
 
@@ -40,7 +36,7 @@ ___
 
 • **apertureSize**? : *undefined | number*
 
-*Defined in [op/canny.ts:21](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/canny.ts#L21)*
+*Defined in [op/canny.ts:19](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/canny.ts#L19)*
 
 aperture size for the Sobel operator.
 
@@ -52,9 +48,12 @@ ___
 
 *Inherited from [WithChannels](_op_types_.withchannels.md).[channels](_op_types_.withchannels.md#optional-channels)*
 
-*Defined in [op/types.ts:52](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L52)*
+*Defined in [op/types.ts:109](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L109)*
 
-If true then all channels will be processed independently and then joined to build the result. The only exception is when there are 4 channels and in this case, if channels===true, the last 4th channel will be omitted (alpha). If an array of numbers is given then those channels will be processed only. If not given then the operation will behave normally, processing as single channle image.
+If true then all channels will be processed independently and then joined to build the result. The only
+exception is when there are 4 channels and in this case, if channels===true, the last 4th channel will be
+omitted (alpha). If an array of numbers is given then those channels will be processed only. If not given
+then the operation will behave normally, processing as single channel image.
 
 ___
 
@@ -62,7 +61,7 @@ ___
 
 • **threshold1**? : *undefined | number*
 
-*Defined in [op/canny.ts:13](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/canny.ts#L13)*
+*Defined in [op/canny.ts:11](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/canny.ts#L11)*
 
 first threshold for the hysteresis procedure.
 
@@ -72,6 +71,6 @@ ___
 
 • **threshold2**? : *undefined | number*
 
-*Defined in [op/canny.ts:17](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/canny.ts#L17)*
+*Defined in [op/canny.ts:15](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/canny.ts#L15)*
 
 Observation: When this has low values flood pass through edges of color similar to the low channel

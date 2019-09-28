@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/types"](../modules/_op_types_.md) › [WithKSize](_op_types_.withksize.md)
+[ojos](../README.md) › ["op/types"](../modules/_op_types_.md) › [WithKSize](_op_types_.withksize.md)
 
 # Interface: WithKSize
 
@@ -8,9 +6,13 @@
 
 * **WithKSize**
 
-  * [BoxFilterConcreteOptions](_op_boxfilter_.boxfilterconcreteoptions.md)
+  ↳ [BoxFilterConcreteOptions](_op_boxfilter_.boxfilterconcreteoptions.md)
 
-  * [GaussianBlurConcreteOptions](_op_gaussianblur_.gaussianblurconcreteoptions.md)
+  ↳ [EdgeConcreteOptions](_op_edge_.edgeconcreteoptions.md)
+
+  ↳ [GaussianBlurConcreteOptions](_op_gaussianblur_.gaussianblurconcreteoptions.md)
+
+  ↳ [MedianBlurConcreteOptions](_op_medianblur_.medianblurconcreteoptions.md)
 
 ## Index
 
@@ -22,8 +24,8 @@
 
 ###  ksize
 
-• **ksize**: *Size*
+• **ksize**: *[SizeRepresentation](../modules/_util_util_.md#sizerepresentation)*
 
-*Defined in [op/types.ts:45](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L45)*
+*Defined in [op/types.ts:78](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L78)*
 
-blurring kernel size. In general only odd numbers greater than 2 are accepted
+Transformation (blurring) kernel size. In general only odd numbers greater than 2 are accepted.

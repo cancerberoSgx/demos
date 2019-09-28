@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/convertTo"](_op_convertto_.md)
+[ojos](../README.md) › ["op/convertTo"](_op_convertto_.md)
 
 # External module: "op/convertTo"
 

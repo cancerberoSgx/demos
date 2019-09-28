@@ -74,6 +74,9 @@
 				<ul class="tsd-hierarchy">
 					<li>
 						<a href="_op_types_.withchannels.html" class="tsd-signature-type">WithChannels</a>
+					</li>
+					<li>
+						<span class="tsd-signature-type">object</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">HistEqualizationConcreteOptions</span>
@@ -96,8 +99,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="_op_histequalization_.histequalizationconcreteoptions.html#channels" class="tsd-kind-icon">channels</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_op_histequalization_.histequalizationconcreteoptions.html#cliplimit" class="tsd-kind-icon">clip<wbr>Limit</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_op_histequalization_.histequalizationconcreteoptions.html#mode" class="tsd-kind-icon">mode</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_op_histequalization_.histequalizationconcreteoptions.html#tilegridsize" class="tsd-kind-icon">tile<wbr>Grid<wbr>Size</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_op_histequalization_.histequalizationconcreteoptions.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -112,12 +114,15 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_op_types_.withchannels.html">WithChannels</a>.<a href="_op_types_.withchannels.html#channels">channels</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L52">op/types.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L109">op/types.ts:109</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>If true then all channels will be processed independently and then joined to build the result. The only exception is when there are 4 channels and in this case, if channels===true, the last 4th channel will be omitted (alpha). If an array of numbers is given then those channels will be processed only. If not given then the operation will behave normally, processing as single channle image.</p>
+							<p>If true then all channels will be processed independently and then joined to build the result. The only
+								exception is when there are 4 channels and in this case, if channels===true, the last 4th channel will be
+								omitted (alpha). If an array of numbers is given then those channels will be processed only. If not given
+							then the operation will behave normally, processing as single channel image.</p>
 						</div>
 					</div>
 				</section>
@@ -127,39 +132,24 @@
 					<div class="tsd-signature tsd-kind-icon">clip<wbr>Limit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/histEqualization.ts#L13">op/histEqualization.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/histEqualization.ts#L13">op/histEqualization.ts:13</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Applies only when [mode] is &#39;CLAHE&#39;</p>
+							<p>Applies only when [mode] is <code>CLAHE</code></p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="mode" class="tsd-anchor"></a>
-					<h3>mode</h3>
-					<div class="tsd-signature tsd-kind-icon">mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"equalizeHist"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"CLAHE"</span></div>
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"equalizeHist"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"CLAHE"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/histEqualization.ts#L9">op/histEqualization.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/histEqualization.ts#L9">op/histEqualization.ts:9</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="tilegridsize" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> tile<wbr>Grid<wbr>Size</h3>
-					<div class="tsd-signature tsd-kind-icon">tile<wbr>Grid<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Size</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/histEqualization.ts#L17">op/histEqualization.ts:17</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Applies only when [mode] is &#39;CLAHE&#39;</p>
-						</div>
-					</div>
 				</section>
 			</section>
 		</div>
@@ -191,10 +181,7 @@
 								<a href="_op_histequalization_.histequalizationconcreteoptions.html#cliplimit" class="tsd-kind-icon">clip<wbr>Limit</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="_op_histequalization_.histequalizationconcreteoptions.html#mode" class="tsd-kind-icon">mode</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="_op_histequalization_.histequalizationconcreteoptions.html#tilegridsize" class="tsd-kind-icon">tile<wbr>Grid<wbr>Size</a>
+								<a href="_op_histequalization_.histequalizationconcreteoptions.html#type" class="tsd-kind-icon">type</a>
 							</li>
 						</ul>
 					</li>

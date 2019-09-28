@@ -25,7 +25,7 @@
 
 • **AUTO_STEP**: *any*
 
-*Defined in [types/opencv/Mat.ts:1834](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/Mat.ts#L1834)*
+*Defined in [types/opencv/Mat.ts:1689](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/Mat.ts#L1689)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **CONTINUOUS_FLAG**: *any*
 
-*Defined in [types/opencv/Mat.ts:1836](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/Mat.ts#L1836)*
+*Defined in [types/opencv/Mat.ts:1691](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/Mat.ts#L1691)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **DEPTH_MASK**: *any*
 
-*Defined in [types/opencv/Mat.ts:1844](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/Mat.ts#L1844)*
+*Defined in [types/opencv/Mat.ts:1699](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/Mat.ts#L1699)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 • **MAGIC_MASK**: *any*
 
-*Defined in [types/opencv/Mat.ts:1840](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/Mat.ts#L1840)*
+*Defined in [types/opencv/Mat.ts:1695](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/Mat.ts#L1695)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 • **MAGIC_VAL**: *any*
 
-*Defined in [types/opencv/Mat.ts:1832](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/Mat.ts#L1832)*
+*Defined in [types/opencv/Mat.ts:1687](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/Mat.ts#L1687)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 • **SUBMATRIX_FLAG**: *any*
 
-*Defined in [types/opencv/Mat.ts:1838](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/Mat.ts#L1838)*
+*Defined in [types/opencv/Mat.ts:1693](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/Mat.ts#L1693)*
 
 ___
 
@@ -73,4 +73,4 @@ ___
 
 • **TYPE_MASK**: *any*
 
-*Defined in [types/opencv/Mat.ts:1842](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/Mat.ts#L1842)*
+*Defined in [types/opencv/Mat.ts:1697](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/Mat.ts#L1697)*

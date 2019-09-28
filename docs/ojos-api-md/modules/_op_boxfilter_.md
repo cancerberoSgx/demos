@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/boxFilter"](_op_boxfilter_.md)
+[ojos](../README.md) › ["op/boxFilter"](_op_boxfilter_.md)
 
 # External module: "op/boxFilter"
 

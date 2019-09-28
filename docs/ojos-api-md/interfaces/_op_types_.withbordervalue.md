@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/types"](../modules/_op_types_.md) › [WithBorderValue](_op_types_.withbordervalue.md)
+[ojos](../README.md) › ["op/types"](../modules/_op_types_.md) › [WithBorderValue](_op_types_.withbordervalue.md)
 
 # Interface: WithBorderValue
 
@@ -8,9 +6,11 @@
 
 * **WithBorderValue**
 
-  * [MorphologyExConcreteOptions](_op_morphologyex_.morphologyexconcreteoptions.md)
+  ↳ [MorphologyExConcreteOptions](_op_morphologyex_.morphologyexconcreteoptions.md)
 
-  * [WarpPerspectiveOptions](_op_warpperspective_.warpperspectiveoptions.md)
+  ↳ [WarpAffineOptions](_op_warpaffine_.warpaffineoptions.md)
+
+  ↳ [WarpPerspectiveOptions](_op_warpperspective_.warpperspectiveoptions.md)
 
 ## Index
 
@@ -24,4 +24,6 @@
 
 • **borderValue**? : *Scalar*
 
-*Defined in [op/types.ts:38](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L38)*
+*Defined in [op/types.ts:64](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L64)*
+
+The color of the border.

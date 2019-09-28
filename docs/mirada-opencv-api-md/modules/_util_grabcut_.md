@@ -20,7 +20,7 @@
 
 ▸ **grabCut_obsolete**(`o`: [GrabCutObsoleteOptions](../interfaces/_util_grabcut_.grabcutobsoleteoptions.md)): *Promise‹[GrabCutOsoleteResult](../interfaces/_util_grabcut_.grabcutosoleteresult.md)›*
 
-*Defined in [util/grabCut.ts:9](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/grabCut.ts#L9)*
+*Defined in [util/grabCut.ts:9](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/grabCut.ts#L9)*
 
 **`deprecated`** 
 Will be removed

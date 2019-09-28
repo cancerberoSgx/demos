@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/floodFill"](_op_floodfill_.md)
+[ojos](../README.md) › ["op/floodFill"](_op_floodfill_.md)
 
 # External module: "op/floodFill"
 
@@ -24,4 +22,4 @@
 
 Ƭ **FloodFillPreprocess**: *object & [CannyConcreteOptions](../interfaces/_op_canny_.cannyconcreteoptions.md) | object & [MedianBlurConcreteOptions](../interfaces/_op_medianblur_.medianblurconcreteoptions.md)*
 
-*Defined in [op/floodFill.ts:15](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/floodFill.ts#L15)*
+*Defined in [op/floodFill.ts:16](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/floodFill.ts#L16)*

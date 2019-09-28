@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/replaceColor"](_op_replacecolor_.md)
+[ojos](../README.md) › ["op/replaceColor"](_op_replacecolor_.md)
 
 # External module: "op/replaceColor"
 

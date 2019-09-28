@@ -13,8 +13,8 @@
 
 ### Functions
 
-* [finishSetup](_opencvready_.md#finishsetup)
 * [getFS](_opencvready_.md#getfs)
+* [loadFormatCodecs](_opencvready_.md#loadformatcodecs)
 * [loadOpencv](_opencvready_.md#loadopencv)
 * [loadOpencvBrowser](_opencvready_.md#loadopencvbrowser)
 * [loadOpencvNode](_opencvready_.md#loadopencvnode)
@@ -25,7 +25,7 @@
 
 • **FS_**: *[FS](../interfaces/_types_emscripten_.fs.md) | undefined*
 
-*Defined in [opencvReady.ts:10](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/opencvReady.ts#L10)*
+*Defined in [opencvReady.ts:10](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/opencvReady.ts#L10)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **FS_ROOT**: *"/work"* = "/work"
 
-*Defined in [opencvReady.ts:8](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/opencvReady.ts#L8)*
+*Defined in [opencvReady.ts:8](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/opencvReady.ts#L8)*
 
 ___
 
@@ -41,15 +41,27 @@ ___
 
 • **opencvLoaded**: *boolean* = false
 
-*Defined in [opencvReady.ts:46](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/opencvReady.ts#L46)*
+*Defined in [opencvReady.ts:19](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/opencvReady.ts#L19)*
 
 ## Functions
 
-###  finishSetup
+###  getFS
 
-▸ **finishSetup**(`o`: [LoadOptions](../interfaces/_types_mirada_.loadoptions.md)): *Promise‹void›*
+▸ **getFS**(): *[FS](../interfaces/_types_emscripten_.fs.md)*
 
-*Defined in [opencvReady.ts:85](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/opencvReady.ts#L85)*
+*Defined in [opencvReady.ts:15](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/opencvReady.ts#L15)*
+
+gets the emscripten FS API
+
+**Returns:** *[FS](../interfaces/_types_emscripten_.fs.md)*
+
+___
+
+###  loadFormatCodecs
+
+▸ **loadFormatCodecs**(`o`: [LoadOptions](../interfaces/_types_mirada_.loadoptions.md)): *Promise‹void›*
+
+*Defined in [opencvReady.ts:57](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/opencvReady.ts#L57)*
 
 **Parameters:**
 
@@ -61,23 +73,11 @@ Name | Type |
 
 ___
 
-###  getFS
-
-▸ **getFS**(): *[FS](../interfaces/_types_emscripten_.fs.md)*
-
-*Defined in [opencvReady.ts:15](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/opencvReady.ts#L15)*
-
-gets the emscripten FS API
-
-**Returns:** *[FS](../interfaces/_types_emscripten_.fs.md)*
-
-___
-
 ###  loadOpencv
 
-▸ **loadOpencv**(`options`: [LoadOptions](../interfaces/_types_mirada_.loadoptions.md)): *Promise‹void› | Promise‹[FS](../interfaces/_types_emscripten_.fs.md)›*
+▸ **loadOpencv**(`options`: [LoadOptions](../interfaces/_types_mirada_.loadoptions.md)): *Promise‹void›*
 
-*Defined in [opencvReady.ts:29](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/opencvReady.ts#L29)*
+*Defined in [opencvReady.ts:31](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/opencvReady.ts#L31)*
 
 Loads opencv.js file. It will do it only once no matter if called multiple times.
 In the browser a new script element is created to load the file while in Node.js
@@ -94,7 +94,7 @@ Name | Type | Default |
 ------ | ------ | ------ |
 `options` | [LoadOptions](../interfaces/_types_mirada_.loadoptions.md) |  {} |
 
-**Returns:** *Promise‹void› | Promise‹[FS](../interfaces/_types_emscripten_.fs.md)›*
+**Returns:** *Promise‹void›*
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 ▸ **loadOpencvBrowser**(`o`: [LoadOptions](../interfaces/_types_mirada_.loadoptions.md)): *Promise‹[FS](../interfaces/_types_emscripten_.fs.md)›*
 
-*Defined in [opencvReady.ts:94](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/opencvReady.ts#L94)*
+*Defined in [opencvReady.ts:101](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/opencvReady.ts#L101)*
 
 **Parameters:**
 
@@ -118,7 +118,7 @@ ___
 
 ▸ **loadOpencvNode**(`o`: [LoadOptions](../interfaces/_types_mirada_.loadoptions.md)): *Promise‹[FS](../interfaces/_types_emscripten_.fs.md)›*
 
-*Defined in [opencvReady.ts:48](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/opencvReady.ts#L48)*
+*Defined in [opencvReady.ts:64](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/opencvReady.ts#L64)*
 
 **Parameters:**
 

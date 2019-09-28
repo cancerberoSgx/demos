@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/canny"](_op_canny_.md)
+[ojos](../README.md) › ["op/canny"](_op_canny_.md)
 
 # External module: "op/canny"
 

@@ -1,6 +1,4 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["types"](../modules/_types_.md) › [MorphTypesEnum](_types_.morphtypesenum.md)
+[ojos](../README.md) › ["types"](../modules/_types_.md) › [MorphTypesEnum](_types_.morphtypesenum.md)
 
 # Enumeration: MorphTypesEnum
 
@@ -22,7 +20,7 @@
 
 • **MORPH_BLACKHAT**: = "MORPH_BLACKHAT"
 
-*Defined in [types.ts:35](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L35)*
+*Defined in [types.ts:48](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/types.ts#L48)*
 
 ___
 
@@ -30,7 +28,7 @@ ___
 
 • **MORPH_CLOSE**: = "MORPH_CLOSE"
 
-*Defined in [types.ts:32](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L32)*
+*Defined in [types.ts:45](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/types.ts#L45)*
 
 ___
 
@@ -38,7 +36,7 @@ ___
 
 • **MORPH_DILATE**: = "MORPH_DILATE"
 
-*Defined in [types.ts:30](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L30)*
+*Defined in [types.ts:43](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/types.ts#L43)*
 
 ___
 
@@ -46,7 +44,7 @@ ___
 
 • **MORPH_ERODE**: = "MORPH_ERODE"
 
-*Defined in [types.ts:29](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L29)*
+*Defined in [types.ts:42](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/types.ts#L42)*
 
 ___
 
@@ -54,7 +52,7 @@ ___
 
 • **MORPH_GRADIENT**: = "MORPH_GRADIENT"
 
-*Defined in [types.ts:33](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L33)*
+*Defined in [types.ts:46](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/types.ts#L46)*
 
 ___
 
@@ -62,7 +60,7 @@ ___
 
 • **MORPH_OPEN**: = "MORPH_OPEN"
 
-*Defined in [types.ts:31](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L31)*
+*Defined in [types.ts:44](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/types.ts#L44)*
 
 ___
 
@@ -70,4 +68,4 @@ ___
 
 • **MORPH_TOPHAT**: = "MORPH_TOPHAT"
 
-*Defined in [types.ts:34](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/types.ts#L34)*
+*Defined in [types.ts:47](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/types.ts#L47)*

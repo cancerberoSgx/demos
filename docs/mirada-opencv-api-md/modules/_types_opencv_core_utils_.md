@@ -117,7 +117,7 @@
 
 Ƭ **CpuFeatures**: *any*
 
-*Defined in [types/opencv/core_utils.ts:643](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L643)*
+*Defined in [types/opencv/core_utils.ts:643](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L643)*
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 Ƭ **SortFlags**: *any*
 
-*Defined in [types/opencv/core_utils.ts:645](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L645)*
+*Defined in [types/opencv/core_utils.ts:645](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L645)*
 
 ## Variables
 
@@ -133,7 +133,7 @@ ___
 
 • **CPU_AVX**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:562](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L562)*
+*Defined in [types/opencv/core_utils.ts:562](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L562)*
 
 ___
 
@@ -141,7 +141,7 @@ ___
 
 • **CPU_AVX2**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:564](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L564)*
+*Defined in [types/opencv/core_utils.ts:564](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L564)*
 
 ___
 
@@ -149,7 +149,7 @@ ___
 
 • **CPU_AVX512_CEL**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:616](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L616)*
+*Defined in [types/opencv/core_utils.ts:616](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L616)*
 
 ___
 
@@ -157,7 +157,7 @@ ___
 
 • **CPU_AVX512_CNL**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:614](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L614)*
+*Defined in [types/opencv/core_utils.ts:614](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L614)*
 
 ___
 
@@ -165,7 +165,7 @@ ___
 
 • **CPU_AVX512_COMMON**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:608](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L608)*
+*Defined in [types/opencv/core_utils.ts:608](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L608)*
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 • **CPU_AVX512_ICL**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:618](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L618)*
+*Defined in [types/opencv/core_utils.ts:618](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L618)*
 
 ___
 
@@ -181,7 +181,7 @@ ___
 
 • **CPU_AVX512_KNL**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:610](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L610)*
+*Defined in [types/opencv/core_utils.ts:610](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L610)*
 
 ___
 
@@ -189,7 +189,7 @@ ___
 
 • **CPU_AVX512_KNM**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:612](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L612)*
+*Defined in [types/opencv/core_utils.ts:612](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L612)*
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 • **CPU_AVX512_SKX**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:606](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L606)*
+*Defined in [types/opencv/core_utils.ts:606](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L606)*
 
 ___
 
@@ -205,7 +205,7 @@ ___
 
 • **CPU_AVX_5124FMAPS**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:598](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L598)*
+*Defined in [types/opencv/core_utils.ts:598](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L598)*
 
 ___
 
@@ -213,7 +213,7 @@ ___
 
 • **CPU_AVX_5124VNNIW**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:596](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L596)*
+*Defined in [types/opencv/core_utils.ts:596](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L596)*
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 • **CPU_AVX_512BITALG**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:592](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L592)*
+*Defined in [types/opencv/core_utils.ts:592](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L592)*
 
 ___
 
@@ -229,7 +229,7 @@ ___
 
 • **CPU_AVX_512BW**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:570](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L570)*
+*Defined in [types/opencv/core_utils.ts:570](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L570)*
 
 ___
 
@@ -237,7 +237,7 @@ ___
 
 • **CPU_AVX_512CD**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:572](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L572)*
+*Defined in [types/opencv/core_utils.ts:572](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L572)*
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 • **CPU_AVX_512DQ**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:574](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L574)*
+*Defined in [types/opencv/core_utils.ts:574](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L574)*
 
 ___
 
@@ -253,7 +253,7 @@ ___
 
 • **CPU_AVX_512ER**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:576](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L576)*
+*Defined in [types/opencv/core_utils.ts:576](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L576)*
 
 ___
 
@@ -261,7 +261,7 @@ ___
 
 • **CPU_AVX_512F**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:568](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L568)*
+*Defined in [types/opencv/core_utils.ts:568](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L568)*
 
 ___
 
@@ -269,7 +269,7 @@ ___
 
 • **CPU_AVX_512IFMA**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:580](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L580)*
+*Defined in [types/opencv/core_utils.ts:580](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L580)*
 
 ___
 
@@ -277,7 +277,7 @@ ___
 
 • **CPU_AVX_512IFMA512**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:578](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L578)*
+*Defined in [types/opencv/core_utils.ts:578](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L578)*
 
 ___
 
@@ -285,7 +285,7 @@ ___
 
 • **CPU_AVX_512PF**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:582](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L582)*
+*Defined in [types/opencv/core_utils.ts:582](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L582)*
 
 ___
 
@@ -293,7 +293,7 @@ ___
 
 • **CPU_AVX_512VBMI**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:584](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L584)*
+*Defined in [types/opencv/core_utils.ts:584](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L584)*
 
 ___
 
@@ -301,7 +301,7 @@ ___
 
 • **CPU_AVX_512VBMI2**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:588](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L588)*
+*Defined in [types/opencv/core_utils.ts:588](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L588)*
 
 ___
 
@@ -309,7 +309,7 @@ ___
 
 • **CPU_AVX_512VL**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:586](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L586)*
+*Defined in [types/opencv/core_utils.ts:586](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L586)*
 
 ___
 
@@ -317,7 +317,7 @@ ___
 
 • **CPU_AVX_512VNNI**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:590](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L590)*
+*Defined in [types/opencv/core_utils.ts:590](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L590)*
 
 ___
 
@@ -325,7 +325,7 @@ ___
 
 • **CPU_AVX_512VPOPCNTDQ**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:594](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L594)*
+*Defined in [types/opencv/core_utils.ts:594](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L594)*
 
 ___
 
@@ -333,7 +333,7 @@ ___
 
 • **CPU_FMA3**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:566](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L566)*
+*Defined in [types/opencv/core_utils.ts:566](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L566)*
 
 ___
 
@@ -341,7 +341,7 @@ ___
 
 • **CPU_FP16**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:560](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L560)*
+*Defined in [types/opencv/core_utils.ts:560](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L560)*
 
 ___
 
@@ -349,7 +349,7 @@ ___
 
 • **CPU_MAX_FEATURE**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:620](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L620)*
+*Defined in [types/opencv/core_utils.ts:620](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L620)*
 
 ___
 
@@ -357,7 +357,7 @@ ___
 
 • **CPU_MMX**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:544](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L544)*
+*Defined in [types/opencv/core_utils.ts:544](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L544)*
 
 ___
 
@@ -365,7 +365,7 @@ ___
 
 • **CPU_NEON**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:600](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L600)*
+*Defined in [types/opencv/core_utils.ts:600](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L600)*
 
 ___
 
@@ -373,7 +373,7 @@ ___
 
 • **CPU_POPCNT**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:558](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L558)*
+*Defined in [types/opencv/core_utils.ts:558](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L558)*
 
 ___
 
@@ -381,7 +381,7 @@ ___
 
 • **CPU_SSE**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:546](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L546)*
+*Defined in [types/opencv/core_utils.ts:546](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L546)*
 
 ___
 
@@ -389,7 +389,7 @@ ___
 
 • **CPU_SSE2**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:548](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L548)*
+*Defined in [types/opencv/core_utils.ts:548](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L548)*
 
 ___
 
@@ -397,7 +397,7 @@ ___
 
 • **CPU_SSE3**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:550](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L550)*
+*Defined in [types/opencv/core_utils.ts:550](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L550)*
 
 ___
 
@@ -405,7 +405,7 @@ ___
 
 • **CPU_SSE4_1**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:554](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L554)*
+*Defined in [types/opencv/core_utils.ts:554](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L554)*
 
 ___
 
@@ -413,7 +413,7 @@ ___
 
 • **CPU_SSE4_2**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:556](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L556)*
+*Defined in [types/opencv/core_utils.ts:556](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L556)*
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 • **CPU_SSSE3**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:552](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L552)*
+*Defined in [types/opencv/core_utils.ts:552](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L552)*
 
 ___
 
@@ -429,7 +429,7 @@ ___
 
 • **CPU_VSX**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:602](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L602)*
+*Defined in [types/opencv/core_utils.ts:602](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L602)*
 
 ___
 
@@ -437,7 +437,7 @@ ___
 
 • **CPU_VSX3**: *[CpuFeatures](_types_opencv_core_utils_.md#cpufeatures)*
 
-*Defined in [types/opencv/core_utils.ts:604](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L604)*
+*Defined in [types/opencv/core_utils.ts:604](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L604)*
 
 ___
 
@@ -445,7 +445,7 @@ ___
 
 • **SORT_ASCENDING**: *[SortFlags](_types_opencv_core_utils_.md#sortflags)*
 
-*Defined in [types/opencv/core_utils.ts:634](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L634)*
+*Defined in [types/opencv/core_utils.ts:634](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L634)*
 
 each matrix row is sorted in the ascending order.
 
@@ -455,7 +455,7 @@ ___
 
 • **SORT_DESCENDING**: *[SortFlags](_types_opencv_core_utils_.md#sortflags)*
 
-*Defined in [types/opencv/core_utils.ts:641](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L641)*
+*Defined in [types/opencv/core_utils.ts:641](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L641)*
 
 each matrix row is sorted in the descending order; this flag and the previous one are also mutually
 exclusive.
@@ -466,7 +466,7 @@ ___
 
 • **SORT_EVERY_COLUMN**: *[SortFlags](_types_opencv_core_utils_.md#sortflags)*
 
-*Defined in [types/opencv/core_utils.ts:628](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L628)*
+*Defined in [types/opencv/core_utils.ts:628](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L628)*
 
 each matrix column is sorted independently; this flag and the previous one are mutually exclusive.
 
@@ -476,7 +476,7 @@ ___
 
 • **SORT_EVERY_ROW**: *[SortFlags](_types_opencv_core_utils_.md#sortflags)*
 
-*Defined in [types/opencv/core_utils.ts:622](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L622)*
+*Defined in [types/opencv/core_utils.ts:622](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L622)*
 
 ## Functions
 
@@ -484,7 +484,7 @@ ___
 
 ▸ **CV_XADD**(`addr`: any, `delta`: [int](_types_opencv__hacks_.md#int)): *any*
 
-*Defined in [types/opencv/core_utils.ts:66](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L66)*
+*Defined in [types/opencv/core_utils.ts:66](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L66)*
 
 **Parameters:**
 
@@ -501,7 +501,7 @@ ___
 
 ▸ **Cholesky**(`A`: any, `astep`: [size_t](_types_opencv__hacks_.md#size_t), `m`: [int](_types_opencv__hacks_.md#int), `b`: any, `bstep`: [size_t](_types_opencv__hacks_.md#size_t), `n`: [int](_types_opencv__hacks_.md#int)): *[bool](_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/core_utils.ts:40](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L40)*
+*Defined in [types/opencv/core_utils.ts:40](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L40)*
 
 proxy for hal::Cholesky
 
@@ -520,7 +520,7 @@ Name | Type |
 
 ▸ **Cholesky**(`A`: any, `astep`: [size_t](_types_opencv__hacks_.md#size_t), `m`: [int](_types_opencv__hacks_.md#int), `b`: any, `bstep`: [size_t](_types_opencv__hacks_.md#size_t), `n`: [int](_types_opencv__hacks_.md#int)): *[bool](_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/core_utils.ts:45](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L45)*
+*Defined in [types/opencv/core_utils.ts:45](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L45)*
 
 proxy for hal::Cholesky
 
@@ -543,7 +543,7 @@ ___
 
 ▸ **LU**(`A`: any, `astep`: [size_t](_types_opencv__hacks_.md#size_t), `m`: [int](_types_opencv__hacks_.md#int), `b`: any, `bstep`: [size_t](_types_opencv__hacks_.md#size_t), `n`: [int](_types_opencv__hacks_.md#int)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:346](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L346)*
+*Defined in [types/opencv/core_utils.ts:346](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L346)*
 
 proxy for hal::LU
 
@@ -562,7 +562,7 @@ Name | Type |
 
 ▸ **LU**(`A`: any, `astep`: [size_t](_types_opencv__hacks_.md#size_t), `m`: [int](_types_opencv__hacks_.md#int), `b`: any, `bstep`: [size_t](_types_opencv__hacks_.md#size_t), `n`: [int](_types_opencv__hacks_.md#int)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:351](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L351)*
+*Defined in [types/opencv/core_utils.ts:351](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L351)*
 
 proxy for hal::LU
 
@@ -585,7 +585,7 @@ ___
 
 ▸ **alignPtr**(`arg92`: any, `ptr`: any, `n?`: [int](_types_opencv__hacks_.md#int)): *any*
 
-*Defined in [types/opencv/core_utils.ts:15](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L15)*
+*Defined in [types/opencv/core_utils.ts:15](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L15)*
 
 The function returns the aligned pointer of the same type as the input pointer:
 `\\[\\texttt{(_Tp*)(((size_t)ptr + n-1) & -n)}\\]`
@@ -606,7 +606,7 @@ ___
 
 ▸ **alignSize**(`sz`: [size_t](_types_opencv__hacks_.md#size_t), `n`: [int](_types_opencv__hacks_.md#int)): *[size_t](_types_opencv__hacks_.md#size_t)*
 
-*Defined in [types/opencv/core_utils.ts:25](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L25)*
+*Defined in [types/opencv/core_utils.ts:25](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L25)*
 
 The function returns the minimum number that is greater than or equal to sz and is divisible by n :
 `\\[\\texttt{(sz + n-1) & -n}\\]`
@@ -626,7 +626,7 @@ ___
 
 ▸ **checkHardwareSupport**(`feature`: [int](_types_opencv__hacks_.md#int)): *[bool](_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/core_utils.ts:35](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L35)*
+*Defined in [types/opencv/core_utils.ts:35](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L35)*
 
 The function returns true if the host hardware supports the specified feature. When user calls
 setUseOptimized(false), the subsequent calls to [checkHardwareSupport()] will return false until
@@ -647,7 +647,7 @@ ___
 
 ▸ **cubeRoot**(`val`: [float](_types_opencv__hacks_.md#float)): *[float](_types_opencv__hacks_.md#float)*
 
-*Defined in [types/opencv/core_utils.ts:54](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L54)*
+*Defined in [types/opencv/core_utils.ts:54](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L54)*
 
 The function cubeRoot computes `$\\sqrt[3]{\\texttt{val}}$`. Negative arguments are handled
 correctly. NaN and Inf are not handled. The accuracy approaches the maximum possible accuracy for
@@ -667,7 +667,7 @@ ___
 
 ▸ **cvCeil**(`value`: [double](_types_opencv__hacks_.md#double)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:74](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L74)*
+*Defined in [types/opencv/core_utils.ts:74](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L74)*
 
 The function computes an integer i such that: `\\[i \\le \\texttt{value} < i+1\\]`
 
@@ -681,7 +681,7 @@ Name | Type | Description |
 
 ▸ **cvCeil**(`value`: [float](_types_opencv__hacks_.md#float)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:80](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L80)*
+*Defined in [types/opencv/core_utils.ts:80](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L80)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -696,7 +696,7 @@ Name | Type |
 
 ▸ **cvCeil**(`value`: [int](_types_opencv__hacks_.md#int)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:86](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L86)*
+*Defined in [types/opencv/core_utils.ts:86](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L86)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -715,7 +715,7 @@ ___
 
 ▸ **cvFloor**(`value`: [double](_types_opencv__hacks_.md#double)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:94](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L94)*
+*Defined in [types/opencv/core_utils.ts:94](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L94)*
 
 The function computes an integer i such that: `\\[i \\le \\texttt{value} < i+1\\]`
 
@@ -729,7 +729,7 @@ Name | Type | Description |
 
 ▸ **cvFloor**(`value`: [float](_types_opencv__hacks_.md#float)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:100](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L100)*
+*Defined in [types/opencv/core_utils.ts:100](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L100)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -744,7 +744,7 @@ Name | Type |
 
 ▸ **cvFloor**(`value`: [int](_types_opencv__hacks_.md#int)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:106](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L106)*
+*Defined in [types/opencv/core_utils.ts:106](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L106)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -763,7 +763,7 @@ ___
 
 ▸ **cvIsInf**(`value`: [double](_types_opencv__hacks_.md#double)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:114](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L114)*
+*Defined in [types/opencv/core_utils.ts:114](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L114)*
 
 The function returns 1 if the argument is a plus or minus infinity (as defined by IEEE754 standard)
 and 0 otherwise.
@@ -778,7 +778,7 @@ Name | Type | Description |
 
 ▸ **cvIsInf**(`value`: [float](_types_opencv__hacks_.md#float)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:120](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L120)*
+*Defined in [types/opencv/core_utils.ts:120](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L120)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -797,7 +797,7 @@ ___
 
 ▸ **cvIsNaN**(`value`: [double](_types_opencv__hacks_.md#double)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:128](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L128)*
+*Defined in [types/opencv/core_utils.ts:128](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L128)*
 
 The function returns 1 if the argument is Not A Number (as defined by IEEE754 standard), 0
 otherwise.
@@ -812,7 +812,7 @@ Name | Type | Description |
 
 ▸ **cvIsNaN**(`value`: [float](_types_opencv__hacks_.md#float)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:134](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L134)*
+*Defined in [types/opencv/core_utils.ts:134](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L134)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -831,7 +831,7 @@ ___
 
 ▸ **cvRound**(`value`: [double](_types_opencv__hacks_.md#double)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:140](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L140)*
+*Defined in [types/opencv/core_utils.ts:140](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L140)*
 
 **Parameters:**
 
@@ -843,7 +843,7 @@ Name | Type | Description |
 
 ▸ **cvRound**(`value`: [float](_types_opencv__hacks_.md#float)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:146](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L146)*
+*Defined in [types/opencv/core_utils.ts:146](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L146)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -858,7 +858,7 @@ Name | Type |
 
 ▸ **cvRound**(`value`: [int](_types_opencv__hacks_.md#int)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:152](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L152)*
+*Defined in [types/opencv/core_utils.ts:152](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L152)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -877,7 +877,7 @@ ___
 
 ▸ **cv_abs**(`arg93`: any, `x`: [_Tp](_types_opencv__hacks_.md#_tp)): *any*
 
-*Defined in [types/opencv/core_utils.ts:56](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L56)*
+*Defined in [types/opencv/core_utils.ts:56](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L56)*
 
 **Parameters:**
 
@@ -890,7 +890,7 @@ Name | Type |
 
 ▸ **cv_abs**(`x`: [uchar](_types_opencv__hacks_.md#uchar)): *[uchar](_types_opencv__hacks_.md#uchar)*
 
-*Defined in [types/opencv/core_utils.ts:58](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L58)*
+*Defined in [types/opencv/core_utils.ts:58](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L58)*
 
 **Parameters:**
 
@@ -902,7 +902,7 @@ Name | Type |
 
 ▸ **cv_abs**(`x`: [schar](_types_opencv__hacks_.md#schar)): *[schar](_types_opencv__hacks_.md#schar)*
 
-*Defined in [types/opencv/core_utils.ts:60](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L60)*
+*Defined in [types/opencv/core_utils.ts:60](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L60)*
 
 **Parameters:**
 
@@ -914,7 +914,7 @@ Name | Type |
 
 ▸ **cv_abs**(`x`: [ushort](_types_opencv__hacks_.md#ushort)): *[ushort](_types_opencv__hacks_.md#ushort)*
 
-*Defined in [types/opencv/core_utils.ts:62](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L62)*
+*Defined in [types/opencv/core_utils.ts:62](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L62)*
 
 **Parameters:**
 
@@ -926,7 +926,7 @@ Name | Type |
 
 ▸ **cv_abs**(`x`: [short](_types_opencv__hacks_.md#short)): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:64](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L64)*
+*Defined in [types/opencv/core_utils.ts:64](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L64)*
 
 **Parameters:**
 
@@ -942,7 +942,7 @@ ___
 
 ▸ **divUp**(`a`: [int](_types_opencv__hacks_.md#int), `b`: any): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:159](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L159)*
+*Defined in [types/opencv/core_utils.ts:159](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L159)*
 
 Use this function instead of `ceil((float)a / b)` expressions.
 
@@ -959,7 +959,7 @@ Name | Type |
 
 ▸ **divUp**(`a`: [size_t](_types_opencv__hacks_.md#size_t), `b`: any): *[size_t](_types_opencv__hacks_.md#size_t)*
 
-*Defined in [types/opencv/core_utils.ts:165](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L165)*
+*Defined in [types/opencv/core_utils.ts:165](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L165)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -977,15 +977,15 @@ ___
 
 ###  dumpInputArray
 
-▸ **dumpInputArray**(`argument`: [InputArray](_types_opencv__hacks_.md#inputarray)): *String*
+▸ **dumpInputArray**(`argument`: InputArray): *String*
 
-*Defined in [types/opencv/core_utils.ts:167](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L167)*
+*Defined in [types/opencv/core_utils.ts:167](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L167)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`argument` | [InputArray](_types_opencv__hacks_.md#inputarray) |
+`argument` | InputArray |
 
 **Returns:** *String*
 
@@ -995,7 +995,7 @@ ___
 
 ▸ **dumpInputArrayOfArrays**(`argument`: InputArrayOfArrays): *String*
 
-*Defined in [types/opencv/core_utils.ts:169](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L169)*
+*Defined in [types/opencv/core_utils.ts:169](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L169)*
 
 **Parameters:**
 
@@ -1011,7 +1011,7 @@ ___
 
 ▸ **dumpInputOutputArray**(`argument`: InputOutputArray): *String*
 
-*Defined in [types/opencv/core_utils.ts:171](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L171)*
+*Defined in [types/opencv/core_utils.ts:171](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L171)*
 
 **Parameters:**
 
@@ -1027,7 +1027,7 @@ ___
 
 ▸ **dumpInputOutputArrayOfArrays**(`argument`: InputOutputArrayOfArrays): *String*
 
-*Defined in [types/opencv/core_utils.ts:173](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L173)*
+*Defined in [types/opencv/core_utils.ts:173](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L173)*
 
 **Parameters:**
 
@@ -1043,7 +1043,7 @@ ___
 
 ▸ **error**(`exc`: any): *void*
 
-*Defined in [types/opencv/core_utils.ts:182](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L182)*
+*Defined in [types/opencv/core_utils.ts:182](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L182)*
 
 By default the function prints information about the error to stderr, then it either stops if
 [cv::setBreakOnError()] had been called before or raises the exception. It is possible to alternate
@@ -1059,7 +1059,7 @@ Name | Type | Description |
 
 ▸ **error**(`_code`: [int](_types_opencv__hacks_.md#int), `_err`: any, `_func`: any, `_file`: any, `_line`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_utils.ts:201](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L201)*
+*Defined in [types/opencv/core_utils.ts:201](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L201)*
 
 By default the function prints information about the error to stderr, then it either stops if
 [setBreakOnError()] had been called before or raises the exception. It is possible to alternate
@@ -1085,7 +1085,7 @@ ___
 
 ▸ **fastAtan2**(`y`: [float](_types_opencv__hacks_.md#float), `x`: [float](_types_opencv__hacks_.md#float)): *[float](_types_opencv__hacks_.md#float)*
 
-*Defined in [types/opencv/core_utils.ts:211](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L211)*
+*Defined in [types/opencv/core_utils.ts:211](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L211)*
 
 The function fastAtan2 calculates the full-range angle of an input 2D vector. The angle is measured
 in degrees and varies from 0 to 360 degrees. The accuracy is about 0.3 degrees.
@@ -1105,7 +1105,7 @@ ___
 
 ▸ **fastFree**(`ptr`: any): *void*
 
-*Defined in [types/opencv/core_utils.ts:220](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L220)*
+*Defined in [types/opencv/core_utils.ts:220](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L220)*
 
 The function deallocates the buffer allocated with fastMalloc . If NULL pointer is passed, the
 function does nothing. C version of the function clears the pointer *pptr* to avoid problems with
@@ -1125,7 +1125,7 @@ ___
 
 ▸ **fastMalloc**(`bufSize`: [size_t](_types_opencv__hacks_.md#size_t)): *any*
 
-*Defined in [types/opencv/core_utils.ts:228](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L228)*
+*Defined in [types/opencv/core_utils.ts:228](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L228)*
 
 The function allocates the buffer of the specified size and returns it. When the buffer size is 16
 bytes or more, the returned buffer is aligned to 16 bytes.
@@ -1144,7 +1144,7 @@ ___
 
 ▸ **forEach_impl**(`arg94`: any, `arg95`: any, `operation`: any): *any*
 
-*Defined in [types/opencv/core_utils.ts:230](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L230)*
+*Defined in [types/opencv/core_utils.ts:230](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L230)*
 
 **Parameters:**
 
@@ -1162,7 +1162,7 @@ ___
 
 ▸ **getBuildInformation**(): *any*
 
-*Defined in [types/opencv/core_utils.ts:237](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L237)*
+*Defined in [types/opencv/core_utils.ts:237](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L237)*
 
 Returned value is raw cmake output including version control system revision, compiler version,
 compiler flags, enabled modules and third party libraries, etc. Output format depends on target
@@ -1176,7 +1176,7 @@ ___
 
 ▸ **getCPUFeaturesLine**(): *any*
 
-*Defined in [types/opencv/core_utils.ts:248](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L248)*
+*Defined in [types/opencv/core_utils.ts:248](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L248)*
 
 Returned value is a string containing space separated list of CPU features with following markers:
 
@@ -1194,7 +1194,7 @@ ___
 
 ▸ **getCPUTickCount**(): *[int64](_types_opencv__hacks_.md#int64)*
 
-*Defined in [types/opencv/core_utils.ts:261](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L261)*
+*Defined in [types/opencv/core_utils.ts:261](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L261)*
 
 The function returns the current number of CPU ticks on some architectures (such as x86, x64,
 PowerPC). On other platforms the function is equivalent to getTickCount. It can also be used for
@@ -1214,7 +1214,7 @@ ___
 
 ▸ **getElemSize**(`type`: [int](_types_opencv__hacks_.md#int)): *[size_t](_types_opencv__hacks_.md#size_t)*
 
-*Defined in [types/opencv/core_utils.ts:263](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L263)*
+*Defined in [types/opencv/core_utils.ts:263](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L263)*
 
 **Parameters:**
 
@@ -1230,7 +1230,7 @@ ___
 
 ▸ **getHardwareFeatureName**(`feature`: [int](_types_opencv__hacks_.md#int)): *String*
 
-*Defined in [types/opencv/core_utils.ts:268](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L268)*
+*Defined in [types/opencv/core_utils.ts:268](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L268)*
 
 Returns empty string if feature is not defined
 
@@ -1248,7 +1248,7 @@ ___
 
 ▸ **getNumThreads**(): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:289](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L289)*
+*Defined in [types/opencv/core_utils.ts:289](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L289)*
 
 Always returns 1 if OpenCV is built without threading support.
 
@@ -1274,7 +1274,7 @@ ___
 
 ▸ **getNumberOfCPUs**(): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:270](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L270)*
+*Defined in [types/opencv/core_utils.ts:270](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L270)*
 
 **Returns:** *[int](_types_opencv__hacks_.md#int)*
 
@@ -1284,7 +1284,7 @@ ___
 
 ▸ **getThreadNum**(): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:303](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L303)*
+*Defined in [types/opencv/core_utils.ts:303](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L303)*
 
 The exact meaning of the return value depends on the threading framework used by OpenCV library:
 
@@ -1305,7 +1305,7 @@ ___
 
 ▸ **getTickCount**(): *[int64](_types_opencv__hacks_.md#int64)*
 
-*Defined in [types/opencv/core_utils.ts:312](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L312)*
+*Defined in [types/opencv/core_utils.ts:312](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L312)*
 
 The function returns the number of ticks after the certain event (for example, when the machine was
 turned on). It can be used to initialize [RNG] or to measure a function execution time by reading
@@ -1321,7 +1321,7 @@ ___
 
 ▸ **getTickFrequency**(): *[double](_types_opencv__hacks_.md#double)*
 
-*Defined in [types/opencv/core_utils.ts:326](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L326)*
+*Defined in [types/opencv/core_utils.ts:326](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L326)*
 
 The function returns the number of ticks per second. That is, the following code computes the
 execution time in seconds:
@@ -1342,7 +1342,7 @@ ___
 
 ▸ **getVersionMajor**(): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:328](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L328)*
+*Defined in [types/opencv/core_utils.ts:328](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L328)*
 
 **Returns:** *[int](_types_opencv__hacks_.md#int)*
 
@@ -1352,7 +1352,7 @@ ___
 
 ▸ **getVersionMinor**(): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:330](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L330)*
+*Defined in [types/opencv/core_utils.ts:330](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L330)*
 
 **Returns:** *[int](_types_opencv__hacks_.md#int)*
 
@@ -1362,7 +1362,7 @@ ___
 
 ▸ **getVersionRevision**(): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:332](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L332)*
+*Defined in [types/opencv/core_utils.ts:332](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L332)*
 
 **Returns:** *[int](_types_opencv__hacks_.md#int)*
 
@@ -1372,7 +1372,7 @@ ___
 
 ▸ **getVersionString**(): *String*
 
-*Defined in [types/opencv/core_utils.ts:339](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L339)*
+*Defined in [types/opencv/core_utils.ts:339](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L339)*
 
 For example "3.4.1-dev".
 
@@ -1386,7 +1386,7 @@ ___
 
 ▸ **glob**(`pattern`: String, `result`: any, `recursive?`: [bool](_types_opencv__hacks_.md#bool)): *void*
 
-*Defined in [types/opencv/core_utils.ts:341](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L341)*
+*Defined in [types/opencv/core_utils.ts:341](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L341)*
 
 **Parameters:**
 
@@ -1404,7 +1404,7 @@ ___
 
 ▸ **normInf**(`arg96`: any, `arg97`: any, `a`: any, `n`: [int](_types_opencv__hacks_.md#int)): *any*
 
-*Defined in [types/opencv/core_utils.ts:353](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L353)*
+*Defined in [types/opencv/core_utils.ts:353](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L353)*
 
 **Parameters:**
 
@@ -1419,7 +1419,7 @@ Name | Type |
 
 ▸ **normInf**(`arg98`: any, `arg99`: any, `a`: any, `b`: any, `n`: [int](_types_opencv__hacks_.md#int)): *any*
 
-*Defined in [types/opencv/core_utils.ts:355](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L355)*
+*Defined in [types/opencv/core_utils.ts:355](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L355)*
 
 **Parameters:**
 
@@ -1439,7 +1439,7 @@ ___
 
 ▸ **normL1**(`arg100`: any, `arg101`: any, `a`: any, `n`: [int](_types_opencv__hacks_.md#int)): *any*
 
-*Defined in [types/opencv/core_utils.ts:357](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L357)*
+*Defined in [types/opencv/core_utils.ts:357](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L357)*
 
 **Parameters:**
 
@@ -1454,7 +1454,7 @@ Name | Type |
 
 ▸ **normL1**(`arg102`: any, `arg103`: any, `a`: any, `b`: any, `n`: [int](_types_opencv__hacks_.md#int)): *any*
 
-*Defined in [types/opencv/core_utils.ts:359](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L359)*
+*Defined in [types/opencv/core_utils.ts:359](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L359)*
 
 **Parameters:**
 
@@ -1470,7 +1470,7 @@ Name | Type |
 
 ▸ **normL1**(`a`: any, `b`: any, `n`: [int](_types_opencv__hacks_.md#int)): *[float](_types_opencv__hacks_.md#float)*
 
-*Defined in [types/opencv/core_utils.ts:361](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L361)*
+*Defined in [types/opencv/core_utils.ts:361](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L361)*
 
 **Parameters:**
 
@@ -1484,7 +1484,7 @@ Name | Type |
 
 ▸ **normL1**(`a`: [uchar](_types_opencv__hacks_.md#uchar), `b`: [uchar](_types_opencv__hacks_.md#uchar), `n`: [int](_types_opencv__hacks_.md#int)): *[uchar](_types_opencv__hacks_.md#uchar)*
 
-*Defined in [types/opencv/core_utils.ts:363](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L363)*
+*Defined in [types/opencv/core_utils.ts:363](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L363)*
 
 **Parameters:**
 
@@ -1502,7 +1502,7 @@ ___
 
 ▸ **normL2Sqr**(`arg104`: any, `arg105`: any, `a`: any, `n`: [int](_types_opencv__hacks_.md#int)): *any*
 
-*Defined in [types/opencv/core_utils.ts:365](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L365)*
+*Defined in [types/opencv/core_utils.ts:365](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L365)*
 
 **Parameters:**
 
@@ -1517,7 +1517,7 @@ Name | Type |
 
 ▸ **normL2Sqr**(`arg106`: any, `arg107`: any, `a`: any, `b`: any, `n`: [int](_types_opencv__hacks_.md#int)): *any*
 
-*Defined in [types/opencv/core_utils.ts:367](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L367)*
+*Defined in [types/opencv/core_utils.ts:367](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L367)*
 
 **Parameters:**
 
@@ -1533,7 +1533,7 @@ Name | Type |
 
 ▸ **normL2Sqr**(`a`: any, `b`: any, `n`: [int](_types_opencv__hacks_.md#int)): *[float](_types_opencv__hacks_.md#float)*
 
-*Defined in [types/opencv/core_utils.ts:369](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L369)*
+*Defined in [types/opencv/core_utils.ts:369](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L369)*
 
 **Parameters:**
 
@@ -1551,7 +1551,7 @@ ___
 
 ▸ **parallel_for_**(`range`: any, `body`: any, `nstripes?`: [double](_types_opencv__hacks_.md#double)): *void*
 
-*Defined in [types/opencv/core_utils.ts:371](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L371)*
+*Defined in [types/opencv/core_utils.ts:371](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L371)*
 
 **Parameters:**
 
@@ -1565,7 +1565,7 @@ Name | Type |
 
 ▸ **parallel_for_**(`range`: any, `functor`: any, `nstripes?`: [double](_types_opencv__hacks_.md#double)): *void*
 
-*Defined in [types/opencv/core_utils.ts:373](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L373)*
+*Defined in [types/opencv/core_utils.ts:373](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L373)*
 
 **Parameters:**
 
@@ -1583,7 +1583,7 @@ ___
 
 ▸ **redirectError**(`errCallback`: [ErrorCallback](_types_opencv__hacks_.md#errorcallback), `userdata?`: any, `prevUserdata?`: any): *[ErrorCallback](_types_opencv__hacks_.md#errorcallback)*
 
-*Defined in [types/opencv/core_utils.ts:386](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L386)*
+*Defined in [types/opencv/core_utils.ts:386](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L386)*
 
 The function sets the new error handler, called from [cv::error()].
 
@@ -1605,7 +1605,7 @@ ___
 
 ▸ **roundUp**(`a`: [int](_types_opencv__hacks_.md#int), `b`: any): *[int](_types_opencv__hacks_.md#int)*
 
-*Defined in [types/opencv/core_utils.ts:393](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L393)*
+*Defined in [types/opencv/core_utils.ts:393](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L393)*
 
 Use this function instead of `ceil((float)a / b) * b` expressions.
 
@@ -1622,7 +1622,7 @@ Name | Type |
 
 ▸ **roundUp**(`a`: [size_t](_types_opencv__hacks_.md#size_t), `b`: any): *[size_t](_types_opencv__hacks_.md#size_t)*
 
-*Defined in [types/opencv/core_utils.ts:399](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L399)*
+*Defined in [types/opencv/core_utils.ts:399](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L399)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -1642,7 +1642,7 @@ ___
 
 ▸ **saturate_cast**(`arg108`: any, `v`: [uchar](_types_opencv__hacks_.md#uchar)): *[uchar](_types_opencv__hacks_.md#uchar)*
 
-*Defined in [types/opencv/core_utils.ts:426](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L426)*
+*Defined in [types/opencv/core_utils.ts:426](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L426)*
 
 The function saturate_cast resembles the standard C++ cast operations, such as static_cast<T>() and
 others. It perform an efficient and accurate conversion from one primitive type to another (see the
@@ -1677,7 +1677,7 @@ Name | Type | Description |
 
 ▸ **saturate_cast**(`arg109`: any, `v`: [schar](_types_opencv__hacks_.md#schar)): *[schar](_types_opencv__hacks_.md#schar)*
 
-*Defined in [types/opencv/core_utils.ts:432](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L432)*
+*Defined in [types/opencv/core_utils.ts:432](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L432)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -1693,7 +1693,7 @@ Name | Type |
 
 ▸ **saturate_cast**(`arg110`: any, `v`: [ushort](_types_opencv__hacks_.md#ushort)): *[ushort](_types_opencv__hacks_.md#ushort)*
 
-*Defined in [types/opencv/core_utils.ts:438](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L438)*
+*Defined in [types/opencv/core_utils.ts:438](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L438)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -1709,7 +1709,7 @@ Name | Type |
 
 ▸ **saturate_cast**(`arg111`: any, `v`: [short](_types_opencv__hacks_.md#short)): *any*
 
-*Defined in [types/opencv/core_utils.ts:444](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L444)*
+*Defined in [types/opencv/core_utils.ts:444](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L444)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -1725,7 +1725,7 @@ Name | Type |
 
 ▸ **saturate_cast**(`arg112`: any, `v`: [unsigned](_types_opencv__hacks_.md#unsigned)): *any*
 
-*Defined in [types/opencv/core_utils.ts:450](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L450)*
+*Defined in [types/opencv/core_utils.ts:450](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L450)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -1741,7 +1741,7 @@ Name | Type |
 
 ▸ **saturate_cast**(`arg113`: any, `v`: [int](_types_opencv__hacks_.md#int)): *any*
 
-*Defined in [types/opencv/core_utils.ts:456](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L456)*
+*Defined in [types/opencv/core_utils.ts:456](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L456)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -1757,7 +1757,7 @@ Name | Type |
 
 ▸ **saturate_cast**(`arg114`: any, `v`: [float](_types_opencv__hacks_.md#float)): *any*
 
-*Defined in [types/opencv/core_utils.ts:462](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L462)*
+*Defined in [types/opencv/core_utils.ts:462](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L462)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -1773,7 +1773,7 @@ Name | Type |
 
 ▸ **saturate_cast**(`arg115`: any, `v`: [double](_types_opencv__hacks_.md#double)): *any*
 
-*Defined in [types/opencv/core_utils.ts:468](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L468)*
+*Defined in [types/opencv/core_utils.ts:468](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L468)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -1789,7 +1789,7 @@ Name | Type |
 
 ▸ **saturate_cast**(`arg116`: any, `v`: [int64](_types_opencv__hacks_.md#int64)): *[int64](_types_opencv__hacks_.md#int64)*
 
-*Defined in [types/opencv/core_utils.ts:474](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L474)*
+*Defined in [types/opencv/core_utils.ts:474](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L474)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -1805,7 +1805,7 @@ Name | Type |
 
 ▸ **saturate_cast**(`arg117`: any, `v`: [uint64](_types_opencv__hacks_.md#uint64)): *[uint64](_types_opencv__hacks_.md#uint64)*
 
-*Defined in [types/opencv/core_utils.ts:480](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L480)*
+*Defined in [types/opencv/core_utils.ts:480](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L480)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -1821,7 +1821,7 @@ Name | Type |
 
 ▸ **saturate_cast**(`arg118`: any, `v`: [float16_t](_types_opencv__hacks_.md#float16_t)): *any*
 
-*Defined in [types/opencv/core_utils.ts:486](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L486)*
+*Defined in [types/opencv/core_utils.ts:486](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L486)*
 
 This is an overloaded member function, provided for convenience. It differs from the above function
 only in what argument(s) it accepts.
@@ -1841,7 +1841,7 @@ ___
 
 ▸ **setBreakOnError**(`flag`: [bool](_types_opencv__hacks_.md#bool)): *[bool](_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/core_utils.ts:494](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L494)*
+*Defined in [types/opencv/core_utils.ts:494](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L494)*
 
 When the break-on-error mode is set, the default error handler issues a hardware exception, which
 can make debugging more convenient.
@@ -1862,7 +1862,7 @@ ___
 
 ▸ **setNumThreads**(`nthreads`: [int](_types_opencv__hacks_.md#int)): *void*
 
-*Defined in [types/opencv/core_utils.ts:516](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L516)*
+*Defined in [types/opencv/core_utils.ts:516](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L516)*
 
 If threads == 0, OpenCV will disable threading optimizations and run all it's functions
 sequentially. Passing threads < 0 will reset threads number to system default. This function must be
@@ -1895,7 +1895,7 @@ ___
 
 ▸ **setUseOptimized**(`onoff`: [bool](_types_opencv__hacks_.md#bool)): *void*
 
-*Defined in [types/opencv/core_utils.ts:531](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L531)*
+*Defined in [types/opencv/core_utils.ts:531](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L531)*
 
 The function can be used to dynamically turn on and off optimized dispatched code (code that uses
 SSE4.2, AVX/AVX2, and other instructions on the platforms that support it). It sets a global flag
@@ -1920,7 +1920,7 @@ ___
 
 ▸ **tempfile**(`suffix?`: any): *String*
 
-*Defined in [types/opencv/core_utils.ts:533](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L533)*
+*Defined in [types/opencv/core_utils.ts:533](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L533)*
 
 **Parameters:**
 
@@ -1934,15 +1934,15 @@ ___
 
 ###  testAsyncArray
 
-▸ **testAsyncArray**(`argument`: [InputArray](_types_opencv__hacks_.md#inputarray)): *[AsyncArray](_types_opencv__hacks_.md#asyncarray)*
+▸ **testAsyncArray**(`argument`: InputArray): *[AsyncArray](_types_opencv__hacks_.md#asyncarray)*
 
-*Defined in [types/opencv/core_utils.ts:535](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L535)*
+*Defined in [types/opencv/core_utils.ts:535](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L535)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`argument` | [InputArray](_types_opencv__hacks_.md#inputarray) |
+`argument` | InputArray |
 
 **Returns:** *[AsyncArray](_types_opencv__hacks_.md#asyncarray)*
 
@@ -1952,7 +1952,7 @@ ___
 
 ▸ **testAsyncException**(): *[AsyncArray](_types_opencv__hacks_.md#asyncarray)*
 
-*Defined in [types/opencv/core_utils.ts:537](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L537)*
+*Defined in [types/opencv/core_utils.ts:537](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L537)*
 
 **Returns:** *[AsyncArray](_types_opencv__hacks_.md#asyncarray)*
 
@@ -1962,7 +1962,7 @@ ___
 
 ▸ **useOptimized**(): *[bool](_types_opencv__hacks_.md#bool)*
 
-*Defined in [types/opencv/core_utils.ts:542](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/types/opencv/core_utils.ts#L542)*
+*Defined in [types/opencv/core_utils.ts:542](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/types/opencv/core_utils.ts#L542)*
 
 The function returns true if the optimized code is enabled. Otherwise, it returns false.
 

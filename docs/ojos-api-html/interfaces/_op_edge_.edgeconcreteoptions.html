@@ -76,7 +76,13 @@
 						<a href="_op_types_.withbordertype.html" class="tsd-signature-type">WithBorderType</a>
 					</li>
 					<li>
+						<a href="_op_types_.withksize.html" class="tsd-signature-type">WithKSize</a>
+					</li>
+					<li>
 						<a href="_op_types_.withchannels.html" class="tsd-signature-type">WithChannels</a>
+					</li>
+					<li>
+						<a href="_op_types_.withddepth.html" class="tsd-signature-type">WithDDepth</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">EdgeConcreteOptions</span>
@@ -99,11 +105,11 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="_op_edge_.edgeconcreteoptions.html#bordertype" class="tsd-kind-icon">border<wbr>Type</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="_op_edge_.edgeconcreteoptions.html#channels" class="tsd-kind-icon">channels</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_op_edge_.edgeconcreteoptions.html#ddepth" class="tsd-kind-icon">ddepth</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="_op_edge_.edgeconcreteoptions.html#ddepth" class="tsd-kind-icon">ddepth</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_op_edge_.edgeconcreteoptions.html#delta" class="tsd-kind-icon">delta</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_op_edge_.edgeconcreteoptions.html#dx" class="tsd-kind-icon">dx</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_op_edge_.edgeconcreteoptions.html#dy" class="tsd-kind-icon">dy</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_op_edge_.edgeconcreteoptions.html#ksize" class="tsd-kind-icon">ksize</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="_op_edge_.edgeconcreteoptions.html#ksize" class="tsd-kind-icon">ksize</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_op_edge_.edgeconcreteoptions.html#scale" class="tsd-kind-icon">scale</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_op_edge_.edgeconcreteoptions.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
@@ -120,12 +126,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_op_types_.withbordertype.html">WithBorderType</a>.<a href="_op_types_.withbordertype.html#bordertype">borderType</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L34">op/types.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L57">op/types.ts:57</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>border mode used to extrapolate pixels outside of the image, see [BorderTypes]</p>
+							<p>border mode used to extrapolate pixels outside of the image, see [BorderTypes].</p>
 						</div>
 					</div>
 				</section>
@@ -136,33 +142,31 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_op_types_.withchannels.html">WithChannels</a>.<a href="_op_types_.withchannels.html#channels">channels</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/types.ts#L52">op/types.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L109">op/types.ts:109</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>If true then all channels will be processed independently and then joined to build the result. The only exception is when there are 4 channels and in this case, if channels===true, the last 4th channel will be omitted (alpha). If an array of numbers is given then those channels will be processed only. If not given then the operation will behave normally, processing as single channle image.</p>
+							<p>If true then all channels will be processed independently and then joined to build the result. The only
+								exception is when there are 4 channels and in this case, if channels===true, the last 4th channel will be
+								omitted (alpha). If an array of numbers is given then those channels will be processed only. If not given
+							then the operation will behave normally, processing as single channel image.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
 					<a name="ddepth" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ddepth</h3>
 					<div class="tsd-signature tsd-kind-icon">ddepth<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_op_types_.withddepth.html">WithDDepth</a>.<a href="_op_types_.withddepth.html#ddepth">ddepth</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/edge.ts#L18">op/edge.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L99">op/types.ts:99</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Desired depth of the destination image. Combinations:</p>
-							<p>```
-								input           output
-								CV_8U              -1/CV_16S/CV_32F/CV_64F
-								CV_16U/CV_16S      -1/CV_32F/CV_64F
-								CV_32F            -1/CV_32F/CV_64F
-							CV_64F            -1/CV_64F</p>
+							<p>the output image dept. (-1 to use src.depth()).</p>
 						</div>
 					</div>
 				</section>
@@ -172,7 +176,7 @@
 					<div class="tsd-signature tsd-kind-icon">delta<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/edge.ts#L34">op/edge.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/edge.ts#L21">op/edge.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -187,7 +191,7 @@
 					<div class="tsd-signature tsd-kind-icon">dx<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/edge.ts#L22">op/edge.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/edge.ts#L13">op/edge.ts:13</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -202,7 +206,7 @@
 					<div class="tsd-signature tsd-kind-icon">dy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/edge.ts#L26">op/edge.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/edge.ts#L17">op/edge.ts:17</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -211,18 +215,19 @@
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
 					<a name="ksize" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ksize</h3>
-					<div class="tsd-signature tsd-kind-icon">ksize<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<h3>ksize</h3>
+					<div class="tsd-signature tsd-kind-icon">ksize<span class="tsd-signature-symbol">:</span> <a href="../modules/_util_util_.html#sizerepresentation" class="tsd-signature-type">SizeRepresentation</a></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_op_types_.withksize.html">WithKSize</a>.<a href="_op_types_.withksize.html#ksize">ksize</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/edge.ts#L30">op/edge.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/types.ts#L78">op/types.ts:78</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Aperture size used to compute the second-derivative filters. See getDerivKernels for details. The size must be positive and odd. applies only for Sobel and Laplacian</p>
+							<p>Transformation (blurring) kernel size. In general only odd numbers greater than 2 are accepted.</p>
 						</div>
 					</div>
 				</section>
@@ -232,7 +237,7 @@
 					<div class="tsd-signature tsd-kind-icon">scale<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/edge.ts#L38">op/edge.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/edge.ts#L25">op/edge.ts:25</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -247,7 +252,7 @@
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"sobel"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"scharr"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"laplacian"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/edge.ts#L8">op/edge.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/edge.ts#L9">op/edge.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -280,7 +285,7 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
 								<a href="_op_edge_.edgeconcreteoptions.html#channels" class="tsd-kind-icon">channels</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
 								<a href="_op_edge_.edgeconcreteoptions.html#ddepth" class="tsd-kind-icon">ddepth</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
@@ -292,7 +297,7 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
 								<a href="_op_edge_.edgeconcreteoptions.html#dy" class="tsd-kind-icon">dy</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
 								<a href="_op_edge_.edgeconcreteoptions.html#ksize" class="tsd-kind-icon">ksize</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">

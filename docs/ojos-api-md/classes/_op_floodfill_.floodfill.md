@@ -1,16 +1,14 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/floodFill"](../modules/_op_floodfill_.md) › [FloodFill](_op_floodfill_.floodfill.md)
+[ojos](../README.md) › ["op/floodFill"](../modules/_op_floodfill_.md) › [FloodFill](_op_floodfill_.floodfill.md)
 
 # Class: FloodFill
 
-This is a high level API involving several opencv operations.
+This is a high level API for flood fill given color or image starting from given [seed] coords and involves several opencv operations.
 
 ## Hierarchy
 
 * [AbstractOperation](_op_abstractoperation_.abstractoperation.md)‹[FloodFillOptions](../interfaces/_op_floodfill_.floodfilloptions.md)›
 
-  * **FloodFill**
+  ↳ **FloodFill**
 
 ## Implements
 
@@ -26,9 +24,11 @@ This is a high level API involving several opencv operations.
 
 * [defaultOptions](_op_floodfill_.floodfill.md#protected-optional-defaultoptions)
 * [description](_op_floodfill_.floodfill.md#description)
-* [isInPlace](_op_floodfill_.floodfill.md#protected-isinplace)
+* [isInPlace](_op_floodfill_.floodfill.md#isinplace)
 * [name](_op_floodfill_.floodfill.md#name)
+* [noDst](_op_floodfill_.floodfill.md#nodst)
 * [noInPlace](_op_floodfill_.floodfill.md#noinplace)
+* [optionsOrder](_op_floodfill_.floodfill.md#optional-optionsorder)
 * [sameSizeAndType](_op_floodfill_.floodfill.md#samesizeandtype)
 * [validChannels](_op_floodfill_.floodfill.md#validchannels)
 * [validateEachExec](_op_floodfill_.floodfill.md#protected-validateeachexec)
@@ -39,11 +39,13 @@ This is a high level API involving several opencv operations.
 * [_exec](_op_floodfill_.floodfill.md#protected-_exec)
 * [afterExec](_op_floodfill_.floodfill.md#protected-afterexec)
 * [allChannels](_op_floodfill_.floodfill.md#protected-allchannels)
+* [checkDst](_op_floodfill_.floodfill.md#protected-checkdst)
 * [checkInPlaceAfter](_op_floodfill_.floodfill.md#protected-checkinplaceafter)
 * [checkInPlaceBefore](_op_floodfill_.floodfill.md#protected-checkinplacebefore)
 * [checkInputImage](_op_floodfill_.floodfill.md#protected-checkinputimage)
 * [checkOptions](_op_floodfill_.floodfill.md#protected-checkoptions)
 * [exec](_op_floodfill_.floodfill.md#exec)
+* [resolveOptionsObject](_op_floodfill_.floodfill.md#resolveoptionsobject)
 * [validate](_op_floodfill_.floodfill.md#protected-validate)
 
 ## Constructors
@@ -54,7 +56,7 @@ This is a high level API involving several opencv operations.
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[constructor](_op_abstractoperation_.abstractoperation.md#constructor)*
 
-*Defined in [op/abstractOperation.ts:16](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L16)*
+*Defined in [op/abstractOperation.ts:18](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L18)*
 
 **Parameters:**
 
@@ -72,29 +74,29 @@ Name | Type |
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[defaultOptions](_op_abstractoperation_.abstractoperation.md#protected-optional-defaultoptions)*
 
-*Defined in [op/abstractOperation.ts:18](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L18)*
+*Defined in [op/abstractOperation.ts:20](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L20)*
 
 ___
 
 ###  description
 
-• **description**: *string* = "TODO"
+• **description**: *string* = "This is a high level API for flood fill given color or image starting from given [seed] coords and involves several opencv operations. "
 
 *Implementation of [ImageOperation](../interfaces/_op_types_.imageoperation.md).[description](../interfaces/_op_types_.imageoperation.md#description)*
 
-*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[description](_op_abstractoperation_.abstractoperation.md#description)*
+*Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[description](_op_abstractoperation_.abstractoperation.md#description)*
 
-*Defined in [op/abstractOperation.ts:9](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L9)*
+*Defined in [op/floodFill.ts:23](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/floodFill.ts#L23)*
 
 ___
 
-### `Protected` isInPlace
+###  isInPlace
 
 • **isInPlace**: *boolean* = false
 
-*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[isInPlace](_op_abstractoperation_.abstractoperation.md#protected-isinplace)*
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[isInPlace](_op_abstractoperation_.abstractoperation.md#isinplace)*
 
-*Defined in [op/abstractOperation.ts:12](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L12)*
+*Defined in [op/abstractOperation.ts:13](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L13)*
 
 ___
 
@@ -106,7 +108,19 @@ ___
 
 *Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[name](_op_abstractoperation_.abstractoperation.md#abstract-name)*
 
-*Defined in [op/floodFill.ts:22](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/floodFill.ts#L22)*
+*Defined in [op/floodFill.ts:22](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/floodFill.ts#L22)*
+
+___
+
+###  noDst
+
+• **noDst**: *boolean* = false
+
+*Implementation of [ImageOperation](../interfaces/_op_types_.imageoperation.md).[noDst](../interfaces/_op_types_.imageoperation.md#nodst)*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[noDst](_op_abstractoperation_.abstractoperation.md#nodst)*
+
+*Defined in [op/abstractOperation.ts:14](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L14)*
 
 ___
 
@@ -118,7 +132,19 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[noInPlace](_op_abstractoperation_.abstractoperation.md#noinplace)*
 
-*Defined in [op/abstractOperation.ts:10](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L10)*
+*Defined in [op/abstractOperation.ts:11](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L11)*
+
+___
+
+### `Optional` optionsOrder
+
+• **optionsOrder**? : *keyof T[]*
+
+*Implementation of [ImageOperation](../interfaces/_op_types_.imageoperation.md).[optionsOrder](../interfaces/_op_types_.imageoperation.md#optional-optionsorder)*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[optionsOrder](_op_abstractoperation_.abstractoperation.md#optional-optionsorder)*
+
+*Defined in [op/abstractOperation.ts:17](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L17)*
 
 ___
 
@@ -130,7 +156,7 @@ ___
 
 *Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[sameSizeAndType](_op_abstractoperation_.abstractoperation.md#samesizeandtype)*
 
-*Defined in [op/floodFill.ts:23](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/floodFill.ts#L23)*
+*Defined in [op/floodFill.ts:24](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/floodFill.ts#L24)*
 
 ___
 
@@ -142,7 +168,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[validChannels](_op_abstractoperation_.abstractoperation.md#validchannels)*
 
-*Defined in [op/abstractOperation.ts:16](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L16)*
+*Defined in [op/abstractOperation.ts:18](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L18)*
 
 ___
 
@@ -152,7 +178,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[validateEachExec](_op_abstractoperation_.abstractoperation.md#protected-validateeachexec)*
 
-*Defined in [op/abstractOperation.ts:13](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L13)*
+*Defined in [op/abstractOperation.ts:15](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L15)*
 
 ___
 
@@ -162,7 +188,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[validated](_op_abstractoperation_.abstractoperation.md#protected-validated)*
 
-*Defined in [op/abstractOperation.ts:14](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L14)*
+*Defined in [op/abstractOperation.ts:16](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L16)*
 
 ## Methods
 
@@ -172,7 +198,7 @@ ___
 
 *Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[_exec](_op_abstractoperation_.abstractoperation.md#protected-abstract-_exec)*
 
-*Defined in [op/floodFill.ts:24](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/floodFill.ts#L24)*
+*Defined in [op/floodFill.ts:26](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/floodFill.ts#L26)*
 
 **Parameters:**
 
@@ -190,7 +216,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[afterExec](_op_abstractoperation_.abstractoperation.md#protected-afterexec)*
 
-*Defined in [op/abstractOperation.ts:41](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L41)*
+*Defined in [op/abstractOperation.ts:64](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L64)*
 
 **Parameters:**
 
@@ -208,7 +234,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[allChannels](_op_abstractoperation_.abstractoperation.md#protected-allchannels)*
 
-*Defined in [op/abstractOperation.ts:89](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L89)*
+*Defined in [op/abstractOperation.ts:127](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L127)*
 
 **Parameters:**
 
@@ -228,13 +254,31 @@ Name | Type |
 
 ___
 
+### `Protected` checkDst
+
+▸ **checkDst**(`options`: [FloodFillOptions](../interfaces/_op_floodfill_.floodfilloptions.md)): *void*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkDst](_op_abstractoperation_.abstractoperation.md#protected-checkdst)*
+
+*Defined in [op/abstractOperation.ts:89](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L89)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`options` | [FloodFillOptions](../interfaces/_op_floodfill_.floodfilloptions.md) |
+
+**Returns:** *void*
+
+___
+
 ### `Protected` checkInPlaceAfter
 
 ▸ **checkInPlaceAfter**(`o`: [OperationExecBaseOptions](../interfaces/_op_types_.operationexecbaseoptions.md)): *void*
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkInPlaceAfter](_op_abstractoperation_.abstractoperation.md#protected-checkinplaceafter)*
 
-*Defined in [op/abstractOperation.ts:79](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L79)*
+*Defined in [op/abstractOperation.ts:117](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L117)*
 
 **Parameters:**
 
@@ -252,7 +296,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkInPlaceBefore](_op_abstractoperation_.abstractoperation.md#protected-checkinplacebefore)*
 
-*Defined in [op/abstractOperation.ts:70](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L70)*
+*Defined in [op/abstractOperation.ts:108](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L108)*
 
 **Parameters:**
 
@@ -270,7 +314,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkInputImage](_op_abstractoperation_.abstractoperation.md#protected-checkinputimage)*
 
-*Defined in [op/abstractOperation.ts:43](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L43)*
+*Defined in [op/abstractOperation.ts:67](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L67)*
 
 **Parameters:**
 
@@ -284,11 +328,11 @@ ___
 
 ### `Protected` checkOptions
 
-▸ **checkOptions**(`o?`: [T](undefined)): *object & object*
+▸ **checkOptions**(`o?`: [T](undefined)): *T*
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkOptions](_op_abstractoperation_.abstractoperation.md#protected-checkoptions)*
 
-*Defined in [op/abstractOperation.ts:45](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L45)*
+*Defined in [op/abstractOperation.ts:70](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L70)*
 
 **Parameters:**
 
@@ -296,27 +340,47 @@ Name | Type |
 ------ | ------ |
 `o?` | [T](undefined) |
 
-**Returns:** *object & object*
+**Returns:** *T*
 
 ___
 
 ###  exec
 
-▸ **exec**(`o?`: [T](undefined)): *Mat*
+▸ **exec**(...`o_`: [OperationExecParams](../modules/_op_types_.md#operationexecparams)‹[FloodFillOptions](../interfaces/_op_floodfill_.floodfilloptions.md)›): *Mat*
 
 *Implementation of [ImageOperation](../interfaces/_op_types_.imageoperation.md)*
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[exec](_op_abstractoperation_.abstractoperation.md#exec)*
 
-*Defined in [op/abstractOperation.ts:26](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L26)*
+*Defined in [op/abstractOperation.ts:30](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L30)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`o?` | [T](undefined) |
+`...o_` | [OperationExecParams](../modules/_op_types_.md#operationexecparams)‹[FloodFillOptions](../interfaces/_op_floodfill_.floodfilloptions.md)› |
 
 **Returns:** *Mat*
+
+___
+
+###  resolveOptionsObject
+
+▸ **resolveOptionsObject**(...`o`: [OperationExecParams](../modules/_op_types_.md#operationexecparams)‹[FloodFillOptions](../interfaces/_op_floodfill_.floodfilloptions.md)›): *[FloodFillOptions](../interfaces/_op_floodfill_.floodfilloptions.md) | undefined*
+
+*Implementation of [ImageOperation](../interfaces/_op_types_.imageoperation.md)*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[resolveOptionsObject](_op_abstractoperation_.abstractoperation.md#resolveoptionsobject)*
+
+*Defined in [op/abstractOperation.ts:47](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L47)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...o` | [OperationExecParams](../modules/_op_types_.md#operationexecparams)‹[FloodFillOptions](../interfaces/_op_floodfill_.floodfilloptions.md)› |
+
+**Returns:** *[FloodFillOptions](../interfaces/_op_floodfill_.floodfilloptions.md) | undefined*
 
 ___
 
@@ -326,7 +390,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[validate](_op_abstractoperation_.abstractoperation.md#protected-validate)*
 
-*Defined in [op/abstractOperation.ts:21](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L21)*
+*Defined in [op/abstractOperation.ts:24](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L24)*
 
 **Parameters:**
 

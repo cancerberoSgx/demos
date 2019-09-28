@@ -26,7 +26,7 @@
 
 ▸ **getFileName**(`path`: string): *string*
 
-*Defined in [util/fileUtil.ts:14](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/fileUtil.ts#L14)*
+*Defined in [util/fileUtil.ts:14](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/fileUtil.ts#L14)*
 
 Returns file name / path of given file relative to emscripten FS root  (in the context of emscripten FS)
 
@@ -44,7 +44,7 @@ ___
 
 ▸ **getFilePath**(`path`: string): *string*
 
-*Defined in [util/fileUtil.ts:21](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/fileUtil.ts#L21)*
+*Defined in [util/fileUtil.ts:21](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/fileUtil.ts#L21)*
 
 Returns absolute path of given file (in the context of emscripten FS)
 
@@ -62,7 +62,7 @@ ___
 
 ▸ **isDir**(`f`: string, `FS`: [FS](../interfaces/_types_emscripten_.fs.md)): *boolean*
 
-*Defined in [util/fileUtil.ts:33](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/fileUtil.ts#L33)*
+*Defined in [util/fileUtil.ts:33](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/fileUtil.ts#L33)*
 
 **Parameters:**
 
@@ -79,7 +79,7 @@ ___
 
 ▸ **isFile**(`f`: string, `FS`: [FS](../interfaces/_types_emscripten_.fs.md)): *boolean*
 
-*Defined in [util/fileUtil.ts:41](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/fileUtil.ts#L41)*
+*Defined in [util/fileUtil.ts:41](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/fileUtil.ts#L41)*
 
 **Parameters:**
 
@@ -96,7 +96,7 @@ ___
 
 ▸ **loadDataFile**(`url`: string, `name?`: undefined | string): *Promise‹string›*
 
-*Defined in [util/fileUtil.ts:53](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/fileUtil.ts#L53)*
+*Defined in [util/fileUtil.ts:53](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/fileUtil.ts#L53)*
 
 **Parameters:**
 
@@ -113,7 +113,7 @@ ___
 
 ▸ **readFile**(`f`: string, `FS`: [FS](../interfaces/_types_emscripten_.fs.md)): *ArrayBufferView*
 
-*Defined in [util/fileUtil.ts:7](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/fileUtil.ts#L7)*
+*Defined in [util/fileUtil.ts:7](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/fileUtil.ts#L7)*
 
 if given a file it ignores its contents and alwasys read again from FS
 
@@ -132,7 +132,7 @@ ___
 
 ▸ **removeFile**(`f`: string, `FS`: [FS](../interfaces/_types_emscripten_.fs.md)): *void*
 
-*Defined in [util/fileUtil.ts:29](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/fileUtil.ts#L29)*
+*Defined in [util/fileUtil.ts:29](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/fileUtil.ts#L29)*
 
 **Parameters:**
 
@@ -149,7 +149,7 @@ ___
 
 ▸ **writeFile**(`name`: string, `f`: ArrayBufferView, `FS`: [FS](../interfaces/_types_emscripten_.fs.md)): *void*
 
-*Defined in [util/fileUtil.ts:25](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/fileUtil.ts#L25)*
+*Defined in [util/fileUtil.ts:25](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/fileUtil.ts#L25)*
 
 **Parameters:**
 
@@ -167,46 +167,46 @@ Name | Type | Default |
 
 ### ▪ **fileUtil**: *object*
 
-*Defined in [util/fileUtil.ts:49](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/fileUtil.ts#L49)*
+*Defined in [util/fileUtil.ts:49](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/fileUtil.ts#L49)*
 
 ###  getFileName
 
 • **getFileName**: *[getFileName](_util_fileutil_.md#getfilename)*
 
-*Defined in [util/fileUtil.ts:50](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/fileUtil.ts#L50)*
+*Defined in [util/fileUtil.ts:50](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/fileUtil.ts#L50)*
 
 ###  getFilePath
 
 • **getFilePath**: *[getFilePath](_util_fileutil_.md#getfilepath)*
 
-*Defined in [util/fileUtil.ts:50](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/fileUtil.ts#L50)*
+*Defined in [util/fileUtil.ts:50](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/fileUtil.ts#L50)*
 
 ###  isDir
 
 • **isDir**: *[isDir](_util_fileutil_.md#isdir)*
 
-*Defined in [util/fileUtil.ts:50](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/fileUtil.ts#L50)*
+*Defined in [util/fileUtil.ts:50](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/fileUtil.ts#L50)*
 
 ###  isFile
 
 • **isFile**: *[isFile](_util_fileutil_.md#isfile)*
 
-*Defined in [util/fileUtil.ts:50](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/fileUtil.ts#L50)*
+*Defined in [util/fileUtil.ts:50](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/fileUtil.ts#L50)*
 
 ###  readFile
 
 • **readFile**: *[readFile](_util_fileutil_.md#readfile)*
 
-*Defined in [util/fileUtil.ts:50](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/fileUtil.ts#L50)*
+*Defined in [util/fileUtil.ts:50](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/fileUtil.ts#L50)*
 
 ###  removeFile
 
 • **removeFile**: *[removeFile](_util_fileutil_.md#removefile)*
 
-*Defined in [util/fileUtil.ts:50](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/fileUtil.ts#L50)*
+*Defined in [util/fileUtil.ts:50](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/fileUtil.ts#L50)*
 
 ###  writeFile
 
 • **writeFile**: *[writeFile](_util_fileutil_.md#writefile)*
 
-*Defined in [util/fileUtil.ts:50](https://github.com/cancerberoSgx/mirada/blob/e7b5ae6/mirada/src/util/fileUtil.ts#L50)*
+*Defined in [util/fileUtil.ts:50](https://github.com/cancerberoSgx/mirada/blob/c8721d6/mirada/src/util/fileUtil.ts#L50)*

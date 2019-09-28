@@ -1,14 +1,14 @@
-**[ojos](../README.md)**
-
-[Globals](../README.md) › ["op/gaussianBlur"](../modules/_op_gaussianblur_.md) › [GaussianBlur](_op_gaussianblur_.gaussianblur.md)
+[ojos](../README.md) › ["op/gaussianBlur"](../modules/_op_gaussianblur_.md) › [GaussianBlur](_op_gaussianblur_.gaussianblur.md)
 
 # Class: GaussianBlur
+
+convolves the source image with the specified Gaussian kernel. In-place filtering is supported.
 
 ## Hierarchy
 
 * [AbstractOperation](_op_abstractoperation_.abstractoperation.md)‹[GaussianBlurOptions](../interfaces/_op_gaussianblur_.gaussianbluroptions.md)›
 
-  * **GaussianBlur**
+  ↳ **GaussianBlur**
 
 ## Implements
 
@@ -24,9 +24,11 @@
 
 * [defaultOptions](_op_gaussianblur_.gaussianblur.md#protected-optional-defaultoptions)
 * [description](_op_gaussianblur_.gaussianblur.md#description)
-* [isInPlace](_op_gaussianblur_.gaussianblur.md#protected-isinplace)
+* [isInPlace](_op_gaussianblur_.gaussianblur.md#isinplace)
 * [name](_op_gaussianblur_.gaussianblur.md#name)
+* [noDst](_op_gaussianblur_.gaussianblur.md#nodst)
 * [noInPlace](_op_gaussianblur_.gaussianblur.md#noinplace)
+* [optionsOrder](_op_gaussianblur_.gaussianblur.md#optional-optionsorder)
 * [sameSizeAndType](_op_gaussianblur_.gaussianblur.md#samesizeandtype)
 * [validChannels](_op_gaussianblur_.gaussianblur.md#validchannels)
 * [validateEachExec](_op_gaussianblur_.gaussianblur.md#protected-validateeachexec)
@@ -37,11 +39,13 @@
 * [_exec](_op_gaussianblur_.gaussianblur.md#protected-_exec)
 * [afterExec](_op_gaussianblur_.gaussianblur.md#protected-afterexec)
 * [allChannels](_op_gaussianblur_.gaussianblur.md#protected-allchannels)
+* [checkDst](_op_gaussianblur_.gaussianblur.md#protected-checkdst)
 * [checkInPlaceAfter](_op_gaussianblur_.gaussianblur.md#protected-checkinplaceafter)
 * [checkInPlaceBefore](_op_gaussianblur_.gaussianblur.md#protected-checkinplacebefore)
 * [checkInputImage](_op_gaussianblur_.gaussianblur.md#protected-checkinputimage)
 * [checkOptions](_op_gaussianblur_.gaussianblur.md#protected-checkoptions)
 * [exec](_op_gaussianblur_.gaussianblur.md#exec)
+* [resolveOptionsObject](_op_gaussianblur_.gaussianblur.md#resolveoptionsobject)
 * [validate](_op_gaussianblur_.gaussianblur.md#protected-validate)
 
 ## Constructors
@@ -52,7 +56,7 @@
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[constructor](_op_abstractoperation_.abstractoperation.md#constructor)*
 
-*Defined in [op/abstractOperation.ts:16](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L16)*
+*Defined in [op/abstractOperation.ts:18](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L18)*
 
 **Parameters:**
 
@@ -70,29 +74,29 @@ Name | Type |
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[defaultOptions](_op_abstractoperation_.abstractoperation.md#protected-optional-defaultoptions)*
 
-*Defined in [op/abstractOperation.ts:18](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L18)*
+*Defined in [op/abstractOperation.ts:20](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L20)*
 
 ___
 
 ###  description
 
-• **description**: *string* = "TODO"
+• **description**: *string* = "convolves the source image with the specified Gaussian kernel. In-place filtering is supported."
 
 *Implementation of [ImageOperation](../interfaces/_op_types_.imageoperation.md).[description](../interfaces/_op_types_.imageoperation.md#description)*
 
-*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[description](_op_abstractoperation_.abstractoperation.md#description)*
+*Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[description](_op_abstractoperation_.abstractoperation.md#description)*
 
-*Defined in [op/abstractOperation.ts:9](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L9)*
+*Defined in [op/gaussianBlur.ts:18](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/gaussianBlur.ts#L18)*
 
 ___
 
-### `Protected` isInPlace
+###  isInPlace
 
 • **isInPlace**: *boolean* = false
 
-*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[isInPlace](_op_abstractoperation_.abstractoperation.md#protected-isinplace)*
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[isInPlace](_op_abstractoperation_.abstractoperation.md#isinplace)*
 
-*Defined in [op/abstractOperation.ts:12](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L12)*
+*Defined in [op/abstractOperation.ts:13](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L13)*
 
 ___
 
@@ -104,7 +108,19 @@ ___
 
 *Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[name](_op_abstractoperation_.abstractoperation.md#abstract-name)*
 
-*Defined in [op/gaussianBlur.ts:15](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/gaussianBlur.ts#L15)*
+*Defined in [op/gaussianBlur.ts:17](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/gaussianBlur.ts#L17)*
+
+___
+
+###  noDst
+
+• **noDst**: *boolean* = false
+
+*Implementation of [ImageOperation](../interfaces/_op_types_.imageoperation.md).[noDst](../interfaces/_op_types_.imageoperation.md#nodst)*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[noDst](_op_abstractoperation_.abstractoperation.md#nodst)*
+
+*Defined in [op/abstractOperation.ts:14](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L14)*
 
 ___
 
@@ -116,7 +132,19 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[noInPlace](_op_abstractoperation_.abstractoperation.md#noinplace)*
 
-*Defined in [op/abstractOperation.ts:10](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L10)*
+*Defined in [op/abstractOperation.ts:11](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L11)*
+
+___
+
+### `Optional` optionsOrder
+
+• **optionsOrder**? : *keyof T[]*
+
+*Implementation of [ImageOperation](../interfaces/_op_types_.imageoperation.md).[optionsOrder](../interfaces/_op_types_.imageoperation.md#optional-optionsorder)*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[optionsOrder](_op_abstractoperation_.abstractoperation.md#optional-optionsorder)*
+
+*Defined in [op/abstractOperation.ts:17](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L17)*
 
 ___
 
@@ -128,7 +156,7 @@ ___
 
 *Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[sameSizeAndType](_op_abstractoperation_.abstractoperation.md#samesizeandtype)*
 
-*Defined in [op/gaussianBlur.ts:16](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/gaussianBlur.ts#L16)*
+*Defined in [op/gaussianBlur.ts:19](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/gaussianBlur.ts#L19)*
 
 ___
 
@@ -140,7 +168,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[validChannels](_op_abstractoperation_.abstractoperation.md#validchannels)*
 
-*Defined in [op/abstractOperation.ts:16](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L16)*
+*Defined in [op/abstractOperation.ts:18](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L18)*
 
 ___
 
@@ -150,7 +178,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[validateEachExec](_op_abstractoperation_.abstractoperation.md#protected-validateeachexec)*
 
-*Defined in [op/abstractOperation.ts:13](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L13)*
+*Defined in [op/abstractOperation.ts:15](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L15)*
 
 ___
 
@@ -160,7 +188,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[validated](_op_abstractoperation_.abstractoperation.md#protected-validated)*
 
-*Defined in [op/abstractOperation.ts:14](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L14)*
+*Defined in [op/abstractOperation.ts:16](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L16)*
 
 ## Methods
 
@@ -170,7 +198,7 @@ ___
 
 *Overrides [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[_exec](_op_abstractoperation_.abstractoperation.md#protected-abstract-_exec)*
 
-*Defined in [op/gaussianBlur.ts:17](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/gaussianBlur.ts#L17)*
+*Defined in [op/gaussianBlur.ts:20](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/gaussianBlur.ts#L20)*
 
 **Parameters:**
 
@@ -188,7 +216,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[afterExec](_op_abstractoperation_.abstractoperation.md#protected-afterexec)*
 
-*Defined in [op/abstractOperation.ts:41](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L41)*
+*Defined in [op/abstractOperation.ts:64](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L64)*
 
 **Parameters:**
 
@@ -206,7 +234,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[allChannels](_op_abstractoperation_.abstractoperation.md#protected-allchannels)*
 
-*Defined in [op/abstractOperation.ts:89](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L89)*
+*Defined in [op/abstractOperation.ts:127](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L127)*
 
 **Parameters:**
 
@@ -226,13 +254,31 @@ Name | Type |
 
 ___
 
+### `Protected` checkDst
+
+▸ **checkDst**(`options`: [GaussianBlurOptions](../interfaces/_op_gaussianblur_.gaussianbluroptions.md)): *void*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkDst](_op_abstractoperation_.abstractoperation.md#protected-checkdst)*
+
+*Defined in [op/abstractOperation.ts:89](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L89)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`options` | [GaussianBlurOptions](../interfaces/_op_gaussianblur_.gaussianbluroptions.md) |
+
+**Returns:** *void*
+
+___
+
 ### `Protected` checkInPlaceAfter
 
 ▸ **checkInPlaceAfter**(`o`: [OperationExecBaseOptions](../interfaces/_op_types_.operationexecbaseoptions.md)): *void*
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkInPlaceAfter](_op_abstractoperation_.abstractoperation.md#protected-checkinplaceafter)*
 
-*Defined in [op/abstractOperation.ts:79](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L79)*
+*Defined in [op/abstractOperation.ts:117](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L117)*
 
 **Parameters:**
 
@@ -250,7 +296,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkInPlaceBefore](_op_abstractoperation_.abstractoperation.md#protected-checkinplacebefore)*
 
-*Defined in [op/abstractOperation.ts:70](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L70)*
+*Defined in [op/abstractOperation.ts:108](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L108)*
 
 **Parameters:**
 
@@ -268,7 +314,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkInputImage](_op_abstractoperation_.abstractoperation.md#protected-checkinputimage)*
 
-*Defined in [op/abstractOperation.ts:43](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L43)*
+*Defined in [op/abstractOperation.ts:67](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L67)*
 
 **Parameters:**
 
@@ -282,11 +328,11 @@ ___
 
 ### `Protected` checkOptions
 
-▸ **checkOptions**(`o?`: [T](undefined)): *object & object*
+▸ **checkOptions**(`o?`: [T](undefined)): *T*
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[checkOptions](_op_abstractoperation_.abstractoperation.md#protected-checkoptions)*
 
-*Defined in [op/abstractOperation.ts:45](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L45)*
+*Defined in [op/abstractOperation.ts:70](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L70)*
 
 **Parameters:**
 
@@ -294,27 +340,47 @@ Name | Type |
 ------ | ------ |
 `o?` | [T](undefined) |
 
-**Returns:** *object & object*
+**Returns:** *T*
 
 ___
 
 ###  exec
 
-▸ **exec**(`o?`: [T](undefined)): *Mat*
+▸ **exec**(...`o_`: [OperationExecParams](../modules/_op_types_.md#operationexecparams)‹[GaussianBlurOptions](../interfaces/_op_gaussianblur_.gaussianbluroptions.md)›): *Mat*
 
 *Implementation of [ImageOperation](../interfaces/_op_types_.imageoperation.md)*
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[exec](_op_abstractoperation_.abstractoperation.md#exec)*
 
-*Defined in [op/abstractOperation.ts:26](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L26)*
+*Defined in [op/abstractOperation.ts:30](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L30)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`o?` | [T](undefined) |
+`...o_` | [OperationExecParams](../modules/_op_types_.md#operationexecparams)‹[GaussianBlurOptions](../interfaces/_op_gaussianblur_.gaussianbluroptions.md)› |
 
 **Returns:** *Mat*
+
+___
+
+###  resolveOptionsObject
+
+▸ **resolveOptionsObject**(...`o`: [OperationExecParams](../modules/_op_types_.md#operationexecparams)‹[GaussianBlurOptions](../interfaces/_op_gaussianblur_.gaussianbluroptions.md)›): *[GaussianBlurOptions](../interfaces/_op_gaussianblur_.gaussianbluroptions.md) | undefined*
+
+*Implementation of [ImageOperation](../interfaces/_op_types_.imageoperation.md)*
+
+*Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[resolveOptionsObject](_op_abstractoperation_.abstractoperation.md#resolveoptionsobject)*
+
+*Defined in [op/abstractOperation.ts:47](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L47)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...o` | [OperationExecParams](../modules/_op_types_.md#operationexecparams)‹[GaussianBlurOptions](../interfaces/_op_gaussianblur_.gaussianbluroptions.md)› |
+
+**Returns:** *[GaussianBlurOptions](../interfaces/_op_gaussianblur_.gaussianbluroptions.md) | undefined*
 
 ___
 
@@ -324,7 +390,7 @@ ___
 
 *Inherited from [AbstractOperation](_op_abstractoperation_.abstractoperation.md).[validate](_op_abstractoperation_.abstractoperation.md#protected-validate)*
 
-*Defined in [op/abstractOperation.ts:21](https://github.com/cancerberoSgx/mirada/blob/f2ba50d/ojos/src/op/abstractOperation.ts#L21)*
+*Defined in [op/abstractOperation.ts:24](https://github.com/cancerberoSgx/mirada/blob/3544b58/ojos/src/op/abstractOperation.ts#L24)*
 
 **Parameters:**
 
