@@ -11,7 +11,8 @@
     "organizeImports": "npx ts-refactor organizeImports \"src/**/*.ts*\" \"test/**/*.ts*\" ./formatCodeSettings.json --tsConfigPath ./tsconfig.json --dontAsk ",
     "lint": " npm run organizeImports && npm run format",
     "clean": "rm -rf dist app",
-    "all": "npm run clean && npm run lint && npm run build"
+    "all": "npm run clean && npm run lint && npm run build",
+    "build-push": "npm run build &&  git commit -a -m fb && git push"
   },
   "keywords": [],
   "author": "Sebastian Gurin",
