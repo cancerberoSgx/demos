@@ -10,16 +10,9 @@
 </head>
 <body>
   
-<h1>A test</h1>
-<div id="log"></div>
-
-<fb:login-button 
-  scope="public_profile,email"
-  onlogin="checkLoginState();">
-</fb:login-button>
 
 <script>
-  function checkLoginState() {
+   window.checkLoginState = function () {
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
   });
@@ -36,7 +29,8 @@
     FB.AppEvents.logPageView();   
       
 FB.getLoginStatus(function(response) {
-  if(repsonse.status==='not_authorized'){
+  debugger
+  if(response.status==='not_authorized'){
     FB.login(response=>{
       console.log(response);
       
@@ -57,5 +51,15 @@ FB.getLoginStatus(function(response) {
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
+
+
+<h1>A test</h1>
+<div id="log"></div>
+
+<fb:login-button 
+  scope="public_profile,email"
+  onlogin="checkLoginState();">
+</fb:login-button>
+
 </body>
 </html>
