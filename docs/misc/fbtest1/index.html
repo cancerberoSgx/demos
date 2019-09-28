@@ -12,10 +12,12 @@
   
 <h1>A test</h1>
 <div id="log"></div>
+
 <fb:login-button 
   scope="public_profile,email"
   onlogin="checkLoginState();">
 </fb:login-button>
+
 <script>
   function checkLoginState() {
   FB.getLoginStatus(function(response) {
@@ -34,6 +36,12 @@
     FB.AppEvents.logPageView();   
       
 FB.getLoginStatus(function(response) {
+  if(repsonse.status==='not_authorized'){
+    FB.login(response=>{
+      console.log(response);
+      
+    })
+  }
   console.log(response);
   
   document.getElementById('log').innerHTML = JSON.stringify(response)
