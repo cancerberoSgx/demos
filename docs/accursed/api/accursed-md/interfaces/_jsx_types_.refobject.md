@@ -1,12 +1,14 @@
-[accursed](../README.md) > ["jsx/types"](../modules/_jsx_types_.md) > [RefObject](../interfaces/_jsx_types_.refobject.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx/types"](../modules/_jsx_types_.md) › [RefObject](_jsx_types_.refobject.md)
 
-# Interface: RefObject
+# Interface: RefObject <**T**>
 
 ## Type parameters
-#### T 
+
+▪ **T**
+
 ## Hierarchy
 
-**RefObject**
+* **RefObject**
 
 ## Index
 
@@ -16,39 +18,28 @@
 
 ### Methods
 
-* [callback](_jsx_types_.refobject.md#callback)
-
----
+* [callback](_jsx_types_.refobject.md#optional-callback)
 
 ## Properties
 
-<a id="current"></a>
-
 ###  current
 
-**● current**: *`T` \| `undefined`*
+• **current**: *T | undefined*
 
-*Defined in [jsx/types.ts:320](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L320)*
-
-___
+*Defined in [jsx/types.ts:320](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L320)*
 
 ## Methods
 
-<a id="callback"></a>
+### `Optional` callback
 
-### `<Optional>` callback
+▸ **callback**(`current`: T | undefined): *any*
 
-▸ **callback**(current: *`T` \| `undefined`*): `any`
-
-*Defined in [jsx/types.ts:319](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L319)*
+*Defined in [jsx/types.ts:319](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L319)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| current | `T` \| `undefined` |
+Name | Type |
+------ | ------ |
+`current` | T &#124; undefined |
 
-**Returns:** `any`
-
-___
-
+**Returns:** *any*

@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["editorWidget/editorWidget"](../modules/_editorwidget_editorwidget_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["editorWidget/editorWidget"](_editorwidget_editorwidget_.md)
 
 # External module: "editorWidget/editorWidget"
 
@@ -18,941 +18,652 @@
 * [createEditor](_editorwidget_editorwidget_.md#createeditor)
 * [createEditorAsync](_editorwidget_editorwidget_.md#createeditorasync)
 * [installFocusAndExitKeysForEditorWidget](_editorwidget_editorwidget_.md#installfocusandexitkeysforeditorwidget)
-* [isEditorWidget](_editorwidget_editorwidget_.md#iseditorwidget)
 
 ### Object literals
 
-* [editorBindings](_editorwidget_editorwidget_.md#editorbindings)
-* [editorGutterStyle](_editorwidget_editorwidget_.md#editorgutterstyle)
-* [editorPerf](_editorwidget_editorwidget_.md#editorperf)
-* [editorStyle](_editorwidget_editorwidget_.md#editorstyle)
-
----
+* [editorBindings](_editorwidget_editorwidget_.md#const-editorbindings)
+* [editorGutterStyle](_editorwidget_editorwidget_.md#const-editorgutterstyle)
+* [editorPerf](_editorwidget_editorwidget_.md#const-editorperf)
+* [editorStyle](_editorwidget_editorwidget_.md#const-editorstyle)
 
 ## Functions
 
-<a id="buildeditor"></a>
-
 ###  buildEditor
 
-▸ **buildEditor**(options: *[EditorOptions](../interfaces/_editorwidget_editorwidgettypes_.editoroptions.md) & `object`*): `any`
+▸ **buildEditor**(`options`: [EditorOptions](../interfaces/_editorwidget_editorwidgettypes_.editoroptions.md) & object): *any*
 
-*Defined in [editorWidget/editorWidget.tsx:20](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L20)*
+*Defined in [editorWidget/editorWidget.tsx:23](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L23)*
 
-Builds editor widget by calling its constructor as it is, without any tricks for auto-highlighting, focus or bypass the required parent option. There's only a workaround to load option.text as string \[\[options.text\]\] but just that.
+Builds editor widget by calling its constructor as it is, without any tricks for auto-highlighting, focus
+or bypass the required parent option. There's only a workaround to load option.text as string
+[[options.text]]  but just that.
 
-Passing \[\[options.parent\]\] is mandatory here.
+Passing [[options.parent]] is mandatory here.
 
-For a higher level creator, see [createEditor](_editorwidget_editorwidget_.md#createeditor) which allows to create the widget without passing \[\[options.parent\]\] and will auto-highlight and focus the editor at startup.
+For a higher level creator, see [createEditor](_editorwidget_editorwidget_.md#createeditor) which allows to create the widget without passing
+[[options.parent]] and will auto-highlight and focus the editor at startup.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| options | [EditorOptions](../interfaces/_editorwidget_editorwidgettypes_.editoroptions.md) & `object` |
+Name | Type |
+------ | ------ |
+`options` | [EditorOptions](../interfaces/_editorwidget_editorwidgettypes_.editoroptions.md) & object |
 
-**Returns:** `any`
+**Returns:** *any*
 
 ___
-<a id="createeditor"></a>
 
 ###  createEditor
 
-▸ **createEditor**(options: *[CreateEditorOptions](../interfaces/_editorwidget_editorwidget_.createeditoroptions.md)*): [BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)
+▸ **createEditor**(`options`: [CreateEditorOptions](../interfaces/_editorwidget_editorwidget_.createeditoroptions.md)): *[BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)*
 
-*Defined in [editorWidget/editorWidget.tsx:57](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L57)*
+*Defined in [editorWidget/editorWidget.tsx:60](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L60)*
 
-This creator function is a high level version of [buildEditor](_editorwidget_editorwidget_.md#buildeditor) that doesn't require to pass `parent`. What it does is to create a box reference and after it renders it will use buildEditor to instantiate the editor-widget.
+This creator function is a high level version of [buildEditor](_editorwidget_editorwidget_.md#buildeditor) that doesn't require to pass `parent`.
+What it does is to create a box reference and after it renders it will use buildEditor to instantiate the
+editor-widget.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| options | [CreateEditorOptions](../interfaces/_editorwidget_editorwidget_.createeditoroptions.md) |
+Name | Type |
+------ | ------ |
+`options` | [CreateEditorOptions](../interfaces/_editorwidget_editorwidget_.createeditoroptions.md) |
 
-**Returns:** [BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)
+**Returns:** *[BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)*
+
 the editor's parent BoxElement
 
 ___
-<a id="createeditorasync"></a>
 
 ###  createEditorAsync
 
-▸ **createEditorAsync**(options: *[CreateEditorOptions](../interfaces/_editorwidget_editorwidget_.createeditoroptions.md)*): `Promise`<[IEditor](../interfaces/_editorwidget_editorwidgettypes_.ieditor.md)>
+▸ **createEditorAsync**(`options`: [CreateEditorOptions](../interfaces/_editorwidget_editorwidget_.createeditoroptions.md)): *Promise‹[IEditor](../interfaces/_editorwidget_editorwidgettypes_.ieditor.md)›*
 
-*Defined in [editorWidget/editorWidget.tsx:81](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L81)*
+*Defined in [editorWidget/editorWidget.tsx:85](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L85)*
 
-This creator function is a high level version of [buildEditor](_editorwidget_editorwidget_.md#buildeditor) that doesn't require to pass `parent`. What it does is to create a box reference and after it renders it will use buildEditor to instantiate the editor-widget.
+This creator function is a high level version of [buildEditor](_editorwidget_editorwidget_.md#buildeditor) that doesn't require to pass `parent`.
+What it does is to create a box reference and after it renders it will use buildEditor to instantiate the
+editor-widget.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| options | [CreateEditorOptions](../interfaces/_editorwidget_editorwidget_.createeditoroptions.md) |
+Name | Type |
+------ | ------ |
+`options` | [CreateEditorOptions](../interfaces/_editorwidget_editorwidget_.createeditoroptions.md) |
 
-**Returns:** `Promise`<[IEditor](../interfaces/_editorwidget_editorwidgettypes_.ieditor.md)>
+**Returns:** *Promise‹[IEditor](../interfaces/_editorwidget_editorwidgettypes_.ieditor.md)›*
 
 ___
-<a id="installfocusandexitkeysforeditorwidget"></a>
 
 ###  installFocusAndExitKeysForEditorWidget
 
-▸ **installFocusAndExitKeysForEditorWidget**(screen: *[Screen](../classes/_declarations_blessed_d_.widgets.screen.md)*): `void`
+▸ **installFocusAndExitKeysForEditorWidget**(`screen`: [Screen](../classes/_declarations_blessed_d_.widgets.screen.md)): *void*
 
-*Defined in [editorWidget/editorWidget.tsx:217](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L217)*
+*Defined in [editorWidget/editorWidget.tsx:217](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L217)*
 
-Install exit keys in given screen, considering EditorWidget. tab/S-tab will switch focus only if current focused element is not a EditorWidget. If focused element is EditorWidget, 'C-S-tab', 'escape' can be used to focus next element. Finally, exit keys 'C-q', 'q', 'Q', 'C-c' can be used, if current focused element is not a EditorWidget and it will ask the user to confirm the action.
-
-**Parameters:**
-
-| Name | Type |
-| ------ | ------ |
-| screen | [Screen](../classes/_declarations_blessed_d_.widgets.screen.md) |
-
-**Returns:** `void`
-
-___
-<a id="iseditorwidget"></a>
-
-###  isEditorWidget
-
-▸ **isEditorWidget**(n: *[Node](../classes/_declarations_blessed_d_.widgets.node.md)*): `boolean`
-
-*Defined in [editorWidget/editorWidget.tsx:99](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L99)*
+Install exit keys in given screen, considering EditorWidget. tab/S-tab will switch focus only if current
+focused element is not a EditorWidget. If focused element is EditorWidget, 'C-S-tab', 'escape' can be used
+to focus next element. Finally, exit keys 'C-q', 'q', 'Q', 'C-c' can be used, if current focused element is
+not a EditorWidget and it will ask the user to confirm the action.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| n | [Node](../classes/_declarations_blessed_d_.widgets.node.md) |
+Name | Type |
+------ | ------ |
+`screen` | [Screen](../classes/_declarations_blessed_d_.widgets.screen.md) |
 
-**Returns:** `boolean`
-
-___
+**Returns:** *void*
 
 ## Object literals
 
-<a id="editorbindings"></a>
+### `Const` editorBindings
 
-### `<Const>` editorBindings
+### ▪ **editorBindings**: *object*
 
-**editorBindings**: *`object`*
+*Defined in [editorWidget/editorWidget.tsx:113](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L113)*
 
-*Defined in [editorWidget/editorWidget.tsx:113](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L113)*
+###  copy
 
-<a id="editorbindings.copy"></a>
+• **copy**: *string[]* =  ['C-c']
 
-####  copy
+*Defined in [editorWidget/editorWidget.tsx:157](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L157)*
 
-**● copy**: *`string`[]* =  ['C-c']
+###  cut
 
-*Defined in [editorWidget/editorWidget.tsx:157](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L157)*
+• **cut**: *string[]* =  ['C-x']
 
-___
-<a id="editorbindings.cut"></a>
-
-####  cut
-
-**● cut**: *`string`[]* =  ['C-x']
-
-*Defined in [editorWidget/editorWidget.tsx:158](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L158)*
-
-___
-<a id="editorbindings.dedent"></a>
-
-####  dedent
-
-**● dedent**: *`string`[]* =  ['S-tab']
-
-*Defined in [editorWidget/editorWidget.tsx:154](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L154)*
-
-___
-<a id="editorbindings.deleteleft"></a>
-
-####  deleteLeft
-
-**● deleteLeft**: *`string`[]* =  ['backspace']
-
-*Defined in [editorWidget/editorWidget.tsx:145](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L145)*
-
-___
-<a id="editorbindings.deleteleftinfinity"></a>
-
-####  deleteLeftInfinity
-
-**● deleteLeftInfinity**: *`string`[]* =  ['C-S-backspace', 'M-S-backspace']
-
-*Defined in [editorWidget/editorWidget.tsx:149](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L149)*
-
-___
-<a id="editorbindings.deleteleftword"></a>
-
-####  deleteLeftWord
-
-**● deleteLeftWord**: *`string`[]* =  ['C-backspace', 'M-backspace', 'C-d', 'M-delete']
-
-*Defined in [editorWidget/editorWidget.tsx:147](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L147)*
-
-___
-<a id="editorbindings.deleteline"></a>
-
-####  deleteLine
-
-**● deleteLine**: *`string`[]* =  ['C-k']
-
-*Defined in [editorWidget/editorWidget.tsx:151](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L151)*
-
-___
-<a id="editorbindings.deleteright"></a>
-
-####  deleteRight
-
-**● deleteRight**: *`string`[]* =  ['delete']
-
-*Defined in [editorWidget/editorWidget.tsx:146](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L146)*
-
-___
-<a id="editorbindings.deleterightinfinity"></a>
-
-####  deleteRightInfinity
-
-**● deleteRightInfinity**: *`string`[]* =  ['C-S-delete', 'M-S-delete']
-
-*Defined in [editorWidget/editorWidget.tsx:150](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L150)*
-
-___
-<a id="editorbindings.deleterightword"></a>
-
-####  deleteRightWord
-
-**● deleteRightWord**: *`string`[]* =  ['C-delete', 'M-d']
-
-*Defined in [editorWidget/editorWidget.tsx:148](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L148)*
-
-___
-<a id="editorbindings.duplicateline"></a>
-
-####  duplicateLine
-
-**● duplicateLine**: *`string`[]* =  ['C-b']
-
-*Defined in [editorWidget/editorWidget.tsx:152](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L152)*
-
-___
-<a id="editorbindings.focusnext"></a>
-
-####  focusNext
-
-**● focusNext**: *`false`* = false
-
-*Defined in [editorWidget/editorWidget.tsx:161](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L161)*
-
-___
-<a id="editorbindings.focusprev"></a>
-
-####  focusPrev
-
-**● focusPrev**: *`false`* = false
-
-*Defined in [editorWidget/editorWidget.tsx:162](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L162)*
-
-___
-<a id="editorbindings.godown"></a>
-
-####  goDown
-
-**● goDown**: *`string`[]* =  ['down']
-
-*Defined in [editorWidget/editorWidget.tsx:125](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L125)*
-
-___
-<a id="editorbindings.godowninfinity"></a>
-
-####  goDownInfinity
-
-**● goDownInfinity**: *`string`[]* =  ['C-end', 'M-end', 'M->']
-
-*Defined in [editorWidget/editorWidget.tsx:127](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L127)*
-
-___
-<a id="editorbindings.godownpage"></a>
-
-####  goDownPage
-
-**● goDownPage**: *`string`[]* =  ['pagedown']
-
-*Defined in [editorWidget/editorWidget.tsx:126](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L126)*
-
-___
-<a id="editorbindings.godownparagraph"></a>
-
-####  goDownParagraph
-
-**● goDownParagraph**: *`string`[]* =  ['\u001b\u001b[B', 'C-down', 'M-down', 'M-}']
-
-*Defined in [editorWidget/editorWidget.tsx:124](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L124)*
-
-___
-<a id="editorbindings.goleft"></a>
-
-####  goLeft
-
-**● goLeft**: *`string`[]* =  ['left']
-
-*Defined in [editorWidget/editorWidget.tsx:114](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L114)*
-
-___
-<a id="editorbindings.goleftinfinity"></a>
-
-####  goLeftInfinity
-
-**● goLeftInfinity**: *`string`[]* =  ['home']
-
-*Defined in [editorWidget/editorWidget.tsx:116](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L116)*
-
-___
-<a id="editorbindings.goleftword"></a>
+*Defined in [editorWidget/editorWidget.tsx:158](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L158)*
 
-####  goLeftWord
+###  dedent
 
-**● goLeftWord**: *`string`[]* =  ['C-left', 'M-left', '\u001b\u001b[D', 'M-b', 'M-S-b']
+• **dedent**: *string[]* =  ['S-tab']
 
-*Defined in [editorWidget/editorWidget.tsx:115](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L115)*
+*Defined in [editorWidget/editorWidget.tsx:154](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L154)*
 
-___
-<a id="editorbindings.gomatchingbracket"></a>
-
-####  goMatchingBracket
-
-**● goMatchingBracket**: *`string`[]* =  ['C-m', 'C-]', '\u001d']
-
-*Defined in [editorWidget/editorWidget.tsx:128](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L128)*
-
-___
-<a id="editorbindings.goright"></a>
-
-####  goRight
-
-**● goRight**: *`string`[]* =  ['right']
-
-*Defined in [editorWidget/editorWidget.tsx:117](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L117)*
-
-___
-<a id="editorbindings.gorightinfinity"></a>
-
-####  goRightInfinity
-
-**● goRightInfinity**: *`string`[]* =  ['end', 'C-e']
-
-*Defined in [editorWidget/editorWidget.tsx:119](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L119)*
-
-___
-<a id="editorbindings.gorightword"></a>
-
-####  goRightWord
-
-**● goRightWord**: *`string`[]* =  ['C-right', 'M-right', '\u001b\u001b[C', 'M-f', 'M-S-f']
-
-*Defined in [editorWidget/editorWidget.tsx:118](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L118)*
-
-___
-<a id="editorbindings.goup"></a>
-
-####  goUp
+###  deleteLeft
 
-**● goUp**: *`string`[]* =  ['up']
+• **deleteLeft**: *string[]* =  ['backspace']
 
-*Defined in [editorWidget/editorWidget.tsx:121](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L121)*
+*Defined in [editorWidget/editorWidget.tsx:145](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L145)*
 
-___
-<a id="editorbindings.goupinfinity"></a>
+###  deleteLeftInfinity
 
-####  goUpInfinity
+• **deleteLeftInfinity**: *string[]* =  ['C-S-backspace', 'M-S-backspace']
 
-**● goUpInfinity**: *`string`[]* =  ['C-home', 'M-home', 'M-<']
+*Defined in [editorWidget/editorWidget.tsx:149](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L149)*
 
-*Defined in [editorWidget/editorWidget.tsx:123](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L123)*
+###  deleteLeftWord
 
-___
-<a id="editorbindings.gouppage"></a>
+• **deleteLeftWord**: *string[]* =  ['C-backspace', 'M-backspace', 'C-d', 'M-delete']
 
-####  goUpPage
+*Defined in [editorWidget/editorWidget.tsx:147](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L147)*
 
-**● goUpPage**: *`string`[]* =  ['pageup']
+###  deleteLine
 
-*Defined in [editorWidget/editorWidget.tsx:122](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L122)*
+• **deleteLine**: *string[]* =  ['C-k']
 
-___
-<a id="editorbindings.goupparagraph"></a>
+*Defined in [editorWidget/editorWidget.tsx:151](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L151)*
 
-####  goUpParagraph
+###  deleteRight
 
-**● goUpParagraph**: *`string`[]* =  ['C-up', 'M-{', 'M-up', '\u001b\u001b[A']
+• **deleteRight**: *string[]* =  ['delete']
 
-*Defined in [editorWidget/editorWidget.tsx:120](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L120)*
+*Defined in [editorWidget/editorWidget.tsx:146](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L146)*
 
-___
-<a id="editorbindings.indent"></a>
+###  deleteRightInfinity
 
-####  indent
+• **deleteRightInfinity**: *string[]* =  ['C-S-delete', 'M-S-delete']
 
-**● indent**: *`string`[]* =  ['tab', 'C-tab']
+*Defined in [editorWidget/editorWidget.tsx:150](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L150)*
 
-*Defined in [editorWidget/editorWidget.tsx:153](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L153)*
+###  deleteRightWord
 
-___
-<a id="editorbindings.paste"></a>
+• **deleteRightWord**: *string[]* =  ['C-delete', 'M-d']
 
-####  paste
+*Defined in [editorWidget/editorWidget.tsx:148](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L148)*
 
-**● paste**: *`string`[]* =  ['C-v']
+###  duplicateLine
 
-*Defined in [editorWidget/editorWidget.tsx:159](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L159)*
+• **duplicateLine**: *string[]* =  ['C-b']
 
-___
-<a id="editorbindings.redo"></a>
+*Defined in [editorWidget/editorWidget.tsx:152](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L152)*
 
-####  redo
+###  focusNext
 
-**● redo**: *`string`[]* =  ['C-y']
+• **focusNext**: *false* = false
 
-*Defined in [editorWidget/editorWidget.tsx:156](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L156)*
+*Defined in [editorWidget/editorWidget.tsx:161](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L161)*
 
-___
-<a id="editorbindings.selectall"></a>
+###  focusPrev
 
-####  selectAll
+• **focusPrev**: *false* = false
 
-**● selectAll**: *`string`[]* =  ['C-a']
+*Defined in [editorWidget/editorWidget.tsx:162](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L162)*
 
-*Defined in [editorWidget/editorWidget.tsx:129](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L129)*
+###  goDown
 
-___
-<a id="editorbindings.selectdown"></a>
+• **goDown**: *string[]* =  ['down']
 
-####  selectDown
+*Defined in [editorWidget/editorWidget.tsx:125](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L125)*
 
-**● selectDown**: *`string`[]* =  ['S-down']
+###  goDownInfinity
 
-*Defined in [editorWidget/editorWidget.tsx:140](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L140)*
+• **goDownInfinity**: *string[]* =  ['C-end', 'M-end', 'M->']
 
-___
-<a id="editorbindings.selectdowninfinity"></a>
+*Defined in [editorWidget/editorWidget.tsx:127](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L127)*
 
-####  selectDownInfinity
+###  goDownPage
 
-**● selectDownInfinity**: *`string`[]* =  ['C-S-end', 'M-S-end']
+• **goDownPage**: *string[]* =  ['pagedown']
 
-*Defined in [editorWidget/editorWidget.tsx:143](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L143)*
+*Defined in [editorWidget/editorWidget.tsx:126](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L126)*
 
-___
-<a id="editorbindings.selectdownpage"></a>
+###  goDownParagraph
 
-####  selectDownPage
+• **goDownParagraph**: *string[]* =  ['\u001b\u001b[B', 'C-down', 'M-down', 'M-}']
 
-**● selectDownPage**: *`string`[]* =  ['S-pagedown']
+*Defined in [editorWidget/editorWidget.tsx:124](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L124)*
 
-*Defined in [editorWidget/editorWidget.tsx:142](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L142)*
+###  goLeft
 
-___
-<a id="editorbindings.selectdownparagraph"></a>
+• **goLeft**: *string[]* =  ['left']
 
-####  selectDownParagraph
+*Defined in [editorWidget/editorWidget.tsx:114](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L114)*
 
-**● selectDownParagraph**: *`string`[]* =  ['C-S-down', 'M-S-down']
+###  goLeftInfinity
 
-*Defined in [editorWidget/editorWidget.tsx:141](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L141)*
+• **goLeftInfinity**: *string[]* =  ['home']
 
-___
-<a id="editorbindings.selectleft"></a>
+*Defined in [editorWidget/editorWidget.tsx:116](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L116)*
 
-####  selectLeft
+###  goLeftWord
 
-**● selectLeft**: *`string`[]* =  ['S-left']
+• **goLeftWord**: *string[]* =  ['C-left', 'M-left', '\u001b\u001b[D', 'M-b', 'M-S-b']
 
-*Defined in [editorWidget/editorWidget.tsx:130](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L130)*
+*Defined in [editorWidget/editorWidget.tsx:115](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L115)*
 
-___
-<a id="editorbindings.selectleftinfinity"></a>
+###  goMatchingBracket
 
-####  selectLeftInfinity
+• **goMatchingBracket**: *string[]* =  ['C-m', 'C-]', '\u001d']
 
-**● selectLeftInfinity**: *`string`[]* =  ['S-home']
+*Defined in [editorWidget/editorWidget.tsx:128](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L128)*
 
-*Defined in [editorWidget/editorWidget.tsx:132](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L132)*
+###  goRight
 
-___
-<a id="editorbindings.selectleftword"></a>
+• **goRight**: *string[]* =  ['right']
 
-####  selectLeftWord
+*Defined in [editorWidget/editorWidget.tsx:117](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L117)*
 
-**● selectLeftWord**: *`string`[]* =  ['C-S-left', 'M-S-left']
+###  goRightInfinity
 
-*Defined in [editorWidget/editorWidget.tsx:131](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L131)*
+• **goRightInfinity**: *string[]* =  ['end', 'C-e']
 
-___
-<a id="editorbindings.selectmatchingbracket"></a>
+*Defined in [editorWidget/editorWidget.tsx:119](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L119)*
 
-####  selectMatchingBracket
+###  goRightWord
 
-**● selectMatchingBracket**: *`string`[]* =  ['C-S-m']
+• **goRightWord**: *string[]* =  ['C-right', 'M-right', '\u001b\u001b[C', 'M-f', 'M-S-f']
 
-*Defined in [editorWidget/editorWidget.tsx:144](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L144)*
+*Defined in [editorWidget/editorWidget.tsx:118](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L118)*
 
-___
-<a id="editorbindings.selectright"></a>
+###  goUp
 
-####  selectRight
+• **goUp**: *string[]* =  ['up']
 
-**● selectRight**: *`string`[]* =  ['S-right']
+*Defined in [editorWidget/editorWidget.tsx:121](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L121)*
 
-*Defined in [editorWidget/editorWidget.tsx:133](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L133)*
+###  goUpInfinity
 
-___
-<a id="editorbindings.selectrightinfinity"></a>
+• **goUpInfinity**: *string[]* =  ['C-home', 'M-home', 'M-<']
 
-####  selectRightInfinity
+*Defined in [editorWidget/editorWidget.tsx:123](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L123)*
 
-**● selectRightInfinity**: *`string`[]* =  ['S-end']
+###  goUpPage
 
-*Defined in [editorWidget/editorWidget.tsx:135](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L135)*
+• **goUpPage**: *string[]* =  ['pageup']
 
-___
-<a id="editorbindings.selectrightword"></a>
+*Defined in [editorWidget/editorWidget.tsx:122](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L122)*
 
-####  selectRightWord
+###  goUpParagraph
 
-**● selectRightWord**: *`string`[]* =  ['C-S-right', 'M-S-right']
+• **goUpParagraph**: *string[]* =  ['C-up', 'M-{', 'M-up', '\u001b\u001b[A']
 
-*Defined in [editorWidget/editorWidget.tsx:134](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L134)*
+*Defined in [editorWidget/editorWidget.tsx:120](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L120)*
 
-___
-<a id="editorbindings.selectup"></a>
+###  indent
 
-####  selectUp
+• **indent**: *string[]* =  ['tab', 'C-tab']
 
-**● selectUp**: *`string`[]* =  ['S-up']
+*Defined in [editorWidget/editorWidget.tsx:153](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L153)*
 
-*Defined in [editorWidget/editorWidget.tsx:136](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L136)*
+###  paste
 
-___
-<a id="editorbindings.selectupinfinity"></a>
+• **paste**: *string[]* =  ['C-v']
 
-####  selectUpInfinity
+*Defined in [editorWidget/editorWidget.tsx:159](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L159)*
 
-**● selectUpInfinity**: *`string`[]* =  ['C-S-home', 'M-S-home']
+###  redo
 
-*Defined in [editorWidget/editorWidget.tsx:139](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L139)*
+• **redo**: *string[]* =  ['C-y']
 
-___
-<a id="editorbindings.selectuppage"></a>
+*Defined in [editorWidget/editorWidget.tsx:156](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L156)*
 
-####  selectUpPage
+###  selectAll
 
-**● selectUpPage**: *`string`[]* =  ['S-pageup']
+• **selectAll**: *string[]* =  ['C-a']
 
-*Defined in [editorWidget/editorWidget.tsx:138](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L138)*
+*Defined in [editorWidget/editorWidget.tsx:129](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L129)*
 
-___
-<a id="editorbindings.selectupparagraph"></a>
+###  selectDown
 
-####  selectUpParagraph
+• **selectDown**: *string[]* =  ['S-down']
 
-**● selectUpParagraph**: *`string`[]* =  ['C-S-up', 'M-S-up']
+*Defined in [editorWidget/editorWidget.tsx:140](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L140)*
 
-*Defined in [editorWidget/editorWidget.tsx:137](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L137)*
+###  selectDownInfinity
 
-___
-<a id="editorbindings.toggleinsertmode"></a>
+• **selectDownInfinity**: *string[]* =  ['C-S-end', 'M-S-end']
 
-####  toggleInsertMode
+*Defined in [editorWidget/editorWidget.tsx:143](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L143)*
 
-**● toggleInsertMode**: *`string`[]* =  ['insert']
+###  selectDownPage
 
-*Defined in [editorWidget/editorWidget.tsx:160](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L160)*
+• **selectDownPage**: *string[]* =  ['S-pagedown']
 
-___
-<a id="editorbindings.undo"></a>
+*Defined in [editorWidget/editorWidget.tsx:142](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L142)*
 
-####  undo
+###  selectDownParagraph
 
-**● undo**: *`string`[]* =  ['C-z']
+• **selectDownParagraph**: *string[]* =  ['C-S-down', 'M-S-down']
 
-*Defined in [editorWidget/editorWidget.tsx:155](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L155)*
+*Defined in [editorWidget/editorWidget.tsx:141](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L141)*
 
-___
+###  selectLeft
 
-___
-<a id="editorgutterstyle"></a>
+• **selectLeft**: *string[]* =  ['S-left']
 
-### `<Const>` editorGutterStyle
+*Defined in [editorWidget/editorWidget.tsx:130](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L130)*
 
-**editorGutterStyle**: *`object`*
+###  selectLeftInfinity
 
-*Defined in [editorWidget/editorWidget.tsx:201](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L201)*
+• **selectLeftInfinity**: *string[]* =  ['S-home']
 
-<a id="editorgutterstyle.bg"></a>
+*Defined in [editorWidget/editorWidget.tsx:132](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L132)*
 
-####  bg
+###  selectLeftWord
 
-**● bg**: *`string`* = "blue"
+• **selectLeftWord**: *string[]* =  ['C-S-left', 'M-S-left']
 
-*Defined in [editorWidget/editorWidget.tsx:202](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L202)*
+*Defined in [editorWidget/editorWidget.tsx:131](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L131)*
 
-___
-<a id="editorgutterstyle.currentline"></a>
+###  selectMatchingBracket
 
-####  currentLine
+• **selectMatchingBracket**: *string[]* =  ['C-S-m']
 
-**● currentLine**: *`string`* = "{white-bg}{black-fg}{bold}"
+*Defined in [editorWidget/editorWidget.tsx:144](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L144)*
 
-*Defined in [editorWidget/editorWidget.tsx:203](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L203)*
+###  selectRight
 
-___
+• **selectRight**: *string[]* =  ['S-right']
 
-___
-<a id="editorperf"></a>
+*Defined in [editorWidget/editorWidget.tsx:133](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L133)*
 
-### `<Const>` editorPerf
+###  selectRightInfinity
 
-**editorPerf**: *`object`*
+• **selectRightInfinity**: *string[]* =  ['S-end']
 
-*Defined in [editorWidget/editorWidget.tsx:206](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L206)*
+*Defined in [editorWidget/editorWidget.tsx:135](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L135)*
 
-<a id="editorperf.matchesrenderthrottle"></a>
+###  selectRightWord
 
-####  matchesRenderThrottle
+• **selectRightWord**: *string[]* =  ['C-S-right', 'M-S-right']
 
-**● matchesRenderThrottle**: *`number`* = 150
+*Defined in [editorWidget/editorWidget.tsx:134](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L134)*
 
-*Defined in [editorWidget/editorWidget.tsx:207](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L207)*
+###  selectUp
 
-___
-<a id="editorperf.updatecontentthrottle"></a>
+• **selectUp**: *string[]* =  ['S-up']
 
-####  updateContentThrottle
+*Defined in [editorWidget/editorWidget.tsx:136](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L136)*
 
-**● updateContentThrottle**: *`number`* = 16
+###  selectUpInfinity
 
-*Defined in [editorWidget/editorWidget.tsx:208](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L208)*
+• **selectUpInfinity**: *string[]* =  ['C-S-home', 'M-S-home']
 
-___
+*Defined in [editorWidget/editorWidget.tsx:139](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L139)*
 
-___
-<a id="editorstyle"></a>
+###  selectUpPage
 
-### `<Const>` editorStyle
+• **selectUpPage**: *string[]* =  ['S-pageup']
 
-**editorStyle**: *`object`*
+*Defined in [editorWidget/editorWidget.tsx:138](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L138)*
 
-*Defined in [editorWidget/editorWidget.tsx:165](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L165)*
+###  selectUpParagraph
 
-<a id="editorstyle.attribute"></a>
+• **selectUpParagraph**: *string[]* =  ['C-S-up', 'M-S-up']
 
-####  attribute
+*Defined in [editorWidget/editorWidget.tsx:137](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L137)*
 
-**● attribute**: *`string`* = "{yellow-fg}"
+###  toggleInsertMode
 
-*Defined in [editorWidget/editorWidget.tsx:194](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L194)*
+• **toggleInsertMode**: *string[]* =  ['insert']
 
-___
-<a id="editorstyle.built_in"></a>
+*Defined in [editorWidget/editorWidget.tsx:160](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L160)*
 
-####  built_in
+###  undo
 
-**● built_in**: *`string`* = "{yellow-fg}"
+• **undo**: *string[]* =  ['C-z']
 
-*Defined in [editorWidget/editorWidget.tsx:172](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L172)*
+*Defined in [editorWidget/editorWidget.tsx:155](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L155)*
 
 ___
-<a id="editorstyle.bullet"></a>
-
-####  bullet
 
-**● bullet**: *`string`* = "{magenta-fg}"
+### `Const` editorGutterStyle
 
-*Defined in [editorWidget/editorWidget.tsx:193](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L193)*
+### ▪ **editorGutterStyle**: *object*
 
-___
-<a id="editorstyle.class"></a>
+*Defined in [editorWidget/editorWidget.tsx:201](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L201)*
 
-####  class
+###  bg
 
-**● class**: *`string`* = "{yellow-fg}"
+• **bg**: *string* = "blue"
 
-*Defined in [editorWidget/editorWidget.tsx:176](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L176)*
-
-___
-<a id="editorstyle.code"></a>
+*Defined in [editorWidget/editorWidget.tsx:202](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L202)*
 
-####  code
+###  currentLine
 
-**● code**: *`string`* = "{green-fg}"
+• **currentLine**: *string* = "{white-bg}{black-fg}{bold}"
 
-*Defined in [editorWidget/editorWidget.tsx:190](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L190)*
+*Defined in [editorWidget/editorWidget.tsx:203](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L203)*
 
 ___
-<a id="editorstyle.comment"></a>
 
-####  comment
+### `Const` editorPerf
 
-**● comment**: *`string`* = "{gray-fg}"
-
-*Defined in [editorWidget/editorWidget.tsx:187](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L187)*
-
-___
-<a id="editorstyle.constant"></a>
+### ▪ **editorPerf**: *object*
 
-####  constant
+*Defined in [editorWidget/editorWidget.tsx:206](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L206)*
 
-**● constant**: *`string`* = "{yellow-fg}"
+###  matchesRenderThrottle
 
-*Defined in [editorWidget/editorWidget.tsx:199](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L199)*
+• **matchesRenderThrottle**: *number* = 150
 
-___
-<a id="editorstyle.decorator"></a>
+*Defined in [editorWidget/editorWidget.tsx:207](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L207)*
 
-####  decorator
+###  updateContentThrottle
 
-**● decorator**: *`string`* = "{bold}"
+• **updateContentThrottle**: *number* = 16
 
-*Defined in [editorWidget/editorWidget.tsx:178](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L178)*
+*Defined in [editorWidget/editorWidget.tsx:208](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L208)*
 
 ___
-<a id="editorstyle.function"></a>
 
-####  function
+### `Const` editorStyle
 
-**● function**: *`string`* = "{yellow-fg}"
+### ▪ **editorStyle**: *object*
 
-*Defined in [editorWidget/editorWidget.tsx:177](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L177)*
-
-___
-<a id="editorstyle.header"></a>
+*Defined in [editorWidget/editorWidget.tsx:165](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L165)*
 
-####  header
+###  attribute
 
-**● header**: *`string`* = "{bold}"
+• **attribute**: *string* = "{yellow-fg}"
 
-*Defined in [editorWidget/editorWidget.tsx:188](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L188)*
+*Defined in [editorWidget/editorWidget.tsx:194](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L194)*
 
-___
-<a id="editorstyle.keyword"></a>
+###  built_in
 
-####  keyword
+• **built_in**: *string* = "{yellow-fg}"
 
-**● keyword**: *`string`* = "{red-fg}"
+*Defined in [editorWidget/editorWidget.tsx:172](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L172)*
 
-*Defined in [editorWidget/editorWidget.tsx:171](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L171)*
+###  bullet
 
-___
-<a id="editorstyle.label"></a>
+• **bullet**: *string* = "{magenta-fg}"
 
-####  label
+*Defined in [editorWidget/editorWidget.tsx:193](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L193)*
 
-**● label**: *`string`* = ""
+###  class
 
-*Defined in [editorWidget/editorWidget.tsx:197](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L197)*
+• **class**: *string* = "{yellow-fg}"
 
-___
-<a id="editorstyle.link_label"></a>
+*Defined in [editorWidget/editorWidget.tsx:176](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L176)*
 
-####  link_label
+###  code
 
-**● link_label**: *`string`* = ""
+• **code**: *string* = "{green-fg}"
 
-*Defined in [editorWidget/editorWidget.tsx:191](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L191)*
+*Defined in [editorWidget/editorWidget.tsx:190](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L190)*
 
-___
-<a id="editorstyle.link_url"></a>
+###  comment
 
-####  link_url
+• **comment**: *string* = "{gray-fg}"
 
-**● link_url**: *`string`* = "{yellow-fg}"
+*Defined in [editorWidget/editorWidget.tsx:187](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L187)*
 
-*Defined in [editorWidget/editorWidget.tsx:192](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L192)*
+###  constant
 
-___
-<a id="editorstyle.literal"></a>
+• **constant**: *string* = "{yellow-fg}"
 
-####  literal
+*Defined in [editorWidget/editorWidget.tsx:199](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L199)*
 
-**● literal**: *`string`* = "{green-fg}{bold}"
+###  decorator
 
-*Defined in [editorWidget/editorWidget.tsx:186](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L186)*
+• **decorator**: *string* = "{bold}"
 
-___
-<a id="editorstyle.match"></a>
+*Defined in [editorWidget/editorWidget.tsx:178](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L178)*
 
-####  match
+###  function
 
-**● match**: *`string`* = "{yellow-bg}"
+• **function**: *string* = "{yellow-fg}"
 
-*Defined in [editorWidget/editorWidget.tsx:167](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L167)*
+*Defined in [editorWidget/editorWidget.tsx:177](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L177)*
 
-___
-<a id="editorstyle.matchingbracket"></a>
+###  header
 
-####  matchingBracket
+• **header**: *string* = "{bold}"
 
-**● matchingBracket**: *`string`* = "{green-bg}{bold}"
+*Defined in [editorWidget/editorWidget.tsx:188](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L188)*
 
-*Defined in [editorWidget/editorWidget.tsx:168](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L168)*
+###  keyword
 
-___
-<a id="editorstyle.mismatchedbracket"></a>
+• **keyword**: *string* = "{red-fg}"
 
-####  mismatchedBracket
+*Defined in [editorWidget/editorWidget.tsx:171](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L171)*
 
-**● mismatchedBracket**: *`string`* = "{red-bg}{bold}"
+###  label
 
-*Defined in [editorWidget/editorWidget.tsx:169](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L169)*
+• **label**: *string* = ""
 
-___
-<a id="editorstyle.number"></a>
+*Defined in [editorWidget/editorWidget.tsx:197](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L197)*
 
-####  number
+###  link_label
 
-**● number**: *`string`* = "{green-fg}{bold}"
+• **link_label**: *string* = ""
 
-*Defined in [editorWidget/editorWidget.tsx:183](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L183)*
+*Defined in [editorWidget/editorWidget.tsx:191](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L191)*
 
-___
-<a id="editorstyle.operator"></a>
+###  link_url
 
-####  operator
+• **link_url**: *string* = "{yellow-fg}"
 
-**● operator**: *`string`* = "{green-fg}"
+*Defined in [editorWidget/editorWidget.tsx:192](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L192)*
 
-*Defined in [editorWidget/editorWidget.tsx:181](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L181)*
+###  literal
 
-___
-<a id="editorstyle.params"></a>
+• **literal**: *string* = "{green-fg}{bold}"
 
-####  params
+*Defined in [editorWidget/editorWidget.tsx:186](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L186)*
 
-**● params**: *`string`* = "{yellow-fg}"
+###  match
 
-*Defined in [editorWidget/editorWidget.tsx:175](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L175)*
+• **match**: *string* = "{yellow-bg}"
 
-___
-<a id="editorstyle.preprocessor"></a>
+*Defined in [editorWidget/editorWidget.tsx:167](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L167)*
 
-####  preprocessor
+###  matchingBracket
 
-**● preprocessor**: *`string`* = "{red-fg}"
+• **matchingBracket**: *string* = "{green-bg}{bold}"
 
-*Defined in [editorWidget/editorWidget.tsx:173](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L173)*
+*Defined in [editorWidget/editorWidget.tsx:168](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L168)*
 
-___
-<a id="editorstyle.regexp"></a>
+###  mismatchedBracket
 
-####  regexp
+• **mismatchedBracket**: *string* = "{red-bg}{bold}"
 
-**● regexp**: *`string`* = "{green-fg}{bold}"
+*Defined in [editorWidget/editorWidget.tsx:169](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L169)*
 
-*Defined in [editorWidget/editorWidget.tsx:185](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L185)*
+###  number
 
-___
-<a id="editorstyle.selection"></a>
+• **number**: *string* = "{green-fg}{bold}"
 
-####  selection
+*Defined in [editorWidget/editorWidget.tsx:183](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L183)*
 
-**● selection**: *`string`* = "{lightgray-bg}{black-fg}{bold}"
+###  operator
 
-*Defined in [editorWidget/editorWidget.tsx:166](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L166)*
+• **operator**: *string* = "{green-fg}"
 
-___
-<a id="editorstyle.setting"></a>
+*Defined in [editorWidget/editorWidget.tsx:181](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L181)*
 
-####  setting
+###  params
 
-**● setting**: *`string`* = ""
+• **params**: *string* = "{yellow-fg}"
 
-*Defined in [editorWidget/editorWidget.tsx:196](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L196)*
+*Defined in [editorWidget/editorWidget.tsx:175](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L175)*
 
-___
-<a id="editorstyle.shebang"></a>
+###  preprocessor
 
-####  shebang
+• **preprocessor**: *string* = "{red-fg}"
 
-**● shebang**: *`string`* = "{yellow-bg}{black-fg}"
+*Defined in [editorWidget/editorWidget.tsx:173](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L173)*
 
-*Defined in [editorWidget/editorWidget.tsx:179](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L179)*
+###  regexp
 
-___
-<a id="editorstyle.string"></a>
+• **regexp**: *string* = "{green-fg}{bold}"
 
-####  string
+*Defined in [editorWidget/editorWidget.tsx:185](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L185)*
 
-**● string**: *`string`* = "{green-fg}{bold}"
+###  selection
 
-*Defined in [editorWidget/editorWidget.tsx:184](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L184)*
+• **selection**: *string* = "{lightgray-bg}{black-fg}{bold}"
 
-___
-<a id="editorstyle.strong"></a>
+*Defined in [editorWidget/editorWidget.tsx:166](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L166)*
 
-####  strong
+###  setting
 
-**● strong**: *`string`* = "{bold}"
+• **setting**: *string* = ""
 
-*Defined in [editorWidget/editorWidget.tsx:189](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L189)*
+*Defined in [editorWidget/editorWidget.tsx:196](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L196)*
 
-___
-<a id="editorstyle.subst"></a>
+###  shebang
 
-####  subst
+• **shebang**: *string* = "{yellow-bg}{black-fg}"
 
-**● subst**: *`string`* = ""
+*Defined in [editorWidget/editorWidget.tsx:179](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L179)*
 
-*Defined in [editorWidget/editorWidget.tsx:182](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L182)*
+###  string
 
-___
-<a id="editorstyle.symbol"></a>
+• **string**: *string* = "{green-fg}{bold}"
 
-####  symbol
+*Defined in [editorWidget/editorWidget.tsx:184](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L184)*
 
-**● symbol**: *`string`* = "{red-fg}"
+###  strong
 
-*Defined in [editorWidget/editorWidget.tsx:198](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L198)*
+• **strong**: *string* = "{bold}"
 
-___
-<a id="editorstyle.title"></a>
+*Defined in [editorWidget/editorWidget.tsx:189](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L189)*
 
-####  title
+###  subst
 
-**● title**: *`string`* = "{underline}"
+• **subst**: *string* = ""
 
-*Defined in [editorWidget/editorWidget.tsx:174](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L174)*
+*Defined in [editorWidget/editorWidget.tsx:182](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L182)*
 
-___
-<a id="editorstyle.value"></a>
+###  symbol
 
-####  value
+• **symbol**: *string* = "{red-fg}"
 
-**● value**: *`string`* = "{green-fg}{bold}"
+*Defined in [editorWidget/editorWidget.tsx:198](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L198)*
 
-*Defined in [editorWidget/editorWidget.tsx:195](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L195)*
+###  title
 
-___
-<a id="editorstyle.variable"></a>
+• **title**: *string* = "{underline}"
 
-####  variable
+*Defined in [editorWidget/editorWidget.tsx:174](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L174)*
 
-**● variable**: *`string`* = "{yellow-fg}"
+###  value
 
-*Defined in [editorWidget/editorWidget.tsx:180](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L180)*
+• **value**: *string* = "{green-fg}{bold}"
 
-___
-<a id="editorstyle.whitespace"></a>
+*Defined in [editorWidget/editorWidget.tsx:195](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L195)*
 
-####  whiteSpace
+###  variable
 
-**● whiteSpace**: *`string`* = "{blue-fg}"
+• **variable**: *string* = "{yellow-fg}"
 
-*Defined in [editorWidget/editorWidget.tsx:170](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidget.tsx#L170)*
+*Defined in [editorWidget/editorWidget.tsx:180](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L180)*
 
-___
+###  whiteSpace
 
-___
+• **whiteSpace**: *string* = "{blue-fg}"
 
+*Defined in [editorWidget/editorWidget.tsx:170](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L170)*

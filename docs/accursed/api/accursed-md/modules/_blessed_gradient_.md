@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["blessed/gradient"](../modules/_blessed_gradient_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["blessed/gradient"](_blessed_gradient_.md)
 
 # External module: "blessed/gradient"
 
@@ -24,31 +24,20 @@
 
 ### Variables
 
-* [gradstop](_blessed_gradient_.md#gradstop)
-
----
+* [gradstop](_blessed_gradient_.md#const-gradstop)
 
 ## Type aliases
 
-<a id="gradientcolors"></a>
-
 ###  GradientColors
 
-**Ƭ GradientColors**: *[`string`, `string`] \| [`string`, `string`, `string`] \| [`string`, `string`, `string`, `string`]*
+Ƭ **GradientColors**: *[string, string] | [string, string, string] | [string, string, string, string]*
 
-*Defined in [blessed/gradient.ts:9](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/gradient.ts#L9)*
-
-___
+*Defined in [blessed/gradient.ts:9](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/gradient.ts#L9)*
 
 ## Variables
 
-<a id="gradstop"></a>
+### `Const` gradstop
 
-### `<Const>` gradstop
+• **gradstop**: *any* =  require('gradstop')
 
-**● gradstop**: *`any`* =  require('gradstop')
-
-*Defined in [blessed/gradient.ts:7](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/gradient.ts#L7)*
-
-___
-
+*Defined in [blessed/gradient.ts:7](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/gradient.ts#L7)*

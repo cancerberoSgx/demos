@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["editorWidget/editorWidgetTypes"](../modules/_editorwidget_editorwidgettypes_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["editorWidget/editorWidgetTypes"](_editorwidget_editorwidgettypes_.md)
 
 # External module: "editorWidget/editorWidgetTypes"
 
@@ -20,17 +20,10 @@
 
 * [Direction](_editorwidget_editorwidgettypes_.md#direction)
 
----
-
 ## Type aliases
-
-<a id="direction"></a>
 
 ###  Direction
 
-**Ƭ Direction**: *`-1` \| `1`*
+Ƭ **Direction**: *-1 | 1*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:37](https://github.com/cancerberoSgx/accursed/blob/978b980/src/editorWidget/editorWidgetTypes.tsx#L37)*
-
-___
-
+*Defined in [editorWidget/editorWidgetTypes.tsx:37](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L37)*

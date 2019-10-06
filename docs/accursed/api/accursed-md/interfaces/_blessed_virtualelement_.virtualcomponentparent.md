@@ -1,10 +1,10 @@
-[accursed](../README.md) > ["blessed/virtualElement"](../modules/_blessed_virtualelement_.md) > [VirtualComponentParent](../interfaces/_blessed_virtualelement_.virtualcomponentparent.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["blessed/virtualElement"](../modules/_blessed_virtualelement_.md) › [VirtualComponentParent](_blessed_virtualelement_.virtualcomponentparent.md)
 
 # Interface: VirtualComponentParent
 
 ## Hierarchy
 
-**VirtualComponentParent**
+* **VirtualComponentParent**
 
 ## Index
 
@@ -12,17 +12,10 @@
 
 * [__virtualProps](_blessed_virtualelement_.virtualcomponentparent.md#__virtualprops)
 
----
-
 ## Properties
-
-<a id="__virtualprops"></a>
 
 ###  __virtualProps
 
-**● __virtualProps**: *`__type`*
+• **__virtualProps**: *__type*
 
-*Defined in [blessed/virtualElement.ts:58](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/virtualElement.ts#L58)*
-
-___
-
+*Defined in [blessed/virtualElement.ts:58](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L58)*

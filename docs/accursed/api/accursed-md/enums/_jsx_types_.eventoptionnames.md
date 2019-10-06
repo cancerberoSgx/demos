@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["jsx/types"](../modules/_jsx_types_.md) > [EventOptionNames](../enums/_jsx_types_.eventoptionnames.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx/types"](../modules/_jsx_types_.md) › [EventOptionNames](_jsx_types_.eventoptionnames.md)
 
 # Enumeration: EventOptionNames
 
@@ -11,44 +11,34 @@
 * [once](_jsx_types_.eventoptionnames.md#once)
 * [onceKey](_jsx_types_.eventoptionnames.md#oncekey)
 
----
-
 ## Enumeration members
-
-<a id="key"></a>
 
 ###  key
 
-**key**:  = "key"
+• **key**: = "key"
 
-*Defined in [jsx/types.ts:55](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L55)*
+*Defined in [jsx/types.ts:55](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L55)*
 
 ___
-<a id="on"></a>
 
 ###  on
 
-**on**:  = "on"
+• **on**: = "on"
 
-*Defined in [jsx/types.ts:57](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L57)*
+*Defined in [jsx/types.ts:57](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L57)*
 
 ___
-<a id="once"></a>
 
 ###  once
 
-**once**:  = "once"
+• **once**: = "once"
 
-*Defined in [jsx/types.ts:58](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L58)*
+*Defined in [jsx/types.ts:58](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L58)*
 
 ___
-<a id="oncekey"></a>
 
 ###  onceKey
 
-**onceKey**:  = "onceKey"
+• **onceKey**: = "onceKey"
 
-*Defined in [jsx/types.ts:56](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L56)*
-
-___
-
+*Defined in [jsx/types.ts:56](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L56)*

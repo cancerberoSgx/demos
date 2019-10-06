@@ -1,10 +1,10 @@
-[accursed](../README.md) > ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md) > [Widgets](../modules/_declarations_blessed_d_.widgets.md) > [IDestroyable](../interfaces/_declarations_blessed_d_.widgets.idestroyable.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md) › [Widgets](../modules/_declarations_blessed_d_.widgets.md) › [IDestroyable](_declarations_blessed_d_.widgets.idestroyable.md)
 
 # Interface: IDestroyable
 
 ## Hierarchy
 
-**IDestroyable**
+* **IDestroyable**
 
 ## Implemented by
 
@@ -118,25 +118,18 @@
 
 * [destroy](_declarations_blessed_d_.widgets.idestroyable.md#destroy)
 
----
-
 ## Methods
-
-<a id="destroy"></a>
 
 ###  destroy
 
-▸ **destroy**(): `void`
+▸ **destroy**(): *void*
 
-▸ **destroy**(): `void`
+*Defined in [declarations/blessed.d.ts:219](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L219)*
 
-*Defined in [declarations/blessed.d.ts:217](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L217)*
+**Returns:** *void*
 
-**Returns:** `void`
+▸ **destroy**(): *void*
 
-*Defined in [declarations/blessed.d.ts:295](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L295)*
+*Defined in [declarations/blessed.d.ts:229](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L229)*
 
-**Returns:** `void`
-
-___
-
+**Returns:** *void*

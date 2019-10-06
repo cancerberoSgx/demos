@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["declarations/blessed-contrib.d"](../modules/_declarations_blessed_contrib_d_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["declarations/blessed-contrib.d"](_declarations_blessed_contrib_d_.md)
 
 # External module: "declarations/blessed-contrib.d"
 
@@ -7,6 +7,3 @@
 ### Modules
 
 * [BlessedContrib](_declarations_blessed_contrib_d_.blessedcontrib.md)
-
----
-

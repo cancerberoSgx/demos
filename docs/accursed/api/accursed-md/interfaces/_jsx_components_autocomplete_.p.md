@@ -1,100 +1,104 @@
-[accursed](../README.md) > ["jsx-components/autocomplete"](../modules/_jsx_components_autocomplete_.md) > [P](../interfaces/_jsx_components_autocomplete_.p.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx-components/autocomplete"](../modules/_jsx_components_autocomplete_.md) › [P](_jsx_components_autocomplete_.p.md)
 
 # Interface: P
 
 ## Hierarchy
 
- `object`
+* object
 
-**↳ P**
+  ↳ **P**
 
 ## Index
 
 ### Properties
 
-* [inputOptions](_jsx_components_autocomplete_.p.md#inputoptions)
-* [listOptions](_jsx_components_autocomplete_.p.md#listoptions)
-* [options](_jsx_components_autocomplete_.p.md#options)
-* [optionsMax](_jsx_components_autocomplete_.p.md#optionsmax)
-* [suggestionRenderThrottle](_jsx_components_autocomplete_.p.md#suggestionrenderthrottle)
+* [inputOptions](_jsx_components_autocomplete_.p.md#optional-inputoptions)
+* [listOptions](_jsx_components_autocomplete_.p.md#optional-listoptions)
+* [options](_jsx_components_autocomplete_.p.md#optional-options)
+* [optionsMax](_jsx_components_autocomplete_.p.md#optional-optionsmax)
+* [suggestionRenderThrottle](_jsx_components_autocomplete_.p.md#optional-suggestionrenderthrottle)
 
 ### Methods
 
-* [onChange](_jsx_components_autocomplete_.p.md#onchange)
-
----
+* [onChange](_jsx_components_autocomplete_.p.md#optional-onchange)
+* [onSelectOption](_jsx_components_autocomplete_.p.md#optional-onselectoption)
 
 ## Properties
 
-<a id="inputoptions"></a>
+### `Optional` inputOptions
 
-### `<Optional>` inputOptions
+• **inputOptions**? : *[TextboxOptions](_declarations_blessed_d_.widgets.textboxoptions.md)*
 
-**● inputOptions**: *[TextboxOptions](_declarations_blessed_d_.widgets.textboxoptions.md)*
-
-*Defined in [jsx-components/autocomplete.tsx:28](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/autocomplete.tsx#L28)*
+*Defined in [jsx-components/autocomplete.tsx:39](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/autocomplete.tsx#L39)*
 
 ___
-<a id="listoptions"></a>
 
-### `<Optional>` listOptions
+### `Optional` listOptions
 
-**● listOptions**: *[ListOptions](_declarations_blessed_d_.widgets.listoptions.md)*
+• **listOptions**? : *[ListOptions](_declarations_blessed_d_.widgets.listoptions.md)*
 
-*Defined in [jsx-components/autocomplete.tsx:29](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/autocomplete.tsx#L29)*
+*Defined in [jsx-components/autocomplete.tsx:40](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/autocomplete.tsx#L40)*
 
 ___
-<a id="options"></a>
 
-### `<Optional>` options
+### `Optional` options
 
-**● options**: *`string`[]*
+• **options**? : *string[]*
 
-*Defined in [jsx-components/autocomplete.tsx:21](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/autocomplete.tsx#L21)*
+*Defined in [jsx-components/autocomplete.tsx:32](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/autocomplete.tsx#L32)*
 
 Suggestions array.
 
 ___
-<a id="optionsmax"></a>
 
-### `<Optional>` optionsMax
+### `Optional` optionsMax
 
-**● optionsMax**: *`number`*
+• **optionsMax**? : *number*
 
-*Defined in [jsx-components/autocomplete.tsx:26](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/autocomplete.tsx#L26)*
+*Defined in [jsx-components/autocomplete.tsx:37](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/autocomplete.tsx#L37)*
 
 Maximum amount of options suggested to the user for an input. Note: Suggesting too much options can degrade the user experience while typing. Default value is 10.
 
 ___
-<a id="suggestionrenderthrottle"></a>
 
-### `<Optional>` suggestionRenderThrottle
+### `Optional` suggestionRenderThrottle
 
-**● suggestionRenderThrottle**: *`number`*
+• **suggestionRenderThrottle**? : *number*
 
-*Defined in [jsx-components/autocomplete.tsx:16](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/autocomplete.tsx#L16)*
+*Defined in [jsx-components/autocomplete.tsx:27](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/autocomplete.tsx#L27)*
 
 Throttling time to render suggestion list. Default value is 0
 
-___
-
 ## Methods
 
-<a id="onchange"></a>
+### `Optional` onChange
 
-### `<Optional>` onChange
+▸ **onChange**(`e`: [ArtificialEvent](_jsx_types_.artificialevent.md)‹[Textbox](../classes/_declarations_blessed_d_.widget.textbox.md)› & object): *void*
 
-▸ **onChange**(e: *[ArtificialEvent](_jsx_types_.artificialevent.md)<[Textbox](../classes/_declarations_blessed_d_.widget.textbox.md)> & `object`*): `void`
-
-*Defined in [jsx-components/autocomplete.tsx:7](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/autocomplete.tsx#L7)*
+*Defined in [jsx-components/autocomplete.tsx:7](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/autocomplete.tsx#L7)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| e | [ArtificialEvent](_jsx_types_.artificialevent.md)<[Textbox](../classes/_declarations_blessed_d_.widget.textbox.md)> & `object` |
+Name | Type |
+------ | ------ |
+`e` | [ArtificialEvent](_jsx_types_.artificialevent.md)‹[Textbox](../classes/_declarations_blessed_d_.widget.textbox.md)› & object |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
 
+### `Optional` onSelectOption
+
+▸ **onSelectOption**(`e`: [ArtificialEvent](_jsx_types_.artificialevent.md)‹[Textbox](../classes/_declarations_blessed_d_.widget.textbox.md)› & object): *void*
+
+*Defined in [jsx-components/autocomplete.tsx:19](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/autocomplete.tsx#L19)*
+
+Notifies when the user scrolls through the options using the arrow keys or mouse wheel. It doesn't  when the user confirm the selection pressing enter, for that use [onChange](_jsx_components_autocomplete_.p.md#optional-onchange)
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`e` | [ArtificialEvent](_jsx_types_.artificialevent.md)‹[Textbox](../classes/_declarations_blessed_d_.widget.textbox.md)› & object |
+
+**Returns:** *void*

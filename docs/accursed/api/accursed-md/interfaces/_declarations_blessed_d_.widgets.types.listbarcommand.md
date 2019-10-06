@@ -1,66 +1,53 @@
-[accursed](../README.md) > ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md) > [Widgets](../modules/_declarations_blessed_d_.widgets.md) > [Types](../modules/_declarations_blessed_d_.widgets.types.md) > [ListbarCommand](../interfaces/_declarations_blessed_d_.widgets.types.listbarcommand.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md) › [Widgets](../modules/_declarations_blessed_d_.widgets.md) › [Types](../modules/_declarations_blessed_d_.widgets.types.md) › [ListbarCommand](_declarations_blessed_d_.widgets.types.listbarcommand.md)
 
 # Interface: ListbarCommand
 
 ## Hierarchy
 
-**ListbarCommand**
+* **ListbarCommand**
 
 ## Index
 
 ### Properties
 
-* [key](_declarations_blessed_d_.widgets.types.listbarcommand.md#key)
-* [prefix](_declarations_blessed_d_.widgets.types.listbarcommand.md#prefix)
-* [text](_declarations_blessed_d_.widgets.types.listbarcommand.md#text)
+* [key](_declarations_blessed_d_.widgets.types.listbarcommand.md#optional-key)
+* [prefix](_declarations_blessed_d_.widgets.types.listbarcommand.md#optional-prefix)
+* [text](_declarations_blessed_d_.widgets.types.listbarcommand.md#optional-text)
 
 ### Methods
 
 * [callback](_declarations_blessed_d_.widgets.types.listbarcommand.md#callback)
 
----
-
 ## Properties
 
-<a id="key"></a>
+### `Optional` key
 
-### `<Optional>` key
+• **key**? : *string*
 
-**● key**: *`string`*
-
-*Defined in [declarations/blessed.d.ts:124](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L124)*
+*Defined in [declarations/blessed.d.ts:126](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L126)*
 
 ___
-<a id="prefix"></a>
 
-### `<Optional>` prefix
+### `Optional` prefix
 
-**● prefix**: *`string`*
+• **prefix**? : *string*
 
-*Defined in [declarations/blessed.d.ts:127](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L127)*
-
-___
-<a id="text"></a>
-
-### `<Optional>` text
-
-**● text**: *`string`*
-
-*Defined in [declarations/blessed.d.ts:126](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L126)*
+*Defined in [declarations/blessed.d.ts:129](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L129)*
 
 ___
+
+### `Optional` text
+
+• **text**? : *string*
+
+*Defined in [declarations/blessed.d.ts:128](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L128)*
 
 ## Methods
 
-<a id="callback"></a>
-
 ###  callback
 
-▸ **callback**(): `void`
+▸ **callback**(): *void*
 
-*Defined in [declarations/blessed.d.ts:125](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L125)*
+*Defined in [declarations/blessed.d.ts:127](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L127)*
 
-**Returns:** `void`
-
-___
-
+**Returns:** *void*

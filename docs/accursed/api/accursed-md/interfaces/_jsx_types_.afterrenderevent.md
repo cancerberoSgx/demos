@@ -1,12 +1,12 @@
-[accursed](../README.md) > ["jsx/types"](../modules/_jsx_types_.md) > [AfterRenderEvent](../interfaces/_jsx_types_.afterrenderevent.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx/types"](../modules/_jsx_types_.md) › [AfterRenderEvent](_jsx_types_.afterrenderevent.md)
 
 # Interface: AfterRenderEvent
 
-*__internal__*: 
+**`internal`** 
 
 ## Hierarchy
 
-**AfterRenderEvent**
+* **AfterRenderEvent**
 
 ## Index
 
@@ -14,17 +14,10 @@
 
 * [el](_jsx_types_.afterrenderevent.md#el)
 
----
-
 ## Properties
-
-<a id="el"></a>
 
 ###  el
 
-**● el**: *[Element](_jsx_types_.__global.jsx.element.md)*
+• **el**: *[Element](_jsx_types_.__global.jsx.element.md)*
 
-*Defined in [jsx/types.ts:287](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L287)*
-
-___
-
+*Defined in [jsx/types.ts:287](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L287)*

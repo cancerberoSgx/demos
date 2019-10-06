@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["blessedTypes"](../modules/_blessedtypes_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["blessedTypes"](_blessedtypes_.md)
 
 # External module: "blessedTypes"
 
@@ -101,871 +101,772 @@
 * [isNode](_blessedtypes_.md#isnode)
 * [isScreen](_blessedtypes_.md#isscreen)
 
----
-
 ## Type aliases
-
-<a id="bigtext"></a>
 
 ###  BigText
 
-**Ƭ BigText**: *[BigTextElement](../classes/_declarations_blessed_d_.widgets.bigtextelement.md)*
+Ƭ **BigText**: *[BigTextElement](../classes/_declarations_blessed_d_.widgets.bigtextelement.md)*
 
-*Defined in [blessedTypes.ts:17](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L17)*
+*Defined in [blessedTypes.ts:17](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L17)*
 
 ___
-<a id="bigtextoptions"></a>
 
 ###  BigTextOptions
 
-**Ƭ BigTextOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[BigTextOptions](../interfaces/_declarations_blessed_d_.widgets.bigtextoptions.md), "children">*
+Ƭ **BigTextOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[BigTextOptions](../interfaces/_declarations_blessed_d_.widgets.bigtextoptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:39](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L39)*
+*Defined in [blessedTypes.ts:39](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L39)*
 
 ___
-<a id="blessedelementoptionsintersection"></a>
 
 ###  BlessedElementOptionsIntersection
 
-**Ƭ BlessedElementOptionsIntersection**: *[BoxOptions](_blessedtypes_.md#boxoptions) & [TextOptions](_blessedtypes_.md#textoptions) & [TextareaOptions](_blessedtypes_.md#textareaoptions) & [ListTableOptions](_blessedtypes_.md#listtableoptions) & [ListOptions](_blessedtypes_.md#listoptions)*
+Ƭ **BlessedElementOptionsIntersection**: *[BoxOptions](_blessedtypes_.md#boxoptions) & [TextOptions](_blessedtypes_.md#textoptions) & [TextareaOptions](_blessedtypes_.md#textareaoptions) & [ListTableOptions](_blessedtypes_.md#listtableoptions) & [ListOptions](_blessedtypes_.md#listoptions)*
 
-*Defined in [blessedTypes.ts:83](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L83)*
+*Defined in [blessedTypes.ts:83](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L83)*
 
 ___
-<a id="blessedelementoptionsunion"></a>
 
 ###  BlessedElementOptionsUnion
 
-**Ƭ BlessedElementOptionsUnion**: *[BoxOptions](_blessedtypes_.md#boxoptions) \| [TextOptions](_blessedtypes_.md#textoptions) \| [TextareaOptions](_blessedtypes_.md#textareaoptions) \| [ListTableOptions](_blessedtypes_.md#listtableoptions) \| [ListOptions](_blessedtypes_.md#listoptions)*
+Ƭ **BlessedElementOptionsUnion**: *[BoxOptions](_blessedtypes_.md#boxoptions) | [TextOptions](_blessedtypes_.md#textoptions) | [TextareaOptions](_blessedtypes_.md#textareaoptions) | [ListTableOptions](_blessedtypes_.md#listtableoptions) | [ListOptions](_blessedtypes_.md#listoptions)*
 
-*Defined in [blessedTypes.ts:82](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L82)*
+*Defined in [blessedTypes.ts:82](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L82)*
 
 ___
-<a id="border"></a>
 
 ###  Border
 
-**Ƭ Border**: *[TBorder](../interfaces/_declarations_blessed_d_.widgets.types.tborder.md)*
+Ƭ **Border**: *[TBorder](../interfaces/_declarations_blessed_d_.widgets.types.tborder.md)*
 
-*Defined in [blessedTypes.ts:70](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L70)*
+*Defined in [blessedTypes.ts:70](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L70)*
 
 ___
-<a id="box"></a>
 
 ###  Box
 
-**Ƭ Box**: *[BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)*
+Ƭ **Box**: *[BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)*
 
-*Defined in [blessedTypes.ts:7](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L7)*
+*Defined in [blessedTypes.ts:7](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L7)*
 
 ___
-<a id="boxoptions"></a>
 
 ###  BoxOptions
 
-**Ƭ BoxOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[BoxOptions](../interfaces/_declarations_blessed_d_.widgets.boxoptions.md), "children">*
+Ƭ **BoxOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[BoxOptions](../interfaces/_declarations_blessed_d_.widgets.boxoptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:36](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L36)*
+*Defined in [blessedTypes.ts:36](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L36)*
 
 ___
-<a id="button"></a>
 
 ###  Button
 
-**Ƭ Button**: *[ButtonElement](../classes/_declarations_blessed_d_.widgets.buttonelement.md)*
+Ƭ **Button**: *[ButtonElement](../classes/_declarations_blessed_d_.widgets.buttonelement.md)*
 
-*Defined in [blessedTypes.ts:16](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L16)*
+*Defined in [blessedTypes.ts:16](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L16)*
 
 ___
-<a id="buttonoptions"></a>
 
 ###  ButtonOptions
 
-**Ƭ ButtonOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[ButtonOptions](../interfaces/_declarations_blessed_d_.widgets.buttonoptions.md), "children">*
+Ƭ **ButtonOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[ButtonOptions](../interfaces/_declarations_blessed_d_.widgets.buttonoptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:48](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L48)*
+*Defined in [blessedTypes.ts:48](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L48)*
 
 ___
-<a id="checkbox"></a>
 
 ###  Checkbox
 
-**Ƭ Checkbox**: *[CheckboxElement](../classes/_declarations_blessed_d_.widgets.checkboxelement.md)*
+Ƭ **Checkbox**: *[CheckboxElement](../classes/_declarations_blessed_d_.widgets.checkboxelement.md)*
 
-*Defined in [blessedTypes.ts:19](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L19)*
+*Defined in [blessedTypes.ts:19](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L19)*
 
 ___
-<a id="checkboxoptions"></a>
 
 ###  CheckboxOptions
 
-**Ƭ CheckboxOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[CheckboxOptions](../interfaces/_declarations_blessed_d_.widgets.checkboxoptions.md), "children">*
+Ƭ **CheckboxOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[CheckboxOptions](../interfaces/_declarations_blessed_d_.widgets.checkboxoptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:50](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L50)*
+*Defined in [blessedTypes.ts:50](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L50)*
 
 ___
-<a id="color"></a>
 
 ###  Color
 
-**Ƭ Color**: *`blessed.Widgets.Color`*
+Ƭ **Color**: *blessed.Widgets.Color*
 
-*Defined in [blessedTypes.ts:72](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L72)*
+*Defined in [blessedTypes.ts:72](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L72)*
 
 ___
-<a id="coloroptions"></a>
 
 ###  ColorOptions
 
-**Ƭ ColorOptions**: *"fg" \| "fg" \| "transparent" \| "ch" \| "invisible"*
+Ƭ **ColorOptions**: *"fg" | "fg" | "transparent" | "ch" | "invisible"*
 
-*Defined in [blessedTypes.ts:118](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L118)*
+*Defined in [blessedTypes.ts:116](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L116)*
 
 ___
-<a id="compositionstyleoptions"></a>
 
 ###  CompositionStyleOptions
 
-**Ƭ CompositionStyleOptions**: *"item"*
+Ƭ **CompositionStyleOptions**: *"item"*
 
-*Defined in [blessedTypes.ts:119](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L119)*
+*Defined in [blessedTypes.ts:117](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L117)*
 
 ___
-<a id="containeroptions"></a>
 
 ###  ContainerOptions
 
-**Ƭ ContainerOptions**: *"layout" \| "children" \| "parent"*
+Ƭ **ContainerOptions**: *"layout" | "children" | "parent"*
 
-*Defined in [blessedTypes.ts:120](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L120)*
+*Defined in [blessedTypes.ts:118](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L118)*
 
 ___
-<a id="decorationoptions"></a>
 
 ###  DecorationOptions
 
-**Ƭ DecorationOptions**: *"border" \| "type" \| "label" \| "shadow" \| "content" \| "hoverText" \| "ScrollStyleOptions"*
+Ƭ **DecorationOptions**: *"border" | "type" | "label" | "shadow" | "content" | "hoverText" | "ScrollStyleOptions"*
 
-*Defined in [blessedTypes.ts:116](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L116)*
+*Defined in [blessedTypes.ts:114](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L114)*
 
 ___
-<a id="dimensionoptions"></a>
 
 ###  DimensionOptions
 
-**Ƭ DimensionOptions**: *"padding" \| "width" \| "height" \| "shrink" \| "fill"*
+Ƭ **DimensionOptions**: *"padding" | "width" | "height" | "shrink" | "fill"*
 
-*Defined in [blessedTypes.ts:113](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L113)*
+*Defined in [blessedTypes.ts:111](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L111)*
 
 ___
-<a id="dimensionoptionsnames"></a>
 
 ###  DimensionOptionsNames
 
-**Ƭ DimensionOptionsNames**: *`Pick`<[BlessedElementOptionsIntersection](_blessedtypes_.md#blessedelementoptionsintersection), [DimensionOptions](_blessedtypes_.md#dimensionoptions)>*
+Ƭ **DimensionOptionsNames**: *Pick‹[BlessedElementOptionsIntersection](_blessedtypes_.md#blessedelementoptionsintersection), [DimensionOptions](_blessedtypes_.md#dimensionoptions)›*
 
-*Defined in [blessedTypes.ts:129](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L129)*
+*Defined in [blessedTypes.ts:127](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L127)*
 
 ___
-<a id="element"></a>
 
 ###  Element
 
-**Ƭ Element**: *[BlessedElement](../classes/_declarations_blessed_d_.widgets.blessedelement.md)<`Options`>*
+Ƭ **Element**: *[BlessedElement](../classes/_declarations_blessed_d_.widgets.blessedelement.md)‹Options›*
 
-*Defined in [blessedTypes.ts:10](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L10)*
+*Defined in [blessedTypes.ts:10](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L10)*
 
 ___
-<a id="elementoptions"></a>
 
 ###  ElementOptions
 
-**Ƭ ElementOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[ElementOptions](../interfaces/_declarations_blessed_d_.widgets.elementoptions.md), "children">*
+Ƭ **ElementOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[ElementOptions](../interfaces/_declarations_blessed_d_.widgets.elementoptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:44](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L44)*
+*Defined in [blessedTypes.ts:44](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L44)*
 
 ___
-<a id="eventestyleoptions"></a>
 
 ###  EventEStyleOptions
 
-**Ƭ EventEStyleOptions**: *"selected" \| "hover" \| "focus"*
+Ƭ **EventEStyleOptions**: *"selected" | "hover" | "focus"*
 
-*Defined in [blessedTypes.ts:117](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L117)*
+*Defined in [blessedTypes.ts:115](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L115)*
 
 ___
-<a id="filemanager"></a>
 
 ###  FileManager
 
-**Ƭ FileManager**: *[FileManagerElement](../classes/_declarations_blessed_d_.widgets.filemanagerelement.md)*
+Ƭ **FileManager**: *[FileManagerElement](../classes/_declarations_blessed_d_.widgets.filemanagerelement.md)*
 
-*Defined in [blessedTypes.ts:22](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L22)*
+*Defined in [blessedTypes.ts:22](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L22)*
 
 ___
-<a id="filemanageroptions"></a>
 
 ###  FileManagerOptions
 
-**Ƭ FileManagerOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[FileManagerOptions](../interfaces/_declarations_blessed_d_.widgets.filemanageroptions.md), "children">*
+Ƭ **FileManagerOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[FileManagerOptions](../interfaces/_declarations_blessed_d_.widgets.filemanageroptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:41](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L41)*
+*Defined in [blessedTypes.ts:41](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L41)*
 
 ___
-<a id="form"></a>
 
 ###  Form
 
-**Ƭ Form**: *[FormElement](../classes/_declarations_blessed_d_.widgets.formelement.md)*
+Ƭ **Form**: *[FormElement](../classes/_declarations_blessed_d_.widgets.formelement.md)*
 
-*Defined in [blessedTypes.ts:25](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L25)*
+*Defined in [blessedTypes.ts:25](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L25)*
 
 ___
-<a id="formoptions"></a>
 
 ###  FormOptions
 
-**Ƭ FormOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[FormOptions](../interfaces/_declarations_blessed_d_.widgets.formoptions.md), "children">*
+Ƭ **FormOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[FormOptions](../interfaces/_declarations_blessed_d_.widgets.formoptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:51](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L51)*
+*Defined in [blessedTypes.ts:51](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L51)*
 
 ___
-<a id="ikeyeventarg"></a>
 
 ###  IKeyEventArg
 
-**Ƭ IKeyEventArg**: *[IKeyEventArg](../interfaces/_declarations_blessed_d_.widgets.events.ikeyeventarg.md)*
+Ƭ **IKeyEventArg**: *[IKeyEventArg](../interfaces/_declarations_blessed_d_.widgets.events.ikeyeventarg.md)*
 
-*Defined in [blessedTypes.ts:64](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L64)*
+*Defined in [blessedTypes.ts:64](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L64)*
 
 ___
-<a id="imouseeventarg"></a>
 
 ###  IMouseEventArg
 
-**Ƭ IMouseEventArg**: *[IMouseEventArg](../interfaces/_declarations_blessed_d_.widgets.events.imouseeventarg.md)*
+Ƭ **IMouseEventArg**: *[IMouseEventArg](../interfaces/_declarations_blessed_d_.widgets.events.imouseeventarg.md)*
 
-*Defined in [blessedTypes.ts:61](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L61)*
+*Defined in [blessedTypes.ts:61](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L61)*
 
 ___
-<a id="inodegenericeventarg"></a>
 
 ###  INodeGenericEventArg
 
-**Ƭ INodeGenericEventArg**: *[INodeGenericEventArg](../interfaces/_declarations_blessed_d_.widgets.events.inodegenericeventarg.md)*
+Ƭ **INodeGenericEventArg**: *[INodeGenericEventArg](../interfaces/_declarations_blessed_d_.widgets.events.inodegenericeventarg.md)*
 
-*Defined in [blessedTypes.ts:65](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L65)*
+*Defined in [blessedTypes.ts:65](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L65)*
 
 ___
-<a id="inputactivationoption"></a>
 
 ###  InputActivationOption
 
-**Ƭ InputActivationOption**: *[MouseInputActivationOptions](_blessedtypes_.md#mouseinputactivationoptions) \| "keys" \| "keyable" \| "vi" \| "inputOnFocus"*
+Ƭ **InputActivationOption**: *[MouseInputActivationOptions](_blessedtypes_.md#mouseinputactivationoptions) | "keys" | "keyable" | "vi" | "inputOnFocus"*
 
-*Defined in [blessedTypes.ts:112](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L112)*
+*Defined in [blessedTypes.ts:110](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L110)*
 
 ___
-<a id="inputactivationoptionnames"></a>
 
 ###  InputActivationOptionNames
 
-**Ƭ InputActivationOptionNames**: *`Pick`<[BlessedElementOptionsIntersection](_blessedtypes_.md#blessedelementoptionsintersection), [InputActivationOption](_blessedtypes_.md#inputactivationoption)>*
+Ƭ **InputActivationOptionNames**: *Pick‹[BlessedElementOptionsIntersection](_blessedtypes_.md#blessedelementoptionsintersection), [InputActivationOption](_blessedtypes_.md#inputactivationoption)›*
 
-*Defined in [blessedTypes.ts:128](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L128)*
+*Defined in [blessedTypes.ts:126](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L126)*
 
 ___
-<a id="inputoptions"></a>
 
 ###  InputOptions
 
-**Ƭ InputOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[InputOptions](../interfaces/_declarations_blessed_d_.widgets.inputoptions.md), "children">*
+Ƭ **InputOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[InputOptions](../interfaces/_declarations_blessed_d_.widgets.inputoptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:49](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L49)*
+*Defined in [blessedTypes.ts:49](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L49)*
 
 ___
-<a id="layout"></a>
 
 ###  Layout
 
-**Ƭ Layout**: *[LayoutElement](../classes/_declarations_blessed_d_.widgets.layoutelement.md)*
+Ƭ **Layout**: *[LayoutElement](../classes/_declarations_blessed_d_.widgets.layoutelement.md)*
 
-*Defined in [blessedTypes.ts:18](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L18)*
+*Defined in [blessedTypes.ts:18](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L18)*
 
 ___
-<a id="layoutiterator"></a>
 
 ###  LayoutIterator
 
-**Ƭ LayoutIterator**: *`blessed.Widgets.LayoutIterator`*
+Ƭ **LayoutIterator**: *blessed.Widgets.LayoutIterator*
 
-*Defined in [blessedTypes.ts:11](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L11)*
+*Defined in [blessedTypes.ts:11](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L11)*
 
 ___
-<a id="layoutoptions"></a>
 
 ###  LayoutOptions
 
-**Ƭ LayoutOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[LayoutOptions](../interfaces/_declarations_blessed_d_.widgets.layoutoptions.md), "children">*
+Ƭ **LayoutOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[LayoutOptions](../interfaces/_declarations_blessed_d_.widgets.layoutoptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:45](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L45)*
+*Defined in [blessedTypes.ts:45](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L45)*
 
 ___
-<a id="line"></a>
 
 ###  Line
 
-**Ƭ Line**: *[LineElement](../classes/_declarations_blessed_d_.widgets.lineelement.md)*
+Ƭ **Line**: *[LineElement](../classes/_declarations_blessed_d_.widgets.lineelement.md)*
 
-*Defined in [blessedTypes.ts:8](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L8)*
+*Defined in [blessedTypes.ts:8](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L8)*
 
 ___
-<a id="lineoptions"></a>
 
 ###  LineOptions
 
-**Ƭ LineOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[LineOptions](../interfaces/_declarations_blessed_d_.widgets.lineoptions.md), "children">*
+Ƭ **LineOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[LineOptions](../interfaces/_declarations_blessed_d_.widgets.lineoptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:42](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L42)*
+*Defined in [blessedTypes.ts:42](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L42)*
 
 ___
-<a id="list"></a>
 
 ###  List
 
-**Ƭ List**: *[ListElement](../classes/_declarations_blessed_d_.widgets.listelement.md)*
+Ƭ **List**: *[ListElement](../classes/_declarations_blessed_d_.widgets.listelement.md)*
 
-*Defined in [blessedTypes.ts:21](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L21)*
+*Defined in [blessedTypes.ts:21](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L21)*
 
 ___
-<a id="listbar"></a>
 
 ###  ListBar
 
-**Ƭ ListBar**: *[ListbarElement](../classes/_declarations_blessed_d_.widgets.listbarelement.md)*
+Ƭ **ListBar**: *[ListbarElement](../classes/_declarations_blessed_d_.widgets.listbarelement.md)*
 
-*Defined in [blessedTypes.ts:24](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L24)*
+*Defined in [blessedTypes.ts:24](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L24)*
 
 ___
-<a id="listelementstyle"></a>
 
 ###  ListElementStyle
 
-**Ƭ ListElementStyle**: *[ListElementStyle](../interfaces/_declarations_blessed_d_.widgets.listelementstyle.md)*
+Ƭ **ListElementStyle**: *[ListElementStyle](../interfaces/_declarations_blessed_d_.widgets.listelementstyle.md)*
 
-*Defined in [blessedTypes.ts:75](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L75)*
+*Defined in [blessedTypes.ts:75](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L75)*
 
 ___
-<a id="listoptions"></a>
 
 ###  ListOptions
 
-**Ƭ ListOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[ListOptions](../interfaces/_declarations_blessed_d_.widgets.listoptions.md), "children">*
+Ƭ **ListOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[ListOptions](../interfaces/_declarations_blessed_d_.widgets.listoptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:40](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L40)*
+*Defined in [blessedTypes.ts:40](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L40)*
 
 ___
-<a id="listtable"></a>
 
 ###  ListTable
 
-**Ƭ ListTable**: *[ListTableElement](../classes/_declarations_blessed_d_.widgets.listtableelement.md)*
+Ƭ **ListTable**: *[ListTableElement](../classes/_declarations_blessed_d_.widgets.listtableelement.md)*
 
-*Defined in [blessedTypes.ts:23](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L23)*
+*Defined in [blessedTypes.ts:23](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L23)*
 
 ___
-<a id="listtableoptions"></a>
 
 ###  ListTableOptions
 
-**Ƭ ListTableOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[ListTableOptions](../interfaces/_declarations_blessed_d_.widgets.listtableoptions.md), "children">*
+Ƭ **ListTableOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[ListTableOptions](../interfaces/_declarations_blessed_d_.widgets.listtableoptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:37](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L37)*
+*Defined in [blessedTypes.ts:37](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L37)*
 
 ___
-<a id="listbaroptions"></a>
 
 ###  ListbarOptions
 
-**Ƭ ListbarOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[ListbarOptions](../interfaces/_declarations_blessed_d_.widgets.listbaroptions.md), "children">*
+Ƭ **ListbarOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[ListbarOptions](../interfaces/_declarations_blessed_d_.widgets.listbaroptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:38](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L38)*
+*Defined in [blessedTypes.ts:38](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L38)*
 
 ___
-<a id="log"></a>
 
 ###  Log
 
-**Ƭ Log**: *[Log](../classes/_declarations_blessed_d_.widgets.log.md)*
+Ƭ **Log**: *[Log](../classes/_declarations_blessed_d_.widgets.log.md)*
 
-*Defined in [blessedTypes.ts:30](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L30)*
+*Defined in [blessedTypes.ts:30](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L30)*
 
 ___
-<a id="logoptions"></a>
 
 ###  LogOptions
 
-**Ƭ LogOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[LogOptions](../interfaces/_declarations_blessed_d_.widgets.logoptions.md), "children">*
+Ƭ **LogOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[LogOptions](../interfaces/_declarations_blessed_d_.widgets.logoptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:34](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L34)*
+*Defined in [blessedTypes.ts:34](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L34)*
 
 ___
-<a id="markdown"></a>
 
 ###  Markdown
 
-**Ƭ Markdown**: *`contrib.Widgets.MarkdownElement`*
+Ƭ **Markdown**: *contrib.Widgets.MarkdownElement*
 
-*Defined in [blessedTypes.ts:78](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L78)*
+*Defined in [blessedTypes.ts:78](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L78)*
 
 ___
-<a id="markdownoptions"></a>
 
 ###  MarkdownOptions
 
-**Ƭ MarkdownOptions**: *`contrib.Widgets.MarkdownOptions`*
+Ƭ **MarkdownOptions**: *contrib.Widgets.MarkdownOptions*
 
-*Defined in [blessedTypes.ts:79](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L79)*
+*Defined in [blessedTypes.ts:79](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L79)*
 
 ___
-<a id="mouseinputactivationoptionnames"></a>
 
 ###  MouseInputActivationOptionNames
 
-**Ƭ MouseInputActivationOptionNames**: *`Pick`<[BlessedElementOptionsIntersection](_blessedtypes_.md#blessedelementoptionsintersection), [MouseInputActivationOptions](_blessedtypes_.md#mouseinputactivationoptions)>*
+Ƭ **MouseInputActivationOptionNames**: *Pick‹[BlessedElementOptionsIntersection](_blessedtypes_.md#blessedelementoptionsintersection), [MouseInputActivationOptions](_blessedtypes_.md#mouseinputactivationoptions)›*
 
-*Defined in [blessedTypes.ts:127](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L127)*
+*Defined in [blessedTypes.ts:125](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L125)*
 
 ___
-<a id="mouseinputactivationoptions"></a>
 
 ###  MouseInputActivationOptions
 
-**Ƭ MouseInputActivationOptions**: *"mouse" \| "clickable" \| "draggable" \| "alwaysScroll" \| "focusable"*
+Ƭ **MouseInputActivationOptions**: *"mouse" | "clickable" | "draggable" | "alwaysScroll" | "focusable"*
 
-*Defined in [blessedTypes.ts:111](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L111)*
+*Defined in [blessedTypes.ts:109](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L109)*
 
 ___
-<a id="node"></a>
 
 ###  Node
 
-**Ƭ Node**: *[Node](../classes/_declarations_blessed_d_.widgets.node.md)*
+Ƭ **Node**: *[Node](../classes/_declarations_blessed_d_.widgets.node.md)*
 
-*Defined in [blessedTypes.ts:6](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L6)*
+*Defined in [blessedTypes.ts:6](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L6)*
 
 ___
-<a id="nodeeventtype"></a>
 
 ###  NodeEventType
 
-**Ƭ NodeEventType**: *`blessed.Widgets.NodeEventType`*
+Ƭ **NodeEventType**: *blessed.Widgets.NodeEventType*
 
-*Defined in [blessedTypes.ts:67](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L67)*
+*Defined in [blessedTypes.ts:67](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L67)*
 
 ___
-<a id="nodegenericeventtype"></a>
 
 ###  NodeGenericEventType
 
-**Ƭ NodeGenericEventType**: *`blessed.Widgets.NodeGenericEventType`*
+Ƭ **NodeGenericEventType**: *blessed.Widgets.NodeGenericEventType*
 
-*Defined in [blessedTypes.ts:68](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L68)*
+*Defined in [blessedTypes.ts:68](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L68)*
 
 ___
-<a id="nodemouseeventtype"></a>
 
 ###  NodeMouseEventType
 
-**Ƭ NodeMouseEventType**: *`blessed.Widgets.NodeMouseEventType`*
+Ƭ **NodeMouseEventType**: *blessed.Widgets.NodeMouseEventType*
 
-*Defined in [blessedTypes.ts:62](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L62)*
+*Defined in [blessedTypes.ts:62](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L62)*
 
 ___
-<a id="nodescreeneventtype"></a>
 
 ###  NodeScreenEventType
 
-**Ƭ NodeScreenEventType**: *`blessed.Widgets.NodeScreenEventType`*
+Ƭ **NodeScreenEventType**: *blessed.Widgets.NodeScreenEventType*
 
-*Defined in [blessedTypes.ts:63](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L63)*
+*Defined in [blessedTypes.ts:63](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L63)*
 
 ___
-<a id="nodewithevents"></a>
 
 ###  NodeWithEvents
 
-**Ƭ NodeWithEvents**: *[NodeWithEvents](../classes/_declarations_blessed_d_.widgets.nodewithevents.md)*
+Ƭ **NodeWithEvents**: *[NodeWithEvents](../classes/_declarations_blessed_d_.widgets.nodewithevents.md)*
 
-*Defined in [blessedTypes.ts:13](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L13)*
+*Defined in [blessedTypes.ts:13](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L13)*
 
 ___
-<a id="padding"></a>
 
 ###  Padding
 
-**Ƭ Padding**: *[Padding](../interfaces/_declarations_blessed_d_.widgets.padding.md)*
+Ƭ **Padding**: *[Padding](../interfaces/_declarations_blessed_d_.widgets.padding.md)*
 
-*Defined in [blessedTypes.ts:12](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L12)*
+*Defined in [blessedTypes.ts:12](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L12)*
 
 ___
-<a id="position"></a>
 
 ###  Position
 
-**Ƭ Position**: *`blessed.Widgets.Types.TPosition`*
+Ƭ **Position**: *blessed.Widgets.Types.TPosition*
 
-*Defined in [blessedTypes.ts:73](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L73)*
+*Defined in [blessedTypes.ts:73](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L73)*
 
 ___
-<a id="positioncoords"></a>
 
 ###  PositionCoords
 
-**Ƭ PositionCoords**: *[PositionCoords](../classes/_declarations_blessed_d_.widgets.positioncoords.md)*
+Ƭ **PositionCoords**: *[PositionCoords](../classes/_declarations_blessed_d_.widgets.positioncoords.md)*
 
-*Defined in [blessedTypes.ts:59](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L59)*
+*Defined in [blessedTypes.ts:59](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L59)*
 
 ___
-<a id="positionoptions"></a>
 
 ###  PositionOptions
 
-**Ƭ PositionOptions**: *"top" \| "left" \| "align" \| "valign" \| "position"*
+Ƭ **PositionOptions**: *"top" | "left" | "align" | "valign" | "position"*
 
-*Defined in [blessedTypes.ts:114](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L114)*
+*Defined in [blessedTypes.ts:112](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L112)*
 
 ___
-<a id="positionoptionsnames"></a>
 
 ###  PositionOptionsNames
 
-**Ƭ PositionOptionsNames**: *`Pick`<[BlessedElementOptionsIntersection](_blessedtypes_.md#blessedelementoptionsintersection), [PositionOptions](_blessedtypes_.md#positionoptions)>*
+Ƭ **PositionOptionsNames**: *Pick‹[BlessedElementOptionsIntersection](_blessedtypes_.md#blessedelementoptionsintersection), [PositionOptions](_blessedtypes_.md#positionoptions)›*
 
-*Defined in [blessedTypes.ts:130](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L130)*
+*Defined in [blessedTypes.ts:128](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L128)*
 
 ___
-<a id="program"></a>
 
 ###  Program
 
-**Ƭ Program**: *[BlessedProgram](../classes/_declarations_blessedprogram_d_.blessedprogram.md)*
+Ƭ **Program**: *[BlessedProgram](../classes/_declarations_blessedprogram_d_.blessedprogram.md)*
 
-*Defined in [blessedTypes.ts:76](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L76)*
+*Defined in [blessedTypes.ts:76](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L76)*
 
 ___
-<a id="prompt"></a>
 
 ###  Prompt
 
-**Ƭ Prompt**: *[PromptElement](../classes/_declarations_blessed_d_.widgets.promptelement.md)*
+Ƭ **Prompt**: *[PromptElement](../classes/_declarations_blessed_d_.widgets.promptelement.md)*
 
-*Defined in [blessedTypes.ts:26](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L26)*
+*Defined in [blessedTypes.ts:26](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L26)*
 
 ___
-<a id="promptoptions"></a>
 
 ###  PromptOptions
 
-**Ƭ PromptOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[PromptOptions](../interfaces/_declarations_blessed_d_.widgets.promptoptions.md), "children">*
+Ƭ **PromptOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[PromptOptions](../interfaces/_declarations_blessed_d_.widgets.promptoptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:35](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L35)*
+*Defined in [blessedTypes.ts:35](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L35)*
 
 ___
-<a id="question"></a>
 
 ###  Question
 
-**Ƭ Question**: *[QuestionElement](../classes/_declarations_blessed_d_.widgets.questionelement.md)*
+Ƭ **Question**: *[QuestionElement](../classes/_declarations_blessed_d_.widgets.questionelement.md)*
 
-*Defined in [blessedTypes.ts:32](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L32)*
+*Defined in [blessedTypes.ts:32](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L32)*
 
 ___
-<a id="questionoptions"></a>
 
 ###  QuestionOptions
 
-**Ƭ QuestionOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[QuestionOptions](../interfaces/_declarations_blessed_d_.widgets.questionoptions.md), "children">*
+Ƭ **QuestionOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[QuestionOptions](../interfaces/_declarations_blessed_d_.widgets.questionoptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:57](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L57)*
+*Defined in [blessedTypes.ts:57](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L57)*
 
 ___
-<a id="radiobutton"></a>
 
 ###  RadioButton
 
-**Ƭ RadioButton**: *[RadioButtonElement](../classes/_declarations_blessed_d_.widgets.radiobuttonelement.md)*
+Ƭ **RadioButton**: *[RadioButtonElement](../classes/_declarations_blessed_d_.widgets.radiobuttonelement.md)*
 
-*Defined in [blessedTypes.ts:29](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L29)*
+*Defined in [blessedTypes.ts:29](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L29)*
 
 ___
-<a id="radiobuttonoptions"></a>
 
 ###  RadioButtonOptions
 
-**Ƭ RadioButtonOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[RadioButtonOptions](../interfaces/_declarations_blessed_d_.widgets.radiobuttonoptions.md), "children">*
+Ƭ **RadioButtonOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[RadioButtonOptions](../interfaces/_declarations_blessed_d_.widgets.radiobuttonoptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:54](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L54)*
+*Defined in [blessedTypes.ts:54](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L54)*
 
 ___
-<a id="radioset"></a>
 
 ###  RadioSet
 
-**Ƭ RadioSet**: *[RadioSetElement](../classes/_declarations_blessed_d_.widgets.radiosetelement.md)*
+Ƭ **RadioSet**: *[RadioSetElement](../classes/_declarations_blessed_d_.widgets.radiosetelement.md)*
 
-*Defined in [blessedTypes.ts:28](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L28)*
+*Defined in [blessedTypes.ts:28](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L28)*
 
 ___
-<a id="radiosetoptions"></a>
 
 ###  RadioSetOptions
 
-**Ƭ RadioSetOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[RadioSetOptions](../interfaces/_declarations_blessed_d_.widgets.radiosetoptions.md), "children">*
+Ƭ **RadioSetOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[RadioSetOptions](../interfaces/_declarations_blessed_d_.widgets.radiosetoptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:53](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L53)*
+*Defined in [blessedTypes.ts:53](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L53)*
 
 ___
-<a id="screen"></a>
 
 ###  Screen
 
-**Ƭ Screen**: *[Screen](../classes/_declarations_blessed_d_.widgets.screen.md)*
+Ƭ **Screen**: *[Screen](../classes/_declarations_blessed_d_.widgets.screen.md)*
 
-*Defined in [blessedTypes.ts:20](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L20)*
+*Defined in [blessedTypes.ts:20](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L20)*
 
 ___
-<a id="screenoptions"></a>
 
 ###  ScreenOptions
 
-**Ƭ ScreenOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[IScreenOptions](../interfaces/_declarations_blessed_d_.widgets.iscreenoptions.md), "children">*
+Ƭ **ScreenOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[IScreenOptions](../interfaces/_declarations_blessed_d_.widgets.iscreenoptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:55](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L55)*
+*Defined in [blessedTypes.ts:55](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L55)*
 
 ___
-<a id="scrolloptions"></a>
 
 ###  ScrollOptions
 
-**Ƭ ScrollOptions**: *"baseLimit"*
+Ƭ **ScrollOptions**: *"baseLimit"*
 
-*Defined in [blessedTypes.ts:122](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L122)*
+*Defined in [blessedTypes.ts:120](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L120)*
 
 ___
-<a id="scrollstyleoptions"></a>
 
 ###  ScrollStyleOptions
 
-**Ƭ ScrollStyleOptions**: *"track" \| "scrollbar"*
+Ƭ **ScrollStyleOptions**: *"track" | "scrollbar"*
 
-*Defined in [blessedTypes.ts:121](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L121)*
+*Defined in [blessedTypes.ts:119](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L119)*
 
 ___
-<a id="style"></a>
 
 ###  Style
 
-**Ƭ Style**: *[TStyle](../interfaces/_declarations_blessed_d_.widgets.types.tstyle.md)*
+Ƭ **Style**: *[TStyle](../interfaces/_declarations_blessed_d_.widgets.types.tstyle.md)*
 
-*Defined in [blessedTypes.ts:71](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L71)*
+*Defined in [blessedTypes.ts:71](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L71)*
 
 ___
-<a id="terminal"></a>
 
 ###  Terminal
 
-**Ƭ Terminal**: *[TerminalElement](../classes/_declarations_blessed_d_.widgets.terminalelement.md)*
+Ƭ **Terminal**: *[TerminalElement](../classes/_declarations_blessed_d_.widgets.terminalelement.md)*
 
-*Defined in [blessedTypes.ts:31](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L31)*
+*Defined in [blessedTypes.ts:31](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L31)*
 
 ___
-<a id="terminaloptions"></a>
 
 ###  TerminalOptions
 
-**Ƭ TerminalOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[TerminalOptions](../interfaces/_declarations_blessed_d_.widgets.terminaloptions.md), "children">*
+Ƭ **TerminalOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[TerminalOptions](../interfaces/_declarations_blessed_d_.widgets.terminaloptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:56](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L56)*
+*Defined in [blessedTypes.ts:56](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L56)*
 
 ___
-<a id="text"></a>
 
 ###  Text
 
-**Ƭ Text**: *[TextElement](../classes/_declarations_blessed_d_.widgets.textelement.md)*
+Ƭ **Text**: *[TextElement](../classes/_declarations_blessed_d_.widgets.textelement.md)*
 
-*Defined in [blessedTypes.ts:15](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L15)*
+*Defined in [blessedTypes.ts:15](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L15)*
 
 ___
-<a id="textelementoptions"></a>
 
 ###  TextElementOptions
 
-**Ƭ TextElementOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[TextOptions](../interfaces/_declarations_blessed_d_.widgets.textoptions.md), "children">*
+Ƭ **TextElementOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[TextOptions](../interfaces/_declarations_blessed_d_.widgets.textoptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:46](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L46)*
+*Defined in [blessedTypes.ts:46](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L46)*
 
 ___
-<a id="textoptions"></a>
 
 ###  TextOptions
 
-**Ƭ TextOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[TextOptions](../interfaces/_declarations_blessed_d_.widgets.textoptions.md), "children">*
+Ƭ **TextOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[TextOptions](../interfaces/_declarations_blessed_d_.widgets.textoptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:43](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L43)*
+*Defined in [blessedTypes.ts:43](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L43)*
 
 ___
-<a id="textstyleoptions"></a>
 
 ###  TextStyleOptions
 
-**Ƭ TextStyleOptions**: *"underline" \| "bold" \| "blink" \| "inverse" \| "text"*
+Ƭ **TextStyleOptions**: *"underline" | "bold" | "blink" | "inverse" | "text"*
 
-*Defined in [blessedTypes.ts:115](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L115)*
+*Defined in [blessedTypes.ts:113](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L113)*
 
 ___
-<a id="textarea"></a>
 
 ###  Textarea
 
-**Ƭ Textarea**: *[TextareaElement](../classes/_declarations_blessed_d_.widgets.textareaelement.md)*
+Ƭ **Textarea**: *[TextareaElement](../classes/_declarations_blessed_d_.widgets.textareaelement.md)*
 
-*Defined in [blessedTypes.ts:14](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L14)*
+*Defined in [blessedTypes.ts:14](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L14)*
 
 ___
-<a id="textareaoptions"></a>
 
 ###  TextareaOptions
 
-**Ƭ TextareaOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[TextareaOptions](../interfaces/_declarations_blessed_d_.widgets.textareaoptions.md), "children">*
+Ƭ **TextareaOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[TextareaOptions](../interfaces/_declarations_blessed_d_.widgets.textareaoptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:47](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L47)*
+*Defined in [blessedTypes.ts:47](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L47)*
 
 ___
-<a id="textbox"></a>
 
 ###  Textbox
 
-**Ƭ Textbox**: *[TextboxElement](../classes/_declarations_blessed_d_.widgets.textboxelement.md)*
+Ƭ **Textbox**: *[TextboxElement](../classes/_declarations_blessed_d_.widgets.textboxelement.md)*
 
-*Defined in [blessedTypes.ts:27](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L27)*
+*Defined in [blessedTypes.ts:27](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L27)*
 
 ___
-<a id="textboxoptions"></a>
 
 ###  TextboxOptions
 
-**Ƭ TextboxOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)<[TextboxOptions](../interfaces/_declarations_blessed_d_.widgets.textboxoptions.md), "children">*
+Ƭ **TextboxOptions**: *[RemoveProperties](_util_misc_.md#removeproperties)‹[TextboxOptions](../interfaces/_declarations_blessed_d_.widgets.textboxoptions.md), "children"›*
 
-*Defined in [blessedTypes.ts:52](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L52)*
+*Defined in [blessedTypes.ts:52](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L52)*
 
 ___
-<a id="topleft"></a>
 
 ###  TopLeft
 
-**Ƭ TopLeft**: *`blessed.Widgets.Types.TTopLeft`*
+Ƭ **TopLeft**: *blessed.Widgets.Types.TTopLeft*
 
-*Defined in [blessedTypes.ts:74](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L74)*
+*Defined in [blessedTypes.ts:74](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L74)*
 
 ___
-<a id="valueoptions"></a>
 
 ###  ValueOptions
 
-**Ƭ ValueOptions**: *"secret" \| "checked" \| "censor" \| "text" \| "text"*
+Ƭ **ValueOptions**: *"secret" | "checked" | "censor" | "text" | "text"*
 
-*Defined in [blessedTypes.ts:123](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L123)*
+*Defined in [blessedTypes.ts:121](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L121)*
 
 ___
-<a id="visualoptions"></a>
 
 ###  VisualOptions
 
-**Ƭ VisualOptions**: *[MouseInputActivationOptions](_blessedtypes_.md#mouseinputactivationoptions) \| [InputActivationOption](_blessedtypes_.md#inputactivationoption) \| [DimensionOptions](_blessedtypes_.md#dimensionoptions) \| [PositionOptions](_blessedtypes_.md#positionoptions)*
+Ƭ **VisualOptions**: *[MouseInputActivationOptions](_blessedtypes_.md#mouseinputactivationoptions) | [InputActivationOption](_blessedtypes_.md#inputactivationoption) | [DimensionOptions](_blessedtypes_.md#dimensionoptions) | [PositionOptions](_blessedtypes_.md#positionoptions)*
 
-*Defined in [blessedTypes.ts:124](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L124)*
-
-___
+*Defined in [blessedTypes.ts:122](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L122)*
 
 ## Functions
 
-<a id="iselement"></a>
-
 ###  isElement
 
-▸ **isElement**(n: *`any`*): `boolean`
+▸ **isElement**(`n`: any): *boolean*
 
-*Defined in [blessedTypes.ts:90](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L90)*
+*Defined in [blessedTypes.ts:90](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L90)*
 
 isElement type guard without type parameters
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| n | `any` |
+Name | Type |
+------ | ------ |
+`n` | any |
 
-**Returns:** `boolean`
+**Returns:** *boolean*
 
 ___
-<a id="iselementunsafe"></a>
 
 ###  isElementUnSafe
 
-▸ **isElementUnSafe**<`E`>(n: *`any`*): `boolean`
+▸ **isElementUnSafe**<**E**>(`n`: any): *boolean*
 
-*Defined in [blessedTypes.ts:95](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L95)*
+*Defined in [blessedTypes.ts:95](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L95)*
 
 isElement type guard that cast to a concrete type by without really asserting on the concrete type - use only if sure
 
 **Type parameters:**
 
-#### E :  [Element](_blessedtypes_.md#element)
+▪ **E**: *[Element](_blessedtypes_.md#element)*
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| n | `any` |
+Name | Type |
+------ | ------ |
+`n` | any |
 
-**Returns:** `boolean`
+**Returns:** *boolean*
 
 ___
-<a id="isnode"></a>
 
 ###  isNode
 
-▸ **isNode**(n: *`any`*): `boolean`
+▸ **isNode**(`n`: any): *boolean*
 
-*Defined in [blessedTypes.ts:106](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L106)*
+*Defined in [blessedTypes.ts:104](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L104)*
 
 isNode type guard without type parameters
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| n | `any` |
+Name | Type |
+------ | ------ |
+`n` | any |
 
-**Returns:** `boolean`
+**Returns:** *boolean*
 
 ___
-<a id="isscreen"></a>
 
 ###  isScreen
 
-▸ **isScreen**(n: *`any`*): `boolean`
+▸ **isScreen**(`n`: any): *boolean*
 
-*Defined in [blessedTypes.ts:99](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessedTypes.ts#L99)*
+*Defined in [blessedTypes.ts:99](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessedTypes.ts#L99)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| n | `any` |
+Name | Type |
+------ | ------ |
+`n` | any |
 
-**Returns:** `boolean`
-
-___
-
+**Returns:** *boolean*

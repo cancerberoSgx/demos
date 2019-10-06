@@ -1,10 +1,10 @@
-[accursed](../README.md) > ["jsx/types"](../modules/_jsx_types_.md) > [__global](../modules/_jsx_types_.__global.md) > [JSX](../modules/_jsx_types_.__global.jsx.md) > [ElementChildrenAttribute](../interfaces/_jsx_types_.__global.jsx.elementchildrenattribute.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx/types"](../modules/_jsx_types_.md) › [__global](../modules/_jsx_types_.__global.md) › [JSX](../modules/_jsx_types_.__global.jsx.md) › [ElementChildrenAttribute](_jsx_types_.__global.jsx.elementchildrenattribute.md)
 
 # Interface: ElementChildrenAttribute
 
 ## Hierarchy
 
-**ElementChildrenAttribute**
+* **ElementChildrenAttribute**
 
 ## Index
 
@@ -12,17 +12,10 @@
 
 * [children](_jsx_types_.__global.jsx.elementchildrenattribute.md#children)
 
----
-
 ## Properties
-
-<a id="children"></a>
 
 ###  children
 
-**● children**: *`__type`*
+• **children**: *__type*
 
-*Defined in [jsx/types.ts:195](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L195)*
-
-___
-
+*Defined in [jsx/types.ts:195](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L195)*

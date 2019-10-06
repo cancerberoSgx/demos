@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["blessesContrib/treeUtil"](../modules/_blessescontrib_treeutil_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["blessesContrib/treeUtil"](_blessescontrib_treeutil_.md)
 
 # External module: "blessesContrib/treeUtil"
 
@@ -10,69 +10,76 @@
 * [onTreeNodeFocus](_blessescontrib_treeutil_.md#ontreenodefocus)
 * [visitTreeNodes](_blessescontrib_treeutil_.md#visittreenodes)
 
----
-
 ## Functions
-
-<a id="istreeelement"></a>
 
 ###  isTreeElement
 
-▸ **isTreeElement**(t: *`any`*): `boolean`
+▸ **isTreeElement**(`t`: any): *boolean*
 
-*Defined in [blessesContrib/treeUtil.ts:31](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessesContrib/treeUtil.ts#L31)*
+*Defined in [blessesContrib/treeUtil.ts:31](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessesContrib/treeUtil.ts#L31)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| t | `any` |
+Name | Type |
+------ | ------ |
+`t` | any |
 
-**Returns:** `boolean`
+**Returns:** *boolean*
 
 ___
-<a id="ontreenodefocus"></a>
 
 ###  onTreeNodeFocus
 
-▸ **onTreeNodeFocus**<`T`>(tree: *`contrib.Widgets.TreeElement`<`T`>*, fn: *`function`*): `void`
+▸ **onTreeNodeFocus**<**T**>(`tree`: contrib.Widgets.TreeElement‹T›, `fn`: function): *void*
 
-*Defined in [blessesContrib/treeUtil.ts:6](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessesContrib/treeUtil.ts#L6)*
+*Defined in [blessesContrib/treeUtil.ts:6](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessesContrib/treeUtil.ts#L6)*
 
 notifies when used "hovers" a tree node (not enter, just overs the node when navigating with arrow keys.)
 
 **Type parameters:**
 
-#### T :  `contrib.Widgets.TreeElementNode`
+▪ **T**: *contrib.Widgets.TreeElementNode*
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| tree | `contrib.Widgets.TreeElement`<`T`> |
-| fn | `function` |
+▪ **tree**: *contrib.Widgets.TreeElement‹T›*
 
-**Returns:** `void`
+▪ **fn**: *function*
+
+▸ (`selectedNode`: T): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`selectedNode` | T |
+
+**Returns:** *void*
 
 ___
-<a id="visittreenodes"></a>
 
 ###  visitTreeNodes
 
-▸ **visitTreeNodes**<`N`>(tree: *`contrib.Widgets.TreeElement`<`N`> \| `N`*, v: *`function`*): `void`
+▸ **visitTreeNodes**<**N**>(`tree`: contrib.Widgets.TreeElement‹N› | N, `v`: function): *void*
 
-*Defined in [blessesContrib/treeUtil.ts:19](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessesContrib/treeUtil.ts#L19)*
+*Defined in [blessesContrib/treeUtil.ts:19](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessesContrib/treeUtil.ts#L19)*
 
 **Type parameters:**
 
-#### N :  `contrib.Widgets.TreeElementNode`
+▪ **N**: *contrib.Widgets.TreeElementNode*
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| tree | `contrib.Widgets.TreeElement`<`N`> \| `N` |
-| v | `function` |
+▪ **tree**: *contrib.Widgets.TreeElement‹N› | N*
 
-**Returns:** `void`
+▪ **v**: *function*
 
-___
+▸ (`node`: N): *void*
 
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`node` | N |
+
+**Returns:** *void*

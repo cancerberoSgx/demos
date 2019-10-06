@@ -1,12 +1,12 @@
-[accursed](../README.md) > ["jsx-components/showIf"](../modules/_jsx_components_showif_.md) > [ShowIfProps](../interfaces/_jsx_components_showif_.showifprops.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx-components/showIf"](../modules/_jsx_components_showif_.md) › [ShowIfProps](_jsx_components_showif_.showifprops.md)
 
 # Interface: ShowIfProps
 
 ## Hierarchy
 
- `object`
+* object
 
-**↳ ShowIfProps**
+  ↳ **ShowIfProps**
 
 ## Index
 
@@ -18,37 +18,32 @@
 
 * [onUpdate](_jsx_components_showif_.showifprops.md#onupdate)
 
----
-
 ## Properties
-
-<a id="children"></a>
 
 ###  children
 
-**● children**: *[BlessedJsxNode](../modules/_jsx_types_.__global.jsx.md#blessedjsxnode) \| [BlessedJsxNode](../modules/_jsx_types_.__global.jsx.md#blessedjsxnode)[]*
+• **children**: *[BlessedJsxNode](../modules/_jsx_types_.__global.jsx.md#blessedjsxnode) | [BlessedJsxNode](../modules/_jsx_types_.__global.jsx.md#blessedjsxnode)[]*
 
-*Defined in [jsx-components/showIf.tsx:8](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/showIf.tsx#L8)*
-
-___
+*Defined in [jsx-components/showIf.tsx:8](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/showIf.tsx#L8)*
 
 ## Methods
 
-<a id="onupdate"></a>
-
 ###  onUpdate
 
-▸ **onUpdate**(listener: *`function`*): `void`
+▸ **onUpdate**(`listener`: function): *void*
 
-*Defined in [jsx-components/showIf.tsx:7](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/showIf.tsx#L7)*
+*Defined in [jsx-components/showIf.tsx:7](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/showIf.tsx#L7)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| listener | `function` |
+▪ **listener**: *function*
 
-**Returns:** `void`
+▸ (`show`: boolean): *void*
 
-___
+**Parameters:**
 
+Name | Type |
+------ | ------ |
+`show` | boolean |
+
+**Returns:** *void*

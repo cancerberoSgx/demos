@@ -1,8 +1,5 @@
-[accursed](../README.md) > ["jsx-components/index"](../modules/_jsx_components_index_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx-components/index"](_jsx_components_index_.md)
 
 # External module: "jsx-components/index"
 
-## Index
-
----
 

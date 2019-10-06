@@ -1,66 +1,56 @@
-[accursed](../README.md) > ["declarations/blessed-contrib.d"](../modules/_declarations_blessed_contrib_d_.md) > [BlessedContrib](../modules/_declarations_blessed_contrib_d_.blessedcontrib.md) > [Widgets](../modules/_declarations_blessed_contrib_d_.blessedcontrib.widgets.md) > [LineData](../interfaces/_declarations_blessed_contrib_d_.blessedcontrib.widgets.linedata.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["declarations/blessed-contrib.d"](../modules/_declarations_blessed_contrib_d_.md) › [BlessedContrib](../modules/_declarations_blessed_contrib_d_.blessedcontrib.md) › [Widgets](../modules/_declarations_blessed_contrib_d_.blessedcontrib.widgets.md) › [LineData](_declarations_blessed_contrib_d_.blessedcontrib.widgets.linedata.md)
 
 # Interface: LineData
 
 ## Hierarchy
 
-**LineData**
+* **LineData**
 
 ## Index
 
 ### Properties
 
-* [style](_declarations_blessed_contrib_d_.blessedcontrib.widgets.linedata.md#style)
-* [title](_declarations_blessed_contrib_d_.blessedcontrib.widgets.linedata.md#title)
-* [x](_declarations_blessed_contrib_d_.blessedcontrib.widgets.linedata.md#x)
-* [y](_declarations_blessed_contrib_d_.blessedcontrib.widgets.linedata.md#y)
-
----
+* [style](_declarations_blessed_contrib_d_.blessedcontrib.widgets.linedata.md#optional-style)
+* [title](_declarations_blessed_contrib_d_.blessedcontrib.widgets.linedata.md#optional-title)
+* [x](_declarations_blessed_contrib_d_.blessedcontrib.widgets.linedata.md#optional-x)
+* [y](_declarations_blessed_contrib_d_.blessedcontrib.widgets.linedata.md#optional-y)
 
 ## Properties
 
-<a id="style"></a>
+### `Optional` style
 
-### `<Optional>` style
+• **style**? : *object*
 
-**● style**: *`object`*
+*Defined in [declarations/blessed-contrib.d.ts:232](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L232)*
 
-*Defined in [declarations/blessed-contrib.d.ts:232](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed-contrib.d.ts#L232)*
+#### Type declaration:
 
-#### Type declaration
+* **baseline**? : *string*
 
-`Optional`  baseline: `string`
+* **line**? : *string*
 
-`Optional`  line: `string`
-
-`Optional`  text: `string`
-
-___
-<a id="title"></a>
-
-### `<Optional>` title
-
-**● title**: *`string`*
-
-*Defined in [declarations/blessed-contrib.d.ts:229](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed-contrib.d.ts#L229)*
-
-___
-<a id="x"></a>
-
-### `<Optional>` x
-
-**● x**: *`string`[]*
-
-*Defined in [declarations/blessed-contrib.d.ts:230](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed-contrib.d.ts#L230)*
-
-___
-<a id="y"></a>
-
-### `<Optional>` y
-
-**● y**: *`number`[]*
-
-*Defined in [declarations/blessed-contrib.d.ts:231](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed-contrib.d.ts#L231)*
+* **text**? : *string*
 
 ___
 
+### `Optional` title
+
+• **title**? : *string*
+
+*Defined in [declarations/blessed-contrib.d.ts:229](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L229)*
+
+___
+
+### `Optional` x
+
+• **x**? : *string[]*
+
+*Defined in [declarations/blessed-contrib.d.ts:230](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L230)*
+
+___
+
+### `Optional` y
+
+• **y**? : *number[]*
+
+*Defined in [declarations/blessed-contrib.d.ts:231](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L231)*

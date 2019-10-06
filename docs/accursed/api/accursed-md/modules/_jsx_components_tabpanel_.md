@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["jsx-components/tabPanel"](../modules/_jsx_components_tabpanel_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx-components/tabPanel"](_jsx_components_tabpanel_.md)
 
 # External module: "jsx-components/tabPanel"
 
@@ -18,6 +18,3 @@
 * [TabLabelProps](../interfaces/_jsx_components_tabpanel_.tablabelprops.md)
 * [TabPanelProps](../interfaces/_jsx_components_tabpanel_.tabpanelprops.md)
 * [TabProps](../interfaces/_jsx_components_tabpanel_.tabprops.md)
-
----
-

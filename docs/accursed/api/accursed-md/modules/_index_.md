@@ -1,8 +1,5 @@
-[accursed](../README.md) > ["index"](../modules/_index_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["index"](_index_.md)
 
 # External module: "index"
 
-## Index
-
----
 

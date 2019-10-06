@@ -1,12 +1,14 @@
-[accursed](../README.md) > ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md) > [Widgets](../modules/_declarations_blessed_d_.widgets.md) > [IHasOptions](../interfaces/_declarations_blessed_d_.widgets.ihasoptions.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md) › [Widgets](../modules/_declarations_blessed_d_.widgets.md) › [IHasOptions](_declarations_blessed_d_.widgets.ihasoptions.md)
 
-# Interface: IHasOptions
+# Interface: IHasOptions <**T**>
 
 ## Type parameters
-#### T :  [IOptions](_declarations_blessed_d_.widgets.ioptions.md)
+
+▪ **T**: *[IOptions](_declarations_blessed_d_.widgets.ioptions.md)*
+
 ## Hierarchy
 
-**IHasOptions**
+* **IHasOptions**
 
 ## Implemented by
 
@@ -37,6 +39,7 @@
 * [BigTextElement](../classes/_declarations_blessed_d_.widgets.bigtextelement.md)
 * [BlessedElement](../classes/_declarations_blessed_d_.widgets.blessedelement.md)
 * [BlessedElement](../classes/_declarations_blessed_d_.widgets.blessedelement.md)
+* [BlessedProgram](../classes/_declarations_blessedprogram_d_.blessedprogram.md)
 * [BorderBox](../classes/_blessed_borderbox_.borderbox.md)
 * [BorderBox](../classes/_blessed_borderbox_.borderbox.md)
 * [BorderBox](../classes/_blessed_borderbox_.borderbox.md)
@@ -393,7 +396,7 @@
 * [TextboxElement](../classes/_declarations_blessed_d_.widgets.textboxelement.md)
 * [TextboxElement](../classes/_declarations_blessed_d_.widgets.textboxelement.md)
 * [TextboxElement](../classes/_declarations_blessed_d_.widgets.textboxelement.md)
-* [Tput](../classes/_declarations_blessed_d_.widgets.tput.md)
+* [Tput](../classes/_declarations_tput_d_.tput.md)
 * [Tree](../classes/_declarations_blessed_contrib_d_.blessedcontrib.widget.tree.md)
 * [Tree](../classes/_declarations_blessed_contrib_d_.blessedcontrib.widget.tree.md)
 * [Tree](../classes/_declarations_blessed_contrib_d_.blessedcontrib.widget.tree.md)
@@ -419,17 +422,10 @@
 
 * [options](_declarations_blessed_d_.widgets.ihasoptions.md#options)
 
----
-
 ## Properties
-
-<a id="options"></a>
 
 ###  options
 
-**● options**: *`T`*
+• **options**: *T*
 
-*Defined in [declarations/blessed.d.ts:223](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L223)*
-
-___
-
+*Defined in [declarations/blessed.d.ts:225](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L225)*

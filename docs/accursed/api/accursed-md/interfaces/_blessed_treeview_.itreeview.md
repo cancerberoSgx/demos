@@ -1,12 +1,14 @@
-[accursed](../README.md) > ["blessed/treeView"](../modules/_blessed_treeview_.md) > [ITreeView](../interfaces/_blessed_treeview_.itreeview.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["blessed/treeView"](../modules/_blessed_treeview_.md) › [ITreeView](_blessed_treeview_.itreeview.md)
 
-# Interface: ITreeView
+# Interface: ITreeView <**T**>
 
 ## Type parameters
-#### T :  [TreeViewNode](_blessed_treeview_.treeviewnode.md)
+
+▪ **T**: *[TreeViewNode](_blessed_treeview_.treeviewnode.md)*
+
 ## Hierarchy
 
-**ITreeView**
+* **ITreeView**
 
 ## Implemented by
 
@@ -18,58 +20,73 @@
 
 * [on](_blessed_treeview_.itreeview.md#on)
 
----
-
 ## Methods
-
-<a id="on"></a>
 
 ###  on
 
-▸ **on**(event: *"nodeSelect"*, callback: *`function`*): `this`
+▸ **on**(`event`: "nodeSelect", `callback`: function): *this*
 
-▸ **on**(event: *"nodeFocus"*, callback: *`function`*): `this`
-
-▸ **on**(event: *"nodeExpand"*, callback: *`function`*): `this`
-
-*Defined in [blessed/treeView.ts:97](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/treeView.ts#L97)*
+*Defined in [blessed/treeView.ts:103](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/treeView.ts#L103)*
 
 Emitted when user selects a node (pressing enter). undefined value means the user un-select all nodes
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "nodeSelect" |
-| callback | `function` |
+▪ **event**: *"nodeSelect"*
 
-**Returns:** `this`
+▪ **callback**: *function*
 
-*Defined in [blessed/treeView.ts:102](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/treeView.ts#L102)*
+▸ (`node`: [Node](_blessed_treeview_.node.md)): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`node` | [Node](_blessed_treeview_.node.md) |
+
+**Returns:** *this*
+
+▸ **on**(`event`: "nodeFocus", `callback`: function): *this*
+
+*Defined in [blessed/treeView.ts:108](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/treeView.ts#L108)*
 
 Emitted when user focus a tree node while navigating up or down with arrow keys.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "nodeFocus" |
-| callback | `function` |
+▪ **event**: *"nodeFocus"*
 
-**Returns:** `this`
+▪ **callback**: *function*
 
-*Defined in [blessed/treeView.ts:108](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/treeView.ts#L108)*
-
-Emitted when user expand or collapses a node (pressing space). node.expanded property tells the current status of the node.
+▸ (`node`: [Node](_blessed_treeview_.node.md)): *void*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "nodeExpand" |
-| callback | `function` |
+Name | Type |
+------ | ------ |
+`node` | [Node](_blessed_treeview_.node.md) |
 
-**Returns:** `this`
+**Returns:** *this*
 
-___
+▸ **on**(`event`: "nodeExpand", `callback`: function): *this*
 
+*Defined in [blessed/treeView.ts:114](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/treeView.ts#L114)*
+
+Emitted when user expand or collapses a node (pressing space). node.expanded property tells the current
+status of the node.
+
+**Parameters:**
+
+▪ **event**: *"nodeExpand"*
+
+▪ **callback**: *function*
+
+▸ (`node`: [Node](_blessed_treeview_.node.md)): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`node` | [Node](_blessed_treeview_.node.md) |
+
+**Returns:** *this*

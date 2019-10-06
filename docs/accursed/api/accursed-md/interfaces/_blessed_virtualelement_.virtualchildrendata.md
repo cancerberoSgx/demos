@@ -1,10 +1,10 @@
-[accursed](../README.md) > ["blessed/virtualElement"](../modules/_blessed_virtualelement_.md) > [VirtualChildrenData](../interfaces/_blessed_virtualelement_.virtualchildrendata.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["blessed/virtualElement"](../modules/_blessed_virtualelement_.md) › [VirtualChildrenData](_blessed_virtualelement_.virtualchildrendata.md)
 
 # Interface: VirtualChildrenData
 
 ## Hierarchy
 
-**VirtualChildrenData**
+* **VirtualChildrenData**
 
 ## Index
 
@@ -14,39 +14,30 @@
 * [children](_blessed_virtualelement_.virtualchildrendata.md#children)
 * [tagName](_blessed_virtualelement_.virtualchildrendata.md#tagname)
 
----
-
 ## Properties
-
-<a id="attrs"></a>
 
 ###  attrs
 
-**● attrs**: *`object`*
+• **attrs**: *object*
 
-*Defined in [blessed/virtualElement.ts:182](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/virtualElement.ts#L182)*
+*Defined in [blessed/virtualElement.ts:182](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L182)*
 
-#### Type declaration
+#### Type declaration:
 
-[name: `string`]: `any`
+* \[ **name**: *string*\]: any
 
 ___
-<a id="children"></a>
 
 ###  children
 
-**● children**: *(`string` \| `number` \| [VirtualChildrenData](_blessed_virtualelement_.virtualchildrendata.md))[]*
+• **children**: *string | number | [VirtualChildrenData](_blessed_virtualelement_.virtualchildrendata.md)[]*
 
-*Defined in [blessed/virtualElement.ts:181](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/virtualElement.ts#L181)*
+*Defined in [blessed/virtualElement.ts:181](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L181)*
 
 ___
-<a id="tagname"></a>
 
 ###  tagName
 
-**● tagName**: *`string`*
+• **tagName**: *string*
 
-*Defined in [blessed/virtualElement.ts:183](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/virtualElement.ts#L183)*
-
-___
-
+*Defined in [blessed/virtualElement.ts:183](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L183)*

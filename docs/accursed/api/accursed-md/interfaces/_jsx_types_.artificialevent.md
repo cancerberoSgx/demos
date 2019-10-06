@@ -1,12 +1,14 @@
-[accursed](../README.md) > ["jsx/types"](../modules/_jsx_types_.md) > [ArtificialEvent](../interfaces/_jsx_types_.artificialevent.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx/types"](../modules/_jsx_types_.md) › [ArtificialEvent](_jsx_types_.artificialevent.md)
 
-# Interface: ArtificialEvent
+# Interface: ArtificialEvent <**T**>
 
 ## Type parameters
-#### T :  [Element](_jsx_types_.__global.jsx.element.md)
+
+▪ **T**: *[Element](_jsx_types_.__global.jsx.element.md)*
+
 ## Hierarchy
 
-**ArtificialEvent**
+* **ArtificialEvent**
 
 ## Index
 
@@ -14,17 +16,10 @@
 
 * [currentTarget](_jsx_types_.artificialevent.md#currenttarget)
 
----
-
 ## Properties
-
-<a id="currenttarget"></a>
 
 ###  currentTarget
 
-**● currentTarget**: *`T`*
+• **currentTarget**: *T*
 
-*Defined in [jsx/types.ts:312](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L312)*
-
-___
-
+*Defined in [jsx/types.ts:312](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L312)*

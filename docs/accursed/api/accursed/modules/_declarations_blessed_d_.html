@@ -85,6 +85,7 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_declarations_blessed_d_.html#colorname" class="tsd-kind-icon">Color<wbr>Name</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_declarations_blessed_d_.html#colorrgb" class="tsd-kind-icon">Color<wbr>Rgb</a></li>
 							</ul>
 						</section>
@@ -137,12 +138,22 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="colorname" class="tsd-anchor"></a>
+					<h3>Color<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">Color<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"black"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"red"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"green"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"yellow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"blue"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"magenta"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"cyan"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"white"</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3591">declarations/blessed.d.ts:3591</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="colorrgb" class="tsd-anchor"></a>
 					<h3>Color<wbr>Rgb</h3>
 					<div class="tsd-signature tsd-kind-icon">Color<wbr>Rgb<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3658">declarations/blessed.d.ts:3658</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3592">declarations/blessed.d.ts:3592</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -155,7 +166,7 @@
 					<div class="tsd-signature tsd-kind-icon">colors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3659">declarations/blessed.d.ts:3659</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3593">declarations/blessed.d.ts:3593</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -257,18 +268,34 @@
 								</ul>
 							</li>
 							<li class="tsd-parameter">
+								<h5>ncolors<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>This maps color names  &#39;black&#39;,&#39;red&#39;,&#39;green&#39;,&#39;yellow&#39;,&#39;blue&#39;,&#39;magenta&#39;,&#39;cyan&#39;,&#39;white&#39; to color numbers or
+											color numbers offsets to fast Map higher colors to the first 8 colors allowing translation of high colors
+										to low colors on 8-color terminals.</p>
+									</div>
+								</div>
+								<ul class="tsd-parameters">
+								</ul>
+							</li>
+							<li class="tsd-parameter">
 								<h5>RGBTo<wbr>Hex<span class="tsd-signature-symbol">: </span>function</h5>
 								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal tsd-is-not-exported">
 									<li class="tsd-signature tsd-kind-icon">RGBTo<wbr>Hex<span class="tsd-signature-symbol">(</span>r<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, g<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-									<li class="tsd-signature tsd-kind-icon">RGBTo<wbr>Hex<span class="tsd-signature-symbol">(</span>hex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_declarations_blessed_d_.html#colorrgb" class="tsd-signature-type">ColorRgb</a></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3667">declarations/blessed.d.ts:3667</a></li>
+												<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3610">declarations/blessed.d.ts:3610</a></li>
 											</ul>
 										</aside>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Convert given r, g, b color to a hex string compatible with blessed.</p>
+											</div>
+										</div>
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
@@ -283,20 +310,6 @@
 										</ul>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 									</li>
-									<li class="tsd-description">
-										<aside class="tsd-sources">
-											<ul>
-												<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3668">declarations/blessed.d.ts:3668</a></li>
-											</ul>
-										</aside>
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>hex: <span class="tsd-signature-type">string</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <a href="_declarations_blessed_d_.html#colorrgb" class="tsd-signature-type">ColorRgb</a></h4>
-									</li>
 							</ul>        </li>
 							<li class="tsd-parameter">
 								<h5>blend<span class="tsd-signature-symbol">: </span>function</h5>
@@ -307,9 +320,14 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3669">declarations/blessed.d.ts:3669</a></li>
+												<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3618">declarations/blessed.d.ts:3618</a></li>
 											</ul>
 										</aside>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Takes two attr numbers and returns a mixture of them prioritizing one or the other according to given <code>alpha</code> value between 0 and 1.</p>
+											</div>
+										</div>
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
@@ -334,13 +352,13 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3676">declarations/blessed.d.ts:3676</a></li>
+												<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3627">declarations/blessed.d.ts:3627</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
 											<div class="lead">
-												<p>Map higher colors to the first 8 colors.
-												This allows translation of high colors to low colors on 8-color terminals.</p>
+												<p>Map higher colors to the first 8 colors. This allows translation of high colors to low colors on
+												8-color terminals.</p>
 											</div>
 										</div>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -355,13 +373,12 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3673">declarations/blessed.d.ts:3673</a></li>
+												<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3622">declarations/blessed.d.ts:3622</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
 											<div class="lead">
-												<p>Seed all 256 colors. Assume xterm defaults.
-												Ported from the xterm color generation script.</p>
+												<p>Seed all 256 colors. Assume xterm defaults. Ported from the xterm color generation script.</p>
 											</div>
 										</div>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -376,9 +393,14 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3665">declarations/blessed.d.ts:3665</a></li>
+												<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3602">declarations/blessed.d.ts:3602</a></li>
 											</ul>
 										</aside>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Convert a string color name into a color number format.</p>
+											</div>
+										</div>
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
@@ -386,6 +408,32 @@
 											</li>
 										</ul>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+									</li>
+							</ul>        </li>
+							<li class="tsd-parameter">
+								<h5>hex<wbr>ToRGB<span class="tsd-signature-symbol">: </span>function</h5>
+								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon">hex<wbr>ToRGB<span class="tsd-signature-symbol">(</span>hex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_declarations_blessed_d_.html#colorrgb" class="tsd-signature-type">ColorRgb</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3614">declarations/blessed.d.ts:3614</a></li>
+											</ul>
+										</aside>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Convert gicen hex string into a rgb number array .</p>
+											</div>
+										</div>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>hex: <span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_declarations_blessed_d_.html#colorrgb" class="tsd-signature-type">ColorRgb</a></h4>
 									</li>
 							</ul>        </li>
 							<li class="tsd-parameter">
@@ -397,7 +445,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3664">declarations/blessed.d.ts:3664</a></li>
+												<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3598">declarations/blessed.d.ts:3598</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -430,9 +478,14 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3666">declarations/blessed.d.ts:3666</a></li>
+												<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3606">declarations/blessed.d.ts:3606</a></li>
 											</ul>
 										</aside>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Similar to blend which is based on this. Takes two attr numbers and returns a mixture of them prioritizing one or the other according to given <code>alpha</code> value between 0 and 1.</p>
+											</div>
+										</div>
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
@@ -457,7 +510,7 @@
 					<div class="tsd-signature tsd-kind-icon">helpers<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_declarations_blessed_d_.helpers.html" class="tsd-signature-type">Helpers</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3783">declarations/blessed.d.ts:3783</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3741">declarations/blessed.d.ts:3741</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -467,7 +520,7 @@
 					<div class="tsd-signature tsd-kind-icon">unicode<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_declarations_blessed_d_.unicode.html" class="tsd-signature-type">Unicode</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3715">declarations/blessed.d.ts:3715</a></li>
+							<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3673">declarations/blessed.d.ts:3673</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -484,7 +537,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3633">declarations/blessed.d.ts:3633</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3566">declarations/blessed.d.ts:3566</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -507,7 +560,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3628">declarations/blessed.d.ts:3628</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3561">declarations/blessed.d.ts:3561</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -530,7 +583,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3642">declarations/blessed.d.ts:3642</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3575">declarations/blessed.d.ts:3575</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -553,7 +606,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3643">declarations/blessed.d.ts:3643</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3576">declarations/blessed.d.ts:3576</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -576,7 +629,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3656">declarations/blessed.d.ts:3656</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3589">declarations/blessed.d.ts:3589</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -599,7 +652,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3635">declarations/blessed.d.ts:3635</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3568">declarations/blessed.d.ts:3568</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -622,7 +675,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3638">declarations/blessed.d.ts:3638</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3571">declarations/blessed.d.ts:3571</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -651,7 +704,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3639">declarations/blessed.d.ts:3639</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3572">declarations/blessed.d.ts:3572</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -674,7 +727,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3655">declarations/blessed.d.ts:3655</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3588">declarations/blessed.d.ts:3588</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -697,7 +750,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3630">declarations/blessed.d.ts:3630</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3563">declarations/blessed.d.ts:3563</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -720,7 +773,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3634">declarations/blessed.d.ts:3634</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3567">declarations/blessed.d.ts:3567</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -743,7 +796,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3637">declarations/blessed.d.ts:3637</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3570">declarations/blessed.d.ts:3570</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -766,7 +819,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3636">declarations/blessed.d.ts:3636</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3569">declarations/blessed.d.ts:3569</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -789,7 +842,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3650">declarations/blessed.d.ts:3650</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3583">declarations/blessed.d.ts:3583</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -812,7 +865,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3651">declarations/blessed.d.ts:3651</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3584">declarations/blessed.d.ts:3584</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -835,7 +888,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3649">declarations/blessed.d.ts:3649</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3582">declarations/blessed.d.ts:3582</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -858,7 +911,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3653">declarations/blessed.d.ts:3653</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3586">declarations/blessed.d.ts:3586</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -881,7 +934,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3652">declarations/blessed.d.ts:3652</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3585">declarations/blessed.d.ts:3585</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -904,7 +957,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3647">declarations/blessed.d.ts:3647</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3580">declarations/blessed.d.ts:3580</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -927,7 +980,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3648">declarations/blessed.d.ts:3648</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3581">declarations/blessed.d.ts:3581</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -950,7 +1003,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3645">declarations/blessed.d.ts:3645</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3578">declarations/blessed.d.ts:3578</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -973,7 +1026,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3644">declarations/blessed.d.ts:3644</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3577">declarations/blessed.d.ts:3577</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -996,7 +1049,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3627">declarations/blessed.d.ts:3627</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3560">declarations/blessed.d.ts:3560</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1025,7 +1078,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3631">declarations/blessed.d.ts:3631</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3564">declarations/blessed.d.ts:3564</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1048,7 +1101,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3632">declarations/blessed.d.ts:3632</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3565">declarations/blessed.d.ts:3565</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1071,7 +1124,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3646">declarations/blessed.d.ts:3646</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3579">declarations/blessed.d.ts:3579</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1094,7 +1147,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3654">declarations/blessed.d.ts:3654</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3587">declarations/blessed.d.ts:3587</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1117,7 +1170,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3629">declarations/blessed.d.ts:3629</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3562">declarations/blessed.d.ts:3562</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1140,7 +1193,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3640">declarations/blessed.d.ts:3640</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3573">declarations/blessed.d.ts:3573</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1163,7 +1216,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3641">declarations/blessed.d.ts:3641</a></li>
+									<li>Defined in <a href="https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3574">declarations/blessed.d.ts:3574</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1204,6 +1257,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../interfaces/_declarations_blessed_d_.unicode.html" class="tsd-kind-icon">Unicode</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_declarations_blessed_d_.html#colorname" class="tsd-kind-icon">Color<wbr>Name</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_declarations_blessed_d_.html#colorrgb" class="tsd-kind-icon">Color<wbr>Rgb</a>
@@ -1324,6 +1380,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>

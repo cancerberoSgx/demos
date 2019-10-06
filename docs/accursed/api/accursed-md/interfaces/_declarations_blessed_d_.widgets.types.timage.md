@@ -1,10 +1,10 @@
-[accursed](../README.md) > ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md) > [Widgets](../modules/_declarations_blessed_d_.widgets.md) > [Types](../modules/_declarations_blessed_d_.widgets.types.md) > [TImage](../interfaces/_declarations_blessed_d_.widgets.types.timage.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md) › [Widgets](../modules/_declarations_blessed_d_.widgets.md) › [Types](../modules/_declarations_blessed_d_.widgets.types.md) › [TImage](_declarations_blessed_d_.widgets.types.timage.md)
 
 # Interface: TImage
 
 ## Hierarchy
 
-**TImage**
+* **TImage**
 
 ## Index
 
@@ -15,52 +15,42 @@
 * [height](_declarations_blessed_d_.widgets.types.timage.md#height)
 * [width](_declarations_blessed_d_.widgets.types.timage.md#width)
 
----
-
 ## Properties
-
-<a id="bmp"></a>
 
 ###  bmp
 
-**● bmp**: *`any`*
+• **bmp**: *any*
 
-*Defined in [declarations/blessed.d.ts:144](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L144)*
+*Defined in [declarations/blessed.d.ts:146](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L146)*
 
 Image bitmap.
 
 ___
-<a id="cellmap"></a>
 
 ###  cellmap
 
-**● cellmap**: *`any`*
+• **cellmap**: *any*
 
-*Defined in [declarations/blessed.d.ts:149](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L149)*
+*Defined in [declarations/blessed.d.ts:151](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L151)*
 
 Image cellmap (bitmap scaled down to cell size).
 
 ___
-<a id="height"></a>
 
 ###  height
 
-**● height**: *`number`*
+• **height**: *number*
 
-*Defined in [declarations/blessed.d.ts:139](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L139)*
+*Defined in [declarations/blessed.d.ts:141](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L141)*
 
 Pixel height.
 
 ___
-<a id="width"></a>
 
 ###  width
 
-**● width**: *`number`*
+• **width**: *number*
 
-*Defined in [declarations/blessed.d.ts:134](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L134)*
+*Defined in [declarations/blessed.d.ts:136](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L136)*
 
 Pixel width.
-
-___
-

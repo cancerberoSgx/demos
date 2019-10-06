@@ -14,17 +14,17 @@ const w = window as any
     });
       
     FB.AppEvents.logPageView();   
-      
+
+  };
+
+      export function login() {
+        return new Promise(resolve=>{
 FB.getLoginStatus(function(response) {
-  debugger
+  response.status==='connected' && resolve()
   if(response.status==='not_authorized'){
-  debugger
-
     FB.login(response=>{
-  debugger
-
       console.log(response);
-      
+ resolve(response)
     })
   }
   // console.log(response);
@@ -32,8 +32,8 @@ FB.getLoginStatus(function(response) {
   // document.getElementById('log')!.innerHTML = JSON.stringify(response)
     // statusChangeCallback(response);
 });
-  };
-
+        })
+      }
   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0]as any
      if (d.getElementById(id)) {return;}

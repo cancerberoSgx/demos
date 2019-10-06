@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["jsx-components/showIf"](../modules/_jsx_components_showif_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx-components/showIf"](_jsx_components_showif_.md)
 
 # External module: "jsx-components/showIf"
 
@@ -11,6 +11,3 @@
 ### Interfaces
 
 * [ShowIfProps](../interfaces/_jsx_components_showif_.showifprops.md)
-
----
-

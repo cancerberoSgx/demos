@@ -1,12 +1,12 @@
-[accursed](../README.md) > ["jsx/types"](../modules/_jsx_types_.md) > [AfterElementCreatedEvent](../interfaces/_jsx_types_.afterelementcreatedevent.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx/types"](../modules/_jsx_types_.md) › [AfterElementCreatedEvent](_jsx_types_.afterelementcreatedevent.md)
 
 # Interface: AfterElementCreatedEvent
 
-*__internal__*: 
+**`internal`** 
 
 ## Hierarchy
 
-**AfterElementCreatedEvent**
+* **AfterElementCreatedEvent**
 
 ## Index
 
@@ -14,57 +14,46 @@
 
 * [attrs](_jsx_types_.afterelementcreatedevent.md#attrs)
 * [children](_jsx_types_.afterelementcreatedevent.md#children)
-* [component](_jsx_types_.afterelementcreatedevent.md#component)
+* [component](_jsx_types_.afterelementcreatedevent.md#optional-component)
 * [el](_jsx_types_.afterelementcreatedevent.md#el)
 * [tag](_jsx_types_.afterelementcreatedevent.md#tag)
 
----
-
 ## Properties
-
-<a id="attrs"></a>
 
 ###  attrs
 
-**● attrs**: *[BlessedJsxAttrs](../modules/_jsx_types_.md#blessedjsxattrs)*
+• **attrs**: *[BlessedJsxAttrs](../modules/_jsx_types_.md#blessedjsxattrs)*
 
-*Defined in [jsx/types.ts:265](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L265)*
+*Defined in [jsx/types.ts:265](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L265)*
 
 ___
-<a id="children"></a>
 
 ###  children
 
-**● children**: *[BlessedJsxNode](../modules/_jsx_types_.__global.jsx.md#blessedjsxnode)[]*
+• **children**: *[BlessedJsxNode](../modules/_jsx_types_.__global.jsx.md#blessedjsxnode)[]*
 
-*Defined in [jsx/types.ts:266](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L266)*
-
-___
-<a id="component"></a>
-
-### `<Optional>` component
-
-**● component**: *[Component](../classes/_jsx_component_.component.md)*
-
-*Defined in [jsx/types.ts:267](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L267)*
+*Defined in [jsx/types.ts:266](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L266)*
 
 ___
-<a id="el"></a>
+
+### `Optional` component
+
+• **component**? : *[Component](../classes/_jsx_component_.component.md)*
+
+*Defined in [jsx/types.ts:267](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L267)*
+
+___
 
 ###  el
 
-**● el**: *[Element](_jsx_types_.__global.jsx.element.md)*
+• **el**: *[Element](_jsx_types_.__global.jsx.element.md)*
 
-*Defined in [jsx/types.ts:263](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L263)*
+*Defined in [jsx/types.ts:263](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L263)*
 
 ___
-<a id="tag"></a>
 
 ###  tag
 
-**● tag**: *[ElementType](../modules/_jsx_types_.__global.jsx.md#elementtype)*
+• **tag**: *[ElementType](../modules/_jsx_types_.__global.jsx.md#elementtype)*
 
-*Defined in [jsx/types.ts:264](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L264)*
-
-___
-
+*Defined in [jsx/types.ts:264](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L264)*

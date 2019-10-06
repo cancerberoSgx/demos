@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["jsx-components/maximize"](../modules/_jsx_components_maximize_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx-components/maximize"](_jsx_components_maximize_.md)
 
 # External module: "jsx-components/maximize"
 
@@ -11,6 +11,3 @@
 ### Interfaces
 
 * [MaximizeProps](../interfaces/_jsx_components_maximize_.maximizeprops.md)
-
----
-

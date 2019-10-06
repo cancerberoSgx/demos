@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["blessed/maximize"](../modules/_blessed_maximize_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["blessed/maximize"](_blessed_maximize_.md)
 
 # External module: "blessed/maximize"
 
@@ -10,7 +10,7 @@
 
 ### Variables
 
-* [currentTarget](_blessed_maximize_.md#currenttarget)
+* [currentTarget](_blessed_maximize_.md#let-currenttarget)
 
 ### Functions
 
@@ -18,65 +18,55 @@
 * [restoreMaximize](_blessed_maximize_.md#restoremaximize)
 * [setMaximized](_blessed_maximize_.md#setmaximized)
 
----
-
 ## Variables
 
-<a id="currenttarget"></a>
+### `Let` currentTarget
 
-### `<Let>` currentTarget
+• **currentTarget**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md) | undefined*
 
-**● currentTarget**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md) \| `undefined`*
-
-*Defined in [blessed/maximize.ts:73](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/maximize.ts#L73)*
-
-___
+*Defined in [blessed/maximize.ts:73](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/maximize.ts#L73)*
 
 ## Functions
 
-<a id="ismaximized"></a>
-
 ###  isMaximized
 
-▸ **isMaximized**(el: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*): `boolean`
+▸ **isMaximized**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)): *boolean*
 
-*Defined in [blessed/maximize.ts:82](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/maximize.ts#L82)*
+*Defined in [blessed/maximize.ts:82](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/maximize.ts#L82)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| el | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) |
+Name | Type |
+------ | ------ |
+`el` | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) |
 
-**Returns:** `boolean`
+**Returns:** *boolean*
 
 ___
-<a id="restoremaximize"></a>
 
 ###  restoreMaximize
 
-▸ **restoreMaximize**(options?: *[Options](../interfaces/_blessed_maximize_.options.md)*): `void`
+▸ **restoreMaximize**(`options`: [Options](../interfaces/_blessed_maximize_.options.md)): *void*
 
-*Defined in [blessed/maximize.ts:78](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/maximize.ts#L78)*
+*Defined in [blessed/maximize.ts:78](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/maximize.ts#L78)*
 
 restore the state of current maximized element if any
 
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| `Default value` options | [Options](../interfaces/_blessed_maximize_.options.md) |  { auto: true } |
+Name | Type | Default |
+------ | ------ | ------ |
+`options` | [Options](../interfaces/_blessed_maximize_.options.md) |  { auto: true } |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="setmaximized"></a>
 
 ###  setMaximized
 
-▸ **setMaximized**(el: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*, maximize: *`boolean`*, options?: *[Options](../interfaces/_blessed_maximize_.options.md)*): `void`
+▸ **setMaximized**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `maximize`: boolean, `options`: [Options](../interfaces/_blessed_maximize_.options.md)): *void*
 
-*Defined in [blessed/maximize.ts:21](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/maximize.ts#L21)*
+*Defined in [blessed/maximize.ts:21](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/maximize.ts#L21)*
 
 Maximize given element by attaching it as first child of the screen and with full dimensions. It stores original parent and index as data.
 
@@ -84,13 +74,10 @@ TODO: if auto: true, then if we are adding a button for restoring we should also
 
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| el | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | - |
-| maximize | `boolean` | - |
-| `Default value` options | [Options](../interfaces/_blessed_maximize_.options.md) |  { auto: true } |
+Name | Type | Default |
+------ | ------ | ------ |
+`el` | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | - |
+`maximize` | boolean | - |
+`options` | [Options](../interfaces/_blessed_maximize_.options.md) |  { auto: true } |
 
-**Returns:** `void`
-
-___
-
+**Returns:** *void*

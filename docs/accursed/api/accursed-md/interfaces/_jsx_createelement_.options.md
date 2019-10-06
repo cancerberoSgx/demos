@@ -1,28 +1,21 @@
-[accursed](../README.md) > ["jsx/createElement"](../modules/_jsx_createelement_.md) > [Options](../interfaces/_jsx_createelement_.options.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx/createElement"](../modules/_jsx_createelement_.md) › [Options](_jsx_createelement_.options.md)
 
 # Interface: Options
 
 ## Hierarchy
 
-**Options**
+* **Options**
 
 ## Index
 
 ### Properties
 
-* [dontInheritStyle](_jsx_createelement_.options.md#dontinheritstyle)
-
----
+* [dontInheritStyle](_jsx_createelement_.options.md#optional-dontinheritstyle)
 
 ## Properties
 
-<a id="dontinheritstyle"></a>
+### `Optional` dontInheritStyle
 
-### `<Optional>` dontInheritStyle
+• **dontInheritStyle**? : *boolean*
 
-**● dontInheritStyle**: *`boolean`*
-
-*Defined in [jsx/createElement.ts:26](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/createElement.ts#L26)*
-
-___
-
+*Defined in [jsx/createElement.ts:26](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L26)*

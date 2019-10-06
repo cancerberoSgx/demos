@@ -1,66 +1,83 @@
-[accursed](../README.md) > ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md) > [Widgets](../modules/_declarations_blessed_d_.widgets.md) > [Types](../modules/_declarations_blessed_d_.widgets.types.md) > [TCursor](../interfaces/_declarations_blessed_d_.widgets.types.tcursor.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md) › [Widgets](../modules/_declarations_blessed_d_.widgets.md) › [Types](../modules/_declarations_blessed_d_.widgets.types.md) › [TCursor](_declarations_blessed_d_.widgets.types.tcursor.md)
 
 # Interface: TCursor
 
 ## Hierarchy
 
-**TCursor**
+* **TCursor**
 
 ## Index
 
 ### Properties
 
-* [artificial](_declarations_blessed_d_.widgets.types.tcursor.md#artificial)
-* [blink](_declarations_blessed_d_.widgets.types.tcursor.md#blink)
-* [color](_declarations_blessed_d_.widgets.types.tcursor.md#color)
-* [shape](_declarations_blessed_d_.widgets.types.tcursor.md#shape)
-
----
+* [_hidden](_declarations_blessed_d_.widgets.types.tcursor.md#optional-_hidden)
+* [_set](_declarations_blessed_d_.widgets.types.tcursor.md#optional-_set)
+* [_state](_declarations_blessed_d_.widgets.types.tcursor.md#optional-_state)
+* [artificial](_declarations_blessed_d_.widgets.types.tcursor.md#optional-artificial)
+* [blink](_declarations_blessed_d_.widgets.types.tcursor.md#optional-blink)
+* [color](_declarations_blessed_d_.widgets.types.tcursor.md#optional-color)
+* [shape](_declarations_blessed_d_.widgets.types.tcursor.md#optional-shape)
 
 ## Properties
 
-<a id="artificial"></a>
+### `Optional` _hidden
 
-###  artificial
+• **_hidden**? : *boolean*
 
-**● artificial**: *`boolean`*
+*Defined in [declarations/blessed.d.ts:120](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L120)*
 
-*Defined in [declarations/blessed.d.ts:103](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L103)*
+___
+
+### `Optional` _set
+
+• **_set**? : *boolean*
+
+*Defined in [declarations/blessed.d.ts:118](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L118)*
+
+___
+
+### `Optional` _state
+
+• **_state**? : *number*
+
+*Defined in [declarations/blessed.d.ts:119](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L119)*
+
+___
+
+### `Optional` artificial
+
+• **artificial**? : *boolean*
+
+*Defined in [declarations/blessed.d.ts:105](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L105)*
 
 Have blessed draw a custom cursor and hide the terminal cursor (experimental).
 
 ___
-<a id="blink"></a>
 
-###  blink
+### `Optional` blink
 
-**● blink**: *`boolean`*
+• **blink**? : *boolean*
 
-*Defined in [declarations/blessed.d.ts:113](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L113)*
+*Defined in [declarations/blessed.d.ts:113](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L113)*
 
 Whether the cursor blinks.
 
 ___
-<a id="color"></a>
 
-###  color
+### `Optional` color
 
-**● color**: *`string`*
+• **color**? : *string*
 
-*Defined in [declarations/blessed.d.ts:118](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L118)*
+*Defined in [declarations/blessed.d.ts:117](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L117)*
 
 Color of the color. Accepts any valid color value (null is default).
 
 ___
-<a id="shape"></a>
 
-###  shape
+### `Optional` shape
 
-**● shape**: *"block" \| "underline" \| "line"*
+• **shape**? : *[CursorShape](../modules/_declarations_blessed_d_.widgets.types.md#cursorshape)*
 
-*Defined in [declarations/blessed.d.ts:108](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L108)*
+*Defined in [declarations/blessed.d.ts:109](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L109)*
 
 Shape of the cursor. Can be: block, underline, or line.
-
-___
-

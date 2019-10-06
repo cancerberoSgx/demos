@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["jsx/types"](../modules/_jsx_types_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx/types"](_jsx_types_.md)
 
 # External module: "jsx/types"
 
@@ -38,159 +38,139 @@
 * [OnClickHandler](_jsx_types_.md#onclickhandler)
 * [blessedElementConstructor](_jsx_types_.md#blessedelementconstructor)
 
----
-
 ## Type aliases
-
-<a id="afterelementcreatedlistener"></a>
 
 ###  AfterElementCreatedListener
 
-**Ƭ AfterElementCreatedListener**: *`function`*
+Ƭ **AfterElementCreatedListener**: *function*
 
-*Defined in [jsx/types.ts:260](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L260)*
+*Defined in [jsx/types.ts:260](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L260)*
 
-*__internal__*: 
+**`internal`** 
 
-#### Type declaration
-▸(event: *[AfterElementCreatedEvent](../interfaces/_jsx_types_.afterelementcreatedevent.md)*): `void`
+#### Type declaration:
+
+▸ (`event`: [AfterElementCreatedEvent](../interfaces/_jsx_types_.afterelementcreatedevent.md)): *void*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | [AfterElementCreatedEvent](../interfaces/_jsx_types_.afterelementcreatedevent.md) |
-
-**Returns:** `void`
+Name | Type |
+------ | ------ |
+`event` | [AfterElementCreatedEvent](../interfaces/_jsx_types_.afterelementcreatedevent.md) |
 
 ___
-<a id="afterrenderlistener"></a>
 
 ###  AfterRenderListener
 
-**Ƭ AfterRenderListener**: *`function`*
+Ƭ **AfterRenderListener**: *function*
 
-*Defined in [jsx/types.ts:290](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L290)*
+*Defined in [jsx/types.ts:290](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L290)*
 
-*__internal__*: 
+**`internal`** 
 
-#### Type declaration
-▸(event: *[AfterRenderEvent](../interfaces/_jsx_types_.afterrenderevent.md)*): `void`
+#### Type declaration:
+
+▸ (`event`: [AfterRenderEvent](../interfaces/_jsx_types_.afterrenderevent.md)): *void*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | [AfterRenderEvent](../interfaces/_jsx_types_.afterrenderevent.md) |
-
-**Returns:** `void`
+Name | Type |
+------ | ------ |
+`event` | [AfterRenderEvent](../interfaces/_jsx_types_.afterrenderevent.md) |
 
 ___
-<a id="beforeappendchildlistener"></a>
 
 ###  BeforeAppendChildListener
 
-**Ƭ BeforeAppendChildListener**: *`function`*
+Ƭ **BeforeAppendChildListener**: *function*
 
-*Defined in [jsx/types.ts:270](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L270)*
+*Defined in [jsx/types.ts:270](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L270)*
 
-*__internal__*: 
+**`internal`** 
 
-#### Type declaration
-▸(event: *[BeforeAppendChildEvent](../interfaces/_jsx_types_.beforeappendchildevent.md)*): `boolean`
+#### Type declaration:
+
+▸ (`event`: [BeforeAppendChildEvent](../interfaces/_jsx_types_.beforeappendchildevent.md)): *boolean*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | [BeforeAppendChildEvent](../interfaces/_jsx_types_.beforeappendchildevent.md) |
-
-**Returns:** `boolean`
+Name | Type |
+------ | ------ |
+`event` | [BeforeAppendChildEvent](../interfaces/_jsx_types_.beforeappendchildevent.md) |
 
 ___
-<a id="beforeelementcreatedlistener"></a>
 
 ###  BeforeElementCreatedListener
 
-**Ƭ BeforeElementCreatedListener**: *`function`*
+Ƭ **BeforeElementCreatedListener**: *function*
 
-*Defined in [jsx/types.ts:277](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L277)*
+*Defined in [jsx/types.ts:277](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L277)*
 
-*__internal__*: 
+**`internal`** 
 
-#### Type declaration
-▸(event: *[BeforeElementCreatedEvent](../interfaces/_jsx_types_.beforeelementcreatedevent.md)*): [Element](../interfaces/_jsx_types_.__global.jsx.element.md) \| `undefined`
+#### Type declaration:
+
+▸ (`event`: [BeforeElementCreatedEvent](../interfaces/_jsx_types_.beforeelementcreatedevent.md)): *[Element](../interfaces/_jsx_types_.__global.jsx.element.md) | undefined*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | [BeforeElementCreatedEvent](../interfaces/_jsx_types_.beforeelementcreatedevent.md) |
-
-**Returns:** [Element](../interfaces/_jsx_types_.__global.jsx.element.md) \| `undefined`
+Name | Type |
+------ | ------ |
+`event` | [BeforeElementCreatedEvent](../interfaces/_jsx_types_.beforeelementcreatedevent.md) |
 
 ___
-<a id="blessedjsxattrs"></a>
 
 ###  BlessedJsxAttrs
 
-**Ƭ BlessedJsxAttrs**: *`object` \| `undefined`*
+Ƭ **BlessedJsxAttrs**: *object | undefined*
 
-*Defined in [jsx/types.ts:295](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L295)*
+*Defined in [jsx/types.ts:295](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L295)*
 
-*__internal__*: 
+**`internal`** 
 
 ___
-<a id="on"></a>
 
 ###  On
 
-**Ƭ On**: *`Parameters`<`function`> \| `Parameters`<`function`> \| `Parameters`<`function`> \| `Parameters`<`function`> \| `Parameters`<`function`> \| `Parameters`<`function`> \| `Parameters`<`function`>*
+Ƭ **On**: *Parameters‹function› | Parameters‹function› | Parameters‹function› | Parameters‹function› | Parameters‹function› | Parameters‹function› | Parameters‹function›*
 
-*Defined in [jsx/types.ts:297](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L297)*
+*Defined in [jsx/types.ts:297](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L297)*
 
 ___
-<a id="onclickhandler"></a>
 
 ###  OnClickHandler
 
-**Ƭ OnClickHandler**: *`function`*
+Ƭ **OnClickHandler**: *function*
 
-*Defined in [jsx/types.ts:315](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L315)*
+*Defined in [jsx/types.ts:315](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L315)*
 
-#### Type declaration
-▸(this: *`T`*, e: *[IMouseEventArg](../interfaces/_declarations_blessed_d_.widgets.events.imouseeventarg.md) & [ArtificialEvent](../interfaces/_jsx_types_.artificialevent.md)<`T`>*): `void`
+#### Type declaration:
+
+▸ (`this`: T, `e`: [IMouseEventArg](../interfaces/_declarations_blessed_d_.widgets.events.imouseeventarg.md) & [ArtificialEvent](../interfaces/_jsx_types_.artificialevent.md)‹T›): *void*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| this | `T` |
-| e | [IMouseEventArg](../interfaces/_declarations_blessed_d_.widgets.events.imouseeventarg.md) & [ArtificialEvent](../interfaces/_jsx_types_.artificialevent.md)<`T`> |
-
-**Returns:** `void`
+Name | Type |
+------ | ------ |
+`this` | T |
+`e` | [IMouseEventArg](../interfaces/_declarations_blessed_d_.widgets.events.imouseeventarg.md) & [ArtificialEvent](../interfaces/_jsx_types_.artificialevent.md)‹T› |
 
 ___
-<a id="blessedelementconstructor"></a>
 
 ###  blessedElementConstructor
 
-**Ƭ blessedElementConstructor**: *`function`*
+Ƭ **blessedElementConstructor**: *function*
 
-*Defined in [jsx/types.ts:323](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L323)*
+*Defined in [jsx/types.ts:323](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L323)*
 
-*__internal__*: 
+**`internal`** 
 
-#### Type declaration
-▸(options?: *`O`*): `T`
+#### Type declaration:
+
+▸ (`options?`: O): *T*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | `O` |
-
-**Returns:** `T`
-
-___
-
+Name | Type |
+------ | ------ |
+`options?` | O |

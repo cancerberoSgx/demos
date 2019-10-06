@@ -1,12 +1,12 @@
-[accursed](../README.md) > ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md) > [Widgets](../modules/_declarations_blessed_d_.widgets.md) > [Events](../modules/_declarations_blessed_d_.widgets.events.md) > [INodeGenericEventArg](../interfaces/_declarations_blessed_d_.widgets.events.inodegenericeventarg.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md) › [Widgets](../modules/_declarations_blessed_d_.widgets.md) › [Events](../modules/_declarations_blessed_d_.widgets.events.md) › [INodeGenericEventArg](_declarations_blessed_d_.widgets.events.inodegenericeventarg.md)
 
 # Interface: INodeGenericEventArg
 
 ## Hierarchy
 
- [PositionCoords](../classes/_declarations_blessed_d_.widgets.positioncoords.md)
+* [PositionCoords](../classes/_declarations_blessed_d_.widgets.positioncoords.md)
 
-**↳ INodeGenericEventArg**
+  ↳ **INodeGenericEventArg**
 
 ## Index
 
@@ -19,70 +19,58 @@
 * [yi](_declarations_blessed_d_.widgets.events.inodegenericeventarg.md#yi)
 * [yl](_declarations_blessed_d_.widgets.events.inodegenericeventarg.md#yl)
 
----
-
 ## Properties
-
-<a id="base"></a>
 
 ###  base
 
-**● base**: *`number`*
+• **base**: *number*
 
-*Defined in [declarations/blessed.d.ts:200](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L200)*
+*Defined in [declarations/blessed.d.ts:202](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L202)*
 
 ___
-<a id="renders"></a>
 
 ###  renders
 
-**● renders**: *`number`*
+• **renders**: *number*
 
-*Defined in [declarations/blessed.d.ts:201](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L201)*
+*Defined in [declarations/blessed.d.ts:203](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L203)*
 
 ___
-<a id="xi"></a>
 
 ###  xi
 
-**● xi**: *`number`*
+• **xi**: *number*
 
 *Inherited from [PositionCoords](../classes/_declarations_blessed_d_.widgets.positioncoords.md).[xi](../classes/_declarations_blessed_d_.widgets.positioncoords.md#xi)*
 
-*Defined in [declarations/blessed.d.ts:1315](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1315)*
+*Defined in [declarations/blessed.d.ts:1248](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1248)*
 
 ___
-<a id="xl"></a>
 
 ###  xl
 
-**● xl**: *`number`*
+• **xl**: *number*
 
 *Inherited from [PositionCoords](../classes/_declarations_blessed_d_.widgets.positioncoords.md).[xl](../classes/_declarations_blessed_d_.widgets.positioncoords.md#xl)*
 
-*Defined in [declarations/blessed.d.ts:1316](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1316)*
+*Defined in [declarations/blessed.d.ts:1249](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1249)*
 
 ___
-<a id="yi"></a>
 
 ###  yi
 
-**● yi**: *`number`*
+• **yi**: *number*
 
 *Inherited from [PositionCoords](../classes/_declarations_blessed_d_.widgets.positioncoords.md).[yi](../classes/_declarations_blessed_d_.widgets.positioncoords.md#yi)*
 
-*Defined in [declarations/blessed.d.ts:1317](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1317)*
+*Defined in [declarations/blessed.d.ts:1250](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1250)*
 
 ___
-<a id="yl"></a>
 
 ###  yl
 
-**● yl**: *`number`*
+• **yl**: *number*
 
 *Inherited from [PositionCoords](../classes/_declarations_blessed_d_.widgets.positioncoords.md).[yl](../classes/_declarations_blessed_d_.widgets.positioncoords.md#yl)*
 
-*Defined in [declarations/blessed.d.ts:1318](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1318)*
-
-___
-
+*Defined in [declarations/blessed.d.ts:1251](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1251)*

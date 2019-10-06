@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["blessed/collapsible"](../modules/_blessed_collapsible_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["blessed/collapsible"](_blessed_collapsible_.md)
 
 # External module: "blessed/collapsible"
 
@@ -20,121 +20,105 @@
 * [toggleCollapsed](_blessed_collapsible_.md#togglecollapsed)
 * [uninstallCollapsible](_blessed_collapsible_.md#uninstallcollapsible)
 
----
-
 ## Type aliases
-
-<a id="oncollapsechange"></a>
 
 ###  onCollapseChange
 
-**Ƭ onCollapseChange**: *`function`*
+Ƭ **onCollapseChange**: *function*
 
-*Defined in [blessed/collapsible.ts:74](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/collapsible.ts#L74)*
+*Defined in [blessed/collapsible.ts:74](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/collapsible.ts#L74)*
 
-#### Type declaration
-▸(e: *[ArtificialEvent](../interfaces/_jsx_types_.artificialevent.md)<[Element](../interfaces/_jsx_types_.__global.jsx.element.md)> & `object`*): `void`
+#### Type declaration:
+
+▸ (`e`: [ArtificialEvent](../interfaces/_jsx_types_.artificialevent.md)‹[Element](../interfaces/_jsx_types_.__global.jsx.element.md)› & object): *void*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| e | [ArtificialEvent](../interfaces/_jsx_types_.artificialevent.md)<[Element](../interfaces/_jsx_types_.__global.jsx.element.md)> & `object` |
-
-**Returns:** `void`
-
-___
+Name | Type |
+------ | ------ |
+`e` | [ArtificialEvent](../interfaces/_jsx_types_.artificialevent.md)‹[Element](../interfaces/_jsx_types_.__global.jsx.element.md)› & object |
 
 ## Functions
 
-<a id="installcollapsible"></a>
-
 ###  installCollapsible
 
-▸ **installCollapsible**(el: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*, options?: *[CollapsibleOptions](../interfaces/_blessed_collapsible_.collapsibleoptions.md)*): `void`
+▸ **installCollapsible**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `options`: [CollapsibleOptions](../interfaces/_blessed_collapsible_.collapsibleoptions.md)): *void*
 
-*Defined in [blessed/collapsible.ts:76](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/collapsible.ts#L76)*
+*Defined in [blessed/collapsible.ts:76](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/collapsible.ts#L76)*
 
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| el | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | - |
-| `Default value` options | [CollapsibleOptions](../interfaces/_blessed_collapsible_.collapsibleoptions.md) |  {} |
+Name | Type | Default |
+------ | ------ | ------ |
+`el` | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | - |
+`options` | [CollapsibleOptions](../interfaces/_blessed_collapsible_.collapsibleoptions.md) |  {} |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="iscollapsed"></a>
 
 ###  isCollapsed
 
-▸ **isCollapsed**(el: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*): `any`
+▸ **isCollapsed**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)): *any*
 
-*Defined in [blessed/collapsible.ts:6](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/collapsible.ts#L6)*
+*Defined in [blessed/collapsible.ts:6](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/collapsible.ts#L6)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| el | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) |
+Name | Type |
+------ | ------ |
+`el` | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) |
 
-**Returns:** `any`
+**Returns:** *any*
 
 ___
-<a id="setcollapsed"></a>
 
 ###  setCollapsed
 
-▸ **setCollapsed**(el: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*, collapsed: *`boolean`*, andRenderScreen?: *`boolean`*, dontNotify?: *`boolean`*): `void`
+▸ **setCollapsed**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `collapsed`: boolean, `andRenderScreen?`: boolean, `dontNotify`: boolean): *void*
 
-*Defined in [blessed/collapsible.ts:10](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/collapsible.ts#L10)*
+*Defined in [blessed/collapsible.ts:10](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/collapsible.ts#L10)*
 
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| el | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | - |
-| collapsed | `boolean` | - |
-| `Optional` andRenderScreen | `boolean` | - |
-| `Default value` dontNotify | `boolean` | false |
+Name | Type | Default |
+------ | ------ | ------ |
+`el` | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | - |
+`collapsed` | boolean | - |
+`andRenderScreen?` | boolean | - |
+`dontNotify` | boolean | false |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="togglecollapsed"></a>
 
 ###  toggleCollapsed
 
-▸ **toggleCollapsed**(el: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*, andRenderScreen?: *`boolean`*): `void`
+▸ **toggleCollapsed**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `andRenderScreen`: boolean): *void*
 
-*Defined in [blessed/collapsible.ts:47](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/collapsible.ts#L47)*
+*Defined in [blessed/collapsible.ts:47](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/collapsible.ts#L47)*
 
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| el | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | - |
-| `Default value` andRenderScreen | `boolean` | false |
+Name | Type | Default |
+------ | ------ | ------ |
+`el` | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | - |
+`andRenderScreen` | boolean | false |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="uninstallcollapsible"></a>
 
 ###  uninstallCollapsible
 
-▸ **uninstallCollapsible**(el: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*): `void`
+▸ **uninstallCollapsible**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)): *void*
 
-*Defined in [blessed/collapsible.ts:122](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/collapsible.ts#L122)*
+*Defined in [blessed/collapsible.ts:122](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/collapsible.ts#L122)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| el | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) |
+Name | Type |
+------ | ------ |
+`el` | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) |
 
-**Returns:** `void`
-
-___
-
+**Returns:** *void*

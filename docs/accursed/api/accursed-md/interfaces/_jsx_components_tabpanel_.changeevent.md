@@ -1,10 +1,10 @@
-[accursed](../README.md) > ["jsx-components/tabPanel"](../modules/_jsx_components_tabpanel_.md) > [ChangeEvent](../interfaces/_jsx_components_tabpanel_.changeevent.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx-components/tabPanel"](../modules/_jsx_components_tabpanel_.md) › [ChangeEvent](_jsx_components_tabpanel_.changeevent.md)
 
 # Interface: ChangeEvent
 
 ## Hierarchy
 
-**ChangeEvent**
+* **ChangeEvent**
 
 ## Index
 
@@ -12,17 +12,10 @@
 
 * [activeTab](_jsx_components_tabpanel_.changeevent.md#activetab)
 
----
-
 ## Properties
-
-<a id="activetab"></a>
 
 ###  activeTab
 
-**● activeTab**: *`number`*
+• **activeTab**: *number*
 
-*Defined in jsx-components/tabPanel.tsx:15*
-
-___
-
+Defined in jsx-components/tabPanel.tsx:15

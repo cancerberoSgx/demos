@@ -1,18 +1,18 @@
-[accursed](../README.md) > ["declarations/blessedProgram.d"](../modules/_declarations_blessedprogram_d_.md) > [GpmClient](../interfaces/_declarations_blessedprogram_d_.gpmclient.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["declarations/blessedProgram.d"](../modules/_declarations_blessedprogram_d_.md) › [GpmClient](_declarations_blessedprogram_d_.gpmclient.md)
 
 # Interface: GpmClient
 
 ## Hierarchy
 
- `EventEmitter`
+* EventEmitter
 
-**↳ GpmClient**
+  ↳ **GpmClient**
 
 ## Index
 
 ### Properties
 
-* [defaultMaxListeners](_declarations_blessedprogram_d_.gpmclient.md#defaultmaxlisteners)
+* [defaultMaxListeners](_declarations_blessedprogram_d_.gpmclient.md#static-defaultmaxlisteners)
 
 ### Methods
 
@@ -31,355 +31,381 @@
 * [removeAllListeners](_declarations_blessedprogram_d_.gpmclient.md#removealllisteners)
 * [removeListener](_declarations_blessedprogram_d_.gpmclient.md#removelistener)
 * [setMaxListeners](_declarations_blessedprogram_d_.gpmclient.md#setmaxlisteners)
-* [listenerCount](_declarations_blessedprogram_d_.gpmclient.md#listenercount-1)
-
----
+* [listenerCount](_declarations_blessedprogram_d_.gpmclient.md#static-listenercount)
 
 ## Properties
 
-<a id="defaultmaxlisteners"></a>
+### `Static` defaultMaxListeners
 
-### `<Static>` defaultMaxListeners
+▪ **defaultMaxListeners**: *number*
 
-**● defaultMaxListeners**: *`number`*
+*Inherited from void*
 
-*Inherited from EventEmitter.defaultMaxListeners*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:9*
-
-___
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:9
 
 ## Methods
 
-<a id="addlistener"></a>
-
 ###  addListener
 
-▸ **addListener**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
+▸ **addListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from EventEmitter.addListener*
+*Inherited from void*
 
-*Overrides EventEmitter.addListener*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:11*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:11
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *string | symbol*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="emit"></a>
 
 ###  emit
 
-▸ **emit**(event: *`string` \| `symbol`*, ...args: *`any`[]*): `boolean`
+▸ **emit**(`event`: string | symbol, ...`args`: any[]): *boolean*
 
-*Inherited from EventEmitter.emit*
+*Inherited from void*
 
-*Overrides EventEmitter.emit*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:23*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:23
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| `Rest` args | `any`[] |
+Name | Type |
+------ | ------ |
+`event` | string &#124; symbol |
+`...args` | any[] |
 
-**Returns:** `boolean`
+**Returns:** *boolean*
 
 ___
-<a id="eventnames"></a>
 
 ###  eventNames
 
-▸ **eventNames**(): `Array`<`string` \| `symbol`>
+▸ **eventNames**(): *Array‹string | symbol›*
 
-*Inherited from EventEmitter.eventNames*
+*Inherited from void*
 
-*Overrides EventEmitter.eventNames*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:24*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:24
 
-**Returns:** `Array`<`string` \| `symbol`>
+**Returns:** *Array‹string | symbol›*
 
 ___
-<a id="getmaxlisteners"></a>
 
 ###  getMaxListeners
 
-▸ **getMaxListeners**(): `number`
+▸ **getMaxListeners**(): *number*
 
-*Inherited from EventEmitter.getMaxListeners*
+*Inherited from void*
 
-*Overrides EventEmitter.getMaxListeners*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:20*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:20
 
-**Returns:** `number`
+**Returns:** *number*
 
 ___
-<a id="listenercount"></a>
 
 ###  listenerCount
 
-▸ **listenerCount**(type: *`string` \| `symbol`*): `number`
+▸ **listenerCount**(`type`: string | symbol): *number*
 
-*Inherited from EventEmitter.listenerCount*
+*Inherited from void*
 
-*Overrides EventEmitter.listenerCount*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:25*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:25
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| type | `string` \| `symbol` |
+Name | Type |
+------ | ------ |
+`type` | string &#124; symbol |
 
-**Returns:** `number`
+**Returns:** *number*
 
 ___
-<a id="listeners"></a>
 
 ###  listeners
 
-▸ **listeners**(event: *`string` \| `symbol`*): `Function`[]
+▸ **listeners**(`event`: string | symbol): *Function[]*
 
-*Inherited from EventEmitter.listeners*
+*Inherited from void*
 
-*Overrides EventEmitter.listeners*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:21*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:21
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
+Name | Type |
+------ | ------ |
+`event` | string &#124; symbol |
 
-**Returns:** `Function`[]
+**Returns:** *Function[]*
 
 ___
-<a id="off"></a>
 
 ###  off
 
-▸ **off**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
+▸ **off**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from EventEmitter.off*
+*Inherited from void*
 
-*Overrides EventEmitter.off*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:17*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:17
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *string | symbol*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="on"></a>
 
 ###  on
 
-▸ **on**(e: *"move"*, c: *`function`*): `this`
+▸ **on**(`e`: "move", `c`: function): *this*
 
-*Overrides EventEmitter.on*
+*Overrides void*
 
-*Defined in [declarations/blessedProgram.d.ts:90](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L90)*
+*Defined in [declarations/blessedProgram.d.ts:100](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L100)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| e | "move" |
-| c | `function` |
+▪ **e**: *"move"*
 
-**Returns:** `this`
+▪ **c**: *function*
+
+▸ (`buttons`: any, `modifiers`: any, `x`: any, `y`: any): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`buttons` | any |
+`modifiers` | any |
+`x` | any |
+`y` | any |
+
+**Returns:** *this*
 
 ___
-<a id="once"></a>
 
 ###  once
 
-▸ **once**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
+▸ **once**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from EventEmitter.once*
+*Inherited from void*
 
-*Overrides EventEmitter.once*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:13*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:13
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *string | symbol*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="prependlistener"></a>
 
 ###  prependListener
 
-▸ **prependListener**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
+▸ **prependListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from EventEmitter.prependListener*
+*Inherited from void*
 
-*Overrides EventEmitter.prependListener*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:14*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:14
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *string | symbol*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="prependoncelistener"></a>
 
 ###  prependOnceListener
 
-▸ **prependOnceListener**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
+▸ **prependOnceListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from EventEmitter.prependOnceListener*
+*Inherited from void*
 
-*Overrides EventEmitter.prependOnceListener*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:15*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:15
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *string | symbol*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="rawlisteners"></a>
 
 ###  rawListeners
 
-▸ **rawListeners**(event: *`string` \| `symbol`*): `Function`[]
+▸ **rawListeners**(`event`: string | symbol): *Function[]*
 
-*Inherited from EventEmitter.rawListeners*
+*Inherited from void*
 
-*Overrides EventEmitter.rawListeners*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:22*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:22
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
+Name | Type |
+------ | ------ |
+`event` | string &#124; symbol |
 
-**Returns:** `Function`[]
+**Returns:** *Function[]*
 
 ___
-<a id="removealllisteners"></a>
 
 ###  removeAllListeners
 
-▸ **removeAllListeners**(event?: *`string` \| `symbol`*): `this`
+▸ **removeAllListeners**(`event?`: string | symbol): *this*
 
-*Inherited from EventEmitter.removeAllListeners*
+*Inherited from void*
 
-*Overrides EventEmitter.removeAllListeners*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:18*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:18
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` event | `string` \| `symbol` |
+Name | Type |
+------ | ------ |
+`event?` | string &#124; symbol |
 
-**Returns:** `this`
+**Returns:** *this*
 
 ___
-<a id="removelistener"></a>
 
 ###  removeListener
 
-▸ **removeListener**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
+▸ **removeListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from EventEmitter.removeListener*
+*Inherited from void*
 
-*Overrides EventEmitter.removeListener*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:16*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:16
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *string | symbol*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="setmaxlisteners"></a>
 
 ###  setMaxListeners
 
-▸ **setMaxListeners**(n: *`number`*): `this`
+▸ **setMaxListeners**(`n`: number): *this*
 
-*Inherited from EventEmitter.setMaxListeners*
+*Inherited from void*
 
-*Overrides EventEmitter.setMaxListeners*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:19*
-
-**Parameters:**
-
-| Name | Type |
-| ------ | ------ |
-| n | `number` |
-
-**Returns:** `this`
-
-___
-<a id="listenercount-1"></a>
-
-### `<Static>` listenerCount
-
-▸ **listenerCount**(emitter: *`EventEmitter`*, event: *`string` \| `symbol`*): `number`
-
-*Inherited from EventEmitter.listenerCount*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:8*
-
-*__deprecated__*: since v4.0.0
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:19
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| emitter | `EventEmitter` |
-| event | `string` \| `symbol` |
+Name | Type |
+------ | ------ |
+`n` | number |
 
-**Returns:** `number`
+**Returns:** *this*
 
 ___
 
+### `Static` listenerCount
+
+▸ **listenerCount**(`emitter`: EventEmitter, `event`: string | symbol): *number*
+
+*Inherited from void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:8
+
+**`deprecated`** since v4.0.0
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`emitter` | EventEmitter |
+`event` | string &#124; symbol |
+
+**Returns:** *number*

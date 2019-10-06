@@ -1,16 +1,16 @@
-[accursed](../README.md) > ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md) > [widget](../modules/_declarations_blessed_d_.widget.md) > [Node](../classes/_declarations_blessed_d_.widget.node.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md) › [widget](../modules/_declarations_blessed_d_.widget.md) › [Node](_declarations_blessed_d_.widget.node.md)
 
 # Class: Node
 
 ## Hierarchy
 
-↳  [Node](_declarations_blessed_d_.widgets.node.md)
+  ↳ [Node](_declarations_blessed_d_.widgets.node.md)
 
-**↳ Node**
+  ↳ **Node**
 
 ## Implements
 
-* [IHasOptions](../interfaces/_declarations_blessed_d_.widgets.ihasoptions.md)<[INodeOptions](../interfaces/_declarations_blessed_d_.widgets.inodeoptions.md)>
+* [IHasOptions](../interfaces/_declarations_blessed_d_.widgets.ihasoptions.md)‹[INodeOptions](../interfaces/_declarations_blessed_d_.widgets.inodeoptions.md)›
 * [IDestroyable](../interfaces/_declarations_blessed_d_.widgets.idestroyable.md)
 
 ## Index
@@ -21,19 +21,19 @@
 
 ### Properties
 
-* [$](_declarations_blessed_d_.widget.node.md#_)
-* [_](_declarations_blessed_d_.widget.node.md#_-1)
+* [$](_declarations_blessed_d_.widget.node.md#$)
+* [_](_declarations_blessed_d_.widget.node.md#_)
 * [children](_declarations_blessed_d_.widget.node.md#children)
 * [data](_declarations_blessed_d_.widget.node.md#data)
 * [focusable](_declarations_blessed_d_.widget.node.md#focusable)
 * [index](_declarations_blessed_d_.widget.node.md#index)
 * [lpos](_declarations_blessed_d_.widget.node.md#lpos)
 * [options](_declarations_blessed_d_.widget.node.md#options)
-* [parent](_declarations_blessed_d_.widget.node.md#parent)
+* [parent](_declarations_blessed_d_.widget.node.md#optional-parent)
 * [screen](_declarations_blessed_d_.widget.node.md#screen)
 * [type](_declarations_blessed_d_.widget.node.md#type)
 * [uid](_declarations_blessed_d_.widget.node.md#uid)
-* [defaultMaxListeners](_declarations_blessed_d_.widget.node.md#defaultmaxlisteners)
+* [defaultMaxListeners](_declarations_blessed_d_.widget.node.md#static-defaultmaxlisteners)
 
 ### Methods
 
@@ -71,1018 +71,1068 @@
 * [removeListener](_declarations_blessed_d_.widget.node.md#removelistener)
 * [set](_declarations_blessed_d_.widget.node.md#set)
 * [setMaxListeners](_declarations_blessed_d_.widget.node.md#setmaxlisteners)
-* [listenerCount](_declarations_blessed_d_.widget.node.md#listenercount-1)
-
----
+* [listenerCount](_declarations_blessed_d_.widget.node.md#static-listenercount)
 
 ## Constructors
 
-<a id="constructor"></a>
-
 ###  constructor
 
-⊕ **new Node**(options: *[INodeOptions](../interfaces/_declarations_blessed_d_.widgets.inodeoptions.md)*): [Node](_declarations_blessed_d_.widget.node.md)
+\+ **new Node**(`options`: [INodeOptions](../interfaces/_declarations_blessed_d_.widgets.inodeoptions.md)): *[Node](_declarations_blessed_d_.widget.node.md)*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[constructor](_declarations_blessed_d_.widgets.node.md#constructor)*
 
-*Defined in [declarations/blessed.d.ts:336](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L336)*
+*Defined in [declarations/blessed.d.ts:260](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L260)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| options | [INodeOptions](../interfaces/_declarations_blessed_d_.widgets.inodeoptions.md) |
+Name | Type |
+------ | ------ |
+`options` | [INodeOptions](../interfaces/_declarations_blessed_d_.widgets.inodeoptions.md) |
 
-**Returns:** [Node](_declarations_blessed_d_.widget.node.md)
-
-___
+**Returns:** *[Node](_declarations_blessed_d_.widget.node.md)*
 
 ## Properties
 
-<a id="_"></a>
-
 ###  $
 
-**● $**: *`object`*
+• **$**: *object*
 
-*Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[$](_declarations_blessed_d_.widgets.node.md#_)*
+*Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[$](_declarations_blessed_d_.widgets.node.md#$)*
 
-*Defined in [declarations/blessed.d.ts:362](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L362)*
+*Defined in [declarations/blessed.d.ts:289](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L289)*
 
 An object for any miscellaneous user data.
 
-#### Type declaration
+#### Type declaration:
 
-[index: `string`]: `any`
+* \[ **index**: *string*\]: any
 
 ___
-<a id="_-1"></a>
 
 ###  _
 
-**● _**: *`object`*
+• **_**: *object*
 
-*Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[_](_declarations_blessed_d_.widgets.node.md#_-1)*
+*Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[_](_declarations_blessed_d_.widgets.node.md#_)*
 
-*Defined in [declarations/blessed.d.ts:357](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L357)*
+*Defined in [declarations/blessed.d.ts:284](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L284)*
 
 An object for any miscellaneous user data.
 
-#### Type declaration
+#### Type declaration:
 
-[index: `string`]: `any`
+* \[ **index**: *string*\]: any
 
 ___
-<a id="children"></a>
 
 ###  children
 
-**● children**: *[Node](_declarations_blessed_d_.widgets.node.md)[]*
+• **children**: *[Node](_declarations_blessed_d_.widgets.node.md)[]*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[children](_declarations_blessed_d_.widgets.node.md#children)*
 
-*Defined in [declarations/blessed.d.ts:389](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L389)*
+*Defined in [declarations/blessed.d.ts:316](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L316)*
 
 Array of node's children.
 
 ___
-<a id="data"></a>
 
 ###  data
 
-**● data**: *`object`*
+• **data**: *object*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[data](_declarations_blessed_d_.widgets.node.md#data)*
 
-*Defined in [declarations/blessed.d.ts:352](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L352)*
+*Defined in [declarations/blessed.d.ts:279](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L279)*
 
 An object for any miscellaneous user data.
 
-#### Type declaration
+#### Type declaration:
 
-[index: `string`]: `any`
+* \[ **index**: *string*\]: any
 
 ___
-<a id="focusable"></a>
 
 ###  focusable
 
-**● focusable**: *`boolean`*
+• **focusable**: *boolean*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[focusable](_declarations_blessed_d_.widgets.node.md#focusable)*
 
-*Defined in [declarations/blessed.d.ts:342](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L342)*
+*Defined in [declarations/blessed.d.ts:269](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L269)*
+
+If true, `screen.focusNext()` and methods related to focus will consider this Element.
 
 ___
-<a id="index"></a>
 
 ###  index
 
-**● index**: *`number`*
+• **index**: *number*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[index](_declarations_blessed_d_.widgets.node.md#index)*
 
-*Defined in [declarations/blessed.d.ts:374](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L374)*
+*Defined in [declarations/blessed.d.ts:301](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L301)*
 
 Render index (document order index) of the last render call.
 
 ___
-<a id="lpos"></a>
 
 ###  lpos
 
-**● lpos**: *[PositionCoords](_declarations_blessed_d_.widgets.positioncoords.md)*
+• **lpos**: *[PositionCoords](_declarations_blessed_d_.widgets.positioncoords.md)*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[lpos](_declarations_blessed_d_.widgets.node.md#lpos)*
 
-*Defined in [declarations/blessed.d.ts:364](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L364)*
+*Defined in [declarations/blessed.d.ts:291](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L291)*
 
 ___
-<a id="options"></a>
 
 ###  options
 
-**● options**: *[INodeOptions](../interfaces/_declarations_blessed_d_.widgets.inodeoptions.md)*
+• **options**: *[INodeOptions](../interfaces/_declarations_blessed_d_.widgets.inodeoptions.md)*
 
 *Implementation of [IHasOptions](../interfaces/_declarations_blessed_d_.widgets.ihasoptions.md).[options](../interfaces/_declarations_blessed_d_.widgets.ihasoptions.md#options)*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[options](_declarations_blessed_d_.widgets.node.md#options)*
 
-*Defined in [declarations/blessed.d.ts:347](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L347)*
+*Defined in [declarations/blessed.d.ts:274](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L274)*
 
 Original options object.
 
 ___
-<a id="parent"></a>
 
-### `<Optional>` parent
+### `Optional` parent
 
-**● parent**: *[Node](_declarations_blessed_d_.widgets.node.md)*
+• **parent**? : *[Node](_declarations_blessed_d_.widgets.node.md)*
 
-*Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[parent](_declarations_blessed_d_.widgets.node.md#parent)*
+*Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[parent](_declarations_blessed_d_.widgets.node.md#optional-parent)*
 
-*Defined in [declarations/blessed.d.ts:384](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L384)*
+*Defined in [declarations/blessed.d.ts:311](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L311)*
 
 Parent node. If null it means the element is not attached to any screen or program, or the node is a Screen.
 
 ___
-<a id="screen"></a>
 
 ###  screen
 
-**● screen**: *[Screen](_declarations_blessed_d_.widgets.screen.md)*
+• **screen**: *[Screen](_declarations_blessed_d_.widgets.screen.md)*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[screen](_declarations_blessed_d_.widgets.node.md#screen)*
 
-*Defined in [declarations/blessed.d.ts:379](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L379)*
+*Defined in [declarations/blessed.d.ts:306](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L306)*
 
 Parent screen.
 
 ___
-<a id="type"></a>
 
 ###  type
 
-**● type**: *`string`*
+• **type**: *string*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[type](_declarations_blessed_d_.widgets.node.md#type)*
 
-*Defined in [declarations/blessed.d.ts:369](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L369)*
+*Defined in [declarations/blessed.d.ts:296](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L296)*
 
 Type of the node (e.g. box).
 
 ___
-<a id="uid"></a>
 
 ###  uid
 
-**● uid**: *`number`*
+• **uid**: *number*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[uid](_declarations_blessed_d_.widgets.node.md#uid)*
 
-*Defined in [declarations/blessed.d.ts:340](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L340)*
+*Defined in [declarations/blessed.d.ts:264](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L264)*
 
 Unique identifier for Node instances. @internal
 
 ___
-<a id="defaultmaxlisteners"></a>
 
-### `<Static>` defaultMaxListeners
+### `Static` defaultMaxListeners
 
-**● defaultMaxListeners**: *`number`*
+▪ **defaultMaxListeners**: *number*
 
-*Inherited from EventEmitter.defaultMaxListeners*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:9*
-
-___
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:9
 
 ## Methods
 
-<a id="addlistener"></a>
-
 ###  addListener
 
-▸ **addListener**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
+▸ **addListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from EventEmitter.addListener*
+*Inherited from void*
 
-*Overrides EventEmitter.addListener*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:11*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:11
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *string | symbol*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="append"></a>
 
 ###  append
 
-▸ **append**(node: *[Node](_declarations_blessed_d_.widgets.node.md)*): `void`
+▸ **append**(`node`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[append](_declarations_blessed_d_.widgets.node.md#append)*
 
-*Defined in [declarations/blessed.d.ts:399](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L399)*
+*Defined in [declarations/blessed.d.ts:326](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L326)*
 
 Append a node to this node's children.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| node | [Node](_declarations_blessed_d_.widgets.node.md) |
+Name | Type |
+------ | ------ |
+`node` | [Node](_declarations_blessed_d_.widgets.node.md) |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="collectancestors"></a>
 
 ###  collectAncestors
 
-▸ **collectAncestors**(s?: *`boolean`*): `void`
+▸ **collectAncestors**(`s?`: boolean): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[collectAncestors](_declarations_blessed_d_.widgets.node.md#collectancestors)*
 
-*Defined in [declarations/blessed.d.ts:433](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L433)*
+*Defined in [declarations/blessed.d.ts:362](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L362)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` s | `boolean` |
+Name | Type |
+------ | ------ |
+`s?` | boolean |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="collectdescendants"></a>
 
 ###  collectDescendants
 
-▸ **collectDescendants**(s?: *`boolean`*): `void`
+▸ **collectDescendants**(`s?`: boolean): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[collectDescendants](_declarations_blessed_d_.widgets.node.md#collectdescendants)*
 
-*Defined in [declarations/blessed.d.ts:432](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L432)*
+*Defined in [declarations/blessed.d.ts:361](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L361)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` s | `boolean` |
+Name | Type |
+------ | ------ |
+`s?` | boolean |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="destroy"></a>
 
 ###  destroy
 
-▸ **destroy**(): `void`
+▸ **destroy**(): *void*
 
-*Implementation of [IDestroyable](../interfaces/_declarations_blessed_d_.widgets.idestroyable.md).[destroy](../interfaces/_declarations_blessed_d_.widgets.idestroyable.md#destroy)*
+*Implementation of [IDestroyable](../interfaces/_declarations_blessed_d_.widgets.idestroyable.md)*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[destroy](_declarations_blessed_d_.widgets.node.md#destroy)*
 
-*Defined in [declarations/blessed.d.ts:445](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L445)*
+*Defined in [declarations/blessed.d.ts:375](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L375)*
 
-[detach](_declarations_blessed_d_.widget.node.md#detach)() this node from its parent, and will also detach and destroy each of its descendant nodes each of them emitting \[\[destory\]\] event also.
+[detach](_declarations_blessed_d_.widget.node.md#detach)() this node from its parent, and will also detach and destroy each of its descendant nodes each of them emitting [[destory]] event also.
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="detach"></a>
 
 ###  detach
 
-▸ **detach**(): `void`
+▸ **detach**(): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[detach](_declarations_blessed_d_.widgets.node.md#detach)*
 
-*Defined in [declarations/blessed.d.ts:424](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L424)*
+*Defined in [declarations/blessed.d.ts:351](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L351)*
 
 Remove node from its parent.
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="emit"></a>
 
 ###  emit
 
-▸ **emit**(event: *`string` \| `symbol`*, ...args: *`any`[]*): `boolean`
+▸ **emit**(`event`: string | symbol, ...`args`: any[]): *boolean*
 
-*Inherited from EventEmitter.emit*
+*Inherited from void*
 
-*Overrides EventEmitter.emit*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:23*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:23
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| `Rest` args | `any`[] |
+Name | Type |
+------ | ------ |
+`event` | string &#124; symbol |
+`...args` | any[] |
 
-**Returns:** `boolean`
+**Returns:** *boolean*
 
 ___
-<a id="emitancestors"></a>
 
 ###  emitAncestors
 
-▸ **emitAncestors**(): `void`
+▸ **emitAncestors**(): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[emitAncestors](_declarations_blessed_d_.widgets.node.md#emitancestors)*
 
-*Defined in [declarations/blessed.d.ts:439](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L439)*
+*Defined in [declarations/blessed.d.ts:368](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L368)*
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="emitdescendants"></a>
 
 ###  emitDescendants
 
-▸ **emitDescendants**(type?: *`string`*, ...args: *`any`[]*): `void`
+▸ **emitDescendants**(`type?`: string, ...`args`: any[]): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[emitDescendants](_declarations_blessed_d_.widgets.node.md#emitdescendants)*
 
-*Defined in [declarations/blessed.d.ts:438](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L438)*
+*Defined in [declarations/blessed.d.ts:367](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L367)*
 
-Emit event for element, and recursively emit same event for all descendants. If `s` is provided it will call \[\[iter\]\] on self first.
+Emit event for element, and recursively emit same event for all descendants. If `s` is provided it will call [[iter]] on self first.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` type | `string` |
-| `Rest` args | `any`[] |
+Name | Type |
+------ | ------ |
+`type?` | string |
+`...args` | any[] |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="eventnames"></a>
 
 ###  eventNames
 
-▸ **eventNames**(): `Array`<`string` \| `symbol`>
+▸ **eventNames**(): *Array‹string | symbol›*
 
-*Inherited from EventEmitter.eventNames*
+*Inherited from void*
 
-*Overrides EventEmitter.eventNames*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:24*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:24
 
-**Returns:** `Array`<`string` \| `symbol`>
+**Returns:** *Array‹string | symbol›*
 
 ___
-<a id="forancestors"></a>
 
 ###  forAncestors
 
-▸ **forAncestors**(iter: *`function`*, s?: *`boolean`*): `void`
+▸ **forAncestors**(`iter`: function, `s?`: boolean): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[forAncestors](_declarations_blessed_d_.widgets.node.md#forancestors)*
 
-*Defined in [declarations/blessed.d.ts:431](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L431)*
+*Defined in [declarations/blessed.d.ts:360](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L360)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| iter | `function` |
-| `Optional` s | `boolean` |
+▪ **iter**: *function*
 
-**Returns:** `void`
+▸ (`node`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`node` | [Node](_declarations_blessed_d_.widgets.node.md) |
+
+▪`Optional`  **s**: *boolean*
+
+**Returns:** *void*
 
 ___
-<a id="fordescendants"></a>
 
 ###  forDescendants
 
-▸ **forDescendants**(iter: *`function`*, s?: *`boolean`*): `void`
+▸ **forDescendants**(`iter`: function, `s?`: boolean): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[forDescendants](_declarations_blessed_d_.widgets.node.md#fordescendants)*
 
-*Defined in [declarations/blessed.d.ts:430](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L430)*
+*Defined in [declarations/blessed.d.ts:359](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L359)*
 
-Visit each node's descendants, with \[\[iter\]\] function, parents first. If `s` is provided it will call \[\[iter\]\] on self first.
+Visit each node's descendants, with [[iter]] function,  parents first.
+If `s` is provided it will call [[iter]] on self first.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| iter | `function` |
-| `Optional` s | `boolean` |
+▪ **iter**: *function*
 
-**Returns:** `void`
+▸ (`node`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`node` | [Node](_declarations_blessed_d_.widgets.node.md) |
+
+▪`Optional`  **s**: *boolean*
+
+**Returns:** *void*
 
 ___
-<a id="free"></a>
 
 ###  free
 
-▸ **free**(): `void`
+▸ **free**(): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[free](_declarations_blessed_d_.widgets.node.md#free)*
 
-*Defined in [declarations/blessed.d.ts:425](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L425)*
+*Defined in [declarations/blessed.d.ts:353](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L353)*
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="get"></a>
 
 ###  get
 
-▸ **get**<`T`>(name: *`string`*, def: *`T`*): `T`
+▸ **get**<**T**>(`name`: string, `def`: T): *T*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[get](_declarations_blessed_d_.widgets.node.md#get)*
 
-*Defined in [declarations/blessed.d.ts:450](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L450)*
+*Defined in [declarations/blessed.d.ts:380](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L380)*
 
 Get user property with a potential default value.
 
 **Type parameters:**
 
-#### T 
+▪ **T**
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| name | `string` |
-| def | `T` |
+Name | Type |
+------ | ------ |
+`name` | string |
+`def` | T |
 
-**Returns:** `T`
+**Returns:** *T*
 
 ___
-<a id="getmaxlisteners"></a>
 
 ###  getMaxListeners
 
-▸ **getMaxListeners**(): `number`
+▸ **getMaxListeners**(): *number*
 
-*Inherited from EventEmitter.getMaxListeners*
+*Inherited from void*
 
-*Overrides EventEmitter.getMaxListeners*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:20*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:20
 
-**Returns:** `number`
+**Returns:** *number*
 
 ___
-<a id="hasancestor"></a>
 
 ###  hasAncestor
 
-▸ **hasAncestor**<`T`>(target: *[Node](_declarations_blessed_d_.widgets.node.md)*): [Node](_declarations_blessed_d_.widgets.node.md)
+▸ **hasAncestor**<**T**>(`target`: [Node](_declarations_blessed_d_.widgets.node.md)): *[Node](_declarations_blessed_d_.widgets.node.md)*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[hasAncestor](_declarations_blessed_d_.widgets.node.md#hasancestor)*
 
-*Defined in [declarations/blessed.d.ts:441](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L441)*
+*Defined in [declarations/blessed.d.ts:370](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L370)*
 
 **Type parameters:**
 
-#### T :  [Node](_declarations_blessed_d_.widgets.node.md)
+▪ **T**: *[Node](_declarations_blessed_d_.widgets.node.md)*
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| target | [Node](_declarations_blessed_d_.widgets.node.md) |
+Name | Type |
+------ | ------ |
+`target` | [Node](_declarations_blessed_d_.widgets.node.md) |
 
-**Returns:** [Node](_declarations_blessed_d_.widgets.node.md)
+**Returns:** *[Node](_declarations_blessed_d_.widgets.node.md)*
 
 ___
-<a id="hasdescendant"></a>
 
 ###  hasDescendant
 
-▸ **hasDescendant**<`T`>(target: *[Node](_declarations_blessed_d_.widgets.node.md)*): [Node](_declarations_blessed_d_.widgets.node.md)
+▸ **hasDescendant**<**T**>(`target`: [Node](_declarations_blessed_d_.widgets.node.md)): *[Node](_declarations_blessed_d_.widgets.node.md)*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[hasDescendant](_declarations_blessed_d_.widgets.node.md#hasdescendant)*
 
-*Defined in [declarations/blessed.d.ts:440](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L440)*
+*Defined in [declarations/blessed.d.ts:369](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L369)*
 
 **Type parameters:**
 
-#### T :  [Node](_declarations_blessed_d_.widgets.node.md)
+▪ **T**: *[Node](_declarations_blessed_d_.widgets.node.md)*
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| target | [Node](_declarations_blessed_d_.widgets.node.md) |
+Name | Type |
+------ | ------ |
+`target` | [Node](_declarations_blessed_d_.widgets.node.md) |
 
-**Returns:** [Node](_declarations_blessed_d_.widgets.node.md)
+**Returns:** *[Node](_declarations_blessed_d_.widgets.node.md)*
 
 ___
-<a id="insert"></a>
 
 ###  insert
 
-▸ **insert**(node: *[Node](_declarations_blessed_d_.widgets.node.md)*, index: *`number`*): `void`
+▸ **insert**(`node`: [Node](_declarations_blessed_d_.widgets.node.md), `index`: number): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[insert](_declarations_blessed_d_.widgets.node.md#insert)*
 
-*Defined in [declarations/blessed.d.ts:409](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L409)*
+*Defined in [declarations/blessed.d.ts:336](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L336)*
 
 Insert a node to this node's children at index i.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| node | [Node](_declarations_blessed_d_.widgets.node.md) |
-| index | `number` |
+Name | Type |
+------ | ------ |
+`node` | [Node](_declarations_blessed_d_.widgets.node.md) |
+`index` | number |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="insertafter"></a>
 
 ###  insertAfter
 
-▸ **insertAfter**(node: *[Node](_declarations_blessed_d_.widgets.node.md)*, refNode: *[Node](_declarations_blessed_d_.widgets.node.md)*): `void`
+▸ **insertAfter**(`node`: [Node](_declarations_blessed_d_.widgets.node.md), `refNode`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[insertAfter](_declarations_blessed_d_.widgets.node.md#insertafter)*
 
-*Defined in [declarations/blessed.d.ts:419](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L419)*
+*Defined in [declarations/blessed.d.ts:346](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L346)*
 
 Insert a node from node after the reference node.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| node | [Node](_declarations_blessed_d_.widgets.node.md) |
-| refNode | [Node](_declarations_blessed_d_.widgets.node.md) |
+Name | Type |
+------ | ------ |
+`node` | [Node](_declarations_blessed_d_.widgets.node.md) |
+`refNode` | [Node](_declarations_blessed_d_.widgets.node.md) |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="insertbefore"></a>
 
 ###  insertBefore
 
-▸ **insertBefore**(node: *[Node](_declarations_blessed_d_.widgets.node.md)*, refNode: *[Node](_declarations_blessed_d_.widgets.node.md)*): `void`
+▸ **insertBefore**(`node`: [Node](_declarations_blessed_d_.widgets.node.md), `refNode`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[insertBefore](_declarations_blessed_d_.widgets.node.md#insertbefore)*
 
-*Defined in [declarations/blessed.d.ts:414](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L414)*
+*Defined in [declarations/blessed.d.ts:341](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L341)*
 
 Insert a node to this node's children before the reference node.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| node | [Node](_declarations_blessed_d_.widgets.node.md) |
-| refNode | [Node](_declarations_blessed_d_.widgets.node.md) |
+Name | Type |
+------ | ------ |
+`node` | [Node](_declarations_blessed_d_.widgets.node.md) |
+`refNode` | [Node](_declarations_blessed_d_.widgets.node.md) |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="listenercount"></a>
 
 ###  listenerCount
 
-▸ **listenerCount**(type: *`string` \| `symbol`*): `number`
+▸ **listenerCount**(`type`: string | symbol): *number*
 
-*Inherited from EventEmitter.listenerCount*
+*Inherited from void*
 
-*Overrides EventEmitter.listenerCount*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:25*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:25
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| type | `string` \| `symbol` |
+Name | Type |
+------ | ------ |
+`type` | string &#124; symbol |
 
-**Returns:** `number`
+**Returns:** *number*
 
 ___
-<a id="listeners"></a>
 
 ###  listeners
 
-▸ **listeners**(event: *`string` \| `symbol`*): `Function`[]
+▸ **listeners**(`event`: string | symbol): *Function[]*
 
-*Inherited from EventEmitter.listeners*
+*Inherited from void*
 
-*Overrides EventEmitter.listeners*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:21*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:21
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
+Name | Type |
+------ | ------ |
+`event` | string &#124; symbol |
 
-**Returns:** `Function`[]
+**Returns:** *Function[]*
 
 ___
-<a id="off"></a>
 
 ###  off
 
-▸ **off**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
+▸ **off**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from EventEmitter.off*
+*Inherited from void*
 
-*Overrides EventEmitter.off*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:17*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:17
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *string | symbol*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="on"></a>
 
 ###  on
 
-▸ **on**(event: *"reparent"*, listener: *`function`*): `void`
-
-▸ **on**(event: *"adopt"*, listener: *`function`*): `void`
-
-▸ **on**(event: *"attach"*, listener: *`function`*): `void`
-
-▸ **on**(event: *"detach"*, listener: *`function`*): `void`
-
-▸ **on**(event: *"remove"*, listener: *`function`*): `void`
-
-▸ **on**(event: *`string`*, listener: *`function`*): `this`
+▸ **on**(`event`: "reparent", `listener`: function): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[on](_declarations_blessed_d_.widgets.node.md#on)*
 
-*Overrides EventEmitter.on*
+*Overrides void*
 
-*Defined in [declarations/blessed.d.ts:460](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L460)*
+*Defined in [declarations/blessed.d.ts:390](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L390)*
 
 Received when node gains a new parent. If the node was detached from the sreen, newParent will be undefined.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "reparent" |
-| listener | `function` |
+▪ **event**: *"reparent"*
 
-**Returns:** `void`
+▪ **listener**: *function*
+
+▸ (`this`: this, `newParent?`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`this` | this |
+`newParent?` | [Node](_declarations_blessed_d_.widgets.node.md) |
+
+**Returns:** *void*
+
+▸ **on**(`event`: "adopt", `listener`: function): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[on](_declarations_blessed_d_.widgets.node.md#on)*
 
-*Overrides EventEmitter.on*
+*Overrides void*
 
-*Defined in [declarations/blessed.d.ts:464](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L464)*
+*Defined in [declarations/blessed.d.ts:395](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L395)*
 
 emitted by a parent node when adding a new child node.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "adopt" |
-| listener | `function` |
+▪ **event**: *"adopt"*
 
-**Returns:** `void`
+▪ **listener**: *function*
 
-*Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[on](_declarations_blessed_d_.widgets.node.md#on)*
-
-*Overrides EventEmitter.on*
-
-*Defined in [declarations/blessed.d.ts:465](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L465)*
+▸ (`this`: this, `newChildren`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "attach" |
-| listener | `function` |
+Name | Type |
+------ | ------ |
+`this` | this |
+`newChildren` | [Node](_declarations_blessed_d_.widgets.node.md) |
 
-**Returns:** `void`
+**Returns:** *void*
+
+▸ **on**(`event`: "attach", `listener`: function): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[on](_declarations_blessed_d_.widgets.node.md#on)*
 
-*Overrides EventEmitter.on*
+*Overrides void*
 
-*Defined in [declarations/blessed.d.ts:467](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L467)*
+*Defined in [declarations/blessed.d.ts:400](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L400)*
 
-Emitted by a node that is being detached frmo the screen or ancester.
+Emitted when the node or one of its ancestors is added to a parent and previous nor the node or any of its ancestors where  screen child.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "detach" |
-| listener | `function` |
+▪ **event**: *"attach"*
 
-**Returns:** `void`
+▪ **listener**: *function*
+
+▸ (`this`: this, `newParent`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`this` | this |
+`newParent` | [Node](_declarations_blessed_d_.widgets.node.md) |
+
+**Returns:** *void*
+
+▸ **on**(`event`: "detach", `listener`: function): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[on](_declarations_blessed_d_.widgets.node.md#on)*
 
-*Overrides EventEmitter.on*
+*Overrides void*
 
-*Defined in [declarations/blessed.d.ts:469](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L469)*
+*Defined in [declarations/blessed.d.ts:405](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L405)*
+
+Emitted by a node or an ancestor is being detached from the screen being previously a screen child
+
+**Parameters:**
+
+▪ **event**: *"detach"*
+
+▪ **listener**: *function*
+
+▸ (`this`: this, `newParent`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`this` | this |
+`newParent` | [Node](_declarations_blessed_d_.widgets.node.md) |
+
+**Returns:** *void*
+
+▸ **on**(`event`: "remove", `listener`: function): *void*
+
+*Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[on](_declarations_blessed_d_.widgets.node.md#on)*
+
+*Overrides void*
+
+*Defined in [declarations/blessed.d.ts:410](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L410)*
 
 Triggered by a parent node when removing a child node
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "remove" |
-| listener | `function` |
+▪ **event**: *"remove"*
 
-**Returns:** `void`
+▪ **listener**: *function*
+
+▸ (`this`: this, `removedChild`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`this` | this |
+`removedChild` | [Node](_declarations_blessed_d_.widgets.node.md) |
+
+**Returns:** *void*
+
+▸ **on**(`event`: string, `listener`: function): *this*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[on](_declarations_blessed_d_.widgets.node.md#on)*
 
-*Overrides EventEmitter.on*
+*Overrides void*
 
-*Defined in [declarations/blessed.d.ts:470](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L470)*
+*Defined in [declarations/blessed.d.ts:412](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L412)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` |
-| listener | `function` |
+▪ **event**: *string*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="once"></a>
 
 ###  once
 
-▸ **once**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
+▸ **once**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from EventEmitter.once*
+*Inherited from void*
 
-*Overrides EventEmitter.once*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:13*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:13
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *string | symbol*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="prepend"></a>
 
 ###  prepend
 
-▸ **prepend**(node: *[Node](_declarations_blessed_d_.widgets.node.md)*): `void`
+▸ **prepend**(`node`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[prepend](_declarations_blessed_d_.widgets.node.md#prepend)*
 
-*Defined in [declarations/blessed.d.ts:394](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L394)*
+*Defined in [declarations/blessed.d.ts:321](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L321)*
 
 Prepend a node to this node's children.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| node | [Node](_declarations_blessed_d_.widgets.node.md) |
+Name | Type |
+------ | ------ |
+`node` | [Node](_declarations_blessed_d_.widgets.node.md) |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="prependlistener"></a>
 
 ###  prependListener
 
-▸ **prependListener**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
+▸ **prependListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from EventEmitter.prependListener*
+*Inherited from void*
 
-*Overrides EventEmitter.prependListener*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:14*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:14
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *string | symbol*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="prependoncelistener"></a>
 
 ###  prependOnceListener
 
-▸ **prependOnceListener**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
+▸ **prependOnceListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from EventEmitter.prependOnceListener*
+*Inherited from void*
 
-*Overrides EventEmitter.prependOnceListener*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:15*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:15
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *string | symbol*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="rawlisteners"></a>
 
 ###  rawListeners
 
-▸ **rawListeners**(event: *`string` \| `symbol`*): `Function`[]
+▸ **rawListeners**(`event`: string | symbol): *Function[]*
 
-*Inherited from EventEmitter.rawListeners*
+*Inherited from void*
 
-*Overrides EventEmitter.rawListeners*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:22*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:22
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
+Name | Type |
+------ | ------ |
+`event` | string &#124; symbol |
 
-**Returns:** `Function`[]
+**Returns:** *Function[]*
 
 ___
-<a id="remove"></a>
 
 ###  remove
 
-▸ **remove**(node: *[Node](_declarations_blessed_d_.widgets.node.md)*): `void`
+▸ **remove**(`node`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[remove](_declarations_blessed_d_.widgets.node.md#remove)*
 
-*Defined in [declarations/blessed.d.ts:404](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L404)*
+*Defined in [declarations/blessed.d.ts:331](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L331)*
 
 Remove child node from node.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| node | [Node](_declarations_blessed_d_.widgets.node.md) |
+Name | Type |
+------ | ------ |
+`node` | [Node](_declarations_blessed_d_.widgets.node.md) |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="removealllisteners"></a>
 
 ###  removeAllListeners
 
-▸ **removeAllListeners**(event?: *`string` \| `symbol`*): `this`
+▸ **removeAllListeners**(`event?`: string | symbol): *this*
 
-*Inherited from EventEmitter.removeAllListeners*
+*Inherited from void*
 
-*Overrides EventEmitter.removeAllListeners*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:18*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:18
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` event | `string` \| `symbol` |
+Name | Type |
+------ | ------ |
+`event?` | string &#124; symbol |
 
-**Returns:** `this`
+**Returns:** *this*
 
 ___
-<a id="removelistener"></a>
 
 ###  removeListener
 
-▸ **removeListener**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
+▸ **removeListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from EventEmitter.removeListener*
+*Inherited from void*
 
-*Overrides EventEmitter.removeListener*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:16*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:16
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *string | symbol*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="set"></a>
 
 ###  set
 
-▸ **set**(name: *`string`*, value: *`any`*): `void`
+▸ **set**(`name`: string, `value`: any): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[set](_declarations_blessed_d_.widgets.node.md#set)*
 
-*Defined in [declarations/blessed.d.ts:455](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L455)*
+*Defined in [declarations/blessed.d.ts:385](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L385)*
 
 Set user property to value.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| name | `string` |
-| value | `any` |
+Name | Type |
+------ | ------ |
+`name` | string |
+`value` | any |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="setmaxlisteners"></a>
 
 ###  setMaxListeners
 
-▸ **setMaxListeners**(n: *`number`*): `this`
+▸ **setMaxListeners**(`n`: number): *this*
 
-*Inherited from EventEmitter.setMaxListeners*
+*Inherited from void*
 
-*Overrides EventEmitter.setMaxListeners*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:19*
-
-**Parameters:**
-
-| Name | Type |
-| ------ | ------ |
-| n | `number` |
-
-**Returns:** `this`
-
-___
-<a id="listenercount-1"></a>
-
-### `<Static>` listenerCount
-
-▸ **listenerCount**(emitter: *`EventEmitter`*, event: *`string` \| `symbol`*): `number`
-
-*Inherited from EventEmitter.listenerCount*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:8*
-
-*__deprecated__*: since v4.0.0
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:19
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| emitter | `EventEmitter` |
-| event | `string` \| `symbol` |
+Name | Type |
+------ | ------ |
+`n` | number |
 
-**Returns:** `number`
+**Returns:** *this*
 
 ___
 
+### `Static` listenerCount
+
+▸ **listenerCount**(`emitter`: EventEmitter, `event`: string | symbol): *number*
+
+*Inherited from void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:8
+
+**`deprecated`** since v4.0.0
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`emitter` | EventEmitter |
+`event` | string &#124; symbol |
+
+**Returns:** *number*

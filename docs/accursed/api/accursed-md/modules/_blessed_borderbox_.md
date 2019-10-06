@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["blessed/borderBox"](../modules/_blessed_borderbox_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["blessed/borderBox"](_blessed_borderbox_.md)
 
 # External module: "blessed/borderBox"
 
@@ -17,45 +17,37 @@
 
 ### Functions
 
-* [borderBox](_blessed_borderbox_.md#borderbox-1)
+* [borderBox](_blessed_borderbox_.md#borderbox)
 * [getBorderBoxOptions](_blessed_borderbox_.md#getborderboxoptions)
-
----
 
 ## Functions
 
-<a id="borderbox-1"></a>
-
 ###  borderBox
 
-▸ **borderBox**(options?: *[BorderBoxOptions](../interfaces/_blessed_borderbox_.borderboxoptions.md)*): [BorderBox](../classes/_blessed_borderbox_.borderbox.md)
+▸ **borderBox**(`options?`: [BorderBoxOptions](../interfaces/_blessed_borderbox_.borderboxoptions.md)): *[BorderBox](../classes/_blessed_borderbox_.borderbox.md)*
 
-*Defined in [blessed/borderBox.ts:90](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/borderBox.ts#L90)*
+*Defined in [blessed/borderBox.ts:91](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/borderBox.ts#L91)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [BorderBoxOptions](../interfaces/_blessed_borderbox_.borderboxoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [BorderBoxOptions](../interfaces/_blessed_borderbox_.borderboxoptions.md) |
 
-**Returns:** [BorderBox](../classes/_blessed_borderbox_.borderbox.md)
+**Returns:** *[BorderBox](../classes/_blessed_borderbox_.borderbox.md)*
 
 ___
-<a id="getborderboxoptions"></a>
 
 ###  getBorderBoxOptions
 
-▸ **getBorderBoxOptions**(options?: *[BorderBoxOptions](../interfaces/_blessed_borderbox_.borderboxoptions.md)*): `object` \| `object`
+▸ **getBorderBoxOptions**(`options?`: [BorderBoxOptions](../interfaces/_blessed_borderbox_.borderboxoptions.md)): *object | object*
 
-*Defined in [blessed/borderBox.ts:76](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/borderBox.ts#L76)*
+*Defined in [blessed/borderBox.ts:77](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/borderBox.ts#L77)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [BorderBoxOptions](../interfaces/_blessed_borderbox_.borderboxoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [BorderBoxOptions](../interfaces/_blessed_borderbox_.borderboxoptions.md) |
 
-**Returns:** `object` \| `object`
-
-___
-
+**Returns:** *object | object*

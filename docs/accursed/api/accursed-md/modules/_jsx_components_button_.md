@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["jsx-components/button"](../modules/_jsx_components_button_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx-components/button"](_jsx_components_button_.md)
 
 # External module: "jsx-components/button"
 
@@ -11,6 +11,3 @@
 ### Interfaces
 
 * [P](../interfaces/_jsx_components_button_.p.md)
-
----
-

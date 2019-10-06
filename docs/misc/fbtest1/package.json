@@ -1,7 +1,7 @@
 {
   "name": "fbtest",
   "version": "0.0.3",
-  "description": "test",
+  "description": "tes https://developers.facebook.comt",
   "private": true,
   "scripts": {
     "build": "npm run clean&& npx parcel build src/index.html -d app --no-content-hash --detailed-report --no-minify --public-url './' && npm run copy  ",

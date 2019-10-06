@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["jsx-components/collapsible"](../modules/_jsx_components_collapsible_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx-components/collapsible"](_jsx_components_collapsible_.md)
 
 # External module: "jsx-components/collapsible"
 
@@ -11,6 +11,3 @@
 ### Interfaces
 
 * [CollapsibleProps](../interfaces/_jsx_components_collapsible_.collapsibleprops.md)
-
----
-

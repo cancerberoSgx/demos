@@ -1,10 +1,10 @@
-[accursed](../README.md) > ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md) > [Widgets](../modules/_declarations_blessed_d_.widgets.md) > [Position](../interfaces/_declarations_blessed_d_.widgets.position.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md) › [Widgets](../modules/_declarations_blessed_d_.widgets.md) › [Position](_declarations_blessed_d_.widgets.position.md)
 
 # Interface: Position
 
 ## Hierarchy
 
-**Position**
+* **Position**
 
 ## Index
 
@@ -15,44 +15,34 @@
 * [right](_declarations_blessed_d_.widgets.position.md#right)
 * [top](_declarations_blessed_d_.widgets.position.md#top)
 
----
-
 ## Properties
-
-<a id="bottom"></a>
 
 ###  bottom
 
-**● bottom**: *`number` \| `string`*
+• **bottom**: *number | string*
 
-*Defined in [declarations/blessed.d.ts:1325](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1325)*
+*Defined in [declarations/blessed.d.ts:1258](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1258)*
 
 ___
-<a id="left"></a>
 
 ###  left
 
-**● left**: *`number` \| `string`*
+• **left**: *number | string*
 
-*Defined in [declarations/blessed.d.ts:1322](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1322)*
+*Defined in [declarations/blessed.d.ts:1255](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1255)*
 
 ___
-<a id="right"></a>
 
 ###  right
 
-**● right**: *`number` \| `string`*
+• **right**: *number | string*
 
-*Defined in [declarations/blessed.d.ts:1323](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1323)*
+*Defined in [declarations/blessed.d.ts:1256](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1256)*
 
 ___
-<a id="top"></a>
 
 ###  top
 
-**● top**: *`number` \| `string`*
+• **top**: *number | string*
 
-*Defined in [declarations/blessed.d.ts:1324](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1324)*
-
-___
-
+*Defined in [declarations/blessed.d.ts:1257](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1257)*

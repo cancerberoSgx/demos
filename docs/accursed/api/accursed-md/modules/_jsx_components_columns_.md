@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["jsx-components/columns"](../modules/_jsx_components_columns_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx-components/columns"](_jsx_components_columns_.md)
 
 # External module: "jsx-components/columns"
 
@@ -13,6 +13,3 @@
 
 * [ColumnProps](../interfaces/_jsx_components_columns_.columnprops.md)
 * [ColumnsProps](../interfaces/_jsx_components_columns_.columnsprops.md)
-
----
-

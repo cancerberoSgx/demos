@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["jsx-components/listBar"](../modules/_jsx_components_listbar_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx-components/listBar"](_jsx_components_listbar_.md)
 
 # External module: "jsx-components/listBar"
 
@@ -14,6 +14,3 @@
 * [Command](../interfaces/_jsx_components_listbar_.command.md)
 * [ListBarCommandProps](../interfaces/_jsx_components_listbar_.listbarcommandprops.md)
 * [ListBarProps](../interfaces/_jsx_components_listbar_.listbarprops.md)
-
----
-

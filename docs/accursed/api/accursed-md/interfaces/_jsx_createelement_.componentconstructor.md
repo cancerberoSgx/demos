@@ -1,13 +1,16 @@
-[accursed](../README.md) > ["jsx/createElement"](../modules/_jsx_createelement_.md) > [ComponentConstructor](../interfaces/_jsx_createelement_.componentconstructor.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx/createElement"](../modules/_jsx_createelement_.md) › [ComponentConstructor](_jsx_createelement_.componentconstructor.md)
 
-# Interface: ComponentConstructor
+# Interface: ComponentConstructor <**P, S**>
 
 ## Type parameters
-#### P 
-#### S 
+
+▪ **P**
+
+▪ **S**
+
 ## Hierarchy
 
-**ComponentConstructor**
+* **ComponentConstructor**
 
 ## Index
 
@@ -15,26 +18,19 @@
 
 * [constructor](_jsx_createelement_.componentconstructor.md#constructor)
 
----
-
 ## Constructors
-
-<a id="constructor"></a>
 
 ###  constructor
 
-⊕ **new ComponentConstructor**(p: *`P`*, s: *`S`*): [Component](../classes/_jsx_component_.component.md)
+\+ **new ComponentConstructor**(`p`: P, `s`: S): *[Component](../classes/_jsx_component_.component.md)*
 
-*Defined in [jsx/createElement.ts:29](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/createElement.ts#L29)*
+*Defined in [jsx/createElement.ts:29](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L29)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| p | `P` |
-| s | `S` |
+Name | Type |
+------ | ------ |
+`p` | P |
+`s` | S |
 
-**Returns:** [Component](../classes/_jsx_component_.component.md)
-
-___
-
+**Returns:** *[Component](../classes/_jsx_component_.component.md)*

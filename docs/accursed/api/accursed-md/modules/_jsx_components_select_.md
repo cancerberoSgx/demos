@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["jsx-components/select"](../modules/_jsx_components_select_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx-components/select"](_jsx_components_select_.md)
 
 # External module: "jsx-components/select"
 
@@ -13,6 +13,3 @@
 
 * [SelectOptionProps](../interfaces/_jsx_components_select_.selectoptionprops.md)
 * [SelectProps](../interfaces/_jsx_components_select_.selectprops.md)
-
----
-

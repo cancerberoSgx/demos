@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["blessed/virtualElement"](../modules/_blessed_virtualelement_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["blessed/virtualElement"](_blessed_virtualelement_.md)
 
 # External module: "blessed/virtualElement"
 
@@ -26,31 +26,23 @@
 * [isElementData](_blessed_virtualelement_.md#iselementdata)
 * [process](_blessed_virtualelement_.md#process)
 
----
-
 ## Type aliases
-
-<a id="parentvirtualdata"></a>
 
 ###  ParentVirtualData
 
-**Ƭ ParentVirtualData**: *`T`[]*
+Ƭ **ParentVirtualData**: *T[]*
 
-*Defined in [blessed/virtualElement.ts:46](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/virtualElement.ts#L46)*
-
-___
+*Defined in [blessed/virtualElement.ts:46](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L46)*
 
 ## Functions
 
-<a id="getjsxchildrenprops"></a>
-
 ###  getJSXChildrenProps
 
-▸ **getJSXChildrenProps**(component: *[Component](../classes/_jsx_component_.component.md)*): [VirtualChildrenData](../interfaces/_blessed_virtualelement_.virtualchildrendata.md)[]
+▸ **getJSXChildrenProps**(`component`: [Component](../classes/_jsx_component_.component.md)): *[VirtualChildrenData](../interfaces/_blessed_virtualelement_.virtualchildrendata.md)[]*
 
-*Defined in [blessed/virtualElement.ts:177](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/virtualElement.ts#L177)*
+*Defined in [blessed/virtualElement.ts:177](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L177)*
 
-will return children data stored in \_jsxChildrenProps, flatting children that are arrays.
+ will return children data stored in _jsxChildrenProps, flatting children that are arrays.
 
 Example:
 
@@ -81,7 +73,6 @@ For a virtual parent component like :
 ```
 
 It will return a JSON Like this:
-
 ```json
 [
 {
@@ -169,45 +160,40 @@ It will return a JSON Like this:
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| component | [Component](../classes/_jsx_component_.component.md) |
+Name | Type |
+------ | ------ |
+`component` | [Component](../classes/_jsx_component_.component.md) |
 
-**Returns:** [VirtualChildrenData](../interfaces/_blessed_virtualelement_.virtualchildrendata.md)[]
+**Returns:** *[VirtualChildrenData](../interfaces/_blessed_virtualelement_.virtualchildrendata.md)[]*
 
 ___
-<a id="iselementdata"></a>
 
 ###  isElementData
 
-▸ **isElementData**(c: *`any`*): `boolean`
+▸ **isElementData**(`c`: any): *boolean*
 
-*Defined in [blessed/virtualElement.ts:185](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/virtualElement.ts#L185)*
+*Defined in [blessed/virtualElement.ts:185](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L185)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| c | `any` |
+Name | Type |
+------ | ------ |
+`c` | any |
 
-**Returns:** `boolean`
+**Returns:** *boolean*
 
 ___
-<a id="process"></a>
 
 ###  process
 
-▸ **process**(p: *[JSXChildrenProps](../interfaces/_blessed_virtualelement_.jsxchildrenprops.md) \| `undefined`*): (`string` \| `number` \| [VirtualChildrenData](../interfaces/_blessed_virtualelement_.virtualchildrendata.md))[]
+▸ **process**(`p`: [JSXChildrenProps](../interfaces/_blessed_virtualelement_.jsxchildrenprops.md) | undefined): *string | number | [VirtualChildrenData](../interfaces/_blessed_virtualelement_.virtualchildrendata.md)[]*
 
-*Defined in [blessed/virtualElement.ts:188](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/virtualElement.ts#L188)*
+*Defined in [blessed/virtualElement.ts:188](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L188)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| p | [JSXChildrenProps](../interfaces/_blessed_virtualelement_.jsxchildrenprops.md) \| `undefined` |
+Name | Type |
+------ | ------ |
+`p` | [JSXChildrenProps](../interfaces/_blessed_virtualelement_.jsxchildrenprops.md) &#124; undefined |
 
-**Returns:** (`string` \| `number` \| [VirtualChildrenData](../interfaces/_blessed_virtualelement_.virtualchildrendata.md))[]
-
-___
-
+**Returns:** *string | number | [VirtualChildrenData](../interfaces/_blessed_virtualelement_.virtualchildrendata.md)[]*

@@ -69,7 +69,10 @@
 				<p>So I&#39;m learning, documenting prototyping and researching. The following is a summary of work done.</p>
 				<!-- toc -->
 				<ul>
-					<li><a href="#demos">Demos</a></li>
+					<li><a href="#demos">Demos</a><ul>
+							<li><a href="#running-demos">Running demos</a></li>
+						</ul>
+					</li>
 					<li><a href="#jsx">JSX</a><ul>
 							<li><a href="#attributes">Attributes</a></li>
 							<li><a href="#intrinsicelements">IntrinsicElements</a></li>
@@ -120,19 +123,31 @@
 					<li><a href="#todo--issues--ideas">TODO &amp; ISSUES &amp; Ideas</a></li>
 				</ul>
 				<!-- tocstop -->
-				<h1 id="demos">Demos</h1>
+				<a href="#demos" id="demos" style="color: inherit; text-decoration: none;">
+					<h1>Demos</h1>
+				</a>
 				<ul>
 					<li>Gallery: <a href="https://asciinema.org/a/KcOrsgaP3vwhNPAic776MY9yi"><img src="https://asciinema.org/a/KcOrsgaP3vwhNPAic776MY9yi.svg" alt="asciicast"></a></li>
 				</ul>
-				<h1 id="jsx">JSX</h1>
+				<a href="#running-demos" id="running-demos" style="color: inherit; text-decoration: none;">
+					<h2>Running demos</h2>
+				</a>
+				<pre><code>npm <span class="hljs-keyword">run</span><span class="bash"> start-emojis-search</span>
+npm <span class="hljs-keyword">run</span><span class="bash"> start-gallery</span>
+npm <span class="hljs-keyword">run</span><span class="bash"> start-cli-fonts-gallery</span></code></pre>
+				<a href="#jsx" id="jsx" style="color: inherit; text-decoration: none;">
+					<h1>JSX</h1>
+				</a>
 				<ul>
 					<li><p>JSX/TSX support for all blessed components plus some of mine</p>
 						<p>Simple, implementation of React.createElement to render JSX to blessed elements. </p>
 					</li>
 				</ul>
 				<p>Small but well-tested logic based on previous acquired knowledge in project <a href="https://github.com/cancerberoSgx/jsx-alone">https://github.com/cancerberoSgx/jsx-alone</a></p>
-				<h2 id="attributes">Attributes</h2>
-				<p>Tip for JSX new commers, JSX attributes are typed. If a blessed option accept a number or a boolean then the attribute must be also. Example: the following two expressions are equivalent:</p>
+				<a href="#attributes" id="attributes" style="color: inherit; text-decoration: none;">
+					<h2>Attributes</h2>
+				</a>
+				<p>Tip for JSX newcomers, JSX attributes are typed. If a blessed option accept a number or a boolean then the attribute must be also. Example: the following two expressions are equivalent:</p>
 				<pre><code class="language-jsx"><span class="hljs-keyword">const</span> el = blessed.listbar({
   <span class="hljs-attr">parent</span>: screen, <span class="hljs-attr">mouse</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">width</span>: <span class="hljs-string">'88%'</span>,
   <span class="hljs-attr">height</span>: <span class="hljs-number">3</span>, <span class="hljs-attr">style</span>: { <span class="hljs-attr">selected</span>: { <span class="hljs-attr">bg</span>: <span class="hljs-string">'magenta'</span> }, }
@@ -142,12 +157,18 @@
 				<pre><code class="language-jsx"><span class="hljs-keyword">const</span> commonOpts = { <span class="hljs-attr">keys</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">mouse</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">clickable</span>: <span class="hljs-literal">true</span>,  <span class="hljs-attr">border</span>: <span class="hljs-string">'line'</span>...
 const el = React.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Div</span> {<span class="hljs-attr">...commonOpts</span>} <span class="hljs-attr">width</span>=<span class="hljs-string">"100%"</span> <span class="hljs-attr">border</span>=<span class="hljs-string">"line"</span> 
   <span class="hljs-attr">style</span>=<span class="hljs-string">{...commonStyles,</span> {<span class="hljs-attr">border:</span> {<span class="hljs-attr">...</span>}, <span class="hljs-attr">hover:</span> {<span class="hljs-attr">...</span>}})<span class="hljs-attr">...</span></span></span></code></pre>
-				<h2 id="intrinsicelements">IntrinsicElements</h2>
+				<a href="#intrinsicelements" id="intrinsicelements" style="color: inherit; text-decoration: none;">
+					<h2>IntrinsicElements</h2>
+				</a>
 				<p>Intrinsic elements are the building blocks os a JSX implementation and in thi case those are the blessed build in elements like button, bo, listbar, etc. Their tags **start with lower case. </p>
 				<p><strong>Mostly all blessed element types are supported by this library</strong></p>
-				<h2 id="class-elements-and-function-elements">Class Elements and Function elements</h2>
+				<a href="#class-elements-and-function-elements" id="class-elements-and-function-elements" style="color: inherit; text-decoration: none;">
+					<h2>Class Elements and Function elements</h2>
+				</a>
 				<p>Class elements and function elments for creating custom tags is fully supported. Do it as you would normaly do:</p>
-				<h3 id="class-elements">Class Elements</h3>
+				<a href="#class-elements" id="class-elements" style="color: inherit; text-decoration: none;">
+					<h3>Class Elements</h3>
+				</a>
 				<p>In the following example we extend Component to create a new Class Element, but you don&#39;t have to, just make sure its constructor accepts a props object parameter and it has a render() method that returns the JSX.Element: </p>
 				<pre><code class="language-jsx">interface Props {name, <span class="hljs-attr">colors</span>: string[]}
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ListTable</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span>&lt;<span class="hljs-title">Props</span>&gt; </span>{
@@ -157,7 +178,9 @@ const el = React.render(<span class="xml"><span class="hljs-tag">&lt;<span class
     <span class="hljs-tag">&lt;/<span class="hljs-name">Div</span>&gt;</span>
 }
 }</span></code></pre>
-				<h3 id="function-elements">Function Elements</h3>
+				<a href="#function-elements" id="function-elements" style="color: inherit; text-decoration: none;">
+					<h3>Function Elements</h3>
+				</a>
 				<p>In the following example, we create a new Element that will print children text with bold and optionally color styles. </p>
 				<pre><code class="language-jsx">interface Props = { <span class="hljs-attr">children</span>:  string | string[]; color?: string }
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Strong</span>(<span class="hljs-params">props: Props</span>) </span>{
@@ -166,34 +189,50 @@ const el = React.render(<span class="xml"><span class="hljs-tag">&lt;<span class
     /&gt;</span>
   )
 }</span></code></pre>
-				<h2 id="event-handlers-function-attributes-">Event handlers (function attributes)</h2>
+				<a href="#event-handlers-function-attributes" id="event-handlers-function-attributes" style="color: inherit; text-decoration: none;">
+					<h2>Event handlers (function attributes)</h2>
+				</a>
 				<ul>
 					<li>work 100%</li>
 					<li>are bind() to the element reference</li>
 				</ul>
-				<h2 id="blessed-events-supported-100-as-jsxattribtues">blessed events supported 100% as JSXAttribtues</h2>
+				<a href="#blessed-events-supported-100-as-jsxattribtues" id="blessed-events-supported-100-as-jsxattribtues" style="color: inherit; text-decoration: none;">
+					<h2>blessed events supported 100% as JSXAttribtues</h2>
+				</a>
 				<p>JSX syntax, in event-related methods like like on() or key(), etc are supported via attributes. There is no syntax mapping at all, just straight forward method call, for example: </p>
 				<pre><code class="language-js">textarea.key(<span class="hljs-string">'f'</span>,  (ch, key) =&gt; { ... }]}</code></pre>
 				<p>equivalent to </p>
 				<p>´´ç</p>
 				<pre><code class="language-jsx">&lt;textarea key={[<span class="hljs-string">'f'</span>, (ch, key) =&gt; { ... }]}</code></pre>
 				<p>If you notice some differences here, is ony because typings are insufficient, but there is no mapping/wrapping in these. </p>
-				<h2 id="hight-level-event-handlers">Hight level event handlers</h2>
+				<a href="#hight-level-event-handlers" id="hight-level-event-handlers" style="color: inherit; text-decoration: none;">
+					<h2>Hight level event handlers</h2>
+				</a>
 				<p>Although these are typed are kind of ugly because must be arrays. this is why also there are supported nicer &quot;artificial&quot; event handlers:. JSX-HTML event handler syntax more practical in the markup:</p>
 				<p><code>onClick, onChange, onRender, onKeyPressed</code> so attributes are easy to write (just a function). </p>
-				<h3 id="event-currenttarget"><strong>event.currentTarget</strong></h3>
+				<a href="#strongeventcurrenttargetstrong" id="strongeventcurrenttargetstrong" style="color: inherit; text-decoration: none;">
+					<h3><strong>event.currentTarget</strong></h3>
+				</a>
 				<p>Like with HTML - React - the event object of these hight level handlers have <code>currentTarget</code> property that references the element that triggered the event. Is particularly useful for change events in input elements: </p>
 				<pre><code class="language-jsx">&lt;checkbox content=<span class="hljs-string">"Collapsed"</span> checked={<span class="hljs-literal">false</span>}
   onChange={e =&gt; toggleCollapsed(e.currentTarget.parent <span class="hljs-keyword">as</span> any, <span class="hljs-literal">true</span>)}</code></pre>
-				<h3 id="onclick-example">onClick Example</h3>
+				<a href="#onclick-example" id="onclick-example" style="color: inherit; text-decoration: none;">
+					<h3>onClick Example</h3>
+				</a>
 				<pre><code class="language-jsx">&lt;button onClick={e =&gt; <span class="hljs-keyword">this</span>.installCollapsible(e.currentTarget, { <span class="hljs-attr">collapsedHeight</span>: <span class="hljs-number">4</span> })}</code></pre>
-				<h3 id="onrender-example">onRender example</h3>
+				<a href="#onrender-example" id="onrender-example" style="color: inherit; text-decoration: none;">
+					<h3>onRender example</h3>
+				</a>
 				<pre><code class="language-jsx">&lt;layout onRender={e =&gt; <span class="hljs-keyword">this</span>.installCollapsible(e.currentTarget, { <span class="hljs-attr">collapsedHeight</span>: <span class="hljs-number">4</span> })}</code></pre>
-				<h3 id="onchange-example">onChange example</h3>
+				<a href="#onchange-example" id="onchange-example" style="color: inherit; text-decoration: none;">
+					<h3>onChange example</h3>
+				</a>
 				<p>(currently only supported for Checkbox and subclasses)  - WIP </p>
 				<pre><code class="language-jsx">&lt;checkbox content=<span class="hljs-string">"Collapsed"</span> checked={<span class="hljs-literal">false</span>}
   onChange={e =&gt; toggleCollapsed(e.currentTarget.parent <span class="hljs-keyword">as</span> any, <span class="hljs-literal">true</span>)}</code></pre>
-				<h3 id="onselect-for-list-like-elements-">onSelect (for list-like elements)</h3>
+				<a href="#onselect-for-list-like-elements" id="onselect-for-list-like-elements" style="color: inherit; text-decoration: none;">
+					<h3>onSelect (for list-like elements)</h3>
+				</a>
 				<pre><code class="language-tsx">export class Categories extends Component&lt;Props&gt; {
   render() {
     return &lt;Div&gt;Choose a category, select and emoji and press [ENTER] for details.&lt;Br /&gt;
@@ -202,13 +241,26 @@ const el = React.render(<span class="xml"><span class="hljs-tag">&lt;<span class
         onSelect={e =&gt; this.selected(e)}
         /&gt;
         ...</code></pre>
-				<h2 id="jsx-expressions">JSX Expressions</h2>
+				<a href="#jsx-expressions" id="jsx-expressions" style="color: inherit; text-decoration: none;">
+					<h2>JSX Expressions</h2>
+				</a>
 				<p>Any expression often used to declare conditions aor iterate inside JSX Expressions are supported . </p>
 				<p><strong>Falsy values won&#39;t be rendered so you can write expressions like the following</strong></p>
-				<h3 id="conditions-with-and-operator">conditions with AND operator</h3>
-				<pre><code>{ condition <span class="hljs-meta">&amp;&amp; &lt;box...}</span></code></pre><h3 id="array-render-with-map-">array render with map()</h3>
-				<pre><code>{ arr.map(<span class="hljs-name">a</span> =&gt; &lt;box...)}</code></pre><h3 id="conditions-with-ternary-condition">conditions with ternary condition</h3>
-				<pre><code>{ condition ? &lt;<span class="hljs-built_in">box</span>... : &lt;<span class="hljs-built_in">box</span>...}</code></pre><h2 id="refs">Refs</h2>
+				<a href="#conditions-with-and-operator" id="conditions-with-and-operator" style="color: inherit; text-decoration: none;">
+					<h3>conditions with AND operator</h3>
+				</a>
+				<pre><code>{ condition <span class="hljs-meta">&amp;&amp; &lt;box...}</span></code></pre>
+				<a href="#array-render-with-map" id="array-render-with-map" style="color: inherit; text-decoration: none;">
+					<h3>array render with map()</h3>
+				</a>
+				<pre><code>{ arr.map(<span class="hljs-name">a</span> =&gt; &lt;box...)}</code></pre>
+				<a href="#conditions-with-ternary-condition" id="conditions-with-ternary-condition" style="color: inherit; text-decoration: none;">
+					<h3>conditions with ternary condition</h3>
+				</a>
+				<pre><code>{ condition ? &lt;<span class="hljs-built_in">box</span>... : &lt;<span class="hljs-built_in">box</span>...}</code></pre>
+				<a href="#refs" id="refs" style="color: inherit; text-decoration: none;">
+					<h2>Refs</h2>
+				</a>
 				<p>Implements <a href="https://reactjs.org/docs/refs-and-the-dom.html">Reac refs</a> adding extra features. </p>
 				<pre><code class="language-jsx"><span class="hljs-keyword">const</span> screen = blessed.screen({ <span class="hljs-attr">smartCSR</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">log</span>: <span class="hljs-string">'log.txt'</span>, <span class="hljs-attr">fullUnicode</span>: <span class="hljs-literal">true</span> })
 ...
@@ -234,7 +286,9 @@ ref1.press()
     &lt;/box&gt;
   }
 }</code></pre>
-				<h2 id="virtual-elements">Virtual Elements</h2>
+				<a href="#virtual-elements" id="virtual-elements" style="color: inherit; text-decoration: none;">
+					<h2>Virtual Elements</h2>
+				</a>
 				<ul>
 					<li>Unique feature - not even existent in React</li>
 					<li>Let component authors declare element&#39;s children props that won&#39;t be rendered at all. </li>
@@ -248,27 +302,39 @@ ref1.press()
 						</ul>
 					</li>
 				</ul>
-				<h2 id="jsx-text">JSX Text</h2>
+				<a href="#jsx-text" id="jsx-text" style="color: inherit; text-decoration: none;">
+					<h2>JSX Text</h2>
+				</a>
 				<p>By default, for each JSXText node found, a new <code>blessed.text</code> is created. </p>
 				<p>THis means that JSX like</p>
 				<pre><code class="language-jsx">&lt;box&gt; Hello here I<span class="hljs-string">'m writing &lt;button onClick={this.m}&gt;think this is invalid&lt;/button&gt; some &lt;box&gt;in the middle&lt;/box&gt; and a tail&lt;/box&gt;</span></code></pre>
 				<p>will be actually rendered as something like this </p>
 				<pre><code class="language-jsx">&lt;box&gt;&lt;text content=" Hello here I'm writing"/&gt;&lt;button onClick={this.m}&gt;&lt;text content="think this is invalid"/&gt;&lt;/button&gt;&lt;text content=" some "/&gt;&lt;box&gt;&lt;text content="in the middle"/&gt;&lt;/box&gt;&lt;text content=" and a tail"/&gt;&lt;/box&gt;</code></pre>
 				<p>Think on the TREE of blessed elements that will be generated). Also buttons will end up with a text inside. Below are more details, Probably a second implementaiton using parent&#39;s content attribute will be implemented and both will be available thorough configuration. </p>
-				<h2 id="blessed-contrib">blessed-contrib</h2>
+				<a href="#blessed-contrib" id="blessed-contrib" style="color: inherit; text-decoration: none;">
+					<h2>blessed-contrib</h2>
+				</a>
 				<p>**blessed-contrib widgets  should be very easy to suuport, but right now I?m focusing on the framework and my own widgets tools and documentation, and hadent much time. They will be in time, probably in a separate project project. </p>
-				<h2 id="rendering-component-own-children">Rendering Component own children</h2>
+				<a href="#rendering-component-own-children" id="rendering-component-own-children" style="color: inherit; text-decoration: none;">
+					<h2>Rendering Component own children</h2>
+				</a>
 				<ul>
 					<li>In custom components with children must render them using an expression like  <code>&lt;MyComp {this.props.children} other=&quot;options&quot;/&gt;</code></li>
 				</ul>
-				<h2 id="fragments">Fragments</h2>
+				<a href="#fragments" id="fragments" style="color: inherit; text-decoration: none;">
+					<h2>Fragments</h2>
+				</a>
 				<p> Not supported yet :()</p>
-				<h2 id="hooks-into-react-crateelement">Hooks into React.crateElement</h2>
+				<a href="#hooks-into-reactcrateelement" id="hooks-into-reactcrateelement" style="color: inherit; text-decoration: none;">
+					<h2>Hooks into React.crateElement</h2>
+				</a>
 				<ul>
 					<li>WIP : api to extend the rendering process</li>
 					<li>React object oprovide with some addLikstener in interesting moments of the rendering tha tusers can use to modify the render process and even interrupt / modify the flow but right now only sketches... working on that... </li>
 				</ul>
-				<h1 id="specs">specs</h1>
+				<a href="#specs" id="specs" style="color: inherit; text-decoration: none;">
+					<h1>specs</h1>
+				</a>
 				<ul>
 					<li><p>blessed has no specs - seems they (did) run them manually. I&#39;m writing specs with my new feaytures. Some I use cli-driver to test the tire flow from the real command line automation, and other, I just render the widgets and assert against the screen content. </p>
 					</li>
@@ -279,8 +345,12 @@ ref1.press()
 						</ul>
 					</li>
 				</ul>
-				<h1 id="my-blessed-contrib-widgets-utilities-and-jsx-components-">My blessed contrib widgets, utilities and JSX Components:</h1>
-				<h2 id="general-tools">General tools</h2>
+				<a href="#my-blessed-contrib-widgets-utilities-and-jsx-components" id="my-blessed-contrib-widgets-utilities-and-jsx-components" style="color: inherit; text-decoration: none;">
+					<h1>My blessed contrib widgets, utilities and JSX Components:</h1>
+				</a>
+				<a href="#general-tools" id="general-tools" style="color: inherit; text-decoration: none;">
+					<h2>General tools</h2>
+				</a>
 				<ul>
 					<li>focus manager</li>
 					<li>collapsible element</li>
@@ -295,7 +365,9 @@ ref1.press()
 					<li><code>screenLogger</code> simple logger visual logger API</li>
 					<li><code>rowColumnResize</code>: adds small controls to resize rows or columns, easy to use with the keyboard and non invasive since the¥ only appear when column/row or descendant have focus.</li>
 				</ul>
-				<h2 id="jsx-components">JSX components</h2>
+				<a href="#jsx-components" id="jsx-components" style="color: inherit; text-decoration: none;">
+					<h2>JSX components</h2>
+				</a>
 				<ul>
 					<li><code>ListTable</code></li>
 					<li><code>TabPanel</code></li>
@@ -313,7 +385,9 @@ ref1.press()
 					<li><code>&lt;ListBar&gt;</code> - listbar semantics with jsx  markup</li>
 					<li><code>cicks</code> to listen for multiple clicks (double click)</li>
 				</ul>
-				<h1 id="apps">Apps</h1>
+				<a href="#apps" id="apps" style="color: inherit; text-decoration: none;">
+					<h1>Apps</h1>
+				</a>
 				<ul>
 					<li><p>apps/emojis-search  : a unicode data table explorer. Test blessed performance by letting ht user interactively navigate/search, etc the FULL unicode charset . </p>
 					</li>
@@ -326,20 +400,32 @@ ref1.press()
 					<li><p><a href="https://github.com/cancerberoSgx/demos/tree/master/docs/typescript-ast-explorer">https://github.com/cancerberoSgx/demos/tree/master/docs/typescript-ast-explorer</a> - explore a TypeScript project AST , visualize together with sources code and even apply refactors. </p>
 					</li>
 				</ul>
-				<h1 id="typings-">Typings:</h1>
+				<a href="#typings" id="typings" style="color: inherit; text-decoration: none;">
+					<h1>Typings:</h1>
+				</a>
 				<p>Also I think I&#39;ve enhanced a lot the blessed.d.ts (TypeScript type declarations). ALthough the work from Definetely Typed  I started from was very good,  I did some refactoring so option types doesn&#39;t get too restrictive, I added lots of jsdoc comments and snippts to classes and methods and <strong>declared lots of internal methods</strong>. I want this types to be used by users extending the library (class MyElement extends blessing.widget.Box {}) and they need visibility to important methods, no matter if those are not meant to be published. I marked those with @internal tab. Also included typings for blessed-contrib but those I didn&#39;t modify so much.</p>
-				<h1 id="documentation-">Documentation:</h1>
+				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
+					<h1>Documentation:</h1>
+				</a>
 				<p>the typings already existing in DefinitelyTypes had more or less all the descriptions in blessed README. I added a lot from program.js, snippets and make sure it all blessed/tests.js compile OK with the types (which didn&#39;t). Also using typedoc I&#39;m truing to generate html and markdown output of this so I can share with others. </p>
 				<ul>
 					<li><a href="https://cancerberosgx.github.io/demos/accursed/api/blessed/modules/_blessed_d_.html">Blessed API</a></li>
 				</ul>
-				<h1 id="how-to-bless-documents">How-to bless documents</h1>
-				<h2 id="extending-blessed-elements-with-typescript-and-accursed">Extending blessed Elements with TypeScript and accursed</h2>
+				<a href="#how-to-bless-documents" id="how-to-bless-documents" style="color: inherit; text-decoration: none;">
+					<h1>How-to bless documents</h1>
+				</a>
+				<a href="#extending-blessed-elements-with-typescript-and-accursed" id="extending-blessed-elements-with-typescript-and-accursed" style="color: inherit; text-decoration: none;">
+					<h2>Extending blessed Elements with TypeScript and accursed</h2>
+				</a>
 				<p><a href="guides/blessed-extending-element-typescript.md">guides/blessed-extending-element-typescript.md</a> explain how to extend blessed Element class to create a new Widget type, using TypeScript, in a type checked experience.</p>
-				<h2 id="browserify">Browserify</h2>
+				<a href="#browserify" id="browserify" style="color: inherit; text-decoration: none;">
+					<h2>Browserify</h2>
+				</a>
 				<p><a href="guides/browserify.md">guides/browserify.md</a> explain how to run blessed programs in the browser using browserify. </p>
 				<p><a href="guides/blessed-extending-element-typescript.md">How to create a new blessed Element extending blessed classes, with descent type documented type checking and TypeScript using accursed:</a></p>
-				<h1 id="todo-issues-ideas">TODO &amp; ISSUES &amp; Ideas</h1>
+				<a href="#todo-amp-issues-amp-ideas" id="todo-amp-issues-amp-ideas" style="color: inherit; text-decoration: none;">
+					<h1>TODO &amp; ISSUES &amp; Ideas</h1>
+				</a>
 				<p><a href="TODO.md">TODO.md</a></p>
 			</div>
 		</div>
@@ -348,9 +434,6 @@ ref1.press()
 				<ul>
 					<li class="globals  ">
 						<a href="globals.html"><em>Globals</em></a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_blessed_border_.html">"blessed/border"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_blessed_borderbox_.html">"blessed/border<wbr>Box"</a>
@@ -419,6 +502,9 @@ ref1.press()
 						<a href="modules/_declarations_blessedtermcap_.html">"declarations/blessed<wbr>Term<wbr>Cap"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="modules/_declarations_tput_d_.html">"declarations/tput.d"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="modules/_editorwidget_editorwidget_.html">"editor<wbr>Widget/editor<wbr>Widget"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -450,6 +536,9 @@ ref1.press()
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_jsx_components_index_.html">"jsx-<wbr>components/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_jsx_components_input_.html">"jsx-<wbr>components/input"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_jsx_components_jsxutil_.html">"jsx-<wbr>components/jsx<wbr>Util"</a>
@@ -485,6 +574,9 @@ ref1.press()
 						<a href="modules/_jsx_createelement_.html">"jsx/create<wbr>Element"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="modules/_jsx_createelementobject_.html">"jsx/create<wbr>Element<wbr>Object"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="modules/_jsx_index_.html">"jsx/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -494,7 +586,13 @@ ref1.press()
 						<a href="modules/_util_anim_.html">"util/anim"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="modules/_util_boxes_.html">"util/boxes"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="modules/_util_browser_.html">"util/browser"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_util_compat_.html">"util/compat"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_util_data_.html">"util/data"</a>
@@ -535,6 +633,7 @@ ref1.press()
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>

@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["blessed/modal"](../modules/_blessed_modal_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["blessed/modal"](_blessed_modal_.md)
 
 # External module: "blessed/modal"
 
@@ -6,9 +6,9 @@
 
 ### Variables
 
-* [lastModalContent](_blessed_modal_.md#lastmodalcontent)
-* [lastOnClosedListener](_blessed_modal_.md#lastonclosedlistener)
-* [modalInstance](_blessed_modal_.md#modalinstance)
+* [lastModalContent](_blessed_modal_.md#let-lastmodalcontent)
+* [lastOnClosedListener](_blessed_modal_.md#let-lastonclosedlistener)
+* [modalInstance](_blessed_modal_.md#let-modalinstance)
 
 ### Functions
 
@@ -17,105 +17,94 @@
 * [resetModals](_blessed_modal_.md#resetmodals)
 * [showInModal](_blessed_modal_.md#showinmodal)
 
----
-
 ## Variables
 
-<a id="lastmodalcontent"></a>
+### `Let` lastModalContent
 
-### `<Let>` lastModalContent
+• **lastModalContent**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md) | undefined*
 
-**● lastModalContent**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md) \| `undefined`*
-
-*Defined in [blessed/modal.ts:55](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/modal.ts#L55)*
+*Defined in [blessed/modal.ts:55](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/modal.ts#L55)*
 
 ___
-<a id="lastonclosedlistener"></a>
 
-### `<Let>` lastOnClosedListener
+### `Let` lastOnClosedListener
 
-**● lastOnClosedListener**: *`undefined` \| `function`*
+• **lastOnClosedListener**: *undefined | function*
 
-*Defined in [blessed/modal.ts:7](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/modal.ts#L7)*
-
-___
-<a id="modalinstance"></a>
-
-### `<Let>` modalInstance
-
-**● modalInstance**: *[Box](../classes/_declarations_blessed_d_.widget.box.md) \| `undefined`*
-
-*Defined in [blessed/modal.ts:54](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/modal.ts#L54)*
+*Defined in [blessed/modal.ts:7](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/modal.ts#L7)*
 
 ___
+
+### `Let` modalInstance
+
+• **modalInstance**: *[Box](../classes/_declarations_blessed_d_.widget.box.md) | undefined*
+
+*Defined in [blessed/modal.ts:54](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/modal.ts#L54)*
 
 ## Functions
 
-<a id="closemodal"></a>
-
 ###  closeModal
 
-▸ **closeModal**(screen: *[Screen](../classes/_declarations_blessed_d_.widgets.screen.md)*): `void`
+▸ **closeModal**(`screen`: [Screen](../classes/_declarations_blessed_d_.widgets.screen.md)): *void*
 
-*Defined in [blessed/modal.ts:60](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/modal.ts#L60)*
+*Defined in [blessed/modal.ts:60](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/modal.ts#L60)*
 
 Close current opened modal
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| screen | [Screen](../classes/_declarations_blessed_d_.widgets.screen.md) |
+Name | Type |
+------ | ------ |
+`screen` | [Screen](../classes/_declarations_blessed_d_.widgets.screen.md) |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="ismodalvisible"></a>
 
 ###  isModalVisible
 
-▸ **isModalVisible**(): `boolean`
+▸ **isModalVisible**(): *boolean*
 
-*Defined in [blessed/modal.ts:87](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/modal.ts#L87)*
+*Defined in [blessed/modal.ts:87](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/modal.ts#L87)*
 
-**Returns:** `boolean`
+**Returns:** *boolean*
 
 ___
-<a id="resetmodals"></a>
 
 ###  resetModals
 
-▸ **resetModals**(): `void`
+▸ **resetModals**(): *void*
 
-*Defined in [blessed/modal.ts:77](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/modal.ts#L77)*
+*Defined in [blessed/modal.ts:77](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/modal.ts#L77)*
 
 Resets this manager. Useful when you are destroying / recreating screen to make sure there are no missing references to forgotten nodes.
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="showinmodal"></a>
 
 ###  showInModal
 
-▸ **showInModal**(screen: *[Screen](../classes/_declarations_blessed_d_.widgets.screen.md)*, s: *`string` \| [Element](../interfaces/_jsx_types_.__global.jsx.element.md)*, title?: *`string`*, width?: *`string`*, height?: *`string`*, onClosed?: *`function`*): [BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)
+▸ **showInModal**(`screen`: [Screen](../classes/_declarations_blessed_d_.widgets.screen.md), `s`: string | [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `title`: string, `width`: string, `height`: string, `onClosed?`: function): *[BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)*
 
-*Defined in [blessed/modal.ts:12](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/modal.ts#L12)*
+*Defined in [blessed/modal.ts:12](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/modal.ts#L12)*
 
-Easy to use modal: `showInModal(screen, anElement)` or simply: `showInModal(screen, 'some text')`
+Easy to use modal: ``` showInModal(screen, anElement)``` or simply:  ``` showInModal(screen, 'some text')```
 
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| screen | [Screen](../classes/_declarations_blessed_d_.widgets.screen.md) | - |
-| s | `string` \| [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | - |
-| `Default value` title | `string` | &quot;Modal&quot; |
-| `Default value` width | `string` | &quot;50%&quot; |
-| `Default value` height | `string` | &quot;50%&quot; |
-| `Optional` onClosed | `function` | - |
+▪ **screen**: *[Screen](../classes/_declarations_blessed_d_.widgets.screen.md)*
 
-**Returns:** [BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)
+▪ **s**: *string | [Element](../interfaces/_jsx_types_.__global.jsx.element.md)*
 
-___
+▪`Default value`  **title**: *string*= "Modal"
 
+▪`Default value`  **width**: *string*= "50%"
+
+▪`Default value`  **height**: *string*= "50%"
+
+▪`Optional`  **onClosed**: *function*
+
+▸ (): *void*
+
+**Returns:** *[BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)*

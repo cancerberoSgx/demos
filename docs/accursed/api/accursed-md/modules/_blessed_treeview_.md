@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["blessed/treeView"](../modules/_blessed_treeview_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["blessed/treeView"](_blessed_treeview_.md)
 
 # External module: "blessed/treeView"
 
@@ -15,6 +15,3 @@
 * [TreeOptions](../interfaces/_blessed_treeview_.treeoptions.md)
 * [TreeViewNode](../interfaces/_blessed_treeview_.treeviewnode.md)
 * [TreeViewStyle](../interfaces/_blessed_treeview_.treeviewstyle.md)
-
----
-

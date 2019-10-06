@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["declarations/blessed-contrib.d"](../modules/_declarations_blessed_contrib_d_.md) > [BlessedContrib](../modules/_declarations_blessed_contrib_d_.blessedcontrib.md) > [widget](../modules/_declarations_blessed_contrib_d_.blessedcontrib.widget.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["declarations/blessed-contrib.d"](_declarations_blessed_contrib_d_.md) › [BlessedContrib](_declarations_blessed_contrib_d_.blessedcontrib.md) › [widget](_declarations_blessed_contrib_d_.blessedcontrib.widget.md)
 
 # Module: widget
 
@@ -22,6 +22,3 @@
 * [StackedBar](../classes/_declarations_blessed_contrib_d_.blessedcontrib.widget.stackedbar.md)
 * [Table](../classes/_declarations_blessed_contrib_d_.blessedcontrib.widget.table.md)
 * [Tree](../classes/_declarations_blessed_contrib_d_.blessedcontrib.widget.tree.md)
-
----
-

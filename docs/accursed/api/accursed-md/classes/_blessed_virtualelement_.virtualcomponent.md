@@ -1,44 +1,48 @@
-[accursed](../README.md) > ["blessed/virtualElement"](../modules/_blessed_virtualelement_.md) > [VirtualComponent](../classes/_blessed_virtualelement_.virtualcomponent.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["blessed/virtualElement"](../modules/_blessed_virtualelement_.md) › [VirtualComponent](_blessed_virtualelement_.virtualcomponent.md)
 
-# Class: VirtualComponent
+# Class: VirtualComponent <**P, S, P**>
 
-Why do we need this if we have props? you cannot decalre structured data like ... etc - - props. only allows 21 level</p> </x-turndown>
+Why do we need this if we have props? you cannot decalre structured data like <tabPanel><tab><title>... etc - - props. only allows 21 level
 
 simulates to be a lessed node until the next iteration of createElement so the parent can recognize it abd extract its info, and discard it.
 
 ## Type parameters
-#### P 
-#### S 
-#### P 
+
+▪ **P**
+
+▪ **S**
+
+▪ **P**
+
 ## Hierarchy
 
- [Component](_jsx_component_.component.md)<`P`, `S`>
+* [Component](_jsx_component_.component.md)‹P, S›
 
-**↳ VirtualComponent**
+  ↳ **VirtualComponent**
 
-↳  [AccordionBlock](_jsx_components_accordion_.accordionblock.md)
+  ↳ [AccordionBlock](_jsx_components_accordion_.accordionblock.md)
 
-↳  [Column](_jsx_components_columns_.column.md)
+  ↳ [Column](_jsx_components_columns_.column.md)
 
-↳  [ListBarCommand](_jsx_components_listbar_.listbarcommand.md)
+  ↳ [ListBarCommand](_jsx_components_listbar_.listbarcommand.md)
 
-↳  [ListTableHead](_jsx_components_listtable_.listtablehead.md)
+  ↳ [ListTableHead](_jsx_components_listtable_.listtablehead.md)
 
-↳  [ListTableRow](_jsx_components_listtable_.listtablerow.md)
+  ↳ [ListTableRow](_jsx_components_listtable_.listtablerow.md)
 
-↳  [ListTableBody](_jsx_components_listtable_.listtablebody.md)
+  ↳ [ListTableBody](_jsx_components_listtable_.listtablebody.md)
 
-↳  [ListTableCell](_jsx_components_listtable_.listtablecell.md)
+  ↳ [ListTableCell](_jsx_components_listtable_.listtablecell.md)
 
-↳  [Row](_jsx_components_rows_.row.md)
+  ↳ [Row](_jsx_components_rows_.row.md)
 
-↳  [SelectOption](_jsx_components_select_.selectoption.md)
+  ↳ [SelectOption](_jsx_components_select_.selectoption.md)
 
-↳  [TabLabel](_jsx_components_tabpanel_.tablabel.md)
+  ↳ [TabLabel](_jsx_components_tabpanel_.tablabel.md)
 
-↳  [Tab](_jsx_components_tabpanel_.tab.md)
+  ↳ [Tab](_jsx_components_tabpanel_.tab.md)
 
-↳  [TabBody](_jsx_components_tabpanel_.tabbody.md)
+  ↳ [TabBody](_jsx_components_tabpanel_.tabbody.md)
 
 ## Implements
 
@@ -52,14 +56,14 @@ simulates to be a lessed node until the next iteration of createElement so the p
 
 ### Properties
 
-* [__isVirtualComponent](_blessed_virtualelement_.virtualcomponent.md#__isvirtualcomponent)
+* [__isVirtualComponent](_blessed_virtualelement_.virtualcomponent.md#private-__isvirtualcomponent)
 * [_jsxChildrenProps](_blessed_virtualelement_.virtualcomponent.md#_jsxchildrenprops)
 * [_saveJSXChildrenProps](_blessed_virtualelement_.virtualcomponent.md#_savejsxchildrenprops)
-* [blessedElement](_blessed_virtualelement_.virtualcomponent.md#blessedelement)
-* [props](_blessed_virtualelement_.virtualcomponent.md#props)
-* [state](_blessed_virtualelement_.virtualcomponent.md#state)
-* [VIRTUAL_DATA_OPTION](_blessed_virtualelement_.virtualcomponent.md#virtual_data_option)
-* [__isVirtualComponent](_blessed_virtualelement_.virtualcomponent.md#__isvirtualcomponent-1)
+* [blessedElement](_blessed_virtualelement_.virtualcomponent.md#protected-blessedelement)
+* [props](_blessed_virtualelement_.virtualcomponent.md#protected-props)
+* [state](_blessed_virtualelement_.virtualcomponent.md#protected-state)
+* [VIRTUAL_DATA_OPTION](_blessed_virtualelement_.virtualcomponent.md#static-virtual_data_option)
+* [__isVirtualComponent](_blessed_virtualelement_.virtualcomponent.md#static-private-__isvirtualcomponent)
 
 ### Accessors
 
@@ -73,6 +77,7 @@ simulates to be a lessed node until the next iteration of createElement so the p
 * [filterDescendants](_blessed_virtualelement_.virtualcomponent.md#filterdescendants)
 * [findChildren](_blessed_virtualelement_.virtualcomponent.md#findchildren)
 * [findDescendant](_blessed_virtualelement_.virtualcomponent.md#finddescendant)
+* [findDescendantNamed](_blessed_virtualelement_.virtualcomponent.md#finddescendantnamed)
 * [getContent](_blessed_virtualelement_.virtualcomponent.md#getcontent)
 * [getDescendantNamed](_blessed_virtualelement_.virtualcomponent.md#getdescendantnamed)
 * [getElementData](_blessed_virtualelement_.virtualcomponent.md#getelementdata)
@@ -80,475 +85,466 @@ simulates to be a lessed node until the next iteration of createElement so the p
 * [replaceChildren](_blessed_virtualelement_.virtualcomponent.md#replacechildren)
 * [saveVirtualData](_blessed_virtualelement_.virtualcomponent.md#savevirtualdata)
 * [visitDescendants](_blessed_virtualelement_.virtualcomponent.md#visitdescendants)
-* [createVirtualComponent](_blessed_virtualelement_.virtualcomponent.md#createvirtualcomponent)
-* [createVirtualElement](_blessed_virtualelement_.virtualcomponent.md#createvirtualelement)
-* [isVirtualComponent](_blessed_virtualelement_.virtualcomponent.md#isvirtualcomponent)
-* [isVirtualElement](_blessed_virtualelement_.virtualcomponent.md#isvirtualelement)
-
----
+* [createVirtualComponent](_blessed_virtualelement_.virtualcomponent.md#static-createvirtualcomponent)
+* [createVirtualElement](_blessed_virtualelement_.virtualcomponent.md#static-createvirtualelement)
+* [isVirtualComponent](_blessed_virtualelement_.virtualcomponent.md#static-isvirtualcomponent)
+* [isVirtualElement](_blessed_virtualelement_.virtualcomponent.md#static-isvirtualelement)
 
 ## Constructors
 
-<a id="constructor"></a>
-
 ###  constructor
 
-⊕ **new VirtualComponent**(props: *`P`*, state: *`S`*): [VirtualComponent](_blessed_virtualelement_.virtualcomponent.md)
+\+ **new VirtualComponent**(`props`: P, `state`: S): *[VirtualComponent](_blessed_virtualelement_.virtualcomponent.md)*
 
 *Inherited from [Component](_jsx_component_.component.md).[constructor](_jsx_component_.component.md#constructor)*
 
-*Defined in [jsx/component.ts:27](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L27)*
+*Defined in [jsx/component.ts:27](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L27)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| props | `P` |
-| state | `S` |
+Name | Type |
+------ | ------ |
+`props` | P |
+`state` | S |
 
-**Returns:** [VirtualComponent](_blessed_virtualelement_.virtualcomponent.md)
-
-___
+**Returns:** *[VirtualComponent](_blessed_virtualelement_.virtualcomponent.md)*
 
 ## Properties
 
-<a id="__isvirtualcomponent"></a>
+### `Private` __isVirtualComponent
 
-### `<Private>` __isVirtualComponent
+• **__isVirtualComponent**: *number* =  VirtualComponent.__isVirtualComponent
 
-**● __isVirtualComponent**: *`number`* =  VirtualComponent.__isVirtualComponent
-
-*Defined in [blessed/virtualElement.ts:18](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/virtualElement.ts#L18)*
+*Defined in [blessed/virtualElement.ts:18](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L18)*
 
 ___
-<a id="_jsxchildrenprops"></a>
 
 ###  _jsxChildrenProps
 
-**● _jsxChildrenProps**: *`any`* =  undefined
+• **_jsxChildrenProps**: *any* =  undefined
 
 *Inherited from [Component](_jsx_component_.component.md).[_jsxChildrenProps](_jsx_component_.component.md#_jsxchildrenprops)*
 
-*Defined in [jsx/component.ts:35](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L35)*
+*Defined in [jsx/component.ts:35](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L35)*
 
 ___
-<a id="_savejsxchildrenprops"></a>
 
 ###  _saveJSXChildrenProps
 
-**● _saveJSXChildrenProps**: *`boolean`* = false
+• **_saveJSXChildrenProps**: *boolean* = false
 
 *Inherited from [Component](_jsx_component_.component.md).[_saveJSXChildrenProps](_jsx_component_.component.md#_savejsxchildrenprops)*
 
-*Defined in [jsx/component.ts:34](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L34)*
+*Defined in [jsx/component.ts:34](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L34)*
 
-If true then JSX children props will be save on property [\_jsxChildrenProps](_blessed_virtualelement_.virtualcomponent.md#_jsxchildrenprops). Component subclasses needing this information (like Virtual component parent) can override it.
+If true then JSX children props will be save on property [_jsxChildrenProps](_blessed_virtualelement_.virtualcomponent.md#_jsxchildrenprops). Component subclasses
+needing this information (like Virtual component parent) can override it.
 
 ___
-<a id="blessedelement"></a>
 
-### `<Protected>` blessedElement
+### `Protected` blessedElement
 
-**● blessedElement**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)* =  undefined as any
+• **blessedElement**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)* =  undefined as any
 
-*Inherited from [Component](_jsx_component_.component.md).[blessedElement](_jsx_component_.component.md#blessedelement)*
+*Inherited from [Component](_jsx_component_.component.md).[blessedElement](_jsx_component_.component.md#protected-blessedelement)*
 
-*Defined in [jsx/component.ts:42](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L42)*
+*Defined in [jsx/component.ts:42](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L42)*
 
 All class elements will have a reference to its rendered blessed element
 
 ___
-<a id="props"></a>
 
-### `<Protected>` props
+### `Protected` props
 
-**● props**: *`P`*
+• **props**: *P*
 
-*Inherited from [Component](_jsx_component_.component.md).[props](_jsx_component_.component.md#props)*
+*Inherited from [Component](_jsx_component_.component.md).[props](_jsx_component_.component.md#protected-props)*
 
-*Defined in [jsx/component.ts:28](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L28)*
-
-___
-<a id="state"></a>
-
-### `<Protected>` state
-
-**● state**: *`S`*
-
-*Inherited from [Component](_jsx_component_.component.md).[state](_jsx_component_.component.md#state)*
-
-*Defined in [jsx/component.ts:28](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L28)*
+*Defined in [jsx/component.ts:28](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L28)*
 
 ___
-<a id="virtual_data_option"></a>
 
-### `<Static>` VIRTUAL_DATA_OPTION
+### `Protected` state
 
-**● VIRTUAL_DATA_OPTION**: *`string`* = "accursed.virtual.component"
+• **state**: *S*
 
-*Defined in [blessed/virtualElement.ts:20](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/virtualElement.ts#L20)*
+*Inherited from [Component](_jsx_component_.component.md).[state](_jsx_component_.component.md#protected-state)*
 
-___
-<a id="__isvirtualcomponent-1"></a>
-
-### `<Static>``<Private>` __isVirtualComponent
-
-**● __isVirtualComponent**: *`number`* = 123
-
-*Defined in [blessed/virtualElement.ts:17](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/virtualElement.ts#L17)*
+*Defined in [jsx/component.ts:28](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L28)*
 
 ___
+
+### `Static` VIRTUAL_DATA_OPTION
+
+▪ **VIRTUAL_DATA_OPTION**: *string* = "accursed.virtual.component"
+
+*Defined in [blessed/virtualElement.ts:20](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L20)*
+
+___
+
+### `Static` `Private` __isVirtualComponent
+
+▪ **__isVirtualComponent**: *number* = 123
+
+*Defined in [blessed/virtualElement.ts:17](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L17)*
 
 ## Accessors
 
-<a id="element"></a>
-
 ###  element
 
-**get element**(): [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)<`object`>
+• **get element**(): *[BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)‹object›*
 
 *Inherited from [Component](_jsx_component_.component.md).[element](_jsx_component_.component.md#element)*
 
-*Defined in [jsx/component.ts:44](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L44)*
+*Defined in [jsx/component.ts:44](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L44)*
 
-**Returns:** [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)<`object`>
+**Returns:** *[BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)‹object›*
 
 ___
-<a id="screen"></a>
 
 ###  screen
 
-**get screen**(): [Screen](_declarations_blessed_d_.widgets.screen.md)
+• **get screen**(): *[Screen](_declarations_blessed_d_.widgets.screen.md)*
 
 *Inherited from [Component](_jsx_component_.component.md).[screen](_jsx_component_.component.md#screen)*
 
-*Defined in [jsx/component.ts:80](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L80)*
+*Defined in [jsx/component.ts:84](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L84)*
 
-**Returns:** [Screen](_declarations_blessed_d_.widgets.screen.md)
+**Returns:** *[Screen](_declarations_blessed_d_.widgets.screen.md)*
 
 ___
-<a id="type"></a>
 
 ###  type
 
-**get type**(): `string`
+• **get type**(): *string*
 
 *Inherited from [Component](_jsx_component_.component.md).[type](_jsx_component_.component.md#type)*
 
-*Defined in [jsx/component.ts:51](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L51)*
+*Defined in [jsx/component.ts:51](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L51)*
 
 return the type name of ths component container blessed element
 
-**Returns:** `string`
-
-___
+**Returns:** *string*
 
 ## Methods
 
-<a id="filterchildren"></a>
-
 ###  filterChildren
 
-▸ **filterChildren**<`T`>(p: *[ElementPredicate](../modules/_blessed_node_.md#elementpredicate)*): `T`[]
+▸ **filterChildren**<**T**>(`p`: [ElementPredicate](../modules/_blessed_node_.md#elementpredicate)): *T[]*
 
 *Inherited from [Component](_jsx_component_.component.md).[filterChildren](_jsx_component_.component.md#filterchildren)*
 
-*Defined in [jsx/component.ts:75](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L75)*
+*Defined in [jsx/component.ts:79](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L79)*
 
 **Type parameters:**
 
-#### T :  [Element](../interfaces/_jsx_types_.__global.jsx.element.md)
+▪ **T**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| p | [ElementPredicate](../modules/_blessed_node_.md#elementpredicate) |
+Name | Type |
+------ | ------ |
+`p` | [ElementPredicate](../modules/_blessed_node_.md#elementpredicate) |
 
-**Returns:** `T`[]
+**Returns:** *T[]*
 
 ___
-<a id="filterdescendants"></a>
 
 ###  filterDescendants
 
-▸ **filterDescendants**<`T`>(p: *[ElementPredicate](../modules/_blessed_node_.md#elementpredicate)*): `T`[]
+▸ **filterDescendants**<**T**>(`p`: [ElementPredicate](../modules/_blessed_node_.md#elementpredicate)): *T[]*
 
 *Inherited from [Component](_jsx_component_.component.md).[filterDescendants](_jsx_component_.component.md#filterdescendants)*
 
-*Defined in [jsx/component.ts:67](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L67)*
+*Defined in [jsx/component.ts:71](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L71)*
 
 **Type parameters:**
 
-#### T :  [Element](../interfaces/_jsx_types_.__global.jsx.element.md)
+▪ **T**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| p | [ElementPredicate](../modules/_blessed_node_.md#elementpredicate) |
+Name | Type |
+------ | ------ |
+`p` | [ElementPredicate](../modules/_blessed_node_.md#elementpredicate) |
 
-**Returns:** `T`[]
+**Returns:** *T[]*
 
 ___
-<a id="findchildren"></a>
 
 ###  findChildren
 
-▸ **findChildren**<`T`>(p: *[ElementPredicate](../modules/_blessed_node_.md#elementpredicate)*): `T` \| `undefined`
+▸ **findChildren**<**T**>(`p`: [ElementPredicate](../modules/_blessed_node_.md#elementpredicate)): *T | undefined*
 
 *Inherited from [Component](_jsx_component_.component.md).[findChildren](_jsx_component_.component.md#findchildren)*
 
-*Defined in [jsx/component.ts:71](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L71)*
+*Defined in [jsx/component.ts:75](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L75)*
 
 **Type parameters:**
 
-#### T :  [Element](../interfaces/_jsx_types_.__global.jsx.element.md)
+▪ **T**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| p | [ElementPredicate](../modules/_blessed_node_.md#elementpredicate) |
+Name | Type |
+------ | ------ |
+`p` | [ElementPredicate](../modules/_blessed_node_.md#elementpredicate) |
 
-**Returns:** `T` \| `undefined`
+**Returns:** *T | undefined*
 
 ___
-<a id="finddescendant"></a>
 
 ###  findDescendant
 
-▸ **findDescendant**<`T`>(p: *[ElementPredicate](../modules/_blessed_node_.md#elementpredicate)*): `T` \| `undefined`
+▸ **findDescendant**<**T**>(`p`: [ElementPredicate](../modules/_blessed_node_.md#elementpredicate)): *T | undefined*
 
 *Inherited from [Component](_jsx_component_.component.md).[findDescendant](_jsx_component_.component.md#finddescendant)*
 
-*Defined in [jsx/component.ts:63](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L63)*
+*Defined in [jsx/component.ts:63](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L63)*
 
 **Type parameters:**
 
-#### T :  [Element](../interfaces/_jsx_types_.__global.jsx.element.md)
+▪ **T**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| p | [ElementPredicate](../modules/_blessed_node_.md#elementpredicate) |
+Name | Type |
+------ | ------ |
+`p` | [ElementPredicate](../modules/_blessed_node_.md#elementpredicate) |
 
-**Returns:** `T` \| `undefined`
+**Returns:** *T | undefined*
 
 ___
-<a id="getcontent"></a>
+
+###  findDescendantNamed
+
+▸ **findDescendantNamed**<**T**>(`name`: string): *T | undefined*
+
+*Inherited from [Component](_jsx_component_.component.md).[findDescendantNamed](_jsx_component_.component.md#finddescendantnamed)*
+
+*Defined in [jsx/component.ts:67](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L67)*
+
+**Type parameters:**
+
+▪ **T**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`name` | string |
+
+**Returns:** *T | undefined*
+
+___
 
 ###  getContent
 
-▸ **getContent**(options?: *`object`*): `string`
+▸ **getContent**(`options`: object): *string*
 
 *Inherited from [Component](_jsx_component_.component.md).[getContent](_jsx_component_.component.md#getcontent)*
 
-*Defined in [jsx/component.ts:100](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L100)*
+*Defined in [jsx/component.ts:104](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L104)*
 
-Returns the text content of given node and all its children, in order. By default stripped from ansi escape chars and trimmed, and separated by space, but is configurable through options.
+Returns the text content of given node and all its children, in order. By default stripped from ansi
+escape chars and trimmed, and separated by space, but is configurable through options.
 
 **Parameters:**
 
-**`Default value` options: `object`**
+▪`Default value`  **options**: *object*=  {}
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` childrenLast | `boolean` |
-| `Optional` dontStrip | `boolean` |
-| `Optional` dontTrim | `boolean` |
+Name | Type |
+------ | ------ |
+`childrenLast?` | boolean |
+`dontStrip?` | boolean |
+`dontTrim?` | boolean |
 
-**Returns:** `string`
+**Returns:** *string*
 
 ___
-<a id="getdescendantnamed"></a>
 
 ###  getDescendantNamed
 
-▸ **getDescendantNamed**<`T`>(n: *`string`*): `T` \| `undefined`
+▸ **getDescendantNamed**<**T**>(`n`: string): *T | undefined*
 
 *Inherited from [Component](_jsx_component_.component.md).[getDescendantNamed](_jsx_component_.component.md#getdescendantnamed)*
 
-*Defined in [jsx/component.ts:104](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L104)*
+*Defined in [jsx/component.ts:108](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L108)*
 
 **Type parameters:**
 
-#### T :  [Element](../interfaces/_jsx_types_.__global.jsx.element.md)
+▪ **T**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| n | `string` |
+Name | Type |
+------ | ------ |
+`n` | string |
 
-**Returns:** `T` \| `undefined`
+**Returns:** *T | undefined*
 
 ___
-<a id="getelementdata"></a>
 
 ###  getElementData
 
-▸ **getElementData**<`T`>(key: *`string`*): `T`
+▸ **getElementData**<**T**>(`key`: string): *T*
 
 *Inherited from [Component](_jsx_component_.component.md).[getElementData](_jsx_component_.component.md#getelementdata)*
 
-*Defined in [jsx/component.ts:55](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L55)*
+*Defined in [jsx/component.ts:55](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L55)*
 
 **Type parameters:**
 
-#### T 
+▪ **T**
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| key | `string` |
+Name | Type |
+------ | ------ |
+`key` | string |
 
-**Returns:** `T`
+**Returns:** *T*
 
 ___
-<a id="render"></a>
 
 ###  render
 
-▸ **render**(): `any`
+▸ **render**(): *any*
 
-*Overrides [Component](_jsx_component_.component.md).[render](_jsx_component_.component.md#render)*
+*Overrides [Component](_jsx_component_.component.md).[render](_jsx_component_.component.md#abstract-render)*
 
-*Defined in [blessed/virtualElement.ts:14](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/virtualElement.ts#L14)*
+*Defined in [blessed/virtualElement.ts:14](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L14)*
 
-**Returns:** `any`
+**Returns:** *any*
 
 ___
-<a id="replacechildren"></a>
 
 ###  replaceChildren
 
-▸ **replaceChildren**(newChildren: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)[]*, options?: *`object`*): `void`
+▸ **replaceChildren**(`newChildren`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)[], `options`: object): *void*
 
 *Inherited from [Component](_jsx_component_.component.md).[replaceChildren](_jsx_component_.component.md#replacechildren)*
 
-*Defined in [jsx/component.ts:89](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L89)*
+*Defined in [jsx/component.ts:93](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L93)*
 
-Hot replace all children on this node with given \[\[newChildren\]\] array elements. This is a visual operation, and only should eb performed when the component need to implement a radicals different view dynamically since it couldnt costly.
+ Hot replace all children on this node with given [[newChildren]] array elements. This is a visual
+ operation, and only should eb performed when the component need to implement a radicals different view
+ dynamically since it couldnt costly.
 
 **Parameters:**
 
-**newChildren: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)[]**
+▪ **newChildren**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)[]*
 
-**`Default value` options: `object`**
+▪`Default value`  **options**: *object*=  { mode: 'careful' }
 
-| Name | Type |
-| ------ | ------ |
-| mode | "quickly" \| "careful" \| "dontRender" |
+Name | Type |
+------ | ------ |
+`mode` | "quickly" &#124; "careful" &#124; "dontRender" |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="savevirtualdata"></a>
 
 ###  saveVirtualData
 
-▸ **saveVirtualData**(e: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*): `void`
+▸ **saveVirtualData**(`e`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)): *void*
 
-*Implementation of [VirtualElement](../interfaces/_blessed_virtualelement_.virtualelement.md).[saveVirtualData](../interfaces/_blessed_virtualelement_.virtualelement.md#savevirtualdata)*
+*Implementation of [VirtualElement](../interfaces/_blessed_virtualelement_.virtualelement.md)*
 
-*Defined in [blessed/virtualElement.ts:34](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/virtualElement.ts#L34)*
+*Defined in [blessed/virtualElement.ts:34](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L34)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| e | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) |
+Name | Type |
+------ | ------ |
+`e` | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="visitdescendants"></a>
 
 ###  visitDescendants
 
-▸ **visitDescendants**(v: *[Visitor](../modules/_blessed_node_.md#visitor)*, o?: *[VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md)*): `boolean`
+▸ **visitDescendants**(`v`: [Visitor](../modules/_blessed_node_.md#visitor), `o`: [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md)): *boolean*
 
 *Inherited from [Component](_jsx_component_.component.md).[visitDescendants](_jsx_component_.component.md#visitdescendants)*
 
-*Defined in [jsx/component.ts:59](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L59)*
+*Defined in [jsx/component.ts:59](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L59)*
 
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| v | [Visitor](../modules/_blessed_node_.md#visitor) | - |
-| `Default value` o | [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md) |  {} |
+Name | Type | Default |
+------ | ------ | ------ |
+`v` | [Visitor](../modules/_blessed_node_.md#visitor) | - |
+`o` | [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md) |  {} |
 
-**Returns:** `boolean`
+**Returns:** *boolean*
 
 ___
-<a id="createvirtualcomponent"></a>
 
-### `<Static>` createVirtualComponent
+### `Static` createVirtualComponent
 
-▸ **createVirtualComponent**<`T`>(p: *`T`*): [VirtualComponent](_blessed_virtualelement_.virtualcomponent.md)<`T`, `object`>
+▸ **createVirtualComponent**<**T**>(`p`: T): *[VirtualComponent](_blessed_virtualelement_.virtualcomponent.md)‹T, object›*
 
-*Defined in [blessed/virtualElement.ts:39](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/virtualElement.ts#L39)*
+*Defined in [blessed/virtualElement.ts:39](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L39)*
 
 **Type parameters:**
 
-#### T 
-**Parameters:**
-
-| Name | Type |
-| ------ | ------ |
-| p | `T` |
-
-**Returns:** [VirtualComponent](_blessed_virtualelement_.virtualcomponent.md)<`T`, `object`>
-
-___
-<a id="createvirtualelement"></a>
-
-### `<Static>` createVirtualElement
-
-▸ **createVirtualElement**(c: *`any`*, tagName: *`string`*): `any`
-
-*Defined in [blessed/virtualElement.ts:31](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/virtualElement.ts#L31)*
+▪ **T**
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| c | `any` |
-| tagName | `string` |
+Name | Type |
+------ | ------ |
+`p` | T |
 
-**Returns:** `any`
+**Returns:** *[VirtualComponent](_blessed_virtualelement_.virtualcomponent.md)‹T, object›*
 
 ___
-<a id="isvirtualcomponent"></a>
 
-### `<Static>` isVirtualComponent
+### `Static` createVirtualElement
 
-▸ **isVirtualComponent**(c: *`any`*): `boolean`
+▸ **createVirtualElement**(`c`: any, `tagName`: string): *any*
 
-*Defined in [blessed/virtualElement.ts:25](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/virtualElement.ts#L25)*
+*Defined in [blessed/virtualElement.ts:31](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L31)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| c | `any` |
+Name | Type |
+------ | ------ |
+`c` | any |
+`tagName` | string |
 
-**Returns:** `boolean`
+**Returns:** *any*
 
 ___
-<a id="isvirtualelement"></a>
 
-### `<Static>` isVirtualElement
+### `Static` isVirtualComponent
 
-▸ **isVirtualElement**(c: *`any`*): `boolean`
+▸ **isVirtualComponent**(`c`: any): *boolean*
 
-*Defined in [blessed/virtualElement.ts:28](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/virtualElement.ts#L28)*
+*Defined in [blessed/virtualElement.ts:25](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L25)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| c | `any` |
+Name | Type |
+------ | ------ |
+`c` | any |
 
-**Returns:** `boolean`
+**Returns:** *boolean*
 
 ___
 
+### `Static` isVirtualElement
+
+▸ **isVirtualElement**(`c`: any): *boolean*
+
+*Defined in [blessed/virtualElement.ts:28](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L28)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`c` | any |
+
+**Returns:** *boolean*

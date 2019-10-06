@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["declarations/blessed.d"](_declarations_blessed_d_.md)
 
 # External module: "declarations/blessed.d"
 
@@ -16,13 +16,14 @@
 
 ### Type aliases
 
+* [ColorName](_declarations_blessed_d_.md#colorname)
 * [ColorRgb](_declarations_blessed_d_.md#colorrgb)
 
 ### Variables
 
-* [colors](_declarations_blessed_d_.md#colors)
-* [helpers](_declarations_blessed_d_.md#helpers-1)
-* [unicode](_declarations_blessed_d_.md#unicode-1)
+* [colors](_declarations_blessed_d_.md#const-colors)
+* [helpers](_declarations_blessed_d_.md#const-helpers)
+* [unicode](_declarations_blessed_d_.md#const-unicode)
 
 ### Functions
 
@@ -57,734 +58,610 @@
 * [textarea](_declarations_blessed_d_.md#textarea)
 * [textbox](_declarations_blessed_d_.md#textbox)
 
----
-
 ## Type aliases
 
-<a id="colorrgb"></a>
+###  ColorName
+
+Ƭ **ColorName**: *"black" | "red" | "green" | "yellow" | "blue" | "magenta" | "cyan" | "white"*
+
+*Defined in [declarations/blessed.d.ts:3591](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3591)*
+
+___
 
 ###  ColorRgb
 
-**Ƭ ColorRgb**: *[`number`, `number`, `number`]*
+Ƭ **ColorRgb**: *[number, number, number]*
 
-*Defined in [declarations/blessed.d.ts:3658](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3658)*
-
-___
+*Defined in [declarations/blessed.d.ts:3592](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3592)*
 
 ## Variables
 
-<a id="colors"></a>
+### `Const` colors
 
-### `<Const>` colors
+• **colors**: *object*
 
-**● colors**: *`object`*
+*Defined in [declarations/blessed.d.ts:3593](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3593)*
 
-*Defined in [declarations/blessed.d.ts:3659](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3659)*
+#### Type declaration:
 
-#### Type declaration
+* **colorNames**(): *object*
 
- colorNames: `object`
+  * **black**: *0*
 
- black: `0`
+  * **blue**: *4*
 
- blue: `4`
+  * **brightblack**: *8*
 
- brightblack: `8`
+  * **brightblue**: *12*
 
- brightblue: `12`
+  * **brightcyan**: *14*
 
- brightcyan: `14`
+  * **brightgray**: *7*
 
- brightgray: `7`
+  * **brightgreen**: *10*
 
- brightgreen: `10`
+  * **brightgrey**: *7*
 
- brightgrey: `7`
+  * **brightmagenta**: *13*
 
- brightmagenta: `13`
+  * **brightred**: *9*
 
- brightred: `9`
+  * **brightwhite**: *15*
 
- brightwhite: `15`
+  * **brightyellow**: *11*
 
- brightyellow: `11`
+  * **cyan**: *6*
 
- cyan: `6`
+  * **gray**: *8*
 
- gray: `8`
+  * **green**: *2*
 
- green: `2`
+  * **grey**: *8*
 
- grey: `8`
+  * **lightblack**: *8*
 
- lightblack: `8`
+  * **lightblue**: *12*
 
- lightblue: `12`
+  * **lightcyan**: *14*
 
- lightcyan: `14`
+  * **lightgray**: *7*
 
- lightgray: `7`
+  * **lightgreen**: *10*
 
- lightgreen: `10`
+  * **lightgrey**: *7*
 
- lightgrey: `7`
+  * **lightmagenta**: *13*
 
- lightmagenta: `13`
+  * **lightred**: *9*
 
- lightred: `9`
+  * **lightwhite**: *15*
 
- lightwhite: `15`
+  * **lightyellow**: *11*
 
- lightyellow: `11`
+  * **magenta**: *5*
 
- magenta: `5`
+  * **red**: *1*
 
- red: `1`
+  * **white**: *7*
 
- white: `7`
+  * **yellow**: *3*
 
- yellow: `3`
+* **ncolors**(): *object*
 
- RGBToHex : function
-▸ **RGBToHex**(r: *`number`*, g: *`number`*, b: *`number`*): `string`
+* **RGBToHex**(`r`: number, `g`: number, `b`: number): *string*
 
-▸ **RGBToHex**(hex: *`string`*): [ColorRgb](_declarations_blessed_d_.md#colorrgb)
+* **blend**(`attr`: number, `attr2?`: number, `alpha?`: number): *number*
 
-*Defined in [declarations/blessed.d.ts:3667](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3667)*
+* **ccolors**(): *number[]*
 
-**Parameters:**
+* **colors**(): *number[]*
 
-| Name | Type |
-| ------ | ------ |
-| r | `number` |
-| g | `number` |
-| b | `number` |
+* **convert**(`color`: [Color](_declarations_blessed_d_.widgets.md#color)): *number*
 
-**Returns:** `string`
+* **hexToRGB**(`hex`: string): *[ColorRgb](_declarations_blessed_d_.md#colorrgb)*
 
-*Defined in [declarations/blessed.d.ts:3668](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3668)*
+* **match**(`r1`: [Color](_declarations_blessed_d_.widgets.md#color) | [ColorRgb](_declarations_blessed_d_.md#colorrgb), `g1?`: number, `b1?`: number): *number*
 
-**Parameters:**
-
-| Name | Type |
-| ------ | ------ |
-| hex | `string` |
-
-**Returns:** [ColorRgb](_declarations_blessed_d_.md#colorrgb)
-
- blend : function
-▸ **blend**(attr: *`number`*, attr2?: *`number`*, alpha?: *`number`*): `number`
-
-*Defined in [declarations/blessed.d.ts:3669](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3669)*
-
-**Parameters:**
-
-| Name | Type |
-| ------ | ------ |
-| attr | `number` |
-| `Optional` attr2 | `number` |
-| `Optional` alpha | `number` |
-
-**Returns:** `number`
-
- ccolors : function
-▸ **ccolors**(): `number`[]
-
-*Defined in [declarations/blessed.d.ts:3676](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3676)*
-
-Map higher colors to the first 8 colors. This allows translation of high colors to low colors on 8-color terminals.
-
-**Returns:** `number`[]
-
- colors : function
-▸ **colors**(): `number`[]
-
-*Defined in [declarations/blessed.d.ts:3673](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3673)*
-
-Seed all 256 colors. Assume xterm defaults. Ported from the xterm color generation script.
-
-**Returns:** `number`[]
-
- convert : function
-▸ **convert**(color: *[Color](_declarations_blessed_d_.widgets.md#color)*): `number`
-
-*Defined in [declarations/blessed.d.ts:3665](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3665)*
-
-**Parameters:**
-
-| Name | Type |
-| ------ | ------ |
-| color | [Color](_declarations_blessed_d_.widgets.md#color) |
-
-**Returns:** `number`
-
- match : function
-▸ **match**(r1: *[Color](_declarations_blessed_d_.widgets.md#color) \| [ColorRgb](_declarations_blessed_d_.md#colorrgb)*, g1?: *`number`*, b1?: *`number`*): `number`
-
-*Defined in [declarations/blessed.d.ts:3664](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3664)*
-
-Match given color in a high level form (like rgb or hex expression) with a terminal color number interpolatingg to a similar color.
-
-**Parameters:**
-
-| Name | Type |
-| ------ | ------ |
-| r1 | [Color](_declarations_blessed_d_.widgets.md#color) \| [ColorRgb](_declarations_blessed_d_.md#colorrgb) |
-| `Optional` g1 | `number` |
-| `Optional` b1 | `number` |
-
-**Returns:** `number`
-
- mixColors : function
-▸ **mixColors**(c1: *`number`*, c2: *`number`*, alpha: *`number`*): `number`
-
-*Defined in [declarations/blessed.d.ts:3666](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3666)*
-
-**Parameters:**
-
-| Name | Type |
-| ------ | ------ |
-| c1 | `number` |
-| c2 | `number` |
-| alpha | `number` |
-
-**Returns:** `number`
+* **mixColors**(`c1`: number, `c2`: number, `alpha`: number): *number*
 
 ___
-<a id="helpers-1"></a>
 
-### `<Const>` helpers
+### `Const` helpers
 
-**● helpers**: *[Helpers](../interfaces/_declarations_blessed_d_.helpers.md)*
+• **helpers**: *[Helpers](../interfaces/_declarations_blessed_d_.helpers.md)*
 
-*Defined in [declarations/blessed.d.ts:3783](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3783)*
-
-___
-<a id="unicode-1"></a>
-
-### `<Const>` unicode
-
-**● unicode**: *[Unicode](../interfaces/_declarations_blessed_d_.unicode.md)*
-
-*Defined in [declarations/blessed.d.ts:3715](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3715)*
+*Defined in [declarations/blessed.d.ts:3741](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3741)*
 
 ___
+
+### `Const` unicode
+
+• **unicode**: *[Unicode](../interfaces/_declarations_blessed_d_.unicode.md)*
+
+*Defined in [declarations/blessed.d.ts:3673](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3673)*
 
 ## Functions
 
-<a id="bigtext"></a>
-
 ###  bigtext
 
-▸ **bigtext**(options?: *[BigTextOptions](../interfaces/_declarations_blessed_d_.widgets.bigtextoptions.md)*): [BigTextElement](../classes/_declarations_blessed_d_.widgets.bigtextelement.md)
+▸ **bigtext**(`options?`: [BigTextOptions](../interfaces/_declarations_blessed_d_.widgets.bigtextoptions.md)): *[BigTextElement](../classes/_declarations_blessed_d_.widgets.bigtextelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3633](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3633)*
+*Defined in [declarations/blessed.d.ts:3566](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3566)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [BigTextOptions](../interfaces/_declarations_blessed_d_.widgets.bigtextoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [BigTextOptions](../interfaces/_declarations_blessed_d_.widgets.bigtextoptions.md) |
 
-**Returns:** [BigTextElement](../classes/_declarations_blessed_d_.widgets.bigtextelement.md)
+**Returns:** *[BigTextElement](../classes/_declarations_blessed_d_.widgets.bigtextelement.md)*
 
 ___
-<a id="box"></a>
 
 ###  box
 
-▸ **box**(options?: *[BoxOptions](../interfaces/_declarations_blessed_d_.widgets.boxoptions.md)*): [BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)
+▸ **box**(`options?`: [BoxOptions](../interfaces/_declarations_blessed_d_.widgets.boxoptions.md)): *[BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3628](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3628)*
+*Defined in [declarations/blessed.d.ts:3561](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3561)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [BoxOptions](../interfaces/_declarations_blessed_d_.widgets.boxoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [BoxOptions](../interfaces/_declarations_blessed_d_.widgets.boxoptions.md) |
 
-**Returns:** [BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)
+**Returns:** *[BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)*
 
 ___
-<a id="button"></a>
 
 ###  button
 
-▸ **button**(options?: *[ButtonOptions](../interfaces/_declarations_blessed_d_.widgets.buttonoptions.md)*): [ButtonElement](../classes/_declarations_blessed_d_.widgets.buttonelement.md)
+▸ **button**(`options?`: [ButtonOptions](../interfaces/_declarations_blessed_d_.widgets.buttonoptions.md)): *[ButtonElement](../classes/_declarations_blessed_d_.widgets.buttonelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3642](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3642)*
+*Defined in [declarations/blessed.d.ts:3575](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3575)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [ButtonOptions](../interfaces/_declarations_blessed_d_.widgets.buttonoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [ButtonOptions](../interfaces/_declarations_blessed_d_.widgets.buttonoptions.md) |
 
-**Returns:** [ButtonElement](../classes/_declarations_blessed_d_.widgets.buttonelement.md)
+**Returns:** *[ButtonElement](../classes/_declarations_blessed_d_.widgets.buttonelement.md)*
 
 ___
-<a id="checkbox"></a>
 
 ###  checkbox
 
-▸ **checkbox**(options?: *[CheckboxOptions](../interfaces/_declarations_blessed_d_.widgets.checkboxoptions.md)*): [CheckboxElement](../classes/_declarations_blessed_d_.widgets.checkboxelement.md)
+▸ **checkbox**(`options?`: [CheckboxOptions](../interfaces/_declarations_blessed_d_.widgets.checkboxoptions.md)): *[CheckboxElement](../classes/_declarations_blessed_d_.widgets.checkboxelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3643](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3643)*
+*Defined in [declarations/blessed.d.ts:3576](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3576)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [CheckboxOptions](../interfaces/_declarations_blessed_d_.widgets.checkboxoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [CheckboxOptions](../interfaces/_declarations_blessed_d_.widgets.checkboxoptions.md) |
 
-**Returns:** [CheckboxElement](../classes/_declarations_blessed_d_.widgets.checkboxelement.md)
+**Returns:** *[CheckboxElement](../classes/_declarations_blessed_d_.widgets.checkboxelement.md)*
 
 ___
-<a id="escape"></a>
 
 ###  escape
 
-▸ **escape**(item: *`any`*): `any`
+▸ **escape**(`item`: any): *any*
 
-*Defined in [declarations/blessed.d.ts:3656](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3656)*
+*Defined in [declarations/blessed.d.ts:3589](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3589)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| item | `any` |
+Name | Type |
+------ | ------ |
+`item` | any |
 
-**Returns:** `any`
+**Returns:** *any*
 
 ___
-<a id="filemanager"></a>
 
 ###  filemanager
 
-▸ **filemanager**(options?: *[FileManagerOptions](../interfaces/_declarations_blessed_d_.widgets.filemanageroptions.md)*): [FileManagerElement](../classes/_declarations_blessed_d_.widgets.filemanagerelement.md)
+▸ **filemanager**(`options?`: [FileManagerOptions](../interfaces/_declarations_blessed_d_.widgets.filemanageroptions.md)): *[FileManagerElement](../classes/_declarations_blessed_d_.widgets.filemanagerelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3635](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3635)*
+*Defined in [declarations/blessed.d.ts:3568](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3568)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [FileManagerOptions](../interfaces/_declarations_blessed_d_.widgets.filemanageroptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [FileManagerOptions](../interfaces/_declarations_blessed_d_.widgets.filemanageroptions.md) |
 
-**Returns:** [FileManagerElement](../classes/_declarations_blessed_d_.widgets.filemanagerelement.md)
+**Returns:** *[FileManagerElement](../classes/_declarations_blessed_d_.widgets.filemanagerelement.md)*
 
 ___
-<a id="form"></a>
 
 ###  form
 
-▸ **form**<`TFormData`>(options?: *[FormOptions](../interfaces/_declarations_blessed_d_.widgets.formoptions.md)*): [FormElement](../classes/_declarations_blessed_d_.widgets.formelement.md)<`TFormData`>
+▸ **form**<**TFormData**>(`options?`: [FormOptions](../interfaces/_declarations_blessed_d_.widgets.formoptions.md)): *[FormElement](../classes/_declarations_blessed_d_.widgets.formelement.md)‹TFormData›*
 
-*Defined in [declarations/blessed.d.ts:3638](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3638)*
+*Defined in [declarations/blessed.d.ts:3571](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3571)*
 
 **Type parameters:**
 
-#### TFormData 
+▪ **TFormData**
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [FormOptions](../interfaces/_declarations_blessed_d_.widgets.formoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [FormOptions](../interfaces/_declarations_blessed_d_.widgets.formoptions.md) |
 
-**Returns:** [FormElement](../classes/_declarations_blessed_d_.widgets.formelement.md)<`TFormData`>
+**Returns:** *[FormElement](../classes/_declarations_blessed_d_.widgets.formelement.md)‹TFormData›*
 
 ___
-<a id="input"></a>
 
 ###  input
 
-▸ **input**(options?: *[InputOptions](../interfaces/_declarations_blessed_d_.widgets.inputoptions.md)*): [InputElement](../classes/_declarations_blessed_d_.widgets.inputelement.md)
+▸ **input**(`options?`: [InputOptions](../interfaces/_declarations_blessed_d_.widgets.inputoptions.md)): *[InputElement](../classes/_declarations_blessed_d_.widgets.inputelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3639](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3639)*
+*Defined in [declarations/blessed.d.ts:3572](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3572)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [InputOptions](../interfaces/_declarations_blessed_d_.widgets.inputoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [InputOptions](../interfaces/_declarations_blessed_d_.widgets.inputoptions.md) |
 
-**Returns:** [InputElement](../classes/_declarations_blessed_d_.widgets.inputelement.md)
+**Returns:** *[InputElement](../classes/_declarations_blessed_d_.widgets.inputelement.md)*
 
 ___
-<a id="layout"></a>
 
 ###  layout
 
-▸ **layout**(options?: *[LayoutOptions](../interfaces/_declarations_blessed_d_.widgets.layoutoptions.md)*): [LayoutElement](../classes/_declarations_blessed_d_.widgets.layoutelement.md)
+▸ **layout**(`options?`: [LayoutOptions](../interfaces/_declarations_blessed_d_.widgets.layoutoptions.md)): *[LayoutElement](../classes/_declarations_blessed_d_.widgets.layoutelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3655](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3655)*
+*Defined in [declarations/blessed.d.ts:3588](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3588)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [LayoutOptions](../interfaces/_declarations_blessed_d_.widgets.layoutoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [LayoutOptions](../interfaces/_declarations_blessed_d_.widgets.layoutoptions.md) |
 
-**Returns:** [LayoutElement](../classes/_declarations_blessed_d_.widgets.layoutelement.md)
+**Returns:** *[LayoutElement](../classes/_declarations_blessed_d_.widgets.layoutelement.md)*
 
 ___
-<a id="line"></a>
 
 ###  line
 
-▸ **line**(options?: *[LineOptions](../interfaces/_declarations_blessed_d_.widgets.lineoptions.md)*): [LineElement](../classes/_declarations_blessed_d_.widgets.lineelement.md)
+▸ **line**(`options?`: [LineOptions](../interfaces/_declarations_blessed_d_.widgets.lineoptions.md)): *[LineElement](../classes/_declarations_blessed_d_.widgets.lineelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3630](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3630)*
+*Defined in [declarations/blessed.d.ts:3563](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3563)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [LineOptions](../interfaces/_declarations_blessed_d_.widgets.lineoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [LineOptions](../interfaces/_declarations_blessed_d_.widgets.lineoptions.md) |
 
-**Returns:** [LineElement](../classes/_declarations_blessed_d_.widgets.lineelement.md)
+**Returns:** *[LineElement](../classes/_declarations_blessed_d_.widgets.lineelement.md)*
 
 ___
-<a id="list"></a>
 
 ###  list
 
-▸ **list**(options?: *[ListOptions](../interfaces/_declarations_blessed_d_.widgets.listoptions.md)<[ListElementStyle](../interfaces/_declarations_blessed_d_.widgets.listelementstyle.md)>*): [ListElement](../classes/_declarations_blessed_d_.widgets.listelement.md)
+▸ **list**(`options?`: [ListOptions](../interfaces/_declarations_blessed_d_.widgets.listoptions.md)‹[ListElementStyle](../interfaces/_declarations_blessed_d_.widgets.listelementstyle.md)›): *[ListElement](../classes/_declarations_blessed_d_.widgets.listelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3634](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3634)*
+*Defined in [declarations/blessed.d.ts:3567](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3567)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [ListOptions](../interfaces/_declarations_blessed_d_.widgets.listoptions.md)<[ListElementStyle](../interfaces/_declarations_blessed_d_.widgets.listelementstyle.md)> |
+Name | Type |
+------ | ------ |
+`options?` | [ListOptions](../interfaces/_declarations_blessed_d_.widgets.listoptions.md)‹[ListElementStyle](../interfaces/_declarations_blessed_d_.widgets.listelementstyle.md)› |
 
-**Returns:** [ListElement](../classes/_declarations_blessed_d_.widgets.listelement.md)
+**Returns:** *[ListElement](../classes/_declarations_blessed_d_.widgets.listelement.md)*
 
 ___
-<a id="listbar"></a>
 
 ###  listbar
 
-▸ **listbar**(options?: *[ListbarOptions](../interfaces/_declarations_blessed_d_.widgets.listbaroptions.md)*): [ListbarElement](../classes/_declarations_blessed_d_.widgets.listbarelement.md)
+▸ **listbar**(`options?`: [ListbarOptions](../interfaces/_declarations_blessed_d_.widgets.listbaroptions.md)): *[ListbarElement](../classes/_declarations_blessed_d_.widgets.listbarelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3637](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3637)*
+*Defined in [declarations/blessed.d.ts:3570](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3570)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [ListbarOptions](../interfaces/_declarations_blessed_d_.widgets.listbaroptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [ListbarOptions](../interfaces/_declarations_blessed_d_.widgets.listbaroptions.md) |
 
-**Returns:** [ListbarElement](../classes/_declarations_blessed_d_.widgets.listbarelement.md)
+**Returns:** *[ListbarElement](../classes/_declarations_blessed_d_.widgets.listbarelement.md)*
 
 ___
-<a id="listtable"></a>
 
 ###  listtable
 
-▸ **listtable**(options?: *[ListTableOptions](../interfaces/_declarations_blessed_d_.widgets.listtableoptions.md)*): [ListTableElement](../classes/_declarations_blessed_d_.widgets.listtableelement.md)
+▸ **listtable**(`options?`: [ListTableOptions](../interfaces/_declarations_blessed_d_.widgets.listtableoptions.md)): *[ListTableElement](../classes/_declarations_blessed_d_.widgets.listtableelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3636](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3636)*
+*Defined in [declarations/blessed.d.ts:3569](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3569)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [ListTableOptions](../interfaces/_declarations_blessed_d_.widgets.listtableoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [ListTableOptions](../interfaces/_declarations_blessed_d_.widgets.listtableoptions.md) |
 
-**Returns:** [ListTableElement](../classes/_declarations_blessed_d_.widgets.listtableelement.md)
+**Returns:** *[ListTableElement](../classes/_declarations_blessed_d_.widgets.listtableelement.md)*
 
 ___
-<a id="loading"></a>
 
 ###  loading
 
-▸ **loading**(options?: *[LoadingOptions](../interfaces/_declarations_blessed_d_.widgets.loadingoptions.md)*): [LoadingElement](../classes/_declarations_blessed_d_.widgets.loadingelement.md)
+▸ **loading**(`options?`: [LoadingOptions](../interfaces/_declarations_blessed_d_.widgets.loadingoptions.md)): *[LoadingElement](../classes/_declarations_blessed_d_.widgets.loadingelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3650](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3650)*
+*Defined in [declarations/blessed.d.ts:3583](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3583)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [LoadingOptions](../interfaces/_declarations_blessed_d_.widgets.loadingoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [LoadingOptions](../interfaces/_declarations_blessed_d_.widgets.loadingoptions.md) |
 
-**Returns:** [LoadingElement](../classes/_declarations_blessed_d_.widgets.loadingelement.md)
+**Returns:** *[LoadingElement](../classes/_declarations_blessed_d_.widgets.loadingelement.md)*
 
 ___
-<a id="log"></a>
 
 ###  log
 
-▸ **log**(options?: *[LogOptions](../interfaces/_declarations_blessed_d_.widgets.logoptions.md)*): [Log](../classes/_declarations_blessed_d_.widgets.log.md)
+▸ **log**(`options?`: [LogOptions](../interfaces/_declarations_blessed_d_.widgets.logoptions.md)): *[Log](../classes/_declarations_blessed_d_.widgets.log.md)*
 
-*Defined in [declarations/blessed.d.ts:3651](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3651)*
+*Defined in [declarations/blessed.d.ts:3584](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3584)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [LogOptions](../interfaces/_declarations_blessed_d_.widgets.logoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [LogOptions](../interfaces/_declarations_blessed_d_.widgets.logoptions.md) |
 
-**Returns:** [Log](../classes/_declarations_blessed_d_.widgets.log.md)
+**Returns:** *[Log](../classes/_declarations_blessed_d_.widgets.log.md)*
 
 ___
-<a id="message"></a>
 
 ###  message
 
-▸ **message**(options?: *[MessageOptions](../interfaces/_declarations_blessed_d_.widgets.messageoptions.md)*): [MessageElement](../classes/_declarations_blessed_d_.widgets.messageelement.md)
+▸ **message**(`options?`: [MessageOptions](../interfaces/_declarations_blessed_d_.widgets.messageoptions.md)): *[MessageElement](../classes/_declarations_blessed_d_.widgets.messageelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3649](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3649)*
+*Defined in [declarations/blessed.d.ts:3582](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3582)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [MessageOptions](../interfaces/_declarations_blessed_d_.widgets.messageoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [MessageOptions](../interfaces/_declarations_blessed_d_.widgets.messageoptions.md) |
 
-**Returns:** [MessageElement](../classes/_declarations_blessed_d_.widgets.messageelement.md)
+**Returns:** *[MessageElement](../classes/_declarations_blessed_d_.widgets.messageelement.md)*
 
 ___
-<a id="program"></a>
 
 ###  program
 
-▸ **program**(options?: *[IScreenOptions](../interfaces/_declarations_blessed_d_.widgets.iscreenoptions.md)*): [BlessedProgram](../classes/_declarations_blessedprogram_d_.blessedprogram.md)
+▸ **program**(`options?`: [IScreenOptions](../interfaces/_declarations_blessed_d_.widgets.iscreenoptions.md)): *[BlessedProgram](../classes/_declarations_blessedprogram_d_.blessedprogram.md)*
 
-*Defined in [declarations/blessed.d.ts:3653](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3653)*
+*Defined in [declarations/blessed.d.ts:3586](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3586)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [IScreenOptions](../interfaces/_declarations_blessed_d_.widgets.iscreenoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [IScreenOptions](../interfaces/_declarations_blessed_d_.widgets.iscreenoptions.md) |
 
-**Returns:** [BlessedProgram](../classes/_declarations_blessedprogram_d_.blessedprogram.md)
+**Returns:** *[BlessedProgram](../classes/_declarations_blessedprogram_d_.blessedprogram.md)*
 
 ___
-<a id="progressbar"></a>
 
 ###  progressbar
 
-▸ **progressbar**(options?: *[ProgressBarOptions](../interfaces/_declarations_blessed_d_.widgets.progressbaroptions.md)*): [ProgressBarElement](../classes/_declarations_blessed_d_.widgets.progressbarelement.md)
+▸ **progressbar**(`options?`: [ProgressBarOptions](../interfaces/_declarations_blessed_d_.widgets.progressbaroptions.md)): *[ProgressBarElement](../classes/_declarations_blessed_d_.widgets.progressbarelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3652](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3652)*
+*Defined in [declarations/blessed.d.ts:3585](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3585)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [ProgressBarOptions](../interfaces/_declarations_blessed_d_.widgets.progressbaroptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [ProgressBarOptions](../interfaces/_declarations_blessed_d_.widgets.progressbaroptions.md) |
 
-**Returns:** [ProgressBarElement](../classes/_declarations_blessed_d_.widgets.progressbarelement.md)
+**Returns:** *[ProgressBarElement](../classes/_declarations_blessed_d_.widgets.progressbarelement.md)*
 
 ___
-<a id="prompt"></a>
 
 ###  prompt
 
-▸ **prompt**(options?: *[PromptOptions](../interfaces/_declarations_blessed_d_.widgets.promptoptions.md)*): [PromptElement](../classes/_declarations_blessed_d_.widgets.promptelement.md)
+▸ **prompt**(`options?`: [PromptOptions](../interfaces/_declarations_blessed_d_.widgets.promptoptions.md)): *[PromptElement](../classes/_declarations_blessed_d_.widgets.promptelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3647](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3647)*
+*Defined in [declarations/blessed.d.ts:3580](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3580)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [PromptOptions](../interfaces/_declarations_blessed_d_.widgets.promptoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [PromptOptions](../interfaces/_declarations_blessed_d_.widgets.promptoptions.md) |
 
-**Returns:** [PromptElement](../classes/_declarations_blessed_d_.widgets.promptelement.md)
+**Returns:** *[PromptElement](../classes/_declarations_blessed_d_.widgets.promptelement.md)*
 
 ___
-<a id="question"></a>
 
 ###  question
 
-▸ **question**(options?: *[QuestionOptions](../interfaces/_declarations_blessed_d_.widgets.questionoptions.md)*): [QuestionElement](../classes/_declarations_blessed_d_.widgets.questionelement.md)
+▸ **question**(`options?`: [QuestionOptions](../interfaces/_declarations_blessed_d_.widgets.questionoptions.md)): *[QuestionElement](../classes/_declarations_blessed_d_.widgets.questionelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3648](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3648)*
+*Defined in [declarations/blessed.d.ts:3581](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3581)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [QuestionOptions](../interfaces/_declarations_blessed_d_.widgets.questionoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [QuestionOptions](../interfaces/_declarations_blessed_d_.widgets.questionoptions.md) |
 
-**Returns:** [QuestionElement](../classes/_declarations_blessed_d_.widgets.questionelement.md)
+**Returns:** *[QuestionElement](../classes/_declarations_blessed_d_.widgets.questionelement.md)*
 
 ___
-<a id="radiobutton"></a>
 
 ###  radiobutton
 
-▸ **radiobutton**(options?: *[RadioButtonOptions](../interfaces/_declarations_blessed_d_.widgets.radiobuttonoptions.md)*): [RadioButtonElement](../classes/_declarations_blessed_d_.widgets.radiobuttonelement.md)
+▸ **radiobutton**(`options?`: [RadioButtonOptions](../interfaces/_declarations_blessed_d_.widgets.radiobuttonoptions.md)): *[RadioButtonElement](../classes/_declarations_blessed_d_.widgets.radiobuttonelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3645](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3645)*
+*Defined in [declarations/blessed.d.ts:3578](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3578)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [RadioButtonOptions](../interfaces/_declarations_blessed_d_.widgets.radiobuttonoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [RadioButtonOptions](../interfaces/_declarations_blessed_d_.widgets.radiobuttonoptions.md) |
 
-**Returns:** [RadioButtonElement](../classes/_declarations_blessed_d_.widgets.radiobuttonelement.md)
+**Returns:** *[RadioButtonElement](../classes/_declarations_blessed_d_.widgets.radiobuttonelement.md)*
 
 ___
-<a id="radioset"></a>
 
 ###  radioset
 
-▸ **radioset**(options?: *[RadioSetOptions](../interfaces/_declarations_blessed_d_.widgets.radiosetoptions.md)*): [RadioSetElement](../classes/_declarations_blessed_d_.widgets.radiosetelement.md)
+▸ **radioset**(`options?`: [RadioSetOptions](../interfaces/_declarations_blessed_d_.widgets.radiosetoptions.md)): *[RadioSetElement](../classes/_declarations_blessed_d_.widgets.radiosetelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3644](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3644)*
+*Defined in [declarations/blessed.d.ts:3577](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3577)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [RadioSetOptions](../interfaces/_declarations_blessed_d_.widgets.radiosetoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [RadioSetOptions](../interfaces/_declarations_blessed_d_.widgets.radiosetoptions.md) |
 
-**Returns:** [RadioSetElement](../classes/_declarations_blessed_d_.widgets.radiosetelement.md)
+**Returns:** *[RadioSetElement](../classes/_declarations_blessed_d_.widgets.radiosetelement.md)*
 
 ___
-<a id="screen"></a>
 
 ###  screen
 
-▸ **screen**(options?: *[IScreenOptions](../interfaces/_declarations_blessed_d_.widgets.iscreenoptions.md)*): [Screen](../classes/_declarations_blessed_d_.widgets.screen.md)
+▸ **screen**(`options?`: [IScreenOptions](../interfaces/_declarations_blessed_d_.widgets.iscreenoptions.md)): *[Screen](../classes/_declarations_blessed_d_.widgets.screen.md)*
 
-*Defined in [declarations/blessed.d.ts:3627](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3627)*
+*Defined in [declarations/blessed.d.ts:3560](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3560)*
 
-*__inheritdoc__*: 
+**`inheritdoc`** 
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [IScreenOptions](../interfaces/_declarations_blessed_d_.widgets.iscreenoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [IScreenOptions](../interfaces/_declarations_blessed_d_.widgets.iscreenoptions.md) |
 
-**Returns:** [Screen](../classes/_declarations_blessed_d_.widgets.screen.md)
+**Returns:** *[Screen](../classes/_declarations_blessed_d_.widgets.screen.md)*
 
 ___
-<a id="scrollablebox"></a>
 
 ###  scrollablebox
 
-▸ **scrollablebox**(options?: *[BoxOptions](../interfaces/_declarations_blessed_d_.widgets.boxoptions.md)*): [BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)
+▸ **scrollablebox**(`options?`: [BoxOptions](../interfaces/_declarations_blessed_d_.widgets.boxoptions.md)): *[BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3631](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3631)*
+*Defined in [declarations/blessed.d.ts:3564](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3564)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [BoxOptions](../interfaces/_declarations_blessed_d_.widgets.boxoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [BoxOptions](../interfaces/_declarations_blessed_d_.widgets.boxoptions.md) |
 
-**Returns:** [BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)
+**Returns:** *[BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)*
 
 ___
-<a id="scrollabletext"></a>
 
 ###  scrollabletext
 
-▸ **scrollabletext**(options?: *[BoxOptions](../interfaces/_declarations_blessed_d_.widgets.boxoptions.md)*): [BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)
+▸ **scrollabletext**(`options?`: [BoxOptions](../interfaces/_declarations_blessed_d_.widgets.boxoptions.md)): *[BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3632](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3632)*
+*Defined in [declarations/blessed.d.ts:3565](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3565)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [BoxOptions](../interfaces/_declarations_blessed_d_.widgets.boxoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [BoxOptions](../interfaces/_declarations_blessed_d_.widgets.boxoptions.md) |
 
-**Returns:** [BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)
+**Returns:** *[BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)*
 
 ___
-<a id="table"></a>
 
 ###  table
 
-▸ **table**(options?: *[TableOptions](../interfaces/_declarations_blessed_d_.widgets.tableoptions.md)*): [TableElement](../classes/_declarations_blessed_d_.widgets.tableelement.md)
+▸ **table**(`options?`: [TableOptions](../interfaces/_declarations_blessed_d_.widgets.tableoptions.md)): *[TableElement](../classes/_declarations_blessed_d_.widgets.tableelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3646](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3646)*
+*Defined in [declarations/blessed.d.ts:3579](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3579)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [TableOptions](../interfaces/_declarations_blessed_d_.widgets.tableoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [TableOptions](../interfaces/_declarations_blessed_d_.widgets.tableoptions.md) |
 
-**Returns:** [TableElement](../classes/_declarations_blessed_d_.widgets.tableelement.md)
+**Returns:** *[TableElement](../classes/_declarations_blessed_d_.widgets.tableelement.md)*
 
 ___
-<a id="terminal"></a>
 
 ###  terminal
 
-▸ **terminal**(options?: *[TerminalOptions](../interfaces/_declarations_blessed_d_.widgets.terminaloptions.md)*): [TerminalElement](../classes/_declarations_blessed_d_.widgets.terminalelement.md)
+▸ **terminal**(`options?`: [TerminalOptions](../interfaces/_declarations_blessed_d_.widgets.terminaloptions.md)): *[TerminalElement](../classes/_declarations_blessed_d_.widgets.terminalelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3654](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3654)*
+*Defined in [declarations/blessed.d.ts:3587](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3587)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [TerminalOptions](../interfaces/_declarations_blessed_d_.widgets.terminaloptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [TerminalOptions](../interfaces/_declarations_blessed_d_.widgets.terminaloptions.md) |
 
-**Returns:** [TerminalElement](../classes/_declarations_blessed_d_.widgets.terminalelement.md)
+**Returns:** *[TerminalElement](../classes/_declarations_blessed_d_.widgets.terminalelement.md)*
 
 ___
-<a id="text"></a>
 
 ###  text
 
-▸ **text**(options?: *[TextOptions](../interfaces/_declarations_blessed_d_.widgets.textoptions.md)*): [TextElement](../classes/_declarations_blessed_d_.widgets.textelement.md)
+▸ **text**(`options?`: [TextOptions](../interfaces/_declarations_blessed_d_.widgets.textoptions.md)): *[TextElement](../classes/_declarations_blessed_d_.widgets.textelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3629](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3629)*
+*Defined in [declarations/blessed.d.ts:3562](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3562)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [TextOptions](../interfaces/_declarations_blessed_d_.widgets.textoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [TextOptions](../interfaces/_declarations_blessed_d_.widgets.textoptions.md) |
 
-**Returns:** [TextElement](../classes/_declarations_blessed_d_.widgets.textelement.md)
+**Returns:** *[TextElement](../classes/_declarations_blessed_d_.widgets.textelement.md)*
 
 ___
-<a id="textarea"></a>
 
 ###  textarea
 
-▸ **textarea**(options?: *[TextareaOptions](../interfaces/_declarations_blessed_d_.widgets.textareaoptions.md)*): [TextareaElement](../classes/_declarations_blessed_d_.widgets.textareaelement.md)
+▸ **textarea**(`options?`: [TextareaOptions](../interfaces/_declarations_blessed_d_.widgets.textareaoptions.md)): *[TextareaElement](../classes/_declarations_blessed_d_.widgets.textareaelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3640](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3640)*
+*Defined in [declarations/blessed.d.ts:3573](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3573)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [TextareaOptions](../interfaces/_declarations_blessed_d_.widgets.textareaoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [TextareaOptions](../interfaces/_declarations_blessed_d_.widgets.textareaoptions.md) |
 
-**Returns:** [TextareaElement](../classes/_declarations_blessed_d_.widgets.textareaelement.md)
+**Returns:** *[TextareaElement](../classes/_declarations_blessed_d_.widgets.textareaelement.md)*
 
 ___
-<a id="textbox"></a>
 
 ###  textbox
 
-▸ **textbox**(options?: *[TextboxOptions](../interfaces/_declarations_blessed_d_.widgets.textboxoptions.md)*): [TextboxElement](../classes/_declarations_blessed_d_.widgets.textboxelement.md)
+▸ **textbox**(`options?`: [TextboxOptions](../interfaces/_declarations_blessed_d_.widgets.textboxoptions.md)): *[TextboxElement](../classes/_declarations_blessed_d_.widgets.textboxelement.md)*
 
-*Defined in [declarations/blessed.d.ts:3641](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3641)*
+*Defined in [declarations/blessed.d.ts:3574](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3574)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` options | [TextboxOptions](../interfaces/_declarations_blessed_d_.widgets.textboxoptions.md) |
+Name | Type |
+------ | ------ |
+`options?` | [TextboxOptions](../interfaces/_declarations_blessed_d_.widgets.textboxoptions.md) |
 
-**Returns:** [TextboxElement](../classes/_declarations_blessed_d_.widgets.textboxelement.md)
-
-___
-
+**Returns:** *[TextboxElement](../classes/_declarations_blessed_d_.widgets.textboxelement.md)*

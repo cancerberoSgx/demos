@@ -1,14 +1,16 @@
-[accursed](../README.md) > ["jsx/types"](../modules/_jsx_types_.md) > [BeforeElementCreatedEvent](../interfaces/_jsx_types_.beforeelementcreatedevent.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx/types"](../modules/_jsx_types_.md) › [BeforeElementCreatedEvent](_jsx_types_.beforeelementcreatedevent.md)
 
-# Interface: BeforeElementCreatedEvent
+# Interface: BeforeElementCreatedEvent <**Options**>
 
-*__internal__*: 
+**`internal`** 
 
 ## Type parameters
-#### Options :  [ElementOptions](_declarations_blessed_d_.widgets.elementoptions.md)
+
+▪ **Options**: *[ElementOptions](_declarations_blessed_d_.widgets.elementoptions.md)*
+
 ## Hierarchy
 
-**BeforeElementCreatedEvent**
+* **BeforeElementCreatedEvent**
 
 ## Index
 
@@ -19,55 +21,44 @@
 * [name](_jsx_types_.beforeelementcreatedevent.md#name)
 * [options](_jsx_types_.beforeelementcreatedevent.md#options)
 
----
-
 ## Properties
-
-<a id="children"></a>
 
 ###  children
 
-**● children**: *(`string` \| `number` \| [BlessedElement](../classes/_declarations_blessed_d_.widgets.blessedelement.md)<`object`>)[]*
+• **children**: *string | number | [BlessedElement](../classes/_declarations_blessed_d_.widgets.blessedelement.md)‹object›[]*
 
-*Defined in [jsx/types.ts:283](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L283)*
+*Defined in [jsx/types.ts:283](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L283)*
 
 ___
-<a id="fn"></a>
 
 ###  fn
 
-**● fn**: *`function`*
+• **fn**: *function*
 
-*Defined in [jsx/types.ts:280](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L280)*
+*Defined in [jsx/types.ts:280](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L280)*
 
-#### Type declaration
-▸(options: *`Options`*): [Element](_jsx_types_.__global.jsx.element.md)
+#### Type declaration:
+
+▸ (`options`: Options): *[Element](_jsx_types_.__global.jsx.element.md)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| options | `Options` |
-
-**Returns:** [Element](_jsx_types_.__global.jsx.element.md)
+Name | Type |
+------ | ------ |
+`options` | Options |
 
 ___
-<a id="name"></a>
 
 ###  name
 
-**● name**: *`keyof IntrinsicElements`*
+• **name**: *keyof IntrinsicElements*
 
-*Defined in [jsx/types.ts:282](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L282)*
+*Defined in [jsx/types.ts:282](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L282)*
 
 ___
-<a id="options"></a>
 
 ###  options
 
-**● options**: *`Options`*
+• **options**: *Options*
 
-*Defined in [jsx/types.ts:281](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L281)*
-
-___
-
+*Defined in [jsx/types.ts:281](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L281)*

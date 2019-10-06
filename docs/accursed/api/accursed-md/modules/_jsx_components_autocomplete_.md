@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["jsx-components/autocomplete"](../modules/_jsx_components_autocomplete_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx-components/autocomplete"](_jsx_components_autocomplete_.md)
 
 # External module: "jsx-components/autocomplete"
 
@@ -11,6 +11,3 @@
 ### Interfaces
 
 * [P](../interfaces/_jsx_components_autocomplete_.p.md)
-
----
-

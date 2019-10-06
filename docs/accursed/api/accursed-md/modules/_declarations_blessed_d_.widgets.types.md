@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md) > [Widgets](../modules/_declarations_blessed_d_.widgets.md) > [Types](../modules/_declarations_blessed_d_.widgets.types.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["declarations/blessed.d"](_declarations_blessed_d_.md) › [Widgets](_declarations_blessed_d_.widgets.md) › [Types](_declarations_blessed_d_.widgets.types.md)
 
 # Module: Types
 
@@ -16,58 +16,56 @@
 ### Type aliases
 
 * [BorderType](_declarations_blessed_d_.widgets.types.md#bordertype)
+* [CursorShape](_declarations_blessed_d_.widgets.types.md#cursorshape)
 * [TAlign](_declarations_blessed_d_.widgets.types.md#talign)
 * [TMouseAction](_declarations_blessed_d_.widgets.types.md#tmouseaction)
 * [TPosition](_declarations_blessed_d_.widgets.types.md#tposition)
 * [TTopLeft](_declarations_blessed_d_.widgets.types.md#ttopleft)
 
----
-
 ## Type aliases
-
-<a id="bordertype"></a>
 
 ###  BorderType
 
-**Ƭ BorderType**: *`string`*
+Ƭ **BorderType**: *string*
 
-*Defined in [declarations/blessed.d.ts:68](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L68)*
+*Defined in [declarations/blessed.d.ts:69](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L69)*
 
 ___
-<a id="talign"></a>
+
+###  CursorShape
+
+Ƭ **CursorShape**: *"block" | "underline" | "line"*
+
+*Defined in [declarations/blessed.d.ts:100](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L100)*
+
+___
 
 ###  TAlign
 
-**Ƭ TAlign**: *"left" \| "center" \| "right"*
+Ƭ **TAlign**: *"left" | "center" | "right"*
 
-*Defined in [declarations/blessed.d.ts:121](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L121)*
+*Defined in [declarations/blessed.d.ts:123](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L123)*
 
 ___
-<a id="tmouseaction"></a>
 
 ###  TMouseAction
 
-**Ƭ TMouseAction**: *"mousedown" \| "mouseup" \| "mousemove" \| "wheelup" \| "wheeldown"*
+Ƭ **TMouseAction**: *"mousedown" | "mouseup" | "mousemove" | "wheelup" | "wheeldown"*
 
-*Defined in [declarations/blessed.d.ts:49](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L49)*
+*Defined in [declarations/blessed.d.ts:50](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L50)*
 
 ___
-<a id="tposition"></a>
 
 ###  TPosition
 
-**Ƭ TPosition**: *`string` \| `number`*
+Ƭ **TPosition**: *string | number*
 
-*Defined in [declarations/blessed.d.ts:47](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L47)*
+*Defined in [declarations/blessed.d.ts:48](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L48)*
 
 ___
-<a id="ttopleft"></a>
 
 ###  TTopLeft
 
-**Ƭ TTopLeft**: *`string` \| `number` \| "center"*
+Ƭ **TTopLeft**: *string | number | "center"*
 
-*Defined in [declarations/blessed.d.ts:45](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L45)*
-
-___
-
+*Defined in [declarations/blessed.d.ts:46](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L46)*

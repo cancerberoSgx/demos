@@ -1,54 +1,43 @@
-[accursed](../README.md) > ["util/debugNode"](../modules/_util_debugnode_.md) > [Options](../interfaces/_util_debugnode_.options.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["util/debugNode"](../modules/_util_debugnode_.md) › [Options](_util_debugnode_.options.md)
 
 # Interface: Options
 
 ## Hierarchy
 
-**Options**
+* **Options**
 
 ## Index
 
 ### Properties
 
-* [linkElements](_util_debugnode_.options.md#linkelements)
+* [linkElements](_util_debugnode_.options.md#optional-linkelements)
 
 ### Methods
 
-* [getNodeLabel](_util_debugnode_.options.md#getnodelabel)
-
----
+* [getNodeLabel](_util_debugnode_.options.md#optional-getnodelabel)
 
 ## Properties
 
-<a id="linkelements"></a>
+### `Optional` linkElements
 
-### `<Optional>` linkElements
+• **linkElements**? : *boolean*
 
-**● linkElements**: *`boolean`*
-
-*Defined in [util/debugNode.tsx:11](https://github.com/cancerberoSgx/accursed/blob/978b980/src/util/debugNode.tsx#L11)*
+*Defined in [util/debugNode.tsx:11](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/debugNode.tsx#L11)*
 
 if true blessed element will be associated in tree node as propety `blessedElement`
 
-___
-
 ## Methods
 
-<a id="getnodelabel"></a>
+### `Optional` getNodeLabel
 
-### `<Optional>` getNodeLabel
+▸ **getNodeLabel**(`n`: [Element](_jsx_types_.__global.jsx.element.md)): *string*
 
-▸ **getNodeLabel**(n: *[Element](_jsx_types_.__global.jsx.element.md)*): `string`
-
-*Defined in [util/debugNode.tsx:12](https://github.com/cancerberoSgx/accursed/blob/978b980/src/util/debugNode.tsx#L12)*
+*Defined in [util/debugNode.tsx:12](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/debugNode.tsx#L12)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| n | [Element](_jsx_types_.__global.jsx.element.md) |
+Name | Type |
+------ | ------ |
+`n` | [Element](_jsx_types_.__global.jsx.element.md) |
 
-**Returns:** `string`
-
-___
-
+**Returns:** *string*

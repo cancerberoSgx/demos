@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["jsx-components/if"](../modules/_jsx_components_if_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx-components/if"](_jsx_components_if_.md)
 
 # External module: "jsx-components/if"
 
@@ -8,20 +8,15 @@
 
 * [If](_jsx_components_if_.md#if)
 
----
-
 ## Functions
-
-<a id="if"></a>
 
 ###  If
 
-▸ **If**<`T`>(props: *`object`*): `any`
+▸ **If**<**T**>(`props`: object): *any*
 
-*Defined in [jsx-components/if.tsx:50](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/if.tsx#L50)*
+*Defined in [jsx-components/if.tsx:50](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/if.tsx#L50)*
 
-if as statement. children need to be in a function and the function accepts a parameter which value is given condition `c` but casted to NotFalsy so there's no need of type guards in the body. Example:
-
+if as statement. children need to be in a function and the function accepts a parameter which value is given condition `c` but casted to NotFalsy<C> so there's no need of type guards in the body. Example:
 ```
 <If c={type}>{type =>
 <select multiple={true}>{names[type].map(c =>
@@ -70,18 +65,16 @@ return <div>
 
 **Type parameters:**
 
-#### T :  `any`
+▪ **T**: *any*
+
 **Parameters:**
 
-**props: `object`**
+▪ **props**: *object*
 
-| Name | Type |
-| ------ | ------ |
-| c | `any` |
-| children | `function` |
-| `Optional` p | `T` |
+Name | Type |
+------ | ------ |
+`c` | any |
+`children` | function |
+`p?` | T |
 
-**Returns:** `any`
-
-___
-
+**Returns:** *any*

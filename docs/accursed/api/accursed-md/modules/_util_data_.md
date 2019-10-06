@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["util/data"](../modules/_util_data_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["util/data"](_util_data_.md)
 
 # External module: "util/data"
 
@@ -6,98 +6,115 @@
 
 ### Functions
 
-* [arr](_util_data_.md#arr)
+* [arr](_util_data_.md#const-arr)
 * [color](_util_data_.md#color)
-* [number](_util_data_.md#number)
-* [string](_util_data_.md#string)
-* [words](_util_data_.md#words)
-
----
+* [invertColor](_util_data_.md#invertcolor)
+* [number](_util_data_.md#const-number)
+* [randomHex](_util_data_.md#randomhex)
+* [string](_util_data_.md#const-string)
+* [words](_util_data_.md#const-words)
 
 ## Functions
 
-<a id="arr"></a>
+### `Const` arr
 
-### `<Const>` arr
+▸ **arr**(`a`: number, `b`: number): *any[]*
 
-▸ **arr**(a?: *`number`*, b?: *`number`*): `any`[]
-
-*Defined in [util/data.ts:1](https://github.com/cancerberoSgx/accursed/blob/978b980/src/util/data.ts#L1)*
+*Defined in [util/data.ts:1](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/data.ts#L1)*
 
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| `Default value` a | `number` |  number(10, 20) |
-| `Default value` b | `number` |  a |
+Name | Type | Default |
+------ | ------ | ------ |
+`a` | number |  number(10, 20) |
+`b` | number |  a |
 
-**Returns:** `any`[]
+**Returns:** *any[]*
 
 ___
-<a id="color"></a>
 
 ###  color
 
-▸ **color**(): `string`
+▸ **color**(): *string*
 
-*Defined in [util/data.ts:23](https://github.com/cancerberoSgx/accursed/blob/978b980/src/util/data.ts#L23)*
+*Defined in [util/data.ts:23](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/data.ts#L23)*
 
-**Returns:** `string`
+**Returns:** *string*
 
 ___
-<a id="number"></a>
 
-### `<Const>` number
+###  invertColor
 
-▸ **number**(a?: *`number`*, b?: *`number`*): `number`
+▸ **invertColor**(`hex`: any): *string*
 
-*Defined in [util/data.ts:22](https://github.com/cancerberoSgx/accursed/blob/978b980/src/util/data.ts#L22)*
+*Defined in [util/data.ts:32](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/data.ts#L32)*
 
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| `Default value` a | `number` | 10 |
-| `Default value` b | `number` |  a |
+Name | Type |
+------ | ------ |
+`hex` | any |
 
-**Returns:** `number`
+**Returns:** *string*
 
 ___
-<a id="string"></a>
 
-### `<Const>` string
+### `Const` number
 
-▸ **string**(length?: *`number`*): `string`
+▸ **number**(`a`: number, `b`: number): *number*
 
-*Defined in [util/data.ts:3](https://github.com/cancerberoSgx/accursed/blob/978b980/src/util/data.ts#L3)*
+*Defined in [util/data.ts:22](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/data.ts#L22)*
 
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| `Default value` length | `number` |  number(10, 20) |
+Name | Type | Default |
+------ | ------ | ------ |
+`a` | number | 10 |
+`b` | number |  a |
 
-**Returns:** `string`
+**Returns:** *number*
 
 ___
-<a id="words"></a>
 
-### `<Const>` words
+###  randomHex
 
-▸ **words**(wordCount?: *`number`*, wordLength?: *`number`*, wordCountB?: *`number`*, wordLengthB?: *`number`*): `string`[]
+▸ **randomHex**(): *string*
 
-*Defined in [util/data.ts:12](https://github.com/cancerberoSgx/accursed/blob/978b980/src/util/data.ts#L12)*
+*Defined in [util/data.ts:28](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/data.ts#L28)*
+
+**Returns:** *string*
+
+___
+
+### `Const` string
+
+▸ **string**(`length`: number): *string*
+
+*Defined in [util/data.ts:3](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/data.ts#L3)*
 
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| `Default value` wordCount | `number` |  number(10, 20) |
-| `Default value` wordLength | `number` |  number(5, 10) |
-| `Default value` wordCountB | `number` |  wordCount |
-| `Default value` wordLengthB | `number` |  wordLength |
+Name | Type | Default |
+------ | ------ | ------ |
+`length` | number |  number(10, 20) |
 
-**Returns:** `string`[]
+**Returns:** *string*
 
 ___
 
+### `Const` words
+
+▸ **words**(`wordCount`: number, `wordLength`: number, `wordCountB`: number, `wordLengthB`: number): *string[]*
+
+*Defined in [util/data.ts:12](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/data.ts#L12)*
+
+**Parameters:**
+
+Name | Type | Default |
+------ | ------ | ------ |
+`wordCount` | number |  number(10, 20) |
+`wordLength` | number |  number(5, 10) |
+`wordCountB` | number |  wordCount |
+`wordLengthB` | number |  wordLength |
+
+**Returns:** *string[]*

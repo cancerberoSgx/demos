@@ -1,19 +1,38 @@
-[accursed](../README.md) > ["jsx-components/listBar"](../modules/_jsx_components_listbar_.md) > [ListBar2](../classes/_jsx_components_listbar_.listbar2.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx-components/listBar"](../modules/_jsx_components_listbar_.md) › [ListBar2](_jsx_components_listbar_.listbar2.md)
 
-# Class: ListBar2
+# Class: ListBar2 <**S, P**>
 
-Example: `` ` ``jsx <ListBarCommand callback={() => { showInModal(screen, 'play') }}> play <ListBarCommand callback={() => { showInModal(screen, 'stop') }}> stop ...
+Example:
+```jsx
+<ListBar2 left="center">
+<ListBarCommand
+callback={() => {
+showInModal(screen, 'play')
+}}>
+play
+</ListBarCommand>
+<ListBarCommand
+callback={() => {
+showInModal(screen, 'stop')
+}}>
+stop
+</ListBarCommand>
+...
+</ListBar2>
 
-`` ` ``
+```
 
 ## Type parameters
-#### S 
-#### P 
+
+▪ **S**
+
+▪ **P**
+
 ## Hierarchy
 
- [Component](_jsx_component_.component.md)<[ListBarProps](../interfaces/_jsx_components_listbar_.listbarprops.md)>
+* [Component](_jsx_component_.component.md)‹[ListBarProps](../interfaces/_jsx_components_listbar_.listbarprops.md)›
 
-**↳ ListBar2**
+  ↳ **ListBar2**
 
 ## Index
 
@@ -25,10 +44,10 @@ Example: `` ` ``jsx <ListBarCommand callback={() => { showInModal(screen, 'play'
 
 * [_jsxChildrenProps](_jsx_components_listbar_.listbar2.md#_jsxchildrenprops)
 * [_saveJSXChildrenProps](_jsx_components_listbar_.listbar2.md#_savejsxchildrenprops)
-* [blessedElement](_jsx_components_listbar_.listbar2.md#blessedelement)
+* [blessedElement](_jsx_components_listbar_.listbar2.md#protected-blessedelement)
 * [dontEmitAction](_jsx_components_listbar_.listbar2.md#dontemitaction)
-* [props](_jsx_components_listbar_.listbar2.md#props)
-* [state](_jsx_components_listbar_.listbar2.md#state)
+* [props](_jsx_components_listbar_.listbar2.md#protected-props)
+* [state](_jsx_components_listbar_.listbar2.md#protected-state)
 
 ### Accessors
 
@@ -47,523 +66,511 @@ Example: `` ` ``jsx <ListBarCommand callback={() => { showInModal(screen, 'play'
 * [filterDescendants](_jsx_components_listbar_.listbar2.md#filterdescendants)
 * [findChildren](_jsx_components_listbar_.listbar2.md#findchildren)
 * [findDescendant](_jsx_components_listbar_.listbar2.md#finddescendant)
+* [findDescendantNamed](_jsx_components_listbar_.listbar2.md#finddescendantnamed)
 * [getContent](_jsx_components_listbar_.listbar2.md#getcontent)
 * [getDescendantNamed](_jsx_components_listbar_.listbar2.md#getdescendantnamed)
 * [getElementData](_jsx_components_listbar_.listbar2.md#getelementdata)
-* [handleAction](_jsx_components_listbar_.listbar2.md#handleaction)
-* [handleSelectItem](_jsx_components_listbar_.listbar2.md#handleselectitem)
-* [installHandlers](_jsx_components_listbar_.listbar2.md#installhandlers)
+* [handleAction](_jsx_components_listbar_.listbar2.md#protected-handleaction)
+* [handleSelectItem](_jsx_components_listbar_.listbar2.md#protected-handleselectitem)
+* [installHandlers](_jsx_components_listbar_.listbar2.md#protected-installhandlers)
 * [render](_jsx_components_listbar_.listbar2.md#render)
 * [replaceChildren](_jsx_components_listbar_.listbar2.md#replacechildren)
 * [select](_jsx_components_listbar_.listbar2.md#select)
 * [visitDescendants](_jsx_components_listbar_.listbar2.md#visitdescendants)
 
----
-
 ## Constructors
-
-<a id="constructor"></a>
 
 ###  constructor
 
-⊕ **new ListBar2**(p: *`any`*, s: *`any`*): [ListBar2](_jsx_components_listbar_.listbar2.md)
+\+ **new ListBar2**(`p`: any, `s`: any): *[ListBar2](_jsx_components_listbar_.listbar2.md)*
 
 *Overrides [Component](_jsx_component_.component.md).[constructor](_jsx_component_.component.md#constructor)*
 
-*Defined in [jsx-components/listBar.tsx:58](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/listBar.tsx#L58)*
+*Defined in [jsx-components/listBar.tsx:58](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L58)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| p | `any` |
-| s | `any` |
+Name | Type |
+------ | ------ |
+`p` | any |
+`s` | any |
 
-**Returns:** [ListBar2](_jsx_components_listbar_.listbar2.md)
-
-___
+**Returns:** *[ListBar2](_jsx_components_listbar_.listbar2.md)*
 
 ## Properties
 
-<a id="_jsxchildrenprops"></a>
-
 ###  _jsxChildrenProps
 
-**● _jsxChildrenProps**: *`any`* =  undefined
+• **_jsxChildrenProps**: *any* =  undefined
 
 *Inherited from [Component](_jsx_component_.component.md).[_jsxChildrenProps](_jsx_component_.component.md#_jsxchildrenprops)*
 
-*Defined in [jsx/component.ts:35](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L35)*
+*Defined in [jsx/component.ts:35](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L35)*
 
 ___
-<a id="_savejsxchildrenprops"></a>
 
 ###  _saveJSXChildrenProps
 
-**● _saveJSXChildrenProps**: *`boolean`* = true
+• **_saveJSXChildrenProps**: *boolean* = true
 
 *Overrides [Component](_jsx_component_.component.md).[_saveJSXChildrenProps](_jsx_component_.component.md#_savejsxchildrenprops)*
 
-*Defined in [jsx-components/listBar.tsx:57](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/listBar.tsx#L57)*
+*Defined in [jsx-components/listBar.tsx:57](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L57)*
 
 ___
-<a id="blessedelement"></a>
 
-### `<Protected>` blessedElement
+### `Protected` blessedElement
 
-**● blessedElement**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)* =  undefined as any
+• **blessedElement**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)* =  undefined as any
 
-*Inherited from [Component](_jsx_component_.component.md).[blessedElement](_jsx_component_.component.md#blessedelement)*
+*Inherited from [Component](_jsx_component_.component.md).[blessedElement](_jsx_component_.component.md#protected-blessedelement)*
 
-*Defined in [jsx/component.ts:42](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L42)*
+*Defined in [jsx/component.ts:42](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L42)*
 
 All class elements will have a reference to its rendered blessed element
 
 ___
-<a id="dontemitaction"></a>
 
 ###  dontEmitAction
 
-**● dontEmitAction**: *`any`*
+• **dontEmitAction**: *any*
 
-*Defined in [jsx-components/listBar.tsx:58](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/listBar.tsx#L58)*
-
-___
-<a id="props"></a>
-
-### `<Protected>` props
-
-**● props**: *`P`*
-
-*Inherited from [Component](_jsx_component_.component.md).[props](_jsx_component_.component.md#props)*
-
-*Defined in [jsx/component.ts:28](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L28)*
+*Defined in [jsx-components/listBar.tsx:58](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L58)*
 
 ___
-<a id="state"></a>
 
-### `<Protected>` state
+### `Protected` props
 
-**● state**: *`S`*
+• **props**: *P*
 
-*Inherited from [Component](_jsx_component_.component.md).[state](_jsx_component_.component.md#state)*
+*Inherited from [Component](_jsx_component_.component.md).[props](_jsx_component_.component.md#protected-props)*
 
-*Defined in [jsx/component.ts:28](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L28)*
+*Defined in [jsx/component.ts:28](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L28)*
 
 ___
+
+### `Protected` state
+
+• **state**: *S*
+
+*Inherited from [Component](_jsx_component_.component.md).[state](_jsx_component_.component.md#protected-state)*
+
+*Defined in [jsx/component.ts:28](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L28)*
 
 ## Accessors
 
-<a id="element"></a>
-
 ###  element
 
-**get element**(): [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)<`object`>
+• **get element**(): *[BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)‹object›*
 
 *Inherited from [Component](_jsx_component_.component.md).[element](_jsx_component_.component.md#element)*
 
-*Defined in [jsx/component.ts:44](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L44)*
+*Defined in [jsx/component.ts:44](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L44)*
 
-**Returns:** [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)<`object`>
+**Returns:** *[BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)‹object›*
 
 ___
-<a id="listbar"></a>
 
 ###  listBar
 
-**get listBar**(): [ListBar](../modules/_blessedtypes_.md#listbar)
+• **get listBar**(): *[ListBar](../modules/_blessedtypes_.md#listbar)*
 
-*Defined in [jsx-components/listBar.tsx:147](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/listBar.tsx#L147)*
+*Defined in [jsx-components/listBar.tsx:147](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L147)*
 
-**Returns:** [ListBar](../modules/_blessedtypes_.md#listbar)
+**Returns:** *[ListBar](../modules/_blessedtypes_.md#listbar)*
 
 ___
-<a id="screen"></a>
 
 ###  screen
 
-**get screen**(): [Screen](_declarations_blessed_d_.widgets.screen.md)
+• **get screen**(): *[Screen](_declarations_blessed_d_.widgets.screen.md)*
 
 *Inherited from [Component](_jsx_component_.component.md).[screen](_jsx_component_.component.md#screen)*
 
-*Defined in [jsx/component.ts:80](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L80)*
+*Defined in [jsx/component.ts:84](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L84)*
 
-**Returns:** [Screen](_declarations_blessed_d_.widgets.screen.md)
+**Returns:** *[Screen](_declarations_blessed_d_.widgets.screen.md)*
 
 ___
-<a id="selectedindex"></a>
 
 ###  selectedIndex
 
-**get selectedIndex**(): `number`
+• **get selectedIndex**(): *number*
 
-*Defined in [jsx-components/listBar.tsx:151](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/listBar.tsx#L151)*
+*Defined in [jsx-components/listBar.tsx:151](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L151)*
 
-**Returns:** `number`
+**Returns:** *number*
 
 ___
-<a id="selectedtext"></a>
 
 ###  selectedText
 
-**get selectedText**(): `string`
+• **get selectedText**(): *string*
 
-*Defined in [jsx-components/listBar.tsx:155](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/listBar.tsx#L155)*
+*Defined in [jsx-components/listBar.tsx:155](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L155)*
 
-**Returns:** `string`
+**Returns:** *string*
 
 ___
-<a id="type"></a>
 
 ###  type
 
-**get type**(): `string`
+• **get type**(): *string*
 
 *Inherited from [Component](_jsx_component_.component.md).[type](_jsx_component_.component.md#type)*
 
-*Defined in [jsx/component.ts:51](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L51)*
+*Defined in [jsx/component.ts:51](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L51)*
 
 return the type name of ths component container blessed element
 
-**Returns:** `string`
-
-___
+**Returns:** *string*
 
 ## Methods
 
-<a id="addcommand"></a>
-
 ###  addCommand
 
-▸ **addCommand**(c: *[Command](../interfaces/_jsx_components_listbar_.command.md)*, options?: *`object`*): `void`
+▸ **addCommand**(`c`: [Command](../interfaces/_jsx_components_listbar_.command.md), `options`: object): *void*
 
-*Defined in [jsx-components/listBar.tsx:140](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/listBar.tsx#L140)*
+*Defined in [jsx-components/listBar.tsx:140](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L140)*
 
 **Parameters:**
 
-**c: [Command](../interfaces/_jsx_components_listbar_.command.md)**
+▪ **c**: *[Command](../interfaces/_jsx_components_listbar_.command.md)*
 
-**`Default value` options: `object`**
+▪`Default value`  **options**: *object*=  { dontRenderScreen: false }
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| dontRenderScreen | `boolean` | false |
+Name | Type | Default |
+------ | ------ | ------ |
+`dontRenderScreen` | boolean | false |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="execute"></a>
 
 ###  execute
 
-▸ **execute**(index: *`number`*, options?: *`object`*): `void`
+▸ **execute**(`index`: number, `options`: object): *void*
 
-*Defined in [jsx-components/listBar.tsx:136](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/listBar.tsx#L136)*
+*Defined in [jsx-components/listBar.tsx:136](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L136)*
 
-This is equivalent to the user executing a command by pressing enter, clicking it or pressing one of the commands [keys](../interfaces/_jsx_types_.__global.jsx.reactnodearray.md#keys).
+This is equivalent to the user executing a command by pressing enter,  clicking it or pressing one of the commands [[keys]].
 
 **Parameters:**
 
-**index: `number`**
+▪ **index**: *number*
 
-**`Default value` options: `object`**
+▪`Default value`  **options**: *object*=  { dontEmit: false }
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` dontEmit | `boolean` |
+Name | Type |
+------ | ------ |
+`dontEmit?` | boolean |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="filterchildren"></a>
 
 ###  filterChildren
 
-▸ **filterChildren**<`T`>(p: *[ElementPredicate](../modules/_blessed_node_.md#elementpredicate)*): `T`[]
+▸ **filterChildren**<**T**>(`p`: [ElementPredicate](../modules/_blessed_node_.md#elementpredicate)): *T[]*
 
 *Inherited from [Component](_jsx_component_.component.md).[filterChildren](_jsx_component_.component.md#filterchildren)*
 
-*Defined in [jsx/component.ts:75](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L75)*
+*Defined in [jsx/component.ts:79](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L79)*
 
 **Type parameters:**
 
-#### T :  [Element](../interfaces/_jsx_types_.__global.jsx.element.md)
+▪ **T**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| p | [ElementPredicate](../modules/_blessed_node_.md#elementpredicate) |
+Name | Type |
+------ | ------ |
+`p` | [ElementPredicate](../modules/_blessed_node_.md#elementpredicate) |
 
-**Returns:** `T`[]
+**Returns:** *T[]*
 
 ___
-<a id="filterdescendants"></a>
 
 ###  filterDescendants
 
-▸ **filterDescendants**<`T`>(p: *[ElementPredicate](../modules/_blessed_node_.md#elementpredicate)*): `T`[]
+▸ **filterDescendants**<**T**>(`p`: [ElementPredicate](../modules/_blessed_node_.md#elementpredicate)): *T[]*
 
 *Inherited from [Component](_jsx_component_.component.md).[filterDescendants](_jsx_component_.component.md#filterdescendants)*
 
-*Defined in [jsx/component.ts:67](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L67)*
+*Defined in [jsx/component.ts:71](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L71)*
 
 **Type parameters:**
 
-#### T :  [Element](../interfaces/_jsx_types_.__global.jsx.element.md)
+▪ **T**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| p | [ElementPredicate](../modules/_blessed_node_.md#elementpredicate) |
+Name | Type |
+------ | ------ |
+`p` | [ElementPredicate](../modules/_blessed_node_.md#elementpredicate) |
 
-**Returns:** `T`[]
+**Returns:** *T[]*
 
 ___
-<a id="findchildren"></a>
 
 ###  findChildren
 
-▸ **findChildren**<`T`>(p: *[ElementPredicate](../modules/_blessed_node_.md#elementpredicate)*): `T` \| `undefined`
+▸ **findChildren**<**T**>(`p`: [ElementPredicate](../modules/_blessed_node_.md#elementpredicate)): *T | undefined*
 
 *Inherited from [Component](_jsx_component_.component.md).[findChildren](_jsx_component_.component.md#findchildren)*
 
-*Defined in [jsx/component.ts:71](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L71)*
+*Defined in [jsx/component.ts:75](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L75)*
 
 **Type parameters:**
 
-#### T :  [Element](../interfaces/_jsx_types_.__global.jsx.element.md)
+▪ **T**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| p | [ElementPredicate](../modules/_blessed_node_.md#elementpredicate) |
+Name | Type |
+------ | ------ |
+`p` | [ElementPredicate](../modules/_blessed_node_.md#elementpredicate) |
 
-**Returns:** `T` \| `undefined`
+**Returns:** *T | undefined*
 
 ___
-<a id="finddescendant"></a>
 
 ###  findDescendant
 
-▸ **findDescendant**<`T`>(p: *[ElementPredicate](../modules/_blessed_node_.md#elementpredicate)*): `T` \| `undefined`
+▸ **findDescendant**<**T**>(`p`: [ElementPredicate](../modules/_blessed_node_.md#elementpredicate)): *T | undefined*
 
 *Inherited from [Component](_jsx_component_.component.md).[findDescendant](_jsx_component_.component.md#finddescendant)*
 
-*Defined in [jsx/component.ts:63](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L63)*
+*Defined in [jsx/component.ts:63](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L63)*
 
 **Type parameters:**
 
-#### T :  [Element](../interfaces/_jsx_types_.__global.jsx.element.md)
+▪ **T**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| p | [ElementPredicate](../modules/_blessed_node_.md#elementpredicate) |
+Name | Type |
+------ | ------ |
+`p` | [ElementPredicate](../modules/_blessed_node_.md#elementpredicate) |
 
-**Returns:** `T` \| `undefined`
+**Returns:** *T | undefined*
 
 ___
-<a id="getcontent"></a>
+
+###  findDescendantNamed
+
+▸ **findDescendantNamed**<**T**>(`name`: string): *T | undefined*
+
+*Inherited from [Component](_jsx_component_.component.md).[findDescendantNamed](_jsx_component_.component.md#finddescendantnamed)*
+
+*Defined in [jsx/component.ts:67](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L67)*
+
+**Type parameters:**
+
+▪ **T**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`name` | string |
+
+**Returns:** *T | undefined*
+
+___
 
 ###  getContent
 
-▸ **getContent**(options?: *`object`*): `string`
+▸ **getContent**(`options`: object): *string*
 
 *Inherited from [Component](_jsx_component_.component.md).[getContent](_jsx_component_.component.md#getcontent)*
 
-*Defined in [jsx/component.ts:100](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L100)*
+*Defined in [jsx/component.ts:104](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L104)*
 
-Returns the text content of given node and all its children, in order. By default stripped from ansi escape chars and trimmed, and separated by space, but is configurable through options.
+Returns the text content of given node and all its children, in order. By default stripped from ansi
+escape chars and trimmed, and separated by space, but is configurable through options.
 
 **Parameters:**
 
-**`Default value` options: `object`**
+▪`Default value`  **options**: *object*=  {}
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` childrenLast | `boolean` |
-| `Optional` dontStrip | `boolean` |
-| `Optional` dontTrim | `boolean` |
+Name | Type |
+------ | ------ |
+`childrenLast?` | boolean |
+`dontStrip?` | boolean |
+`dontTrim?` | boolean |
 
-**Returns:** `string`
+**Returns:** *string*
 
 ___
-<a id="getdescendantnamed"></a>
 
 ###  getDescendantNamed
 
-▸ **getDescendantNamed**<`T`>(n: *`string`*): `T` \| `undefined`
+▸ **getDescendantNamed**<**T**>(`n`: string): *T | undefined*
 
 *Inherited from [Component](_jsx_component_.component.md).[getDescendantNamed](_jsx_component_.component.md#getdescendantnamed)*
 
-*Defined in [jsx/component.ts:104](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L104)*
+*Defined in [jsx/component.ts:108](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L108)*
 
 **Type parameters:**
 
-#### T :  [Element](../interfaces/_jsx_types_.__global.jsx.element.md)
+▪ **T**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| n | `string` |
+Name | Type |
+------ | ------ |
+`n` | string |
 
-**Returns:** `T` \| `undefined`
+**Returns:** *T | undefined*
 
 ___
-<a id="getelementdata"></a>
 
 ###  getElementData
 
-▸ **getElementData**<`T`>(key: *`string`*): `T`
+▸ **getElementData**<**T**>(`key`: string): *T*
 
 *Inherited from [Component](_jsx_component_.component.md).[getElementData](_jsx_component_.component.md#getelementdata)*
 
-*Defined in [jsx/component.ts:55](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L55)*
+*Defined in [jsx/component.ts:55](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L55)*
 
 **Type parameters:**
 
-#### T 
-**Parameters:**
-
-| Name | Type |
-| ------ | ------ |
-| key | `string` |
-
-**Returns:** `T`
-
-___
-<a id="handleaction"></a>
-
-### `<Protected>` handleAction
-
-▸ **handleAction**(index: *`number`*, item: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*): `void`
-
-*Defined in [jsx-components/listBar.tsx:109](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/listBar.tsx#L109)*
+▪ **T**
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| index | `number` |
-| item | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) |
+Name | Type |
+------ | ------ |
+`key` | string |
 
-**Returns:** `void`
+**Returns:** *T*
 
 ___
-<a id="handleselectitem"></a>
 
-### `<Protected>` handleSelectItem
+### `Protected` handleAction
 
-▸ **handleSelectItem**(index: *`number`*, item: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*): `void`
+▸ **handleAction**(`index`: number, `item`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)): *void*
 
-*Defined in [jsx-components/listBar.tsx:115](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/listBar.tsx#L115)*
+*Defined in [jsx-components/listBar.tsx:109](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L109)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| index | `number` |
-| item | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) |
+Name | Type |
+------ | ------ |
+`index` | number |
+`item` | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="installhandlers"></a>
 
-### `<Protected>` installHandlers
+### `Protected` handleSelectItem
 
-▸ **installHandlers**(c: *[ListBar](../modules/_blessedtypes_.md#listbar)*): `void`
+▸ **handleSelectItem**(`index`: number, `item`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)): *void*
 
-*Defined in [jsx-components/listBar.tsx:104](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/listBar.tsx#L104)*
+*Defined in [jsx-components/listBar.tsx:115](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L115)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| c | [ListBar](../modules/_blessedtypes_.md#listbar) |
+Name | Type |
+------ | ------ |
+`index` | number |
+`item` | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="render"></a>
+
+### `Protected` installHandlers
+
+▸ **installHandlers**(`c`: [ListBar](../modules/_blessedtypes_.md#listbar)): *void*
+
+*Defined in [jsx-components/listBar.tsx:104](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L104)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`c` | [ListBar](../modules/_blessedtypes_.md#listbar) |
+
+**Returns:** *void*
+
+___
 
 ###  render
 
-▸ **render**(): [Element](../interfaces/_jsx_types_.__global.jsx.element.md)<`P`>
+▸ **render**(): *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)‹P›*
 
-*Overrides [Component](_jsx_component_.component.md).[render](_jsx_component_.component.md#render)*
+*Overrides [Component](_jsx_component_.component.md).[render](_jsx_component_.component.md#abstract-render)*
 
-*Defined in [jsx-components/listBar.tsx:66](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/listBar.tsx#L66)*
+*Defined in [jsx-components/listBar.tsx:66](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L66)*
 
-**Returns:** [Element](../interfaces/_jsx_types_.__global.jsx.element.md)<`P`>
+**Returns:** *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)‹P›*
 
 ___
-<a id="replacechildren"></a>
 
 ###  replaceChildren
 
-▸ **replaceChildren**(newChildren: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)[]*, options?: *`object`*): `void`
+▸ **replaceChildren**(`newChildren`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)[], `options`: object): *void*
 
 *Inherited from [Component](_jsx_component_.component.md).[replaceChildren](_jsx_component_.component.md#replacechildren)*
 
-*Defined in [jsx/component.ts:89](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L89)*
+*Defined in [jsx/component.ts:93](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L93)*
 
-Hot replace all children on this node with given \[\[newChildren\]\] array elements. This is a visual operation, and only should eb performed when the component need to implement a radicals different view dynamically since it couldnt costly.
+ Hot replace all children on this node with given [[newChildren]] array elements. This is a visual
+ operation, and only should eb performed when the component need to implement a radicals different view
+ dynamically since it couldnt costly.
 
 **Parameters:**
 
-**newChildren: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)[]**
+▪ **newChildren**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)[]*
 
-**`Default value` options: `object`**
+▪`Default value`  **options**: *object*=  { mode: 'careful' }
 
-| Name | Type |
-| ------ | ------ |
-| mode | "quickly" \| "careful" \| "dontRender" |
+Name | Type |
+------ | ------ |
+`mode` | "quickly" &#124; "careful" &#124; "dontRender" |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="select"></a>
 
 ###  select
 
-▸ **select**(indexOrText: *`number` \| `string`*, options?: *`object`*): `void`
+▸ **select**(`indexOrText`: number | string, `options`: object): *void*
 
-*Defined in [jsx-components/listBar.tsx:124](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/listBar.tsx#L124)*
+*Defined in [jsx-components/listBar.tsx:124](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L124)*
 
 Will focus one of the list items. This won't call the callback, is the same action as moving though the list using the arrow keys.
 
 **Parameters:**
 
-**indexOrText: `number` \| `string`**
+▪ **indexOrText**: *number | string*
 
-**`Default value` options: `object`**
+▪`Default value`  **options**: *object*=  { dontEmit: false }
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` dontEmit | `boolean` |
+Name | Type |
+------ | ------ |
+`dontEmit?` | boolean |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="visitdescendants"></a>
 
 ###  visitDescendants
 
-▸ **visitDescendants**(v: *[Visitor](../modules/_blessed_node_.md#visitor)*, o?: *[VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md)*): `boolean`
+▸ **visitDescendants**(`v`: [Visitor](../modules/_blessed_node_.md#visitor), `o`: [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md)): *boolean*
 
 *Inherited from [Component](_jsx_component_.component.md).[visitDescendants](_jsx_component_.component.md#visitdescendants)*
 
-*Defined in [jsx/component.ts:59](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/component.ts#L59)*
+*Defined in [jsx/component.ts:59](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L59)*
 
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| v | [Visitor](../modules/_blessed_node_.md#visitor) | - |
-| `Default value` o | [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md) |  {} |
+Name | Type | Default |
+------ | ------ | ------ |
+`v` | [Visitor](../modules/_blessed_node_.md#visitor) | - |
+`o` | [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md) |  {} |
 
-**Returns:** `boolean`
-
-___
-
+**Returns:** *boolean*

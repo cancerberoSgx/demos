@@ -1,10 +1,10 @@
-[accursed](../README.md) > ["declarations/blessedProgram.d"](../modules/_declarations_blessedprogram_d_.md) > [GpmEvent](../interfaces/_declarations_blessedprogram_d_.gpmevent.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["declarations/blessedProgram.d"](../modules/_declarations_blessedprogram_d_.md) › [GpmEvent](_declarations_blessedprogram_d_.gpmevent.md)
 
 # Interface: GpmEvent
 
 ## Hierarchy
 
-**GpmEvent**
+* **GpmEvent**
 
 ## Index
 
@@ -21,98 +21,82 @@
 * [x](_declarations_blessedprogram_d_.gpmevent.md#x)
 * [y](_declarations_blessedprogram_d_.gpmevent.md#y)
 
----
-
 ## Properties
-
-<a id="action"></a>
 
 ###  action
 
-**● action**: *[TMouseAction](../modules/_declarations_blessed_d_.widgets.types.md#tmouseaction) \| "mousedown" \| "mouseup" \| "connect" \| "mousewheel" \| "data" \| "move" \| "dragbtndown" \| "dblclick" \| "btnup" \| "click" \| "error"*
+• **action**: *[TMouseAction](../modules/_declarations_blessed_d_.widgets.types.md#tmouseaction) | "mousedown" | "mouseup" | "connect" | "mousewheel" | "data" | "move" | "dragbtndown" | "dblclick" | "btnup" | "click" | "error"*
 
-*Defined in [declarations/blessedProgram.d.ts:68](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L68)*
+*Defined in [declarations/blessedProgram.d.ts:77](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L77)*
 
 ___
-<a id="button"></a>
 
 ###  button
 
-**● button**: *"left" \| "middle" \| "right"*
+• **button**: *"left" | "middle" | "right"*
 
-*Defined in [declarations/blessedProgram.d.ts:81](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L81)*
+*Defined in [declarations/blessedProgram.d.ts:90](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L90)*
 
 ___
-<a id="ctrl"></a>
 
 ###  ctrl
 
-**● ctrl**: *`boolean`*
+• **ctrl**: *boolean*
 
-*Defined in [declarations/blessedProgram.d.ts:87](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L87)*
+*Defined in [declarations/blessedProgram.d.ts:96](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L96)*
 
 ___
-<a id="meta"></a>
 
 ###  meta
 
-**● meta**: *`boolean`*
+• **meta**: *boolean*
 
-*Defined in [declarations/blessedProgram.d.ts:86](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L86)*
+*Defined in [declarations/blessedProgram.d.ts:95](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L95)*
 
 ___
-<a id="name"></a>
 
 ###  name
 
-**● name**: *"mouse" \| `""`*
+• **name**: *"mouse" | ""*
 
-*Defined in [declarations/blessedProgram.d.ts:66](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L66)*
+*Defined in [declarations/blessedProgram.d.ts:75](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L75)*
 
 ___
-<a id="raw"></a>
 
 ###  raw
 
-**● raw**: *[`number`, `number`, `number`, `number`]*
+• **raw**: *[number, number, number, number]*
 
-*Defined in [declarations/blessedProgram.d.ts:82](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L82)*
+*Defined in [declarations/blessedProgram.d.ts:91](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L91)*
 
 ___
-<a id="shift"></a>
 
 ###  shift
 
-**● shift**: *`boolean`*
+• **shift**: *boolean*
 
-*Defined in [declarations/blessedProgram.d.ts:85](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L85)*
+*Defined in [declarations/blessedProgram.d.ts:94](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L94)*
 
 ___
-<a id="type"></a>
 
 ###  type
 
-**● type**: *"GPM"*
+• **type**: *"GPM"*
 
-*Defined in [declarations/blessedProgram.d.ts:67](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L67)*
+*Defined in [declarations/blessedProgram.d.ts:76](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L76)*
 
 ___
-<a id="x"></a>
 
 ###  x
 
-**● x**: *`number`*
+• **x**: *number*
 
-*Defined in [declarations/blessedProgram.d.ts:83](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L83)*
+*Defined in [declarations/blessedProgram.d.ts:92](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L92)*
 
 ___
-<a id="y"></a>
 
 ###  y
 
-**● y**: *`number`*
+• **y**: *number*
 
-*Defined in [declarations/blessedProgram.d.ts:84](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L84)*
-
-___
-
+*Defined in [declarations/blessedProgram.d.ts:93](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L93)*

@@ -1,22 +1,24 @@
-[accursed](../README.md) > ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md) > [widget](../modules/_declarations_blessed_d_.widget.md) > [Message](../classes/_declarations_blessed_d_.widget.message.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md) › [widget](../modules/_declarations_blessed_d_.widget.md) › [Message](_declarations_blessed_d_.widget.message.md)
 
-# Class: Message
+# Class: Message <**Options**>
 
 ## Type parameters
-#### Options :  [ElementOptions](../interfaces/_declarations_blessed_d_.widgets.elementoptions.md)
+
+▪ **Options**: *[ElementOptions](../interfaces/_declarations_blessed_d_.widgets.elementoptions.md)*
+
 ## Hierarchy
 
-↳  [MessageElement](_declarations_blessed_d_.widgets.messageelement.md)
+  ↳ [MessageElement](_declarations_blessed_d_.widgets.messageelement.md)
 
-**↳ Message**
+  ↳ **Message**
 
 ## Implements
 
-* [IHasOptions](../interfaces/_declarations_blessed_d_.widgets.ihasoptions.md)<[INodeOptions](../interfaces/_declarations_blessed_d_.widgets.inodeoptions.md)>
+* [IHasOptions](../interfaces/_declarations_blessed_d_.widgets.ihasoptions.md)‹[INodeOptions](../interfaces/_declarations_blessed_d_.widgets.inodeoptions.md)›
 * [IDestroyable](../interfaces/_declarations_blessed_d_.widgets.idestroyable.md)
-* [IHasOptions](../interfaces/_declarations_blessed_d_.widgets.ihasoptions.md)<[ElementOptions](../interfaces/_declarations_blessed_d_.widgets.elementoptions.md)>
-* [IHasOptions](../interfaces/_declarations_blessed_d_.widgets.ihasoptions.md)<[BoxOptions](../interfaces/_declarations_blessed_d_.widgets.boxoptions.md)>
-* [IHasOptions](../interfaces/_declarations_blessed_d_.widgets.ihasoptions.md)<[MessageOptions](../interfaces/_declarations_blessed_d_.widgets.messageoptions.md)>
+* [IHasOptions](../interfaces/_declarations_blessed_d_.widgets.ihasoptions.md)‹[ElementOptions](../interfaces/_declarations_blessed_d_.widgets.elementoptions.md)›
+* [IHasOptions](../interfaces/_declarations_blessed_d_.widgets.ihasoptions.md)‹[BoxOptions](../interfaces/_declarations_blessed_d_.widgets.boxoptions.md)›
+* [IHasOptions](../interfaces/_declarations_blessed_d_.widgets.ihasoptions.md)‹[MessageOptions](../interfaces/_declarations_blessed_d_.widgets.messageoptions.md)›
 
 ## Index
 
@@ -26,10 +28,10 @@
 
 ### Properties
 
-* [$](_declarations_blessed_d_.widget.message.md#_)
-* [_](_declarations_blessed_d_.widget.message.md#_-1)
-* [_label](_declarations_blessed_d_.widget.message.md#_label)
-* [_noFill](_declarations_blessed_d_.widget.message.md#_nofill)
+* [$](_declarations_blessed_d_.widget.message.md#$)
+* [_](_declarations_blessed_d_.widget.message.md#_)
+* [_label](_declarations_blessed_d_.widget.message.md#optional-_label)
+* [_noFill](_declarations_blessed_d_.widget.message.md#optional-_nofill)
 * [abottom](_declarations_blessed_d_.widget.message.md#abottom)
 * [aleft](_declarations_blessed_d_.widget.message.md#aleft)
 * [aright](_declarations_blessed_d_.widget.message.md#aright)
@@ -59,7 +61,7 @@
 * [name](_declarations_blessed_d_.widget.message.md#name)
 * [options](_declarations_blessed_d_.widget.message.md#options)
 * [padding](_declarations_blessed_d_.widget.message.md#padding)
-* [parent](_declarations_blessed_d_.widget.message.md#parent)
+* [parent](_declarations_blessed_d_.widget.message.md#optional-parent)
 * [position](_declarations_blessed_d_.widget.message.md#position)
 * [rbottom](_declarations_blessed_d_.widget.message.md#rbottom)
 * [right](_declarations_blessed_d_.widget.message.md#right)
@@ -76,7 +78,7 @@
 * [underline](_declarations_blessed_d_.widget.message.md#underline)
 * [visible](_declarations_blessed_d_.widget.message.md#visible)
 * [width](_declarations_blessed_d_.widget.message.md#width)
-* [defaultMaxListeners](_declarations_blessed_d_.widget.message.md#defaultmaxlisteners)
+* [defaultMaxListeners](_declarations_blessed_d_.widget.message.md#static-defaultmaxlisteners)
 
 ### Methods
 
@@ -190,448 +192,411 @@
 * [toggle](_declarations_blessed_d_.widget.message.md#toggle)
 * [unkey](_declarations_blessed_d_.widget.message.md#unkey)
 * [unshiftLine](_declarations_blessed_d_.widget.message.md#unshiftline)
-* [listenerCount](_declarations_blessed_d_.widget.message.md#listenercount-1)
-
----
+* [listenerCount](_declarations_blessed_d_.widget.message.md#static-listenercount)
 
 ## Constructors
 
-<a id="constructor"></a>
-
 ###  constructor
 
-⊕ **new Message**(opts: *[MessageOptions](../interfaces/_declarations_blessed_d_.widgets.messageoptions.md)*): [Message](_declarations_blessed_d_.widget.message.md)
+\+ **new Message**(`opts`: [MessageOptions](../interfaces/_declarations_blessed_d_.widgets.messageoptions.md)): *[Message](_declarations_blessed_d_.widget.message.md)*
 
 *Inherited from [MessageElement](_declarations_blessed_d_.widgets.messageelement.md).[constructor](_declarations_blessed_d_.widgets.messageelement.md#constructor)*
 
 *Overrides [BoxElement](_declarations_blessed_d_.widgets.boxelement.md).[constructor](_declarations_blessed_d_.widgets.boxelement.md#constructor)*
 
-*Defined in [declarations/blessed.d.ts:3092](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3092)*
+*Defined in [declarations/blessed.d.ts:3025](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3025)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| opts | [MessageOptions](../interfaces/_declarations_blessed_d_.widgets.messageoptions.md) |
+Name | Type |
+------ | ------ |
+`opts` | [MessageOptions](../interfaces/_declarations_blessed_d_.widgets.messageoptions.md) |
 
-**Returns:** [Message](_declarations_blessed_d_.widget.message.md)
-
-___
+**Returns:** *[Message](_declarations_blessed_d_.widget.message.md)*
 
 ## Properties
 
-<a id="_"></a>
-
 ###  $
 
-**● $**: *`object`*
+• **$**: *object*
 
-*Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[$](_declarations_blessed_d_.widgets.node.md#_)*
+*Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[$](_declarations_blessed_d_.widgets.node.md#$)*
 
-*Defined in [declarations/blessed.d.ts:362](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L362)*
+*Defined in [declarations/blessed.d.ts:289](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L289)*
 
 An object for any miscellaneous user data.
 
-#### Type declaration
+#### Type declaration:
 
-[index: `string`]: `any`
+* \[ **index**: *string*\]: any
 
 ___
-<a id="_-1"></a>
 
 ###  _
 
-**● _**: *`object`*
+• **_**: *object*
 
-*Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[_](_declarations_blessed_d_.widgets.node.md#_-1)*
+*Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[_](_declarations_blessed_d_.widgets.node.md#_)*
 
-*Defined in [declarations/blessed.d.ts:357](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L357)*
+*Defined in [declarations/blessed.d.ts:284](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L284)*
 
 An object for any miscellaneous user data.
 
-#### Type declaration
+#### Type declaration:
 
-[index: `string`]: `any`
+* \[ **index**: *string*\]: any
 
 ___
-<a id="_label"></a>
 
-### `<Optional>` _label
+### `Optional` _label
 
-**● _label**: *[BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md) \| `undefined`*
+• **_label**? : *[BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md) | undefined*
 
-*Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[_label](_declarations_blessed_d_.widgets.blessedelement.md#_label)*
+*Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[_label](_declarations_blessed_d_.widgets.blessedelement.md#optional-_label)*
 
-*Defined in [declarations/blessed.d.ts:1699](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1699)*
+*Defined in [declarations/blessed.d.ts:1632](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1632)*
 
 Get's the child element implementing the current label of this node.
 
-*__internal__*: 
+**`internal`** 
 
 ___
-<a id="_nofill"></a>
 
-### `<Optional>` _noFill
+### `Optional` _noFill
 
-**● _noFill**: *`boolean`*
+• **_noFill**? : *boolean*
 
-*Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[_noFill](_declarations_blessed_d_.widgets.blessedelement.md#_nofill)*
+*Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[_noFill](_declarations_blessed_d_.widgets.blessedelement.md#optional-_nofill)*
 
-*Defined in [declarations/blessed.d.ts:1652](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1652)*
+*Defined in [declarations/blessed.d.ts:1585](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1585)*
 
 If true, the element won't be filled.
 
-*__internal__*: 
+**`internal`** 
 
 ___
-<a id="abottom"></a>
 
 ###  abottom
 
-**● abottom**: *`number`*
+• **abottom**: *number*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[abottom](_declarations_blessed_d_.widgets.blessedelement.md#abottom)*
 
-*Defined in [declarations/blessed.d.ts:1641](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1641)*
+*Defined in [declarations/blessed.d.ts:1574](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1574)*
 
 Calculated absolute bottom offset.
 
 ___
-<a id="aleft"></a>
 
 ###  aleft
 
-**● aleft**: *`number`*
+• **aleft**: *number*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[aleft](_declarations_blessed_d_.widgets.blessedelement.md#aleft)*
 
-*Defined in [declarations/blessed.d.ts:1631](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1631)*
+*Defined in [declarations/blessed.d.ts:1564](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1564)*
 
 Calculated absolute left offset.
 
 ___
-<a id="aright"></a>
 
 ###  aright
 
-**● aright**: *`number`*
+• **aright**: *number*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[aright](_declarations_blessed_d_.widgets.blessedelement.md#aright)*
 
-*Defined in [declarations/blessed.d.ts:1636](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1636)*
+*Defined in [declarations/blessed.d.ts:1569](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1569)*
 
 Calculated absolute right offset.
 
 ___
-<a id="atop"></a>
 
 ###  atop
 
-**● atop**: *`number`*
+• **atop**: *number*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[atop](_declarations_blessed_d_.widgets.blessedelement.md#atop)*
 
-*Defined in [declarations/blessed.d.ts:1626](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1626)*
+*Defined in [declarations/blessed.d.ts:1559](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1559)*
 
 Calculated absolute top offset.
 
 ___
-<a id="bg"></a>
 
 ###  bg
 
-**● bg**: *`number`*
+• **bg**: *number*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[bg](_declarations_blessed_d_.widgets.blessedelement.md#bg)*
 
-*Defined in [declarations/blessed.d.ts:1583](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1583)*
+*Defined in [declarations/blessed.d.ts:1516](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1516)*
 
 Border foreground and background, must be numbers (-1 for default).
 
 ___
-<a id="bold"></a>
 
 ###  bold
 
-**● bold**: *`string`*
+• **bold**: *string*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[bold](_declarations_blessed_d_.widgets.blessedelement.md#bold)*
 
-*Defined in [declarations/blessed.d.ts:1589](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1589)*
+*Defined in [declarations/blessed.d.ts:1522](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1522)*
 
 Border attributes.
 
 ___
-<a id="border"></a>
 
 ###  border
 
-**● border**: *[TBorder](../interfaces/_declarations_blessed_d_.widgets.types.tborder.md)*
+• **border**: *[TBorder](../interfaces/_declarations_blessed_d_.widgets.types.tborder.md)*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[border](_declarations_blessed_d_.widgets.blessedelement.md#border)*
 
-*Defined in [declarations/blessed.d.ts:1568](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1568)*
+*Defined in [declarations/blessed.d.ts:1501](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1501)*
 
 Border object.
 
 ___
-<a id="bottom"></a>
 
 ###  bottom
 
-**● bottom**: *`number` \| `string`*
+• **bottom**: *number | string*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[bottom](_declarations_blessed_d_.widgets.blessedelement.md#bottom)*
 
-*Defined in [declarations/blessed.d.ts:1621](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1621)*
+*Defined in [declarations/blessed.d.ts:1554](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1554)*
 
 Calculated relative bottom offset.
 
 ___
-<a id="childbase"></a>
 
 ###  childBase
 
-**● childBase**: *`number`*
+• **childBase**: *number*
 
 *Inherited from [ScrollableBoxElement](_declarations_blessed_d_.widgets.scrollableboxelement.md).[childBase](_declarations_blessed_d_.widgets.scrollableboxelement.md#childbase)*
 
-*Defined in [declarations/blessed.d.ts:2109](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L2109)*
+*Defined in [declarations/blessed.d.ts:2042](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L2042)*
 
 The offset of the top of the scroll content.
 
 ___
-<a id="childoffset"></a>
 
 ###  childOffset
 
-**● childOffset**: *`number`*
+• **childOffset**: *number*
 
 *Inherited from [ScrollableBoxElement](_declarations_blessed_d_.widgets.scrollableboxelement.md).[childOffset](_declarations_blessed_d_.widgets.scrollableboxelement.md#childoffset)*
 
-*Defined in [declarations/blessed.d.ts:2114](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L2114)*
+*Defined in [declarations/blessed.d.ts:2047](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L2047)*
 
 The offset of the chosen item/line.
 
 ___
-<a id="children"></a>
 
 ###  children
 
-**● children**: *[Node](_declarations_blessed_d_.widgets.node.md)[]*
+• **children**: *[Node](_declarations_blessed_d_.widgets.node.md)[]*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[children](_declarations_blessed_d_.widgets.node.md#children)*
 
-*Defined in [declarations/blessed.d.ts:389](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L389)*
+*Defined in [declarations/blessed.d.ts:316](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L316)*
 
 Array of node's children.
 
 ___
-<a id="content"></a>
 
 ###  content
 
-**● content**: *`string`*
+• **content**: *string*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[content](_declarations_blessed_d_.widgets.blessedelement.md#content)*
 
-*Defined in [declarations/blessed.d.ts:1575](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1575)*
+*Defined in [declarations/blessed.d.ts:1508](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1508)*
 
 ___
-<a id="data"></a>
 
 ###  data
 
-**● data**: *`object`*
+• **data**: *object*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[data](_declarations_blessed_d_.widgets.node.md#data)*
 
-*Defined in [declarations/blessed.d.ts:352](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L352)*
+*Defined in [declarations/blessed.d.ts:279](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L279)*
 
 An object for any miscellaneous user data.
 
-#### Type declaration
+#### Type declaration:
 
-[index: `string`]: `any`
+* \[ **index**: *string*\]: any
 
 ___
-<a id="detached"></a>
 
 ###  detached
 
-**● detached**: *`boolean`*
+• **detached**: *boolean*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[detached](_declarations_blessed_d_.widgets.blessedelement.md#detached)*
 
-*Defined in [declarations/blessed.d.ts:1578](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1578)*
+*Defined in [declarations/blessed.d.ts:1511](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1511)*
 
 ___
-<a id="draggable"></a>
 
 ###  draggable
 
-**● draggable**: *`boolean`*
+• **draggable**: *boolean*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[draggable](_declarations_blessed_d_.widgets.blessedelement.md#draggable)*
 
-*Defined in [declarations/blessed.d.ts:1646](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1646)*
+*Defined in [declarations/blessed.d.ts:1579](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1579)*
 
 Whether the element is draggable. Set to true to allow dragging.
 
 ___
-<a id="fg"></a>
 
 ###  fg
 
-**● fg**: *`number`*
+• **fg**: *number*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[fg](_declarations_blessed_d_.widgets.blessedelement.md#fg)*
 
-*Defined in [declarations/blessed.d.ts:1584](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1584)*
+*Defined in [declarations/blessed.d.ts:1517](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1517)*
 
 ___
-<a id="focusable"></a>
 
 ###  focusable
 
-**● focusable**: *`boolean`*
+• **focusable**: *boolean*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[focusable](_declarations_blessed_d_.widgets.node.md#focusable)*
 
-*Defined in [declarations/blessed.d.ts:342](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L342)*
+*Defined in [declarations/blessed.d.ts:269](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L269)*
+
+If true, `screen.focusNext()` and methods related to focus will consider this Element.
 
 ___
-<a id="height"></a>
 
 ###  height
 
-**● height**: *`number` \| `string`*
+• **height**: *number | string*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[height](_declarations_blessed_d_.widgets.blessedelement.md#height)*
 
-*Defined in [declarations/blessed.d.ts:1601](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1601)*
+*Defined in [declarations/blessed.d.ts:1534](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1534)*
 
 Calculated height.
 
 ___
-<a id="hidden"></a>
 
 ###  hidden
 
-**● hidden**: *`boolean`*
+• **hidden**: *boolean*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[hidden](_declarations_blessed_d_.widgets.blessedelement.md#hidden)*
 
-*Defined in [declarations/blessed.d.ts:1576](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1576)*
+*Defined in [declarations/blessed.d.ts:1509](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1509)*
 
 ___
-<a id="iheight"></a>
 
 ###  iheight
 
-**● iheight**: *`number`*
+• **iheight**: *number*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[iheight](_declarations_blessed_d_.widgets.blessedelement.md#iheight)*
 
-*Defined in [declarations/blessed.d.ts:1665](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1665)*
+*Defined in [declarations/blessed.d.ts:1598](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1598)*
 
 Calculated height taking into account padding and boder.
 
 ___
-<a id="ileft"></a>
 
 ###  ileft
 
-**● ileft**: *`number`*
+• **ileft**: *number*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[ileft](_declarations_blessed_d_.widgets.blessedelement.md#ileft)*
 
-*Defined in [declarations/blessed.d.ts:1661](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1661)*
+*Defined in [declarations/blessed.d.ts:1594](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1594)*
 
 Calculated left coordinate taking into account padding and boder.
 
 ___
-<a id="index"></a>
 
 ###  index
 
-**● index**: *`number`*
+• **index**: *number*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[index](_declarations_blessed_d_.widgets.node.md#index)*
 
-*Defined in [declarations/blessed.d.ts:374](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L374)*
+*Defined in [declarations/blessed.d.ts:301](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L301)*
 
 Render index (document order index) of the last render call.
 
 ___
-<a id="itop"></a>
 
 ###  itop
 
-**● itop**: *`number`*
+• **itop**: *number*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[itop](_declarations_blessed_d_.widgets.blessedelement.md#itop)*
 
-*Defined in [declarations/blessed.d.ts:1657](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1657)*
+*Defined in [declarations/blessed.d.ts:1590](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1590)*
 
 Calculated top coordinate taking into account padding and boder.
 
 ___
-<a id="iwidth"></a>
 
 ###  iwidth
 
-**● iwidth**: *`number`*
+• **iwidth**: *number*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[iwidth](_declarations_blessed_d_.widgets.blessedelement.md#iwidth)*
 
-*Defined in [declarations/blessed.d.ts:1669](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1669)*
+*Defined in [declarations/blessed.d.ts:1602](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1602)*
 
 Calculated width taking into account padding and boder.
 
 ___
-<a id="left"></a>
 
 ###  left
 
-**● left**: *`number` \| `string`*
+• **left**: *number | string*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[left](_declarations_blessed_d_.widgets.blessedelement.md#left)*
 
-*Defined in [declarations/blessed.d.ts:1611](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1611)*
+*Defined in [declarations/blessed.d.ts:1544](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1544)*
 
 Calculated relative left offset.
 
 ___
-<a id="lpos"></a>
 
 ###  lpos
 
-**● lpos**: *[PositionCoords](_declarations_blessed_d_.widgets.positioncoords.md)*
+• **lpos**: *[PositionCoords](_declarations_blessed_d_.widgets.positioncoords.md)*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[lpos](_declarations_blessed_d_.widgets.node.md#lpos)*
 
-*Defined in [declarations/blessed.d.ts:364](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L364)*
+*Defined in [declarations/blessed.d.ts:291](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L291)*
 
 ___
-<a id="name"></a>
 
 ###  name
 
-**● name**: *`string`*
+• **name**: *string*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[name](_declarations_blessed_d_.widgets.blessedelement.md#name)*
 
-*Defined in [declarations/blessed.d.ts:1563](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1563)*
+*Defined in [declarations/blessed.d.ts:1496](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1496)*
 
 Name of the element. Useful for form submission.
 
 ___
-<a id="options"></a>
 
 ###  options
 
-**● options**: *[MessageOptions](../interfaces/_declarations_blessed_d_.widgets.messageoptions.md)*
+• **options**: *[MessageOptions](../interfaces/_declarations_blessed_d_.widgets.messageoptions.md)*
 
 *Implementation of [IHasOptions](../interfaces/_declarations_blessed_d_.widgets.ihasoptions.md).[options](../interfaces/_declarations_blessed_d_.widgets.ihasoptions.md#options)*
 
@@ -639,2529 +604,2533 @@ ___
 
 *Overrides [BoxElement](_declarations_blessed_d_.widgets.boxelement.md).[options](_declarations_blessed_d_.widgets.boxelement.md#options)*
 
-*Defined in [declarations/blessed.d.ts:3095](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3095)*
+*Defined in [declarations/blessed.d.ts:3028](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3028)*
 
 ___
-<a id="padding"></a>
 
 ###  padding
 
-**● padding**: *`Required`<[Padding](../interfaces/_declarations_blessed_d_.widgets.padding.md)>*
+• **padding**: *Required‹[Padding](../interfaces/_declarations_blessed_d_.widgets.padding.md)›*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[padding](_declarations_blessed_d_.widgets.blessedelement.md#padding)*
 
-*Defined in [declarations/blessed.d.ts:1571](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1571)*
+*Defined in [declarations/blessed.d.ts:1504](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1504)*
 
 Current element padding
 
 ___
-<a id="parent"></a>
 
-### `<Optional>` parent
+### `Optional` parent
 
-**● parent**: *[Node](_declarations_blessed_d_.widgets.node.md)*
+• **parent**? : *[Node](_declarations_blessed_d_.widgets.node.md)*
 
-*Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[parent](_declarations_blessed_d_.widgets.node.md#parent)*
+*Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[parent](_declarations_blessed_d_.widgets.node.md#optional-parent)*
 
-*Defined in [declarations/blessed.d.ts:384](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L384)*
+*Defined in [declarations/blessed.d.ts:311](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L311)*
 
 Parent node. If null it means the element is not attached to any screen or program, or the node is a Screen.
 
 ___
-<a id="position"></a>
 
 ###  position
 
-**● position**: *[Position](../interfaces/_declarations_blessed_d_.widgets.position.md)*
+• **position**: *[Position](../interfaces/_declarations_blessed_d_.widgets.position.md)*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[position](_declarations_blessed_d_.widgets.blessedelement.md#position)*
 
-*Defined in [declarations/blessed.d.ts:1574](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1574)*
+*Defined in [declarations/blessed.d.ts:1507](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1507)*
 
 ___
-<a id="rbottom"></a>
 
 ###  rbottom
 
-**● rbottom**: *[TPosition](../modules/_declarations_blessed_d_.widgets.types.md#tposition)*
+• **rbottom**: *[TPosition](../modules/_declarations_blessed_d_.widgets.types.md#tposition)*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[rbottom](_declarations_blessed_d_.widgets.blessedelement.md#rbottom)*
 
-*Defined in [declarations/blessed.d.ts:1693](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1693)*
+*Defined in [declarations/blessed.d.ts:1626](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1626)*
 
 Calculated relative bottom offset.
 
 Setting this property will cause the element to change element's [position](_declarations_blessed_d_.widget.message.md#position) property and emit [move](_declarations_blessedprogram_d_.blessedprogram.md#move) event.
 
 ___
-<a id="right"></a>
 
 ###  right
 
-**● right**: *`number` \| `string`*
+• **right**: *number | string*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[right](_declarations_blessed_d_.widgets.blessedelement.md#right)*
 
-*Defined in [declarations/blessed.d.ts:1616](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1616)*
+*Defined in [declarations/blessed.d.ts:1549](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1549)*
 
 Calculated relative right offset.
 
 ___
-<a id="rleft"></a>
 
 ###  rleft
 
-**● rleft**: *[TTopLeft](../modules/_declarations_blessed_d_.widgets.types.md#ttopleft)*
+• **rleft**: *[TTopLeft](../modules/_declarations_blessed_d_.widgets.types.md#ttopleft)*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[rleft](_declarations_blessed_d_.widgets.blessedelement.md#rleft)*
 
-*Defined in [declarations/blessed.d.ts:1679](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1679)*
+*Defined in [declarations/blessed.d.ts:1612](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1612)*
 
 Setting this property will cause the element to change element's [position](_declarations_blessed_d_.widget.message.md#position) property and emit [move](_declarations_blessedprogram_d_.blessedprogram.md#move) event.
 
 ___
-<a id="rright"></a>
 
 ###  rright
 
-**● rright**: *[TPosition](../modules/_declarations_blessed_d_.widgets.types.md#tposition)*
+• **rright**: *[TPosition](../modules/_declarations_blessed_d_.widgets.types.md#tposition)*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[rright](_declarations_blessed_d_.widgets.blessedelement.md#rright)*
 
-*Defined in [declarations/blessed.d.ts:1686](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1686)*
+*Defined in [declarations/blessed.d.ts:1619](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1619)*
 
 Calculated relative bottom offset.
 
 Setting this property will cause the element to change element's [position](_declarations_blessed_d_.widget.message.md#position) property and emit [move](_declarations_blessedprogram_d_.blessedprogram.md#move) event.
 
 ___
-<a id="rtop"></a>
 
 ###  rtop
 
-**● rtop**: *[TTopLeft](../modules/_declarations_blessed_d_.widgets.types.md#ttopleft)*
+• **rtop**: *[TTopLeft](../modules/_declarations_blessed_d_.widgets.types.md#ttopleft)*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[rtop](_declarations_blessed_d_.widgets.blessedelement.md#rtop)*
 
-*Defined in [declarations/blessed.d.ts:1674](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1674)*
+*Defined in [declarations/blessed.d.ts:1607](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1607)*
 
 Setting this property will cause the element to change element's [position](_declarations_blessed_d_.widget.message.md#position) property and emit [move](_declarations_blessedprogram_d_.blessedprogram.md#move) event.
 
 ___
-<a id="screen"></a>
 
 ###  screen
 
-**● screen**: *[Screen](_declarations_blessed_d_.widgets.screen.md)*
+• **screen**: *[Screen](_declarations_blessed_d_.widgets.screen.md)*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[screen](_declarations_blessed_d_.widgets.node.md#screen)*
 
-*Defined in [declarations/blessed.d.ts:379](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L379)*
+*Defined in [declarations/blessed.d.ts:306](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L306)*
 
 Parent screen.
 
 ___
-<a id="shrink"></a>
 
 ###  shrink
 
-**● shrink**: *`boolean`*
+• **shrink**: *boolean*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[shrink](_declarations_blessed_d_.widgets.blessedelement.md#shrink)*
 
-*Defined in [declarations/blessed.d.ts:1552](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1552)*
+*Defined in [declarations/blessed.d.ts:1485](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1485)*
 
 ___
-<a id="style"></a>
 
 ###  style
 
-**● style**: *[TStyle](../interfaces/_declarations_blessed_d_.widgets.types.tstyle.md)*
+• **style**: *[TStyle](../interfaces/_declarations_blessed_d_.widgets.types.tstyle.md)*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[style](_declarations_blessed_d_.widgets.blessedelement.md#style)*
 
-*Defined in [declarations/blessed.d.ts:1573](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1573)*
+*Defined in [declarations/blessed.d.ts:1506](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1506)*
 
 ___
-<a id="top"></a>
 
 ###  top
 
-**● top**: *`number` \| `string`*
+• **top**: *number | string*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[top](_declarations_blessed_d_.widgets.blessedelement.md#top)*
 
-*Defined in [declarations/blessed.d.ts:1606](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1606)*
+*Defined in [declarations/blessed.d.ts:1539](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1539)*
 
 Calculated relative top offset.
 
 ___
-<a id="tpadding"></a>
 
 ###  tpadding
 
-**● tpadding**: *`number`*
+• **tpadding**: *number*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[tpadding](_declarations_blessed_d_.widgets.blessedelement.md#tpadding)*
 
-*Defined in [declarations/blessed.d.ts:1704](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1704)*
+*Defined in [declarations/blessed.d.ts:1637](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1637)*
 
 Givesthe total padding on any direction.
 
 ___
-<a id="type"></a>
 
 ###  type
 
-**● type**: *`string`*
+• **type**: *string*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[type](_declarations_blessed_d_.widgets.node.md#type)*
 
-*Defined in [declarations/blessed.d.ts:369](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L369)*
+*Defined in [declarations/blessed.d.ts:296](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L296)*
 
 Type of the node (e.g. box).
 
 ___
-<a id="uid"></a>
 
 ###  uid
 
-**● uid**: *`number`*
+• **uid**: *number*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[uid](_declarations_blessed_d_.widgets.node.md#uid)*
 
-*Defined in [declarations/blessed.d.ts:340](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L340)*
+*Defined in [declarations/blessed.d.ts:264](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L264)*
 
 Unique identifier for Node instances. @internal
 
 ___
-<a id="underline"></a>
 
 ###  underline
 
-**● underline**: *`string`*
+• **underline**: *string*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[underline](_declarations_blessed_d_.widgets.blessedelement.md#underline)*
 
-*Defined in [declarations/blessed.d.ts:1591](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1591)*
+*Defined in [declarations/blessed.d.ts:1524](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1524)*
 
 ___
-<a id="visible"></a>
 
 ###  visible
 
-**● visible**: *`boolean`*
+• **visible**: *boolean*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[visible](_declarations_blessed_d_.widgets.blessedelement.md#visible)*
 
-*Defined in [declarations/blessed.d.ts:1577](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1577)*
+*Defined in [declarations/blessed.d.ts:1510](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1510)*
 
 ___
-<a id="width"></a>
 
 ###  width
 
-**● width**: *`number` \| `string`*
+• **width**: *number | string*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[width](_declarations_blessed_d_.widgets.blessedelement.md#width)*
 
-*Defined in [declarations/blessed.d.ts:1596](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1596)*
+*Defined in [declarations/blessed.d.ts:1529](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1529)*
 
 Calculated width.
 
 ___
-<a id="defaultmaxlisteners"></a>
 
-### `<Static>` defaultMaxListeners
+### `Static` defaultMaxListeners
 
-**● defaultMaxListeners**: *`number`*
+▪ **defaultMaxListeners**: *number*
 
-*Inherited from EventEmitter.defaultMaxListeners*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:9*
-
-___
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:9
 
 ## Methods
 
-<a id="_align"></a>
-
 ###  _align
 
-▸ **_align**(line: *`string`*, width: *`number`*, align: *`string`*): `void`
+▸ **_align**(`line`: string, `width`: number, `align`: string): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[_align](_declarations_blessed_d_.widgets.blessedelement.md#_align)*
 
-*Defined in [declarations/blessed.d.ts:1915](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1915)*
+*Defined in [declarations/blessed.d.ts:1848](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1848)*
 
-*__internal__*: 
+**`internal`** 
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| line | `string` |
-| width | `number` |
-| align | `string` |
+Name | Type |
+------ | ------ |
+`line` | string |
+`width` | number |
+`align` | string |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="_getbottom"></a>
 
 ###  _getBottom
 
-▸ **_getBottom**(get?: *`boolean`*): `number`
+▸ **_getBottom**(`get?`: boolean): *number*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[_getBottom](_declarations_blessed_d_.widgets.blessedelement.md#_getbottom)*
 
-*Defined in [declarations/blessed.d.ts:1762](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1762)*
+*Defined in [declarations/blessed.d.ts:1695](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1695)*
 
-*__internal__*: 
+**`internal`** 
 
 **Parameters:**
 
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| `Optional` get | `boolean` |  if true it will force to recalculate. |
+Name | Type | Description |
+------ | ------ | ------ |
+`get?` | boolean | if true it will force to recalculate. |
 
-**Returns:** `number`
+**Returns:** *number*
 
 ___
-<a id="_getcoords"></a>
 
 ###  _getCoords
 
-▸ **_getCoords**(get?: *`boolean`*, noscroll?: *`boolean`*): [Coords](../interfaces/_declarations_blessed_d_.widgets.coords.md) \| `undefined`
+▸ **_getCoords**(`get?`: boolean, `noscroll?`: boolean): *[Coords](../interfaces/_declarations_blessed_d_.widgets.coords.md) | undefined*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[_getCoords](_declarations_blessed_d_.widgets.blessedelement.md#_getcoords)*
 
-*Defined in [declarations/blessed.d.ts:1715](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1715)*
+*Defined in [declarations/blessed.d.ts:1648](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1648)*
 
-*__internal__*: 
+**`internal`** 
 
 **Parameters:**
 
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| `Optional` get | `boolean` |  if true it will force to recalculate. |
-| `Optional` noscroll | `boolean` |
+Name | Type | Description |
+------ | ------ | ------ |
+`get?` | boolean | if true it will force to recalculate. |
+`noscroll?` | boolean | - |
 
-**Returns:** [Coords](../interfaces/_declarations_blessed_d_.widgets.coords.md) \| `undefined`
+**Returns:** *[Coords](../interfaces/_declarations_blessed_d_.widgets.coords.md) | undefined*
 
 ___
-<a id="_getheight"></a>
 
 ###  _getHeight
 
-▸ **_getHeight**(get?: *`boolean`*): `number`
+▸ **_getHeight**(`get?`: boolean): *number*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[_getHeight](_declarations_blessed_d_.widgets.blessedelement.md#_getheight)*
 
-*Defined in [declarations/blessed.d.ts:1774](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1774)*
+*Defined in [declarations/blessed.d.ts:1707](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1707)*
 
-*__internal__*: 
+**`internal`** 
 
 **Parameters:**
 
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| `Optional` get | `boolean` |  if true it will force to recalculate. |
+Name | Type | Description |
+------ | ------ | ------ |
+`get?` | boolean | if true it will force to recalculate. |
 
-**Returns:** `number`
+**Returns:** *number*
 
 ___
-<a id="_getleft"></a>
 
 ###  _getLeft
 
-▸ **_getLeft**(get?: *`boolean`*): `number`
+▸ **_getLeft**(`get?`: boolean): *number*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[_getLeft](_declarations_blessed_d_.widgets.blessedelement.md#_getleft)*
 
-*Defined in [declarations/blessed.d.ts:1744](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1744)*
+*Defined in [declarations/blessed.d.ts:1677](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1677)*
 
-*__internal__*: 
+**`internal`** 
 
 **Parameters:**
 
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| `Optional` get | `boolean` |  if true it will force to recalculate. |
+Name | Type | Description |
+------ | ------ | ------ |
+`get?` | boolean | if true it will force to recalculate. |
 
-**Returns:** `number`
+**Returns:** *number*
 
 ___
-<a id="_getpos"></a>
 
 ###  _getPos
 
-▸ **_getPos**(): [Pos](../interfaces/_declarations_blessed_d_.widgets.pos.md)
+▸ **_getPos**(): *[Pos](../interfaces/_declarations_blessed_d_.widgets.pos.md)*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[_getPos](_declarations_blessed_d_.widgets.blessedelement.md#_getpos)*
 
-*Defined in [declarations/blessed.d.ts:1738](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1738)*
+*Defined in [declarations/blessed.d.ts:1671](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1671)*
 
-whenever Box.render is called `lpos` gets set on the element, an object containing the rendered coordinates. Since these don't update if the element is moved somehow, they're unreliable in that situation. However, if we can guarantee that lpos is good and up to date, it can be more accurate than the calculated positions below. In this case, if the element is being rendered, it's guaranteed that the parent will have been rendered first, in which case we can use the parant's lpos instead of recalculating it's position (since that might be wrong because it doesn't handle content shrinkage).
+whenever Box.render is called `lpos` gets set on the element, an object containing the rendered
+coordinates. Since these don't update if the element is moved somehow, they're unreliable in that
+situation. However, if we can guarantee that lpos is good and up to date, it can be more accurate than
+the calculated positions below. In this case, if the element is being rendered, it's guaranteed that
+the parent will have been rendered first, in which case we can use the parant's lpos instead of
+recalculating it's position (since that might be wrong because it doesn't handle content shrinkage).
 
-*__internal__*: 
+**`internal`** 
 
-**Returns:** [Pos](../interfaces/_declarations_blessed_d_.widgets.pos.md)
+**Returns:** *[Pos](../interfaces/_declarations_blessed_d_.widgets.pos.md)*
 
 ___
-<a id="_getright"></a>
 
 ###  _getRight
 
-▸ **_getRight**(get?: *`boolean`*): `number`
+▸ **_getRight**(`get?`: boolean): *number*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[_getRight](_declarations_blessed_d_.widgets.blessedelement.md#_getright)*
 
-*Defined in [declarations/blessed.d.ts:1768](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1768)*
+*Defined in [declarations/blessed.d.ts:1701](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1701)*
 
-*__internal__*: 
+**`internal`** 
 
 **Parameters:**
 
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| `Optional` get | `boolean` |  if true it will force to recalculate. |
+Name | Type | Description |
+------ | ------ | ------ |
+`get?` | boolean | if true it will force to recalculate. |
 
-**Returns:** `number`
+**Returns:** *number*
 
 ___
-<a id="_getshrink"></a>
 
 ###  _getShrink
 
-▸ **_getShrink**(xi: *`number`*, xl: *`number`*, yi: *`number`*, yl: *`number`*, get?: *`boolean`*): [SimpleCoords](../interfaces/_declarations_blessed_d_.widgets.simplecoords.md) \| `undefined`
+▸ **_getShrink**(`xi`: number, `xl`: number, `yi`: number, `yl`: number, `get?`: boolean): *[SimpleCoords](../interfaces/_declarations_blessed_d_.widgets.simplecoords.md) | undefined*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[_getShrink](_declarations_blessed_d_.widgets.blessedelement.md#_getshrink)*
 
-*Defined in [declarations/blessed.d.ts:1727](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1727)*
+*Defined in [declarations/blessed.d.ts:1660](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1660)*
 
-*__internal__*: 
+**`internal`** 
 
 **Parameters:**
 
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| xi | `number` |
-| xl | `number` |
-| yi | `number` |
-| yl | `number` |
-| `Optional` get | `boolean` |  if true it will force to recalculate. |
+Name | Type | Description |
+------ | ------ | ------ |
+`xi` | number | - |
+`xl` | number | - |
+`yi` | number | - |
+`yl` | number | - |
+`get?` | boolean | if true it will force to recalculate. |
 
-**Returns:** [SimpleCoords](../interfaces/_declarations_blessed_d_.widgets.simplecoords.md) \| `undefined`
+**Returns:** *[SimpleCoords](../interfaces/_declarations_blessed_d_.widgets.simplecoords.md) | undefined*
 
 ___
-<a id="_getshrinkbox"></a>
 
 ###  _getShrinkBox
 
-▸ **_getShrinkBox**(xi: *`number`*, xl: *`number`*, yi: *`number`*, yl: *`number`*, get?: *`boolean`*): [SimpleCoords](../interfaces/_declarations_blessed_d_.widgets.simplecoords.md) \| `undefined`
+▸ **_getShrinkBox**(`xi`: number, `xl`: number, `yi`: number, `yl`: number, `get?`: boolean): *[SimpleCoords](../interfaces/_declarations_blessed_d_.widgets.simplecoords.md) | undefined*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[_getShrinkBox](_declarations_blessed_d_.widgets.blessedelement.md#_getshrinkbox)*
 
-*Defined in [declarations/blessed.d.ts:1721](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1721)*
+*Defined in [declarations/blessed.d.ts:1654](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1654)*
 
-*__internal__*: 
+**`internal`** 
 
 **Parameters:**
 
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| xi | `number` |
-| xl | `number` |
-| yi | `number` |
-| yl | `number` |
-| `Optional` get | `boolean` |  if true it will force to recalculate. |
+Name | Type | Description |
+------ | ------ | ------ |
+`xi` | number | - |
+`xl` | number | - |
+`yi` | number | - |
+`yl` | number | - |
+`get?` | boolean | if true it will force to recalculate. |
 
-**Returns:** [SimpleCoords](../interfaces/_declarations_blessed_d_.widgets.simplecoords.md) \| `undefined`
+**Returns:** *[SimpleCoords](../interfaces/_declarations_blessed_d_.widgets.simplecoords.md) | undefined*
 
 ___
-<a id="_gettop"></a>
 
 ###  _getTop
 
-▸ **_getTop**(get?: *`boolean`*): `number`
+▸ **_getTop**(`get?`: boolean): *number*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[_getTop](_declarations_blessed_d_.widgets.blessedelement.md#_gettop)*
 
-*Defined in [declarations/blessed.d.ts:1756](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1756)*
+*Defined in [declarations/blessed.d.ts:1689](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1689)*
 
-*__internal__*: 
+**`internal`** 
 
 **Parameters:**
 
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| `Optional` get | `boolean` |  if true it will force to recalculate. |
+Name | Type | Description |
+------ | ------ | ------ |
+`get?` | boolean | if true it will force to recalculate. |
 
-**Returns:** `number`
+**Returns:** *number*
 
 ___
-<a id="_getwidth"></a>
 
 ###  _getWidth
 
-▸ **_getWidth**(get?: *`boolean`*): `number`
+▸ **_getWidth**(`get?`: boolean): *number*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[_getWidth](_declarations_blessed_d_.widgets.blessedelement.md#_getwidth)*
 
-*Defined in [declarations/blessed.d.ts:1750](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1750)*
+*Defined in [declarations/blessed.d.ts:1683](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1683)*
 
-*__internal__*: 
+**`internal`** 
 
 **Parameters:**
 
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| `Optional` get | `boolean` |  if true it will force to recalculate. |
+Name | Type | Description |
+------ | ------ | ------ |
+`get?` | boolean | if true it will force to recalculate. |
 
-**Returns:** `number`
+**Returns:** *number*
 
 ___
-<a id="_parseattr"></a>
 
 ###  _parseAttr
 
-▸ **_parseAttr**(ines: *`string`[]*): `string`[]
+▸ **_parseAttr**(`ines`: string[]): *string[]*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[_parseAttr](_declarations_blessed_d_.widgets.blessedelement.md#_parseattr)*
 
-*Defined in [declarations/blessed.d.ts:1912](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1912)*
+*Defined in [declarations/blessed.d.ts:1845](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1845)*
 
-*__internal__*: 
+**`internal`** 
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ines | `string`[] |
+Name | Type |
+------ | ------ |
+`ines` | string[] |
 
-**Returns:** `string`[]
+**Returns:** *string[]*
 
 ___
-<a id="_parsetags"></a>
 
 ###  _parseTags
 
-▸ **_parseTags**(s: *`string`*): `string`
+▸ **_parseTags**(`s`: string): *string*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[_parseTags](_declarations_blessed_d_.widgets.blessedelement.md#_parsetags)*
 
-*Defined in [declarations/blessed.d.ts:1909](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1909)*
+*Defined in [declarations/blessed.d.ts:1842](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1842)*
 
 Converts `{red-fg}foo{/red-fg}` to `\x1b[31mfoo\x1b[39m`. @internal.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| s | `string` |
+Name | Type |
+------ | ------ |
+`s` | string |
 
-**Returns:** `string`
+**Returns:** *string*
 
 ___
-<a id="_wrapcontent"></a>
 
 ###  _wrapContent
 
-▸ **_wrapContent**(content: *`string`*, width: *`number`*): `void`
+▸ **_wrapContent**(`content`: string, `width`: number): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[_wrapContent](_declarations_blessed_d_.widgets.blessedelement.md#_wrapcontent)*
 
-*Defined in [declarations/blessed.d.ts:1918](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1918)*
+*Defined in [declarations/blessed.d.ts:1851](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1851)*
 
-*__internal__*: 
+**`internal`** 
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| content | `string` |
-| width | `number` |
+Name | Type |
+------ | ------ |
+`content` | string |
+`width` | number |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="addlistener"></a>
 
 ###  addListener
 
-▸ **addListener**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
+▸ **addListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from EventEmitter.addListener*
+*Inherited from void*
 
-*Overrides EventEmitter.addListener*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:11*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:11
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *string | symbol*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="append"></a>
 
 ###  append
 
-▸ **append**(node: *[Node](_declarations_blessed_d_.widgets.node.md)*): `void`
+▸ **append**(`node`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[append](_declarations_blessed_d_.widgets.node.md#append)*
 
-*Defined in [declarations/blessed.d.ts:399](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L399)*
+*Defined in [declarations/blessed.d.ts:326](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L326)*
 
 Append a node to this node's children.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| node | [Node](_declarations_blessed_d_.widgets.node.md) |
+Name | Type |
+------ | ------ |
+`node` | [Node](_declarations_blessed_d_.widgets.node.md) |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="clearbaseline"></a>
 
 ###  clearBaseLine
 
-▸ **clearBaseLine**(i: *`number`*): `void`
+▸ **clearBaseLine**(`i`: number): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[clearBaseLine](_declarations_blessed_d_.widgets.blessedelement.md#clearbaseline)*
 
-*Defined in [declarations/blessed.d.ts:1994](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1994)*
+*Defined in [declarations/blessed.d.ts:1927](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1927)*
 
 Clear a line from the box's content from the visible top.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| i | `number` |
+Name | Type |
+------ | ------ |
+`i` | number |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="clearline"></a>
 
 ###  clearLine
 
-▸ **clearLine**(i: *`number`*): `void`
+▸ **clearLine**(`i`: number): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[clearLine](_declarations_blessed_d_.widgets.blessedelement.md#clearline)*
 
-*Defined in [declarations/blessed.d.ts:1989](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1989)*
+*Defined in [declarations/blessed.d.ts:1922](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1922)*
 
 Clear a line from the box's content.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| i | `number` |
+Name | Type |
+------ | ------ |
+`i` | number |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="clearpos"></a>
 
 ###  clearPos
 
-▸ **clearPos**(get?: *`boolean`*, override?: *`boolean`*): `void`
+▸ **clearPos**(`get?`: boolean, `override?`: boolean): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[clearPos](_declarations_blessed_d_.widgets.blessedelement.md#clearpos)*
 
-*Defined in [declarations/blessed.d.ts:1933](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1933)*
+*Defined in [declarations/blessed.d.ts:1866](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1866)*
 
 Cleans the rectangle of this element on the screen. Useful for subclasses before rendering.
 
-*__internal__*: 
+**`internal`** 
 
 **Parameters:**
 
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| `Optional` get | `boolean` |  it's passed to [\_getCoords](_declarations_blessed_d_.widget.message.md#_getcoords) |
-| `Optional` override | `boolean` |  it's passed to [Screen.clearRegion](_declarations_blessed_d_.widget.screen.md#clearregion) |
+Name | Type | Description |
+------ | ------ | ------ |
+`get?` | boolean | it's passed to [_getCoords](_declarations_blessed_d_.widget.message.md#_getcoords) |
+`override?` | boolean | it's passed to  [Screen.clearRegion](_declarations_blessed_d_.widget.screen.md#clearregion)  |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="collectancestors"></a>
 
 ###  collectAncestors
 
-▸ **collectAncestors**(s?: *`boolean`*): `void`
+▸ **collectAncestors**(`s?`: boolean): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[collectAncestors](_declarations_blessed_d_.widgets.node.md#collectancestors)*
 
-*Defined in [declarations/blessed.d.ts:433](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L433)*
+*Defined in [declarations/blessed.d.ts:362](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L362)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` s | `boolean` |
+Name | Type |
+------ | ------ |
+`s?` | boolean |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="collectdescendants"></a>
 
 ###  collectDescendants
 
-▸ **collectDescendants**(s?: *`boolean`*): `void`
+▸ **collectDescendants**(`s?`: boolean): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[collectDescendants](_declarations_blessed_d_.widgets.node.md#collectdescendants)*
 
-*Defined in [declarations/blessed.d.ts:432](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L432)*
+*Defined in [declarations/blessed.d.ts:361](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L361)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` s | `boolean` |
+Name | Type |
+------ | ------ |
+`s?` | boolean |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="deletebottom"></a>
 
 ###  deleteBottom
 
-▸ **deleteBottom**(): `void`
+▸ **deleteBottom**(): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[deleteBottom](_declarations_blessed_d_.widgets.blessedelement.md#deletebottom)*
 
-*Defined in [declarations/blessed.d.ts:2014](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L2014)*
+*Defined in [declarations/blessed.d.ts:1947](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1947)*
 
 Delete a line at the bottom of the box.
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="deleteline"></a>
 
 ###  deleteLine
 
-▸ **deleteLine**(i: *`number`*): `void`
+▸ **deleteLine**(`i`: number): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[deleteLine](_declarations_blessed_d_.widgets.blessedelement.md#deleteline)*
 
-*Defined in [declarations/blessed.d.ts:1964](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1964)*
+*Defined in [declarations/blessed.d.ts:1897](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1897)*
 
 Delete a line from the box's content.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| i | `number` |
+Name | Type |
+------ | ------ |
+`i` | number |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="deletetop"></a>
 
 ###  deleteTop
 
-▸ **deleteTop**(): `void`
+▸ **deleteTop**(): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[deleteTop](_declarations_blessed_d_.widgets.blessedelement.md#deletetop)*
 
-*Defined in [declarations/blessed.d.ts:2009](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L2009)*
+*Defined in [declarations/blessed.d.ts:1942](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1942)*
 
 Delete a line at the top of the box.
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="destroy"></a>
 
 ###  destroy
 
-▸ **destroy**(): `void`
+▸ **destroy**(): *void*
 
-*Implementation of [IDestroyable](../interfaces/_declarations_blessed_d_.widgets.idestroyable.md).[destroy](../interfaces/_declarations_blessed_d_.widgets.idestroyable.md#destroy)*
+*Implementation of [IDestroyable](../interfaces/_declarations_blessed_d_.widgets.idestroyable.md)*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[destroy](_declarations_blessed_d_.widgets.blessedelement.md#destroy)*
 
 *Overrides [Node](_declarations_blessed_d_.widgets.node.md).[destroy](_declarations_blessed_d_.widgets.node.md#destroy)*
 
-*Defined in [declarations/blessed.d.ts:1830](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1830)*
+*Defined in [declarations/blessed.d.ts:1763](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1763)*
 
-Same as the detach() method, except this will automatically call free() and unbind any screen events to prevent memory leaks. for use with onScreenEvent(), removeScreenEvent(), and free().
+Same as the detach() method, except this will automatically call free() and unbind any screen
+events to prevent memory leaks. for use with onScreenEvent(), removeScreenEvent(), and free().
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="detach"></a>
 
 ###  detach
 
-▸ **detach**(): `void`
+▸ **detach**(): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[detach](_declarations_blessed_d_.widgets.node.md#detach)*
 
-*Defined in [declarations/blessed.d.ts:424](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L424)*
+*Defined in [declarations/blessed.d.ts:351](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L351)*
 
 Remove node from its parent.
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="disabledrag"></a>
 
 ###  disableDrag
 
-▸ **disableDrag**(): `void`
+▸ **disableDrag**(): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[disableDrag](_declarations_blessed_d_.widgets.blessedelement.md#disabledrag)*
 
-*Defined in [declarations/blessed.d.ts:1893](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1893)*
+*Defined in [declarations/blessed.d.ts:1826](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1826)*
 
 Disable dragging of the element.
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="display"></a>
 
 ###  display
 
-▸ **display**(text: *`string`*, time: *`number`*, callback: *`function`*): `void`
-
-▸ **display**(text: *`string`*, callback: *`function`*): `void`
+▸ **display**(`text`: string, `time`: number, `callback`: function): *void*
 
 *Inherited from [MessageElement](_declarations_blessed_d_.widgets.messageelement.md).[display](_declarations_blessed_d_.widgets.messageelement.md#display)*
 
-*Defined in [declarations/blessed.d.ts:3103](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3103)*
+*Defined in [declarations/blessed.d.ts:3036](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3036)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| text | `string` |
-| time | `number` |
-| callback | `function` |
+▪ **text**: *string*
 
-**Returns:** `void`
+▪ **time**: *number*
+
+▪ **callback**: *function*
+
+▸ (`err`: any): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`err` | any |
+
+**Returns:** *void*
+
+▸ **display**(`text`: string, `callback`: function): *void*
 
 *Inherited from [MessageElement](_declarations_blessed_d_.widgets.messageelement.md).[display](_declarations_blessed_d_.widgets.messageelement.md#display)*
 
-*Defined in [declarations/blessed.d.ts:3104](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3104)*
+*Defined in [declarations/blessed.d.ts:3037](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3037)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| text | `string` |
-| callback | `function` |
+▪ **text**: *string*
 
-**Returns:** `void`
+▪ **callback**: *function*
+
+▸ (`err`: any): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`err` | any |
+
+**Returns:** *void*
 
 ___
-<a id="emit"></a>
 
 ###  emit
 
-▸ **emit**(event: *`string` \| `symbol`*, ...args: *`any`[]*): `boolean`
+▸ **emit**(`event`: string | symbol, ...`args`: any[]): *boolean*
 
-*Inherited from EventEmitter.emit*
+*Inherited from void*
 
-*Overrides EventEmitter.emit*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:23*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:23
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| `Rest` args | `any`[] |
+Name | Type |
+------ | ------ |
+`event` | string &#124; symbol |
+`...args` | any[] |
 
-**Returns:** `boolean`
+**Returns:** *boolean*
 
 ___
-<a id="emitancestors"></a>
 
 ###  emitAncestors
 
-▸ **emitAncestors**(): `void`
+▸ **emitAncestors**(): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[emitAncestors](_declarations_blessed_d_.widgets.node.md#emitancestors)*
 
-*Defined in [declarations/blessed.d.ts:439](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L439)*
+*Defined in [declarations/blessed.d.ts:368](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L368)*
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="emitdescendants"></a>
 
 ###  emitDescendants
 
-▸ **emitDescendants**(type?: *`string`*, ...args: *`any`[]*): `void`
+▸ **emitDescendants**(`type?`: string, ...`args`: any[]): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[emitDescendants](_declarations_blessed_d_.widgets.node.md#emitdescendants)*
 
-*Defined in [declarations/blessed.d.ts:438](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L438)*
+*Defined in [declarations/blessed.d.ts:367](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L367)*
 
-Emit event for element, and recursively emit same event for all descendants. If `s` is provided it will call \[\[iter\]\] on self first.
+Emit event for element, and recursively emit same event for all descendants. If `s` is provided it will call [[iter]] on self first.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` type | `string` |
-| `Rest` args | `any`[] |
+Name | Type |
+------ | ------ |
+`type?` | string |
+`...args` | any[] |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="enabledrag"></a>
 
 ###  enableDrag
 
-▸ **enableDrag**(cb: *`function`*): `void`
+▸ **enableDrag**(`cb`: function): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[enableDrag](_declarations_blessed_d_.widgets.blessedelement.md#enabledrag)*
 
-*Defined in [declarations/blessed.d.ts:1886](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1886)*
+*Defined in [declarations/blessed.d.ts:1819](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1819)*
 
 Enable dragging of the element.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| cb | `function` |
+▪ **cb**: *function*
 
-**Returns:** `void`
+▸ (`e`: [IMouseEventArg](../interfaces/_declarations_blessed_d_.widgets.events.imouseeventarg.md)): *any*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`e` | [IMouseEventArg](../interfaces/_declarations_blessed_d_.widgets.events.imouseeventarg.md) |
+
+**Returns:** *void*
 
 ___
-<a id="enableinput"></a>
 
 ###  enableInput
 
-▸ **enableInput**(): `void`
+▸ **enableInput**(): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[enableInput](_declarations_blessed_d_.widgets.blessedelement.md#enableinput)*
 
-*Defined in [declarations/blessed.d.ts:1881](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1881)*
+*Defined in [declarations/blessed.d.ts:1814](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1814)*
 
 Enable key and mouse events. Calls bot enableMouse and enableKeys.
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="enablekeys"></a>
 
 ###  enableKeys
 
-▸ **enableKeys**(): `void`
+▸ **enableKeys**(): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[enableKeys](_declarations_blessed_d_.widgets.blessedelement.md#enablekeys)*
 
-*Defined in [declarations/blessed.d.ts:1876](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1876)*
+*Defined in [declarations/blessed.d.ts:1809](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1809)*
 
 Enable keypress events for the element (automatically called when a form of on('keypress') is bound).
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="enablemouse"></a>
 
 ###  enableMouse
 
-▸ **enableMouse**(): `void`
+▸ **enableMouse**(): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[enableMouse](_declarations_blessed_d_.widgets.blessedelement.md#enablemouse)*
 
-*Defined in [declarations/blessed.d.ts:1871](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1871)*
+*Defined in [declarations/blessed.d.ts:1804](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1804)*
 
 Enable mouse events for the element (automatically called when a form of on('mouse') is bound).
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="error"></a>
 
 ###  error
 
-▸ **error**(text: *`string`*, time: *`number`*, callback: *`function`*): `void`
-
-▸ **error**(text: *`string`*, callback: *`function`*): `void`
+▸ **error**(`text`: string, `time`: number, `callback`: function): *void*
 
 *Inherited from [MessageElement](_declarations_blessed_d_.widgets.messageelement.md).[error](_declarations_blessed_d_.widgets.messageelement.md#error)*
 
-*Defined in [declarations/blessed.d.ts:3109](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3109)*
+*Defined in [declarations/blessed.d.ts:3042](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3042)*
 
 Display an error in the same way.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| text | `string` |
-| time | `number` |
-| callback | `function` |
+▪ **text**: *string*
 
-**Returns:** `void`
+▪ **time**: *number*
+
+▪ **callback**: *function*
+
+▸ (): *void*
+
+**Returns:** *void*
+
+▸ **error**(`text`: string, `callback`: function): *void*
 
 *Inherited from [MessageElement](_declarations_blessed_d_.widgets.messageelement.md).[error](_declarations_blessed_d_.widgets.messageelement.md#error)*
 
-*Defined in [declarations/blessed.d.ts:3110](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3110)*
+*Defined in [declarations/blessed.d.ts:3043](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3043)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| text | `string` |
-| callback | `function` |
+▪ **text**: *string*
 
-**Returns:** `void`
+▪ **callback**: *function*
+
+▸ (): *void*
+
+**Returns:** *void*
 
 ___
-<a id="eventnames"></a>
 
 ###  eventNames
 
-▸ **eventNames**(): `Array`<`string` \| `symbol`>
+▸ **eventNames**(): *Array‹string | symbol›*
 
-*Inherited from EventEmitter.eventNames*
+*Inherited from void*
 
-*Overrides EventEmitter.eventNames*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:24*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:24
 
-**Returns:** `Array`<`string` \| `symbol`>
+**Returns:** *Array‹string | symbol›*
 
 ___
-<a id="focus"></a>
 
 ###  focus
 
-▸ **focus**(): `void`
+▸ **focus**(): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[focus](_declarations_blessed_d_.widgets.blessedelement.md#focus)*
 
-*Defined in [declarations/blessed.d.ts:1794](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1794)*
+*Defined in [declarations/blessed.d.ts:1727](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1727)*
 
 Focus element.
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="forancestors"></a>
 
 ###  forAncestors
 
-▸ **forAncestors**(iter: *`function`*, s?: *`boolean`*): `void`
+▸ **forAncestors**(`iter`: function, `s?`: boolean): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[forAncestors](_declarations_blessed_d_.widgets.node.md#forancestors)*
 
-*Defined in [declarations/blessed.d.ts:431](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L431)*
+*Defined in [declarations/blessed.d.ts:360](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L360)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| iter | `function` |
-| `Optional` s | `boolean` |
+▪ **iter**: *function*
 
-**Returns:** `void`
+▸ (`node`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`node` | [Node](_declarations_blessed_d_.widgets.node.md) |
+
+▪`Optional`  **s**: *boolean*
+
+**Returns:** *void*
 
 ___
-<a id="fordescendants"></a>
 
 ###  forDescendants
 
-▸ **forDescendants**(iter: *`function`*, s?: *`boolean`*): `void`
+▸ **forDescendants**(`iter`: function, `s?`: boolean): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[forDescendants](_declarations_blessed_d_.widgets.node.md#fordescendants)*
 
-*Defined in [declarations/blessed.d.ts:430](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L430)*
+*Defined in [declarations/blessed.d.ts:359](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L359)*
 
-Visit each node's descendants, with \[\[iter\]\] function, parents first. If `s` is provided it will call \[\[iter\]\] on self first.
+Visit each node's descendants, with [[iter]] function,  parents first.
+If `s` is provided it will call [[iter]] on self first.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| iter | `function` |
-| `Optional` s | `boolean` |
+▪ **iter**: *function*
 
-**Returns:** `void`
+▸ (`node`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`node` | [Node](_declarations_blessed_d_.widgets.node.md) |
+
+▪`Optional`  **s**: *boolean*
+
+**Returns:** *void*
 
 ___
-<a id="free"></a>
 
 ###  free
 
-▸ **free**(): `void`
+▸ **free**(): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[free](_declarations_blessed_d_.widgets.blessedelement.md#free)*
 
 *Overrides [Node](_declarations_blessed_d_.widgets.node.md).[free](_declarations_blessed_d_.widgets.node.md#free)*
 
-*Defined in [declarations/blessed.d.ts:1824](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1824)*
+*Defined in [declarations/blessed.d.ts:1757](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1757)*
 
-Free up the element. Automatically unbind all events that may have been bound to the screen object. This prevents memory leaks. For use with onScreenEvent(), removeScreenEvent(), and destroy().
+Free up the element. Automatically unbind all events that may have been bound to the screen
+object. This prevents memory leaks. For use with onScreenEvent(), removeScreenEvent(),
+and destroy().
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="get"></a>
 
 ###  get
 
-▸ **get**<`T`>(name: *`string`*, def: *`T`*): `T`
+▸ **get**<**T**>(`name`: string, `def`: T): *T*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[get](_declarations_blessed_d_.widgets.node.md#get)*
 
-*Defined in [declarations/blessed.d.ts:450](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L450)*
+*Defined in [declarations/blessed.d.ts:380](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L380)*
 
 Get user property with a potential default value.
 
 **Type parameters:**
 
-#### T 
+▪ **T**
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| name | `string` |
-| def | `T` |
+Name | Type |
+------ | ------ |
+`name` | string |
+`def` | T |
 
-**Returns:** `T`
+**Returns:** *T*
 
 ___
-<a id="getbaseline"></a>
 
 ###  getBaseLine
 
-▸ **getBaseLine**(i: *`number`*): `string`
+▸ **getBaseLine**(`i`: number): *string*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[getBaseLine](_declarations_blessed_d_.widgets.blessedelement.md#getbaseline)*
 
-*Defined in [declarations/blessed.d.ts:1974](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1974)*
+*Defined in [declarations/blessed.d.ts:1907](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1907)*
 
 Get a line from the box's content from the visible top.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| i | `number` |
+Name | Type |
+------ | ------ |
+`i` | number |
 
-**Returns:** `string`
+**Returns:** *string*
 
 ___
-<a id="getcontent"></a>
 
 ###  getContent
 
-▸ **getContent**(): `string`
+▸ **getContent**(): *string*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[getContent](_declarations_blessed_d_.widgets.blessedelement.md#getcontent)*
 
-*Defined in [declarations/blessed.d.ts:1944](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1944)*
+*Defined in [declarations/blessed.d.ts:1877](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1877)*
 
 Return content, slightly different from el.content. Assume the above formatting.
 
-**Returns:** `string`
+**Returns:** *string*
 
 ___
-<a id="getline"></a>
 
 ###  getLine
 
-▸ **getLine**(i: *`number`*): `string`
+▸ **getLine**(`i`: number): *string*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[getLine](_declarations_blessed_d_.widgets.blessedelement.md#getline)*
 
-*Defined in [declarations/blessed.d.ts:1969](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1969)*
+*Defined in [declarations/blessed.d.ts:1902](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1902)*
 
 Get a line from the box's content.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| i | `number` |
+Name | Type |
+------ | ------ |
+`i` | number |
 
-**Returns:** `string`
+**Returns:** *string*
 
 ___
-<a id="getlines"></a>
 
 ###  getLines
 
-▸ **getLines**(): `string`[]
+▸ **getLines**(): *string[]*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[getLines](_declarations_blessed_d_.widgets.blessedelement.md#getlines)*
 
-*Defined in [declarations/blessed.d.ts:2039](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L2039)*
+*Defined in [declarations/blessed.d.ts:1972](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1972)*
 
 An array containing the content lines.
 
-**Returns:** `string`[]
+**Returns:** *string[]*
 
 ___
-<a id="getmaxlisteners"></a>
 
 ###  getMaxListeners
 
-▸ **getMaxListeners**(): `number`
+▸ **getMaxListeners**(): *number*
 
-*Inherited from EventEmitter.getMaxListeners*
+*Inherited from void*
 
-*Overrides EventEmitter.getMaxListeners*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:20*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:20
 
-**Returns:** `number`
+**Returns:** *number*
 
 ___
-<a id="getscreenlines"></a>
 
 ###  getScreenLines
 
-▸ **getScreenLines**(): `string`[]
+▸ **getScreenLines**(): *string[]*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[getScreenLines](_declarations_blessed_d_.widgets.blessedelement.md#getscreenlines)*
 
-*Defined in [declarations/blessed.d.ts:2044](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L2044)*
+*Defined in [declarations/blessed.d.ts:1977](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1977)*
 
 An array containing the lines as they are displayed on the screen.
 
-**Returns:** `string`[]
+**Returns:** *string[]*
 
 ___
-<a id="getscroll"></a>
 
 ###  getScroll
 
-▸ **getScroll**(): `number`
+▸ **getScroll**(): *number*
 
 *Inherited from [ScrollableBoxElement](_declarations_blessed_d_.widgets.scrollableboxelement.md).[getScroll](_declarations_blessed_d_.widgets.scrollableboxelement.md#getscroll)*
 
-*Defined in [declarations/blessed.d.ts:2139](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L2139)*
+*Defined in [declarations/blessed.d.ts:2072](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L2072)*
 
 Get the current scroll index in lines.
 
-**Returns:** `number`
+**Returns:** *number*
 
 ___
-<a id="getscrollheight"></a>
 
 ###  getScrollHeight
 
-▸ **getScrollHeight**(): `number`
+▸ **getScrollHeight**(): *number*
 
 *Inherited from [ScrollableBoxElement](_declarations_blessed_d_.widgets.scrollableboxelement.md).[getScrollHeight](_declarations_blessed_d_.widgets.scrollableboxelement.md#getscrollheight)*
 
-*Defined in [declarations/blessed.d.ts:2144](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L2144)*
+*Defined in [declarations/blessed.d.ts:2077](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L2077)*
 
 Get the actual height of the scrolling area.
 
-**Returns:** `number`
+**Returns:** *number*
 
 ___
-<a id="getscrollperc"></a>
 
 ###  getScrollPerc
 
-▸ **getScrollPerc**(): `number`
+▸ **getScrollPerc**(): *number*
 
 *Inherited from [ScrollableBoxElement](_declarations_blessed_d_.widgets.scrollableboxelement.md).[getScrollPerc](_declarations_blessed_d_.widgets.scrollableboxelement.md#getscrollperc)*
 
-*Defined in [declarations/blessed.d.ts:2149](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L2149)*
+*Defined in [declarations/blessed.d.ts:2082](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L2082)*
 
 Get the current scroll index in percentage.
 
-**Returns:** `number`
+**Returns:** *number*
 
 ___
-<a id="gettext"></a>
 
 ###  getText
 
-▸ **getText**(): `string`
+▸ **getText**(): *string*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[getText](_declarations_blessed_d_.widgets.blessedelement.md#gettext)*
 
-*Defined in [declarations/blessed.d.ts:1954](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1954)*
+*Defined in [declarations/blessed.d.ts:1887](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1887)*
 
 Similar to getContent, but return content with tags and escape codes removed.
 
-**Returns:** `string`
+**Returns:** *string*
 
 ___
-<a id="hasancestor"></a>
 
 ###  hasAncestor
 
-▸ **hasAncestor**<`T`>(target: *[Node](_declarations_blessed_d_.widgets.node.md)*): [Node](_declarations_blessed_d_.widgets.node.md)
+▸ **hasAncestor**<**T**>(`target`: [Node](_declarations_blessed_d_.widgets.node.md)): *[Node](_declarations_blessed_d_.widgets.node.md)*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[hasAncestor](_declarations_blessed_d_.widgets.node.md#hasancestor)*
 
-*Defined in [declarations/blessed.d.ts:441](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L441)*
+*Defined in [declarations/blessed.d.ts:370](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L370)*
 
 **Type parameters:**
 
-#### T :  [Node](_declarations_blessed_d_.widgets.node.md)
+▪ **T**: *[Node](_declarations_blessed_d_.widgets.node.md)*
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| target | [Node](_declarations_blessed_d_.widgets.node.md) |
+Name | Type |
+------ | ------ |
+`target` | [Node](_declarations_blessed_d_.widgets.node.md) |
 
-**Returns:** [Node](_declarations_blessed_d_.widgets.node.md)
+**Returns:** *[Node](_declarations_blessed_d_.widgets.node.md)*
 
 ___
-<a id="hasdescendant"></a>
 
 ###  hasDescendant
 
-▸ **hasDescendant**<`T`>(target: *[Node](_declarations_blessed_d_.widgets.node.md)*): [Node](_declarations_blessed_d_.widgets.node.md)
+▸ **hasDescendant**<**T**>(`target`: [Node](_declarations_blessed_d_.widgets.node.md)): *[Node](_declarations_blessed_d_.widgets.node.md)*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[hasDescendant](_declarations_blessed_d_.widgets.node.md#hasdescendant)*
 
-*Defined in [declarations/blessed.d.ts:440](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L440)*
+*Defined in [declarations/blessed.d.ts:369](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L369)*
 
 **Type parameters:**
 
-#### T :  [Node](_declarations_blessed_d_.widgets.node.md)
+▪ **T**: *[Node](_declarations_blessed_d_.widgets.node.md)*
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| target | [Node](_declarations_blessed_d_.widgets.node.md) |
+Name | Type |
+------ | ------ |
+`target` | [Node](_declarations_blessed_d_.widgets.node.md) |
 
-**Returns:** [Node](_declarations_blessed_d_.widgets.node.md)
+**Returns:** *[Node](_declarations_blessed_d_.widgets.node.md)*
 
 ___
-<a id="hide"></a>
 
 ###  hide
 
-▸ **hide**(): `void`
+▸ **hide**(): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[hide](_declarations_blessed_d_.widgets.blessedelement.md#hide)*
 
-*Defined in [declarations/blessed.d.ts:1779](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1779)*
+*Defined in [declarations/blessed.d.ts:1712](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1712)*
 
 Hide element, clear the element's region on the screen and triggers [hide](_declarations_blessed_d_.widget.message.md#hide) event.
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="insert"></a>
 
 ###  insert
 
-▸ **insert**(node: *[Node](_declarations_blessed_d_.widgets.node.md)*, index: *`number`*): `void`
+▸ **insert**(`node`: [Node](_declarations_blessed_d_.widgets.node.md), `index`: number): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[insert](_declarations_blessed_d_.widgets.node.md#insert)*
 
-*Defined in [declarations/blessed.d.ts:409](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L409)*
+*Defined in [declarations/blessed.d.ts:336](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L336)*
 
 Insert a node to this node's children at index i.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| node | [Node](_declarations_blessed_d_.widgets.node.md) |
-| index | `number` |
+Name | Type |
+------ | ------ |
+`node` | [Node](_declarations_blessed_d_.widgets.node.md) |
+`index` | number |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="insertafter"></a>
 
 ###  insertAfter
 
-▸ **insertAfter**(node: *[Node](_declarations_blessed_d_.widgets.node.md)*, refNode: *[Node](_declarations_blessed_d_.widgets.node.md)*): `void`
+▸ **insertAfter**(`node`: [Node](_declarations_blessed_d_.widgets.node.md), `refNode`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[insertAfter](_declarations_blessed_d_.widgets.node.md#insertafter)*
 
-*Defined in [declarations/blessed.d.ts:419](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L419)*
+*Defined in [declarations/blessed.d.ts:346](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L346)*
 
 Insert a node from node after the reference node.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| node | [Node](_declarations_blessed_d_.widgets.node.md) |
-| refNode | [Node](_declarations_blessed_d_.widgets.node.md) |
+Name | Type |
+------ | ------ |
+`node` | [Node](_declarations_blessed_d_.widgets.node.md) |
+`refNode` | [Node](_declarations_blessed_d_.widgets.node.md) |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="insertbefore"></a>
 
 ###  insertBefore
 
-▸ **insertBefore**(node: *[Node](_declarations_blessed_d_.widgets.node.md)*, refNode: *[Node](_declarations_blessed_d_.widgets.node.md)*): `void`
+▸ **insertBefore**(`node`: [Node](_declarations_blessed_d_.widgets.node.md), `refNode`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[insertBefore](_declarations_blessed_d_.widgets.node.md#insertbefore)*
 
-*Defined in [declarations/blessed.d.ts:414](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L414)*
+*Defined in [declarations/blessed.d.ts:341](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L341)*
 
 Insert a node to this node's children before the reference node.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| node | [Node](_declarations_blessed_d_.widgets.node.md) |
-| refNode | [Node](_declarations_blessed_d_.widgets.node.md) |
+Name | Type |
+------ | ------ |
+`node` | [Node](_declarations_blessed_d_.widgets.node.md) |
+`refNode` | [Node](_declarations_blessed_d_.widgets.node.md) |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="insertbottom"></a>
 
 ###  insertBottom
 
-▸ **insertBottom**(lines: *`string` \| `string`[]*): `void`
+▸ **insertBottom**(`lines`: string | string[]): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[insertBottom](_declarations_blessed_d_.widgets.blessedelement.md#insertbottom)*
 
-*Defined in [declarations/blessed.d.ts:2004](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L2004)*
+*Defined in [declarations/blessed.d.ts:1937](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1937)*
 
 Insert a line at the bottom of the box.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| lines | `string` \| `string`[] |
+Name | Type |
+------ | ------ |
+`lines` | string &#124; string[] |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="insertline"></a>
 
 ###  insertLine
 
-▸ **insertLine**(i: *`number`*, lines: *`string` \| `string`[]*): `void`
+▸ **insertLine**(`i`: number, `lines`: string | string[]): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[insertLine](_declarations_blessed_d_.widgets.blessedelement.md#insertline)*
 
-*Defined in [declarations/blessed.d.ts:1959](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1959)*
+*Defined in [declarations/blessed.d.ts:1892](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1892)*
 
 Insert a line into the box's content.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| i | `number` |
-| lines | `string` \| `string`[] |
+Name | Type |
+------ | ------ |
+`i` | number |
+`lines` | string &#124; string[] |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="inserttop"></a>
 
 ###  insertTop
 
-▸ **insertTop**(lines: *`string` \| `string`[]*): `void`
+▸ **insertTop**(`lines`: string | string[]): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[insertTop](_declarations_blessed_d_.widgets.blessedelement.md#inserttop)*
 
-*Defined in [declarations/blessed.d.ts:1999](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1999)*
+*Defined in [declarations/blessed.d.ts:1932](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1932)*
 
 Insert a line at the top of the box.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| lines | `string` \| `string`[] |
+Name | Type |
+------ | ------ |
+`lines` | string &#124; string[] |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="key"></a>
 
 ###  key
 
-▸ **key**(name: *`string` \| `string`[]*, listener: *[KeyEventListener](../modules/_declarations_blessed_d_.widgets.md#keyeventlistener)*): `void`
+▸ **key**(`name`: string | string[], `listener`: [KeyEventListener](../modules/_declarations_blessed_d_.widgets.md#keyeventlistener)): *void*
 
 *Inherited from [NodeWithEvents](_declarations_blessed_d_.widgets.nodewithevents.md).[key](_declarations_blessed_d_.widgets.nodewithevents.md#key)*
 
-*Defined in [declarations/blessed.d.ts:558](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L558)*
+*Defined in [declarations/blessed.d.ts:491](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L491)*
 
 Bind a keypress listener for a specific key.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| name | `string` \| `string`[] |
-| listener | [KeyEventListener](../modules/_declarations_blessed_d_.widgets.md#keyeventlistener) |
+Name | Type |
+------ | ------ |
+`name` | string &#124; string[] |
+`listener` | [KeyEventListener](../modules/_declarations_blessed_d_.widgets.md#keyeventlistener) |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="kill"></a>
 
 ###  kill
 
-▸ **kill**(): `any`
+▸ **kill**(): *any*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[kill](_declarations_blessed_d_.widgets.blessedelement.md#kill)*
 
-*Defined in [declarations/blessed.d.ts:1888](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1888)*
+*Defined in [declarations/blessed.d.ts:1821](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1821)*
 
-**Returns:** `any`
+**Returns:** *any*
 
 ___
-<a id="listenercount"></a>
 
 ###  listenerCount
 
-▸ **listenerCount**(type: *`string` \| `symbol`*): `number`
+▸ **listenerCount**(`type`: string | symbol): *number*
 
-*Inherited from EventEmitter.listenerCount*
+*Inherited from void*
 
-*Overrides EventEmitter.listenerCount*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:25*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:25
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| type | `string` \| `symbol` |
+Name | Type |
+------ | ------ |
+`type` | string &#124; symbol |
 
-**Returns:** `number`
+**Returns:** *number*
 
 ___
-<a id="listeners"></a>
 
 ###  listeners
 
-▸ **listeners**(event: *`string` \| `symbol`*): `Function`[]
+▸ **listeners**(`event`: string | symbol): *Function[]*
 
-*Inherited from EventEmitter.listeners*
+*Inherited from void*
 
-*Overrides EventEmitter.listeners*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:21*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:21
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
+Name | Type |
+------ | ------ |
+`event` | string &#124; symbol |
 
-**Returns:** `Function`[]
+**Returns:** *Function[]*
 
 ___
-<a id="log"></a>
 
 ###  log
 
-▸ **log**(text: *`string`*, time: *`number`*, callback: *`function`*): `void`
-
-▸ **log**(text: *`string`*, callback: *`function`*): `void`
+▸ **log**(`text`: string, `time`: number, `callback`: function): *void*
 
 *Inherited from [MessageElement](_declarations_blessed_d_.widgets.messageelement.md).[log](_declarations_blessed_d_.widgets.messageelement.md#log)*
 
-*Defined in [declarations/blessed.d.ts:3101](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3101)*
+*Defined in [declarations/blessed.d.ts:3034](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3034)*
 
-Display a message for a time (default is 3 seconds). Set time to 0 for a perpetual message that is dismissed on keypress.
+Display a message for a time (default is 3 seconds). Set time to 0 for a
+perpetual message that is dismissed on keypress.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| text | `string` |
-| time | `number` |
-| callback | `function` |
+▪ **text**: *string*
 
-**Returns:** `void`
+▪ **time**: *number*
+
+▪ **callback**: *function*
+
+▸ (`err`: any): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`err` | any |
+
+**Returns:** *void*
+
+▸ **log**(`text`: string, `callback`: function): *void*
 
 *Inherited from [MessageElement](_declarations_blessed_d_.widgets.messageelement.md).[log](_declarations_blessed_d_.widgets.messageelement.md#log)*
 
-*Defined in [declarations/blessed.d.ts:3102](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L3102)*
+*Defined in [declarations/blessed.d.ts:3035](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3035)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| text | `string` |
-| callback | `function` |
+▪ **text**: *string*
 
-**Returns:** `void`
+▪ **callback**: *function*
+
+▸ (`err`: any): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`err` | any |
+
+**Returns:** *void*
 
 ___
-<a id="off"></a>
 
 ###  off
 
-▸ **off**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
+▸ **off**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from EventEmitter.off*
+*Inherited from void*
 
-*Overrides EventEmitter.off*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:17*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:17
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *string | symbol*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="on"></a>
 
 ###  on
 
-▸ **on**(event: *`string`*, listener: *`function`*): `this`
-
-▸ **on**(event: *"scroll"*, callback: *`function`*): `this`
+▸ **on**(`event`: string, `listener`: function): *this*
 
 *Inherited from [ScrollableBoxElement](_declarations_blessed_d_.widgets.scrollableboxelement.md).[on](_declarations_blessed_d_.widgets.scrollableboxelement.md#on)*
 
 *Overrides [NodeWithEvents](_declarations_blessed_d_.widgets.nodewithevents.md).[on](_declarations_blessed_d_.widgets.nodewithevents.md#on)*
 
-*Defined in [declarations/blessed.d.ts:2156](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L2156)*
+*Defined in [declarations/blessed.d.ts:2089](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L2089)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` |
-| listener | `function` |
+▪ **event**: *string*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
+
+▸ **on**(`event`: "scroll", `callback`: function): *this*
 
 *Inherited from [ScrollableBoxElement](_declarations_blessed_d_.widgets.scrollableboxelement.md).[on](_declarations_blessed_d_.widgets.scrollableboxelement.md#on)*
 
 *Overrides [NodeWithEvents](_declarations_blessed_d_.widgets.nodewithevents.md).[on](_declarations_blessed_d_.widgets.nodewithevents.md#on)*
 
-*Defined in [declarations/blessed.d.ts:2161](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L2161)*
+*Defined in [declarations/blessed.d.ts:2094](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L2094)*
 
 Received when the element is scrolled.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "scroll" |
-| callback | `function` |
+▪ **event**: *"scroll"*
 
-**Returns:** `this`
+▪ **callback**: *function*
+
+▸ (): *void*
+
+**Returns:** *this*
 
 ___
-<a id="onscreenevent"></a>
 
 ###  onScreenEvent
 
-▸ **onScreenEvent**(type: *`string`*, handler: *`function`*): `void`
+▸ **onScreenEvent**(`type`: string, `handler`: function): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[onScreenEvent](_declarations_blessed_d_.widgets.blessedelement.md#onscreenevent)*
 
-*Defined in [declarations/blessed.d.ts:1810](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1810)*
+*Defined in [declarations/blessed.d.ts:1743](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1743)*
 
-Same as el.on('screen', ...) except this will automatically keep track of which listeners are bound to the screen object. For use with removeScreenEvent(), free(), and destroy().
+Same as el.on('screen', ...) except this will automatically keep track of which listeners
+are bound to the screen object. For use with removeScreenEvent(), free(), and destroy().
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| type | `string` |
-| handler | `function` |
+▪ **type**: *string*
 
-**Returns:** `void`
+▪ **handler**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *void*
 
 ___
-<a id="once"></a>
 
 ###  once
 
-▸ **once**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
+▸ **once**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from EventEmitter.once*
+*Inherited from void*
 
-*Overrides EventEmitter.once*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:13*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:13
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *string | symbol*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="oncekey"></a>
 
 ###  onceKey
 
-▸ **onceKey**(name: *`string`*, listener: *[KeyEventListener](../modules/_declarations_blessed_d_.widgets.md#keyeventlistener)*): `void`
+▸ **onceKey**(`name`: string, `listener`: [KeyEventListener](../modules/_declarations_blessed_d_.widgets.md#keyeventlistener)): *void*
 
 *Inherited from [NodeWithEvents](_declarations_blessed_d_.widgets.nodewithevents.md).[onceKey](_declarations_blessed_d_.widgets.nodewithevents.md#oncekey)*
 
-*Defined in [declarations/blessed.d.ts:563](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L563)*
+*Defined in [declarations/blessed.d.ts:496](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L496)*
 
 Bind a keypress listener for a specific key once.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| name | `string` |
-| listener | [KeyEventListener](../modules/_declarations_blessed_d_.widgets.md#keyeventlistener) |
+Name | Type |
+------ | ------ |
+`name` | string |
+`listener` | [KeyEventListener](../modules/_declarations_blessed_d_.widgets.md#keyeventlistener) |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="parsecontent"></a>
 
 ###  parseContent
 
-▸ **parseContent**(noTags: *`string`*): `boolean`
+▸ **parseContent**(`noTags`: string): *boolean*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[parseContent](_declarations_blessed_d_.widgets.blessedelement.md#parsecontent)*
 
-*Defined in [declarations/blessed.d.ts:1804](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1804)*
+*Defined in [declarations/blessed.d.ts:1737](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1737)*
 
 Parses given content string with no tags before rendering. Removes / transform characters that break the output.
 
-For example, double-width chars will eat the next char after render in this case it creates a blank character after it so it doesn't eat the real next char.
+For example, double-width chars will eat the next char after render in this case it creates a blank character
+after it so it doesn't eat the real next char.
 
-*__internal__*: 
+**`internal`** 
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| noTags | `string` |
+Name | Type |
+------ | ------ |
+`noTags` | string |
 
-**Returns:** `boolean`
+**Returns:** *boolean*
 
 ___
-<a id="popline"></a>
 
 ###  popLine
 
-▸ **popLine**(i: *`number`*): `string`
+▸ **popLine**(`i`: number): *string*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[popLine](_declarations_blessed_d_.widgets.blessedelement.md#popline)*
 
-*Defined in [declarations/blessed.d.ts:2034](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L2034)*
+*Defined in [declarations/blessed.d.ts:1967](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1967)*
 
 Pop a line off the bottom of the content.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| i | `number` |
+Name | Type |
+------ | ------ |
+`i` | number |
 
-**Returns:** `string`
+**Returns:** *string*
 
 ___
-<a id="prepend"></a>
 
 ###  prepend
 
-▸ **prepend**(node: *[Node](_declarations_blessed_d_.widgets.node.md)*): `void`
+▸ **prepend**(`node`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[prepend](_declarations_blessed_d_.widgets.node.md#prepend)*
 
-*Defined in [declarations/blessed.d.ts:394](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L394)*
+*Defined in [declarations/blessed.d.ts:321](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L321)*
 
 Prepend a node to this node's children.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| node | [Node](_declarations_blessed_d_.widgets.node.md) |
+Name | Type |
+------ | ------ |
+`node` | [Node](_declarations_blessed_d_.widgets.node.md) |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="prependlistener"></a>
 
 ###  prependListener
 
-▸ **prependListener**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
+▸ **prependListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from EventEmitter.prependListener*
+*Inherited from void*
 
-*Overrides EventEmitter.prependListener*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:14*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:14
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *string | symbol*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="prependoncelistener"></a>
 
 ###  prependOnceListener
 
-▸ **prependOnceListener**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
+▸ **prependOnceListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from EventEmitter.prependOnceListener*
+*Inherited from void*
 
-*Overrides EventEmitter.prependOnceListener*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:15*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:15
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *string | symbol*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="pushline"></a>
 
 ###  pushLine
 
-▸ **pushLine**(lines: *`string` \| `string`[]*): `void`
+▸ **pushLine**(`lines`: string | string[]): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[pushLine](_declarations_blessed_d_.widgets.blessedelement.md#pushline)*
 
-*Defined in [declarations/blessed.d.ts:2029](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L2029)*
+*Defined in [declarations/blessed.d.ts:1962](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1962)*
 
 Push a line onto the bottom of the content.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| lines | `string` \| `string`[] |
+Name | Type |
+------ | ------ |
+`lines` | string &#124; string[] |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="rawlisteners"></a>
 
 ###  rawListeners
 
-▸ **rawListeners**(event: *`string` \| `symbol`*): `Function`[]
+▸ **rawListeners**(`event`: string | symbol): *Function[]*
 
-*Inherited from EventEmitter.rawListeners*
+*Inherited from void*
 
-*Overrides EventEmitter.rawListeners*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:22*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:22
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
+Name | Type |
+------ | ------ |
+`event` | string &#124; symbol |
 
-**Returns:** `Function`[]
+**Returns:** *Function[]*
 
 ___
-<a id="remove"></a>
 
 ###  remove
 
-▸ **remove**(node: *[Node](_declarations_blessed_d_.widgets.node.md)*): `void`
+▸ **remove**(`node`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[remove](_declarations_blessed_d_.widgets.node.md#remove)*
 
-*Defined in [declarations/blessed.d.ts:404](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L404)*
+*Defined in [declarations/blessed.d.ts:331](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L331)*
 
 Remove child node from node.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| node | [Node](_declarations_blessed_d_.widgets.node.md) |
+Name | Type |
+------ | ------ |
+`node` | [Node](_declarations_blessed_d_.widgets.node.md) |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="removealllisteners"></a>
 
 ###  removeAllListeners
 
-▸ **removeAllListeners**(event?: *`string` \| `symbol`*): `this`
+▸ **removeAllListeners**(`event?`: string | symbol): *this*
 
-*Inherited from EventEmitter.removeAllListeners*
+*Inherited from void*
 
-*Overrides EventEmitter.removeAllListeners*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:18*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:18
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` event | `string` \| `symbol` |
+Name | Type |
+------ | ------ |
+`event?` | string &#124; symbol |
 
-**Returns:** `this`
+**Returns:** *this*
 
 ___
-<a id="removehover"></a>
 
 ###  removeHover
 
-▸ **removeHover**(): `void`
+▸ **removeHover**(): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[removeHover](_declarations_blessed_d_.widgets.blessedelement.md#removehover)*
 
-*Defined in [declarations/blessed.d.ts:1866](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1866)*
+*Defined in [declarations/blessed.d.ts:1799](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1799)*
 
 Remove the hover label completely.
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="removekey"></a>
 
 ###  removeKey
 
-▸ **removeKey**(name: *`string`*, listener: *[KeyEventListener](../modules/_declarations_blessed_d_.widgets.md#keyeventlistener)*): `void`
+▸ **removeKey**(`name`: string, `listener`: [KeyEventListener](../modules/_declarations_blessed_d_.widgets.md#keyeventlistener)): *void*
 
 *Inherited from [NodeWithEvents](_declarations_blessed_d_.widgets.nodewithevents.md).[removeKey](_declarations_blessed_d_.widgets.nodewithevents.md#removekey)*
 
-*Defined in [declarations/blessed.d.ts:573](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L573)*
+*Defined in [declarations/blessed.d.ts:506](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L506)*
 
 Remove a keypress listener for a specific key.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| name | `string` |
-| listener | [KeyEventListener](../modules/_declarations_blessed_d_.widgets.md#keyeventlistener) |
+Name | Type |
+------ | ------ |
+`name` | string |
+`listener` | [KeyEventListener](../modules/_declarations_blessed_d_.widgets.md#keyeventlistener) |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="removelabel"></a>
 
 ###  removeLabel
 
-▸ **removeLabel**(): `any`
+▸ **removeLabel**(): *any*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[removeLabel](_declarations_blessed_d_.widgets.blessedelement.md#removelabel)*
 
-*Defined in [declarations/blessed.d.ts:1855](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1855)*
+*Defined in [declarations/blessed.d.ts:1788](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1788)*
 
 Remove the label completely.
 
-**Returns:** `any`
+**Returns:** *any*
 
 ___
-<a id="removelistener"></a>
 
 ###  removeListener
 
-▸ **removeListener**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
+▸ **removeListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from EventEmitter.removeListener*
+*Inherited from void*
 
-*Overrides EventEmitter.removeListener*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:16*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:16
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *string | symbol*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="removescreenevent"></a>
 
 ###  removeScreenEvent
 
-▸ **removeScreenEvent**(type: *`string`*, handler: *`function`*): `void`
+▸ **removeScreenEvent**(`type`: string, `handler`: function): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[removeScreenEvent](_declarations_blessed_d_.widgets.blessedelement.md#removescreenevent)*
 
-*Defined in [declarations/blessed.d.ts:1816](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1816)*
+*Defined in [declarations/blessed.d.ts:1749](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1749)*
 
-Same asel.removeListener('screen', ...) except this will automatically keep track of which listeners are bound to the screen object. For use with onScreenEvent(), free(), and destroy().
+Same asel.removeListener('screen', ...) except this will automatically keep track of which
+listeners are bound to the screen object. For use with onScreenEvent(), free(), and destroy().
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| type | `string` |
-| handler | `function` |
+▪ **type**: *string*
 
-**Returns:** `void`
+▪ **handler**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *void*
 
 ___
-<a id="render"></a>
 
 ###  render
 
-▸ **render**(): [Coords](../interfaces/_declarations_blessed_d_.widgets.coords.md) \| `undefined`
+▸ **render**(): *[Coords](../interfaces/_declarations_blessed_d_.widgets.coords.md) | undefined*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[render](_declarations_blessed_d_.widgets.blessedelement.md#render)*
 
-*Defined in [declarations/blessed.d.ts:1709](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1709)*
+*Defined in [declarations/blessed.d.ts:1642](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1642)*
 
 Write content and children to the screen buffer.
 
-**Returns:** [Coords](../interfaces/_declarations_blessed_d_.widgets.coords.md) \| `undefined`
+**Returns:** *[Coords](../interfaces/_declarations_blessed_d_.widgets.coords.md) | undefined*
 
 ___
-<a id="resetscroll"></a>
 
 ###  resetScroll
 
-▸ **resetScroll**(): `void`
+▸ **resetScroll**(): *void*
 
 *Inherited from [ScrollableBoxElement](_declarations_blessed_d_.widgets.scrollableboxelement.md).[resetScroll](_declarations_blessed_d_.widgets.scrollableboxelement.md#resetscroll)*
 
-*Defined in [declarations/blessed.d.ts:2154](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L2154)*
+*Defined in [declarations/blessed.d.ts:2087](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L2087)*
 
 Reset the scroll index to its initial state.
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="sattr"></a>
 
 ###  sattr
 
-▸ **sattr**(style: *[TStyle](../interfaces/_declarations_blessed_d_.widgets.types.tstyle.md)*, fg?: *`string`*, bg?: *`string`*): `any`
+▸ **sattr**(`style`: [TStyle](../interfaces/_declarations_blessed_d_.widgets.types.tstyle.md), `fg?`: string, `bg?`: string): *any*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[sattr](_declarations_blessed_d_.widgets.blessedelement.md#sattr)*
 
-*Defined in [declarations/blessed.d.ts:1924](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1924)*
+*Defined in [declarations/blessed.d.ts:1857](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1857)*
 
-calculates the value for `style` (could be substyle like style.bar) to paint in the screen according to the rest of the properties and optionally bg and fg.
+calculates the value for `style` (could be substyle like style.bar) to paint in the screen according to
+the rest of the properties and optionally bg and fg.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| style | [TStyle](../interfaces/_declarations_blessed_d_.widgets.types.tstyle.md) |
-| `Optional` fg | `string` |
-| `Optional` bg | `string` |
+Name | Type |
+------ | ------ |
+`style` | [TStyle](../interfaces/_declarations_blessed_d_.widgets.types.tstyle.md) |
+`fg?` | string |
+`bg?` | string |
 
-**Returns:** `any`
+**Returns:** *any*
 
 ___
-<a id="screenshot"></a>
 
 ###  screenshot
 
-▸ **screenshot**(xi: *`number`*, xl: *`number`*, yi: *`number`*, yl: *`number`*): `string`
-
-▸ **screenshot**(): `string`
+▸ **screenshot**(`xi`: number, `xl`: number, `yi`: number, `yl`: number): *string*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[screenshot](_declarations_blessed_d_.widgets.blessedelement.md#screenshot)*
 
-*Defined in [declarations/blessed.d.ts:1899](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1899)*
+*Defined in [declarations/blessed.d.ts:1832](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1832)*
 
-Take an SGR screenshot of the screen within the region. Returns a string containing only characters and SGR codes. Can be displayed by simply echoing it in a terminal.
+Take an SGR screenshot of the screen within the region. Returns a string containing only
+characters and SGR codes. Can be displayed by simply echoing it in a terminal.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| xi | `number` |
-| xl | `number` |
-| yi | `number` |
-| yl | `number` |
+Name | Type |
+------ | ------ |
+`xi` | number |
+`xl` | number |
+`yi` | number |
+`yl` | number |
 
-**Returns:** `string`
+**Returns:** *string*
+
+▸ **screenshot**(): *string*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[screenshot](_declarations_blessed_d_.widgets.blessedelement.md#screenshot)*
 
-*Defined in [declarations/blessed.d.ts:1904](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1904)*
+*Defined in [declarations/blessed.d.ts:1837](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1837)*
 
-Take an SGR screenshot of the whole screen. Returns a string containing only characters and SGR codes. Can be displayed by simply echoing it in a terminal.
+Take an SGR screenshot of the whole screen. Returns a string containing only
+characters and SGR codes. Can be displayed by simply echoing it in a terminal.
 
-**Returns:** `string`
+**Returns:** *string*
 
 ___
-<a id="scroll"></a>
 
 ###  scroll
 
-▸ **scroll**(offset: *`number`*, always?: *`boolean`*): `void`
+▸ **scroll**(`offset`: number, `always?`: boolean): *void*
 
 *Inherited from [ScrollableBoxElement](_declarations_blessed_d_.widgets.scrollableboxelement.md).[scroll](_declarations_blessed_d_.widgets.scrollableboxelement.md#scroll)*
 
-*Defined in [declarations/blessed.d.ts:2119](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L2119)*
+*Defined in [declarations/blessed.d.ts:2052](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L2052)*
 
 Scroll the content by a relative offset.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| offset | `number` |
-| `Optional` always | `boolean` |
+Name | Type |
+------ | ------ |
+`offset` | number |
+`always?` | boolean |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="scrollto"></a>
 
 ###  scrollTo
 
-▸ **scrollTo**(index: *`number`*): `void`
+▸ **scrollTo**(`index`: number): *void*
 
 *Inherited from [ScrollableBoxElement](_declarations_blessed_d_.widgets.scrollableboxelement.md).[scrollTo](_declarations_blessed_d_.widgets.scrollableboxelement.md#scrollto)*
 
-*Defined in [declarations/blessed.d.ts:2124](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L2124)*
+*Defined in [declarations/blessed.d.ts:2057](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L2057)*
 
 Scroll the content to an absolute index.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| index | `number` |
+Name | Type |
+------ | ------ |
+`index` | number |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="set"></a>
 
 ###  set
 
-▸ **set**(name: *`string`*, value: *`any`*): `void`
+▸ **set**(`name`: string, `value`: any): *void*
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[set](_declarations_blessed_d_.widgets.node.md#set)*
 
-*Defined in [declarations/blessed.d.ts:455](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L455)*
+*Defined in [declarations/blessed.d.ts:385](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L385)*
 
 Set user property to value.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| name | `string` |
-| value | `any` |
+Name | Type |
+------ | ------ |
+`name` | string |
+`value` | any |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="setback"></a>
 
 ###  setBack
 
-▸ **setBack**(): `void`
+▸ **setBack**(): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[setBack](_declarations_blessed_d_.widgets.blessedelement.md#setback)*
 
-*Defined in [declarations/blessed.d.ts:1845](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1845)*
+*Defined in [declarations/blessed.d.ts:1778](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1778)*
 
 Put the element in back of its siblings.
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="setbaseline"></a>
 
 ###  setBaseLine
 
-▸ **setBaseLine**(i: *`number`*, line: *`string` \| `string`[]*): `void`
+▸ **setBaseLine**(`i`: number, `line`: string | string[]): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[setBaseLine](_declarations_blessed_d_.widgets.blessedelement.md#setbaseline)*
 
-*Defined in [declarations/blessed.d.ts:1984](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1984)*
+*Defined in [declarations/blessed.d.ts:1917](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1917)*
 
 Set a line in the box's content from the visible top.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| i | `number` |
-| line | `string` \| `string`[] |
+Name | Type |
+------ | ------ |
+`i` | number |
+`line` | string &#124; string[] |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="setcontent"></a>
 
 ###  setContent
 
-▸ **setContent**(text: *`string`*, noClear?: *`boolean`*, noTags?: *`boolean`*): `void`
+▸ **setContent**(`text`: string, `noClear?`: boolean, `noTags?`: boolean): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[setContent](_declarations_blessed_d_.widgets.blessedelement.md#setcontent)*
 
-*Defined in [declarations/blessed.d.ts:1940](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1940)*
+*Defined in [declarations/blessed.d.ts:1873](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1873)*
 
-Set the content. Note: When text is input, it will be stripped of all non-SGR escape codes, tabs will be replaced with 8 spaces, and tags will be replaced with SGR codes (if enabled).
+Set the content. Note: When text is input, it will be stripped of all non-SGR
+escape codes, tabs will be replaced with 8 spaces, and tags will be replaced
+with SGR codes (if enabled).
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| text | `string` |
-| `Optional` noClear | `boolean` |
-| `Optional` noTags | `boolean` |
+Name | Type |
+------ | ------ |
+`text` | string |
+`noClear?` | boolean |
+`noTags?` | boolean |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="setfront"></a>
 
 ###  setFront
 
-▸ **setFront**(): `void`
+▸ **setFront**(): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[setFront](_declarations_blessed_d_.widgets.blessedelement.md#setfront)*
 
-*Defined in [declarations/blessed.d.ts:1840](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1840)*
+*Defined in [declarations/blessed.d.ts:1773](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1773)*
 
 Put the element in front of its siblings. Uses [setIndex](_declarations_blessed_d_.widget.message.md#setindex)
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="sethover"></a>
 
 ###  setHover
 
-▸ **setHover**(arg: *`string` \| [LabelOptions](../interfaces/_declarations_blessed_d_.widgets.labeloptions.md)*): `void`
+▸ **setHover**(`arg`: string | [LabelOptions](../interfaces/_declarations_blessed_d_.widgets.labeloptions.md)): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[setHover](_declarations_blessed_d_.widgets.blessedelement.md#sethover)*
 
-*Defined in [declarations/blessed.d.ts:1861](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1861)*
+*Defined in [declarations/blessed.d.ts:1794](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1794)*
 
-text/options - Set a hover text box to follow the cursor. Similar to the "title" DOM attribute in the browser. Example options: {text:'foo'}
+text/options - Set a hover text box to follow the cursor. Similar to the "title" DOM attribute
+in the browser. Example options: {text:'foo'}
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| arg | `string` \| [LabelOptions](../interfaces/_declarations_blessed_d_.widgets.labeloptions.md) |
+Name | Type |
+------ | ------ |
+`arg` | string &#124; [LabelOptions](../interfaces/_declarations_blessed_d_.widgets.labeloptions.md) |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="setindex"></a>
 
 ###  setIndex
 
-▸ **setIndex**(z: *`number`*): `void`
+▸ **setIndex**(`z`: number): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[setIndex](_declarations_blessed_d_.widgets.blessedelement.md#setindex)*
 
-*Defined in [declarations/blessed.d.ts:1835](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1835)*
+*Defined in [declarations/blessed.d.ts:1768](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1768)*
 
 Change this element's index in its parent's children array. This will change the rendering order. If all elements are positioned by their selves then this could be similar to CSS z-index property. But if you are using a layout or relaying somhow in the children order then it will change the position of this element and its siblings.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| z | `number` |
+Name | Type |
+------ | ------ |
+`z` | number |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="setlabel"></a>
 
 ###  setLabel
 
-▸ **setLabel**(arg: *`string` \| [LabelOptions](../interfaces/_declarations_blessed_d_.widgets.labeloptions.md)*): `void`
+▸ **setLabel**(`arg`: string | [LabelOptions](../interfaces/_declarations_blessed_d_.widgets.labeloptions.md)): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[setLabel](_declarations_blessed_d_.widgets.blessedelement.md#setlabel)*
 
-*Defined in [declarations/blessed.d.ts:1850](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1850)*
+*Defined in [declarations/blessed.d.ts:1783](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1783)*
 
 text/options - Set the label text for the top-left corner. Example options: {text:'foo',side:'left'}
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| arg | `string` \| [LabelOptions](../interfaces/_declarations_blessed_d_.widgets.labeloptions.md) |
+Name | Type |
+------ | ------ |
+`arg` | string &#124; [LabelOptions](../interfaces/_declarations_blessed_d_.widgets.labeloptions.md) |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="setline"></a>
 
 ###  setLine
 
-▸ **setLine**(i: *`number`*, line: *`string` \| `string`[]*): `void`
+▸ **setLine**(`i`: number, `line`: string | string[]): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[setLine](_declarations_blessed_d_.widgets.blessedelement.md#setline)*
 
-*Defined in [declarations/blessed.d.ts:1979](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1979)*
+*Defined in [declarations/blessed.d.ts:1912](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1912)*
 
 Set a line in the box's content.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| i | `number` |
-| line | `string` \| `string`[] |
+Name | Type |
+------ | ------ |
+`i` | number |
+`line` | string &#124; string[] |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="setmaxlisteners"></a>
 
 ###  setMaxListeners
 
-▸ **setMaxListeners**(n: *`number`*): `this`
+▸ **setMaxListeners**(`n`: number): *this*
 
-*Inherited from EventEmitter.setMaxListeners*
+*Inherited from void*
 
-*Overrides EventEmitter.setMaxListeners*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:19*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:19
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| n | `number` |
+Name | Type |
+------ | ------ |
+`n` | number |
 
-**Returns:** `this`
+**Returns:** *this*
 
 ___
-<a id="setscroll"></a>
 
 ###  setScroll
 
-▸ **setScroll**(index: *`number`*): `void`
+▸ **setScroll**(`index`: number): *void*
 
 *Inherited from [ScrollableBoxElement](_declarations_blessed_d_.widgets.scrollableboxelement.md).[setScroll](_declarations_blessed_d_.widgets.scrollableboxelement.md#setscroll)*
 
-*Defined in [declarations/blessed.d.ts:2129](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L2129)*
+*Defined in [declarations/blessed.d.ts:2062](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L2062)*
 
 Same as scrollTo.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| index | `number` |
+Name | Type |
+------ | ------ |
+`index` | number |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="setscrollperc"></a>
 
 ###  setScrollPerc
 
-▸ **setScrollPerc**(perc: *`number`*): `void`
+▸ **setScrollPerc**(`perc`: number): *void*
 
 *Inherited from [ScrollableBoxElement](_declarations_blessed_d_.widgets.scrollableboxelement.md).[setScrollPerc](_declarations_blessed_d_.widgets.scrollableboxelement.md#setscrollperc)*
 
-*Defined in [declarations/blessed.d.ts:2134](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L2134)*
+*Defined in [declarations/blessed.d.ts:2067](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L2067)*
 
 Set the current scroll index in percentage (0-100).
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| perc | `number` |
+Name | Type |
+------ | ------ |
+`perc` | number |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="settext"></a>
 
 ###  setText
 
-▸ **setText**(text: *`string`*, noClear?: *`boolean`*): `void`
+▸ **setText**(`text`: string, `noClear?`: boolean): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[setText](_declarations_blessed_d_.widgets.blessedelement.md#settext)*
 
-*Defined in [declarations/blessed.d.ts:1949](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1949)*
+*Defined in [declarations/blessed.d.ts:1882](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1882)*
 
 Similar to setContent, but ignore tags and remove escape codes.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| text | `string` |
-| `Optional` noClear | `boolean` |
+Name | Type |
+------ | ------ |
+`text` | string |
+`noClear?` | boolean |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="shiftline"></a>
 
 ###  shiftLine
 
-▸ **shiftLine**(i: *`number`*): `void`
+▸ **shiftLine**(`i`: number): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[shiftLine](_declarations_blessed_d_.widgets.blessedelement.md#shiftline)*
 
-*Defined in [declarations/blessed.d.ts:2024](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L2024)*
+*Defined in [declarations/blessed.d.ts:1957](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1957)*
 
 Shift a line off the top of the content.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| i | `number` |
+Name | Type |
+------ | ------ |
+`i` | number |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="show"></a>
 
 ###  show
 
-▸ **show**(): `void`
+▸ **show**(): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[show](_declarations_blessed_d_.widgets.blessedelement.md#show)*
 
-*Defined in [declarations/blessed.d.ts:1784](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1784)*
+*Defined in [declarations/blessed.d.ts:1717](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1717)*
 
 Show element.
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="strwidth"></a>
 
 ###  strWidth
 
-▸ **strWidth**(text: *`string`*): `string`
+▸ **strWidth**(`text`: string): *string*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[strWidth](_declarations_blessed_d_.widgets.blessedelement.md#strwidth)*
 
-*Defined in [declarations/blessed.d.ts:2050](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L2050)*
+*Defined in [declarations/blessed.d.ts:1983](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1983)*
 
-Get a string's displayed width, taking into account double-width, surrogate pairs, combining characters, tags, and SGR escape codes.
+Get a string's displayed width, taking into account double-width, surrogate pairs,
+combining characters, tags, and SGR escape codes.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| text | `string` |
+Name | Type |
+------ | ------ |
+`text` | string |
 
-**Returns:** `string`
+**Returns:** *string*
 
 ___
-<a id="toggle"></a>
 
 ###  toggle
 
-▸ **toggle**(): `void`
+▸ **toggle**(): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[toggle](_declarations_blessed_d_.widgets.blessedelement.md#toggle)*
 
-*Defined in [declarations/blessed.d.ts:1789](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L1789)*
+*Defined in [declarations/blessed.d.ts:1722](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1722)*
 
 Toggle hidden/shown.
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="unkey"></a>
 
 ###  unkey
 
-▸ **unkey**(name: *`string`*, listener: *[KeyEventListener](../modules/_declarations_blessed_d_.widgets.md#keyeventlistener)*): `void`
+▸ **unkey**(`name`: string, `listener`: [KeyEventListener](../modules/_declarations_blessed_d_.widgets.md#keyeventlistener)): *void*
 
 *Inherited from [NodeWithEvents](_declarations_blessed_d_.widgets.nodewithevents.md).[unkey](_declarations_blessed_d_.widgets.nodewithevents.md#unkey)*
 
-*Defined in [declarations/blessed.d.ts:568](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L568)*
+*Defined in [declarations/blessed.d.ts:501](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L501)*
 
 Remove a keypress listener for a specific key.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| name | `string` |
-| listener | [KeyEventListener](../modules/_declarations_blessed_d_.widgets.md#keyeventlistener) |
+Name | Type |
+------ | ------ |
+`name` | string |
+`listener` | [KeyEventListener](../modules/_declarations_blessed_d_.widgets.md#keyeventlistener) |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="unshiftline"></a>
 
 ###  unshiftLine
 
-▸ **unshiftLine**(lines: *`string` \| `string`[]*): `void`
+▸ **unshiftLine**(`lines`: string | string[]): *void*
 
 *Inherited from [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md).[unshiftLine](_declarations_blessed_d_.widgets.blessedelement.md#unshiftline)*
 
-*Defined in [declarations/blessed.d.ts:2019](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L2019)*
+*Defined in [declarations/blessed.d.ts:1952](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1952)*
 
 Unshift a line onto the top of the content.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| lines | `string` \| `string`[] |
+Name | Type |
+------ | ------ |
+`lines` | string &#124; string[] |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="listenercount-1"></a>
 
-### `<Static>` listenerCount
+### `Static` listenerCount
 
-▸ **listenerCount**(emitter: *`EventEmitter`*, event: *`string` \| `symbol`*): `number`
+▸ **listenerCount**(`emitter`: EventEmitter, `event`: string | symbol): *number*
 
-*Inherited from EventEmitter.listenerCount*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:8*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:8
 
-*__deprecated__*: since v4.0.0
+**`deprecated`** since v4.0.0
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| emitter | `EventEmitter` |
-| event | `string` \| `symbol` |
+Name | Type |
+------ | ------ |
+`emitter` | EventEmitter |
+`event` | string &#124; symbol |
 
-**Returns:** `number`
-
-___
-
+**Returns:** *number*

@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["jsx-components/accordion"](../modules/_jsx_components_accordion_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx-components/accordion"](_jsx_components_accordion_.md)
 
 # External module: "jsx-components/accordion"
 
@@ -13,6 +13,3 @@
 
 * [AccordionBlockProps](../interfaces/_jsx_components_accordion_.accordionblockprops.md)
 * [AccordionProps](../interfaces/_jsx_components_accordion_.accordionprops.md)
-
----
-

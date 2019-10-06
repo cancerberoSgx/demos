@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["blessed/rowColumnResize"](../modules/_blessed_rowcolumnresize_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["blessed/rowColumnResize"](_blessed_rowcolumnresize_.md)
 
 # External module: "blessed/rowColumnResize"
 
@@ -10,49 +10,38 @@
 
 ### Variables
 
-* [rowColumnResize](_blessed_rowcolumnresize_.md#rowcolumnresize)
+* [rowColumnResize](_blessed_rowcolumnresize_.md#let-rowcolumnresize)
 
 ### Functions
 
 * [rowColumnResizeHandler](_blessed_rowcolumnresize_.md#rowcolumnresizehandler)
 
----
-
 ## Variables
 
-<a id="rowcolumnresize"></a>
+### `Let` rowColumnResize
 
-### `<Let>` rowColumnResize
+• **rowColumnResize**: *any*
 
-**● rowColumnResize**: *`any`*
-
-*Defined in [blessed/rowColumnResize.tsx:2](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/rowColumnResize.tsx#L2)*
-
-___
+*Defined in [blessed/rowColumnResize.tsx:3](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/rowColumnResize.tsx#L3)*
 
 ## Functions
 
-<a id="rowcolumnresizehandler"></a>
-
 ###  rowColumnResizeHandler
 
-▸ **rowColumnResizeHandler**(options: *[Options](../interfaces/_blessed_rowcolumnresize_.options.md)*): `void`
+▸ **rowColumnResizeHandler**(`options`: [Options](../interfaces/_blessed_rowcolumnresize_.options.md)): *void*
 
-*Defined in [blessed/rowColumnResize.tsx:14](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/rowColumnResize.tsx#L14)*
+*Defined in [blessed/rowColumnResize.tsx:20](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/rowColumnResize.tsx#L20)*
 
 TODO:
-
-*   maximum and minimum (so containers dont get invisible)
-*   restore button on all boxes
-*   support width also since the algorithm should be the same.
+ * maximum and minimum (so containers dont get invisible). Nice to have: per column/row
+ * restore button on all boxes
+ * support width also since the algorithm should be the same.
+* a single button and be able to resize with arrow keys / mouse wheel
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| options | [Options](../interfaces/_blessed_rowcolumnresize_.options.md) |
+Name | Type |
+------ | ------ |
+`options` | [Options](../interfaces/_blessed_rowcolumnresize_.options.md) |
 
-**Returns:** `void`
-
-___
-
+**Returns:** *void*

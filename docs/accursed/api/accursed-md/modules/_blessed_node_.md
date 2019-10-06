@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["blessed/node"](../modules/_blessed_node_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["blessed/node"](_blessed_node_.md)
 
 # External module: "blessed/node"
 
@@ -32,391 +32,390 @@
 * [visitAscendants](_blessed_node_.md#visitascendants)
 * [visitDescendants](_blessed_node_.md#visitdescendants)
 
----
-
 ## Type aliases
-
-<a id="elementpredicate"></a>
 
 ###  ElementPredicate
 
-**Ƭ ElementPredicate**: *`function`*
+Ƭ **ElementPredicate**: *function*
 
-*Defined in [blessed/node.ts:54](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/node.ts#L54)*
+*Defined in [blessed/node.ts:54](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/node.ts#L54)*
 
-#### Type declaration
-▸(n: *`T`*): `boolean`
+#### Type declaration:
+
+▸ (`n`: T): *boolean*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| n | `T` |
-
-**Returns:** `boolean`
+Name | Type |
+------ | ------ |
+`n` | T |
 
 ___
-<a id="visitor"></a>
 
 ###  Visitor
 
-**Ƭ Visitor**: *`function`*
+Ƭ **Visitor**: *function*
 
-*Defined in [blessed/node.ts:6](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/node.ts#L6)*
+*Defined in [blessed/node.ts:6](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/node.ts#L6)*
 
-#### Type declaration
-▸(n: *`T`*): `boolean`
+#### Type declaration:
+
+▸ (`n`: T): *boolean*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| n | `T` |
-
-**Returns:** `boolean`
-
-___
+Name | Type |
+------ | ------ |
+`n` | T |
 
 ## Functions
 
-<a id="aselements"></a>
-
 ###  asElements
 
-▸ **asElements**(el: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md) \| [Screen](../classes/_declarations_blessed_d_.widgets.screen.md)*): [BlessedElement](../classes/_declarations_blessed_d_.widgets.blessedelement.md)<`object`>[]
+▸ **asElements**<**T**>(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | [Screen](../classes/_declarations_blessed_d_.widgets.screen.md)): *T[]*
 
-*Defined in [blessed/node.ts:217](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/node.ts#L217)*
+*Defined in [blessed/node.ts:217](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/node.ts#L217)*
+
+**Type parameters:**
+
+▪ **T**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| el | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) \| [Screen](../classes/_declarations_blessed_d_.widgets.screen.md) |
+Name | Type |
+------ | ------ |
+`el` | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) &#124; [Screen](../classes/_declarations_blessed_d_.widgets.screen.md) |
 
-**Returns:** [BlessedElement](../classes/_declarations_blessed_d_.widgets.blessedelement.md)<`object`>[]
+**Returns:** *T[]*
 
 ___
-<a id="cleannode"></a>
 
 ###  cleanNode
 
-▸ **cleanNode**(n: *[Node](../classes/_declarations_blessed_d_.widgets.node.md)*, dontDestroy?: *`boolean`*): `void`
+▸ **cleanNode**(`n`: [Node](../classes/_declarations_blessed_d_.widgets.node.md), `dontDestroy`: boolean): *void*
 
-*Defined in [blessed/node.ts:185](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/node.ts#L185)*
+*Defined in [blessed/node.ts:185](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/node.ts#L185)*
 
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| n | [Node](../classes/_declarations_blessed_d_.widgets.node.md) | - |
-| `Default value` dontDestroy | `boolean` | false |
+Name | Type | Default |
+------ | ------ | ------ |
+`n` | [Node](../classes/_declarations_blessed_d_.widgets.node.md) | - |
+`dontDestroy` | boolean | false |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="filterascendants"></a>
 
 ###  filterAscendants
 
-▸ **filterAscendants**<`T`>(n: *[Node](../classes/_declarations_blessed_d_.widgets.node.md)*, p: *[ElementPredicate](_blessed_node_.md#elementpredicate)*, o?: *[VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md)*): `T`[]
+▸ **filterAscendants**<**T**>(`n`: [Node](../classes/_declarations_blessed_d_.widgets.node.md), `p`: [ElementPredicate](_blessed_node_.md#elementpredicate), `o`: [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md)): *T[]*
 
-*Defined in [blessed/node.ts:174](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/node.ts#L174)*
+*Defined in [blessed/node.ts:174](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/node.ts#L174)*
 
 **Type parameters:**
 
-#### T :  [Node](../classes/_declarations_blessed_d_.widgets.node.md)
+▪ **T**: *[Node](../classes/_declarations_blessed_d_.widgets.node.md)*
+
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| n | [Node](../classes/_declarations_blessed_d_.widgets.node.md) | - |
-| p | [ElementPredicate](_blessed_node_.md#elementpredicate) | - |
-| `Default value` o | [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md) |  {} |
+Name | Type | Default |
+------ | ------ | ------ |
+`n` | [Node](../classes/_declarations_blessed_d_.widgets.node.md) | - |
+`p` | [ElementPredicate](_blessed_node_.md#elementpredicate) | - |
+`o` | [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md) |  {} |
 
-**Returns:** `T`[]
+**Returns:** *T[]*
 
 ___
-<a id="filterchildren"></a>
 
 ###  filterChildren
 
-▸ **filterChildren**<`T`>(n: *[Node](../classes/_declarations_blessed_d_.widgets.node.md)*, p: *[ElementPredicate](_blessed_node_.md#elementpredicate)*): [Node](../classes/_declarations_blessed_d_.widgets.node.md)[]
+▸ **filterChildren**<**T**>(`n`: [Node](../classes/_declarations_blessed_d_.widgets.node.md), `p`: [ElementPredicate](_blessed_node_.md#elementpredicate)): *[Node](../classes/_declarations_blessed_d_.widgets.node.md)[]*
 
-*Defined in [blessed/node.ts:104](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/node.ts#L104)*
+*Defined in [blessed/node.ts:104](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/node.ts#L104)*
 
 **Type parameters:**
 
-#### T :  [Node](../classes/_declarations_blessed_d_.widgets.node.md)
+▪ **T**: *[Node](../classes/_declarations_blessed_d_.widgets.node.md)*
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| n | [Node](../classes/_declarations_blessed_d_.widgets.node.md) |
-| p | [ElementPredicate](_blessed_node_.md#elementpredicate) |
+Name | Type |
+------ | ------ |
+`n` | [Node](../classes/_declarations_blessed_d_.widgets.node.md) |
+`p` | [ElementPredicate](_blessed_node_.md#elementpredicate) |
 
-**Returns:** [Node](../classes/_declarations_blessed_d_.widgets.node.md)[]
+**Returns:** *[Node](../classes/_declarations_blessed_d_.widgets.node.md)[]*
 
 ___
-<a id="filterdescendantbyname"></a>
 
 ###  filterDescendantByName
 
-▸ **filterDescendantByName**<`T`>(el: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md) \| [Screen](../classes/_declarations_blessed_d_.widgets.screen.md)*, name: *`string`*, o?: *[VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md)*): `T`[]
+▸ **filterDescendantByName**<**T**>(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | [Screen](../classes/_declarations_blessed_d_.widgets.screen.md), `name`: string, `o`: [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md)): *T[]*
 
-*Defined in [blessed/node.ts:207](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/node.ts#L207)*
+*Defined in [blessed/node.ts:207](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/node.ts#L207)*
 
 **Type parameters:**
 
-#### T :  [Element](../interfaces/_jsx_types_.__global.jsx.element.md)
+▪ **T**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*
+
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| el | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) \| [Screen](../classes/_declarations_blessed_d_.widgets.screen.md) | - |
-| name | `string` | - |
-| `Default value` o | [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md) |  {} |
+Name | Type | Default |
+------ | ------ | ------ |
+`el` | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) &#124; [Screen](../classes/_declarations_blessed_d_.widgets.screen.md) | - |
+`name` | string | - |
+`o` | [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md) |  {} |
 
-**Returns:** `T`[]
+**Returns:** *T[]*
 
 ___
-<a id="filterdescendants"></a>
 
 ###  filterDescendants
 
-▸ **filterDescendants**<`T`>(n: *[Node](../classes/_declarations_blessed_d_.widgets.node.md)*, p: *[ElementPredicate](_blessed_node_.md#elementpredicate)*, o?: *[VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md)*): `T`[]
+▸ **filterDescendants**<**T**>(`n`: [Node](../classes/_declarations_blessed_d_.widgets.node.md), `p`: [ElementPredicate](_blessed_node_.md#elementpredicate), `o`: [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md)): *T[]*
 
-*Defined in [blessed/node.ts:56](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/node.ts#L56)*
+*Defined in [blessed/node.ts:56](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/node.ts#L56)*
 
 **Type parameters:**
 
-#### T :  [Node](../classes/_declarations_blessed_d_.widgets.node.md)
+▪ **T**: *[Node](../classes/_declarations_blessed_d_.widgets.node.md)*
+
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| n | [Node](../classes/_declarations_blessed_d_.widgets.node.md) | - |
-| p | [ElementPredicate](_blessed_node_.md#elementpredicate) | - |
-| `Default value` o | [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md) |  {} |
+Name | Type | Default |
+------ | ------ | ------ |
+`n` | [Node](../classes/_declarations_blessed_d_.widgets.node.md) | - |
+`p` | [ElementPredicate](_blessed_node_.md#elementpredicate) | - |
+`o` | [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md) |  {} |
 
-**Returns:** `T`[]
+**Returns:** *T[]*
 
 ___
-<a id="findascendant"></a>
 
 ###  findAscendant
 
-▸ **findAscendant**<`T`>(n: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*, p: *[ElementPredicate](_blessed_node_.md#elementpredicate)*, o?: *`object`*): `T`
+▸ **findAscendant**<**T**>(`n`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `p`: [ElementPredicate](_blessed_node_.md#elementpredicate), `o`: object): *T*
 
-*Defined in [blessed/node.ts:154](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/node.ts#L154)*
+*Defined in [blessed/node.ts:154](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/node.ts#L154)*
 
 **Type parameters:**
 
-#### T :  [Node](../classes/_declarations_blessed_d_.widgets.node.md)
+▪ **T**: *[Node](../classes/_declarations_blessed_d_.widgets.node.md)*
+
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| n | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | - |
-| p | [ElementPredicate](_blessed_node_.md#elementpredicate) | - |
-| `Default value` o | `object` |  {} |
+Name | Type | Default |
+------ | ------ | ------ |
+`n` | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | - |
+`p` | [ElementPredicate](_blessed_node_.md#elementpredicate) | - |
+`o` | object |  {} |
 
-**Returns:** `T`
+**Returns:** *T*
 
 ___
-<a id="findchildren"></a>
 
 ###  findChildren
 
-▸ **findChildren**<`T`>(n: *[Node](../classes/_declarations_blessed_d_.widgets.node.md)*, p: *[ElementPredicate](_blessed_node_.md#elementpredicate)*): `T`
+▸ **findChildren**<**T**>(`n`: [Node](../classes/_declarations_blessed_d_.widgets.node.md), `p`: [ElementPredicate](_blessed_node_.md#elementpredicate)): *T*
 
-*Defined in [blessed/node.ts:100](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/node.ts#L100)*
+*Defined in [blessed/node.ts:100](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/node.ts#L100)*
 
 **Type parameters:**
 
-#### T :  [Node](../classes/_declarations_blessed_d_.widgets.node.md)
+▪ **T**: *[Node](../classes/_declarations_blessed_d_.widgets.node.md)*
+
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| n | [Node](../classes/_declarations_blessed_d_.widgets.node.md) |
-| p | [ElementPredicate](_blessed_node_.md#elementpredicate) |
+Name | Type |
+------ | ------ |
+`n` | [Node](../classes/_declarations_blessed_d_.widgets.node.md) |
+`p` | [ElementPredicate](_blessed_node_.md#elementpredicate) |
 
-**Returns:** `T`
+**Returns:** *T*
 
 ___
-<a id="finddescendant"></a>
 
 ###  findDescendant
 
-▸ **findDescendant**<`T`>(n: *[Node](../classes/_declarations_blessed_d_.widgets.node.md)*, p: *[ElementPredicate](_blessed_node_.md#elementpredicate)*, o?: *[VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md)*): `T`
+▸ **findDescendant**<**T**>(`n`: [Node](../classes/_declarations_blessed_d_.widgets.node.md), `p`: [ElementPredicate](_blessed_node_.md#elementpredicate), `o`: [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md)): *T*
 
-*Defined in [blessed/node.ts:84](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/node.ts#L84)*
+*Defined in [blessed/node.ts:84](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/node.ts#L84)*
 
 **Type parameters:**
 
-#### T :  [Node](../classes/_declarations_blessed_d_.widgets.node.md)
+▪ **T**: *[Node](../classes/_declarations_blessed_d_.widgets.node.md)*
+
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| n | [Node](../classes/_declarations_blessed_d_.widgets.node.md) | - |
-| p | [ElementPredicate](_blessed_node_.md#elementpredicate) | - |
-| `Default value` o | [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md) |  {} |
+Name | Type | Default |
+------ | ------ | ------ |
+`n` | [Node](../classes/_declarations_blessed_d_.widgets.node.md) | - |
+`p` | [ElementPredicate](_blessed_node_.md#elementpredicate) | - |
+`o` | [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md) |  {} |
 
-**Returns:** `T`
+**Returns:** *T*
 
 ___
-<a id="finddescendantnamed"></a>
 
 ###  findDescendantNamed
 
-▸ **findDescendantNamed**<`T`>(el: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md) \| [Screen](../classes/_declarations_blessed_d_.widgets.screen.md)*, name: *`string`*, o?: *[VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md)*): `T` \| `undefined`
+▸ **findDescendantNamed**<**T**>(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | [Screen](../classes/_declarations_blessed_d_.widgets.screen.md), `name`: string, `o`: [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md)): *T | undefined*
 
-*Defined in [blessed/node.ts:197](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/node.ts#L197)*
+*Defined in [blessed/node.ts:197](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/node.ts#L197)*
 
 **Type parameters:**
 
-#### T :  [Element](../interfaces/_jsx_types_.__global.jsx.element.md)
+▪ **T**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*
+
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| el | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) \| [Screen](../classes/_declarations_blessed_d_.widgets.screen.md) | - |
-| name | `string` | - |
-| `Default value` o | [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md) |  {} |
+Name | Type | Default |
+------ | ------ | ------ |
+`el` | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) &#124; [Screen](../classes/_declarations_blessed_d_.widgets.screen.md) | - |
+`name` | string | - |
+`o` | [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md) |  {} |
 
-**Returns:** `T` \| `undefined`
+**Returns:** *T | undefined*
 
 ___
-<a id="findrootelement"></a>
 
 ###  findRootElement
 
-▸ **findRootElement**(n: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*): [Element](../interfaces/_jsx_types_.__global.jsx.element.md)
+▸ **findRootElement**(`n`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)): *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*
 
-*Defined in [blessed/node.ts:170](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/node.ts#L170)*
+*Defined in [blessed/node.ts:170](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/node.ts#L170)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| n | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) |
+Name | Type |
+------ | ------ |
+`n` | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) |
 
-**Returns:** [Element](../interfaces/_jsx_types_.__global.jsx.element.md)
+**Returns:** *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*
 
 ___
-<a id="getcontent"></a>
 
 ###  getContent
 
-▸ **getContent**(e: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*, options?: *`object`*): `string`
+▸ **getContent**(`e`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `options`: object): *string*
 
-*Defined in [blessed/node.ts:117](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/node.ts#L117)*
+*Defined in [blessed/node.ts:117](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/node.ts#L117)*
 
-Returns the text content of given node and all its descendants, in order. By default stripped from ansi escape chars and trimmed, and separated by space, but is configurable through options.
+Returns the text content of given node and all its descendants, in order.
+By default stripped from ansi escape chars and trimmed, and separated by space,
+but is configurable through options.
 
-Notice that content can be hidden because scroll. If you need to extract only the visible text then use [printElement](_blessed_node_.md#printelement)
+Notice that content can be hidden because scroll. If you need to extract only the visible
+text then use [printElement](_blessed_node_.md#printelement)
 
 **Parameters:**
 
-**e: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)**
+▪ **e**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*
 
-**`Default value` options: `object`**
+▪`Default value`  **options**: *object*=  {}
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` childrenLast | `boolean` |
-| `Optional` dontStrip | `boolean` |
-| `Optional` dontTrim | `boolean` |
-| `Optional` includeHidden | `boolean` |
+Name | Type |
+------ | ------ |
+`childrenLast?` | boolean |
+`dontStrip?` | boolean |
+`dontTrim?` | boolean |
+`includeHidden?` | boolean |
 
-**Returns:** `string`
+**Returns:** *string*
 
 ___
-<a id="mapdescendants"></a>
 
 ###  mapDescendants
 
-▸ **mapDescendants**<`T`,`V`>(n: *[Node](../classes/_declarations_blessed_d_.widgets.node.md)*, p: *`function`*, o?: *[VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md)*): `V`[]
+▸ **mapDescendants**<**T**, **V**>(`n`: [Node](../classes/_declarations_blessed_d_.widgets.node.md), `p`: function, `o`: [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md)): *V[]*
 
-*Defined in [blessed/node.ts:71](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/node.ts#L71)*
+*Defined in [blessed/node.ts:71](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/node.ts#L71)*
 
 **Type parameters:**
 
-#### T :  [Node](../classes/_declarations_blessed_d_.widgets.node.md)
-#### V 
+▪ **T**: *[Node](../classes/_declarations_blessed_d_.widgets.node.md)*
+
+▪ **V**
+
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| n | [Node](../classes/_declarations_blessed_d_.widgets.node.md) | - |
-| p | `function` | - |
-| `Default value` o | [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md) |  {} |
+▪ **n**: *[Node](../classes/_declarations_blessed_d_.widgets.node.md)*
 
-**Returns:** `V`[]
+▪ **p**: *function*
+
+▸ (`p`: T): *V*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`p` | T |
+
+▪`Default value`  **o**: *[VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md)*=  {}
+
+**Returns:** *V[]*
 
 ___
-<a id="printelement"></a>
 
 ###  printElement
 
-▸ **printElement**(el: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md) \| [Screen](../classes/_declarations_blessed_d_.widgets.screen.md)*, opts?: *`object`*): `string`
+▸ **printElement**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | [Screen](../classes/_declarations_blessed_d_.widgets.screen.md), `opts`: object): *string*
 
-*Defined in [blessed/node.ts:145](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/node.ts#L145)*
+*Defined in [blessed/node.ts:145](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/node.ts#L145)*
 
 Similar to [getContent](_blessed_node_.md#getcontent) but it will only return the visible part of the element's content.
 
 **Parameters:**
 
-**el: [Element](../interfaces/_jsx_types_.__global.jsx.element.md) \| [Screen](../classes/_declarations_blessed_d_.widgets.screen.md)**
+▪ **el**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md) | [Screen](../classes/_declarations_blessed_d_.widgets.screen.md)*
 
-**`Default value` opts: `object`**
+▪`Default value`  **opts**: *object*=  {}
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` dontStrip | `boolean` |
+Name | Type |
+------ | ------ |
+`dontStrip?` | boolean |
 
-**Returns:** `string`
+**Returns:** *string*
 
 ___
-<a id="visitascendants"></a>
 
 ###  visitAscendants
 
-▸ **visitAscendants**(n: *[Node](../classes/_declarations_blessed_d_.widgets.node.md)*, v: *[Visitor](_blessed_node_.md#visitor)*, o?: *`object`*): `boolean`
+▸ **visitAscendants**(`n`: [Node](../classes/_declarations_blessed_d_.widgets.node.md), `v`: [Visitor](_blessed_node_.md#visitor), `o`: object): *boolean*
 
-*Defined in [blessed/node.ts:150](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/node.ts#L150)*
+*Defined in [blessed/node.ts:150](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/node.ts#L150)*
 
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| n | [Node](../classes/_declarations_blessed_d_.widgets.node.md) | - |
-| v | [Visitor](_blessed_node_.md#visitor) | - |
-| `Default value` o | `object` |  {} |
+Name | Type | Default |
+------ | ------ | ------ |
+`n` | [Node](../classes/_declarations_blessed_d_.widgets.node.md) | - |
+`v` | [Visitor](_blessed_node_.md#visitor) | - |
+`o` | object |  {} |
 
-**Returns:** `boolean`
+**Returns:** *boolean*
 
 ___
-<a id="visitdescendants"></a>
 
 ###  visitDescendants
 
-▸ **visitDescendants**(n: *[Node](../classes/_declarations_blessed_d_.widgets.node.md)*, v: *[Visitor](_blessed_node_.md#visitor)*, o?: *[VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md)*): `boolean`
+▸ **visitDescendants**(`n`: [Node](../classes/_declarations_blessed_d_.widgets.node.md), `v`: [Visitor](_blessed_node_.md#visitor), `o`: [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md)): *boolean*
 
-*Defined in [blessed/node.ts:28](https://github.com/cancerberoSgx/accursed/blob/978b980/src/blessed/node.ts#L28)*
+*Defined in [blessed/node.ts:28](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/node.ts#L28)*
 
-Visit node's descendants until the visitor function return true or there are no more. In the first different modes on which visiting the rest of descenda\|nts or ancestors are configurable through the options. By default, first the parent is evaluated which is configurable configurable with \[\[\[VisitorOptions.childrenFirst\]\]
+Visit node's descendants until the visitor function return true or there are no more. In the first
+different modes on which visiting the rest of descenda|nts or ancestors are configurable through the
+options. By default, first the parent is evaluated which is configurable configurable with
+[[[VisitorOptions.childrenFirst]]
 
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| n | [Node](../classes/_declarations_blessed_d_.widgets.node.md) | - |
-| v | [Visitor](_blessed_node_.md#visitor) | - |
-| `Default value` o | [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md) |  {} |
+Name | Type | Default |
+------ | ------ | ------ |
+`n` | [Node](../classes/_declarations_blessed_d_.widgets.node.md) | - |
+`v` | [Visitor](_blessed_node_.md#visitor) | - |
+`o` | [VisitorOptions](../interfaces/_blessed_node_.visitoroptions.md) |  {} |
 
-**Returns:** `boolean`
-
-___
-
+**Returns:** *boolean*

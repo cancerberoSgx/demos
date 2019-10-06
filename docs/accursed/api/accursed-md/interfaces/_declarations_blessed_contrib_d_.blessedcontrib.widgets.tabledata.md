@@ -1,40 +1,34 @@
-[accursed](../README.md) > ["declarations/blessed-contrib.d"](../modules/_declarations_blessed_contrib_d_.md) > [BlessedContrib](../modules/_declarations_blessed_contrib_d_.blessedcontrib.md) > [Widgets](../modules/_declarations_blessed_contrib_d_.blessedcontrib.widgets.md) > [TableData](../interfaces/_declarations_blessed_contrib_d_.blessedcontrib.widgets.tabledata.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["declarations/blessed-contrib.d"](../modules/_declarations_blessed_contrib_d_.md) › [BlessedContrib](../modules/_declarations_blessed_contrib_d_.blessedcontrib.md) › [Widgets](../modules/_declarations_blessed_contrib_d_.blessedcontrib.widgets.md) › [TableData](_declarations_blessed_contrib_d_.blessedcontrib.widgets.tabledata.md)
 
-# Interface: TableData
+# Interface: TableData <**T**>
 
 ## Type parameters
-#### T :  `any`
+
+▪ **T**: *any*
+
 ## Hierarchy
 
-**TableData**
+* **TableData**
 
 ## Index
 
 ### Properties
 
-* [data](_declarations_blessed_contrib_d_.blessedcontrib.widgets.tabledata.md#data)
-* [headers](_declarations_blessed_contrib_d_.blessedcontrib.widgets.tabledata.md#headers)
-
----
+* [data](_declarations_blessed_contrib_d_.blessedcontrib.widgets.tabledata.md#optional-data)
+* [headers](_declarations_blessed_contrib_d_.blessedcontrib.widgets.tabledata.md#optional-headers)
 
 ## Properties
 
-<a id="data"></a>
+### `Optional` data
 
-### `<Optional>` data
+• **data**? : *T[][]*
 
-**● data**: *`T`[][]*
-
-*Defined in [declarations/blessed-contrib.d.ts:461](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed-contrib.d.ts#L461)*
-
-___
-<a id="headers"></a>
-
-### `<Optional>` headers
-
-**● headers**: *`string`[]*
-
-*Defined in [declarations/blessed-contrib.d.ts:460](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed-contrib.d.ts#L460)*
+*Defined in [declarations/blessed-contrib.d.ts:461](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L461)*
 
 ___
 
+### `Optional` headers
+
+• **headers**? : *string[]*
+
+*Defined in [declarations/blessed-contrib.d.ts:460](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L460)*

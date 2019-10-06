@@ -1,14 +1,14 @@
-[accursed](../README.md) > ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md) > [Widgets](../modules/_declarations_blessed_d_.widgets.md) > [Events](../modules/_declarations_blessed_d_.widgets.events.md) > [IAbstractEventArg](../interfaces/_declarations_blessed_d_.widgets.events.iabstracteventarg.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md) › [Widgets](../modules/_declarations_blessed_d_.widgets.md) › [Events](../modules/_declarations_blessed_d_.widgets.events.md) › [IAbstractEventArg](_declarations_blessed_d_.widgets.events.iabstracteventarg.md)
 
 # Interface: IAbstractEventArg
 
 ## Hierarchy
 
-**IAbstractEventArg**
+* **IAbstractEventArg**
 
-↳  [IMouseEventArg](_declarations_blessed_d_.widgets.events.imouseeventarg.md)
+  ↳ [IMouseEventArg](_declarations_blessed_d_.widgets.events.imouseeventarg.md)
 
-↳  [IKeyEventArg](_declarations_blessed_d_.widgets.events.ikeyeventarg.md)
+  ↳ [IKeyEventArg](_declarations_blessed_d_.widgets.events.ikeyeventarg.md)
 
 ## Index
 
@@ -22,71 +22,58 @@
 * [shift](_declarations_blessed_d_.widgets.events.iabstracteventarg.md#shift)
 * [type](_declarations_blessed_d_.widgets.events.iabstracteventarg.md#type)
 
----
-
 ## Properties
-
-<a id="bug"></a>
 
 ###  bug
 
-**● bug**: *`Buffer`*
+• **bug**: *Buffer*
 
-*Defined in [declarations/blessed.d.ts:196](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L196)*
+*Defined in [declarations/blessed.d.ts:198](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L198)*
 
 ___
-<a id="ctrl"></a>
 
 ###  ctrl
 
-**● ctrl**: *`boolean`*
+• **ctrl**: *boolean*
 
-*Defined in [declarations/blessed.d.ts:192](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L192)*
+*Defined in [declarations/blessed.d.ts:194](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L194)*
 
 ___
-<a id="meta"></a>
 
 ###  meta
 
-**● meta**: *`boolean`*
+• **meta**: *boolean*
 
-*Defined in [declarations/blessed.d.ts:193](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L193)*
+*Defined in [declarations/blessed.d.ts:195](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L195)*
 
 ___
-<a id="name"></a>
 
 ###  name
 
-**● name**: *`string`*
+• **name**: *string*
 
-*Defined in [declarations/blessed.d.ts:190](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L190)*
+*Defined in [declarations/blessed.d.ts:192](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L192)*
 
 ___
-<a id="raw"></a>
 
 ###  raw
 
-**● raw**: *[`number`, `number`, `number`, `string`]*
+• **raw**: *[number, number, number, string]*
 
-*Defined in [declarations/blessed.d.ts:195](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L195)*
+*Defined in [declarations/blessed.d.ts:197](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L197)*
 
 ___
-<a id="shift"></a>
 
 ###  shift
 
-**● shift**: *`boolean`*
+• **shift**: *boolean*
 
-*Defined in [declarations/blessed.d.ts:191](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L191)*
+*Defined in [declarations/blessed.d.ts:193](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L193)*
 
 ___
-<a id="type"></a>
 
 ###  type
 
-**● type**: *`string`*
+• **type**: *string*
 
-*Defined in [declarations/blessed.d.ts:194](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessed.d.ts#L194)*
-
-___
-
+*Defined in [declarations/blessed.d.ts:196](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L196)*

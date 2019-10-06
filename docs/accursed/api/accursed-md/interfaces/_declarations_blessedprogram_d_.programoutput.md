@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["declarations/blessedProgram.d"](../modules/_declarations_blessedprogram_d_.md) > [ProgramOutput](../interfaces/_declarations_blessedprogram_d_.programoutput.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["declarations/blessedProgram.d"](../modules/_declarations_blessedprogram_d_.md) › [ProgramOutput](_declarations_blessedprogram_d_.programoutput.md)
 
 # Interface: ProgramOutput
 
@@ -6,13 +6,13 @@ program.output Writable implementation should implement this interface
 
 ## Hierarchy
 
- `Writable`
+* Writable
 
-**↳ ProgramOutput**
+  ↳ **ProgramOutput**
 
 ## Implements
 
-* `WritableStream`
+* WritableStream
 
 ## Index
 
@@ -23,19 +23,22 @@ program.output Writable implementation should implement this interface
 ### Properties
 
 * [column](_declarations_blessedprogram_d_.programoutput.md#column)
-* [isTTY](_declarations_blessedprogram_d_.programoutput.md#istty)
+* [destroyed](_declarations_blessedprogram_d_.programoutput.md#destroyed)
+* [isTTY](_declarations_blessedprogram_d_.programoutput.md#optional-istty)
 * [rows](_declarations_blessedprogram_d_.programoutput.md#rows)
 * [writable](_declarations_blessedprogram_d_.programoutput.md#writable)
+* [writableFinished](_declarations_blessedprogram_d_.programoutput.md#writablefinished)
 * [writableHighWaterMark](_declarations_blessedprogram_d_.programoutput.md#writablehighwatermark)
 * [writableLength](_declarations_blessedprogram_d_.programoutput.md#writablelength)
-* [defaultMaxListeners](_declarations_blessedprogram_d_.programoutput.md#defaultmaxlisteners)
+* [writableObjectMode](_declarations_blessedprogram_d_.programoutput.md#writableobjectmode)
+* [defaultMaxListeners](_declarations_blessedprogram_d_.programoutput.md#static-defaultmaxlisteners)
 
 ### Methods
 
 * [_destroy](_declarations_blessedprogram_d_.programoutput.md#_destroy)
 * [_final](_declarations_blessedprogram_d_.programoutput.md#_final)
 * [_write](_declarations_blessedprogram_d_.programoutput.md#_write)
-* [_writev](_declarations_blessedprogram_d_.programoutput.md#_writev)
+* [_writev](_declarations_blessedprogram_d_.programoutput.md#optional-_writev)
 * [addListener](_declarations_blessedprogram_d_.programoutput.md#addlistener)
 * [cork](_declarations_blessedprogram_d_.programoutput.md#cork)
 * [destroy](_declarations_blessedprogram_d_.programoutput.md#destroy)
@@ -58,1415 +61,1638 @@ program.output Writable implementation should implement this interface
 * [setMaxListeners](_declarations_blessedprogram_d_.programoutput.md#setmaxlisteners)
 * [uncork](_declarations_blessedprogram_d_.programoutput.md#uncork)
 * [write](_declarations_blessedprogram_d_.programoutput.md#write)
-* [listenerCount](_declarations_blessedprogram_d_.programoutput.md#listenercount-1)
-
----
+* [listenerCount](_declarations_blessedprogram_d_.programoutput.md#static-listenercount)
 
 ## Constructors
 
-<a id="constructor"></a>
-
 ###  constructor
 
-⊕ **new ProgramOutput**(opts?: *`WritableOptions`*): [ProgramOutput](_declarations_blessedprogram_d_.programoutput.md)
+\+ **new ProgramOutput**(`opts?`: WritableOptions): *[ProgramOutput](_declarations_blessedprogram_d_.programoutput.md)*
 
-*Inherited from Writable.__constructor*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:115*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:125
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` opts | `WritableOptions` |
+Name | Type |
+------ | ------ |
+`opts?` | WritableOptions |
 
-**Returns:** [ProgramOutput](_declarations_blessedprogram_d_.programoutput.md)
-
-___
+**Returns:** *[ProgramOutput](_declarations_blessedprogram_d_.programoutput.md)*
 
 ## Properties
 
-<a id="column"></a>
-
 ###  column
 
-**● column**: *`number`*
+• **column**: *number*
 
-*Defined in [declarations/blessedProgram.d.ts:62](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L62)*
-
-___
-<a id="istty"></a>
-
-### `<Optional>` isTTY
-
-**● isTTY**: *`boolean`*
-
-*Defined in [declarations/blessedProgram.d.ts:61](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L61)*
+*Defined in [declarations/blessedProgram.d.ts:70](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L70)*
 
 ___
-<a id="rows"></a>
+
+###  destroyed
+
+• **destroyed**: *boolean*
+
+*Inherited from void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:125
+
+___
+
+### `Optional` isTTY
+
+• **isTTY**? : *boolean*
+
+*Defined in [declarations/blessedProgram.d.ts:69](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L69)*
+
+___
 
 ###  rows
 
-**● rows**: *`number`*
+• **rows**: *number*
 
-*Defined in [declarations/blessedProgram.d.ts:63](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L63)*
+*Defined in [declarations/blessedProgram.d.ts:71](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L71)*
 
 ___
-<a id="writable"></a>
 
 ###  writable
 
-**● writable**: *`boolean`*
+• **writable**: *boolean*
 
-*Inherited from Writable.writable*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:113*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:120
 
 ___
-<a id="writablehighwatermark"></a>
+
+###  writableFinished
+
+• **writableFinished**: *boolean*
+
+*Inherited from void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:121
+
+___
 
 ###  writableHighWaterMark
 
-**● writableHighWaterMark**: *`number`*
+• **writableHighWaterMark**: *number*
 
-*Inherited from Writable.writableHighWaterMark*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:114*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:122
 
 ___
-<a id="writablelength"></a>
 
 ###  writableLength
 
-**● writableLength**: *`number`*
+• **writableLength**: *number*
 
-*Inherited from Writable.writableLength*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:115*
-
-___
-<a id="defaultmaxlisteners"></a>
-
-### `<Static>` defaultMaxListeners
-
-**● defaultMaxListeners**: *`number`*
-
-*Inherited from EventEmitter.defaultMaxListeners*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:9*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:123
 
 ___
+
+###  writableObjectMode
+
+• **writableObjectMode**: *boolean*
+
+*Inherited from void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:124
+
+___
+
+### `Static` defaultMaxListeners
+
+▪ **defaultMaxListeners**: *number*
+
+*Inherited from void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:9
 
 ## Methods
 
-<a id="_destroy"></a>
-
 ###  _destroy
 
-▸ **_destroy**(error: *`Error` \| `null`*, callback: *`function`*): `void`
+▸ **_destroy**(`error`: Error | null, `callback`: function): *void*
 
-*Inherited from Writable._destroy*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:119*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:129
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| error | `Error` \| `null` |
-| callback | `function` |
+▪ **error**: *Error | null*
 
-**Returns:** `void`
+▪ **callback**: *function*
+
+▸ (`error?`: Error | null): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`error?` | Error &#124; null |
+
+**Returns:** *void*
 
 ___
-<a id="_final"></a>
 
 ###  _final
 
-▸ **_final**(callback: *`function`*): `void`
+▸ **_final**(`callback`: function): *void*
 
-*Inherited from Writable._final*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:120*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:130
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| callback | `function` |
+▪ **callback**: *function*
 
-**Returns:** `void`
+▸ (`error?`: Error | null): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`error?` | Error &#124; null |
+
+**Returns:** *void*
 
 ___
-<a id="_write"></a>
 
 ###  _write
 
-▸ **_write**(chunk: *`any`*, encoding: *`string`*, callback: *`function`*): `void`
+▸ **_write**(`chunk`: any, `encoding`: string, `callback`: function): *void*
 
-*Inherited from Writable._write*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:117*
-
-**Parameters:**
-
-| Name | Type |
-| ------ | ------ |
-| chunk | `any` |
-| encoding | `string` |
-| callback | `function` |
-
-**Returns:** `void`
-
-___
-<a id="_writev"></a>
-
-### `<Optional>` _writev
-
-▸ **_writev**(chunks: *`Array`<`object`>*, callback: *`function`*): `void`
-
-*Inherited from Writable._writev*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:118*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:127
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| chunks | `Array`<`object`> |
-| callback | `function` |
+▪ **chunk**: *any*
 
-**Returns:** `void`
+▪ **encoding**: *string*
+
+▪ **callback**: *function*
+
+▸ (`error?`: Error | null): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`error?` | Error &#124; null |
+
+**Returns:** *void*
 
 ___
-<a id="addlistener"></a>
+
+### `Optional` _writev
+
+▸ **_writev**(`chunks`: Array‹object›, `callback`: function): *void*
+
+*Inherited from void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:128
+
+**Parameters:**
+
+▪ **chunks**: *Array‹object›*
+
+▪ **callback**: *function*
+
+▸ (`error?`: Error | null): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`error?` | Error &#124; null |
+
+**Returns:** *void*
+
+___
 
 ###  addListener
 
-▸ **addListener**(event: *"close"*, listener: *`function`*): `this`
+▸ **addListener**(`event`: "close", `listener`: function): *this*
 
-▸ **addListener**(event: *"drain"*, listener: *`function`*): `this`
+*Inherited from void*
 
-▸ **addListener**(event: *"error"*, listener: *`function`*): `this`
+*Overrides void*
 
-▸ **addListener**(event: *"finish"*, listener: *`function`*): `this`
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:151
 
-▸ **addListener**(event: *"pipe"*, listener: *`function`*): `this`
-
-▸ **addListener**(event: *"unpipe"*, listener: *`function`*): `this`
-
-▸ **addListener**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
-
-*Inherited from Writable.addListener*
-
-*Overrides EventEmitter.addListener*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:141*
-
-Event emitter The defined events on documents including:
-
-1.  close
-2.  drain
-3.  error
-4.  finish
-5.  pipe
-6.  unpipe
+Event emitter
+The defined events on documents including:
+1. close
+2. drain
+3. error
+4. finish
+5. pipe
+6. unpipe
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "close" |
-| listener | `function` |
+▪ **event**: *"close"*
 
-**Returns:** `this`
+▪ **listener**: *function*
 
-*Inherited from Writable.addListener*
+▸ (): *void*
 
-*Overrides EventEmitter.addListener*
+**Returns:** *this*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:142*
+▸ **addListener**(`event`: "drain", `listener`: function): *this*
 
-**Parameters:**
+*Inherited from void*
 
-| Name | Type |
-| ------ | ------ |
-| event | "drain" |
-| listener | `function` |
+*Overrides void*
 
-**Returns:** `this`
-
-*Inherited from Writable.addListener*
-
-*Overrides EventEmitter.addListener*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:143*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:152
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "error" |
-| listener | `function` |
+▪ **event**: *"drain"*
 
-**Returns:** `this`
+▪ **listener**: *function*
 
-*Inherited from Writable.addListener*
+▸ (): *void*
 
-*Overrides EventEmitter.addListener*
+**Returns:** *this*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:144*
+▸ **addListener**(`event`: "error", `listener`: function): *this*
 
-**Parameters:**
+*Inherited from void*
 
-| Name | Type |
-| ------ | ------ |
-| event | "finish" |
-| listener | `function` |
+*Overrides void*
 
-**Returns:** `this`
-
-*Inherited from Writable.addListener*
-
-*Overrides EventEmitter.addListener*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:145*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:153
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "pipe" |
-| listener | `function` |
+▪ **event**: *"error"*
 
-**Returns:** `this`
+▪ **listener**: *function*
 
-*Inherited from Writable.addListener*
-
-*Overrides EventEmitter.addListener*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:146*
+▸ (`err`: Error): *void*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "unpipe" |
-| listener | `function` |
+Name | Type |
+------ | ------ |
+`err` | Error |
 
-**Returns:** `this`
+**Returns:** *this*
 
-*Inherited from Writable.addListener*
+▸ **addListener**(`event`: "finish", `listener`: function): *this*
 
-*Overrides EventEmitter.addListener*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:147*
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:154
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *"finish"*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (): *void*
+
+**Returns:** *this*
+
+▸ **addListener**(`event`: "pipe", `listener`: function): *this*
+
+*Inherited from void*
+
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:155
+
+**Parameters:**
+
+▪ **event**: *"pipe"*
+
+▪ **listener**: *function*
+
+▸ (`src`: Readable): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`src` | Readable |
+
+**Returns:** *this*
+
+▸ **addListener**(`event`: "unpipe", `listener`: function): *this*
+
+*Inherited from void*
+
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:156
+
+**Parameters:**
+
+▪ **event**: *"unpipe"*
+
+▪ **listener**: *function*
+
+▸ (`src`: Readable): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`src` | Readable |
+
+**Returns:** *this*
+
+▸ **addListener**(`event`: string | symbol, `listener`: function): *this*
+
+*Inherited from void*
+
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:157
+
+**Parameters:**
+
+▪ **event**: *string | symbol*
+
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="cork"></a>
 
 ###  cork
 
-▸ **cork**(): `void`
+▸ **cork**(): *void*
 
-*Inherited from Writable.cork*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:127*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:137
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="destroy"></a>
 
 ###  destroy
 
-▸ **destroy**(error?: *`Error`*): `void`
+▸ **destroy**(`error?`: Error): *void*
 
-*Inherited from Writable.destroy*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:129*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:139
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` error | `Error` |
+Name | Type |
+------ | ------ |
+`error?` | Error |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="emit"></a>
 
 ###  emit
 
-▸ **emit**(event: *"close"*): `boolean`
+▸ **emit**(`event`: "close"): *boolean*
 
-▸ **emit**(event: *"drain"*): `boolean`
+*Inherited from void*
 
-▸ **emit**(event: *"error"*, err: *`Error`*): `boolean`
+*Overrides void*
 
-▸ **emit**(event: *"finish"*): `boolean`
-
-▸ **emit**(event: *"pipe"*, src: *`Readable`*): `boolean`
-
-▸ **emit**(event: *"unpipe"*, src: *`Readable`*): `boolean`
-
-▸ **emit**(event: *`string` \| `symbol`*, ...args: *`any`[]*): `boolean`
-
-*Inherited from Writable.emit*
-
-*Overrides EventEmitter.emit*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:149*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:159
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "close" |
+Name | Type |
+------ | ------ |
+`event` | "close" |
 
-**Returns:** `boolean`
+**Returns:** *boolean*
 
-*Inherited from Writable.emit*
+▸ **emit**(`event`: "drain"): *boolean*
 
-*Overrides EventEmitter.emit*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:150*
+*Overrides void*
 
-**Parameters:**
-
-| Name | Type |
-| ------ | ------ |
-| event | "drain" |
-
-**Returns:** `boolean`
-
-*Inherited from Writable.emit*
-
-*Overrides EventEmitter.emit*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:151*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:160
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "error" |
-| err | `Error` |
+Name | Type |
+------ | ------ |
+`event` | "drain" |
 
-**Returns:** `boolean`
+**Returns:** *boolean*
 
-*Inherited from Writable.emit*
+▸ **emit**(`event`: "error", `err`: Error): *boolean*
 
-*Overrides EventEmitter.emit*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:152*
+*Overrides void*
 
-**Parameters:**
-
-| Name | Type |
-| ------ | ------ |
-| event | "finish" |
-
-**Returns:** `boolean`
-
-*Inherited from Writable.emit*
-
-*Overrides EventEmitter.emit*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:153*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:161
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "pipe" |
-| src | `Readable` |
+Name | Type |
+------ | ------ |
+`event` | "error" |
+`err` | Error |
 
-**Returns:** `boolean`
+**Returns:** *boolean*
 
-*Inherited from Writable.emit*
+▸ **emit**(`event`: "finish"): *boolean*
 
-*Overrides EventEmitter.emit*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:154*
+*Overrides void*
 
-**Parameters:**
-
-| Name | Type |
-| ------ | ------ |
-| event | "unpipe" |
-| src | `Readable` |
-
-**Returns:** `boolean`
-
-*Inherited from Writable.emit*
-
-*Overrides EventEmitter.emit*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:155*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:162
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| `Rest` args | `any`[] |
+Name | Type |
+------ | ------ |
+`event` | "finish" |
 
-**Returns:** `boolean`
+**Returns:** *boolean*
+
+▸ **emit**(`event`: "pipe", `src`: Readable): *boolean*
+
+*Inherited from void*
+
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:163
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`event` | "pipe" |
+`src` | Readable |
+
+**Returns:** *boolean*
+
+▸ **emit**(`event`: "unpipe", `src`: Readable): *boolean*
+
+*Inherited from void*
+
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:164
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`event` | "unpipe" |
+`src` | Readable |
+
+**Returns:** *boolean*
+
+▸ **emit**(`event`: string | symbol, ...`args`: any[]): *boolean*
+
+*Inherited from void*
+
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:165
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`event` | string &#124; symbol |
+`...args` | any[] |
+
+**Returns:** *boolean*
 
 ___
-<a id="end"></a>
 
 ###  end
 
-▸ **end**(cb?: *`function`*): `void`
+▸ **end**(`cb?`: function): *void*
 
-▸ **end**(chunk: *`any`*, cb?: *`function`*): `void`
+*Inherited from void*
 
-▸ **end**(chunk: *`any`*, encoding: *`string`*, cb?: *`function`*): `void`
-
-*Inherited from Writable.end*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:124*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:134
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` cb | `function` |
+▪`Optional`  **cb**: *function*
 
-**Returns:** `void`
+▸ (): *void*
 
-*Inherited from Writable.end*
+**Returns:** *void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:125*
+▸ **end**(`chunk`: any, `cb?`: function): *void*
 
-**Parameters:**
+*Inherited from void*
 
-| Name | Type |
-| ------ | ------ |
-| chunk | `any` |
-| `Optional` cb | `function` |
-
-**Returns:** `void`
-
-*Inherited from Writable.end*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:126*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:135
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| chunk | `any` |
-| encoding | `string` |
-| `Optional` cb | `function` |
+▪ **chunk**: *any*
 
-**Returns:** `void`
+▪`Optional`  **cb**: *function*
+
+▸ (): *void*
+
+**Returns:** *void*
+
+▸ **end**(`chunk`: any, `encoding`: string, `cb?`: function): *void*
+
+*Inherited from void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:136
+
+**Parameters:**
+
+▪ **chunk**: *any*
+
+▪ **encoding**: *string*
+
+▪`Optional`  **cb**: *function*
+
+▸ (): *void*
+
+**Returns:** *void*
 
 ___
-<a id="eventnames"></a>
 
 ###  eventNames
 
-▸ **eventNames**(): `Array`<`string` \| `symbol`>
+▸ **eventNames**(): *Array‹string | symbol›*
 
-*Inherited from EventEmitter.eventNames*
+*Inherited from void*
 
-*Overrides EventEmitter.eventNames*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:24*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:24
 
-**Returns:** `Array`<`string` \| `symbol`>
+**Returns:** *Array‹string | symbol›*
 
 ___
-<a id="getmaxlisteners"></a>
 
 ###  getMaxListeners
 
-▸ **getMaxListeners**(): `number`
+▸ **getMaxListeners**(): *number*
 
-*Inherited from EventEmitter.getMaxListeners*
+*Inherited from void*
 
-*Overrides EventEmitter.getMaxListeners*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:20*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:20
 
-**Returns:** `number`
+**Returns:** *number*
 
 ___
-<a id="listenercount"></a>
 
 ###  listenerCount
 
-▸ **listenerCount**(type: *`string` \| `symbol`*): `number`
+▸ **listenerCount**(`type`: string | symbol): *number*
 
-*Inherited from EventEmitter.listenerCount*
+*Inherited from void*
 
-*Overrides EventEmitter.listenerCount*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:25*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:25
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| type | `string` \| `symbol` |
+Name | Type |
+------ | ------ |
+`type` | string &#124; symbol |
 
-**Returns:** `number`
+**Returns:** *number*
 
 ___
-<a id="listeners"></a>
 
 ###  listeners
 
-▸ **listeners**(event: *`string` \| `symbol`*): `Function`[]
+▸ **listeners**(`event`: string | symbol): *Function[]*
 
-*Inherited from EventEmitter.listeners*
+*Inherited from void*
 
-*Overrides EventEmitter.listeners*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:21*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:21
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
+Name | Type |
+------ | ------ |
+`event` | string &#124; symbol |
 
-**Returns:** `Function`[]
+**Returns:** *Function[]*
 
 ___
-<a id="off"></a>
 
 ###  off
 
-▸ **off**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
+▸ **off**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from EventEmitter.off*
+*Inherited from void*
 
-*Overrides EventEmitter.off*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:17*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:17
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *string | symbol*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="on"></a>
 
 ###  on
 
-▸ **on**(event: *"close"*, listener: *`function`*): `this`
+▸ **on**(`event`: "close", `listener`: function): *this*
 
-▸ **on**(event: *"drain"*, listener: *`function`*): `this`
+*Inherited from void*
 
-▸ **on**(event: *"error"*, listener: *`function`*): `this`
+*Overrides void*
 
-▸ **on**(event: *"finish"*, listener: *`function`*): `this`
-
-▸ **on**(event: *"pipe"*, listener: *`function`*): `this`
-
-▸ **on**(event: *"unpipe"*, listener: *`function`*): `this`
-
-▸ **on**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
-
-*Inherited from Writable.on*
-
-*Overrides EventEmitter.on*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:157*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:167
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "close" |
-| listener | `function` |
+▪ **event**: *"close"*
 
-**Returns:** `this`
+▪ **listener**: *function*
 
-*Inherited from Writable.on*
+▸ (): *void*
 
-*Overrides EventEmitter.on*
+**Returns:** *this*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:158*
+▸ **on**(`event`: "drain", `listener`: function): *this*
 
-**Parameters:**
+*Inherited from void*
 
-| Name | Type |
-| ------ | ------ |
-| event | "drain" |
-| listener | `function` |
+*Overrides void*
 
-**Returns:** `this`
-
-*Inherited from Writable.on*
-
-*Overrides EventEmitter.on*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:159*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:168
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "error" |
-| listener | `function` |
+▪ **event**: *"drain"*
 
-**Returns:** `this`
+▪ **listener**: *function*
 
-*Inherited from Writable.on*
+▸ (): *void*
 
-*Overrides EventEmitter.on*
+**Returns:** *this*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:160*
+▸ **on**(`event`: "error", `listener`: function): *this*
 
-**Parameters:**
+*Inherited from void*
 
-| Name | Type |
-| ------ | ------ |
-| event | "finish" |
-| listener | `function` |
+*Overrides void*
 
-**Returns:** `this`
-
-*Inherited from Writable.on*
-
-*Overrides EventEmitter.on*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:161*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:169
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "pipe" |
-| listener | `function` |
+▪ **event**: *"error"*
 
-**Returns:** `this`
+▪ **listener**: *function*
 
-*Inherited from Writable.on*
-
-*Overrides EventEmitter.on*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:162*
+▸ (`err`: Error): *void*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "unpipe" |
-| listener | `function` |
+Name | Type |
+------ | ------ |
+`err` | Error |
 
-**Returns:** `this`
+**Returns:** *this*
 
-*Inherited from Writable.on*
+▸ **on**(`event`: "finish", `listener`: function): *this*
 
-*Overrides EventEmitter.on*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:163*
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:170
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *"finish"*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (): *void*
+
+**Returns:** *this*
+
+▸ **on**(`event`: "pipe", `listener`: function): *this*
+
+*Inherited from void*
+
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:171
+
+**Parameters:**
+
+▪ **event**: *"pipe"*
+
+▪ **listener**: *function*
+
+▸ (`src`: Readable): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`src` | Readable |
+
+**Returns:** *this*
+
+▸ **on**(`event`: "unpipe", `listener`: function): *this*
+
+*Inherited from void*
+
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:172
+
+**Parameters:**
+
+▪ **event**: *"unpipe"*
+
+▪ **listener**: *function*
+
+▸ (`src`: Readable): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`src` | Readable |
+
+**Returns:** *this*
+
+▸ **on**(`event`: string | symbol, `listener`: function): *this*
+
+*Inherited from void*
+
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:173
+
+**Parameters:**
+
+▪ **event**: *string | symbol*
+
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="once"></a>
 
 ###  once
 
-▸ **once**(event: *"close"*, listener: *`function`*): `this`
+▸ **once**(`event`: "close", `listener`: function): *this*
 
-▸ **once**(event: *"drain"*, listener: *`function`*): `this`
+*Inherited from void*
 
-▸ **once**(event: *"error"*, listener: *`function`*): `this`
+*Overrides void*
 
-▸ **once**(event: *"finish"*, listener: *`function`*): `this`
-
-▸ **once**(event: *"pipe"*, listener: *`function`*): `this`
-
-▸ **once**(event: *"unpipe"*, listener: *`function`*): `this`
-
-▸ **once**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
-
-*Inherited from Writable.once*
-
-*Overrides EventEmitter.once*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:165*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:175
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "close" |
-| listener | `function` |
+▪ **event**: *"close"*
 
-**Returns:** `this`
+▪ **listener**: *function*
 
-*Inherited from Writable.once*
+▸ (): *void*
 
-*Overrides EventEmitter.once*
+**Returns:** *this*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:166*
+▸ **once**(`event`: "drain", `listener`: function): *this*
 
-**Parameters:**
+*Inherited from void*
 
-| Name | Type |
-| ------ | ------ |
-| event | "drain" |
-| listener | `function` |
+*Overrides void*
 
-**Returns:** `this`
-
-*Inherited from Writable.once*
-
-*Overrides EventEmitter.once*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:167*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:176
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "error" |
-| listener | `function` |
+▪ **event**: *"drain"*
 
-**Returns:** `this`
+▪ **listener**: *function*
 
-*Inherited from Writable.once*
+▸ (): *void*
 
-*Overrides EventEmitter.once*
+**Returns:** *this*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:168*
+▸ **once**(`event`: "error", `listener`: function): *this*
 
-**Parameters:**
+*Inherited from void*
 
-| Name | Type |
-| ------ | ------ |
-| event | "finish" |
-| listener | `function` |
+*Overrides void*
 
-**Returns:** `this`
-
-*Inherited from Writable.once*
-
-*Overrides EventEmitter.once*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:169*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:177
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "pipe" |
-| listener | `function` |
+▪ **event**: *"error"*
 
-**Returns:** `this`
+▪ **listener**: *function*
 
-*Inherited from Writable.once*
-
-*Overrides EventEmitter.once*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:170*
+▸ (`err`: Error): *void*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "unpipe" |
-| listener | `function` |
+Name | Type |
+------ | ------ |
+`err` | Error |
 
-**Returns:** `this`
+**Returns:** *this*
 
-*Inherited from Writable.once*
+▸ **once**(`event`: "finish", `listener`: function): *this*
 
-*Overrides EventEmitter.once*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:171*
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:178
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *"finish"*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (): *void*
+
+**Returns:** *this*
+
+▸ **once**(`event`: "pipe", `listener`: function): *this*
+
+*Inherited from void*
+
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:179
+
+**Parameters:**
+
+▪ **event**: *"pipe"*
+
+▪ **listener**: *function*
+
+▸ (`src`: Readable): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`src` | Readable |
+
+**Returns:** *this*
+
+▸ **once**(`event`: "unpipe", `listener`: function): *this*
+
+*Inherited from void*
+
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:180
+
+**Parameters:**
+
+▪ **event**: *"unpipe"*
+
+▪ **listener**: *function*
+
+▸ (`src`: Readable): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`src` | Readable |
+
+**Returns:** *this*
+
+▸ **once**(`event`: string | symbol, `listener`: function): *this*
+
+*Inherited from void*
+
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:181
+
+**Parameters:**
+
+▪ **event**: *string | symbol*
+
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="pipe"></a>
 
 ###  pipe
 
-▸ **pipe**<`T`>(destination: *`T`*, options?: *`object`*): `T`
+▸ **pipe**<**T**>(`destination`: T, `options?`: object): *T*
 
-*Inherited from internal.pipe*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:5*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:5
 
 **Type parameters:**
 
-#### T :  `WritableStream`
+▪ **T**: *WritableStream*
+
 **Parameters:**
 
-**destination: `T`**
+▪ **destination**: *T*
 
-**`Optional` options: `object`**
+▪`Optional`  **options**: *object*
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` end | `boolean` |
+Name | Type |
+------ | ------ |
+`end?` | boolean |
 
-**Returns:** `T`
+**Returns:** *T*
 
 ___
-<a id="prependlistener"></a>
 
 ###  prependListener
 
-▸ **prependListener**(event: *"close"*, listener: *`function`*): `this`
+▸ **prependListener**(`event`: "close", `listener`: function): *this*
 
-▸ **prependListener**(event: *"drain"*, listener: *`function`*): `this`
+*Inherited from void*
 
-▸ **prependListener**(event: *"error"*, listener: *`function`*): `this`
+*Overrides void*
 
-▸ **prependListener**(event: *"finish"*, listener: *`function`*): `this`
-
-▸ **prependListener**(event: *"pipe"*, listener: *`function`*): `this`
-
-▸ **prependListener**(event: *"unpipe"*, listener: *`function`*): `this`
-
-▸ **prependListener**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
-
-*Inherited from Writable.prependListener*
-
-*Overrides EventEmitter.prependListener*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:173*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:183
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "close" |
-| listener | `function` |
+▪ **event**: *"close"*
 
-**Returns:** `this`
+▪ **listener**: *function*
 
-*Inherited from Writable.prependListener*
+▸ (): *void*
 
-*Overrides EventEmitter.prependListener*
+**Returns:** *this*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:174*
+▸ **prependListener**(`event`: "drain", `listener`: function): *this*
 
-**Parameters:**
+*Inherited from void*
 
-| Name | Type |
-| ------ | ------ |
-| event | "drain" |
-| listener | `function` |
+*Overrides void*
 
-**Returns:** `this`
-
-*Inherited from Writable.prependListener*
-
-*Overrides EventEmitter.prependListener*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:175*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:184
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "error" |
-| listener | `function` |
+▪ **event**: *"drain"*
 
-**Returns:** `this`
+▪ **listener**: *function*
 
-*Inherited from Writable.prependListener*
+▸ (): *void*
 
-*Overrides EventEmitter.prependListener*
+**Returns:** *this*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:176*
+▸ **prependListener**(`event`: "error", `listener`: function): *this*
 
-**Parameters:**
+*Inherited from void*
 
-| Name | Type |
-| ------ | ------ |
-| event | "finish" |
-| listener | `function` |
+*Overrides void*
 
-**Returns:** `this`
-
-*Inherited from Writable.prependListener*
-
-*Overrides EventEmitter.prependListener*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:177*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:185
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "pipe" |
-| listener | `function` |
+▪ **event**: *"error"*
 
-**Returns:** `this`
+▪ **listener**: *function*
 
-*Inherited from Writable.prependListener*
-
-*Overrides EventEmitter.prependListener*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:178*
+▸ (`err`: Error): *void*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "unpipe" |
-| listener | `function` |
+Name | Type |
+------ | ------ |
+`err` | Error |
 
-**Returns:** `this`
+**Returns:** *this*
 
-*Inherited from Writable.prependListener*
+▸ **prependListener**(`event`: "finish", `listener`: function): *this*
 
-*Overrides EventEmitter.prependListener*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:179*
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:186
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *"finish"*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (): *void*
+
+**Returns:** *this*
+
+▸ **prependListener**(`event`: "pipe", `listener`: function): *this*
+
+*Inherited from void*
+
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:187
+
+**Parameters:**
+
+▪ **event**: *"pipe"*
+
+▪ **listener**: *function*
+
+▸ (`src`: Readable): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`src` | Readable |
+
+**Returns:** *this*
+
+▸ **prependListener**(`event`: "unpipe", `listener`: function): *this*
+
+*Inherited from void*
+
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:188
+
+**Parameters:**
+
+▪ **event**: *"unpipe"*
+
+▪ **listener**: *function*
+
+▸ (`src`: Readable): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`src` | Readable |
+
+**Returns:** *this*
+
+▸ **prependListener**(`event`: string | symbol, `listener`: function): *this*
+
+*Inherited from void*
+
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:189
+
+**Parameters:**
+
+▪ **event**: *string | symbol*
+
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="prependoncelistener"></a>
 
 ###  prependOnceListener
 
-▸ **prependOnceListener**(event: *"close"*, listener: *`function`*): `this`
+▸ **prependOnceListener**(`event`: "close", `listener`: function): *this*
 
-▸ **prependOnceListener**(event: *"drain"*, listener: *`function`*): `this`
+*Inherited from void*
 
-▸ **prependOnceListener**(event: *"error"*, listener: *`function`*): `this`
+*Overrides void*
 
-▸ **prependOnceListener**(event: *"finish"*, listener: *`function`*): `this`
-
-▸ **prependOnceListener**(event: *"pipe"*, listener: *`function`*): `this`
-
-▸ **prependOnceListener**(event: *"unpipe"*, listener: *`function`*): `this`
-
-▸ **prependOnceListener**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
-
-*Inherited from Writable.prependOnceListener*
-
-*Overrides EventEmitter.prependOnceListener*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:181*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:191
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "close" |
-| listener | `function` |
+▪ **event**: *"close"*
 
-**Returns:** `this`
+▪ **listener**: *function*
 
-*Inherited from Writable.prependOnceListener*
+▸ (): *void*
 
-*Overrides EventEmitter.prependOnceListener*
+**Returns:** *this*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:182*
+▸ **prependOnceListener**(`event`: "drain", `listener`: function): *this*
 
-**Parameters:**
+*Inherited from void*
 
-| Name | Type |
-| ------ | ------ |
-| event | "drain" |
-| listener | `function` |
+*Overrides void*
 
-**Returns:** `this`
-
-*Inherited from Writable.prependOnceListener*
-
-*Overrides EventEmitter.prependOnceListener*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:183*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:192
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "error" |
-| listener | `function` |
+▪ **event**: *"drain"*
 
-**Returns:** `this`
+▪ **listener**: *function*
 
-*Inherited from Writable.prependOnceListener*
+▸ (): *void*
 
-*Overrides EventEmitter.prependOnceListener*
+**Returns:** *this*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:184*
+▸ **prependOnceListener**(`event`: "error", `listener`: function): *this*
 
-**Parameters:**
+*Inherited from void*
 
-| Name | Type |
-| ------ | ------ |
-| event | "finish" |
-| listener | `function` |
+*Overrides void*
 
-**Returns:** `this`
-
-*Inherited from Writable.prependOnceListener*
-
-*Overrides EventEmitter.prependOnceListener*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:185*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:193
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "pipe" |
-| listener | `function` |
+▪ **event**: *"error"*
 
-**Returns:** `this`
+▪ **listener**: *function*
 
-*Inherited from Writable.prependOnceListener*
-
-*Overrides EventEmitter.prependOnceListener*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:186*
+▸ (`err`: Error): *void*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "unpipe" |
-| listener | `function` |
+Name | Type |
+------ | ------ |
+`err` | Error |
 
-**Returns:** `this`
+**Returns:** *this*
 
-*Inherited from Writable.prependOnceListener*
+▸ **prependOnceListener**(`event`: "finish", `listener`: function): *this*
 
-*Overrides EventEmitter.prependOnceListener*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:187*
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:194
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *"finish"*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (): *void*
+
+**Returns:** *this*
+
+▸ **prependOnceListener**(`event`: "pipe", `listener`: function): *this*
+
+*Inherited from void*
+
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:195
+
+**Parameters:**
+
+▪ **event**: *"pipe"*
+
+▪ **listener**: *function*
+
+▸ (`src`: Readable): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`src` | Readable |
+
+**Returns:** *this*
+
+▸ **prependOnceListener**(`event`: "unpipe", `listener`: function): *this*
+
+*Inherited from void*
+
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:196
+
+**Parameters:**
+
+▪ **event**: *"unpipe"*
+
+▪ **listener**: *function*
+
+▸ (`src`: Readable): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`src` | Readable |
+
+**Returns:** *this*
+
+▸ **prependOnceListener**(`event`: string | symbol, `listener`: function): *this*
+
+*Inherited from void*
+
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:197
+
+**Parameters:**
+
+▪ **event**: *string | symbol*
+
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="rawlisteners"></a>
 
 ###  rawListeners
 
-▸ **rawListeners**(event: *`string` \| `symbol`*): `Function`[]
+▸ **rawListeners**(`event`: string | symbol): *Function[]*
 
-*Inherited from EventEmitter.rawListeners*
+*Inherited from void*
 
-*Overrides EventEmitter.rawListeners*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:22*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:22
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
+Name | Type |
+------ | ------ |
+`event` | string &#124; symbol |
 
-**Returns:** `Function`[]
+**Returns:** *Function[]*
 
 ___
-<a id="removealllisteners"></a>
 
 ###  removeAllListeners
 
-▸ **removeAllListeners**(event?: *`string` \| `symbol`*): `this`
+▸ **removeAllListeners**(`event?`: string | symbol): *this*
 
-*Inherited from EventEmitter.removeAllListeners*
+*Inherited from void*
 
-*Overrides EventEmitter.removeAllListeners*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:18*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:18
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` event | `string` \| `symbol` |
+Name | Type |
+------ | ------ |
+`event?` | string &#124; symbol |
 
-**Returns:** `this`
+**Returns:** *this*
 
 ___
-<a id="removelistener"></a>
 
 ###  removeListener
 
-▸ **removeListener**(event: *"close"*, listener: *`function`*): `this`
+▸ **removeListener**(`event`: "close", `listener`: function): *this*
 
-▸ **removeListener**(event: *"drain"*, listener: *`function`*): `this`
+*Inherited from void*
 
-▸ **removeListener**(event: *"error"*, listener: *`function`*): `this`
+*Overrides void*
 
-▸ **removeListener**(event: *"finish"*, listener: *`function`*): `this`
-
-▸ **removeListener**(event: *"pipe"*, listener: *`function`*): `this`
-
-▸ **removeListener**(event: *"unpipe"*, listener: *`function`*): `this`
-
-▸ **removeListener**(event: *`string` \| `symbol`*, listener: *`function`*): `this`
-
-*Inherited from Writable.removeListener*
-
-*Overrides EventEmitter.removeListener*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:189*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:199
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "close" |
-| listener | `function` |
+▪ **event**: *"close"*
 
-**Returns:** `this`
+▪ **listener**: *function*
 
-*Inherited from Writable.removeListener*
+▸ (): *void*
 
-*Overrides EventEmitter.removeListener*
+**Returns:** *this*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:190*
+▸ **removeListener**(`event`: "drain", `listener`: function): *this*
 
-**Parameters:**
+*Inherited from void*
 
-| Name | Type |
-| ------ | ------ |
-| event | "drain" |
-| listener | `function` |
+*Overrides void*
 
-**Returns:** `this`
-
-*Inherited from Writable.removeListener*
-
-*Overrides EventEmitter.removeListener*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:191*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:200
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "error" |
-| listener | `function` |
+▪ **event**: *"drain"*
 
-**Returns:** `this`
+▪ **listener**: *function*
 
-*Inherited from Writable.removeListener*
+▸ (): *void*
 
-*Overrides EventEmitter.removeListener*
+**Returns:** *this*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:192*
+▸ **removeListener**(`event`: "error", `listener`: function): *this*
 
-**Parameters:**
+*Inherited from void*
 
-| Name | Type |
-| ------ | ------ |
-| event | "finish" |
-| listener | `function` |
+*Overrides void*
 
-**Returns:** `this`
-
-*Inherited from Writable.removeListener*
-
-*Overrides EventEmitter.removeListener*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:193*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:201
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "pipe" |
-| listener | `function` |
+▪ **event**: *"error"*
 
-**Returns:** `this`
+▪ **listener**: *function*
 
-*Inherited from Writable.removeListener*
-
-*Overrides EventEmitter.removeListener*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:194*
+▸ (`err`: Error): *void*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | "unpipe" |
-| listener | `function` |
+Name | Type |
+------ | ------ |
+`err` | Error |
 
-**Returns:** `this`
+**Returns:** *this*
 
-*Inherited from Writable.removeListener*
+▸ **removeListener**(`event`: "finish", `listener`: function): *this*
 
-*Overrides EventEmitter.removeListener*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:195*
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:202
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| event | `string` \| `symbol` |
-| listener | `function` |
+▪ **event**: *"finish"*
 
-**Returns:** `this`
+▪ **listener**: *function*
+
+▸ (): *void*
+
+**Returns:** *this*
+
+▸ **removeListener**(`event`: "pipe", `listener`: function): *this*
+
+*Inherited from void*
+
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:203
+
+**Parameters:**
+
+▪ **event**: *"pipe"*
+
+▪ **listener**: *function*
+
+▸ (`src`: Readable): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`src` | Readable |
+
+**Returns:** *this*
+
+▸ **removeListener**(`event`: "unpipe", `listener`: function): *this*
+
+*Inherited from void*
+
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:204
+
+**Parameters:**
+
+▪ **event**: *"unpipe"*
+
+▪ **listener**: *function*
+
+▸ (`src`: Readable): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`src` | Readable |
+
+**Returns:** *this*
+
+▸ **removeListener**(`event`: string | symbol, `listener`: function): *this*
+
+*Inherited from void*
+
+*Overrides void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:205
+
+**Parameters:**
+
+▪ **event**: *string | symbol*
+
+▪ **listener**: *function*
+
+▸ (...`args`: any[]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
 
 ___
-<a id="setdefaultencoding"></a>
 
 ###  setDefaultEncoding
 
-▸ **setDefaultEncoding**(encoding: *`string`*): `this`
+▸ **setDefaultEncoding**(`encoding`: string): *this*
 
-*Inherited from Writable.setDefaultEncoding*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:123*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:133
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| encoding | `string` |
+Name | Type |
+------ | ------ |
+`encoding` | string |
 
-**Returns:** `this`
+**Returns:** *this*
 
 ___
-<a id="setmaxlisteners"></a>
 
 ###  setMaxListeners
 
-▸ **setMaxListeners**(n: *`number`*): `this`
+▸ **setMaxListeners**(`n`: number): *this*
 
-*Inherited from EventEmitter.setMaxListeners*
+*Inherited from void*
 
-*Overrides EventEmitter.setMaxListeners*
+*Overrides void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:19*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:19
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| n | `number` |
+Name | Type |
+------ | ------ |
+`n` | number |
 
-**Returns:** `this`
+**Returns:** *this*
 
 ___
-<a id="uncork"></a>
 
 ###  uncork
 
-▸ **uncork**(): `void`
+▸ **uncork**(): *void*
 
-*Inherited from Writable.uncork*
+*Inherited from void*
 
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:128*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:138
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="write"></a>
 
 ###  write
 
-▸ **write**(chunk: *`any`*, cb?: *`function`*): `boolean`
+▸ **write**(`chunk`: any, `cb?`: function): *boolean*
 
-▸ **write**(chunk: *`any`*, encoding: *`string`*, cb?: *`function`*): `boolean`
+*Inherited from void*
 
-*Inherited from Writable.write*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:121*
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:131
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| chunk | `any` |
-| `Optional` cb | `function` |
+▪ **chunk**: *any*
 
-**Returns:** `boolean`
+▪`Optional`  **cb**: *function*
 
-*Inherited from Writable.write*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:122*
+▸ (`error`: Error | null | undefined): *void*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| chunk | `any` |
-| encoding | `string` |
-| `Optional` cb | `function` |
+Name | Type |
+------ | ------ |
+`error` | Error &#124; null &#124; undefined |
 
-**Returns:** `boolean`
+**Returns:** *boolean*
 
-___
-<a id="listenercount-1"></a>
+▸ **write**(`chunk`: any, `encoding`: string, `cb?`: function): *boolean*
 
-### `<Static>` listenerCount
+*Inherited from void*
 
-▸ **listenerCount**(emitter: *`EventEmitter`*, event: *`string` \| `symbol`*): `number`
-
-*Inherited from EventEmitter.listenerCount*
-
-*Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:8*
-
-*__deprecated__*: since v4.0.0
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/stream.d.ts:132
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| emitter | `EventEmitter` |
-| event | `string` \| `symbol` |
+▪ **chunk**: *any*
 
-**Returns:** `number`
+▪ **encoding**: *string*
+
+▪`Optional`  **cb**: *function*
+
+▸ (`error`: Error | null | undefined): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`error` | Error &#124; null &#124; undefined |
+
+**Returns:** *boolean*
 
 ___
 
+### `Static` listenerCount
+
+▸ **listenerCount**(`emitter`: EventEmitter, `event`: string | symbol): *number*
+
+*Inherited from void*
+
+Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.ts:8
+
+**`deprecated`** since v4.0.0
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`emitter` | EventEmitter |
+`event` | string &#124; symbol |
+
+**Returns:** *number*

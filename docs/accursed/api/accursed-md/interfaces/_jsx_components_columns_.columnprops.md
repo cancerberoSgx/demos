@@ -1,12 +1,12 @@
-[accursed](../README.md) > ["jsx-components/columns"](../modules/_jsx_components_columns_.md) > [ColumnProps](../interfaces/_jsx_components_columns_.columnprops.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx-components/columns"](../modules/_jsx_components_columns_.md) › [ColumnProps](_jsx_components_columns_.columnprops.md)
 
 # Interface: ColumnProps
 
 ## Hierarchy
 
- `object`
+* object
 
-**↳ ColumnProps**
+  ↳ **ColumnProps**
 
 ## Index
 
@@ -14,17 +14,10 @@
 
 * [children](_jsx_components_columns_.columnprops.md#children)
 
----
-
 ## Properties
-
-<a id="children"></a>
 
 ###  children
 
-**● children**: *[BlessedJsxNode](../modules/_jsx_types_.__global.jsx.md#blessedjsxnode)*
+• **children**: *[BlessedJsxNode](../modules/_jsx_types_.__global.jsx.md#blessedjsxnode)*
 
-*Defined in [jsx-components/columns.tsx:10](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/columns.tsx#L10)*
-
-___
-
+*Defined in [jsx-components/columns.tsx:10](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/columns.tsx#L10)*

@@ -1,12 +1,12 @@
-[accursed](../README.md) > ["jsx-components/tabPanel"](../modules/_jsx_components_tabpanel_.md) > [TabBodyProps](../interfaces/_jsx_components_tabpanel_.tabbodyprops.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx-components/tabPanel"](../modules/_jsx_components_tabpanel_.md) › [TabBodyProps](_jsx_components_tabpanel_.tabbodyprops.md)
 
 # Interface: TabBodyProps
 
 ## Hierarchy
 
- `object`
+* object
 
-**↳ TabBodyProps**
+  ↳ **TabBodyProps**
 
 ## Index
 
@@ -14,17 +14,10 @@
 
 * [children](_jsx_components_tabpanel_.tabbodyprops.md#children)
 
----
-
 ## Properties
-
-<a id="children"></a>
 
 ###  children
 
-**● children**: *[BlessedJsxNode](../modules/_jsx_types_.__global.jsx.md#blessedjsxnode)*
+• **children**: *[BlessedJsxNode](../modules/_jsx_types_.__global.jsx.md#blessedjsxnode)*
 
-*Defined in jsx-components/tabPanel.tsx:31*
-
-___
-
+Defined in jsx-components/tabPanel.tsx:31

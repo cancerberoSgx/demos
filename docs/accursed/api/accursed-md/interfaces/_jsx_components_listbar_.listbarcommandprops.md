@@ -1,98 +1,83 @@
-[accursed](../README.md) > ["jsx-components/listBar"](../modules/_jsx_components_listbar_.md) > [ListBarCommandProps](../interfaces/_jsx_components_listbar_.listbarcommandprops.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx-components/listBar"](../modules/_jsx_components_listbar_.md) › [ListBarCommandProps](_jsx_components_listbar_.listbarcommandprops.md)
 
 # Interface: ListBarCommandProps
 
 ## Hierarchy
 
- `object`
+* object
 
- [Command](_jsx_components_listbar_.command.md)
+* [Command](_jsx_components_listbar_.command.md)
 
-**↳ ListBarCommandProps**
+  ↳ **ListBarCommandProps**
 
 ## Index
 
 ### Properties
 
-* [active](_jsx_components_listbar_.listbarcommandprops.md#active)
+* [active](_jsx_components_listbar_.listbarcommandprops.md#optional-active)
 * [children](_jsx_components_listbar_.listbarcommandprops.md#children)
-* [keys](_jsx_components_listbar_.listbarcommandprops.md#keys)
-* [prefix](_jsx_components_listbar_.listbarcommandprops.md#prefix)
-* [text](_jsx_components_listbar_.listbarcommandprops.md#text)
+* [keys](_jsx_components_listbar_.listbarcommandprops.md#optional-keys)
+* [prefix](_jsx_components_listbar_.listbarcommandprops.md#optional-prefix)
+* [text](_jsx_components_listbar_.listbarcommandprops.md#optional-text)
 
 ### Methods
 
 * [callback](_jsx_components_listbar_.listbarcommandprops.md#callback)
 
----
-
 ## Properties
 
-<a id="active"></a>
+### `Optional` active
 
-### `<Optional>` active
+• **active**? : *boolean*
 
-**● active**: *`boolean`*
-
-*Defined in [jsx-components/listBar.tsx:22](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/listBar.tsx#L22)*
+*Defined in [jsx-components/listBar.tsx:22](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L22)*
 
 ___
-<a id="children"></a>
 
 ###  children
 
-**● children**: *`string` \| `string`[]*
+• **children**: *string | string[]*
 
-*Defined in [jsx-components/listBar.tsx:20](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/listBar.tsx#L20)*
-
-___
-<a id="keys"></a>
-
-### `<Optional>` keys
-
-**● keys**: *`string`[]*
-
-*Overrides [Command](_jsx_components_listbar_.command.md).[keys](_jsx_components_listbar_.command.md#keys)*
-
-*Defined in [jsx-components/listBar.tsx:23](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/listBar.tsx#L23)*
+*Defined in [jsx-components/listBar.tsx:20](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L20)*
 
 ___
-<a id="prefix"></a>
 
-### `<Optional>` prefix
+### `Optional` keys
 
-**● prefix**: *`string`*
+• **keys**? : *string[]*
 
-*Inherited from [Command](_jsx_components_listbar_.command.md).[prefix](_jsx_components_listbar_.command.md#prefix)*
+*Overrides [Command](_jsx_components_listbar_.command.md).[keys](_jsx_components_listbar_.command.md#optional-keys)*
 
-*Defined in [jsx-components/listBar.tsx:28](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/listBar.tsx#L28)*
-
-___
-<a id="text"></a>
-
-### `<Optional>` text
-
-**● text**: *`string`*
-
-*Inherited from [Command](_jsx_components_listbar_.command.md).[text](_jsx_components_listbar_.command.md#text)*
-
-*Defined in [jsx-components/listBar.tsx:27](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/listBar.tsx#L27)*
+*Defined in [jsx-components/listBar.tsx:23](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L23)*
 
 ___
+
+### `Optional` prefix
+
+• **prefix**? : *string*
+
+*Inherited from [Command](_jsx_components_listbar_.command.md).[prefix](_jsx_components_listbar_.command.md#optional-prefix)*
+
+*Defined in [jsx-components/listBar.tsx:28](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L28)*
+
+___
+
+### `Optional` text
+
+• **text**? : *string*
+
+*Inherited from [Command](_jsx_components_listbar_.command.md).[text](_jsx_components_listbar_.command.md#optional-text)*
+
+*Defined in [jsx-components/listBar.tsx:27](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L27)*
 
 ## Methods
 
-<a id="callback"></a>
-
 ###  callback
 
-▸ **callback**(): `void`
+▸ **callback**(): *void*
 
 *Inherited from [Command](_jsx_components_listbar_.command.md).[callback](_jsx_components_listbar_.command.md#callback)*
 
-*Defined in [jsx-components/listBar.tsx:30](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/listBar.tsx#L30)*
+*Defined in [jsx-components/listBar.tsx:30](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L30)*
 
-**Returns:** `void`
-
-___
-
+**Returns:** *void*

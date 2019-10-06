@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["jsx-components/listTable"](../modules/_jsx_components_listtable_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx-components/listTable"](_jsx_components_listtable_.md)
 
 # External module: "jsx-components/listTable"
 
@@ -19,6 +19,3 @@
 * [ListTableHeadProps](../interfaces/_jsx_components_listtable_.listtableheadprops.md)
 * [ListTableProps](../interfaces/_jsx_components_listtable_.listtableprops.md)
 * [ListTableRowProps](../interfaces/_jsx_components_listtable_.listtablerowprops.md)
-
----
-

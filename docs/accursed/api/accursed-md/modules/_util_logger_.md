@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["util/logger"](../modules/_util_logger_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["util/logger"](_util_logger_.md)
 
 # External module: "util/logger"
 
@@ -6,63 +6,55 @@
 
 ### Variables
 
-* [screenLoggerInstance](_util_logger_.md#screenloggerinstance)
+* [screenLoggerInstance](_util_logger_.md#let-screenloggerinstance)
 
 ### Functions
 
 * [debug](_util_logger_.md#debug)
 * [screenLogger](_util_logger_.md#screenlogger)
 
----
-
 ## Variables
 
-<a id="screenloggerinstance"></a>
+### `Let` screenLoggerInstance
 
-### `<Let>` screenLoggerInstance
+• **screenLoggerInstance**: *[Log](../classes/_declarations_blessed_d_.widgets.log.md)*
 
-**● screenLoggerInstance**: *[Log](../classes/_declarations_blessed_d_.widgets.log.md)*
-
-*Defined in [util/logger.ts:42](https://github.com/cancerberoSgx/accursed/blob/978b980/src/util/logger.ts#L42)*
-
-___
+*Defined in [util/logger.ts:47](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/logger.ts#L47)*
 
 ## Functions
 
-<a id="debug"></a>
-
 ###  debug
 
-▸ **debug**(...args: *`any`[]*): `void`
+▸ **debug**(...`args`: any[]): *void*
 
-*Defined in [util/logger.ts:7](https://github.com/cancerberoSgx/accursed/blob/978b980/src/util/logger.ts#L7)*
+*Defined in [util/logger.ts:8](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/logger.ts#L8)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Rest` args | `any`[] |
+Name | Type |
+------ | ------ |
+`...args` | any[] |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="screenlogger"></a>
 
 ###  screenLogger
 
-▸ **screenLogger**(screen: *[Screen](../classes/_declarations_blessed_d_.widgets.screen.md)*): `object`
+▸ **screenLogger**(`screen`: [Screen](../classes/_declarations_blessed_d_.widgets.screen.md)): *object*
 
-*Defined in [util/logger.ts:18](https://github.com/cancerberoSgx/accursed/blob/978b980/src/util/logger.ts#L18)*
+*Defined in [util/logger.ts:22](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/logger.ts#L22)*
 
 Creates a log element bottom-right corner of the screen and returns an object with log() method
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| screen | [Screen](../classes/_declarations_blessed_d_.widgets.screen.md) |
+Name | Type |
+------ | ------ |
+`screen` | [Screen](../classes/_declarations_blessed_d_.widgets.screen.md) |
 
-**Returns:** `object`
+**Returns:** *object*
 
-___
+* **instance**: *[Log](../classes/_declarations_blessed_d_.widgets.log.md)* =  screenLoggerInstance
 
+* **log**(...`args`: any[]): *void*

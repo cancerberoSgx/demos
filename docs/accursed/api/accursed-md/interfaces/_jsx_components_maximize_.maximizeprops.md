@@ -1,105 +1,90 @@
-[accursed](../README.md) > ["jsx-components/maximize"](../modules/_jsx_components_maximize_.md) > [MaximizeProps](../interfaces/_jsx_components_maximize_.maximizeprops.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx-components/maximize"](../modules/_jsx_components_maximize_.md) › [MaximizeProps](_jsx_components_maximize_.maximizeprops.md)
 
 # Interface: MaximizeProps
 
 ## Hierarchy
 
- `object`
+* object
 
-**↳ MaximizeProps**
+  ↳ **MaximizeProps**
 
 ## Index
 
 ### Properties
 
-* [button](_jsx_components_maximize_.maximizeprops.md#button)
-* [children](_jsx_components_maximize_.maximizeprops.md#children)
-* [maximizeLabel](_jsx_components_maximize_.maximizeprops.md#maximizelabel)
-* [restoreLabel](_jsx_components_maximize_.maximizeprops.md#restorelabel)
-* [title](_jsx_components_maximize_.maximizeprops.md#title)
+* [button](_jsx_components_maximize_.maximizeprops.md#optional-button)
+* [children](_jsx_components_maximize_.maximizeprops.md#optional-children)
+* [maximizeLabel](_jsx_components_maximize_.maximizeprops.md#optional-maximizelabel)
+* [restoreLabel](_jsx_components_maximize_.maximizeprops.md#optional-restorelabel)
+* [title](_jsx_components_maximize_.maximizeprops.md#optional-title)
 
 ### Methods
 
-* [onMaximize](_jsx_components_maximize_.maximizeprops.md#onmaximize)
-
----
+* [onMaximize](_jsx_components_maximize_.maximizeprops.md#optional-onmaximize)
 
 ## Properties
 
-<a id="button"></a>
+### `Optional` button
 
-### `<Optional>` button
+• **button**? : *[ButtonOptions](_declarations_blessed_d_.widgets.buttonoptions.md)*
 
-**● button**: *[ButtonOptions](_declarations_blessed_d_.widgets.buttonoptions.md)*
-
-*Defined in [jsx-components/maximize.tsx:23](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/maximize.tsx#L23)*
+*Defined in [jsx-components/maximize.tsx:23](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/maximize.tsx#L23)*
 
 Options for the maximize/restore button.
 
 ___
-<a id="children"></a>
 
-### `<Optional>` children
+### `Optional` children
 
-**● children**: *[Element](_jsx_types_.__global.jsx.element.md)*
+• **children**? : *[Element](_jsx_types_.__global.jsx.element.md)*
 
-*Defined in [jsx-components/maximize.tsx:7](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/maximize.tsx#L7)*
-
-___
-<a id="maximizelabel"></a>
-
-### `<Optional>` maximizeLabel
-
-**● maximizeLabel**: *`string`*
-
-*Defined in [jsx-components/maximize.tsx:11](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/maximize.tsx#L11)*
-
-Label for the maximize button. Default: '\\u2921 maximize'.
+*Defined in [jsx-components/maximize.tsx:7](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/maximize.tsx#L7)*
 
 ___
-<a id="restorelabel"></a>
 
-### `<Optional>` restoreLabel
+### `Optional` maximizeLabel
 
-**● restoreLabel**: *`string`*
+• **maximizeLabel**? : *string*
 
-*Defined in [jsx-components/maximize.tsx:15](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/maximize.tsx#L15)*
+*Defined in [jsx-components/maximize.tsx:11](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/maximize.tsx#L11)*
 
-Label for the restore button. Default: '\\u2935 restore'.
+Label for the maximize button. Default: '\u2921 maximize'.
 
 ___
-<a id="title"></a>
 
-### `<Optional>` title
+### `Optional` restoreLabel
 
-**● title**: *`string`*
+• **restoreLabel**? : *string*
 
-*Defined in [jsx-components/maximize.tsx:19](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/maximize.tsx#L19)*
+*Defined in [jsx-components/maximize.tsx:15](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/maximize.tsx#L15)*
+
+Label for the restore button. Default: '\u2935 restore'.
+
+___
+
+### `Optional` title
+
+• **title**? : *string*
+
+*Defined in [jsx-components/maximize.tsx:19](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/maximize.tsx#L19)*
 
 The title or label for information when maximized.
 
-___
-
 ## Methods
 
-<a id="onmaximize"></a>
+### `Optional` onMaximize
 
-### `<Optional>` onMaximize
+▸ **onMaximize**(`type`: "maximize" | "restore", `target`: [Element](_jsx_types_.__global.jsx.element.md)): *any*
 
-▸ **onMaximize**(type: *"maximize" \| "restore"*, target: *[Element](_jsx_types_.__global.jsx.element.md)*): `any`
-
-*Defined in [jsx-components/maximize.tsx:27](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx-components/maximize.tsx#L27)*
+*Defined in [jsx-components/maximize.tsx:27](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/maximize.tsx#L27)*
 
 Notifies listeners when a maximize or restore event occurs
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| type | "maximize" \| "restore" |
-| target | [Element](_jsx_types_.__global.jsx.element.md) |
+Name | Type |
+------ | ------ |
+`type` | "maximize" &#124; "restore" |
+`target` | [Element](_jsx_types_.__global.jsx.element.md) |
 
-**Returns:** `any`
-
-___
-
+**Returns:** *any*

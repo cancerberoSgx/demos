@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["util/debugNode"](../modules/_util_debugnode_.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["util/debugNode"](_util_debugnode_.md)
 
 # External module: "util/debugNode"
 
@@ -11,8 +11,8 @@
 
 ### Variables
 
-* [lastFocused](_util_debugnode_.md#lastfocused)
-* [timer](_util_debugnode_.md#timer)
+* [lastFocused](_util_debugnode_.md#let-lastfocused)
+* [timer](_util_debugnode_.md#let-timer)
 
 ### Functions
 
@@ -23,133 +23,110 @@
 
 ### Object literals
 
-* [defaultOptions](_util_debugnode_.md#defaultoptions)
-
----
+* [defaultOptions](_util_debugnode_.md#const-defaultoptions)
 
 ## Variables
 
-<a id="lastfocused"></a>
+### `Let` lastFocused
 
-### `<Let>` lastFocused
+• **lastFocused**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*
 
-**● lastFocused**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*
-
-*Defined in [util/debugNode.tsx:60](https://github.com/cancerberoSgx/accursed/blob/978b980/src/util/debugNode.tsx#L60)*
+*Defined in [util/debugNode.tsx:60](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/debugNode.tsx#L60)*
 
 ___
-<a id="timer"></a>
 
-### `<Let>` timer
+### `Let` timer
 
-**● timer**: *`any`*
+• **timer**: *any*
 
-*Defined in [util/debugNode.tsx:61](https://github.com/cancerberoSgx/accursed/blob/978b980/src/util/debugNode.tsx#L61)*
-
-___
+*Defined in [util/debugNode.tsx:61](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/debugNode.tsx#L61)*
 
 ## Functions
 
-<a id="buildtreenode"></a>
-
 ###  buildTreeNode
 
-▸ **buildTreeNode**(el: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*, o?: *[Options](../interfaces/_util_debugnode_.options.md)*): `any`
+▸ **buildTreeNode**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `o`: [Options](../interfaces/_util_debugnode_.options.md)): *any*
 
-*Defined in [util/debugNode.tsx:31](https://github.com/cancerberoSgx/accursed/blob/978b980/src/util/debugNode.tsx#L31)*
+*Defined in [util/debugNode.tsx:31](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/debugNode.tsx#L31)*
 
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| el | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | - |
-| `Default value` o | [Options](../interfaces/_util_debugnode_.options.md) |  defaultOptions |
+Name | Type | Default |
+------ | ------ | ------ |
+`el` | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | - |
+`o` | [Options](../interfaces/_util_debugnode_.options.md) |  defaultOptions |
 
-**Returns:** `any`
+**Returns:** *any*
 
 ___
-<a id="gettreenode"></a>
 
 ###  getTreeNode
 
-▸ **getTreeNode**(el: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md) \| [Screen](../classes/_declarations_blessed_d_.widgets.screen.md)*, o?: *[Options](../interfaces/_util_debugnode_.options.md)*): [TreeNode](../interfaces/_util_debugnode_.treenode.md)
+▸ **getTreeNode**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | [Screen](../classes/_declarations_blessed_d_.widgets.screen.md), `o`: [Options](../interfaces/_util_debugnode_.options.md)): *[TreeNode](../interfaces/_util_debugnode_.treenode.md)*
 
-*Defined in [util/debugNode.tsx:27](https://github.com/cancerberoSgx/accursed/blob/978b980/src/util/debugNode.tsx#L27)*
+*Defined in [util/debugNode.tsx:27](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/debugNode.tsx#L27)*
 
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| el | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) \| [Screen](../classes/_declarations_blessed_d_.widgets.screen.md) | - |
-| `Default value` o | [Options](../interfaces/_util_debugnode_.options.md) |  defaultOptions |
+Name | Type | Default |
+------ | ------ | ------ |
+`el` | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) &#124; [Screen](../classes/_declarations_blessed_d_.widgets.screen.md) | - |
+`o` | [Options](../interfaces/_util_debugnode_.options.md) |  defaultOptions |
 
-**Returns:** [TreeNode](../interfaces/_util_debugnode_.treenode.md)
+**Returns:** *[TreeNode](../interfaces/_util_debugnode_.treenode.md)*
 
 ___
-<a id="logtext"></a>
 
 ###  logText
 
-▸ **logText**(e: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md) \| [Screen](../classes/_declarations_blessed_d_.widgets.screen.md)*, ...args: *`any`[]*): `void`
+▸ **logText**(`e`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | [Screen](../classes/_declarations_blessed_d_.widgets.screen.md), ...`args`: any[]): *void*
 
-*Defined in [util/debugNode.tsx:52](https://github.com/cancerberoSgx/accursed/blob/978b980/src/util/debugNode.tsx#L52)*
+*Defined in [util/debugNode.tsx:52](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/debugNode.tsx#L52)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| e | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) \| [Screen](../classes/_declarations_blessed_d_.widgets.screen.md) |
-| `Rest` args | `any`[] |
+Name | Type |
+------ | ------ |
+`e` | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) &#124; [Screen](../classes/_declarations_blessed_d_.widgets.screen.md) |
+`...args` | any[] |
 
-**Returns:** `void`
+**Returns:** *void*
 
 ___
-<a id="renderdescendants"></a>
 
 ###  renderDescendants
 
-▸ **renderDescendants**(el: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md) \| [Screen](../classes/_declarations_blessed_d_.widgets.screen.md)*, o?: *[Options](../interfaces/_util_debugnode_.options.md) & [ElementOptions](../interfaces/_declarations_blessed_d_.widgets.elementoptions.md)*): [BlessedElement](../classes/_declarations_blessed_d_.widgets.blessedelement.md)<`object`>
+▸ **renderDescendants**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | [Screen](../classes/_declarations_blessed_d_.widgets.screen.md), `o`: [Options](../interfaces/_util_debugnode_.options.md) & [ElementOptions](../interfaces/_declarations_blessed_d_.widgets.elementoptions.md)): *[BlessedElement](../classes/_declarations_blessed_d_.widgets.blessedelement.md)‹object›*
 
-*Defined in [util/debugNode.tsx:62](https://github.com/cancerberoSgx/accursed/blob/978b980/src/util/debugNode.tsx#L62)*
+*Defined in [util/debugNode.tsx:62](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/debugNode.tsx#L62)*
 
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| el | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) \| [Screen](../classes/_declarations_blessed_d_.widgets.screen.md) | - |
-| `Default value` o | [Options](../interfaces/_util_debugnode_.options.md) & [ElementOptions](../interfaces/_declarations_blessed_d_.widgets.elementoptions.md) |  defaultOptions |
+Name | Type | Default |
+------ | ------ | ------ |
+`el` | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) &#124; [Screen](../classes/_declarations_blessed_d_.widgets.screen.md) | - |
+`o` | [Options](../interfaces/_util_debugnode_.options.md) & [ElementOptions](../interfaces/_declarations_blessed_d_.widgets.elementoptions.md) |  defaultOptions |
 
-**Returns:** [BlessedElement](../classes/_declarations_blessed_d_.widgets.blessedelement.md)<`object`>
-
-___
+**Returns:** *[BlessedElement](../classes/_declarations_blessed_d_.widgets.blessedelement.md)‹object›*
 
 ## Object literals
 
-<a id="defaultoptions"></a>
+### `Const` defaultOptions
 
-### `<Const>` defaultOptions
+### ▪ **defaultOptions**: *object*
 
-**defaultOptions**: *`object`*
+*Defined in [util/debugNode.tsx:14](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/debugNode.tsx#L14)*
 
-*Defined in [util/debugNode.tsx:14](https://github.com/cancerberoSgx/accursed/blob/978b980/src/util/debugNode.tsx#L14)*
+###  getNodeLabel
 
-<a id="defaultoptions.getnodelabel"></a>
+▸ **getNodeLabel**(`n`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)): *string*
 
-####  getNodeLabel
-
-▸ **getNodeLabel**(n: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*): `string`
-
-*Defined in [util/debugNode.tsx:15](https://github.com/cancerberoSgx/accursed/blob/978b980/src/util/debugNode.tsx#L15)*
+*Defined in [util/debugNode.tsx:15](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/debugNode.tsx#L15)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| n | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) |
+Name | Type |
+------ | ------ |
+`n` | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) |
 
-**Returns:** `string`
-
-___
-
-___
-
+**Returns:** *string*

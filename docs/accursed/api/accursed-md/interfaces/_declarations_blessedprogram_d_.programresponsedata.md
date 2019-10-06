@@ -1,183 +1,176 @@
-[accursed](../README.md) > ["declarations/blessedProgram.d"](../modules/_declarations_blessedprogram_d_.md) > [ProgramResponseData](../interfaces/_declarations_blessedprogram_d_.programresponsedata.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["declarations/blessedProgram.d"](../modules/_declarations_blessedprogram_d_.md) › [ProgramResponseData](_declarations_blessedprogram_d_.programresponsedata.md)
 
 # Interface: ProgramResponseData
 
-A general representation of the data object received callbacks of program's write operation on the output.
+A general representation of the data object received callbacks  of program's write operation  on the
+output.
 
-In general, each event type will respond with a data object that is mixed into this data object properties, and also is available individually in some of its properties, For example a 'device-status' request will respond with a 'status property with only that information but also the properties mixed in the object itself'
+ In general, each event type will respond with a data object that is mixed into this data object
+ properties, and also is available individually in some of its properties, For example a  'device-status'
+ request will respond with a 'status property with only that information but also the properties mixed in
+ the object itself'
 
 ## Hierarchy
 
-**ProgramResponseData**
+* **ProgramResponseData**
 
 ## Indexable
 
-\[k: `string`\]:&nbsp;`any`
-A general representation of the data object received callbacks of program's write operation on the output.
+* \[ **k**: *string*\]: any
 
-In general, each event type will respond with a data object that is mixed into this data object properties, and also is available individually in some of its properties, For example a 'device-status' request will respond with a 'status property with only that information but also the properties mixed in the object itself'
+A general representation of the data object received callbacks  of program's write operation  on the
+output.
+
+ In general, each event type will respond with a data object that is mixed into this data object
+ properties, and also is available individually in some of its properties, For example a  'device-status'
+ request will respond with a 'status property with only that information but also the properties mixed in
+ the object itself'
 
 ## Index
 
 ### Properties
 
 * [code](_declarations_blessedprogram_d_.programresponsedata.md#code)
-* [cursor](_declarations_blessedprogram_d_.programresponsedata.md#cursor)
+* [cursor](_declarations_blessedprogram_d_.programresponsedata.md#optional-cursor)
 * [event](_declarations_blessedprogram_d_.programresponsedata.md#event)
-* [height](_declarations_blessedprogram_d_.programresponsedata.md#height)
-* [page](_declarations_blessedprogram_d_.programresponsedata.md#page-1)
-* [size](_declarations_blessedprogram_d_.programresponsedata.md#size)
-* [status](_declarations_blessedprogram_d_.programresponsedata.md#status)
-* [textAreaSizeCharacters](_declarations_blessedprogram_d_.programresponsedata.md#textareasizecharacters)
+* [height](_declarations_blessedprogram_d_.programresponsedata.md#optional-height)
+* [page](_declarations_blessedprogram_d_.programresponsedata.md#optional-page)
+* [size](_declarations_blessedprogram_d_.programresponsedata.md#optional-size)
+* [status](_declarations_blessedprogram_d_.programresponsedata.md#optional-status)
+* [textAreaSizeCharacters](_declarations_blessedprogram_d_.programresponsedata.md#optional-textareasizecharacters)
 * [type](_declarations_blessedprogram_d_.programresponsedata.md#type)
-* [width](_declarations_blessedprogram_d_.programresponsedata.md#width-2)
-* [x](_declarations_blessedprogram_d_.programresponsedata.md#x-2)
-* [y](_declarations_blessedprogram_d_.programresponsedata.md#y-2)
-
----
+* [width](_declarations_blessedprogram_d_.programresponsedata.md#optional-width)
+* [x](_declarations_blessedprogram_d_.programresponsedata.md#optional-x)
+* [y](_declarations_blessedprogram_d_.programresponsedata.md#optional-y)
 
 ## Properties
 
-<a id="code"></a>
-
 ###  code
 
-**● code**: *`string`*
+• **code**: *string*
 
-*Defined in [declarations/blessedProgram.d.ts:23](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L23)*
+*Defined in [declarations/blessedProgram.d.ts:27](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L27)*
 
 Example: '', 'DSR'
 
 ___
-<a id="cursor"></a>
 
-### `<Optional>` cursor
+### `Optional` cursor
 
-**● cursor**: *`object`*
+• **cursor**? : *object*
 
-*Defined in [declarations/blessedProgram.d.ts:44](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L44)*
+*Defined in [declarations/blessedProgram.d.ts:50](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L50)*
 
-#### Type declaration
+#### Type declaration:
 
- page: `undefined`
+* **page**: *undefined*
 
- x: `1`
+* **x**: *1*
 
- y: `1`
+* **y**: *1*
 
 ___
-<a id="event"></a>
 
 ###  event
 
-**● event**: *`string`*
+• **event**: *string*
 
-*Defined in [declarations/blessedProgram.d.ts:19](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L19)*
+*Defined in [declarations/blessedProgram.d.ts:22](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L22)*
 
-The event type that was requested / write that caused this response. Example: 'window-manipulation', 'device-attributes', 'device-status', etc.
-
-___
-<a id="height"></a>
-
-### `<Optional>` height
-
-**● height**: *`number`*
-
-*Defined in [declarations/blessedProgram.d.ts:34](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L34)*
+The event type that was requested / write that caused this response. Example: 'window-manipulation',
+'device-attributes', 'device-status', etc.
 
 ___
-<a id="page-1"></a>
 
-### `<Optional>` page
+### `Optional` height
 
-**● page**: *`any`*
+• **height**? : *number*
 
-*Defined in [declarations/blessedProgram.d.ts:41](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L41)*
-
-___
-<a id="size"></a>
-
-### `<Optional>` size
-
-**● size**: *`object`*
-
-*Defined in [declarations/blessedProgram.d.ts:30](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L30)*
-
-#### Type declaration
-
- height: `number`
-
- width: `number`
+*Defined in [declarations/blessedProgram.d.ts:40](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L40)*
 
 ___
-<a id="status"></a>
 
-### `<Optional>` status
+### `Optional` page
 
-**● status**: *`object`*
+• **page**? : *any*
 
-*Defined in [declarations/blessedProgram.d.ts:36](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L36)*
-
-#### Type declaration
-
-`Optional`  page: `number`
-
-`Optional`  x: `number`
-
- y: `number`
+*Defined in [declarations/blessedProgram.d.ts:47](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L47)*
 
 ___
-<a id="textareasizecharacters"></a>
 
-### `<Optional>` textAreaSizeCharacters
+### `Optional` size
 
-**● textAreaSizeCharacters**: *`object`*
+• **size**? : *object*
 
-*Defined in [declarations/blessedProgram.d.ts:49](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L49)*
+*Defined in [declarations/blessedProgram.d.ts:36](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L36)*
 
-#### Type declaration
+#### Type declaration:
 
- height: `number`
+* **height**: *number*
 
- width: `number`
+* **width**: *number*
 
 ___
-<a id="type"></a>
+
+### `Optional` status
+
+• **status**? : *object*
+
+*Defined in [declarations/blessedProgram.d.ts:42](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L42)*
+
+#### Type declaration:
+
+* **page**? : *number*
+
+* **x**? : *number*
+
+* **y**: *number*
+
+___
+
+### `Optional` textAreaSizeCharacters
+
+• **textAreaSizeCharacters**? : *object*
+
+*Defined in [declarations/blessedProgram.d.ts:55](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L55)*
+
+#### Type declaration:
+
+* **height**: *number*
+
+* **width**: *number*
+
+___
 
 ###  type
 
-**● type**: *`string`*
+• **type**: *string*
 
-*Defined in [declarations/blessedProgram.d.ts:29](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L29)*
+*Defined in [declarations/blessedProgram.d.ts:34](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L34)*
 
-Identifies the request type that caused this response. For example, if a 'window-manipulation' is written the response type could be 'textarea-size', example: 'textarea-size', 'cursor-status',
-
-___
-<a id="width-2"></a>
-
-### `<Optional>` width
-
-**● width**: *`number`*
-
-*Defined in [declarations/blessedProgram.d.ts:35](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L35)*
-
-___
-<a id="x-2"></a>
-
-### `<Optional>` x
-
-**● x**: *`number`*
-
-*Defined in [declarations/blessedProgram.d.ts:42](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L42)*
-
-___
-<a id="y-2"></a>
-
-### `<Optional>` y
-
-**● y**: *`number`*
-
-*Defined in [declarations/blessedProgram.d.ts:43](https://github.com/cancerberoSgx/accursed/blob/978b980/src/declarations/blessedProgram.d.ts#L43)*
+Identifies the request type that caused this response. For example, if a  'window-manipulation' is
+written the response type could be 'textarea-size',  example: 'textarea-size',  'cursor-status',
 
 ___
 
+### `Optional` width
+
+• **width**? : *number*
+
+*Defined in [declarations/blessedProgram.d.ts:41](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L41)*
+
+___
+
+### `Optional` x
+
+• **x**? : *number*
+
+*Defined in [declarations/blessedProgram.d.ts:48](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L48)*
+
+___
+
+### `Optional` y
+
+• **y**? : *number*
+
+*Defined in [declarations/blessedProgram.d.ts:49](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L49)*

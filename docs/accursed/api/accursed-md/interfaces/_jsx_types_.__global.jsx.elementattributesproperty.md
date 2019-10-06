@@ -1,10 +1,10 @@
-[accursed](../README.md) > ["jsx/types"](../modules/_jsx_types_.md) > [__global](../modules/_jsx_types_.__global.md) > [JSX](../modules/_jsx_types_.__global.jsx.md) > [ElementAttributesProperty](../interfaces/_jsx_types_.__global.jsx.elementattributesproperty.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["jsx/types"](../modules/_jsx_types_.md) › [__global](../modules/_jsx_types_.__global.md) › [JSX](../modules/_jsx_types_.__global.jsx.md) › [ElementAttributesProperty](_jsx_types_.__global.jsx.elementattributesproperty.md)
 
 # Interface: ElementAttributesProperty
 
 ## Hierarchy
 
-**ElementAttributesProperty**
+* **ElementAttributesProperty**
 
 ## Index
 
@@ -12,17 +12,10 @@
 
 * [props](_jsx_types_.__global.jsx.elementattributesproperty.md#props)
 
----
-
 ## Properties
-
-<a id="props"></a>
 
 ###  props
 
-**● props**: *`__type`*
+• **props**: *__type*
 
-*Defined in [jsx/types.ts:191](https://github.com/cancerberoSgx/accursed/blob/978b980/src/jsx/types.ts#L191)*
-
-___
-
+*Defined in [jsx/types.ts:191](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L191)*

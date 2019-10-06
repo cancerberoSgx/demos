@@ -1,4 +1,4 @@
-[accursed](../README.md) > ["declarations/blessed.d"](../modules/_declarations_blessed_d_.md) > [widget](../modules/_declarations_blessed_d_.widget.md)
+[accursed](../README.md) › [Globals](../globals.md) › ["declarations/blessed.d"](_declarations_blessed_d_.md) › [widget](_declarations_blessed_d_.widget.md)
 
 # Module: widget
 
@@ -34,6 +34,3 @@
 * [Text](../classes/_declarations_blessed_d_.widget.text.md)
 * [Textarea](../classes/_declarations_blessed_d_.widget.textarea.md)
 * [Textbox](../classes/_declarations_blessed_d_.widget.textbox.md)
-
----
-
