@@ -24,7 +24,7 @@
 
 • **_hidden**? : *boolean*
 
-*Defined in [declarations/blessed.d.ts:120](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L120)*
+*Defined in [declarations/blessed.d.ts:120](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L120)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **_set**? : *boolean*
 
-*Defined in [declarations/blessed.d.ts:118](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L118)*
+*Defined in [declarations/blessed.d.ts:118](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L118)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **_state**? : *number*
 
-*Defined in [declarations/blessed.d.ts:119](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L119)*
+*Defined in [declarations/blessed.d.ts:119](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L119)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **artificial**? : *boolean*
 
-*Defined in [declarations/blessed.d.ts:105](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L105)*
+*Defined in [declarations/blessed.d.ts:105](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L105)*
 
 Have blessed draw a custom cursor and hide the terminal cursor (experimental).
 
@@ -58,7 +58,7 @@ ___
 
 • **blink**? : *boolean*
 
-*Defined in [declarations/blessed.d.ts:113](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L113)*
+*Defined in [declarations/blessed.d.ts:113](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L113)*
 
 Whether the cursor blinks.
 
@@ -68,7 +68,7 @@ ___
 
 • **color**? : *string*
 
-*Defined in [declarations/blessed.d.ts:117](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L117)*
+*Defined in [declarations/blessed.d.ts:117](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L117)*
 
 Color of the color. Accepts any valid color value (null is default).
 
@@ -78,6 +78,6 @@ ___
 
 • **shape**? : *[CursorShape](../modules/_declarations_blessed_d_.widgets.types.md#cursorshape)*
 
-*Defined in [declarations/blessed.d.ts:109](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L109)*
+*Defined in [declarations/blessed.d.ts:109](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L109)*
 
 Shape of the cursor. Can be: block, underline, or line.

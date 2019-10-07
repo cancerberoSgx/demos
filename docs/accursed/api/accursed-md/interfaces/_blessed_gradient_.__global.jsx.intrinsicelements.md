@@ -19,7 +19,7 @@
 
 • **gradientText**: *[OptionsProps](../modules/_jsx_types_.__global.jsx.md#optionsprops)‹[GradientTextOptions](_blessed_gradient_.gradienttextoptions.md)› & [EventOptions](_jsx_types_.eventoptions.md)‹[GradientText](../classes/_blessed_gradient_.gradienttext.md)‹[GradientTextOptions](_blessed_gradient_.gradienttextoptions.md)››*
 
-*Defined in [blessed/gradient.ts:135](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/gradient.ts#L135)*
+*Defined in [blessed/gradient.ts:135](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/gradient.ts#L135)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **gradientTextAnimation**: *[OptionsProps](../modules/_jsx_types_.__global.jsx.md#optionsprops)‹[GradientTextAnimationOptions](_blessed_gradient_.gradienttextanimationoptions.md)› & [EventOptions](_jsx_types_.eventoptions.md)‹[GradientTextAnimation](../classes/_blessed_gradient_.gradienttextanimation.md)›*
 
-*Defined in [blessed/gradient.ts:136](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/gradient.ts#L136)*
+*Defined in [blessed/gradient.ts:136](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/gradient.ts#L136)*

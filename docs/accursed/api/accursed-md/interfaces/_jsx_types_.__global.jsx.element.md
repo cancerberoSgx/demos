@@ -24,7 +24,7 @@
 
 • **children**? : *[BlessedJsxNode](../modules/_jsx_types_.__global.jsx.md#blessedjsxnode)*
 
-*Defined in [jsx/types.ts:157](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L157)*
+*Defined in [jsx/types.ts:108](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L108)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **props**: *P*
 
-*Defined in [jsx/types.ts:156](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L156)*
+*Defined in [jsx/types.ts:107](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L107)*
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 • **type**: *[ElementType](../modules/_jsx_types_.__global.jsx.md#elementtype)*
 
-*Defined in [jsx/types.ts:155](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L155)*
+*Defined in [jsx/types.ts:106](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L106)*

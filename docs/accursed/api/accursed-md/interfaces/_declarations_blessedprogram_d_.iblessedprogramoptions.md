@@ -28,7 +28,7 @@
 
 • **buffer**? : *boolean*
 
-*Defined in [declarations/blessedProgram.d.ts:118](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L118)*
+*Defined in [declarations/blessedProgram.d.ts:118](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L118)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 • **debug**? : *boolean*
 
-*Defined in [declarations/blessedProgram.d.ts:122](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L122)*
+*Defined in [declarations/blessedProgram.d.ts:122](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L122)*
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 • **dump**? : *boolean*
 
-*Defined in [declarations/blessedProgram.d.ts:113](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L113)*
+*Defined in [declarations/blessedProgram.d.ts:113](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L113)*
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 • **input**? : *Readable*
 
-*Defined in [declarations/blessedProgram.d.ts:104](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L104)*
+*Defined in [declarations/blessedProgram.d.ts:104](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L104)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 • **log**? : *string*
 
-*Defined in [declarations/blessedProgram.d.ts:111](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L111)*
+*Defined in [declarations/blessedProgram.d.ts:111](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L111)*
 
 path to a file where to write when screen.log() or program.log are called
 
@@ -70,7 +70,7 @@ ___
 
 • **output**? : *Writable*
 
-*Defined in [declarations/blessedProgram.d.ts:106](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L106)*
+*Defined in [declarations/blessedProgram.d.ts:106](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L106)*
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 • **resizeTimeout**? : *boolean*
 
-*Defined in [declarations/blessedProgram.d.ts:123](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L123)*
+*Defined in [declarations/blessedProgram.d.ts:123](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L123)*
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 • **term**? : *string*
 
-*Defined in [declarations/blessedProgram.d.ts:120](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L120)*
+*Defined in [declarations/blessedProgram.d.ts:120](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L120)*
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 • **terminal**? : *string*
 
-*Defined in [declarations/blessedProgram.d.ts:119](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L119)*
+*Defined in [declarations/blessedProgram.d.ts:119](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L119)*
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 • **tput**? : *[Tput](../classes/_declarations_tput_d_.tput.md)*
 
-*Defined in [declarations/blessedProgram.d.ts:121](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L121)*
+*Defined in [declarations/blessedProgram.d.ts:121](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L121)*
 
 ___
 
@@ -110,6 +110,6 @@ ___
 
 • **zero**? : *boolean*
 
-*Defined in [declarations/blessedProgram.d.ts:117](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L117)*
+*Defined in [declarations/blessedProgram.d.ts:117](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L117)*
 
 zero-based indexes for col, row values

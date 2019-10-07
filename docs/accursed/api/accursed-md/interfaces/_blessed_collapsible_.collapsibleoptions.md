@@ -25,7 +25,7 @@
 
 • **auto**? : *boolean*
 
-*Defined in [blessed/collapsible.ts:65](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/collapsible.ts#L65)*
+*Defined in [blessed/collapsible.ts:65](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/collapsible.ts#L65)*
 
 Settings this to true will install a click listener on the element's label to toggle the collapse state. It will make sure there always be a label. Also it will hide/show non-label children when element is collapsed automatically.
 
@@ -41,7 +41,7 @@ ___
 
 • **collapsedHeight**? : *number | string*
 
-*Defined in [blessed/collapsible.ts:55](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/collapsible.ts#L55)*
+*Defined in [blessed/collapsible.ts:55](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/collapsible.ts#L55)*
 
 if provided, element will be collapsed to this height. by default it will be 3 to support auto: true, border and label
 
@@ -51,7 +51,7 @@ ___
 
 • **collapsedLabel**? : *string*
 
-*Defined in [blessed/collapsible.ts:67](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/collapsible.ts#L67)*
+*Defined in [blessed/collapsible.ts:67](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/collapsible.ts#L67)*
 
 if provided it will set this label when element is collapsed
 
@@ -61,7 +61,7 @@ ___
 
 • **labelStyle**? : *[Style](../modules/_blessedtypes_.md#style)*
 
-*Defined in [blessed/collapsible.ts:72](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/collapsible.ts#L72)*
+*Defined in [blessed/collapsible.ts:72](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/collapsible.ts#L72)*
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 • **onCollapseChange**? : *[onCollapseChange](_blessed_collapsible_.collapsibleoptions.md#optional-oncollapsechange)*
 
-*Defined in [blessed/collapsible.ts:71](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/collapsible.ts#L71)*
+*Defined in [blessed/collapsible.ts:71](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/collapsible.ts#L71)*
 
 called when collapse/expand occurs
 
@@ -79,6 +79,6 @@ ___
 
 • **uncollapsedLabel**? : *string*
 
-*Defined in [blessed/collapsible.ts:69](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/collapsible.ts#L69)*
+*Defined in [blessed/collapsible.ts:69](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/collapsible.ts#L69)*
 
 if provided it will set this label when element is uncollapsed

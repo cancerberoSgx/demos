@@ -20,4 +20,4 @@
 
 • **children**: *[Column](../classes/_jsx_components_columns_.column.md)[]*
 
-*Defined in [jsx-components/columns.tsx:7](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/columns.tsx#L7)*
+*Defined in [jsx-components/columns.tsx:7](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/columns.tsx#L7)*

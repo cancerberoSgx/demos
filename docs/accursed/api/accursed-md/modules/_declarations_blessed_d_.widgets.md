@@ -141,7 +141,7 @@ composing concrete elements or extending [BlessedElement](../classes/_declaratio
 
 Ƭ **Color**: *number | string*
 
-*Defined in [declarations/blessed.d.ts:1245](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1245)*
+*Defined in [declarations/blessed.d.ts:1245](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1245)*
 
 ___
 
@@ -149,7 +149,7 @@ ___
 
 Ƭ **KeyEventListener**: *function*
 
-*Defined in [declarations/blessed.d.ts:482](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L482)*
+*Defined in [declarations/blessed.d.ts:482](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L482)*
 
 #### Type declaration:
 
@@ -168,7 +168,7 @@ ___
 
 Ƭ **LayoutIterator**: *function*
 
-*Defined in [declarations/blessed.d.ts:3465](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3465)*
+*Defined in [declarations/blessed.d.ts:3466](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L3466)*
 
 #### Type declaration:
 
@@ -187,7 +187,7 @@ ___
 
 Ƭ **ListElementEventType**: *"cancel" | "action" | "create item" | "add item" | "remove item" | "insert item" | "set items"*
 
-*Defined in [declarations/blessed.d.ts:2240](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L2240)*
+*Defined in [declarations/blessed.d.ts:2240](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L2240)*
 
 ___
 
@@ -195,7 +195,7 @@ ___
 
 Ƭ **NodeEventType**: *"adopt" | "remove" | "reparent" | "attach" | "detach"*
 
-*Defined in [declarations/blessed.d.ts:255](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L255)*
+*Defined in [declarations/blessed.d.ts:255](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L255)*
 
 ```
 'adopt' :  Received when node is added to a parent.
@@ -215,7 +215,7 @@ ___
 
 Ƭ **NodeGenericEventType**: *"resize" | "prerender" | "render" | "destroy" | "move" | "show" | "hide" | "set content" | "parsed content"*
 
-*Defined in [declarations/blessed.d.ts:471](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L471)*
+*Defined in [declarations/blessed.d.ts:471](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L471)*
 
 'resize': Received on screen resize.
 
@@ -242,7 +242,7 @@ ___
 
 Ƭ **NodeMouseEventType**: *"mouse" | "mouseout" | "mouseover" | "mousedown" | "mouseup" | "mousewheel" | "wheeldown" | "wheelup" | "mousemove" | "click"*
 
-*Defined in [declarations/blessed.d.ts:439](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L439)*
+*Defined in [declarations/blessed.d.ts:439](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L439)*
 
 ___
 
@@ -250,7 +250,7 @@ ___
 
 Ƭ **NodeScreenEventType**: *"focus" | "blur" | "click" | "element click" | "element mouseover" | "element mouseout" | "element mouseup" | "element mouse" | "element mousedown" | "element mousewheel" | "element wheeldown" | "element wheelup" | "element mousemove"*
 
-*Defined in [declarations/blessed.d.ts:424](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L424)*
+*Defined in [declarations/blessed.d.ts:424](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L424)*
 
  'focus' : Received when the terminal window focuses/blurs. Requires a terminal supporting the
 focus protocol and focus needs to be passed to program.enableMouse().
@@ -266,7 +266,7 @@ ___
 
 Ƭ **ScreenLine**: *[number, string]*
 
-*Defined in [declarations/blessed.d.ts:751](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L751)*
+*Defined in [declarations/blessed.d.ts:751](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L751)*
 
 A point in the screen. The first element represent the attr (value combining the color, and effects like bold, underline, etc) and the second it the character to paint. See [Element.sattr](../classes/_declarations_blessed_d_.widget.element.md#sattr)
 
@@ -276,4 +276,4 @@ ___
 
 Ƭ **TextareaElementEventType**: *"error" | "submit" | "cancel" | "action"*
 
-*Defined in [declarations/blessed.d.ts:2752](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L2752)*
+*Defined in [declarations/blessed.d.ts:2752](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L2752)*

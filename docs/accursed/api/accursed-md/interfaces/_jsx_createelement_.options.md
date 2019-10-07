@@ -18,4 +18,4 @@
 
 • **dontInheritStyle**? : *boolean*
 
-*Defined in [jsx/createElement.ts:26](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L26)*
+*Defined in [jsx/createElement.ts:9](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L9)*

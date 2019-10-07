@@ -30,7 +30,7 @@
 
 *Inherited from [IAbstractEventArg](_declarations_blessed_d_.widgets.events.iabstracteventarg.md).[bug](_declarations_blessed_d_.widgets.events.iabstracteventarg.md#bug)*
 
-*Defined in [declarations/blessed.d.ts:198](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L198)*
+*Defined in [declarations/blessed.d.ts:198](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L198)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 *Inherited from [IAbstractEventArg](_declarations_blessed_d_.widgets.events.iabstracteventarg.md).[ctrl](_declarations_blessed_d_.widgets.events.iabstracteventarg.md#ctrl)*
 
-*Defined in [declarations/blessed.d.ts:194](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L194)*
+*Defined in [declarations/blessed.d.ts:194](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L194)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **full**: *string*
 
-*Defined in [declarations/blessed.d.ts:187](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L187)*
+*Defined in [declarations/blessed.d.ts:187](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L187)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 *Inherited from [IAbstractEventArg](_declarations_blessed_d_.widgets.events.iabstracteventarg.md).[meta](_declarations_blessed_d_.widgets.events.iabstracteventarg.md#meta)*
 
-*Defined in [declarations/blessed.d.ts:195](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L195)*
+*Defined in [declarations/blessed.d.ts:195](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L195)*
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 *Inherited from [IAbstractEventArg](_declarations_blessed_d_.widgets.events.iabstracteventarg.md).[name](_declarations_blessed_d_.widgets.events.iabstracteventarg.md#name)*
 
-*Defined in [declarations/blessed.d.ts:192](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L192)*
+*Defined in [declarations/blessed.d.ts:192](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L192)*
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 *Inherited from [IAbstractEventArg](_declarations_blessed_d_.widgets.events.iabstracteventarg.md).[raw](_declarations_blessed_d_.widgets.events.iabstracteventarg.md#raw)*
 
-*Defined in [declarations/blessed.d.ts:197](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L197)*
+*Defined in [declarations/blessed.d.ts:197](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L197)*
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 • **sequence**: *string*
 
-*Defined in [declarations/blessed.d.ts:188](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L188)*
+*Defined in [declarations/blessed.d.ts:188](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L188)*
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 *Inherited from [IAbstractEventArg](_declarations_blessed_d_.widgets.events.iabstracteventarg.md).[shift](_declarations_blessed_d_.widgets.events.iabstracteventarg.md#shift)*
 
-*Defined in [declarations/blessed.d.ts:193](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L193)*
+*Defined in [declarations/blessed.d.ts:193](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L193)*
 
 ___
 
@@ -106,4 +106,4 @@ ___
 
 *Inherited from [IAbstractEventArg](_declarations_blessed_d_.widgets.events.iabstracteventarg.md).[type](_declarations_blessed_d_.widgets.events.iabstracteventarg.md#type)*
 
-*Defined in [declarations/blessed.d.ts:196](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L196)*
+*Defined in [declarations/blessed.d.ts:196](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L196)*

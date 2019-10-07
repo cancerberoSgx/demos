@@ -20,7 +20,7 @@
 
 • **ancestorPredicate**: *[ElementPredicate](../modules/_blessed_node_.md#elementpredicate)‹[Element](_jsx_types_.__global.jsx.element.md)›*
 
-*Defined in [blessed/visibleOnAncestorFocus.tsx:5](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/visibleOnAncestorFocus.tsx#L5)*
+*Defined in [blessed/visibleOnAncestorFocus.tsx:5](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/visibleOnAncestorFocus.tsx#L5)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **screen**: *[Screen](../classes/_declarations_blessed_d_.widgets.screen.md)*
 
-*Defined in [blessed/visibleOnAncestorFocus.tsx:4](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/visibleOnAncestorFocus.tsx#L4)*
+*Defined in [blessed/visibleOnAncestorFocus.tsx:4](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/visibleOnAncestorFocus.tsx#L4)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **targetPredicate**: *[ElementPredicate](../modules/_blessed_node_.md#elementpredicate)‹[Element](_jsx_types_.__global.jsx.element.md)›*
 
-*Defined in [blessed/visibleOnAncestorFocus.tsx:6](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/visibleOnAncestorFocus.tsx#L6)*
+*Defined in [blessed/visibleOnAncestorFocus.tsx:6](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/visibleOnAncestorFocus.tsx#L6)*

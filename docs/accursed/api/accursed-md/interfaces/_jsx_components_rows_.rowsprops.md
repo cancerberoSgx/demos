@@ -20,4 +20,4 @@
 
 • **children**: *[Row](../classes/_jsx_components_rows_.row.md)[]*
 
-*Defined in [jsx-components/rows.tsx:7](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/rows.tsx#L7)*
+*Defined in [jsx-components/rows.tsx:7](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/rows.tsx#L7)*

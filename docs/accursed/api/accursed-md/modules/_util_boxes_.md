@@ -30,7 +30,7 @@
 
 Ƭ **BoxStyles**: *object*
 
-*Defined in [util/boxes.ts:49](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L49)*
+*Defined in [util/boxes.ts:49](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L49)*
 
 #### Type declaration:
 
@@ -40,7 +40,7 @@
 
 • **borderStyles**: *string[]* =  enumKeys(BorderStyle)
 
-*Defined in [util/boxes.ts:28](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L28)*
+*Defined in [util/boxes.ts:28](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L28)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **boxStyles**: *[BoxStyles](_util_boxes_.md#boxstyles) | undefined*
 
-*Defined in [util/boxes.ts:53](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L53)*
+*Defined in [util/boxes.ts:53](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L53)*
 
 ## Functions
 
@@ -56,7 +56,7 @@ ___
 
 ▸ **getBoxStyle**(`s`: [BorderStyle](../enums/_util_boxes_.borderstyle.md)): *object*
 
-*Defined in [util/boxes.ts:41](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L41)*
+*Defined in [util/boxes.ts:41](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L41)*
 
 **Parameters:**
 
@@ -72,7 +72,7 @@ ___
 
 ▸ **getBoxStyleChar**(`s`: [BorderStyle](../enums/_util_boxes_.borderstyle.md), `si`: [BorderSide](../enums/_util_boxes_.borderside.md)): *string*
 
-*Defined in [util/boxes.ts:45](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L45)*
+*Defined in [util/boxes.ts:45](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L45)*
 
 **Parameters:**
 
@@ -89,6 +89,6 @@ ___
 
 ▸ **getBoxStyles**(): *object*
 
-*Defined in [util/boxes.ts:55](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L55)*
+*Defined in [util/boxes.ts:55](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L55)*
 
 **Returns:** *object*

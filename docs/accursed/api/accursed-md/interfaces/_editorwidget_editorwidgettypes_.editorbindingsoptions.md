@@ -66,7 +66,7 @@
 
 • **copy**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:174](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L174)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:174](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L174)*
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 • **cut**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:175](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L175)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:175](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L175)*
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 • **dedent**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:171](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L171)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:171](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L171)*
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 • **deleteLeft**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:162](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L162)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:162](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L162)*
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 • **deleteLeftInfinity**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:166](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L166)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:166](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L166)*
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 • **deleteLeftWord**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:164](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L164)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:164](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L164)*
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 • **deleteLine**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:168](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L168)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:168](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L168)*
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 • **deleteRight**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:163](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L163)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:163](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L163)*
 
 ___
 
@@ -130,7 +130,7 @@ ___
 
 • **deleteRightInfinity**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:167](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L167)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:167](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L167)*
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 • **deleteRightWord**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:165](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L165)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:165](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L165)*
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 • **duplicateLine**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:169](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L169)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:169](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L169)*
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 • **focusNext**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:178](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L178)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:178](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L178)*
 
 ___
 
@@ -162,7 +162,7 @@ ___
 
 • **focusPrev**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:179](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L179)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:179](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L179)*
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 • **goDown**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:142](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L142)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:142](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L142)*
 
 ___
 
@@ -178,7 +178,7 @@ ___
 
 • **goDownInfinity**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:144](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L144)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:144](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L144)*
 
 ___
 
@@ -186,7 +186,7 @@ ___
 
 • **goDownPage**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:143](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L143)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:143](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L143)*
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 • **goDownParagraph**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:141](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L141)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:141](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L141)*
 
 ___
 
@@ -202,7 +202,7 @@ ___
 
 • **goLeft**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:131](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L131)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:131](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L131)*
 
 ___
 
@@ -210,7 +210,7 @@ ___
 
 • **goLeftInfinity**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:133](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L133)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:133](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L133)*
 
 ___
 
@@ -218,7 +218,7 @@ ___
 
 • **goLeftWord**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:132](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L132)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:132](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L132)*
 
 ___
 
@@ -226,7 +226,7 @@ ___
 
 • **goMatchingBracket**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:145](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L145)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:145](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L145)*
 
 ___
 
@@ -234,7 +234,7 @@ ___
 
 • **goRight**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:134](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L134)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:134](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L134)*
 
 ___
 
@@ -242,7 +242,7 @@ ___
 
 • **goRightInfinity**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:136](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L136)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:136](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L136)*
 
 ___
 
@@ -250,7 +250,7 @@ ___
 
 • **goRightWord**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:135](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L135)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:135](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L135)*
 
 ___
 
@@ -258,7 +258,7 @@ ___
 
 • **goUp**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:138](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L138)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:138](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L138)*
 
 ___
 
@@ -266,7 +266,7 @@ ___
 
 • **goUpInfinity**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:140](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L140)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:140](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L140)*
 
 ___
 
@@ -274,7 +274,7 @@ ___
 
 • **goUpPage**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:139](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L139)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:139](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L139)*
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 • **goUpParagraph**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:137](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L137)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:137](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L137)*
 
 ___
 
@@ -290,7 +290,7 @@ ___
 
 • **indent**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:170](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L170)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:170](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L170)*
 
 ___
 
@@ -298,7 +298,7 @@ ___
 
 • **paste**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:176](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L176)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:176](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L176)*
 
 ___
 
@@ -306,7 +306,7 @@ ___
 
 • **redo**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:173](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L173)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:173](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L173)*
 
 ___
 
@@ -314,7 +314,7 @@ ___
 
 • **selectAll**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:146](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L146)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:146](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L146)*
 
 ___
 
@@ -322,7 +322,7 @@ ___
 
 • **selectDown**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:157](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L157)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:157](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L157)*
 
 ___
 
@@ -330,7 +330,7 @@ ___
 
 • **selectDownInfinity**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:160](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L160)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:160](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L160)*
 
 ___
 
@@ -338,7 +338,7 @@ ___
 
 • **selectDownPage**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:159](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L159)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:159](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L159)*
 
 ___
 
@@ -346,7 +346,7 @@ ___
 
 • **selectDownParagraph**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:158](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L158)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:158](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L158)*
 
 ___
 
@@ -354,7 +354,7 @@ ___
 
 • **selectLeft**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:147](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L147)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:147](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L147)*
 
 ___
 
@@ -362,7 +362,7 @@ ___
 
 • **selectLeftInfinity**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:149](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L149)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:149](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L149)*
 
 ___
 
@@ -370,7 +370,7 @@ ___
 
 • **selectLeftWord**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:148](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L148)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:148](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L148)*
 
 ___
 
@@ -378,7 +378,7 @@ ___
 
 • **selectMatchingBracket**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:161](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L161)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:161](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L161)*
 
 ___
 
@@ -386,7 +386,7 @@ ___
 
 • **selectRight**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:150](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L150)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:150](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L150)*
 
 ___
 
@@ -394,7 +394,7 @@ ___
 
 • **selectRightInfinity**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:152](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L152)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:152](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L152)*
 
 ___
 
@@ -402,7 +402,7 @@ ___
 
 • **selectRightWord**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:151](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L151)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:151](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L151)*
 
 ___
 
@@ -410,7 +410,7 @@ ___
 
 • **selectUp**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:153](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L153)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:153](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L153)*
 
 ___
 
@@ -418,7 +418,7 @@ ___
 
 • **selectUpInfinity**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:156](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L156)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:156](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L156)*
 
 ___
 
@@ -426,7 +426,7 @@ ___
 
 • **selectUpPage**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:155](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L155)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:155](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L155)*
 
 ___
 
@@ -434,7 +434,7 @@ ___
 
 • **selectUpParagraph**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:154](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L154)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:154](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L154)*
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 • **toggleInsertMode**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:177](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L177)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:177](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L177)*
 
 ___
 
@@ -450,4 +450,4 @@ ___
 
 • **undo**? : *string | string[] | false*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:172](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L172)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:172](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L172)*

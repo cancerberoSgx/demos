@@ -34,7 +34,7 @@
 
 *Inherited from [EditorOptions](_editorwidget_editorwidgettypes_.editoroptions.md).[bindings](_editorwidget_editorwidgettypes_.editoroptions.md#optional-bindings)*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:17](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L17)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:17](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L17)*
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 *Inherited from [EditorOptions](_editorwidget_editorwidgettypes_.editoroptions.md).[buffer](_editorwidget_editorwidgettypes_.editoroptions.md#optional-buffer)*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:14](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L14)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:14](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L14)*
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 *Inherited from [EditorOptions](_editorwidget_editorwidgettypes_.editoroptions.md).[defaultEncoding](_editorwidget_editorwidgettypes_.editoroptions.md#optional-defaultencoding)*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:8](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L8)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:8](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L8)*
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 • **disableSyntaxHighlighAtStartup**? : *boolean*
 
-*Defined in [editorWidget/editorWidget.tsx:44](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L44)*
+*Defined in [editorWidget/editorWidget.tsx:44](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidget.tsx#L44)*
 
 Dont execute the workaround to give initial syntax highlight and focus. Default: false.
 
@@ -74,7 +74,7 @@ ___
 
 *Inherited from [EditorOptions](_editorwidget_editorwidgettypes_.editoroptions.md).[doubleClickDuration](_editorwidget_editorwidgettypes_.editoroptions.md#optional-doubleclickduration)*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:11](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L11)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:11](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L11)*
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 *Inherited from [EditorOptions](_editorwidget_editorwidgettypes_.editoroptions.md).[gutter](_editorwidget_editorwidgettypes_.editoroptions.md#optional-gutter)*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:15](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L15)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:15](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L15)*
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 *Inherited from [EditorOptions](_editorwidget_editorwidgettypes_.editoroptions.md).[highlight](_editorwidget_editorwidgettypes_.editoroptions.md#optional-highlight)*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:12](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L12)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:12](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L12)*
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 *Inherited from [EditorOptions](_editorwidget_editorwidgettypes_.editoroptions.md).[language](_editorwidget_editorwidgettypes_.editoroptions.md#optional-language)*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:6](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L6)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:6](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L6)*
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 *Inherited from [EditorOptions](_editorwidget_editorwidgettypes_.editoroptions.md).[multiLine](_editorwidget_editorwidgettypes_.editoroptions.md#optional-multiline)*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:9](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L9)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:9](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L9)*
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 *Inherited from [EditorOptions](_editorwidget_editorwidgettypes_.editoroptions.md).[pageLines](_editorwidget_editorwidgettypes_.editoroptions.md#optional-pagelines)*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:10](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L10)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:10](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L10)*
 
 ___
 
@@ -134,7 +134,7 @@ ___
 
 *Inherited from [EditorOptions](_editorwidget_editorwidgettypes_.editoroptions.md).[style](_editorwidget_editorwidgettypes_.editoroptions.md#optional-style)*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:18](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L18)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:18](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L18)*
 
 ___
 
@@ -144,7 +144,7 @@ ___
 
 *Inherited from [EditorOptions](_editorwidget_editorwidgettypes_.editoroptions.md).[text](_editorwidget_editorwidgettypes_.editoroptions.md#optional-text)*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:7](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L7)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:7](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L7)*
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 • **waitBeforeHighlight**? : *number*
 
-*Defined in [editorWidget/editorWidget.tsx:50](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L50)*
+*Defined in [editorWidget/editorWidget.tsx:50](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidget.tsx#L50)*
 
 the workaround to initially highlight and focus the editor has some trouble when the screen is being
 rendered multiple times asynchronously. If that's the case the text could be missing or focus not enable,

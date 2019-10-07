@@ -32,7 +32,7 @@
 
 • **bindings**? : *[EditorBindingsOptions](_editorwidget_editorwidgettypes_.editorbindingsoptions.md)*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:17](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L17)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:17](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L17)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **buffer**? : *[EditorBufferOptions](_editorwidget_editorwidgettypes_.editorbufferoptions.md)*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:14](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L14)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:14](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L14)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **defaultEncoding**? : *string*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:8](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L8)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:8](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L8)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **doubleClickDuration**? : *number*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:11](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L11)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:11](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L11)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 • **gutter**? : *[GutterOptions](_editorwidget_editorwidgettypes_.gutteroptions.md)*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:15](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L15)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:15](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L15)*
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 • **highlight**? : *boolean*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:12](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L12)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:12](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L12)*
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 • **language**? : *string*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:6](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L6)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:6](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L6)*
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 • **multiLine**? : *boolean*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:9](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L9)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:9](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L9)*
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 • **pageLines**? : *number*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:10](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L10)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:10](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L10)*
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 • **style**? : *[EditorStyle](_editorwidget_editorwidgettypes_.editorstyle.md)*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:18](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L18)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:18](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L18)*
 
 ___
 
@@ -112,4 +112,4 @@ ___
 
 • **text**? : *string*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:7](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L7)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:7](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L7)*

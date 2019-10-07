@@ -26,4 +26,4 @@
 
 Ƭ **Direction**: *-1 | 1*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:37](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L37)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:37](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L37)*

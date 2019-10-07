@@ -24,7 +24,7 @@
 
 • **children**: *[BlessedJsxNode](../modules/_jsx_types_.__global.jsx.md#blessedjsxnode) | [BlessedJsxNode](../modules/_jsx_types_.__global.jsx.md#blessedjsxnode)[]*
 
-*Defined in [jsx-components/showIf.tsx:8](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/showIf.tsx#L8)*
+*Defined in [jsx-components/showIf.tsx:8](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/showIf.tsx#L8)*
 
 ## Methods
 
@@ -32,7 +32,7 @@
 
 ▸ **onUpdate**(`listener`: function): *void*
 
-*Defined in [jsx-components/showIf.tsx:7](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/showIf.tsx#L7)*
+*Defined in [jsx-components/showIf.tsx:7](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/showIf.tsx#L7)*
 
 **Parameters:**
 

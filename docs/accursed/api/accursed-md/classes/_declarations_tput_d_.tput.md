@@ -1022,7 +1022,7 @@ Low level implementation of tput protocol to dialogue with terminal implementati
 
 \+ **new Tput**(`opts`: [TputsOptions](../interfaces/_declarations_tput_d_.tputsoptions.md)): *[Tput](_declarations_tput_d_.tput.md)*
 
-*Defined in [declarations/tput.d.ts:61](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L61)*
+*Defined in [declarations/tput.d.ts:61](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L61)*
 
 **Parameters:**
 
@@ -1040,7 +1040,7 @@ Name | Type |
 
 *Implementation of [TputFeatures](../interfaces/_declarations_tput_d_.tputfeatures.md).[PCRomSet](../interfaces/_declarations_tput_d_.tputfeatures.md#pcromset)*
 
-*Defined in [declarations/tput.d.ts:156](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L156)*
+*Defined in [declarations/tput.d.ts:156](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L156)*
 
 ___
 
@@ -1050,7 +1050,7 @@ ___
 
 *Implementation of [TputFeatures](../interfaces/_declarations_tput_d_.tputfeatures.md).[acsc](../interfaces/_declarations_tput_d_.tputfeatures.md#acsc)*
 
-*Defined in [declarations/tput.d.ts:162](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L162)*
+*Defined in [declarations/tput.d.ts:162](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L162)*
 
 #### Type declaration:
 
@@ -1064,7 +1064,7 @@ ___
 
 *Implementation of [TputFeatures](../interfaces/_declarations_tput_d_.tputfeatures.md).[acscr](../interfaces/_declarations_tput_d_.tputfeatures.md#acscr)*
 
-*Defined in [declarations/tput.d.ts:163](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L163)*
+*Defined in [declarations/tput.d.ts:163](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L163)*
 
 #### Type declaration:
 
@@ -1076,7 +1076,7 @@ ___
 
 • **all**: *object*
 
-*Defined in [declarations/tput.d.ts:241](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L241)*
+*Defined in [declarations/tput.d.ts:241](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L241)*
 
 #### Type declaration:
 
@@ -1088,7 +1088,7 @@ ___
 
 • **am**: *boolean*
 
-*Defined in [declarations/tput.d.ts:116](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L116)*
+*Defined in [declarations/tput.d.ts:116](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L116)*
 
 ___
 
@@ -1096,7 +1096,7 @@ ___
 
 • **auto_left_margin**: *boolean*
 
-*Defined in [declarations/tput.d.ts:71](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L71)*
+*Defined in [declarations/tput.d.ts:71](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L71)*
 
 ___
 
@@ -1104,7 +1104,7 @@ ___
 
 • **auto_right_margin**: *boolean*
 
-*Defined in [declarations/tput.d.ts:72](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L72)*
+*Defined in [declarations/tput.d.ts:72](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L72)*
 
 ___
 
@@ -1112,7 +1112,7 @@ ___
 
 • **back_color_erase**: *boolean*
 
-*Defined in [declarations/tput.d.ts:99](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L99)*
+*Defined in [declarations/tput.d.ts:99](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L99)*
 
 ___
 
@@ -1120,7 +1120,7 @@ ___
 
 • **backspace_delay**: *number*
 
-*Defined in [declarations/tput.d.ts:203](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L203)*
+*Defined in [declarations/tput.d.ts:203](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L203)*
 
 ___
 
@@ -1128,7 +1128,7 @@ ___
 
 • **backspaces_with_bs**: *boolean*
 
-*Defined in [declarations/tput.d.ts:108](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L108)*
+*Defined in [declarations/tput.d.ts:108](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L108)*
 
 ___
 
@@ -1136,7 +1136,7 @@ ___
 
 • **bce**: *boolean*
 
-*Defined in [declarations/tput.d.ts:145](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L145)*
+*Defined in [declarations/tput.d.ts:145](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L145)*
 
 ___
 
@@ -1144,7 +1144,7 @@ ___
 
 • **beehive_glitch**: *boolean*
 
-*Defined in [declarations/tput.d.ts:118](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L118)*
+*Defined in [declarations/tput.d.ts:118](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L118)*
 
 ___
 
@@ -1152,7 +1152,7 @@ ___
 
 • **bit_image_entwining**: *number*
 
-*Defined in [declarations/tput.d.ts:198](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L198)*
+*Defined in [declarations/tput.d.ts:198](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L198)*
 
 ___
 
@@ -1160,7 +1160,7 @@ ___
 
 • **bit_image_type**: *number*
 
-*Defined in [declarations/tput.d.ts:199](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L199)*
+*Defined in [declarations/tput.d.ts:199](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L199)*
 
 ___
 
@@ -1168,7 +1168,7 @@ ___
 
 • **bitwin**: *number*
 
-*Defined in [declarations/tput.d.ts:237](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L237)*
+*Defined in [declarations/tput.d.ts:237](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L237)*
 
 ___
 
@@ -1176,7 +1176,7 @@ ___
 
 • **bitype**: *number*
 
-*Defined in [declarations/tput.d.ts:238](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L238)*
+*Defined in [declarations/tput.d.ts:238](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L238)*
 
 ___
 
@@ -1184,7 +1184,7 @@ ___
 
 • **bools**: *object*
 
-*Defined in [declarations/tput.d.ts:243](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L243)*
+*Defined in [declarations/tput.d.ts:243](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L243)*
 
 #### Type declaration:
 
@@ -1198,7 +1198,7 @@ ___
 
 *Implementation of [TputFeatures](../interfaces/_declarations_tput_d_.tputfeatures.md).[brokenACS](../interfaces/_declarations_tput_d_.tputfeatures.md#brokenacs)*
 
-*Defined in [declarations/tput.d.ts:155](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L155)*
+*Defined in [declarations/tput.d.ts:155](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L155)*
 
 ___
 
@@ -1206,7 +1206,7 @@ ___
 
 • **btns**: *number*
 
-*Defined in [declarations/tput.d.ts:236](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L236)*
+*Defined in [declarations/tput.d.ts:236](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L236)*
 
 ___
 
@@ -1214,7 +1214,7 @@ ___
 
 • **buffer_capacity**: *number*
 
-*Defined in [declarations/tput.d.ts:183](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L183)*
+*Defined in [declarations/tput.d.ts:183](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L183)*
 
 ___
 
@@ -1222,7 +1222,7 @@ ___
 
 • **bufsz**: *number*
 
-*Defined in [declarations/tput.d.ts:221](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L221)*
+*Defined in [declarations/tput.d.ts:221](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L221)*
 
 ___
 
@@ -1230,7 +1230,7 @@ ___
 
 • **buttons**: *number*
 
-*Defined in [declarations/tput.d.ts:197](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L197)*
+*Defined in [declarations/tput.d.ts:197](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L197)*
 
 ___
 
@@ -1238,7 +1238,7 @@ ___
 
 • **bw**: *boolean*
 
-*Defined in [declarations/tput.d.ts:115](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L115)*
+*Defined in [declarations/tput.d.ts:115](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L115)*
 
 ___
 
@@ -1246,7 +1246,7 @@ ___
 
 • **can_change**: *boolean*
 
-*Defined in [declarations/tput.d.ts:98](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L98)*
+*Defined in [declarations/tput.d.ts:98](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L98)*
 
 ___
 
@@ -1254,7 +1254,7 @@ ___
 
 • **carriage_return_delay**: *number*
 
-*Defined in [declarations/tput.d.ts:201](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L201)*
+*Defined in [declarations/tput.d.ts:201](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L201)*
 
 ___
 
@@ -1262,7 +1262,7 @@ ___
 
 • **ccc**: *boolean*
 
-*Defined in [declarations/tput.d.ts:144](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L144)*
+*Defined in [declarations/tput.d.ts:144](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L144)*
 
 ___
 
@@ -1270,7 +1270,7 @@ ___
 
 • **ceol_standout_glitch**: *boolean*
 
-*Defined in [declarations/tput.d.ts:74](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L74)*
+*Defined in [declarations/tput.d.ts:74](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L74)*
 
 ___
 
@@ -1278,7 +1278,7 @@ ___
 
 • **chts**: *boolean*
 
-*Defined in [declarations/tput.d.ts:140](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L140)*
+*Defined in [declarations/tput.d.ts:140](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L140)*
 
 ___
 
@@ -1286,7 +1286,7 @@ ___
 
 • **col_addr_glitch**: *boolean*
 
-*Defined in [declarations/tput.d.ts:101](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L101)*
+*Defined in [declarations/tput.d.ts:101](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L101)*
 
 ___
 
@@ -1294,7 +1294,7 @@ ___
 
 • **colors**: *number*
 
-*Defined in [declarations/tput.d.ts:218](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L218)*
+*Defined in [declarations/tput.d.ts:218](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L218)*
 
 ___
 
@@ -1302,7 +1302,7 @@ ___
 
 • **cols**: *number*
 
-*Defined in [declarations/tput.d.ts:206](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L206)*
+*Defined in [declarations/tput.d.ts:206](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L206)*
 
 ___
 
@@ -1310,7 +1310,7 @@ ___
 
 • **columns**: *number*
 
-*Defined in [declarations/tput.d.ts:165](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L165)*
+*Defined in [declarations/tput.d.ts:165](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L165)*
 
 ___
 
@@ -1318,7 +1318,7 @@ ___
 
 • **cpi_changes_res**: *boolean*
 
-*Defined in [declarations/tput.d.ts:106](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L106)*
+*Defined in [declarations/tput.d.ts:106](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L106)*
 
 ___
 
@@ -1326,7 +1326,7 @@ ___
 
 • **cpix**: *boolean*
 
-*Defined in [declarations/tput.d.ts:152](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L152)*
+*Defined in [declarations/tput.d.ts:152](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L152)*
 
 ___
 
@@ -1334,7 +1334,7 @@ ___
 
 • **cps**: *number*
 
-*Defined in [declarations/tput.d.ts:234](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L234)*
+*Defined in [declarations/tput.d.ts:234](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L234)*
 
 ___
 
@@ -1342,7 +1342,7 @@ ___
 
 • **cr_cancels_micro_mode**: *boolean*
 
-*Defined in [declarations/tput.d.ts:102](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L102)*
+*Defined in [declarations/tput.d.ts:102](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L102)*
 
 ___
 
@@ -1350,7 +1350,7 @@ ___
 
 • **crt_no_scrolling**: *boolean*
 
-*Defined in [declarations/tput.d.ts:109](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L109)*
+*Defined in [declarations/tput.d.ts:109](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L109)*
 
 ___
 
@@ -1358,7 +1358,7 @@ ___
 
 • **crxm**: *boolean*
 
-*Defined in [declarations/tput.d.ts:148](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L148)*
+*Defined in [declarations/tput.d.ts:148](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L148)*
 
 ___
 
@@ -1366,7 +1366,7 @@ ___
 
 • **daisy**: *boolean*
 
-*Defined in [declarations/tput.d.ts:149](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L149)*
+*Defined in [declarations/tput.d.ts:149](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L149)*
 
 ___
 
@@ -1374,7 +1374,7 @@ ___
 
 • **db**: *boolean*
 
-*Defined in [declarations/tput.d.ts:128](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L128)*
+*Defined in [declarations/tput.d.ts:128](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L128)*
 
 ___
 
@@ -1382,7 +1382,7 @@ ___
 
 • **dest_tabs_magic_smso**: *boolean*
 
-*Defined in [declarations/tput.d.ts:88](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L88)*
+*Defined in [declarations/tput.d.ts:88](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L88)*
 
 ___
 
@@ -1390,7 +1390,7 @@ ___
 
 • **dot_horz_spacing**: *number*
 
-*Defined in [declarations/tput.d.ts:185](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L185)*
+*Defined in [declarations/tput.d.ts:185](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L185)*
 
 ___
 
@@ -1398,7 +1398,7 @@ ___
 
 • **dot_vert_spacing**: *number*
 
-*Defined in [declarations/tput.d.ts:184](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L184)*
+*Defined in [declarations/tput.d.ts:184](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L184)*
 
 ___
 
@@ -1406,7 +1406,7 @@ ___
 
 • **eat_newline_glitch**: *boolean*
 
-*Defined in [declarations/tput.d.ts:75](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L75)*
+*Defined in [declarations/tput.d.ts:75](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L75)*
 
 ___
 
@@ -1414,7 +1414,7 @@ ___
 
 • **eo**: *boolean*
 
-*Defined in [declarations/tput.d.ts:121](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L121)*
+*Defined in [declarations/tput.d.ts:121](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L121)*
 
 ___
 
@@ -1422,7 +1422,7 @@ ___
 
 • **erase_overstrike**: *boolean*
 
-*Defined in [declarations/tput.d.ts:76](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L76)*
+*Defined in [declarations/tput.d.ts:76](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L76)*
 
 ___
 
@@ -1430,7 +1430,7 @@ ___
 
 • **error**: *Error*
 
-*Defined in [declarations/tput.d.ts:254](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L254)*
+*Defined in [declarations/tput.d.ts:254](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L254)*
 
 ___
 
@@ -1438,7 +1438,7 @@ ___
 
 • **eslok**: *boolean*
 
-*Defined in [declarations/tput.d.ts:132](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L132)*
+*Defined in [declarations/tput.d.ts:132](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L132)*
 
 ___
 
@@ -1446,7 +1446,7 @@ ___
 
 • **extended**: *boolean*
 
-*Defined in [declarations/tput.d.ts:69](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L69)*
+*Defined in [declarations/tput.d.ts:69](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L69)*
 
 ___
 
@@ -1454,7 +1454,7 @@ ___
 
 • **features**: *[TputFeatures](../interfaces/_declarations_tput_d_.tputfeatures.md)*
 
-*Defined in [declarations/tput.d.ts:246](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L246)*
+*Defined in [declarations/tput.d.ts:246](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L246)*
 
 ___
 
@@ -1462,7 +1462,7 @@ ___
 
 • **generic_type**: *boolean*
 
-*Defined in [declarations/tput.d.ts:77](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L77)*
+*Defined in [declarations/tput.d.ts:77](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L77)*
 
 ___
 
@@ -1470,7 +1470,7 @@ ___
 
 • **gn**: *boolean*
 
-*Defined in [declarations/tput.d.ts:122](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L122)*
+*Defined in [declarations/tput.d.ts:122](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L122)*
 
 ___
 
@@ -1478,7 +1478,7 @@ ___
 
 • **gnu_has_meta_key**: *boolean*
 
-*Defined in [declarations/tput.d.ts:111](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L111)*
+*Defined in [declarations/tput.d.ts:111](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L111)*
 
 ___
 
@@ -1486,7 +1486,7 @@ ___
 
 • **hard_copy**: *boolean*
 
-*Defined in [declarations/tput.d.ts:78](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L78)*
+*Defined in [declarations/tput.d.ts:78](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L78)*
 
 ___
 
@@ -1494,7 +1494,7 @@ ___
 
 • **hard_cursor**: *boolean*
 
-*Defined in [declarations/tput.d.ts:94](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L94)*
+*Defined in [declarations/tput.d.ts:94](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L94)*
 
 ___
 
@@ -1502,7 +1502,7 @@ ___
 
 • **has_hardware_tabs**: *boolean*
 
-*Defined in [declarations/tput.d.ts:113](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L113)*
+*Defined in [declarations/tput.d.ts:113](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L113)*
 
 ___
 
@@ -1510,7 +1510,7 @@ ___
 
 • **has_meta_key**: *boolean*
 
-*Defined in [declarations/tput.d.ts:79](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L79)*
+*Defined in [declarations/tput.d.ts:79](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L79)*
 
 ___
 
@@ -1518,7 +1518,7 @@ ___
 
 • **has_print_wheel**: *boolean*
 
-*Defined in [declarations/tput.d.ts:103](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L103)*
+*Defined in [declarations/tput.d.ts:103](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L103)*
 
 ___
 
@@ -1526,7 +1526,7 @@ ___
 
 • **has_status_line**: *boolean*
 
-*Defined in [declarations/tput.d.ts:80](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L80)*
+*Defined in [declarations/tput.d.ts:80](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L80)*
 
 ___
 
@@ -1534,7 +1534,7 @@ ___
 
 • **hc**: *boolean*
 
-*Defined in [declarations/tput.d.ts:123](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L123)*
+*Defined in [declarations/tput.d.ts:123](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L123)*
 
 ___
 
@@ -1542,7 +1542,7 @@ ___
 
 • **hls**: *boolean*
 
-*Defined in [declarations/tput.d.ts:146](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L146)*
+*Defined in [declarations/tput.d.ts:146](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L146)*
 
 ___
 
@@ -1550,7 +1550,7 @@ ___
 
 • **horizontal_tab_delay**: *number*
 
-*Defined in [declarations/tput.d.ts:204](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L204)*
+*Defined in [declarations/tput.d.ts:204](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L204)*
 
 ___
 
@@ -1558,7 +1558,7 @@ ___
 
 • **hs**: *boolean*
 
-*Defined in [declarations/tput.d.ts:125](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L125)*
+*Defined in [declarations/tput.d.ts:125](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L125)*
 
 ___
 
@@ -1566,7 +1566,7 @@ ___
 
 • **hue_lightness_saturation**: *boolean*
 
-*Defined in [declarations/tput.d.ts:100](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L100)*
+*Defined in [declarations/tput.d.ts:100](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L100)*
 
 ___
 
@@ -1574,7 +1574,7 @@ ___
 
 • **hz**: *boolean*
 
-*Defined in [declarations/tput.d.ts:135](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L135)*
+*Defined in [declarations/tput.d.ts:135](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L135)*
 
 ___
 
@@ -1582,7 +1582,7 @@ ___
 
 • **in**: *boolean*
 
-*Defined in [declarations/tput.d.ts:126](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L126)*
+*Defined in [declarations/tput.d.ts:126](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L126)*
 
 ___
 
@@ -1590,7 +1590,7 @@ ___
 
 • **info**: *[TputInfo](../interfaces/_declarations_tput_d_.tputinfo.md)*
 
-*Defined in [declarations/tput.d.ts:240](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L240)*
+*Defined in [declarations/tput.d.ts:240](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L240)*
 
 ___
 
@@ -1598,7 +1598,7 @@ ___
 
 • **init_tabs**: *number*
 
-*Defined in [declarations/tput.d.ts:166](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L166)*
+*Defined in [declarations/tput.d.ts:166](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L166)*
 
 ___
 
@@ -1606,7 +1606,7 @@ ___
 
 • **insert_null_glitch**: *boolean*
 
-*Defined in [declarations/tput.d.ts:81](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L81)*
+*Defined in [declarations/tput.d.ts:81](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L81)*
 
 ___
 
@@ -1614,7 +1614,7 @@ ___
 
 • **it**: *number*
 
-*Defined in [declarations/tput.d.ts:207](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L207)*
+*Defined in [declarations/tput.d.ts:207](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L207)*
 
 ___
 
@@ -1622,7 +1622,7 @@ ___
 
 • **kNXT6**: *number*
 
-*Defined in [declarations/tput.d.ts:180](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L180)*
+*Defined in [declarations/tput.d.ts:180](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L180)*
 
 ___
 
@@ -1630,7 +1630,7 @@ ___
 
 • **kNXT7**: *number*
 
-*Defined in [declarations/tput.d.ts:181](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L181)*
+*Defined in [declarations/tput.d.ts:181](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L181)*
 
 ___
 
@@ -1638,7 +1638,7 @@ ___
 
 • **km**: *boolean*
 
-*Defined in [declarations/tput.d.ts:124](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L124)*
+*Defined in [declarations/tput.d.ts:124](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L124)*
 
 ___
 
@@ -1646,7 +1646,7 @@ ___
 
 • **label_height**: *number*
 
-*Defined in [declarations/tput.d.ts:174](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L174)*
+*Defined in [declarations/tput.d.ts:174](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L174)*
 
 ___
 
@@ -1654,7 +1654,7 @@ ___
 
 • **label_width**: *number*
 
-*Defined in [declarations/tput.d.ts:175](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L175)*
+*Defined in [declarations/tput.d.ts:175](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L175)*
 
 ___
 
@@ -1662,7 +1662,7 @@ ___
 
 • **lh**: *number*
 
-*Defined in [declarations/tput.d.ts:214](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L214)*
+*Defined in [declarations/tput.d.ts:214](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L214)*
 
 ___
 
@@ -1670,7 +1670,7 @@ ___
 
 • **linefeed_is_newline**: *boolean*
 
-*Defined in [declarations/tput.d.ts:112](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L112)*
+*Defined in [declarations/tput.d.ts:112](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L112)*
 
 ___
 
@@ -1678,7 +1678,7 @@ ___
 
 • **lines**: *number*
 
-*Defined in [declarations/tput.d.ts:167](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L167)*
+*Defined in [declarations/tput.d.ts:167](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L167)*
 
 ___
 
@@ -1686,7 +1686,7 @@ ___
 
 • **lines_of_memory**: *number*
 
-*Defined in [declarations/tput.d.ts:168](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L168)*
+*Defined in [declarations/tput.d.ts:168](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L168)*
 
 ___
 
@@ -1694,7 +1694,7 @@ ___
 
 • **lm**: *number*
 
-*Defined in [declarations/tput.d.ts:208](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L208)*
+*Defined in [declarations/tput.d.ts:208](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L208)*
 
 ___
 
@@ -1702,7 +1702,7 @@ ___
 
 • **lpi_changes_res**: *boolean*
 
-*Defined in [declarations/tput.d.ts:107](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L107)*
+*Defined in [declarations/tput.d.ts:107](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L107)*
 
 ___
 
@@ -1710,7 +1710,7 @@ ___
 
 • **lpix**: *boolean*
 
-*Defined in [declarations/tput.d.ts:153](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L153)*
+*Defined in [declarations/tput.d.ts:153](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L153)*
 
 ___
 
@@ -1718,7 +1718,7 @@ ___
 
 • **lw**: *number*
 
-*Defined in [declarations/tput.d.ts:215](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L215)*
+*Defined in [declarations/tput.d.ts:215](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L215)*
 
 ___
 
@@ -1726,7 +1726,7 @@ ___
 
 • **ma**: *number*
 
-*Defined in [declarations/tput.d.ts:216](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L216)*
+*Defined in [declarations/tput.d.ts:216](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L216)*
 
 ___
 
@@ -1734,7 +1734,7 @@ ___
 
 • **maddr**: *number*
 
-*Defined in [declarations/tput.d.ts:224](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L224)*
+*Defined in [declarations/tput.d.ts:224](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L224)*
 
 ___
 
@@ -1744,7 +1744,7 @@ ___
 
 *Implementation of [TputFeatures](../interfaces/_declarations_tput_d_.tputfeatures.md).[magicCookie](../interfaces/_declarations_tput_d_.tputfeatures.md#magiccookie)*
 
-*Defined in [declarations/tput.d.ts:157](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L157)*
+*Defined in [declarations/tput.d.ts:157](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L157)*
 
 ___
 
@@ -1752,7 +1752,7 @@ ___
 
 • **magic_cookie_glitch**: *number*
 
-*Defined in [declarations/tput.d.ts:169](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L169)*
+*Defined in [declarations/tput.d.ts:169](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L169)*
 
 ___
 
@@ -1760,7 +1760,7 @@ ___
 
 • **magic_cookie_glitch_ul**: *number*
 
-*Defined in [declarations/tput.d.ts:200](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L200)*
+*Defined in [declarations/tput.d.ts:200](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L200)*
 
 ___
 
@@ -1768,7 +1768,7 @@ ___
 
 • **max_attributes**: *number*
 
-*Defined in [declarations/tput.d.ts:176](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L176)*
+*Defined in [declarations/tput.d.ts:176](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L176)*
 
 ___
 
@@ -1776,7 +1776,7 @@ ___
 
 • **max_colors**: *number*
 
-*Defined in [declarations/tput.d.ts:178](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L178)*
+*Defined in [declarations/tput.d.ts:178](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L178)*
 
 ___
 
@@ -1784,7 +1784,7 @@ ___
 
 • **max_micro_address**: *number*
 
-*Defined in [declarations/tput.d.ts:186](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L186)*
+*Defined in [declarations/tput.d.ts:186](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L186)*
 
 ___
 
@@ -1792,7 +1792,7 @@ ___
 
 • **max_micro_jump**: *number*
 
-*Defined in [declarations/tput.d.ts:187](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L187)*
+*Defined in [declarations/tput.d.ts:187](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L187)*
 
 ___
 
@@ -1800,7 +1800,7 @@ ___
 
 • **max_pairs**: *number*
 
-*Defined in [declarations/tput.d.ts:179](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L179)*
+*Defined in [declarations/tput.d.ts:179](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L179)*
 
 ___
 
@@ -1808,7 +1808,7 @@ ___
 
 • **maximum_windows**: *number*
 
-*Defined in [declarations/tput.d.ts:177](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L177)*
+*Defined in [declarations/tput.d.ts:177](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L177)*
 
 ___
 
@@ -1816,7 +1816,7 @@ ___
 
 • **mc5i**: *boolean*
 
-*Defined in [declarations/tput.d.ts:139](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L139)*
+*Defined in [declarations/tput.d.ts:139](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L139)*
 
 ___
 
@@ -1824,7 +1824,7 @@ ___
 
 • **mcs**: *number*
 
-*Defined in [declarations/tput.d.ts:226](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L226)*
+*Defined in [declarations/tput.d.ts:226](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L226)*
 
 ___
 
@@ -1832,7 +1832,7 @@ ___
 
 • **memory_above**: *boolean*
 
-*Defined in [declarations/tput.d.ts:82](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L82)*
+*Defined in [declarations/tput.d.ts:82](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L82)*
 
 ___
 
@@ -1840,7 +1840,7 @@ ___
 
 • **memory_below**: *boolean*
 
-*Defined in [declarations/tput.d.ts:83](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L83)*
+*Defined in [declarations/tput.d.ts:83](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L83)*
 
 ___
 
@@ -1848,7 +1848,7 @@ ___
 
 • **methods**: *object*
 
-*Defined in [declarations/tput.d.ts:242](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L242)*
+*Defined in [declarations/tput.d.ts:242](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L242)*
 
 #### Type declaration:
 
@@ -1860,7 +1860,7 @@ ___
 
 • **micro_char_size**: *number*
 
-*Defined in [declarations/tput.d.ts:227](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L227)*
+*Defined in [declarations/tput.d.ts:227](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L227)*
 
 ___
 
@@ -1868,7 +1868,7 @@ ___
 
 • **micro_col_size**: *number*
 
-*Defined in [declarations/tput.d.ts:188](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L188)*
+*Defined in [declarations/tput.d.ts:188](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L188)*
 
 ___
 
@@ -1876,7 +1876,7 @@ ___
 
 • **micro_line_size**: *number*
 
-*Defined in [declarations/tput.d.ts:189](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L189)*
+*Defined in [declarations/tput.d.ts:189](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L189)*
 
 ___
 
@@ -1884,7 +1884,7 @@ ___
 
 • **mir**: *boolean*
 
-*Defined in [declarations/tput.d.ts:129](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L129)*
+*Defined in [declarations/tput.d.ts:129](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L129)*
 
 ___
 
@@ -1892,7 +1892,7 @@ ___
 
 • **mjump**: *number*
 
-*Defined in [declarations/tput.d.ts:225](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L225)*
+*Defined in [declarations/tput.d.ts:225](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L225)*
 
 ___
 
@@ -1900,7 +1900,7 @@ ___
 
 • **mls**: *number*
 
-*Defined in [declarations/tput.d.ts:228](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L228)*
+*Defined in [declarations/tput.d.ts:228](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L228)*
 
 ___
 
@@ -1908,7 +1908,7 @@ ___
 
 • **move_insert_mode**: *boolean*
 
-*Defined in [declarations/tput.d.ts:84](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L84)*
+*Defined in [declarations/tput.d.ts:84](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L84)*
 
 ___
 
@@ -1916,7 +1916,7 @@ ___
 
 • **move_standout_mode**: *boolean*
 
-*Defined in [declarations/tput.d.ts:85](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L85)*
+*Defined in [declarations/tput.d.ts:85](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L85)*
 
 ___
 
@@ -1924,7 +1924,7 @@ ___
 
 • **msgr**: *boolean*
 
-*Defined in [declarations/tput.d.ts:130](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L130)*
+*Defined in [declarations/tput.d.ts:130](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L130)*
 
 ___
 
@@ -1932,7 +1932,7 @@ ___
 
 • **ncv**: *number*
 
-*Defined in [declarations/tput.d.ts:220](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L220)*
+*Defined in [declarations/tput.d.ts:220](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L220)*
 
 ___
 
@@ -1940,7 +1940,7 @@ ___
 
 • **ndscr**: *boolean*
 
-*Defined in [declarations/tput.d.ts:143](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L143)*
+*Defined in [declarations/tput.d.ts:143](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L143)*
 
 ___
 
@@ -1948,7 +1948,7 @@ ___
 
 • **needs_xon_xoff**: *boolean*
 
-*Defined in [declarations/tput.d.ts:92](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L92)*
+*Defined in [declarations/tput.d.ts:92](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L92)*
 
 ___
 
@@ -1956,7 +1956,7 @@ ___
 
 • **new_line_delay**: *number*
 
-*Defined in [declarations/tput.d.ts:202](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L202)*
+*Defined in [declarations/tput.d.ts:202](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L202)*
 
 ___
 
@@ -1964,7 +1964,7 @@ ___
 
 • **nlab**: *number*
 
-*Defined in [declarations/tput.d.ts:213](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L213)*
+*Defined in [declarations/tput.d.ts:213](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L213)*
 
 ___
 
@@ -1972,7 +1972,7 @@ ___
 
 • **no_color_video**: *number*
 
-*Defined in [declarations/tput.d.ts:182](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L182)*
+*Defined in [declarations/tput.d.ts:182](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L182)*
 
 ___
 
@@ -1980,7 +1980,7 @@ ___
 
 • **no_correctly_working_cr**: *boolean*
 
-*Defined in [declarations/tput.d.ts:110](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L110)*
+*Defined in [declarations/tput.d.ts:110](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L110)*
 
 ___
 
@@ -1988,7 +1988,7 @@ ___
 
 • **no_esc_ctlc**: *boolean*
 
-*Defined in [declarations/tput.d.ts:73](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L73)*
+*Defined in [declarations/tput.d.ts:73](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L73)*
 
 ___
 
@@ -1996,7 +1996,7 @@ ___
 
 • **no_pad_char**: *boolean*
 
-*Defined in [declarations/tput.d.ts:96](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L96)*
+*Defined in [declarations/tput.d.ts:96](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L96)*
 
 ___
 
@@ -2004,7 +2004,7 @@ ___
 
 • **non_dest_scroll_region**: *boolean*
 
-*Defined in [declarations/tput.d.ts:97](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L97)*
+*Defined in [declarations/tput.d.ts:97](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L97)*
 
 ___
 
@@ -2012,7 +2012,7 @@ ___
 
 • **non_rev_rmcup**: *boolean*
 
-*Defined in [declarations/tput.d.ts:95](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L95)*
+*Defined in [declarations/tput.d.ts:95](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L95)*
 
 ___
 
@@ -2020,7 +2020,7 @@ ___
 
 • **npc**: *boolean*
 
-*Defined in [declarations/tput.d.ts:142](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L142)*
+*Defined in [declarations/tput.d.ts:142](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L142)*
 
 ___
 
@@ -2028,7 +2028,7 @@ ___
 
 • **npins**: *number*
 
-*Defined in [declarations/tput.d.ts:229](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L229)*
+*Defined in [declarations/tput.d.ts:229](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L229)*
 
 ___
 
@@ -2036,7 +2036,7 @@ ___
 
 • **nrrmc**: *boolean*
 
-*Defined in [declarations/tput.d.ts:141](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L141)*
+*Defined in [declarations/tput.d.ts:141](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L141)*
 
 ___
 
@@ -2044,7 +2044,7 @@ ___
 
 • **num_labels**: *number*
 
-*Defined in [declarations/tput.d.ts:173](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L173)*
+*Defined in [declarations/tput.d.ts:173](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L173)*
 
 ___
 
@@ -2052,7 +2052,7 @@ ___
 
 • **number_of_function_keys**: *number*
 
-*Defined in [declarations/tput.d.ts:205](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L205)*
+*Defined in [declarations/tput.d.ts:205](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L205)*
 
 ___
 
@@ -2060,7 +2060,7 @@ ___
 
 • **number_of_pins**: *number*
 
-*Defined in [declarations/tput.d.ts:190](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L190)*
+*Defined in [declarations/tput.d.ts:190](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L190)*
 
 ___
 
@@ -2068,7 +2068,7 @@ ___
 
 • **numbers**: *object*
 
-*Defined in [declarations/tput.d.ts:244](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L244)*
+*Defined in [declarations/tput.d.ts:244](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L244)*
 
 #### Type declaration:
 
@@ -2080,7 +2080,7 @@ ___
 
 • **nxon**: *boolean*
 
-*Defined in [declarations/tput.d.ts:138](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L138)*
+*Defined in [declarations/tput.d.ts:138](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L138)*
 
 ___
 
@@ -2090,7 +2090,7 @@ ___
 
 *Implementation of [IHasOptions](../interfaces/_declarations_blessed_d_.widgets.ihasoptions.md).[options](../interfaces/_declarations_blessed_d_.widgets.ihasoptions.md#options)*
 
-*Defined in [declarations/tput.d.ts:67](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L67)*
+*Defined in [declarations/tput.d.ts:67](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L67)*
 
 Original options object.
 
@@ -2100,7 +2100,7 @@ ___
 
 • **orc**: *number*
 
-*Defined in [declarations/tput.d.ts:230](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L230)*
+*Defined in [declarations/tput.d.ts:230](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L230)*
 
 ___
 
@@ -2108,7 +2108,7 @@ ___
 
 • **orhi**: *number*
 
-*Defined in [declarations/tput.d.ts:232](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L232)*
+*Defined in [declarations/tput.d.ts:232](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L232)*
 
 ___
 
@@ -2116,7 +2116,7 @@ ___
 
 • **orl**: *number*
 
-*Defined in [declarations/tput.d.ts:231](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L231)*
+*Defined in [declarations/tput.d.ts:231](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L231)*
 
 ___
 
@@ -2124,7 +2124,7 @@ ___
 
 • **orvi**: *number*
 
-*Defined in [declarations/tput.d.ts:233](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L233)*
+*Defined in [declarations/tput.d.ts:233](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L233)*
 
 ___
 
@@ -2132,7 +2132,7 @@ ___
 
 • **os**: *boolean*
 
-*Defined in [declarations/tput.d.ts:131](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L131)*
+*Defined in [declarations/tput.d.ts:131](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L131)*
 
 ___
 
@@ -2140,7 +2140,7 @@ ___
 
 • **output_res_char**: *number*
 
-*Defined in [declarations/tput.d.ts:191](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L191)*
+*Defined in [declarations/tput.d.ts:191](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L191)*
 
 ___
 
@@ -2148,7 +2148,7 @@ ___
 
 • **output_res_horz_inch**: *number*
 
-*Defined in [declarations/tput.d.ts:193](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L193)*
+*Defined in [declarations/tput.d.ts:193](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L193)*
 
 ___
 
@@ -2156,7 +2156,7 @@ ___
 
 • **output_res_line**: *number*
 
-*Defined in [declarations/tput.d.ts:192](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L192)*
+*Defined in [declarations/tput.d.ts:192](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L192)*
 
 ___
 
@@ -2164,7 +2164,7 @@ ___
 
 • **output_res_vert_inch**: *number*
 
-*Defined in [declarations/tput.d.ts:194](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L194)*
+*Defined in [declarations/tput.d.ts:194](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L194)*
 
 ___
 
@@ -2172,7 +2172,7 @@ ___
 
 • **over_strike**: *boolean*
 
-*Defined in [declarations/tput.d.ts:86](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L86)*
+*Defined in [declarations/tput.d.ts:86](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L86)*
 
 ___
 
@@ -2182,7 +2182,7 @@ ___
 
 *Implementation of [TputFeatures](../interfaces/_declarations_tput_d_.tputfeatures.md).[padding](../interfaces/_declarations_tput_d_.tputfeatures.md#padding)*
 
-*Defined in [declarations/tput.d.ts:249](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L249)*
+*Defined in [declarations/tput.d.ts:249](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L249)*
 
 ___
 
@@ -2190,7 +2190,7 @@ ___
 
 • **padding_baud_rate**: *number*
 
-*Defined in [declarations/tput.d.ts:170](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L170)*
+*Defined in [declarations/tput.d.ts:170](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L170)*
 
 ___
 
@@ -2198,7 +2198,7 @@ ___
 
 • **pairs**: *number*
 
-*Defined in [declarations/tput.d.ts:219](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L219)*
+*Defined in [declarations/tput.d.ts:219](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L219)*
 
 ___
 
@@ -2206,7 +2206,7 @@ ___
 
 • **pb**: *number*
 
-*Defined in [declarations/tput.d.ts:210](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L210)*
+*Defined in [declarations/tput.d.ts:210](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L210)*
 
 ___
 
@@ -2214,7 +2214,7 @@ ___
 
 • **print_rate**: *number*
 
-*Defined in [declarations/tput.d.ts:195](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L195)*
+*Defined in [declarations/tput.d.ts:195](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L195)*
 
 ___
 
@@ -2222,7 +2222,7 @@ ___
 
 • **printf**: *boolean*
 
-*Defined in [declarations/tput.d.ts:250](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L250)*
+*Defined in [declarations/tput.d.ts:250](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L250)*
 
 ___
 
@@ -2230,7 +2230,7 @@ ___
 
 • **prtr_silent**: *boolean*
 
-*Defined in [declarations/tput.d.ts:93](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L93)*
+*Defined in [declarations/tput.d.ts:93](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L93)*
 
 ___
 
@@ -2238,7 +2238,7 @@ ___
 
 • **return_does_clr_eol**: *boolean*
 
-*Defined in [declarations/tput.d.ts:114](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L114)*
+*Defined in [declarations/tput.d.ts:114](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L114)*
 
 ___
 
@@ -2246,7 +2246,7 @@ ___
 
 • **row_addr_glitch**: *boolean*
 
-*Defined in [declarations/tput.d.ts:104](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L104)*
+*Defined in [declarations/tput.d.ts:104](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L104)*
 
 ___
 
@@ -2254,7 +2254,7 @@ ___
 
 • **sam**: *boolean*
 
-*Defined in [declarations/tput.d.ts:151](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L151)*
+*Defined in [declarations/tput.d.ts:151](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L151)*
 
 ___
 
@@ -2262,7 +2262,7 @@ ___
 
 • **semi_auto_right_margin**: *boolean*
 
-*Defined in [declarations/tput.d.ts:105](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L105)*
+*Defined in [declarations/tput.d.ts:105](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L105)*
 
 ___
 
@@ -2272,7 +2272,7 @@ ___
 
 *Implementation of [TputFeatures](../interfaces/_declarations_tput_d_.tputfeatures.md).[setbuf](../interfaces/_declarations_tput_d_.tputfeatures.md#setbuf)*
 
-*Defined in [declarations/tput.d.ts:158](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L158)*
+*Defined in [declarations/tput.d.ts:158](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L158)*
 
 ___
 
@@ -2280,7 +2280,7 @@ ___
 
 • **spinh**: *number*
 
-*Defined in [declarations/tput.d.ts:223](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L223)*
+*Defined in [declarations/tput.d.ts:223](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L223)*
 
 ___
 
@@ -2288,7 +2288,7 @@ ___
 
 • **spinv**: *number*
 
-*Defined in [declarations/tput.d.ts:222](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L222)*
+*Defined in [declarations/tput.d.ts:222](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L222)*
 
 ___
 
@@ -2296,7 +2296,7 @@ ___
 
 • **status_line_esc_ok**: *boolean*
 
-*Defined in [declarations/tput.d.ts:87](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L87)*
+*Defined in [declarations/tput.d.ts:87](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L87)*
 
 ___
 
@@ -2304,7 +2304,7 @@ ___
 
 • **strings**: *object*
 
-*Defined in [declarations/tput.d.ts:245](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L245)*
+*Defined in [declarations/tput.d.ts:245](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L245)*
 
 #### Type declaration:
 
@@ -2316,7 +2316,7 @@ ___
 
 • **teleray_glitch**: *boolean*
 
-*Defined in [declarations/tput.d.ts:134](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L134)*
+*Defined in [declarations/tput.d.ts:134](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L134)*
 
 ___
 
@@ -2324,7 +2324,7 @@ ___
 
 • **termcap**: *boolean*
 
-*Defined in [declarations/tput.d.ts:70](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L70)*
+*Defined in [declarations/tput.d.ts:70](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L70)*
 
 ___
 
@@ -2332,7 +2332,7 @@ ___
 
 • **termcapFile**: *string*
 
-*Defined in [declarations/tput.d.ts:253](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L253)*
+*Defined in [declarations/tput.d.ts:253](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L253)*
 
 ___
 
@@ -2340,7 +2340,7 @@ ___
 
 • **terminal**: *string*
 
-*Defined in [declarations/tput.d.ts:160](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L160)*
+*Defined in [declarations/tput.d.ts:160](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L160)*
 
 ___
 
@@ -2348,7 +2348,7 @@ ___
 
 • **terminfoFile**: *string*
 
-*Defined in [declarations/tput.d.ts:252](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L252)*
+*Defined in [declarations/tput.d.ts:252](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L252)*
 
 ___
 
@@ -2356,7 +2356,7 @@ ___
 
 • **terminfoPrefix**: *string*
 
-*Defined in [declarations/tput.d.ts:251](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L251)*
+*Defined in [declarations/tput.d.ts:251](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L251)*
 
 ___
 
@@ -2364,7 +2364,7 @@ ___
 
 • **tilde_glitch**: *boolean*
 
-*Defined in [declarations/tput.d.ts:89](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L89)*
+*Defined in [declarations/tput.d.ts:89](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L89)*
 
 ___
 
@@ -2372,7 +2372,7 @@ ___
 
 • **transparent_underline**: *boolean*
 
-*Defined in [declarations/tput.d.ts:90](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L90)*
+*Defined in [declarations/tput.d.ts:90](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L90)*
 
 ___
 
@@ -2380,7 +2380,7 @@ ___
 
 • **ul**: *boolean*
 
-*Defined in [declarations/tput.d.ts:136](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L136)*
+*Defined in [declarations/tput.d.ts:136](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L136)*
 
 ___
 
@@ -2390,7 +2390,7 @@ ___
 
 *Implementation of [TputFeatures](../interfaces/_declarations_tput_d_.tputfeatures.md).[unicode](../interfaces/_declarations_tput_d_.tputfeatures.md#unicode)*
 
-*Defined in [declarations/tput.d.ts:154](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L154)*
+*Defined in [declarations/tput.d.ts:154](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L154)*
 
 ___
 
@@ -2398,7 +2398,7 @@ ___
 
 • **virtual_terminal**: *number*
 
-*Defined in [declarations/tput.d.ts:171](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L171)*
+*Defined in [declarations/tput.d.ts:171](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L171)*
 
 ___
 
@@ -2406,7 +2406,7 @@ ___
 
 • **vt**: *number*
 
-*Defined in [declarations/tput.d.ts:211](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L211)*
+*Defined in [declarations/tput.d.ts:211](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L211)*
 
 ___
 
@@ -2414,7 +2414,7 @@ ___
 
 • **widcs**: *number*
 
-*Defined in [declarations/tput.d.ts:235](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L235)*
+*Defined in [declarations/tput.d.ts:235](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L235)*
 
 ___
 
@@ -2422,7 +2422,7 @@ ___
 
 • **wide_char_size**: *number*
 
-*Defined in [declarations/tput.d.ts:196](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L196)*
+*Defined in [declarations/tput.d.ts:196](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L196)*
 
 ___
 
@@ -2430,7 +2430,7 @@ ___
 
 • **width_status_line**: *number*
 
-*Defined in [declarations/tput.d.ts:172](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L172)*
+*Defined in [declarations/tput.d.ts:172](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L172)*
 
 ___
 
@@ -2438,7 +2438,7 @@ ___
 
 • **wnum**: *number*
 
-*Defined in [declarations/tput.d.ts:217](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L217)*
+*Defined in [declarations/tput.d.ts:217](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L217)*
 
 ___
 
@@ -2446,7 +2446,7 @@ ___
 
 • **wsl**: *number*
 
-*Defined in [declarations/tput.d.ts:212](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L212)*
+*Defined in [declarations/tput.d.ts:212](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L212)*
 
 ___
 
@@ -2454,7 +2454,7 @@ ___
 
 • **xenl**: *boolean*
 
-*Defined in [declarations/tput.d.ts:120](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L120)*
+*Defined in [declarations/tput.d.ts:120](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L120)*
 
 ___
 
@@ -2462,7 +2462,7 @@ ___
 
 • **xhp**: *boolean*
 
-*Defined in [declarations/tput.d.ts:119](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L119)*
+*Defined in [declarations/tput.d.ts:119](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L119)*
 
 ___
 
@@ -2470,7 +2470,7 @@ ___
 
 • **xhpa**: *boolean*
 
-*Defined in [declarations/tput.d.ts:147](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L147)*
+*Defined in [declarations/tput.d.ts:147](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L147)*
 
 ___
 
@@ -2478,7 +2478,7 @@ ___
 
 • **xmc**: *number*
 
-*Defined in [declarations/tput.d.ts:209](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L209)*
+*Defined in [declarations/tput.d.ts:209](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L209)*
 
 ___
 
@@ -2486,7 +2486,7 @@ ___
 
 • **xon**: *boolean*
 
-*Defined in [declarations/tput.d.ts:137](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L137)*
+*Defined in [declarations/tput.d.ts:137](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L137)*
 
 ___
 
@@ -2494,7 +2494,7 @@ ___
 
 • **xon_xoff**: *boolean*
 
-*Defined in [declarations/tput.d.ts:91](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L91)*
+*Defined in [declarations/tput.d.ts:91](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L91)*
 
 ___
 
@@ -2502,7 +2502,7 @@ ___
 
 • **xsb**: *boolean*
 
-*Defined in [declarations/tput.d.ts:117](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L117)*
+*Defined in [declarations/tput.d.ts:117](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L117)*
 
 ___
 
@@ -2510,7 +2510,7 @@ ___
 
 • **xt**: *boolean*
 
-*Defined in [declarations/tput.d.ts:133](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L133)*
+*Defined in [declarations/tput.d.ts:133](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L133)*
 
 ___
 
@@ -2518,7 +2518,7 @@ ___
 
 • **xvpa**: *boolean*
 
-*Defined in [declarations/tput.d.ts:150](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L150)*
+*Defined in [declarations/tput.d.ts:150](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L150)*
 
 ## Methods
 
@@ -2526,7 +2526,7 @@ ___
 
 ▸ **acs_btee**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:669](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L669)*
+*Defined in [declarations/tput.d.ts:669](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L669)*
 
 **Parameters:**
 
@@ -2542,7 +2542,7 @@ ___
 
 ▸ **acs_chars**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:350](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L350)*
+*Defined in [declarations/tput.d.ts:350](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L350)*
 
 **Parameters:**
 
@@ -2558,7 +2558,7 @@ ___
 
 ▸ **acs_hline**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:671](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L671)*
+*Defined in [declarations/tput.d.ts:671](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L671)*
 
 **Parameters:**
 
@@ -2574,7 +2574,7 @@ ___
 
 ▸ **acs_llcorner**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:664](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L664)*
+*Defined in [declarations/tput.d.ts:664](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L664)*
 
 **Parameters:**
 
@@ -2590,7 +2590,7 @@ ___
 
 ▸ **acs_lrcorner**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:666](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L666)*
+*Defined in [declarations/tput.d.ts:666](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L666)*
 
 **Parameters:**
 
@@ -2606,7 +2606,7 @@ ___
 
 ▸ **acs_ltee**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:667](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L667)*
+*Defined in [declarations/tput.d.ts:667](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L667)*
 
 **Parameters:**
 
@@ -2622,7 +2622,7 @@ ___
 
 ▸ **acs_plus**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:673](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L673)*
+*Defined in [declarations/tput.d.ts:673](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L673)*
 
 **Parameters:**
 
@@ -2638,7 +2638,7 @@ ___
 
 ▸ **acs_rtee**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:668](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L668)*
+*Defined in [declarations/tput.d.ts:668](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L668)*
 
 **Parameters:**
 
@@ -2654,7 +2654,7 @@ ___
 
 ▸ **acs_ttee**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:670](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L670)*
+*Defined in [declarations/tput.d.ts:670](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L670)*
 
 **Parameters:**
 
@@ -2670,7 +2670,7 @@ ___
 
 ▸ **acs_ulcorner**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:663](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L663)*
+*Defined in [declarations/tput.d.ts:663](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L663)*
 
 **Parameters:**
 
@@ -2686,7 +2686,7 @@ ___
 
 ▸ **acs_urcorner**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:665](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L665)*
+*Defined in [declarations/tput.d.ts:665](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L665)*
 
 **Parameters:**
 
@@ -2702,7 +2702,7 @@ ___
 
 ▸ **acs_vline**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:672](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L672)*
+*Defined in [declarations/tput.d.ts:672](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L672)*
 
 **Parameters:**
 
@@ -2718,7 +2718,7 @@ ___
 
 ▸ **alt_scancode_esc**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:648](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L648)*
+*Defined in [declarations/tput.d.ts:648](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L648)*
 
 **Parameters:**
 
@@ -2734,7 +2734,7 @@ ___
 
 ▸ **arrow_key_map**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:662](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L662)*
+*Defined in [declarations/tput.d.ts:662](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L662)*
 
 **Parameters:**
 
@@ -2750,7 +2750,7 @@ ___
 
 ▸ **back_tab**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:261](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L261)*
+*Defined in [declarations/tput.d.ts:261](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L261)*
 
 **Parameters:**
 
@@ -2766,7 +2766,7 @@ ___
 
 ▸ **backspace_if_not_bs**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:660](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L660)*
+*Defined in [declarations/tput.d.ts:660](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L660)*
 
 **Parameters:**
 
@@ -2782,7 +2782,7 @@ ___
 
 ▸ **bel**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:676](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L676)*
+*Defined in [declarations/tput.d.ts:676](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L676)*
 
 **Parameters:**
 
@@ -2798,7 +2798,7 @@ ___
 
 ▸ **bell**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:262](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L262)*
+*Defined in [declarations/tput.d.ts:262](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L262)*
 
 **Parameters:**
 
@@ -2814,7 +2814,7 @@ ___
 
 ▸ **bicr**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1044](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1044)*
+*Defined in [declarations/tput.d.ts:1044](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1044)*
 
 **Parameters:**
 
@@ -2830,7 +2830,7 @@ ___
 
 ▸ **binel**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1043](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1043)*
+*Defined in [declarations/tput.d.ts:1043](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1043)*
 
 **Parameters:**
 
@@ -2846,7 +2846,7 @@ ___
 
 ▸ **birep**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1042](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1042)*
+*Defined in [declarations/tput.d.ts:1042](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1042)*
 
 **Parameters:**
 
@@ -2862,7 +2862,7 @@ ___
 
 ▸ **bit_image_carriage_return**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:635](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L635)*
+*Defined in [declarations/tput.d.ts:635](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L635)*
 
 **Parameters:**
 
@@ -2878,7 +2878,7 @@ ___
 
 ▸ **bit_image_newline**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:634](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L634)*
+*Defined in [declarations/tput.d.ts:634](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L634)*
 
 **Parameters:**
 
@@ -2894,7 +2894,7 @@ ___
 
 ▸ **bit_image_repeat**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:633](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L633)*
+*Defined in [declarations/tput.d.ts:633](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L633)*
 
 **Parameters:**
 
@@ -2910,7 +2910,7 @@ ___
 
 ▸ **blink**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:696](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L696)*
+*Defined in [declarations/tput.d.ts:696](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L696)*
 
 **Parameters:**
 
@@ -2926,7 +2926,7 @@ ___
 
 ▸ **bold**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:697](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L697)*
+*Defined in [declarations/tput.d.ts:697](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L697)*
 
 **Parameters:**
 
@@ -2942,7 +2942,7 @@ ___
 
 ▸ **box_chars_1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:674](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L674)*
+*Defined in [declarations/tput.d.ts:674](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L674)*
 
 **Parameters:**
 
@@ -2958,7 +2958,7 @@ ___
 
 ▸ **carriage_return**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:263](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L263)*
+*Defined in [declarations/tput.d.ts:263](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L263)*
 
 **Parameters:**
 
@@ -2974,7 +2974,7 @@ ___
 
 ▸ **cbt**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:675](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L675)*
+*Defined in [declarations/tput.d.ts:675](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L675)*
 
 **Parameters:**
 
@@ -2990,7 +2990,7 @@ ___
 
 ▸ **change_char_pitch**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:570](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L570)*
+*Defined in [declarations/tput.d.ts:570](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L570)*
 
 **Parameters:**
 
@@ -3006,7 +3006,7 @@ ___
 
 ▸ **change_line_pitch**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:571](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L571)*
+*Defined in [declarations/tput.d.ts:571](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L571)*
 
 **Parameters:**
 
@@ -3022,7 +3022,7 @@ ___
 
 ▸ **change_res_horz**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:572](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L572)*
+*Defined in [declarations/tput.d.ts:572](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L572)*
 
 **Parameters:**
 
@@ -3038,7 +3038,7 @@ ___
 
 ▸ **change_res_vert**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:573](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L573)*
+*Defined in [declarations/tput.d.ts:573](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L573)*
 
 **Parameters:**
 
@@ -3054,7 +3054,7 @@ ___
 
 ▸ **change_scroll_region**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:264](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L264)*
+*Defined in [declarations/tput.d.ts:264](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L264)*
 
 **Parameters:**
 
@@ -3070,7 +3070,7 @@ ___
 
 ▸ **char_padding**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:485](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L485)*
+*Defined in [declarations/tput.d.ts:485](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L485)*
 
 **Parameters:**
 
@@ -3086,7 +3086,7 @@ ___
 
 ▸ **char_set_names**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:620](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L620)*
+*Defined in [declarations/tput.d.ts:620](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L620)*
 
 **Parameters:**
 
@@ -3102,7 +3102,7 @@ ___
 
 ▸ **chr**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:981](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L981)*
+*Defined in [declarations/tput.d.ts:981](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L981)*
 
 **Parameters:**
 
@@ -3118,7 +3118,7 @@ ___
 
 ▸ **civis**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:687](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L687)*
+*Defined in [declarations/tput.d.ts:687](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L687)*
 
 **Parameters:**
 
@@ -3134,7 +3134,7 @@ ___
 
 ▸ **clear**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:680](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L680)*
+*Defined in [declarations/tput.d.ts:680](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L680)*
 
 **Parameters:**
 
@@ -3150,7 +3150,7 @@ ___
 
 ▸ **clear_all_tabs**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:265](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L265)*
+*Defined in [declarations/tput.d.ts:265](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L265)*
 
 **Parameters:**
 
@@ -3166,7 +3166,7 @@ ___
 
 ▸ **clear_margins**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:542](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L542)*
+*Defined in [declarations/tput.d.ts:542](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L542)*
 
 **Parameters:**
 
@@ -3182,7 +3182,7 @@ ___
 
 ▸ **clear_screen**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:266](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L266)*
+*Defined in [declarations/tput.d.ts:266](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L266)*
 
 **Parameters:**
 
@@ -3198,7 +3198,7 @@ ___
 
 ▸ **clr_bol**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:417](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L417)*
+*Defined in [declarations/tput.d.ts:417](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L417)*
 
 **Parameters:**
 
@@ -3214,7 +3214,7 @@ ___
 
 ▸ **clr_eol**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:267](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L267)*
+*Defined in [declarations/tput.d.ts:267](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L267)*
 
 **Parameters:**
 
@@ -3230,7 +3230,7 @@ ___
 
 ▸ **clr_eos**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:268](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L268)*
+*Defined in [declarations/tput.d.ts:268](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L268)*
 
 **Parameters:**
 
@@ -3246,7 +3246,7 @@ ___
 
 ▸ **cmdch**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:840](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L840)*
+*Defined in [declarations/tput.d.ts:840](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L840)*
 
 **Parameters:**
 
@@ -3262,7 +3262,7 @@ ___
 
 ▸ **cnorm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:689](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L689)*
+*Defined in [declarations/tput.d.ts:689](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L689)*
 
 **Parameters:**
 
@@ -3278,7 +3278,7 @@ ___
 
 ▸ **code_set_init**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:626](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L626)*
+*Defined in [declarations/tput.d.ts:626](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L626)*
 
 **Parameters:**
 
@@ -3294,7 +3294,7 @@ ___
 
 ▸ **color_names**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:636](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L636)*
+*Defined in [declarations/tput.d.ts:636](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L636)*
 
 **Parameters:**
 
@@ -3310,7 +3310,7 @@ ___
 
 ▸ **colornm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1045](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1045)*
+*Defined in [declarations/tput.d.ts:1045](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1045)*
 
 **Parameters:**
 
@@ -3326,7 +3326,7 @@ ___
 
 ▸ **column_address**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:269](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L269)*
+*Defined in [declarations/tput.d.ts:269](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L269)*
 
 **Parameters:**
 
@@ -3342,7 +3342,7 @@ ___
 
 ▸ **command_character**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:429](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L429)*
+*Defined in [declarations/tput.d.ts:429](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L429)*
 
 **Parameters:**
 
@@ -3358,7 +3358,7 @@ ___
 
 ▸ **cpi**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:979](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L979)*
+*Defined in [declarations/tput.d.ts:979](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L979)*
 
 **Parameters:**
 
@@ -3374,7 +3374,7 @@ ___
 
 ▸ **cr**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:677](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L677)*
+*Defined in [declarations/tput.d.ts:677](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L677)*
 
 **Parameters:**
 
@@ -3390,7 +3390,7 @@ ___
 
 ▸ **create_window**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:549](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L549)*
+*Defined in [declarations/tput.d.ts:549](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L549)*
 
 **Parameters:**
 
@@ -3406,7 +3406,7 @@ ___
 
 ▸ **csin**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1035](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1035)*
+*Defined in [declarations/tput.d.ts:1035](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1035)*
 
 **Parameters:**
 
@@ -3422,7 +3422,7 @@ ___
 
 ▸ **csnm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1029](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1029)*
+*Defined in [declarations/tput.d.ts:1029](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1029)*
 
 **Parameters:**
 
@@ -3438,7 +3438,7 @@ ___
 
 ▸ **csr**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:678](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L678)*
+*Defined in [declarations/tput.d.ts:678](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L678)*
 
 **Parameters:**
 
@@ -3454,7 +3454,7 @@ ___
 
 ▸ **cub**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:746](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L746)*
+*Defined in [declarations/tput.d.ts:746](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L746)*
 
 **Parameters:**
 
@@ -3470,7 +3470,7 @@ ___
 
 ▸ **cub1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:688](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L688)*
+*Defined in [declarations/tput.d.ts:688](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L688)*
 
 **Parameters:**
 
@@ -3486,7 +3486,7 @@ ___
 
 ▸ **cud**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:742](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L742)*
+*Defined in [declarations/tput.d.ts:742](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L742)*
 
 **Parameters:**
 
@@ -3502,7 +3502,7 @@ ___
 
 ▸ **cud1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:685](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L685)*
+*Defined in [declarations/tput.d.ts:685](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L685)*
 
 **Parameters:**
 
@@ -3518,7 +3518,7 @@ ___
 
 ▸ **cuf**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:747](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L747)*
+*Defined in [declarations/tput.d.ts:747](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L747)*
 
 **Parameters:**
 
@@ -3534,7 +3534,7 @@ ___
 
 ▸ **cuf1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:690](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L690)*
+*Defined in [declarations/tput.d.ts:690](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L690)*
 
 **Parameters:**
 
@@ -3550,7 +3550,7 @@ ___
 
 ▸ **cup**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:684](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L684)*
+*Defined in [declarations/tput.d.ts:684](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L684)*
 
 **Parameters:**
 
@@ -3566,7 +3566,7 @@ ___
 
 ▸ **cursor_address**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:270](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L270)*
+*Defined in [declarations/tput.d.ts:270](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L270)*
 
 **Parameters:**
 
@@ -3582,7 +3582,7 @@ ___
 
 ▸ **cursor_down**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:271](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L271)*
+*Defined in [declarations/tput.d.ts:271](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L271)*
 
 **Parameters:**
 
@@ -3598,7 +3598,7 @@ ___
 
 ▸ **cursor_home**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:272](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L272)*
+*Defined in [declarations/tput.d.ts:272](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L272)*
 
 **Parameters:**
 
@@ -3614,7 +3614,7 @@ ___
 
 ▸ **cursor_invisible**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:273](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L273)*
+*Defined in [declarations/tput.d.ts:273](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L273)*
 
 **Parameters:**
 
@@ -3630,7 +3630,7 @@ ___
 
 ▸ **cursor_left**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:274](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L274)*
+*Defined in [declarations/tput.d.ts:274](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L274)*
 
 **Parameters:**
 
@@ -3646,7 +3646,7 @@ ___
 
 ▸ **cursor_mem_address**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:430](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L430)*
+*Defined in [declarations/tput.d.ts:430](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L430)*
 
 **Parameters:**
 
@@ -3662,7 +3662,7 @@ ___
 
 ▸ **cursor_normal**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:275](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L275)*
+*Defined in [declarations/tput.d.ts:275](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L275)*
 
 **Parameters:**
 
@@ -3678,7 +3678,7 @@ ___
 
 ▸ **cursor_right**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:276](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L276)*
+*Defined in [declarations/tput.d.ts:276](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L276)*
 
 **Parameters:**
 
@@ -3694,7 +3694,7 @@ ___
 
 ▸ **cursor_to_ll**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:431](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L431)*
+*Defined in [declarations/tput.d.ts:431](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L431)*
 
 **Parameters:**
 
@@ -3710,7 +3710,7 @@ ___
 
 ▸ **cursor_up**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:277](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L277)*
+*Defined in [declarations/tput.d.ts:277](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L277)*
 
 **Parameters:**
 
@@ -3726,7 +3726,7 @@ ___
 
 ▸ **cursor_visible**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:278](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L278)*
+*Defined in [declarations/tput.d.ts:278](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L278)*
 
 **Parameters:**
 
@@ -3742,7 +3742,7 @@ ___
 
 ▸ **cuu**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:749](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L749)*
+*Defined in [declarations/tput.d.ts:749](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L749)*
 
 **Parameters:**
 
@@ -3758,7 +3758,7 @@ ___
 
 ▸ **cuu1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:691](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L691)*
+*Defined in [declarations/tput.d.ts:691](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L691)*
 
 **Parameters:**
 
@@ -3774,7 +3774,7 @@ ___
 
 ▸ **cvr**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:982](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L982)*
+*Defined in [declarations/tput.d.ts:982](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L982)*
 
 **Parameters:**
 
@@ -3790,7 +3790,7 @@ ___
 
 ▸ **cvvis**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:692](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L692)*
+*Defined in [declarations/tput.d.ts:692](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L692)*
 
 **Parameters:**
 
@@ -3806,7 +3806,7 @@ ___
 
 ▸ **cwin**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:960](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L960)*
+*Defined in [declarations/tput.d.ts:960](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L960)*
 
 **Parameters:**
 
@@ -3822,7 +3822,7 @@ ___
 
 ▸ **dch**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:740](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L740)*
+*Defined in [declarations/tput.d.ts:740](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L740)*
 
 **Parameters:**
 
@@ -3838,7 +3838,7 @@ ___
 
 ▸ **dch1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:693](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L693)*
+*Defined in [declarations/tput.d.ts:693](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L693)*
 
 **Parameters:**
 
@@ -3854,7 +3854,7 @@ ___
 
 ▸ **dclk**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:958](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L958)*
+*Defined in [declarations/tput.d.ts:958](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L958)*
 
 **Parameters:**
 
@@ -3870,7 +3870,7 @@ ___
 
 ▸ **defbi**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1046](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1046)*
+*Defined in [declarations/tput.d.ts:1046](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1046)*
 
 **Parameters:**
 
@@ -3886,7 +3886,7 @@ ___
 
 ▸ **defc**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:983](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L983)*
+*Defined in [declarations/tput.d.ts:983](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L983)*
 
 **Parameters:**
 
@@ -3902,7 +3902,7 @@ ___
 
 ▸ **define_bit_image_region**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:637](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L637)*
+*Defined in [declarations/tput.d.ts:637](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L637)*
 
 **Parameters:**
 
@@ -3918,7 +3918,7 @@ ___
 
 ▸ **define_char**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:574](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L574)*
+*Defined in [declarations/tput.d.ts:574](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L574)*
 
 **Parameters:**
 
@@ -3934,7 +3934,7 @@ ___
 
 ▸ **delete_character**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:279](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L279)*
+*Defined in [declarations/tput.d.ts:279](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L279)*
 
 **Parameters:**
 
@@ -3950,7 +3950,7 @@ ___
 
 ▸ **delete_line**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:280](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L280)*
+*Defined in [declarations/tput.d.ts:280](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L280)*
 
 **Parameters:**
 
@@ -3966,7 +3966,7 @@ ___
 
 ▸ **device_type**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:625](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L625)*
+*Defined in [declarations/tput.d.ts:625](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L625)*
 
 **Parameters:**
 
@@ -3982,7 +3982,7 @@ ___
 
 ▸ **devt**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1034](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1034)*
+*Defined in [declarations/tput.d.ts:1034](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1034)*
 
 **Parameters:**
 
@@ -3998,7 +3998,7 @@ ___
 
 ▸ **dial**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:963](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L963)*
+*Defined in [declarations/tput.d.ts:963](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L963)*
 
 **Parameters:**
 
@@ -4014,7 +4014,7 @@ ___
 
 ▸ **dial_phone**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:552](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L552)*
+*Defined in [declarations/tput.d.ts:552](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L552)*
 
 **Parameters:**
 
@@ -4030,7 +4030,7 @@ ___
 
 ▸ **dim**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:846](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L846)*
+*Defined in [declarations/tput.d.ts:846](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L846)*
 
 **Parameters:**
 
@@ -4046,7 +4046,7 @@ ___
 
 ▸ **dis_status_line**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:432](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L432)*
+*Defined in [declarations/tput.d.ts:432](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L432)*
 
 **Parameters:**
 
@@ -4062,7 +4062,7 @@ ___
 
 ▸ **dispc**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1050](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1050)*
+*Defined in [declarations/tput.d.ts:1050](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1050)*
 
 **Parameters:**
 
@@ -4078,7 +4078,7 @@ ___
 
 ▸ **display_clock**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:547](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L547)*
+*Defined in [declarations/tput.d.ts:547](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L547)*
 
 **Parameters:**
 
@@ -4094,7 +4094,7 @@ ___
 
 ▸ **display_pc_char**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:641](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L641)*
+*Defined in [declarations/tput.d.ts:641](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L641)*
 
 **Parameters:**
 
@@ -4110,7 +4110,7 @@ ___
 
 ▸ **dl**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:741](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L741)*
+*Defined in [declarations/tput.d.ts:741](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L741)*
 
 **Parameters:**
 
@@ -4126,7 +4126,7 @@ ___
 
 ▸ **dl1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:694](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L694)*
+*Defined in [declarations/tput.d.ts:694](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L694)*
 
 **Parameters:**
 
@@ -4142,7 +4142,7 @@ ___
 
 ▸ **docr**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1027](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1027)*
+*Defined in [declarations/tput.d.ts:1027](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1027)*
 
 **Parameters:**
 
@@ -4158,7 +4158,7 @@ ___
 
 ▸ **down_half_line**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:433](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L433)*
+*Defined in [declarations/tput.d.ts:433](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L433)*
 
 **Parameters:**
 
@@ -4174,7 +4174,7 @@ ___
 
 ▸ **dsl**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:843](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L843)*
+*Defined in [declarations/tput.d.ts:843](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L843)*
 
 **Parameters:**
 
@@ -4190,7 +4190,7 @@ ___
 
 ▸ **ech**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:704](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L704)*
+*Defined in [declarations/tput.d.ts:704](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L704)*
 
 **Parameters:**
 
@@ -4206,7 +4206,7 @@ ___
 
 ▸ **ed**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:682](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L682)*
+*Defined in [declarations/tput.d.ts:682](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L682)*
 
 **Parameters:**
 
@@ -4222,7 +4222,7 @@ ___
 
 ▸ **ehhlm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1058](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1058)*
+*Defined in [declarations/tput.d.ts:1058](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1058)*
 
 **Parameters:**
 
@@ -4238,7 +4238,7 @@ ___
 
 ▸ **el**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:681](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L681)*
+*Defined in [declarations/tput.d.ts:681](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L681)*
 
 **Parameters:**
 
@@ -4254,7 +4254,7 @@ ___
 
 ▸ **el1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:830](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L830)*
+*Defined in [declarations/tput.d.ts:830](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L830)*
 
 **Parameters:**
 
@@ -4270,7 +4270,7 @@ ___
 
 ▸ **elhlm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1059](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1059)*
+*Defined in [declarations/tput.d.ts:1059](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1059)*
 
 **Parameters:**
 
@@ -4286,7 +4286,7 @@ ___
 
 ▸ **elohlm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1060](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1060)*
+*Defined in [declarations/tput.d.ts:1060](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1060)*
 
 **Parameters:**
 
@@ -4302,7 +4302,7 @@ ___
 
 ▸ **ena_acs**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:491](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L491)*
+*Defined in [declarations/tput.d.ts:491](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L491)*
 
 **Parameters:**
 
@@ -4318,7 +4318,7 @@ ___
 
 ▸ **enacs**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:902](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L902)*
+*Defined in [declarations/tput.d.ts:902](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L902)*
 
 **Parameters:**
 
@@ -4334,7 +4334,7 @@ ___
 
 ▸ **end_bit_image_region**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:638](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L638)*
+*Defined in [declarations/tput.d.ts:638](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L638)*
 
 **Parameters:**
 
@@ -4350,7 +4350,7 @@ ___
 
 ▸ **endbi**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1047](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1047)*
+*Defined in [declarations/tput.d.ts:1047](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1047)*
 
 **Parameters:**
 
@@ -4366,7 +4366,7 @@ ___
 
 ▸ **enter_alt_charset_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:281](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L281)*
+*Defined in [declarations/tput.d.ts:281](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L281)*
 
 **Parameters:**
 
@@ -4382,7 +4382,7 @@ ___
 
 ▸ **enter_am_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:352](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L352)*
+*Defined in [declarations/tput.d.ts:352](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L352)*
 
 **Parameters:**
 
@@ -4398,7 +4398,7 @@ ___
 
 ▸ **enter_blink_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:282](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L282)*
+*Defined in [declarations/tput.d.ts:282](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L282)*
 
 **Parameters:**
 
@@ -4414,7 +4414,7 @@ ___
 
 ▸ **enter_bold_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:283](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L283)*
+*Defined in [declarations/tput.d.ts:283](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L283)*
 
 **Parameters:**
 
@@ -4430,7 +4430,7 @@ ___
 
 ▸ **enter_ca_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:284](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L284)*
+*Defined in [declarations/tput.d.ts:284](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L284)*
 
 **Parameters:**
 
@@ -4446,7 +4446,7 @@ ___
 
 ▸ **enter_delete_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:434](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L434)*
+*Defined in [declarations/tput.d.ts:434](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L434)*
 
 **Parameters:**
 
@@ -4462,7 +4462,7 @@ ___
 
 ▸ **enter_dim_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:435](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L435)*
+*Defined in [declarations/tput.d.ts:435](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L435)*
 
 **Parameters:**
 
@@ -4478,7 +4478,7 @@ ___
 
 ▸ **enter_doublewide_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:575](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L575)*
+*Defined in [declarations/tput.d.ts:575](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L575)*
 
 **Parameters:**
 
@@ -4494,7 +4494,7 @@ ___
 
 ▸ **enter_draft_quality**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:576](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L576)*
+*Defined in [declarations/tput.d.ts:576](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L576)*
 
 **Parameters:**
 
@@ -4510,7 +4510,7 @@ ___
 
 ▸ **enter_horizontal_hl_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:649](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L649)*
+*Defined in [declarations/tput.d.ts:649](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L649)*
 
 **Parameters:**
 
@@ -4526,7 +4526,7 @@ ___
 
 ▸ **enter_insert_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:285](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L285)*
+*Defined in [declarations/tput.d.ts:285](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L285)*
 
 **Parameters:**
 
@@ -4542,7 +4542,7 @@ ___
 
 ▸ **enter_italics_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:577](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L577)*
+*Defined in [declarations/tput.d.ts:577](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L577)*
 
 **Parameters:**
 
@@ -4558,7 +4558,7 @@ ___
 
 ▸ **enter_left_hl_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:650](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L650)*
+*Defined in [declarations/tput.d.ts:650](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L650)*
 
 **Parameters:**
 
@@ -4574,7 +4574,7 @@ ___
 
 ▸ **enter_leftward_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:578](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L578)*
+*Defined in [declarations/tput.d.ts:578](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L578)*
 
 **Parameters:**
 
@@ -4590,7 +4590,7 @@ ___
 
 ▸ **enter_low_hl_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:651](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L651)*
+*Defined in [declarations/tput.d.ts:651](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L651)*
 
 **Parameters:**
 
@@ -4606,7 +4606,7 @@ ___
 
 ▸ **enter_micro_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:579](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L579)*
+*Defined in [declarations/tput.d.ts:579](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L579)*
 
 **Parameters:**
 
@@ -4622,7 +4622,7 @@ ___
 
 ▸ **enter_near_letter_quality**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:580](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L580)*
+*Defined in [declarations/tput.d.ts:580](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L580)*
 
 **Parameters:**
 
@@ -4638,7 +4638,7 @@ ___
 
 ▸ **enter_normal_quality**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:581](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L581)*
+*Defined in [declarations/tput.d.ts:581](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L581)*
 
 **Parameters:**
 
@@ -4654,7 +4654,7 @@ ___
 
 ▸ **enter_pc_charset_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:642](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L642)*
+*Defined in [declarations/tput.d.ts:642](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L642)*
 
 **Parameters:**
 
@@ -4670,7 +4670,7 @@ ___
 
 ▸ **enter_protected_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:436](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L436)*
+*Defined in [declarations/tput.d.ts:436](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L436)*
 
 **Parameters:**
 
@@ -4686,7 +4686,7 @@ ___
 
 ▸ **enter_reverse_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:287](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L287)*
+*Defined in [declarations/tput.d.ts:287](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L287)*
 
 **Parameters:**
 
@@ -4702,7 +4702,7 @@ ___
 
 ▸ **enter_right_hl_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:652](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L652)*
+*Defined in [declarations/tput.d.ts:652](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L652)*
 
 **Parameters:**
 
@@ -4718,7 +4718,7 @@ ___
 
 ▸ **enter_scancode_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:644](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L644)*
+*Defined in [declarations/tput.d.ts:644](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L644)*
 
 **Parameters:**
 
@@ -4734,7 +4734,7 @@ ___
 
 ▸ **enter_secure_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:286](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L286)*
+*Defined in [declarations/tput.d.ts:286](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L286)*
 
 **Parameters:**
 
@@ -4750,7 +4750,7 @@ ___
 
 ▸ **enter_shadow_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:582](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L582)*
+*Defined in [declarations/tput.d.ts:582](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L582)*
 
 **Parameters:**
 
@@ -4766,7 +4766,7 @@ ___
 
 ▸ **enter_standout_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:288](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L288)*
+*Defined in [declarations/tput.d.ts:288](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L288)*
 
 **Parameters:**
 
@@ -4782,7 +4782,7 @@ ___
 
 ▸ **enter_subscript_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:583](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L583)*
+*Defined in [declarations/tput.d.ts:583](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L583)*
 
 **Parameters:**
 
@@ -4798,7 +4798,7 @@ ___
 
 ▸ **enter_superscript_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:584](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L584)*
+*Defined in [declarations/tput.d.ts:584](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L584)*
 
 **Parameters:**
 
@@ -4814,7 +4814,7 @@ ___
 
 ▸ **enter_top_hl_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:653](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L653)*
+*Defined in [declarations/tput.d.ts:653](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L653)*
 
 **Parameters:**
 
@@ -4830,7 +4830,7 @@ ___
 
 ▸ **enter_underline_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:289](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L289)*
+*Defined in [declarations/tput.d.ts:289](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L289)*
 
 **Parameters:**
 
@@ -4846,7 +4846,7 @@ ___
 
 ▸ **enter_upward_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:585](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L585)*
+*Defined in [declarations/tput.d.ts:585](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L585)*
 
 **Parameters:**
 
@@ -4862,7 +4862,7 @@ ___
 
 ▸ **enter_vertical_hl_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:654](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L654)*
+*Defined in [declarations/tput.d.ts:654](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L654)*
 
 **Parameters:**
 
@@ -4878,7 +4878,7 @@ ___
 
 ▸ **enter_xon_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:487](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L487)*
+*Defined in [declarations/tput.d.ts:487](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L487)*
 
 **Parameters:**
 
@@ -4894,7 +4894,7 @@ ___
 
 ▸ **erase_chars**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:290](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L290)*
+*Defined in [declarations/tput.d.ts:290](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L290)*
 
 **Parameters:**
 
@@ -4910,7 +4910,7 @@ ___
 
 ▸ **erhlm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1061](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1061)*
+*Defined in [declarations/tput.d.ts:1061](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1061)*
 
 **Parameters:**
 
@@ -4926,7 +4926,7 @@ ___
 
 ▸ **ethlm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1062](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1062)*
+*Defined in [declarations/tput.d.ts:1062](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1062)*
 
 **Parameters:**
 
@@ -4942,7 +4942,7 @@ ___
 
 ▸ **evhlm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1063](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1063)*
+*Defined in [declarations/tput.d.ts:1063](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1063)*
 
 **Parameters:**
 
@@ -4958,7 +4958,7 @@ ___
 
 ▸ **exit_alt_charset_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:291](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L291)*
+*Defined in [declarations/tput.d.ts:291](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L291)*
 
 **Parameters:**
 
@@ -4974,7 +4974,7 @@ ___
 
 ▸ **exit_am_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:353](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L353)*
+*Defined in [declarations/tput.d.ts:353](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L353)*
 
 **Parameters:**
 
@@ -4990,7 +4990,7 @@ ___
 
 ▸ **exit_attribute_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:292](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L292)*
+*Defined in [declarations/tput.d.ts:292](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L292)*
 
 **Parameters:**
 
@@ -5006,7 +5006,7 @@ ___
 
 ▸ **exit_ca_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:293](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L293)*
+*Defined in [declarations/tput.d.ts:293](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L293)*
 
 **Parameters:**
 
@@ -5022,7 +5022,7 @@ ___
 
 ▸ **exit_delete_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:437](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L437)*
+*Defined in [declarations/tput.d.ts:437](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L437)*
 
 **Parameters:**
 
@@ -5038,7 +5038,7 @@ ___
 
 ▸ **exit_doublewide_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:586](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L586)*
+*Defined in [declarations/tput.d.ts:586](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L586)*
 
 **Parameters:**
 
@@ -5054,7 +5054,7 @@ ___
 
 ▸ **exit_insert_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:294](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L294)*
+*Defined in [declarations/tput.d.ts:294](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L294)*
 
 **Parameters:**
 
@@ -5070,7 +5070,7 @@ ___
 
 ▸ **exit_italics_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:587](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L587)*
+*Defined in [declarations/tput.d.ts:587](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L587)*
 
 **Parameters:**
 
@@ -5086,7 +5086,7 @@ ___
 
 ▸ **exit_leftward_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:588](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L588)*
+*Defined in [declarations/tput.d.ts:588](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L588)*
 
 **Parameters:**
 
@@ -5102,7 +5102,7 @@ ___
 
 ▸ **exit_micro_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:589](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L589)*
+*Defined in [declarations/tput.d.ts:589](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L589)*
 
 **Parameters:**
 
@@ -5118,7 +5118,7 @@ ___
 
 ▸ **exit_pc_charset_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:643](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L643)*
+*Defined in [declarations/tput.d.ts:643](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L643)*
 
 **Parameters:**
 
@@ -5134,7 +5134,7 @@ ___
 
 ▸ **exit_scancode_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:645](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L645)*
+*Defined in [declarations/tput.d.ts:645](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L645)*
 
 **Parameters:**
 
@@ -5150,7 +5150,7 @@ ___
 
 ▸ **exit_shadow_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:590](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L590)*
+*Defined in [declarations/tput.d.ts:590](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L590)*
 
 **Parameters:**
 
@@ -5166,7 +5166,7 @@ ___
 
 ▸ **exit_standout_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:295](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L295)*
+*Defined in [declarations/tput.d.ts:295](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L295)*
 
 **Parameters:**
 
@@ -5182,7 +5182,7 @@ ___
 
 ▸ **exit_subscript_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:591](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L591)*
+*Defined in [declarations/tput.d.ts:591](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L591)*
 
 **Parameters:**
 
@@ -5198,7 +5198,7 @@ ___
 
 ▸ **exit_superscript_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:592](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L592)*
+*Defined in [declarations/tput.d.ts:592](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L592)*
 
 **Parameters:**
 
@@ -5214,7 +5214,7 @@ ___
 
 ▸ **exit_underline_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:296](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L296)*
+*Defined in [declarations/tput.d.ts:296](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L296)*
 
 **Parameters:**
 
@@ -5230,7 +5230,7 @@ ___
 
 ▸ **exit_upward_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:593](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L593)*
+*Defined in [declarations/tput.d.ts:593](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L593)*
 
 **Parameters:**
 
@@ -5246,7 +5246,7 @@ ___
 
 ▸ **exit_xon_mode**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:488](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L488)*
+*Defined in [declarations/tput.d.ts:488](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L488)*
 
 **Parameters:**
 
@@ -5262,7 +5262,7 @@ ___
 
 ▸ **ff**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:849](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L849)*
+*Defined in [declarations/tput.d.ts:849](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L849)*
 
 **Parameters:**
 
@@ -5278,7 +5278,7 @@ ___
 
 ▸ **fixed_pause**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:557](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L557)*
+*Defined in [declarations/tput.d.ts:557](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L557)*
 
 **Parameters:**
 
@@ -5294,7 +5294,7 @@ ___
 
 ▸ **flash**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:711](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L711)*
+*Defined in [declarations/tput.d.ts:711](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L711)*
 
 **Parameters:**
 
@@ -5310,7 +5310,7 @@ ___
 
 ▸ **flash_hook**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:556](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L556)*
+*Defined in [declarations/tput.d.ts:556](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L556)*
 
 **Parameters:**
 
@@ -5326,7 +5326,7 @@ ___
 
 ▸ **flash_screen**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:297](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L297)*
+*Defined in [declarations/tput.d.ts:297](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L297)*
 
 **Parameters:**
 
@@ -5342,7 +5342,7 @@ ___
 
 ▸ **fln**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:956](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L956)*
+*Defined in [declarations/tput.d.ts:956](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L956)*
 
 **Parameters:**
 
@@ -5358,7 +5358,7 @@ ___
 
 ▸ **form_feed**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:438](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L438)*
+*Defined in [declarations/tput.d.ts:438](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L438)*
 
 **Parameters:**
 
@@ -5374,7 +5374,7 @@ ___
 
 ▸ **from_status_line**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:439](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L439)*
+*Defined in [declarations/tput.d.ts:439](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L439)*
 
 **Parameters:**
 
@@ -5390,7 +5390,7 @@ ___
 
 ▸ **fsl**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:850](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L850)*
+*Defined in [declarations/tput.d.ts:850](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L850)*
 
 **Parameters:**
 
@@ -5406,7 +5406,7 @@ ___
 
 ▸ **get_mouse**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:623](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L623)*
+*Defined in [declarations/tput.d.ts:623](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L623)*
 
 **Parameters:**
 
@@ -5422,7 +5422,7 @@ ___
 
 ▸ **getm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1032](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1032)*
+*Defined in [declarations/tput.d.ts:1032](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1032)*
 
 **Parameters:**
 
@@ -5438,7 +5438,7 @@ ___
 
 ▸ **goto_window**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:550](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L550)*
+*Defined in [declarations/tput.d.ts:550](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L550)*
 
 **Parameters:**
 
@@ -5454,7 +5454,7 @@ ___
 
 ▸ **hangup**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:551](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L551)*
+*Defined in [declarations/tput.d.ts:551](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L551)*
 
 **Parameters:**
 
@@ -5470,7 +5470,7 @@ ___
 
 ▸ **hd**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:844](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L844)*
+*Defined in [declarations/tput.d.ts:844](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L844)*
 
 **Parameters:**
 
@@ -5486,7 +5486,7 @@ ___
 
 ▸ **home**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:686](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L686)*
+*Defined in [declarations/tput.d.ts:686](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L686)*
 
 **Parameters:**
 
@@ -5502,7 +5502,7 @@ ___
 
 ▸ **hook**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:965](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L965)*
+*Defined in [declarations/tput.d.ts:965](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L965)*
 
 **Parameters:**
 
@@ -5518,7 +5518,7 @@ ___
 
 ▸ **hpa**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:683](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L683)*
+*Defined in [declarations/tput.d.ts:683](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L683)*
 
 **Parameters:**
 
@@ -5534,7 +5534,7 @@ ___
 
 ▸ **ht**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:762](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L762)*
+*Defined in [declarations/tput.d.ts:762](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L762)*
 
 **Parameters:**
 
@@ -5550,7 +5550,7 @@ ___
 
 ▸ **hts**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:761](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L761)*
+*Defined in [declarations/tput.d.ts:761](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L761)*
 
 **Parameters:**
 
@@ -5566,7 +5566,7 @@ ___
 
 ▸ **hu**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:889](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L889)*
+*Defined in [declarations/tput.d.ts:889](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L889)*
 
 **Parameters:**
 
@@ -5582,7 +5582,7 @@ ___
 
 ▸ **hup**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:962](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L962)*
+*Defined in [declarations/tput.d.ts:962](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L962)*
 
 **Parameters:**
 
@@ -5598,7 +5598,7 @@ ___
 
 ▸ **ich**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:743](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L743)*
+*Defined in [declarations/tput.d.ts:743](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L743)*
 
 **Parameters:**
 
@@ -5614,7 +5614,7 @@ ___
 
 ▸ **ich1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:854](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L854)*
+*Defined in [declarations/tput.d.ts:854](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L854)*
 
 **Parameters:**
 
@@ -5630,7 +5630,7 @@ ___
 
 ▸ **if**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:853](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L853)*
+*Defined in [declarations/tput.d.ts:853](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L853)*
 
 **Parameters:**
 
@@ -5646,7 +5646,7 @@ ___
 
 ▸ **il**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:745](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L745)*
+*Defined in [declarations/tput.d.ts:745](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L745)*
 
 **Parameters:**
 
@@ -5662,7 +5662,7 @@ ___
 
 ▸ **il1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:713](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L713)*
+*Defined in [declarations/tput.d.ts:713](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L713)*
 
 **Parameters:**
 
@@ -5678,7 +5678,7 @@ ___
 
 ▸ **ind**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:758](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L758)*
+*Defined in [declarations/tput.d.ts:758](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L758)*
 
 **Parameters:**
 
@@ -5694,7 +5694,7 @@ ___
 
 ▸ **indn**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:744](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L744)*
+*Defined in [declarations/tput.d.ts:744](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L744)*
 
 **Parameters:**
 
@@ -5710,7 +5710,7 @@ ___
 
 ▸ **init_1string**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:440](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L440)*
+*Defined in [declarations/tput.d.ts:440](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L440)*
 
 **Parameters:**
 
@@ -5726,7 +5726,7 @@ ___
 
 ▸ **init_2string**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:298](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L298)*
+*Defined in [declarations/tput.d.ts:298](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L298)*
 
 **Parameters:**
 
@@ -5742,7 +5742,7 @@ ___
 
 ▸ **init_3string**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:441](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L441)*
+*Defined in [declarations/tput.d.ts:441](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L441)*
 
 **Parameters:**
 
@@ -5758,7 +5758,7 @@ ___
 
 ▸ **init_file**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:442](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L442)*
+*Defined in [declarations/tput.d.ts:442](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L442)*
 
 **Parameters:**
 
@@ -5774,7 +5774,7 @@ ___
 
 ▸ **init_prog**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:479](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L479)*
+*Defined in [declarations/tput.d.ts:479](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L479)*
 
 **Parameters:**
 
@@ -5790,7 +5790,7 @@ ___
 
 ▸ **initc**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:836](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L836)*
+*Defined in [declarations/tput.d.ts:836](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L836)*
 
 **Parameters:**
 
@@ -5806,7 +5806,7 @@ ___
 
 ▸ **initialize_color**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:423](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L423)*
+*Defined in [declarations/tput.d.ts:423](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L423)*
 
 **Parameters:**
 
@@ -5822,7 +5822,7 @@ ___
 
 ▸ **initialize_pair**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:566](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L566)*
+*Defined in [declarations/tput.d.ts:566](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L566)*
 
 **Parameters:**
 
@@ -5838,7 +5838,7 @@ ___
 
 ▸ **initp**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:975](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L975)*
+*Defined in [declarations/tput.d.ts:975](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L975)*
 
 **Parameters:**
 
@@ -5854,7 +5854,7 @@ ___
 
 ▸ **insert_character**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:443](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L443)*
+*Defined in [declarations/tput.d.ts:443](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L443)*
 
 **Parameters:**
 
@@ -5870,7 +5870,7 @@ ___
 
 ▸ **insert_line**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:299](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L299)*
+*Defined in [declarations/tput.d.ts:299](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L299)*
 
 **Parameters:**
 
@@ -5886,7 +5886,7 @@ ___
 
 ▸ **insert_padding**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:444](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L444)*
+*Defined in [declarations/tput.d.ts:444](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L444)*
 
 **Parameters:**
 
@@ -5902,7 +5902,7 @@ ___
 
 ▸ **invis**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:700](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L700)*
+*Defined in [declarations/tput.d.ts:700](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L700)*
 
 **Parameters:**
 
@@ -5918,7 +5918,7 @@ ___
 
 ▸ **ip**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:855](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L855)*
+*Defined in [declarations/tput.d.ts:855](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L855)*
 
 **Parameters:**
 
@@ -5934,7 +5934,7 @@ ___
 
 ▸ **iprog**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:890](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L890)*
+*Defined in [declarations/tput.d.ts:890](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L890)*
 
 **Parameters:**
 
@@ -5950,7 +5950,7 @@ ___
 
 ▸ **is1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:851](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L851)*
+*Defined in [declarations/tput.d.ts:851](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L851)*
 
 **Parameters:**
 
@@ -5966,7 +5966,7 @@ ___
 
 ▸ **is2**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:712](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L712)*
+*Defined in [declarations/tput.d.ts:712](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L712)*
 
 **Parameters:**
 
@@ -5982,7 +5982,7 @@ ___
 
 ▸ **is3**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:852](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L852)*
+*Defined in [declarations/tput.d.ts:852](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L852)*
 
 **Parameters:**
 
@@ -5998,7 +5998,7 @@ ___
 
 ▸ **kBEG**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:931](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L931)*
+*Defined in [declarations/tput.d.ts:931](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L931)*
 
 **Parameters:**
 
@@ -6014,7 +6014,7 @@ ___
 
 ▸ **kCAN**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:932](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L932)*
+*Defined in [declarations/tput.d.ts:932](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L932)*
 
 **Parameters:**
 
@@ -6030,7 +6030,7 @@ ___
 
 ▸ **kCMD**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:933](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L933)*
+*Defined in [declarations/tput.d.ts:933](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L933)*
 
 **Parameters:**
 
@@ -6046,7 +6046,7 @@ ___
 
 ▸ **kCPY**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:934](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L934)*
+*Defined in [declarations/tput.d.ts:934](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L934)*
 
 **Parameters:**
 
@@ -6062,7 +6062,7 @@ ___
 
 ▸ **kCRT**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:935](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L935)*
+*Defined in [declarations/tput.d.ts:935](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L935)*
 
 **Parameters:**
 
@@ -6078,7 +6078,7 @@ ___
 
 ▸ **kDC**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:769](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L769)*
+*Defined in [declarations/tput.d.ts:769](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L769)*
 
 **Parameters:**
 
@@ -6094,7 +6094,7 @@ ___
 
 ▸ **kDL**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:936](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L936)*
+*Defined in [declarations/tput.d.ts:936](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L936)*
 
 **Parameters:**
 
@@ -6110,7 +6110,7 @@ ___
 
 ▸ **kEND**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:770](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L770)*
+*Defined in [declarations/tput.d.ts:770](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L770)*
 
 **Parameters:**
 
@@ -6126,7 +6126,7 @@ ___
 
 ▸ **kEOL**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:938](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L938)*
+*Defined in [declarations/tput.d.ts:938](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L938)*
 
 **Parameters:**
 
@@ -6142,7 +6142,7 @@ ___
 
 ▸ **kEXT**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:939](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L939)*
+*Defined in [declarations/tput.d.ts:939](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L939)*
 
 **Parameters:**
 
@@ -6158,7 +6158,7 @@ ___
 
 ▸ **kFND**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:940](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L940)*
+*Defined in [declarations/tput.d.ts:940](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L940)*
 
 **Parameters:**
 
@@ -6174,7 +6174,7 @@ ___
 
 ▸ **kHLP**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:941](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L941)*
+*Defined in [declarations/tput.d.ts:941](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L941)*
 
 **Parameters:**
 
@@ -6190,7 +6190,7 @@ ___
 
 ▸ **kHOM**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:771](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L771)*
+*Defined in [declarations/tput.d.ts:771](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L771)*
 
 **Parameters:**
 
@@ -6206,7 +6206,7 @@ ___
 
 ▸ **kIC**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:772](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L772)*
+*Defined in [declarations/tput.d.ts:772](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L772)*
 
 **Parameters:**
 
@@ -6222,7 +6222,7 @@ ___
 
 ▸ **kLFT**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:773](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L773)*
+*Defined in [declarations/tput.d.ts:773](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L773)*
 
 **Parameters:**
 
@@ -6238,7 +6238,7 @@ ___
 
 ▸ **kMOV**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:943](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L943)*
+*Defined in [declarations/tput.d.ts:943](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L943)*
 
 **Parameters:**
 
@@ -6254,7 +6254,7 @@ ___
 
 ▸ **kMSG**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:942](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L942)*
+*Defined in [declarations/tput.d.ts:942](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L942)*
 
 **Parameters:**
 
@@ -6270,7 +6270,7 @@ ___
 
 ▸ **kNXT**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:774](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L774)*
+*Defined in [declarations/tput.d.ts:774](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L774)*
 
 **Parameters:**
 
@@ -6286,7 +6286,7 @@ ___
 
 ▸ **kOPT**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:944](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L944)*
+*Defined in [declarations/tput.d.ts:944](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L944)*
 
 **Parameters:**
 
@@ -6302,7 +6302,7 @@ ___
 
 ▸ **kPRT**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:945](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L945)*
+*Defined in [declarations/tput.d.ts:945](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L945)*
 
 **Parameters:**
 
@@ -6318,7 +6318,7 @@ ___
 
 ▸ **kPRV**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:775](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L775)*
+*Defined in [declarations/tput.d.ts:775](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L775)*
 
 **Parameters:**
 
@@ -6334,7 +6334,7 @@ ___
 
 ▸ **kRDO**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:946](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L946)*
+*Defined in [declarations/tput.d.ts:946](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L946)*
 
 **Parameters:**
 
@@ -6350,7 +6350,7 @@ ___
 
 ▸ **kRES**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:948](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L948)*
+*Defined in [declarations/tput.d.ts:948](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L948)*
 
 **Parameters:**
 
@@ -6366,7 +6366,7 @@ ___
 
 ▸ **kRIT**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:776](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L776)*
+*Defined in [declarations/tput.d.ts:776](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L776)*
 
 **Parameters:**
 
@@ -6382,7 +6382,7 @@ ___
 
 ▸ **kRPL**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:947](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L947)*
+*Defined in [declarations/tput.d.ts:947](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L947)*
 
 **Parameters:**
 
@@ -6398,7 +6398,7 @@ ___
 
 ▸ **kSAV**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:949](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L949)*
+*Defined in [declarations/tput.d.ts:949](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L949)*
 
 **Parameters:**
 
@@ -6414,7 +6414,7 @@ ___
 
 ▸ **kSPD**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:950](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L950)*
+*Defined in [declarations/tput.d.ts:950](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L950)*
 
 **Parameters:**
 
@@ -6430,7 +6430,7 @@ ___
 
 ▸ **kUND**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:951](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L951)*
+*Defined in [declarations/tput.d.ts:951](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L951)*
 
 **Parameters:**
 
@@ -6446,7 +6446,7 @@ ___
 
 ▸ **ka1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:891](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L891)*
+*Defined in [declarations/tput.d.ts:891](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L891)*
 
 **Parameters:**
 
@@ -6462,7 +6462,7 @@ ___
 
 ▸ **ka3**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:892](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L892)*
+*Defined in [declarations/tput.d.ts:892](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L892)*
 
 **Parameters:**
 
@@ -6478,7 +6478,7 @@ ___
 
 ▸ **kb2**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:763](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L763)*
+*Defined in [declarations/tput.d.ts:763](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L763)*
 
 **Parameters:**
 
@@ -6494,7 +6494,7 @@ ___
 
 ▸ **kbeg**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:905](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L905)*
+*Defined in [declarations/tput.d.ts:905](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L905)*
 
 **Parameters:**
 
@@ -6510,7 +6510,7 @@ ___
 
 ▸ **kbs**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:714](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L714)*
+*Defined in [declarations/tput.d.ts:714](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L714)*
 
 **Parameters:**
 
@@ -6526,7 +6526,7 @@ ___
 
 ▸ **kc1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:893](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L893)*
+*Defined in [declarations/tput.d.ts:893](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L893)*
 
 **Parameters:**
 
@@ -6542,7 +6542,7 @@ ___
 
 ▸ **kc3**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:894](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L894)*
+*Defined in [declarations/tput.d.ts:894](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L894)*
 
 **Parameters:**
 
@@ -6558,7 +6558,7 @@ ___
 
 ▸ **kcan**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:906](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L906)*
+*Defined in [declarations/tput.d.ts:906](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L906)*
 
 **Parameters:**
 
@@ -6574,7 +6574,7 @@ ___
 
 ▸ **kcbt**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:764](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L764)*
+*Defined in [declarations/tput.d.ts:764](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L764)*
 
 **Parameters:**
 
@@ -6590,7 +6590,7 @@ ___
 
 ▸ **kclo**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:907](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L907)*
+*Defined in [declarations/tput.d.ts:907](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L907)*
 
 **Parameters:**
 
@@ -6606,7 +6606,7 @@ ___
 
 ▸ **kclr**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:857](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L857)*
+*Defined in [declarations/tput.d.ts:857](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L857)*
 
 **Parameters:**
 
@@ -6622,7 +6622,7 @@ ___
 
 ▸ **kcmd**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:908](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L908)*
+*Defined in [declarations/tput.d.ts:908](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L908)*
 
 **Parameters:**
 
@@ -6638,7 +6638,7 @@ ___
 
 ▸ **kcpy**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:909](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L909)*
+*Defined in [declarations/tput.d.ts:909](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L909)*
 
 **Parameters:**
 
@@ -6654,7 +6654,7 @@ ___
 
 ▸ **kcrt**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:910](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L910)*
+*Defined in [declarations/tput.d.ts:910](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L910)*
 
 **Parameters:**
 
@@ -6670,7 +6670,7 @@ ___
 
 ▸ **kctab**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:858](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L858)*
+*Defined in [declarations/tput.d.ts:858](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L858)*
 
 **Parameters:**
 
@@ -6686,7 +6686,7 @@ ___
 
 ▸ **kcub1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:729](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L729)*
+*Defined in [declarations/tput.d.ts:729](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L729)*
 
 **Parameters:**
 
@@ -6702,7 +6702,7 @@ ___
 
 ▸ **kcud1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:716](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L716)*
+*Defined in [declarations/tput.d.ts:716](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L716)*
 
 **Parameters:**
 
@@ -6718,7 +6718,7 @@ ___
 
 ▸ **kcuf1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:732](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L732)*
+*Defined in [declarations/tput.d.ts:732](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L732)*
 
 **Parameters:**
 
@@ -6734,7 +6734,7 @@ ___
 
 ▸ **kcuu1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:735](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L735)*
+*Defined in [declarations/tput.d.ts:735](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L735)*
 
 **Parameters:**
 
@@ -6750,7 +6750,7 @@ ___
 
 ▸ **kdch1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:715](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L715)*
+*Defined in [declarations/tput.d.ts:715](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L715)*
 
 **Parameters:**
 
@@ -6766,7 +6766,7 @@ ___
 
 ▸ **kdl1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:859](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L859)*
+*Defined in [declarations/tput.d.ts:859](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L859)*
 
 **Parameters:**
 
@@ -6782,7 +6782,7 @@ ___
 
 ▸ **ked**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:862](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L862)*
+*Defined in [declarations/tput.d.ts:862](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L862)*
 
 **Parameters:**
 
@@ -6798,7 +6798,7 @@ ___
 
 ▸ **kel**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:861](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L861)*
+*Defined in [declarations/tput.d.ts:861](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L861)*
 
 **Parameters:**
 
@@ -6814,7 +6814,7 @@ ___
 
 ▸ **kend**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:767](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L767)*
+*Defined in [declarations/tput.d.ts:767](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L767)*
 
 **Parameters:**
 
@@ -6830,7 +6830,7 @@ ___
 
 ▸ **kent**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:768](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L768)*
+*Defined in [declarations/tput.d.ts:768](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L768)*
 
 **Parameters:**
 
@@ -6846,7 +6846,7 @@ ___
 
 ▸ **kext**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:911](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L911)*
+*Defined in [declarations/tput.d.ts:911](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L911)*
 
 **Parameters:**
 
@@ -6862,7 +6862,7 @@ ___
 
 ▸ **key_a1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:480](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L480)*
+*Defined in [declarations/tput.d.ts:480](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L480)*
 
 **Parameters:**
 
@@ -6878,7 +6878,7 @@ ___
 
 ▸ **key_a3**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:481](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L481)*
+*Defined in [declarations/tput.d.ts:481](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L481)*
 
 **Parameters:**
 
@@ -6894,7 +6894,7 @@ ___
 
 ▸ **key_b2**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:349](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L349)*
+*Defined in [declarations/tput.d.ts:349](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L349)*
 
 **Parameters:**
 
@@ -6910,7 +6910,7 @@ ___
 
 ▸ **key_backspace**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:300](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L300)*
+*Defined in [declarations/tput.d.ts:300](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L300)*
 
 **Parameters:**
 
@@ -6926,7 +6926,7 @@ ___
 
 ▸ **key_beg**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:494](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L494)*
+*Defined in [declarations/tput.d.ts:494](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L494)*
 
 **Parameters:**
 
@@ -6942,7 +6942,7 @@ ___
 
 ▸ **key_btab**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:351](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L351)*
+*Defined in [declarations/tput.d.ts:351](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L351)*
 
 **Parameters:**
 
@@ -6958,7 +6958,7 @@ ___
 
 ▸ **key_c1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:482](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L482)*
+*Defined in [declarations/tput.d.ts:482](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L482)*
 
 **Parameters:**
 
@@ -6974,7 +6974,7 @@ ___
 
 ▸ **key_c3**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:483](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L483)*
+*Defined in [declarations/tput.d.ts:483](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L483)*
 
 **Parameters:**
 
@@ -6990,7 +6990,7 @@ ___
 
 ▸ **key_cancel**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:495](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L495)*
+*Defined in [declarations/tput.d.ts:495](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L495)*
 
 **Parameters:**
 
@@ -7006,7 +7006,7 @@ ___
 
 ▸ **key_catab**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:445](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L445)*
+*Defined in [declarations/tput.d.ts:445](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L445)*
 
 **Parameters:**
 
@@ -7022,7 +7022,7 @@ ___
 
 ▸ **key_clear**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:446](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L446)*
+*Defined in [declarations/tput.d.ts:446](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L446)*
 
 **Parameters:**
 
@@ -7038,7 +7038,7 @@ ___
 
 ▸ **key_close**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:496](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L496)*
+*Defined in [declarations/tput.d.ts:496](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L496)*
 
 **Parameters:**
 
@@ -7054,7 +7054,7 @@ ___
 
 ▸ **key_command**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:497](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L497)*
+*Defined in [declarations/tput.d.ts:497](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L497)*
 
 **Parameters:**
 
@@ -7070,7 +7070,7 @@ ___
 
 ▸ **key_copy**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:498](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L498)*
+*Defined in [declarations/tput.d.ts:498](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L498)*
 
 **Parameters:**
 
@@ -7086,7 +7086,7 @@ ___
 
 ▸ **key_create**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:499](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L499)*
+*Defined in [declarations/tput.d.ts:499](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L499)*
 
 **Parameters:**
 
@@ -7102,7 +7102,7 @@ ___
 
 ▸ **key_ctab**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:447](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L447)*
+*Defined in [declarations/tput.d.ts:447](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L447)*
 
 **Parameters:**
 
@@ -7118,7 +7118,7 @@ ___
 
 ▸ **key_dc**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:301](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L301)*
+*Defined in [declarations/tput.d.ts:301](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L301)*
 
 **Parameters:**
 
@@ -7134,7 +7134,7 @@ ___
 
 ▸ **key_dl**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:448](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L448)*
+*Defined in [declarations/tput.d.ts:448](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L448)*
 
 **Parameters:**
 
@@ -7150,7 +7150,7 @@ ___
 
 ▸ **key_down**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:302](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L302)*
+*Defined in [declarations/tput.d.ts:302](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L302)*
 
 **Parameters:**
 
@@ -7166,7 +7166,7 @@ ___
 
 ▸ **key_eic**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:449](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L449)*
+*Defined in [declarations/tput.d.ts:449](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L449)*
 
 **Parameters:**
 
@@ -7182,7 +7182,7 @@ ___
 
 ▸ **key_end**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:354](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L354)*
+*Defined in [declarations/tput.d.ts:354](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L354)*
 
 **Parameters:**
 
@@ -7198,7 +7198,7 @@ ___
 
 ▸ **key_enter**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:355](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L355)*
+*Defined in [declarations/tput.d.ts:355](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L355)*
 
 **Parameters:**
 
@@ -7214,7 +7214,7 @@ ___
 
 ▸ **key_eol**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:450](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L450)*
+*Defined in [declarations/tput.d.ts:450](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L450)*
 
 **Parameters:**
 
@@ -7230,7 +7230,7 @@ ___
 
 ▸ **key_eos**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:451](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L451)*
+*Defined in [declarations/tput.d.ts:451](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L451)*
 
 **Parameters:**
 
@@ -7246,7 +7246,7 @@ ___
 
 ▸ **key_exit**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:500](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L500)*
+*Defined in [declarations/tput.d.ts:500](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L500)*
 
 **Parameters:**
 
@@ -7262,7 +7262,7 @@ ___
 
 ▸ **key_f0**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:452](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L452)*
+*Defined in [declarations/tput.d.ts:452](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L452)*
 
 **Parameters:**
 
@@ -7278,7 +7278,7 @@ ___
 
 ▸ **key_f1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:303](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L303)*
+*Defined in [declarations/tput.d.ts:303](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L303)*
 
 **Parameters:**
 
@@ -7294,7 +7294,7 @@ ___
 
 ▸ **key_f10**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:304](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L304)*
+*Defined in [declarations/tput.d.ts:304](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L304)*
 
 **Parameters:**
 
@@ -7310,7 +7310,7 @@ ___
 
 ▸ **key_f11**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:364](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L364)*
+*Defined in [declarations/tput.d.ts:364](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L364)*
 
 **Parameters:**
 
@@ -7326,7 +7326,7 @@ ___
 
 ▸ **key_f12**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:365](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L365)*
+*Defined in [declarations/tput.d.ts:365](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L365)*
 
 **Parameters:**
 
@@ -7342,7 +7342,7 @@ ___
 
 ▸ **key_f13**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:366](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L366)*
+*Defined in [declarations/tput.d.ts:366](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L366)*
 
 **Parameters:**
 
@@ -7358,7 +7358,7 @@ ___
 
 ▸ **key_f14**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:367](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L367)*
+*Defined in [declarations/tput.d.ts:367](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L367)*
 
 **Parameters:**
 
@@ -7374,7 +7374,7 @@ ___
 
 ▸ **key_f15**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:368](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L368)*
+*Defined in [declarations/tput.d.ts:368](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L368)*
 
 **Parameters:**
 
@@ -7390,7 +7390,7 @@ ___
 
 ▸ **key_f16**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:369](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L369)*
+*Defined in [declarations/tput.d.ts:369](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L369)*
 
 **Parameters:**
 
@@ -7406,7 +7406,7 @@ ___
 
 ▸ **key_f17**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:370](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L370)*
+*Defined in [declarations/tput.d.ts:370](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L370)*
 
 **Parameters:**
 
@@ -7422,7 +7422,7 @@ ___
 
 ▸ **key_f18**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:371](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L371)*
+*Defined in [declarations/tput.d.ts:371](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L371)*
 
 **Parameters:**
 
@@ -7438,7 +7438,7 @@ ___
 
 ▸ **key_f19**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:372](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L372)*
+*Defined in [declarations/tput.d.ts:372](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L372)*
 
 **Parameters:**
 
@@ -7454,7 +7454,7 @@ ___
 
 ▸ **key_f2**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:305](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L305)*
+*Defined in [declarations/tput.d.ts:305](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L305)*
 
 **Parameters:**
 
@@ -7470,7 +7470,7 @@ ___
 
 ▸ **key_f20**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:373](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L373)*
+*Defined in [declarations/tput.d.ts:373](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L373)*
 
 **Parameters:**
 
@@ -7486,7 +7486,7 @@ ___
 
 ▸ **key_f21**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:374](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L374)*
+*Defined in [declarations/tput.d.ts:374](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L374)*
 
 **Parameters:**
 
@@ -7502,7 +7502,7 @@ ___
 
 ▸ **key_f22**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:375](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L375)*
+*Defined in [declarations/tput.d.ts:375](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L375)*
 
 **Parameters:**
 
@@ -7518,7 +7518,7 @@ ___
 
 ▸ **key_f23**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:376](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L376)*
+*Defined in [declarations/tput.d.ts:376](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L376)*
 
 **Parameters:**
 
@@ -7534,7 +7534,7 @@ ___
 
 ▸ **key_f24**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:377](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L377)*
+*Defined in [declarations/tput.d.ts:377](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L377)*
 
 **Parameters:**
 
@@ -7550,7 +7550,7 @@ ___
 
 ▸ **key_f25**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:378](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L378)*
+*Defined in [declarations/tput.d.ts:378](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L378)*
 
 **Parameters:**
 
@@ -7566,7 +7566,7 @@ ___
 
 ▸ **key_f26**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:379](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L379)*
+*Defined in [declarations/tput.d.ts:379](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L379)*
 
 **Parameters:**
 
@@ -7582,7 +7582,7 @@ ___
 
 ▸ **key_f27**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:380](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L380)*
+*Defined in [declarations/tput.d.ts:380](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L380)*
 
 **Parameters:**
 
@@ -7598,7 +7598,7 @@ ___
 
 ▸ **key_f28**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:381](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L381)*
+*Defined in [declarations/tput.d.ts:381](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L381)*
 
 **Parameters:**
 
@@ -7614,7 +7614,7 @@ ___
 
 ▸ **key_f29**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:382](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L382)*
+*Defined in [declarations/tput.d.ts:382](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L382)*
 
 **Parameters:**
 
@@ -7630,7 +7630,7 @@ ___
 
 ▸ **key_f3**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:306](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L306)*
+*Defined in [declarations/tput.d.ts:306](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L306)*
 
 **Parameters:**
 
@@ -7646,7 +7646,7 @@ ___
 
 ▸ **key_f30**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:383](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L383)*
+*Defined in [declarations/tput.d.ts:383](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L383)*
 
 **Parameters:**
 
@@ -7662,7 +7662,7 @@ ___
 
 ▸ **key_f31**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:384](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L384)*
+*Defined in [declarations/tput.d.ts:384](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L384)*
 
 **Parameters:**
 
@@ -7678,7 +7678,7 @@ ___
 
 ▸ **key_f32**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:385](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L385)*
+*Defined in [declarations/tput.d.ts:385](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L385)*
 
 **Parameters:**
 
@@ -7694,7 +7694,7 @@ ___
 
 ▸ **key_f33**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:386](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L386)*
+*Defined in [declarations/tput.d.ts:386](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L386)*
 
 **Parameters:**
 
@@ -7710,7 +7710,7 @@ ___
 
 ▸ **key_f34**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:387](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L387)*
+*Defined in [declarations/tput.d.ts:387](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L387)*
 
 **Parameters:**
 
@@ -7726,7 +7726,7 @@ ___
 
 ▸ **key_f35**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:388](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L388)*
+*Defined in [declarations/tput.d.ts:388](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L388)*
 
 **Parameters:**
 
@@ -7742,7 +7742,7 @@ ___
 
 ▸ **key_f36**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:389](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L389)*
+*Defined in [declarations/tput.d.ts:389](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L389)*
 
 **Parameters:**
 
@@ -7758,7 +7758,7 @@ ___
 
 ▸ **key_f37**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:390](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L390)*
+*Defined in [declarations/tput.d.ts:390](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L390)*
 
 **Parameters:**
 
@@ -7774,7 +7774,7 @@ ___
 
 ▸ **key_f38**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:391](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L391)*
+*Defined in [declarations/tput.d.ts:391](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L391)*
 
 **Parameters:**
 
@@ -7790,7 +7790,7 @@ ___
 
 ▸ **key_f39**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:392](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L392)*
+*Defined in [declarations/tput.d.ts:392](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L392)*
 
 **Parameters:**
 
@@ -7806,7 +7806,7 @@ ___
 
 ▸ **key_f4**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:307](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L307)*
+*Defined in [declarations/tput.d.ts:307](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L307)*
 
 **Parameters:**
 
@@ -7822,7 +7822,7 @@ ___
 
 ▸ **key_f40**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:393](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L393)*
+*Defined in [declarations/tput.d.ts:393](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L393)*
 
 **Parameters:**
 
@@ -7838,7 +7838,7 @@ ___
 
 ▸ **key_f41**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:394](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L394)*
+*Defined in [declarations/tput.d.ts:394](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L394)*
 
 **Parameters:**
 
@@ -7854,7 +7854,7 @@ ___
 
 ▸ **key_f42**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:395](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L395)*
+*Defined in [declarations/tput.d.ts:395](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L395)*
 
 **Parameters:**
 
@@ -7870,7 +7870,7 @@ ___
 
 ▸ **key_f43**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:396](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L396)*
+*Defined in [declarations/tput.d.ts:396](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L396)*
 
 **Parameters:**
 
@@ -7886,7 +7886,7 @@ ___
 
 ▸ **key_f44**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:397](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L397)*
+*Defined in [declarations/tput.d.ts:397](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L397)*
 
 **Parameters:**
 
@@ -7902,7 +7902,7 @@ ___
 
 ▸ **key_f45**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:398](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L398)*
+*Defined in [declarations/tput.d.ts:398](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L398)*
 
 **Parameters:**
 
@@ -7918,7 +7918,7 @@ ___
 
 ▸ **key_f46**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:399](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L399)*
+*Defined in [declarations/tput.d.ts:399](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L399)*
 
 **Parameters:**
 
@@ -7934,7 +7934,7 @@ ___
 
 ▸ **key_f47**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:400](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L400)*
+*Defined in [declarations/tput.d.ts:400](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L400)*
 
 **Parameters:**
 
@@ -7950,7 +7950,7 @@ ___
 
 ▸ **key_f48**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:401](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L401)*
+*Defined in [declarations/tput.d.ts:401](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L401)*
 
 **Parameters:**
 
@@ -7966,7 +7966,7 @@ ___
 
 ▸ **key_f49**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:402](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L402)*
+*Defined in [declarations/tput.d.ts:402](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L402)*
 
 **Parameters:**
 
@@ -7982,7 +7982,7 @@ ___
 
 ▸ **key_f5**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:308](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L308)*
+*Defined in [declarations/tput.d.ts:308](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L308)*
 
 **Parameters:**
 
@@ -7998,7 +7998,7 @@ ___
 
 ▸ **key_f50**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:403](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L403)*
+*Defined in [declarations/tput.d.ts:403](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L403)*
 
 **Parameters:**
 
@@ -8014,7 +8014,7 @@ ___
 
 ▸ **key_f51**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:404](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L404)*
+*Defined in [declarations/tput.d.ts:404](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L404)*
 
 **Parameters:**
 
@@ -8030,7 +8030,7 @@ ___
 
 ▸ **key_f52**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:405](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L405)*
+*Defined in [declarations/tput.d.ts:405](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L405)*
 
 **Parameters:**
 
@@ -8046,7 +8046,7 @@ ___
 
 ▸ **key_f53**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:406](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L406)*
+*Defined in [declarations/tput.d.ts:406](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L406)*
 
 **Parameters:**
 
@@ -8062,7 +8062,7 @@ ___
 
 ▸ **key_f54**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:407](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L407)*
+*Defined in [declarations/tput.d.ts:407](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L407)*
 
 **Parameters:**
 
@@ -8078,7 +8078,7 @@ ___
 
 ▸ **key_f55**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:408](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L408)*
+*Defined in [declarations/tput.d.ts:408](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L408)*
 
 **Parameters:**
 
@@ -8094,7 +8094,7 @@ ___
 
 ▸ **key_f56**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:409](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L409)*
+*Defined in [declarations/tput.d.ts:409](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L409)*
 
 **Parameters:**
 
@@ -8110,7 +8110,7 @@ ___
 
 ▸ **key_f57**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:410](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L410)*
+*Defined in [declarations/tput.d.ts:410](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L410)*
 
 **Parameters:**
 
@@ -8126,7 +8126,7 @@ ___
 
 ▸ **key_f58**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:411](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L411)*
+*Defined in [declarations/tput.d.ts:411](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L411)*
 
 **Parameters:**
 
@@ -8142,7 +8142,7 @@ ___
 
 ▸ **key_f59**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:412](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L412)*
+*Defined in [declarations/tput.d.ts:412](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L412)*
 
 **Parameters:**
 
@@ -8158,7 +8158,7 @@ ___
 
 ▸ **key_f6**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:309](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L309)*
+*Defined in [declarations/tput.d.ts:309](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L309)*
 
 **Parameters:**
 
@@ -8174,7 +8174,7 @@ ___
 
 ▸ **key_f60**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:413](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L413)*
+*Defined in [declarations/tput.d.ts:413](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L413)*
 
 **Parameters:**
 
@@ -8190,7 +8190,7 @@ ___
 
 ▸ **key_f61**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:414](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L414)*
+*Defined in [declarations/tput.d.ts:414](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L414)*
 
 **Parameters:**
 
@@ -8206,7 +8206,7 @@ ___
 
 ▸ **key_f62**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:415](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L415)*
+*Defined in [declarations/tput.d.ts:415](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L415)*
 
 **Parameters:**
 
@@ -8222,7 +8222,7 @@ ___
 
 ▸ **key_f63**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:416](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L416)*
+*Defined in [declarations/tput.d.ts:416](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L416)*
 
 **Parameters:**
 
@@ -8238,7 +8238,7 @@ ___
 
 ▸ **key_f7**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:310](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L310)*
+*Defined in [declarations/tput.d.ts:310](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L310)*
 
 **Parameters:**
 
@@ -8254,7 +8254,7 @@ ___
 
 ▸ **key_f8**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:311](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L311)*
+*Defined in [declarations/tput.d.ts:311](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L311)*
 
 **Parameters:**
 
@@ -8270,7 +8270,7 @@ ___
 
 ▸ **key_f9**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:312](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L312)*
+*Defined in [declarations/tput.d.ts:312](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L312)*
 
 **Parameters:**
 
@@ -8286,7 +8286,7 @@ ___
 
 ▸ **key_find**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:501](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L501)*
+*Defined in [declarations/tput.d.ts:501](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L501)*
 
 **Parameters:**
 
@@ -8302,7 +8302,7 @@ ___
 
 ▸ **key_help**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:502](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L502)*
+*Defined in [declarations/tput.d.ts:502](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L502)*
 
 **Parameters:**
 
@@ -8318,7 +8318,7 @@ ___
 
 ▸ **key_home**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:313](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L313)*
+*Defined in [declarations/tput.d.ts:313](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L313)*
 
 **Parameters:**
 
@@ -8334,7 +8334,7 @@ ___
 
 ▸ **key_ic**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:314](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L314)*
+*Defined in [declarations/tput.d.ts:314](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L314)*
 
 **Parameters:**
 
@@ -8350,7 +8350,7 @@ ___
 
 ▸ **key_il**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:453](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L453)*
+*Defined in [declarations/tput.d.ts:453](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L453)*
 
 **Parameters:**
 
@@ -8366,7 +8366,7 @@ ___
 
 ▸ **key_left**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:315](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L315)*
+*Defined in [declarations/tput.d.ts:315](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L315)*
 
 **Parameters:**
 
@@ -8382,7 +8382,7 @@ ___
 
 ▸ **key_ll**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:454](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L454)*
+*Defined in [declarations/tput.d.ts:454](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L454)*
 
 **Parameters:**
 
@@ -8398,7 +8398,7 @@ ___
 
 ▸ **key_mark**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:503](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L503)*
+*Defined in [declarations/tput.d.ts:503](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L503)*
 
 **Parameters:**
 
@@ -8414,7 +8414,7 @@ ___
 
 ▸ **key_message**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:504](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L504)*
+*Defined in [declarations/tput.d.ts:504](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L504)*
 
 **Parameters:**
 
@@ -8430,7 +8430,7 @@ ___
 
 ▸ **key_mouse**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:424](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L424)*
+*Defined in [declarations/tput.d.ts:424](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L424)*
 
 **Parameters:**
 
@@ -8446,7 +8446,7 @@ ___
 
 ▸ **key_move**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:505](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L505)*
+*Defined in [declarations/tput.d.ts:505](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L505)*
 
 **Parameters:**
 
@@ -8462,7 +8462,7 @@ ___
 
 ▸ **key_next**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:506](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L506)*
+*Defined in [declarations/tput.d.ts:506](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L506)*
 
 **Parameters:**
 
@@ -8478,7 +8478,7 @@ ___
 
 ▸ **key_npage**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:316](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L316)*
+*Defined in [declarations/tput.d.ts:316](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L316)*
 
 **Parameters:**
 
@@ -8494,7 +8494,7 @@ ___
 
 ▸ **key_open**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:507](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L507)*
+*Defined in [declarations/tput.d.ts:507](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L507)*
 
 **Parameters:**
 
@@ -8510,7 +8510,7 @@ ___
 
 ▸ **key_options**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:508](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L508)*
+*Defined in [declarations/tput.d.ts:508](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L508)*
 
 **Parameters:**
 
@@ -8526,7 +8526,7 @@ ___
 
 ▸ **key_ppage**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:317](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L317)*
+*Defined in [declarations/tput.d.ts:317](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L317)*
 
 **Parameters:**
 
@@ -8542,7 +8542,7 @@ ___
 
 ▸ **key_previous**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:509](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L509)*
+*Defined in [declarations/tput.d.ts:509](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L509)*
 
 **Parameters:**
 
@@ -8558,7 +8558,7 @@ ___
 
 ▸ **key_print**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:510](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L510)*
+*Defined in [declarations/tput.d.ts:510](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L510)*
 
 **Parameters:**
 
@@ -8574,7 +8574,7 @@ ___
 
 ▸ **key_redo**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:511](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L511)*
+*Defined in [declarations/tput.d.ts:511](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L511)*
 
 **Parameters:**
 
@@ -8590,7 +8590,7 @@ ___
 
 ▸ **key_reference**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:512](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L512)*
+*Defined in [declarations/tput.d.ts:512](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L512)*
 
 **Parameters:**
 
@@ -8606,7 +8606,7 @@ ___
 
 ▸ **key_refresh**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:513](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L513)*
+*Defined in [declarations/tput.d.ts:513](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L513)*
 
 **Parameters:**
 
@@ -8622,7 +8622,7 @@ ___
 
 ▸ **key_replace**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:514](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L514)*
+*Defined in [declarations/tput.d.ts:514](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L514)*
 
 **Parameters:**
 
@@ -8638,7 +8638,7 @@ ___
 
 ▸ **key_restart**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:515](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L515)*
+*Defined in [declarations/tput.d.ts:515](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L515)*
 
 **Parameters:**
 
@@ -8654,7 +8654,7 @@ ___
 
 ▸ **key_resume**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:516](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L516)*
+*Defined in [declarations/tput.d.ts:516](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L516)*
 
 **Parameters:**
 
@@ -8670,7 +8670,7 @@ ___
 
 ▸ **key_right**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:318](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L318)*
+*Defined in [declarations/tput.d.ts:318](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L318)*
 
 **Parameters:**
 
@@ -8686,7 +8686,7 @@ ___
 
 ▸ **key_save**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:517](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L517)*
+*Defined in [declarations/tput.d.ts:517](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L517)*
 
 **Parameters:**
 
@@ -8702,7 +8702,7 @@ ___
 
 ▸ **key_sbeg**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:520](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L520)*
+*Defined in [declarations/tput.d.ts:520](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L520)*
 
 **Parameters:**
 
@@ -8718,7 +8718,7 @@ ___
 
 ▸ **key_scancel**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:521](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L521)*
+*Defined in [declarations/tput.d.ts:521](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L521)*
 
 **Parameters:**
 
@@ -8734,7 +8734,7 @@ ___
 
 ▸ **key_scommand**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:522](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L522)*
+*Defined in [declarations/tput.d.ts:522](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L522)*
 
 **Parameters:**
 
@@ -8750,7 +8750,7 @@ ___
 
 ▸ **key_scopy**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:523](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L523)*
+*Defined in [declarations/tput.d.ts:523](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L523)*
 
 **Parameters:**
 
@@ -8766,7 +8766,7 @@ ___
 
 ▸ **key_screate**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:524](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L524)*
+*Defined in [declarations/tput.d.ts:524](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L524)*
 
 **Parameters:**
 
@@ -8782,7 +8782,7 @@ ___
 
 ▸ **key_sdc**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:356](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L356)*
+*Defined in [declarations/tput.d.ts:356](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L356)*
 
 **Parameters:**
 
@@ -8798,7 +8798,7 @@ ___
 
 ▸ **key_sdl**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:525](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L525)*
+*Defined in [declarations/tput.d.ts:525](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L525)*
 
 **Parameters:**
 
@@ -8814,7 +8814,7 @@ ___
 
 ▸ **key_select**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:526](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L526)*
+*Defined in [declarations/tput.d.ts:526](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L526)*
 
 **Parameters:**
 
@@ -8830,7 +8830,7 @@ ___
 
 ▸ **key_send**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:357](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L357)*
+*Defined in [declarations/tput.d.ts:357](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L357)*
 
 **Parameters:**
 
@@ -8846,7 +8846,7 @@ ___
 
 ▸ **key_seol**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:527](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L527)*
+*Defined in [declarations/tput.d.ts:527](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L527)*
 
 **Parameters:**
 
@@ -8862,7 +8862,7 @@ ___
 
 ▸ **key_sexit**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:528](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L528)*
+*Defined in [declarations/tput.d.ts:528](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L528)*
 
 **Parameters:**
 
@@ -8878,7 +8878,7 @@ ___
 
 ▸ **key_sf**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:319](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L319)*
+*Defined in [declarations/tput.d.ts:319](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L319)*
 
 **Parameters:**
 
@@ -8894,7 +8894,7 @@ ___
 
 ▸ **key_sfind**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:529](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L529)*
+*Defined in [declarations/tput.d.ts:529](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L529)*
 
 **Parameters:**
 
@@ -8910,7 +8910,7 @@ ___
 
 ▸ **key_shelp**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:530](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L530)*
+*Defined in [declarations/tput.d.ts:530](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L530)*
 
 **Parameters:**
 
@@ -8926,7 +8926,7 @@ ___
 
 ▸ **key_shome**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:358](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L358)*
+*Defined in [declarations/tput.d.ts:358](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L358)*
 
 **Parameters:**
 
@@ -8942,7 +8942,7 @@ ___
 
 ▸ **key_sic**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:359](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L359)*
+*Defined in [declarations/tput.d.ts:359](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L359)*
 
 **Parameters:**
 
@@ -8958,7 +8958,7 @@ ___
 
 ▸ **key_sleft**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:360](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L360)*
+*Defined in [declarations/tput.d.ts:360](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L360)*
 
 **Parameters:**
 
@@ -8974,7 +8974,7 @@ ___
 
 ▸ **key_smessage**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:531](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L531)*
+*Defined in [declarations/tput.d.ts:531](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L531)*
 
 **Parameters:**
 
@@ -8990,7 +8990,7 @@ ___
 
 ▸ **key_smove**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:532](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L532)*
+*Defined in [declarations/tput.d.ts:532](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L532)*
 
 **Parameters:**
 
@@ -9006,7 +9006,7 @@ ___
 
 ▸ **key_snext**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:361](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L361)*
+*Defined in [declarations/tput.d.ts:361](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L361)*
 
 **Parameters:**
 
@@ -9022,7 +9022,7 @@ ___
 
 ▸ **key_soptions**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:533](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L533)*
+*Defined in [declarations/tput.d.ts:533](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L533)*
 
 **Parameters:**
 
@@ -9038,7 +9038,7 @@ ___
 
 ▸ **key_sprevious**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:362](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L362)*
+*Defined in [declarations/tput.d.ts:362](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L362)*
 
 **Parameters:**
 
@@ -9054,7 +9054,7 @@ ___
 
 ▸ **key_sprint**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:534](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L534)*
+*Defined in [declarations/tput.d.ts:534](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L534)*
 
 **Parameters:**
 
@@ -9070,7 +9070,7 @@ ___
 
 ▸ **key_sr**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:320](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L320)*
+*Defined in [declarations/tput.d.ts:320](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L320)*
 
 **Parameters:**
 
@@ -9086,7 +9086,7 @@ ___
 
 ▸ **key_sredo**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:535](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L535)*
+*Defined in [declarations/tput.d.ts:535](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L535)*
 
 **Parameters:**
 
@@ -9102,7 +9102,7 @@ ___
 
 ▸ **key_sreplace**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:536](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L536)*
+*Defined in [declarations/tput.d.ts:536](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L536)*
 
 **Parameters:**
 
@@ -9118,7 +9118,7 @@ ___
 
 ▸ **key_sright**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:363](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L363)*
+*Defined in [declarations/tput.d.ts:363](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L363)*
 
 **Parameters:**
 
@@ -9134,7 +9134,7 @@ ___
 
 ▸ **key_srsume**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:537](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L537)*
+*Defined in [declarations/tput.d.ts:537](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L537)*
 
 **Parameters:**
 
@@ -9150,7 +9150,7 @@ ___
 
 ▸ **key_ssave**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:538](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L538)*
+*Defined in [declarations/tput.d.ts:538](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L538)*
 
 **Parameters:**
 
@@ -9166,7 +9166,7 @@ ___
 
 ▸ **key_ssuspend**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:539](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L539)*
+*Defined in [declarations/tput.d.ts:539](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L539)*
 
 **Parameters:**
 
@@ -9182,7 +9182,7 @@ ___
 
 ▸ **key_stab**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:455](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L455)*
+*Defined in [declarations/tput.d.ts:455](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L455)*
 
 **Parameters:**
 
@@ -9198,7 +9198,7 @@ ___
 
 ▸ **key_sundo**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:540](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L540)*
+*Defined in [declarations/tput.d.ts:540](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L540)*
 
 **Parameters:**
 
@@ -9214,7 +9214,7 @@ ___
 
 ▸ **key_suspend**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:518](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L518)*
+*Defined in [declarations/tput.d.ts:518](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L518)*
 
 **Parameters:**
 
@@ -9230,7 +9230,7 @@ ___
 
 ▸ **key_undo**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:519](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L519)*
+*Defined in [declarations/tput.d.ts:519](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L519)*
 
 **Parameters:**
 
@@ -9246,7 +9246,7 @@ ___
 
 ▸ **key_up**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:321](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L321)*
+*Defined in [declarations/tput.d.ts:321](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L321)*
 
 **Parameters:**
 
@@ -9262,7 +9262,7 @@ ___
 
 ▸ **keypad_local**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:322](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L322)*
+*Defined in [declarations/tput.d.ts:322](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L322)*
 
 **Parameters:**
 
@@ -9278,7 +9278,7 @@ ___
 
 ▸ **keypad_xmit**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:323](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L323)*
+*Defined in [declarations/tput.d.ts:323](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L323)*
 
 **Parameters:**
 
@@ -9294,7 +9294,7 @@ ___
 
 ▸ **kf0**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:863](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L863)*
+*Defined in [declarations/tput.d.ts:863](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L863)*
 
 **Parameters:**
 
@@ -9310,7 +9310,7 @@ ___
 
 ▸ **kf1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:717](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L717)*
+*Defined in [declarations/tput.d.ts:717](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L717)*
 
 **Parameters:**
 
@@ -9326,7 +9326,7 @@ ___
 
 ▸ **kf10**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:718](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L718)*
+*Defined in [declarations/tput.d.ts:718](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L718)*
 
 **Parameters:**
 
@@ -9342,7 +9342,7 @@ ___
 
 ▸ **kf11**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:777](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L777)*
+*Defined in [declarations/tput.d.ts:777](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L777)*
 
 **Parameters:**
 
@@ -9358,7 +9358,7 @@ ___
 
 ▸ **kf12**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:778](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L778)*
+*Defined in [declarations/tput.d.ts:778](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L778)*
 
 **Parameters:**
 
@@ -9374,7 +9374,7 @@ ___
 
 ▸ **kf13**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:779](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L779)*
+*Defined in [declarations/tput.d.ts:779](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L779)*
 
 **Parameters:**
 
@@ -9390,7 +9390,7 @@ ___
 
 ▸ **kf14**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:780](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L780)*
+*Defined in [declarations/tput.d.ts:780](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L780)*
 
 **Parameters:**
 
@@ -9406,7 +9406,7 @@ ___
 
 ▸ **kf15**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:781](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L781)*
+*Defined in [declarations/tput.d.ts:781](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L781)*
 
 **Parameters:**
 
@@ -9422,7 +9422,7 @@ ___
 
 ▸ **kf16**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:782](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L782)*
+*Defined in [declarations/tput.d.ts:782](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L782)*
 
 **Parameters:**
 
@@ -9438,7 +9438,7 @@ ___
 
 ▸ **kf17**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:783](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L783)*
+*Defined in [declarations/tput.d.ts:783](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L783)*
 
 **Parameters:**
 
@@ -9454,7 +9454,7 @@ ___
 
 ▸ **kf18**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:784](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L784)*
+*Defined in [declarations/tput.d.ts:784](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L784)*
 
 **Parameters:**
 
@@ -9470,7 +9470,7 @@ ___
 
 ▸ **kf19**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:785](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L785)*
+*Defined in [declarations/tput.d.ts:785](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L785)*
 
 **Parameters:**
 
@@ -9486,7 +9486,7 @@ ___
 
 ▸ **kf2**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:719](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L719)*
+*Defined in [declarations/tput.d.ts:719](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L719)*
 
 **Parameters:**
 
@@ -9502,7 +9502,7 @@ ___
 
 ▸ **kf20**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:786](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L786)*
+*Defined in [declarations/tput.d.ts:786](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L786)*
 
 **Parameters:**
 
@@ -9518,7 +9518,7 @@ ___
 
 ▸ **kf21**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:787](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L787)*
+*Defined in [declarations/tput.d.ts:787](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L787)*
 
 **Parameters:**
 
@@ -9534,7 +9534,7 @@ ___
 
 ▸ **kf22**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:788](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L788)*
+*Defined in [declarations/tput.d.ts:788](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L788)*
 
 **Parameters:**
 
@@ -9550,7 +9550,7 @@ ___
 
 ▸ **kf23**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:789](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L789)*
+*Defined in [declarations/tput.d.ts:789](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L789)*
 
 **Parameters:**
 
@@ -9566,7 +9566,7 @@ ___
 
 ▸ **kf24**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:790](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L790)*
+*Defined in [declarations/tput.d.ts:790](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L790)*
 
 **Parameters:**
 
@@ -9582,7 +9582,7 @@ ___
 
 ▸ **kf25**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:791](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L791)*
+*Defined in [declarations/tput.d.ts:791](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L791)*
 
 **Parameters:**
 
@@ -9598,7 +9598,7 @@ ___
 
 ▸ **kf26**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:792](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L792)*
+*Defined in [declarations/tput.d.ts:792](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L792)*
 
 **Parameters:**
 
@@ -9614,7 +9614,7 @@ ___
 
 ▸ **kf27**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:793](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L793)*
+*Defined in [declarations/tput.d.ts:793](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L793)*
 
 **Parameters:**
 
@@ -9630,7 +9630,7 @@ ___
 
 ▸ **kf28**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:794](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L794)*
+*Defined in [declarations/tput.d.ts:794](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L794)*
 
 **Parameters:**
 
@@ -9646,7 +9646,7 @@ ___
 
 ▸ **kf29**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:795](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L795)*
+*Defined in [declarations/tput.d.ts:795](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L795)*
 
 **Parameters:**
 
@@ -9662,7 +9662,7 @@ ___
 
 ▸ **kf3**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:720](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L720)*
+*Defined in [declarations/tput.d.ts:720](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L720)*
 
 **Parameters:**
 
@@ -9678,7 +9678,7 @@ ___
 
 ▸ **kf30**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:796](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L796)*
+*Defined in [declarations/tput.d.ts:796](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L796)*
 
 **Parameters:**
 
@@ -9694,7 +9694,7 @@ ___
 
 ▸ **kf31**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:797](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L797)*
+*Defined in [declarations/tput.d.ts:797](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L797)*
 
 **Parameters:**
 
@@ -9710,7 +9710,7 @@ ___
 
 ▸ **kf32**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:798](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L798)*
+*Defined in [declarations/tput.d.ts:798](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L798)*
 
 **Parameters:**
 
@@ -9726,7 +9726,7 @@ ___
 
 ▸ **kf33**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:799](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L799)*
+*Defined in [declarations/tput.d.ts:799](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L799)*
 
 **Parameters:**
 
@@ -9742,7 +9742,7 @@ ___
 
 ▸ **kf34**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:800](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L800)*
+*Defined in [declarations/tput.d.ts:800](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L800)*
 
 **Parameters:**
 
@@ -9758,7 +9758,7 @@ ___
 
 ▸ **kf35**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:801](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L801)*
+*Defined in [declarations/tput.d.ts:801](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L801)*
 
 **Parameters:**
 
@@ -9774,7 +9774,7 @@ ___
 
 ▸ **kf36**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:802](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L802)*
+*Defined in [declarations/tput.d.ts:802](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L802)*
 
 **Parameters:**
 
@@ -9790,7 +9790,7 @@ ___
 
 ▸ **kf37**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:803](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L803)*
+*Defined in [declarations/tput.d.ts:803](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L803)*
 
 **Parameters:**
 
@@ -9806,7 +9806,7 @@ ___
 
 ▸ **kf38**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:804](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L804)*
+*Defined in [declarations/tput.d.ts:804](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L804)*
 
 **Parameters:**
 
@@ -9822,7 +9822,7 @@ ___
 
 ▸ **kf39**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:805](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L805)*
+*Defined in [declarations/tput.d.ts:805](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L805)*
 
 **Parameters:**
 
@@ -9838,7 +9838,7 @@ ___
 
 ▸ **kf4**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:721](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L721)*
+*Defined in [declarations/tput.d.ts:721](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L721)*
 
 **Parameters:**
 
@@ -9854,7 +9854,7 @@ ___
 
 ▸ **kf40**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:806](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L806)*
+*Defined in [declarations/tput.d.ts:806](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L806)*
 
 **Parameters:**
 
@@ -9870,7 +9870,7 @@ ___
 
 ▸ **kf41**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:807](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L807)*
+*Defined in [declarations/tput.d.ts:807](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L807)*
 
 **Parameters:**
 
@@ -9886,7 +9886,7 @@ ___
 
 ▸ **kf42**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:808](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L808)*
+*Defined in [declarations/tput.d.ts:808](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L808)*
 
 **Parameters:**
 
@@ -9902,7 +9902,7 @@ ___
 
 ▸ **kf43**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:809](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L809)*
+*Defined in [declarations/tput.d.ts:809](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L809)*
 
 **Parameters:**
 
@@ -9918,7 +9918,7 @@ ___
 
 ▸ **kf44**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:810](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L810)*
+*Defined in [declarations/tput.d.ts:810](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L810)*
 
 **Parameters:**
 
@@ -9934,7 +9934,7 @@ ___
 
 ▸ **kf45**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:811](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L811)*
+*Defined in [declarations/tput.d.ts:811](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L811)*
 
 **Parameters:**
 
@@ -9950,7 +9950,7 @@ ___
 
 ▸ **kf46**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:812](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L812)*
+*Defined in [declarations/tput.d.ts:812](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L812)*
 
 **Parameters:**
 
@@ -9966,7 +9966,7 @@ ___
 
 ▸ **kf47**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:813](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L813)*
+*Defined in [declarations/tput.d.ts:813](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L813)*
 
 **Parameters:**
 
@@ -9982,7 +9982,7 @@ ___
 
 ▸ **kf48**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:814](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L814)*
+*Defined in [declarations/tput.d.ts:814](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L814)*
 
 **Parameters:**
 
@@ -9998,7 +9998,7 @@ ___
 
 ▸ **kf49**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:815](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L815)*
+*Defined in [declarations/tput.d.ts:815](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L815)*
 
 **Parameters:**
 
@@ -10014,7 +10014,7 @@ ___
 
 ▸ **kf5**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:722](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L722)*
+*Defined in [declarations/tput.d.ts:722](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L722)*
 
 **Parameters:**
 
@@ -10030,7 +10030,7 @@ ___
 
 ▸ **kf50**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:816](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L816)*
+*Defined in [declarations/tput.d.ts:816](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L816)*
 
 **Parameters:**
 
@@ -10046,7 +10046,7 @@ ___
 
 ▸ **kf51**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:817](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L817)*
+*Defined in [declarations/tput.d.ts:817](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L817)*
 
 **Parameters:**
 
@@ -10062,7 +10062,7 @@ ___
 
 ▸ **kf52**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:818](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L818)*
+*Defined in [declarations/tput.d.ts:818](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L818)*
 
 **Parameters:**
 
@@ -10078,7 +10078,7 @@ ___
 
 ▸ **kf53**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:819](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L819)*
+*Defined in [declarations/tput.d.ts:819](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L819)*
 
 **Parameters:**
 
@@ -10094,7 +10094,7 @@ ___
 
 ▸ **kf54**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:820](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L820)*
+*Defined in [declarations/tput.d.ts:820](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L820)*
 
 **Parameters:**
 
@@ -10110,7 +10110,7 @@ ___
 
 ▸ **kf55**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:821](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L821)*
+*Defined in [declarations/tput.d.ts:821](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L821)*
 
 **Parameters:**
 
@@ -10126,7 +10126,7 @@ ___
 
 ▸ **kf56**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:822](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L822)*
+*Defined in [declarations/tput.d.ts:822](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L822)*
 
 **Parameters:**
 
@@ -10142,7 +10142,7 @@ ___
 
 ▸ **kf57**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:823](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L823)*
+*Defined in [declarations/tput.d.ts:823](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L823)*
 
 **Parameters:**
 
@@ -10158,7 +10158,7 @@ ___
 
 ▸ **kf58**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:824](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L824)*
+*Defined in [declarations/tput.d.ts:824](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L824)*
 
 **Parameters:**
 
@@ -10174,7 +10174,7 @@ ___
 
 ▸ **kf59**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:825](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L825)*
+*Defined in [declarations/tput.d.ts:825](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L825)*
 
 **Parameters:**
 
@@ -10190,7 +10190,7 @@ ___
 
 ▸ **kf6**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:723](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L723)*
+*Defined in [declarations/tput.d.ts:723](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L723)*
 
 **Parameters:**
 
@@ -10206,7 +10206,7 @@ ___
 
 ▸ **kf60**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:826](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L826)*
+*Defined in [declarations/tput.d.ts:826](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L826)*
 
 **Parameters:**
 
@@ -10222,7 +10222,7 @@ ___
 
 ▸ **kf61**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:827](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L827)*
+*Defined in [declarations/tput.d.ts:827](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L827)*
 
 **Parameters:**
 
@@ -10238,7 +10238,7 @@ ___
 
 ▸ **kf62**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:828](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L828)*
+*Defined in [declarations/tput.d.ts:828](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L828)*
 
 **Parameters:**
 
@@ -10254,7 +10254,7 @@ ___
 
 ▸ **kf63**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:829](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L829)*
+*Defined in [declarations/tput.d.ts:829](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L829)*
 
 **Parameters:**
 
@@ -10270,7 +10270,7 @@ ___
 
 ▸ **kf7**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:724](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L724)*
+*Defined in [declarations/tput.d.ts:724](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L724)*
 
 **Parameters:**
 
@@ -10286,7 +10286,7 @@ ___
 
 ▸ **kf8**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:725](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L725)*
+*Defined in [declarations/tput.d.ts:725](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L725)*
 
 **Parameters:**
 
@@ -10302,7 +10302,7 @@ ___
 
 ▸ **kf9**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:726](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L726)*
+*Defined in [declarations/tput.d.ts:726](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L726)*
 
 **Parameters:**
 
@@ -10318,7 +10318,7 @@ ___
 
 ▸ **kfnd**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:912](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L912)*
+*Defined in [declarations/tput.d.ts:912](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L912)*
 
 **Parameters:**
 
@@ -10334,7 +10334,7 @@ ___
 
 ▸ **khlp**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:913](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L913)*
+*Defined in [declarations/tput.d.ts:913](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L913)*
 
 **Parameters:**
 
@@ -10350,7 +10350,7 @@ ___
 
 ▸ **khome**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:727](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L727)*
+*Defined in [declarations/tput.d.ts:727](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L727)*
 
 **Parameters:**
 
@@ -10366,7 +10366,7 @@ ___
 
 ▸ **khts**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:866](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L866)*
+*Defined in [declarations/tput.d.ts:866](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L866)*
 
 **Parameters:**
 
@@ -10382,7 +10382,7 @@ ___
 
 ▸ **kich1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:728](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L728)*
+*Defined in [declarations/tput.d.ts:728](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L728)*
 
 **Parameters:**
 
@@ -10398,7 +10398,7 @@ ___
 
 ▸ **kil1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:864](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L864)*
+*Defined in [declarations/tput.d.ts:864](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L864)*
 
 **Parameters:**
 
@@ -10414,7 +10414,7 @@ ___
 
 ▸ **kind**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:733](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L733)*
+*Defined in [declarations/tput.d.ts:733](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L733)*
 
 **Parameters:**
 
@@ -10430,7 +10430,7 @@ ___
 
 ▸ **kll**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:865](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L865)*
+*Defined in [declarations/tput.d.ts:865](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L865)*
 
 **Parameters:**
 
@@ -10446,7 +10446,7 @@ ___
 
 ▸ **kmous**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:837](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L837)*
+*Defined in [declarations/tput.d.ts:837](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L837)*
 
 **Parameters:**
 
@@ -10462,7 +10462,7 @@ ___
 
 ▸ **kmov**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:916](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L916)*
+*Defined in [declarations/tput.d.ts:916](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L916)*
 
 **Parameters:**
 
@@ -10478,7 +10478,7 @@ ___
 
 ▸ **kmrk**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:914](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L914)*
+*Defined in [declarations/tput.d.ts:914](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L914)*
 
 **Parameters:**
 
@@ -10494,7 +10494,7 @@ ___
 
 ▸ **kmsg**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:915](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L915)*
+*Defined in [declarations/tput.d.ts:915](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L915)*
 
 **Parameters:**
 
@@ -10510,7 +10510,7 @@ ___
 
 ▸ **knp**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:730](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L730)*
+*Defined in [declarations/tput.d.ts:730](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L730)*
 
 **Parameters:**
 
@@ -10526,7 +10526,7 @@ ___
 
 ▸ **knxt**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:917](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L917)*
+*Defined in [declarations/tput.d.ts:917](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L917)*
 
 **Parameters:**
 
@@ -10542,7 +10542,7 @@ ___
 
 ▸ **kopn**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:918](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L918)*
+*Defined in [declarations/tput.d.ts:918](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L918)*
 
 **Parameters:**
 
@@ -10558,7 +10558,7 @@ ___
 
 ▸ **kopt**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:919](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L919)*
+*Defined in [declarations/tput.d.ts:919](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L919)*
 
 **Parameters:**
 
@@ -10574,7 +10574,7 @@ ___
 
 ▸ **kpp**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:731](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L731)*
+*Defined in [declarations/tput.d.ts:731](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L731)*
 
 **Parameters:**
 
@@ -10590,7 +10590,7 @@ ___
 
 ▸ **kprt**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:921](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L921)*
+*Defined in [declarations/tput.d.ts:921](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L921)*
 
 **Parameters:**
 
@@ -10606,7 +10606,7 @@ ___
 
 ▸ **kprv**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:920](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L920)*
+*Defined in [declarations/tput.d.ts:920](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L920)*
 
 **Parameters:**
 
@@ -10622,7 +10622,7 @@ ___
 
 ▸ **krdo**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:922](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L922)*
+*Defined in [declarations/tput.d.ts:922](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L922)*
 
 **Parameters:**
 
@@ -10638,7 +10638,7 @@ ___
 
 ▸ **kref**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:923](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L923)*
+*Defined in [declarations/tput.d.ts:923](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L923)*
 
 **Parameters:**
 
@@ -10654,7 +10654,7 @@ ___
 
 ▸ **kres**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:927](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L927)*
+*Defined in [declarations/tput.d.ts:927](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L927)*
 
 **Parameters:**
 
@@ -10670,7 +10670,7 @@ ___
 
 ▸ **krfr**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:924](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L924)*
+*Defined in [declarations/tput.d.ts:924](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L924)*
 
 **Parameters:**
 
@@ -10686,7 +10686,7 @@ ___
 
 ▸ **kri**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:734](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L734)*
+*Defined in [declarations/tput.d.ts:734](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L734)*
 
 **Parameters:**
 
@@ -10702,7 +10702,7 @@ ___
 
 ▸ **krmir**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:860](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L860)*
+*Defined in [declarations/tput.d.ts:860](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L860)*
 
 **Parameters:**
 
@@ -10718,7 +10718,7 @@ ___
 
 ▸ **krpl**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:925](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L925)*
+*Defined in [declarations/tput.d.ts:925](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L925)*
 
 **Parameters:**
 
@@ -10734,7 +10734,7 @@ ___
 
 ▸ **krst**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:926](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L926)*
+*Defined in [declarations/tput.d.ts:926](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L926)*
 
 **Parameters:**
 
@@ -10750,7 +10750,7 @@ ___
 
 ▸ **ksav**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:928](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L928)*
+*Defined in [declarations/tput.d.ts:928](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L928)*
 
 **Parameters:**
 
@@ -10766,7 +10766,7 @@ ___
 
 ▸ **kslt**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:937](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L937)*
+*Defined in [declarations/tput.d.ts:937](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L937)*
 
 **Parameters:**
 
@@ -10782,7 +10782,7 @@ ___
 
 ▸ **kspd**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:929](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L929)*
+*Defined in [declarations/tput.d.ts:929](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L929)*
 
 **Parameters:**
 
@@ -10798,7 +10798,7 @@ ___
 
 ▸ **ktbc**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:856](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L856)*
+*Defined in [declarations/tput.d.ts:856](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L856)*
 
 **Parameters:**
 
@@ -10814,7 +10814,7 @@ ___
 
 ▸ **kund**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:930](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L930)*
+*Defined in [declarations/tput.d.ts:930](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L930)*
 
 **Parameters:**
 
@@ -10830,7 +10830,7 @@ ___
 
 ▸ **lab_f0**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:456](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L456)*
+*Defined in [declarations/tput.d.ts:456](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L456)*
 
 **Parameters:**
 
@@ -10846,7 +10846,7 @@ ___
 
 ▸ **lab_f1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:457](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L457)*
+*Defined in [declarations/tput.d.ts:457](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L457)*
 
 **Parameters:**
 
@@ -10862,7 +10862,7 @@ ___
 
 ▸ **lab_f10**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:458](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L458)*
+*Defined in [declarations/tput.d.ts:458](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L458)*
 
 **Parameters:**
 
@@ -10878,7 +10878,7 @@ ___
 
 ▸ **lab_f2**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:459](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L459)*
+*Defined in [declarations/tput.d.ts:459](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L459)*
 
 **Parameters:**
 
@@ -10894,7 +10894,7 @@ ___
 
 ▸ **lab_f3**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:460](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L460)*
+*Defined in [declarations/tput.d.ts:460](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L460)*
 
 **Parameters:**
 
@@ -10910,7 +10910,7 @@ ___
 
 ▸ **lab_f4**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:461](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L461)*
+*Defined in [declarations/tput.d.ts:461](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L461)*
 
 **Parameters:**
 
@@ -10926,7 +10926,7 @@ ___
 
 ▸ **lab_f5**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:462](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L462)*
+*Defined in [declarations/tput.d.ts:462](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L462)*
 
 **Parameters:**
 
@@ -10942,7 +10942,7 @@ ___
 
 ▸ **lab_f6**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:463](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L463)*
+*Defined in [declarations/tput.d.ts:463](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L463)*
 
 **Parameters:**
 
@@ -10958,7 +10958,7 @@ ___
 
 ▸ **lab_f7**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:464](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L464)*
+*Defined in [declarations/tput.d.ts:464](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L464)*
 
 **Parameters:**
 
@@ -10974,7 +10974,7 @@ ___
 
 ▸ **lab_f8**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:465](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L465)*
+*Defined in [declarations/tput.d.ts:465](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L465)*
 
 **Parameters:**
 
@@ -10990,7 +10990,7 @@ ___
 
 ▸ **lab_f9**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:466](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L466)*
+*Defined in [declarations/tput.d.ts:466](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L466)*
 
 **Parameters:**
 
@@ -11006,7 +11006,7 @@ ___
 
 ▸ **label_format**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:545](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L545)*
+*Defined in [declarations/tput.d.ts:545](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L545)*
 
 **Parameters:**
 
@@ -11022,7 +11022,7 @@ ___
 
 ▸ **label_off**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:493](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L493)*
+*Defined in [declarations/tput.d.ts:493](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L493)*
 
 **Parameters:**
 
@@ -11038,7 +11038,7 @@ ___
 
 ▸ **label_on**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:492](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L492)*
+*Defined in [declarations/tput.d.ts:492](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L492)*
 
 **Parameters:**
 
@@ -11054,7 +11054,7 @@ ___
 
 ▸ **lf0**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:867](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L867)*
+*Defined in [declarations/tput.d.ts:867](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L867)*
 
 **Parameters:**
 
@@ -11070,7 +11070,7 @@ ___
 
 ▸ **lf1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:868](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L868)*
+*Defined in [declarations/tput.d.ts:868](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L868)*
 
 **Parameters:**
 
@@ -11086,7 +11086,7 @@ ___
 
 ▸ **lf10**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:869](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L869)*
+*Defined in [declarations/tput.d.ts:869](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L869)*
 
 **Parameters:**
 
@@ -11102,7 +11102,7 @@ ___
 
 ▸ **lf2**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:870](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L870)*
+*Defined in [declarations/tput.d.ts:870](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L870)*
 
 **Parameters:**
 
@@ -11118,7 +11118,7 @@ ___
 
 ▸ **lf3**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:871](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L871)*
+*Defined in [declarations/tput.d.ts:871](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L871)*
 
 **Parameters:**
 
@@ -11134,7 +11134,7 @@ ___
 
 ▸ **lf4**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:872](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L872)*
+*Defined in [declarations/tput.d.ts:872](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L872)*
 
 **Parameters:**
 
@@ -11150,7 +11150,7 @@ ___
 
 ▸ **lf5**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:873](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L873)*
+*Defined in [declarations/tput.d.ts:873](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L873)*
 
 **Parameters:**
 
@@ -11166,7 +11166,7 @@ ___
 
 ▸ **lf6**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:874](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L874)*
+*Defined in [declarations/tput.d.ts:874](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L874)*
 
 **Parameters:**
 
@@ -11182,7 +11182,7 @@ ___
 
 ▸ **lf7**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:875](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L875)*
+*Defined in [declarations/tput.d.ts:875](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L875)*
 
 **Parameters:**
 
@@ -11198,7 +11198,7 @@ ___
 
 ▸ **lf8**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:876](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L876)*
+*Defined in [declarations/tput.d.ts:876](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L876)*
 
 **Parameters:**
 
@@ -11214,7 +11214,7 @@ ___
 
 ▸ **lf9**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:877](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L877)*
+*Defined in [declarations/tput.d.ts:877](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L877)*
 
 **Parameters:**
 
@@ -11230,7 +11230,7 @@ ___
 
 ▸ **linefeed_if_not_lf**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:659](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L659)*
+*Defined in [declarations/tput.d.ts:659](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L659)*
 
 **Parameters:**
 
@@ -11246,7 +11246,7 @@ ___
 
 ▸ **ll**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:842](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L842)*
+*Defined in [declarations/tput.d.ts:842](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L842)*
 
 **Parameters:**
 
@@ -11262,7 +11262,7 @@ ___
 
 ▸ **lpi**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:980](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L980)*
+*Defined in [declarations/tput.d.ts:980](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L980)*
 
 **Parameters:**
 
@@ -11278,7 +11278,7 @@ ___
 
 ▸ **mc0**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:750](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L750)*
+*Defined in [declarations/tput.d.ts:750](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L750)*
 
 **Parameters:**
 
@@ -11294,7 +11294,7 @@ ___
 
 ▸ **mc4**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:751](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L751)*
+*Defined in [declarations/tput.d.ts:751](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L751)*
 
 **Parameters:**
 
@@ -11310,7 +11310,7 @@ ___
 
 ▸ **mc5**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:752](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L752)*
+*Defined in [declarations/tput.d.ts:752](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L752)*
 
 **Parameters:**
 
@@ -11326,7 +11326,7 @@ ___
 
 ▸ **mc5p**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:895](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L895)*
+*Defined in [declarations/tput.d.ts:895](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L895)*
 
 **Parameters:**
 
@@ -11342,7 +11342,7 @@ ___
 
 ▸ **mcub**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1011](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1011)*
+*Defined in [declarations/tput.d.ts:1011](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1011)*
 
 **Parameters:**
 
@@ -11358,7 +11358,7 @@ ___
 
 ▸ **mcub1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1005](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1005)*
+*Defined in [declarations/tput.d.ts:1005](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1005)*
 
 **Parameters:**
 
@@ -11374,7 +11374,7 @@ ___
 
 ▸ **mcud**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1010](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1010)*
+*Defined in [declarations/tput.d.ts:1010](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1010)*
 
 **Parameters:**
 
@@ -11390,7 +11390,7 @@ ___
 
 ▸ **mcud1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1004](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1004)*
+*Defined in [declarations/tput.d.ts:1004](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1004)*
 
 **Parameters:**
 
@@ -11406,7 +11406,7 @@ ___
 
 ▸ **mcuf**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1012](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1012)*
+*Defined in [declarations/tput.d.ts:1012](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1012)*
 
 **Parameters:**
 
@@ -11422,7 +11422,7 @@ ___
 
 ▸ **mcuf1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1006](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1006)*
+*Defined in [declarations/tput.d.ts:1006](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1006)*
 
 **Parameters:**
 
@@ -11438,7 +11438,7 @@ ___
 
 ▸ **mcuu**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1013](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1013)*
+*Defined in [declarations/tput.d.ts:1013](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1013)*
 
 **Parameters:**
 
@@ -11454,7 +11454,7 @@ ___
 
 ▸ **mcuu1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1008](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1008)*
+*Defined in [declarations/tput.d.ts:1008](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1008)*
 
 **Parameters:**
 
@@ -11470,7 +11470,7 @@ ___
 
 ▸ **memory_lock**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:427](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L427)*
+*Defined in [declarations/tput.d.ts:427](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L427)*
 
 **Parameters:**
 
@@ -11486,7 +11486,7 @@ ___
 
 ▸ **memory_unlock**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:428](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L428)*
+*Defined in [declarations/tput.d.ts:428](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L428)*
 
 **Parameters:**
 
@@ -11502,7 +11502,7 @@ ___
 
 ▸ **meta_off**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:324](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L324)*
+*Defined in [declarations/tput.d.ts:324](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L324)*
 
 **Parameters:**
 
@@ -11518,7 +11518,7 @@ ___
 
 ▸ **meta_on**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:325](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L325)*
+*Defined in [declarations/tput.d.ts:325](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L325)*
 
 **Parameters:**
 
@@ -11534,7 +11534,7 @@ ___
 
 ▸ **mgc**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:953](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L953)*
+*Defined in [declarations/tput.d.ts:953](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L953)*
 
 **Parameters:**
 
@@ -11550,7 +11550,7 @@ ___
 
 ▸ **mhpa**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1003](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1003)*
+*Defined in [declarations/tput.d.ts:1003](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1003)*
 
 **Parameters:**
 
@@ -11566,7 +11566,7 @@ ___
 
 ▸ **micro_column_address**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:594](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L594)*
+*Defined in [declarations/tput.d.ts:594](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L594)*
 
 **Parameters:**
 
@@ -11582,7 +11582,7 @@ ___
 
 ▸ **micro_down**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:595](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L595)*
+*Defined in [declarations/tput.d.ts:595](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L595)*
 
 **Parameters:**
 
@@ -11598,7 +11598,7 @@ ___
 
 ▸ **micro_left**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:596](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L596)*
+*Defined in [declarations/tput.d.ts:596](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L596)*
 
 **Parameters:**
 
@@ -11614,7 +11614,7 @@ ___
 
 ▸ **micro_right**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:597](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L597)*
+*Defined in [declarations/tput.d.ts:597](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L597)*
 
 **Parameters:**
 
@@ -11630,7 +11630,7 @@ ___
 
 ▸ **micro_row_address**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:598](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L598)*
+*Defined in [declarations/tput.d.ts:598](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L598)*
 
 **Parameters:**
 
@@ -11646,7 +11646,7 @@ ___
 
 ▸ **micro_up**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:599](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L599)*
+*Defined in [declarations/tput.d.ts:599](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L599)*
 
 **Parameters:**
 
@@ -11662,7 +11662,7 @@ ___
 
 ▸ **minfo**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1030](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1030)*
+*Defined in [declarations/tput.d.ts:1030](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1030)*
 
 **Parameters:**
 
@@ -11678,7 +11678,7 @@ ___
 
 ▸ **mouse_info**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:621](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L621)*
+*Defined in [declarations/tput.d.ts:621](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L621)*
 
 **Parameters:**
 
@@ -11694,7 +11694,7 @@ ___
 
 ▸ **mrcup**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:841](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L841)*
+*Defined in [declarations/tput.d.ts:841](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L841)*
 
 **Parameters:**
 
@@ -11710,7 +11710,7 @@ ___
 
 ▸ **mvpa**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1007](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1007)*
+*Defined in [declarations/tput.d.ts:1007](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1007)*
 
 **Parameters:**
 
@@ -11726,7 +11726,7 @@ ___
 
 ▸ **nel**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:878](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L878)*
+*Defined in [declarations/tput.d.ts:878](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L878)*
 
 **Parameters:**
 
@@ -11742,7 +11742,7 @@ ___
 
 ▸ **newline**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:467](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L467)*
+*Defined in [declarations/tput.d.ts:467](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L467)*
 
 **Parameters:**
 
@@ -11758,7 +11758,7 @@ ___
 
 ▸ **oc**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:974](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L974)*
+*Defined in [declarations/tput.d.ts:974](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L974)*
 
 **Parameters:**
 
@@ -11774,7 +11774,7 @@ ___
 
 ▸ **op**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:835](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L835)*
+*Defined in [declarations/tput.d.ts:835](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L835)*
 
 **Parameters:**
 
@@ -11790,7 +11790,7 @@ ___
 
 ▸ **order_of_pins**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:600](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L600)*
+*Defined in [declarations/tput.d.ts:600](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L600)*
 
 **Parameters:**
 
@@ -11806,7 +11806,7 @@ ___
 
 ▸ **orig_colors**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:565](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L565)*
+*Defined in [declarations/tput.d.ts:565](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L565)*
 
 **Parameters:**
 
@@ -11822,7 +11822,7 @@ ___
 
 ▸ **orig_pair**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:422](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L422)*
+*Defined in [declarations/tput.d.ts:422](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L422)*
 
 **Parameters:**
 
@@ -11838,7 +11838,7 @@ ___
 
 ▸ **other_non_function_keys**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:661](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L661)*
+*Defined in [declarations/tput.d.ts:661](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L661)*
 
 **Parameters:**
 
@@ -11854,7 +11854,7 @@ ___
 
 ▸ **pad**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:879](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L879)*
+*Defined in [declarations/tput.d.ts:879](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L879)*
 
 **Parameters:**
 
@@ -11870,7 +11870,7 @@ ___
 
 ▸ **pad_char**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:468](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L468)*
+*Defined in [declarations/tput.d.ts:468](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L468)*
 
 **Parameters:**
 
@@ -11886,7 +11886,7 @@ ___
 
 ▸ **parm_dch**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:326](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L326)*
+*Defined in [declarations/tput.d.ts:326](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L326)*
 
 **Parameters:**
 
@@ -11902,7 +11902,7 @@ ___
 
 ▸ **parm_delete_line**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:327](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L327)*
+*Defined in [declarations/tput.d.ts:327](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L327)*
 
 **Parameters:**
 
@@ -11918,7 +11918,7 @@ ___
 
 ▸ **parm_down_cursor**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:328](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L328)*
+*Defined in [declarations/tput.d.ts:328](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L328)*
 
 **Parameters:**
 
@@ -11934,7 +11934,7 @@ ___
 
 ▸ **parm_down_micro**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:601](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L601)*
+*Defined in [declarations/tput.d.ts:601](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L601)*
 
 **Parameters:**
 
@@ -11950,7 +11950,7 @@ ___
 
 ▸ **parm_ich**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:329](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L329)*
+*Defined in [declarations/tput.d.ts:329](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L329)*
 
 **Parameters:**
 
@@ -11966,7 +11966,7 @@ ___
 
 ▸ **parm_index**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:330](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L330)*
+*Defined in [declarations/tput.d.ts:330](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L330)*
 
 **Parameters:**
 
@@ -11982,7 +11982,7 @@ ___
 
 ▸ **parm_insert_line**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:331](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L331)*
+*Defined in [declarations/tput.d.ts:331](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L331)*
 
 **Parameters:**
 
@@ -11998,7 +11998,7 @@ ___
 
 ▸ **parm_left_cursor**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:332](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L332)*
+*Defined in [declarations/tput.d.ts:332](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L332)*
 
 **Parameters:**
 
@@ -12014,7 +12014,7 @@ ___
 
 ▸ **parm_left_micro**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:602](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L602)*
+*Defined in [declarations/tput.d.ts:602](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L602)*
 
 **Parameters:**
 
@@ -12030,7 +12030,7 @@ ___
 
 ▸ **parm_right_cursor**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:333](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L333)*
+*Defined in [declarations/tput.d.ts:333](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L333)*
 
 **Parameters:**
 
@@ -12046,7 +12046,7 @@ ___
 
 ▸ **parm_right_micro**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:603](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L603)*
+*Defined in [declarations/tput.d.ts:603](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L603)*
 
 **Parameters:**
 
@@ -12062,7 +12062,7 @@ ___
 
 ▸ **parm_rindex**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:334](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L334)*
+*Defined in [declarations/tput.d.ts:334](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L334)*
 
 **Parameters:**
 
@@ -12078,7 +12078,7 @@ ___
 
 ▸ **parm_up_cursor**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:335](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L335)*
+*Defined in [declarations/tput.d.ts:335](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L335)*
 
 **Parameters:**
 
@@ -12094,7 +12094,7 @@ ___
 
 ▸ **parm_up_micro**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:604](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L604)*
+*Defined in [declarations/tput.d.ts:604](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L604)*
 
 **Parameters:**
 
@@ -12110,7 +12110,7 @@ ___
 
 ▸ **parseTerminfo**(`data`: any, `file`: string): *[TputInfo](../interfaces/_declarations_tput_d_.tputinfo.md)*
 
-*Defined in [declarations/tput.d.ts:259](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L259)*
+*Defined in [declarations/tput.d.ts:259](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L259)*
 
 **Parameters:**
 
@@ -12127,7 +12127,7 @@ ___
 
 ▸ **pause**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:966](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L966)*
+*Defined in [declarations/tput.d.ts:966](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L966)*
 
 **Parameters:**
 
@@ -12143,7 +12143,7 @@ ___
 
 ▸ **pc_term_options**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:646](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L646)*
+*Defined in [declarations/tput.d.ts:646](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L646)*
 
 **Parameters:**
 
@@ -12159,7 +12159,7 @@ ___
 
 ▸ **pctrm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1055](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1055)*
+*Defined in [declarations/tput.d.ts:1055](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1055)*
 
 **Parameters:**
 
@@ -12175,7 +12175,7 @@ ___
 
 ▸ **pfkey**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:880](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L880)*
+*Defined in [declarations/tput.d.ts:880](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L880)*
 
 **Parameters:**
 
@@ -12191,7 +12191,7 @@ ___
 
 ▸ **pfloc**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:881](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L881)*
+*Defined in [declarations/tput.d.ts:881](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L881)*
 
 **Parameters:**
 
@@ -12207,7 +12207,7 @@ ___
 
 ▸ **pfx**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:882](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L882)*
+*Defined in [declarations/tput.d.ts:882](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L882)*
 
 **Parameters:**
 
@@ -12223,7 +12223,7 @@ ___
 
 ▸ **pfxl**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1033](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1033)*
+*Defined in [declarations/tput.d.ts:1033](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1033)*
 
 **Parameters:**
 
@@ -12239,7 +12239,7 @@ ___
 
 ▸ **pkey_key**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:469](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L469)*
+*Defined in [declarations/tput.d.ts:469](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L469)*
 
 **Parameters:**
 
@@ -12255,7 +12255,7 @@ ___
 
 ▸ **pkey_local**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:470](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L470)*
+*Defined in [declarations/tput.d.ts:470](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L470)*
 
 **Parameters:**
 
@@ -12271,7 +12271,7 @@ ___
 
 ▸ **pkey_plab**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:624](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L624)*
+*Defined in [declarations/tput.d.ts:624](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L624)*
 
 **Parameters:**
 
@@ -12287,7 +12287,7 @@ ___
 
 ▸ **pkey_xmit**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:471](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L471)*
+*Defined in [declarations/tput.d.ts:471](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L471)*
 
 **Parameters:**
 
@@ -12303,7 +12303,7 @@ ___
 
 ▸ **plab_norm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:486](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L486)*
+*Defined in [declarations/tput.d.ts:486](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L486)*
 
 **Parameters:**
 
@@ -12319,7 +12319,7 @@ ___
 
 ▸ **pln**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:897](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L897)*
+*Defined in [declarations/tput.d.ts:897](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L897)*
 
 **Parameters:**
 
@@ -12335,7 +12335,7 @@ ___
 
 ▸ **porder**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1009](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1009)*
+*Defined in [declarations/tput.d.ts:1009](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1009)*
 
 **Parameters:**
 
@@ -12351,7 +12351,7 @@ ___
 
 ▸ **print_screen**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:336](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L336)*
+*Defined in [declarations/tput.d.ts:336](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L336)*
 
 **Parameters:**
 
@@ -12367,7 +12367,7 @@ ___
 
 ▸ **prot**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:847](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L847)*
+*Defined in [declarations/tput.d.ts:847](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L847)*
 
 **Parameters:**
 
@@ -12383,7 +12383,7 @@ ___
 
 ▸ **prtr_non**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:484](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L484)*
+*Defined in [declarations/tput.d.ts:484](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L484)*
 
 **Parameters:**
 
@@ -12399,7 +12399,7 @@ ___
 
 ▸ **prtr_off**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:337](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L337)*
+*Defined in [declarations/tput.d.ts:337](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L337)*
 
 **Parameters:**
 
@@ -12415,7 +12415,7 @@ ___
 
 ▸ **prtr_on**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:338](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L338)*
+*Defined in [declarations/tput.d.ts:338](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L338)*
 
 **Parameters:**
 
@@ -12431,7 +12431,7 @@ ___
 
 ▸ **pulse**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:555](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L555)*
+*Defined in [declarations/tput.d.ts:555](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L555)*
 
 **Parameters:**
 
@@ -12447,7 +12447,7 @@ ___
 
 ▸ **qdial**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:964](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L964)*
+*Defined in [declarations/tput.d.ts:964](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L964)*
 
 **Parameters:**
 
@@ -12463,7 +12463,7 @@ ___
 
 ▸ **quick_dial**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:553](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L553)*
+*Defined in [declarations/tput.d.ts:553](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L553)*
 
 **Parameters:**
 
@@ -12479,7 +12479,7 @@ ___
 
 ▸ **rbim**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1023](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1023)*
+*Defined in [declarations/tput.d.ts:1023](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1023)*
 
 **Parameters:**
 
@@ -12495,7 +12495,7 @@ ___
 
 ▸ **rc**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:755](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L755)*
+*Defined in [declarations/tput.d.ts:755](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L755)*
 
 **Parameters:**
 
@@ -12511,7 +12511,7 @@ ___
 
 ▸ **rcsd**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1024](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1024)*
+*Defined in [declarations/tput.d.ts:1024](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1024)*
 
 **Parameters:**
 
@@ -12527,7 +12527,7 @@ ___
 
 ▸ **readTerminfo**(`term`: string): *string*
 
-*Defined in [declarations/tput.d.ts:258](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L258)*
+*Defined in [declarations/tput.d.ts:258](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L258)*
 
 **Parameters:**
 
@@ -12543,7 +12543,7 @@ ___
 
 ▸ **remove_clock**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:548](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L548)*
+*Defined in [declarations/tput.d.ts:548](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L548)*
 
 **Parameters:**
 
@@ -12559,7 +12559,7 @@ ___
 
 ▸ **rep**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:883](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L883)*
+*Defined in [declarations/tput.d.ts:883](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L883)*
 
 **Parameters:**
 
@@ -12575,7 +12575,7 @@ ___
 
 ▸ **repeat_char**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:472](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L472)*
+*Defined in [declarations/tput.d.ts:472](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L472)*
 
 **Parameters:**
 
@@ -12591,7 +12591,7 @@ ___
 
 ▸ **req_for_input**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:541](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L541)*
+*Defined in [declarations/tput.d.ts:541](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L541)*
 
 **Parameters:**
 
@@ -12607,7 +12607,7 @@ ___
 
 ▸ **req_mouse_pos**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:622](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L622)*
+*Defined in [declarations/tput.d.ts:622](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L622)*
 
 **Parameters:**
 
@@ -12623,7 +12623,7 @@ ___
 
 ▸ **reqmp**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1031](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1031)*
+*Defined in [declarations/tput.d.ts:1031](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1031)*
 
 **Parameters:**
 
@@ -12639,7 +12639,7 @@ ___
 
 ▸ **reset_1string**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:339](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L339)*
+*Defined in [declarations/tput.d.ts:339](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L339)*
 
 **Parameters:**
 
@@ -12655,7 +12655,7 @@ ___
 
 ▸ **reset_2string**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:340](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L340)*
+*Defined in [declarations/tput.d.ts:340](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L340)*
 
 **Parameters:**
 
@@ -12671,7 +12671,7 @@ ___
 
 ▸ **reset_3string**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:473](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L473)*
+*Defined in [declarations/tput.d.ts:473](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L473)*
 
 **Parameters:**
 
@@ -12687,7 +12687,7 @@ ___
 
 ▸ **reset_file**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:474](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L474)*
+*Defined in [declarations/tput.d.ts:474](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L474)*
 
 **Parameters:**
 
@@ -12703,7 +12703,7 @@ ___
 
 ▸ **restore_cursor**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:341](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L341)*
+*Defined in [declarations/tput.d.ts:341](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L341)*
 
 **Parameters:**
 
@@ -12719,7 +12719,7 @@ ___
 
 ▸ **rev**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:701](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L701)*
+*Defined in [declarations/tput.d.ts:701](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L701)*
 
 **Parameters:**
 
@@ -12735,7 +12735,7 @@ ___
 
 ▸ **rf**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:885](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L885)*
+*Defined in [declarations/tput.d.ts:885](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L885)*
 
 **Parameters:**
 
@@ -12751,7 +12751,7 @@ ___
 
 ▸ **rfi**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:952](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L952)*
+*Defined in [declarations/tput.d.ts:952](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L952)*
 
 **Parameters:**
 
@@ -12767,7 +12767,7 @@ ___
 
 ▸ **ri**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:759](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L759)*
+*Defined in [declarations/tput.d.ts:759](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L759)*
 
 **Parameters:**
 
@@ -12783,7 +12783,7 @@ ___
 
 ▸ **rin**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:748](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L748)*
+*Defined in [declarations/tput.d.ts:748](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L748)*
 
 **Parameters:**
 
@@ -12799,7 +12799,7 @@ ___
 
 ▸ **ritm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:996](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L996)*
+*Defined in [declarations/tput.d.ts:996](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L996)*
 
 **Parameters:**
 
@@ -12815,7 +12815,7 @@ ___
 
 ▸ **rlm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:997](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L997)*
+*Defined in [declarations/tput.d.ts:997](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L997)*
 
 **Parameters:**
 
@@ -12831,7 +12831,7 @@ ___
 
 ▸ **rmacs**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:705](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L705)*
+*Defined in [declarations/tput.d.ts:705](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L705)*
 
 **Parameters:**
 
@@ -12847,7 +12847,7 @@ ___
 
 ▸ **rmam**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:766](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L766)*
+*Defined in [declarations/tput.d.ts:766](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L766)*
 
 **Parameters:**
 
@@ -12863,7 +12863,7 @@ ___
 
 ▸ **rmclk**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:959](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L959)*
+*Defined in [declarations/tput.d.ts:959](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L959)*
 
 **Parameters:**
 
@@ -12879,7 +12879,7 @@ ___
 
 ▸ **rmcup**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:707](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L707)*
+*Defined in [declarations/tput.d.ts:707](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L707)*
 
 **Parameters:**
 
@@ -12895,7 +12895,7 @@ ___
 
 ▸ **rmdc**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:848](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L848)*
+*Defined in [declarations/tput.d.ts:848](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L848)*
 
 **Parameters:**
 
@@ -12911,7 +12911,7 @@ ___
 
 ▸ **rmicm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:998](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L998)*
+*Defined in [declarations/tput.d.ts:998](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L998)*
 
 **Parameters:**
 
@@ -12927,7 +12927,7 @@ ___
 
 ▸ **rmir**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:708](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L708)*
+*Defined in [declarations/tput.d.ts:708](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L708)*
 
 **Parameters:**
 
@@ -12943,7 +12943,7 @@ ___
 
 ▸ **rmkx**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:736](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L736)*
+*Defined in [declarations/tput.d.ts:736](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L736)*
 
 **Parameters:**
 
@@ -12959,7 +12959,7 @@ ___
 
 ▸ **rmln**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:904](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L904)*
+*Defined in [declarations/tput.d.ts:904](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L904)*
 
 **Parameters:**
 
@@ -12975,7 +12975,7 @@ ___
 
 ▸ **rmm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:738](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L738)*
+*Defined in [declarations/tput.d.ts:738](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L738)*
 
 **Parameters:**
 
@@ -12991,7 +12991,7 @@ ___
 
 ▸ **rmp**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:896](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L896)*
+*Defined in [declarations/tput.d.ts:896](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L896)*
 
 **Parameters:**
 
@@ -13007,7 +13007,7 @@ ___
 
 ▸ **rmpch**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1052](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1052)*
+*Defined in [declarations/tput.d.ts:1052](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1052)*
 
 **Parameters:**
 
@@ -13023,7 +13023,7 @@ ___
 
 ▸ **rmsc**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1054](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1054)*
+*Defined in [declarations/tput.d.ts:1054](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1054)*
 
 **Parameters:**
 
@@ -13039,7 +13039,7 @@ ___
 
 ▸ **rmso**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:709](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L709)*
+*Defined in [declarations/tput.d.ts:709](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L709)*
 
 **Parameters:**
 
@@ -13055,7 +13055,7 @@ ___
 
 ▸ **rmul**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:710](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L710)*
+*Defined in [declarations/tput.d.ts:710](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L710)*
 
 **Parameters:**
 
@@ -13071,7 +13071,7 @@ ___
 
 ▸ **rmxon**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:899](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L899)*
+*Defined in [declarations/tput.d.ts:899](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L899)*
 
 **Parameters:**
 
@@ -13087,7 +13087,7 @@ ___
 
 ▸ **row_address**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:342](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L342)*
+*Defined in [declarations/tput.d.ts:342](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L342)*
 
 **Parameters:**
 
@@ -13103,7 +13103,7 @@ ___
 
 ▸ **rs1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:753](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L753)*
+*Defined in [declarations/tput.d.ts:753](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L753)*
 
 **Parameters:**
 
@@ -13119,7 +13119,7 @@ ___
 
 ▸ **rs2**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:754](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L754)*
+*Defined in [declarations/tput.d.ts:754](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L754)*
 
 **Parameters:**
 
@@ -13135,7 +13135,7 @@ ___
 
 ▸ **rs3**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:884](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L884)*
+*Defined in [declarations/tput.d.ts:884](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L884)*
 
 **Parameters:**
 
@@ -13151,7 +13151,7 @@ ___
 
 ▸ **rshm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:999](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L999)*
+*Defined in [declarations/tput.d.ts:999](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L999)*
 
 **Parameters:**
 
@@ -13167,7 +13167,7 @@ ___
 
 ▸ **rsubm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1000](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1000)*
+*Defined in [declarations/tput.d.ts:1000](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1000)*
 
 **Parameters:**
 
@@ -13183,7 +13183,7 @@ ___
 
 ▸ **rsupm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1001](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1001)*
+*Defined in [declarations/tput.d.ts:1001](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1001)*
 
 **Parameters:**
 
@@ -13199,7 +13199,7 @@ ___
 
 ▸ **rum**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1002](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1002)*
+*Defined in [declarations/tput.d.ts:1002](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1002)*
 
 **Parameters:**
 
@@ -13215,7 +13215,7 @@ ___
 
 ▸ **rwidm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:995](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L995)*
+*Defined in [declarations/tput.d.ts:995](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L995)*
 
 **Parameters:**
 
@@ -13231,7 +13231,7 @@ ___
 
 ▸ **s0ds**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1036](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1036)*
+*Defined in [declarations/tput.d.ts:1036](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1036)*
 
 **Parameters:**
 
@@ -13247,7 +13247,7 @@ ___
 
 ▸ **s1ds**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1037](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1037)*
+*Defined in [declarations/tput.d.ts:1037](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1037)*
 
 **Parameters:**
 
@@ -13263,7 +13263,7 @@ ___
 
 ▸ **s2ds**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1038](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1038)*
+*Defined in [declarations/tput.d.ts:1038](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1038)*
 
 **Parameters:**
 
@@ -13279,7 +13279,7 @@ ___
 
 ▸ **s3ds**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1039](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1039)*
+*Defined in [declarations/tput.d.ts:1039](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1039)*
 
 **Parameters:**
 
@@ -13295,7 +13295,7 @@ ___
 
 ▸ **save_cursor**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:343](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L343)*
+*Defined in [declarations/tput.d.ts:343](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L343)*
 
 **Parameters:**
 
@@ -13311,7 +13311,7 @@ ___
 
 ▸ **sbim**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1021](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1021)*
+*Defined in [declarations/tput.d.ts:1021](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1021)*
 
 **Parameters:**
 
@@ -13327,7 +13327,7 @@ ___
 
 ▸ **sc**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:757](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L757)*
+*Defined in [declarations/tput.d.ts:757](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L757)*
 
 **Parameters:**
 
@@ -13343,7 +13343,7 @@ ___
 
 ▸ **scancode_escape**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:647](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L647)*
+*Defined in [declarations/tput.d.ts:647](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L647)*
 
 **Parameters:**
 
@@ -13359,7 +13359,7 @@ ___
 
 ▸ **scesa**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1057](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1057)*
+*Defined in [declarations/tput.d.ts:1057](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1057)*
 
 **Parameters:**
 
@@ -13375,7 +13375,7 @@ ___
 
 ▸ **scesc**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1056](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1056)*
+*Defined in [declarations/tput.d.ts:1056](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1056)*
 
 **Parameters:**
 
@@ -13391,7 +13391,7 @@ ___
 
 ▸ **sclk**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:957](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L957)*
+*Defined in [declarations/tput.d.ts:957](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L957)*
 
 **Parameters:**
 
@@ -13407,7 +13407,7 @@ ___
 
 ▸ **scp**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:976](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L976)*
+*Defined in [declarations/tput.d.ts:976](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L976)*
 
 **Parameters:**
 
@@ -13423,7 +13423,7 @@ ___
 
 ▸ **scroll_forward**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:344](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L344)*
+*Defined in [declarations/tput.d.ts:344](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L344)*
 
 **Parameters:**
 
@@ -13439,7 +13439,7 @@ ___
 
 ▸ **scroll_reverse**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:345](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L345)*
+*Defined in [declarations/tput.d.ts:345](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L345)*
 
 **Parameters:**
 
@@ -13455,7 +13455,7 @@ ___
 
 ▸ **scs**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1014](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1014)*
+*Defined in [declarations/tput.d.ts:1014](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1014)*
 
 **Parameters:**
 
@@ -13471,7 +13471,7 @@ ___
 
 ▸ **scsd**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1022](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1022)*
+*Defined in [declarations/tput.d.ts:1022](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1022)*
 
 **Parameters:**
 
@@ -13487,7 +13487,7 @@ ___
 
 ▸ **sdrfq**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:985](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L985)*
+*Defined in [declarations/tput.d.ts:985](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L985)*
 
 **Parameters:**
 
@@ -13503,7 +13503,7 @@ ___
 
 ▸ **select_char_set**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:605](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L605)*
+*Defined in [declarations/tput.d.ts:605](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L605)*
 
 **Parameters:**
 
@@ -13519,7 +13519,7 @@ ___
 
 ▸ **set0_des_seq**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:627](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L627)*
+*Defined in [declarations/tput.d.ts:627](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L627)*
 
 **Parameters:**
 
@@ -13535,7 +13535,7 @@ ___
 
 ▸ **set1_des_seq**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:628](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L628)*
+*Defined in [declarations/tput.d.ts:628](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L628)*
 
 **Parameters:**
 
@@ -13551,7 +13551,7 @@ ___
 
 ▸ **set2_des_seq**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:629](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L629)*
+*Defined in [declarations/tput.d.ts:629](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L629)*
 
 **Parameters:**
 
@@ -13567,7 +13567,7 @@ ___
 
 ▸ **set3_des_seq**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:630](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L630)*
+*Defined in [declarations/tput.d.ts:630](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L630)*
 
 **Parameters:**
 
@@ -13583,7 +13583,7 @@ ___
 
 ▸ **set_a_attributes**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:655](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L655)*
+*Defined in [declarations/tput.d.ts:655](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L655)*
 
 **Parameters:**
 
@@ -13599,7 +13599,7 @@ ___
 
 ▸ **set_a_background**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:426](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L426)*
+*Defined in [declarations/tput.d.ts:426](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L426)*
 
 **Parameters:**
 
@@ -13615,7 +13615,7 @@ ___
 
 ▸ **set_a_foreground**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:425](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L425)*
+*Defined in [declarations/tput.d.ts:425](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L425)*
 
 **Parameters:**
 
@@ -13631,7 +13631,7 @@ ___
 
 ▸ **set_attributes**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:346](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L346)*
+*Defined in [declarations/tput.d.ts:346](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L346)*
 
 **Parameters:**
 
@@ -13647,7 +13647,7 @@ ___
 
 ▸ **set_background**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:569](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L569)*
+*Defined in [declarations/tput.d.ts:569](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L569)*
 
 **Parameters:**
 
@@ -13663,7 +13663,7 @@ ___
 
 ▸ **set_bottom_margin**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:606](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L606)*
+*Defined in [declarations/tput.d.ts:606](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L606)*
 
 **Parameters:**
 
@@ -13679,7 +13679,7 @@ ___
 
 ▸ **set_bottom_margin_parm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:607](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L607)*
+*Defined in [declarations/tput.d.ts:607](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L607)*
 
 **Parameters:**
 
@@ -13695,7 +13695,7 @@ ___
 
 ▸ **set_clock**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:546](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L546)*
+*Defined in [declarations/tput.d.ts:546](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L546)*
 
 **Parameters:**
 
@@ -13711,7 +13711,7 @@ ___
 
 ▸ **set_color_band**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:639](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L639)*
+*Defined in [declarations/tput.d.ts:639](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L639)*
 
 **Parameters:**
 
@@ -13727,7 +13727,7 @@ ___
 
 ▸ **set_color_pair**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:567](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L567)*
+*Defined in [declarations/tput.d.ts:567](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L567)*
 
 **Parameters:**
 
@@ -13743,7 +13743,7 @@ ___
 
 ▸ **set_foreground**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:568](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L568)*
+*Defined in [declarations/tput.d.ts:568](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L568)*
 
 **Parameters:**
 
@@ -13759,7 +13759,7 @@ ___
 
 ▸ **set_left_margin**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:543](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L543)*
+*Defined in [declarations/tput.d.ts:543](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L543)*
 
 **Parameters:**
 
@@ -13775,7 +13775,7 @@ ___
 
 ▸ **set_left_margin_parm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:608](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L608)*
+*Defined in [declarations/tput.d.ts:608](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L608)*
 
 **Parameters:**
 
@@ -13791,7 +13791,7 @@ ___
 
 ▸ **set_lr_margin**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:631](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L631)*
+*Defined in [declarations/tput.d.ts:631](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L631)*
 
 **Parameters:**
 
@@ -13807,7 +13807,7 @@ ___
 
 ▸ **set_page_length**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:640](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L640)*
+*Defined in [declarations/tput.d.ts:640](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L640)*
 
 **Parameters:**
 
@@ -13823,7 +13823,7 @@ ___
 
 ▸ **set_pglen_inch**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:656](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L656)*
+*Defined in [declarations/tput.d.ts:656](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L656)*
 
 **Parameters:**
 
@@ -13839,7 +13839,7 @@ ___
 
 ▸ **set_right_margin**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:544](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L544)*
+*Defined in [declarations/tput.d.ts:544](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L544)*
 
 **Parameters:**
 
@@ -13855,7 +13855,7 @@ ___
 
 ▸ **set_right_margin_parm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:609](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L609)*
+*Defined in [declarations/tput.d.ts:609](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L609)*
 
 **Parameters:**
 
@@ -13871,7 +13871,7 @@ ___
 
 ▸ **set_tab**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:347](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L347)*
+*Defined in [declarations/tput.d.ts:347](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L347)*
 
 **Parameters:**
 
@@ -13887,7 +13887,7 @@ ___
 
 ▸ **set_tb_margin**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:632](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L632)*
+*Defined in [declarations/tput.d.ts:632](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L632)*
 
 **Parameters:**
 
@@ -13903,7 +13903,7 @@ ___
 
 ▸ **set_top_margin**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:610](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L610)*
+*Defined in [declarations/tput.d.ts:610](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L610)*
 
 **Parameters:**
 
@@ -13919,7 +13919,7 @@ ___
 
 ▸ **set_top_margin_parm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:611](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L611)*
+*Defined in [declarations/tput.d.ts:611](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L611)*
 
 **Parameters:**
 
@@ -13935,7 +13935,7 @@ ___
 
 ▸ **set_window**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:475](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L475)*
+*Defined in [declarations/tput.d.ts:475](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L475)*
 
 **Parameters:**
 
@@ -13951,7 +13951,7 @@ ___
 
 ▸ **setab**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:839](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L839)*
+*Defined in [declarations/tput.d.ts:839](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L839)*
 
 **Parameters:**
 
@@ -13967,7 +13967,7 @@ ___
 
 ▸ **setaf**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:838](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L838)*
+*Defined in [declarations/tput.d.ts:838](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L838)*
 
 **Parameters:**
 
@@ -13983,7 +13983,7 @@ ___
 
 ▸ **setb**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:978](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L978)*
+*Defined in [declarations/tput.d.ts:978](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L978)*
 
 **Parameters:**
 
@@ -13999,7 +13999,7 @@ ___
 
 ▸ **setcolor**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1048](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1048)*
+*Defined in [declarations/tput.d.ts:1048](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1048)*
 
 **Parameters:**
 
@@ -14015,7 +14015,7 @@ ___
 
 ▸ **setf**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:977](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L977)*
+*Defined in [declarations/tput.d.ts:977](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L977)*
 
 **Parameters:**
 
@@ -14031,7 +14031,7 @@ ___
 
 ▸ **setup**(): *void*
 
-*Defined in [declarations/tput.d.ts:256](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L256)*
+*Defined in [declarations/tput.d.ts:256](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L256)*
 
 **Returns:** *void*
 
@@ -14041,7 +14041,7 @@ ___
 
 ▸ **sgr**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:760](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L760)*
+*Defined in [declarations/tput.d.ts:760](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L760)*
 
 **Parameters:**
 
@@ -14057,7 +14057,7 @@ ___
 
 ▸ **sgr0**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:706](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L706)*
+*Defined in [declarations/tput.d.ts:706](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L706)*
 
 **Parameters:**
 
@@ -14073,7 +14073,7 @@ ___
 
 ▸ **sgr1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1064](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1064)*
+*Defined in [declarations/tput.d.ts:1064](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1064)*
 
 **Parameters:**
 
@@ -14089,7 +14089,7 @@ ___
 
 ▸ **sitm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:986](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L986)*
+*Defined in [declarations/tput.d.ts:986](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L986)*
 
 **Parameters:**
 
@@ -14105,7 +14105,7 @@ ___
 
 ▸ **slength**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1065](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1065)*
+*Defined in [declarations/tput.d.ts:1065](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1065)*
 
 **Parameters:**
 
@@ -14121,7 +14121,7 @@ ___
 
 ▸ **slines**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1049](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1049)*
+*Defined in [declarations/tput.d.ts:1049](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1049)*
 
 **Parameters:**
 
@@ -14137,7 +14137,7 @@ ___
 
 ▸ **slm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:987](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L987)*
+*Defined in [declarations/tput.d.ts:987](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L987)*
 
 **Parameters:**
 
@@ -14153,7 +14153,7 @@ ___
 
 ▸ **smacs**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:695](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L695)*
+*Defined in [declarations/tput.d.ts:695](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L695)*
 
 **Parameters:**
 
@@ -14169,7 +14169,7 @@ ___
 
 ▸ **smam**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:765](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L765)*
+*Defined in [declarations/tput.d.ts:765](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L765)*
 
 **Parameters:**
 
@@ -14185,7 +14185,7 @@ ___
 
 ▸ **smcup**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:698](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L698)*
+*Defined in [declarations/tput.d.ts:698](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L698)*
 
 **Parameters:**
 
@@ -14201,7 +14201,7 @@ ___
 
 ▸ **smdc**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:845](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L845)*
+*Defined in [declarations/tput.d.ts:845](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L845)*
 
 **Parameters:**
 
@@ -14217,7 +14217,7 @@ ___
 
 ▸ **smgb**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1015](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1015)*
+*Defined in [declarations/tput.d.ts:1015](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1015)*
 
 **Parameters:**
 
@@ -14233,7 +14233,7 @@ ___
 
 ▸ **smgbp**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1016](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1016)*
+*Defined in [declarations/tput.d.ts:1016](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1016)*
 
 **Parameters:**
 
@@ -14249,7 +14249,7 @@ ___
 
 ▸ **smgl**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:954](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L954)*
+*Defined in [declarations/tput.d.ts:954](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L954)*
 
 **Parameters:**
 
@@ -14265,7 +14265,7 @@ ___
 
 ▸ **smglp**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1017](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1017)*
+*Defined in [declarations/tput.d.ts:1017](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1017)*
 
 **Parameters:**
 
@@ -14281,7 +14281,7 @@ ___
 
 ▸ **smglr**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1040](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1040)*
+*Defined in [declarations/tput.d.ts:1040](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1040)*
 
 **Parameters:**
 
@@ -14297,7 +14297,7 @@ ___
 
 ▸ **smgr**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:955](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L955)*
+*Defined in [declarations/tput.d.ts:955](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L955)*
 
 **Parameters:**
 
@@ -14313,7 +14313,7 @@ ___
 
 ▸ **smgrp**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1018](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1018)*
+*Defined in [declarations/tput.d.ts:1018](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1018)*
 
 **Parameters:**
 
@@ -14329,7 +14329,7 @@ ___
 
 ▸ **smgt**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1019](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1019)*
+*Defined in [declarations/tput.d.ts:1019](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1019)*
 
 **Parameters:**
 
@@ -14345,7 +14345,7 @@ ___
 
 ▸ **smgtb**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1041](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1041)*
+*Defined in [declarations/tput.d.ts:1041](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1041)*
 
 **Parameters:**
 
@@ -14361,7 +14361,7 @@ ___
 
 ▸ **smgtp**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1020](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1020)*
+*Defined in [declarations/tput.d.ts:1020](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1020)*
 
 **Parameters:**
 
@@ -14377,7 +14377,7 @@ ___
 
 ▸ **smicm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:988](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L988)*
+*Defined in [declarations/tput.d.ts:988](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L988)*
 
 **Parameters:**
 
@@ -14393,7 +14393,7 @@ ___
 
 ▸ **smir**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:699](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L699)*
+*Defined in [declarations/tput.d.ts:699](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L699)*
 
 **Parameters:**
 
@@ -14409,7 +14409,7 @@ ___
 
 ▸ **smkx**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:737](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L737)*
+*Defined in [declarations/tput.d.ts:737](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L737)*
 
 **Parameters:**
 
@@ -14425,7 +14425,7 @@ ___
 
 ▸ **smln**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:903](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L903)*
+*Defined in [declarations/tput.d.ts:903](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L903)*
 
 **Parameters:**
 
@@ -14441,7 +14441,7 @@ ___
 
 ▸ **smm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:739](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L739)*
+*Defined in [declarations/tput.d.ts:739](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L739)*
 
 **Parameters:**
 
@@ -14457,7 +14457,7 @@ ___
 
 ▸ **smpch**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1051](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1051)*
+*Defined in [declarations/tput.d.ts:1051](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1051)*
 
 **Parameters:**
 
@@ -14473,7 +14473,7 @@ ___
 
 ▸ **smsc**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1053](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1053)*
+*Defined in [declarations/tput.d.ts:1053](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1053)*
 
 **Parameters:**
 
@@ -14489,7 +14489,7 @@ ___
 
 ▸ **smso**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:702](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L702)*
+*Defined in [declarations/tput.d.ts:702](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L702)*
 
 **Parameters:**
 
@@ -14505,7 +14505,7 @@ ___
 
 ▸ **smul**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:703](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L703)*
+*Defined in [declarations/tput.d.ts:703](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L703)*
 
 **Parameters:**
 
@@ -14521,7 +14521,7 @@ ___
 
 ▸ **smxon**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:898](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L898)*
+*Defined in [declarations/tput.d.ts:898](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L898)*
 
 **Parameters:**
 
@@ -14537,7 +14537,7 @@ ___
 
 ▸ **snlq**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:989](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L989)*
+*Defined in [declarations/tput.d.ts:989](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L989)*
 
 **Parameters:**
 
@@ -14553,7 +14553,7 @@ ___
 
 ▸ **snrmq**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:990](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L990)*
+*Defined in [declarations/tput.d.ts:990](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L990)*
 
 **Parameters:**
 
@@ -14569,7 +14569,7 @@ ___
 
 ▸ **sshm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:991](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L991)*
+*Defined in [declarations/tput.d.ts:991](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L991)*
 
 **Parameters:**
 
@@ -14585,7 +14585,7 @@ ___
 
 ▸ **ssubm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:992](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L992)*
+*Defined in [declarations/tput.d.ts:992](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L992)*
 
 **Parameters:**
 
@@ -14601,7 +14601,7 @@ ___
 
 ▸ **ssupm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:993](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L993)*
+*Defined in [declarations/tput.d.ts:993](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L993)*
 
 **Parameters:**
 
@@ -14617,7 +14617,7 @@ ___
 
 ▸ **start_bit_image**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:612](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L612)*
+*Defined in [declarations/tput.d.ts:612](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L612)*
 
 **Parameters:**
 
@@ -14633,7 +14633,7 @@ ___
 
 ▸ **start_char_set_def**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:613](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L613)*
+*Defined in [declarations/tput.d.ts:613](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L613)*
 
 **Parameters:**
 
@@ -14649,7 +14649,7 @@ ___
 
 ▸ **stop_bit_image**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:614](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L614)*
+*Defined in [declarations/tput.d.ts:614](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L614)*
 
 **Parameters:**
 
@@ -14665,7 +14665,7 @@ ___
 
 ▸ **stop_char_set_def**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:615](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L615)*
+*Defined in [declarations/tput.d.ts:615](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L615)*
 
 **Parameters:**
 
@@ -14681,7 +14681,7 @@ ___
 
 ▸ **subcs**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1025](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1025)*
+*Defined in [declarations/tput.d.ts:1025](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1025)*
 
 **Parameters:**
 
@@ -14697,7 +14697,7 @@ ___
 
 ▸ **subscript_characters**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:616](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L616)*
+*Defined in [declarations/tput.d.ts:616](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L616)*
 
 **Parameters:**
 
@@ -14713,7 +14713,7 @@ ___
 
 ▸ **sum**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:994](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L994)*
+*Defined in [declarations/tput.d.ts:994](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L994)*
 
 **Parameters:**
 
@@ -14729,7 +14729,7 @@ ___
 
 ▸ **supcs**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1026](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1026)*
+*Defined in [declarations/tput.d.ts:1026](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1026)*
 
 **Parameters:**
 
@@ -14745,7 +14745,7 @@ ___
 
 ▸ **superscript_characters**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:617](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L617)*
+*Defined in [declarations/tput.d.ts:617](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L617)*
 
 **Parameters:**
 
@@ -14761,7 +14761,7 @@ ___
 
 ▸ **swidm**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:984](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L984)*
+*Defined in [declarations/tput.d.ts:984](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L984)*
 
 **Parameters:**
 
@@ -14777,7 +14777,7 @@ ___
 
 ▸ **tab**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:348](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L348)*
+*Defined in [declarations/tput.d.ts:348](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L348)*
 
 **Parameters:**
 
@@ -14793,7 +14793,7 @@ ___
 
 ▸ **tbc**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:679](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L679)*
+*Defined in [declarations/tput.d.ts:679](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L679)*
 
 **Parameters:**
 
@@ -14809,7 +14809,7 @@ ___
 
 ▸ **term**(`is`: any): *boolean*
 
-*Defined in [declarations/tput.d.ts:257](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L257)*
+*Defined in [declarations/tput.d.ts:257](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L257)*
 
 **Parameters:**
 
@@ -14825,7 +14825,7 @@ ___
 
 ▸ **termcap_init2**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:657](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L657)*
+*Defined in [declarations/tput.d.ts:657](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L657)*
 
 **Parameters:**
 
@@ -14841,7 +14841,7 @@ ___
 
 ▸ **termcap_reset**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:658](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L658)*
+*Defined in [declarations/tput.d.ts:658](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L658)*
 
 **Parameters:**
 
@@ -14857,7 +14857,7 @@ ___
 
 ▸ **these_cause_cr**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:618](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L618)*
+*Defined in [declarations/tput.d.ts:618](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L618)*
 
 **Parameters:**
 
@@ -14873,7 +14873,7 @@ ___
 
 ▸ **to_status_line**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:476](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L476)*
+*Defined in [declarations/tput.d.ts:476](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L476)*
 
 **Parameters:**
 
@@ -14889,7 +14889,7 @@ ___
 
 ▸ **tone**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:554](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L554)*
+*Defined in [declarations/tput.d.ts:554](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L554)*
 
 **Parameters:**
 
@@ -14905,7 +14905,7 @@ ___
 
 ▸ **tsl**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:887](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L887)*
+*Defined in [declarations/tput.d.ts:887](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L887)*
 
 **Parameters:**
 
@@ -14921,7 +14921,7 @@ ___
 
 ▸ **u0**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:968](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L968)*
+*Defined in [declarations/tput.d.ts:968](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L968)*
 
 **Parameters:**
 
@@ -14937,7 +14937,7 @@ ___
 
 ▸ **u1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:969](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L969)*
+*Defined in [declarations/tput.d.ts:969](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L969)*
 
 **Parameters:**
 
@@ -14953,7 +14953,7 @@ ___
 
 ▸ **u2**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:970](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L970)*
+*Defined in [declarations/tput.d.ts:970](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L970)*
 
 **Parameters:**
 
@@ -14969,7 +14969,7 @@ ___
 
 ▸ **u3**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:971](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L971)*
+*Defined in [declarations/tput.d.ts:971](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L971)*
 
 **Parameters:**
 
@@ -14985,7 +14985,7 @@ ___
 
 ▸ **u4**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:972](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L972)*
+*Defined in [declarations/tput.d.ts:972](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L972)*
 
 **Parameters:**
 
@@ -15001,7 +15001,7 @@ ___
 
 ▸ **u5**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:973](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L973)*
+*Defined in [declarations/tput.d.ts:973](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L973)*
 
 **Parameters:**
 
@@ -15017,7 +15017,7 @@ ___
 
 ▸ **u6**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:831](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L831)*
+*Defined in [declarations/tput.d.ts:831](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L831)*
 
 **Parameters:**
 
@@ -15033,7 +15033,7 @@ ___
 
 ▸ **u7**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:832](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L832)*
+*Defined in [declarations/tput.d.ts:832](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L832)*
 
 **Parameters:**
 
@@ -15049,7 +15049,7 @@ ___
 
 ▸ **u8**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:833](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L833)*
+*Defined in [declarations/tput.d.ts:833](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L833)*
 
 **Parameters:**
 
@@ -15065,7 +15065,7 @@ ___
 
 ▸ **u9**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:834](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L834)*
+*Defined in [declarations/tput.d.ts:834](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L834)*
 
 **Parameters:**
 
@@ -15081,7 +15081,7 @@ ___
 
 ▸ **uc**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:888](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L888)*
+*Defined in [declarations/tput.d.ts:888](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L888)*
 
 **Parameters:**
 
@@ -15097,7 +15097,7 @@ ___
 
 ▸ **underline_char**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:477](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L477)*
+*Defined in [declarations/tput.d.ts:477](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L477)*
 
 **Parameters:**
 
@@ -15113,7 +15113,7 @@ ___
 
 ▸ **up_half_line**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:478](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L478)*
+*Defined in [declarations/tput.d.ts:478](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L478)*
 
 **Parameters:**
 
@@ -15129,7 +15129,7 @@ ___
 
 ▸ **user0**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:559](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L559)*
+*Defined in [declarations/tput.d.ts:559](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L559)*
 
 **Parameters:**
 
@@ -15145,7 +15145,7 @@ ___
 
 ▸ **user1**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:560](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L560)*
+*Defined in [declarations/tput.d.ts:560](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L560)*
 
 **Parameters:**
 
@@ -15161,7 +15161,7 @@ ___
 
 ▸ **user2**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:561](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L561)*
+*Defined in [declarations/tput.d.ts:561](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L561)*
 
 **Parameters:**
 
@@ -15177,7 +15177,7 @@ ___
 
 ▸ **user3**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:562](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L562)*
+*Defined in [declarations/tput.d.ts:562](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L562)*
 
 **Parameters:**
 
@@ -15193,7 +15193,7 @@ ___
 
 ▸ **user4**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:563](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L563)*
+*Defined in [declarations/tput.d.ts:563](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L563)*
 
 **Parameters:**
 
@@ -15209,7 +15209,7 @@ ___
 
 ▸ **user5**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:564](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L564)*
+*Defined in [declarations/tput.d.ts:564](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L564)*
 
 **Parameters:**
 
@@ -15225,7 +15225,7 @@ ___
 
 ▸ **user6**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:418](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L418)*
+*Defined in [declarations/tput.d.ts:418](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L418)*
 
 **Parameters:**
 
@@ -15241,7 +15241,7 @@ ___
 
 ▸ **user7**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:419](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L419)*
+*Defined in [declarations/tput.d.ts:419](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L419)*
 
 **Parameters:**
 
@@ -15257,7 +15257,7 @@ ___
 
 ▸ **user8**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:420](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L420)*
+*Defined in [declarations/tput.d.ts:420](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L420)*
 
 **Parameters:**
 
@@ -15273,7 +15273,7 @@ ___
 
 ▸ **user9**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:421](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L421)*
+*Defined in [declarations/tput.d.ts:421](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L421)*
 
 **Parameters:**
 
@@ -15289,7 +15289,7 @@ ___
 
 ▸ **vpa**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:756](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L756)*
+*Defined in [declarations/tput.d.ts:756](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L756)*
 
 **Parameters:**
 
@@ -15305,7 +15305,7 @@ ___
 
 ▸ **wait**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:967](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L967)*
+*Defined in [declarations/tput.d.ts:967](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L967)*
 
 **Parameters:**
 
@@ -15321,7 +15321,7 @@ ___
 
 ▸ **wait_tone**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:558](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L558)*
+*Defined in [declarations/tput.d.ts:558](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L558)*
 
 **Parameters:**
 
@@ -15337,7 +15337,7 @@ ___
 
 ▸ **wind**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:886](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L886)*
+*Defined in [declarations/tput.d.ts:886](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L886)*
 
 **Parameters:**
 
@@ -15353,7 +15353,7 @@ ___
 
 ▸ **wingo**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:961](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L961)*
+*Defined in [declarations/tput.d.ts:961](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L961)*
 
 **Parameters:**
 
@@ -15369,7 +15369,7 @@ ___
 
 ▸ **xoff_character**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:490](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L490)*
+*Defined in [declarations/tput.d.ts:490](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L490)*
 
 **Parameters:**
 
@@ -15385,7 +15385,7 @@ ___
 
 ▸ **xoffc**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:901](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L901)*
+*Defined in [declarations/tput.d.ts:901](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L901)*
 
 **Parameters:**
 
@@ -15401,7 +15401,7 @@ ___
 
 ▸ **xon_character**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:489](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L489)*
+*Defined in [declarations/tput.d.ts:489](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L489)*
 
 **Parameters:**
 
@@ -15417,7 +15417,7 @@ ___
 
 ▸ **xonc**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:900](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L900)*
+*Defined in [declarations/tput.d.ts:900](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L900)*
 
 **Parameters:**
 
@@ -15433,7 +15433,7 @@ ___
 
 ▸ **zero_motion**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:619](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L619)*
+*Defined in [declarations/tput.d.ts:619](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L619)*
 
 **Parameters:**
 
@@ -15449,7 +15449,7 @@ ___
 
 ▸ **zerom**(...`args`: any[]): *any*
 
-*Defined in [declarations/tput.d.ts:1028](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L1028)*
+*Defined in [declarations/tput.d.ts:1028](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L1028)*
 
 **Parameters:**
 

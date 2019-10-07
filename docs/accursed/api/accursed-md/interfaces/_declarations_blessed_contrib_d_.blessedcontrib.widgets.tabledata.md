@@ -23,7 +23,7 @@
 
 • **data**? : *T[][]*
 
-*Defined in [declarations/blessed-contrib.d.ts:461](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L461)*
+*Defined in [declarations/blessed-contrib.d.ts:461](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L461)*
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 • **headers**? : *string[]*
 
-*Defined in [declarations/blessed-contrib.d.ts:460](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L460)*
+*Defined in [declarations/blessed-contrib.d.ts:460](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L460)*

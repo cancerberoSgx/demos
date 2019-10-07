@@ -34,7 +34,7 @@
 
 ▸ **saveVirtualData**(`e`: [Element](_jsx_types_.__global.jsx.element.md)): *void*
 
-*Defined in [blessed/virtualElement.ts:54](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L54)*
+*Defined in [blessed/virtualElement.ts:54](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/virtualElement.ts#L54)*
 
 loads the data on this virtual element (object simulating to be a bkessing node temporarily on  given (real) parent e. E knowns that is fake and wont append it .. dont need to worry
 

@@ -28,7 +28,7 @@
 
 Ƭ **BorderType**: *string*
 
-*Defined in [declarations/blessed.d.ts:69](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L69)*
+*Defined in [declarations/blessed.d.ts:69](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L69)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 Ƭ **CursorShape**: *"block" | "underline" | "line"*
 
-*Defined in [declarations/blessed.d.ts:100](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L100)*
+*Defined in [declarations/blessed.d.ts:100](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L100)*
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 Ƭ **TAlign**: *"left" | "center" | "right"*
 
-*Defined in [declarations/blessed.d.ts:123](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L123)*
+*Defined in [declarations/blessed.d.ts:123](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L123)*
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 Ƭ **TMouseAction**: *"mousedown" | "mouseup" | "mousemove" | "wheelup" | "wheeldown"*
 
-*Defined in [declarations/blessed.d.ts:50](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L50)*
+*Defined in [declarations/blessed.d.ts:50](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L50)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 Ƭ **TPosition**: *string | number*
 
-*Defined in [declarations/blessed.d.ts:48](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L48)*
+*Defined in [declarations/blessed.d.ts:48](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L48)*
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 Ƭ **TTopLeft**: *string | number | "center"*
 
-*Defined in [declarations/blessed.d.ts:46](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L46)*
+*Defined in [declarations/blessed.d.ts:46](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L46)*

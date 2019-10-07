@@ -24,7 +24,7 @@
 
 • **attrs**: *[BlessedJsxAttrs](../modules/_jsx_types_.md#blessedjsxattrs)*
 
-*Defined in [jsx/types.ts:265](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L265)*
+*Defined in [jsx/types.ts:216](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L216)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **children**: *[BlessedJsxNode](../modules/_jsx_types_.__global.jsx.md#blessedjsxnode)[]*
 
-*Defined in [jsx/types.ts:266](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L266)*
+*Defined in [jsx/types.ts:217](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L217)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **component**? : *[Component](../classes/_jsx_component_.component.md)*
 
-*Defined in [jsx/types.ts:267](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L267)*
+*Defined in [jsx/types.ts:218](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L218)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **el**: *[Element](_jsx_types_.__global.jsx.element.md)*
 
-*Defined in [jsx/types.ts:263](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L263)*
+*Defined in [jsx/types.ts:214](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L214)*
 
 ___
 
@@ -56,4 +56,4 @@ ___
 
 • **tag**: *[ElementType](../modules/_jsx_types_.__global.jsx.md#elementtype)*
 
-*Defined in [jsx/types.ts:264](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L264)*
+*Defined in [jsx/types.ts:215](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L215)*

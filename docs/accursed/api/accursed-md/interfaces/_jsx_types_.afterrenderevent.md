@@ -20,4 +20,4 @@
 
 • **el**: *[Element](_jsx_types_.__global.jsx.element.md)*
 
-*Defined in [jsx/types.ts:287](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L287)*
+*Defined in [jsx/types.ts:238](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L238)*

@@ -30,7 +30,7 @@
 
 • **PCRomSet**: *boolean*
 
-*Defined in [declarations/tput.d.ts:40](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L40)*
+*Defined in [declarations/tput.d.ts:40](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L40)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **acsc**: *object*
 
-*Defined in [declarations/tput.d.ts:44](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L44)*
+*Defined in [declarations/tput.d.ts:44](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L44)*
 
 #### Type declaration:
 
@@ -50,7 +50,7 @@ ___
 
 • **acscr**: *object*
 
-*Defined in [declarations/tput.d.ts:45](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L45)*
+*Defined in [declarations/tput.d.ts:45](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L45)*
 
 #### Type declaration:
 
@@ -62,7 +62,7 @@ ___
 
 • **brokenACS**: *boolean*
 
-*Defined in [declarations/tput.d.ts:39](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L39)*
+*Defined in [declarations/tput.d.ts:39](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L39)*
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 • **magicCookie**: *boolean*
 
-*Defined in [declarations/tput.d.ts:41](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L41)*
+*Defined in [declarations/tput.d.ts:41](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L41)*
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 • **padding**: *boolean*
 
-*Defined in [declarations/tput.d.ts:42](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L42)*
+*Defined in [declarations/tput.d.ts:42](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L42)*
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 • **setbuf**: *boolean*
 
-*Defined in [declarations/tput.d.ts:43](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L43)*
+*Defined in [declarations/tput.d.ts:43](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L43)*
 
 ___
 
@@ -94,4 +94,4 @@ ___
 
 • **unicode**: *boolean*
 
-*Defined in [declarations/tput.d.ts:38](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L38)*
+*Defined in [declarations/tput.d.ts:38](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L38)*

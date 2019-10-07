@@ -24,7 +24,7 @@
 
 • **currentTarget**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md) | undefined*
 
-*Defined in [blessed/maximize.ts:73](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/maximize.ts#L73)*
+*Defined in [blessed/maximize.ts:73](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/maximize.ts#L73)*
 
 ## Functions
 
@@ -32,7 +32,7 @@
 
 ▸ **isMaximized**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)): *boolean*
 
-*Defined in [blessed/maximize.ts:82](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/maximize.ts#L82)*
+*Defined in [blessed/maximize.ts:82](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/maximize.ts#L82)*
 
 **Parameters:**
 
@@ -48,7 +48,7 @@ ___
 
 ▸ **restoreMaximize**(`options`: [Options](../interfaces/_blessed_maximize_.options.md)): *void*
 
-*Defined in [blessed/maximize.ts:78](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/maximize.ts#L78)*
+*Defined in [blessed/maximize.ts:78](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/maximize.ts#L78)*
 
 restore the state of current maximized element if any
 
@@ -66,7 +66,7 @@ ___
 
 ▸ **setMaximized**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `maximize`: boolean, `options`: [Options](../interfaces/_blessed_maximize_.options.md)): *void*
 
-*Defined in [blessed/maximize.ts:21](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/maximize.ts#L21)*
+*Defined in [blessed/maximize.ts:21](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/maximize.ts#L21)*
 
 Maximize given element by attaching it as first child of the screen and with full dimensions. It stores original parent and index as data.
 

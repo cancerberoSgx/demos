@@ -21,7 +21,7 @@
 
 • **bmp**: *any*
 
-*Defined in [declarations/blessed.d.ts:146](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L146)*
+*Defined in [declarations/blessed.d.ts:146](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L146)*
 
 Image bitmap.
 
@@ -31,7 +31,7 @@ ___
 
 • **cellmap**: *any*
 
-*Defined in [declarations/blessed.d.ts:151](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L151)*
+*Defined in [declarations/blessed.d.ts:151](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L151)*
 
 Image cellmap (bitmap scaled down to cell size).
 
@@ -41,7 +41,7 @@ ___
 
 • **height**: *number*
 
-*Defined in [declarations/blessed.d.ts:141](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L141)*
+*Defined in [declarations/blessed.d.ts:141](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L141)*
 
 Pixel height.
 
@@ -51,6 +51,6 @@ ___
 
 • **width**: *number*
 
-*Defined in [declarations/blessed.d.ts:136](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L136)*
+*Defined in [declarations/blessed.d.ts:136](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L136)*
 
 Pixel width.

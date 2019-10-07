@@ -25,7 +25,7 @@
 
 ▸ **isAttached**(`e`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `to?`: [Screen](../classes/_declarations_blessed_d_.widgets.screen.md)): *boolean*
 
-*Defined in [blessed/waitFor.ts:34](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/waitFor.ts#L34)*
+*Defined in [blessed/waitFor.ts:34](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/waitFor.ts#L34)*
 
 **Parameters:**
 
@@ -42,7 +42,7 @@ ___
 
 ▸ **waitForAttached**(`e`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `options`: [WaitForPredicateOptions](../interfaces/_blessed_waitfor_.waitforpredicateoptions.md)): *Promise‹boolean›*
 
-*Defined in [blessed/waitFor.ts:41](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/waitFor.ts#L41)*
+*Defined in [blessed/waitFor.ts:41](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/waitFor.ts#L41)*
 
 **Parameters:**
 
@@ -59,7 +59,7 @@ ___
 
 ▸ **waitForPredicate**<**T**>(`p`: function, `options`: [WaitForPredicateOptions](../interfaces/_blessed_waitfor_.waitforpredicateoptions.md) | string): *Promise‹T›*
 
-*Defined in [blessed/waitFor.ts:14](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/waitFor.ts#L14)*
+*Defined in [blessed/waitFor.ts:14](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/waitFor.ts#L14)*
 
 **Type parameters:**
 
@@ -87,7 +87,7 @@ ___
 
 ▸ **waitForRender**(`e`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `options`: [WaitForPredicateOptions](../interfaces/_blessed_waitfor_.waitforpredicateoptions.md)): *Promise‹void›*
 
-*Defined in [blessed/waitFor.ts:44](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/waitFor.ts#L44)*
+*Defined in [blessed/waitFor.ts:44](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/waitFor.ts#L44)*
 
 **Parameters:**
 
@@ -104,16 +104,16 @@ Name | Type | Default |
 
 ### ▪ **defaultOptions**: *object*
 
-*Defined in [blessed/waitFor.ts:13](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/waitFor.ts#L13)*
+*Defined in [blessed/waitFor.ts:13](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/waitFor.ts#L13)*
 
 ###  interval
 
 • **interval**: *number* = 200
 
-*Defined in [blessed/waitFor.ts:13](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/waitFor.ts#L13)*
+*Defined in [blessed/waitFor.ts:13](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/waitFor.ts#L13)*
 
 ###  timeout
 
 • **timeout**: *number* = 3000
 
-*Defined in [blessed/waitFor.ts:13](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/waitFor.ts#L13)*
+*Defined in [blessed/waitFor.ts:13](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/waitFor.ts#L13)*

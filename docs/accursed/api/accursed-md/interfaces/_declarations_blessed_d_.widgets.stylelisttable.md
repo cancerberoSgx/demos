@@ -43,7 +43,7 @@
 
 *Inherited from [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md).[bg](_declarations_blessed_d_.widgets.types.tstyle.md#optional-bg)*
 
-*Defined in [declarations/blessed.d.ts:78](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L78)*
+*Defined in [declarations/blessed.d.ts:78](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L78)*
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 *Inherited from [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md).[blink](_declarations_blessed_d_.widgets.types.tstyle.md#optional-blink)*
 
-*Defined in [declarations/blessed.d.ts:83](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L83)*
+*Defined in [declarations/blessed.d.ts:83](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L83)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 *Inherited from [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md).[bold](_declarations_blessed_d_.widgets.types.tstyle.md#optional-bold)*
 
-*Defined in [declarations/blessed.d.ts:80](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L80)*
+*Defined in [declarations/blessed.d.ts:80](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L80)*
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 *Inherited from [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md).[border](_declarations_blessed_d_.widgets.types.tstyle.md#optional-border)*
 
-*Defined in [declarations/blessed.d.ts:88](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L88)*
+*Defined in [declarations/blessed.d.ts:88](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L88)*
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 *Overrides [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md).[cell](_declarations_blessed_d_.widgets.types.tstyle.md#optional-cell)*
 
-*Defined in [declarations/blessed.d.ts:2455](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L2455)*
+*Defined in [declarations/blessed.d.ts:2455](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L2455)*
 
 Cell style.
 
@@ -95,7 +95,7 @@ ___
 
 *Inherited from [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md).[ch](_declarations_blessed_d_.widgets.types.tstyle.md#optional-ch)*
 
-*Defined in [declarations/blessed.d.ts:81](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L81)*
+*Defined in [declarations/blessed.d.ts:81](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L81)*
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 *Inherited from [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md).[custom](_declarations_blessed_d_.widgets.types.tstyle.md#optional-custom)*
 
-*Defined in [declarations/blessed.d.ts:75](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L75)*
+*Defined in [declarations/blessed.d.ts:75](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L75)*
 
 Artificial type for user custom data (it doesn't exists just a type) .
 
@@ -121,7 +121,7 @@ ___
 
 *Inherited from [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md).[fg](_declarations_blessed_d_.widgets.types.tstyle.md#optional-fg)*
 
-*Defined in [declarations/blessed.d.ts:79](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L79)*
+*Defined in [declarations/blessed.d.ts:79](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L79)*
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 *Inherited from [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md).[focus](_declarations_blessed_d_.widgets.types.tstyle.md#optional-focus)*
 
-*Defined in [declarations/blessed.d.ts:92](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L92)*
+*Defined in [declarations/blessed.d.ts:92](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L92)*
 
 ___
 
@@ -141,7 +141,7 @@ ___
 
 *Overrides [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md).[header](_declarations_blessed_d_.widgets.types.tstyle.md#optional-header)*
 
-*Defined in [declarations/blessed.d.ts:2450](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L2450)*
+*Defined in [declarations/blessed.d.ts:2450](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L2450)*
 
 Header style.
 
@@ -153,7 +153,7 @@ ___
 
 *Inherited from [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md).[hover](_declarations_blessed_d_.widgets.types.tstyle.md#optional-hover)*
 
-*Defined in [declarations/blessed.d.ts:95](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L95)*
+*Defined in [declarations/blessed.d.ts:95](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L95)*
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 *Inherited from [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md).[inverse](_declarations_blessed_d_.widgets.types.tstyle.md#optional-inverse)*
 
-*Defined in [declarations/blessed.d.ts:84](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L84)*
+*Defined in [declarations/blessed.d.ts:84](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L84)*
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 *Inherited from [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md).[invisible](_declarations_blessed_d_.widgets.types.tstyle.md#optional-invisible)*
 
-*Defined in [declarations/blessed.d.ts:85](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L85)*
+*Defined in [declarations/blessed.d.ts:85](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L85)*
 
 ___
 
@@ -185,7 +185,7 @@ ___
 
 *Overrides [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md).[item](_declarations_blessed_d_.widgets.types.tstyle.md#optional-item)*
 
-*Defined in [declarations/blessed.d.ts:2203](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L2203)*
+*Defined in [declarations/blessed.d.ts:2203](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L2203)*
 
 ___
 
@@ -195,7 +195,7 @@ ___
 
 *Inherited from [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md).[label](_declarations_blessed_d_.widgets.types.tstyle.md#optional-label)*
 
-*Defined in [declarations/blessed.d.ts:89](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L89)*
+*Defined in [declarations/blessed.d.ts:89](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L89)*
 
 ___
 
@@ -205,7 +205,7 @@ ___
 
 *Inherited from [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md).[overflow](_declarations_blessed_d_.widgets.types.tstyle.md#optional-overflow)*
 
-*Defined in [declarations/blessed.d.ts:76](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L76)*
+*Defined in [declarations/blessed.d.ts:76](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L76)*
 
 ___
 
@@ -215,7 +215,7 @@ ___
 
 *Inherited from [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md).[scrollbar](_declarations_blessed_d_.widgets.types.tstyle.md#optional-scrollbar)*
 
-*Defined in [declarations/blessed.d.ts:91](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L91)*
+*Defined in [declarations/blessed.d.ts:91](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L91)*
 
 ___
 
@@ -227,7 +227,7 @@ ___
 
 *Overrides [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md).[selected](_declarations_blessed_d_.widgets.types.tstyle.md#optional-selected)*
 
-*Defined in [declarations/blessed.d.ts:2202](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L2202)*
+*Defined in [declarations/blessed.d.ts:2202](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L2202)*
 
 ___
 
@@ -237,7 +237,7 @@ ___
 
 *Inherited from [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md).[shadow](_declarations_blessed_d_.widgets.types.tstyle.md#optional-shadow)*
 
-*Defined in [declarations/blessed.d.ts:87](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L87)*
+*Defined in [declarations/blessed.d.ts:87](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L87)*
 
 ___
 
@@ -247,7 +247,7 @@ ___
 
 *Inherited from [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md).[track](_declarations_blessed_d_.widgets.types.tstyle.md#optional-track)*
 
-*Defined in [declarations/blessed.d.ts:90](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L90)*
+*Defined in [declarations/blessed.d.ts:90](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L90)*
 
 ___
 
@@ -257,7 +257,7 @@ ___
 
 *Inherited from [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md).[transparent](_declarations_blessed_d_.widgets.types.tstyle.md#optional-transparent)*
 
-*Defined in [declarations/blessed.d.ts:86](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L86)*
+*Defined in [declarations/blessed.d.ts:86](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L86)*
 
 ___
 
@@ -267,4 +267,4 @@ ___
 
 *Inherited from [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md).[underline](_declarations_blessed_d_.widgets.types.tstyle.md#optional-underline)*
 
-*Defined in [declarations/blessed.d.ts:82](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L82)*
+*Defined in [declarations/blessed.d.ts:82](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L82)*

@@ -32,7 +32,7 @@
 
 Ƭ **GradientColors**: *[string, string] | [string, string, string] | [string, string, string, string]*
 
-*Defined in [blessed/gradient.ts:9](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/gradient.ts#L9)*
+*Defined in [blessed/gradient.ts:9](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/gradient.ts#L9)*
 
 ## Variables
 
@@ -40,4 +40,4 @@
 
 • **gradstop**: *any* =  require('gradstop')
 
-*Defined in [blessed/gradient.ts:7](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/gradient.ts#L7)*
+*Defined in [blessed/gradient.ts:7](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/gradient.ts#L7)*

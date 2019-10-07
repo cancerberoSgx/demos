@@ -27,7 +27,7 @@
 
 • **children**: *string | number | [BlessedElement](../classes/_declarations_blessed_d_.widgets.blessedelement.md)‹object›[]*
 
-*Defined in [jsx/types.ts:283](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L283)*
+*Defined in [jsx/types.ts:234](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L234)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **fn**: *function*
 
-*Defined in [jsx/types.ts:280](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L280)*
+*Defined in [jsx/types.ts:231](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L231)*
 
 #### Type declaration:
 
@@ -53,7 +53,7 @@ ___
 
 • **name**: *keyof IntrinsicElements*
 
-*Defined in [jsx/types.ts:282](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L282)*
+*Defined in [jsx/types.ts:233](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L233)*
 
 ___
 
@@ -61,4 +61,4 @@ ___
 
 • **options**: *Options*
 
-*Defined in [jsx/types.ts:281](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L281)*
+*Defined in [jsx/types.ts:232](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L232)*

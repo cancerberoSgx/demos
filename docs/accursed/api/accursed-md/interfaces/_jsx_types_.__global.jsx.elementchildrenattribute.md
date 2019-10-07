@@ -18,4 +18,4 @@
 
 • **children**: *__type*
 
-*Defined in [jsx/types.ts:195](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L195)*
+*Defined in [jsx/types.ts:146](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L146)*

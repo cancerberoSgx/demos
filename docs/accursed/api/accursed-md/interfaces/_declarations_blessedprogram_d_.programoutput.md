@@ -87,7 +87,7 @@ Name | Type |
 
 • **column**: *number*
 
-*Defined in [declarations/blessedProgram.d.ts:70](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L70)*
+*Defined in [declarations/blessedProgram.d.ts:70](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L70)*
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 • **isTTY**? : *boolean*
 
-*Defined in [declarations/blessedProgram.d.ts:69](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L69)*
+*Defined in [declarations/blessedProgram.d.ts:69](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L69)*
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 • **rows**: *number*
 
-*Defined in [declarations/blessedProgram.d.ts:71](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L71)*
+*Defined in [declarations/blessedProgram.d.ts:71](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L71)*
 
 ___
 

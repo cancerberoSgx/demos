@@ -19,7 +19,7 @@
 
 • **children**: *[BlessedJsxText](../modules/_jsx_types_.__global.jsx.md#blessedjsxtext)*
 
-*Defined in [jsx-components/select.tsx:29](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/select.tsx#L29)*
+*Defined in [jsx-components/select.tsx:29](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/select.tsx#L29)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **value**? : *any*
 
-*Defined in [jsx-components/select.tsx:28](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/select.tsx#L28)*
+*Defined in [jsx-components/select.tsx:28](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/select.tsx#L28)*

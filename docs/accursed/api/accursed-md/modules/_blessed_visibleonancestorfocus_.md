@@ -18,7 +18,7 @@
 
 ▸ **installVisibleOnAncestorFocus**(`options`: [Options](../interfaces/_blessed_visibleonancestorfocus_.options.md)): *void*
 
-*Defined in [blessed/visibleOnAncestorFocus.tsx:13](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/visibleOnAncestorFocus.tsx#L13)*
+*Defined in [blessed/visibleOnAncestorFocus.tsx:13](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/visibleOnAncestorFocus.tsx#L13)*
 
 Will hide/show particular descendant nodes when a particular ancestor of them are focused or any descendant of that ancestor.
 

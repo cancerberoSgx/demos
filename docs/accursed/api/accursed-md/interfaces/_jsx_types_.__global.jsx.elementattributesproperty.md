@@ -18,4 +18,4 @@
 
 • **props**: *__type*
 
-*Defined in [jsx/types.ts:191](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L191)*
+*Defined in [jsx/types.ts:142](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L142)*

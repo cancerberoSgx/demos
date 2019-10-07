@@ -26,7 +26,7 @@
 
 • **debug**? : *boolean*
 
-*Defined in [declarations/tput.d.ts:51](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L51)*
+*Defined in [declarations/tput.d.ts:51](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L51)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **extended**? : *boolean*
 
-*Defined in [declarations/tput.d.ts:50](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L50)*
+*Defined in [declarations/tput.d.ts:50](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L50)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **termcap**? : *string*
 
-*Defined in [declarations/tput.d.ts:52](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L52)*
+*Defined in [declarations/tput.d.ts:52](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L52)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **termcapFile**? : *string*
 
-*Defined in [declarations/tput.d.ts:55](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L55)*
+*Defined in [declarations/tput.d.ts:55](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L55)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 • **terminal**? : *string*
 
-*Defined in [declarations/tput.d.ts:49](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L49)*
+*Defined in [declarations/tput.d.ts:49](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L49)*
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 • **terminfoFile**? : *string*
 
-*Defined in [declarations/tput.d.ts:53](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L53)*
+*Defined in [declarations/tput.d.ts:53](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L53)*
 
 ___
 
@@ -74,4 +74,4 @@ ___
 
 • **terminfoPrefix**? : *string*
 
-*Defined in [declarations/tput.d.ts:54](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L54)*
+*Defined in [declarations/tput.d.ts:54](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L54)*

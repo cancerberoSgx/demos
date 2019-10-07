@@ -91,7 +91,7 @@ This is an artificial abstract class type, it doesn't really exist on blessed ty
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[constructor](_declarations_blessed_d_.widgets.node.md#constructor)*
 
-*Defined in [declarations/blessed.d.ts:260](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L260)*
+*Defined in [declarations/blessed.d.ts:260](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L260)*
 
 **Parameters:**
 
@@ -109,7 +109,7 @@ Name | Type |
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[$](_declarations_blessed_d_.widgets.node.md#$)*
 
-*Defined in [declarations/blessed.d.ts:289](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L289)*
+*Defined in [declarations/blessed.d.ts:289](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L289)*
 
 An object for any miscellaneous user data.
 
@@ -125,7 +125,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[_](_declarations_blessed_d_.widgets.node.md#_)*
 
-*Defined in [declarations/blessed.d.ts:284](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L284)*
+*Defined in [declarations/blessed.d.ts:284](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L284)*
 
 An object for any miscellaneous user data.
 
@@ -141,7 +141,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[children](_declarations_blessed_d_.widgets.node.md#children)*
 
-*Defined in [declarations/blessed.d.ts:316](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L316)*
+*Defined in [declarations/blessed.d.ts:316](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L316)*
 
 Array of node's children.
 
@@ -153,7 +153,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[data](_declarations_blessed_d_.widgets.node.md#data)*
 
-*Defined in [declarations/blessed.d.ts:279](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L279)*
+*Defined in [declarations/blessed.d.ts:279](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L279)*
 
 An object for any miscellaneous user data.
 
@@ -169,7 +169,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[focusable](_declarations_blessed_d_.widgets.node.md#focusable)*
 
-*Defined in [declarations/blessed.d.ts:269](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L269)*
+*Defined in [declarations/blessed.d.ts:269](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L269)*
 
 If true, `screen.focusNext()` and methods related to focus will consider this Element.
 
@@ -181,7 +181,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[index](_declarations_blessed_d_.widgets.node.md#index)*
 
-*Defined in [declarations/blessed.d.ts:301](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L301)*
+*Defined in [declarations/blessed.d.ts:301](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L301)*
 
 Render index (document order index) of the last render call.
 
@@ -193,7 +193,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[lpos](_declarations_blessed_d_.widgets.node.md#lpos)*
 
-*Defined in [declarations/blessed.d.ts:291](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L291)*
+*Defined in [declarations/blessed.d.ts:291](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L291)*
 
 ___
 
@@ -205,7 +205,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[options](_declarations_blessed_d_.widgets.node.md#options)*
 
-*Defined in [declarations/blessed.d.ts:274](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L274)*
+*Defined in [declarations/blessed.d.ts:274](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L274)*
 
 Original options object.
 
@@ -217,7 +217,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[parent](_declarations_blessed_d_.widgets.node.md#optional-parent)*
 
-*Defined in [declarations/blessed.d.ts:311](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L311)*
+*Defined in [declarations/blessed.d.ts:311](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L311)*
 
 Parent node. If null it means the element is not attached to any screen or program, or the node is a Screen.
 
@@ -229,7 +229,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[screen](_declarations_blessed_d_.widgets.node.md#screen)*
 
-*Defined in [declarations/blessed.d.ts:306](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L306)*
+*Defined in [declarations/blessed.d.ts:306](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L306)*
 
 Parent screen.
 
@@ -241,7 +241,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[type](_declarations_blessed_d_.widgets.node.md#type)*
 
-*Defined in [declarations/blessed.d.ts:296](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L296)*
+*Defined in [declarations/blessed.d.ts:296](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L296)*
 
 Type of the node (e.g. box).
 
@@ -253,7 +253,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[uid](_declarations_blessed_d_.widgets.node.md#uid)*
 
-*Defined in [declarations/blessed.d.ts:264](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L264)*
+*Defined in [declarations/blessed.d.ts:264](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L264)*
 
 Unique identifier for Node instances. @internal
 
@@ -303,7 +303,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[append](_declarations_blessed_d_.widgets.node.md#append)*
 
-*Defined in [declarations/blessed.d.ts:326](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L326)*
+*Defined in [declarations/blessed.d.ts:326](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L326)*
 
 Append a node to this node's children.
 
@@ -323,7 +323,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[collectAncestors](_declarations_blessed_d_.widgets.node.md#collectancestors)*
 
-*Defined in [declarations/blessed.d.ts:362](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L362)*
+*Defined in [declarations/blessed.d.ts:362](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L362)*
 
 **Parameters:**
 
@@ -341,7 +341,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[collectDescendants](_declarations_blessed_d_.widgets.node.md#collectdescendants)*
 
-*Defined in [declarations/blessed.d.ts:361](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L361)*
+*Defined in [declarations/blessed.d.ts:361](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L361)*
 
 **Parameters:**
 
@@ -361,7 +361,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[destroy](_declarations_blessed_d_.widgets.node.md#destroy)*
 
-*Defined in [declarations/blessed.d.ts:375](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L375)*
+*Defined in [declarations/blessed.d.ts:375](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L375)*
 
 [detach](_declarations_blessed_d_.widgets.nodewithevents.md#detach)() this node from its parent, and will also detach and destroy each of its descendant nodes each of them emitting [[destory]] event also.
 
@@ -375,7 +375,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[detach](_declarations_blessed_d_.widgets.node.md#detach)*
 
-*Defined in [declarations/blessed.d.ts:351](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L351)*
+*Defined in [declarations/blessed.d.ts:351](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L351)*
 
 Remove node from its parent.
 
@@ -410,7 +410,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[emitAncestors](_declarations_blessed_d_.widgets.node.md#emitancestors)*
 
-*Defined in [declarations/blessed.d.ts:368](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L368)*
+*Defined in [declarations/blessed.d.ts:368](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L368)*
 
 **Returns:** *void*
 
@@ -422,7 +422,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[emitDescendants](_declarations_blessed_d_.widgets.node.md#emitdescendants)*
 
-*Defined in [declarations/blessed.d.ts:367](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L367)*
+*Defined in [declarations/blessed.d.ts:367](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L367)*
 
 Emit event for element, and recursively emit same event for all descendants. If `s` is provided it will call [[iter]] on self first.
 
@@ -457,7 +457,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[forAncestors](_declarations_blessed_d_.widgets.node.md#forancestors)*
 
-*Defined in [declarations/blessed.d.ts:360](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L360)*
+*Defined in [declarations/blessed.d.ts:360](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L360)*
 
 **Parameters:**
 
@@ -483,7 +483,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[forDescendants](_declarations_blessed_d_.widgets.node.md#fordescendants)*
 
-*Defined in [declarations/blessed.d.ts:359](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L359)*
+*Defined in [declarations/blessed.d.ts:359](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L359)*
 
 Visit each node's descendants, with [[iter]] function,  parents first.
 If `s` is provided it will call [[iter]] on self first.
@@ -512,7 +512,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[free](_declarations_blessed_d_.widgets.node.md#free)*
 
-*Defined in [declarations/blessed.d.ts:353](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L353)*
+*Defined in [declarations/blessed.d.ts:353](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L353)*
 
 **Returns:** *void*
 
@@ -524,7 +524,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[get](_declarations_blessed_d_.widgets.node.md#get)*
 
-*Defined in [declarations/blessed.d.ts:380](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L380)*
+*Defined in [declarations/blessed.d.ts:380](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L380)*
 
 Get user property with a potential default value.
 
@@ -563,7 +563,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[hasAncestor](_declarations_blessed_d_.widgets.node.md#hasancestor)*
 
-*Defined in [declarations/blessed.d.ts:370](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L370)*
+*Defined in [declarations/blessed.d.ts:370](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L370)*
 
 **Type parameters:**
 
@@ -585,7 +585,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[hasDescendant](_declarations_blessed_d_.widgets.node.md#hasdescendant)*
 
-*Defined in [declarations/blessed.d.ts:369](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L369)*
+*Defined in [declarations/blessed.d.ts:369](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L369)*
 
 **Type parameters:**
 
@@ -607,7 +607,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[insert](_declarations_blessed_d_.widgets.node.md#insert)*
 
-*Defined in [declarations/blessed.d.ts:336](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L336)*
+*Defined in [declarations/blessed.d.ts:336](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L336)*
 
 Insert a node to this node's children at index i.
 
@@ -628,7 +628,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[insertAfter](_declarations_blessed_d_.widgets.node.md#insertafter)*
 
-*Defined in [declarations/blessed.d.ts:346](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L346)*
+*Defined in [declarations/blessed.d.ts:346](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L346)*
 
 Insert a node from node after the reference node.
 
@@ -649,7 +649,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[insertBefore](_declarations_blessed_d_.widgets.node.md#insertbefore)*
 
-*Defined in [declarations/blessed.d.ts:341](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L341)*
+*Defined in [declarations/blessed.d.ts:341](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L341)*
 
 Insert a node to this node's children before the reference node.
 
@@ -668,7 +668,7 @@ ___
 
 ▸ **key**(`name`: string | string[], `listener`: [KeyEventListener](../modules/_declarations_blessed_d_.widgets.md#keyeventlistener)): *void*
 
-*Defined in [declarations/blessed.d.ts:491](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L491)*
+*Defined in [declarations/blessed.d.ts:491](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L491)*
 
 Bind a keypress listener for a specific key.
 
@@ -757,7 +757,7 @@ ___
 
 *Overrides [Node](_declarations_blessed_d_.widgets.node.md).[on](_declarations_blessed_d_.widgets.node.md#on)*
 
-*Defined in [declarations/blessed.d.ts:511](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L511)*
+*Defined in [declarations/blessed.d.ts:511](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L511)*
 
 Registers event listener to be notified on mouse events.
 
@@ -781,7 +781,7 @@ Name | Type |
 
 *Overrides [Node](_declarations_blessed_d_.widgets.node.md).[on](_declarations_blessed_d_.widgets.node.md#on)*
 
-*Defined in [declarations/blessed.d.ts:515](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L515)*
+*Defined in [declarations/blessed.d.ts:515](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L515)*
 
 Registers event listener to be notified on mouse events.
 
@@ -805,7 +805,7 @@ Name | Type |
 
 *Overrides [Node](_declarations_blessed_d_.widgets.node.md).[on](_declarations_blessed_d_.widgets.node.md#on)*
 
-*Defined in [declarations/blessed.d.ts:519](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L519)*
+*Defined in [declarations/blessed.d.ts:519](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L519)*
 
 Received on key events.
 
@@ -822,7 +822,7 @@ Name | Type |
 
 *Overrides [Node](_declarations_blessed_d_.widgets.node.md).[on](_declarations_blessed_d_.widgets.node.md#on)*
 
-*Defined in [declarations/blessed.d.ts:520](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L520)*
+*Defined in [declarations/blessed.d.ts:520](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L520)*
 
 **Parameters:**
 
@@ -844,7 +844,7 @@ Name | Type |
 
 *Overrides [Node](_declarations_blessed_d_.widgets.node.md).[on](_declarations_blessed_d_.widgets.node.md#on)*
 
-*Defined in [declarations/blessed.d.ts:524](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L524)*
+*Defined in [declarations/blessed.d.ts:524](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L524)*
 
 Received when blessed notices something untoward (output is not a tty, terminfo not found, etc).
 
@@ -868,7 +868,7 @@ Name | Type |
 
 *Overrides [Node](_declarations_blessed_d_.widgets.node.md).[on](_declarations_blessed_d_.widgets.node.md#on)*
 
-*Defined in [declarations/blessed.d.ts:525](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L525)*
+*Defined in [declarations/blessed.d.ts:525](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L525)*
 
 **Parameters:**
 
@@ -920,7 +920,7 @@ ___
 
 ▸ **onceKey**(`name`: string, `listener`: [KeyEventListener](../modules/_declarations_blessed_d_.widgets.md#keyeventlistener)): *void*
 
-*Defined in [declarations/blessed.d.ts:496](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L496)*
+*Defined in [declarations/blessed.d.ts:496](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L496)*
 
 Bind a keypress listener for a specific key once.
 
@@ -941,7 +941,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[prepend](_declarations_blessed_d_.widgets.node.md#prepend)*
 
-*Defined in [declarations/blessed.d.ts:321](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L321)*
+*Defined in [declarations/blessed.d.ts:321](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L321)*
 
 Prepend a node to this node's children.
 
@@ -1037,7 +1037,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[remove](_declarations_blessed_d_.widgets.node.md#remove)*
 
-*Defined in [declarations/blessed.d.ts:331](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L331)*
+*Defined in [declarations/blessed.d.ts:331](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L331)*
 
 Remove child node from node.
 
@@ -1075,7 +1075,7 @@ ___
 
 ▸ **removeKey**(`name`: string, `listener`: [KeyEventListener](../modules/_declarations_blessed_d_.widgets.md#keyeventlistener)): *void*
 
-*Defined in [declarations/blessed.d.ts:506](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L506)*
+*Defined in [declarations/blessed.d.ts:506](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L506)*
 
 Remove a keypress listener for a specific key.
 
@@ -1124,7 +1124,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[set](_declarations_blessed_d_.widgets.node.md#set)*
 
-*Defined in [declarations/blessed.d.ts:385](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L385)*
+*Defined in [declarations/blessed.d.ts:385](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L385)*
 
 Set user property to value.
 
@@ -1163,7 +1163,7 @@ ___
 
 ▸ **unkey**(`name`: string, `listener`: [KeyEventListener](../modules/_declarations_blessed_d_.widgets.md#keyeventlistener)): *void*
 
-*Defined in [declarations/blessed.d.ts:501](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L501)*
+*Defined in [declarations/blessed.d.ts:501](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L501)*
 
 Remove a keypress listener for a specific key.
 

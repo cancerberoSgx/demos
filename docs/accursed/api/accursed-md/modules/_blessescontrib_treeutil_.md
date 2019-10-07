@@ -16,7 +16,7 @@
 
 ▸ **isTreeElement**(`t`: any): *boolean*
 
-*Defined in [blessesContrib/treeUtil.ts:31](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessesContrib/treeUtil.ts#L31)*
+*Defined in [blessesContrib/treeUtil.ts:31](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessesContrib/treeUtil.ts#L31)*
 
 **Parameters:**
 
@@ -32,7 +32,7 @@ ___
 
 ▸ **onTreeNodeFocus**<**T**>(`tree`: contrib.Widgets.TreeElement‹T›, `fn`: function): *void*
 
-*Defined in [blessesContrib/treeUtil.ts:6](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessesContrib/treeUtil.ts#L6)*
+*Defined in [blessesContrib/treeUtil.ts:6](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessesContrib/treeUtil.ts#L6)*
 
 notifies when used "hovers" a tree node (not enter, just overs the node when navigating with arrow keys.)
 
@@ -62,7 +62,7 @@ ___
 
 ▸ **visitTreeNodes**<**N**>(`tree`: contrib.Widgets.TreeElement‹N› | N, `v`: function): *void*
 
-*Defined in [blessesContrib/treeUtil.ts:19](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessesContrib/treeUtil.ts#L19)*
+*Defined in [blessesContrib/treeUtil.ts:19](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessesContrib/treeUtil.ts#L19)*
 
 **Type parameters:**
 

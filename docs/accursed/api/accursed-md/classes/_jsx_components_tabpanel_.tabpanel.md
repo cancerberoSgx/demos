@@ -96,7 +96,7 @@ body2
 
 *Inherited from [Component](_jsx_component_.component.md).[constructor](_jsx_component_.component.md#constructor)*
 
-*Defined in [jsx/component.ts:27](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L27)*
+*Defined in [jsx/component.ts:16](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/component.ts#L16)*
 
 **Parameters:**
 
@@ -115,7 +115,7 @@ Name | Type |
 
 *Inherited from [Component](_jsx_component_.component.md).[_jsxChildrenProps](_jsx_component_.component.md#_jsxchildrenprops)*
 
-*Defined in [jsx/component.ts:35](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L35)*
+*Defined in [jsx/component.ts:24](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/component.ts#L24)*
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 *Inherited from [Component](_jsx_component_.component.md).[blessedElement](_jsx_component_.component.md#protected-blessedelement)*
 
-*Defined in [jsx/component.ts:42](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L42)*
+*Defined in [jsx/component.ts:31](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/component.ts#L31)*
 
 All class elements will have a reference to its rendered blessed element
 
@@ -147,7 +147,7 @@ ___
 
 *Inherited from [Component](_jsx_component_.component.md).[props](_jsx_component_.component.md#protected-props)*
 
-*Defined in [jsx/component.ts:28](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L28)*
+*Defined in [jsx/component.ts:17](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/component.ts#L17)*
 
 ___
 
@@ -157,7 +157,7 @@ ___
 
 *Inherited from [Component](_jsx_component_.component.md).[state](_jsx_component_.component.md#protected-state)*
 
-*Defined in [jsx/component.ts:28](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L28)*
+*Defined in [jsx/component.ts:17](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/component.ts#L17)*
 
 ## Accessors
 
@@ -167,7 +167,7 @@ ___
 
 *Inherited from [Component](_jsx_component_.component.md).[element](_jsx_component_.component.md#element)*
 
-*Defined in [jsx/component.ts:44](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L44)*
+*Defined in [jsx/component.ts:33](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/component.ts#L33)*
 
 **Returns:** *[BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)‹object›*
 
@@ -179,7 +179,7 @@ ___
 
 *Inherited from [Component](_jsx_component_.component.md).[screen](_jsx_component_.component.md#screen)*
 
-*Defined in [jsx/component.ts:84](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L84)*
+*Defined in [jsx/component.ts:73](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/component.ts#L73)*
 
 **Returns:** *[Screen](_declarations_blessed_d_.widgets.screen.md)*
 
@@ -191,7 +191,7 @@ ___
 
 *Inherited from [Component](_jsx_component_.component.md).[type](_jsx_component_.component.md#type)*
 
-*Defined in [jsx/component.ts:51](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L51)*
+*Defined in [jsx/component.ts:40](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/component.ts#L40)*
 
 return the type name of ths component container blessed element
 
@@ -221,7 +221,7 @@ ___
 
 *Inherited from [Component](_jsx_component_.component.md).[filterChildren](_jsx_component_.component.md#filterchildren)*
 
-*Defined in [jsx/component.ts:79](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L79)*
+*Defined in [jsx/component.ts:68](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/component.ts#L68)*
 
 **Type parameters:**
 
@@ -243,7 +243,7 @@ ___
 
 *Inherited from [Component](_jsx_component_.component.md).[filterDescendants](_jsx_component_.component.md#filterdescendants)*
 
-*Defined in [jsx/component.ts:71](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L71)*
+*Defined in [jsx/component.ts:60](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/component.ts#L60)*
 
 **Type parameters:**
 
@@ -265,7 +265,7 @@ ___
 
 *Inherited from [Component](_jsx_component_.component.md).[findChildren](_jsx_component_.component.md#findchildren)*
 
-*Defined in [jsx/component.ts:75](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L75)*
+*Defined in [jsx/component.ts:64](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/component.ts#L64)*
 
 **Type parameters:**
 
@@ -287,7 +287,7 @@ ___
 
 *Inherited from [Component](_jsx_component_.component.md).[findDescendant](_jsx_component_.component.md#finddescendant)*
 
-*Defined in [jsx/component.ts:63](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L63)*
+*Defined in [jsx/component.ts:52](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/component.ts#L52)*
 
 **Type parameters:**
 
@@ -309,7 +309,7 @@ ___
 
 *Inherited from [Component](_jsx_component_.component.md).[findDescendantNamed](_jsx_component_.component.md#finddescendantnamed)*
 
-*Defined in [jsx/component.ts:67](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L67)*
+*Defined in [jsx/component.ts:56](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/component.ts#L56)*
 
 **Type parameters:**
 
@@ -331,7 +331,7 @@ ___
 
 *Inherited from [Component](_jsx_component_.component.md).[getContent](_jsx_component_.component.md#getcontent)*
 
-*Defined in [jsx/component.ts:104](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L104)*
+*Defined in [jsx/component.ts:93](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/component.ts#L93)*
 
 Returns the text content of given node and all its children, in order. By default stripped from ansi
 escape chars and trimmed, and separated by space, but is configurable through options.
@@ -356,7 +356,7 @@ ___
 
 *Inherited from [Component](_jsx_component_.component.md).[getDescendantNamed](_jsx_component_.component.md#getdescendantnamed)*
 
-*Defined in [jsx/component.ts:108](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L108)*
+*Defined in [jsx/component.ts:97](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/component.ts#L97)*
 
 **Type parameters:**
 
@@ -378,7 +378,7 @@ ___
 
 *Inherited from [Component](_jsx_component_.component.md).[getElementData](_jsx_component_.component.md#getelementdata)*
 
-*Defined in [jsx/component.ts:55](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L55)*
+*Defined in [jsx/component.ts:44](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/component.ts#L44)*
 
 **Type parameters:**
 
@@ -431,7 +431,7 @@ ___
 
 *Inherited from [Component](_jsx_component_.component.md).[replaceChildren](_jsx_component_.component.md#replacechildren)*
 
-*Defined in [jsx/component.ts:93](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L93)*
+*Defined in [jsx/component.ts:82](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/component.ts#L82)*
 
  Hot replace all children on this node with given [[newChildren]] array elements. This is a visual
  operation, and only should eb performed when the component need to implement a radicals different view
@@ -473,7 +473,7 @@ ___
 
 *Inherited from [Component](_jsx_component_.component.md).[visitDescendants](_jsx_component_.component.md#visitdescendants)*
 
-*Defined in [jsx/component.ts:59](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L59)*
+*Defined in [jsx/component.ts:48](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/component.ts#L48)*
 
 **Parameters:**
 

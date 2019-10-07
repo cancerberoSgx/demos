@@ -21,7 +21,7 @@
 
 • **children**? : *object | function*
 
-*Defined in [declarations/blessed-contrib.d.ts:523](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L523)*
+*Defined in [declarations/blessed-contrib.d.ts:523](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L523)*
 
 Type : hash or function(node){ return children } Desc : Node children.
 The function must return a hash that could have been used as children
@@ -36,7 +36,7 @@ ___
 
 • **childrenContent**? : *object*
 
-*Defined in [declarations/blessed-contrib.d.ts:533](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L533)*
+*Defined in [declarations/blessed-contrib.d.ts:533](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L533)*
 
 Type : hash Desc : Children content for internal usage DO NOT MODIFY If
 node.children is a hash, node.children===node.childrenContent If
@@ -55,7 +55,7 @@ ___
 
 • **extended**? : *boolean*
 
-*Defined in [declarations/blessed-contrib.d.ts:507](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L507)*
+*Defined in [declarations/blessed-contrib.d.ts:507](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L507)*
 
 Type : boolean Desc : Determine if this node is extended No effect when
   the node have no child Default value for each node will be
@@ -71,7 +71,7 @@ ___
 
 • **name**? : *string*
 
-*Defined in [declarations/blessed-contrib.d.ts:513](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L513)*
+*Defined in [declarations/blessed-contrib.d.ts:513](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L513)*
 
 Type : string Desc : Node name If the node isn't the root and you don't
 specify the name, will be set to hash key Example :` { name: 'Fruit'}`

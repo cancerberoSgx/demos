@@ -428,4 +428,4 @@
 
 • **options**: *T*
 
-*Defined in [declarations/blessed.d.ts:225](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L225)*
+*Defined in [declarations/blessed.d.ts:225](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L225)*

@@ -23,7 +23,7 @@
 
 • **lastModalContent**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md) | undefined*
 
-*Defined in [blessed/modal.ts:55](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/modal.ts#L55)*
+*Defined in [blessed/modal.ts:55](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/modal.ts#L55)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **lastOnClosedListener**: *undefined | function*
 
-*Defined in [blessed/modal.ts:7](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/modal.ts#L7)*
+*Defined in [blessed/modal.ts:7](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/modal.ts#L7)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **modalInstance**: *[Box](../classes/_declarations_blessed_d_.widget.box.md) | undefined*
 
-*Defined in [blessed/modal.ts:54](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/modal.ts#L54)*
+*Defined in [blessed/modal.ts:54](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/modal.ts#L54)*
 
 ## Functions
 
@@ -47,7 +47,7 @@ ___
 
 ▸ **closeModal**(`screen`: [Screen](../classes/_declarations_blessed_d_.widgets.screen.md)): *void*
 
-*Defined in [blessed/modal.ts:60](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/modal.ts#L60)*
+*Defined in [blessed/modal.ts:60](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/modal.ts#L60)*
 
 Close current opened modal
 
@@ -65,7 +65,7 @@ ___
 
 ▸ **isModalVisible**(): *boolean*
 
-*Defined in [blessed/modal.ts:87](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/modal.ts#L87)*
+*Defined in [blessed/modal.ts:87](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/modal.ts#L87)*
 
 **Returns:** *boolean*
 
@@ -75,7 +75,7 @@ ___
 
 ▸ **resetModals**(): *void*
 
-*Defined in [blessed/modal.ts:77](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/modal.ts#L77)*
+*Defined in [blessed/modal.ts:77](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/modal.ts#L77)*
 
 Resets this manager. Useful when you are destroying / recreating screen to make sure there are no missing references to forgotten nodes.
 
@@ -87,7 +87,7 @@ ___
 
 ▸ **showInModal**(`screen`: [Screen](../classes/_declarations_blessed_d_.widgets.screen.md), `s`: string | [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `title`: string, `width`: string, `height`: string, `onClosed?`: function): *[BoxElement](../classes/_declarations_blessed_d_.widgets.boxelement.md)*
 
-*Defined in [blessed/modal.ts:12](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/modal.ts#L12)*
+*Defined in [blessed/modal.ts:12](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/modal.ts#L12)*
 
 Easy to use modal: ``` showInModal(screen, anElement)``` or simply:  ``` showInModal(screen, 'some text')```
 

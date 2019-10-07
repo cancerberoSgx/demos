@@ -20,7 +20,7 @@
 
 ▸ **attrToBinary**(`style`: [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md), `element`: [BlessedElement](../classes/_declarations_blessed_d_.widgets.blessedelement.md)): *number*
 
-*Defined in [declarations/blessed.d.ts:3732](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3732)*
+*Defined in [declarations/blessed.d.ts:3733](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L3733)*
 
 Convert style attributes to binary format.
 
@@ -39,7 +39,7 @@ ___
 
 ▸ **generateTags**(`style`: [TStyle](_declarations_blessed_d_.widgets.types.tstyle.md), `text`: string): *string*
 
-*Defined in [declarations/blessed.d.ts:3730](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3730)*
+*Defined in [declarations/blessed.d.ts:3731](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L3731)*
 
 Generate text tags based on style object.
 
@@ -58,7 +58,7 @@ ___
 
 ▸ **stripTags**(`text`: string): *string*
 
-*Defined in [declarations/blessed.d.ts:3736](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3736)*
+*Defined in [declarations/blessed.d.ts:3737](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L3737)*
 
 Strip text of tags and SGR sequences.
 

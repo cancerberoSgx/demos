@@ -12,6 +12,7 @@
 
 * [blessedElement](_util_debugnode_.treenode.md#optional-blessedelement)
 * [children](_util_debugnode_.treenode.md#children)
+* [expanded](_util_debugnode_.treenode.md#optional-expanded)
 * [label](_util_debugnode_.treenode.md#label)
 * [name](_util_debugnode_.treenode.md#name)
 
@@ -21,7 +22,7 @@
 
 • **blessedElement**? : *[Element](_jsx_types_.__global.jsx.element.md)*
 
-*Defined in [util/debugNode.tsx:24](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/debugNode.tsx#L24)*
+*Defined in [util/debugNode.tsx:25](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/debugNode.tsx#L25)*
 
 ___
 
@@ -29,7 +30,15 @@ ___
 
 • **children**: *[TreeNode](_util_debugnode_.treenode.md)[]*
 
-*Defined in [util/debugNode.tsx:23](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/debugNode.tsx#L23)*
+*Defined in [util/debugNode.tsx:23](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/debugNode.tsx#L23)*
+
+___
+
+### `Optional` expanded
+
+• **expanded**? : *boolean*
+
+*Defined in [util/debugNode.tsx:24](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/debugNode.tsx#L24)*
 
 ___
 
@@ -37,7 +46,7 @@ ___
 
 • **label**: *string*
 
-*Defined in [util/debugNode.tsx:22](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/debugNode.tsx#L22)*
+*Defined in [util/debugNode.tsx:22](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/debugNode.tsx#L22)*
 
 ___
 
@@ -45,4 +54,4 @@ ___
 
 • **name**: *string*
 
-*Defined in [util/debugNode.tsx:21](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/debugNode.tsx#L21)*
+*Defined in [util/debugNode.tsx:21](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/debugNode.tsx#L21)*

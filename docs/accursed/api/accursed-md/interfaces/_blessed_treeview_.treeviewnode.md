@@ -26,7 +26,7 @@
 
 • **children**: *[TreeViewNode](_blessed_treeview_.treeviewnode.md)[]*
 
-*Defined in [blessed/treeView.ts:11](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/treeView.ts#L11)*
+*Defined in [blessed/treeView.ts:11](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/treeView.ts#L11)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **collapsedPrefix**? : *string*
 
-*Defined in [blessed/treeView.ts:21](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/treeView.ts#L21)*
+*Defined in [blessed/treeView.ts:21](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/treeView.ts#L21)*
 
 This will take priority over TreeViewOptions.collapsedPrefix
 
@@ -44,7 +44,7 @@ ___
 
 • **expanded**? : *boolean*
 
-*Defined in [blessed/treeView.ts:12](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/treeView.ts#L12)*
+*Defined in [blessed/treeView.ts:12](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/treeView.ts#L12)*
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 • **expandedPrefix**? : *string*
 
-*Defined in [blessed/treeView.ts:17](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/treeView.ts#L17)*
+*Defined in [blessed/treeView.ts:17](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/treeView.ts#L17)*
 
 This will take priority over TreeViewOptions.expandedPrefix
 
@@ -62,7 +62,7 @@ ___
 
 • **hidden**? : *boolean*
 
-*Defined in [blessed/treeView.ts:13](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/treeView.ts#L13)*
+*Defined in [blessed/treeView.ts:13](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/treeView.ts#L13)*
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 • **label**? : *string*
 
-*Defined in [blessed/treeView.ts:10](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/treeView.ts#L10)*
+*Defined in [blessed/treeView.ts:10](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/treeView.ts#L10)*
 
 ___
 
@@ -78,4 +78,4 @@ ___
 
 • **name**: *string*
 
-*Defined in [blessed/treeView.ts:9](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/treeView.ts#L9)*
+*Defined in [blessed/treeView.ts:9](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/treeView.ts#L9)*

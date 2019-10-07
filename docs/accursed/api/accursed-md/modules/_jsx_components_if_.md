@@ -14,7 +14,7 @@
 
 ▸ **If**<**T**>(`props`: object): *any*
 
-*Defined in [jsx-components/if.tsx:50](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/if.tsx#L50)*
+*Defined in [jsx-components/if.tsx:50](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/if.tsx#L50)*
 
 if as statement. children need to be in a function and the function accepts a parameter which value is given condition `c` but casted to NotFalsy<C> so there's no need of type guards in the body. Example:
 ```

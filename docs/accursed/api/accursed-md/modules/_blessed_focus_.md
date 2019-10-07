@@ -39,7 +39,7 @@
 
 Ƭ **OnFocusChangeListener**: *function*
 
-*Defined in [blessed/focus.ts:87](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/focus.ts#L87)*
+*Defined in [blessed/focus.ts:91](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/focus.ts#L91)*
 
 #### Type declaration:
 
@@ -58,7 +58,7 @@ ___
 
 Ƭ **OnFocusedListener**: *function*
 
-*Defined in [blessed/focus.ts:24](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/focus.ts#L24)*
+*Defined in [blessed/focus.ts:25](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/focus.ts#L25)*
 
 #### Type declaration:
 
@@ -79,7 +79,7 @@ Name | Type |
 
 • **focusStyle**: *[Style](_blessedtypes_.md#style)*
 
-*Defined in [blessed/focus.ts:34](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/focus.ts#L34)*
+*Defined in [blessed/focus.ts:38](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/focus.ts#L38)*
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 • **lastFocus**: *object*
 
-*Defined in [blessed/focus.ts:128](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/focus.ts#L128)*
+*Defined in [blessed/focus.ts:132](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/focus.ts#L132)*
 
 #### Type declaration:
 
@@ -99,7 +99,7 @@ ___
 
 • **lastFocused**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md) | undefined*
 
-*Defined in [blessed/focus.ts:127](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/focus.ts#L127)*
+*Defined in [blessed/focus.ts:131](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/focus.ts#L131)*
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 • **onFocusChangeInterval**: *number* = 500
 
-*Defined in [blessed/focus.ts:114](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/focus.ts#L114)*
+*Defined in [blessed/focus.ts:118](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/focus.ts#L118)*
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 • **onFocusChangeListeners**: *[OnFocusChangeListener](_blessed_focus_.md#onfocuschangelistener)[]* =  []
 
-*Defined in [blessed/focus.ts:113](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/focus.ts#L113)*
+*Defined in [blessed/focus.ts:117](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/focus.ts#L117)*
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 • **onFocusChangeTimer**: *Timeout | undefined* =  undefined
 
-*Defined in [blessed/focus.ts:125](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/focus.ts#L125)*
+*Defined in [blessed/focus.ts:129](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/focus.ts#L129)*
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 • **onFocusedEmitter**: *Emitter‹any, function›* =  new Emitter()
 
-*Defined in [blessed/focus.ts:31](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/focus.ts#L31)*
+*Defined in [blessed/focus.ts:34](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/focus.ts#L34)*
 
 ___
 
@@ -139,7 +139,7 @@ ___
 
 • **onFocused_focus**: *[_focus](../classes/_declarations_blessed_d_.widgets.screen.md#_focus) | undefined*
 
-*Defined in [blessed/focus.ts:32](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/focus.ts#L32)*
+*Defined in [blessed/focus.ts:36](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/focus.ts#L36)*
 
 ## Functions
 
@@ -147,7 +147,7 @@ ___
 
 ▸ **installFocusHandler**(`focusId`: string, `elements`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)[], `screen`: [Screen](../classes/_declarations_blessed_d_.widgets.screen.md), `keys`: [string, string], `styleChildren`: boolean, `focusFirst`: boolean): *void*
 
-*Defined in [blessed/focus.ts:154](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/focus.ts#L154)*
+*Defined in [blessed/focus.ts:160](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/focus.ts#L160)*
 
 **`obsolete`** in favor of [onFocused](_blessed_focus_.md#onfocused).
 
@@ -170,7 +170,7 @@ ___
 
 ▸ **isFocused**(`screen`: [Screen](../classes/_declarations_blessed_d_.widgets.screen.md), `el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)): *true | [Node](../classes/_declarations_blessed_d_.widgets.node.md)*
 
-*Defined in [blessed/focus.ts:6](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/focus.ts#L6)*
+*Defined in [blessed/focus.ts:6](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/focus.ts#L6)*
 
 **Parameters:**
 
@@ -187,7 +187,7 @@ ___
 
 ▸ **offFocused**(`f`: [OnFocusedListener](_blessed_focus_.md#onfocusedlistener)): *void*
 
-*Defined in [blessed/focus.ts:28](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/focus.ts#L28)*
+*Defined in [blessed/focus.ts:30](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/focus.ts#L30)*
 
 Removes an onFocused listener. See [onFocused](_blessed_focus_.md#onfocused)
 
@@ -205,7 +205,7 @@ ___
 
 ▸ **onBlur**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `screen`: [Screen](../classes/_declarations_blessed_d_.widgets.screen.md), `fn`: function, `emitNow`: boolean): *void*
 
-*Defined in [blessed/focus.ts:48](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/focus.ts#L48)*
+*Defined in [blessed/focus.ts:52](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/focus.ts#L52)*
 
 **`obsolete`** in favor of [onFocused](_blessed_focus_.md#onfocused).
 
@@ -240,7 +240,7 @@ ___
 
 ▸ **onFocus**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `screen`: [Screen](../classes/_declarations_blessed_d_.widgets.screen.md), `fn`: [OnFocusChangeListener](_blessed_focus_.md#onfocuschangelistener), `emitNow`: boolean): *void*
 
-*Defined in [blessed/focus.ts:71](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/focus.ts#L71)*
+*Defined in [blessed/focus.ts:75](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/focus.ts#L75)*
 
 **`obsolete`** in favor of [onFocused](_blessed_focus_.md#onfocused).
 
@@ -265,7 +265,7 @@ ___
 
 ▸ **onFocusChange**(`screen`: [Screen](../classes/_declarations_blessed_d_.widgets.screen.md), `fn`: [OnFocusChangeListener](_blessed_focus_.md#onfocuschangelistener)): *void*
 
-*Defined in [blessed/focus.ts:98](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/focus.ts#L98)*
+*Defined in [blessed/focus.ts:102](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/focus.ts#L102)*
 
 **`obsolete`** in favor of [onFocused](_blessed_focus_.md#onfocused).
 
@@ -290,7 +290,7 @@ ___
 
 ▸ **onFocused**(`screen`: [Screen](../classes/_declarations_blessed_d_.widgets.screen.md), `f`: [OnFocusedListener](_blessed_focus_.md#onfocusedlistener)): *void*
 
-*Defined in [blessed/focus.ts:13](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/focus.ts#L13)*
+*Defined in [blessed/focus.ts:13](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/focus.ts#L13)*
 
 Same as [onFocus](_blessed_focus_.md#onfocus) but without polling screen.focused. This implementation wraps Screen.prototype._focus to detect when focused element changes
 
@@ -309,7 +309,7 @@ ___
 
 ▸ **resetFocusManager**(): *void*
 
-*Defined in [blessed/focus.ts:135](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/focus.ts#L135)*
+*Defined in [blessed/focus.ts:139](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/focus.ts#L139)*
 
 **`obsolete`** in favor of [onFocused](_blessed_focus_.md#onfocused).
 
@@ -323,7 +323,7 @@ ___
 
 ▸ **setOnFocusChangeInterval**(`t`: number): *void*
 
-*Defined in [blessed/focus.ts:121](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/focus.ts#L121)*
+*Defined in [blessed/focus.ts:125](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/focus.ts#L125)*
 
 **`obsolete`** in favor of [onFocused](_blessed_focus_.md#onfocused).
 
@@ -343,7 +343,7 @@ ___
 
 ▸ **uninstallFocusHandler**(`focusId`: string): *void*
 
-*Defined in [blessed/focus.ts:144](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/focus.ts#L144)*
+*Defined in [blessed/focus.ts:149](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/focus.ts#L149)*
 
 **`obsolete`** in favor of [onFocused](_blessed_focus_.md#onfocused).
 

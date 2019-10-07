@@ -20,4 +20,4 @@
 
 • **children**: *[ListTableHead](../classes/_jsx_components_listtable_.listtablehead.md) | [ListTableBody](../classes/_jsx_components_listtable_.listtablebody.md)[]*
 
-*Defined in [jsx-components/listTable.tsx:7](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listTable.tsx#L7)*
+*Defined in [jsx-components/listTable.tsx:7](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/listTable.tsx#L7)*

@@ -43,7 +43,7 @@
 
 • **align**? : *"left" | "center" | "right"*
 
-*Defined in [jsx-components/optionsProvider.tsx:49](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L49)*
+*Defined in [jsx-components/optionsProvider.tsx:49](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L49)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **alwaysScroll**? : *boolean*
 
-*Defined in [jsx-components/optionsProvider.tsx:24](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L24)*
+*Defined in [jsx-components/optionsProvider.tsx:24](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L24)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 • **bg**? : *[Color](../modules/_declarations_blessed_d_.widgets.md#color)*
 
-*Defined in [jsx-components/optionsProvider.tsx:32](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L32)*
+*Defined in [jsx-components/optionsProvider.tsx:32](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L32)*
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 • **blink**? : *boolean*
 
-*Defined in [jsx-components/optionsProvider.tsx:35](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L35)*
+*Defined in [jsx-components/optionsProvider.tsx:35](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L35)*
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 • **bold**? : *boolean*
 
-*Defined in [jsx-components/optionsProvider.tsx:33](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L33)*
+*Defined in [jsx-components/optionsProvider.tsx:33](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L33)*
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 • **border**? : *[Border](../modules/_blessedtypes_.md#border)*
 
-*Defined in [jsx-components/optionsProvider.tsx:18](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L18)*
+*Defined in [jsx-components/optionsProvider.tsx:18](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L18)*
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 • **bottom**? : *[Position](_declarations_blessed_d_.widgets.position.md)*
 
-*Defined in [jsx-components/optionsProvider.tsx:12](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L12)*
+*Defined in [jsx-components/optionsProvider.tsx:12](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L12)*
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 • **clickable**? : *boolean*
 
-*Defined in [jsx-components/optionsProvider.tsx:41](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L41)*
+*Defined in [jsx-components/optionsProvider.tsx:41](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L41)*
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 • **content**? : *string*
 
-*Defined in [jsx-components/optionsProvider.tsx:39](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L39)*
+*Defined in [jsx-components/optionsProvider.tsx:39](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L39)*
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 • **draggable**? : *boolean*
 
-*Defined in [jsx-components/optionsProvider.tsx:59](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L59)*
+*Defined in [jsx-components/optionsProvider.tsx:59](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L59)*
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 • **fg**? : *[Color](../modules/_declarations_blessed_d_.widgets.md#color)*
 
-*Defined in [jsx-components/optionsProvider.tsx:31](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L31)*
+*Defined in [jsx-components/optionsProvider.tsx:31](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L31)*
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 • **height**? : *[Position](_declarations_blessed_d_.widgets.position.md)*
 
-*Defined in [jsx-components/optionsProvider.tsx:8](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L8)*
+*Defined in [jsx-components/optionsProvider.tsx:8](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L8)*
 
 ___
 
@@ -139,7 +139,7 @@ ___
 
 • **hidden**? : *boolean*
 
-*Defined in [jsx-components/optionsProvider.tsx:43](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L43)*
+*Defined in [jsx-components/optionsProvider.tsx:43](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L43)*
 
 ___
 
@@ -147,7 +147,7 @@ ___
 
 • **hoverText**? : *string*
 
-*Defined in [jsx-components/optionsProvider.tsx:47](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L47)*
+*Defined in [jsx-components/optionsProvider.tsx:47](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L47)*
 
 ___
 
@@ -155,7 +155,7 @@ ___
 
 • **inverse**? : *boolean*
 
-*Defined in [jsx-components/optionsProvider.tsx:36](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L36)*
+*Defined in [jsx-components/optionsProvider.tsx:36](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L36)*
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 • **invisible**? : *boolean*
 
-*Defined in [jsx-components/optionsProvider.tsx:37](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L37)*
+*Defined in [jsx-components/optionsProvider.tsx:37](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L37)*
 
 ___
 
@@ -171,7 +171,7 @@ ___
 
 • **left**? : *[TopLeft](../modules/_blessedtypes_.md#topleft)*
 
-*Defined in [jsx-components/optionsProvider.tsx:10](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L10)*
+*Defined in [jsx-components/optionsProvider.tsx:10](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L10)*
 
 ___
 
@@ -179,7 +179,7 @@ ___
 
 • **padding**? : *Required‹[Padding](_declarations_blessed_d_.widgets.padding.md)›*
 
-*Defined in [jsx-components/optionsProvider.tsx:55](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L55)*
+*Defined in [jsx-components/optionsProvider.tsx:55](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L55)*
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 • **right**? : *[Position](_declarations_blessed_d_.widgets.position.md)*
 
-*Defined in [jsx-components/optionsProvider.tsx:11](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L11)*
+*Defined in [jsx-components/optionsProvider.tsx:11](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L11)*
 
 ___
 
@@ -195,7 +195,7 @@ ___
 
 • **shrink**? : *boolean*
 
-*Defined in [jsx-components/optionsProvider.tsx:53](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L53)*
+*Defined in [jsx-components/optionsProvider.tsx:53](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L53)*
 
 ___
 
@@ -203,7 +203,7 @@ ___
 
 • **style**? : *[Style](../modules/_blessedtypes_.md#style)*
 
-*Defined in [jsx-components/optionsProvider.tsx:65](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L65)*
+*Defined in [jsx-components/optionsProvider.tsx:65](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L65)*
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 • **tags**? : *boolean*
 
-*Defined in [jsx-components/optionsProvider.tsx:29](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L29)*
+*Defined in [jsx-components/optionsProvider.tsx:29](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L29)*
 
 ___
 
@@ -219,7 +219,7 @@ ___
 
 • **top**? : *[TopLeft](../modules/_blessedtypes_.md#topleft)*
 
-*Defined in [jsx-components/optionsProvider.tsx:9](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L9)*
+*Defined in [jsx-components/optionsProvider.tsx:9](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L9)*
 
 ___
 
@@ -227,7 +227,7 @@ ___
 
 • **underline**? : *boolean*
 
-*Defined in [jsx-components/optionsProvider.tsx:34](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L34)*
+*Defined in [jsx-components/optionsProvider.tsx:34](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L34)*
 
 ___
 
@@ -235,7 +235,7 @@ ___
 
 • **valign**? : *"top" | "middle" | "bottom"*
 
-*Defined in [jsx-components/optionsProvider.tsx:51](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L51)*
+*Defined in [jsx-components/optionsProvider.tsx:51](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L51)*
 
 ___
 
@@ -243,4 +243,4 @@ ___
 
 • **width**? : *[Position](_declarations_blessed_d_.widgets.position.md)*
 
-*Defined in [jsx-components/optionsProvider.tsx:7](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L7)*
+*Defined in [jsx-components/optionsProvider.tsx:7](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L7)*

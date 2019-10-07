@@ -21,7 +21,7 @@
 
 • **children**: *[BlessedJsxNode](../modules/_jsx_types_.__global.jsx.md#blessedjsxnode) | [BlessedJsxNode](../modules/_jsx_types_.__global.jsx.md#blessedjsxnode)[]*
 
-*Defined in [jsx-components/optionsProvider.tsx:70](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L70)*
+*Defined in [jsx-components/optionsProvider.tsx:70](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L70)*
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 • **options**: *[SupportedOptions](_jsx_components_optionsprovider_.supportedoptions.md)*
 
-*Defined in [jsx-components/optionsProvider.tsx:69](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L69)*
+*Defined in [jsx-components/optionsProvider.tsx:69](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L69)*

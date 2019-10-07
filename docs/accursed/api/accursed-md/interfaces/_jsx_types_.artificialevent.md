@@ -22,4 +22,4 @@
 
 • **currentTarget**: *T*
 
-*Defined in [jsx/types.ts:312](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L312)*
+*Defined in [jsx/types.ts:263](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L263)*

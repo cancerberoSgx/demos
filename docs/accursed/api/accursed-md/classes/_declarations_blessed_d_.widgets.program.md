@@ -18,7 +18,7 @@
 
 ▸ **text**(`text`: string, `attr`: string): *string*
 
-*Defined in [declarations/blessed.d.ts:3519](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3519)*
+*Defined in [declarations/blessed.d.ts:3520](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L3520)*
 
 Wrap the given text in terminal formatting codes corresponding to the given attribute
 name. The `attr` string can be of the form `red fg` or `52 bg` where `52` is a 0-255

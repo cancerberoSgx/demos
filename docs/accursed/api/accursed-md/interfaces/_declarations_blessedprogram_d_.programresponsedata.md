@@ -49,7 +49,7 @@ output.
 
 • **code**: *string*
 
-*Defined in [declarations/blessedProgram.d.ts:27](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L27)*
+*Defined in [declarations/blessedProgram.d.ts:27](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L27)*
 
 Example: '', 'DSR'
 
@@ -59,7 +59,7 @@ ___
 
 • **cursor**? : *object*
 
-*Defined in [declarations/blessedProgram.d.ts:50](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L50)*
+*Defined in [declarations/blessedProgram.d.ts:50](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L50)*
 
 #### Type declaration:
 
@@ -75,7 +75,7 @@ ___
 
 • **event**: *string*
 
-*Defined in [declarations/blessedProgram.d.ts:22](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L22)*
+*Defined in [declarations/blessedProgram.d.ts:22](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L22)*
 
 The event type that was requested / write that caused this response. Example: 'window-manipulation',
 'device-attributes', 'device-status', etc.
@@ -86,7 +86,7 @@ ___
 
 • **height**? : *number*
 
-*Defined in [declarations/blessedProgram.d.ts:40](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L40)*
+*Defined in [declarations/blessedProgram.d.ts:40](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L40)*
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 • **page**? : *any*
 
-*Defined in [declarations/blessedProgram.d.ts:47](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L47)*
+*Defined in [declarations/blessedProgram.d.ts:47](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L47)*
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 • **size**? : *object*
 
-*Defined in [declarations/blessedProgram.d.ts:36](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L36)*
+*Defined in [declarations/blessedProgram.d.ts:36](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L36)*
 
 #### Type declaration:
 
@@ -116,7 +116,7 @@ ___
 
 • **status**? : *object*
 
-*Defined in [declarations/blessedProgram.d.ts:42](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L42)*
+*Defined in [declarations/blessedProgram.d.ts:42](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L42)*
 
 #### Type declaration:
 
@@ -132,7 +132,7 @@ ___
 
 • **textAreaSizeCharacters**? : *object*
 
-*Defined in [declarations/blessedProgram.d.ts:55](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L55)*
+*Defined in [declarations/blessedProgram.d.ts:55](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L55)*
 
 #### Type declaration:
 
@@ -146,7 +146,7 @@ ___
 
 • **type**: *string*
 
-*Defined in [declarations/blessedProgram.d.ts:34](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L34)*
+*Defined in [declarations/blessedProgram.d.ts:34](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L34)*
 
 Identifies the request type that caused this response. For example, if a  'window-manipulation' is
 written the response type could be 'textarea-size',  example: 'textarea-size',  'cursor-status',
@@ -157,7 +157,7 @@ ___
 
 • **width**? : *number*
 
-*Defined in [declarations/blessedProgram.d.ts:41](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L41)*
+*Defined in [declarations/blessedProgram.d.ts:41](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L41)*
 
 ___
 
@@ -165,7 +165,7 @@ ___
 
 • **x**? : *number*
 
-*Defined in [declarations/blessedProgram.d.ts:48](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L48)*
+*Defined in [declarations/blessedProgram.d.ts:48](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L48)*
 
 ___
 
@@ -173,4 +173,4 @@ ___
 
 • **y**? : *number*
 
-*Defined in [declarations/blessedProgram.d.ts:49](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L49)*
+*Defined in [declarations/blessedProgram.d.ts:49](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L49)*

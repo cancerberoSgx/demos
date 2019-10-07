@@ -21,7 +21,7 @@
 
 • **lineNumberWidth**? : *number*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:33](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L33)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:33](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L33)*
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 • **style**: *[Style](../modules/_blessedtypes_.md#style) & object*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:34](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L34)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:34](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L34)*

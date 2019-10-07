@@ -23,7 +23,7 @@
 
 • **borderStyle**: *[BorderStyle](../enums/_util_boxes_.borderstyle.md)*
 
-*Defined in [blessed/borderBox.ts:9](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/borderBox.ts#L9)*
+*Defined in [blessed/borderBox.ts:9](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/borderBox.ts#L9)*
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 • **removeLabel**? : *boolean*
 
-*Defined in [blessed/borderBox.ts:10](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/borderBox.ts#L10)*
+*Defined in [blessed/borderBox.ts:10](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/borderBox.ts#L10)*

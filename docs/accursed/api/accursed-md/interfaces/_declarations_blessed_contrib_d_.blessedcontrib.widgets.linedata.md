@@ -21,7 +21,7 @@
 
 • **style**? : *object*
 
-*Defined in [declarations/blessed-contrib.d.ts:232](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L232)*
+*Defined in [declarations/blessed-contrib.d.ts:232](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L232)*
 
 #### Type declaration:
 
@@ -37,7 +37,7 @@ ___
 
 • **title**? : *string*
 
-*Defined in [declarations/blessed-contrib.d.ts:229](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L229)*
+*Defined in [declarations/blessed-contrib.d.ts:229](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L229)*
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 • **x**? : *string[]*
 
-*Defined in [declarations/blessed-contrib.d.ts:230](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L230)*
+*Defined in [declarations/blessed-contrib.d.ts:230](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L230)*
 
 ___
 
@@ -53,4 +53,4 @@ ___
 
 • **y**? : *number[]*
 
-*Defined in [declarations/blessed-contrib.d.ts:231](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L231)*
+*Defined in [declarations/blessed-contrib.d.ts:231](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L231)*

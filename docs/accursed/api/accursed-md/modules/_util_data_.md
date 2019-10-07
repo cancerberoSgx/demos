@@ -20,7 +20,7 @@
 
 ▸ **arr**(`a`: number, `b`: number): *any[]*
 
-*Defined in [util/data.ts:1](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/data.ts#L1)*
+*Defined in [util/data.ts:1](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/data.ts#L1)*
 
 **Parameters:**
 
@@ -37,7 +37,7 @@ ___
 
 ▸ **color**(): *string*
 
-*Defined in [util/data.ts:23](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/data.ts#L23)*
+*Defined in [util/data.ts:23](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/data.ts#L23)*
 
 **Returns:** *string*
 
@@ -45,15 +45,15 @@ ___
 
 ###  invertColor
 
-▸ **invertColor**(`hex`: any): *string*
+▸ **invertColor**(`hex`: string): *string*
 
-*Defined in [util/data.ts:32](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/data.ts#L32)*
+*Defined in [util/data.ts:32](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/data.ts#L32)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`hex` | any |
+`hex` | string |
 
 **Returns:** *string*
 
@@ -63,7 +63,7 @@ ___
 
 ▸ **number**(`a`: number, `b`: number): *number*
 
-*Defined in [util/data.ts:22](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/data.ts#L22)*
+*Defined in [util/data.ts:22](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/data.ts#L22)*
 
 **Parameters:**
 
@@ -80,7 +80,7 @@ ___
 
 ▸ **randomHex**(): *string*
 
-*Defined in [util/data.ts:28](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/data.ts#L28)*
+*Defined in [util/data.ts:28](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/data.ts#L28)*
 
 **Returns:** *string*
 
@@ -90,7 +90,7 @@ ___
 
 ▸ **string**(`length`: number): *string*
 
-*Defined in [util/data.ts:3](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/data.ts#L3)*
+*Defined in [util/data.ts:3](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/data.ts#L3)*
 
 **Parameters:**
 
@@ -106,7 +106,7 @@ ___
 
 ▸ **words**(`wordCount`: number, `wordLength`: number, `wordCountB`: number, `wordLengthB`: number): *string[]*
 
-*Defined in [util/data.ts:12](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/data.ts#L12)*
+*Defined in [util/data.ts:12](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/data.ts#L12)*
 
 **Parameters:**
 

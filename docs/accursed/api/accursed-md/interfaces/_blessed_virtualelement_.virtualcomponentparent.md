@@ -18,4 +18,4 @@
 
 • **__virtualProps**: *__type*
 
-*Defined in [blessed/virtualElement.ts:58](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L58)*
+*Defined in [blessed/virtualElement.ts:58](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/virtualElement.ts#L58)*

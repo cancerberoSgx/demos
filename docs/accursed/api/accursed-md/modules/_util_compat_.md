@@ -14,7 +14,7 @@
 
 ▸ **isEditorWidget**(`n`: [Node](../classes/_declarations_blessed_d_.widgets.node.md)): *boolean*
 
-*Defined in [util/compat.ts:4](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/compat.ts#L4)*
+*Defined in [util/compat.ts:4](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/compat.ts#L4)*
 
 **Parameters:**
 

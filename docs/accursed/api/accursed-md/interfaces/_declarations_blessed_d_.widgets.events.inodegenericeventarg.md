@@ -25,7 +25,7 @@
 
 • **base**: *number*
 
-*Defined in [declarations/blessed.d.ts:202](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L202)*
+*Defined in [declarations/blessed.d.ts:202](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L202)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **renders**: *number*
 
-*Defined in [declarations/blessed.d.ts:203](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L203)*
+*Defined in [declarations/blessed.d.ts:203](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L203)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 *Inherited from [PositionCoords](../classes/_declarations_blessed_d_.widgets.positioncoords.md).[xi](../classes/_declarations_blessed_d_.widgets.positioncoords.md#xi)*
 
-*Defined in [declarations/blessed.d.ts:1248](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1248)*
+*Defined in [declarations/blessed.d.ts:1248](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1248)*
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 *Inherited from [PositionCoords](../classes/_declarations_blessed_d_.widgets.positioncoords.md).[xl](../classes/_declarations_blessed_d_.widgets.positioncoords.md#xl)*
 
-*Defined in [declarations/blessed.d.ts:1249](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1249)*
+*Defined in [declarations/blessed.d.ts:1249](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1249)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 *Inherited from [PositionCoords](../classes/_declarations_blessed_d_.widgets.positioncoords.md).[yi](../classes/_declarations_blessed_d_.widgets.positioncoords.md#yi)*
 
-*Defined in [declarations/blessed.d.ts:1250](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1250)*
+*Defined in [declarations/blessed.d.ts:1250](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1250)*
 
 ___
 
@@ -73,4 +73,4 @@ ___
 
 *Inherited from [PositionCoords](../classes/_declarations_blessed_d_.widgets.positioncoords.md).[yl](../classes/_declarations_blessed_d_.widgets.positioncoords.md#yl)*
 
-*Defined in [declarations/blessed.d.ts:1251](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1251)*
+*Defined in [declarations/blessed.d.ts:1251](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1251)*

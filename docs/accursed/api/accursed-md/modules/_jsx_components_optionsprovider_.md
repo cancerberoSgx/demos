@@ -23,13 +23,13 @@
 
 ### ▪ **setters**: *object*
 
-*Defined in [jsx-components/optionsProvider.tsx:116](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L116)*
+*Defined in [jsx-components/optionsProvider.tsx:116](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L116)*
 
 ###  label
 
 ▸ **label**(`e`: [BlessedElement](../classes/_declarations_blessed_d_.widgets.blessedelement.md)‹object›, `v`: any): *void*
 
-*Defined in [jsx-components/optionsProvider.tsx:117](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/optionsProvider.tsx#L117)*
+*Defined in [jsx-components/optionsProvider.tsx:117](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/optionsProvider.tsx#L117)*
 
 **Parameters:**
 

@@ -183,7 +183,7 @@ A common scenario is to call focusNext or focusPrev on certain key presses (tab,
 
 *Overrides [Node](_declarations_blessed_d_.widgets.node.md).[constructor](_declarations_blessed_d_.widgets.node.md#constructor)*
 
-*Defined in [declarations/blessed.d.ts:766](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L766)*
+*Defined in [declarations/blessed.d.ts:766](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L766)*
 
 **Parameters:**
 
@@ -201,7 +201,7 @@ Name | Type |
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[$](_declarations_blessed_d_.widgets.node.md#$)*
 
-*Defined in [declarations/blessed.d.ts:289](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L289)*
+*Defined in [declarations/blessed.d.ts:289](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L289)*
 
 An object for any miscellaneous user data.
 
@@ -217,7 +217,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[_](_declarations_blessed_d_.widgets.node.md#_)*
 
-*Defined in [declarations/blessed.d.ts:284](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L284)*
+*Defined in [declarations/blessed.d.ts:284](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L284)*
 
 An object for any miscellaneous user data.
 
@@ -231,7 +231,7 @@ ___
 
 • **_hoverText**? : *[BoxElement](_declarations_blessed_d_.widgets.boxelement.md)*
 
-*Defined in [declarations/blessed.d.ts:986](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L986)*
+*Defined in [declarations/blessed.d.ts:986](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L986)*
 
 Element that implements the text hover. @internal
 
@@ -241,7 +241,7 @@ ___
 
 • **abottom**: *[TPosition](../modules/_declarations_blessed_d_.widgets.types.md#tposition)*
 
-*Defined in [declarations/blessed.d.ts:966](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L966)*
+*Defined in [declarations/blessed.d.ts:966](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L966)*
 
 Absolute bottom offset, always zero.
 
@@ -251,7 +251,7 @@ ___
 
 • **aleft**: *[TTopLeft](../modules/_declarations_blessed_d_.widgets.types.md#ttopleft)*
 
-*Defined in [declarations/blessed.d.ts:956](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L956)*
+*Defined in [declarations/blessed.d.ts:956](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L956)*
 
 Absolute left offset, always zero.
 
@@ -261,7 +261,7 @@ ___
 
 • **aright**: *[TPosition](../modules/_declarations_blessed_d_.widgets.types.md#tposition)*
 
-*Defined in [declarations/blessed.d.ts:961](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L961)*
+*Defined in [declarations/blessed.d.ts:961](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L961)*
 
 Absolute right offset, always zero.
 
@@ -271,7 +271,7 @@ ___
 
 • **atop**: *[TTopLeft](../modules/_declarations_blessed_d_.widgets.types.md#ttopleft)*
 
-*Defined in [declarations/blessed.d.ts:951](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L951)*
+*Defined in [declarations/blessed.d.ts:951](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L951)*
 
 Absolute top offset, always zero.
 
@@ -281,7 +281,7 @@ ___
 
 • **autoPadding**: *boolean*
 
-*Defined in [declarations/blessed.d.ts:826](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L826)*
+*Defined in [declarations/blessed.d.ts:826](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L826)*
 
 Automatically position child elements with border and padding in mind (NOTE: this is a recommended
 option. It may become default in the future).
@@ -292,7 +292,7 @@ ___
 
 • **bottom**: *[TPosition](../modules/_declarations_blessed_d_.widgets.types.md#tposition)*
 
-*Defined in [declarations/blessed.d.ts:946](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L946)*
+*Defined in [declarations/blessed.d.ts:946](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L946)*
 
 Relative bottom offset, always zero.
 
@@ -304,7 +304,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[children](_declarations_blessed_d_.widgets.node.md#children)*
 
-*Defined in [declarations/blessed.d.ts:316](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L316)*
+*Defined in [declarations/blessed.d.ts:316](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L316)*
 
 Array of node's children.
 
@@ -314,7 +314,7 @@ ___
 
 • **cols**: *number*
 
-*Defined in [declarations/blessed.d.ts:921](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L921)*
+*Defined in [declarations/blessed.d.ts:921](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L921)*
 
 Same as screen.width.
 
@@ -324,7 +324,7 @@ ___
 
 • **cursor**: *[TCursor](../interfaces/_declarations_blessed_d_.widgets.types.tcursor.md)*
 
-*Defined in [declarations/blessed.d.ts:828](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L828)*
+*Defined in [declarations/blessed.d.ts:828](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L828)*
 
 ___
 
@@ -334,7 +334,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[data](_declarations_blessed_d_.widgets.node.md#data)*
 
-*Defined in [declarations/blessed.d.ts:279](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L279)*
+*Defined in [declarations/blessed.d.ts:279](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L279)*
 
 An object for any miscellaneous user data.
 
@@ -348,7 +348,7 @@ ___
 
 • **destroyed**? : *boolean*
 
-*Defined in [declarations/blessed.d.ts:776](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L776)*
+*Defined in [declarations/blessed.d.ts:776](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L776)*
 
 true is the terminal was destroyed. @internal.
 
@@ -358,7 +358,7 @@ ___
 
 • **dockBorders**: *boolean*
 
-*Defined in [declarations/blessed.d.ts:845](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L845)*
+*Defined in [declarations/blessed.d.ts:845](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L845)*
 
 Automatically "dock" borders with other elements instead of overlapping, depending on position
 (experimental). For example: These border-overlapped elements:
@@ -369,7 +369,7 @@ ___
 
 • **dump**: *string*
 
-*Defined in [declarations/blessed.d.ts:833](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L833)*
+*Defined in [declarations/blessed.d.ts:833](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L833)*
 
 Dump all output and input to desired file. Can be used together with log option if set as a boolean.
 
@@ -379,7 +379,7 @@ ___
 
 • **fastCSR**: *boolean*
 
-*Defined in [declarations/blessed.d.ts:802](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L802)*
+*Defined in [declarations/blessed.d.ts:802](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L802)*
 
 Do CSR on any element within 20 cols of the screen edge on either side. Faster than smartCSR,
 but may cause flickering depending on what is on each side of the element.
@@ -392,7 +392,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[focusable](_declarations_blessed_d_.widgets.node.md#focusable)*
 
-*Defined in [declarations/blessed.d.ts:269](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L269)*
+*Defined in [declarations/blessed.d.ts:269](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L269)*
 
 If true, `screen.focusNext()` and methods related to focus will consider this Element.
 
@@ -402,7 +402,7 @@ ___
 
 • **focused**: *[BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)*
 
-*Defined in [declarations/blessed.d.ts:899](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L899)*
+*Defined in [declarations/blessed.d.ts:899](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L899)*
 
 Top of the focus history stack. If set, it will change the focus to given element.
 
@@ -412,7 +412,7 @@ ___
 
 • **forceUnicode**: *boolean*
 
-*Defined in [declarations/blessed.d.ts:877](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L877)*
+*Defined in [declarations/blessed.d.ts:877](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L877)*
 
 Force blessed to use unicode even if it is not detected via terminfo, env variables, or windows code page.
 If value is true unicode is forced. If value is false non-unicode is forced (default: null).
@@ -423,7 +423,7 @@ ___
 
 • **fullUnicode**: *boolean*
 
-*Defined in [declarations/blessed.d.ts:861](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L861)*
+*Defined in [declarations/blessed.d.ts:861](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L861)*
 
 Allow for rendering of East Asian double-width characters, utf-16 surrogate pairs, and unicode
 combining characters. This allows you to display text above the basic multilingual plane. This
@@ -438,7 +438,7 @@ ___
 
 • **grabKeys**: *any*
 
-*Defined in [declarations/blessed.d.ts:971](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L971)*
+*Defined in [declarations/blessed.d.ts:971](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L971)*
 
 Whether the focused element grabs all keypresses.
 
@@ -448,7 +448,7 @@ ___
 
 • **height**: *number*
 
-*Defined in [declarations/blessed.d.ts:916](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L916)*
+*Defined in [declarations/blessed.d.ts:916](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L916)*
 
 Height of the screen (same as program.rows).
 
@@ -458,7 +458,7 @@ ___
 
 • **history**: *[BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)[]*
 
-*Defined in [declarations/blessed.d.ts:779](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L779)*
+*Defined in [declarations/blessed.d.ts:779](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L779)*
 
 focus history. @internal
 
@@ -468,7 +468,7 @@ ___
 
 • **hover**: *any*
 
-*Defined in [declarations/blessed.d.ts:981](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L981)*
+*Defined in [declarations/blessed.d.ts:981](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L981)*
 
 The currently hovered element. Only set if mouse events are bound.
 
@@ -478,7 +478,7 @@ ___
 
 • **ignoreDockContrast**: *boolean*
 
-*Defined in [declarations/blessed.d.ts:851](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L851)*
+*Defined in [declarations/blessed.d.ts:851](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L851)*
 
 Normally, dockable borders will not dock if the colors or attributes are different. This option
 will allow them to dock regardless. It may produce some odd looking multi-colored borders though.
@@ -489,7 +489,7 @@ ___
 
 • **ignoreLocked**: *boolean*
 
-*Defined in [declarations/blessed.d.ts:839](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L839)*
+*Defined in [declarations/blessed.d.ts:839](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L839)*
 
 Array of keys in their full format (e.g. C-c) to ignore when keys are locked or grabbed. Useful
 for creating a key that will always exit no matter whether the keys are locked.
@@ -502,7 +502,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[index](_declarations_blessed_d_.widgets.node.md#index)*
 
-*Defined in [declarations/blessed.d.ts:301](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L301)*
+*Defined in [declarations/blessed.d.ts:301](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L301)*
 
 Render index (document order index) of the last render call.
 
@@ -512,7 +512,7 @@ ___
 
 • **input**: *stream.Writable*
 
-*Defined in [declarations/blessed.d.ts:883](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L883)*
+*Defined in [declarations/blessed.d.ts:883](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L883)*
 
 Input and output streams. process.stdin/process.stdout by default, however, it could be a
 net.Socket if you want to make a program that runs over telnet or something of that nature.
@@ -523,7 +523,7 @@ ___
 
 • **keyable**: *[BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)[]*
 
-*Defined in [declarations/blessed.d.ts:906](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L906)*
+*Defined in [declarations/blessed.d.ts:906](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L906)*
 
 Descendant elements which are keyable. These elements are the ones that can have focus,
 For example, the next element to focus while callin [[nextFocus]] is inferred from this array.
@@ -536,7 +536,7 @@ ___
 
 • **left**: *[TTopLeft](../modules/_declarations_blessed_d_.widgets.types.md#ttopleft)*
 
-*Defined in [declarations/blessed.d.ts:936](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L936)*
+*Defined in [declarations/blessed.d.ts:936](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L936)*
 
 Relative left offset, always zero.
 
@@ -546,7 +546,7 @@ ___
 
 • **lines**: *[ScreenLine](../modules/_declarations_blessed_d_.widgets.md#screenline)[][]*
 
-*Defined in [declarations/blessed.d.ts:1001](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1001)*
+*Defined in [declarations/blessed.d.ts:1001](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1001)*
 
 Internal Screen buffer of current lines. Exposed for debug purpuses. @internal
 
@@ -556,7 +556,7 @@ ___
 
 • **lockKeys**: *boolean*
 
-*Defined in [declarations/blessed.d.ts:976](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L976)*
+*Defined in [declarations/blessed.d.ts:976](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L976)*
 
 Prevent keypresses from being received by any element.
 
@@ -568,7 +568,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[lpos](_declarations_blessed_d_.widgets.node.md#lpos)*
 
-*Defined in [declarations/blessed.d.ts:291](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L291)*
+*Defined in [declarations/blessed.d.ts:291](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L291)*
 
 ___
 
@@ -580,7 +580,7 @@ ___
 
 *Overrides [Node](_declarations_blessed_d_.widgets.node.md).[options](_declarations_blessed_d_.widgets.node.md#options)*
 
-*Defined in [declarations/blessed.d.ts:784](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L784)*
+*Defined in [declarations/blessed.d.ts:784](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L784)*
 
 Original options object.
 
@@ -590,7 +590,7 @@ ___
 
 • **output**: *stream.Readable*
 
-*Defined in [declarations/blessed.d.ts:889](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L889)*
+*Defined in [declarations/blessed.d.ts:889](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L889)*
 
 Input and output streams. process.stdin/process.stdout by default, however, it could be a
 net.Socket if you want to make a program that runs over telnet or something of that nature.
@@ -603,7 +603,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[parent](_declarations_blessed_d_.widgets.node.md#optional-parent)*
 
-*Defined in [declarations/blessed.d.ts:311](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L311)*
+*Defined in [declarations/blessed.d.ts:311](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L311)*
 
 Parent node. If null it means the element is not attached to any screen or program, or the node is a Screen.
 
@@ -613,7 +613,7 @@ ___
 
 • **program**: *[BlessedProgram](_declarations_blessedprogram_d_.blessedprogram.md)*
 
-*Defined in [declarations/blessed.d.ts:789](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L789)*
+*Defined in [declarations/blessed.d.ts:789](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L789)*
 
 The blessed Program to be associated with. Will be automatically instantiated if none is provided.
 
@@ -623,7 +623,7 @@ ___
 
 • **resizeTimeout**: *number*
 
-*Defined in [declarations/blessed.d.ts:815](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L815)*
+*Defined in [declarations/blessed.d.ts:815](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L815)*
 
 Amount of time (in ms) to redraw the screen after the terminal is resized (Default: 300).
 
@@ -633,7 +633,7 @@ ___
 
 • **right**: *[TPosition](../modules/_declarations_blessed_d_.widgets.types.md#tposition)*
 
-*Defined in [declarations/blessed.d.ts:941](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L941)*
+*Defined in [declarations/blessed.d.ts:941](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L941)*
 
 Relative right offset, always zero.
 
@@ -643,7 +643,7 @@ ___
 
 • **rows**: *number*
 
-*Defined in [declarations/blessed.d.ts:926](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L926)*
+*Defined in [declarations/blessed.d.ts:926](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L926)*
 
 Same as screen.height.
 
@@ -655,7 +655,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[screen](_declarations_blessed_d_.widgets.node.md#screen)*
 
-*Defined in [declarations/blessed.d.ts:306](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L306)*
+*Defined in [declarations/blessed.d.ts:306](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L306)*
 
 Parent screen.
 
@@ -665,7 +665,7 @@ ___
 
 • **sendFocus**: *boolean*
 
-*Defined in [declarations/blessed.d.ts:866](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L866)*
+*Defined in [declarations/blessed.d.ts:866](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L866)*
 
 Send focus events after mouse is enabled.
 
@@ -675,7 +675,7 @@ ___
 
 • **smartCSR**: *boolean*
 
-*Defined in [declarations/blessed.d.ts:796](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L796)*
+*Defined in [declarations/blessed.d.ts:796](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L796)*
 
 Attempt to perform CSR optimization on all possible elements (not just full-width ones, elements with
 uniform cells to their sides). This is known to cause flickering with elements that are not full-width,
@@ -687,7 +687,7 @@ ___
 
 • **tabSize**: *number*
 
-*Defined in [declarations/blessed.d.ts:820](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L820)*
+*Defined in [declarations/blessed.d.ts:820](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L820)*
 
 The width of tabs within an element's content.
 
@@ -697,7 +697,7 @@ ___
 
 • **terminal**: *string*
 
-*Defined in [declarations/blessed.d.ts:991](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L991)*
+*Defined in [declarations/blessed.d.ts:991](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L991)*
 
 Set or get terminal name. Set calls screen.setTerminal() internally.
 
@@ -707,7 +707,7 @@ ___
 
 • **title**: *string*
 
-*Defined in [declarations/blessed.d.ts:996](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L996)*
+*Defined in [declarations/blessed.d.ts:996](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L996)*
 
 Set or get window title.
 
@@ -717,7 +717,7 @@ ___
 
 • **top**: *[TTopLeft](../modules/_declarations_blessed_d_.widgets.types.md#ttopleft)*
 
-*Defined in [declarations/blessed.d.ts:931](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L931)*
+*Defined in [declarations/blessed.d.ts:931](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L931)*
 
 Relative top offset, always zero.
 
@@ -727,7 +727,7 @@ ___
 
 • **tput**: *[Tput](_declarations_tput_d_.tput.md)*
 
-*Defined in [declarations/blessed.d.ts:894](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L894)*
+*Defined in [declarations/blessed.d.ts:894](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L894)*
 
 The blessed Tput object (only available if you passed tput: true to the Program constructor.)
 
@@ -739,7 +739,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[type](_declarations_blessed_d_.widgets.node.md#type)*
 
-*Defined in [declarations/blessed.d.ts:296](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L296)*
+*Defined in [declarations/blessed.d.ts:296](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L296)*
 
 Type of the node (e.g. box).
 
@@ -751,7 +751,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[uid](_declarations_blessed_d_.widgets.node.md#uid)*
 
-*Defined in [declarations/blessed.d.ts:264](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L264)*
+*Defined in [declarations/blessed.d.ts:264](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L264)*
 
 Unique identifier for Node instances. @internal
 
@@ -761,7 +761,7 @@ ___
 
 • **useBCE**: *boolean*
 
-*Defined in [declarations/blessed.d.ts:810](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L810)*
+*Defined in [declarations/blessed.d.ts:810](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L810)*
 
 Attempt to perform back_color_erase optimizations for terminals that support it. It will also work
 with terminals that don't support it, but only on lines with the default background color. As it
@@ -774,7 +774,7 @@ ___
 
 • **warnings**: *boolean*
 
-*Defined in [declarations/blessed.d.ts:871](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L871)*
+*Defined in [declarations/blessed.d.ts:871](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L871)*
 
 Display warnings (such as the output not being a TTY, similar to ncurses).
 
@@ -784,7 +784,7 @@ ___
 
 • **width**: *number*
 
-*Defined in [declarations/blessed.d.ts:911](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L911)*
+*Defined in [declarations/blessed.d.ts:911](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L911)*
 
 Width of the screen (same as program.cols).
 
@@ -804,7 +804,7 @@ Defined in /Users/sebastiangurin/git/accursed/node_modules/@types/node/events.d.
 
 ▸ **_focus**(`self`: [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md), `old?`: [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)): *void*
 
-*Defined in [declarations/blessed.d.ts:1026](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1026)*
+*Defined in [declarations/blessed.d.ts:1026](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1026)*
 
 **`internal`** 
 
@@ -851,7 +851,7 @@ ___
 
 ▸ **alloc**(): *void*
 
-*Defined in [declarations/blessed.d.ts:1016](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1016)*
+*Defined in [declarations/blessed.d.ts:1016](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1016)*
 
 Allocate a new pending screen buffer and a new output screen buffer.
 
@@ -865,7 +865,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[append](_declarations_blessed_d_.widgets.node.md#append)*
 
-*Defined in [declarations/blessed.d.ts:326](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L326)*
+*Defined in [declarations/blessed.d.ts:326](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L326)*
 
 Append a node to this node's children.
 
@@ -883,7 +883,7 @@ ___
 
 ▸ **attrCode**(`code`: string, `cur`: number, `def`: number): *number*
 
-*Defined in [declarations/blessed.d.ts:1031](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1031)*
+*Defined in [declarations/blessed.d.ts:1031](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1031)*
 
 Convert an SGR string to our own attribute format.
 
@@ -903,7 +903,7 @@ ___
 
 ▸ **cleanSides**(`el`: [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)): *boolean*
 
-*Defined in [declarations/blessed.d.ts:773](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L773)*
+*Defined in [declarations/blessed.d.ts:773](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L773)*
 
 Parse the sides of an element to determine whether an element has uniform cells on both sides.
 If it does, we can use CSR to optimize scrolling on a scrollable element. Not exactly sure how worthwile this is.
@@ -923,7 +923,7 @@ ___
 
 ▸ **clearRegion**(`x1`: number, `x2`: number, `y1`: number, `y2`: number, `override?`: boolean): *void*
 
-*Defined in [declarations/blessed.d.ts:1063](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1063)*
+*Defined in [declarations/blessed.d.ts:1063](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1063)*
 
 Clear any region on the screen.
 
@@ -945,7 +945,7 @@ ___
 
 ▸ **codeAttr**(`attr`: number): *string*
 
-*Defined in [declarations/blessed.d.ts:1036](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1036)*
+*Defined in [declarations/blessed.d.ts:1036](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1036)*
 
 Convert our own attribute format to an SGR string.
 
@@ -965,7 +965,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[collectAncestors](_declarations_blessed_d_.widgets.node.md#collectancestors)*
 
-*Defined in [declarations/blessed.d.ts:362](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L362)*
+*Defined in [declarations/blessed.d.ts:362](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L362)*
 
 **Parameters:**
 
@@ -983,7 +983,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[collectDescendants](_declarations_blessed_d_.widgets.node.md#collectdescendants)*
 
-*Defined in [declarations/blessed.d.ts:361](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L361)*
+*Defined in [declarations/blessed.d.ts:361](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L361)*
 
 **Parameters:**
 
@@ -999,7 +999,7 @@ ___
 
 ▸ **copyToClipboard**(`text`: string): *void*
 
-*Defined in [declarations/blessed.d.ts:1188](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1188)*
+*Defined in [declarations/blessed.d.ts:1188](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1188)*
 
 Attempt to copy text to clipboard using iTerm2's proprietary sequence. Returns true if successful.
 
@@ -1017,7 +1017,7 @@ ___
 
 ▸ **cursorColor**(`color`: string): *void*
 
-*Defined in [declarations/blessed.d.ts:1199](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1199)*
+*Defined in [declarations/blessed.d.ts:1199](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1199)*
 
 Attempt to change cursor color. Returns true if successful.
 
@@ -1035,7 +1035,7 @@ ___
 
 ▸ **cursorReset**(): *void*
 
-*Defined in [declarations/blessed.d.ts:1204](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1204)*
+*Defined in [declarations/blessed.d.ts:1204](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1204)*
 
 Attempt to reset cursor. Returns true if successful.
 
@@ -1047,7 +1047,7 @@ ___
 
 ▸ **cursorShape**(`shape`: boolean, `blink`: boolean): *any*
 
-*Defined in [declarations/blessed.d.ts:1194](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1194)*
+*Defined in [declarations/blessed.d.ts:1194](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1194)*
 
 Attempt to change cursor shape. Will not work in all terminals (see artificial cursors for a solution
 to this). Returns true if successful.
@@ -1067,7 +1067,7 @@ ___
 
 ▸ **debug**(...`msg`: string[]): *void*
 
-*Defined in [declarations/blessed.d.ts:1011](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1011)*
+*Defined in [declarations/blessed.d.ts:1011](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1011)*
 
 Same as the log method, but only gets called if the debug option was set.
 
@@ -1085,7 +1085,7 @@ ___
 
 ▸ **deleteBottom**(`top`: number, `bottom`: number): *void*
 
-*Defined in [declarations/blessed.d.ts:1161](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1161)*
+*Defined in [declarations/blessed.d.ts:1161](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1161)*
 
 Delete a line at the bottom of the screen.
 
@@ -1104,7 +1104,7 @@ ___
 
 ▸ **deleteLine**(`n`: number, `y`: number, `top`: number, `bottom`: number): *void*
 
-*Defined in [declarations/blessed.d.ts:1146](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1146)*
+*Defined in [declarations/blessed.d.ts:1146](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1146)*
 
 Delete a line from the screen (using csr: this bypasses the output buffer).
 
@@ -1125,7 +1125,7 @@ ___
 
 ▸ **deleteTop**(`top`: number, `bottom`: number): *void*
 
-*Defined in [declarations/blessed.d.ts:1166](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1166)*
+*Defined in [declarations/blessed.d.ts:1166](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1166)*
 
 Delete a line at the top of the screen.
 
@@ -1148,7 +1148,7 @@ ___
 
 *Overrides [Node](_declarations_blessed_d_.widgets.node.md).[destroy](_declarations_blessed_d_.widgets.node.md#destroy)*
 
-*Defined in [declarations/blessed.d.ts:1218](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1218)*
+*Defined in [declarations/blessed.d.ts:1218](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1218)*
 
 Destroy the screen object and remove it from the global list. Also remove all global events relevant
 to the screen object. If all screen objects are destroyed, the node process is essentially reset
@@ -1164,7 +1164,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[detach](_declarations_blessed_d_.widgets.node.md#detach)*
 
-*Defined in [declarations/blessed.d.ts:351](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L351)*
+*Defined in [declarations/blessed.d.ts:351](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L351)*
 
 Remove node from its parent.
 
@@ -1176,7 +1176,7 @@ ___
 
 ▸ **draw**(`start`: number, `end`: number): *void*
 
-*Defined in [declarations/blessed.d.ts:1040](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1040)*
+*Defined in [declarations/blessed.d.ts:1040](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1040)*
 
 Draw the screen based on the contents of the screen buffer.
 
@@ -1218,7 +1218,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[emitAncestors](_declarations_blessed_d_.widgets.node.md#emitancestors)*
 
-*Defined in [declarations/blessed.d.ts:368](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L368)*
+*Defined in [declarations/blessed.d.ts:368](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L368)*
 
 **Returns:** *void*
 
@@ -1230,7 +1230,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[emitDescendants](_declarations_blessed_d_.widgets.node.md#emitdescendants)*
 
-*Defined in [declarations/blessed.d.ts:367](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L367)*
+*Defined in [declarations/blessed.d.ts:367](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L367)*
 
 Emit event for element, and recursively emit same event for all descendants. If `s` is provided it will call [[iter]] on self first.
 
@@ -1249,7 +1249,7 @@ ___
 
 ▸ **enableInput**(`el?`: [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)): *void*
 
-*Defined in [declarations/blessed.d.ts:1183](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1183)*
+*Defined in [declarations/blessed.d.ts:1183](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1183)*
 
 Enable key and mouse events. Calls bot enableMouse and enableKeys.
 
@@ -1267,7 +1267,7 @@ ___
 
 ▸ **enableKeys**(`el?`: [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)): *void*
 
-*Defined in [declarations/blessed.d.ts:1178](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1178)*
+*Defined in [declarations/blessed.d.ts:1178](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1178)*
 
 Enable keypress events for the screen and optionally an element (automatically called when a form of
 on('keypress') is bound).
@@ -1286,7 +1286,7 @@ ___
 
 ▸ **enableMouse**(`el?`: [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)): *void*
 
-*Defined in [declarations/blessed.d.ts:1172](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1172)*
+*Defined in [declarations/blessed.d.ts:1172](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1172)*
 
 Enable mouse events for the screen and optionally an element (automatically called when a form of
 on('mouse') is bound).
@@ -1319,7 +1319,7 @@ ___
 
 ▸ **exec**(`file`: string, `args`: string[], `options`: [NodeChildProcessExecOptions](../interfaces/_declarations_blessed_d_.widgets.nodechildprocessexecoptions.md), `callback`: function): *ChildProcess*
 
-*Defined in [declarations/blessed.d.ts:1120](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1120)*
+*Defined in [declarations/blessed.d.ts:1120](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1120)*
 
 Spawn a process in the foreground, return to blessed app after exit. Executes callback on error or exit.
 
@@ -1349,7 +1349,7 @@ ___
 
 ▸ **fillRegion**(`attr`: string, `ch`: string, `x1`: number, `x2`: number, `y1`: number, `y2`: number, `override?`: boolean): *void*
 
-*Defined in [declarations/blessed.d.ts:1070](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1070)*
+*Defined in [declarations/blessed.d.ts:1070](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1070)*
 
 Fill any region with a character of a certain attribute.
 
@@ -1375,7 +1375,7 @@ ___
 
 ▸ **focusNext**(): *void*
 
-*Defined in [declarations/blessed.d.ts:1085](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1085)*
+*Defined in [declarations/blessed.d.ts:1085](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1085)*
 
 Focus next [focusable](_declarations_blessed_d_.widgets.screen.md#focusable) element in the index.
 
@@ -1387,7 +1387,7 @@ ___
 
 ▸ **focusOffset**(`offset`: number): *any*
 
-*Defined in [declarations/blessed.d.ts:1075](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1075)*
+*Defined in [declarations/blessed.d.ts:1075](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1075)*
 
 Focus element by offset of focusable elements.
 
@@ -1405,7 +1405,7 @@ ___
 
 ▸ **focusPop**(): *[BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)*
 
-*Defined in [declarations/blessed.d.ts:1095](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1095)*
+*Defined in [declarations/blessed.d.ts:1095](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1095)*
 
 Pop element off the focus stack.
 
@@ -1417,7 +1417,7 @@ ___
 
 ▸ **focusPrevious**(): *void*
 
-*Defined in [declarations/blessed.d.ts:1080](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1080)*
+*Defined in [declarations/blessed.d.ts:1080](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1080)*
 
 Focus previous [focusable](_declarations_blessed_d_.widgets.screen.md#focusable) element in the index.
 
@@ -1429,7 +1429,7 @@ ___
 
 ▸ **focusPush**(`element`: [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)): *void*
 
-*Defined in [declarations/blessed.d.ts:1090](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1090)*
+*Defined in [declarations/blessed.d.ts:1090](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1090)*
 
 Push element on the focus stack (equivalent to screen.focused = el).
 
@@ -1449,7 +1449,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[forAncestors](_declarations_blessed_d_.widgets.node.md#forancestors)*
 
-*Defined in [declarations/blessed.d.ts:360](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L360)*
+*Defined in [declarations/blessed.d.ts:360](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L360)*
 
 **Parameters:**
 
@@ -1475,7 +1475,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[forDescendants](_declarations_blessed_d_.widgets.node.md#fordescendants)*
 
-*Defined in [declarations/blessed.d.ts:359](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L359)*
+*Defined in [declarations/blessed.d.ts:359](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L359)*
 
 Visit each node's descendants, with [[iter]] function,  parents first.
 If `s` is provided it will call [[iter]] on self first.
@@ -1504,7 +1504,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[free](_declarations_blessed_d_.widgets.node.md#free)*
 
-*Defined in [declarations/blessed.d.ts:353](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L353)*
+*Defined in [declarations/blessed.d.ts:353](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L353)*
 
 **Returns:** *void*
 
@@ -1516,7 +1516,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[get](_declarations_blessed_d_.widgets.node.md#get)*
 
-*Defined in [declarations/blessed.d.ts:380](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L380)*
+*Defined in [declarations/blessed.d.ts:380](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L380)*
 
 Get user property with a potential default value.
 
@@ -1555,7 +1555,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[hasAncestor](_declarations_blessed_d_.widgets.node.md#hasancestor)*
 
-*Defined in [declarations/blessed.d.ts:370](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L370)*
+*Defined in [declarations/blessed.d.ts:370](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L370)*
 
 **Type parameters:**
 
@@ -1577,7 +1577,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[hasDescendant](_declarations_blessed_d_.widgets.node.md#hasdescendant)*
 
-*Defined in [declarations/blessed.d.ts:369](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L369)*
+*Defined in [declarations/blessed.d.ts:369](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L369)*
 
 **Type parameters:**
 
@@ -1599,7 +1599,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[insert](_declarations_blessed_d_.widgets.node.md#insert)*
 
-*Defined in [declarations/blessed.d.ts:336](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L336)*
+*Defined in [declarations/blessed.d.ts:336](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L336)*
 
 Insert a node to this node's children at index i.
 
@@ -1620,7 +1620,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[insertAfter](_declarations_blessed_d_.widgets.node.md#insertafter)*
 
-*Defined in [declarations/blessed.d.ts:346](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L346)*
+*Defined in [declarations/blessed.d.ts:346](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L346)*
 
 Insert a node from node after the reference node.
 
@@ -1641,7 +1641,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[insertBefore](_declarations_blessed_d_.widgets.node.md#insertbefore)*
 
-*Defined in [declarations/blessed.d.ts:341](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L341)*
+*Defined in [declarations/blessed.d.ts:341](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L341)*
 
 Insert a node to this node's children before the reference node.
 
@@ -1660,7 +1660,7 @@ ___
 
 ▸ **insertBottom**(`top`: number, `bottom`: number): *void*
 
-*Defined in [declarations/blessed.d.ts:1151](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1151)*
+*Defined in [declarations/blessed.d.ts:1151](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1151)*
 
 Insert a line at the bottom of the screen.
 
@@ -1679,7 +1679,7 @@ ___
 
 ▸ **insertLine**(`n`: number, `y`: number, `top`: number, `bottom`: number): *void*
 
-*Defined in [declarations/blessed.d.ts:1141](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1141)*
+*Defined in [declarations/blessed.d.ts:1141](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1141)*
 
 Insert a line into the screen (using csr: this bypasses the output buffer).
 
@@ -1700,7 +1700,7 @@ ___
 
 ▸ **insertTop**(`top`: number, `bottom`: number): *void*
 
-*Defined in [declarations/blessed.d.ts:1156](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1156)*
+*Defined in [declarations/blessed.d.ts:1156](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1156)*
 
 Insert a line at the top of the screen.
 
@@ -1721,7 +1721,7 @@ ___
 
 *Inherited from [NodeWithEvents](_declarations_blessed_d_.widgets.nodewithevents.md).[key](_declarations_blessed_d_.widgets.nodewithevents.md#key)*
 
-*Defined in [declarations/blessed.d.ts:491](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L491)*
+*Defined in [declarations/blessed.d.ts:491](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L491)*
 
 Bind a keypress listener for a specific key.
 
@@ -1740,7 +1740,7 @@ ___
 
 ▸ **leave**(): *void*
 
-*Defined in [declarations/blessed.d.ts:1048](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1048)*
+*Defined in [declarations/blessed.d.ts:1048](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1048)*
 
 Resets the focus, buffers, clear the sreen, alloc new memory, reset the keypad keys, stop listening to
 the mouse, etc. But won't emit destroy or other events nor unregister any listener. (I guess is like a
@@ -1796,7 +1796,7 @@ ___
 
 ▸ **log**(...`msg`: any[]): *void*
 
-*Defined in [declarations/blessed.d.ts:1006](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1006)*
+*Defined in [declarations/blessed.d.ts:1006](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1006)*
 
 Write string to the log file if one was created.
 
@@ -1846,7 +1846,7 @@ ___
 
 *Overrides [Node](_declarations_blessed_d_.widgets.node.md).[on](_declarations_blessed_d_.widgets.node.md#on)*
 
-*Defined in [declarations/blessed.d.ts:511](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L511)*
+*Defined in [declarations/blessed.d.ts:511](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L511)*
 
 Registers event listener to be notified on mouse events.
 
@@ -1872,7 +1872,7 @@ Name | Type |
 
 *Overrides [Node](_declarations_blessed_d_.widgets.node.md).[on](_declarations_blessed_d_.widgets.node.md#on)*
 
-*Defined in [declarations/blessed.d.ts:515](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L515)*
+*Defined in [declarations/blessed.d.ts:515](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L515)*
 
 Registers event listener to be notified on mouse events.
 
@@ -1898,7 +1898,7 @@ Name | Type |
 
 *Overrides [Node](_declarations_blessed_d_.widgets.node.md).[on](_declarations_blessed_d_.widgets.node.md#on)*
 
-*Defined in [declarations/blessed.d.ts:519](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L519)*
+*Defined in [declarations/blessed.d.ts:519](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L519)*
 
 Received on key events.
 
@@ -1917,7 +1917,7 @@ Name | Type |
 
 *Overrides [Node](_declarations_blessed_d_.widgets.node.md).[on](_declarations_blessed_d_.widgets.node.md#on)*
 
-*Defined in [declarations/blessed.d.ts:520](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L520)*
+*Defined in [declarations/blessed.d.ts:520](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L520)*
 
 **Parameters:**
 
@@ -1941,7 +1941,7 @@ Name | Type |
 
 *Overrides [Node](_declarations_blessed_d_.widgets.node.md).[on](_declarations_blessed_d_.widgets.node.md#on)*
 
-*Defined in [declarations/blessed.d.ts:524](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L524)*
+*Defined in [declarations/blessed.d.ts:524](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L524)*
 
 Received when blessed notices something untoward (output is not a tty, terminfo not found, etc).
 
@@ -1967,7 +1967,7 @@ Name | Type |
 
 *Overrides [Node](_declarations_blessed_d_.widgets.node.md).[on](_declarations_blessed_d_.widgets.node.md#on)*
 
-*Defined in [declarations/blessed.d.ts:525](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L525)*
+*Defined in [declarations/blessed.d.ts:525](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L525)*
 
 **Parameters:**
 
@@ -2021,7 +2021,7 @@ ___
 
 *Inherited from [NodeWithEvents](_declarations_blessed_d_.widgets.nodewithevents.md).[onceKey](_declarations_blessed_d_.widgets.nodewithevents.md#oncekey)*
 
-*Defined in [declarations/blessed.d.ts:496](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L496)*
+*Defined in [declarations/blessed.d.ts:496](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L496)*
 
 Bind a keypress listener for a specific key once.
 
@@ -2040,7 +2040,7 @@ ___
 
 ▸ **postEnter**(): *void*
 
-*Defined in [declarations/blessed.d.ts:1053](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1053)*
+*Defined in [declarations/blessed.d.ts:1053](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1053)*
 
 **`internal`** 
 
@@ -2054,7 +2054,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[prepend](_declarations_blessed_d_.widgets.node.md#prepend)*
 
-*Defined in [declarations/blessed.d.ts:321](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L321)*
+*Defined in [declarations/blessed.d.ts:321](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L321)*
 
 Prepend a node to this node's children.
 
@@ -2148,7 +2148,7 @@ ___
 
 ▸ **readEditor**(`options`: any, `callback`: function): *void*
 
-*Defined in [declarations/blessed.d.ts:1130](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1130)*
+*Defined in [declarations/blessed.d.ts:1130](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1130)*
 
 Read data from text editor.
 
@@ -2171,7 +2171,7 @@ Name | Type |
 
 ▸ **readEditor**(`callback`: function): *void*
 
-*Defined in [declarations/blessed.d.ts:1131](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1131)*
+*Defined in [declarations/blessed.d.ts:1131](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1131)*
 
 **Parameters:**
 
@@ -2194,7 +2194,7 @@ ___
 
 ▸ **realloc**(): *void*
 
-*Defined in [declarations/blessed.d.ts:1021](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1021)*
+*Defined in [declarations/blessed.d.ts:1021](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1021)*
 
 Reallocate the screen buffers and clear the screen.
 
@@ -2208,7 +2208,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[remove](_declarations_blessed_d_.widgets.node.md#remove)*
 
-*Defined in [declarations/blessed.d.ts:331](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L331)*
+*Defined in [declarations/blessed.d.ts:331](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L331)*
 
 Remove child node from node.
 
@@ -2248,7 +2248,7 @@ ___
 
 *Inherited from [NodeWithEvents](_declarations_blessed_d_.widgets.nodewithevents.md).[removeKey](_declarations_blessed_d_.widgets.nodewithevents.md#removekey)*
 
-*Defined in [declarations/blessed.d.ts:506](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L506)*
+*Defined in [declarations/blessed.d.ts:506](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L506)*
 
 Remove a keypress listener for a specific key.
 
@@ -2295,7 +2295,7 @@ ___
 
 ▸ **render**(): *void*
 
-*Defined in [declarations/blessed.d.ts:1058](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1058)*
+*Defined in [declarations/blessed.d.ts:1058](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1058)*
 
 Render all child elements, writing all data to the screen buffer and drawing the screen.
 
@@ -2307,7 +2307,7 @@ ___
 
 ▸ **restoreFocus**(): *[BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)*
 
-*Defined in [declarations/blessed.d.ts:1105](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1105)*
+*Defined in [declarations/blessed.d.ts:1105](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1105)*
 
 Restore the saved focused element.
 
@@ -2319,7 +2319,7 @@ ___
 
 ▸ **rewindFocus**(): *[BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)*
 
-*Defined in [declarations/blessed.d.ts:1110](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1110)*
+*Defined in [declarations/blessed.d.ts:1110](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1110)*
 
 "Rewind" focus to the last visible and attached element.
 
@@ -2331,7 +2331,7 @@ ___
 
 ▸ **saveFocus**(): *[BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)*
 
-*Defined in [declarations/blessed.d.ts:1100](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1100)*
+*Defined in [declarations/blessed.d.ts:1100](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1100)*
 
 Save the focused element.
 
@@ -2343,7 +2343,7 @@ ___
 
 ▸ **screenshot**(`xi`: number, `xl`: number, `yi`: number, `yl`: number): *string*
 
-*Defined in [declarations/blessed.d.ts:1210](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1210)*
+*Defined in [declarations/blessed.d.ts:1210](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1210)*
 
 Take an SGR screenshot of the screen within the region. Returns a string containing only
 characters and SGR codes. Can be displayed by simply echoing it in a terminal.
@@ -2361,7 +2361,7 @@ Name | Type |
 
 ▸ **screenshot**(): *void*
 
-*Defined in [declarations/blessed.d.ts:1211](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1211)*
+*Defined in [declarations/blessed.d.ts:1211](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1211)*
 
 **Returns:** *void*
 
@@ -2373,7 +2373,7 @@ ___
 
 *Inherited from [Node](_declarations_blessed_d_.widgets.node.md).[set](_declarations_blessed_d_.widgets.node.md#set)*
 
-*Defined in [declarations/blessed.d.ts:385](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L385)*
+*Defined in [declarations/blessed.d.ts:385](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L385)*
 
 Set user property to value.
 
@@ -2392,7 +2392,7 @@ ___
 
 ▸ **setEffects**(`el`: [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md), `fel`: [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md), `over`: any, `out`: any, `effects`: any, `temp`: any): *void*
 
-*Defined in [declarations/blessed.d.ts:1136](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1136)*
+*Defined in [declarations/blessed.d.ts:1136](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1136)*
 
 Set effects based on two events and attributes.
 
@@ -2435,7 +2435,7 @@ ___
 
 ▸ **setTerminal**(`term`: string): *void*
 
-*Defined in [declarations/blessed.d.ts:1223](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1223)*
+*Defined in [declarations/blessed.d.ts:1223](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1223)*
 
 Reset the terminal to term. Reloads terminfo.
 
@@ -2453,7 +2453,7 @@ ___
 
 ▸ **spawn**(`file`: string, `args?`: string[], `options?`: [NodeChildProcessExecOptions](../interfaces/_declarations_blessed_d_.widgets.nodechildprocessexecoptions.md)): *ChildProcess*
 
-*Defined in [declarations/blessed.d.ts:1115](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1115)*
+*Defined in [declarations/blessed.d.ts:1115](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1115)*
 
 Spawn a process in the foreground, return to blessed app after exit.
 
@@ -2475,7 +2475,7 @@ ___
 
 *Inherited from [NodeWithEvents](_declarations_blessed_d_.widgets.nodewithevents.md).[unkey](_declarations_blessed_d_.widgets.nodewithevents.md#unkey)*
 
-*Defined in [declarations/blessed.d.ts:501](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L501)*
+*Defined in [declarations/blessed.d.ts:501](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L501)*
 
 Remove a keypress listener for a specific key.
 

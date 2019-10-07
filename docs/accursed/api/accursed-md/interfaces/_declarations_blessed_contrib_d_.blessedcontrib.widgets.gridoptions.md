@@ -26,7 +26,7 @@
 
 • **border**? : *[TBorder](_declarations_blessed_d_.widgets.types.tborder.md)*
 
-*Defined in [declarations/blessed-contrib.d.ts:26](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L26)*
+*Defined in [declarations/blessed-contrib.d.ts:26](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L26)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **bottom**? : *[TPosition](../modules/_declarations_blessed_d_.widgets.types.md#tposition)*
 
-*Defined in [declarations/blessed-contrib.d.ts:22](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L22)*
+*Defined in [declarations/blessed-contrib.d.ts:22](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L22)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **cols**? : *number*
 
-*Defined in [declarations/blessed-contrib.d.ts:24](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L24)*
+*Defined in [declarations/blessed-contrib.d.ts:24](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L24)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **hideBorder**? : *boolean*
 
-*Defined in [declarations/blessed-contrib.d.ts:27](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L27)*
+*Defined in [declarations/blessed-contrib.d.ts:27](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L27)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 • **left**? : *[TTopLeft](../modules/_declarations_blessed_d_.widgets.types.md#ttopleft)*
 
-*Defined in [declarations/blessed-contrib.d.ts:20](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L20)*
+*Defined in [declarations/blessed-contrib.d.ts:20](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L20)*
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 • **right**? : *[TPosition](../modules/_declarations_blessed_d_.widgets.types.md#tposition)*
 
-*Defined in [declarations/blessed-contrib.d.ts:21](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L21)*
+*Defined in [declarations/blessed-contrib.d.ts:21](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L21)*
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 • **rows**? : *number*
 
-*Defined in [declarations/blessed-contrib.d.ts:23](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L23)*
+*Defined in [declarations/blessed-contrib.d.ts:23](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L23)*
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 • **screen**: *[Screen](../classes/_declarations_blessed_d_.widgets.screen.md)*
 
-*Defined in [declarations/blessed-contrib.d.ts:25](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L25)*
+*Defined in [declarations/blessed-contrib.d.ts:25](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L25)*
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 • **top**? : *[TTopLeft](../modules/_declarations_blessed_d_.widgets.types.md#ttopleft)*
 
-*Defined in [declarations/blessed-contrib.d.ts:19](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L19)*
+*Defined in [declarations/blessed-contrib.d.ts:19](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L19)*

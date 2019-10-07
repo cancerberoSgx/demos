@@ -32,7 +32,7 @@
 
 • **classic**: = "classic"
 
-*Defined in [util/boxes.ts:10](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L10)*
+*Defined in [util/boxes.ts:10](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L10)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **double**: = "double"
 
-*Defined in [util/boxes.ts:5](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L5)*
+*Defined in [util/boxes.ts:5](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L5)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **doubleLight**: = "doubleLight"
 
-*Defined in [util/boxes.ts:9](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L9)*
+*Defined in [util/boxes.ts:9](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L9)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **heavier**: = "heavier"
 
-*Defined in [util/boxes.ts:14](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L14)*
+*Defined in [util/boxes.ts:14](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L14)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 • **heavy**: = "heavy"
 
-*Defined in [util/boxes.ts:7](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L7)*
+*Defined in [util/boxes.ts:7](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L7)*
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 • **heavyDoubleDash**: = "heavyDoubleDash"
 
-*Defined in [util/boxes.ts:18](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L18)*
+*Defined in [util/boxes.ts:18](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L18)*
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 • **heavyQuadrupleDash**: = "heavyQuadrupleDash"
 
-*Defined in [util/boxes.ts:20](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L20)*
+*Defined in [util/boxes.ts:20](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L20)*
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 • **heavyTripleDash**: = "heavyTripleDash"
 
-*Defined in [util/boxes.ts:19](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L19)*
+*Defined in [util/boxes.ts:19](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L19)*
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 • **light**: = "light"
 
-*Defined in [util/boxes.ts:4](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L4)*
+*Defined in [util/boxes.ts:4](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L4)*
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 • **lightDouble**: = "lightDouble"
 
-*Defined in [util/boxes.ts:8](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L8)*
+*Defined in [util/boxes.ts:8](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L8)*
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 • **lightDoubleDash**: = "lightDoubleDash"
 
-*Defined in [util/boxes.ts:13](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L13)*
+*Defined in [util/boxes.ts:13](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L13)*
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 • **lightQuadrupleDash**: = "lightQuadrupleDash"
 
-*Defined in [util/boxes.ts:12](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L12)*
+*Defined in [util/boxes.ts:12](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L12)*
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 • **lightTripleDash**: = "lightTripleDash"
 
-*Defined in [util/boxes.ts:11](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L11)*
+*Defined in [util/boxes.ts:11](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L11)*
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 • **round**: = "round"
 
-*Defined in [util/boxes.ts:6](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L6)*
+*Defined in [util/boxes.ts:6](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L6)*
 
 ___
 
@@ -144,7 +144,7 @@ ___
 
 • **roundDoubleDash**: = "roundDoubleDash"
 
-*Defined in [util/boxes.ts:15](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L15)*
+*Defined in [util/boxes.ts:15](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L15)*
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 • **roundQuadrupleDash**: = "roundQuadrupleDash"
 
-*Defined in [util/boxes.ts:17](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L17)*
+*Defined in [util/boxes.ts:17](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L17)*
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 • **roundTripleDash**: = "roundTripleDash"
 
-*Defined in [util/boxes.ts:16](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L16)*
+*Defined in [util/boxes.ts:16](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L16)*
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 • **singleRareCorners**: = "singleRareCorners"
 
-*Defined in [util/boxes.ts:22](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L22)*
+*Defined in [util/boxes.ts:22](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L22)*
 
 ___
 
@@ -176,4 +176,4 @@ ___
 
 • **triangleCorners**: = "triangleCorners"
 
-*Defined in [util/boxes.ts:23](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/boxes.ts#L23)*
+*Defined in [util/boxes.ts:23](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/boxes.ts#L23)*

@@ -18,4 +18,4 @@
 
 • **children**: *[ListTableCell](../classes/_jsx_components_listtable_.listtablecell.md) | [ListTableCell](../classes/_jsx_components_listtable_.listtablecell.md)[]*
 
-*Defined in [jsx-components/listTable.tsx:14](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listTable.tsx#L14)*
+*Defined in [jsx-components/listTable.tsx:14](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/listTable.tsx#L14)*

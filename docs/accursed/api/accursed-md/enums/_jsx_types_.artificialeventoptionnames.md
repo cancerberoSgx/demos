@@ -20,7 +20,7 @@
 
 • **onChange**: = "onChange"
 
-*Defined in [jsx/types.ts:65](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L65)*
+*Defined in [jsx/types.ts:16](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L16)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **onClick**: = "onClick"
 
-*Defined in [jsx/types.ts:62](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L62)*
+*Defined in [jsx/types.ts:13](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L13)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 • **onKeyPress**: = "onKeyPress"
 
-*Defined in [jsx/types.ts:63](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L63)*
+*Defined in [jsx/types.ts:14](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L14)*
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 • **onPress**: = "onPress"
 
-*Defined in [jsx/types.ts:67](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L67)*
+*Defined in [jsx/types.ts:18](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L18)*
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 • **onRender**: = "onRender"
 
-*Defined in [jsx/types.ts:64](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L64)*
+*Defined in [jsx/types.ts:15](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L15)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 • **onSelect**: = "onSelect"
 
-*Defined in [jsx/types.ts:66](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L66)*
+*Defined in [jsx/types.ts:17](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L17)*
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 • **onceRender**: = "onceRender"
 
-*Defined in [jsx/types.ts:68](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L68)*
+*Defined in [jsx/types.ts:19](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L19)*

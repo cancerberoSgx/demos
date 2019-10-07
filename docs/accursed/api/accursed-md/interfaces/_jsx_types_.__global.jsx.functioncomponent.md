@@ -14,7 +14,7 @@
 
 ▸ (`props`: P & object, `context?`: any): *[Element](_jsx_types_.__global.jsx.element.md)‹any› | null*
 
-*Defined in [jsx/types.ts:167](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L167)*
+*Defined in [jsx/types.ts:118](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L118)*
 
 **Parameters:**
 

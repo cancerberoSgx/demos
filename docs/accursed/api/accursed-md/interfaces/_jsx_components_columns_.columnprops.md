@@ -20,4 +20,4 @@
 
 • **children**: *[BlessedJsxNode](../modules/_jsx_types_.__global.jsx.md#blessedjsxnode)*
 
-*Defined in [jsx-components/columns.tsx:10](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/columns.tsx#L10)*
+*Defined in [jsx-components/columns.tsx:10](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/columns.tsx#L10)*

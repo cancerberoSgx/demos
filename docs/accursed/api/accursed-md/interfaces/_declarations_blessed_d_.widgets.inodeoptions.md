@@ -28,7 +28,7 @@
 
 • **children**? : *[Node](../classes/_declarations_blessed_d_.widgets.node.md)[]*
 
-*Defined in [declarations/blessed.d.ts:236](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L236)*
+*Defined in [declarations/blessed.d.ts:236](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L236)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 • **focusable**? : *boolean*
 
-*Defined in [declarations/blessed.d.ts:240](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L240)*
+*Defined in [declarations/blessed.d.ts:240](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L240)*
 
 If true, the node will obtain focus when m
 
@@ -46,7 +46,7 @@ ___
 
 • **name**? : *string*
 
-*Defined in [declarations/blessed.d.ts:233](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L233)*
+*Defined in [declarations/blessed.d.ts:233](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L233)*
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 • **parent**? : *[Node](../classes/_declarations_blessed_d_.widgets.node.md)*
 
-*Defined in [declarations/blessed.d.ts:235](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L235)*
+*Defined in [declarations/blessed.d.ts:235](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L235)*
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 • **screen**? : *[Screen](../classes/_declarations_blessed_d_.widgets.screen.md)*
 
-*Defined in [declarations/blessed.d.ts:234](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L234)*
+*Defined in [declarations/blessed.d.ts:234](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L234)*

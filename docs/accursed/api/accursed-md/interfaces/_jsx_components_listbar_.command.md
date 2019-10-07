@@ -26,7 +26,7 @@
 
 • **keys**? : *string[]*
 
-*Defined in [jsx-components/listBar.tsx:29](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L29)*
+*Defined in [jsx-components/listBar.tsx:29](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/listBar.tsx#L29)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **prefix**? : *string*
 
-*Defined in [jsx-components/listBar.tsx:28](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L28)*
+*Defined in [jsx-components/listBar.tsx:28](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/listBar.tsx#L28)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **text**? : *string*
 
-*Defined in [jsx-components/listBar.tsx:27](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L27)*
+*Defined in [jsx-components/listBar.tsx:27](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/listBar.tsx#L27)*
 
 ## Methods
 
@@ -50,6 +50,6 @@ ___
 
 ▸ **callback**(): *void*
 
-*Defined in [jsx-components/listBar.tsx:30](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L30)*
+*Defined in [jsx-components/listBar.tsx:30](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/listBar.tsx#L30)*
 
 **Returns:** *void*

@@ -22,10 +22,10 @@ Represents event handlers directly supported by blessed element methods (exactly
 
 • **__computed**? : *[On](../modules/_jsx_types_.md#on)‹this›*
 
-*Defined in [jsx/types.ts:75](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L75)*
+*Defined in [jsx/types.ts:26](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L26)*
 
-*Defined in [jsx/types.ts:76](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L76)*
+*Defined in [jsx/types.ts:27](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L27)*
 
-*Defined in [jsx/types.ts:77](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L77)*
+*Defined in [jsx/types.ts:28](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L28)*
 
-*Defined in [jsx/types.ts:78](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L78)*
+*Defined in [jsx/types.ts:29](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L29)*

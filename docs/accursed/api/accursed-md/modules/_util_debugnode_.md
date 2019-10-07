@@ -31,7 +31,7 @@
 
 • **lastFocused**: *[Element](../interfaces/_jsx_types_.__global.jsx.element.md)*
 
-*Defined in [util/debugNode.tsx:60](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/debugNode.tsx#L60)*
+*Defined in [util/debugNode.tsx:61](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/debugNode.tsx#L61)*
 
 ___
 
@@ -39,15 +39,15 @@ ___
 
 • **timer**: *any*
 
-*Defined in [util/debugNode.tsx:61](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/debugNode.tsx#L61)*
+*Defined in [util/debugNode.tsx:62](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/debugNode.tsx#L62)*
 
 ## Functions
 
 ###  buildTreeNode
 
-▸ **buildTreeNode**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `o`: [Options](../interfaces/_util_debugnode_.options.md)): *any*
+▸ **buildTreeNode**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `o`: [Options](../interfaces/_util_debugnode_.options.md)): *[TreeNode](../interfaces/_util_debugnode_.treenode.md)*
 
-*Defined in [util/debugNode.tsx:31](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/debugNode.tsx#L31)*
+*Defined in [util/debugNode.tsx:32](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/debugNode.tsx#L32)*
 
 **Parameters:**
 
@@ -56,7 +56,7 @@ Name | Type | Default |
 `el` | [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | - |
 `o` | [Options](../interfaces/_util_debugnode_.options.md) |  defaultOptions |
 
-**Returns:** *any*
+**Returns:** *[TreeNode](../interfaces/_util_debugnode_.treenode.md)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 ▸ **getTreeNode**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | [Screen](../classes/_declarations_blessed_d_.widgets.screen.md), `o`: [Options](../interfaces/_util_debugnode_.options.md)): *[TreeNode](../interfaces/_util_debugnode_.treenode.md)*
 
-*Defined in [util/debugNode.tsx:27](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/debugNode.tsx#L27)*
+*Defined in [util/debugNode.tsx:28](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/debugNode.tsx#L28)*
 
 **Parameters:**
 
@@ -81,7 +81,7 @@ ___
 
 ▸ **logText**(`e`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | [Screen](../classes/_declarations_blessed_d_.widgets.screen.md), ...`args`: any[]): *void*
 
-*Defined in [util/debugNode.tsx:52](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/debugNode.tsx#L52)*
+*Defined in [util/debugNode.tsx:53](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/debugNode.tsx#L53)*
 
 **Parameters:**
 
@@ -98,7 +98,7 @@ ___
 
 ▸ **renderDescendants**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | [Screen](../classes/_declarations_blessed_d_.widgets.screen.md), `o`: [Options](../interfaces/_util_debugnode_.options.md) & [ElementOptions](../interfaces/_declarations_blessed_d_.widgets.elementoptions.md)): *[BlessedElement](../classes/_declarations_blessed_d_.widgets.blessedelement.md)‹object›*
 
-*Defined in [util/debugNode.tsx:62](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/debugNode.tsx#L62)*
+*Defined in [util/debugNode.tsx:63](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/debugNode.tsx#L63)*
 
 **Parameters:**
 
@@ -115,13 +115,13 @@ Name | Type | Default |
 
 ### ▪ **defaultOptions**: *object*
 
-*Defined in [util/debugNode.tsx:14](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/debugNode.tsx#L14)*
+*Defined in [util/debugNode.tsx:14](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/debugNode.tsx#L14)*
 
 ###  getNodeLabel
 
 ▸ **getNodeLabel**(`n`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)): *string*
 
-*Defined in [util/debugNode.tsx:15](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/debugNode.tsx#L15)*
+*Defined in [util/debugNode.tsx:15](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/debugNode.tsx#L15)*
 
 **Parameters:**
 

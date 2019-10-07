@@ -23,7 +23,7 @@
 
 • **xi**: *number*
 
-*Defined in [declarations/blessed.d.ts:1448](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1448)*
+*Defined in [declarations/blessed.d.ts:1448](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1448)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **xl**: *number*
 
-*Defined in [declarations/blessed.d.ts:1447](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1447)*
+*Defined in [declarations/blessed.d.ts:1447](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1447)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **yi**: *number*
 
-*Defined in [declarations/blessed.d.ts:1450](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1450)*
+*Defined in [declarations/blessed.d.ts:1450](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1450)*
 
 ___
 
@@ -47,4 +47,4 @@ ___
 
 • **yl**: *number*
 
-*Defined in [declarations/blessed.d.ts:1449](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1449)*
+*Defined in [declarations/blessed.d.ts:1449](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1449)*

@@ -28,7 +28,7 @@
 
 • **createScreen**: *[screen](_declarations_blessed_d_.md#screen)* =  blessed.screen
 
-*Defined in [blessed/util.ts:221](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/util.ts#L221)*
+*Defined in [blessed/util.ts:221](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/util.ts#L221)*
 
 ## Functions
 
@@ -36,7 +36,7 @@
 
 ▸ **appendElementData**<**T**>(`e`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `path`: string, `value`: T): *void*
 
-*Defined in [blessed/util.ts:106](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/util.ts#L106)*
+*Defined in [blessed/util.ts:106](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/util.ts#L106)*
 
 like setElementData but push the data in the propery value / creating an array if doesn exists. if st's not an array it throws
 
@@ -60,7 +60,7 @@ ___
 
 ▸ **getElementData**<**T**>(`e`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `path`: string): *T*
 
-*Defined in [blessed/util.ts:87](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/util.ts#L87)*
+*Defined in [blessed/util.ts:87](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/util.ts#L87)*
 
 extract property stored on e.$ by path.
 
@@ -83,7 +83,7 @@ ___
 
 ▸ **getElementLabel**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)): *[Element](../interfaces/_jsx_types_.__global.jsx.element.md) | undefined*
 
-*Defined in [blessed/util.ts:59](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/util.ts#L59)*
+*Defined in [blessed/util.ts:59](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/util.ts#L59)*
 
 returns element's internal representation of the label. Warning it uses internal blessed properties that could break in the future.
 
@@ -101,7 +101,7 @@ ___
 
 ▸ **installExitKeys**(`screen`: [Screen](../classes/_declarations_blessed_d_.widgets.screen.md)): *void*
 
-*Defined in [blessed/util.ts:27](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/util.ts#L27)*
+*Defined in [blessed/util.ts:27](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/util.ts#L27)*
 
 **Parameters:**
 
@@ -117,7 +117,7 @@ ___
 
 ▸ **isBlessedElement**(`n`: any): *boolean*
 
-*Defined in [blessed/util.ts:5](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/util.ts#L5)*
+*Defined in [blessed/util.ts:5](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/util.ts#L5)*
 
 **Parameters:**
 
@@ -133,7 +133,7 @@ ___
 
 ▸ **labelBlink**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `options`: object): *void*
 
-*Defined in [blessed/util.ts:63](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/util.ts#L63)*
+*Defined in [blessed/util.ts:63](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/util.ts#L63)*
 
 **Parameters:**
 
@@ -154,7 +154,7 @@ ___
 
 ▸ **offValueChange**(`el`: [Checkbox](../classes/_declarations_blessed_d_.widget.checkbox.md)): *void*
 
-*Defined in [blessed/util.ts:47](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/util.ts#L47)*
+*Defined in [blessed/util.ts:47](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/util.ts#L47)*
 
 **Parameters:**
 
@@ -170,7 +170,7 @@ ___
 
 ▸ **onButtonClicked**(`b`: [Button](../classes/_declarations_blessed_d_.widget.button.md), `fn`: function): *void*
 
-*Defined in [blessed/util.ts:12](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/util.ts#L12)*
+*Defined in [blessed/util.ts:12](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/util.ts#L12)*
 
 Besides reacting for click, also will react for pressed, enter and space keys.
 
@@ -190,7 +190,7 @@ ___
 
 ▸ **onValueChange**(`el`: [Checkbox](../classes/_declarations_blessed_d_.widget.checkbox.md), `cb`: function): *void*
 
-*Defined in [blessed/util.ts:38](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/util.ts#L38)*
+*Defined in [blessed/util.ts:38](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/util.ts#L38)*
 
 **Parameters:**
 
@@ -215,7 +215,7 @@ ___
 
 ▸ **replaceChildren**(`container`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `newChildren`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md) | [Element](../interfaces/_jsx_types_.__global.jsx.element.md)[], `options`: object): *void*
 
-*Defined in [blessed/util.ts:183](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/util.ts#L183)*
+*Defined in [blessed/util.ts:183](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/util.ts#L183)*
 
 Hot replace all children of given container element with given [[newChildren]] array elements.
 
@@ -252,7 +252,7 @@ ___
 
 ▸ **setElementData**<**T**>(`e`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `path`: string, `value`: T): *void*
 
-*Defined in [blessed/util.ts:98](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/util.ts#L98)*
+*Defined in [blessed/util.ts:98](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/util.ts#L98)*
 
 set property stored on e.$ by path.
 

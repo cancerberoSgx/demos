@@ -21,7 +21,7 @@
 
 • **child**: *[Element](_jsx_types_.__global.jsx.element.md)*
 
-*Defined in [jsx/types.ts:274](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L274)*
+*Defined in [jsx/types.ts:225](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L225)*
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 • **el**: *[Element](_jsx_types_.__global.jsx.element.md)*
 
-*Defined in [jsx/types.ts:273](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L273)*
+*Defined in [jsx/types.ts:224](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L224)*

@@ -18,4 +18,4 @@
 
 • **children**: *[BlessedJsxText](../modules/_jsx_types_.__global.jsx.md#blessedjsxtext) | [BlessedJsxText](../modules/_jsx_types_.__global.jsx.md#blessedjsxtext)[]*
 
-*Defined in [jsx-components/listTable.tsx:21](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listTable.tsx#L21)*
+*Defined in [jsx-components/listTable.tsx:21](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/listTable.tsx#L21)*

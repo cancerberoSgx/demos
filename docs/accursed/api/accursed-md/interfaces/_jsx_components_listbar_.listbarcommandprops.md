@@ -30,7 +30,7 @@
 
 • **active**? : *boolean*
 
-*Defined in [jsx-components/listBar.tsx:22](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L22)*
+*Defined in [jsx-components/listBar.tsx:22](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/listBar.tsx#L22)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **children**: *string | string[]*
 
-*Defined in [jsx-components/listBar.tsx:20](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L20)*
+*Defined in [jsx-components/listBar.tsx:20](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/listBar.tsx#L20)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 *Overrides [Command](_jsx_components_listbar_.command.md).[keys](_jsx_components_listbar_.command.md#optional-keys)*
 
-*Defined in [jsx-components/listBar.tsx:23](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L23)*
+*Defined in [jsx-components/listBar.tsx:23](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/listBar.tsx#L23)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 *Inherited from [Command](_jsx_components_listbar_.command.md).[prefix](_jsx_components_listbar_.command.md#optional-prefix)*
 
-*Defined in [jsx-components/listBar.tsx:28](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L28)*
+*Defined in [jsx-components/listBar.tsx:28](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/listBar.tsx#L28)*
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 *Inherited from [Command](_jsx_components_listbar_.command.md).[text](_jsx_components_listbar_.command.md#optional-text)*
 
-*Defined in [jsx-components/listBar.tsx:27](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L27)*
+*Defined in [jsx-components/listBar.tsx:27](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/listBar.tsx#L27)*
 
 ## Methods
 
@@ -78,6 +78,6 @@ ___
 
 *Inherited from [Command](_jsx_components_listbar_.command.md).[callback](_jsx_components_listbar_.command.md#callback)*
 
-*Defined in [jsx-components/listBar.tsx:30](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L30)*
+*Defined in [jsx-components/listBar.tsx:30](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/listBar.tsx#L30)*
 
 **Returns:** *void*

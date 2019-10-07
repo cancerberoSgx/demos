@@ -26,7 +26,7 @@
 
 • **boolCount**: *number*
 
-*Defined in [declarations/tput.d.ts:8](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L8)*
+*Defined in [declarations/tput.d.ts:8](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L8)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **dataSize**: *number*
 
-*Defined in [declarations/tput.d.ts:4](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L4)*
+*Defined in [declarations/tput.d.ts:4](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L4)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **extended**: *object*
 
-*Defined in [declarations/tput.d.ts:12](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L12)*
+*Defined in [declarations/tput.d.ts:12](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L12)*
 
 #### Type declaration:
 
@@ -66,7 +66,7 @@ ___
 
 • **headerSize**: *number*
 
-*Defined in [declarations/tput.d.ts:5](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L5)*
+*Defined in [declarations/tput.d.ts:5](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L5)*
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 • **magicNumber**: *boolean*
 
-*Defined in [declarations/tput.d.ts:6](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L6)*
+*Defined in [declarations/tput.d.ts:6](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L6)*
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 • **namesSize**: *number*
 
-*Defined in [declarations/tput.d.ts:7](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L7)*
+*Defined in [declarations/tput.d.ts:7](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L7)*
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 • **numCount**: *number*
 
-*Defined in [declarations/tput.d.ts:9](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L9)*
+*Defined in [declarations/tput.d.ts:9](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L9)*
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 • **strCount**: *number*
 
-*Defined in [declarations/tput.d.ts:10](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L10)*
+*Defined in [declarations/tput.d.ts:10](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L10)*
 
 ___
 
@@ -106,4 +106,4 @@ ___
 
 • **strTableSize**: *number*
 
-*Defined in [declarations/tput.d.ts:11](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/tput.d.ts#L11)*
+*Defined in [declarations/tput.d.ts:11](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/tput.d.ts#L11)*

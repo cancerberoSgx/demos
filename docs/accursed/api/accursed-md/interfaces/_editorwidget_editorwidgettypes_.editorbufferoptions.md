@@ -26,7 +26,7 @@ The Buffer visual concept represent the editor area and has these settings:
 
 • **cursorPadding**? : *[Padding](_declarations_blessed_d_.widgets.padding.md)*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:29](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L29)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:29](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L29)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **tabSize**? : *number*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:26](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L26)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:26](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L26)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **useSpaces**? : *boolean*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:25](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L25)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:25](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L25)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **visibleLineEndings**? : *boolean*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:28](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L28)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:28](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L28)*
 
 ___
 
@@ -58,4 +58,4 @@ ___
 
 • **visibleWhiteSpace**? : *boolean*
 
-*Defined in [editorWidget/editorWidgetTypes.tsx:27](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidgetTypes.tsx#L27)*
+*Defined in [editorWidget/editorWidgetTypes.tsx:27](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidgetTypes.tsx#L27)*

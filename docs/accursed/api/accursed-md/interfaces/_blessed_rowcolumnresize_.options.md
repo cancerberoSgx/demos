@@ -21,7 +21,7 @@
 
 • **e**: *[Element](_jsx_types_.__global.jsx.element.md)*
 
-*Defined in [blessed/rowColumnResize.tsx:5](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/rowColumnResize.tsx#L5)*
+*Defined in [blessed/rowColumnResize.tsx:5](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/rowColumnResize.tsx#L5)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **increment**? : *boolean*
 
-*Defined in [blessed/rowColumnResize.tsx:6](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/rowColumnResize.tsx#L6)*
+*Defined in [blessed/rowColumnResize.tsx:6](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/rowColumnResize.tsx#L6)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **step**? : *number*
 
-*Defined in [blessed/rowColumnResize.tsx:7](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/rowColumnResize.tsx#L7)*
+*Defined in [blessed/rowColumnResize.tsx:7](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/rowColumnResize.tsx#L7)*
 
 ___
 
@@ -45,6 +45,6 @@ ___
 
 • **width**: *boolean*
 
-*Defined in [blessed/rowColumnResize.tsx:11](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/rowColumnResize.tsx#L11)*
+*Defined in [blessed/rowColumnResize.tsx:11](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/rowColumnResize.tsx#L11)*
 
 if true it will work with element's `width` attribute, as if they were CColumns. If false it will work with `height` as if they were Rows.

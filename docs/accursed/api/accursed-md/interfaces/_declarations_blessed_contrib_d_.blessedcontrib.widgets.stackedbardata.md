@@ -20,7 +20,7 @@
 
 • **barCategory**? : *string[]*
 
-*Defined in [declarations/blessed-contrib.d.ts:263](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L263)*
+*Defined in [declarations/blessed-contrib.d.ts:263](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L263)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **data**? : *Array‹number[]›*
 
-*Defined in [declarations/blessed-contrib.d.ts:265](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L265)*
+*Defined in [declarations/blessed-contrib.d.ts:265](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L265)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **stackedCategory**? : *string[]*
 
-*Defined in [declarations/blessed-contrib.d.ts:264](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L264)*
+*Defined in [declarations/blessed-contrib.d.ts:264](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L264)*

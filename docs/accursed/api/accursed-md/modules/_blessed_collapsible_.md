@@ -26,7 +26,7 @@
 
 Ƭ **onCollapseChange**: *function*
 
-*Defined in [blessed/collapsible.ts:74](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/collapsible.ts#L74)*
+*Defined in [blessed/collapsible.ts:74](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/collapsible.ts#L74)*
 
 #### Type declaration:
 
@@ -44,7 +44,7 @@ Name | Type |
 
 ▸ **installCollapsible**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `options`: [CollapsibleOptions](../interfaces/_blessed_collapsible_.collapsibleoptions.md)): *void*
 
-*Defined in [blessed/collapsible.ts:76](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/collapsible.ts#L76)*
+*Defined in [blessed/collapsible.ts:76](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/collapsible.ts#L76)*
 
 **Parameters:**
 
@@ -61,7 +61,7 @@ ___
 
 ▸ **isCollapsed**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)): *any*
 
-*Defined in [blessed/collapsible.ts:6](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/collapsible.ts#L6)*
+*Defined in [blessed/collapsible.ts:6](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/collapsible.ts#L6)*
 
 **Parameters:**
 
@@ -77,7 +77,7 @@ ___
 
 ▸ **setCollapsed**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `collapsed`: boolean, `andRenderScreen?`: boolean, `dontNotify`: boolean): *void*
 
-*Defined in [blessed/collapsible.ts:10](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/collapsible.ts#L10)*
+*Defined in [blessed/collapsible.ts:10](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/collapsible.ts#L10)*
 
 **Parameters:**
 
@@ -96,7 +96,7 @@ ___
 
 ▸ **toggleCollapsed**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `andRenderScreen`: boolean): *void*
 
-*Defined in [blessed/collapsible.ts:47](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/collapsible.ts#L47)*
+*Defined in [blessed/collapsible.ts:47](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/collapsible.ts#L47)*
 
 **Parameters:**
 
@@ -113,7 +113,7 @@ ___
 
 ▸ **uninstallCollapsible**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)): *void*
 
-*Defined in [blessed/collapsible.ts:122](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/collapsible.ts#L122)*
+*Defined in [blessed/collapsible.ts:122](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/collapsible.ts#L122)*
 
 **Parameters:**
 

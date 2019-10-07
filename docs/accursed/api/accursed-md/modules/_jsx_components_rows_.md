@@ -25,7 +25,7 @@
 
 ▸ **isRow**(`e`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)): *any*
 
-*Defined in [jsx-components/rows.tsx:64](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/rows.tsx#L64)*
+*Defined in [jsx-components/rows.tsx:64](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/rows.tsx#L64)*
 
 **Parameters:**
 
@@ -41,7 +41,7 @@ ___
 
 ▸ **isRows**(`e`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)): *any*
 
-*Defined in [jsx-components/rows.tsx:60](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/rows.tsx#L60)*
+*Defined in [jsx-components/rows.tsx:60](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/rows.tsx#L60)*
 
 **Parameters:**
 

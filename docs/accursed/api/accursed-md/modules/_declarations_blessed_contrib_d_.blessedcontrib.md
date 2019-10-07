@@ -42,7 +42,7 @@
 
 Ƭ **Optionals**: *object*
 
-*Defined in [declarations/blessed-contrib.d.ts:6](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L6)*
+*Defined in [declarations/blessed-contrib.d.ts:6](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L6)*
 
 #### Type declaration:
 
@@ -52,7 +52,7 @@ ___
 
 Ƭ **Picker**: *object*
 
-*Defined in [declarations/blessed-contrib.d.ts:7](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L7)*
+*Defined in [declarations/blessed-contrib.d.ts:7](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L7)*
 
 #### Type declaration:
 
@@ -62,7 +62,7 @@ ___
 
 ▸ **bar**(`options?`: [BarOptions](../interfaces/_declarations_blessed_contrib_d_.blessedcontrib.widgets.baroptions.md)): *[BarElement](../classes/_declarations_blessed_contrib_d_.blessedcontrib.widgets.barelement.md)*
 
-*Defined in [declarations/blessed-contrib.d.ts:593](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L593)*
+*Defined in [declarations/blessed-contrib.d.ts:593](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L593)*
 
 **Parameters:**
 
@@ -78,7 +78,7 @@ ___
 
 ▸ **canvas**(`options?`: [CanvasOptions](../interfaces/_declarations_blessed_contrib_d_.blessedcontrib.widgets.canvasoptions.md)): *[CanvasElement](../classes/_declarations_blessed_contrib_d_.blessedcontrib.widgets.canvaselement.md)*
 
-*Defined in [declarations/blessed-contrib.d.ts:597](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L597)*
+*Defined in [declarations/blessed-contrib.d.ts:597](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L597)*
 
 **Parameters:**
 
@@ -94,7 +94,7 @@ ___
 
 ▸ **donut**(`options?`: [DonutOptions](../interfaces/_declarations_blessed_contrib_d_.blessedcontrib.widgets.donutoptions.md)): *[DonutElement](../classes/_declarations_blessed_contrib_d_.blessedcontrib.widgets.donutelement.md)*
 
-*Defined in [declarations/blessed-contrib.d.ts:621](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L621)*
+*Defined in [declarations/blessed-contrib.d.ts:621](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L621)*
 
 **Parameters:**
 
@@ -110,7 +110,7 @@ ___
 
 ▸ **gauge**(`options?`: [GaugeOptions](../interfaces/_declarations_blessed_contrib_d_.blessedcontrib.widgets.gaugeoptions.md)): *[GaugeElement](../classes/_declarations_blessed_contrib_d_.blessedcontrib.widgets.gaugeelement.md)*
 
-*Defined in [declarations/blessed-contrib.d.ts:617](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L617)*
+*Defined in [declarations/blessed-contrib.d.ts:617](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L617)*
 
 **Parameters:**
 
@@ -126,7 +126,7 @@ ___
 
 ▸ **gaugeList**(`options?`: [GaugeListOptions](../interfaces/_declarations_blessed_contrib_d_.blessedcontrib.widgets.gaugelistoptions.md)): *[GaugeListElement](../classes/_declarations_blessed_contrib_d_.blessedcontrib.widgets.gaugelistelement.md)*
 
-*Defined in [declarations/blessed-contrib.d.ts:619](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L619)*
+*Defined in [declarations/blessed-contrib.d.ts:619](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L619)*
 
 **Parameters:**
 
@@ -142,7 +142,7 @@ ___
 
 ▸ **lcd**(`options?`: [LcdOptions](../interfaces/_declarations_blessed_contrib_d_.blessedcontrib.widgets.lcdoptions.md)): *[LcdElement](../classes/_declarations_blessed_contrib_d_.blessedcontrib.widgets.lcdelement.md)*
 
-*Defined in [declarations/blessed-contrib.d.ts:615](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L615)*
+*Defined in [declarations/blessed-contrib.d.ts:615](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L615)*
 
 **Parameters:**
 
@@ -158,7 +158,7 @@ ___
 
 ▸ **line**(`options?`: [LineOptions](../interfaces/_declarations_blessed_contrib_d_.blessedcontrib.widgets.lineoptions.md)): *[LineElement](../classes/_declarations_blessed_contrib_d_.blessedcontrib.widgets.lineelement.md)*
 
-*Defined in [declarations/blessed-contrib.d.ts:591](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L591)*
+*Defined in [declarations/blessed-contrib.d.ts:591](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L591)*
 
 **Parameters:**
 
@@ -174,7 +174,7 @@ ___
 
 ▸ **log**(`options?`: [LogOptions](../interfaces/_declarations_blessed_contrib_d_.blessedcontrib.widgets.logoptions.md)): *[LogElement](../classes/_declarations_blessed_contrib_d_.blessedcontrib.widgets.logelement.md)*
 
-*Defined in [declarations/blessed-contrib.d.ts:613](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L613)*
+*Defined in [declarations/blessed-contrib.d.ts:613](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L613)*
 
 **Parameters:**
 
@@ -190,7 +190,7 @@ ___
 
 ▸ **map**(`options?`: [MapOptions](../interfaces/_declarations_blessed_contrib_d_.blessedcontrib.widgets.mapoptions.md)): *[MapElement](../classes/_declarations_blessed_contrib_d_.blessedcontrib.widgets.mapelement.md)*
 
-*Defined in [declarations/blessed-contrib.d.ts:611](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L611)*
+*Defined in [declarations/blessed-contrib.d.ts:611](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L611)*
 
 **Parameters:**
 
@@ -206,7 +206,7 @@ ___
 
 ▸ **markdown**(`options?`: [MarkdownOptions](../interfaces/_declarations_blessed_contrib_d_.blessedcontrib.widgets.markdownoptions.md)): *[MarkdownElement](../classes/_declarations_blessed_contrib_d_.blessedcontrib.widgets.markdownelement.md)*
 
-*Defined in [declarations/blessed-contrib.d.ts:607](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L607)*
+*Defined in [declarations/blessed-contrib.d.ts:607](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L607)*
 
 **Parameters:**
 
@@ -222,7 +222,7 @@ ___
 
 ▸ **picture**(`options?`: [PictureOptions](../interfaces/_declarations_blessed_contrib_d_.blessedcontrib.widgets.pictureoptions.md)): *[PictureElement](../classes/_declarations_blessed_contrib_d_.blessedcontrib.widgets.pictureelement.md)*
 
-*Defined in [declarations/blessed-contrib.d.ts:605](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L605)*
+*Defined in [declarations/blessed-contrib.d.ts:605](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L605)*
 
 **Parameters:**
 
@@ -238,7 +238,7 @@ ___
 
 ▸ **sparkline**(`options?`: [SparklineOptions](../interfaces/_declarations_blessed_contrib_d_.blessedcontrib.widgets.sparklineoptions.md)): *[SparklineElement](../classes/_declarations_blessed_contrib_d_.blessedcontrib.widgets.sparklineelement.md)*
 
-*Defined in [declarations/blessed-contrib.d.ts:609](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L609)*
+*Defined in [declarations/blessed-contrib.d.ts:609](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L609)*
 
 **Parameters:**
 
@@ -254,7 +254,7 @@ ___
 
 ▸ **stackedBar**(`options?`: [StackedBarOptions](../interfaces/_declarations_blessed_contrib_d_.blessedcontrib.widgets.stackedbaroptions.md)): *[StackedBarElement](../classes/_declarations_blessed_contrib_d_.blessedcontrib.widgets.stackedbarelement.md)*
 
-*Defined in [declarations/blessed-contrib.d.ts:595](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L595)*
+*Defined in [declarations/blessed-contrib.d.ts:595](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L595)*
 
 **Parameters:**
 
@@ -270,7 +270,7 @@ ___
 
 ▸ **table**<**T**>(`options?`: [TableOptions](../interfaces/_declarations_blessed_contrib_d_.blessedcontrib.widgets.tableoptions.md)‹T›): *[TableElement](../classes/_declarations_blessed_contrib_d_.blessedcontrib.widgets.tableelement.md)*
 
-*Defined in [declarations/blessed-contrib.d.ts:603](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L603)*
+*Defined in [declarations/blessed-contrib.d.ts:603](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L603)*
 
 **Type parameters:**
 
@@ -290,7 +290,7 @@ ___
 
 ▸ **tree**<**T**>(`options?`: [TreeOptions](../interfaces/_declarations_blessed_contrib_d_.blessedcontrib.widgets.treeoptions.md)‹T›): *[TreeElement](../classes/_declarations_blessed_contrib_d_.blessedcontrib.widgets.treeelement.md)‹T›*
 
-*Defined in [declarations/blessed-contrib.d.ts:599](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L599)*
+*Defined in [declarations/blessed-contrib.d.ts:599](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L599)*
 
 **Type parameters:**
 

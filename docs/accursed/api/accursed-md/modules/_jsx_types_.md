@@ -44,7 +44,7 @@
 
 Ƭ **AfterElementCreatedListener**: *function*
 
-*Defined in [jsx/types.ts:260](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L260)*
+*Defined in [jsx/types.ts:211](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L211)*
 
 **`internal`** 
 
@@ -64,7 +64,7 @@ ___
 
 Ƭ **AfterRenderListener**: *function*
 
-*Defined in [jsx/types.ts:290](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L290)*
+*Defined in [jsx/types.ts:241](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L241)*
 
 **`internal`** 
 
@@ -84,7 +84,7 @@ ___
 
 Ƭ **BeforeAppendChildListener**: *function*
 
-*Defined in [jsx/types.ts:270](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L270)*
+*Defined in [jsx/types.ts:221](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L221)*
 
 **`internal`** 
 
@@ -104,7 +104,7 @@ ___
 
 Ƭ **BeforeElementCreatedListener**: *function*
 
-*Defined in [jsx/types.ts:277](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L277)*
+*Defined in [jsx/types.ts:228](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L228)*
 
 **`internal`** 
 
@@ -124,7 +124,7 @@ ___
 
 Ƭ **BlessedJsxAttrs**: *object | undefined*
 
-*Defined in [jsx/types.ts:295](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L295)*
+*Defined in [jsx/types.ts:246](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L246)*
 
 **`internal`** 
 
@@ -134,7 +134,7 @@ ___
 
 Ƭ **On**: *Parameters‹function› | Parameters‹function› | Parameters‹function› | Parameters‹function› | Parameters‹function› | Parameters‹function› | Parameters‹function›*
 
-*Defined in [jsx/types.ts:297](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L297)*
+*Defined in [jsx/types.ts:248](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L248)*
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 Ƭ **OnClickHandler**: *function*
 
-*Defined in [jsx/types.ts:315](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L315)*
+*Defined in [jsx/types.ts:266](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L266)*
 
 #### Type declaration:
 
@@ -161,7 +161,7 @@ ___
 
 Ƭ **blessedElementConstructor**: *function*
 
-*Defined in [jsx/types.ts:323](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L323)*
+*Defined in [jsx/types.ts:274](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L274)*
 
 **`internal`** 
 

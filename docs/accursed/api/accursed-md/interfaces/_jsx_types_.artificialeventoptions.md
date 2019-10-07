@@ -27,19 +27,19 @@ imply some manual event registration and mapping to blessed supported ones.
 
 • **__computed**? : *function*
 
-*Defined in [jsx/types.ts:86](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L86)*
+*Defined in [jsx/types.ts:37](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L37)*
 
-*Defined in [jsx/types.ts:87](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L87)*
+*Defined in [jsx/types.ts:38](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L38)*
 
-*Defined in [jsx/types.ts:94](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L94)*
+*Defined in [jsx/types.ts:45](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L45)*
 
-*Defined in [jsx/types.ts:95](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L95)*
+*Defined in [jsx/types.ts:46](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L46)*
 
-*Defined in [jsx/types.ts:96](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L96)*
+*Defined in [jsx/types.ts:47](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L47)*
 
-*Defined in [jsx/types.ts:102](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L102)*
+*Defined in [jsx/types.ts:53](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L53)*
 
-*Defined in [jsx/types.ts:109](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L109)*
+*Defined in [jsx/types.ts:60](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L60)*
 
 #### Type declaration:
 

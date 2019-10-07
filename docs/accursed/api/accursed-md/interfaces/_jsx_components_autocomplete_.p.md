@@ -29,7 +29,7 @@
 
 • **inputOptions**? : *[TextboxOptions](_declarations_blessed_d_.widgets.textboxoptions.md)*
 
-*Defined in [jsx-components/autocomplete.tsx:39](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/autocomplete.tsx#L39)*
+*Defined in [jsx-components/autocomplete.tsx:39](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/autocomplete.tsx#L39)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **listOptions**? : *[ListOptions](_declarations_blessed_d_.widgets.listoptions.md)*
 
-*Defined in [jsx-components/autocomplete.tsx:40](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/autocomplete.tsx#L40)*
+*Defined in [jsx-components/autocomplete.tsx:40](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/autocomplete.tsx#L40)*
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 • **options**? : *string[]*
 
-*Defined in [jsx-components/autocomplete.tsx:32](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/autocomplete.tsx#L32)*
+*Defined in [jsx-components/autocomplete.tsx:32](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/autocomplete.tsx#L32)*
 
 Suggestions array.
 
@@ -55,7 +55,7 @@ ___
 
 • **optionsMax**? : *number*
 
-*Defined in [jsx-components/autocomplete.tsx:37](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/autocomplete.tsx#L37)*
+*Defined in [jsx-components/autocomplete.tsx:37](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/autocomplete.tsx#L37)*
 
 Maximum amount of options suggested to the user for an input. Note: Suggesting too much options can degrade the user experience while typing. Default value is 10.
 
@@ -65,7 +65,7 @@ ___
 
 • **suggestionRenderThrottle**? : *number*
 
-*Defined in [jsx-components/autocomplete.tsx:27](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/autocomplete.tsx#L27)*
+*Defined in [jsx-components/autocomplete.tsx:27](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/autocomplete.tsx#L27)*
 
 Throttling time to render suggestion list. Default value is 0
 
@@ -75,7 +75,7 @@ Throttling time to render suggestion list. Default value is 0
 
 ▸ **onChange**(`e`: [ArtificialEvent](_jsx_types_.artificialevent.md)‹[Textbox](../classes/_declarations_blessed_d_.widget.textbox.md)› & object): *void*
 
-*Defined in [jsx-components/autocomplete.tsx:7](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/autocomplete.tsx#L7)*
+*Defined in [jsx-components/autocomplete.tsx:7](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/autocomplete.tsx#L7)*
 
 **Parameters:**
 
@@ -91,7 +91,7 @@ ___
 
 ▸ **onSelectOption**(`e`: [ArtificialEvent](_jsx_types_.artificialevent.md)‹[Textbox](../classes/_declarations_blessed_d_.widget.textbox.md)› & object): *void*
 
-*Defined in [jsx-components/autocomplete.tsx:19](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/autocomplete.tsx#L19)*
+*Defined in [jsx-components/autocomplete.tsx:19](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/autocomplete.tsx#L19)*
 
 Notifies when the user scrolls through the options using the arrow keys or mouse wheel. It doesn't  when the user confirm the selection pressing enter, for that use [onChange](_jsx_components_autocomplete_.p.md#optional-onchange)
 

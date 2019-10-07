@@ -8,21 +8,9 @@
 
 * [Options](../interfaces/_blessed_rowcolumnresize_.options.md)
 
-### Variables
-
-* [rowColumnResize](_blessed_rowcolumnresize_.md#let-rowcolumnresize)
-
 ### Functions
 
 * [rowColumnResizeHandler](_blessed_rowcolumnresize_.md#rowcolumnresizehandler)
-
-## Variables
-
-### `Let` rowColumnResize
-
-• **rowColumnResize**: *any*
-
-*Defined in [blessed/rowColumnResize.tsx:3](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/rowColumnResize.tsx#L3)*
 
 ## Functions
 
@@ -30,7 +18,7 @@
 
 ▸ **rowColumnResizeHandler**(`options`: [Options](../interfaces/_blessed_rowcolumnresize_.options.md)): *void*
 
-*Defined in [blessed/rowColumnResize.tsx:20](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/rowColumnResize.tsx#L20)*
+*Defined in [blessed/rowColumnResize.tsx:21](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/rowColumnResize.tsx#L21)*
 
 TODO:
  * maximum and minimum (so containers dont get invisible). Nice to have: per column/row

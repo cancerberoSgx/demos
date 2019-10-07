@@ -56,7 +56,7 @@ JSX.IntrinsicElement should be supported. All event handlers in types are suppor
 
 \+ **new BlessedJsxImpl**(`options`: [Options](../interfaces/_jsx_createelement_.options.md)): *[BlessedJsxImpl](_jsx_createelement_.blessedjsximpl.md)*
 
-*Defined in [jsx/createElement.ts:58](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L58)*
+*Defined in [jsx/createElement.ts:41](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L41)*
 
 **Parameters:**
 
@@ -72,7 +72,7 @@ Name | Type | Default |
 
 • **afterElementCreatedListeners**: *[AfterElementCreatedListener](../modules/_jsx_types_.md#afterelementcreatedlistener)[]* =  []
 
-*Defined in [jsx/createElement.ts:315](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L315)*
+*Defined in [jsx/createElement.ts:298](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L298)*
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 • **afterRenderListeners**: *[AfterRenderListener](../modules/_jsx_types_.md#afterrenderlistener)[]* =  []
 
-*Defined in [jsx/createElement.ts:330](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L330)*
+*Defined in [jsx/createElement.ts:313](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L313)*
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 • **beforeAppendChildListeners**: *[BeforeAppendChildListener](../modules/_jsx_types_.md#beforeappendchildlistener)[]* =  []
 
-*Defined in [jsx/createElement.ts:320](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L320)*
+*Defined in [jsx/createElement.ts:303](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L303)*
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 • **beforeElementCreatedListeners**: *[BeforeElementCreatedListener](../modules/_jsx_types_.md#beforeelementcreatedlistener)[]* =  []
 
-*Defined in [jsx/createElement.ts:325](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L325)*
+*Defined in [jsx/createElement.ts:308](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L308)*
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 • **defaultPluginsInstalled**: *boolean* = false
 
-*Defined in [jsx/createElement.ts:62](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L62)*
+*Defined in [jsx/createElement.ts:45](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L45)*
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 • **options**: *[Options](../interfaces/_jsx_createelement_.options.md)*
 
-*Defined in [jsx/createElement.ts:60](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L60)*
+*Defined in [jsx/createElement.ts:43](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L43)*
 
 ## Methods
 
@@ -120,7 +120,7 @@ ___
 
 ▸ **_addChildrenArray**(`c`: any[], `el`: [BlessedElement](_declarations_blessed_d_.widgets.blessedelement.md)): *void*
 
-*Defined in [jsx/createElement.ts:272](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L272)*
+*Defined in [jsx/createElement.ts:255](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L255)*
 
 **Parameters:**
 
@@ -139,7 +139,7 @@ ___
 
 *Implementation of [BlessedJsx](../interfaces/_jsx_types_.blessedjsx.md)*
 
-*Defined in [jsx/createElement.ts:316](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L316)*
+*Defined in [jsx/createElement.ts:299](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L299)*
 
 **Parameters:**
 
@@ -157,7 +157,7 @@ ___
 
 *Implementation of [BlessedJsx](../interfaces/_jsx_types_.blessedjsx.md)*
 
-*Defined in [jsx/createElement.ts:331](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L331)*
+*Defined in [jsx/createElement.ts:314](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L314)*
 
 **Parameters:**
 
@@ -175,7 +175,7 @@ ___
 
 *Implementation of [BlessedJsx](../interfaces/_jsx_types_.blessedjsx.md)*
 
-*Defined in [jsx/createElement.ts:321](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L321)*
+*Defined in [jsx/createElement.ts:304](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L304)*
 
 **Parameters:**
 
@@ -193,7 +193,7 @@ ___
 
 *Implementation of [BlessedJsx](../interfaces/_jsx_types_.blessedjsx.md)*
 
-*Defined in [jsx/createElement.ts:326](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L326)*
+*Defined in [jsx/createElement.ts:309](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L309)*
 
 **Parameters:**
 
@@ -209,7 +209,7 @@ ___
 
 ▸ **addIntrinsicElementConstructors**(`blessedElementConstructors`: object): *void*
 
-*Defined in [jsx/createElement.ts:50](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L50)*
+*Defined in [jsx/createElement.ts:33](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L33)*
 
 **Parameters:**
 
@@ -225,7 +225,7 @@ ___
 
 ▸ **appendChild**(`el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md), `child`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)): *any*
 
-*Defined in [jsx/createElement.ts:291](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L291)*
+*Defined in [jsx/createElement.ts:274](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L274)*
 
 all children blessed nodes, even from text  are appended to the blessed element using this method, so
 subclasses can override to do something about it. will notify beforeAppendChildListeners and if any
@@ -248,7 +248,7 @@ ___
 
 *Implementation of [BlessedJsx](../interfaces/_jsx_types_.blessedjsx.md)*
 
-*Defined in [jsx/createElement.ts:80](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L80)*
+*Defined in [jsx/createElement.ts:63](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L63)*
 
 **Parameters:**
 
@@ -266,7 +266,7 @@ ___
 
 ▸ **createRef**<**T**>(`callback?`: function): *[RefObject](../interfaces/_jsx_types_.refobject.md)‹T›*
 
-*Defined in [jsx/createElement.ts:334](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L334)*
+*Defined in [jsx/createElement.ts:317](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L317)*
 
 **Type parameters:**
 
@@ -292,7 +292,7 @@ ___
 
 ▸ **createTextNode**(`c`: [BlessedJsxText](../modules/_jsx_types_.__global.jsx.md#blessedjsxtext), `el`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)): *[TextElement](_declarations_blessed_d_.widgets.textelement.md)‹[TextOptions](../interfaces/_declarations_blessed_d_.widgets.textoptions.md)›*
 
-*Defined in [jsx/createElement.ts:308](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L308)*
+*Defined in [jsx/createElement.ts:291](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L291)*
 
 Default blessed Node factory for text like "foo" in <box>foo</box>
 
@@ -311,7 +311,7 @@ ___
 
 ▸ **installAttributesAndChildren**(`jsxNode`: [BlessedJsxNode](../modules/_jsx_types_.__global.jsx.md#blessedjsxnode), `blessedEventMethodAttributes`: any, `artificialEventAttributes`: any, `children`: any[]): *any*
 
-*Defined in [jsx/createElement.ts:185](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L185)*
+*Defined in [jsx/createElement.ts:168](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L168)*
 
 **Parameters:**
 
@@ -330,7 +330,7 @@ ___
 
 ▸ **installRefs**(`el`: [BlessedJsxNode](../modules/_jsx_types_.__global.jsx.md#blessedjsxnode), `component`: [Component](_jsx_component_.component.md)): *any*
 
-*Defined in [jsx/createElement.ts:168](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L168)*
+*Defined in [jsx/createElement.ts:151](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L151)*
 
 **Parameters:**
 
@@ -347,7 +347,7 @@ ___
 
 ▸ **intrinsicElementFactory**<**O**, **T**>(`type`: string): *[blessedElementConstructor](../modules/_jsx_types_.md#blessedelementconstructor)‹O, T› | undefined*
 
-*Defined in [jsx/createElement.ts:44](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L44)*
+*Defined in [jsx/createElement.ts:27](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L27)*
 
 **Type parameters:**
 
@@ -369,7 +369,7 @@ ___
 
 ▸ **render**(`e`: [Element](../interfaces/_jsx_types_.__global.jsx.element.md)): *any*
 
-*Defined in [jsx/createElement.ts:64](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L64)*
+*Defined in [jsx/createElement.ts:47](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L47)*
 
 **Parameters:**
 
@@ -385,4 +385,4 @@ Name | Type |
 
 ### ▪ **_intrinsicElementFactory**: *object*
 
-*Defined in [jsx/createElement.ts:43](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L43)*
+*Defined in [jsx/createElement.ts:26](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L26)*

@@ -19,7 +19,7 @@
 
 • **__virtualTagName**: *string*
 
-*Defined in [blessed/virtualElement.ts:225](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L225)*
+*Defined in [blessed/virtualElement.ts:225](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/virtualElement.ts#L225)*
 
 ___
 
@@ -27,7 +27,7 @@ ___
 
 • **props**: *object*
 
-*Defined in [blessed/virtualElement.ts:222](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L222)*
+*Defined in [blessed/virtualElement.ts:222](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/virtualElement.ts#L222)*
 
 #### Type declaration:
 

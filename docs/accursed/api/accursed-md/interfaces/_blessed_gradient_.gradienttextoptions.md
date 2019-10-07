@@ -23,7 +23,7 @@
 
 • **bgGradientColors**? : *[GradientColors](../modules/_blessed_gradient_.md#gradientcolors)*
 
-*Defined in [blessed/gradient.ts:13](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/gradient.ts#L13)*
+*Defined in [blessed/gradient.ts:13](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/gradient.ts#L13)*
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 • **fgGradientColors**? : *[GradientColors](../modules/_blessed_gradient_.md#gradientcolors)*
 
-*Defined in [blessed/gradient.ts:12](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/gradient.ts#L12)*
+*Defined in [blessed/gradient.ts:12](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/gradient.ts#L12)*

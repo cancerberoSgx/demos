@@ -124,12 +124,12 @@
 
 ▸ **destroy**(): *void*
 
-*Defined in [declarations/blessed.d.ts:219](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L219)*
+*Defined in [declarations/blessed.d.ts:219](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L219)*
 
 **Returns:** *void*
 
 ▸ **destroy**(): *void*
 
-*Defined in [declarations/blessed.d.ts:229](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L229)*
+*Defined in [declarations/blessed.d.ts:229](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L229)*
 
 **Returns:** *void*

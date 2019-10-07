@@ -24,7 +24,7 @@
 
 \+ **new ComponentConstructor**(`p`: P, `s`: S): *[Component](../classes/_jsx_component_.component.md)*
 
-*Defined in [jsx/createElement.ts:29](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L29)*
+*Defined in [jsx/createElement.ts:12](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L12)*
 
 **Parameters:**
 

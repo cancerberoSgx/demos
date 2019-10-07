@@ -18,7 +18,7 @@
 
 ▸ **clicks**(`options`: [Options](../interfaces/_blessed_clicks_.options.md)): *void*
 
-*Defined in [blessed/clicks.ts:31](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/clicks.ts#L31)*
+*Defined in [blessed/clicks.ts:31](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/clicks.ts#L31)*
 
 Adds click listener that also reports the amount of clicks in event.count property of event with which the
 handler function is called.

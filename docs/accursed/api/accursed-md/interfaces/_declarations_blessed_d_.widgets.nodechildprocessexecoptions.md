@@ -25,7 +25,7 @@
 
 • **customFds**? : *any*
 
-*Defined in [declarations/blessed.d.ts:210](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L210)*
+*Defined in [declarations/blessed.d.ts:210](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L210)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **cwd**? : *string*
 
-*Defined in [declarations/blessed.d.ts:208](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L208)*
+*Defined in [declarations/blessed.d.ts:208](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L208)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **encoding**? : *string*
 
-*Defined in [declarations/blessed.d.ts:212](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L212)*
+*Defined in [declarations/blessed.d.ts:212](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L212)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 • **env**? : *any*
 
-*Defined in [declarations/blessed.d.ts:211](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L211)*
+*Defined in [declarations/blessed.d.ts:211](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L211)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 • **killSignal**? : *string*
 
-*Defined in [declarations/blessed.d.ts:215](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L215)*
+*Defined in [declarations/blessed.d.ts:215](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L215)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 • **maxBuffer**? : *number*
 
-*Defined in [declarations/blessed.d.ts:214](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L214)*
+*Defined in [declarations/blessed.d.ts:214](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L214)*
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 • **stdio**? : *any*
 
-*Defined in [declarations/blessed.d.ts:209](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L209)*
+*Defined in [declarations/blessed.d.ts:209](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L209)*
 
 ___
 
@@ -81,4 +81,4 @@ ___
 
 • **timeout**? : *number*
 
-*Defined in [declarations/blessed.d.ts:213](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L213)*
+*Defined in [declarations/blessed.d.ts:213](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L213)*

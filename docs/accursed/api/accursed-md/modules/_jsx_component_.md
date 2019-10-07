@@ -22,7 +22,7 @@
 
 ▸ **isComponent**(`c`: any): *boolean*
 
-*Defined in [jsx/component.ts:113](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/component.ts#L113)*
+*Defined in [jsx/component.ts:102](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/component.ts#L102)*
 
 **Parameters:**
 

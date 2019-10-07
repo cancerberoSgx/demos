@@ -25,7 +25,7 @@
 
 • **children**: *[ListBarCommand](../classes/_jsx_components_listbar_.listbarcommand.md) | [ListBarCommand](../classes/_jsx_components_listbar_.listbarcommand.md)[]*
 
-*Defined in [jsx-components/listBar.tsx:9](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L9)*
+*Defined in [jsx-components/listBar.tsx:9](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/listBar.tsx#L9)*
 
 ## Methods
 
@@ -33,7 +33,7 @@
 
 ▸ **onCommand**(`index`: number, `item`: [Element](_jsx_types_.__global.jsx.element.md)): *void*
 
-*Defined in [jsx-components/listBar.tsx:17](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L17)*
+*Defined in [jsx-components/listBar.tsx:17](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/listBar.tsx#L17)*
 
 Notifies when the user presses ENTER or clicks a command.
 
@@ -52,7 +52,7 @@ ___
 
 ▸ **onSelectItem**(`index`: number, `item`: [Element](_jsx_types_.__global.jsx.element.md)): *void*
 
-*Defined in [jsx-components/listBar.tsx:13](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/listBar.tsx#L13)*
+*Defined in [jsx-components/listBar.tsx:13](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/listBar.tsx#L13)*
 
 Notifies when the user moves thought the list as when pressing arrow functions. Notice that the user did not actionate the command, is just exploring the options.
 

@@ -25,7 +25,7 @@
 
 *Inherited from [GradientTextOptions](_blessed_gradient_.gradienttextoptions.md).[bgGradientColors](_blessed_gradient_.gradienttextoptions.md#optional-bggradientcolors)*
 
-*Defined in [blessed/gradient.ts:13](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/gradient.ts#L13)*
+*Defined in [blessed/gradient.ts:13](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/gradient.ts#L13)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 *Inherited from [GradientTextOptions](_blessed_gradient_.gradienttextoptions.md).[fgGradientColors](_blessed_gradient_.gradienttextoptions.md#optional-fggradientcolors)*
 
-*Defined in [blessed/gradient.ts:12](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/gradient.ts#L12)*
+*Defined in [blessed/gradient.ts:12](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/gradient.ts#L12)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **interval**? : *number*
 
-*Defined in [blessed/gradient.ts:83](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/gradient.ts#L83)*
+*Defined in [blessed/gradient.ts:83](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/gradient.ts#L83)*
 
 ___
 
@@ -51,4 +51,4 @@ ___
 
 • **mode**? : *"shift-right" | "shift-left" | "transform-to-other-gradient"*
 
-*Defined in [blessed/gradient.ts:84](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/gradient.ts#L84)*
+*Defined in [blessed/gradient.ts:84](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/gradient.ts#L84)*

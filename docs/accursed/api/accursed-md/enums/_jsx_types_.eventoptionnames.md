@@ -17,7 +17,7 @@
 
 • **key**: = "key"
 
-*Defined in [jsx/types.ts:55](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L55)*
+*Defined in [jsx/types.ts:6](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L6)*
 
 ___
 
@@ -25,7 +25,7 @@ ___
 
 • **on**: = "on"
 
-*Defined in [jsx/types.ts:57](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L57)*
+*Defined in [jsx/types.ts:8](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L8)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **once**: = "once"
 
-*Defined in [jsx/types.ts:58](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L58)*
+*Defined in [jsx/types.ts:9](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L9)*
 
 ___
 
@@ -41,4 +41,4 @@ ___
 
 • **onceKey**: = "onceKey"
 
-*Defined in [jsx/types.ts:56](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L56)*
+*Defined in [jsx/types.ts:7](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L7)*

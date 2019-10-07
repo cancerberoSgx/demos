@@ -22,7 +22,7 @@ settings for visitDescendants regarding visiting order and visit interruption mo
 
 • **breakOnDescendantSignal**? : *boolean*
 
-*Defined in [blessed/node.ts:15](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/node.ts#L15)*
+*Defined in [blessed/node.ts:15](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/node.ts#L15)*
 
 if a descendant visitor returned true, we stop visiting and signal up
 
@@ -32,7 +32,7 @@ ___
 
 • **childrenFirst**? : *boolean*
 
-*Defined in [blessed/node.ts:11](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/node.ts#L11)*
+*Defined in [blessed/node.ts:11](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/node.ts#L11)*
 
 ___
 
@@ -40,6 +40,6 @@ ___
 
 • **visitDescendantsOnSelfSignalAnyway**? : *boolean*
 
-*Defined in [blessed/node.ts:19](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/node.ts#L19)*
+*Defined in [blessed/node.ts:19](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/node.ts#L19)*
 
 no matter if visitor returns true for a node, it will still visit its descendants and then break the chain

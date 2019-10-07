@@ -20,7 +20,7 @@
 
 • **color**? : *string*
 
-*Defined in [declarations/blessed-contrib.d.ts:310](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L310)*
+*Defined in [declarations/blessed-contrib.d.ts:310](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L310)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **label**? : *string*
 
-*Defined in [declarations/blessed-contrib.d.ts:309](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L309)*
+*Defined in [declarations/blessed-contrib.d.ts:309](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L309)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **percent**? : *string*
 
-*Defined in [declarations/blessed-contrib.d.ts:308](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed-contrib.d.ts#L308)*
+*Defined in [declarations/blessed-contrib.d.ts:308](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed-contrib.d.ts#L308)*

@@ -30,7 +30,7 @@
 
 • **React**: *[BlessedJsx](../interfaces/_jsx_types_.blessedjsx.md)* =  new BlessedJsxImpl()
 
-*Defined in [jsx/createElement.ts:346](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L346)*
+*Defined in [jsx/createElement.ts:329](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L329)*
 
 ## Functions
 
@@ -38,7 +38,7 @@
 
 ▸ **isComponentConstructor**(`tag`: any): *boolean*
 
-*Defined in [jsx/createElement.ts:33](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L33)*
+*Defined in [jsx/createElement.ts:16](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L16)*
 
 **Parameters:**
 
@@ -54,7 +54,7 @@ ___
 
 ▸ **isElementLike**(`e`: any): *boolean*
 
-*Defined in [jsx/createElement.ts:342](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L342)*
+*Defined in [jsx/createElement.ts:325](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L325)*
 
 **Parameters:**
 
@@ -70,7 +70,7 @@ ___
 
 ▸ **ref**<**C**>(`fn`: function): *[RefObject](../interfaces/_jsx_types_.refobject.md)‹C›*
 
-*Defined in [jsx/createElement.ts:351](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L351)*
+*Defined in [jsx/createElement.ts:334](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L334)*
 
 Shortcut for `React.createRef`
 
@@ -98,7 +98,7 @@ ___
 
 ▸ **resolveRef**(`options`: [ElementOptions](../interfaces/_declarations_blessed_d_.widgets.elementoptions.md), `current`: any): *void*
 
-*Defined in [jsx/createElement.ts:359](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/createElement.ts#L359)*
+*Defined in [jsx/createElement.ts:342](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/createElement.ts#L342)*
 
 internal tool to resolve refObject from given options
 

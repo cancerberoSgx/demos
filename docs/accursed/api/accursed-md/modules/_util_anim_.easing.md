@@ -48,7 +48,7 @@
 
 • **b**: *number* = 0
 
-*Defined in [util/anim.ts:81](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L81)*
+*Defined in [util/anim.ts:76](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L76)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **c**: *number* = 1
 
-*Defined in [util/anim.ts:80](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L80)*
+*Defined in [util/anim.ts:75](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L75)*
 
 ## Functions
 
@@ -64,7 +64,7 @@ ___
 
 ▸ **back**(`x`: number): *(Anonymous function)*
 
-*Defined in [util/anim.ts:64](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L64)*
+*Defined in [util/anim.ts:59](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L59)*
 
 “bow shooting”. First we “pull the bowstring”, and then “shoot”.
 
@@ -82,7 +82,7 @@ ___
 
 ▸ **bounceEaseInOut**(): *(Anonymous function)*
 
-*Defined in [util/anim.ts:78](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L78)*
+*Defined in [util/anim.ts:73](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L73)*
 
 **Returns:** *(Anonymous function)*
 
@@ -92,7 +92,7 @@ ___
 
 ▸ **bounceEasyOut**(): *(Anonymous function)*
 
-*Defined in [util/anim.ts:52](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L52)*
+*Defined in [util/anim.ts:47](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L47)*
 
 Imagine we are dropping a ball. It falls down, then bounces back a few times and stops. The bounce function does the same, but in the reverse order: “bouncing” starts immediately.
 
@@ -104,7 +104,7 @@ ___
 
 ▸ **bounceFn**(`timeFraction`: number): *number*
 
-*Defined in [util/anim.ts:43](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L43)*
+*Defined in [util/anim.ts:38](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L38)*
 
 **Parameters:**
 
@@ -120,7 +120,7 @@ ___
 
 ▸ **easeInBounce**(): *any*
 
-*Defined in [util/anim.ts:265](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L265)*
+*Defined in [util/anim.ts:260](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L260)*
 
 **Returns:** *any*
 
@@ -130,7 +130,7 @@ ___
 
 ▸ **easeInCubic**(): *any*
 
-*Defined in [util/anim.ts:128](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L128)*
+*Defined in [util/anim.ts:123](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L123)*
 
 **Returns:** *any*
 
@@ -140,7 +140,7 @@ ___
 
 ▸ **easeInElastic**(): *any*
 
-*Defined in [util/anim.ts:94](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L94)*
+*Defined in [util/anim.ts:89](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L89)*
 
 **Returns:** *any*
 
@@ -150,7 +150,7 @@ ___
 
 ▸ **easeInExpo**(): *any*
 
-*Defined in [util/anim.ts:179](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L179)*
+*Defined in [util/anim.ts:174](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L174)*
 
 **Returns:** *any*
 
@@ -160,7 +160,7 @@ ___
 
 ▸ **easeInOutBack**(): *any*
 
-*Defined in [util/anim.ts:248](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L248)*
+*Defined in [util/anim.ts:243](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L243)*
 
 **Returns:** *any*
 
@@ -170,7 +170,7 @@ ___
 
 ▸ **easeInOutBounce**(): *any*
 
-*Defined in [util/anim.ts:272](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L272)*
+*Defined in [util/anim.ts:267](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L267)*
 
 **Returns:** *any*
 
@@ -180,7 +180,7 @@ ___
 
 ▸ **easeInOutCubic**(): *any*
 
-*Defined in [util/anim.ts:142](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L142)*
+*Defined in [util/anim.ts:137](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L137)*
 
 **Returns:** *any*
 
@@ -190,7 +190,7 @@ ___
 
 ▸ **easeInOutElastic**(): *any*
 
-*Defined in [util/anim.ts:200](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L200)*
+*Defined in [util/anim.ts:195](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L195)*
 
 **Returns:** *any*
 
@@ -200,7 +200,7 @@ ___
 
 ▸ **easeInOutExpo**(): *any*
 
-*Defined in [util/anim.ts:238](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L238)*
+*Defined in [util/anim.ts:233](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L233)*
 
 **Returns:** *any*
 
@@ -210,7 +210,7 @@ ___
 
 ▸ **easeInOutQuad**(): *any*
 
-*Defined in [util/anim.ts:87](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L87)*
+*Defined in [util/anim.ts:82](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L82)*
 
 **Returns:** *any*
 
@@ -220,7 +220,7 @@ ___
 
 ▸ **easeInOutQuart**(): *any*
 
-*Defined in [util/anim.ts:157](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L157)*
+*Defined in [util/anim.ts:152](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L152)*
 
 **Returns:** *any*
 
@@ -230,7 +230,7 @@ ___
 
 ▸ **easeInOutQuint**(): *any*
 
-*Defined in [util/anim.ts:186](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L186)*
+*Defined in [util/anim.ts:181](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L181)*
 
 **Returns:** *any*
 
@@ -240,7 +240,7 @@ ___
 
 ▸ **easeInQuad**(): *any*
 
-*Defined in [util/anim.ts:82](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L82)*
+*Defined in [util/anim.ts:77](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L77)*
 
 **Returns:** *any*
 
@@ -250,7 +250,7 @@ ___
 
 ▸ **easeInQuart**(): *any*
 
-*Defined in [util/anim.ts:150](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L150)*
+*Defined in [util/anim.ts:145](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L145)*
 
 **Returns:** *any*
 
@@ -260,7 +260,7 @@ ___
 
 ▸ **easeInQuint**(): *any*
 
-*Defined in [util/anim.ts:165](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L165)*
+*Defined in [util/anim.ts:160](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L160)*
 
 **Returns:** *any*
 
@@ -270,7 +270,7 @@ ___
 
 ▸ **easeInSine**(): *any*
 
-*Defined in [util/anim.ts:194](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L194)*
+*Defined in [util/anim.ts:189](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L189)*
 
 **Returns:** *any*
 
@@ -280,7 +280,7 @@ ___
 
 ▸ **easeOutBack**(): *any*
 
-*Defined in [util/anim.ts:257](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L257)*
+*Defined in [util/anim.ts:252](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L252)*
 
 **Returns:** *any*
 
@@ -290,7 +290,7 @@ ___
 
 ▸ **easeOutBounce**(): *any*
 
-*Defined in [util/anim.ts:113](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L113)*
+*Defined in [util/anim.ts:108](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L108)*
 
 **Returns:** *any*
 
@@ -300,7 +300,7 @@ ___
 
 ▸ **easeOutCubic**(): *any*
 
-*Defined in [util/anim.ts:135](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L135)*
+*Defined in [util/anim.ts:130](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L130)*
 
 **Returns:** *any*
 
@@ -310,7 +310,7 @@ ___
 
 ▸ **easeOutElastic**(): *any*
 
-*Defined in [util/anim.ts:220](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L220)*
+*Defined in [util/anim.ts:215](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L215)*
 
 **Returns:** *any*
 
@@ -320,7 +320,7 @@ ___
 
 ▸ **easeOutQuad**(): *any*
 
-*Defined in [util/anim.ts:85](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L85)*
+*Defined in [util/anim.ts:80](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L80)*
 
 **Returns:** *any*
 
@@ -330,7 +330,7 @@ ___
 
 ▸ **easeOutQuint**(): *any*
 
-*Defined in [util/anim.ts:172](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L172)*
+*Defined in [util/anim.ts:167](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L167)*
 
 **Returns:** *any*
 
@@ -340,7 +340,7 @@ ___
 
 ▸ **elastic**(`x`: number): *(Anonymous function)*
 
-*Defined in [util/anim.ts:68](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L68)*
+*Defined in [util/anim.ts:63](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L63)*
 
 **Parameters:**
 
@@ -356,7 +356,7 @@ ___
 
 ▸ **makeEaseInOut**(`timing`: [Timing](_util_anim_.md#timing)): *(Anonymous function)*
 
-*Defined in [util/anim.ts:71](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L71)*
+*Defined in [util/anim.ts:66](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L66)*
 
 **Parameters:**
 
@@ -372,7 +372,7 @@ ___
 
 ▸ **makeEaseOut**(`timing`: [Timing](_util_anim_.md#timing)): *(Anonymous function)*
 
-*Defined in [util/anim.ts:37](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L37)*
+*Defined in [util/anim.ts:32](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L32)*
 
 **Parameters:**
 
@@ -388,7 +388,7 @@ ___
 
 ▸ **quad**(`timeFraction`: number): *number*
 
-*Defined in [util/anim.ts:55](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L55)*
+*Defined in [util/anim.ts:50](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L50)*
 
 parabolic curve
 

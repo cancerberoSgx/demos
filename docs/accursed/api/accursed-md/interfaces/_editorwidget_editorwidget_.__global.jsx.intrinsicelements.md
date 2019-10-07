@@ -18,4 +18,4 @@
 
 • **editor**: *[OptionsProps](../modules/_jsx_types_.__global.jsx.md#optionsprops)‹[EditorOptions](_editorwidget_editorwidgettypes_.editoroptions.md)› & [EventOptions](_jsx_types_.eventoptions.md)‹[IEditor](_editorwidget_editorwidgettypes_.ieditor.md)›*
 
-*Defined in [editorWidget/editorWidget.tsx:108](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/editorWidget/editorWidget.tsx#L108)*
+*Defined in [editorWidget/editorWidget.tsx:108](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/editorWidget/editorWidget.tsx#L108)*

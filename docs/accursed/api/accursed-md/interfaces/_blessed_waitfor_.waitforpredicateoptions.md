@@ -20,7 +20,7 @@
 
 • **interval**? : *number*
 
-*Defined in [blessed/waitFor.ts:8](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/waitFor.ts#L8)*
+*Defined in [blessed/waitFor.ts:8](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/waitFor.ts#L8)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **timeout**? : *number*
 
-*Defined in [blessed/waitFor.ts:9](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/waitFor.ts#L9)*
+*Defined in [blessed/waitFor.ts:9](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/waitFor.ts#L9)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **timeoutError**? : *string*
 
-*Defined in [blessed/waitFor.ts:10](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/waitFor.ts#L10)*
+*Defined in [blessed/waitFor.ts:10](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/waitFor.ts#L10)*

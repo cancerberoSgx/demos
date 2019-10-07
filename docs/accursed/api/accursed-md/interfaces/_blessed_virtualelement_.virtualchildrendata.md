@@ -20,7 +20,7 @@
 
 • **attrs**: *object*
 
-*Defined in [blessed/virtualElement.ts:182](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L182)*
+*Defined in [blessed/virtualElement.ts:182](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/virtualElement.ts#L182)*
 
 #### Type declaration:
 
@@ -32,7 +32,7 @@ ___
 
 • **children**: *string | number | [VirtualChildrenData](_blessed_virtualelement_.virtualchildrendata.md)[]*
 
-*Defined in [blessed/virtualElement.ts:181](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L181)*
+*Defined in [blessed/virtualElement.ts:181](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/virtualElement.ts#L181)*
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 • **tagName**: *string*
 
-*Defined in [blessed/virtualElement.ts:183](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L183)*
+*Defined in [blessed/virtualElement.ts:183](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/virtualElement.ts#L183)*

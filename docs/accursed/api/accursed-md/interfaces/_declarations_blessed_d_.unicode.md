@@ -28,7 +28,7 @@ Unicode utilities, see [[Screen#fullUnicode]]. Wide, Surrogates, and Combining.
 
 • **chars**: *object*
 
-*Defined in [declarations/blessed.d.ts:3695](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3695)*
+*Defined in [declarations/blessed.d.ts:3696](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L3696)*
 
 Regexps
 
@@ -48,7 +48,7 @@ ___
 
 • **combiningTable**: *number[][]*
 
-*Defined in [declarations/blessed.d.ts:3690](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3690)*
+*Defined in [declarations/blessed.d.ts:3691](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L3691)*
 
 ## Methods
 
@@ -56,7 +56,7 @@ ___
 
 ▸ **charWidth**(`str`: string, `i?`: number): *string*
 
-*Defined in [declarations/blessed.d.ts:3681](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3681)*
+*Defined in [declarations/blessed.d.ts:3682](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L3682)*
 
 **Parameters:**
 
@@ -73,7 +73,7 @@ ___
 
 ▸ **fromCodePoint**(`unicode`: number): *string*
 
-*Defined in [declarations/blessed.d.ts:3679](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3679)*
+*Defined in [declarations/blessed.d.ts:3680](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L3680)*
 
 **Parameters:**
 
@@ -89,7 +89,7 @@ ___
 
 ▸ **isSurrogate**(`str`: string, `i?`: number): *boolean*
 
-*Defined in [declarations/blessed.d.ts:3688](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3688)*
+*Defined in [declarations/blessed.d.ts:3689](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L3689)*
 
 **Parameters:**
 
@@ -106,7 +106,7 @@ ___
 
 ▸ **strWidth**(`str`: string): *number*
 
-*Defined in [declarations/blessed.d.ts:3686](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L3686)*
+*Defined in [declarations/blessed.d.ts:3687](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L3687)*
 
 Gets given string width.
 

@@ -26,7 +26,7 @@
 
 Ƭ **ProgramResponseCallback**: *function*
 
-*Defined in [declarations/blessedProgram.d.ts:63](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L63)*
+*Defined in [declarations/blessedProgram.d.ts:63](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L63)*
 
 #### Type declaration:
 

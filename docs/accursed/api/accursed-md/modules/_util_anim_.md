@@ -24,7 +24,7 @@
 
 Ƭ **Timing**: *function*
 
-*Defined in [util/anim.ts:3](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L3)*
+*Defined in [util/anim.ts:3](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L3)*
 
 #### Type declaration:
 
@@ -46,7 +46,7 @@ ___
 
 Ƭ **TimingObject**: *object*
 
-*Defined in [util/anim.ts:4](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L4)*
+*Defined in [util/anim.ts:4](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L4)*
 
 #### Type declaration:
 
@@ -60,7 +60,7 @@ ___
 
 ▸ **animate**(`__namedParameters`: object): *void*
 
-*Defined in [util/anim.ts:5](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L5)*
+*Defined in [util/anim.ts:5](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L5)*
 
 **Parameters:**
 
@@ -81,7 +81,7 @@ ___
 
 ▸ **requestAnimationFrame**(`f`: function, `lapse`: number): *void*
 
-*Defined in [util/anim.ts:32](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/anim.ts#L32)*
+*Defined in [util/anim.ts:27](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/anim.ts#L27)*
 
 **Parameters:**
 

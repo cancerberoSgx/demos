@@ -19,7 +19,7 @@
 
 • **side**: *[TAlign](../modules/_declarations_blessed_d_.widgets.types.md#talign)*
 
-*Defined in [declarations/blessed.d.ts:1463](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1463)*
+*Defined in [declarations/blessed.d.ts:1463](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1463)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **text**: *string*
 
-*Defined in [declarations/blessed.d.ts:1462](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L1462)*
+*Defined in [declarations/blessed.d.ts:1462](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L1462)*

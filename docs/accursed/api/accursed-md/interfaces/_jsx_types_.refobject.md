@@ -26,7 +26,7 @@
 
 • **current**: *T | undefined*
 
-*Defined in [jsx/types.ts:320](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L320)*
+*Defined in [jsx/types.ts:271](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L271)*
 
 ## Methods
 
@@ -34,7 +34,7 @@
 
 ▸ **callback**(`current`: T | undefined): *any*
 
-*Defined in [jsx/types.ts:319](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx/types.ts#L319)*
+*Defined in [jsx/types.ts:270](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx/types.ts#L270)*
 
 **Parameters:**
 

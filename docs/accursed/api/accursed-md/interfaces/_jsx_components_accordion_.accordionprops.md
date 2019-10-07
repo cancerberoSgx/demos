@@ -21,7 +21,7 @@
 
 • **children**: *[AccordionBlock](../classes/_jsx_components_accordion_.accordionblock.md) | [AccordionBlock](../classes/_jsx_components_accordion_.accordionblock.md)[]*
 
-*Defined in [jsx-components/accordion.tsx:14](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/accordion.tsx#L14)*
+*Defined in [jsx-components/accordion.tsx:14](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/accordion.tsx#L14)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **onCollapseChange**? : *function*
 
-*Defined in [jsx-components/accordion.tsx:13](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/jsx-components/accordion.tsx#L13)*
+*Defined in [jsx-components/accordion.tsx:13](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/jsx-components/accordion.tsx#L13)*
 
 #### Type declaration:
 

@@ -85,7 +85,7 @@ The base node which everything inherits from.
 
 \+ **new Node**(`options`: [INodeOptions](../interfaces/_declarations_blessed_d_.widgets.inodeoptions.md)): *[Node](_declarations_blessed_d_.widgets.node.md)*
 
-*Defined in [declarations/blessed.d.ts:260](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L260)*
+*Defined in [declarations/blessed.d.ts:260](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L260)*
 
 **Parameters:**
 
@@ -101,7 +101,7 @@ Name | Type |
 
 • **$**: *object*
 
-*Defined in [declarations/blessed.d.ts:289](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L289)*
+*Defined in [declarations/blessed.d.ts:289](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L289)*
 
 An object for any miscellaneous user data.
 
@@ -115,7 +115,7 @@ ___
 
 • **_**: *object*
 
-*Defined in [declarations/blessed.d.ts:284](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L284)*
+*Defined in [declarations/blessed.d.ts:284](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L284)*
 
 An object for any miscellaneous user data.
 
@@ -129,7 +129,7 @@ ___
 
 • **children**: *[Node](_declarations_blessed_d_.widgets.node.md)[]*
 
-*Defined in [declarations/blessed.d.ts:316](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L316)*
+*Defined in [declarations/blessed.d.ts:316](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L316)*
 
 Array of node's children.
 
@@ -139,7 +139,7 @@ ___
 
 • **data**: *object*
 
-*Defined in [declarations/blessed.d.ts:279](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L279)*
+*Defined in [declarations/blessed.d.ts:279](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L279)*
 
 An object for any miscellaneous user data.
 
@@ -153,7 +153,7 @@ ___
 
 • **focusable**: *boolean*
 
-*Defined in [declarations/blessed.d.ts:269](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L269)*
+*Defined in [declarations/blessed.d.ts:269](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L269)*
 
 If true, `screen.focusNext()` and methods related to focus will consider this Element.
 
@@ -163,7 +163,7 @@ ___
 
 • **index**: *number*
 
-*Defined in [declarations/blessed.d.ts:301](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L301)*
+*Defined in [declarations/blessed.d.ts:301](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L301)*
 
 Render index (document order index) of the last render call.
 
@@ -173,7 +173,7 @@ ___
 
 • **lpos**: *[PositionCoords](_declarations_blessed_d_.widgets.positioncoords.md)*
 
-*Defined in [declarations/blessed.d.ts:291](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L291)*
+*Defined in [declarations/blessed.d.ts:291](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L291)*
 
 ___
 
@@ -183,7 +183,7 @@ ___
 
 *Implementation of [IHasOptions](../interfaces/_declarations_blessed_d_.widgets.ihasoptions.md).[options](../interfaces/_declarations_blessed_d_.widgets.ihasoptions.md#options)*
 
-*Defined in [declarations/blessed.d.ts:274](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L274)*
+*Defined in [declarations/blessed.d.ts:274](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L274)*
 
 Original options object.
 
@@ -193,7 +193,7 @@ ___
 
 • **parent**? : *[Node](_declarations_blessed_d_.widgets.node.md)*
 
-*Defined in [declarations/blessed.d.ts:311](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L311)*
+*Defined in [declarations/blessed.d.ts:311](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L311)*
 
 Parent node. If null it means the element is not attached to any screen or program, or the node is a Screen.
 
@@ -203,7 +203,7 @@ ___
 
 • **screen**: *[Screen](_declarations_blessed_d_.widgets.screen.md)*
 
-*Defined in [declarations/blessed.d.ts:306](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L306)*
+*Defined in [declarations/blessed.d.ts:306](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L306)*
 
 Parent screen.
 
@@ -213,7 +213,7 @@ ___
 
 • **type**: *string*
 
-*Defined in [declarations/blessed.d.ts:296](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L296)*
+*Defined in [declarations/blessed.d.ts:296](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L296)*
 
 Type of the node (e.g. box).
 
@@ -223,7 +223,7 @@ ___
 
 • **uid**: *number*
 
-*Defined in [declarations/blessed.d.ts:264](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L264)*
+*Defined in [declarations/blessed.d.ts:264](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L264)*
 
 Unique identifier for Node instances. @internal
 
@@ -271,7 +271,7 @@ ___
 
 ▸ **append**(`node`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
 
-*Defined in [declarations/blessed.d.ts:326](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L326)*
+*Defined in [declarations/blessed.d.ts:326](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L326)*
 
 Append a node to this node's children.
 
@@ -289,7 +289,7 @@ ___
 
 ▸ **collectAncestors**(`s?`: boolean): *void*
 
-*Defined in [declarations/blessed.d.ts:362](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L362)*
+*Defined in [declarations/blessed.d.ts:362](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L362)*
 
 **Parameters:**
 
@@ -305,7 +305,7 @@ ___
 
 ▸ **collectDescendants**(`s?`: boolean): *void*
 
-*Defined in [declarations/blessed.d.ts:361](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L361)*
+*Defined in [declarations/blessed.d.ts:361](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L361)*
 
 **Parameters:**
 
@@ -323,7 +323,7 @@ ___
 
 *Implementation of [IDestroyable](../interfaces/_declarations_blessed_d_.widgets.idestroyable.md)*
 
-*Defined in [declarations/blessed.d.ts:375](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L375)*
+*Defined in [declarations/blessed.d.ts:375](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L375)*
 
 [detach](_declarations_blessed_d_.widgets.node.md#detach)() this node from its parent, and will also detach and destroy each of its descendant nodes each of them emitting [[destory]] event also.
 
@@ -335,7 +335,7 @@ ___
 
 ▸ **detach**(): *void*
 
-*Defined in [declarations/blessed.d.ts:351](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L351)*
+*Defined in [declarations/blessed.d.ts:351](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L351)*
 
 Remove node from its parent.
 
@@ -368,7 +368,7 @@ ___
 
 ▸ **emitAncestors**(): *void*
 
-*Defined in [declarations/blessed.d.ts:368](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L368)*
+*Defined in [declarations/blessed.d.ts:368](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L368)*
 
 **Returns:** *void*
 
@@ -378,7 +378,7 @@ ___
 
 ▸ **emitDescendants**(`type?`: string, ...`args`: any[]): *void*
 
-*Defined in [declarations/blessed.d.ts:367](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L367)*
+*Defined in [declarations/blessed.d.ts:367](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L367)*
 
 Emit event for element, and recursively emit same event for all descendants. If `s` is provided it will call [[iter]] on self first.
 
@@ -411,7 +411,7 @@ ___
 
 ▸ **forAncestors**(`iter`: function, `s?`: boolean): *void*
 
-*Defined in [declarations/blessed.d.ts:360](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L360)*
+*Defined in [declarations/blessed.d.ts:360](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L360)*
 
 **Parameters:**
 
@@ -435,7 +435,7 @@ ___
 
 ▸ **forDescendants**(`iter`: function, `s?`: boolean): *void*
 
-*Defined in [declarations/blessed.d.ts:359](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L359)*
+*Defined in [declarations/blessed.d.ts:359](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L359)*
 
 Visit each node's descendants, with [[iter]] function,  parents first.
 If `s` is provided it will call [[iter]] on self first.
@@ -462,7 +462,7 @@ ___
 
 ▸ **free**(): *void*
 
-*Defined in [declarations/blessed.d.ts:353](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L353)*
+*Defined in [declarations/blessed.d.ts:353](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L353)*
 
 **Returns:** *void*
 
@@ -472,7 +472,7 @@ ___
 
 ▸ **get**<**T**>(`name`: string, `def`: T): *T*
 
-*Defined in [declarations/blessed.d.ts:380](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L380)*
+*Defined in [declarations/blessed.d.ts:380](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L380)*
 
 Get user property with a potential default value.
 
@@ -509,7 +509,7 @@ ___
 
 ▸ **hasAncestor**<**T**>(`target`: [Node](_declarations_blessed_d_.widgets.node.md)): *[Node](_declarations_blessed_d_.widgets.node.md)*
 
-*Defined in [declarations/blessed.d.ts:370](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L370)*
+*Defined in [declarations/blessed.d.ts:370](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L370)*
 
 **Type parameters:**
 
@@ -529,7 +529,7 @@ ___
 
 ▸ **hasDescendant**<**T**>(`target`: [Node](_declarations_blessed_d_.widgets.node.md)): *[Node](_declarations_blessed_d_.widgets.node.md)*
 
-*Defined in [declarations/blessed.d.ts:369](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L369)*
+*Defined in [declarations/blessed.d.ts:369](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L369)*
 
 **Type parameters:**
 
@@ -549,7 +549,7 @@ ___
 
 ▸ **insert**(`node`: [Node](_declarations_blessed_d_.widgets.node.md), `index`: number): *void*
 
-*Defined in [declarations/blessed.d.ts:336](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L336)*
+*Defined in [declarations/blessed.d.ts:336](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L336)*
 
 Insert a node to this node's children at index i.
 
@@ -568,7 +568,7 @@ ___
 
 ▸ **insertAfter**(`node`: [Node](_declarations_blessed_d_.widgets.node.md), `refNode`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
 
-*Defined in [declarations/blessed.d.ts:346](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L346)*
+*Defined in [declarations/blessed.d.ts:346](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L346)*
 
 Insert a node from node after the reference node.
 
@@ -587,7 +587,7 @@ ___
 
 ▸ **insertBefore**(`node`: [Node](_declarations_blessed_d_.widgets.node.md), `refNode`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
 
-*Defined in [declarations/blessed.d.ts:341](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L341)*
+*Defined in [declarations/blessed.d.ts:341](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L341)*
 
 Insert a node to this node's children before the reference node.
 
@@ -676,7 +676,7 @@ ___
 
 *Overrides void*
 
-*Defined in [declarations/blessed.d.ts:390](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L390)*
+*Defined in [declarations/blessed.d.ts:390](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L390)*
 
 Received when node gains a new parent. If the node was detached from the sreen, newParent will be undefined.
 
@@ -701,7 +701,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in [declarations/blessed.d.ts:395](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L395)*
+*Defined in [declarations/blessed.d.ts:395](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L395)*
 
 emitted by a parent node when adding a new child node.
 
@@ -726,7 +726,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in [declarations/blessed.d.ts:400](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L400)*
+*Defined in [declarations/blessed.d.ts:400](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L400)*
 
 Emitted when the node or one of its ancestors is added to a parent and previous nor the node or any of its ancestors where  screen child.
 
@@ -751,7 +751,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in [declarations/blessed.d.ts:405](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L405)*
+*Defined in [declarations/blessed.d.ts:405](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L405)*
 
 Emitted by a node or an ancestor is being detached from the screen being previously a screen child
 
@@ -776,7 +776,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in [declarations/blessed.d.ts:410](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L410)*
+*Defined in [declarations/blessed.d.ts:410](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L410)*
 
 Triggered by a parent node when removing a child node
 
@@ -801,7 +801,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in [declarations/blessed.d.ts:412](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L412)*
+*Defined in [declarations/blessed.d.ts:412](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L412)*
 
 **Parameters:**
 
@@ -853,7 +853,7 @@ ___
 
 ▸ **prepend**(`node`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
 
-*Defined in [declarations/blessed.d.ts:321](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L321)*
+*Defined in [declarations/blessed.d.ts:321](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L321)*
 
 Prepend a node to this node's children.
 
@@ -947,7 +947,7 @@ ___
 
 ▸ **remove**(`node`: [Node](_declarations_blessed_d_.widgets.node.md)): *void*
 
-*Defined in [declarations/blessed.d.ts:331](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L331)*
+*Defined in [declarations/blessed.d.ts:331](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L331)*
 
 Remove child node from node.
 
@@ -1013,7 +1013,7 @@ ___
 
 ▸ **set**(`name`: string, `value`: any): *void*
 
-*Defined in [declarations/blessed.d.ts:385](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L385)*
+*Defined in [declarations/blessed.d.ts:385](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L385)*
 
 Set user property to value.
 

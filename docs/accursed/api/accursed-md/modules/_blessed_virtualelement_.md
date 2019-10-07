@@ -32,7 +32,7 @@
 
 Ƭ **ParentVirtualData**: *T[]*
 
-*Defined in [blessed/virtualElement.ts:46](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L46)*
+*Defined in [blessed/virtualElement.ts:46](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/virtualElement.ts#L46)*
 
 ## Functions
 
@@ -40,7 +40,7 @@
 
 ▸ **getJSXChildrenProps**(`component`: [Component](../classes/_jsx_component_.component.md)): *[VirtualChildrenData](../interfaces/_blessed_virtualelement_.virtualchildrendata.md)[]*
 
-*Defined in [blessed/virtualElement.ts:177](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L177)*
+*Defined in [blessed/virtualElement.ts:177](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/virtualElement.ts#L177)*
 
  will return children data stored in _jsxChildrenProps, flatting children that are arrays.
 
@@ -172,7 +172,7 @@ ___
 
 ▸ **isElementData**(`c`: any): *boolean*
 
-*Defined in [blessed/virtualElement.ts:185](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L185)*
+*Defined in [blessed/virtualElement.ts:185](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/virtualElement.ts#L185)*
 
 **Parameters:**
 
@@ -188,7 +188,7 @@ ___
 
 ▸ **process**(`p`: [JSXChildrenProps](../interfaces/_blessed_virtualelement_.jsxchildrenprops.md) | undefined): *string | number | [VirtualChildrenData](../interfaces/_blessed_virtualelement_.virtualchildrendata.md)[]*
 
-*Defined in [blessed/virtualElement.ts:188](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/virtualElement.ts#L188)*
+*Defined in [blessed/virtualElement.ts:188](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/virtualElement.ts#L188)*
 
 **Parameters:**
 

@@ -28,7 +28,7 @@
 
 • **bug**: *Buffer*
 
-*Defined in [declarations/blessed.d.ts:198](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L198)*
+*Defined in [declarations/blessed.d.ts:198](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L198)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 • **ctrl**: *boolean*
 
-*Defined in [declarations/blessed.d.ts:194](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L194)*
+*Defined in [declarations/blessed.d.ts:194](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L194)*
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 • **meta**: *boolean*
 
-*Defined in [declarations/blessed.d.ts:195](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L195)*
+*Defined in [declarations/blessed.d.ts:195](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L195)*
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [declarations/blessed.d.ts:192](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L192)*
+*Defined in [declarations/blessed.d.ts:192](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L192)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 • **raw**: *[number, number, number, string]*
 
-*Defined in [declarations/blessed.d.ts:197](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L197)*
+*Defined in [declarations/blessed.d.ts:197](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L197)*
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 • **shift**: *boolean*
 
-*Defined in [declarations/blessed.d.ts:193](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L193)*
+*Defined in [declarations/blessed.d.ts:193](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L193)*
 
 ___
 
@@ -76,4 +76,4 @@ ___
 
 • **type**: *string*
 
-*Defined in [declarations/blessed.d.ts:196](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessed.d.ts#L196)*
+*Defined in [declarations/blessed.d.ts:196](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessed.d.ts#L196)*

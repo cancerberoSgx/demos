@@ -26,7 +26,7 @@
 
 ▸ **borderBox**(`options?`: [BorderBoxOptions](../interfaces/_blessed_borderbox_.borderboxoptions.md)): *[BorderBox](../classes/_blessed_borderbox_.borderbox.md)*
 
-*Defined in [blessed/borderBox.ts:91](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/borderBox.ts#L91)*
+*Defined in [blessed/borderBox.ts:91](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/borderBox.ts#L91)*
 
 **Parameters:**
 
@@ -42,7 +42,7 @@ ___
 
 ▸ **getBorderBoxOptions**(`options?`: [BorderBoxOptions](../interfaces/_blessed_borderbox_.borderboxoptions.md)): *object | object*
 
-*Defined in [blessed/borderBox.ts:77](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/borderBox.ts#L77)*
+*Defined in [blessed/borderBox.ts:77](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/borderBox.ts#L77)*
 
 **Parameters:**
 

@@ -23,7 +23,7 @@
 
 Ƭ **Falsy**: *Falsy<T>*
 
-*Defined in [util/misc.ts:24](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/misc.ts#L24)*
+*Defined in [util/misc.ts:24](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/misc.ts#L24)*
 
 Without arguments it returns the union of all falsy values. With arguments it returns given type excluding falsy arguments.  Example `Falsy<number|boolean|null> ` will be `false|null`
 
@@ -33,7 +33,7 @@ ___
 
 Ƭ **NotFalsy**: *Exclude‹T, [falsy](_util_misc_.md#falsy)›*
 
-*Defined in [util/misc.ts:27](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/misc.ts#L27)*
+*Defined in [util/misc.ts:27](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/misc.ts#L27)*
 
 Removes undefined from type.  Example `Falsy<number|boolean>` will be `number|true`
 
@@ -43,7 +43,7 @@ ___
 
 Ƭ **RemoveProperties**: *Pick‹O, Exclude‹keyof O, K››*
 
-*Defined in [util/misc.ts:17](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/misc.ts#L17)*
+*Defined in [util/misc.ts:17](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/misc.ts#L17)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 Ƭ **falsy**: *undefined | null | false | "" | 0*
 
-*Defined in [util/misc.ts:19](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/misc.ts#L19)*
+*Defined in [util/misc.ts:19](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/misc.ts#L19)*
 
 ## Functions
 
@@ -59,7 +59,7 @@ ___
 
 ▸ **enumValueFromString**<**T**>(`key`: string, `anEnum`: any): *T | undefined*
 
-*Defined in [util/misc.ts:13](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/misc.ts#L13)*
+*Defined in [util/misc.ts:13](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/misc.ts#L13)*
 
 return the Enum type from given string enum key obtained with key [[enumNoValueKeys]]
 
@@ -82,7 +82,7 @@ ___
 
 ▸ **rgb2Hex**(`s`: string): *string*
 
-*Defined in [util/misc.ts:29](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/misc.ts#L29)*
+*Defined in [util/misc.ts:29](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/misc.ts#L29)*
 
 **Parameters:**
 
@@ -98,7 +98,7 @@ ___
 
 ▸ **strip**(`s`: string): *string*
 
-*Defined in [util/misc.ts:6](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/misc.ts#L6)*
+*Defined in [util/misc.ts:6](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/misc.ts#L6)*
 
 strips ANSI codes from a string. From https://github.com/xpl/ansicolor/blob/master/ansicolor.js
 

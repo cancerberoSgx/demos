@@ -16,7 +16,7 @@
 
 ▸ **focusableBorderedOpts**(): *object*
 
-*Defined in [util/sharedOptions.ts:40](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/sharedOptions.ts#L40)*
+*Defined in [util/sharedOptions.ts:40](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/sharedOptions.ts#L40)*
 
 **Returns:** *object*
 
@@ -46,7 +46,7 @@ ___
 
 ▸ **focusableOpts**(): *object*
 
-*Defined in [util/sharedOptions.ts:5](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/sharedOptions.ts#L5)*
+*Defined in [util/sharedOptions.ts:5](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/sharedOptions.ts#L5)*
 
 **Returns:** *object*
 
@@ -106,7 +106,7 @@ ___
 
 ▸ **scrollableOpts**(): *object*
 
-*Defined in [util/sharedOptions.ts:59](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/util/sharedOptions.ts#L59)*
+*Defined in [util/sharedOptions.ts:59](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/util/sharedOptions.ts#L59)*
 
 **Returns:** *object*
 

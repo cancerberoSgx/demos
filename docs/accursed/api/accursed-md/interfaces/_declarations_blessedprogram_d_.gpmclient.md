@@ -196,7 +196,7 @@ ___
 
 *Overrides void*
 
-*Defined in [declarations/blessedProgram.d.ts:100](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/declarations/blessedProgram.d.ts#L100)*
+*Defined in [declarations/blessedProgram.d.ts:100](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/declarations/blessedProgram.d.ts#L100)*
 
 **Parameters:**
 

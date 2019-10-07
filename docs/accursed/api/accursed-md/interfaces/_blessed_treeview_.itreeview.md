@@ -26,7 +26,7 @@
 
 ▸ **on**(`event`: "nodeSelect", `callback`: function): *this*
 
-*Defined in [blessed/treeView.ts:103](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/treeView.ts#L103)*
+*Defined in [blessed/treeView.ts:103](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/treeView.ts#L103)*
 
 Emitted when user selects a node (pressing enter). undefined value means the user un-select all nodes
 
@@ -48,7 +48,7 @@ Name | Type |
 
 ▸ **on**(`event`: "nodeFocus", `callback`: function): *this*
 
-*Defined in [blessed/treeView.ts:108](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/treeView.ts#L108)*
+*Defined in [blessed/treeView.ts:108](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/treeView.ts#L108)*
 
 Emitted when user focus a tree node while navigating up or down with arrow keys.
 
@@ -70,7 +70,7 @@ Name | Type |
 
 ▸ **on**(`event`: "nodeExpand", `callback`: function): *this*
 
-*Defined in [blessed/treeView.ts:114](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/treeView.ts#L114)*
+*Defined in [blessed/treeView.ts:114](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/treeView.ts#L114)*
 
 Emitted when user expand or collapses a node (pressing space). node.expanded property tells the current
 status of the node.

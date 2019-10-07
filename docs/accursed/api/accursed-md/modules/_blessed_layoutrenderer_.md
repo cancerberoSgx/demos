@@ -14,7 +14,7 @@
 
 ▸ **renderer**(`this`: [Layout](../classes/_declarations_blessed_d_.widget.layout.md), `coords`: object): *function*
 
-*Defined in [blessed/layoutRenderer.ts:11](https://github.com/cancerberoSgx/accursed/blob/468bf3c/src/blessed/layoutRenderer.ts#L11)*
+*Defined in [blessed/layoutRenderer.ts:11](https://github.com/cancerberoSgx/accursed/blob/5b2518e/src/blessed/layoutRenderer.ts#L11)*
 
 The same blessed Layout renderer function with a few modifications and adapted to TypeScript. Modifications:
 
